@@ -17,7 +17,7 @@
 **                                                                            **
 **  VERSION   : 19.0.0                                                        **
 **                                                                            **
-**  DATE, TIME: 2025-03-01, 09:18:59             !!!IGNORE-LINE!!!            **
+**  DATE, TIME: 2025-03-01, 14:31:53             !!!IGNORE-LINE!!!            **
 **                                                                            **
 **  GENERATOR : Build b191017-0938              !!!IGNORE-LINE!!!             **
 **                                                                            **
@@ -62,6 +62,9 @@
                 <BSW-MODULE-ENTRY-REF-CONDITIONAL>
                   <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_Port/BswModuleEntrys/Port_RefreshPortDirection</BSW-MODULE-ENTRY-REF>
                 </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                  <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_Port/BswModuleEntrys/Port_SetPinMode</BSW-MODULE-ENTRY-REF>
+                </BSW-MODULE-ENTRY-REF-CONDITIONAL>
               </PROVIDED-ENTRYS>
               <BSW-MODULE-DEPENDENCYS>
                 <BSW-MODULE-DEPENDENCY>
@@ -79,15 +82,6 @@
                     </BSW-MODULE-ENTRY-REF-CONDITIONAL>
                   </REQUIRED-ENTRYS>
                 </BSW-MODULE-DEPENDENCY>
-                <BSW-MODULE-DEPENDENCY>
-                  <SHORT-NAME>McalSafetyErrorDependency</SHORT-NAME>
-                  <TARGET-MODULE-ID>255</TARGET-MODULE-ID>
-                  <REQUIRED-ENTRYS>
-                    <BSW-MODULE-ENTRY-REF-CONDITIONAL>
-                      <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_Stub/BswModuleEntrys/Mcal_ReportSafetyError</BSW-MODULE-ENTRY-REF>
-                    </BSW-MODULE-ENTRY-REF-CONDITIONAL>
-                  </REQUIRED-ENTRYS>
-                </BSW-MODULE-DEPENDENCY>
               </BSW-MODULE-DEPENDENCYS>
               <INTERNAL-BEHAVIORS>
                 <BSW-INTERNAL-BEHAVIOR>
@@ -102,6 +96,11 @@
                       <SHORT-NAME>Port_RefreshPortDirection</SHORT-NAME>
                       <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                       <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_Port/BswModuleEntrys/Port_RefreshPortDirection</IMPLEMENTED-ENTRY-REF>
+                    </BSW-CALLED-ENTITY>
+                    <BSW-CALLED-ENTITY>
+                      <SHORT-NAME>Port_SetPinMode</SHORT-NAME>
+                      <REENTRANCY-LEVEL>MULTICORE-REENTRANT</REENTRANCY-LEVEL>
+                      <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_Port/BswModuleEntrys/Port_SetPinMode</IMPLEMENTED-ENTRY-REF>
                     </BSW-CALLED-ENTITY>
                   </ENTITYS>
                 </BSW-INTERNAL-BEHAVIOR>
@@ -152,6 +151,39 @@
               <CALL-TYPE>REGULAR</CALL-TYPE>
               <EXECUTION-CONTEXT>TASK</EXECUTION-CONTEXT>
               <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
+            </BSW-MODULE-ENTRY>
+            <BSW-MODULE-ENTRY>
+              <SHORT-NAME>Port_SetPinMode</SHORT-NAME>
+              <SERVICE-ID>4</SERVICE-ID>
+              <IS-REENTRANT>true</IS-REENTRANT>
+              <IS-SYNCHRONOUS>true</IS-SYNCHRONOUS>
+              <CALL-TYPE>REGULAR</CALL-TYPE>
+              <EXECUTION-CONTEXT>TASK</EXECUTION-CONTEXT>
+              <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
+              <ARGUMENTS>
+                <SW-SERVICE-ARG>
+                  <SHORT-NAME>Pin</SHORT-NAME>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST = "IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Port/ImplementationDataTypes/Port_PinType</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </SW-SERVICE-ARG>
+                <SW-SERVICE-ARG>
+                  <SHORT-NAME>Mode</SHORT-NAME>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST = "IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Port/ImplementationDataTypes/Port_PinModeType</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </SW-SERVICE-ARG>
+              </ARGUMENTS>
             </BSW-MODULE-ENTRY>
           </ELEMENTS>
         </AR-PACKAGE>
@@ -234,11 +266,6 @@
                 <SHORT-NAME>ResourceConsumption</SHORT-NAME>
                 <MEMORY-SECTIONS>
                   <MEMORY-SECTION>
-                    <SHORT-NAME>VAR_CLEARED_ASIL_B_GLOBAL_8</SHORT-NAME>
-                    <ALIGNMENT>8</ALIGNMENT>
-                    <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/AUTOSAR_MemMap/SwAddrMethods/VAR_CLEARED</SW-ADDRMETHOD-REF>
-                  </MEMORY-SECTION>
-                  <MEMORY-SECTION>
                     <SHORT-NAME>VAR_CLEARED_ASIL_B_GLOBAL_32</SHORT-NAME>
                     <ALIGNMENT>32</ALIGNMENT>
                     <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/AUTOSAR_MemMap/SwAddrMethods/VAR_CLEARED</SW-ADDRMETHOD-REF>
@@ -280,6 +307,32 @@
           <SHORT-NAME>ImplementationDataTypes</SHORT-NAME>
           <CATEGORY>STANDARD</CATEGORY>
           <ELEMENTS>
+            <IMPLEMENTATION-DATA-TYPE>
+              <SHORT-NAME>Port_PinModeType</SHORT-NAME>
+              <CATEGORY>TYPE_REFERENCE</CATEGORY>
+              <SW-DATA-DEF-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                    <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </SW-DATA-DEF-PROPS>
+              <TYPE-EMITTER>BSW</TYPE-EMITTER>
+            </IMPLEMENTATION-DATA-TYPE>
+            <IMPLEMENTATION-DATA-TYPE>
+              <SHORT-NAME>Port_PinType</SHORT-NAME>
+              <CATEGORY>TYPE_REFERENCE</CATEGORY>
+              <SW-DATA-DEF-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint16</IMPLEMENTATION-DATA-TYPE-REF>
+                    <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </SW-DATA-DEF-PROPS>
+              <TYPE-EMITTER>BSW</TYPE-EMITTER>
+            </IMPLEMENTATION-DATA-TYPE>
             <IMPLEMENTATION-DATA-TYPE>
               <SHORT-NAME>Port_ConfigType</SHORT-NAME>
               <CATEGORY>STRUCTURE</CATEGORY>

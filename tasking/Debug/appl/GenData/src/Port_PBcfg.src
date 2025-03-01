@@ -61,7 +61,9 @@ Port_kConfiguration:	.type	object
 	.byte	16,16,16,16
 	.byte	16,16,16,128
 	.byte	128,128,128,16
-	.space	16
+	.space	1
+	.byte	120
+	.space	14
 	.byte	16,16,16,16
 	.byte	16,16,16,16
 	.byte	16,16,16,16
@@ -111,7 +113,8 @@ Port_kConfiguration:	.type	object
 	.byte	128,128,128,128
 	.byte	16,16,16,16
 	.byte	16,16,16,16
-	.space	16
+	.byte	240
+	.space	15
 	.byte	16,16,16,16
 	.byte	16,16,16,16
 	.byte	16,16,16,16
@@ -574,7 +577,7 @@ Port_Config:	.type	object
 ; ..\appl\GenData\src\Port_PBcfg.c	    14  **                                                                            **
 ; ..\appl\GenData\src\Port_PBcfg.c	    15  **  VERSION   : 14.0.0                                                        **
 ; ..\appl\GenData\src\Port_PBcfg.c	    16  **                                                                            **
-; ..\appl\GenData\src\Port_PBcfg.c	    17  **  DATE, TIME: 2025-03-01, 12:57:16          !!!IGNORE-LINE!!!               **
+; ..\appl\GenData\src\Port_PBcfg.c	    17  **  DATE, TIME: 2025-03-01, 16:46:02          !!!IGNORE-LINE!!!               **
 ; ..\appl\GenData\src\Port_PBcfg.c	    18  **                                                                            **
 ; ..\appl\GenData\src\Port_PBcfg.c	    19  **  GENERATOR : Build b191017-0938            !!!IGNORE-LINE!!!               **
 ; ..\appl\GenData\src\Port_PBcfg.c	    20  **                                                                            **
@@ -2151,10 +2154,10 @@ Port_Config:	.type	object
 ; ..\appl\GenData\src\Port_PBcfg.c	  1591        PORT_PIN_LEVEL_LOW,/* Pin 8 */
 ; ..\appl\GenData\src\Port_PBcfg.c	  1592        PORT_PIN_LEVEL_LOW,/* Pin 9 */
 ; ..\appl\GenData\src\Port_PBcfg.c	  1593        PORT_PIN_LEVEL_LOW,/* Pin 10 */
-; ..\appl\GenData\src\Port_PBcfg.c	  1594        PORT_PIN_LEVEL_LOW,/* Pin 11 */
-; ..\appl\GenData\src\Port_PBcfg.c	  1595        PORT_PIN_LEVEL_LOW,/* Pin 12 */
-; ..\appl\GenData\src\Port_PBcfg.c	  1596        PORT_PIN_LEVEL_LOW,/* Pin 13 */
-; ..\appl\GenData\src\Port_PBcfg.c	  1597        PORT_PIN_LEVEL_LOW,/* Pin 14 */
+; ..\appl\GenData\src\Port_PBcfg.c	  1594        PORT_PIN_LEVEL_HIGH,/* Pin 11 */
+; ..\appl\GenData\src\Port_PBcfg.c	  1595        PORT_PIN_LEVEL_HIGH,/* Pin 12 */
+; ..\appl\GenData\src\Port_PBcfg.c	  1596        PORT_PIN_LEVEL_HIGH,/* Pin 13 */
+; ..\appl\GenData\src\Port_PBcfg.c	  1597        PORT_PIN_LEVEL_HIGH,/* Pin 14 */
 ; ..\appl\GenData\src\Port_PBcfg.c	  1598        0U,/* Pin 15 */
 ; ..\appl\GenData\src\Port_PBcfg.c	  1599        0U /* Reserved */
 ; ..\appl\GenData\src\Port_PBcfg.c	  1600      },
@@ -3355,10 +3358,10 @@ Port_Config:	.type	object
 ; ..\appl\GenData\src\Port_PBcfg.c	  2795        PORT_PIN_LEVEL_LOW,/* Pin 1 */
 ; ..\appl\GenData\src\Port_PBcfg.c	  2796        PORT_PIN_LEVEL_LOW,/* Pin 2 */
 ; ..\appl\GenData\src\Port_PBcfg.c	  2797        PORT_PIN_LEVEL_LOW,/* Pin 3 */
-; ..\appl\GenData\src\Port_PBcfg.c	  2798        PORT_PIN_LEVEL_LOW,/* Pin 4 */
-; ..\appl\GenData\src\Port_PBcfg.c	  2799        PORT_PIN_LEVEL_LOW,/* Pin 5 */
-; ..\appl\GenData\src\Port_PBcfg.c	  2800        PORT_PIN_LEVEL_LOW,/* Pin 6 */
-; ..\appl\GenData\src\Port_PBcfg.c	  2801        PORT_PIN_LEVEL_LOW,/* Pin 7 */
+; ..\appl\GenData\src\Port_PBcfg.c	  2798        PORT_PIN_LEVEL_HIGH,/* Pin 4 */
+; ..\appl\GenData\src\Port_PBcfg.c	  2799        PORT_PIN_LEVEL_HIGH,/* Pin 5 */
+; ..\appl\GenData\src\Port_PBcfg.c	  2800        PORT_PIN_LEVEL_HIGH,/* Pin 6 */
+; ..\appl\GenData\src\Port_PBcfg.c	  2801        PORT_PIN_LEVEL_HIGH,/* Pin 7 */
 ; ..\appl\GenData\src\Port_PBcfg.c	  2802        PORT_PIN_LEVEL_LOW,/* Pin 8 */
 ; ..\appl\GenData\src\Port_PBcfg.c	  2803        PORT_PIN_LEVEL_LOW,/* Pin 9 */
 ; ..\appl\GenData\src\Port_PBcfg.c	  2804        PORT_PIN_LEVEL_LOW,/* Pin 10 */

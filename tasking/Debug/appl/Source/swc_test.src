@@ -70,76 +70,77 @@ $TC162
 ; ..\appl\Source\swc_test.c	    55   *********************************************************************************************************************/
 ; ..\appl\Source\swc_test.c	    56  
 ; ..\appl\Source\swc_test.c	    57  #include "Rte_swc_test.h"
-; ..\appl\Source\swc_test.c	    58  
+; ..\appl\Source\swc_test.c	    58  #include "Dio.h"
 ; ..\appl\Source\swc_test.c	    59  
-; ..\appl\Source\swc_test.c	    60  /**********************************************************************************************************************
-; ..\appl\Source\swc_test.c	    61   * DO NOT CHANGE THIS COMMENT!           << Start of include and declaration area >>        DO NOT CHANGE THIS COMMENT!
-; ..\appl\Source\swc_test.c	    62   *********************************************************************************************************************/
-; ..\appl\Source\swc_test.c	    63  
+; ..\appl\Source\swc_test.c	    60  
+; ..\appl\Source\swc_test.c	    61  /**********************************************************************************************************************
+; ..\appl\Source\swc_test.c	    62   * DO NOT CHANGE THIS COMMENT!           << Start of include and declaration area >>        DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\swc_test.c	    63   *********************************************************************************************************************/
 ; ..\appl\Source\swc_test.c	    64  
-; ..\appl\Source\swc_test.c	    65  /**********************************************************************************************************************
-; ..\appl\Source\swc_test.c	    66   * DO NOT CHANGE THIS COMMENT!           << End of include and declaration area >>          DO NOT CHANGE THIS COMMENT!
-; ..\appl\Source\swc_test.c	    67   *********************************************************************************************************************/
-; ..\appl\Source\swc_test.c	    68  
+; ..\appl\Source\swc_test.c	    65  
+; ..\appl\Source\swc_test.c	    66  /**********************************************************************************************************************
+; ..\appl\Source\swc_test.c	    67   * DO NOT CHANGE THIS COMMENT!           << End of include and declaration area >>          DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\swc_test.c	    68   *********************************************************************************************************************/
 ; ..\appl\Source\swc_test.c	    69  
-; ..\appl\Source\swc_test.c	    70  /**********************************************************************************************************************
-; ..\appl\Source\swc_test.c	    71   *
-; ..\appl\Source\swc_test.c	    72   * Used AUTOSAR Data Types
-; ..\appl\Source\swc_test.c	    73   *
-; ..\appl\Source\swc_test.c	    74   **********************************************************************************************************************
-; ..\appl\Source\swc_test.c	    75   *
-; ..\appl\Source\swc_test.c	    76   * Primitive Types:
-; ..\appl\Source\swc_test.c	    77   * ================
-; ..\appl\Source\swc_test.c	    78   * uint8: Integer in interval [0...255] (standard type)
-; ..\appl\Source\swc_test.c	    79   *
-; ..\appl\Source\swc_test.c	    80   * Enumeration Types:
-; ..\appl\Source\swc_test.c	    81   * ==================
-; ..\appl\Source\swc_test.c	    82   * BswM_ESH_RunRequest: Enumeration of integer in interval [0...255] with enumerators
-; ..\appl\Source\swc_test.c	    83   *   RELEASED (0U)
-; ..\appl\Source\swc_test.c	    84   *   REQUESTED (1U)
-; ..\appl\Source\swc_test.c	    85   *
-; ..\appl\Source\swc_test.c	    86   *********************************************************************************************************************/
-; ..\appl\Source\swc_test.c	    87  
+; ..\appl\Source\swc_test.c	    70  
+; ..\appl\Source\swc_test.c	    71  /**********************************************************************************************************************
+; ..\appl\Source\swc_test.c	    72   *
+; ..\appl\Source\swc_test.c	    73   * Used AUTOSAR Data Types
+; ..\appl\Source\swc_test.c	    74   *
+; ..\appl\Source\swc_test.c	    75   **********************************************************************************************************************
+; ..\appl\Source\swc_test.c	    76   *
+; ..\appl\Source\swc_test.c	    77   * Primitive Types:
+; ..\appl\Source\swc_test.c	    78   * ================
+; ..\appl\Source\swc_test.c	    79   * uint8: Integer in interval [0...255] (standard type)
+; ..\appl\Source\swc_test.c	    80   *
+; ..\appl\Source\swc_test.c	    81   * Enumeration Types:
+; ..\appl\Source\swc_test.c	    82   * ==================
+; ..\appl\Source\swc_test.c	    83   * BswM_ESH_RunRequest: Enumeration of integer in interval [0...255] with enumerators
+; ..\appl\Source\swc_test.c	    84   *   RELEASED (0U)
+; ..\appl\Source\swc_test.c	    85   *   REQUESTED (1U)
+; ..\appl\Source\swc_test.c	    86   *
+; ..\appl\Source\swc_test.c	    87   *********************************************************************************************************************/
 ; ..\appl\Source\swc_test.c	    88  
-; ..\appl\Source\swc_test.c	    89  #define swc_test_START_SEC_CODE
-; ..\appl\Source\swc_test.c	    90  #include "swc_test_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
-; ..\appl\Source\swc_test.c	    91  
-; ..\appl\Source\swc_test.c	    92  /**********************************************************************************************************************
-; ..\appl\Source\swc_test.c	    93   *
-; ..\appl\Source\swc_test.c	    94   * Runnable Entity Name: swc_test_10ms
-; ..\appl\Source\swc_test.c	    95   *
-; ..\appl\Source\swc_test.c	    96   *---------------------------------------------------------------------------------------------------------------------
-; ..\appl\Source\swc_test.c	    97   *
-; ..\appl\Source\swc_test.c	    98   * Executed if at least one of the following trigger conditions occurred:
-; ..\appl\Source\swc_test.c	    99   *   - triggered on TimingEvent every 10ms
-; ..\appl\Source\swc_test.c	   100   *
-; ..\appl\Source\swc_test.c	   101   *********************************************************************************************************************/
-; ..\appl\Source\swc_test.c	   102  /**********************************************************************************************************************
-; ..\appl\Source\swc_test.c	   103   * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
-; ..\appl\Source\swc_test.c	   104   * Symbol: swc_test_10ms_doc
-; ..\appl\Source\swc_test.c	   105   *********************************************************************************************************************/
-; ..\appl\Source\swc_test.c	   106  
+; ..\appl\Source\swc_test.c	    89  
+; ..\appl\Source\swc_test.c	    90  #define swc_test_START_SEC_CODE
+; ..\appl\Source\swc_test.c	    91  #include "swc_test_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\appl\Source\swc_test.c	    92  
+; ..\appl\Source\swc_test.c	    93  /**********************************************************************************************************************
+; ..\appl\Source\swc_test.c	    94   *
+; ..\appl\Source\swc_test.c	    95   * Runnable Entity Name: swc_test_10ms
+; ..\appl\Source\swc_test.c	    96   *
+; ..\appl\Source\swc_test.c	    97   *---------------------------------------------------------------------------------------------------------------------
+; ..\appl\Source\swc_test.c	    98   *
+; ..\appl\Source\swc_test.c	    99   * Executed if at least one of the following trigger conditions occurred:
+; ..\appl\Source\swc_test.c	   100   *   - triggered on TimingEvent every 10ms
+; ..\appl\Source\swc_test.c	   101   *
+; ..\appl\Source\swc_test.c	   102   *********************************************************************************************************************/
+; ..\appl\Source\swc_test.c	   103  /**********************************************************************************************************************
+; ..\appl\Source\swc_test.c	   104   * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\swc_test.c	   105   * Symbol: swc_test_10ms_doc
+; ..\appl\Source\swc_test.c	   106   *********************************************************************************************************************/
 ; ..\appl\Source\swc_test.c	   107  
-; ..\appl\Source\swc_test.c	   108  /**********************************************************************************************************************
-; ..\appl\Source\swc_test.c	   109   * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
-; ..\appl\Source\swc_test.c	   110   *********************************************************************************************************************/
-; ..\appl\Source\swc_test.c	   111  
-; ..\appl\Source\swc_test.c	   112  FUNC(void, swc_test_CODE) swc_test_10ms(void) /* PRQA S 0624, 3206 */ /* MD_Rte_0624, MD_Rte_3206 */
+; ..\appl\Source\swc_test.c	   108  
+; ..\appl\Source\swc_test.c	   109  /**********************************************************************************************************************
+; ..\appl\Source\swc_test.c	   110   * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\swc_test.c	   111   *********************************************************************************************************************/
+; ..\appl\Source\swc_test.c	   112  
+; ..\appl\Source\swc_test.c	   113  FUNC(void, swc_test_CODE) swc_test_10ms(void) /* PRQA S 0624, 3206 */ /* MD_Rte_0624, MD_Rte_3206 */
 ; Function swc_test_10ms
 .L3:
 swc_test_10ms:	.type	func
 
-; ..\appl\Source\swc_test.c	   113  {
-; ..\appl\Source\swc_test.c	   114  /**********************************************************************************************************************
-; ..\appl\Source\swc_test.c	   115   * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
-; ..\appl\Source\swc_test.c	   116   * Symbol: swc_test_10ms
-; ..\appl\Source\swc_test.c	   117   *********************************************************************************************************************/
-; ..\appl\Source\swc_test.c	   118  
+; ..\appl\Source\swc_test.c	   114  {
+; ..\appl\Source\swc_test.c	   115  /**********************************************************************************************************************
+; ..\appl\Source\swc_test.c	   116   * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\swc_test.c	   117   * Symbol: swc_test_10ms
+; ..\appl\Source\swc_test.c	   118   *********************************************************************************************************************/
 ; ..\appl\Source\swc_test.c	   119  
-; ..\appl\Source\swc_test.c	   120  /**********************************************************************************************************************
-; ..\appl\Source\swc_test.c	   121   * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
-; ..\appl\Source\swc_test.c	   122   *********************************************************************************************************************/
-; ..\appl\Source\swc_test.c	   123  }
+; ..\appl\Source\swc_test.c	   120  
+; ..\appl\Source\swc_test.c	   121  /**********************************************************************************************************************
+; ..\appl\Source\swc_test.c	   122   * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\swc_test.c	   123   *********************************************************************************************************************/
+; ..\appl\Source\swc_test.c	   124  }
 	ret
 .L27:
 	
@@ -154,44 +155,40 @@ __swc_test_10ms_function_end:
 	
 	.global	swc_test_500ms
 
-; ..\appl\Source\swc_test.c	   124  
-; ..\appl\Source\swc_test.c	   125  /**********************************************************************************************************************
-; ..\appl\Source\swc_test.c	   126   *
-; ..\appl\Source\swc_test.c	   127   * Runnable Entity Name: swc_test_500ms
-; ..\appl\Source\swc_test.c	   128   *
-; ..\appl\Source\swc_test.c	   129   *---------------------------------------------------------------------------------------------------------------------
-; ..\appl\Source\swc_test.c	   130   *
-; ..\appl\Source\swc_test.c	   131   * Executed if at least one of the following trigger conditions occurred:
-; ..\appl\Source\swc_test.c	   132   *   - triggered on TimingEvent every 500ms
-; ..\appl\Source\swc_test.c	   133   *
-; ..\appl\Source\swc_test.c	   134   *********************************************************************************************************************/
-; ..\appl\Source\swc_test.c	   135  /**********************************************************************************************************************
-; ..\appl\Source\swc_test.c	   136   * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
-; ..\appl\Source\swc_test.c	   137   * Symbol: swc_test_500ms_doc
-; ..\appl\Source\swc_test.c	   138   *********************************************************************************************************************/
-; ..\appl\Source\swc_test.c	   139  
+; ..\appl\Source\swc_test.c	   125  
+; ..\appl\Source\swc_test.c	   126  /**********************************************************************************************************************
+; ..\appl\Source\swc_test.c	   127   *
+; ..\appl\Source\swc_test.c	   128   * Runnable Entity Name: swc_test_500ms
+; ..\appl\Source\swc_test.c	   129   *
+; ..\appl\Source\swc_test.c	   130   *---------------------------------------------------------------------------------------------------------------------
+; ..\appl\Source\swc_test.c	   131   *
+; ..\appl\Source\swc_test.c	   132   * Executed if at least one of the following trigger conditions occurred:
+; ..\appl\Source\swc_test.c	   133   *   - triggered on TimingEvent every 500ms
+; ..\appl\Source\swc_test.c	   134   *
+; ..\appl\Source\swc_test.c	   135   *********************************************************************************************************************/
+; ..\appl\Source\swc_test.c	   136  /**********************************************************************************************************************
+; ..\appl\Source\swc_test.c	   137   * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\swc_test.c	   138   * Symbol: swc_test_500ms_doc
+; ..\appl\Source\swc_test.c	   139   *********************************************************************************************************************/
 ; ..\appl\Source\swc_test.c	   140  
-; ..\appl\Source\swc_test.c	   141  /**********************************************************************************************************************
-; ..\appl\Source\swc_test.c	   142   * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
-; ..\appl\Source\swc_test.c	   143   *********************************************************************************************************************/
-; ..\appl\Source\swc_test.c	   144  
-; ..\appl\Source\swc_test.c	   145  FUNC(void, swc_test_CODE) swc_test_500ms(void) /* PRQA S 0624, 3206 */ /* MD_Rte_0624, MD_Rte_3206 */
+; ..\appl\Source\swc_test.c	   141  
+; ..\appl\Source\swc_test.c	   142  /**********************************************************************************************************************
+; ..\appl\Source\swc_test.c	   143   * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\swc_test.c	   144   *********************************************************************************************************************/
+; ..\appl\Source\swc_test.c	   145  
+; ..\appl\Source\swc_test.c	   146  FUNC(void, swc_test_CODE) swc_test_500ms(void) /* PRQA S 0624, 3206 */ /* MD_Rte_0624, MD_Rte_3206 */
 ; Function swc_test_500ms
 .L5:
 swc_test_500ms:	.type	func
 
-; ..\appl\Source\swc_test.c	   146  {
-; ..\appl\Source\swc_test.c	   147  /**********************************************************************************************************************
-; ..\appl\Source\swc_test.c	   148   * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
-; ..\appl\Source\swc_test.c	   149   * Symbol: swc_test_500ms
-; ..\appl\Source\swc_test.c	   150   *********************************************************************************************************************/
-; ..\appl\Source\swc_test.c	   151  
-; ..\appl\Source\swc_test.c	   152  
-; ..\appl\Source\swc_test.c	   153  /**********************************************************************************************************************
-; ..\appl\Source\swc_test.c	   154   * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
-; ..\appl\Source\swc_test.c	   155   *********************************************************************************************************************/
-; ..\appl\Source\swc_test.c	   156  }
-	ret
+; ..\appl\Source\swc_test.c	   147  {
+; ..\appl\Source\swc_test.c	   148  /**********************************************************************************************************************
+; ..\appl\Source\swc_test.c	   149   * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\swc_test.c	   150   * Symbol: swc_test_500ms
+; ..\appl\Source\swc_test.c	   151   *********************************************************************************************************************/
+; ..\appl\Source\swc_test.c	   152  	Dio_FlipChannel(DioConf_DioChannel_DioChannel_33_4);
+	mov	d4,#532
+	j	Dio_FlipChannel
 .L28:
 	
 __swc_test_500ms_function_end:
@@ -205,55 +202,60 @@ __swc_test_500ms_function_end:
 	
 	.global	swc_test_Init
 
-; ..\appl\Source\swc_test.c	   157  
-; ..\appl\Source\swc_test.c	   158  /**********************************************************************************************************************
-; ..\appl\Source\swc_test.c	   159   *
-; ..\appl\Source\swc_test.c	   160   * Runnable Entity Name: swc_test_Init
-; ..\appl\Source\swc_test.c	   161   *
-; ..\appl\Source\swc_test.c	   162   *---------------------------------------------------------------------------------------------------------------------
-; ..\appl\Source\swc_test.c	   163   *
-; ..\appl\Source\swc_test.c	   164   * Executed once after the RTE is started
-; ..\appl\Source\swc_test.c	   165   *
-; ..\appl\Source\swc_test.c	   166   **********************************************************************************************************************
-; ..\appl\Source\swc_test.c	   167   *
-; ..\appl\Source\swc_test.c	   168   * Output Interfaces:
-; ..\appl\Source\swc_test.c	   169   * ==================
-; ..\appl\Source\swc_test.c	   170   *   Explicit S/R API:
-; ..\appl\Source\swc_test.c	   171   *   -----------------
-; ..\appl\Source\swc_test.c	   172   *   Std_ReturnType Rte_Write_Request_ESH_PostRunRequest_0_requestedMode(BswM_ESH_RunRequest data)
-; ..\appl\Source\swc_test.c	   173   *
-; ..\appl\Source\swc_test.c	   174   *********************************************************************************************************************/
-; ..\appl\Source\swc_test.c	   175  /**********************************************************************************************************************
-; ..\appl\Source\swc_test.c	   176   * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
-; ..\appl\Source\swc_test.c	   177   * Symbol: swc_test_Init_doc
-; ..\appl\Source\swc_test.c	   178   *********************************************************************************************************************/
-; ..\appl\Source\swc_test.c	   179  
+; ..\appl\Source\swc_test.c	   153  
+; ..\appl\Source\swc_test.c	   154  /**********************************************************************************************************************
+; ..\appl\Source\swc_test.c	   155   * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\swc_test.c	   156   *********************************************************************************************************************/
+; ..\appl\Source\swc_test.c	   157  }
+; ..\appl\Source\swc_test.c	   158  
+; ..\appl\Source\swc_test.c	   159  /**********************************************************************************************************************
+; ..\appl\Source\swc_test.c	   160   *
+; ..\appl\Source\swc_test.c	   161   * Runnable Entity Name: swc_test_Init
+; ..\appl\Source\swc_test.c	   162   *
+; ..\appl\Source\swc_test.c	   163   *---------------------------------------------------------------------------------------------------------------------
+; ..\appl\Source\swc_test.c	   164   *
+; ..\appl\Source\swc_test.c	   165   * Executed once after the RTE is started
+; ..\appl\Source\swc_test.c	   166   *
+; ..\appl\Source\swc_test.c	   167   **********************************************************************************************************************
+; ..\appl\Source\swc_test.c	   168   *
+; ..\appl\Source\swc_test.c	   169   * Output Interfaces:
+; ..\appl\Source\swc_test.c	   170   * ==================
+; ..\appl\Source\swc_test.c	   171   *   Explicit S/R API:
+; ..\appl\Source\swc_test.c	   172   *   -----------------
+; ..\appl\Source\swc_test.c	   173   *   Std_ReturnType Rte_Write_Request_ESH_PostRunRequest_0_requestedMode(BswM_ESH_RunRequest data)
+; ..\appl\Source\swc_test.c	   174   *
+; ..\appl\Source\swc_test.c	   175   *********************************************************************************************************************/
+; ..\appl\Source\swc_test.c	   176  /**********************************************************************************************************************
+; ..\appl\Source\swc_test.c	   177   * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\swc_test.c	   178   * Symbol: swc_test_Init_doc
+; ..\appl\Source\swc_test.c	   179   *********************************************************************************************************************/
 ; ..\appl\Source\swc_test.c	   180  
-; ..\appl\Source\swc_test.c	   181  /**********************************************************************************************************************
-; ..\appl\Source\swc_test.c	   182   * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
-; ..\appl\Source\swc_test.c	   183   *********************************************************************************************************************/
-; ..\appl\Source\swc_test.c	   184  
-; ..\appl\Source\swc_test.c	   185  FUNC(void, swc_test_CODE) swc_test_Init(void) /* PRQA S 0624, 3206 */ /* MD_Rte_0624, MD_Rte_3206 */
+; ..\appl\Source\swc_test.c	   181  
+; ..\appl\Source\swc_test.c	   182  /**********************************************************************************************************************
+; ..\appl\Source\swc_test.c	   183   * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\swc_test.c	   184   *********************************************************************************************************************/
+; ..\appl\Source\swc_test.c	   185  
+; ..\appl\Source\swc_test.c	   186  FUNC(void, swc_test_CODE) swc_test_Init(void) /* PRQA S 0624, 3206 */ /* MD_Rte_0624, MD_Rte_3206 */
 ; Function swc_test_Init
 .L7:
 swc_test_Init:	.type	func
 
-; ..\appl\Source\swc_test.c	   186  {
-; ..\appl\Source\swc_test.c	   187  /**********************************************************************************************************************
-; ..\appl\Source\swc_test.c	   188   * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
-; ..\appl\Source\swc_test.c	   189   * Symbol: swc_test_Init
-; ..\appl\Source\swc_test.c	   190   *********************************************************************************************************************/
-; ..\appl\Source\swc_test.c	   191  Rte_Write_Request_ESH_PostRunRequest_0_requestedMode(REQUESTED);
+; ..\appl\Source\swc_test.c	   187  {
+; ..\appl\Source\swc_test.c	   188  /**********************************************************************************************************************
+; ..\appl\Source\swc_test.c	   189   * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\swc_test.c	   190   * Symbol: swc_test_Init
+; ..\appl\Source\swc_test.c	   191   *********************************************************************************************************************/
+; ..\appl\Source\swc_test.c	   192  Rte_Write_Request_ESH_PostRunRequest_0_requestedMode(REQUESTED);
 	movh.a	a15,#@his(Rte_swc_test_Request_ESH_PostRunRequest_0_requestedMode)
 	mov	d15,#1
 	st.b	[a15]@los(Rte_swc_test_Request_ESH_PostRunRequest_0_requestedMode),d15
 .L46:
 
-; ..\appl\Source\swc_test.c	   192  
-; ..\appl\Source\swc_test.c	   193  /**********************************************************************************************************************
-; ..\appl\Source\swc_test.c	   194   * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
-; ..\appl\Source\swc_test.c	   195   *********************************************************************************************************************/
-; ..\appl\Source\swc_test.c	   196  }
+; ..\appl\Source\swc_test.c	   193  
+; ..\appl\Source\swc_test.c	   194  /**********************************************************************************************************************
+; ..\appl\Source\swc_test.c	   195   * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\swc_test.c	   196   *********************************************************************************************************************/
+; ..\appl\Source\swc_test.c	   197  }
 	ret
 .L29:
 	
@@ -262,14 +264,16 @@ __swc_test_Init_function_end:
 .L26:
 	; End of function
 	
+	.calls	'swc_test_500ms','Dio_FlipChannel'
 	.calls	'swc_test_10ms','',0
 	.calls	'swc_test_500ms','',0
 	.extern	Rte_swc_test_Request_ESH_PostRunRequest_0_requestedMode
+	.extern	Dio_FlipChannel
 	.calls	'swc_test_Init','',0
 	.sdecl	'.debug_info',debug
 	.sect	'.debug_info'
 .L9:
-	.word	466
+	.word	788
 	.half	3
 	.word	.L10
 	.byte	4
@@ -302,37 +306,80 @@ __swc_test_Init_function_end:
 	.byte	9
 	.byte	'compare',0
 	.word	168
-	.byte	0,10,1,7
+	.byte	0,2
+	.byte	'unsigned char',0,1,8,2
+	.byte	'unsigned short int',0,2,7,3
+	.word	263
+	.byte	10
+	.byte	'Dio_FlipChannel',0,1,185,3,22
 	.word	246
-	.byte	11
-	.byte	'__codeptr',0,1,1,1
-	.word	248
-	.byte	2
-	.byte	'unsigned char',0,1,8,11
-	.byte	'uint8',0,2,104,31
-	.word	271
-	.byte	2
-	.byte	'unsigned short int',0,2,7,11
-	.byte	'uint16',0,2,106,31
-	.word	302
-	.byte	2
-	.byte	'unsigned long int',0,4,7,11
-	.byte	'uint32',0,2,108,31
+	.byte	1,1,1,1,11
+	.byte	'ChannelId',0,1,187,3,25
+	.word	285
+	.byte	0,12,1,7
 	.word	339
-	.byte	11
-	.byte	'BswM_ESH_RunRequest',0,3,49,15
-	.word	271
-	.byte	12
-	.byte	'Rte_swc_test_Request_ESH_PostRunRequest_0_requestedMode',0,4,56,49
-	.word	271
-	.byte	1,1,0
+	.byte	13
+	.byte	'__codeptr',0,2,1,1
+	.word	341
+	.byte	13
+	.byte	'uint8',0,3,104,31
+	.word	246
+	.byte	13
+	.byte	'uint16',0,3,106,31
+	.word	263
+	.byte	2
+	.byte	'unsigned long int',0,4,7,13
+	.byte	'uint32',0,3,108,31
+	.word	393
+	.byte	13
+	.byte	'BswM_ESH_RunRequest',0,4,49,15
+	.word	246
+	.byte	14
+	.byte	'Rte_swc_test_Request_ESH_PostRunRequest_0_requestedMode',0,5,56,49
+	.word	246
+	.byte	1,1,13
+	.byte	'Dio_ChannelType',0,1,127,16
+	.word	263
+	.byte	13
+	.byte	'Dio_LevelType',0,1,133,1,15
+	.word	246
+	.byte	13
+	.byte	'Dio_PortType',0,1,138,1,15
+	.word	246
+	.byte	13
+	.byte	'Dio_PortLevelType',0,1,143,1,16
+	.word	263
+	.byte	15,1,148,1,9,4,16
+	.byte	'mask',0
+	.word	263
+	.byte	2,2,35,0,16
+	.byte	'offset',0
+	.word	246
+	.byte	1,2,35,2,16
+	.byte	'port',0
+	.word	246
+	.byte	1,2,35,3,0,13
+	.byte	'Dio_ChannelGroupType',0,1,158,1,3
+	.word	619
+	.byte	15,1,163,1,9,4,16
+	.byte	'Dio_PortIdConfig',0
+	.word	246
+	.byte	1,2,35,0,16
+	.byte	'Dio_ChannelConfig',0
+	.word	263
+	.byte	2,2,35,2,0,13
+	.byte	'Dio_PortChannelIdType',0,1,171,1,3
+	.word	700
+	.byte	0
 	.sdecl	'.debug_abbrev',debug
 	.sect	'.debug_abbrev'
 .L10:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,38,0,73,19,0,0,4,46,1,3,8,54
 	.byte	15,39,12,63,12,60,12,0,0,5,5,0,73,19,0,0,6,53,0,73,19,0,0,7,15,0,73,19,0,0,8,46,1,3,8,73,19,54,15,39,12
-	.byte	63,12,60,12,0,0,9,5,0,3,8,73,19,0,0,10,21,0,54,15,0,0,11,22,0,3,8,58,15,59,15,57,15,73,19,0,0,12,52,0
-	.byte	3,8,58,15,59,15,57,15,73,19,63,12,60,12,0,0,0
+	.byte	63,12,60,12,0,0,9,5,0,3,8,73,19,0,0,10,46,1,3,8,58,15,59,15,57,15,73,19,54,15,39,12,63,12,60,12,0,0,11
+	.byte	5,0,3,8,58,15,59,15,57,15,73,19,0,0,12,21,0,54,15,0,0,13,22,0,3,8,58,15,59,15,57,15,73,19,0,0,14,52,0
+	.byte	3,8,58,15,59,15,57,15,73,19,63,12,60,12,0,0,15,19,1,58,15,59,15,57,15,11,15,0,0,16,13,0,3,8,73,19,11,15
+	.byte	56,9,0,0,0
 	.sdecl	'.debug_line',debug
 	.sect	'.debug_line'
 .L11:
@@ -342,13 +389,15 @@ __swc_test_Init_function_end:
 	.word	.L33-.L32
 .L32:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'D:\\Zonal\\demo011\\tasking\\mcal\\Dio\\ssc\\inc',0
 	.byte	'D:\\Zonal\\demo011\\tasking\\component\\_Common\\Implementation',0
 	.byte	'D:\\Zonal\\demo011\\tasking\\appl\\GenData',0
 	.byte	'D:\\Zonal\\demo011\\tasking\\appl\\GenData\\Components',0,0
+	.byte	'Dio.h',0,1,0,0
 	.byte	'..\\appl\\Source\\swc_test.c',0,0,0,0
-	.byte	'Platform_Types.h',0,1,0,0
-	.byte	'Rte_Type.h',0,2,0,0
-	.byte	'Rte_swc_test.h',0,3,0,0,0
+	.byte	'Platform_Types.h',0,2,0,0
+	.byte	'Rte_Type.h',0,3,0,0
+	.byte	'Rte_swc_test.h',0,4,0,0,0
 .L33:
 .L31:
 	.sdecl	'.debug_info',debug,cluster('swc_test_10ms')
@@ -365,7 +414,7 @@ __swc_test_Init_function_end:
 	.byte	2
 	.word	.L8
 	.byte	3
-	.byte	'swc_test_10ms',0,1,112,27,1,1,1
+	.byte	'swc_test_10ms',0,1,113,27,1,1,1
 	.word	.L3,.L27,.L2
 	.byte	4
 	.word	.L3,.L27
@@ -388,7 +437,7 @@ __swc_test_Init_function_end:
 .L37:
 	.byte	5,1,7,0,5,2
 	.word	.L3
-	.byte	3,250,0,1,7,9
+	.byte	3,251,0,1,7,9
 	.half	.L16-.L3
 	.byte	0,1,1
 .L35:
@@ -410,7 +459,7 @@ __swc_test_Init_function_end:
 	.byte	2
 	.word	.L8
 	.byte	3
-	.byte	'swc_test_500ms',0,1,145,1,27,1,1,1
+	.byte	'swc_test_500ms',0,1,146,1,27,1,1,1
 	.word	.L5,.L28,.L4
 	.byte	4
 	.word	.L5,.L28
@@ -431,11 +480,11 @@ __swc_test_Init_function_end:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'..\\appl\\Source\\swc_test.c',0,0,0,0,0
 .L41:
-	.byte	5,1,7,0,5,2
+	.byte	5,18,7,0,5,2
 	.word	.L5
-	.byte	3,155,1,1,7,9
+	.byte	3,151,1,1,5,1,9
 	.half	.L21-.L5
-	.byte	0,1,1
+	.byte	3,5,0,1,1
 .L39:
 	.sdecl	'.debug_ranges',debug,cluster('swc_test_500ms')
 	.sect	'.debug_ranges'
@@ -455,7 +504,7 @@ __swc_test_Init_function_end:
 	.byte	2
 	.word	.L8
 	.byte	3
-	.byte	'swc_test_Init',0,1,185,1,27,1,1,1
+	.byte	'swc_test_Init',0,1,186,1,27,1,1,1
 	.word	.L7,.L29,.L6
 	.byte	4
 	.word	.L7,.L29
@@ -478,7 +527,7 @@ __swc_test_Init_function_end:
 .L45:
 	.byte	5,1,7,0,5,2
 	.word	.L7
-	.byte	3,190,1,1,9
+	.byte	3,191,1,1,9
 	.half	.L46-.L7
 	.byte	3,5,1,7,9
 	.half	.L26-.L46
@@ -523,56 +572,55 @@ __swc_test_Init_function_end:
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('swc_test_500ms')
 	.sect	'.debug_frame'
-	.word	24
+	.word	12
 	.word	.L47,.L5,.L28-.L5
-	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('swc_test_Init')
 	.sect	'.debug_frame'
 	.word	24
 	.word	.L47,.L7,.L29-.L7
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 
-; ..\appl\Source\swc_test.c	   197  
 ; ..\appl\Source\swc_test.c	   198  
-; ..\appl\Source\swc_test.c	   199  #define swc_test_STOP_SEC_CODE
-; ..\appl\Source\swc_test.c	   200  #include "swc_test_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
-; ..\appl\Source\swc_test.c	   201  
+; ..\appl\Source\swc_test.c	   199  
+; ..\appl\Source\swc_test.c	   200  #define swc_test_STOP_SEC_CODE
+; ..\appl\Source\swc_test.c	   201  #include "swc_test_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 ; ..\appl\Source\swc_test.c	   202  
-; ..\appl\Source\swc_test.c	   203  /**********************************************************************************************************************
-; ..\appl\Source\swc_test.c	   204   * DO NOT CHANGE THIS COMMENT!           << Start of function definition area >>            DO NOT CHANGE THIS COMMENT!
-; ..\appl\Source\swc_test.c	   205   *********************************************************************************************************************/
-; ..\appl\Source\swc_test.c	   206  
+; ..\appl\Source\swc_test.c	   203  
+; ..\appl\Source\swc_test.c	   204  /**********************************************************************************************************************
+; ..\appl\Source\swc_test.c	   205   * DO NOT CHANGE THIS COMMENT!           << Start of function definition area >>            DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\swc_test.c	   206   *********************************************************************************************************************/
 ; ..\appl\Source\swc_test.c	   207  
-; ..\appl\Source\swc_test.c	   208  /**********************************************************************************************************************
-; ..\appl\Source\swc_test.c	   209   * DO NOT CHANGE THIS COMMENT!           << End of function definition area >>              DO NOT CHANGE THIS COMMENT!
-; ..\appl\Source\swc_test.c	   210   *********************************************************************************************************************/
-; ..\appl\Source\swc_test.c	   211  
+; ..\appl\Source\swc_test.c	   208  
+; ..\appl\Source\swc_test.c	   209  /**********************************************************************************************************************
+; ..\appl\Source\swc_test.c	   210   * DO NOT CHANGE THIS COMMENT!           << End of function definition area >>              DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\swc_test.c	   211   *********************************************************************************************************************/
 ; ..\appl\Source\swc_test.c	   212  
-; ..\appl\Source\swc_test.c	   213  /**********************************************************************************************************************
-; ..\appl\Source\swc_test.c	   214   * DO NOT CHANGE THIS COMMENT!           << Start of removed code area >>                   DO NOT CHANGE THIS COMMENT!
-; ..\appl\Source\swc_test.c	   215   *********************************************************************************************************************/
-; ..\appl\Source\swc_test.c	   216  
+; ..\appl\Source\swc_test.c	   213  
+; ..\appl\Source\swc_test.c	   214  /**********************************************************************************************************************
+; ..\appl\Source\swc_test.c	   215   * DO NOT CHANGE THIS COMMENT!           << Start of removed code area >>                   DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\swc_test.c	   216   *********************************************************************************************************************/
 ; ..\appl\Source\swc_test.c	   217  
-; ..\appl\Source\swc_test.c	   218  /**********************************************************************************************************************
-; ..\appl\Source\swc_test.c	   219   * DO NOT CHANGE THIS COMMENT!           << End of removed code area >>                     DO NOT CHANGE THIS COMMENT!
-; ..\appl\Source\swc_test.c	   220   *********************************************************************************************************************/
-; ..\appl\Source\swc_test.c	   221  
-; ..\appl\Source\swc_test.c	   222  /**********************************************************************************************************************
-; ..\appl\Source\swc_test.c	   223   MISRA 2012 violations and justifications
-; ..\appl\Source\swc_test.c	   224   *********************************************************************************************************************/
-; ..\appl\Source\swc_test.c	   225  
-; ..\appl\Source\swc_test.c	   226  /* module specific MISRA deviations:
-; ..\appl\Source\swc_test.c	   227     MD_Rte_0624:  MISRA rule: Rule8.3
-; ..\appl\Source\swc_test.c	   228       Reason:     This MISRA violation is a consequence from the RTE requirements [SWS_Rte_01007] [SWS_Rte_01150].
-; ..\appl\Source\swc_test.c	   229                   The typedefs are never used in the same context.
-; ..\appl\Source\swc_test.c	   230       Risk:       No functional risk. Only a cast to uint8* is performed.
-; ..\appl\Source\swc_test.c	   231       Prevention: Not required.
-; ..\appl\Source\swc_test.c	   232  
-; ..\appl\Source\swc_test.c	   233     MD_Rte_3206:  MISRA rule: Rule2.7
-; ..\appl\Source\swc_test.c	   234       Reason:     The parameter are not used by the code in all possible code variants.
-; ..\appl\Source\swc_test.c	   235       Risk:       No functional risk.
-; ..\appl\Source\swc_test.c	   236       Prevention: Not required.
-; ..\appl\Source\swc_test.c	   237  
-; ..\appl\Source\swc_test.c	   238  */
+; ..\appl\Source\swc_test.c	   218  
+; ..\appl\Source\swc_test.c	   219  /**********************************************************************************************************************
+; ..\appl\Source\swc_test.c	   220   * DO NOT CHANGE THIS COMMENT!           << End of removed code area >>                     DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\swc_test.c	   221   *********************************************************************************************************************/
+; ..\appl\Source\swc_test.c	   222  
+; ..\appl\Source\swc_test.c	   223  /**********************************************************************************************************************
+; ..\appl\Source\swc_test.c	   224   MISRA 2012 violations and justifications
+; ..\appl\Source\swc_test.c	   225   *********************************************************************************************************************/
+; ..\appl\Source\swc_test.c	   226  
+; ..\appl\Source\swc_test.c	   227  /* module specific MISRA deviations:
+; ..\appl\Source\swc_test.c	   228     MD_Rte_0624:  MISRA rule: Rule8.3
+; ..\appl\Source\swc_test.c	   229       Reason:     This MISRA violation is a consequence from the RTE requirements [SWS_Rte_01007] [SWS_Rte_01150].
+; ..\appl\Source\swc_test.c	   230                   The typedefs are never used in the same context.
+; ..\appl\Source\swc_test.c	   231       Risk:       No functional risk. Only a cast to uint8* is performed.
+; ..\appl\Source\swc_test.c	   232       Prevention: Not required.
+; ..\appl\Source\swc_test.c	   233  
+; ..\appl\Source\swc_test.c	   234     MD_Rte_3206:  MISRA rule: Rule2.7
+; ..\appl\Source\swc_test.c	   235       Reason:     The parameter are not used by the code in all possible code variants.
+; ..\appl\Source\swc_test.c	   236       Risk:       No functional risk.
+; ..\appl\Source\swc_test.c	   237       Prevention: Not required.
+; ..\appl\Source\swc_test.c	   238  
+; ..\appl\Source\swc_test.c	   239  */
 
 	; Module end

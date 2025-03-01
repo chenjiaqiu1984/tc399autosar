@@ -14,7 +14,7 @@
 **                                                                            **
 **  VERSION   : 14.0.0                                                        **
 **                                                                            **
-**  DATE, TIME: 2025-03-01, 12:57:16          !!!IGNORE-LINE!!!               **
+**  DATE, TIME: 2025-03-01, 16:46:02          !!!IGNORE-LINE!!!               **
 **                                                                            **
 **  GENERATOR : Build b191017-0938            !!!IGNORE-LINE!!!               **
 **                                                                            **
@@ -1591,10 +1591,10 @@ static const Port_n_ConfigType Port_kConfiguration[] =
       PORT_PIN_LEVEL_LOW,/* Pin 8 */
       PORT_PIN_LEVEL_LOW,/* Pin 9 */
       PORT_PIN_LEVEL_LOW,/* Pin 10 */
-      PORT_PIN_LEVEL_LOW,/* Pin 11 */
-      PORT_PIN_LEVEL_LOW,/* Pin 12 */
-      PORT_PIN_LEVEL_LOW,/* Pin 13 */
-      PORT_PIN_LEVEL_LOW,/* Pin 14 */
+      PORT_PIN_LEVEL_HIGH,/* Pin 11 */
+      PORT_PIN_LEVEL_HIGH,/* Pin 12 */
+      PORT_PIN_LEVEL_HIGH,/* Pin 13 */
+      PORT_PIN_LEVEL_HIGH,/* Pin 14 */
       0U,/* Pin 15 */
       0U /* Reserved */
     },
@@ -2795,10 +2795,10 @@ static const Port_n_ConfigType Port_kConfiguration[] =
       PORT_PIN_LEVEL_LOW,/* Pin 1 */
       PORT_PIN_LEVEL_LOW,/* Pin 2 */
       PORT_PIN_LEVEL_LOW,/* Pin 3 */
-      PORT_PIN_LEVEL_LOW,/* Pin 4 */
-      PORT_PIN_LEVEL_LOW,/* Pin 5 */
-      PORT_PIN_LEVEL_LOW,/* Pin 6 */
-      PORT_PIN_LEVEL_LOW,/* Pin 7 */
+      PORT_PIN_LEVEL_HIGH,/* Pin 4 */
+      PORT_PIN_LEVEL_HIGH,/* Pin 5 */
+      PORT_PIN_LEVEL_HIGH,/* Pin 6 */
+      PORT_PIN_LEVEL_HIGH,/* Pin 7 */
       PORT_PIN_LEVEL_LOW,/* Pin 8 */
       PORT_PIN_LEVEL_LOW,/* Pin 9 */
       PORT_PIN_LEVEL_LOW,/* Pin 10 */

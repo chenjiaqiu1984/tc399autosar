@@ -17,7 +17,7 @@
 **                                                                            **
 **  VERSION   : 25.0.0                                                        **
 **                                                                            **
-**  DATE, TIME: 2025-03-01, 09:18:56          !!!IGNORE-LINE!!!               **
+**  DATE, TIME: 2025-03-01, 14:32:32          !!!IGNORE-LINE!!!               **
 **                                                                            **
 **  GENERATOR : Build b191017-0938            !!!IGNORE-LINE!!!               **
 **                                                                            **
@@ -83,15 +83,6 @@
                   <REQUIRED-ENTRYS>
                     <BSW-MODULE-ENTRY-REF-CONDITIONAL>
                       <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AURIX2G_McalLib/BswModuleEntrys/Mcal_SetBitAtomic</BSW-MODULE-ENTRY-REF>
-                    </BSW-MODULE-ENTRY-REF-CONDITIONAL>
-                  </REQUIRED-ENTRYS>
-                </BSW-MODULE-DEPENDENCY>
-                                <BSW-MODULE-DEPENDENCY>
-                  <SHORT-NAME>McalSafetyErrorDependency</SHORT-NAME>
-                  <TARGET-MODULE-ID>255</TARGET-MODULE-ID>
-                  <REQUIRED-ENTRYS>
-                    <BSW-MODULE-ENTRY-REF-CONDITIONAL>
-                      <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_Stub/BswModuleEntrys/Mcal_ReportSafetyError</BSW-MODULE-ENTRY-REF>
                     </BSW-MODULE-ENTRY-REF-CONDITIONAL>
                   </REQUIRED-ENTRYS>
                 </BSW-MODULE-DEPENDENCY>

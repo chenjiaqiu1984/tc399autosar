@@ -71,13 +71,13 @@ ctc W536: ["D:\Zonal\demo011\tasking\appl\Include\BrsHw.h" 317/1] unused static 
 Compiling Os_AccessCheck.c
 Compiling Os_Alarm.c
 Compiling Os_Application.c
-ctc W500: ["..\appl\Source\swc_test.c" 191/64] expression without effect
+ctc W500: ["..\appl\Source\swc_test.c" 192/64] expression without effect
 0 errors, 1 warnings
 Compiling Os_Barrier.c
+Compiling Os_Bit.c
 ctc W557: ["..\appl\Source\EcuM_Callout_Stubs.c" 125/12] possible infinite loop
 ctc W557: ["..\appl\Source\EcuM_Callout_Stubs.c" 638/12] possible infinite loop
 0 errors, 2 warnings
-Compiling Os_Bit.c
 Compiling Os_BitArray.c
 ctc W537: ["..\component\BswM\Implementation\BswM.c" 1203/9] unused variable "errorId"
 ctc W537: ["..\component\BswM\Implementation\BswM.c" 1283/9] unused variable "errorId"
@@ -164,21 +164,21 @@ Compiling Os_Trace.c
 Compiling Os_Trap.c
 Compiling Os_XSignal.c
 Compiling vstdlib.c
-Compiling Dio.c
 ctc W588: ["..\component\VStdLib\Implementation\vstdlib.c" 1475/13] dead assignment to "errorId" eliminated
 0 errors, 1 warnings
+Compiling Dio.c
 Compiling McalLib.c
 Compiling Mcu.c
 Compiling Mcu_17_TimerIp.c
 Compiling Port.c
+ctc W549: ["..\component\Os\Implementation\Os_XSignal.c" 926/55] condition is always false
+0 errors, 1 warnings
 ctc W544: ["..\component\Os\Implementation\Os_Task.c" 1220/22] unreachable code
 ctc W588: ["..\component\Os\Implementation\Os_Task.c" 569/10] dead assignment to "status" eliminated
 0 errors, 2 warnings
-ctc W549: ["..\component\Os\Implementation\Os_XSignal.c" 926/55] condition is always false
-0 errors, 1 warnings
 Linking to t399minisystem.elf
 
-Time consumed: 27297 ms
+Time consumed: 26714 ms
 **** End of build ****
 
 Tool info: 

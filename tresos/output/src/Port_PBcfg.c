@@ -14,7 +14,7 @@
 **                                                                            **
 **  VERSION   : 14.0.0                                                        **
 **                                                                            **
-**  DATE, TIME: 2025-03-01, 09:18:56          !!!IGNORE-LINE!!!               **
+**  DATE, TIME: 2025-03-01, 14:31:53          !!!IGNORE-LINE!!!               **
 **                                                                            **
 **  GENERATOR : Build b191017-0938            !!!IGNORE-LINE!!!               **
 **                                                                            **
@@ -475,6 +475,26 @@ static const Port_n_ConfigType Port_kConfiguration[] =
       (PORT_INPUT_LEVEL_CMOS_AUTOMOTIVE|PORT_PIN_PAD_STRENGTH_DEFAULT)/*Pin15*/
                   ),
     {/* Port pin run time mode changeable or not configuration */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 0 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 1 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 2 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 3 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 4 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 5 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 6 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 7 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 8 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 9 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 10 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 11 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 12 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 13 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 14 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 15 */
+    0U /* Reserved */
+
+    },
+    {/* Port pin run time mode changeable or not configuration */
       PORT_PIN_EMERGENCY_STOP_DISABLE,/* Pin 0 */
       PORT_PIN_EMERGENCY_STOP_DISABLE,/* Pin 1 */
       PORT_PIN_EMERGENCY_STOP_DISABLE,/* Pin 2 */
@@ -608,6 +628,26 @@ static const Port_n_ConfigType Port_kConfiguration[] =
       (PORT_INPUT_LEVEL_CMOS_AUTOMOTIVE|PORT_PIN_PAD_STRENGTH_DEFAULT),/*Pin14*/
       (PORT_INPUT_LEVEL_CMOS_AUTOMOTIVE|PORT_PIN_PAD_STRENGTH_DEFAULT)/*Pin15*/
                   ),
+    {/* Port pin run time mode changeable or not configuration */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 0 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 1 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 2 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 3 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 4 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 5 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 6 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 7 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 8 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 9 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 10 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 11 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 12 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 13 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 14 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 15 */
+    0U /* Reserved */
+
+    },
     {/* Port pin run time mode changeable or not configuration */
       PORT_PIN_EMERGENCY_STOP_DISABLE,/* Pin 0 */
       PORT_PIN_EMERGENCY_STOP_DISABLE,/* Pin 1 */
@@ -743,6 +783,26 @@ static const Port_n_ConfigType Port_kConfiguration[] =
       (PORT_INPUT_LEVEL_CMOS_AUTOMOTIVE|PORT_PIN_PAD_STRENGTH_DEFAULT)/*Pin15*/
                   ),
     {/* Port pin run time mode changeable or not configuration */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 0 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 1 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 2 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 3 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 4 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 5 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 6 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 7 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 8 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 9 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 10 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 11 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 12 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 13 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 14 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 15 */
+    0U /* Reserved */
+
+    },
+    {/* Port pin run time mode changeable or not configuration */
       PORT_PIN_EMERGENCY_STOP_DISABLE,/* Pin 0 */
       PORT_PIN_EMERGENCY_STOP_DISABLE,/* Pin 1 */
       PORT_PIN_EMERGENCY_STOP_DISABLE,/* Pin 2 */
@@ -873,6 +933,26 @@ static const Port_n_ConfigType Port_kConfiguration[] =
       (PORT_INPUT_LEVEL_CMOS_AUTOMOTIVE|PORT_PIN_PAD_STRENGTH_DEFAULT),/*Pin14*/
       (PORT_INPUT_LEVEL_CMOS_AUTOMOTIVE|PORT_PIN_PAD_STRENGTH_DEFAULT)/*Pin15*/
                   ),
+    {/* Port pin run time mode changeable or not configuration */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 0 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 1 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 2 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 3 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 4 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 5 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 6 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 7 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 8 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 9 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 10 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 11 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 12 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 13 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 14 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 15 */
+    0U /* Reserved */
+
+    },
     {/* Port pin run time mode changeable or not configuration */
       PORT_PIN_EMERGENCY_STOP_DISABLE,/* Pin 0 */
       PORT_PIN_EMERGENCY_STOP_DISABLE,/* Pin 1 */
@@ -1008,6 +1088,26 @@ static const Port_n_ConfigType Port_kConfiguration[] =
       (PORT_INPUT_LEVEL_CMOS_AUTOMOTIVE|PORT_PIN_PAD_STRENGTH_DEFAULT)/*Pin15*/
                   ),
     {/* Port pin run time mode changeable or not configuration */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 0 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 1 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 2 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 3 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 4 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 5 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 6 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 7 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 8 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 9 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 10 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 11 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 12 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 13 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 14 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 15 */
+    0U /* Reserved */
+
+    },
+    {/* Port pin run time mode changeable or not configuration */
       PORT_PIN_EMERGENCY_STOP_DISABLE,/* Pin 0 */
       PORT_PIN_EMERGENCY_STOP_DISABLE,/* Pin 1 */
       PORT_PIN_EMERGENCY_STOP_DISABLE,/* Pin 2 */
@@ -1099,6 +1199,26 @@ static const Port_n_ConfigType Port_kConfiguration[] =
       (PORT_PIN_PAD_DEFAULT),/*Pin14*/
       (PORT_PIN_PAD_DEFAULT)/*Pin15*/
                   ),
+    {/* Port pin run time mode changeable or not configuration */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 0 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 1 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 2 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 3 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 4 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 5 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 6 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 7 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 8 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 9 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 10 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 11 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 12 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 13 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 14 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 15 */
+    0U /* Reserved */
+
+    },
     {/* Port pin run time mode changeable or not configuration */
       PORT_PIN_EMERGENCY_STOP_DISABLE,/* Pin 0 */
       PORT_PIN_EMERGENCY_STOP_DISABLE,/* Pin 1 */
@@ -1230,6 +1350,26 @@ static const Port_n_ConfigType Port_kConfiguration[] =
       (PORT_INPUT_LEVEL_CMOS_AUTOMOTIVE|PORT_PIN_PAD_STRENGTH_DEFAULT),/*Pin14*/
       (PORT_INPUT_LEVEL_CMOS_AUTOMOTIVE|PORT_PIN_PAD_STRENGTH_DEFAULT)/*Pin15*/
                   ),
+    {/* Port pin run time mode changeable or not configuration */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 0 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 1 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 2 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 3 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 4 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 5 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 6 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 7 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 8 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 9 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 10 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 11 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 12 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 13 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 14 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 15 */
+    0U /* Reserved */
+
+    },
     {/* Port pin run time mode changeable or not configuration */
       PORT_PIN_EMERGENCY_STOP_DISABLE,/* Pin 0 */
       PORT_PIN_EMERGENCY_STOP_DISABLE,/* Pin 1 */
@@ -1365,6 +1505,26 @@ static const Port_n_ConfigType Port_kConfiguration[] =
       (PORT_INPUT_LEVEL_CMOS_AUTOMOTIVE|PORT_PIN_PAD_STRENGTH_DEFAULT)/*Pin15*/
                   ),
     {/* Port pin run time mode changeable or not configuration */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 0 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 1 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 2 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 3 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 4 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 5 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 6 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 7 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 8 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 9 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 10 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 11 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 12 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 13 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 14 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 15 */
+    0U /* Reserved */
+
+    },
+    {/* Port pin run time mode changeable or not configuration */
       PORT_PIN_EMERGENCY_STOP_DISABLE,/* Pin 0 */
       PORT_PIN_EMERGENCY_STOP_DISABLE,/* Pin 1 */
       PORT_PIN_EMERGENCY_STOP_DISABLE,/* Pin 2 */
@@ -1496,6 +1656,26 @@ static const Port_n_ConfigType Port_kConfiguration[] =
       (PORT_INPUT_LEVEL_CMOS_AUTOMOTIVE|PORT_PIN_PAD_STRENGTH_DEFAULT)/*Pin15*/
                   ),
     {/* Port pin run time mode changeable or not configuration */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 0 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 1 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 2 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 3 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 4 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 5 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 6 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 7 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 8 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 9 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 10 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 11 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 12 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 13 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 14 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 15 */
+    0U /* Reserved */
+
+    },
+    {/* Port pin run time mode changeable or not configuration */
       PORT_PIN_EMERGENCY_STOP_DISABLE,/* Pin 0 */
       PORT_PIN_EMERGENCY_STOP_DISABLE,/* Pin 1 */
       PORT_PIN_EMERGENCY_STOP_DISABLE,/* Pin 2 */
@@ -1621,6 +1801,26 @@ static const Port_n_ConfigType Port_kConfiguration[] =
       (PORT_PIN_PAD_DEFAULT)/*Pin15*/
                   ),
     {/* Port pin run time mode changeable or not configuration */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 0 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 1 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 2 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 3 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 4 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 5 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 6 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 7 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 8 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 9 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 10 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 11 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 12 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 13 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 14 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 15 */
+    0U /* Reserved */
+
+    },
+    {/* Port pin run time mode changeable or not configuration */
       PORT_PIN_EMERGENCY_STOP_DISABLE,/* Pin 0 */
       PORT_PIN_EMERGENCY_STOP_DISABLE,/* Pin 1 */
       PORT_PIN_EMERGENCY_STOP_DISABLE,/* Pin 2 */
@@ -1730,6 +1930,26 @@ static const Port_n_ConfigType Port_kConfiguration[] =
       (PORT_PIN_PAD_DEFAULT),/*Pin14*/
       (PORT_PIN_PAD_DEFAULT)/*Pin15*/
                   ),
+    {/* Port pin run time mode changeable or not configuration */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 0 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 1 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 2 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 3 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 4 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 5 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 6 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 7 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 8 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 9 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 10 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 11 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 12 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 13 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 14 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 15 */
+    0U /* Reserved */
+
+    },
     {/* Port pin run time mode changeable or not configuration */
       PORT_PIN_EMERGENCY_STOP_DISABLE,/* Pin 0 */
       PORT_PIN_EMERGENCY_STOP_DISABLE,/* Pin 1 */
@@ -1853,6 +2073,26 @@ static const Port_n_ConfigType Port_kConfiguration[] =
       (PORT_PIN_PAD_DEFAULT)/*Pin15*/
                   ),
     {/* Port pin run time mode changeable or not configuration */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 0 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 1 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 2 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 3 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 4 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 5 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 6 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 7 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 8 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 9 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 10 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 11 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 12 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 13 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 14 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 15 */
+    0U /* Reserved */
+
+    },
+    {/* Port pin run time mode changeable or not configuration */
       PORT_PIN_EMERGENCY_STOP_DISABLE,/* Pin 0 */
       PORT_PIN_EMERGENCY_STOP_DISABLE,/* Pin 1 */
       PORT_PIN_EMERGENCY_STOP_DISABLE,/* Pin 2 */
@@ -1962,6 +2202,26 @@ static const Port_n_ConfigType Port_kConfiguration[] =
       (PORT_PIN_PAD_DEFAULT),/*Pin14*/
       (PORT_PIN_PAD_DEFAULT)/*Pin15*/
                   ),
+    {/* Port pin run time mode changeable or not configuration */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 0 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 1 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 2 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 3 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 4 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 5 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 6 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 7 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 8 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 9 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 10 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 11 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 12 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 13 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 14 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 15 */
+    0U /* Reserved */
+
+    },
     {/* Port pin run time mode changeable or not configuration */
       PORT_PIN_EMERGENCY_STOP_DISABLE,/* Pin 0 */
       PORT_PIN_EMERGENCY_STOP_DISABLE,/* Pin 1 */
@@ -2097,6 +2357,26 @@ static const Port_n_ConfigType Port_kConfiguration[] =
       (PORT_INPUT_LEVEL_CMOS_AUTOMOTIVE|PORT_PIN_PAD_STRENGTH_DEFAULT)/*Pin15*/
                   ),
     {/* Port pin run time mode changeable or not configuration */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 0 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 1 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 2 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 3 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 4 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 5 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 6 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 7 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 8 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 9 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 10 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 11 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 12 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 13 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 14 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 15 */
+    0U /* Reserved */
+
+    },
+    {/* Port pin run time mode changeable or not configuration */
       PORT_PIN_EMERGENCY_STOP_DISABLE,/* Pin 0 */
       PORT_PIN_EMERGENCY_STOP_DISABLE,/* Pin 1 */
       PORT_PIN_EMERGENCY_STOP_DISABLE,/* Pin 2 */
@@ -2231,6 +2511,26 @@ static const Port_n_ConfigType Port_kConfiguration[] =
       (PORT_INPUT_LEVEL_CMOS_AUTOMOTIVE|PORT_PIN_PAD_STRENGTH_DEFAULT)/*Pin15*/
                   ),
     {/* Port pin run time mode changeable or not configuration */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 0 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 1 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 2 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 3 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 4 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 5 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 6 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 7 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 8 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 9 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 10 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 11 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 12 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 13 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 14 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 15 */
+    0U /* Reserved */
+
+    },
+    {/* Port pin run time mode changeable or not configuration */
       PORT_PIN_EMERGENCY_STOP_DISABLE,/* Pin 0 */
       PORT_PIN_EMERGENCY_STOP_DISABLE,/* Pin 1 */
       PORT_PIN_EMERGENCY_STOP_DISABLE,/* Pin 2 */
@@ -2319,6 +2619,26 @@ static const Port_n_ConfigType Port_kConfiguration[] =
       (PORT_PIN_PAD_DEFAULT),/*Pin14*/
       (PORT_PIN_PAD_DEFAULT)/*Pin15*/
                   ),
+    {/* Port pin run time mode changeable or not configuration */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 0 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 1 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 2 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 3 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 4 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 5 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 6 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 7 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 8 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 9 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 10 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 11 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 12 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 13 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 14 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 15 */
+    0U /* Reserved */
+
+    },
     {/* Port pin run time mode changeable or not configuration */
       PORT_PIN_EMERGENCY_STOP_DISABLE,/* Pin 0 */
       PORT_PIN_EMERGENCY_STOP_DISABLE,/* Pin 1 */
@@ -2454,6 +2774,26 @@ static const Port_n_ConfigType Port_kConfiguration[] =
       (PORT_INPUT_LEVEL_CMOS_AUTOMOTIVE|PORT_PIN_PAD_STRENGTH_DEFAULT)/*Pin15*/
                   ),
     {/* Port pin run time mode changeable or not configuration */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 0 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 1 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 2 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 3 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 4 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 5 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 6 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 7 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 8 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 9 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 10 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 11 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 12 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 13 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 14 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 15 */
+    0U /* Reserved */
+
+    },
+    {/* Port pin run time mode changeable or not configuration */
       PORT_PIN_EMERGENCY_STOP_DISABLE,/* Pin 0 */
       PORT_PIN_EMERGENCY_STOP_DISABLE,/* Pin 1 */
       PORT_PIN_EMERGENCY_STOP_DISABLE,/* Pin 2 */
@@ -2588,6 +2928,26 @@ static const Port_n_ConfigType Port_kConfiguration[] =
       (PORT_INPUT_LEVEL_CMOS_AUTOMOTIVE|PORT_PIN_PAD_STRENGTH_DEFAULT)/*Pin15*/
                   ),
     {/* Port pin run time mode changeable or not configuration */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 0 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 1 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 2 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 3 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 4 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 5 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 6 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 7 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 8 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 9 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 10 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 11 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 12 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 13 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 14 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 15 */
+    0U /* Reserved */
+
+    },
+    {/* Port pin run time mode changeable or not configuration */
       PORT_PIN_EMERGENCY_STOP_DISABLE,/* Pin 0 */
       PORT_PIN_EMERGENCY_STOP_DISABLE,/* Pin 1 */
       PORT_PIN_EMERGENCY_STOP_DISABLE,/* Pin 2 */
@@ -2697,6 +3057,26 @@ static const Port_n_ConfigType Port_kConfiguration[] =
       (PORT_PIN_PAD_DEFAULT),/*Pin14*/
       (PORT_PIN_PAD_DEFAULT)/*Pin15*/
                   ),
+    {/* Port pin run time mode changeable or not configuration */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 0 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 1 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 2 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 3 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 4 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 5 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 6 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 7 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 8 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 9 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 10 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 11 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 12 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 13 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 14 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 15 */
+    0U /* Reserved */
+
+    },
     {/* Port pin run time mode changeable or not configuration */
       PORT_PIN_EMERGENCY_STOP_DISABLE,/* Pin 0 */
       PORT_PIN_EMERGENCY_STOP_DISABLE,/* Pin 1 */
@@ -2832,6 +3212,26 @@ static const Port_n_ConfigType Port_kConfiguration[] =
       (PORT_INPUT_LEVEL_CMOS_AUTOMOTIVE|PORT_PIN_PAD_STRENGTH_DEFAULT)/*Pin15*/
                   ),
     {/* Port pin run time mode changeable or not configuration */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 0 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 1 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 2 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 3 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 4 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 5 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 6 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 7 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 8 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 9 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 10 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 11 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 12 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 13 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 14 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 15 */
+    0U /* Reserved */
+
+    },
+    {/* Port pin run time mode changeable or not configuration */
       PORT_PIN_EMERGENCY_STOP_DISABLE,/* Pin 0 */
       PORT_PIN_EMERGENCY_STOP_DISABLE,/* Pin 1 */
       PORT_PIN_EMERGENCY_STOP_DISABLE,/* Pin 2 */
@@ -2932,6 +3332,26 @@ static const Port_n_ConfigType Port_kConfiguration[] =
       (PORT_PIN_PAD_DEFAULT),/*Pin14*/
       (PORT_PIN_PAD_DEFAULT)/*Pin15*/
                   ),
+    {/* Port pin run time mode changeable or not configuration */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 0 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 1 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 2 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 3 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 4 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 5 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 6 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 7 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 8 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 9 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 10 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 11 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 12 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 13 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 14 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 15 */
+    0U /* Reserved */
+
+    },
     {/* Port pin run time mode changeable or not configuration */
       PORT_PIN_EMERGENCY_STOP_DISABLE,/* Pin 0 */
       PORT_PIN_EMERGENCY_STOP_DISABLE,/* Pin 1 */
@@ -3067,6 +3487,26 @@ static const Port_n_ConfigType Port_kConfiguration[] =
       (PORT_INPUT_LEVEL_CMOS_AUTOMOTIVE|PORT_PIN_PAD_STRENGTH_DEFAULT)/*Pin15*/
                   ),
     {/* Port pin run time mode changeable or not configuration */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 0 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 1 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 2 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 3 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 4 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 5 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 6 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 7 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 8 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 9 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 10 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 11 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 12 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 13 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 14 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 15 */
+    0U /* Reserved */
+
+    },
+    {/* Port pin run time mode changeable or not configuration */
       PORT_PIN_EMERGENCY_STOP_DISABLE,/* Pin 0 */
       PORT_PIN_EMERGENCY_STOP_DISABLE,/* Pin 1 */
       PORT_PIN_EMERGENCY_STOP_DISABLE,/* Pin 2 */
@@ -3179,6 +3619,26 @@ static const Port_n_ConfigType Port_kConfiguration[] =
       (PORT_PIN_PAD_DEFAULT),/*Pin14*/
       (PORT_PIN_PAD_DEFAULT)/*Pin15*/
                   ),
+    {/* Port pin run time mode changeable or not configuration */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 0 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 1 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 2 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 3 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 4 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 5 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 6 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 7 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 8 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 9 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 10 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 11 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 12 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 13 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 14 */
+    PORT_PIN_MODE_NOT_CHANGEABLE,/* Pin 15 */
+    0U /* Reserved */
+
+    },
     {/* Port pin run time mode changeable or not configuration */
       PORT_PIN_EMERGENCY_STOP_DISABLE,/* Pin 0 */
       PORT_PIN_EMERGENCY_STOP_DISABLE,/* Pin 1 */

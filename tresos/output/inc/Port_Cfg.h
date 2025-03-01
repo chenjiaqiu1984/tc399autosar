@@ -14,7 +14,7 @@
 **                                                                            **
 **  VERSION   : 11.0.0                                                         **
 **                                                                            **
-**  DATE, TIME: 2025-03-01, 09:18:58              !!!IGNORE-LINE!!!           **
+**  DATE, TIME: 2025-03-01, 14:31:56              !!!IGNORE-LINE!!!           **
 **                                                                            **
 **  GENERATOR : Build b191017-0938                !!!IGNORE-LINE!!!           ** 
 **                                                                            **
@@ -74,7 +74,7 @@ Configuration: PORT_SET_PIN_MODE_API
 - if STD_OFF, Function Port_SetPinMode is not available 
 */
 
-#define PORT_SET_PIN_MODE_API       (STD_OFF)
+#define PORT_SET_PIN_MODE_API       (STD_ON)
 /*
 Configuration: PORT_SET_PIN_DIRECTION_API
 - if STD_ON,  Function Port_SetPinDirection is available  
@@ -93,7 +93,7 @@ Configuration: PortSafetyEnable
 - if STD_ON, Safety is Enabled 
 - if STD_OFF, Safety  is Disabled 
 */
-#define PORT_SAFETY_ENABLE    (STD_ON)
+#define PORT_SAFETY_ENABLE    (STD_OFF)
 /*
 Configuration: PortInitCheckApi  
 - if STD_ON, PortInitCheckApi is available 
@@ -103,7 +103,7 @@ Configuration: PortInitCheckApi
 
 /*Macro for the constants*/
 
-#define PORT_DATA_OFS_EMER                (7U)
+#define PORT_DATA_OFS_EMER                (8U)
 
 
 /* Definition to specify the ports available on the microcontroller

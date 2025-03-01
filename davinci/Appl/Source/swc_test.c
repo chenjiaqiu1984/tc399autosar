@@ -55,6 +55,7 @@
  *********************************************************************************************************************/
 
 #include "Rte_swc_test.h"
+#include "Dio.h"
 
 
 /**********************************************************************************************************************
@@ -148,7 +149,7 @@ FUNC(void, swc_test_CODE) swc_test_500ms(void) /* PRQA S 0624, 3206 */ /* MD_Rte
  * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
  * Symbol: swc_test_500ms
  *********************************************************************************************************************/
-
+	Dio_FlipChannel(DioConf_DioChannel_DioChannel_33_4);
 
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!

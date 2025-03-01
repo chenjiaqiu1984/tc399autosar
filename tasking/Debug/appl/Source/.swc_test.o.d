@@ -112,6 +112,100 @@ appl\Source\swc_test.o :	"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_OsSect
 "D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_OsSectionsInt.h" :
 appl\Source\swc_test.o :	"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_StacksInt.h"
 "D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_StacksInt.h" :
+appl\Source\swc_test.o :	"D:\Zonal\demo011\tasking\mcal\Dio\ssc\inc\Dio.h"
+"D:\Zonal\demo011\tasking\mcal\Dio\ssc\inc\Dio.h" :
+appl\Source\swc_test.o :	"D:\Zonal\demo011\tasking\component\_Common\Implementation\Std_Types.h"
+"D:\Zonal\demo011\tasking\component\_Common\Implementation\Std_Types.h" :
+appl\Source\swc_test.o :	"D:\Zonal\demo011\tasking\appl\GenData\inc\Dio_Cfg.h"
+"D:\Zonal\demo011\tasking\appl\GenData\inc\Dio_Cfg.h" :
+appl\Source\swc_test.o :	"D:\Zonal\demo011\tasking\component\Mcal_Tc3xx\Implementation\Dio_MemMap.h"
+"D:\Zonal\demo011\tasking\component\Mcal_Tc3xx\Implementation\Dio_MemMap.h" :
+appl\Source\swc_test.o :	"D:\Zonal\demo011\tasking\appl\Include\MemMap.h"
+"D:\Zonal\demo011\tasking\appl\Include\MemMap.h" :
+appl\Source\swc_test.o :	"D:\Zonal\demo011\tasking\appl\GenData\Rte_MemMap.h"
+"D:\Zonal\demo011\tasking\appl\GenData\Rte_MemMap.h" :
+appl\Source\swc_test.o :	"D:\Zonal\demo011\tasking\appl\Include\Dem_MemMap.h"
+"D:\Zonal\demo011\tasking\appl\Include\Dem_MemMap.h" :
+appl\Source\swc_test.o :	"D:\Zonal\demo011\tasking\appl\Include\FiM_MemMap.h"
+"D:\Zonal\demo011\tasking\appl\Include\FiM_MemMap.h" :
+appl\Source\swc_test.o :	"D:\Zonal\demo011\tasking\appl\GenData\WdgM_OsMemMap.h"
+"D:\Zonal\demo011\tasking\appl\GenData\WdgM_OsMemMap.h" :
+appl\Source\swc_test.o :	"D:\Zonal\demo011\tasking\appl\Include\MemMap_Common.h"
+"D:\Zonal\demo011\tasking\appl\Include\MemMap_Common.h" :
+appl\Source\swc_test.o :	"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap.h"
+"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap.h" :
+appl\Source\swc_test.o :	"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_OsCodeInt.h"
+"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_OsCodeInt.h" :
+appl\Source\swc_test.o :	"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_OsSectionsInt.h"
+"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_OsSectionsInt.h" :
+appl\Source\swc_test.o :	"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_StacksInt.h"
+"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_StacksInt.h" :
+appl\Source\swc_test.o :	"D:\Zonal\demo011\tasking\component\Mcal_Tc3xx\Implementation\Dio_MemMap.h"
+"D:\Zonal\demo011\tasking\component\Mcal_Tc3xx\Implementation\Dio_MemMap.h" :
+appl\Source\swc_test.o :	"D:\Zonal\demo011\tasking\appl\Include\MemMap.h"
+"D:\Zonal\demo011\tasking\appl\Include\MemMap.h" :
+appl\Source\swc_test.o :	"D:\Zonal\demo011\tasking\appl\GenData\Rte_MemMap.h"
+"D:\Zonal\demo011\tasking\appl\GenData\Rte_MemMap.h" :
+appl\Source\swc_test.o :	"D:\Zonal\demo011\tasking\appl\Include\Dem_MemMap.h"
+"D:\Zonal\demo011\tasking\appl\Include\Dem_MemMap.h" :
+appl\Source\swc_test.o :	"D:\Zonal\demo011\tasking\appl\Include\FiM_MemMap.h"
+"D:\Zonal\demo011\tasking\appl\Include\FiM_MemMap.h" :
+appl\Source\swc_test.o :	"D:\Zonal\demo011\tasking\appl\GenData\WdgM_OsMemMap.h"
+"D:\Zonal\demo011\tasking\appl\GenData\WdgM_OsMemMap.h" :
+appl\Source\swc_test.o :	"D:\Zonal\demo011\tasking\appl\Include\MemMap_Common.h"
+"D:\Zonal\demo011\tasking\appl\Include\MemMap_Common.h" :
+appl\Source\swc_test.o :	"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap.h"
+"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap.h" :
+appl\Source\swc_test.o :	"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_OsCodeInt.h"
+"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_OsCodeInt.h" :
+appl\Source\swc_test.o :	"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_OsSectionsInt.h"
+"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_OsSectionsInt.h" :
+appl\Source\swc_test.o :	"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_StacksInt.h"
+"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_StacksInt.h" :
+appl\Source\swc_test.o :	"D:\Zonal\demo011\tasking\component\Mcal_Tc3xx\Implementation\Dio_MemMap.h"
+"D:\Zonal\demo011\tasking\component\Mcal_Tc3xx\Implementation\Dio_MemMap.h" :
+appl\Source\swc_test.o :	"D:\Zonal\demo011\tasking\appl\Include\MemMap.h"
+"D:\Zonal\demo011\tasking\appl\Include\MemMap.h" :
+appl\Source\swc_test.o :	"D:\Zonal\demo011\tasking\appl\GenData\Rte_MemMap.h"
+"D:\Zonal\demo011\tasking\appl\GenData\Rte_MemMap.h" :
+appl\Source\swc_test.o :	"D:\Zonal\demo011\tasking\appl\Include\Dem_MemMap.h"
+"D:\Zonal\demo011\tasking\appl\Include\Dem_MemMap.h" :
+appl\Source\swc_test.o :	"D:\Zonal\demo011\tasking\appl\Include\FiM_MemMap.h"
+"D:\Zonal\demo011\tasking\appl\Include\FiM_MemMap.h" :
+appl\Source\swc_test.o :	"D:\Zonal\demo011\tasking\appl\GenData\WdgM_OsMemMap.h"
+"D:\Zonal\demo011\tasking\appl\GenData\WdgM_OsMemMap.h" :
+appl\Source\swc_test.o :	"D:\Zonal\demo011\tasking\appl\Include\MemMap_Common.h"
+"D:\Zonal\demo011\tasking\appl\Include\MemMap_Common.h" :
+appl\Source\swc_test.o :	"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap.h"
+"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap.h" :
+appl\Source\swc_test.o :	"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_OsCodeInt.h"
+"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_OsCodeInt.h" :
+appl\Source\swc_test.o :	"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_OsSectionsInt.h"
+"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_OsSectionsInt.h" :
+appl\Source\swc_test.o :	"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_StacksInt.h"
+"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_StacksInt.h" :
+appl\Source\swc_test.o :	"D:\Zonal\demo011\tasking\component\Mcal_Tc3xx\Implementation\Dio_MemMap.h"
+"D:\Zonal\demo011\tasking\component\Mcal_Tc3xx\Implementation\Dio_MemMap.h" :
+appl\Source\swc_test.o :	"D:\Zonal\demo011\tasking\appl\Include\MemMap.h"
+"D:\Zonal\demo011\tasking\appl\Include\MemMap.h" :
+appl\Source\swc_test.o :	"D:\Zonal\demo011\tasking\appl\GenData\Rte_MemMap.h"
+"D:\Zonal\demo011\tasking\appl\GenData\Rte_MemMap.h" :
+appl\Source\swc_test.o :	"D:\Zonal\demo011\tasking\appl\Include\Dem_MemMap.h"
+"D:\Zonal\demo011\tasking\appl\Include\Dem_MemMap.h" :
+appl\Source\swc_test.o :	"D:\Zonal\demo011\tasking\appl\Include\FiM_MemMap.h"
+"D:\Zonal\demo011\tasking\appl\Include\FiM_MemMap.h" :
+appl\Source\swc_test.o :	"D:\Zonal\demo011\tasking\appl\GenData\WdgM_OsMemMap.h"
+"D:\Zonal\demo011\tasking\appl\GenData\WdgM_OsMemMap.h" :
+appl\Source\swc_test.o :	"D:\Zonal\demo011\tasking\appl\Include\MemMap_Common.h"
+"D:\Zonal\demo011\tasking\appl\Include\MemMap_Common.h" :
+appl\Source\swc_test.o :	"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap.h"
+"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap.h" :
+appl\Source\swc_test.o :	"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_OsCodeInt.h"
+"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_OsCodeInt.h" :
+appl\Source\swc_test.o :	"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_OsSectionsInt.h"
+"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_OsSectionsInt.h" :
+appl\Source\swc_test.o :	"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_StacksInt.h"
+"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_StacksInt.h" :
 appl\Source\swc_test.o :	"D:\Zonal\demo011\tasking\appl\GenData\Components\swc_test_MemMap.h"
 "D:\Zonal\demo011\tasking\appl\GenData\Components\swc_test_MemMap.h" :
 appl\Source\swc_test.o :	"D:\Zonal\demo011\tasking\appl\Include\MemMap.h"

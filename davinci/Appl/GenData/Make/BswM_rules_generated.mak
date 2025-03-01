@@ -21,7 +21,7 @@
  #  FILE DESCRIPTION
  #  -------------------------------------------------------------------------------------------------------------------
  #              File: BswM_rules_generated.mak
- #   Generation Time: 2025-03-01 12:57:20
+ #   Generation Time: 2025-03-01 16:46:06
  #           Project: tc399demo - Version 1.0
  #          Delivery: CBD2100010_D00
  #      Tool Version: DaVinci Configurator (beta) 5.22.45 SP3
