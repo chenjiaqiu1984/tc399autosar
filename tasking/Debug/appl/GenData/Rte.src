@@ -1,0 +1,3256 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 21092262 SN 73118428"
+	.compiler_invocation	"ctc --dep-file=appl\\GenData\\.Rte.o.d --fp-model=c,f,l,n,r,S,T,z -D__CPU__=tc39xb -D__CPU_TC39XB__ --core=tc1.6.2 --iso=99 -DBRS_COMP_TASKING -ID:\\Zonal\\demo011\\tasking -ID:\\Zonal\\testdemo\\taskingdemo\\demo001 -ID:\\Zonal\\demo011\\tasking -ID:\\Zonal\\demo011\\tasking\\appl -ID:\\Zonal\\demo011\\tasking\\appl\\GenData -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\Components -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\ContractPhase -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\inc -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\src -ID:\\Zonal\\demo011\\tasking\\appl\\Include -ID:\\Zonal\\demo011\\tasking\\appl\\Source -ID:\\Zonal\\demo011\\tasking\\appl\\Source\\swc_test -ID:\\Zonal\\demo011\\tasking\\component -ID:\\Zonal\\demo011\\tasking\\component\\_Common -ID:\\Zonal\\demo011\\tasking\\component\\_Common\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\BswM -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\EcuM -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\Os -ID:\\Zonal\\demo011\\tasking\\component\\Os\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\Os\\BSWMD\\Os -ID:\\Zonal\\demo011\\tasking\\component\\Os\\BSWMD\\Os\\TC39xQ -ID:\\Zonal\\demo011\\tasking\\component\\Os\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\Os\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\Os\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug -ID:\\Zonal\\demo011\\tasking\\Debug\\appl -ID:\\Zonal\\demo011\\tasking\\Debug\\appl\\GenData -ID:\\Zonal\\demo011\\tasking\\Debug\\appl\\GenData\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\appl\\Source -ID:\\Zonal\\demo011\\tasking\\Debug\\component -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\BswM -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\BswM\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\EcuM -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\EcuM\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\Os -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\Os\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\VStdLib -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\VStdLib\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Dio -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Dio\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Dio\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\McalLib -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\McalLib\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\McalLib\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Mcu -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Mcu\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Mcu\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Port -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Port\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Port\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Platform -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Platform\\AS440 -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Sfr -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Sfr\\TC39xB -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Sfr\\TC39xB\\_Reg -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc\\inc\\AS440 -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal\\Port -ID:\\Zonal\\demo011\\tasking\\mcal\\Port\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\Port\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\Port\\ssc\\src -g2 --make-target=appl\\GenData\\Rte.o -t2 --language=-gcc,-volatile,+strings,-kanji --default-near-size=0 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o appl\\GenData\\Rte.src ..\\appl\\GenData\\Rte.c"
+	.compiler_name		"ctc"
+	;source	'..\\appl\\GenData\\Rte.c'
+
+	
+$TC162
+	
+	.sdecl	'.text.Rte.Rte_GetInternalModeIndex_BswM_ESH_Mode',code,cluster('Rte_GetInternalModeIndex_BswM_ESH_Mode')
+	.sect	'.text.Rte.Rte_GetInternalModeIndex_BswM_ESH_Mode'
+	.align	2
+	
+	.global	Rte_GetInternalModeIndex_BswM_ESH_Mode
+
+; ..\appl\GenData\Rte.c	     1  /**********************************************************************************************************************
+; ..\appl\GenData\Rte.c	     2   *  COPYRIGHT
+; ..\appl\GenData\Rte.c	     3   *  -------------------------------------------------------------------------------------------------------------------
+; ..\appl\GenData\Rte.c	     4   *  \verbatim
+; ..\appl\GenData\Rte.c	     5   *
+; ..\appl\GenData\Rte.c	     6   *                This software is copyright protected and proprietary to Vector Informatik GmbH.
+; ..\appl\GenData\Rte.c	     7   *                Vector Informatik GmbH grants to you only those rights as set out in the license conditions.
+; ..\appl\GenData\Rte.c	     8   *                All other rights remain with Vector Informatik GmbH.
+; ..\appl\GenData\Rte.c	     9   *  \endverbatim
+; ..\appl\GenData\Rte.c	    10   *  -------------------------------------------------------------------------------------------------------------------
+; ..\appl\GenData\Rte.c	    11   *  FILE DESCRIPTION
+; ..\appl\GenData\Rte.c	    12   *  -------------------------------------------------------------------------------------------------------------------
+; ..\appl\GenData\Rte.c	    13   *             File:  Rte.c
+; ..\appl\GenData\Rte.c	    14   *           Config:  tc399demo.dpa
+; ..\appl\GenData\Rte.c	    15   *      ECU-Project:  tc399demo
+; ..\appl\GenData\Rte.c	    16   *
+; ..\appl\GenData\Rte.c	    17   *        Generator:  MICROSAR RTE Generator Version 4.23.0
+; ..\appl\GenData\Rte.c	    18   *                    RTE Core Version 1.23.0
+; ..\appl\GenData\Rte.c	    19   *          License:  CBD2100010
+; ..\appl\GenData\Rte.c	    20   *
+; ..\appl\GenData\Rte.c	    21   *      Description:  RTE implementation file
+; ..\appl\GenData\Rte.c	    22   *********************************************************************************************************************/
+; ..\appl\GenData\Rte.c	    23  
+; ..\appl\GenData\Rte.c	    24  /**********************************************************************************************************************
+; ..\appl\GenData\Rte.c	    25   *  INCLUDES
+; ..\appl\GenData\Rte.c	    26   *********************************************************************************************************************/
+; ..\appl\GenData\Rte.c	    27  
+; ..\appl\GenData\Rte.c	    28  /* PRQA S 0777, 0779, 0857 EOF */ /* MD_MSR_Rule5.1, MD_MSR_Rule5.2, MD_MSR_Dir1.1 */
+; ..\appl\GenData\Rte.c	    29  
+; ..\appl\GenData\Rte.c	    30  #define RTE_CORE
+; ..\appl\GenData\Rte.c	    31  #include "Os.h" /* PRQA S 0828, 0883 */ /* MD_MSR_Dir1.1, MD_Rte_Os */
+; ..\appl\GenData\Rte.c	    32  #include "Rte_Type.h"
+; ..\appl\GenData\Rte.c	    33  #include "Rte_Main.h"
+; ..\appl\GenData\Rte.c	    34  
+; ..\appl\GenData\Rte.c	    35  #include "Rte_BswM.h"
+; ..\appl\GenData\Rte.c	    36  #include "Rte_EcuM.h"
+; ..\appl\GenData\Rte.c	    37  #include "Rte_Os_OsCore0_swc.h"
+; ..\appl\GenData\Rte.c	    38  #include "Rte_swc_test.h"
+; ..\appl\GenData\Rte.c	    39  #include "SchM_BswM.h"
+; ..\appl\GenData\Rte.c	    40  #include "SchM_Dio.h"
+; ..\appl\GenData\Rte.c	    41  #include "SchM_EcuM.h"
+; ..\appl\GenData\Rte.c	    42  #include "SchM_McalLib.h"
+; ..\appl\GenData\Rte.c	    43  #include "SchM_Mcu.h"
+; ..\appl\GenData\Rte.c	    44  #include "SchM_Port.h"
+; ..\appl\GenData\Rte.c	    45  
+; ..\appl\GenData\Rte.c	    46  #include "Rte_Hook.h"
+; ..\appl\GenData\Rte.c	    47  
+; ..\appl\GenData\Rte.c	    48  /* AUTOSAR 3.x compatibility */
+; ..\appl\GenData\Rte.c	    49  #if !defined (RTE_LOCAL)
+; ..\appl\GenData\Rte.c	    50  # define RTE_LOCAL static
+; ..\appl\GenData\Rte.c	    51  #endif
+; ..\appl\GenData\Rte.c	    52  
+; ..\appl\GenData\Rte.c	    53  
+; ..\appl\GenData\Rte.c	    54  /**********************************************************************************************************************
+; ..\appl\GenData\Rte.c	    55   * API for enable / disable interrupts global
+; ..\appl\GenData\Rte.c	    56   *********************************************************************************************************************/
+; ..\appl\GenData\Rte.c	    57  
+; ..\appl\GenData\Rte.c	    58  #if defined(osDisableGlobalKM) && !defined(RTE_DISABLE_ENHANCED_INTERRUPT_LOCK_API)
+; ..\appl\GenData\Rte.c	    59  # define Rte_DisableAllInterrupts() osDisableGlobalKM()   /* MICROSAR OS */
+; ..\appl\GenData\Rte.c	    60  #else
+; ..\appl\GenData\Rte.c	    61  # define Rte_DisableAllInterrupts() DisableAllInterrupts()   /* AUTOSAR OS */
+; ..\appl\GenData\Rte.c	    62  #endif
+; ..\appl\GenData\Rte.c	    63  
+; ..\appl\GenData\Rte.c	    64  #if defined(osEnableGlobalKM) && !defined(RTE_DISABLE_ENHANCED_INTERRUPT_LOCK_API)
+; ..\appl\GenData\Rte.c	    65  # define Rte_EnableAllInterrupts() osEnableGlobalKM()   /* MICROSAR OS */
+; ..\appl\GenData\Rte.c	    66  #else
+; ..\appl\GenData\Rte.c	    67  # define Rte_EnableAllInterrupts() EnableAllInterrupts()   /* AUTOSAR OS */
+; ..\appl\GenData\Rte.c	    68  #endif
+; ..\appl\GenData\Rte.c	    69  
+; ..\appl\GenData\Rte.c	    70  /**********************************************************************************************************************
+; ..\appl\GenData\Rte.c	    71   * API for enable / disable interrupts up to the systemLevel
+; ..\appl\GenData\Rte.c	    72   *********************************************************************************************************************/
+; ..\appl\GenData\Rte.c	    73  
+; ..\appl\GenData\Rte.c	    74  #if defined(osDisableLevelKM) && !defined(RTE_DISABLE_ENHANCED_INTERRUPT_LOCK_API)
+; ..\appl\GenData\Rte.c	    75  # define Rte_DisableOSInterrupts() osDisableLevelKM()   /* MICROSAR OS */
+; ..\appl\GenData\Rte.c	    76  #else
+; ..\appl\GenData\Rte.c	    77  # define Rte_DisableOSInterrupts() SuspendOSInterrupts()   /* AUTOSAR OS */
+; ..\appl\GenData\Rte.c	    78  #endif
+; ..\appl\GenData\Rte.c	    79  
+; ..\appl\GenData\Rte.c	    80  #if defined(osEnableLevelKM) && !defined(RTE_DISABLE_ENHANCED_INTERRUPT_LOCK_API)
+; ..\appl\GenData\Rte.c	    81  # define Rte_EnableOSInterrupts() osEnableLevelKM()   /* MICROSAR OS */
+; ..\appl\GenData\Rte.c	    82  #else
+; ..\appl\GenData\Rte.c	    83  # define Rte_EnableOSInterrupts() ResumeOSInterrupts()   /* AUTOSAR OS */
+; ..\appl\GenData\Rte.c	    84  #endif
+; ..\appl\GenData\Rte.c	    85  
+; ..\appl\GenData\Rte.c	    86  /**********************************************************************************************************************
+; ..\appl\GenData\Rte.c	    87   * Rte Init State Variable
+; ..\appl\GenData\Rte.c	    88   *********************************************************************************************************************/
+; ..\appl\GenData\Rte.c	    89  
+; ..\appl\GenData\Rte.c	    90  #define RTE_START_SEC_VAR_ZERO_INIT_8BIT
+; ..\appl\GenData\Rte.c	    91  #include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\appl\GenData\Rte.c	    92  
+; ..\appl\GenData\Rte.c	    93  volatile VAR(uint8, RTE_VAR_ZERO_INIT) Rte_InitState = RTE_STATE_UNINIT; /* PRQA S 3408 */ /* MD_Rte_3408 */
+; ..\appl\GenData\Rte.c	    94  volatile VAR(uint8, RTE_VAR_ZERO_INIT) Rte_StartTiming_InitState = RTE_STATE_UNINIT; /* PRQA S 0850, 3408, 1514 */ /* MD_MSR_MacroArgumentEmpty, MD_Rte_3408, MD_Rte_1514 */
+; ..\appl\GenData\Rte.c	    95  
+; ..\appl\GenData\Rte.c	    96  #define RTE_STOP_SEC_VAR_ZERO_INIT_8BIT
+; ..\appl\GenData\Rte.c	    97  #include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\appl\GenData\Rte.c	    98  
+; ..\appl\GenData\Rte.c	    99  
+; ..\appl\GenData\Rte.c	   100  /**********************************************************************************************************************
+; ..\appl\GenData\Rte.c	   101   * Buffers for unqueued S/R
+; ..\appl\GenData\Rte.c	   102   *********************************************************************************************************************/
+; ..\appl\GenData\Rte.c	   103  
+; ..\appl\GenData\Rte.c	   104  #define RTE_START_SEC_VAR_NOINIT_UNSPECIFIED
+; ..\appl\GenData\Rte.c	   105  #include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\appl\GenData\Rte.c	   106  
+; ..\appl\GenData\Rte.c	   107  /* PRQA S 3408, 1504, 1514 L1 */ /* MD_Rte_3408, MD_MSR_Rule8.7, MD_Rte_1514 */
+; ..\appl\GenData\Rte.c	   108  VAR(BswM_ESH_RunRequest, RTE_VAR_NOINIT) Rte_swc_test_Request_ESH_PostRunRequest_0_requestedMode;
+; ..\appl\GenData\Rte.c	   109  /* PRQA L:L1 */
+; ..\appl\GenData\Rte.c	   110  
+; ..\appl\GenData\Rte.c	   111  #define RTE_STOP_SEC_VAR_NOINIT_UNSPECIFIED
+; ..\appl\GenData\Rte.c	   112  #include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\appl\GenData\Rte.c	   113  
+; ..\appl\GenData\Rte.c	   114  
+; ..\appl\GenData\Rte.c	   115  #define RTE_START_SEC_CODE
+; ..\appl\GenData\Rte.c	   116  #include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\appl\GenData\Rte.c	   117  
+; ..\appl\GenData\Rte.c	   118  /**********************************************************************************************************************
+; ..\appl\GenData\Rte.c	   119   * Helper functions for mode management
+; ..\appl\GenData\Rte.c	   120   *********************************************************************************************************************/
+; ..\appl\GenData\Rte.c	   121  FUNC(uint8, RTE_CODE) Rte_GetInternalModeIndex_BswM_ESH_Mode(BswM_ESH_Mode mode) /* PRQA S 3408 */ /* MD_Rte_3408 */
+; Function Rte_GetInternalModeIndex_BswM_ESH_Mode
+.L28:
+Rte_GetInternalModeIndex_BswM_ESH_Mode:	.type	func
+
+; ..\appl\GenData\Rte.c	   122  {
+; ..\appl\GenData\Rte.c	   123    uint8 ret;
+; ..\appl\GenData\Rte.c	   124  
+; ..\appl\GenData\Rte.c	   125    if (mode == 0U)
+	jne	d4,#0,.L2
+.L362:
+
+; ..\appl\GenData\Rte.c	   126    {
+; ..\appl\GenData\Rte.c	   127      ret = 3U;
+; ..\appl\GenData\Rte.c	   128    }
+; ..\appl\GenData\Rte.c	   129    else if (mode == 1U)
+; ..\appl\GenData\Rte.c	   130    {
+; ..\appl\GenData\Rte.c	   131      ret = 1U;
+; ..\appl\GenData\Rte.c	   132    }
+; ..\appl\GenData\Rte.c	   133    else if (mode == 2U)
+; ..\appl\GenData\Rte.c	   134    {
+; ..\appl\GenData\Rte.c	   135      ret = 0U;
+; ..\appl\GenData\Rte.c	   136    }
+; ..\appl\GenData\Rte.c	   137    else if (mode == 3U)
+; ..\appl\GenData\Rte.c	   138    {
+; ..\appl\GenData\Rte.c	   139      ret = 4U;
+; ..\appl\GenData\Rte.c	   140    }
+; ..\appl\GenData\Rte.c	   141    else if (mode == 4U)
+; ..\appl\GenData\Rte.c	   142    {
+; ..\appl\GenData\Rte.c	   143      ret = 2U;
+; ..\appl\GenData\Rte.c	   144    }
+; ..\appl\GenData\Rte.c	   145    else
+; ..\appl\GenData\Rte.c	   146    {
+; ..\appl\GenData\Rte.c	   147      ret = 5U;
+; ..\appl\GenData\Rte.c	   148    }
+; ..\appl\GenData\Rte.c	   149  
+; ..\appl\GenData\Rte.c	   150    return ret;
+; ..\appl\GenData\Rte.c	   151  } /* PRQA S 6080 */ /* MD_MSR_STMIF */
+	mov	d2,#3
+	ret
+.L2:
+	jne	d4,#1,.L4
+.L363:
+	mov	d2,#1
+	ret
+.L4:
+	jne	d4,#2,.L6
+.L364:
+	mov	d2,#0
+	ret
+.L6:
+	jne	d4,#3,.L8
+.L365:
+	mov	d2,#4
+	ret
+.L8:
+	eq	d15,d4,#4
+.L366:
+	mov	d2,#2
+.L216:
+	cmovn	d2,d15,#5
+	ret
+.L211:
+	
+__Rte_GetInternalModeIndex_BswM_ESH_Mode_function_end:
+	.size	Rte_GetInternalModeIndex_BswM_ESH_Mode,__Rte_GetInternalModeIndex_BswM_ESH_Mode_function_end-Rte_GetInternalModeIndex_BswM_ESH_Mode
+.L165:
+	; End of function
+	
+	.sdecl	'.text.Rte.SchM_Init',code,cluster('SchM_Init')
+	.sect	'.text.Rte.SchM_Init'
+	.align	2
+	
+	.global	SchM_Init
+
+; ..\appl\GenData\Rte.c	   152  
+; ..\appl\GenData\Rte.c	   153  #define RTE_STOP_SEC_CODE
+; ..\appl\GenData\Rte.c	   154  #include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\appl\GenData\Rte.c	   155  
+; ..\appl\GenData\Rte.c	   156  
+; ..\appl\GenData\Rte.c	   157  #define RTE_START_SEC_VAR_NOINIT_UNSPECIFIED
+; ..\appl\GenData\Rte.c	   158  #include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\appl\GenData\Rte.c	   159  
+; ..\appl\GenData\Rte.c	   160  /**********************************************************************************************************************
+; ..\appl\GenData\Rte.c	   161   * Data structures for mode management
+; ..\appl\GenData\Rte.c	   162   *********************************************************************************************************************/
+; ..\appl\GenData\Rte.c	   163  
+; ..\appl\GenData\Rte.c	   164  VAR(BswM_ESH_Mode, RTE_VAR_NOINIT) Rte_ModeMachine_BswM_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode; /* PRQA S 3408 */ /* MD_Rte_3408 */
+; ..\appl\GenData\Rte.c	   165  
+; ..\appl\GenData\Rte.c	   166  #define RTE_STOP_SEC_VAR_NOINIT_UNSPECIFIED
+; ..\appl\GenData\Rte.c	   167  #include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\appl\GenData\Rte.c	   168  
+; ..\appl\GenData\Rte.c	   169  
+; ..\appl\GenData\Rte.c	   170  
+; ..\appl\GenData\Rte.c	   171  /**********************************************************************************************************************
+; ..\appl\GenData\Rte.c	   172   * Timer handling
+; ..\appl\GenData\Rte.c	   173   *********************************************************************************************************************/
+; ..\appl\GenData\Rte.c	   174  
+; ..\appl\GenData\Rte.c	   175  #if defined OS_US2TICKS_SystemTimer
+; ..\appl\GenData\Rte.c	   176  # define RTE_USEC_SystemTimer OS_US2TICKS_SystemTimer
+; ..\appl\GenData\Rte.c	   177  #else
+; ..\appl\GenData\Rte.c	   178  # define RTE_USEC_SystemTimer(val) ((TickType)RTE_CONST_USEC_SystemTimer_##val) /* PRQA S 0342 */ /* MD_MSR_Rule20.10_0342 */
+; ..\appl\GenData\Rte.c	   179  #endif
+; ..\appl\GenData\Rte.c	   180  
+; ..\appl\GenData\Rte.c	   181  #if defined OS_MS2TICKS_SystemTimer
+; ..\appl\GenData\Rte.c	   182  # define RTE_MSEC_SystemTimer OS_MS2TICKS_SystemTimer
+; ..\appl\GenData\Rte.c	   183  #else
+; ..\appl\GenData\Rte.c	   184  # define RTE_MSEC_SystemTimer(val) ((TickType)RTE_CONST_MSEC_SystemTimer_##val) /* PRQA S 0342 */ /* MD_MSR_Rule20.10_0342 */
+; ..\appl\GenData\Rte.c	   185  #endif
+; ..\appl\GenData\Rte.c	   186  
+; ..\appl\GenData\Rte.c	   187  #if defined OS_SEC2TICKS_SystemTimer
+; ..\appl\GenData\Rte.c	   188  # define RTE_SEC_SystemTimer OS_SEC2TICKS_SystemTimer
+; ..\appl\GenData\Rte.c	   189  #else
+; ..\appl\GenData\Rte.c	   190  # define RTE_SEC_SystemTimer(val)  ((TickType)RTE_CONST_SEC_SystemTimer_##val) /* PRQA S 0342 */ /* MD_MSR_Rule20.10_0342 */
+; ..\appl\GenData\Rte.c	   191  #endif
+; ..\appl\GenData\Rte.c	   192  
+; ..\appl\GenData\Rte.c	   193  #define RTE_CONST_MSEC_SystemTimer_0 (0UL)
+; ..\appl\GenData\Rte.c	   194  #define RTE_CONST_MSEC_SystemTimer_10 (10UL)
+; ..\appl\GenData\Rte.c	   195  #define RTE_CONST_MSEC_SystemTimer_500 (500UL)
+; ..\appl\GenData\Rte.c	   196  
+; ..\appl\GenData\Rte.c	   197  
+; ..\appl\GenData\Rte.c	   198  /**********************************************************************************************************************
+; ..\appl\GenData\Rte.c	   199   * Internal definitions
+; ..\appl\GenData\Rte.c	   200   *********************************************************************************************************************/
+; ..\appl\GenData\Rte.c	   201  
+; ..\appl\GenData\Rte.c	   202  #define RTE_TASK_TIMEOUT_EVENT_MASK   ((EventMaskType)0x01)
+; ..\appl\GenData\Rte.c	   203  #define RTE_TASK_WAITPOINT_EVENT_MASK ((EventMaskType)0x02)
+; ..\appl\GenData\Rte.c	   204  
+; ..\appl\GenData\Rte.c	   205  /**********************************************************************************************************************
+; ..\appl\GenData\Rte.c	   206   * RTE life cycle API
+; ..\appl\GenData\Rte.c	   207   *********************************************************************************************************************/
+; ..\appl\GenData\Rte.c	   208  
+; ..\appl\GenData\Rte.c	   209  #define RTE_START_SEC_CODE
+; ..\appl\GenData\Rte.c	   210  #include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\appl\GenData\Rte.c	   211  
+; ..\appl\GenData\Rte.c	   212  FUNC(void, RTE_CODE) SchM_Init(void)
+; Function SchM_Init
+.L30:
+SchM_Init:	.type	func
+
+; ..\appl\GenData\Rte.c	   213  {
+; ..\appl\GenData\Rte.c	   214    /* activate the alarms used for TimingEvents */
+; ..\appl\GenData\Rte.c	   215    (void)SetRelAlarm(Rte_Al_TE2_bsw_task_0_10ms, RTE_MSEC_SystemTimer(0) + (TickType)1, RTE_MSEC_SystemTimer(10)); /* PRQA S 3417 */ /* MD_Rte_Os */
+	mov	d4,#0
+.L263:
+	mov	d5,#1
+.L264:
+	mov	d6,#10
+	call	SetRelAlarm
+.L265:
+
+; ..\appl\GenData\Rte.c	   216  
+; ..\appl\GenData\Rte.c	   217    Rte_InitState = RTE_STATE_SCHM_INIT;
+	movh.a	a15,#@his(Rte_InitState)
+.L266:
+	mov	d15,#1
+	st.b	[a15]@los(Rte_InitState),d15
+.L267:
+
+; ..\appl\GenData\Rte.c	   218  }
+	ret
+.L184:
+	
+__SchM_Init_function_end:
+	.size	SchM_Init,__SchM_Init_function_end-SchM_Init
+.L90:
+	; End of function
+	
+	.sdecl	'.text.Rte.Rte_Start',code,cluster('Rte_Start')
+	.sect	'.text.Rte.Rte_Start'
+	.align	2
+	
+	.global	Rte_Start
+
+; ..\appl\GenData\Rte.c	   219  
+; ..\appl\GenData\Rte.c	   220  FUNC(Std_ReturnType, RTE_CODE) Rte_Start(void)
+; Function Rte_Start
+.L32:
+Rte_Start:	.type	func
+
+; ..\appl\GenData\Rte.c	   221  {
+; ..\appl\GenData\Rte.c	   222    /* set default values for internal data */
+; ..\appl\GenData\Rte.c	   223    Rte_swc_test_Request_ESH_PostRunRequest_0_requestedMode = 0U;
+	movh.a	a15,#@his(Rte_swc_test_Request_ESH_PostRunRequest_0_requestedMode)
+.L279:
+	mov	d15,#0
+	st.b	[a15]@los(Rte_swc_test_Request_ESH_PostRunRequest_0_requestedMode),d15
+.L280:
+
+; ..\appl\GenData\Rte.c	   224  
+; ..\appl\GenData\Rte.c	   225    /* mode management initialization part 1 */
+; ..\appl\GenData\Rte.c	   226  
+; ..\appl\GenData\Rte.c	   227    Rte_ModeMachine_BswM_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode = RTE_MODE_BswM_ESH_Mode_STARTUP;
+	movh.a	a15,#@his(Rte_ModeMachine_BswM_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode)
+.L281:
+	st.b	[a15]@los(Rte_ModeMachine_BswM_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode),d15
+.L282:
+
+; ..\appl\GenData\Rte.c	   228  
+; ..\appl\GenData\Rte.c	   229    /* activate the tasks */
+; ..\appl\GenData\Rte.c	   230    (void)ActivateTask(swc_init); /* PRQA S 3417 */ /* MD_Rte_Os */
+	mov	d4,#4
+	call	ActivateTask
+.L283:
+
+; ..\appl\GenData\Rte.c	   231    (void)ActivateTask(swc_task); /* PRQA S 3417 */ /* MD_Rte_Os */
+	mov	d4,#5
+	call	ActivateTask
+.L284:
+
+; ..\appl\GenData\Rte.c	   232  
+; ..\appl\GenData\Rte.c	   233    /* activate the alarms used for TimingEvents */
+; ..\appl\GenData\Rte.c	   234    (void)SetRelAlarm(Rte_Al_TE_swc_test_swc_test_10ms, RTE_MSEC_SystemTimer(0) + (TickType)1, RTE_MSEC_SystemTimer(10)); /* PRQA S 3417, 1840 */ /* MD_Rte_Os, MD_Rte_Os */
+	mov	d4,#1
+.L285:
+	mov	d5,d4
+.L286:
+	mov	d6,#10
+	call	SetRelAlarm
+.L287:
+
+; ..\appl\GenData\Rte.c	   235    (void)SetRelAlarm(Rte_Al_TE_swc_test_swc_test_500ms, RTE_MSEC_SystemTimer(0) + (TickType)1, RTE_MSEC_SystemTimer(500)); /* PRQA S 3417, 1840 */ /* MD_Rte_Os, MD_Rte_Os */
+	mov	d4,#2
+.L288:
+	mov	d5,#1
+.L289:
+	mov	d6,#500
+	call	SetRelAlarm
+.L290:
+
+; ..\appl\GenData\Rte.c	   236  
+; ..\appl\GenData\Rte.c	   237    Rte_StartTiming_InitState = RTE_STATE_INIT;
+	movh.a	a15,#@his(Rte_StartTiming_InitState)
+.L291:
+	mov	d15,#2
+	st.b	[a15]@los(Rte_StartTiming_InitState),d15
+.L292:
+
+; ..\appl\GenData\Rte.c	   238    Rte_InitState = RTE_STATE_INIT;
+	movh.a	a15,#@his(Rte_InitState)
+.L293:
+	st.b	[a15]@los(Rte_InitState),d15
+.L294:
+
+; ..\appl\GenData\Rte.c	   239  
+; ..\appl\GenData\Rte.c	   240    return RTE_E_OK;
+; ..\appl\GenData\Rte.c	   241  } /* PRQA S 6050 */ /* MD_MSR_STCAL */
+	mov	d2,#0
+	ret
+.L187:
+	
+__Rte_Start_function_end:
+	.size	Rte_Start,__Rte_Start_function_end-Rte_Start
+.L100:
+	; End of function
+	
+	.sdecl	'.text.Rte.Rte_Stop',code,cluster('Rte_Stop')
+	.sect	'.text.Rte.Rte_Stop'
+	.align	2
+	
+	.global	Rte_Stop
+
+; ..\appl\GenData\Rte.c	   242  
+; ..\appl\GenData\Rte.c	   243  FUNC(Std_ReturnType, RTE_CODE) Rte_Stop(void)
+; Function Rte_Stop
+.L34:
+Rte_Stop:	.type	func
+
+; ..\appl\GenData\Rte.c	   244  {
+; ..\appl\GenData\Rte.c	   245    Rte_StartTiming_InitState = RTE_STATE_UNINIT;
+	movh.a	a15,#@his(Rte_StartTiming_InitState)
+.L299:
+	mov	d15,#0
+	st.b	[a15]@los(Rte_StartTiming_InitState),d15
+.L300:
+
+; ..\appl\GenData\Rte.c	   246    /* deactivate alarms */
+; ..\appl\GenData\Rte.c	   247    (void)CancelAlarm(Rte_Al_TE_swc_test_swc_test_10ms); /* PRQA S 3417 */ /* MD_Rte_Os */
+	mov	d4,#1
+	call	CancelAlarm
+.L301:
+
+; ..\appl\GenData\Rte.c	   248    (void)CancelAlarm(Rte_Al_TE_swc_test_swc_test_500ms); /* PRQA S 3417 */ /* MD_Rte_Os */
+	mov	d4,#2
+	call	CancelAlarm
+.L302:
+
+; ..\appl\GenData\Rte.c	   249  
+; ..\appl\GenData\Rte.c	   250    Rte_InitState = RTE_STATE_SCHM_INIT;
+	movh.a	a15,#@his(Rte_InitState)
+.L303:
+	mov	d15,#1
+	st.b	[a15]@los(Rte_InitState),d15
+.L304:
+
+; ..\appl\GenData\Rte.c	   251  
+; ..\appl\GenData\Rte.c	   252    return RTE_E_OK;
+; ..\appl\GenData\Rte.c	   253  }
+	mov	d2,#0
+	ret
+.L188:
+	
+__Rte_Stop_function_end:
+	.size	Rte_Stop,__Rte_Stop_function_end-Rte_Stop
+.L105:
+	; End of function
+	
+	.sdecl	'.text.Rte.SchM_Deinit',code,cluster('SchM_Deinit')
+	.sect	'.text.Rte.SchM_Deinit'
+	.align	2
+	
+	.global	SchM_Deinit
+
+; ..\appl\GenData\Rte.c	   254  
+; ..\appl\GenData\Rte.c	   255  FUNC(void, RTE_CODE) SchM_Deinit(void)
+; Function SchM_Deinit
+.L36:
+SchM_Deinit:	.type	func
+
+; ..\appl\GenData\Rte.c	   256  {
+; ..\appl\GenData\Rte.c	   257    /* deactivate alarms */
+; ..\appl\GenData\Rte.c	   258    (void)CancelAlarm(Rte_Al_TE2_bsw_task_0_10ms); /* PRQA S 3417 */ /* MD_Rte_Os */
+	mov	d4,#0
+	call	CancelAlarm
+.L272:
+
+; ..\appl\GenData\Rte.c	   259  
+; ..\appl\GenData\Rte.c	   260    Rte_InitState = RTE_STATE_UNINIT;
+	movh.a	a15,#@his(Rte_InitState)
+.L273:
+	mov	d15,#0
+	st.b	[a15]@los(Rte_InitState),d15
+.L274:
+
+; ..\appl\GenData\Rte.c	   261  }
+	ret
+.L185:
+	
+__SchM_Deinit_function_end:
+	.size	SchM_Deinit,__SchM_Deinit_function_end-SchM_Deinit
+.L95:
+	; End of function
+	
+	.sdecl	'.text.Rte.Rte_InitMemory',code,cluster('Rte_InitMemory')
+	.sect	'.text.Rte.Rte_InitMemory'
+	.align	2
+	
+	.global	Rte_InitMemory
+
+; ..\appl\GenData\Rte.c	   262  
+; ..\appl\GenData\Rte.c	   263  FUNC(void, RTE_CODE) Rte_InitMemory(void)
+; Function Rte_InitMemory
+.L38:
+Rte_InitMemory:	.type	func
+
+; ..\appl\GenData\Rte.c	   264  {
+; ..\appl\GenData\Rte.c	   265    Rte_InitState = RTE_STATE_UNINIT;
+	movh.a	a15,#@his(Rte_InitState)
+.L309:
+	mov	d15,#0
+	st.b	[a15]@los(Rte_InitState),d15
+.L310:
+
+; ..\appl\GenData\Rte.c	   266    Rte_StartTiming_InitState = RTE_STATE_UNINIT;
+	movh.a	a15,#@his(Rte_StartTiming_InitState)
+.L311:
+	st.b	[a15]@los(Rte_StartTiming_InitState),d15
+.L312:
+
+; ..\appl\GenData\Rte.c	   267  
+; ..\appl\GenData\Rte.c	   268  }
+	ret
+.L189:
+	
+__Rte_InitMemory_function_end:
+	.size	Rte_InitMemory,__Rte_InitMemory_function_end-Rte_InitMemory
+.L110:
+	; End of function
+	
+	.sdecl	'.text.Rte.Rte_Read_BswM_Request_ESH_PostRunRequest_0_requestedMode',code,cluster('Rte_Read_BswM_Request_ESH_PostRunRequest_0_requestedMode')
+	.sect	'.text.Rte.Rte_Read_BswM_Request_ESH_PostRunRequest_0_requestedMode'
+	.align	2
+	
+	.global	Rte_Read_BswM_Request_ESH_PostRunRequest_0_requestedMode
+
+; ..\appl\GenData\Rte.c	   269  
+; ..\appl\GenData\Rte.c	   270  
+; ..\appl\GenData\Rte.c	   271  /**********************************************************************************************************************
+; ..\appl\GenData\Rte.c	   272   * Internal/External Rx connections
+; ..\appl\GenData\Rte.c	   273   *********************************************************************************************************************/
+; ..\appl\GenData\Rte.c	   274  
+; ..\appl\GenData\Rte.c	   275  FUNC(Std_ReturnType, RTE_CODE) Rte_Read_BswM_Request_ESH_PostRunRequest_0_requestedMode(P2VAR(BswM_ESH_RunRequest, AUTOMATIC, RTE_BSWM_APPL_VAR) data) /* PRQA S 3673, 1505, 3206 */ /* MD_Rte_Qac, MD_MSR_Rule8.7, MD_Rte_3206 */
+; Function Rte_Read_BswM_Request_ESH_PostRunRequest_0_requestedMode
+.L40:
+Rte_Read_BswM_Request_ESH_PostRunRequest_0_requestedMode:	.type	func
+
+; ..\appl\GenData\Rte.c	   276  {
+; ..\appl\GenData\Rte.c	   277    Std_ReturnType ret = RTE_E_OK; /* PRQA S 2981 */ /* MD_MSR_RetVal */
+; ..\appl\GenData\Rte.c	   278  
+; ..\appl\GenData\Rte.c	   279    *(data) = Rte_swc_test_Request_ESH_PostRunRequest_0_requestedMode; /* PRQA S 1339, 2982 */ /* MD_Rte_1339, MD_Rte_2982 */
+	movh.a	a15,#@his(Rte_swc_test_Request_ESH_PostRunRequest_0_requestedMode)
+	ld.bu	d15,[a15]@los(Rte_swc_test_Request_ESH_PostRunRequest_0_requestedMode)
+.L317:
+	st.b	[a4],d15
+.L318:
+
+; ..\appl\GenData\Rte.c	   280  
+; ..\appl\GenData\Rte.c	   281    return ret;
+; ..\appl\GenData\Rte.c	   282  } /* PRQA S 6010, 6030, 6050, 6080 */ /* MD_MSR_STPTH, MD_MSR_STCYC, MD_MSR_STCAL, MD_MSR_STMIF */
+	mov	d2,#0
+	ret
+.L190:
+	
+__Rte_Read_BswM_Request_ESH_PostRunRequest_0_requestedMode_function_end:
+	.size	Rte_Read_BswM_Request_ESH_PostRunRequest_0_requestedMode,__Rte_Read_BswM_Request_ESH_PostRunRequest_0_requestedMode_function_end-Rte_Read_BswM_Request_ESH_PostRunRequest_0_requestedMode
+.L115:
+	; End of function
+	
+	.sdecl	'.text.Rte.Rte_Read_BswM_Request_ESH_PostRunRequest_1_requestedMode',code,cluster('Rte_Read_BswM_Request_ESH_PostRunRequest_1_requestedMode')
+	.sect	'.text.Rte.Rte_Read_BswM_Request_ESH_PostRunRequest_1_requestedMode'
+	.align	2
+	
+	.global	Rte_Read_BswM_Request_ESH_PostRunRequest_1_requestedMode
+
+; ..\appl\GenData\Rte.c	   283  
+; ..\appl\GenData\Rte.c	   284  FUNC(Std_ReturnType, RTE_CODE) Rte_Read_BswM_Request_ESH_PostRunRequest_1_requestedMode(P2VAR(BswM_ESH_RunRequest, AUTOMATIC, RTE_BSWM_APPL_VAR) data) /* PRQA S 3673, 1505, 3206 */ /* MD_Rte_Qac, MD_MSR_Rule8.7, MD_Rte_3206 */
+; Function Rte_Read_BswM_Request_ESH_PostRunRequest_1_requestedMode
+.L42:
+Rte_Read_BswM_Request_ESH_PostRunRequest_1_requestedMode:	.type	func
+
+; ..\appl\GenData\Rte.c	   285  {
+; ..\appl\GenData\Rte.c	   286    *data = 0U;
+	fcall	.cocofun_1
+.L323:
+
+; ..\appl\GenData\Rte.c	   287  
+; ..\appl\GenData\Rte.c	   288    return RTE_E_UNCONNECTED;
+; ..\appl\GenData\Rte.c	   289  } /* PRQA S 6010, 6030, 6050, 6080 */ /* MD_MSR_STPTH, MD_MSR_STCYC, MD_MSR_STCAL, MD_MSR_STMIF */
+	ret
+.L193:
+	
+__Rte_Read_BswM_Request_ESH_PostRunRequest_1_requestedMode_function_end:
+	.size	Rte_Read_BswM_Request_ESH_PostRunRequest_1_requestedMode,__Rte_Read_BswM_Request_ESH_PostRunRequest_1_requestedMode_function_end-Rte_Read_BswM_Request_ESH_PostRunRequest_1_requestedMode
+.L120:
+	; End of function
+	
+	.sdecl	'.text.Rte..cocofun_1',code,cluster('.cocofun_1')
+	.sect	'.text.Rte..cocofun_1'
+	.align	2
+; Function .cocofun_1
+.L44:
+.cocofun_1:	.type	func
+; Function body .cocofun_1, coco_iter:0
+	mov	d15,#0
+	st.b	[a4],d15
+.L371:
+	mov	d2,#134
+	fret
+.L170:
+	; End of function
+	.sdecl	'.text.Rte.Rte_Read_BswM_Request_ESH_RunRequest_0_requestedMode',code,cluster('Rte_Read_BswM_Request_ESH_RunRequest_0_requestedMode')
+	.sect	'.text.Rte.Rte_Read_BswM_Request_ESH_RunRequest_0_requestedMode'
+	.align	2
+	
+	.global	Rte_Read_BswM_Request_ESH_RunRequest_0_requestedMode
+
+; ..\appl\GenData\Rte.c	   290  
+; ..\appl\GenData\Rte.c	   291  FUNC(Std_ReturnType, RTE_CODE) Rte_Read_BswM_Request_ESH_RunRequest_0_requestedMode(P2VAR(BswM_ESH_RunRequest, AUTOMATIC, RTE_BSWM_APPL_VAR) data) /* PRQA S 3673, 1505, 3206 */ /* MD_Rte_Qac, MD_MSR_Rule8.7, MD_Rte_3206 */
+; Function Rte_Read_BswM_Request_ESH_RunRequest_0_requestedMode
+.L46:
+Rte_Read_BswM_Request_ESH_RunRequest_0_requestedMode:	.type	func
+
+; ..\appl\GenData\Rte.c	   292  {
+; ..\appl\GenData\Rte.c	   293    *data = 0U;
+	fcall	.cocofun_1
+.L217:
+
+; ..\appl\GenData\Rte.c	   294  
+; ..\appl\GenData\Rte.c	   295    return RTE_E_UNCONNECTED;
+; ..\appl\GenData\Rte.c	   296  } /* PRQA S 6010, 6030, 6050, 6080 */ /* MD_MSR_STPTH, MD_MSR_STCYC, MD_MSR_STCAL, MD_MSR_STMIF */
+	ret
+.L196:
+	
+__Rte_Read_BswM_Request_ESH_RunRequest_0_requestedMode_function_end:
+	.size	Rte_Read_BswM_Request_ESH_RunRequest_0_requestedMode,__Rte_Read_BswM_Request_ESH_RunRequest_0_requestedMode_function_end-Rte_Read_BswM_Request_ESH_RunRequest_0_requestedMode
+.L125:
+	; End of function
+	
+	.sdecl	'.text.Rte.Rte_Read_BswM_Request_ESH_RunRequest_1_requestedMode',code,cluster('Rte_Read_BswM_Request_ESH_RunRequest_1_requestedMode')
+	.sect	'.text.Rte.Rte_Read_BswM_Request_ESH_RunRequest_1_requestedMode'
+	.align	2
+	
+	.global	Rte_Read_BswM_Request_ESH_RunRequest_1_requestedMode
+
+; ..\appl\GenData\Rte.c	   297  
+; ..\appl\GenData\Rte.c	   298  FUNC(Std_ReturnType, RTE_CODE) Rte_Read_BswM_Request_ESH_RunRequest_1_requestedMode(P2VAR(BswM_ESH_RunRequest, AUTOMATIC, RTE_BSWM_APPL_VAR) data) /* PRQA S 3673, 1505, 3206 */ /* MD_Rte_Qac, MD_MSR_Rule8.7, MD_Rte_3206 */
+; Function Rte_Read_BswM_Request_ESH_RunRequest_1_requestedMode
+.L48:
+Rte_Read_BswM_Request_ESH_RunRequest_1_requestedMode:	.type	func
+
+; ..\appl\GenData\Rte.c	   299  {
+; ..\appl\GenData\Rte.c	   300    *data = 0U;
+	fcall	.cocofun_1
+.L218:
+
+; ..\appl\GenData\Rte.c	   301  
+; ..\appl\GenData\Rte.c	   302    return RTE_E_UNCONNECTED;
+; ..\appl\GenData\Rte.c	   303  } /* PRQA S 6010, 6030, 6050, 6080 */ /* MD_MSR_STPTH, MD_MSR_STCYC, MD_MSR_STCAL, MD_MSR_STMIF */
+	ret
+.L198:
+	
+__Rte_Read_BswM_Request_ESH_RunRequest_1_requestedMode_function_end:
+	.size	Rte_Read_BswM_Request_ESH_RunRequest_1_requestedMode,__Rte_Read_BswM_Request_ESH_RunRequest_1_requestedMode_function_end-Rte_Read_BswM_Request_ESH_RunRequest_1_requestedMode
+.L130:
+	; End of function
+	
+	.sdecl	'.text.Rte.SchM_Enter_Mcu_AtomAgcReg',code,cluster('SchM_Enter_Mcu_AtomAgcReg')
+	.sect	'.text.Rte.SchM_Enter_Mcu_AtomAgcReg'
+	.align	2
+	
+	.global	SchM_Enter_Mcu_AtomAgcReg
+
+; ..\appl\GenData\Rte.c	   304  
+; ..\appl\GenData\Rte.c	   305  
+; ..\appl\GenData\Rte.c	   306  /**********************************************************************************************************************
+; ..\appl\GenData\Rte.c	   307   * Exclusive area access
+; ..\appl\GenData\Rte.c	   308   *********************************************************************************************************************/
+; ..\appl\GenData\Rte.c	   309  
+; ..\appl\GenData\Rte.c	   310  FUNC(void, RTE_CODE) SchM_Enter_Mcu_AtomAgcReg(void)
+; Function SchM_Enter_Mcu_AtomAgcReg
+.L50:
+SchM_Enter_Mcu_AtomAgcReg:	.type	func
+
+; ..\appl\GenData\Rte.c	   311  {
+; ..\appl\GenData\Rte.c	   312    /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
+; ..\appl\GenData\Rte.c	   313    SuspendAllInterrupts();
+	j	SuspendAllInterrupts
+.L207:
+	
+__SchM_Enter_Mcu_AtomAgcReg_function_end:
+	.size	SchM_Enter_Mcu_AtomAgcReg,__SchM_Enter_Mcu_AtomAgcReg_function_end-SchM_Enter_Mcu_AtomAgcReg
+.L145:
+	; End of function
+	
+	.sdecl	'.text.Rte.SchM_Exit_Mcu_AtomAgcReg',code,cluster('SchM_Exit_Mcu_AtomAgcReg')
+	.sect	'.text.Rte.SchM_Exit_Mcu_AtomAgcReg'
+	.align	2
+	
+	.global	SchM_Exit_Mcu_AtomAgcReg
+
+; ..\appl\GenData\Rte.c	   314  }
+; ..\appl\GenData\Rte.c	   315  
+; ..\appl\GenData\Rte.c	   316  FUNC(void, RTE_CODE) SchM_Exit_Mcu_AtomAgcReg(void)
+; Function SchM_Exit_Mcu_AtomAgcReg
+.L52:
+SchM_Exit_Mcu_AtomAgcReg:	.type	func
+
+; ..\appl\GenData\Rte.c	   317  {
+; ..\appl\GenData\Rte.c	   318    /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
+; ..\appl\GenData\Rte.c	   319    ResumeAllInterrupts();
+	j	ResumeAllInterrupts
+.L208:
+	
+__SchM_Exit_Mcu_AtomAgcReg_function_end:
+	.size	SchM_Exit_Mcu_AtomAgcReg,__SchM_Exit_Mcu_AtomAgcReg_function_end-SchM_Exit_Mcu_AtomAgcReg
+.L150:
+	; End of function
+	
+	.sdecl	'.text.Rte.SchM_Enter_Mcu_TomTgcReg',code,cluster('SchM_Enter_Mcu_TomTgcReg')
+	.sect	'.text.Rte.SchM_Enter_Mcu_TomTgcReg'
+	.align	2
+	
+	.global	SchM_Enter_Mcu_TomTgcReg
+
+; ..\appl\GenData\Rte.c	   320  }
+; ..\appl\GenData\Rte.c	   321  
+; ..\appl\GenData\Rte.c	   322  
+; ..\appl\GenData\Rte.c	   323  FUNC(void, RTE_CODE) SchM_Enter_Mcu_TomTgcReg(void)
+; Function SchM_Enter_Mcu_TomTgcReg
+.L54:
+SchM_Enter_Mcu_TomTgcReg:	.type	func
+
+; ..\appl\GenData\Rte.c	   324  {
+; ..\appl\GenData\Rte.c	   325    /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
+; ..\appl\GenData\Rte.c	   326    SuspendAllInterrupts();
+	j	SuspendAllInterrupts
+.L209:
+	
+__SchM_Enter_Mcu_TomTgcReg_function_end:
+	.size	SchM_Enter_Mcu_TomTgcReg,__SchM_Enter_Mcu_TomTgcReg_function_end-SchM_Enter_Mcu_TomTgcReg
+.L155:
+	; End of function
+	
+	.sdecl	'.text.Rte.SchM_Exit_Mcu_TomTgcReg',code,cluster('SchM_Exit_Mcu_TomTgcReg')
+	.sect	'.text.Rte.SchM_Exit_Mcu_TomTgcReg'
+	.align	2
+	
+	.global	SchM_Exit_Mcu_TomTgcReg
+
+; ..\appl\GenData\Rte.c	   327  }
+; ..\appl\GenData\Rte.c	   328  
+; ..\appl\GenData\Rte.c	   329  FUNC(void, RTE_CODE) SchM_Exit_Mcu_TomTgcReg(void)
+; Function SchM_Exit_Mcu_TomTgcReg
+.L56:
+SchM_Exit_Mcu_TomTgcReg:	.type	func
+
+; ..\appl\GenData\Rte.c	   330  {
+; ..\appl\GenData\Rte.c	   331    /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
+; ..\appl\GenData\Rte.c	   332    ResumeAllInterrupts();
+	j	ResumeAllInterrupts
+.L210:
+	
+__SchM_Exit_Mcu_TomTgcReg_function_end:
+	.size	SchM_Exit_Mcu_TomTgcReg,__SchM_Exit_Mcu_TomTgcReg_function_end-SchM_Exit_Mcu_TomTgcReg
+.L160:
+	; End of function
+	
+	.sdecl	'.text.Rte.Rte_Switch_BswM_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode',code,cluster('Rte_Switch_BswM_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode')
+	.sect	'.text.Rte.Rte_Switch_BswM_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode'
+	.align	2
+	
+	.global	Rte_Switch_BswM_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode
+
+; ..\appl\GenData\Rte.c	   333  }
+; ..\appl\GenData\Rte.c	   334  
+; ..\appl\GenData\Rte.c	   335  
+; ..\appl\GenData\Rte.c	   336  
+; ..\appl\GenData\Rte.c	   337  /**********************************************************************************************************************
+; ..\appl\GenData\Rte.c	   338   * Mode Switch API (Rte_Switch)
+; ..\appl\GenData\Rte.c	   339   *********************************************************************************************************************/
+; ..\appl\GenData\Rte.c	   340  
+; ..\appl\GenData\Rte.c	   341  FUNC(Std_ReturnType, RTE_CODE) Rte_Switch_BswM_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode(BswM_ESH_Mode nextMode) /* PRQA S 1505 */ /* MD_MSR_Rule8.7 */
+; Function Rte_Switch_BswM_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode
+.L58:
+Rte_Switch_BswM_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode:	.type	func
+	mov	d8,d4
+.L220:
+
+; ..\appl\GenData\Rte.c	   342  {
+; ..\appl\GenData\Rte.c	   343    Std_ReturnType ret = RTE_E_OK; /* PRQA S 2981 */ /* MD_MSR_RetVal */
+; ..\appl\GenData\Rte.c	   344  
+; ..\appl\GenData\Rte.c	   345    uint8 internalIndexNextMode = Rte_GetInternalModeIndex_BswM_ESH_Mode(nextMode);
+	mov	d15,#0
+	call	Rte_GetInternalModeIndex_BswM_ESH_Mode
+.L219:
+
+; ..\appl\GenData\Rte.c	   346    uint8 internalIndexCurrentMode;
+; ..\appl\GenData\Rte.c	   347    BswM_ESH_Mode currentMode;
+; ..\appl\GenData\Rte.c	   348    SuspendOSInterrupts();
+	mov	d9,d2
+	call	SuspendOSInterrupts
+.L221:
+
+; ..\appl\GenData\Rte.c	   349    currentMode = Rte_ModeMachine_BswM_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode;
+	movh.a	a15,#@his(Rte_ModeMachine_BswM_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode)
+	lea	a15,[a15]@los(Rte_ModeMachine_BswM_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode)
+	ld.bu	d4,[a15]
+.L222:
+
+; ..\appl\GenData\Rte.c	   350    internalIndexCurrentMode = Rte_GetInternalModeIndex_BswM_ESH_Mode(currentMode);
+	call	Rte_GetInternalModeIndex_BswM_ESH_Mode
+.L223:
+
+; ..\appl\GenData\Rte.c	   351    if (internalIndexNextMode >= 5U)
+	jge.u	d9,#5,.L19
+.L341:
+
+; ..\appl\GenData\Rte.c	   352    {
+; ..\appl\GenData\Rte.c	   353      ResumeOSInterrupts();
+; ..\appl\GenData\Rte.c	   354      ret = RTE_E_LIMIT;
+; ..\appl\GenData\Rte.c	   355    }
+; ..\appl\GenData\Rte.c	   356    else if (internalIndexCurrentMode >= 5U)
+	jlt.u	d2,#5,.L20
+.L19:
+
+; ..\appl\GenData\Rte.c	   357    {
+; ..\appl\GenData\Rte.c	   358      ResumeOSInterrupts();
+; ..\appl\GenData\Rte.c	   359      ret = RTE_E_LIMIT;
+	mov	d15,#130
+	j	.L21
+.L20:
+
+; ..\appl\GenData\Rte.c	   360    }
+; ..\appl\GenData\Rte.c	   361    else
+; ..\appl\GenData\Rte.c	   362    {
+; ..\appl\GenData\Rte.c	   363      Rte_ModeMachine_BswM_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode = nextMode;
+	st.b	[a15],d8
+.L21:
+
+; ..\appl\GenData\Rte.c	   364      ResumeOSInterrupts();
+	call	ResumeOSInterrupts
+.L224:
+
+; ..\appl\GenData\Rte.c	   365    }
+; ..\appl\GenData\Rte.c	   366  
+; ..\appl\GenData\Rte.c	   367    return ret;
+; ..\appl\GenData\Rte.c	   368  } /* PRQA S 6050 */ /* MD_MSR_STCAL */
+	mov	d2,d15
+	ret
+.L201:
+	
+__Rte_Switch_BswM_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode_function_end:
+	.size	Rte_Switch_BswM_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode,__Rte_Switch_BswM_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode_function_end-Rte_Switch_BswM_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode
+.L140:
+	; End of function
+	
+	.sdecl	'.text.Rte.Rte_Mode_BswM_Notification_ESH_ModeNotification_BswM_MDGP_ESH_Mode',code,cluster('Rte_Mode_BswM_Notification_ESH_ModeNotification_BswM_MDGP_ESH_Mode')
+	.sect	'.text.Rte.Rte_Mode_BswM_Notification_ESH_ModeNotification_BswM_MDGP_ESH_Mode'
+	.align	2
+	
+	.global	Rte_Mode_BswM_Notification_ESH_ModeNotification_BswM_MDGP_ESH_Mode
+
+; ..\appl\GenData\Rte.c	   369  
+; ..\appl\GenData\Rte.c	   370  
+; ..\appl\GenData\Rte.c	   371  /**********************************************************************************************************************
+; ..\appl\GenData\Rte.c	   372   * Mode reading API (Rte_Mode)
+; ..\appl\GenData\Rte.c	   373   *********************************************************************************************************************/
+; ..\appl\GenData\Rte.c	   374  
+; ..\appl\GenData\Rte.c	   375  FUNC(BswM_ESH_Mode, RTE_CODE) Rte_Mode_BswM_Notification_ESH_ModeNotification_BswM_MDGP_ESH_Mode(void) /* PRQA S 3408 */ /* MD_Rte_3408 */
+; Function Rte_Mode_BswM_Notification_ESH_ModeNotification_BswM_MDGP_ESH_Mode
+.L60:
+Rte_Mode_BswM_Notification_ESH_ModeNotification_BswM_MDGP_ESH_Mode:	.type	func
+
+; ..\appl\GenData\Rte.c	   376  {
+; ..\appl\GenData\Rte.c	   377    BswM_ESH_Mode curMode;
+; ..\appl\GenData\Rte.c	   378    curMode = Rte_ModeMachine_BswM_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode;
+	movh.a	a15,#@his(Rte_ModeMachine_BswM_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode)
+	ld.bu	d2,[a15]@los(Rte_ModeMachine_BswM_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode)
+.L336:
+
+; ..\appl\GenData\Rte.c	   379    return curMode;
+; ..\appl\GenData\Rte.c	   380  }
+	ret
+.L200:
+	
+__Rte_Mode_BswM_Notification_ESH_ModeNotification_BswM_MDGP_ESH_Mode_function_end:
+	.size	Rte_Mode_BswM_Notification_ESH_ModeNotification_BswM_MDGP_ESH_Mode,__Rte_Mode_BswM_Notification_ESH_ModeNotification_BswM_MDGP_ESH_Mode_function_end-Rte_Mode_BswM_Notification_ESH_ModeNotification_BswM_MDGP_ESH_Mode
+.L135:
+	; End of function
+	
+	.sdecl	'.text.Rte.Os_Task_bsw_task',code,cluster('Os_Task_bsw_task')
+	.sect	'.text.Rte.Os_Task_bsw_task'
+	.align	2
+	
+	.global	Os_Task_bsw_task
+
+; ..\appl\GenData\Rte.c	   381  
+; ..\appl\GenData\Rte.c	   382  
+; ..\appl\GenData\Rte.c	   383  /**********************************************************************************************************************
+; ..\appl\GenData\Rte.c	   384   * Task bodies for RTE controlled tasks
+; ..\appl\GenData\Rte.c	   385   *********************************************************************************************************************/
+; ..\appl\GenData\Rte.c	   386  
+; ..\appl\GenData\Rte.c	   387  /**********************************************************************************************************************
+; ..\appl\GenData\Rte.c	   388   * Task:     bsw_task
+; ..\appl\GenData\Rte.c	   389   * Priority: 29
+; ..\appl\GenData\Rte.c	   390   * Schedule: FULL
+; ..\appl\GenData\Rte.c	   391   * Alarm:    Cycle Time 0.01 s Alarm Offset 0 s
+; ..\appl\GenData\Rte.c	   392   *********************************************************************************************************************/
+; ..\appl\GenData\Rte.c	   393  TASK(bsw_task) /* PRQA S 3408, 1503 */ /* MD_Rte_3408, MD_MSR_Unreachable */
+; Function Os_Task_bsw_task
+.L62:
+Os_Task_bsw_task:	.type	func
+
+; ..\appl\GenData\Rte.c	   394  {
+; ..\appl\GenData\Rte.c	   395  
+; ..\appl\GenData\Rte.c	   396    /* call runnable */
+; ..\appl\GenData\Rte.c	   397    BswM_MainFunction(); /* PRQA S 2987 */ /* MD_Rte_2987 */
+	call	BswM_MainFunction
+.L234:
+
+; ..\appl\GenData\Rte.c	   398  
+; ..\appl\GenData\Rte.c	   399    /* call runnable */
+; ..\appl\GenData\Rte.c	   400    EcuM_MainFunction(); /* PRQA S 2987 */ /* MD_Rte_2987 */
+	call	EcuM_MainFunction
+.L235:
+
+; ..\appl\GenData\Rte.c	   401  
+; ..\appl\GenData\Rte.c	   402    (void)TerminateTask(); /* PRQA S 3417 */ /* MD_Rte_Os */
+	j	TerminateTask
+.L179:
+	
+__Os_Task_bsw_task_function_end:
+	.size	Os_Task_bsw_task,__Os_Task_bsw_task_function_end-Os_Task_bsw_task
+.L75:
+	; End of function
+	
+	.sdecl	'.text.Rte.Os_Task_swc_init',code,cluster('Os_Task_swc_init')
+	.sect	'.text.Rte.Os_Task_swc_init'
+	.align	2
+	
+	.global	Os_Task_swc_init
+
+; ..\appl\GenData\Rte.c	   403  } /* PRQA S 6010, 6030, 6050, 6080 */ /* MD_MSR_STPTH, MD_MSR_STCYC, MD_MSR_STCAL, MD_MSR_STMIF */
+; ..\appl\GenData\Rte.c	   404  
+; ..\appl\GenData\Rte.c	   405  /**********************************************************************************************************************
+; ..\appl\GenData\Rte.c	   406   * Task:     swc_init
+; ..\appl\GenData\Rte.c	   407   * Priority: 48
+; ..\appl\GenData\Rte.c	   408   * Schedule: FULL
+; ..\appl\GenData\Rte.c	   409   *********************************************************************************************************************/
+; ..\appl\GenData\Rte.c	   410  TASK(swc_init) /* PRQA S 3408, 1503 */ /* MD_Rte_3408, MD_MSR_Unreachable */
+; Function Os_Task_swc_init
+.L64:
+Os_Task_swc_init:	.type	func
+
+; ..\appl\GenData\Rte.c	   411  {
+; ..\appl\GenData\Rte.c	   412  
+; ..\appl\GenData\Rte.c	   413    /* call runnable */
+; ..\appl\GenData\Rte.c	   414    swc_test_Init(); /* PRQA S 2987 */ /* MD_Rte_2987 */
+	call	swc_test_Init
+.L240:
+
+; ..\appl\GenData\Rte.c	   415  
+; ..\appl\GenData\Rte.c	   416    (void)TerminateTask(); /* PRQA S 3417 */ /* MD_Rte_Os */
+	j	TerminateTask
+.L180:
+	
+__Os_Task_swc_init_function_end:
+	.size	Os_Task_swc_init,__Os_Task_swc_init_function_end-Os_Task_swc_init
+.L80:
+	; End of function
+	
+	.sdecl	'.text.Rte.Os_Task_swc_task',code,cluster('Os_Task_swc_task')
+	.sect	'.text.Rte.Os_Task_swc_task'
+	.align	2
+	
+	.global	Os_Task_swc_task
+
+; ..\appl\GenData\Rte.c	   417  } /* PRQA S 6010, 6030, 6050, 6080 */ /* MD_MSR_STPTH, MD_MSR_STCYC, MD_MSR_STCAL, MD_MSR_STMIF */
+; ..\appl\GenData\Rte.c	   418  
+; ..\appl\GenData\Rte.c	   419  /**********************************************************************************************************************
+; ..\appl\GenData\Rte.c	   420   * Task:     swc_task
+; ..\appl\GenData\Rte.c	   421   * Priority: 30
+; ..\appl\GenData\Rte.c	   422   * Schedule: FULL
+; ..\appl\GenData\Rte.c	   423   *********************************************************************************************************************/
+; ..\appl\GenData\Rte.c	   424  TASK(swc_task) /* PRQA S 3408, 1503 */ /* MD_Rte_3408, MD_MSR_Unreachable */
+; Function Os_Task_swc_task
+.L66:
+Os_Task_swc_task:	.type	func
+
+; ..\appl\GenData\Rte.c	   425  {
+; ..\appl\GenData\Rte.c	   426    EventMaskType ev;
+; ..\appl\GenData\Rte.c	   427  
+; ..\appl\GenData\Rte.c	   428    for(;;)
+; ..\appl\GenData\Rte.c	   429    {
+; ..\appl\GenData\Rte.c	   430      (void)WaitEvent(Rte_Ev_Run_swc_test_swc_test_10ms | Rte_Ev_Run_swc_test_swc_test_500ms); /* PRQA S 3417 */ /* MD_Rte_Os */
+; ..\appl\GenData\Rte.c	   431      (void)GetEvent(swc_task, &ev); /* PRQA S 3417 */ /* MD_Rte_Os */
+; ..\appl\GenData\Rte.c	   432      (void)ClearEvent(ev & (Rte_Ev_Run_swc_test_swc_test_10ms | Rte_Ev_Run_swc_test_swc_test_500ms)); /* PRQA S 3417 */ /* MD_Rte_Os */
+	mov	e8,#3
+	sub.a	a10,#8
+.L225:
+
+; ..\appl\GenData\Rte.c	   433  
+; ..\appl\GenData\Rte.c	   434      if ((ev & Rte_Ev_Run_swc_test_swc_test_10ms) != (EventMaskType)0)
+	mov	e10,#1
+.L245:
+
+; ..\appl\GenData\Rte.c	   435      {
+; ..\appl\GenData\Rte.c	   436        /* call runnable */
+; ..\appl\GenData\Rte.c	   437        swc_test_10ms(); /* PRQA S 2987 */ /* MD_Rte_2987 */
+; ..\appl\GenData\Rte.c	   438      }
+; ..\appl\GenData\Rte.c	   439  
+; ..\appl\GenData\Rte.c	   440      if ((ev & Rte_Ev_Run_swc_test_swc_test_500ms) != (EventMaskType)0)
+	mov	e12,#2
+.L24:
+.L25:
+	mov	e4,#3
+	call	WaitEvent
+.L246:
+	mov	d4,#5
+	mov.aa	a4,a10
+	call	GetEvent
+.L247:
+	ld.d	e0,[a10]0
+.L248:
+	and	d4,d0,d8
+	and	d5,d1,d9
+	call	ClearEvent
+.L249:
+	ld.d	e0,[a10]0
+.L250:
+	and	d0,d10
+	and	d1,d11
+.L251:
+	eq	d15,d0,#0
+	and.eq	d15,d1,#0
+.L252:
+	jne	d15,#0,.L26
+.L253:
+	call	swc_test_10ms
+.L26:
+	ld.d	e0,[a10]0
+.L254:
+	and	d0,d12
+	and	d1,d13
+.L255:
+	eq	d15,d0,#0
+	and.eq	d15,d1,#0
+.L256:
+	jne	d15,#0,.L25
+.L257:
+
+; ..\appl\GenData\Rte.c	   441      {
+; ..\appl\GenData\Rte.c	   442        /* call runnable */
+; ..\appl\GenData\Rte.c	   443        swc_test_500ms(); /* PRQA S 2987 */ /* MD_Rte_2987 */
+	call	swc_test_500ms
+.L258:
+	j	.L24
+.L181:
+	
+__Os_Task_swc_task_function_end:
+	.size	Os_Task_swc_task,__Os_Task_swc_task_function_end-Os_Task_swc_task
+.L85:
+	; End of function
+	
+	.sdecl	'.data.Rte.Rte_InitState',data,cluster('Rte_InitState')
+	.sect	'.data.Rte.Rte_InitState'
+	.global	Rte_InitState
+Rte_InitState:	.type	object
+	.size	Rte_InitState,1
+	.space	1
+	.sdecl	'.data.Rte.Rte_StartTiming_InitState',data,cluster('Rte_StartTiming_InitState')
+	.sect	'.data.Rte.Rte_StartTiming_InitState'
+	.global	Rte_StartTiming_InitState
+Rte_StartTiming_InitState:	.type	object
+	.size	Rte_StartTiming_InitState,1
+	.space	1
+	.sdecl	'.bss.Rte.Rte_swc_test_Request_ESH_PostRunRequest_0_requestedMode',data,cluster('Rte_swc_test_Request_ESH_PostRunRequest_0_requestedMode')
+	.sect	'.bss.Rte.Rte_swc_test_Request_ESH_PostRunRequest_0_requestedMode'
+	.global	Rte_swc_test_Request_ESH_PostRunRequest_0_requestedMode
+Rte_swc_test_Request_ESH_PostRunRequest_0_requestedMode:	.type	object
+	.size	Rte_swc_test_Request_ESH_PostRunRequest_0_requestedMode,1
+	.space	1
+	.sdecl	'.bss.Rte.Rte_ModeMachine_BswM_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode',data,cluster('Rte_ModeMachine_BswM_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode')
+	.sect	'.bss.Rte.Rte_ModeMachine_BswM_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode'
+	.global	Rte_ModeMachine_BswM_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode
+Rte_ModeMachine_BswM_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode:	.type	object
+	.size	Rte_ModeMachine_BswM_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode,1
+	.space	1
+	.calls	'SchM_Init','SetRelAlarm'
+	.calls	'Rte_Start','ActivateTask'
+	.calls	'Rte_Start','SetRelAlarm'
+	.calls	'Rte_Stop','CancelAlarm'
+	.calls	'SchM_Deinit','CancelAlarm'
+	.calls	'SchM_Enter_Mcu_AtomAgcReg','SuspendAllInterrupts'
+	.calls	'SchM_Exit_Mcu_AtomAgcReg','ResumeAllInterrupts'
+	.calls	'SchM_Enter_Mcu_TomTgcReg','SuspendAllInterrupts'
+	.calls	'SchM_Exit_Mcu_TomTgcReg','ResumeAllInterrupts'
+	.calls	'Rte_Switch_BswM_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode','Rte_GetInternalModeIndex_BswM_ESH_Mode'
+	.calls	'Rte_Switch_BswM_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode','SuspendOSInterrupts'
+	.calls	'Rte_Switch_BswM_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode','ResumeOSInterrupts'
+	.calls	'Os_Task_bsw_task','BswM_MainFunction'
+	.calls	'Os_Task_bsw_task','EcuM_MainFunction'
+	.calls	'Os_Task_bsw_task','TerminateTask'
+	.calls	'Os_Task_swc_init','swc_test_Init'
+	.calls	'Os_Task_swc_init','TerminateTask'
+	.calls	'Os_Task_swc_task','WaitEvent'
+	.calls	'Os_Task_swc_task','GetEvent'
+	.calls	'Os_Task_swc_task','ClearEvent'
+	.calls	'Os_Task_swc_task','swc_test_10ms'
+	.calls	'Os_Task_swc_task','swc_test_500ms'
+	.calls	'Rte_Read_BswM_Request_ESH_PostRunRequest_1_requestedMode','.cocofun_1'
+	.calls	'Rte_Read_BswM_Request_ESH_RunRequest_0_requestedMode','.cocofun_1'
+	.calls	'Rte_Read_BswM_Request_ESH_RunRequest_1_requestedMode','.cocofun_1'
+	.calls	'Rte_GetInternalModeIndex_BswM_ESH_Mode','',0
+	.calls	'SchM_Init','',0
+	.calls	'Rte_Start','',0
+	.calls	'Rte_Stop','',0
+	.calls	'SchM_Deinit','',0
+	.calls	'Rte_InitMemory','',0
+	.calls	'Rte_Read_BswM_Request_ESH_PostRunRequest_0_requestedMode','',0
+	.calls	'Rte_Read_BswM_Request_ESH_PostRunRequest_1_requestedMode','',0
+	.calls	'.cocofun_1','',0
+	.calls	'Rte_Read_BswM_Request_ESH_RunRequest_0_requestedMode','',0
+	.calls	'Rte_Read_BswM_Request_ESH_RunRequest_1_requestedMode','',0
+	.calls	'SchM_Enter_Mcu_AtomAgcReg','',0
+	.calls	'SchM_Exit_Mcu_AtomAgcReg','',0
+	.calls	'SchM_Enter_Mcu_TomTgcReg','',0
+	.calls	'SchM_Exit_Mcu_TomTgcReg','',0
+	.calls	'Rte_Switch_BswM_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode','',0
+	.calls	'Rte_Mode_BswM_Notification_ESH_ModeNotification_BswM_MDGP_ESH_Mode','',0
+	.calls	'Os_Task_bsw_task','',0
+	.calls	'Os_Task_swc_init','',0
+	.extern	SuspendAllInterrupts
+	.extern	ResumeAllInterrupts
+	.extern	SuspendOSInterrupts
+	.extern	ResumeOSInterrupts
+	.extern	ActivateTask
+	.extern	TerminateTask
+	.extern	ClearEvent
+	.extern	GetEvent
+	.extern	WaitEvent
+	.extern	SetRelAlarm
+	.extern	CancelAlarm
+	.extern	BswM_MainFunction
+	.extern	EcuM_MainFunction
+	.extern	swc_test_10ms
+	.extern	swc_test_500ms
+	.extern	swc_test_Init
+	.calls	'Os_Task_swc_task','',8
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L68:
+	.word	8689
+	.half	3
+	.word	.L69
+	.byte	4
+.L67:
+	.byte	1
+	.byte	'..\\appl\\GenData\\Rte.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
+	.word	.L70
+	.byte	2
+	.byte	'int',0,4,5,3
+	.word	115
+	.byte	4
+	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,5
+	.word	122
+	.byte	0,2
+	.byte	'unsigned int',0,4,7,6
+	.word	164
+	.byte	7
+	.word	164
+	.byte	8
+	.byte	'__cmpswapw',0
+	.word	180
+	.byte	1,1,1,1,9
+	.byte	'p',0
+	.word	185
+	.byte	9
+	.byte	'value',0
+	.word	164
+	.byte	9
+	.byte	'compare',0
+	.word	164
+	.byte	0
+.L182:
+	.byte	2
+	.byte	'unsigned long long int',0,8,7,10
+	.byte	'SuspendAllInterrupts',0,1,222,10,21,1,1,1,1,10
+	.byte	'ResumeAllInterrupts',0,1,241,10,21,1,1,1,1,10
+	.byte	'SuspendOSInterrupts',0,1,132,11,21,1,1,1,1,10
+	.byte	'ResumeOSInterrupts',0,1,151,11,21,1,1,1,1
+.L186:
+	.byte	2
+	.byte	'unsigned char',0,1,8,11,2,145,1,9,1,12
+	.byte	'Default_Init_Task',0,0,12
+	.byte	'Default_Init_Task_Trusted',0,1,12
+	.byte	'IdleTask_OsCore0',0,2,12
+	.byte	'bsw_task',0,3,12
+	.byte	'swc_init',0,4,12
+	.byte	'swc_task',0,5,12
+	.byte	'INVALID_TASK',0,6,12
+	.byte	'OS_TASKID_COUNT',0,6,0,13
+	.byte	'ActivateTask',0,1,163,15,27
+	.word	384
+	.byte	1,1,1,1,14
+	.byte	'TaskID',0,1,165,15,12
+	.word	401
+	.byte	0,15
+	.byte	'TerminateTask',0,1,191,15,27
+	.word	384
+	.byte	1,1,1,1,13
+	.byte	'ClearEvent',0,1,153,17,27
+	.word	384
+	.byte	1,1,1,1,14
+	.byte	'Mask',0,1,155,17,17
+	.word	242
+	.byte	0,7
+	.word	242
+	.byte	16
+	.byte	'EventMaskRefType',0,3,185,2,56
+	.word	650
+	.byte	13
+	.byte	'GetEvent',0,1,194,17,27
+	.word	384
+	.byte	1,1,1,1,14
+	.byte	'TaskID',0,1,196,17,12
+	.word	401
+	.byte	14
+	.byte	'Mask',0,1,197,17,20
+	.word	655
+	.byte	0,7
+	.word	242
+	.byte	13
+	.byte	'WaitEvent',0,1,231,17,27
+	.word	384
+	.byte	1,1,1,1,14
+	.byte	'Mask',0,1,233,17,17
+	.word	242
+	.byte	0,11,2,166,1,9,1,12
+	.byte	'Rte_Al_TE2_bsw_task_0_10ms',0,0,12
+	.byte	'Rte_Al_TE_swc_test_swc_test_10ms',0,1,12
+	.byte	'Rte_Al_TE_swc_test_swc_test_500ms',0,2,12
+	.byte	'OS_ALARMID_COUNT',0,3,0,2
+	.byte	'unsigned long int',0,4,7,13
+	.byte	'SetRelAlarm',0,1,204,19,27
+	.word	384
+	.byte	1,1,1,1,14
+	.byte	'AlarmID',0,1,206,19,13
+	.word	777
+	.byte	14
+	.byte	'Increment',0,1,207,19,12
+	.word	903
+	.byte	14
+	.byte	'Cycle',0,1,208,19,12
+	.word	903
+	.byte	0,13
+	.byte	'CancelAlarm',0,1,154,20,27
+	.word	384
+	.byte	1,1,1,1,14
+	.byte	'AlarmID',0,1,156,20,13
+	.word	777
+	.byte	0
+.L191:
+	.byte	7
+	.word	384
+	.byte	10
+	.byte	'BswM_MainFunction',0,4,37,23,1,1,1,1,10
+	.byte	'EcuM_MainFunction',0,5,37,23,1,1,1,1,10
+	.byte	'swc_test_10ms',0,6,89,27,1,1,1,1,10
+	.byte	'swc_test_500ms',0,6,90,27,1,1,1,1,10
+	.byte	'swc_test_Init',0,6,91,27,1,1,1,1,17,1,7
+	.word	1168
+	.byte	16
+	.byte	'__codeptr',0,7,1,1
+	.word	1170
+	.byte	16
+	.byte	'uint8',0,8,104,31
+	.word	384
+	.byte	2
+	.byte	'unsigned short int',0,2,7,16
+	.byte	'uint16',0,8,106,31
+	.word	1207
+	.byte	2
+	.byte	'long int',0,4,5,16
+	.byte	'sint32',0,8,107,31
+	.word	1244
+	.byte	16
+	.byte	'uint32',0,8,108,31
+	.word	903
+	.byte	16
+	.byte	'uint64',0,8,121,30
+	.word	242
+	.byte	16
+	.byte	'StatusType',0,9,127,23
+	.word	384
+	.byte	16
+	.byte	'Std_ReturnType',0,9,132,1,15
+	.word	384
+	.byte	16
+	.byte	'TaskType',0,2,155,1,3
+	.word	401
+	.byte	16
+	.byte	'AlarmType',0,2,172,1,3
+	.word	777
+	.byte	16
+	.byte	'Os_Hal_AddressType',0,10,61,16
+	.word	903
+	.byte	18,64
+	.word	903
+	.byte	19,15,0,20
+	.byte	'Os_ExceptionContextType_Tag',0,11,71,8,160,1,21
+	.byte	'AddressRegisters',0
+	.word	1408
+	.byte	64,2,35,0,21
+	.byte	'DataRegisters',0
+	.word	1408
+	.byte	64,2,35,64,21
+	.byte	'Ra',0
+	.word	903
+	.byte	4,3,35,128,1,21
+	.byte	'Psw',0
+	.word	903
+	.byte	4,3,35,132,1,21
+	.byte	'ExceptionSource',0
+	.word	903
+	.byte	4,3,35,136,1,21
+	.byte	'Pcpn',0
+	.word	903
+	.byte	4,3,35,140,1,21
+	.byte	'Pie',0
+	.word	903
+	.byte	4,3,35,144,1,21
+	.byte	'MpuRegionForStackLow',0
+	.word	903
+	.byte	4,3,35,148,1,21
+	.byte	'MpuRegionForStackUpper',0
+	.word	903
+	.byte	4,3,35,152,1,21
+	.byte	'RawPCXI',0
+	.word	903
+	.byte	4,3,35,156,1,0,16
+	.byte	'Os_ExceptionContextType',0,10,66,44
+	.word	1417
+	.byte	16
+	.byte	'Os_InterruptSourceIdType',0,3,238,1,16
+	.word	903
+	.byte	16
+	.byte	'Os_ExceptionSourceIdType',0,3,246,1,16
+	.word	903
+	.byte	11,3,161,2,9,1,12
+	.byte	'RUNNING',0,0,12
+	.byte	'READY',0,1,12
+	.byte	'WAITING',0,2,12
+	.byte	'SUSPENDED',0,3,0,16
+	.byte	'TaskStateType',0,3,175,2,3
+	.word	1765
+	.byte	16
+	.byte	'EventMaskType',0,3,182,2,16
+	.word	242
+	.byte	16
+	.byte	'Os_TickType',0,3,200,2,19
+	.word	903
+	.byte	16
+	.byte	'TickType',0,3,206,2,21
+	.word	903
+	.byte	22,3,220,2,9,12,21
+	.byte	'maxallowedvalue',0
+	.word	903
+	.byte	4,2,35,0,21
+	.byte	'ticksperbase',0
+	.word	903
+	.byte	4,2,35,4,21
+	.byte	'mincycle',0
+	.word	903
+	.byte	4,2,35,8,0,16
+	.byte	'AlarmBaseType',0,3,228,2,2
+	.word	1897
+	.byte	11,3,128,3,9,1,12
+	.byte	'APPLICATION_TERMINATED',0,0,12
+	.byte	'APPLICATION_RESTARTING',0,1,12
+	.byte	'APPLICATION_ACCESSIBLE',0,2,0,16
+	.byte	'ApplicationStateType',0,3,133,3,3
+	.word	1992
+	.byte	11,3,177,3,9,1,12
+	.byte	'OSServiceId_GetApplicationID',0,0,12
+	.byte	'OSServiceId_GetISRID',0,1,12
+	.byte	'OSServiceId_CallTrustedFunction',0,2,12
+	.byte	'OSServiceId_CheckISRMemoryAccess',0,3,12
+	.byte	'OSServiceId_CheckTaskMemoryAccess',0,4,12
+	.byte	'OSServiceId_CheckObjectAccess',0,5,12
+	.byte	'OSServiceId_CheckObjectOwnership',0,6,12
+	.byte	'OSServiceId_StartScheduleTableRel',0,7,12
+	.byte	'OSServiceId_StartScheduleTableAbs',0,8,12
+	.byte	'OSServiceId_StopScheduleTable',0,9,12
+	.byte	'OSServiceId_NextScheduleTable',0,10,12
+	.byte	'OSServiceId_StartScheduleTableSynchron',0,11,12
+	.byte	'OSServiceId_SyncScheduleTable',0,12,12
+	.byte	'OSServiceId_SetScheduleTableAsync',0,13,12
+	.byte	'OSServiceId_GetScheduleTableStatus',0,14,12
+	.byte	'OSServiceId_IncrementCounter',0,15,12
+	.byte	'OSServiceId_GetCounterValue',0,16,12
+	.byte	'OSServiceId_GetElapsedValue',0,17,12
+	.byte	'OSServiceId_TerminateApplication',0,18,12
+	.byte	'OSServiceId_AllowAccess',0,19,12
+	.byte	'OSServiceId_GetApplicationState',0,20,12
+	.byte	'OSServiceId_GetNumberOfActivatedCores',0,21,12
+	.byte	'OSServiceId_GetCoreID',0,22,12
+	.byte	'OSServiceId_StartCore',0,23,12
+	.byte	'OSServiceId_StartNonAutosarCore',0,24,12
+	.byte	'OSServiceId_GetSpinlock',0,25,12
+	.byte	'OSServiceId_ReleaseSpinlock',0,26,12
+	.byte	'OSServiceId_TryToGetSpinlock',0,27,12
+	.byte	'OSServiceId_ShutdownAllCores',0,28,12
+	.byte	'OSServiceId_ControlIdle',0,29,12
+	.byte	'OSServiceId_IocSend',0,30,12
+	.byte	'OSServiceId_IocWrite',0,31,12
+	.byte	'OSServiceId_IocSendGroup',0,32,12
+	.byte	'OSServiceId_IocWriteGroup',0,33,12
+	.byte	'OSServiceId_IocReceive',0,34,12
+	.byte	'OSServiceId_IocRead',0,35,12
+	.byte	'OSServiceId_IocReceiveGroup',0,36,12
+	.byte	'OSServiceId_IocReadGroup',0,37,12
+	.byte	'OSServiceId_IocEmptyQueue',0,38,12
+	.byte	'OSServiceId_GetCurrentApplicationID',0,39,12
+	.byte	'OSServiceId_GetExceptionContext',0,160,1,12
+	.byte	'OSServiceId_SetExceptionContext',0,161,1,12
+	.byte	'OSServiceId_CallNonTrustedFunction',0,162,1,12
+	.byte	'OSServiceId_AppKill',0,163,1,12
+	.byte	'OSServiceId_AlarmActionSetEvent',0,164,1,12
+	.byte	'OSServiceId_AlarmActionActivateTask',0,165,1,12
+	.byte	'OSServiceId_AlarmActionIncrementCounter',0,166,1,12
+	.byte	'OSServiceId_AlarmActionCallback',0,167,1,12
+	.byte	'OSServiceId_TimerIsr',0,168,1,12
+	.byte	'OSServiceId_IsrWrapper',0,169,1,12
+	.byte	'OSServiceId_GetTaskStackUsage',0,170,1,12
+	.byte	'OSServiceId_GetISRStackUsage',0,171,1,12
+	.byte	'OSServiceId_GetKernelStackUsage',0,172,1,12
+	.byte	'OSServiceId_GetStartupHookStackUsage',0,173,1,12
+	.byte	'OSServiceId_GetErrorHookStackUsage',0,174,1,12
+	.byte	'OSServiceId_GetShutdownHookStackUsage',0,175,1,12
+	.byte	'OSServiceId_GetProtectionHookStackUsage',0,176,1,12
+	.byte	'OSServiceId_GetSemaphore',0,177,1,12
+	.byte	'OSServiceId_ReleaseSemaphore',0,178,1,12
+	.byte	'OSServiceId_ScheduleTableActivateTask',0,179,1,12
+	.byte	'OSServiceId_ScheduleTableSetEvent',0,180,1,12
+	.byte	'OSServiceId_DisableInterruptSource',0,181,1,12
+	.byte	'OSServiceId_EnableInterruptSource',0,182,1,12
+	.byte	'OSServiceId_ClearPendingInterrupt',0,183,1,12
+	.byte	'OSServiceId_GetUnhandledIrq',0,184,1,12
+	.byte	'OSServiceId_GetUnhandledExc',0,185,1,12
+	.byte	'OSServiceId_HookCallCallback',0,186,1,12
+	.byte	'OSServiceId_IsInterruptSourceEnabled',0,187,1,12
+	.byte	'OSServiceId_IsInterruptPending',0,188,1,12
+	.byte	'OSServiceId_CallFastTrustedFunction',0,189,1,12
+	.byte	'OSServiceId_BarrierSynchronize',0,190,1,12
+	.byte	'OSServiceId_InitialEnableInterruptSources',0,191,1,12
+	.byte	'OSServiceId_GetCoreStartState',0,192,1,12
+	.byte	'OSServiceId_StartOS',0,208,1,12
+	.byte	'OSServiceId_GetActiveApplicationMode',0,210,1,12
+	.byte	'OSServiceId_DisableAllInterrupts',0,211,1,12
+	.byte	'OSServiceId_EnableAllInterrupts',0,212,1,12
+	.byte	'OSServiceId_SuspendAllInterrupts',0,213,1,12
+	.byte	'OSServiceId_ResumeAllInterrupts',0,214,1,12
+	.byte	'OSServiceId_SuspendOSInterrupts',0,215,1,12
+	.byte	'OSServiceId_ResumeOSInterrupts',0,216,1,12
+	.byte	'OSServiceId_ActivateTask',0,217,1,12
+	.byte	'OSServiceId_TerminateTask',0,218,1,12
+	.byte	'OSServiceId_ChainTask',0,219,1,12
+	.byte	'OSServiceId_GetTaskID',0,220,1,12
+	.byte	'OSServiceId_GetTaskState',0,221,1,12
+	.byte	'OSServiceId_Schedule',0,222,1,12
+	.byte	'OSServiceId_SetEvent',0,223,1,12
+	.byte	'OSServiceId_ClearEvent',0,224,1,12
+	.byte	'OSServiceId_GetEvent',0,225,1,12
+	.byte	'OSServiceId_WaitEvent',0,226,1,12
+	.byte	'OSServiceId_GetAlarmBase',0,227,1,12
+	.byte	'OSServiceId_GetAlarm',0,228,1,12
+	.byte	'OSServiceId_SetRelAlarm',0,229,1,12
+	.byte	'OSServiceId_SetAbsAlarm',0,230,1,12
+	.byte	'OSServiceId_CancelAlarm',0,231,1,12
+	.byte	'OSServiceId_GetResource',0,232,1,12
+	.byte	'OSServiceId_ReleaseResource',0,233,1,12
+	.byte	'OSSERVICEID_COUNT',0,255,1,0,16
+	.byte	'OSServiceIdType',0,3,156,4,3
+	.word	2104
+	.byte	11,3,172,4,9,2,12
+	.byte	'OS_STATUS_OK',0,0,12
+	.byte	'OS_STATUS_CALLEVEL',0,2,12
+	.byte	'OS_STATUS_LIMIT',0,4,12
+	.byte	'OS_STATUS_RESOURCE',0,6,12
+	.byte	'OS_STATUS_SERVICEID',0,9,12
+	.byte	'OS_STATUS_ILLEGAL_ADDRESS',0,10,12
+	.byte	'OS_STATUS_MISSINGEND',0,11,12
+	.byte	'OS_STATUS_DISABLEDINT',0,12,12
+	.byte	'OS_STATUS_STACKFAULT',0,13,12
+	.byte	'OS_STATUS_PROTECTION_MEMORY',0,14,12
+	.byte	'OS_STATUS_PROTECTION_TIME',0,15,12
+	.byte	'OS_STATUS_PROTECTION_ARRIVAL',0,16,12
+	.byte	'OS_STATUS_PROTECTION_LOCKED',0,17,12
+	.byte	'OS_STATUS_PROTECTION_EXCEPTION',0,18,12
+	.byte	'OS_STATUS_INTERFERENCE_DEADLOCK',0,19,12
+	.byte	'OS_STATUS_NESTING_DEADLOCK',0,20,12
+	.byte	'OS_STATUS_SPINLOCK',0,21,12
+	.byte	'OS_STATUS_CORE',0,22,12
+	.byte	'OS_STATUS_OVERFLOW',0,245,1,12
+	.byte	'OS_STATUS_KILL_KERNEL_OBJ',0,246,1,12
+	.byte	'OS_STATUS_NO_RESTARTTASK',0,247,1,12
+	.byte	'OS_STATUS_CALL_NOT_ALLOWED',0,248,1,12
+	.byte	'OS_STATUS_FUNCTION_UNAVAILABLE',0,249,1,12
+	.byte	'OS_STATUS_PROTECTION_SYSCALL',0,250,1,12
+	.byte	'OS_STATUS_PROTECTION_IRQ',0,251,1,12
+	.byte	'OS_STATUS_API_ERROR',0,252,1,12
+	.byte	'OS_STATUS_ASSERTION',0,253,1,12
+	.byte	'OS_STATUS_OVERLOAD',0,254,1,12
+	.byte	'OS_STATUS_ACCESSRIGHTS_1',0,129,2,12
+	.byte	'OS_STATUS_CALLEVEL_SHARED_STACK',0,130,2,12
+	.byte	'OS_STATUS_ID_1',0,131,2,12
+	.byte	'OS_STATUS_UNLOCKED',0,133,2,12
+	.byte	'OS_STATUS_STATE_1',0,135,2,12
+	.byte	'OS_STATUS_VALUE_IS_ZERO_1',0,136,2,12
+	.byte	'OS_STATUS_CORE_CROSS_DATA',0,150,2,12
+	.byte	'OS_STATUS_PARAM_POINTER_1',0,151,2,12
+	.byte	'OS_STATUS_STACKUSAGE_DISABLED_BY_CONFIG',0,241,3,12
+	.byte	'OS_STATUS_NO_BARRIER_PARTICIPANT',0,242,3,12
+	.byte	'OS_STATUS_UNIMPLEMENTED_CLEARPENDING',0,243,3,12
+	.byte	'OS_STATUS_NO_NTFSTACK_POOL_EMPTY',0,244,3,12
+	.byte	'OS_STATUS_ACCESSRIGHTS_2',0,129,4,12
+	.byte	'OS_STATUS_CALLEVEL_CROSS_CORE_SYNC',0,130,4,12
+	.byte	'OS_STATUS_ID_2',0,131,4,12
+	.byte	'OS_STATUS_NOFUNC_1',0,133,4,12
+	.byte	'OS_STATUS_STATE_2',0,135,4,12
+	.byte	'OS_STATUS_VALUE_IS_ZERO_2',0,136,4,12
+	.byte	'OS_STATUS_PARAM_POINTER_2',0,151,4,12
+	.byte	'OS_STATUS_EVENT_DISABLED_BY_CONFIG',0,241,5,12
+	.byte	'OS_STATUS_UNIMPLEMENTED_EXCEPTIONCONTEXT',0,243,5,12
+	.byte	'OS_STATUS_NO_NTFSTACK_APPLIMIT_EXCEEDED',0,244,5,12
+	.byte	'OS_STATUS_NOTACCESSIBLE_1',0,129,6,12
+	.byte	'OS_STATUS_ID_TYPE_1',0,131,6,12
+	.byte	'OS_STATUS_NOFUNC_2',0,133,6,12
+	.byte	'OS_STATUS_STATE_STOPPED',0,135,6,12
+	.byte	'OS_STATUS_VALUE_IS_TOO_HIGH_1',0,136,6,12
+	.byte	'OS_STATUS_PARAM_POINTER_3',0,151,6,12
+	.byte	'OS_STATUS_NOTACCESSIBLE_2',0,129,8,12
+	.byte	'OS_STATUS_ID_DIFFERENT_COUNTER',0,131,8,12
+	.byte	'OS_STATUS_SPINLOCK_ORDER',0,133,8,12
+	.byte	'OS_STATUS_STATE_RUNNING',0,135,8,12
+	.byte	'OS_STATUS_VALUE_IS_TOO_HIGH_2',0,136,8,12
+	.byte	'OS_STATUS_NOEXTENDEDTASK_1',0,129,10,12
+	.byte	'OS_STATUS_ID_DIFFERENT_SYNC',0,131,10,12
+	.byte	'OS_STATUS_STOPPED_1',0,133,10,12
+	.byte	'OS_STATUS_STATE_NEXTED',0,135,10,12
+	.byte	'OS_STATUS_VALUE_IS_TOO_HIGH_3',0,136,10,12
+	.byte	'OS_STATUS_NOEXTENDEDTASK_2',0,129,12,12
+	.byte	'OS_STATUS_HOOK_NOT_AVAILABLE',0,131,12,12
+	.byte	'OS_STATUS_NOT_STOPPED_2',0,133,12,12
+	.byte	'OS_STATUS_STATE_WAITING',0,135,12,12
+	.byte	'OS_STATUS_VALUE_IS_OUT_OF_BOUNDS_1',0,136,12,12
+	.byte	'OS_STATUS_NOEXTENDEDTASK_CALLER',0,129,14,12
+	.byte	'OS_STATUS_NEXTED_1',0,133,14,12
+	.byte	'OS_STATUS_STATE_NO_RESTART',0,135,14,12
+	.byte	'OS_STATUS_VALUE_IS_OUT_OF_BOUNDS_2',0,136,14,12
+	.byte	'OS_STATUS_LOCKED',0,129,16,12
+	.byte	'OS_STATUS_KILLING_IS_DISABLED',0,133,16,12
+	.byte	'OS_STATUS_STATE_ALREADY_TERMINATED',0,135,16,12
+	.byte	'OS_STATUS_VALUE_IS_TOO_LOW_1',0,136,16,12
+	.byte	'OS_STATUS_PRIORITY',0,129,18,12
+	.byte	'OS_STATUS_ORDER',0,133,18,12
+	.byte	'OS_STATUS_STATE_RESTARTING_NO_MEMBER',0,135,18,12
+	.byte	'OS_STATUS_VALUE_IS_TOO_LOW_2',0,136,18,12
+	.byte	'OS_STATUS_NOT_THE_OWNER_1',0,129,20,12
+	.byte	'OS_STATUS_STATE_ALREADY_RESTARTING',0,135,20,12
+	.byte	'OS_STATUS_VALUE_IS_TOO_LOW_3',0,136,20,12
+	.byte	'OS_STATUS_VALUE_IS_NOT_BOOLEAN',0,136,22,0,16
+	.byte	'Os_StatusType',0,3,232,5,3
+	.word	5274
+	.byte	22,3,133,6,9,4,21
+	.byte	'Service',0
+	.word	2104
+	.byte	1,2,35,0,21
+	.byte	'Error',0
+	.word	384
+	.byte	1,2,35,1,21
+	.byte	'DetailedError',0
+	.word	5274
+	.byte	2,2,35,2,0,16
+	.byte	'Os_ErrorInformationType',0,3,143,6,3
+	.word	7804
+	.byte	11,3,175,6,9,1,12
+	.byte	'SCHEDULETABLE_STOPPED',0,0,12
+	.byte	'SCHEDULETABLE_NEXT',0,1,12
+	.byte	'SCHEDULETABLE_WAITING',0,2,12
+	.byte	'SCHEDULETABLE_RUNNING',0,3,12
+	.byte	'SCHEDULETABLE_RUNNING_AND_SYNCHRONOUS',0,4,0,16
+	.byte	'ScheduleTableStatusType',0,3,192,6,3
+	.word	7899
+	.byte	16
+	.byte	'Os_AccessCheckAddress',0,3,199,6,29
+	.word	903
+	.byte	11,3,211,6,9,1,12
+	.byte	'OS_MEM_ACCESS_TYPE_NON',0,0,12
+	.byte	'OS_MEM_ACCESS_TYPE_R',0,1,12
+	.byte	'OS_MEM_ACCESS_TYPE_READ',0,1,12
+	.byte	'OS_MEM_ACCESS_TYPE_W',0,2,12
+	.byte	'OS_MEM_ACCESS_TYPE_WRITE',0,2,12
+	.byte	'OS_MEM_ACCESS_TYPE_RW',0,3,12
+	.byte	'OS_MEM_ACCESS_TYPE_EXECUTE',0,4,12
+	.byte	'OS_MEM_ACCESS_TYPE_X',0,4,12
+	.byte	'OS_MEM_ACCESS_TYPE_RX',0,5,12
+	.byte	'OS_MEM_ACCESS_TYPE_WX',0,6,12
+	.byte	'OS_MEM_ACCESS_TYPE_RWX',0,7,12
+	.byte	'OS_MEM_ACCESS_TYPE_S',0,8,12
+	.byte	'OS_MEM_ACCESS_TYPE_STACK',0,8,12
+	.byte	'OS_MEM_ACCESS_TYPE_RS',0,9,12
+	.byte	'OS_MEM_ACCESS_TYPE_WS',0,10,12
+	.byte	'OS_MEM_ACCESS_TYPE_RWS',0,11,12
+	.byte	'OS_MEM_ACCESS_TYPE_XS',0,12,12
+	.byte	'OS_MEM_ACCESS_TYPE_RXS',0,13,12
+	.byte	'OS_MEM_ACCESS_TYPE_WXS',0,14,12
+	.byte	'OS_MEM_ACCESS_TYPE_RWXS',0,15,0,16
+	.byte	'Os_MemAccessType',0,3,233,6,3
+	.word	8103
+	.byte	16
+	.byte	'BswM_ESH_Mode',0,12,46,15
+	.word	384
+	.byte	16
+	.byte	'BswM_ESH_RunRequest',0,12,49,15
+	.word	384
+.L214:
+	.byte	6
+	.word	384
+.L215:
+	.byte	6
+	.word	384
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L69:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,38,0,73,19,0,0,4,46,1,3,8,54
+	.byte	15,39,12,63,12,60,12,0,0,5,5,0,73,19,0,0,6,53,0,73,19,0,0,7,15,0,73,19,0,0,8,46,1,3,8,73,19,54,15,39,12
+	.byte	63,12,60,12,0,0,9,5,0,3,8,73,19,0,0,10,46,0,3,8,58,15,59,15,57,15,54,15,39,12,63,12,60,12,0,0,11,4,1,58
+	.byte	15,59,15,57,15,11,15,0,0,12,40,0,3,8,28,13,0,0,13,46,1,3,8,58,15,59,15,57,15,73,19,54,15,39,12,63,12,60
+	.byte	12,0,0,14,5,0,3,8,58,15,59,15,57,15,73,19,0,0,15,46,0,3,8,58,15,59,15,57,15,73,19,54,15,39,12,63,12,60
+	.byte	12,0,0,16,22,0,3,8,58,15,59,15,57,15,73,19,0,0,17,21,0,54,15,0,0,18,1,1,11,15,73,19,0,0,19,33,0,47,15
+	.byte	0,0,20,19,1,3,8,58,15,59,15,57,15,11,15,0,0,21,13,0,3,8,73,19,11,15,56,9,0,0,22,19,1,58,15,59,15,57,15
+	.byte	11,15,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L70:
+	.word	.L227-.L226
+.L226:
+	.half	3
+	.word	.L229-.L228
+.L228:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'D:\\Zonal\\demo011\\tasking\\component\\Os\\Implementation',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\appl\\GenData',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\appl\\GenData\\Components',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\component\\_Common\\Implementation',0,0
+	.byte	'Os.h',0,1,0,0
+	.byte	'Os_Types_Lcfg.h',0,2,0,0
+	.byte	'Os_Types.h',0,1,0,0
+	.byte	'..\\appl\\GenData\\SchM_BswM.h',0,0,0,0
+	.byte	'..\\appl\\GenData\\SchM_EcuM.h',0,0,0,0
+	.byte	'Rte_swc_test.h',0,3,0,0
+	.byte	'..\\appl\\GenData\\Rte.c',0,0,0,0
+	.byte	'Platform_Types.h',0,4,0,0
+	.byte	'Std_Types.h',0,4,0,0
+	.byte	'Os_Hal_Os_Types.h',0,1,0,0
+	.byte	'Os_Hal_OsInt.h',0,1,0,0
+	.byte	'..\\appl\\GenData\\Rte_Type.h',0,0,0,0,0
+.L229:
+.L227:
+	.sdecl	'.debug_info',debug,cluster('Os_Task_bsw_task')
+	.sect	'.debug_info'
+.L71:
+	.word	168
+	.half	3
+	.word	.L72
+	.byte	4,1
+	.byte	'..\\appl\\GenData\\Rte.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
+	.word	.L74,.L73
+	.byte	2
+	.word	.L67
+	.byte	3
+	.byte	'Os_Task_bsw_task',0,1,137,3,1,1,1,1
+	.word	.L62,.L179,.L61
+	.byte	4
+	.word	.L62,.L179
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Os_Task_bsw_task')
+	.sect	'.debug_abbrev'
+.L72:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Os_Task_bsw_task')
+	.sect	'.debug_line'
+.L73:
+	.word	.L231-.L230
+.L230:
+	.half	3
+	.word	.L233-.L232
+.L232:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\appl\\GenData\\Rte.c',0,0,0,0,0
+.L233:
+	.byte	5,20,7,0,5,2
+	.word	.L62
+	.byte	3,140,3,1,9
+	.half	.L234-.L62
+	.byte	3,3,1,5,22,9
+	.half	.L235-.L234
+	.byte	3,2,1,5,1,7,9
+	.half	.L75-.L235
+	.byte	3,1,0,1,1
+.L231:
+	.sdecl	'.debug_ranges',debug,cluster('Os_Task_bsw_task')
+	.sect	'.debug_ranges'
+.L74:
+	.word	-1,.L62,0,.L75-.L62,0,0
+	.sdecl	'.debug_info',debug,cluster('Os_Task_swc_init')
+	.sect	'.debug_info'
+.L76:
+	.word	168
+	.half	3
+	.word	.L77
+	.byte	4,1
+	.byte	'..\\appl\\GenData\\Rte.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
+	.word	.L79,.L78
+	.byte	2
+	.word	.L67
+	.byte	3
+	.byte	'Os_Task_swc_init',0,1,154,3,1,1,1,1
+	.word	.L64,.L180,.L63
+	.byte	4
+	.word	.L64,.L180
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Os_Task_swc_init')
+	.sect	'.debug_abbrev'
+.L77:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Os_Task_swc_init')
+	.sect	'.debug_line'
+.L78:
+	.word	.L237-.L236
+.L236:
+	.half	3
+	.word	.L239-.L238
+.L238:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\appl\\GenData\\Rte.c',0,0,0,0,0
+.L239:
+	.byte	5,16,7,0,5,2
+	.word	.L64
+	.byte	3,157,3,1,5,22,9
+	.half	.L240-.L64
+	.byte	3,2,1,5,1,7,9
+	.half	.L80-.L240
+	.byte	3,1,0,1,1
+.L237:
+	.sdecl	'.debug_ranges',debug,cluster('Os_Task_swc_init')
+	.sect	'.debug_ranges'
+.L79:
+	.word	-1,.L64,0,.L80-.L64,0,0
+	.sdecl	'.debug_info',debug,cluster('Os_Task_swc_task')
+	.sect	'.debug_info'
+.L81:
+	.word	185
+	.half	3
+	.word	.L82
+	.byte	4,1
+	.byte	'..\\appl\\GenData\\Rte.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
+	.word	.L84,.L83
+	.byte	2
+	.word	.L67
+	.byte	3
+	.byte	'Os_Task_swc_task',0,1,168,3,1,1,1,1
+	.word	.L66,.L181,.L65
+	.byte	4
+	.word	.L66,.L181
+	.byte	5
+	.byte	'ev',0,1,170,3,17
+	.word	.L182,.L183
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Os_Task_swc_task')
+	.sect	'.debug_abbrev'
+.L82:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Os_Task_swc_task')
+	.sect	'.debug_line'
+.L83:
+	.word	.L242-.L241
+.L241:
+	.half	3
+	.word	.L244-.L243
+.L243:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\appl\\GenData\\Rte.c',0,0,0,0,0
+.L244:
+	.byte	5,62,7,0,5,2
+	.word	.L66
+	.byte	3,175,3,1,5,1,3,120,1,5,15,9
+	.half	.L225-.L66
+	.byte	3,10,1,9
+	.half	.L245-.L225
+	.byte	3,6,1,5,55,9
+	.half	.L25-.L245
+	.byte	3,118,1,5,20,9
+	.half	.L246-.L25
+	.byte	3,1,1,5,31,1,5,22,9
+	.half	.L247-.L246
+	.byte	3,1,1,5,25,9
+	.half	.L248-.L247
+	.byte	1,5,10,9
+	.half	.L249-.L248
+	.byte	3,2,1,5,13,9
+	.half	.L250-.L249
+	.byte	1,5,50,9
+	.half	.L251-.L250
+	.byte	1,5,5,9
+	.half	.L252-.L251
+	.byte	1,5,20,7,9
+	.half	.L253-.L252
+	.byte	3,3,1,5,10,9
+	.half	.L26-.L253
+	.byte	3,3,1,5,13,9
+	.half	.L254-.L26
+	.byte	1,5,51,9
+	.half	.L255-.L254
+	.byte	1,5,5,9
+	.half	.L256-.L255
+	.byte	1,5,21,7,9
+	.half	.L257-.L256
+	.byte	3,3,1,5,8,9
+	.half	.L258-.L257
+	.byte	3,113,1,5,1,9
+	.half	.L85-.L258
+	.byte	3,18,0,1,1
+.L242:
+	.sdecl	'.debug_ranges',debug,cluster('Os_Task_swc_task')
+	.sect	'.debug_ranges'
+.L84:
+	.word	-1,.L66,0,.L85-.L66,0,0
+	.sdecl	'.debug_info',debug,cluster('SchM_Init')
+	.sect	'.debug_info'
+.L86:
+	.word	161
+	.half	3
+	.word	.L87
+	.byte	4,1
+	.byte	'..\\appl\\GenData\\Rte.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
+	.word	.L89,.L88
+	.byte	2
+	.word	.L67
+	.byte	3
+	.byte	'SchM_Init',0,1,212,1,22,1,1,1
+	.word	.L30,.L184,.L29
+	.byte	4
+	.word	.L30,.L184
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('SchM_Init')
+	.sect	'.debug_abbrev'
+.L87:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('SchM_Init')
+	.sect	'.debug_line'
+.L88:
+	.word	.L260-.L259
+.L259:
+	.half	3
+	.word	.L262-.L261
+.L261:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\appl\\GenData\\Rte.c',0,0,0,0,0
+.L262:
+	.byte	5,21,7,0,5,2
+	.word	.L30
+	.byte	3,214,1,1,5,73,9
+	.half	.L263-.L30
+	.byte	1,5,88,9
+	.half	.L264-.L263
+	.byte	1,5,3,9
+	.half	.L265-.L264
+	.byte	3,2,1,5,19,9
+	.half	.L266-.L265
+	.byte	1,5,17,1,5,1,9
+	.half	.L267-.L266
+	.byte	3,1,1,7,9
+	.half	.L90-.L267
+	.byte	0,1,1
+.L260:
+	.sdecl	'.debug_ranges',debug,cluster('SchM_Init')
+	.sect	'.debug_ranges'
+.L89:
+	.word	-1,.L30,0,.L90-.L30,0,0
+	.sdecl	'.debug_info',debug,cluster('SchM_Deinit')
+	.sect	'.debug_info'
+.L91:
+	.word	163
+	.half	3
+	.word	.L92
+	.byte	4,1
+	.byte	'..\\appl\\GenData\\Rte.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
+	.word	.L94,.L93
+	.byte	2
+	.word	.L67
+	.byte	3
+	.byte	'SchM_Deinit',0,1,255,1,22,1,1,1
+	.word	.L36,.L185,.L35
+	.byte	4
+	.word	.L36,.L185
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('SchM_Deinit')
+	.sect	'.debug_abbrev'
+.L92:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('SchM_Deinit')
+	.sect	'.debug_line'
+.L93:
+	.word	.L269-.L268
+.L268:
+	.half	3
+	.word	.L271-.L270
+.L270:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\appl\\GenData\\Rte.c',0,0,0,0,0
+.L271:
+	.byte	5,21,7,0,5,2
+	.word	.L36
+	.byte	3,129,2,1,5,3,9
+	.half	.L272-.L36
+	.byte	3,2,1,5,19,9
+	.half	.L273-.L272
+	.byte	1,5,17,1,5,1,9
+	.half	.L274-.L273
+	.byte	3,1,1,7,9
+	.half	.L95-.L274
+	.byte	0,1,1
+.L269:
+	.sdecl	'.debug_ranges',debug,cluster('SchM_Deinit')
+	.sect	'.debug_ranges'
+.L94:
+	.word	-1,.L36,0,.L95-.L36,0,0
+	.sdecl	'.debug_info',debug,cluster('Rte_Start')
+	.sect	'.debug_info'
+.L96:
+	.word	165
+	.half	3
+	.word	.L97
+	.byte	4,1
+	.byte	'..\\appl\\GenData\\Rte.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
+	.word	.L99,.L98
+	.byte	2
+	.word	.L67
+	.byte	3
+	.byte	'Rte_Start',0,1,220,1,32
+	.word	.L186
+	.byte	1,1,1
+	.word	.L32,.L187,.L31
+	.byte	4
+	.word	.L32,.L187
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Rte_Start')
+	.sect	'.debug_abbrev'
+.L97:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Rte_Start')
+	.sect	'.debug_line'
+.L98:
+	.word	.L276-.L275
+.L275:
+	.half	3
+	.word	.L278-.L277
+.L277:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\appl\\GenData\\Rte.c',0,0,0,0,0
+.L278:
+	.byte	5,3,7,0,5,2
+	.word	.L32
+	.byte	3,222,1,1,5,61,9
+	.half	.L279-.L32
+	.byte	1,5,59,1,5,3,9
+	.half	.L280-.L279
+	.byte	3,4,1,5,65,9
+	.half	.L281-.L280
+	.byte	1,5,22,9
+	.half	.L282-.L281
+	.byte	3,3,1,9
+	.half	.L283-.L282
+	.byte	3,1,1,5,21,9
+	.half	.L284-.L283
+	.byte	3,3,1,5,79,9
+	.half	.L285-.L284
+	.byte	1,5,94,9
+	.half	.L286-.L285
+	.byte	1,5,21,9
+	.half	.L287-.L286
+	.byte	3,1,1,5,80,9
+	.half	.L288-.L287
+	.byte	1,5,95,9
+	.half	.L289-.L288
+	.byte	1,5,3,9
+	.half	.L290-.L289
+	.byte	3,2,1,5,31,9
+	.half	.L291-.L290
+	.byte	1,5,29,1,5,3,9
+	.half	.L292-.L291
+	.byte	3,1,1,5,17,9
+	.half	.L293-.L292
+	.byte	1,5,10,9
+	.half	.L294-.L293
+	.byte	3,2,1,5,1,3,1,1,7,9
+	.half	.L100-.L294
+	.byte	0,1,1
+.L276:
+	.sdecl	'.debug_ranges',debug,cluster('Rte_Start')
+	.sect	'.debug_ranges'
+.L99:
+	.word	-1,.L32,0,.L100-.L32,0,0
+	.sdecl	'.debug_info',debug,cluster('Rte_Stop')
+	.sect	'.debug_info'
+.L101:
+	.word	164
+	.half	3
+	.word	.L102
+	.byte	4,1
+	.byte	'..\\appl\\GenData\\Rte.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
+	.word	.L104,.L103
+	.byte	2
+	.word	.L67
+	.byte	3
+	.byte	'Rte_Stop',0,1,243,1,32
+	.word	.L186
+	.byte	1,1,1
+	.word	.L34,.L188,.L33
+	.byte	4
+	.word	.L34,.L188
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Rte_Stop')
+	.sect	'.debug_abbrev'
+.L102:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Rte_Stop')
+	.sect	'.debug_line'
+.L103:
+	.word	.L296-.L295
+.L295:
+	.half	3
+	.word	.L298-.L297
+.L297:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\appl\\GenData\\Rte.c',0,0,0,0,0
+.L298:
+	.byte	5,3,7,0,5,2
+	.word	.L34
+	.byte	3,244,1,1,5,31,9
+	.half	.L299-.L34
+	.byte	1,5,29,1,5,21,9
+	.half	.L300-.L299
+	.byte	3,2,1,9
+	.half	.L301-.L300
+	.byte	3,1,1,5,3,9
+	.half	.L302-.L301
+	.byte	3,2,1,5,19,9
+	.half	.L303-.L302
+	.byte	1,5,17,1,5,10,9
+	.half	.L304-.L303
+	.byte	3,2,1,5,1,3,1,1,7,9
+	.half	.L105-.L304
+	.byte	0,1,1
+.L296:
+	.sdecl	'.debug_ranges',debug,cluster('Rte_Stop')
+	.sect	'.debug_ranges'
+.L104:
+	.word	-1,.L34,0,.L105-.L34,0,0
+	.sdecl	'.debug_info',debug,cluster('Rte_InitMemory')
+	.sect	'.debug_info'
+.L106:
+	.word	166
+	.half	3
+	.word	.L107
+	.byte	4,1
+	.byte	'..\\appl\\GenData\\Rte.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
+	.word	.L109,.L108
+	.byte	2
+	.word	.L67
+	.byte	3
+	.byte	'Rte_InitMemory',0,1,135,2,22,1,1,1
+	.word	.L38,.L189,.L37
+	.byte	4
+	.word	.L38,.L189
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Rte_InitMemory')
+	.sect	'.debug_abbrev'
+.L107:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Rte_InitMemory')
+	.sect	'.debug_line'
+.L108:
+	.word	.L306-.L305
+.L305:
+	.half	3
+	.word	.L308-.L307
+.L307:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\appl\\GenData\\Rte.c',0,0,0,0,0
+.L308:
+	.byte	5,3,7,0,5,2
+	.word	.L38
+	.byte	3,136,2,1,5,19,9
+	.half	.L309-.L38
+	.byte	1,5,17,1,5,3,9
+	.half	.L310-.L309
+	.byte	3,1,1,5,29,9
+	.half	.L311-.L310
+	.byte	1,5,1,9
+	.half	.L312-.L311
+	.byte	3,2,1,7,9
+	.half	.L110-.L312
+	.byte	0,1,1
+.L306:
+	.sdecl	'.debug_ranges',debug,cluster('Rte_InitMemory')
+	.sect	'.debug_ranges'
+.L109:
+	.word	-1,.L38,0,.L110-.L38,0,0
+	.sdecl	'.debug_info',debug,cluster('Rte_Read_BswM_Request_ESH_PostRunRequest_0_requestedMode')
+	.sect	'.debug_info'
+.L111:
+	.word	231
+	.half	3
+	.word	.L112
+	.byte	4,1
+	.byte	'..\\appl\\GenData\\Rte.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
+	.word	.L114,.L113
+	.byte	2
+	.word	.L67
+	.byte	3
+	.byte	'Rte_Read_BswM_Request_ESH_PostRunRequest_0_requestedMode',0,1,147,2,32
+	.word	.L186
+	.byte	1,1,1
+	.word	.L40,.L190,.L39
+	.byte	4
+	.byte	'data',0,1,147,2,146,1
+	.word	.L191,.L192
+	.byte	5
+	.word	.L40,.L190
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Rte_Read_BswM_Request_ESH_PostRunRequest_0_requestedMode')
+	.sect	'.debug_abbrev'
+.L112:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Rte_Read_BswM_Request_ESH_PostRunRequest_0_requestedMode')
+	.sect	'.debug_line'
+.L113:
+	.word	.L314-.L313
+.L313:
+	.half	3
+	.word	.L316-.L315
+.L315:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\appl\\GenData\\Rte.c',0,0,0,0,0
+.L316:
+	.byte	5,13,7,0,5,2
+	.word	.L40
+	.byte	3,150,2,1,5,11,9
+	.half	.L317-.L40
+	.byte	1,5,10,9
+	.half	.L318-.L317
+	.byte	3,2,1,5,1,3,1,1,7,9
+	.half	.L115-.L318
+	.byte	0,1,1
+.L314:
+	.sdecl	'.debug_ranges',debug,cluster('Rte_Read_BswM_Request_ESH_PostRunRequest_0_requestedMode')
+	.sect	'.debug_ranges'
+.L114:
+	.word	-1,.L40,0,.L115-.L40,0,0
+	.sdecl	'.debug_info',debug,cluster('Rte_Read_BswM_Request_ESH_PostRunRequest_1_requestedMode')
+	.sect	'.debug_info'
+.L116:
+	.word	227
+	.half	3
+	.word	.L117
+	.byte	4,1
+	.byte	'..\\appl\\GenData\\Rte.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
+	.word	.L119,.L118
+	.byte	2
+	.word	.L67
+	.byte	3
+	.byte	'Rte_Read_BswM_Request_ESH_PostRunRequest_1_requestedMode',0,1,156,2,32
+	.word	.L186
+	.byte	1,1,1
+	.word	.L42,.L193,.L41
+	.byte	4
+	.byte	'data',0,1,156,2,146,1
+	.word	.L191,.L194
+	.byte	5
+	.word	.L195
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Rte_Read_BswM_Request_ESH_PostRunRequest_1_requestedMode')
+	.sect	'.debug_abbrev'
+.L117:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,85,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Rte_Read_BswM_Request_ESH_PostRunRequest_1_requestedMode')
+	.sect	'.debug_line'
+.L118:
+	.word	.L320-.L319
+.L319:
+	.half	3
+	.word	.L322-.L321
+.L321:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\appl\\GenData\\Rte.c',0,0,0,0,0
+.L322:
+	.byte	5,11,7,0,5,2
+	.word	.L42
+	.byte	3,157,2,1,5,1,9
+	.half	.L323-.L42
+	.byte	3,3,1,7,9
+	.half	.L120-.L323
+	.byte	0,1,1
+.L320:
+	.sdecl	'.debug_ranges',debug,cluster('Rte_Read_BswM_Request_ESH_PostRunRequest_1_requestedMode')
+	.sect	'.debug_ranges'
+.L119:
+	.word	-1,.L42,0,.L120-.L42,0,0
+.L195:
+	.word	-1,.L42,0,.L193-.L42,-1,.L44,0,.L170-.L44,0,0
+	.sdecl	'.debug_info',debug,cluster('Rte_Read_BswM_Request_ESH_RunRequest_0_requestedMode')
+	.sect	'.debug_info'
+.L121:
+	.word	227
+	.half	3
+	.word	.L122
+	.byte	4,1
+	.byte	'..\\appl\\GenData\\Rte.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
+	.word	.L124,.L123
+	.byte	2
+	.word	.L67
+	.byte	3
+	.byte	'Rte_Read_BswM_Request_ESH_RunRequest_0_requestedMode',0,1,163,2,32
+	.word	.L186
+	.byte	1,1,1
+	.word	.L46,.L196,.L45
+	.byte	4
+	.byte	'data',0,1,163,2,142,1
+	.word	.L191,.L197
+	.byte	5
+	.word	.L46,.L196
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Rte_Read_BswM_Request_ESH_RunRequest_0_requestedMode')
+	.sect	'.debug_abbrev'
+.L122:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Rte_Read_BswM_Request_ESH_RunRequest_0_requestedMode')
+	.sect	'.debug_line'
+.L123:
+	.word	.L325-.L324
+.L324:
+	.half	3
+	.word	.L327-.L326
+.L326:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\appl\\GenData\\Rte.c',0,0,0,0,0
+.L327:
+	.byte	5,11,7,0,5,2
+	.word	.L46
+	.byte	3,164,2,1,5,1,9
+	.half	.L217-.L46
+	.byte	3,3,1,7,9
+	.half	.L125-.L217
+	.byte	0,1,1
+.L325:
+	.sdecl	'.debug_ranges',debug,cluster('Rte_Read_BswM_Request_ESH_RunRequest_0_requestedMode')
+	.sect	'.debug_ranges'
+.L124:
+	.word	-1,.L46,0,.L125-.L46,0,0
+	.sdecl	'.debug_info',debug,cluster('Rte_Read_BswM_Request_ESH_RunRequest_1_requestedMode')
+	.sect	'.debug_info'
+.L126:
+	.word	227
+	.half	3
+	.word	.L127
+	.byte	4,1
+	.byte	'..\\appl\\GenData\\Rte.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
+	.word	.L129,.L128
+	.byte	2
+	.word	.L67
+	.byte	3
+	.byte	'Rte_Read_BswM_Request_ESH_RunRequest_1_requestedMode',0,1,170,2,32
+	.word	.L186
+	.byte	1,1,1
+	.word	.L48,.L198,.L47
+	.byte	4
+	.byte	'data',0,1,170,2,142,1
+	.word	.L191,.L199
+	.byte	5
+	.word	.L48,.L198
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Rte_Read_BswM_Request_ESH_RunRequest_1_requestedMode')
+	.sect	'.debug_abbrev'
+.L127:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Rte_Read_BswM_Request_ESH_RunRequest_1_requestedMode')
+	.sect	'.debug_line'
+.L128:
+	.word	.L329-.L328
+.L328:
+	.half	3
+	.word	.L331-.L330
+.L330:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\appl\\GenData\\Rte.c',0,0,0,0,0
+.L331:
+	.byte	5,11,7,0,5,2
+	.word	.L48
+	.byte	3,171,2,1,5,1,9
+	.half	.L218-.L48
+	.byte	3,3,1,7,9
+	.half	.L130-.L218
+	.byte	0,1,1
+.L329:
+	.sdecl	'.debug_ranges',debug,cluster('Rte_Read_BswM_Request_ESH_RunRequest_1_requestedMode')
+	.sect	'.debug_ranges'
+.L129:
+	.word	-1,.L48,0,.L130-.L48,0,0
+	.sdecl	'.debug_info',debug,cluster('Rte_Mode_BswM_Notification_ESH_ModeNotification_BswM_MDGP_ESH_Mode')
+	.sect	'.debug_info'
+.L131:
+	.word	222
+	.half	3
+	.word	.L132
+	.byte	4,1
+	.byte	'..\\appl\\GenData\\Rte.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
+	.word	.L134,.L133
+	.byte	2
+	.word	.L67
+	.byte	3
+	.byte	'Rte_Mode_BswM_Notification_ESH_ModeNotification_BswM_MDGP_ESH_Mode',0,1,247,2,31
+	.word	.L186
+	.byte	1,1,1
+	.word	.L60,.L200,.L59
+	.byte	4
+	.word	.L60,.L200
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Rte_Mode_BswM_Notification_ESH_ModeNotification_BswM_MDGP_ESH_Mode')
+	.sect	'.debug_abbrev'
+.L132:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Rte_Mode_BswM_Notification_ESH_ModeNotification_BswM_MDGP_ESH_Mode')
+	.sect	'.debug_line'
+.L133:
+	.word	.L333-.L332
+.L332:
+	.half	3
+	.word	.L335-.L334
+.L334:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\appl\\GenData\\Rte.c',0,0,0,0,0
+.L335:
+	.byte	5,13,7,0,5,2
+	.word	.L60
+	.byte	3,249,2,1,5,1,9
+	.half	.L336-.L60
+	.byte	3,2,1,7,9
+	.half	.L135-.L336
+	.byte	0,1,1
+.L333:
+	.sdecl	'.debug_ranges',debug,cluster('Rte_Mode_BswM_Notification_ESH_ModeNotification_BswM_MDGP_ESH_Mode')
+	.sect	'.debug_ranges'
+.L134:
+	.word	-1,.L60,0,.L135-.L60,0,0
+	.sdecl	'.debug_info',debug,cluster('Rte_Switch_BswM_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode')
+	.sect	'.debug_info'
+.L136:
+	.word	350
+	.half	3
+	.word	.L137
+	.byte	4,1
+	.byte	'..\\appl\\GenData\\Rte.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
+	.word	.L139,.L138
+	.byte	2
+	.word	.L67
+	.byte	3
+	.byte	'Rte_Switch_BswM_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode',0,1,213,2,32
+	.word	.L186
+	.byte	1,1,1
+	.word	.L58,.L201,.L57
+	.byte	4
+	.byte	'nextMode',0,1,213,2,103
+	.word	.L186,.L202
+	.byte	5
+	.word	.L58,.L201
+	.byte	6
+	.byte	'ret',0,1,215,2,18
+	.word	.L186,.L203
+	.byte	6
+	.byte	'internalIndexNextMode',0,1,217,2,9
+	.word	.L186,.L204
+	.byte	6
+	.byte	'internalIndexCurrentMode',0,1,218,2,9
+	.word	.L186,.L205
+	.byte	6
+	.byte	'currentMode',0,1,219,2,17
+	.word	.L186,.L206
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Rte_Switch_BswM_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode')
+	.sect	'.debug_abbrev'
+.L137:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Rte_Switch_BswM_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode')
+	.sect	'.debug_line'
+.L138:
+	.word	.L338-.L337
+.L337:
+	.half	3
+	.word	.L340-.L339
+.L339:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\appl\\GenData\\Rte.c',0,0,0,0,0
+.L340:
+	.byte	5,32,7,0,5,2
+	.word	.L58
+	.byte	3,212,2,1,5,22,9
+	.half	.L220-.L58
+	.byte	3,2,1,5,72,3,2,1,5,31,9
+	.half	.L219-.L220
+	.byte	1,5,22,3,3,1,5,17,9
+	.half	.L221-.L219
+	.byte	3,1,1,5,69,9
+	.half	.L222-.L221
+	.byte	3,1,1,5,3,9
+	.half	.L223-.L222
+	.byte	3,1,1,5,8,7,9
+	.half	.L341-.L223
+	.byte	3,5,1,5,9,7,9
+	.half	.L19-.L341
+	.byte	3,3,1,5,25,3,127,1,5,67,9
+	.half	.L20-.L19
+	.byte	3,5,1,5,23,9
+	.half	.L21-.L20
+	.byte	3,1,1,5,3,9
+	.half	.L224-.L21
+	.byte	3,3,1,5,1,3,1,1,7,9
+	.half	.L140-.L224
+	.byte	0,1,1
+.L338:
+	.sdecl	'.debug_ranges',debug,cluster('Rte_Switch_BswM_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode')
+	.sect	'.debug_ranges'
+.L139:
+	.word	-1,.L58,0,.L140-.L58,0,0
+	.sdecl	'.debug_info',debug,cluster('SchM_Enter_Mcu_AtomAgcReg')
+	.sect	'.debug_info'
+.L141:
+	.word	177
+	.half	3
+	.word	.L142
+	.byte	4,1
+	.byte	'..\\appl\\GenData\\Rte.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
+	.word	.L144,.L143
+	.byte	2
+	.word	.L67
+	.byte	3
+	.byte	'SchM_Enter_Mcu_AtomAgcReg',0,1,182,2,22,1,1,1
+	.word	.L50,.L207,.L49
+	.byte	4
+	.word	.L50,.L207
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('SchM_Enter_Mcu_AtomAgcReg')
+	.sect	'.debug_abbrev'
+.L142:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('SchM_Enter_Mcu_AtomAgcReg')
+	.sect	'.debug_line'
+.L143:
+	.word	.L343-.L342
+.L342:
+	.half	3
+	.word	.L345-.L344
+.L344:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\appl\\GenData\\Rte.c',0,0,0,0,0
+.L345:
+	.byte	5,23,7,0,5,2
+	.word	.L50
+	.byte	3,184,2,1,5,1,7,9
+	.half	.L145-.L50
+	.byte	3,1,0,1,1
+.L343:
+	.sdecl	'.debug_ranges',debug,cluster('SchM_Enter_Mcu_AtomAgcReg')
+	.sect	'.debug_ranges'
+.L144:
+	.word	-1,.L50,0,.L145-.L50,0,0
+	.sdecl	'.debug_info',debug,cluster('SchM_Exit_Mcu_AtomAgcReg')
+	.sect	'.debug_info'
+.L146:
+	.word	176
+	.half	3
+	.word	.L147
+	.byte	4,1
+	.byte	'..\\appl\\GenData\\Rte.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
+	.word	.L149,.L148
+	.byte	2
+	.word	.L67
+	.byte	3
+	.byte	'SchM_Exit_Mcu_AtomAgcReg',0,1,188,2,22,1,1,1
+	.word	.L52,.L208,.L51
+	.byte	4
+	.word	.L52,.L208
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('SchM_Exit_Mcu_AtomAgcReg')
+	.sect	'.debug_abbrev'
+.L147:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('SchM_Exit_Mcu_AtomAgcReg')
+	.sect	'.debug_line'
+.L148:
+	.word	.L347-.L346
+.L346:
+	.half	3
+	.word	.L349-.L348
+.L348:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\appl\\GenData\\Rte.c',0,0,0,0,0
+.L349:
+	.byte	5,22,7,0,5,2
+	.word	.L52
+	.byte	3,190,2,1,5,1,7,9
+	.half	.L150-.L52
+	.byte	3,1,0,1,1
+.L347:
+	.sdecl	'.debug_ranges',debug,cluster('SchM_Exit_Mcu_AtomAgcReg')
+	.sect	'.debug_ranges'
+.L149:
+	.word	-1,.L52,0,.L150-.L52,0,0
+	.sdecl	'.debug_info',debug,cluster('SchM_Enter_Mcu_TomTgcReg')
+	.sect	'.debug_info'
+.L151:
+	.word	176
+	.half	3
+	.word	.L152
+	.byte	4,1
+	.byte	'..\\appl\\GenData\\Rte.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
+	.word	.L154,.L153
+	.byte	2
+	.word	.L67
+	.byte	3
+	.byte	'SchM_Enter_Mcu_TomTgcReg',0,1,195,2,22,1,1,1
+	.word	.L54,.L209,.L53
+	.byte	4
+	.word	.L54,.L209
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('SchM_Enter_Mcu_TomTgcReg')
+	.sect	'.debug_abbrev'
+.L152:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('SchM_Enter_Mcu_TomTgcReg')
+	.sect	'.debug_line'
+.L153:
+	.word	.L351-.L350
+.L350:
+	.half	3
+	.word	.L353-.L352
+.L352:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\appl\\GenData\\Rte.c',0,0,0,0,0
+.L353:
+	.byte	5,23,7,0,5,2
+	.word	.L54
+	.byte	3,197,2,1,5,1,7,9
+	.half	.L155-.L54
+	.byte	3,1,0,1,1
+.L351:
+	.sdecl	'.debug_ranges',debug,cluster('SchM_Enter_Mcu_TomTgcReg')
+	.sect	'.debug_ranges'
+.L154:
+	.word	-1,.L54,0,.L155-.L54,0,0
+	.sdecl	'.debug_info',debug,cluster('SchM_Exit_Mcu_TomTgcReg')
+	.sect	'.debug_info'
+.L156:
+	.word	175
+	.half	3
+	.word	.L157
+	.byte	4,1
+	.byte	'..\\appl\\GenData\\Rte.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
+	.word	.L159,.L158
+	.byte	2
+	.word	.L67
+	.byte	3
+	.byte	'SchM_Exit_Mcu_TomTgcReg',0,1,201,2,22,1,1,1
+	.word	.L56,.L210,.L55
+	.byte	4
+	.word	.L56,.L210
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('SchM_Exit_Mcu_TomTgcReg')
+	.sect	'.debug_abbrev'
+.L157:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('SchM_Exit_Mcu_TomTgcReg')
+	.sect	'.debug_line'
+.L158:
+	.word	.L355-.L354
+.L354:
+	.half	3
+	.word	.L357-.L356
+.L356:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\appl\\GenData\\Rte.c',0,0,0,0,0
+.L357:
+	.byte	5,22,7,0,5,2
+	.word	.L56
+	.byte	3,203,2,1,5,1,7,9
+	.half	.L160-.L56
+	.byte	3,1,0,1,1
+.L355:
+	.sdecl	'.debug_ranges',debug,cluster('SchM_Exit_Mcu_TomTgcReg')
+	.sect	'.debug_ranges'
+.L159:
+	.word	-1,.L56,0,.L160-.L56,0,0
+	.sdecl	'.debug_info',debug,cluster('Rte_GetInternalModeIndex_BswM_ESH_Mode')
+	.sect	'.debug_info'
+.L161:
+	.word	227
+	.half	3
+	.word	.L162
+	.byte	4,1
+	.byte	'..\\appl\\GenData\\Rte.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
+	.word	.L164,.L163
+	.byte	2
+	.word	.L67
+	.byte	3
+	.byte	'Rte_GetInternalModeIndex_BswM_ESH_Mode',0,1,121,23
+	.word	.L186
+	.byte	1,1,1
+	.word	.L28,.L211,.L27
+	.byte	4
+	.byte	'mode',0,1,121,76
+	.word	.L186,.L212
+	.byte	5
+	.word	.L28,.L211
+	.byte	6
+	.byte	'ret',0,1,123,9
+	.word	.L186,.L213
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Rte_GetInternalModeIndex_BswM_ESH_Mode')
+	.sect	'.debug_abbrev'
+.L162:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Rte_GetInternalModeIndex_BswM_ESH_Mode')
+	.sect	'.debug_line'
+.L163:
+	.word	.L359-.L358
+.L358:
+	.half	3
+	.word	.L361-.L360
+.L360:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\appl\\GenData\\Rte.c',0,0,0,0,0
+.L361:
+	.byte	5,3,7,0,5,2
+	.word	.L28
+	.byte	3,252,0,1,5,9,7,9
+	.half	.L362-.L28
+	.byte	3,2,1,5,1,3,24,1,5,8,7,9
+	.half	.L2-.L362
+	.byte	3,106,1,5,9,7,9
+	.half	.L363-.L2
+	.byte	3,2,1,5,1,3,20,1,5,8,7,9
+	.half	.L4-.L363
+	.byte	3,110,1,5,9,7,9
+	.half	.L364-.L4
+	.byte	3,2,1,5,1,3,16,1,5,8,7,9
+	.half	.L6-.L364
+	.byte	3,114,1,5,9,7,9
+	.half	.L365-.L6
+	.byte	3,2,1,5,1,3,12,1,5,8,7,9
+	.half	.L8-.L365
+	.byte	3,118,1,5,9,9
+	.half	.L366-.L8
+	.byte	3,2,1,5,1,9
+	.half	.L216-.L366
+	.byte	3,8,1,7,9
+	.half	.L165-.L216
+	.byte	0,1,1
+.L359:
+	.sdecl	'.debug_ranges',debug,cluster('Rte_GetInternalModeIndex_BswM_ESH_Mode')
+	.sect	'.debug_ranges'
+.L164:
+	.word	-1,.L28,0,.L165-.L28,0,0
+	.sdecl	'.debug_info',debug,cluster('.cocofun_1')
+	.sect	'.debug_info'
+.L166:
+	.word	150
+	.half	3
+	.word	.L167
+	.byte	4,1
+	.byte	'..\\appl\\GenData\\Rte.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
+	.word	.L169,.L168
+	.byte	2
+	.word	.L67
+	.byte	3
+	.byte	'.cocofun_1',0,1,156,2,32,1
+	.word	.L44,.L170,.L43
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('.cocofun_1')
+	.sect	'.debug_abbrev'
+.L167:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,0,3,8,58,15,59,15,57,15,54,15
+	.byte	17,1,18,1,64,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('.cocofun_1')
+	.sect	'.debug_line'
+.L168:
+	.word	.L368-.L367
+.L367:
+	.half	3
+	.word	.L370-.L369
+.L369:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\appl\\GenData\\Rte.c',0,0,0,0,0
+.L370:
+	.byte	5,11,7,0,5,2
+	.word	.L44
+	.byte	3,157,2,1,5,9,1,5,10,9
+	.half	.L371-.L44
+	.byte	3,2,1,9
+	.half	.L170-.L371
+	.byte	0,1,1,5,11,0,5,2
+	.word	.L44
+	.byte	3,164,2,1,5,9,1,5,10,9
+	.half	.L371-.L44
+	.byte	3,2,1,3,121,1,7,9
+	.half	.L170-.L371
+	.byte	0,1,1,5,11,0,5,2
+	.word	.L44
+	.byte	3,171,2,1,5,9,1,5,10,9
+	.half	.L371-.L44
+	.byte	3,2,1,3,114,1,7,9
+	.half	.L170-.L371
+	.byte	0,1,1
+.L368:
+	.sdecl	'.debug_ranges',debug,cluster('.cocofun_1')
+	.sect	'.debug_ranges'
+.L169:
+	.word	-1,.L44,0,.L170-.L44,0,0
+	.sdecl	'.debug_info',debug,cluster('Rte_swc_test_Request_ESH_PostRunRequest_0_requestedMode')
+	.sect	'.debug_info'
+.L171:
+	.word	184
+	.half	3
+	.word	.L172
+	.byte	4,1
+	.byte	'..\\appl\\GenData\\Rte.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1,2
+	.word	.L67
+	.byte	3
+	.byte	'Rte_swc_test_Request_ESH_PostRunRequest_0_requestedMode',0,7,108,42
+	.word	.L186
+	.byte	1,5,3
+	.word	Rte_swc_test_Request_ESH_PostRunRequest_0_requestedMode
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('Rte_swc_test_Request_ESH_PostRunRequest_0_requestedMode')
+	.sect	'.debug_abbrev'
+.L172:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('Rte_InitState')
+	.sect	'.debug_info'
+.L173:
+	.word	142
+	.half	3
+	.word	.L174
+	.byte	4,1
+	.byte	'..\\appl\\GenData\\Rte.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1,2
+	.word	.L67
+	.byte	3
+	.byte	'Rte_InitState',0,7,93,40
+	.word	.L214
+	.byte	1,5,3
+	.word	Rte_InitState
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('Rte_InitState')
+	.sect	'.debug_abbrev'
+.L174:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('Rte_StartTiming_InitState')
+	.sect	'.debug_info'
+.L175:
+	.word	154
+	.half	3
+	.word	.L176
+	.byte	4,1
+	.byte	'..\\appl\\GenData\\Rte.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1,2
+	.word	.L67
+	.byte	3
+	.byte	'Rte_StartTiming_InitState',0,7,94,40
+	.word	.L215
+	.byte	1,5,3
+	.word	Rte_StartTiming_InitState
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('Rte_StartTiming_InitState')
+	.sect	'.debug_abbrev'
+.L176:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('Rte_ModeMachine_BswM_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode')
+	.sect	'.debug_info'
+.L177:
+	.word	191
+	.half	3
+	.word	.L178
+	.byte	4,1
+	.byte	'..\\appl\\GenData\\Rte.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1,2
+	.word	.L67
+	.byte	3
+	.byte	'Rte_ModeMachine_BswM_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode',0,7,164,1,36
+	.word	.L186
+	.byte	1,5,3
+	.word	Rte_ModeMachine_BswM_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('Rte_ModeMachine_BswM_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode')
+	.sect	'.debug_abbrev'
+.L178:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_loc',debug,cluster('.cocofun_1')
+	.sect	'.debug_loc'
+.L43:
+	.word	-1,.L44,0,.L170-.L44
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Os_Task_bsw_task')
+	.sect	'.debug_loc'
+.L61:
+	.word	-1,.L62,0,.L179-.L62
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Os_Task_swc_init')
+	.sect	'.debug_loc'
+.L63:
+	.word	-1,.L64,0,.L180-.L64
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Os_Task_swc_task')
+	.sect	'.debug_loc'
+.L65:
+	.word	-1,.L66,0,.L225-.L66
+	.half	2
+	.byte	138,0
+	.word	.L225-.L66,.L181-.L66
+	.half	2
+	.byte	138,8
+	.word	0,0
+.L183:
+	.word	-1,.L66,0,.L181-.L66
+	.half	2
+	.byte	145,120
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Rte_GetInternalModeIndex_BswM_ESH_Mode')
+	.sect	'.debug_loc'
+.L27:
+	.word	-1,.L28,0,.L211-.L28
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L212:
+	.word	-1,.L28,0,.L211-.L28
+	.half	1
+	.byte	84
+	.word	0,0
+.L213:
+	.word	-1,.L28,.L216-.L28,.L211-.L28
+	.half	1
+	.byte	82
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Rte_InitMemory')
+	.sect	'.debug_loc'
+.L37:
+	.word	-1,.L38,0,.L189-.L38
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Rte_Mode_BswM_Notification_ESH_ModeNotification_BswM_MDGP_ESH_Mode')
+	.sect	'.debug_loc'
+.L59:
+	.word	-1,.L60,0,.L200-.L60
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Rte_Read_BswM_Request_ESH_PostRunRequest_0_requestedMode')
+	.sect	'.debug_loc'
+.L39:
+	.word	-1,.L40,0,.L190-.L40
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L192:
+	.word	-1,.L40,0,.L190-.L40
+	.half	1
+	.byte	100
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Rte_Read_BswM_Request_ESH_PostRunRequest_1_requestedMode')
+	.sect	'.debug_loc'
+.L41:
+	.word	-1,.L42,0,.L193-.L42
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L194:
+	.word	-1,.L42,.L44-.L42,.L170-.L42
+	.half	1
+	.byte	100
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Rte_Read_BswM_Request_ESH_RunRequest_0_requestedMode')
+	.sect	'.debug_loc'
+.L45:
+	.word	-1,.L46,0,.L196-.L46
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L197:
+	.word	-1,.L46,.L44-.L46,.L170-.L46
+	.half	1
+	.byte	100
+	.word	.L217-.L46,.L196-.L46
+	.half	1
+	.byte	100
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Rte_Read_BswM_Request_ESH_RunRequest_1_requestedMode')
+	.sect	'.debug_loc'
+.L47:
+	.word	-1,.L48,0,.L198-.L48
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L199:
+	.word	-1,.L48,.L44-.L48,.L170-.L48
+	.half	1
+	.byte	100
+	.word	.L218-.L48,.L198-.L48
+	.half	1
+	.byte	100
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Rte_Start')
+	.sect	'.debug_loc'
+.L31:
+	.word	-1,.L32,0,.L187-.L32
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Rte_Stop')
+	.sect	'.debug_loc'
+.L33:
+	.word	-1,.L34,0,.L188-.L34
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Rte_Switch_BswM_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode')
+	.sect	'.debug_loc'
+.L57:
+	.word	-1,.L58,0,.L201-.L58
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L206:
+	.word	-1,.L58,.L222-.L58,.L223-.L58
+	.half	1
+	.byte	84
+	.word	0,0
+.L205:
+	.word	-1,.L58,.L223-.L58,.L224-.L58
+	.half	1
+	.byte	82
+	.word	0,0
+.L204:
+	.word	-1,.L58,.L219-.L58,.L221-.L58
+	.half	1
+	.byte	82
+	.word	.L221-.L58,.L201-.L58
+	.half	1
+	.byte	89
+	.word	0,0
+.L202:
+	.word	-1,.L58,0,.L219-.L58
+	.half	1
+	.byte	84
+	.word	.L220-.L58,.L201-.L58
+	.half	1
+	.byte	88
+	.word	0,0
+.L203:
+	.word	-1,.L58,.L219-.L58,.L201-.L58
+	.half	1
+	.byte	95
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('SchM_Deinit')
+	.sect	'.debug_loc'
+.L35:
+	.word	-1,.L36,0,.L185-.L36
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('SchM_Enter_Mcu_AtomAgcReg')
+	.sect	'.debug_loc'
+.L49:
+	.word	-1,.L50,0,.L207-.L50
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('SchM_Enter_Mcu_TomTgcReg')
+	.sect	'.debug_loc'
+.L53:
+	.word	-1,.L54,0,.L209-.L54
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('SchM_Exit_Mcu_AtomAgcReg')
+	.sect	'.debug_loc'
+.L51:
+	.word	-1,.L52,0,.L208-.L52
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('SchM_Exit_Mcu_TomTgcReg')
+	.sect	'.debug_loc'
+.L55:
+	.word	-1,.L56,0,.L210-.L56
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('SchM_Init')
+	.sect	'.debug_loc'
+.L29:
+	.word	-1,.L30,0,.L184-.L30
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L372:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,27,8,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('Rte_GetInternalModeIndex_BswM_ESH_Mode')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L372,.L28,.L211-.L28
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('SchM_Init')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L372,.L30,.L184-.L30
+	.sdecl	'.debug_frame',debug,cluster('Rte_Start')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L372,.L32,.L187-.L32
+	.sdecl	'.debug_frame',debug,cluster('Rte_Stop')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L372,.L34,.L188-.L34
+	.sdecl	'.debug_frame',debug,cluster('SchM_Deinit')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L372,.L36,.L185-.L36
+	.sdecl	'.debug_frame',debug,cluster('Rte_InitMemory')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L372,.L38,.L189-.L38
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('Rte_Read_BswM_Request_ESH_PostRunRequest_0_requestedMode')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L372,.L40,.L190-.L40
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('Rte_Read_BswM_Request_ESH_PostRunRequest_1_requestedMode')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L372,.L42,.L193-.L42
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('Rte_Read_BswM_Request_ESH_RunRequest_0_requestedMode')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L372,.L46,.L196-.L46
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('Rte_Read_BswM_Request_ESH_RunRequest_1_requestedMode')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L372,.L48,.L198-.L48
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('SchM_Enter_Mcu_AtomAgcReg')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L372,.L50,.L207-.L50
+	.sdecl	'.debug_frame',debug,cluster('SchM_Exit_Mcu_AtomAgcReg')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L372,.L52,.L208-.L52
+	.sdecl	'.debug_frame',debug,cluster('SchM_Enter_Mcu_TomTgcReg')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L372,.L54,.L209-.L54
+	.sdecl	'.debug_frame',debug,cluster('SchM_Exit_Mcu_TomTgcReg')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L372,.L56,.L210-.L56
+	.sdecl	'.debug_frame',debug,cluster('Rte_Switch_BswM_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L372,.L58,.L201-.L58
+	.sdecl	'.debug_frame',debug,cluster('Rte_Mode_BswM_Notification_ESH_ModeNotification_BswM_MDGP_ESH_Mode')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L372,.L60,.L200-.L60
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('Os_Task_bsw_task')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L372,.L62,.L179-.L62
+	.sdecl	'.debug_frame',debug,cluster('Os_Task_swc_init')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L372,.L64,.L180-.L64
+	.sdecl	'.debug_frame',debug,cluster('Os_Task_swc_task')
+	.sect	'.debug_frame'
+	.word	28
+	.word	.L372,.L66,.L181-.L66
+	.byte	4
+	.word	(.L225-.L66)/2
+	.byte	19,8,22,26,3,19,138,8,0,0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L373:
+	.word	52
+	.word	-1
+	.byte	3,0,2,1,40,12,26,0,9,40,27,155,0,7,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36
+	.byte	8,37,8,38,8,39,0
+	.sdecl	'.debug_frame',debug,cluster('.cocofun_1')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L373,.L44,.L170-.L44
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+
+; ..\appl\GenData\Rte.c	   444      }
+; ..\appl\GenData\Rte.c	   445    }
+; ..\appl\GenData\Rte.c	   446  } /* PRQA S 6010, 6030, 6050, 6080 */ /* MD_MSR_STPTH, MD_MSR_STCYC, MD_MSR_STCAL, MD_MSR_STMIF */
+; ..\appl\GenData\Rte.c	   447  
+; ..\appl\GenData\Rte.c	   448  #define RTE_STOP_SEC_CODE
+; ..\appl\GenData\Rte.c	   449  #include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\appl\GenData\Rte.c	   450  
+; ..\appl\GenData\Rte.c	   451  /**********************************************************************************************************************
+; ..\appl\GenData\Rte.c	   452   MISRA 2012 violations and justifications
+; ..\appl\GenData\Rte.c	   453   *********************************************************************************************************************/
+; ..\appl\GenData\Rte.c	   454  
+; ..\appl\GenData\Rte.c	   455  /* module specific MISRA deviations:
+; ..\appl\GenData\Rte.c	   456     MD_Rte_1339:  MISRA rule: Rule17.8
+; ..\appl\GenData\Rte.c	   457       Reason:     Passing elements by pointer is a well known concept.
+; ..\appl\GenData\Rte.c	   458       Risk:       No functional risk. Data flow is handled with care.
+; ..\appl\GenData\Rte.c	   459       Prevention: Not required.
+; ..\appl\GenData\Rte.c	   460  
+; ..\appl\GenData\Rte.c	   461     MD_Rte_1514:  MISRA rule: Rule8.9
+; ..\appl\GenData\Rte.c	   462       Reason:     Because of external definition, misra does not see the call.
+; ..\appl\GenData\Rte.c	   463       Risk:       No functional risk. There is no side effect.
+; ..\appl\GenData\Rte.c	   464       Prevention: Not required.
+; ..\appl\GenData\Rte.c	   465  
+; ..\appl\GenData\Rte.c	   466     MD_Rte_2982:  MISRA rule: Rule2.2
+; ..\appl\GenData\Rte.c	   467       Reason:     Used to simplify code generation.
+; ..\appl\GenData\Rte.c	   468       Risk:       No functional risk. There is no side effect.
+; ..\appl\GenData\Rte.c	   469       Prevention: Not required.
+; ..\appl\GenData\Rte.c	   470  
+; ..\appl\GenData\Rte.c	   471     MD_Rte_2987:  MISRA rule: Rule2.2
+; ..\appl\GenData\Rte.c	   472       Reason:     Used to simplify code generation.
+; ..\appl\GenData\Rte.c	   473       Risk:       No functional risk. There is no side effect.
+; ..\appl\GenData\Rte.c	   474       Prevention: Not required.
+; ..\appl\GenData\Rte.c	   475  
+; ..\appl\GenData\Rte.c	   476     MD_Rte_3206:  MISRA rule: Rule2.7
+; ..\appl\GenData\Rte.c	   477       Reason:     The parameter are not used by the code in all possible code variants.
+; ..\appl\GenData\Rte.c	   478       Risk:       No functional risk.
+; ..\appl\GenData\Rte.c	   479       Prevention: Not required.
+; ..\appl\GenData\Rte.c	   480  
+; ..\appl\GenData\Rte.c	   481     MD_Rte_3408:  MISRA rule: Rule8.4
+; ..\appl\GenData\Rte.c	   482       Reason:     For the purpose of monitoring during calibration or debugging it is necessary to use non-static declarations.
+; ..\appl\GenData\Rte.c	   483                   This is covered in the MISRA C compliance section of the Rte specification.
+; ..\appl\GenData\Rte.c	   484       Risk:       No functional risk.
+; ..\appl\GenData\Rte.c	   485       Prevention: Not required.
+; ..\appl\GenData\Rte.c	   486  
+; ..\appl\GenData\Rte.c	   487     MD_Rte_Os:
+; ..\appl\GenData\Rte.c	   488       Reason:     This justification is used as summary justification for all deviations caused by the MICROSAR OS
+; ..\appl\GenData\Rte.c	   489                   which is for testing of the RTE. Those deviations are no issues in the RTE code.
+; ..\appl\GenData\Rte.c	   490       Risk:       No functional risk.
+; ..\appl\GenData\Rte.c	   491       Prevention: Not required.
+; ..\appl\GenData\Rte.c	   492  
+; ..\appl\GenData\Rte.c	   493     MD_Rte_Qac:
+; ..\appl\GenData\Rte.c	   494       Reason:     This justification is used as summary justification for all deviations caused by wrong analysis tool results.
+; ..\appl\GenData\Rte.c	   495                   The used analysis tool QAC 9.0 sometimes creates wrong messages. Those deviations are no issues in the RTE code.
+; ..\appl\GenData\Rte.c	   496       Risk:       No functional risk.
+; ..\appl\GenData\Rte.c	   497       Prevention: Not required.
+; ..\appl\GenData\Rte.c	   498  
+; ..\appl\GenData\Rte.c	   499  */
+
+	; Module end

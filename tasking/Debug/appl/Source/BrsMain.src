@@ -1,0 +1,2486 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 21092262 SN 73118428"
+	.compiler_invocation	"ctc --dep-file=appl\\Source\\.BrsMain.o.d --fp-model=c,f,l,n,r,S,T,z -D__CPU__=tc39xb -D__CPU_TC39XB__ --core=tc1.6.2 --iso=99 -DBRS_COMP_TASKING -ID:\\Zonal\\demo011\\tasking -ID:\\Zonal\\testdemo\\taskingdemo\\demo001 -ID:\\Zonal\\demo011\\tasking -ID:\\Zonal\\demo011\\tasking\\appl -ID:\\Zonal\\demo011\\tasking\\appl\\GenData -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\Components -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\ContractPhase -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\inc -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\src -ID:\\Zonal\\demo011\\tasking\\appl\\Include -ID:\\Zonal\\demo011\\tasking\\appl\\Source -ID:\\Zonal\\demo011\\tasking\\appl\\Source\\swc_test -ID:\\Zonal\\demo011\\tasking\\component -ID:\\Zonal\\demo011\\tasking\\component\\_Common -ID:\\Zonal\\demo011\\tasking\\component\\_Common\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\BswM -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\EcuM -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\Os -ID:\\Zonal\\demo011\\tasking\\component\\Os\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\Os\\BSWMD\\Os -ID:\\Zonal\\demo011\\tasking\\component\\Os\\BSWMD\\Os\\TC39xQ -ID:\\Zonal\\demo011\\tasking\\component\\Os\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\Os\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\Os\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug -ID:\\Zonal\\demo011\\tasking\\Debug\\appl -ID:\\Zonal\\demo011\\tasking\\Debug\\appl\\GenData -ID:\\Zonal\\demo011\\tasking\\Debug\\appl\\GenData\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\appl\\Source -ID:\\Zonal\\demo011\\tasking\\Debug\\component -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\BswM -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\BswM\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\EcuM -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\EcuM\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\Os -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\Os\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\VStdLib -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\VStdLib\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Dio -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Dio\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Dio\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\McalLib -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\McalLib\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\McalLib\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Mcu -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Mcu\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Mcu\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Port -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Port\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Port\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Platform -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Platform\\AS440 -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Sfr -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Sfr\\TC39xB -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Sfr\\TC39xB\\_Reg -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc\\inc\\AS440 -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal\\Port -ID:\\Zonal\\demo011\\tasking\\mcal\\Port\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\Port\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\Port\\ssc\\src -g2 --make-target=appl\\Source\\BrsMain.o -t2 --language=-gcc,-volatile,+strings,-kanji --default-near-size=0 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o appl\\Source\\BrsMain.src ..\\appl\\Source\\BrsMain.c"
+	.compiler_name		"ctc"
+	;source	'..\\appl\\Source\\BrsMain.c'
+
+	
+$TC162
+	
+	.sdecl	'.text.BrsMain.BrsMainInit',code,cluster('BrsMainInit')
+	.sect	'.text.BrsMain.BrsMainInit'
+	.align	2
+	
+	.global	BrsMainInit
+
+; ..\appl\Source\BrsMain.c	     1  
+; ..\appl\Source\BrsMain.c	     2  /**********************************************************************************************************************
+; ..\appl\Source\BrsMain.c	     3    COPYRIGHT
+; ..\appl\Source\BrsMain.c	     4  -----------------------------------------------------------------------------------------------------------------------
+; ..\appl\Source\BrsMain.c	     5    \par      copyright
+; ..\appl\Source\BrsMain.c	     6    \verbatim
+; ..\appl\Source\BrsMain.c	     7    Copyright (c) 2021 by Vector Informatik GmbH.                                                  All rights reserved.
+; ..\appl\Source\BrsMain.c	     8  
+; ..\appl\Source\BrsMain.c	     9                  This software is copyright protected and proprietary to Vector Informatik GmbH.
+; ..\appl\Source\BrsMain.c	    10                  Vector Informatik GmbH grants to you only those rights as set out in the license conditions.
+; ..\appl\Source\BrsMain.c	    11                  All other rights remain with Vector Informatik GmbH.
+; ..\appl\Source\BrsMain.c	    12    \endverbatim
+; ..\appl\Source\BrsMain.c	    13  -----------------------------------------------------------------------------------------------------------------------
+; ..\appl\Source\BrsMain.c	    14    FILE DESCRIPTION
+; ..\appl\Source\BrsMain.c	    15  -----------------------------------------------------------------------------------------------------------------------
+; ..\appl\Source\BrsMain.c	    16    \file  File:  BrsMain.c
+; ..\appl\Source\BrsMain.c	    17        Project:  Vector Basic Runtime System
+; ..\appl\Source\BrsMain.c	    18         Module:  BrsMain
+; ..\appl\Source\BrsMain.c	    19  
+; ..\appl\Source\BrsMain.c	    20    \brief Description:  Main file of BRS contains
+; ..\appl\Source\BrsMain.c	    21                         - Main function (called from StartUpCode and calls stack entry EcuM_Init())
+; ..\appl\Source\BrsMain.c	    22                         - Call of BrsHw HW initialization routines
+; ..\appl\Source\BrsMain.c	    23                         - 1ms handler, with support of cycle functions with several cycle times
+; ..\appl\Source\BrsMain.c	    24                         - Exception handling
+; ..\appl\Source\BrsMain.c	    25                         - Default_Init_Task, Main and Background Task which can be used by the operating system
+; ..\appl\Source\BrsMain.c	    26  
+; ..\appl\Source\BrsMain.c	    27    \attention Please note:
+; ..\appl\Source\BrsMain.c	    28      The demo and example programs only show special aspects of the software. With regard to the fact
+; ..\appl\Source\BrsMain.c	    29      that these programs are meant for demonstration purposes only, Vector Informatik liability shall be
+; ..\appl\Source\BrsMain.c	    30      expressly excluded in cases of ordinary negligence, to the extent admissible by law or statute.
+; ..\appl\Source\BrsMain.c	    31  **********************************************************************************************************************/
+; ..\appl\Source\BrsMain.c	    32  
+; ..\appl\Source\BrsMain.c	    33  /**********************************************************************************************************************
+; ..\appl\Source\BrsMain.c	    34    REVISION HISTORY
+; ..\appl\Source\BrsMain.c	    35   ----------------------------------------------------------------------------------------------------------------------
+; ..\appl\Source\BrsMain.c	    36    Version   Date        Author  Description
+; ..\appl\Source\BrsMain.c	    37    --------  ----------  ------  ---------------------------------------------------------------------------------------
+; ..\appl\Source\BrsMain.c	    38    01.00.00  2018-03-20  visbwa  Initial creation of new BRS code basis
+; ..\appl\Source\BrsMain.c	    39              2018-05-08  visbwa  Introduced support for Generic Testsuite (BRS_ENABLE_TESTSUITE_SUPPORT),
+; ..\appl\Source\BrsMain.c	    40                                  removed support for all other testsuites,
+; ..\appl\Source\BrsMain.c	    41                                  introduced BRS_ENABLE_1MS_HANDLER and brsMain_CallCounter1sec
+; ..\appl\Source\BrsMain.c	    42    01.00.01  2018-06-22  visbwa  Added CAN stack exclusive area workaround from former BswInit_Callout_Stubs.c
+; ..\appl\Source\BrsMain.c	    43    01.00.02  2018-06-25  visbwa  Added configuration check for OS_MS2TICKS_SystemTimer into BrsMain.h
+; ..\appl\Source\BrsMain.c	    44    01.00.03  2018-07-18  visbwa  Moved BrsHwDisableInterruptAtPowerOn() from BrsMainInit() into main()
+; ..\appl\Source\BrsMain.c	    45                                  (OS specifies, this has to be called before Os_Init() and for every Core)
+; ..\appl\Source\BrsMain.c	    46    01.00.04  2018-07-30  visbwa  Encapsuled call of BrsHwDisableInterruptAtPowerOn() with usecase != VTT
+; ..\appl\Source\BrsMain.c	    47    01.01.00  2018-10-08  visbwa  Changed include of BrsCfg.h into vBrsCfg.h in BrsMain.h (vBaseEnv 1.1.0)
+; ..\appl\Source\BrsMain.c	    48    01.01.01  2018-10-10  visbwa  Moved BrsTestsuiteInit() from BrsMainInit() into Default_Init_Task(),
+; ..\appl\Source\BrsMain.c	    49                                  removed usage of BRS_ENABLE_HLPTEST_SUPPORT (generic Testsuite concept!)
+; ..\appl\Source\BrsMain.c	    50    01.01.02  2018-11-05  visbwa  Fixed include order (Can.h previous to BrsTestsuite.h)
+; ..\appl\Source\BrsMain.c	    51    01.01.03  2018-11-13  visbwa  Implemented Default_Init_Tasks for projects with up to 6 Cores,
+; ..\appl\Source\BrsMain.c	    52                                  fixed VTT support within IdleTasks (CANoeAPI_ConsumeTicks)
+; ..\appl\Source\BrsMain.c	    53    01.02.00  2018-11-21  visbwa  Added testsuite callouts into every function
+; ..\appl\Source\BrsMain.c	    54    01.02.01  2018-11-30  visbwa  Removed include of Rte_Main.h (Rte_Start() not called any more)
+; ..\appl\Source\BrsMain.c	    55    01.03.00  2018-12-21  visbwa  Added call of new API Os_InitialEnableInterruptSources() within every Default_Init_Task
+; ..\appl\Source\BrsMain.c	    56    01.03.01  2019-03-06  visbwa  Added hint for DrvCan using infix, added wrapper for Can_30_Mcan
+; ..\appl\Source\BrsMain.c	    57    01.03.02  2019-06-13  vismaa  Added additional Default_Init_Task_Core6
+; ..\appl\Source\BrsMain.c	    58    01.03.03  2019-06-26  visbwa  Moved call of BrsMainInit() previous to call of Os_Init()
+; ..\appl\Source\BrsMain.c	    59    01.04.00  2019-07-02  visbwa  Enhanced FBL support (encapsulations, call of fblmain())
+; ..\appl\Source\BrsMain.c	    60    01.04.01  2019-07-29  visbwa  Added implementation of BrsMainExceptionStartup() for calls from assembler StartUpCode
+; ..\appl\Source\BrsMain.c	    61    01.05.00  2019-08-08  visbwa  Implemented support for different FBL usecases Legacy, WithoutOSScheduling and
+; ..\appl\Source\BrsMain.c	    62                                  OSScheduling, added BrsMainExceptionHandler module code for BrsMainStartup, changed FBL
+; ..\appl\Source\BrsMain.c	    63                                  call from fblmain() to FblMain() for legacy mode, removed include of fbl_main.h
+; ..\appl\Source\BrsMain.c	    64    01.06.00  2019-08-28  visbwa  Changed encapsulation of task implementations (not used for FBL usecases Legacy and
+; ..\appl\Source\BrsMain.c	    65                                  WithoutOSScheduling any more)
+; ..\appl\Source\BrsMain.c	    66              2019-10-09  visbwa  Enhanced support for VTT platform
+; ..\appl\Source\BrsMain.c	    67    01.06.01  2019-11-04  visbwa  Changed include of Can.h into CanIf.h, to get rid of DrvCan with infix (Can_30_Mcan.h),
+; ..\appl\Source\BrsMain.c	    68                                  enhanced MemMap + SchM exclusive area abstraction for Mcan driver (uses infixes)
+; ..\appl\Source\BrsMain.c	    69    01.07.00  2019-11-25  visbwa  Implemented Default_Init_Task_Trusted and Default_Init_Task_Corex_Trusted to allow the
+; ..\appl\Source\BrsMain.c	    70                                  SafeContext partitioning UseCase
+; ..\appl\Source\BrsMain.c	    71              2019-11-27  visbwa  Changed include structure for vBrsCfg.h in BrsMain.h (does now also exist for VTT)
+; ..\appl\Source\BrsMain.c	    72              2019-11-29  visbwa  Enhanced encapsulation with _MICROSOFT_C_VTT_ for DualTarget UseCase (no BrsHw!)
+; ..\appl\Source\BrsMain.c	    73              2019-12-04  visbwa  Fixed encapsulation of DrvCan parts
+; ..\appl\Source\BrsMain.c	    74    01.08.00  2020-02-11  visbwa  Support for UseCase HSM (BRS_ENABLE_HSM_SUPPORT, no EcuM),
+; ..\appl\Source\BrsMain.c	    75                                  added filtering of MultiCore parts through C_BRSASR_USECASE_SINGLECORE_COMMENT,
+; ..\appl\Source\BrsMain.c	    76                                  support for generated DrvCan macros to support modules with infix names
+; ..\appl\Source\BrsMain.c	    77    01.09.00  2020-03-12  visbwa  Encapsulation of SchM implementation with MemMap defines for UseCase FBL,
+; ..\appl\Source\BrsMain.c	    78                                  encapsulation of struct brsMain_Cyclic_Callbacks with MemMap and 1ms-handler defines
+; ..\appl\Source\BrsMain.c	    79    01.09.01  2020-04-22  visbwa  Added conditional call of BrsHwDisableEccErrorReporting() for FBL UseCase
+; ..\appl\Source\BrsMain.c	    80    02.00.00  2020-05-29  visbwa  Major updates for vBaseEnv 2.0.0
+; ..\appl\Source\BrsMain.c	    81                                  - added BrsMainTogglePin() (moved from BrsHw.c BrsHwTogglePin())
+; ..\appl\Source\BrsMain.c	    82    02.01.00  2020-06-29  visbwa  Added support for preferred PLL and Watchdog init in BrsMainInit()
+; ..\appl\Source\BrsMain.c	    83    02.01.01  2020-07-24  visbwa  Soft increase for FBL_Legacy support
+; ..\appl\Source\BrsMain.c	    84    02.02.00  2020-08-10  visbwa  Support for FBL Legacy UseCase w/o OS, usage of new FBL UseCase defines;
+; ..\appl\Source\BrsMain.c	    85                                  MemMap encapsulation of BrsMainExceptionHandler(), enabled 1ms handler also for FBL,
+; ..\appl\Source\BrsMain.c	    86                                  BrsMainCyclic1ms() usable from extern, removed usage of BrsAsrApplCanInterruptLockCtr
+; ..\appl\Source\BrsMain.c	    87                                  for FBL (FBL is always in polling mode)
+; ..\appl\Source\BrsMain.c	    88    02.02.01  2020-10-30  visbwa  Added include of Os.h for VTT (usage of ShutdownOS()), removed AUTHOR IDENTITY
+; ..\appl\Source\BrsMain.c	    89    02.02.02  2021-01-14  visbwa  Adapted main() to also call Os_Init() for FBL with VTT
+; ..\appl\Source\BrsMain.c	    90  **********************************************************************************************************************/
+; ..\appl\Source\BrsMain.c	    91  
+; ..\appl\Source\BrsMain.c	    92  /**********************************************************************************************************************
+; ..\appl\Source\BrsMain.c	    93  *  EXAMPLE CODE ONLY
+; ..\appl\Source\BrsMain.c	    94  *  -------------------------------------------------------------------------------------------------------------------
+; ..\appl\Source\BrsMain.c	    95  *  This Example Code is only intended for illustrating an example of a possible BSW integration and BSW configuration.
+; ..\appl\Source\BrsMain.c	    96  *  The Example Code has not passed any quality control measures and may be incomplete. The Example Code is neither
+; ..\appl\Source\BrsMain.c	    97  *  intended nor qualified for use in series production. The Example Code as well as any of its modifications and/or
+; ..\appl\Source\BrsMain.c	    98  *  implementations must be tested with diligent care and must comply with all quality requirements which are necessary
+; ..\appl\Source\BrsMain.c	    99  *  according to the state of the art before their use.
+; ..\appl\Source\BrsMain.c	   100  *********************************************************************************************************************/
+; ..\appl\Source\BrsMain.c	   101  
+; ..\appl\Source\BrsMain.c	   102  /**********************************************************************************************************************
+; ..\appl\Source\BrsMain.c	   103    INCLUDES
+; ..\appl\Source\BrsMain.c	   104  **********************************************************************************************************************/
+; ..\appl\Source\BrsMain.c	   105  #include "BrsMain.h"
+; ..\appl\Source\BrsMain.c	   106  
+; ..\appl\Source\BrsMain.c	   107  #if !defined (_MICROSOFT_C_VTT_)
+; ..\appl\Source\BrsMain.c	   108    #include "BrsHw.h"
+; ..\appl\Source\BrsMain.c	   109  #else
+; ..\appl\Source\BrsMain.c	   110    #include "CANoeAPI.h"
+; ..\appl\Source\BrsMain.c	   111    #include <stdio.h>
+; ..\appl\Source\BrsMain.c	   112    #include "Os.h"
+; ..\appl\Source\BrsMain.c	   113  #endif
+; ..\appl\Source\BrsMain.c	   114  
+; ..\appl\Source\BrsMain.c	   115  #if defined (BRS_ENABLE_CAN_SUPPORT)
+; ..\appl\Source\BrsMain.c	   116    #include BRS_DRVCAN_HEADER_FILENAME
+; ..\appl\Source\BrsMain.c	   117  #endif
+; ..\appl\Source\BrsMain.c	   118  
+; ..\appl\Source\BrsMain.c	   119  #if defined (BRS_ENABLE_TESTSUITE_SUPPORT)
+; ..\appl\Source\BrsMain.c	   120    #include "BrsTestsuite.h"
+; ..\appl\Source\BrsMain.c	   121  #endif
+; ..\appl\Source\BrsMain.c	   122  
+; ..\appl\Source\BrsMain.c	   123  /**********************************************************************************************************************
+; ..\appl\Source\BrsMain.c	   124    VERSION CHECK
+; ..\appl\Source\BrsMain.c	   125  **********************************************************************************************************************/
+; ..\appl\Source\BrsMain.c	   126  #if (BRSMAIN_VERSION != 0x0202u)
+; ..\appl\Source\BrsMain.c	   127    #error "Header and source file are inconsistent!"
+; ..\appl\Source\BrsMain.c	   128  #endif
+; ..\appl\Source\BrsMain.c	   129  #if (BRSMAIN_BUGFIX_VERSION != 0x02u)
+; ..\appl\Source\BrsMain.c	   130    #error "Different versions of bugfix in Header and Source used!"
+; ..\appl\Source\BrsMain.c	   131  #endif
+; ..\appl\Source\BrsMain.c	   132  
+; ..\appl\Source\BrsMain.c	   133  /**********************************************************************************************************************
+; ..\appl\Source\BrsMain.c	   134    CONFIGURATION CHECK
+; ..\appl\Source\BrsMain.c	   135  **********************************************************************************************************************/
+; ..\appl\Source\BrsMain.c	   136  
+; ..\appl\Source\BrsMain.c	   137  /**********************************************************************************************************************
+; ..\appl\Source\BrsMain.c	   138    DEFINITION + MACROS
+; ..\appl\Source\BrsMain.c	   139  **********************************************************************************************************************/
+; ..\appl\Source\BrsMain.c	   140  
+; ..\appl\Source\BrsMain.c	   141  /**********************************************************************************************************************
+; ..\appl\Source\BrsMain.c	   142    GLOBAL VARIABLES
+; ..\appl\Source\BrsMain.c	   143  **********************************************************************************************************************/
+; ..\appl\Source\BrsMain.c	   144  #if defined (BRS_ENABLE_1MS_HANDLER)
+; ..\appl\Source\BrsMain.c	   145    #define BRSMAIN_CYCLIC_MAX_CALLBACKS 2u
+; ..\appl\Source\BrsMain.c	   146  
+; ..\appl\Source\BrsMain.c	   147    #define START_SEC_VAR_NOINIT_UNSPECIFIED
+; ..\appl\Source\BrsMain.c	   148    #include "MemMap.h"
+; ..\appl\Source\BrsMain.c	   149    typedef struct
+; ..\appl\Source\BrsMain.c	   150    {
+; ..\appl\Source\BrsMain.c	   151      void (*FunctionPointer[BRSMAIN_CYCLIC_MAX_CALLBACKS]) (void);
+; ..\appl\Source\BrsMain.c	   152      uint8 FunctionCounter;
+; ..\appl\Source\BrsMain.c	   153    }brsMain_Cyclic_Callbacks;
+; ..\appl\Source\BrsMain.c	   154    #define STOP_SEC_VAR
+; ..\appl\Source\BrsMain.c	   155    #include "MemMap.h"
+; ..\appl\Source\BrsMain.c	   156  #endif /*BRS_ENABLE_1MS_HANDLER*/
+; ..\appl\Source\BrsMain.c	   157  
+; ..\appl\Source\BrsMain.c	   158  #if defined (BRS_ENABLE_CAN_SUPPORT) && !defined (BRS_ENABLE_FBL_SUPPORT)
+; ..\appl\Source\BrsMain.c	   159    #define START_SEC_VAR_NOINIT_8BIT
+; ..\appl\Source\BrsMain.c	   160    #include "MemMap.h"
+; ..\appl\Source\BrsMain.c	   161    static uint8 BrsAsrApplCanInterruptLockCtr;
+; ..\appl\Source\BrsMain.c	   162    #define STOP_SEC_VAR
+; ..\appl\Source\BrsMain.c	   163    #include "MemMap.h"
+; ..\appl\Source\BrsMain.c	   164  #endif /*BRS_ENABLE_CAN_SUPPORT&&!BRS_ENABLE_FBL_SUPPORT*/
+; ..\appl\Source\BrsMain.c	   165  
+; ..\appl\Source\BrsMain.c	   166  /**********************************************************************************************************************
+; ..\appl\Source\BrsMain.c	   167    GLOBAL CONST VARIABLES
+; ..\appl\Source\BrsMain.c	   168  **********************************************************************************************************************/
+; ..\appl\Source\BrsMain.c	   169  
+; ..\appl\Source\BrsMain.c	   170  /**********************************************************************************************************************
+; ..\appl\Source\BrsMain.c	   171    LOCAL VARIABLES
+; ..\appl\Source\BrsMain.c	   172  **********************************************************************************************************************/
+; ..\appl\Source\BrsMain.c	   173  #if defined (BRS_ENABLE_1MS_HANDLER)
+; ..\appl\Source\BrsMain.c	   174    #define START_SEC_VAR_ZERO_INIT_16BIT
+; ..\appl\Source\BrsMain.c	   175    #include "MemMap.h"
+; ..\appl\Source\BrsMain.c	   176    /**
+; ..\appl\Source\BrsMain.c	   177     * \var brsMain_CallCounter1ms
+; ..\appl\Source\BrsMain.c	   178     *      Counter for calls of the function BrsMainCyclic1ms
+; ..\appl\Source\BrsMain.c	   179     */
+; ..\appl\Source\BrsMain.c	   180    static volatile uint16 brsMain_CallCounter1ms;
+; ..\appl\Source\BrsMain.c	   181  
+; ..\appl\Source\BrsMain.c	   182    /**
+; ..\appl\Source\BrsMain.c	   183     * \var brsMain_CallCounter1sec
+; ..\appl\Source\BrsMain.c	   184     *      Counter for 1000 calls of the function BrsMainCyclic1ms
+; ..\appl\Source\BrsMain.c	   185     */
+; ..\appl\Source\BrsMain.c	   186    static volatile uint16 brsMain_CallCounter1sec;
+; ..\appl\Source\BrsMain.c	   187    #define STOP_SEC_VAR
+; ..\appl\Source\BrsMain.c	   188    #include "MemMap.h"
+; ..\appl\Source\BrsMain.c	   189  
+; ..\appl\Source\BrsMain.c	   190    #define START_SEC_VAR_NOINIT_UNSPECIFIED
+; ..\appl\Source\BrsMain.c	   191    #include "MemMap.h"
+; ..\appl\Source\BrsMain.c	   192    static brsMain_Cyclic_Callbacks brsMain_Cyclic_Callbacks_Background;
+; ..\appl\Source\BrsMain.c	   193    static brsMain_Cyclic_Callbacks brsMain_Cyclic_Callbacks_1ms;
+; ..\appl\Source\BrsMain.c	   194    static brsMain_Cyclic_Callbacks brsMain_Cyclic_Callbacks_10ms;
+; ..\appl\Source\BrsMain.c	   195    static brsMain_Cyclic_Callbacks brsMain_Cyclic_Callbacks_100ms;
+; ..\appl\Source\BrsMain.c	   196    static brsMain_Cyclic_Callbacks brsMain_Cyclic_Callbacks_250ms;
+; ..\appl\Source\BrsMain.c	   197    static brsMain_Cyclic_Callbacks brsMain_Cyclic_Callbacks_500ms;
+; ..\appl\Source\BrsMain.c	   198    static brsMain_Cyclic_Callbacks brsMain_Cyclic_Callbacks_1000ms;
+; ..\appl\Source\BrsMain.c	   199    #define STOP_SEC_VAR
+; ..\appl\Source\BrsMain.c	   200    #include "MemMap.h"
+; ..\appl\Source\BrsMain.c	   201  #endif /*BRS_ENABLE_1MS_HANDLER*/
+; ..\appl\Source\BrsMain.c	   202  
+; ..\appl\Source\BrsMain.c	   203  /**********************************************************************************************************************
+; ..\appl\Source\BrsMain.c	   204    LOCAL CONST VARIABLES
+; ..\appl\Source\BrsMain.c	   205  **********************************************************************************************************************/
+; ..\appl\Source\BrsMain.c	   206  # if defined (_MICROSOFT_C_VTT_)
+; ..\appl\Source\BrsMain.c	   207    #define BRSMAIN_ERRORBUFFERSIZE  120
+; ..\appl\Source\BrsMain.c	   208  #endif
+; ..\appl\Source\BrsMain.c	   209  
+; ..\appl\Source\BrsMain.c	   210  /**********************************************************************************************************************
+; ..\appl\Source\BrsMain.c	   211    PROTOTYPES OF GLOBAL FUNCTIONS
+; ..\appl\Source\BrsMain.c	   212  **********************************************************************************************************************/
+; ..\appl\Source\BrsMain.c	   213  #if defined (BRS_FBL_NO_ECUMINIT)
+; ..\appl\Source\BrsMain.c	   214  extern void FblMain(void);
+; ..\appl\Source\BrsMain.c	   215  #endif
+; ..\appl\Source\BrsMain.c	   216  
+; ..\appl\Source\BrsMain.c	   217  /**********************************************************************************************************************
+; ..\appl\Source\BrsMain.c	   218    PROTOTYPES OF LOCAL FUNCTIONS
+; ..\appl\Source\BrsMain.c	   219  **********************************************************************************************************************/
+; ..\appl\Source\BrsMain.c	   220  
+; ..\appl\Source\BrsMain.c	   221  /**********************************************************************************************************************
+; ..\appl\Source\BrsMain.c	   222    FUNCTION DEFINITIONS
+; ..\appl\Source\BrsMain.c	   223  **********************************************************************************************************************/
+; ..\appl\Source\BrsMain.c	   224  #if !defined (_MICROSOFT_C_VTT_)
+; ..\appl\Source\BrsMain.c	   225  # if defined (BRS_ENABLE_SUPPORT_LEDS)
+; ..\appl\Source\BrsMain.c	   226  void BrsMainWrapperTogglePinLED(void)
+; ..\appl\Source\BrsMain.c	   227  {
+; ..\appl\Source\BrsMain.c	   228    BrsMainTogglePin(BRSMAIN_TOGGLEPIN_LED);
+; ..\appl\Source\BrsMain.c	   229  }
+; ..\appl\Source\BrsMain.c	   230  # endif
+; ..\appl\Source\BrsMain.c	   231  
+; ..\appl\Source\BrsMain.c	   232  # if defined (BRS_ENABLE_SUPPORT_TOGGLE_WD_PIN)
+; ..\appl\Source\BrsMain.c	   233  void BrsMainWrapperTogglePinWD(void)
+; ..\appl\Source\BrsMain.c	   234  {
+; ..\appl\Source\BrsMain.c	   235    BrsMainTogglePin(BRSMAIN_TOGGLEPIN_WD);
+; ..\appl\Source\BrsMain.c	   236  }
+; ..\appl\Source\BrsMain.c	   237  # endif
+; ..\appl\Source\BrsMain.c	   238  
+; ..\appl\Source\BrsMain.c	   239  # if defined (BRS_ENABLE_SUPPORT_TOGGLE_CUSTOM_PIN)
+; ..\appl\Source\BrsMain.c	   240  void BrsMainWrapperTogglePinCustom(void)
+; ..\appl\Source\BrsMain.c	   241  {
+; ..\appl\Source\BrsMain.c	   242    BrsMainTogglePin(BRSMAIN_TOGGLEPIN_CUSTOM);
+; ..\appl\Source\BrsMain.c	   243  }
+; ..\appl\Source\BrsMain.c	   244  # endif
+; ..\appl\Source\BrsMain.c	   245  #endif /*!_MICROSOFT_C_VTT_*/
+; ..\appl\Source\BrsMain.c	   246  
+; ..\appl\Source\BrsMain.c	   247  /*****************************************************************************/
+; ..\appl\Source\BrsMain.c	   248  /**
+; ..\appl\Source\BrsMain.c	   249   * @brief      Main initialization routine.
+; ..\appl\Source\BrsMain.c	   250   *             Contains initialisation of BRSModules and BrsMain specific initialization
+; ..\appl\Source\BrsMain.c	   251   * @pre        -
+; ..\appl\Source\BrsMain.c	   252   * @param[in]  -
+; ..\appl\Source\BrsMain.c	   253   * @param[out] -
+; ..\appl\Source\BrsMain.c	   254   * @return     -
+; ..\appl\Source\BrsMain.c	   255   * @context    Function is called from main
+; ..\appl\Source\BrsMain.c	   256   */
+; ..\appl\Source\BrsMain.c	   257  /*****************************************************************************/
+; ..\appl\Source\BrsMain.c	   258  void BrsMainInit(void)
+; Function BrsMainInit
+.L6:
+BrsMainInit:	.type	func
+
+; ..\appl\Source\BrsMain.c	   259  {
+; ..\appl\Source\BrsMain.c	   260  #if defined (BRSMAIN_BRSMAININIT_CALLOUT)
+; ..\appl\Source\BrsMain.c	   261    BrsTestsuite_BrsMain_BrsMainInit();
+; ..\appl\Source\BrsMain.c	   262  #endif
+; ..\appl\Source\BrsMain.c	   263  
+; ..\appl\Source\BrsMain.c	   264  #if defined (BRS_ENABLE_CAN_SUPPORT) && !defined (BRS_ENABLE_FBL_SUPPORT)
+; ..\appl\Source\BrsMain.c	   265    /* UserDefined ExclusiveArea handling for CAN channels, according to AN-ISC-8-1149_ErrorHook_E_OS_DISABLED_INT.pdf */
+; ..\appl\Source\BrsMain.c	   266    BrsAsrApplCanInterruptLockCtr = 0u;
+; ..\appl\Source\BrsMain.c	   267  #endif
+; ..\appl\Source\BrsMain.c	   268  
+; ..\appl\Source\BrsMain.c	   269  #if !defined (BRS_FBL_NO_ECUMINIT) && !defined (BRS_FBL_WITH_ECUMINIT) && !defined (_MICROSOFT_C_VTT_)
+; ..\appl\Source\BrsMain.c	   270  # if !defined (BRS_ENABLE_PREFER_PLL_WATCHDOG_INIT)
+; ..\appl\Source\BrsMain.c	   271    /* If preferred feature is acivated, initialization will take place in BrsMain_MemoryInit_StageOne_Hook(). */
+; ..\appl\Source\BrsMain.c	   272  #  if defined (BRSHW_PREINIT_AVAILABLE)
+; ..\appl\Source\BrsMain.c	   273    BrsHwPreInitPowerOn();
+; ..\appl\Source\BrsMain.c	   274  #  endif
+; ..\appl\Source\BrsMain.c	   275  
+; ..\appl\Source\BrsMain.c	   276  #  if defined (BRS_ENABLE_WATCHDOG)
+; ..\appl\Source\BrsMain.c	   277    BrsHwWatchdogInitPowerOn();
+; ..\appl\Source\BrsMain.c	   278  #  endif
+; ..\appl\Source\BrsMain.c	   279  
+; ..\appl\Source\BrsMain.c	   280  #  if defined (BRS_ENABLE_PLLCLOCKS)
+; ..\appl\Source\BrsMain.c	   281    BrsHwPllInitPowerOn();
+; ..\appl\Source\BrsMain.c	   282  #  endif
+; ..\appl\Source\BrsMain.c	   283  # endif /*!BRS_ENABLE_PREFER_PLL_WATCHDOG_INIT*/
+; ..\appl\Source\BrsMain.c	   284  
+; ..\appl\Source\BrsMain.c	   285  # if defined (BRS_ENABLE_PORT)
+; ..\appl\Source\BrsMain.c	   286    BrsHwPortInitPowerOn();
+; ..\appl\Source\BrsMain.c	   287  # endif
+; ..\appl\Source\BrsMain.c	   288  
+; ..\appl\Source\BrsMain.c	   289  # if defined (BRS_ENABLE_FBL_SUPPORT)
+; ..\appl\Source\BrsMain.c	   290  #  if defined (BRSHW_DISABLE_ECC_AVAILABLE)
+; ..\appl\Source\BrsMain.c	   291    BrsHwDisableEccErrorReporting();
+; ..\appl\Source\BrsMain.c	   292  #  endif
+; ..\appl\Source\BrsMain.c	   293  # endif
+; ..\appl\Source\BrsMain.c	   294  #endif /*!BRS_FBL_NO_ECUMINIT&&!BRS_FBL_WITH_ECUMINIT&&!_MICROSOFT_C_VTT_*/
+; ..\appl\Source\BrsMain.c	   295  
+; ..\appl\Source\BrsMain.c	   296  #if defined (BRS_ENABLE_1MS_HANDLER)
+; ..\appl\Source\BrsMain.c	   297    brsMain_CallCounter1ms = 0u;
+; ..\appl\Source\BrsMain.c	   298    brsMain_CallCounter1sec = 0u;
+; ..\appl\Source\BrsMain.c	   299  
+; ..\appl\Source\BrsMain.c	   300    brsMain_Cyclic_Callbacks_Background.FunctionCounter = 0u;
+; ..\appl\Source\BrsMain.c	   301    brsMain_Cyclic_Callbacks_1ms.FunctionCounter        = 0u;
+; ..\appl\Source\BrsMain.c	   302    brsMain_Cyclic_Callbacks_10ms.FunctionCounter       = 0u;
+; ..\appl\Source\BrsMain.c	   303    brsMain_Cyclic_Callbacks_100ms.FunctionCounter      = 0u;
+; ..\appl\Source\BrsMain.c	   304    brsMain_Cyclic_Callbacks_250ms.FunctionCounter      = 0u;
+; ..\appl\Source\BrsMain.c	   305    brsMain_Cyclic_Callbacks_500ms.FunctionCounter      = 0u;
+; ..\appl\Source\BrsMain.c	   306    brsMain_Cyclic_Callbacks_1000ms.FunctionCounter     = 0u;
+; ..\appl\Source\BrsMain.c	   307  #endif /*BRS_ENABLE_1MS_HANDLER*/
+; ..\appl\Source\BrsMain.c	   308  
+; ..\appl\Source\BrsMain.c	   309  #if !defined (_MICROSOFT_C_VTT_)
+; ..\appl\Source\BrsMain.c	   310  # if defined (BRS_ENABLE_SUPPORT_LEDS)
+; ..\appl\Source\BrsMain.c	   311    BrsMainRegisterCyclic(BrsMainWrapperTogglePinLED, BRSMAIN_CYCLETIME_500MS);
+; ..\appl\Source\BrsMain.c	   312  # endif
+; ..\appl\Source\BrsMain.c	   313  
+; ..\appl\Source\BrsMain.c	   314  # if defined (BRS_ENABLE_SUPPORT_TOGGLE_WD_PIN)
+; ..\appl\Source\BrsMain.c	   315    BrsMainRegisterCyclic(BrsMainWrapperTogglePinWD, BRSMAIN_CYCLETIME_250MS);
+; ..\appl\Source\BrsMain.c	   316  # endif
+; ..\appl\Source\BrsMain.c	   317  
+; ..\appl\Source\BrsMain.c	   318  # if defined (BRS_ENABLE_SUPPORT_TOGGLE_CUSTOM_PIN)
+; ..\appl\Source\BrsMain.c	   319    BrsMainRegisterCyclic(BrsMainWrapperTogglePinCustom, BRSMAIN_CYCLETIME_1000MS);
+; ..\appl\Source\BrsMain.c	   320  # endif
+; ..\appl\Source\BrsMain.c	   321  #endif /*!_MICROSOFT_C_VTT_*/
+; ..\appl\Source\BrsMain.c	   322  }
+	ret
+.L67:
+	
+__BrsMainInit_function_end:
+	.size	BrsMainInit,__BrsMainInit_function_end-BrsMainInit
+.L39:
+	; End of function
+	
+	.sdecl	'.text.BrsMain.Os_Task_Default_Init_Task',code,cluster('Os_Task_Default_Init_Task')
+	.sect	'.text.BrsMain.Os_Task_Default_Init_Task'
+	.align	2
+	
+	.global	Os_Task_Default_Init_Task
+
+; ..\appl\Source\BrsMain.c	   323  
+; ..\appl\Source\BrsMain.c	   324  #if defined (BRS_ENABLE_1MS_HANDLER)
+; ..\appl\Source\BrsMain.c	   325  /*****************************************************************************/
+; ..\appl\Source\BrsMain.c	   326  /**
+; ..\appl\Source\BrsMain.c	   327   * @brief      Routine to register cyclic callbacks.
+; ..\appl\Source\BrsMain.c	   328   * @pre        Initialization of BrsMain was done threw call of BrsMainInit().
+; ..\appl\Source\BrsMain.c	   329   * @param[in]  FunctionPointer has to be a pointer to a function of type
+; ..\appl\Source\BrsMain.c	   330   *             void function(void).
+; ..\appl\Source\BrsMain.c	   331   * @param[in]  Cycletime described the cycletime, the callback should be triggered.
+; ..\appl\Source\BrsMain.c	   332   * @param[out] -
+; ..\appl\Source\BrsMain.c	   333   * @return     -
+; ..\appl\Source\BrsMain.c	   334   * @context    Function is called from modules that need cyclic callbacks.
+; ..\appl\Source\BrsMain.c	   335   */
+; ..\appl\Source\BrsMain.c	   336  /*****************************************************************************/
+; ..\appl\Source\BrsMain.c	   337  void BrsMainRegisterCyclic(void (*FunctionPointer)(void), brsMain_Cyclic_Cycletime Cycletime)
+; ..\appl\Source\BrsMain.c	   338  {
+; ..\appl\Source\BrsMain.c	   339  #if defined (BRSMAIN_BRSMAINREGISTERCYCLIC_CALLOUT)
+; ..\appl\Source\BrsMain.c	   340    BrsTestsuite_BrsMain_BrsMainRegisterCyclic(FunctionPointer, Cycletime);
+; ..\appl\Source\BrsMain.c	   341  #endif
+; ..\appl\Source\BrsMain.c	   342  
+; ..\appl\Source\BrsMain.c	   343    switch (Cycletime)
+; ..\appl\Source\BrsMain.c	   344    {
+; ..\appl\Source\BrsMain.c	   345      case BRSMAIN_CYCLETIME_BACKGROUND:
+; ..\appl\Source\BrsMain.c	   346        if (brsMain_Cyclic_Callbacks_Background.FunctionCounter >= BRSMAIN_CYCLIC_MAX_CALLBACKS)
+; ..\appl\Source\BrsMain.c	   347          BrsMainExceptionHandler(kBrsIllegalParameter, BRSERROR_MODULE_BRSMAIN, (uint16)(__LINE__));
+; ..\appl\Source\BrsMain.c	   348        brsMain_Cyclic_Callbacks_Background.FunctionPointer[brsMain_Cyclic_Callbacks_Background.FunctionCounter] = FunctionPointer;
+; ..\appl\Source\BrsMain.c	   349        brsMain_Cyclic_Callbacks_Background.FunctionCounter++;
+; ..\appl\Source\BrsMain.c	   350        break;
+; ..\appl\Source\BrsMain.c	   351  
+; ..\appl\Source\BrsMain.c	   352      case BRSMAIN_CYCLETIME_1MS:
+; ..\appl\Source\BrsMain.c	   353        if (brsMain_Cyclic_Callbacks_1ms.FunctionCounter >= BRSMAIN_CYCLIC_MAX_CALLBACKS)
+; ..\appl\Source\BrsMain.c	   354          BrsMainExceptionHandler(kBrsIllegalParameter, BRSERROR_MODULE_BRSMAIN, (uint16)(__LINE__));
+; ..\appl\Source\BrsMain.c	   355        brsMain_Cyclic_Callbacks_1ms.FunctionPointer[brsMain_Cyclic_Callbacks_1ms.FunctionCounter] = FunctionPointer;
+; ..\appl\Source\BrsMain.c	   356        brsMain_Cyclic_Callbacks_1ms.FunctionCounter++;
+; ..\appl\Source\BrsMain.c	   357        break;
+; ..\appl\Source\BrsMain.c	   358  
+; ..\appl\Source\BrsMain.c	   359      case BRSMAIN_CYCLETIME_10MS:
+; ..\appl\Source\BrsMain.c	   360        if (brsMain_Cyclic_Callbacks_10ms.FunctionCounter >= BRSMAIN_CYCLIC_MAX_CALLBACKS)
+; ..\appl\Source\BrsMain.c	   361          BrsMainExceptionHandler(kBrsIllegalParameter, BRSERROR_MODULE_BRSMAIN, (uint16)(__LINE__));
+; ..\appl\Source\BrsMain.c	   362        brsMain_Cyclic_Callbacks_10ms.FunctionPointer[brsMain_Cyclic_Callbacks_10ms.FunctionCounter] = FunctionPointer;
+; ..\appl\Source\BrsMain.c	   363        brsMain_Cyclic_Callbacks_10ms.FunctionCounter++;
+; ..\appl\Source\BrsMain.c	   364        break;
+; ..\appl\Source\BrsMain.c	   365  
+; ..\appl\Source\BrsMain.c	   366      case BRSMAIN_CYCLETIME_100MS:
+; ..\appl\Source\BrsMain.c	   367        if (brsMain_Cyclic_Callbacks_100ms.FunctionCounter >= BRSMAIN_CYCLIC_MAX_CALLBACKS)
+; ..\appl\Source\BrsMain.c	   368          BrsMainExceptionHandler(kBrsIllegalParameter, BRSERROR_MODULE_BRSMAIN, (uint16)(__LINE__));
+; ..\appl\Source\BrsMain.c	   369        brsMain_Cyclic_Callbacks_100ms.FunctionPointer[brsMain_Cyclic_Callbacks_100ms.FunctionCounter] = FunctionPointer;
+; ..\appl\Source\BrsMain.c	   370        brsMain_Cyclic_Callbacks_100ms.FunctionCounter++;
+; ..\appl\Source\BrsMain.c	   371        break;
+; ..\appl\Source\BrsMain.c	   372  
+; ..\appl\Source\BrsMain.c	   373      case BRSMAIN_CYCLETIME_250MS:
+; ..\appl\Source\BrsMain.c	   374        if (brsMain_Cyclic_Callbacks_250ms.FunctionCounter >= BRSMAIN_CYCLIC_MAX_CALLBACKS)
+; ..\appl\Source\BrsMain.c	   375          BrsMainExceptionHandler(kBrsIllegalParameter, BRSERROR_MODULE_BRSMAIN, (uint16)(__LINE__));
+; ..\appl\Source\BrsMain.c	   376        brsMain_Cyclic_Callbacks_250ms.FunctionPointer[brsMain_Cyclic_Callbacks_250ms.FunctionCounter] = FunctionPointer;
+; ..\appl\Source\BrsMain.c	   377        brsMain_Cyclic_Callbacks_250ms.FunctionCounter++;
+; ..\appl\Source\BrsMain.c	   378        break;
+; ..\appl\Source\BrsMain.c	   379  
+; ..\appl\Source\BrsMain.c	   380      case BRSMAIN_CYCLETIME_500MS:
+; ..\appl\Source\BrsMain.c	   381        if (brsMain_Cyclic_Callbacks_500ms.FunctionCounter >= BRSMAIN_CYCLIC_MAX_CALLBACKS)
+; ..\appl\Source\BrsMain.c	   382          BrsMainExceptionHandler(kBrsIllegalParameter, BRSERROR_MODULE_BRSMAIN, (uint16)(__LINE__));
+; ..\appl\Source\BrsMain.c	   383        brsMain_Cyclic_Callbacks_500ms.FunctionPointer[brsMain_Cyclic_Callbacks_500ms.FunctionCounter] = FunctionPointer;
+; ..\appl\Source\BrsMain.c	   384        brsMain_Cyclic_Callbacks_500ms.FunctionCounter++;
+; ..\appl\Source\BrsMain.c	   385        break;
+; ..\appl\Source\BrsMain.c	   386  
+; ..\appl\Source\BrsMain.c	   387      case BRSMAIN_CYCLETIME_1000MS:
+; ..\appl\Source\BrsMain.c	   388        if (brsMain_Cyclic_Callbacks_1000ms.FunctionCounter >= BRSMAIN_CYCLIC_MAX_CALLBACKS)
+; ..\appl\Source\BrsMain.c	   389          BrsMainExceptionHandler(kBrsIllegalParameter, BRSERROR_MODULE_BRSMAIN, (uint16)(__LINE__));
+; ..\appl\Source\BrsMain.c	   390        brsMain_Cyclic_Callbacks_1000ms.FunctionPointer[brsMain_Cyclic_Callbacks_1000ms.FunctionCounter] = FunctionPointer;
+; ..\appl\Source\BrsMain.c	   391        brsMain_Cyclic_Callbacks_1000ms.FunctionCounter++;
+; ..\appl\Source\BrsMain.c	   392        break;
+; ..\appl\Source\BrsMain.c	   393  
+; ..\appl\Source\BrsMain.c	   394      default:
+; ..\appl\Source\BrsMain.c	   395        BrsMainExceptionHandler(kBrsIllegalParameter, BRSERROR_MODULE_BRSMAIN, (uint16)(__LINE__));
+; ..\appl\Source\BrsMain.c	   396        break;
+; ..\appl\Source\BrsMain.c	   397    }
+; ..\appl\Source\BrsMain.c	   398  }
+; ..\appl\Source\BrsMain.c	   399  #endif /*BRS_ENABLE_1MS_HANDLER*/
+; ..\appl\Source\BrsMain.c	   400  
+; ..\appl\Source\BrsMain.c	   401  #if !defined (BRS_ENABLE_FBL_SUPPORT)
+; ..\appl\Source\BrsMain.c	   402  /*****************************************************************************/
+; ..\appl\Source\BrsMain.c	   403  /**
+; ..\appl\Source\BrsMain.c	   404   * @brief      InitTask to call EcuM_StartupTwo().
+; ..\appl\Source\BrsMain.c	   405   * @pre        -
+; ..\appl\Source\BrsMain.c	   406   * @param[in]  -
+; ..\appl\Source\BrsMain.c	   407   * @param[out] -
+; ..\appl\Source\BrsMain.c	   408   * @return     -
+; ..\appl\Source\BrsMain.c	   409   * @context    The task is started once by the OS.
+; ..\appl\Source\BrsMain.c	   410   */
+; ..\appl\Source\BrsMain.c	   411  /*****************************************************************************/
+; ..\appl\Source\BrsMain.c	   412  TASK(Default_Init_Task)
+; Function Os_Task_Default_Init_Task
+.L8:
+Os_Task_Default_Init_Task:	.type	func
+
+; ..\appl\Source\BrsMain.c	   413  {
+; ..\appl\Source\BrsMain.c	   414  #if defined (BRSMAIN_DEFAULT_INIT_TASK_CALLOUT)
+; ..\appl\Source\BrsMain.c	   415    BrsTestsuite_BrsMain_Default_Init_Task();
+; ..\appl\Source\BrsMain.c	   416  #endif
+; ..\appl\Source\BrsMain.c	   417  
+; ..\appl\Source\BrsMain.c	   418  #if defined (BRS_ENABLE_OS_MULTICORESUPPORT)
+; ..\appl\Source\BrsMain.c	   419    /* Workaround for RTE ESCAN00078832 */
+; ..\appl\Source\BrsMain.c	   420    /* Use this code, if you get a Det Error at the end of Rte_Start() on MasterCore */
+; ..\appl\Source\BrsMain.c	   421    /* Rte_Start() on the SlaveCores has to be called first, before Rte_Start() on MasterCore */
+; ..\appl\Source\BrsMain.c	   422    /* SET THIS InitTask TO FULL PREEMPTIVE (OsTaskSchedule) within OsConfig! */
+; ..\appl\Source\BrsMain.c	   423    /*while(Rte_InitState_1 != RTE_STATE_INIT)
+; ..\appl\Source\BrsMain.c	   424    {
+; ..\appl\Source\BrsMain.c	   425      (void)Schedule();
+; ..\appl\Source\BrsMain.c	   426    }*/
+; ..\appl\Source\BrsMain.c	   427  #endif /*BRS_ENABLE_OS_MULTICORESUPPORT*/
+; ..\appl\Source\BrsMain.c	   428  
+; ..\appl\Source\BrsMain.c	   429  #if defined (BRS_ENABLE_TESTSUITE_SUPPORT)
+; ..\appl\Source\BrsMain.c	   430    BrsTestsuiteInit();
+; ..\appl\Source\BrsMain.c	   431  #endif
+; ..\appl\Source\BrsMain.c	   432  
+; ..\appl\Source\BrsMain.c	   433  #if defined (BRS_ENABLE_HSM_SUPPORT)
+; ..\appl\Source\BrsMain.c	   434    vHsm_StartupTwo();
+; ..\appl\Source\BrsMain.c	   435  #else
+; ..\appl\Source\BrsMain.c	   436    EcuM_StartupTwo();
+	call	EcuM_StartupTwo
+.L90:
+
+; ..\appl\Source\BrsMain.c	   437  #endif
+; ..\appl\Source\BrsMain.c	   438  
+; ..\appl\Source\BrsMain.c	   439    (void)TerminateTask();
+	j	TerminateTask
+.L65:
+	
+__Os_Task_Default_Init_Task_function_end:
+	.size	Os_Task_Default_Init_Task,__Os_Task_Default_Init_Task_function_end-Os_Task_Default_Init_Task
+.L29:
+	; End of function
+	
+	.sdecl	'.text.BrsMain.Os_Task_Default_Init_Task_Trusted',code,cluster('Os_Task_Default_Init_Task_Trusted')
+	.sect	'.text.BrsMain.Os_Task_Default_Init_Task_Trusted'
+	.align	2
+	
+	.global	Os_Task_Default_Init_Task_Trusted
+
+; ..\appl\Source\BrsMain.c	   440  }
+; ..\appl\Source\BrsMain.c	   441  
+; ..\appl\Source\BrsMain.c	   442  /*****************************************************************************/
+; ..\appl\Source\BrsMain.c	   443  /**
+; ..\appl\Source\BrsMain.c	   444   * @brief      InitTask to call Os_InitialEnableInterruptSources().
+; ..\appl\Source\BrsMain.c	   445   * @pre        -
+; ..\appl\Source\BrsMain.c	   446   * @param[in]  -
+; ..\appl\Source\BrsMain.c	   447   * @param[out] -
+; ..\appl\Source\BrsMain.c	   448   * @return     -
+; ..\appl\Source\BrsMain.c	   449   * @context    The task is started once by the OS. It is separated from
+; ..\appl\Source\BrsMain.c	   450   *             Default_Init_Task() to allow the SafeContext partitioning UseCase.
+; ..\appl\Source\BrsMain.c	   451   */
+; ..\appl\Source\BrsMain.c	   452  /*****************************************************************************/
+; ..\appl\Source\BrsMain.c	   453  TASK(Default_Init_Task_Trusted)
+; Function Os_Task_Default_Init_Task_Trusted
+.L10:
+Os_Task_Default_Init_Task_Trusted:	.type	func
+
+; ..\appl\Source\BrsMain.c	   454  {
+; ..\appl\Source\BrsMain.c	   455  #if defined (BRSMAIN_DEFAULT_INIT_TASK_TRUSTED_CALLOUT)
+; ..\appl\Source\BrsMain.c	   456    BrsTestsuite_BrsMain_Default_Init_Task_Trusted();
+; ..\appl\Source\BrsMain.c	   457  #endif
+; ..\appl\Source\BrsMain.c	   458  
+; ..\appl\Source\BrsMain.c	   459    Os_InitialEnableInterruptSources(FALSE);
+	mov	d4,#0
+	call	Os_InitialEnableInterruptSources
+.L95:
+
+; ..\appl\Source\BrsMain.c	   460  
+; ..\appl\Source\BrsMain.c	   461    (void)TerminateTask();
+	j	TerminateTask
+.L66:
+	
+__Os_Task_Default_Init_Task_Trusted_function_end:
+	.size	Os_Task_Default_Init_Task_Trusted,__Os_Task_Default_Init_Task_Trusted_function_end-Os_Task_Default_Init_Task_Trusted
+.L34:
+	; End of function
+	
+	.sdecl	'.text.BrsMain.BrsMainExceptionHandler',code,cluster('BrsMainExceptionHandler')
+	.sect	'.text.BrsMain.BrsMainExceptionHandler'
+	.align	2
+	
+	.global	BrsMainExceptionHandler
+
+; ..\appl\Source\BrsMain.c	   462  }
+; ..\appl\Source\BrsMain.c	   463  
+; ..\appl\Source\BrsMain.c	   464  # if defined (BRS_ENABLE_OS_MULTICORESUPPORT)
+; ..\appl\Source\BrsMain.c	   465  /*****************************************************************************/
+; ..\appl\Source\BrsMain.c	   466  /**
+; ..\appl\Source\BrsMain.c	   467   * @brief      InitTask to call EcuM_StartupTwo() on the 2nd Core.
+; ..\appl\Source\BrsMain.c	   468   * @pre        -
+; ..\appl\Source\BrsMain.c	   469   * @param[in]  -
+; ..\appl\Source\BrsMain.c	   470   * @param[out] -
+; ..\appl\Source\BrsMain.c	   471   * @return     -
+; ..\appl\Source\BrsMain.c	   472   * @context    The task is started once by the OS on the 2nd Core.
+; ..\appl\Source\BrsMain.c	   473   */
+; ..\appl\Source\BrsMain.c	   474  /*****************************************************************************/
+; ..\appl\Source\BrsMain.c	   475  TASK(Default_Init_Task_Core1)
+; ..\appl\Source\BrsMain.c	   476  {
+; ..\appl\Source\BrsMain.c	   477  #if defined (BRSMAIN_DEFAULT_INIT_TASK_CORE1_CALLOUT)
+; ..\appl\Source\BrsMain.c	   478    BrsTestsuite_BrsMain_Default_Init_Task_Core1();
+; ..\appl\Source\BrsMain.c	   479  #endif
+; ..\appl\Source\BrsMain.c	   480  
+; ..\appl\Source\BrsMain.c	   481    EcuM_StartupTwo();
+; ..\appl\Source\BrsMain.c	   482  
+; ..\appl\Source\BrsMain.c	   483    (void)TerminateTask();
+; ..\appl\Source\BrsMain.c	   484  }
+; ..\appl\Source\BrsMain.c	   485  
+; ..\appl\Source\BrsMain.c	   486  /*****************************************************************************/
+; ..\appl\Source\BrsMain.c	   487  /**
+; ..\appl\Source\BrsMain.c	   488   * @brief      InitTask to call Os_InitialEnableInterruptSources() on the 2nd Core.
+; ..\appl\Source\BrsMain.c	   489   * @pre        -
+; ..\appl\Source\BrsMain.c	   490   * @param[in]  -
+; ..\appl\Source\BrsMain.c	   491   * @param[out] -
+; ..\appl\Source\BrsMain.c	   492   * @return     -
+; ..\appl\Source\BrsMain.c	   493   * @context    The task is started once by the OS on the 2nd Core. It is separated from
+; ..\appl\Source\BrsMain.c	   494   *             Default_Init_Task_Core1() to allow the SafeContext partitioning UseCase.
+; ..\appl\Source\BrsMain.c	   495   */
+; ..\appl\Source\BrsMain.c	   496  /*****************************************************************************/
+; ..\appl\Source\BrsMain.c	   497  TASK(Default_Init_Task_Core1_Trusted)
+; ..\appl\Source\BrsMain.c	   498  {
+; ..\appl\Source\BrsMain.c	   499  #if defined (BRSMAIN_DEFAULT_INIT_TASK_CORE1_TRUSTED_CALLOUT)
+; ..\appl\Source\BrsMain.c	   500    BrsTestsuite_BrsMain_Default_Init_Task_Core1_Trusted();
+; ..\appl\Source\BrsMain.c	   501  #endif
+; ..\appl\Source\BrsMain.c	   502  
+; ..\appl\Source\BrsMain.c	   503    Os_InitialEnableInterruptSources(FALSE);
+; ..\appl\Source\BrsMain.c	   504  
+; ..\appl\Source\BrsMain.c	   505    (void)TerminateTask();
+; ..\appl\Source\BrsMain.c	   506  }
+; ..\appl\Source\BrsMain.c	   507  
+; ..\appl\Source\BrsMain.c	   508  /*****************************************************************************/
+; ..\appl\Source\BrsMain.c	   509  /**
+; ..\appl\Source\BrsMain.c	   510   * @brief      InitTask to call EcuM_StartupTwo() on the 3rd Core.
+; ..\appl\Source\BrsMain.c	   511   * @pre        -
+; ..\appl\Source\BrsMain.c	   512   * @param[in]  -
+; ..\appl\Source\BrsMain.c	   513   * @param[out] -
+; ..\appl\Source\BrsMain.c	   514   * @return     -
+; ..\appl\Source\BrsMain.c	   515   * @context    The task is started once by the OS on the 3rd Core.
+; ..\appl\Source\BrsMain.c	   516   */
+; ..\appl\Source\BrsMain.c	   517  /*****************************************************************************/
+; ..\appl\Source\BrsMain.c	   518  TASK(Default_Init_Task_Core2)
+; ..\appl\Source\BrsMain.c	   519  {
+; ..\appl\Source\BrsMain.c	   520  #if defined (BRSMAIN_DEFAULT_INIT_TASK_CORE2_CALLOUT)
+; ..\appl\Source\BrsMain.c	   521    BrsTestsuite_BrsMain_Default_Init_Task_Core2();
+; ..\appl\Source\BrsMain.c	   522  #endif
+; ..\appl\Source\BrsMain.c	   523  
+; ..\appl\Source\BrsMain.c	   524    EcuM_StartupTwo();
+; ..\appl\Source\BrsMain.c	   525  
+; ..\appl\Source\BrsMain.c	   526    (void)TerminateTask();
+; ..\appl\Source\BrsMain.c	   527  }
+; ..\appl\Source\BrsMain.c	   528  
+; ..\appl\Source\BrsMain.c	   529  /*****************************************************************************/
+; ..\appl\Source\BrsMain.c	   530  /**
+; ..\appl\Source\BrsMain.c	   531   * @brief      InitTask to call Os_InitialEnableInterruptSources() on the 3rd Core.
+; ..\appl\Source\BrsMain.c	   532   * @pre        -
+; ..\appl\Source\BrsMain.c	   533   * @param[in]  -
+; ..\appl\Source\BrsMain.c	   534   * @param[out] -
+; ..\appl\Source\BrsMain.c	   535   * @return     -
+; ..\appl\Source\BrsMain.c	   536   * @context    The task is started once by the OS on the 3rd Core. It is separated from
+; ..\appl\Source\BrsMain.c	   537   *             Default_Init_Task_Core2() to allow the SafeContext partitioning UseCase.
+; ..\appl\Source\BrsMain.c	   538   */
+; ..\appl\Source\BrsMain.c	   539  /*****************************************************************************/
+; ..\appl\Source\BrsMain.c	   540  TASK(Default_Init_Task_Core2_Trusted)
+; ..\appl\Source\BrsMain.c	   541  {
+; ..\appl\Source\BrsMain.c	   542  #if defined (BRSMAIN_DEFAULT_INIT_TASK_CORE2_TRUSTED_CALLOUT)
+; ..\appl\Source\BrsMain.c	   543    BrsTestsuite_BrsMain_Default_Init_Task_Core2_Trusted();
+; ..\appl\Source\BrsMain.c	   544  #endif
+; ..\appl\Source\BrsMain.c	   545  
+; ..\appl\Source\BrsMain.c	   546    Os_InitialEnableInterruptSources(FALSE);
+; ..\appl\Source\BrsMain.c	   547  
+; ..\appl\Source\BrsMain.c	   548    (void)TerminateTask();
+; ..\appl\Source\BrsMain.c	   549  }
+; ..\appl\Source\BrsMain.c	   550  
+; ..\appl\Source\BrsMain.c	   551  /*****************************************************************************/
+; ..\appl\Source\BrsMain.c	   552  /**
+; ..\appl\Source\BrsMain.c	   553   * @brief      InitTask to call EcuM_StartupTwo() on the 4th Core.
+; ..\appl\Source\BrsMain.c	   554   * @pre        -
+; ..\appl\Source\BrsMain.c	   555   * @param[in]  -
+; ..\appl\Source\BrsMain.c	   556   * @param[out] -
+; ..\appl\Source\BrsMain.c	   557   * @return     -
+; ..\appl\Source\BrsMain.c	   558   * @context    The task is started once by the OS on the 4th Core.
+; ..\appl\Source\BrsMain.c	   559   */
+; ..\appl\Source\BrsMain.c	   560  /*****************************************************************************/
+; ..\appl\Source\BrsMain.c	   561  TASK(Default_Init_Task_Core3)
+; ..\appl\Source\BrsMain.c	   562  {
+; ..\appl\Source\BrsMain.c	   563  #if defined (BRSMAIN_DEFAULT_INIT_TASK_CORE3_CALLOUT)
+; ..\appl\Source\BrsMain.c	   564    BrsTestsuite_BrsMain_Default_Init_Task_Core3();
+; ..\appl\Source\BrsMain.c	   565  #endif
+; ..\appl\Source\BrsMain.c	   566  
+; ..\appl\Source\BrsMain.c	   567    EcuM_StartupTwo();
+; ..\appl\Source\BrsMain.c	   568  
+; ..\appl\Source\BrsMain.c	   569    (void)TerminateTask();
+; ..\appl\Source\BrsMain.c	   570  }
+; ..\appl\Source\BrsMain.c	   571  
+; ..\appl\Source\BrsMain.c	   572  /*****************************************************************************/
+; ..\appl\Source\BrsMain.c	   573  /**
+; ..\appl\Source\BrsMain.c	   574   * @brief      InitTask to call Os_InitialEnableInterruptSources() on the 4th Core.
+; ..\appl\Source\BrsMain.c	   575   * @pre        -
+; ..\appl\Source\BrsMain.c	   576   * @param[in]  -
+; ..\appl\Source\BrsMain.c	   577   * @param[out] -
+; ..\appl\Source\BrsMain.c	   578   * @return     -
+; ..\appl\Source\BrsMain.c	   579   * @context    The task is started once by the OS on the 4th Core. It is separated from
+; ..\appl\Source\BrsMain.c	   580   *             Default_Init_Task_Core3() to allow the SafeContext partitioning UseCase.
+; ..\appl\Source\BrsMain.c	   581   */
+; ..\appl\Source\BrsMain.c	   582  /*****************************************************************************/
+; ..\appl\Source\BrsMain.c	   583  TASK(Default_Init_Task_Core3_Trusted)
+; ..\appl\Source\BrsMain.c	   584  {
+; ..\appl\Source\BrsMain.c	   585  #if defined (BRSMAIN_DEFAULT_INIT_TASK_CORE3_TRUSTED_CALLOUT)
+; ..\appl\Source\BrsMain.c	   586    BrsTestsuite_BrsMain_Default_Init_Task_Core3_Trusted();
+; ..\appl\Source\BrsMain.c	   587  #endif
+; ..\appl\Source\BrsMain.c	   588  
+; ..\appl\Source\BrsMain.c	   589    Os_InitialEnableInterruptSources(FALSE);
+; ..\appl\Source\BrsMain.c	   590  
+; ..\appl\Source\BrsMain.c	   591    (void)TerminateTask();
+; ..\appl\Source\BrsMain.c	   592  }
+; ..\appl\Source\BrsMain.c	   593  
+; ..\appl\Source\BrsMain.c	   594  /*****************************************************************************/
+; ..\appl\Source\BrsMain.c	   595  /**
+; ..\appl\Source\BrsMain.c	   596   * @brief      InitTask to call EcuM_StartupTwo() on the 5th Core.
+; ..\appl\Source\BrsMain.c	   597   * @pre        -
+; ..\appl\Source\BrsMain.c	   598   * @param[in]  -
+; ..\appl\Source\BrsMain.c	   599   * @param[out] -
+; ..\appl\Source\BrsMain.c	   600   * @return     -
+; ..\appl\Source\BrsMain.c	   601   * @context    The task is started once by the OS on the 5th Core.
+; ..\appl\Source\BrsMain.c	   602   */
+; ..\appl\Source\BrsMain.c	   603  /*****************************************************************************/
+; ..\appl\Source\BrsMain.c	   604  TASK(Default_Init_Task_Core4)
+; ..\appl\Source\BrsMain.c	   605  {
+; ..\appl\Source\BrsMain.c	   606  #if defined (BRSMAIN_DEFAULT_INIT_TASK_CORE4_CALLOUT)
+; ..\appl\Source\BrsMain.c	   607    BrsTestsuite_BrsMain_Default_Init_Task_Core4();
+; ..\appl\Source\BrsMain.c	   608  #endif
+; ..\appl\Source\BrsMain.c	   609  
+; ..\appl\Source\BrsMain.c	   610    EcuM_StartupTwo();
+; ..\appl\Source\BrsMain.c	   611  
+; ..\appl\Source\BrsMain.c	   612    (void)TerminateTask();
+; ..\appl\Source\BrsMain.c	   613  }
+; ..\appl\Source\BrsMain.c	   614  
+; ..\appl\Source\BrsMain.c	   615  /*****************************************************************************/
+; ..\appl\Source\BrsMain.c	   616  /**
+; ..\appl\Source\BrsMain.c	   617   * @brief      InitTask to call Os_InitialEnableInterruptSources() on the 5th Core.
+; ..\appl\Source\BrsMain.c	   618   * @pre        -
+; ..\appl\Source\BrsMain.c	   619   * @param[in]  -
+; ..\appl\Source\BrsMain.c	   620   * @param[out] -
+; ..\appl\Source\BrsMain.c	   621   * @return     -
+; ..\appl\Source\BrsMain.c	   622   * @context    The task is started once by the OS on the 5th Core. It is separated from
+; ..\appl\Source\BrsMain.c	   623   *             Default_Init_Task_Core4() to allow the SafeContext partitioning UseCase.
+; ..\appl\Source\BrsMain.c	   624   */
+; ..\appl\Source\BrsMain.c	   625  /*****************************************************************************/
+; ..\appl\Source\BrsMain.c	   626  TASK(Default_Init_Task_Core4_Trusted)
+; ..\appl\Source\BrsMain.c	   627  {
+; ..\appl\Source\BrsMain.c	   628  #if defined (BRSMAIN_DEFAULT_INIT_TASK_CORE4_TRUSTED_CALLOUT)
+; ..\appl\Source\BrsMain.c	   629    BrsTestsuite_BrsMain_Default_Init_Task_Core4_Trusted();
+; ..\appl\Source\BrsMain.c	   630  #endif
+; ..\appl\Source\BrsMain.c	   631  
+; ..\appl\Source\BrsMain.c	   632    Os_InitialEnableInterruptSources(FALSE);
+; ..\appl\Source\BrsMain.c	   633  
+; ..\appl\Source\BrsMain.c	   634    (void)TerminateTask();
+; ..\appl\Source\BrsMain.c	   635  }
+; ..\appl\Source\BrsMain.c	   636  
+; ..\appl\Source\BrsMain.c	   637  /*****************************************************************************/
+; ..\appl\Source\BrsMain.c	   638  /**
+; ..\appl\Source\BrsMain.c	   639   * @brief      InitTask to call EcuM_StartupTwo() on the 6th Core.
+; ..\appl\Source\BrsMain.c	   640   * @pre        -
+; ..\appl\Source\BrsMain.c	   641   * @param[in]  -
+; ..\appl\Source\BrsMain.c	   642   * @param[out] -
+; ..\appl\Source\BrsMain.c	   643   * @return     -
+; ..\appl\Source\BrsMain.c	   644   * @context    The task is started once by the OS on the 6th Core.
+; ..\appl\Source\BrsMain.c	   645   */
+; ..\appl\Source\BrsMain.c	   646  /*****************************************************************************/
+; ..\appl\Source\BrsMain.c	   647  TASK(Default_Init_Task_Core5)
+; ..\appl\Source\BrsMain.c	   648  {
+; ..\appl\Source\BrsMain.c	   649  #if defined (BRSMAIN_DEFAULT_INIT_TASK_CORE5_CALLOUT)
+; ..\appl\Source\BrsMain.c	   650    BrsTestsuite_BrsMain_Default_Init_Task_Core5();
+; ..\appl\Source\BrsMain.c	   651  #endif
+; ..\appl\Source\BrsMain.c	   652  
+; ..\appl\Source\BrsMain.c	   653    EcuM_StartupTwo();
+; ..\appl\Source\BrsMain.c	   654  
+; ..\appl\Source\BrsMain.c	   655    (void)TerminateTask();
+; ..\appl\Source\BrsMain.c	   656  }
+; ..\appl\Source\BrsMain.c	   657  
+; ..\appl\Source\BrsMain.c	   658  /*****************************************************************************/
+; ..\appl\Source\BrsMain.c	   659  /**
+; ..\appl\Source\BrsMain.c	   660   * @brief      InitTask to call Os_InitialEnableInterruptSources() on the 6th Core.
+; ..\appl\Source\BrsMain.c	   661   * @pre        -
+; ..\appl\Source\BrsMain.c	   662   * @param[in]  -
+; ..\appl\Source\BrsMain.c	   663   * @param[out] -
+; ..\appl\Source\BrsMain.c	   664   * @return     -
+; ..\appl\Source\BrsMain.c	   665   * @context    The task is started once by the OS on the 6th Core. It is separated from
+; ..\appl\Source\BrsMain.c	   666   *             Default_Init_Task_Core5() to allow the SafeContext partitioning UseCase.
+; ..\appl\Source\BrsMain.c	   667   */
+; ..\appl\Source\BrsMain.c	   668  /*****************************************************************************/
+; ..\appl\Source\BrsMain.c	   669  TASK(Default_Init_Task_Core5_Trusted)
+; ..\appl\Source\BrsMain.c	   670  {
+; ..\appl\Source\BrsMain.c	   671  #if defined (BRSMAIN_DEFAULT_INIT_TASK_CORE5_TRUSTED_CALLOUT)
+; ..\appl\Source\BrsMain.c	   672    BrsTestsuite_BrsMain_Default_Init_Task_Core5_Trusted();
+; ..\appl\Source\BrsMain.c	   673  #endif
+; ..\appl\Source\BrsMain.c	   674  
+; ..\appl\Source\BrsMain.c	   675    Os_InitialEnableInterruptSources(FALSE);
+; ..\appl\Source\BrsMain.c	   676  
+; ..\appl\Source\BrsMain.c	   677    (void)TerminateTask();
+; ..\appl\Source\BrsMain.c	   678  }
+; ..\appl\Source\BrsMain.c	   679  
+; ..\appl\Source\BrsMain.c	   680  /*****************************************************************************/
+; ..\appl\Source\BrsMain.c	   681  /**
+; ..\appl\Source\BrsMain.c	   682   * @brief      InitTask to call EcuM_StartupTwo() on the 7th Core.
+; ..\appl\Source\BrsMain.c	   683   * @pre        -
+; ..\appl\Source\BrsMain.c	   684   * @param[in]  -
+; ..\appl\Source\BrsMain.c	   685   * @param[out] -
+; ..\appl\Source\BrsMain.c	   686   * @return     -
+; ..\appl\Source\BrsMain.c	   687   * @context    The task is started once by the OS on the 7th Core.
+; ..\appl\Source\BrsMain.c	   688   */
+; ..\appl\Source\BrsMain.c	   689  /*****************************************************************************/
+; ..\appl\Source\BrsMain.c	   690  TASK(Default_Init_Task_Core6)
+; ..\appl\Source\BrsMain.c	   691  {
+; ..\appl\Source\BrsMain.c	   692  #if defined (BRSMAIN_DEFAULT_INIT_TASK_CORE6_CALLOUT)
+; ..\appl\Source\BrsMain.c	   693    BrsTestsuite_BrsMain_Default_Init_Task_Core6();
+; ..\appl\Source\BrsMain.c	   694  #endif
+; ..\appl\Source\BrsMain.c	   695  
+; ..\appl\Source\BrsMain.c	   696    EcuM_StartupTwo();
+; ..\appl\Source\BrsMain.c	   697  
+; ..\appl\Source\BrsMain.c	   698    (void)TerminateTask();
+; ..\appl\Source\BrsMain.c	   699  }
+; ..\appl\Source\BrsMain.c	   700  
+; ..\appl\Source\BrsMain.c	   701  /*****************************************************************************/
+; ..\appl\Source\BrsMain.c	   702  /**
+; ..\appl\Source\BrsMain.c	   703   * @brief      InitTask to call Os_InitialEnableInterruptSources() on the 7th Core.
+; ..\appl\Source\BrsMain.c	   704   * @pre        -
+; ..\appl\Source\BrsMain.c	   705   * @param[in]  -
+; ..\appl\Source\BrsMain.c	   706   * @param[out] -
+; ..\appl\Source\BrsMain.c	   707   * @return     -
+; ..\appl\Source\BrsMain.c	   708   * @context    The task is started once by the OS on the 7th Core. It is separated from
+; ..\appl\Source\BrsMain.c	   709   *             Default_Init_Task_Core6() to allow the SafeContext partitioning UseCase.
+; ..\appl\Source\BrsMain.c	   710   */
+; ..\appl\Source\BrsMain.c	   711  /*****************************************************************************/
+; ..\appl\Source\BrsMain.c	   712  TASK(Default_Init_Task_Core6_Trusted)
+; ..\appl\Source\BrsMain.c	   713  {
+; ..\appl\Source\BrsMain.c	   714  #if defined (BRSMAIN_DEFAULT_INIT_TASK_CORE6_TRUSTED_CALLOUT)
+; ..\appl\Source\BrsMain.c	   715    BrsTestsuite_BrsMain_Default_Init_Task_Core6_Trusted();
+; ..\appl\Source\BrsMain.c	   716  #endif
+; ..\appl\Source\BrsMain.c	   717  
+; ..\appl\Source\BrsMain.c	   718    Os_InitialEnableInterruptSources(FALSE);
+; ..\appl\Source\BrsMain.c	   719  
+; ..\appl\Source\BrsMain.c	   720    (void)TerminateTask();
+; ..\appl\Source\BrsMain.c	   721  }
+; ..\appl\Source\BrsMain.c	   722  # endif /*BRS_ENABLE_OS_MULTICORESUPPORT*/
+; ..\appl\Source\BrsMain.c	   723  #endif /*!BRS_ENABLE_FBL_SUPPORT*/
+; ..\appl\Source\BrsMain.c	   724  
+; ..\appl\Source\BrsMain.c	   725  #if defined (BRS_ENABLE_1MS_HANDLER)
+; ..\appl\Source\BrsMain.c	   726  /*****************************************************************************/
+; ..\appl\Source\BrsMain.c	   727  /**
+; ..\appl\Source\BrsMain.c	   728   * @brief      One millisecond handler for BrsMain
+; ..\appl\Source\BrsMain.c	   729   *               - Executes retransmission of BRS TCC messages
+; ..\appl\Source\BrsMain.c	   730   *               - Toggling of LED (alive signal)
+; ..\appl\Source\BrsMain.c	   731   *               - BRS Test code (1s cyclic negative TCC response message)
+; ..\appl\Source\BrsMain.c	   732   * @pre        Initialization of BrsMain was done threw call of BrsMainInit().
+; ..\appl\Source\BrsMain.c	   733   * @param[in]  -
+; ..\appl\Source\BrsMain.c	   734   * @param[out] -
+; ..\appl\Source\BrsMain.c	   735   * @return     -
+; ..\appl\Source\BrsMain.c	   736   * @context    Function is called each millisecond either from the main loop or from the BRS main task (TASK(mainTask))
+; ..\appl\Source\BrsMain.c	   737   */
+; ..\appl\Source\BrsMain.c	   738  /*****************************************************************************/
+; ..\appl\Source\BrsMain.c	   739  void BrsMainCyclic1ms(void)
+; ..\appl\Source\BrsMain.c	   740  {
+; ..\appl\Source\BrsMain.c	   741    uint8 cycliccounter;
+; ..\appl\Source\BrsMain.c	   742  
+; ..\appl\Source\BrsMain.c	   743  #if defined (BRSMAIN_BRSMAINCYCLIC1MS_CALLOUT)
+; ..\appl\Source\BrsMain.c	   744    BrsTestsuite_BrsMain_BrsMainCyclic1ms();
+; ..\appl\Source\BrsMain.c	   745  #endif
+; ..\appl\Source\BrsMain.c	   746  
+; ..\appl\Source\BrsMain.c	   747    brsMain_CallCounter1ms++;
+; ..\appl\Source\BrsMain.c	   748  
+; ..\appl\Source\BrsMain.c	   749    for (cycliccounter=0u; cycliccounter<brsMain_Cyclic_Callbacks_1ms.FunctionCounter; cycliccounter++)
+; ..\appl\Source\BrsMain.c	   750      brsMain_Cyclic_Callbacks_1ms.FunctionPointer[cycliccounter]();
+; ..\appl\Source\BrsMain.c	   751  
+; ..\appl\Source\BrsMain.c	   752    if (brsMain_CallCounter1ms %10 == 0)
+; ..\appl\Source\BrsMain.c	   753    {
+; ..\appl\Source\BrsMain.c	   754      for (cycliccounter=0u; cycliccounter<brsMain_Cyclic_Callbacks_10ms.FunctionCounter; cycliccounter++)
+; ..\appl\Source\BrsMain.c	   755        brsMain_Cyclic_Callbacks_10ms.FunctionPointer[cycliccounter]();
+; ..\appl\Source\BrsMain.c	   756    }
+; ..\appl\Source\BrsMain.c	   757  
+; ..\appl\Source\BrsMain.c	   758    if (brsMain_CallCounter1ms %100 == 0)
+; ..\appl\Source\BrsMain.c	   759    {
+; ..\appl\Source\BrsMain.c	   760      for (cycliccounter=0u; cycliccounter<brsMain_Cyclic_Callbacks_100ms.FunctionCounter; cycliccounter++)
+; ..\appl\Source\BrsMain.c	   761        brsMain_Cyclic_Callbacks_100ms.FunctionPointer[cycliccounter]();
+; ..\appl\Source\BrsMain.c	   762    }
+; ..\appl\Source\BrsMain.c	   763  
+; ..\appl\Source\BrsMain.c	   764    if (brsMain_CallCounter1ms %250 == 0)
+; ..\appl\Source\BrsMain.c	   765    {
+; ..\appl\Source\BrsMain.c	   766      for (cycliccounter=0u; cycliccounter<brsMain_Cyclic_Callbacks_250ms.FunctionCounter; cycliccounter++)
+; ..\appl\Source\BrsMain.c	   767        brsMain_Cyclic_Callbacks_250ms.FunctionPointer[cycliccounter]();
+; ..\appl\Source\BrsMain.c	   768    }
+; ..\appl\Source\BrsMain.c	   769  
+; ..\appl\Source\BrsMain.c	   770    if (brsMain_CallCounter1ms %500 == 0)
+; ..\appl\Source\BrsMain.c	   771    {
+; ..\appl\Source\BrsMain.c	   772      for (cycliccounter=0u; cycliccounter<brsMain_Cyclic_Callbacks_500ms.FunctionCounter; cycliccounter++)
+; ..\appl\Source\BrsMain.c	   773        brsMain_Cyclic_Callbacks_500ms.FunctionPointer[cycliccounter]();
+; ..\appl\Source\BrsMain.c	   774    }
+; ..\appl\Source\BrsMain.c	   775  
+; ..\appl\Source\BrsMain.c	   776    if (brsMain_CallCounter1ms %1000 == 0)
+; ..\appl\Source\BrsMain.c	   777    {
+; ..\appl\Source\BrsMain.c	   778      for (cycliccounter=0u; cycliccounter<brsMain_Cyclic_Callbacks_1000ms.FunctionCounter; cycliccounter++)
+; ..\appl\Source\BrsMain.c	   779        brsMain_Cyclic_Callbacks_1000ms.FunctionPointer[cycliccounter]();
+; ..\appl\Source\BrsMain.c	   780      brsMain_CallCounter1ms = 0u;
+; ..\appl\Source\BrsMain.c	   781      brsMain_CallCounter1sec++;
+; ..\appl\Source\BrsMain.c	   782    }
+; ..\appl\Source\BrsMain.c	   783  }
+; ..\appl\Source\BrsMain.c	   784  
+; ..\appl\Source\BrsMain.c	   785  # if !defined (BRS_ENABLE_FBL_SUPPORT)
+; ..\appl\Source\BrsMain.c	   786  /*****************************************************************************/
+; ..\appl\Source\BrsMain.c	   787  /**
+; ..\appl\Source\BrsMain.c	   788   * @brief      BrsMainTask executes the 1 millisecond handler
+; ..\appl\Source\BrsMain.c	   789   *             The function initiates calls to BrsMainCyclic1ms
+; ..\appl\Source\BrsMain.c	   790   * @pre        -
+; ..\appl\Source\BrsMain.c	   791   * @param[in]  -
+; ..\appl\Source\BrsMain.c	   792   * @param[out] -
+; ..\appl\Source\BrsMain.c	   793   * @return     -
+; ..\appl\Source\BrsMain.c	   794   * @context    The task is started once by the OS and activated by
+; ..\appl\Source\BrsMain.c	   795   *             the OS event EvCyclicAlarm_1ms
+; ..\appl\Source\BrsMain.c	   796   */
+; ..\appl\Source\BrsMain.c	   797  /*****************************************************************************/
+; ..\appl\Source\BrsMain.c	   798  TASK(BrsMainTask)
+; ..\appl\Source\BrsMain.c	   799  {
+; ..\appl\Source\BrsMain.c	   800    EventMaskType ev;
+; ..\appl\Source\BrsMain.c	   801  
+; ..\appl\Source\BrsMain.c	   802  #if defined (BRSMAIN_BRSMAINTASK_CALLOUT)
+; ..\appl\Source\BrsMain.c	   803    BrsTestsuite_BrsMain_BrsMainTask();
+; ..\appl\Source\BrsMain.c	   804  #endif
+; ..\appl\Source\BrsMain.c	   805  
+; ..\appl\Source\BrsMain.c	   806    (void)SetRelAlarm(BrsCyclicAlarm_1ms, OS_MS2TICKS_SystemTimer(1), OS_MS2TICKS_SystemTimer(1));
+; ..\appl\Source\BrsMain.c	   807  
+; ..\appl\Source\BrsMain.c	   808    for(;;)
+; ..\appl\Source\BrsMain.c	   809    {
+; ..\appl\Source\BrsMain.c	   810      (void)WaitEvent(BrsEvCyclicAlarm_1ms);
+; ..\appl\Source\BrsMain.c	   811      (void)GetEvent(BrsMainTask, &ev);
+; ..\appl\Source\BrsMain.c	   812      (void)ClearEvent(ev);
+; ..\appl\Source\BrsMain.c	   813      if(ev & BrsEvCyclicAlarm_1ms)
+; ..\appl\Source\BrsMain.c	   814      {
+; ..\appl\Source\BrsMain.c	   815        /* 1ms event detected, call the ms handler */
+; ..\appl\Source\BrsMain.c	   816        BrsMainCyclic1ms();
+; ..\appl\Source\BrsMain.c	   817      }
+; ..\appl\Source\BrsMain.c	   818    }
+; ..\appl\Source\BrsMain.c	   819  }
+; ..\appl\Source\BrsMain.c	   820  
+; ..\appl\Source\BrsMain.c	   821  TASK(BrsMainBackgroundTask)
+; ..\appl\Source\BrsMain.c	   822  {
+; ..\appl\Source\BrsMain.c	   823    uint8 cycliccounter;
+; ..\appl\Source\BrsMain.c	   824  
+; ..\appl\Source\BrsMain.c	   825  #if defined (BRSMAIN_BRSMAINBACKGROUNDTASK_CALLOUT)
+; ..\appl\Source\BrsMain.c	   826    BrsTestsuite_BrsMain_BrsMainBackgroundTask();
+; ..\appl\Source\BrsMain.c	   827  #endif
+; ..\appl\Source\BrsMain.c	   828  
+; ..\appl\Source\BrsMain.c	   829    for(;;)
+; ..\appl\Source\BrsMain.c	   830    {
+; ..\appl\Source\BrsMain.c	   831  # if defined (_MICROSOFT_C_VTT_)
+; ..\appl\Source\BrsMain.c	   832      CANoeAPI_ConsumeTicks(100);
+; ..\appl\Source\BrsMain.c	   833  # endif
+; ..\appl\Source\BrsMain.c	   834  
+; ..\appl\Source\BrsMain.c	   835      for (cycliccounter=0u; cycliccounter<brsMain_Cyclic_Callbacks_Background.FunctionCounter; cycliccounter++)
+; ..\appl\Source\BrsMain.c	   836        brsMain_Cyclic_Callbacks_Background.FunctionPointer[cycliccounter]();
+; ..\appl\Source\BrsMain.c	   837  
+; ..\appl\Source\BrsMain.c	   838      (void)Schedule();
+; ..\appl\Source\BrsMain.c	   839    }
+; ..\appl\Source\BrsMain.c	   840  }
+; ..\appl\Source\BrsMain.c	   841  # endif /*!BRS_ENABLE_FBL_SUPPORT*/
+; ..\appl\Source\BrsMain.c	   842  #endif /*BRS_ENABLE_1MS_HANDLER*/
+; ..\appl\Source\BrsMain.c	   843  
+; ..\appl\Source\BrsMain.c	   844  
+; ..\appl\Source\BrsMain.c	   845  #if defined (BRS_ENABLE_SUPPORT_LEDS)          || \ 
+; ..\appl\Source\BrsMain.c	   846      defined (BRS_ENABLE_SUPPORT_TOGGLE_WD_PIN) || \ 
+; ..\appl\Source\BrsMain.c	   847      defined (BRS_ENABLE_SUPPORT_TOGGLE_CUSTOM_PIN)
+; ..\appl\Source\BrsMain.c	   848  # if !defined (BRS_ENABLE_PORT)
+; ..\appl\Source\BrsMain.c	   849    #define BRSHW_PORT_LOGIC_HIGH STD_HIGH
+; ..\appl\Source\BrsMain.c	   850    #define BRSHW_PORT_LOGIC_LOW STD_LOW
+; ..\appl\Source\BrsMain.c	   851  # endif
+; ..\appl\Source\BrsMain.c	   852  # if defined (BRS_ENABLE_FBL_SUPPORT)
+; ..\appl\Source\BrsMain.c	   853    #define BRS_START_SEC_RAM_CODE
+; ..\appl\Source\BrsMain.c	   854    #include "Brs_MemMap.h"
+; ..\appl\Source\BrsMain.c	   855  # endif
+; ..\appl\Source\BrsMain.c	   856  /*****************************************************************************/
+; ..\appl\Source\BrsMain.c	   857  /**
+; ..\appl\Source\BrsMain.c	   858   * @brief      This API is used to toggle a PortPin.
+; ..\appl\Source\BrsMain.c	   859   *             Per default, the following parameters are available:
+; ..\appl\Source\BrsMain.c	   860   *               BRSMAIN_TOGGLEPIN_LED
+; ..\appl\Source\BrsMain.c	   861   *               BRSMAIN_TOGGLEPIN_WD
+; ..\appl\Source\BrsMain.c	   862   *               BRSMAIN_TOGGLEPIN_CUSTOM
+; ..\appl\Source\BrsMain.c	   863   *             Depending pins must be configured and initialized within BrsHw.
+; ..\appl\Source\BrsMain.c	   864   * @pre        -
+; ..\appl\Source\BrsMain.c	   865   * @param[in]  Pin to be toggled
+; ..\appl\Source\BrsMain.c	   866   * @param[out] -
+; ..\appl\Source\BrsMain.c	   867   * @return     -
+; ..\appl\Source\BrsMain.c	   868   * @context    Function is called from all modules to set or clear a PortPin
+; ..\appl\Source\BrsMain.c	   869   */
+; ..\appl\Source\BrsMain.c	   870  /*****************************************************************************/
+; ..\appl\Source\BrsMain.c	   871  void BrsMainTogglePin(brsMain_TogglePin Pin)
+; ..\appl\Source\BrsMain.c	   872  {
+; ..\appl\Source\BrsMain.c	   873    #define START_SEC_VAR_NOINIT_UNSPECIFIED
+; ..\appl\Source\BrsMain.c	   874    #include "MemMap.h"
+; ..\appl\Source\BrsMain.c	   875  #if defined (BRS_ENABLE_SUPPORT_LEDS)
+; ..\appl\Source\BrsMain.c	   876    static uint8 BrsMain_ToggleSwitch_LED = BRSHW_PORT_LOGIC_HIGH;
+; ..\appl\Source\BrsMain.c	   877  #endif
+; ..\appl\Source\BrsMain.c	   878  #if defined (BRS_ENABLE_SUPPORT_TOGGLE_WD_PIN)
+; ..\appl\Source\BrsMain.c	   879    static uint8 BrsMain_ToggleSwitch_WD = BRSHW_PORT_LOGIC_HIGH;
+; ..\appl\Source\BrsMain.c	   880  #endif
+; ..\appl\Source\BrsMain.c	   881  #if defined (BRS_ENABLE_SUPPORT_TOGGLE_CUSTOM_PIN)
+; ..\appl\Source\BrsMain.c	   882    static uint8 BrsMain_ToggleSwitch_CUSTOM = BRSHW_PORT_LOGIC_HIGH;
+; ..\appl\Source\BrsMain.c	   883  #endif
+; ..\appl\Source\BrsMain.c	   884    #define STOP_SEC_VAR
+; ..\appl\Source\BrsMain.c	   885    #include "MemMap.h"
+; ..\appl\Source\BrsMain.c	   886  
+; ..\appl\Source\BrsMain.c	   887    switch (Pin)
+; ..\appl\Source\BrsMain.c	   888    {
+; ..\appl\Source\BrsMain.c	   889  #if defined (BRS_ENABLE_SUPPORT_LEDS)
+; ..\appl\Source\BrsMain.c	   890      case BRSMAIN_TOGGLEPIN_LED:
+; ..\appl\Source\BrsMain.c	   891  # if defined (BRS_ENABLE_PORT)
+; ..\appl\Source\BrsMain.c	   892        BrsHwPort_SetLevel(BRSHW_PORT_LED, BrsMain_ToggleSwitch_LED & 0x01);
+; ..\appl\Source\BrsMain.c	   893  # else
+; ..\appl\Source\BrsMain.c	   894        Dio_WriteChannel(BrsHw_DioChannel_ToggleLED, BrsMain_ToggleSwitch_LED & 0x01);
+; ..\appl\Source\BrsMain.c	   895  # endif
+; ..\appl\Source\BrsMain.c	   896        BrsMain_ToggleSwitch_LED++;
+; ..\appl\Source\BrsMain.c	   897        break;
+; ..\appl\Source\BrsMain.c	   898  #endif /*BRS_ENABLE_SUPPORT_LEDS*/
+; ..\appl\Source\BrsMain.c	   899  #if defined (BRS_ENABLE_SUPPORT_TOGGLE_WD_PIN)
+; ..\appl\Source\BrsMain.c	   900      case BRSMAIN_TOGGLEPIN_WD:
+; ..\appl\Source\BrsMain.c	   901  # if defined (BRS_ENABLE_PORT)
+; ..\appl\Source\BrsMain.c	   902        BrsHwPort_SetLevel(BRSHW_PORT_TOGGLE_WD, BrsMain_ToggleSwitch_WD & 0x01);
+; ..\appl\Source\BrsMain.c	   903  # else
+; ..\appl\Source\BrsMain.c	   904        Dio_WriteChannel(BrsHw_DioChannel_ToggleWdPin, BrsMain_ToggleSwitch_WD & 0x01);
+; ..\appl\Source\BrsMain.c	   905  # endif
+; ..\appl\Source\BrsMain.c	   906        BrsMain_ToggleSwitch_WD++;
+; ..\appl\Source\BrsMain.c	   907        break;
+; ..\appl\Source\BrsMain.c	   908  #endif /*BRS_ENABLE_SUPPORT_TOGGLE_WD_PIN*/
+; ..\appl\Source\BrsMain.c	   909  #if defined (BRS_ENABLE_SUPPORT_TOGGLE_CUSTOM_PIN)
+; ..\appl\Source\BrsMain.c	   910      case BRSMAIN_TOGGLEPIN_CUSTOM:
+; ..\appl\Source\BrsMain.c	   911  # if defined (BRS_ENABLE_PORT)
+; ..\appl\Source\BrsMain.c	   912        BrsHwPort_SetLevel(BRSHW_PORT_TOGGLE_CUSTOM, BrsMain_ToggleSwitch_CUSTOM & 0x01);
+; ..\appl\Source\BrsMain.c	   913  # else
+; ..\appl\Source\BrsMain.c	   914        Dio_WriteChannel(BrsHw_DioChannel_ToggleCustomPin, BrsMain_ToggleSwitch_CUSTOM & 0x01);
+; ..\appl\Source\BrsMain.c	   915  # endif
+; ..\appl\Source\BrsMain.c	   916        BrsMain_ToggleSwitch_CUSTOM++;
+; ..\appl\Source\BrsMain.c	   917        break;
+; ..\appl\Source\BrsMain.c	   918  #endif /*BRS_ENABLE_SUPPORT_TOGGLE_CUSTOM_PIN*/
+; ..\appl\Source\BrsMain.c	   919      default:
+; ..\appl\Source\BrsMain.c	   920        BrsMainExceptionHandler(kBrsIllegalParameter, BRSERROR_MODULE_BRSHW, (uint16)(__LINE__));
+; ..\appl\Source\BrsMain.c	   921        break;
+; ..\appl\Source\BrsMain.c	   922    }
+; ..\appl\Source\BrsMain.c	   923  }
+; ..\appl\Source\BrsMain.c	   924  # if defined (BRS_ENABLE_FBL_SUPPORT)
+; ..\appl\Source\BrsMain.c	   925    #define BRS_STOP_SEC_RAM_CODE
+; ..\appl\Source\BrsMain.c	   926    #include "Brs_MemMap.h"
+; ..\appl\Source\BrsMain.c	   927  # endif
+; ..\appl\Source\BrsMain.c	   928  #endif /*BRS_ENABLE_SUPPORT_LEDS||BRS_ENABLE_SUPPORT_TOGGLE_WD_PIN||BRS_ENABLE_SUPPORT_TOGGLE_CUSTOM_PIN*/
+; ..\appl\Source\BrsMain.c	   929  
+; ..\appl\Source\BrsMain.c	   930  #if defined (BRS_ENABLE_FBL_SUPPORT)
+; ..\appl\Source\BrsMain.c	   931    #define BRS_START_SEC_RAM_CODE
+; ..\appl\Source\BrsMain.c	   932    #include "Brs_MemMap.h"
+; ..\appl\Source\BrsMain.c	   933  #endif
+; ..\appl\Source\BrsMain.c	   934  /*****************************************************************************/
+; ..\appl\Source\BrsMain.c	   935  /**
+; ..\appl\Source\BrsMain.c	   936   * @brief      This is the central exeption handler of BRS.
+; ..\appl\Source\BrsMain.c	   937   *             All BRS modules and all CANbedded specific fatal error handler will
+; ..\appl\Source\BrsMain.c	   938   *             call this API in case an assertion has failed.
+; ..\appl\Source\BrsMain.c	   939   * @pre        -
+; ..\appl\Source\BrsMain.c	   940   * @param[in]  ErrorCode shall hold the caller specific error code (uint8)
+; ..\appl\Source\BrsMain.c	   941   * @param[in]  ModuleCode shall describe the caller; please use the CI constant as parameter (uint8)
+; ..\appl\Source\BrsMain.c	   942   * @param[in]  LineNumber shall be the line where the assertion has failed, or,
+; ..\appl\Source\BrsMain.c	   943   *             if not available on caller location, the line where this API is
+; ..\appl\Source\BrsMain.c	   944   *             called from
+; ..\appl\Source\BrsMain.c	   945   * @param[out] -
+; ..\appl\Source\BrsMain.c	   946   * @return     -
+; ..\appl\Source\BrsMain.c	   947   * @context    This function implements an endless loop with locked interrupts.
+; ..\appl\Source\BrsMain.c	   948   *             The recommendation is to set a breakpoint on top of this function
+; ..\appl\Source\BrsMain.c	   949   *             to see if any assertion has failed during the code execution.
+; ..\appl\Source\BrsMain.c	   950   *             Due to an assertion has failed and the endless loop runs with
+; ..\appl\Source\BrsMain.c	   951   *             locked global interrupts there will be no life after the call ...
+; ..\appl\Source\BrsMain.c	   952   */
+; ..\appl\Source\BrsMain.c	   953  /*****************************************************************************/
+; ..\appl\Source\BrsMain.c	   954  void BrsMainExceptionHandler(uint8 ErrorCode, uint8 ModuleCode, uint16 LineNumber)
+; Function BrsMainExceptionHandler
+.L12:
+BrsMainExceptionHandler:	.type	func
+	sub.a	a10,#8
+.L81:
+
+; ..\appl\Source\BrsMain.c	   955  {
+; ..\appl\Source\BrsMain.c	   956  #if defined (BRSMAIN_BRSMAINEXCEPTIONHANDLER_CALLOUT)
+; ..\appl\Source\BrsMain.c	   957    BrsTestsuite_BrsMain_BrsMainExceptionHandler();
+; ..\appl\Source\BrsMain.c	   958  #endif
+; ..\appl\Source\BrsMain.c	   959  
+; ..\appl\Source\BrsMain.c	   960  #if defined (BRS_ENABLE_SAFECTXSUPPORT)
+; ..\appl\Source\BrsMain.c	   961    while(1)
+; ..\appl\Source\BrsMain.c	   962    {}
+; ..\appl\Source\BrsMain.c	   963  
+; ..\appl\Source\BrsMain.c	   964  #else
+; ..\appl\Source\BrsMain.c	   965  # if defined (_MICROSOFT_C_VTT_)
+; ..\appl\Source\BrsMain.c	   966    char error[BRSMAIN_ERRORBUFFERSIZE];
+; ..\appl\Source\BrsMain.c	   967  
+; ..\appl\Source\BrsMain.c	   968    sprintf_s(error, BRSMAIN_ERRORBUFFERSIZE, "BrsMainExceptionHandler Code: [0x%x] ModuleCode: [0x%x] LineNumber: [0x%x]", ErrorCode, ModuleCode, LineNumber);
+; ..\appl\Source\BrsMain.c	   969  
+; ..\appl\Source\BrsMain.c	   970    CANoeAPI_WriteString(error);
+; ..\appl\Source\BrsMain.c	   971    ShutdownOS(0);
+; ..\appl\Source\BrsMain.c	   972  
+; ..\appl\Source\BrsMain.c	   973  # else
+; ..\appl\Source\BrsMain.c	   974    volatile uint8 BrsMain_Continue;
+; ..\appl\Source\BrsMain.c	   975    BrsMain_Continue = 0;
+	mov	d15,#0
+	st.b	[a10],d15
+.L104:
+
+; ..\appl\Source\BrsMain.c	   976  
+; ..\appl\Source\BrsMain.c	   977  #if !defined (BRS_ENABLE_FBL_SUPPORT) /* FBL is always running in polling mode with interrupts disabled */
+; ..\appl\Source\BrsMain.c	   978    DisableAllInterrupts();
+	call	DisableAllInterrupts
+
+; ..\appl\Source\BrsMain.c	   979  #endif
+; ..\appl\Source\BrsMain.c	   980  
+; ..\appl\Source\BrsMain.c	   981    while (BrsMain_Continue == 0)
+.L2:
+	ld.bu	d15,[a10]
+.L105:
+	jeq	d15,#0,.L2
+.L106:
+
+; ..\appl\Source\BrsMain.c	   982    {
+; ..\appl\Source\BrsMain.c	   983      /* Set BrsMain_Continue to 1 to continue here.
+; ..\appl\Source\BrsMain.c	   984       *  If the debugger is not able to show the stack properly, this mechanism can be used to find the
+; ..\appl\Source\BrsMain.c	   985       *  source of the exception. */
+; ..\appl\Source\BrsMain.c	   986    }
+; ..\appl\Source\BrsMain.c	   987  # endif /*_MICROSOFT_C_VTT_*/
+; ..\appl\Source\BrsMain.c	   988  #endif /*BRS_ENABLE_SAFECTXSUPPORT*/
+; ..\appl\Source\BrsMain.c	   989  }
+	ret
+.L68:
+	
+__BrsMainExceptionHandler_function_end:
+	.size	BrsMainExceptionHandler,__BrsMainExceptionHandler_function_end-BrsMainExceptionHandler
+.L44:
+	; End of function
+	
+	.sdecl	'.text.BrsMain.BrsMainExceptionStartup',code,cluster('BrsMainExceptionStartup')
+	.sect	'.text.BrsMain.BrsMainExceptionStartup'
+	.align	2
+	
+	.global	BrsMainExceptionStartup
+
+; ..\appl\Source\BrsMain.c	   990  #if defined (BRS_ENABLE_FBL_SUPPORT)
+; ..\appl\Source\BrsMain.c	   991    #define BRS_STOP_SEC_RAM_CODE
+; ..\appl\Source\BrsMain.c	   992    #include "Brs_MemMap.h"
+; ..\appl\Source\BrsMain.c	   993  #endif
+; ..\appl\Source\BrsMain.c	   994  
+; ..\appl\Source\BrsMain.c	   995  /*****************************************************************************/
+; ..\appl\Source\BrsMain.c	   996  /**
+; ..\appl\Source\BrsMain.c	   997   * @brief      This is just a wrapper to ease calls to
+; ..\appl\Source\BrsMain.c	   998   *             BrsMainExceptionHandler() from assembler StartUpCode.
+; ..\appl\Source\BrsMain.c	   999   * @pre        -
+; ..\appl\Source\BrsMain.c	  1000   * @param[in]  -
+; ..\appl\Source\BrsMain.c	  1001   * @param[out] -
+; ..\appl\Source\BrsMain.c	  1002   * @return     -
+; ..\appl\Source\BrsMain.c	  1003   * @context    This function will call BrsMainExceptionHandler() with the
+; ..\appl\Source\BrsMain.c	  1004   *             error code for reaching illegal assembler in StartUpCpde.
+; ..\appl\Source\BrsMain.c	  1005   */
+; ..\appl\Source\BrsMain.c	  1006  /*****************************************************************************/
+; ..\appl\Source\BrsMain.c	  1007  void BrsMainExceptionStartup(void)
+; Function BrsMainExceptionStartup
+.L14:
+BrsMainExceptionStartup:	.type	func
+
+; ..\appl\Source\BrsMain.c	  1008  {
+; ..\appl\Source\BrsMain.c	  1009    BrsMainExceptionHandler(kBrsIllegalAssemblerReached, BRSERROR_MODULE_BRSSTARTUP, (uint16)0);
+	mov	d4,#13
+.L111:
+	mov	d5,#3
+.L112:
+	mov	d6,#0
+	j	BrsMainExceptionHandler
+.L76:
+	
+__BrsMainExceptionStartup_function_end:
+	.size	BrsMainExceptionStartup,__BrsMainExceptionStartup_function_end-BrsMainExceptionStartup
+.L49:
+	; End of function
+	
+	.sdecl	'.text.BrsMain.main',code,cluster('main')
+	.sect	'.text.BrsMain.main'
+	.align	2
+	
+	.global	main
+
+; ..\appl\Source\BrsMain.c	  1010  }
+; ..\appl\Source\BrsMain.c	  1011  
+; ..\appl\Source\BrsMain.c	  1012  /*****************************************************************************/
+; ..\appl\Source\BrsMain.c	  1013  /**
+; ..\appl\Source\BrsMain.c	  1014   * @brief      Main function
+; ..\appl\Source\BrsMain.c	  1015   * @pre        -
+; ..\appl\Source\BrsMain.c	  1016   * @param[in]  -
+; ..\appl\Source\BrsMain.c	  1017   * @param[out] -
+; ..\appl\Source\BrsMain.c	  1018   * @return     always 0 as the function is not expected to return
+; ..\appl\Source\BrsMain.c	  1019   * @context    Called by the startup code
+; ..\appl\Source\BrsMain.c	  1020   */
+; ..\appl\Source\BrsMain.c	  1021  /*****************************************************************************/
+; ..\appl\Source\BrsMain.c	  1022  int main(void)
+; Function main
+.L16:
+main:	.type	func
+
+; ..\appl\Source\BrsMain.c	  1023  {
+; ..\appl\Source\BrsMain.c	  1024  #if defined (BRSMAIN_MAIN_CALLOUT)
+; ..\appl\Source\BrsMain.c	  1025    BrsTestsuite_BrsMain_main();
+; ..\appl\Source\BrsMain.c	  1026  #endif
+; ..\appl\Source\BrsMain.c	  1027  
+; ..\appl\Source\BrsMain.c	  1028  #if !defined (_MICROSOFT_C_VTT_)
+; ..\appl\Source\BrsMain.c	  1029    BrsHwDisableInterruptAtPowerOn();
+	call	BrsHwDisableInterruptAtPowerOn
+.L117:
+
+; ..\appl\Source\BrsMain.c	  1030  
+; ..\appl\Source\BrsMain.c	  1031  # if (BRS_CPU_CORE_AMOUNT>1)
+; ..\appl\Source\BrsMain.c	  1032    if (BrsHw_GetCore() == BRSHW_INIT_CORE_ID)
+	call	BrsHw_GetCore
+.L118:
+	jne	d2,#0,.L3
+.L119:
+
+; ..\appl\Source\BrsMain.c	  1033  # endif
+; ..\appl\Source\BrsMain.c	  1034  #endif /*!_MICROSOFT_C_VTT_*/
+; ..\appl\Source\BrsMain.c	  1035    {
+; ..\appl\Source\BrsMain.c	  1036      BrsMainInit();
+	call	BrsMainInit
+.L3:
+
+; ..\appl\Source\BrsMain.c	  1037    }
+; ..\appl\Source\BrsMain.c	  1038  
+; ..\appl\Source\BrsMain.c	  1039  #if defined (BRS_FBL_NO_ECUMINIT)
+; ..\appl\Source\BrsMain.c	  1040    FblMain();
+; ..\appl\Source\BrsMain.c	  1041  
+; ..\appl\Source\BrsMain.c	  1042  #else
+; ..\appl\Source\BrsMain.c	  1043  # if !defined (BRS_ENABLE_FBL_SUPPORT) || defined (_MICROSOFT_C_VTT_)
+; ..\appl\Source\BrsMain.c	  1044    Os_InitMemory();
+	call	Os_InitMemory
+.L120:
+
+; ..\appl\Source\BrsMain.c	  1045    Os_Init();
+	call	Os_Init
+.L121:
+
+; ..\appl\Source\BrsMain.c	  1046  # endif
+; ..\appl\Source\BrsMain.c	  1047  
+; ..\appl\Source\BrsMain.c	  1048  # if defined (BRS_ENABLE_HSM_SUPPORT)
+; ..\appl\Source\BrsMain.c	  1049    vHsm_Init();
+; ..\appl\Source\BrsMain.c	  1050  # else
+; ..\appl\Source\BrsMain.c	  1051    EcuM_Init(); /* never returns */
+	call	EcuM_Init
+.L122:
+
+; ..\appl\Source\BrsMain.c	  1052  # endif
+; ..\appl\Source\BrsMain.c	  1053  #endif /*else BRS_FBL_NO_ECUMINIT*/
+; ..\appl\Source\BrsMain.c	  1054  
+; ..\appl\Source\BrsMain.c	  1055    return 0;
+; ..\appl\Source\BrsMain.c	  1056  }
+	mov	d2,#0
+	ret
+.L78:
+	
+__main_function_end:
+	.size	main,__main_function_end-main
+.L54:
+	; End of function
+	
+	.sdecl	'.text.BrsMain.SchM_Enter_ComM_COMM_EXCLUSIVE_AREA_1',code,cluster('SchM_Enter_ComM_COMM_EXCLUSIVE_AREA_1')
+	.sect	'.text.BrsMain.SchM_Enter_ComM_COMM_EXCLUSIVE_AREA_1'
+	.align	2
+	
+	.global	SchM_Enter_ComM_COMM_EXCLUSIVE_AREA_1
+
+; ..\appl\Source\BrsMain.c	  1057  
+; ..\appl\Source\BrsMain.c	  1058  /***********************************************************************************************************************
+; ..\appl\Source\BrsMain.c	  1059   *  Additional UserCode can be placed here
+; ..\appl\Source\BrsMain.c	  1060   **********************************************************************************************************************/
+; ..\appl\Source\BrsMain.c	  1061  
+; ..\appl\Source\BrsMain.c	  1062  #if defined (BRS_ENABLE_CAN_SUPPORT)
+; ..\appl\Source\BrsMain.c	  1063  /***********************************************************************************************************************
+; ..\appl\Source\BrsMain.c	  1064   * UserDefined ExclusiveArea handling for CAN channels, according to AN-ISC-8-1149_ErrorHook_E_OS_DISABLED_INT.pdf
+; ..\appl\Source\BrsMain.c	  1065   **********************************************************************************************************************/
+; ..\appl\Source\BrsMain.c	  1066  /* Macro is generated in vBrsCfg.h, to support drivers with infix.
+; ..\appl\Source\BrsMain.c	  1067     Sample w/o infix: void SchM_Enter_Can_CAN_EXCLUSIVE_AREA_0(void)
+; ..\appl\Source\BrsMain.c	  1068                       Can_DisableControllerInterrupts(0u);
+; ..\appl\Source\BrsMain.c	  1069     Sample w/ infix:  void SchM_Enter_Can_30_Mcan_CAN_30_MCAN_EXCLUSIVE_AREA_0(void)
+; ..\appl\Source\BrsMain.c	  1070                       Can_30_Mcan_DisableControllerInterrupts(0u);*/
+; ..\appl\Source\BrsMain.c	  1071  # if defined (BRS_ENABLE_FBL_SUPPORT)
+; ..\appl\Source\BrsMain.c	  1072    #define BRS_START_SEC_RAM_CODE
+; ..\appl\Source\BrsMain.c	  1073    #include "Brs_MemMap.h"
+; ..\appl\Source\BrsMain.c	  1074  # endif
+; ..\appl\Source\BrsMain.c	  1075  BRS_DRVCAN_EXCLUSIVE_AREA_INFIX(Enter,EXCLUSIVE_AREA_0)
+; ..\appl\Source\BrsMain.c	  1076  {
+; ..\appl\Source\BrsMain.c	  1077  #if !defined (BRS_ENABLE_FBL_SUPPORT)
+; ..\appl\Source\BrsMain.c	  1078    if (++BrsAsrApplCanInterruptLockCtr == 1u)
+; ..\appl\Source\BrsMain.c	  1079    {
+; ..\appl\Source\BrsMain.c	  1080      BRS_DRVCAN_ControllerInterrupts_INFIX(Disable)(0u);
+; ..\appl\Source\BrsMain.c	  1081    }
+; ..\appl\Source\BrsMain.c	  1082  #endif
+; ..\appl\Source\BrsMain.c	  1083  }
+; ..\appl\Source\BrsMain.c	  1084  
+; ..\appl\Source\BrsMain.c	  1085  BRS_DRVCAN_EXCLUSIVE_AREA_INFIX(Exit,EXCLUSIVE_AREA_0)
+; ..\appl\Source\BrsMain.c	  1086  {
+; ..\appl\Source\BrsMain.c	  1087  #if !defined (BRS_ENABLE_FBL_SUPPORT)
+; ..\appl\Source\BrsMain.c	  1088    if (--BrsAsrApplCanInterruptLockCtr == 0u)
+; ..\appl\Source\BrsMain.c	  1089    {
+; ..\appl\Source\BrsMain.c	  1090      BRS_DRVCAN_ControllerInterrupts_INFIX(Enable)(0u);
+; ..\appl\Source\BrsMain.c	  1091    }
+; ..\appl\Source\BrsMain.c	  1092  #endif
+; ..\appl\Source\BrsMain.c	  1093  }
+; ..\appl\Source\BrsMain.c	  1094  
+; ..\appl\Source\BrsMain.c	  1095  BRS_DRVCAN_EXCLUSIVE_AREA_INFIX(Enter,EXCLUSIVE_AREA_6)
+; ..\appl\Source\BrsMain.c	  1096  {
+; ..\appl\Source\BrsMain.c	  1097  #if !defined (BRS_ENABLE_FBL_SUPPORT)
+; ..\appl\Source\BrsMain.c	  1098    if (++BrsAsrApplCanInterruptLockCtr == 1u)
+; ..\appl\Source\BrsMain.c	  1099    {
+; ..\appl\Source\BrsMain.c	  1100      BRS_DRVCAN_ControllerInterrupts_INFIX(Disable)(0u);
+; ..\appl\Source\BrsMain.c	  1101    }
+; ..\appl\Source\BrsMain.c	  1102  #endif
+; ..\appl\Source\BrsMain.c	  1103  }
+; ..\appl\Source\BrsMain.c	  1104  
+; ..\appl\Source\BrsMain.c	  1105  BRS_DRVCAN_EXCLUSIVE_AREA_INFIX(Exit,EXCLUSIVE_AREA_6)
+; ..\appl\Source\BrsMain.c	  1106  {
+; ..\appl\Source\BrsMain.c	  1107  #if !defined (BRS_ENABLE_FBL_SUPPORT)
+; ..\appl\Source\BrsMain.c	  1108    if (--BrsAsrApplCanInterruptLockCtr == 0u)
+; ..\appl\Source\BrsMain.c	  1109    {
+; ..\appl\Source\BrsMain.c	  1110      BRS_DRVCAN_ControllerInterrupts_INFIX(Enable)(0u);
+; ..\appl\Source\BrsMain.c	  1111    }
+; ..\appl\Source\BrsMain.c	  1112  #endif
+; ..\appl\Source\BrsMain.c	  1113  }
+; ..\appl\Source\BrsMain.c	  1114  # if defined (BRS_ENABLE_FBL_SUPPORT)
+; ..\appl\Source\BrsMain.c	  1115    #define BRS_STOP_SEC_RAM_CODE
+; ..\appl\Source\BrsMain.c	  1116    #include "Brs_MemMap.h"
+; ..\appl\Source\BrsMain.c	  1117  # endif
+; ..\appl\Source\BrsMain.c	  1118  #endif /*BRS_ENABLE_CAN_SUPPORT*/
+; ..\appl\Source\BrsMain.c	  1119  
+; ..\appl\Source\BrsMain.c	  1120  #if defined (BRS_ENABLE_CAN_SUPPORT)
+; ..\appl\Source\BrsMain.c	  1121  # if defined (BRS_ENABLE_FBL_SUPPORT)
+; ..\appl\Source\BrsMain.c	  1122    #define BRS_START_SEC_RAM_CODE
+; ..\appl\Source\BrsMain.c	  1123    #include "Brs_MemMap.h"
+; ..\appl\Source\BrsMain.c	  1124  # endif
+; ..\appl\Source\BrsMain.c	  1125  void SchM_Enter_CanIf_CANIF_EXCLUSIVE_AREA_0(void)
+; ..\appl\Source\BrsMain.c	  1126  {
+; ..\appl\Source\BrsMain.c	  1127  #if !defined (BRS_ENABLE_FBL_SUPPORT)
+; ..\appl\Source\BrsMain.c	  1128    if (++BrsAsrApplCanInterruptLockCtr == 1u)
+; ..\appl\Source\BrsMain.c	  1129    {
+; ..\appl\Source\BrsMain.c	  1130      BRS_DRVCAN_ControllerInterrupts_INFIX(Disable)(0u);
+; ..\appl\Source\BrsMain.c	  1131    }
+; ..\appl\Source\BrsMain.c	  1132  #endif
+; ..\appl\Source\BrsMain.c	  1133  }
+; ..\appl\Source\BrsMain.c	  1134  
+; ..\appl\Source\BrsMain.c	  1135  void SchM_Exit_CanIf_CANIF_EXCLUSIVE_AREA_0(void)
+; ..\appl\Source\BrsMain.c	  1136  {
+; ..\appl\Source\BrsMain.c	  1137  #if !defined (BRS_ENABLE_FBL_SUPPORT)
+; ..\appl\Source\BrsMain.c	  1138    if (--BrsAsrApplCanInterruptLockCtr == 0u)
+; ..\appl\Source\BrsMain.c	  1139    {
+; ..\appl\Source\BrsMain.c	  1140      BRS_DRVCAN_ControllerInterrupts_INFIX(Enable)(0u);
+; ..\appl\Source\BrsMain.c	  1141    }
+; ..\appl\Source\BrsMain.c	  1142  #endif
+; ..\appl\Source\BrsMain.c	  1143  }
+; ..\appl\Source\BrsMain.c	  1144  # if defined (BRS_ENABLE_FBL_SUPPORT)
+; ..\appl\Source\BrsMain.c	  1145    #define BRS_STOP_SEC_RAM_CODE
+; ..\appl\Source\BrsMain.c	  1146    #include "Brs_MemMap.h"
+; ..\appl\Source\BrsMain.c	  1147  # endif
+; ..\appl\Source\BrsMain.c	  1148  #endif /*BRS_ENABLE_CAN_SUPPORT*/
+; ..\appl\Source\BrsMain.c	  1149  
+; ..\appl\Source\BrsMain.c	  1150  #if defined (BRS_ENABLE_CAN_SUPPORT)
+; ..\appl\Source\BrsMain.c	  1151  # if defined (BRS_ENABLE_FBL_SUPPORT)
+; ..\appl\Source\BrsMain.c	  1152    #define BRS_START_SEC_RAM_CODE
+; ..\appl\Source\BrsMain.c	  1153    #include "Brs_MemMap.h"
+; ..\appl\Source\BrsMain.c	  1154  # endif
+; ..\appl\Source\BrsMain.c	  1155  void SchM_Enter_CanSM_CANSM_EXCLUSIVE_AREA_4(void)
+; ..\appl\Source\BrsMain.c	  1156  {
+; ..\appl\Source\BrsMain.c	  1157  #if !defined (BRS_ENABLE_FBL_SUPPORT)
+; ..\appl\Source\BrsMain.c	  1158    if (++BrsAsrApplCanInterruptLockCtr == 1u)
+; ..\appl\Source\BrsMain.c	  1159    {
+; ..\appl\Source\BrsMain.c	  1160      BRS_DRVCAN_ControllerInterrupts_INFIX(Disable)(0u);
+; ..\appl\Source\BrsMain.c	  1161    }
+; ..\appl\Source\BrsMain.c	  1162  #endif
+; ..\appl\Source\BrsMain.c	  1163  }
+; ..\appl\Source\BrsMain.c	  1164  
+; ..\appl\Source\BrsMain.c	  1165  void SchM_Exit_CanSM_CANSM_EXCLUSIVE_AREA_4(void)
+; ..\appl\Source\BrsMain.c	  1166  {
+; ..\appl\Source\BrsMain.c	  1167  #if !defined (BRS_ENABLE_FBL_SUPPORT)
+; ..\appl\Source\BrsMain.c	  1168    if (--BrsAsrApplCanInterruptLockCtr == 0u)
+; ..\appl\Source\BrsMain.c	  1169    {
+; ..\appl\Source\BrsMain.c	  1170      BRS_DRVCAN_ControllerInterrupts_INFIX(Enable)(0u);
+; ..\appl\Source\BrsMain.c	  1171    }
+; ..\appl\Source\BrsMain.c	  1172  #endif
+; ..\appl\Source\BrsMain.c	  1173  }
+; ..\appl\Source\BrsMain.c	  1174  
+; ..\appl\Source\BrsMain.c	  1175  void SchM_Enter_CanSM_CANSM_EXCLUSIVE_AREA_1(void)
+; ..\appl\Source\BrsMain.c	  1176  {
+; ..\appl\Source\BrsMain.c	  1177    /* Protects against task interruptions -> no locking needed, because all main functions are on same task */
+; ..\appl\Source\BrsMain.c	  1178  }
+; ..\appl\Source\BrsMain.c	  1179  
+; ..\appl\Source\BrsMain.c	  1180  void SchM_Exit_CanSM_CANSM_EXCLUSIVE_AREA_1(void)
+; ..\appl\Source\BrsMain.c	  1181  {
+; ..\appl\Source\BrsMain.c	  1182    /* Protects against task interruptions -> no locking needed, because all main functions are on same task */
+; ..\appl\Source\BrsMain.c	  1183  }
+; ..\appl\Source\BrsMain.c	  1184  # if defined (BRS_ENABLE_FBL_SUPPORT)
+; ..\appl\Source\BrsMain.c	  1185    #define BRS_STOP_SEC_RAM_CODE
+; ..\appl\Source\BrsMain.c	  1186    #include "Brs_MemMap.h"
+; ..\appl\Source\BrsMain.c	  1187  # endif
+; ..\appl\Source\BrsMain.c	  1188  #endif /*BRS_ENABLE_CAN_SUPPORT*/
+; ..\appl\Source\BrsMain.c	  1189  
+; ..\appl\Source\BrsMain.c	  1190  # if defined (BRS_ENABLE_FBL_SUPPORT)
+; ..\appl\Source\BrsMain.c	  1191    #define BRS_START_SEC_RAM_CODE
+; ..\appl\Source\BrsMain.c	  1192    #include "Brs_MemMap.h"
+; ..\appl\Source\BrsMain.c	  1193  # endif
+; ..\appl\Source\BrsMain.c	  1194  void SchM_Enter_ComM_COMM_EXCLUSIVE_AREA_1(void)
+; Function SchM_Enter_ComM_COMM_EXCLUSIVE_AREA_1
+.L18:
+SchM_Enter_ComM_COMM_EXCLUSIVE_AREA_1:	.type	func
+
+; ..\appl\Source\BrsMain.c	  1195  {
+; ..\appl\Source\BrsMain.c	  1196    /* Protects against task interruptions -> no locking needed, because all main functions are on same task */
+; ..\appl\Source\BrsMain.c	  1197  }
+	ret
+.L79:
+	
+__SchM_Enter_ComM_COMM_EXCLUSIVE_AREA_1_function_end:
+	.size	SchM_Enter_ComM_COMM_EXCLUSIVE_AREA_1,__SchM_Enter_ComM_COMM_EXCLUSIVE_AREA_1_function_end-SchM_Enter_ComM_COMM_EXCLUSIVE_AREA_1
+.L59:
+	; End of function
+	
+	.sdecl	'.text.BrsMain.SchM_Exit_ComM_COMM_EXCLUSIVE_AREA_1',code,cluster('SchM_Exit_ComM_COMM_EXCLUSIVE_AREA_1')
+	.sect	'.text.BrsMain.SchM_Exit_ComM_COMM_EXCLUSIVE_AREA_1'
+	.align	2
+	
+	.global	SchM_Exit_ComM_COMM_EXCLUSIVE_AREA_1
+
+; ..\appl\Source\BrsMain.c	  1198  
+; ..\appl\Source\BrsMain.c	  1199  void SchM_Exit_ComM_COMM_EXCLUSIVE_AREA_1(void)
+; Function SchM_Exit_ComM_COMM_EXCLUSIVE_AREA_1
+.L20:
+SchM_Exit_ComM_COMM_EXCLUSIVE_AREA_1:	.type	func
+
+; ..\appl\Source\BrsMain.c	  1200  {
+; ..\appl\Source\BrsMain.c	  1201    /* Protects against task interruptions -> no locking needed, because all main functions are on same task */
+; ..\appl\Source\BrsMain.c	  1202  }
+	ret
+.L80:
+	
+__SchM_Exit_ComM_COMM_EXCLUSIVE_AREA_1_function_end:
+	.size	SchM_Exit_ComM_COMM_EXCLUSIVE_AREA_1,__SchM_Exit_ComM_COMM_EXCLUSIVE_AREA_1_function_end-SchM_Exit_ComM_COMM_EXCLUSIVE_AREA_1
+.L64:
+	; End of function
+	
+	.calls	'Os_Task_Default_Init_Task','EcuM_StartupTwo'
+	.calls	'Os_Task_Default_Init_Task','TerminateTask'
+	.calls	'Os_Task_Default_Init_Task_Trusted','Os_InitialEnableInterruptSources'
+	.calls	'Os_Task_Default_Init_Task_Trusted','TerminateTask'
+	.calls	'BrsMainExceptionHandler','DisableAllInterrupts'
+	.calls	'BrsMainExceptionStartup','BrsMainExceptionHandler'
+	.calls	'main','BrsHwDisableInterruptAtPowerOn'
+	.calls	'main','BrsHw_GetCore'
+	.calls	'main','BrsMainInit'
+	.calls	'main','Os_InitMemory'
+	.calls	'main','Os_Init'
+	.calls	'main','EcuM_Init'
+	.calls	'BrsMainInit','',0
+	.calls	'Os_Task_Default_Init_Task','',0
+	.calls	'Os_Task_Default_Init_Task_Trusted','',0
+	.calls	'BrsMainExceptionHandler','',8
+	.calls	'BrsMainExceptionStartup','',0
+	.calls	'main','',0
+	.calls	'SchM_Enter_ComM_COMM_EXCLUSIVE_AREA_1','',0
+	.extern	Os_InitMemory
+	.extern	Os_Init
+	.extern	DisableAllInterrupts
+	.extern	Os_InitialEnableInterruptSources
+	.extern	TerminateTask
+	.extern	EcuM_Init
+	.extern	EcuM_StartupTwo
+	.extern	BrsHwDisableInterruptAtPowerOn
+	.extern	BrsHw_GetCore
+	.calls	'SchM_Exit_ComM_COMM_EXCLUSIVE_AREA_1','',0
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L22:
+	.word	8582
+	.half	3
+	.word	.L23
+	.byte	4
+.L21:
+	.byte	1
+	.byte	'..\\appl\\Source\\BrsMain.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
+	.word	.L24
+	.byte	2
+	.byte	'unsigned long int',0,4,7,3
+	.word	118
+	.byte	2
+	.byte	'long int',0,4,5,4
+	.byte	'BrsHw_GetAddrWDTCON0',0,1,1,134,2,1
+	.word	139
+	.byte	1,1,5
+	.byte	'nr',0,1,134,2,1
+	.word	144
+	.byte	6,0
+.L77:
+	.byte	2
+	.byte	'int',0,4,5,7
+	.word	203
+	.byte	8
+	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,9
+	.word	210
+	.byte	0,2
+	.byte	'unsigned int',0,4,7,10
+	.word	252
+	.byte	3
+	.word	252
+	.byte	11
+	.byte	'__cmpswapw',0
+	.word	268
+	.byte	1,1,1,1,12
+	.byte	'p',0
+	.word	273
+	.byte	12
+	.byte	'value',0
+	.word	252
+	.byte	12
+	.byte	'compare',0
+	.word	252
+	.byte	0,13
+	.byte	'Os_InitMemory',0,2,158,5,21,1,1,1,1,13
+	.byte	'Os_Init',0,2,191,5,21,1,1,1,1,13
+	.byte	'DisableAllInterrupts',0,2,185,10,21,1,1,1,1
+.L69:
+	.byte	2
+	.byte	'unsigned char',0,1,8,14
+	.byte	'Os_InitialEnableInterruptSources',0,2,217,13,27
+	.word	400
+	.byte	1,1,1,1,5
+	.byte	'ClearPending',0,2,219,13,21
+	.word	400
+	.byte	0,15
+	.byte	'TerminateTask',0,2,191,15,27
+	.word	400
+	.byte	1,1,1,1,13
+	.byte	'EcuM_Init',0,3,214,2,23,1,1,1,1,13
+	.byte	'EcuM_StartupTwo',0,3,224,4,23,1,1,1,1
+.L72:
+	.byte	2
+	.byte	'unsigned short int',0,2,7
+.L74:
+	.byte	10
+	.word	400
+	.byte	16
+	.word	156
+	.byte	17
+	.word	189
+	.byte	6,0,13
+	.byte	'BrsHwDisableInterruptAtPowerOn',0,1,182,3,6,1,1,1,1,15
+	.byte	'BrsHw_GetCore',0,1,131,4,8
+	.word	118
+	.byte	1,1,1,1,18,1,3
+	.word	663
+	.byte	19
+	.byte	'__codeptr',0,4,1,1
+	.word	665
+	.byte	19
+	.byte	'boolean',0,5,101,31
+	.word	400
+	.byte	19
+	.byte	'uint8',0,5,104,31
+	.word	400
+	.byte	19
+	.byte	'uint16',0,5,106,31
+	.word	557
+	.byte	19
+	.byte	'sint32',0,5,107,31
+	.word	144
+	.byte	19
+	.byte	'uint32',0,5,108,31
+	.word	118
+	.byte	19
+	.byte	'uint8_least',0,5,111,31
+	.word	400
+	.byte	2
+	.byte	'unsigned long long int',0,8,7,19
+	.byte	'uint64',0,5,121,30
+	.word	783
+	.byte	19
+	.byte	'StatusType',0,6,127,23
+	.word	400
+	.byte	20,7,145,1,9,1,21
+	.byte	'Default_Init_Task',0,0,21
+	.byte	'Default_Init_Task_Trusted',0,1,21
+	.byte	'IdleTask_OsCore0',0,2,21
+	.byte	'bsw_task',0,3,21
+	.byte	'swc_init',0,4,21
+	.byte	'swc_task',0,5,21
+	.byte	'INVALID_TASK',0,6,21
+	.byte	'OS_TASKID_COUNT',0,6,0,19
+	.byte	'TaskType',0,7,155,1,3
+	.word	843
+	.byte	19
+	.byte	'Os_Hal_AddressType',0,8,61,16
+	.word	118
+	.byte	22,64
+	.word	118
+	.byte	23,15,0,24
+	.byte	'Os_ExceptionContextType_Tag',0,9,71,8,160,1,25
+	.byte	'AddressRegisters',0
+	.word	1028
+	.byte	64,2,35,0,25
+	.byte	'DataRegisters',0
+	.word	1028
+	.byte	64,2,35,64,25
+	.byte	'Ra',0
+	.word	118
+	.byte	4,3,35,128,1,25
+	.byte	'Psw',0
+	.word	118
+	.byte	4,3,35,132,1,25
+	.byte	'ExceptionSource',0
+	.word	118
+	.byte	4,3,35,136,1,25
+	.byte	'Pcpn',0
+	.word	118
+	.byte	4,3,35,140,1,25
+	.byte	'Pie',0
+	.word	118
+	.byte	4,3,35,144,1,25
+	.byte	'MpuRegionForStackLow',0
+	.word	118
+	.byte	4,3,35,148,1,25
+	.byte	'MpuRegionForStackUpper',0
+	.word	118
+	.byte	4,3,35,152,1,25
+	.byte	'RawPCXI',0
+	.word	118
+	.byte	4,3,35,156,1,0,19
+	.byte	'Os_ExceptionContextType',0,8,66,44
+	.word	1037
+	.byte	19
+	.byte	'Os_InterruptSourceIdType',0,10,238,1,16
+	.word	118
+	.byte	19
+	.byte	'Os_ExceptionSourceIdType',0,10,246,1,16
+	.word	118
+	.byte	20,10,161,2,9,1,21
+	.byte	'RUNNING',0,0,21
+	.byte	'READY',0,1,21
+	.byte	'WAITING',0,2,21
+	.byte	'SUSPENDED',0,3,0,19
+	.byte	'TaskStateType',0,10,175,2,3
+	.word	1385
+	.byte	19
+	.byte	'EventMaskType',0,10,182,2,16
+	.word	783
+	.byte	19
+	.byte	'Os_TickType',0,10,200,2,19
+	.word	118
+	.byte	19
+	.byte	'TickType',0,10,206,2,21
+	.word	118
+	.byte	26,10,220,2,9,12,25
+	.byte	'maxallowedvalue',0
+	.word	118
+	.byte	4,2,35,0,25
+	.byte	'ticksperbase',0
+	.word	118
+	.byte	4,2,35,4,25
+	.byte	'mincycle',0
+	.word	118
+	.byte	4,2,35,8,0,19
+	.byte	'AlarmBaseType',0,10,228,2,2
+	.word	1517
+	.byte	20,10,128,3,9,1,21
+	.byte	'APPLICATION_TERMINATED',0,0,21
+	.byte	'APPLICATION_RESTARTING',0,1,21
+	.byte	'APPLICATION_ACCESSIBLE',0,2,0,19
+	.byte	'ApplicationStateType',0,10,133,3,3
+	.word	1612
+	.byte	20,10,177,3,9,1,21
+	.byte	'OSServiceId_GetApplicationID',0,0,21
+	.byte	'OSServiceId_GetISRID',0,1,21
+	.byte	'OSServiceId_CallTrustedFunction',0,2,21
+	.byte	'OSServiceId_CheckISRMemoryAccess',0,3,21
+	.byte	'OSServiceId_CheckTaskMemoryAccess',0,4,21
+	.byte	'OSServiceId_CheckObjectAccess',0,5,21
+	.byte	'OSServiceId_CheckObjectOwnership',0,6,21
+	.byte	'OSServiceId_StartScheduleTableRel',0,7,21
+	.byte	'OSServiceId_StartScheduleTableAbs',0,8,21
+	.byte	'OSServiceId_StopScheduleTable',0,9,21
+	.byte	'OSServiceId_NextScheduleTable',0,10,21
+	.byte	'OSServiceId_StartScheduleTableSynchron',0,11,21
+	.byte	'OSServiceId_SyncScheduleTable',0,12,21
+	.byte	'OSServiceId_SetScheduleTableAsync',0,13,21
+	.byte	'OSServiceId_GetScheduleTableStatus',0,14,21
+	.byte	'OSServiceId_IncrementCounter',0,15,21
+	.byte	'OSServiceId_GetCounterValue',0,16,21
+	.byte	'OSServiceId_GetElapsedValue',0,17,21
+	.byte	'OSServiceId_TerminateApplication',0,18,21
+	.byte	'OSServiceId_AllowAccess',0,19,21
+	.byte	'OSServiceId_GetApplicationState',0,20,21
+	.byte	'OSServiceId_GetNumberOfActivatedCores',0,21,21
+	.byte	'OSServiceId_GetCoreID',0,22,21
+	.byte	'OSServiceId_StartCore',0,23,21
+	.byte	'OSServiceId_StartNonAutosarCore',0,24,21
+	.byte	'OSServiceId_GetSpinlock',0,25,21
+	.byte	'OSServiceId_ReleaseSpinlock',0,26,21
+	.byte	'OSServiceId_TryToGetSpinlock',0,27,21
+	.byte	'OSServiceId_ShutdownAllCores',0,28,21
+	.byte	'OSServiceId_ControlIdle',0,29,21
+	.byte	'OSServiceId_IocSend',0,30,21
+	.byte	'OSServiceId_IocWrite',0,31,21
+	.byte	'OSServiceId_IocSendGroup',0,32,21
+	.byte	'OSServiceId_IocWriteGroup',0,33,21
+	.byte	'OSServiceId_IocReceive',0,34,21
+	.byte	'OSServiceId_IocRead',0,35,21
+	.byte	'OSServiceId_IocReceiveGroup',0,36,21
+	.byte	'OSServiceId_IocReadGroup',0,37,21
+	.byte	'OSServiceId_IocEmptyQueue',0,38,21
+	.byte	'OSServiceId_GetCurrentApplicationID',0,39,21
+	.byte	'OSServiceId_GetExceptionContext',0,160,1,21
+	.byte	'OSServiceId_SetExceptionContext',0,161,1,21
+	.byte	'OSServiceId_CallNonTrustedFunction',0,162,1,21
+	.byte	'OSServiceId_AppKill',0,163,1,21
+	.byte	'OSServiceId_AlarmActionSetEvent',0,164,1,21
+	.byte	'OSServiceId_AlarmActionActivateTask',0,165,1,21
+	.byte	'OSServiceId_AlarmActionIncrementCounter',0,166,1,21
+	.byte	'OSServiceId_AlarmActionCallback',0,167,1,21
+	.byte	'OSServiceId_TimerIsr',0,168,1,21
+	.byte	'OSServiceId_IsrWrapper',0,169,1,21
+	.byte	'OSServiceId_GetTaskStackUsage',0,170,1,21
+	.byte	'OSServiceId_GetISRStackUsage',0,171,1,21
+	.byte	'OSServiceId_GetKernelStackUsage',0,172,1,21
+	.byte	'OSServiceId_GetStartupHookStackUsage',0,173,1,21
+	.byte	'OSServiceId_GetErrorHookStackUsage',0,174,1,21
+	.byte	'OSServiceId_GetShutdownHookStackUsage',0,175,1,21
+	.byte	'OSServiceId_GetProtectionHookStackUsage',0,176,1,21
+	.byte	'OSServiceId_GetSemaphore',0,177,1,21
+	.byte	'OSServiceId_ReleaseSemaphore',0,178,1,21
+	.byte	'OSServiceId_ScheduleTableActivateTask',0,179,1,21
+	.byte	'OSServiceId_ScheduleTableSetEvent',0,180,1,21
+	.byte	'OSServiceId_DisableInterruptSource',0,181,1,21
+	.byte	'OSServiceId_EnableInterruptSource',0,182,1,21
+	.byte	'OSServiceId_ClearPendingInterrupt',0,183,1,21
+	.byte	'OSServiceId_GetUnhandledIrq',0,184,1,21
+	.byte	'OSServiceId_GetUnhandledExc',0,185,1,21
+	.byte	'OSServiceId_HookCallCallback',0,186,1,21
+	.byte	'OSServiceId_IsInterruptSourceEnabled',0,187,1,21
+	.byte	'OSServiceId_IsInterruptPending',0,188,1,21
+	.byte	'OSServiceId_CallFastTrustedFunction',0,189,1,21
+	.byte	'OSServiceId_BarrierSynchronize',0,190,1,21
+	.byte	'OSServiceId_InitialEnableInterruptSources',0,191,1,21
+	.byte	'OSServiceId_GetCoreStartState',0,192,1,21
+	.byte	'OSServiceId_StartOS',0,208,1,21
+	.byte	'OSServiceId_GetActiveApplicationMode',0,210,1,21
+	.byte	'OSServiceId_DisableAllInterrupts',0,211,1,21
+	.byte	'OSServiceId_EnableAllInterrupts',0,212,1,21
+	.byte	'OSServiceId_SuspendAllInterrupts',0,213,1,21
+	.byte	'OSServiceId_ResumeAllInterrupts',0,214,1,21
+	.byte	'OSServiceId_SuspendOSInterrupts',0,215,1,21
+	.byte	'OSServiceId_ResumeOSInterrupts',0,216,1,21
+	.byte	'OSServiceId_ActivateTask',0,217,1,21
+	.byte	'OSServiceId_TerminateTask',0,218,1,21
+	.byte	'OSServiceId_ChainTask',0,219,1,21
+	.byte	'OSServiceId_GetTaskID',0,220,1,21
+	.byte	'OSServiceId_GetTaskState',0,221,1,21
+	.byte	'OSServiceId_Schedule',0,222,1,21
+	.byte	'OSServiceId_SetEvent',0,223,1,21
+	.byte	'OSServiceId_ClearEvent',0,224,1,21
+	.byte	'OSServiceId_GetEvent',0,225,1,21
+	.byte	'OSServiceId_WaitEvent',0,226,1,21
+	.byte	'OSServiceId_GetAlarmBase',0,227,1,21
+	.byte	'OSServiceId_GetAlarm',0,228,1,21
+	.byte	'OSServiceId_SetRelAlarm',0,229,1,21
+	.byte	'OSServiceId_SetAbsAlarm',0,230,1,21
+	.byte	'OSServiceId_CancelAlarm',0,231,1,21
+	.byte	'OSServiceId_GetResource',0,232,1,21
+	.byte	'OSServiceId_ReleaseResource',0,233,1,21
+	.byte	'OSSERVICEID_COUNT',0,255,1,0,19
+	.byte	'OSServiceIdType',0,10,156,4,3
+	.word	1724
+	.byte	20,10,172,4,9,2,21
+	.byte	'OS_STATUS_OK',0,0,21
+	.byte	'OS_STATUS_CALLEVEL',0,2,21
+	.byte	'OS_STATUS_LIMIT',0,4,21
+	.byte	'OS_STATUS_RESOURCE',0,6,21
+	.byte	'OS_STATUS_SERVICEID',0,9,21
+	.byte	'OS_STATUS_ILLEGAL_ADDRESS',0,10,21
+	.byte	'OS_STATUS_MISSINGEND',0,11,21
+	.byte	'OS_STATUS_DISABLEDINT',0,12,21
+	.byte	'OS_STATUS_STACKFAULT',0,13,21
+	.byte	'OS_STATUS_PROTECTION_MEMORY',0,14,21
+	.byte	'OS_STATUS_PROTECTION_TIME',0,15,21
+	.byte	'OS_STATUS_PROTECTION_ARRIVAL',0,16,21
+	.byte	'OS_STATUS_PROTECTION_LOCKED',0,17,21
+	.byte	'OS_STATUS_PROTECTION_EXCEPTION',0,18,21
+	.byte	'OS_STATUS_INTERFERENCE_DEADLOCK',0,19,21
+	.byte	'OS_STATUS_NESTING_DEADLOCK',0,20,21
+	.byte	'OS_STATUS_SPINLOCK',0,21,21
+	.byte	'OS_STATUS_CORE',0,22,21
+	.byte	'OS_STATUS_OVERFLOW',0,245,1,21
+	.byte	'OS_STATUS_KILL_KERNEL_OBJ',0,246,1,21
+	.byte	'OS_STATUS_NO_RESTARTTASK',0,247,1,21
+	.byte	'OS_STATUS_CALL_NOT_ALLOWED',0,248,1,21
+	.byte	'OS_STATUS_FUNCTION_UNAVAILABLE',0,249,1,21
+	.byte	'OS_STATUS_PROTECTION_SYSCALL',0,250,1,21
+	.byte	'OS_STATUS_PROTECTION_IRQ',0,251,1,21
+	.byte	'OS_STATUS_API_ERROR',0,252,1,21
+	.byte	'OS_STATUS_ASSERTION',0,253,1,21
+	.byte	'OS_STATUS_OVERLOAD',0,254,1,21
+	.byte	'OS_STATUS_ACCESSRIGHTS_1',0,129,2,21
+	.byte	'OS_STATUS_CALLEVEL_SHARED_STACK',0,130,2,21
+	.byte	'OS_STATUS_ID_1',0,131,2,21
+	.byte	'OS_STATUS_UNLOCKED',0,133,2,21
+	.byte	'OS_STATUS_STATE_1',0,135,2,21
+	.byte	'OS_STATUS_VALUE_IS_ZERO_1',0,136,2,21
+	.byte	'OS_STATUS_CORE_CROSS_DATA',0,150,2,21
+	.byte	'OS_STATUS_PARAM_POINTER_1',0,151,2,21
+	.byte	'OS_STATUS_STACKUSAGE_DISABLED_BY_CONFIG',0,241,3,21
+	.byte	'OS_STATUS_NO_BARRIER_PARTICIPANT',0,242,3,21
+	.byte	'OS_STATUS_UNIMPLEMENTED_CLEARPENDING',0,243,3,21
+	.byte	'OS_STATUS_NO_NTFSTACK_POOL_EMPTY',0,244,3,21
+	.byte	'OS_STATUS_ACCESSRIGHTS_2',0,129,4,21
+	.byte	'OS_STATUS_CALLEVEL_CROSS_CORE_SYNC',0,130,4,21
+	.byte	'OS_STATUS_ID_2',0,131,4,21
+	.byte	'OS_STATUS_NOFUNC_1',0,133,4,21
+	.byte	'OS_STATUS_STATE_2',0,135,4,21
+	.byte	'OS_STATUS_VALUE_IS_ZERO_2',0,136,4,21
+	.byte	'OS_STATUS_PARAM_POINTER_2',0,151,4,21
+	.byte	'OS_STATUS_EVENT_DISABLED_BY_CONFIG',0,241,5,21
+	.byte	'OS_STATUS_UNIMPLEMENTED_EXCEPTIONCONTEXT',0,243,5,21
+	.byte	'OS_STATUS_NO_NTFSTACK_APPLIMIT_EXCEEDED',0,244,5,21
+	.byte	'OS_STATUS_NOTACCESSIBLE_1',0,129,6,21
+	.byte	'OS_STATUS_ID_TYPE_1',0,131,6,21
+	.byte	'OS_STATUS_NOFUNC_2',0,133,6,21
+	.byte	'OS_STATUS_STATE_STOPPED',0,135,6,21
+	.byte	'OS_STATUS_VALUE_IS_TOO_HIGH_1',0,136,6,21
+	.byte	'OS_STATUS_PARAM_POINTER_3',0,151,6,21
+	.byte	'OS_STATUS_NOTACCESSIBLE_2',0,129,8,21
+	.byte	'OS_STATUS_ID_DIFFERENT_COUNTER',0,131,8,21
+	.byte	'OS_STATUS_SPINLOCK_ORDER',0,133,8,21
+	.byte	'OS_STATUS_STATE_RUNNING',0,135,8,21
+	.byte	'OS_STATUS_VALUE_IS_TOO_HIGH_2',0,136,8,21
+	.byte	'OS_STATUS_NOEXTENDEDTASK_1',0,129,10,21
+	.byte	'OS_STATUS_ID_DIFFERENT_SYNC',0,131,10,21
+	.byte	'OS_STATUS_STOPPED_1',0,133,10,21
+	.byte	'OS_STATUS_STATE_NEXTED',0,135,10,21
+	.byte	'OS_STATUS_VALUE_IS_TOO_HIGH_3',0,136,10,21
+	.byte	'OS_STATUS_NOEXTENDEDTASK_2',0,129,12,21
+	.byte	'OS_STATUS_HOOK_NOT_AVAILABLE',0,131,12,21
+	.byte	'OS_STATUS_NOT_STOPPED_2',0,133,12,21
+	.byte	'OS_STATUS_STATE_WAITING',0,135,12,21
+	.byte	'OS_STATUS_VALUE_IS_OUT_OF_BOUNDS_1',0,136,12,21
+	.byte	'OS_STATUS_NOEXTENDEDTASK_CALLER',0,129,14,21
+	.byte	'OS_STATUS_NEXTED_1',0,133,14,21
+	.byte	'OS_STATUS_STATE_NO_RESTART',0,135,14,21
+	.byte	'OS_STATUS_VALUE_IS_OUT_OF_BOUNDS_2',0,136,14,21
+	.byte	'OS_STATUS_LOCKED',0,129,16,21
+	.byte	'OS_STATUS_KILLING_IS_DISABLED',0,133,16,21
+	.byte	'OS_STATUS_STATE_ALREADY_TERMINATED',0,135,16,21
+	.byte	'OS_STATUS_VALUE_IS_TOO_LOW_1',0,136,16,21
+	.byte	'OS_STATUS_PRIORITY',0,129,18,21
+	.byte	'OS_STATUS_ORDER',0,133,18,21
+	.byte	'OS_STATUS_STATE_RESTARTING_NO_MEMBER',0,135,18,21
+	.byte	'OS_STATUS_VALUE_IS_TOO_LOW_2',0,136,18,21
+	.byte	'OS_STATUS_NOT_THE_OWNER_1',0,129,20,21
+	.byte	'OS_STATUS_STATE_ALREADY_RESTARTING',0,135,20,21
+	.byte	'OS_STATUS_VALUE_IS_TOO_LOW_3',0,136,20,21
+	.byte	'OS_STATUS_VALUE_IS_NOT_BOOLEAN',0,136,22,0,19
+	.byte	'Os_StatusType',0,10,232,5,3
+	.word	4894
+	.byte	26,10,133,6,9,4,25
+	.byte	'Service',0
+	.word	1724
+	.byte	1,2,35,0,25
+	.byte	'Error',0
+	.word	400
+	.byte	1,2,35,1,25
+	.byte	'DetailedError',0
+	.word	4894
+	.byte	2,2,35,2,0,19
+	.byte	'Os_ErrorInformationType',0,10,143,6,3
+	.word	7424
+	.byte	20,10,175,6,9,1,21
+	.byte	'SCHEDULETABLE_STOPPED',0,0,21
+	.byte	'SCHEDULETABLE_NEXT',0,1,21
+	.byte	'SCHEDULETABLE_WAITING',0,2,21
+	.byte	'SCHEDULETABLE_RUNNING',0,3,21
+	.byte	'SCHEDULETABLE_RUNNING_AND_SYNCHRONOUS',0,4,0,19
+	.byte	'ScheduleTableStatusType',0,10,192,6,3
+	.word	7519
+	.byte	19
+	.byte	'Os_AccessCheckAddress',0,10,199,6,29
+	.word	118
+	.byte	20,10,211,6,9,1,21
+	.byte	'OS_MEM_ACCESS_TYPE_NON',0,0,21
+	.byte	'OS_MEM_ACCESS_TYPE_R',0,1,21
+	.byte	'OS_MEM_ACCESS_TYPE_READ',0,1,21
+	.byte	'OS_MEM_ACCESS_TYPE_W',0,2,21
+	.byte	'OS_MEM_ACCESS_TYPE_WRITE',0,2,21
+	.byte	'OS_MEM_ACCESS_TYPE_RW',0,3,21
+	.byte	'OS_MEM_ACCESS_TYPE_EXECUTE',0,4,21
+	.byte	'OS_MEM_ACCESS_TYPE_X',0,4,21
+	.byte	'OS_MEM_ACCESS_TYPE_RX',0,5,21
+	.byte	'OS_MEM_ACCESS_TYPE_WX',0,6,21
+	.byte	'OS_MEM_ACCESS_TYPE_RWX',0,7,21
+	.byte	'OS_MEM_ACCESS_TYPE_S',0,8,21
+	.byte	'OS_MEM_ACCESS_TYPE_STACK',0,8,21
+	.byte	'OS_MEM_ACCESS_TYPE_RS',0,9,21
+	.byte	'OS_MEM_ACCESS_TYPE_WS',0,10,21
+	.byte	'OS_MEM_ACCESS_TYPE_RWS',0,11,21
+	.byte	'OS_MEM_ACCESS_TYPE_XS',0,12,21
+	.byte	'OS_MEM_ACCESS_TYPE_RXS',0,13,21
+	.byte	'OS_MEM_ACCESS_TYPE_WXS',0,14,21
+	.byte	'OS_MEM_ACCESS_TYPE_RWXS',0,15,0,19
+	.byte	'Os_MemAccessType',0,10,233,6,3
+	.word	7723
+	.byte	19
+	.byte	'EcuM_ModeType',0,11,55,15
+	.word	400
+	.byte	19
+	.byte	'EcuM_StateType',0,11,61,15
+	.word	400
+	.byte	27,1,1,3
+	.word	8297
+	.byte	19
+	.byte	'EcuM_DriverFuncType',0,12,194,2,9
+	.word	8300
+	.byte	19
+	.byte	'EcuM_DefaultAppModeType',0,12,227,2,16
+	.word	118
+	.byte	19
+	.byte	'EcuM_NormalMcuModeType',0,12,245,2,16
+	.word	118
+	.byte	24
+	.byte	'sEcuM_DriverInitOneType',0,12,136,3,16,4,25
+	.byte	'FunctionOfDriverInitOne',0
+	.word	8305
+	.byte	4,2,35,0,0,19
+	.byte	'EcuM_DriverInitOneType',0,12,139,3,3
+	.word	8399
+	.byte	3
+	.word	8297
+	.byte	24
+	.byte	'sEcuM_PCConfigType',0,12,175,3,16,1,25
+	.byte	'EcuM_PCConfigNeverUsed',0
+	.word	400
+	.byte	1,2,35,0,0,19
+	.byte	'EcuM_PCConfigType',0,12,178,3,3
+	.word	8500
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L23:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,15,0,73,19,0,0,4,46,1,3,8,32
+	.byte	13,58,15,59,15,57,15,73,19,54,15,39,12,0,0,5,5,0,3,8,58,15,59,15,57,15,73,19,0,0,6,11,0,0,0,7,38,0,73
+	.byte	19,0,0,8,46,1,3,8,54,15,39,12,63,12,60,12,0,0,9,5,0,73,19,0,0,10,53,0,73,19,0,0,11,46,1,3,8,73,19,54,15
+	.byte	39,12,63,12,60,12,0,0,12,5,0,3,8,73,19,0,0,13,46,0,3,8,58,15,59,15,57,15,54,15,39,12,63,12,60,12,0,0,14
+	.byte	46,1,3,8,58,15,59,15,57,15,73,19,54,15,39,12,63,12,60,12,0,0,15,46,0,3,8,58,15,59,15,57,15,73,19,54,15
+	.byte	39,12,63,12,60,12,0,0,16,46,1,49,19,0,0,17,5,0,49,19,0,0,18,21,0,54,15,0,0,19,22,0,3,8,58,15,59,15,57
+	.byte	15,73,19,0,0,20,4,1,58,15,59,15,57,15,11,15,0,0,21,40,0,3,8,28,13,0,0,22,1,1,11,15,73,19,0,0,23,33,0,47
+	.byte	15,0,0,24,19,1,3,8,58,15,59,15,57,15,11,15,0,0,25,13,0,3,8,73,19,11,15,56,9,0,0,26,19,1,58,15,59,15,57
+	.byte	15,11,15,0,0,27,21,0,54,15,39,12,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L24:
+	.word	.L83-.L82
+.L82:
+	.half	3
+	.word	.L85-.L84
+.L84:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'D:\\Zonal\\demo011\\tasking\\appl\\Include',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\component\\Os\\Implementation',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\component\\EcuM\\Implementation',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\component\\_Common\\Implementation',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\appl\\GenData',0,0
+	.byte	'BrsHw.h',0,1,0,0
+	.byte	'Os.h',0,2,0,0
+	.byte	'EcuM.h',0,3,0,0
+	.byte	'..\\appl\\Source\\BrsMain.c',0,0,0,0
+	.byte	'Platform_Types.h',0,4,0,0
+	.byte	'Std_Types.h',0,4,0,0
+	.byte	'Os_Types_Lcfg.h',0,5,0,0
+	.byte	'Os_Hal_Os_Types.h',0,2,0,0
+	.byte	'Os_Hal_OsInt.h',0,2,0,0
+	.byte	'Os_Types.h',0,2,0,0
+	.byte	'Rte_Type.h',0,5,0,0
+	.byte	'EcuM_Cfg.h',0,5,0,0,0
+.L85:
+.L83:
+	.sdecl	'.debug_info',debug,cluster('Os_Task_Default_Init_Task')
+	.sect	'.debug_info'
+.L25:
+	.word	180
+	.half	3
+	.word	.L26
+	.byte	4,1
+	.byte	'..\\appl\\Source\\BrsMain.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
+	.word	.L28,.L27
+	.byte	2
+	.word	.L21
+	.byte	3
+	.byte	'Os_Task_Default_Init_Task',0,1,156,3,1,1,1,1
+	.word	.L8,.L65,.L7
+	.byte	4
+	.word	.L8,.L65
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Os_Task_Default_Init_Task')
+	.sect	'.debug_abbrev'
+.L26:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Os_Task_Default_Init_Task')
+	.sect	'.debug_line'
+.L27:
+	.word	.L87-.L86
+.L86:
+	.half	3
+	.word	.L89-.L88
+.L88:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\appl\\Source\\BrsMain.c',0,0,0,0,0
+.L89:
+	.byte	5,18,7,0,5,2
+	.word	.L8
+	.byte	3,179,3,1,5,22,9
+	.half	.L90-.L8
+	.byte	3,3,1,5,1,7,9
+	.half	.L29-.L90
+	.byte	3,1,0,1,1
+.L87:
+	.sdecl	'.debug_ranges',debug,cluster('Os_Task_Default_Init_Task')
+	.sect	'.debug_ranges'
+.L28:
+	.word	-1,.L8,0,.L29-.L8,0,0
+	.sdecl	'.debug_info',debug,cluster('Os_Task_Default_Init_Task_Trusted')
+	.sect	'.debug_info'
+.L30:
+	.word	188
+	.half	3
+	.word	.L31
+	.byte	4,1
+	.byte	'..\\appl\\Source\\BrsMain.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
+	.word	.L33,.L32
+	.byte	2
+	.word	.L21
+	.byte	3
+	.byte	'Os_Task_Default_Init_Task_Trusted',0,1,197,3,1,1,1,1
+	.word	.L10,.L66,.L9
+	.byte	4
+	.word	.L10,.L66
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Os_Task_Default_Init_Task_Trusted')
+	.sect	'.debug_abbrev'
+.L31:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Os_Task_Default_Init_Task_Trusted')
+	.sect	'.debug_line'
+.L32:
+	.word	.L92-.L91
+.L91:
+	.half	3
+	.word	.L94-.L93
+.L93:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\appl\\Source\\BrsMain.c',0,0,0,0,0
+.L94:
+	.byte	5,36,7,0,5,2
+	.word	.L10
+	.byte	3,202,3,1,5,22,9
+	.half	.L95-.L10
+	.byte	3,2,1,5,1,7,9
+	.half	.L34-.L95
+	.byte	3,1,0,1,1
+.L92:
+	.sdecl	'.debug_ranges',debug,cluster('Os_Task_Default_Init_Task_Trusted')
+	.sect	'.debug_ranges'
+.L33:
+	.word	-1,.L10,0,.L34-.L10,0,0
+	.sdecl	'.debug_info',debug,cluster('BrsMainInit')
+	.sect	'.debug_info'
+.L35:
+	.word	166
+	.half	3
+	.word	.L36
+	.byte	4,1
+	.byte	'..\\appl\\Source\\BrsMain.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
+	.word	.L38,.L37
+	.byte	2
+	.word	.L21
+	.byte	3
+	.byte	'BrsMainInit',0,1,130,2,6,1,1,1
+	.word	.L6,.L67,.L5
+	.byte	4
+	.word	.L6,.L67
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('BrsMainInit')
+	.sect	'.debug_abbrev'
+.L36:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('BrsMainInit')
+	.sect	'.debug_line'
+.L37:
+	.word	.L97-.L96
+.L96:
+	.half	3
+	.word	.L99-.L98
+.L98:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\appl\\Source\\BrsMain.c',0,0,0,0,0
+.L99:
+	.byte	5,1,7,0,5,2
+	.word	.L6
+	.byte	3,193,2,1,7,9
+	.half	.L39-.L6
+	.byte	0,1,1
+.L97:
+	.sdecl	'.debug_ranges',debug,cluster('BrsMainInit')
+	.sect	'.debug_ranges'
+.L38:
+	.word	-1,.L6,0,.L39-.L6,0,0
+	.sdecl	'.debug_info',debug,cluster('BrsMainExceptionHandler')
+	.sect	'.debug_info'
+.L40:
+	.word	280
+	.half	3
+	.word	.L41
+	.byte	4,1
+	.byte	'..\\appl\\Source\\BrsMain.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
+	.word	.L43,.L42
+	.byte	2
+	.word	.L21
+	.byte	3
+	.byte	'BrsMainExceptionHandler',0,1,186,7,6,1,1,1
+	.word	.L12,.L68,.L11
+	.byte	4
+	.byte	'ErrorCode',0,1,186,7,36
+	.word	.L69,.L70
+	.byte	4
+	.byte	'ModuleCode',0,1,186,7,53
+	.word	.L69,.L71
+	.byte	4
+	.byte	'LineNumber',0,1,186,7,72
+	.word	.L72,.L73
+	.byte	5
+	.word	.L12,.L68
+	.byte	6
+	.byte	'BrsMain_Continue',0,1,206,7,18
+	.word	.L74,.L75
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('BrsMainExceptionHandler')
+	.sect	'.debug_abbrev'
+.L41:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('BrsMainExceptionHandler')
+	.sect	'.debug_line'
+.L42:
+	.word	.L101-.L100
+.L100:
+	.half	3
+	.word	.L103-.L102
+.L102:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\appl\\Source\\BrsMain.c',0,0,0,0,0
+.L103:
+	.byte	5,6,7,0,5,2
+	.word	.L12
+	.byte	3,185,7,1,5,22,9
+	.half	.L81-.L12
+	.byte	3,21,1,5,20,1,5,23,9
+	.half	.L104-.L81
+	.byte	3,3,1,5,10,9
+	.half	.L2-.L104
+	.byte	3,3,1,5,31,9
+	.half	.L105-.L2
+	.byte	1,5,1,7,9
+	.half	.L106-.L105
+	.byte	3,8,1,7,9
+	.half	.L44-.L106
+	.byte	0,1,1
+.L101:
+	.sdecl	'.debug_ranges',debug,cluster('BrsMainExceptionHandler')
+	.sect	'.debug_ranges'
+.L43:
+	.word	-1,.L12,0,.L44-.L12,0,0
+	.sdecl	'.debug_info',debug,cluster('BrsMainExceptionStartup')
+	.sect	'.debug_info'
+.L45:
+	.word	178
+	.half	3
+	.word	.L46
+	.byte	4,1
+	.byte	'..\\appl\\Source\\BrsMain.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
+	.word	.L48,.L47
+	.byte	2
+	.word	.L21
+	.byte	3
+	.byte	'BrsMainExceptionStartup',0,1,239,7,6,1,1,1
+	.word	.L14,.L76,.L13
+	.byte	4
+	.word	.L14,.L76
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('BrsMainExceptionStartup')
+	.sect	'.debug_abbrev'
+.L46:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('BrsMainExceptionStartup')
+	.sect	'.debug_line'
+.L47:
+	.word	.L108-.L107
+.L107:
+	.half	3
+	.word	.L110-.L109
+.L109:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\appl\\Source\\BrsMain.c',0,0,0,0,0
+.L110:
+	.byte	5,27,7,0,5,2
+	.word	.L14
+	.byte	3,240,7,1,5,56,9
+	.half	.L111-.L14
+	.byte	1,5,84,9
+	.half	.L112-.L111
+	.byte	1,5,1,9
+	.half	.L49-.L112
+	.byte	3,1,0,1,1
+.L108:
+	.sdecl	'.debug_ranges',debug,cluster('BrsMainExceptionStartup')
+	.sect	'.debug_ranges'
+.L48:
+	.word	-1,.L14,0,.L49-.L14,0,0
+	.sdecl	'.debug_info',debug,cluster('main')
+	.sect	'.debug_info'
+.L50:
+	.word	163
+	.half	3
+	.word	.L51
+	.byte	4,1
+	.byte	'..\\appl\\Source\\BrsMain.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
+	.word	.L53,.L52
+	.byte	2
+	.word	.L21
+	.byte	3
+	.byte	'main',0,1,254,7,5
+	.word	.L77
+	.byte	1,1,1
+	.word	.L16,.L78,.L15
+	.byte	4
+	.word	.L16,.L78
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('main')
+	.sect	'.debug_abbrev'
+.L51:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('main')
+	.sect	'.debug_line'
+.L52:
+	.word	.L114-.L113
+.L113:
+	.half	3
+	.word	.L116-.L115
+.L115:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\appl\\Source\\BrsMain.c',0,0,0,0,0
+.L116:
+	.byte	5,33,7,0,5,2
+	.word	.L16
+	.byte	3,132,8,1,5,20,9
+	.half	.L117-.L16
+	.byte	3,3,1,5,3,9
+	.half	.L118-.L117
+	.byte	1,5,16,7,9
+	.half	.L119-.L118
+	.byte	3,4,1,9
+	.half	.L3-.L119
+	.byte	3,8,1,5,10,9
+	.half	.L120-.L3
+	.byte	3,1,1,5,12,9
+	.half	.L121-.L120
+	.byte	3,6,1,5,10,9
+	.half	.L122-.L121
+	.byte	3,4,1,5,1,3,1,1,7,9
+	.half	.L54-.L122
+	.byte	0,1,1
+.L114:
+	.sdecl	'.debug_ranges',debug,cluster('main')
+	.sect	'.debug_ranges'
+.L53:
+	.word	-1,.L16,0,.L54-.L16,0,0
+	.sdecl	'.debug_info',debug,cluster('SchM_Enter_ComM_COMM_EXCLUSIVE_AREA_1')
+	.sect	'.debug_info'
+.L55:
+	.word	192
+	.half	3
+	.word	.L56
+	.byte	4,1
+	.byte	'..\\appl\\Source\\BrsMain.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
+	.word	.L58,.L57
+	.byte	2
+	.word	.L21
+	.byte	3
+	.byte	'SchM_Enter_ComM_COMM_EXCLUSIVE_AREA_1',0,1,170,9,6,1,1,1
+	.word	.L18,.L79,.L17
+	.byte	4
+	.word	.L18,.L79
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('SchM_Enter_ComM_COMM_EXCLUSIVE_AREA_1')
+	.sect	'.debug_abbrev'
+.L56:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('SchM_Enter_ComM_COMM_EXCLUSIVE_AREA_1')
+	.sect	'.debug_line'
+.L57:
+	.word	.L124-.L123
+.L123:
+	.half	3
+	.word	.L126-.L125
+.L125:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\appl\\Source\\BrsMain.c',0,0,0,0,0
+.L126:
+	.byte	5,1,7,0,5,2
+	.word	.L18
+	.byte	3,172,9,1,7,9
+	.half	.L59-.L18
+	.byte	0,1,1
+.L124:
+	.sdecl	'.debug_ranges',debug,cluster('SchM_Enter_ComM_COMM_EXCLUSIVE_AREA_1')
+	.sect	'.debug_ranges'
+.L58:
+	.word	-1,.L18,0,.L59-.L18,0,0
+	.sdecl	'.debug_info',debug,cluster('SchM_Exit_ComM_COMM_EXCLUSIVE_AREA_1')
+	.sect	'.debug_info'
+.L60:
+	.word	191
+	.half	3
+	.word	.L61
+	.byte	4,1
+	.byte	'..\\appl\\Source\\BrsMain.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
+	.word	.L63,.L62
+	.byte	2
+	.word	.L21
+	.byte	3
+	.byte	'SchM_Exit_ComM_COMM_EXCLUSIVE_AREA_1',0,1,175,9,6,1,1,1
+	.word	.L20,.L80,.L19
+	.byte	4
+	.word	.L20,.L80
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('SchM_Exit_ComM_COMM_EXCLUSIVE_AREA_1')
+	.sect	'.debug_abbrev'
+.L61:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('SchM_Exit_ComM_COMM_EXCLUSIVE_AREA_1')
+	.sect	'.debug_line'
+.L62:
+	.word	.L128-.L127
+.L127:
+	.half	3
+	.word	.L130-.L129
+.L129:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\appl\\Source\\BrsMain.c',0,0,0,0,0
+.L130:
+	.byte	5,1,7,0,5,2
+	.word	.L20
+	.byte	3,177,9,1,7,9
+	.half	.L64-.L20
+	.byte	0,1,1
+.L128:
+	.sdecl	'.debug_ranges',debug,cluster('SchM_Exit_ComM_COMM_EXCLUSIVE_AREA_1')
+	.sect	'.debug_ranges'
+.L63:
+	.word	-1,.L20,0,.L64-.L20,0,0
+	.sdecl	'.debug_loc',debug,cluster('BrsMainExceptionHandler')
+	.sect	'.debug_loc'
+.L11:
+	.word	-1,.L12,0,.L81-.L12
+	.half	2
+	.byte	138,0
+	.word	.L81-.L12,.L68-.L12
+	.half	2
+	.byte	138,8
+	.word	.L68-.L12,.L68-.L12
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L75:
+	.word	-1,.L12,0,.L68-.L12
+	.half	2
+	.byte	145,120
+	.word	0,0
+.L70:
+	.word	-1,.L12,0,.L2-.L12
+	.half	1
+	.byte	84
+	.word	0,0
+.L73:
+	.word	-1,.L12,0,.L2-.L12
+	.half	1
+	.byte	86
+	.word	0,0
+.L71:
+	.word	-1,.L12,0,.L2-.L12
+	.half	1
+	.byte	85
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('BrsMainExceptionStartup')
+	.sect	'.debug_loc'
+.L13:
+	.word	-1,.L14,0,.L76-.L14
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('BrsMainInit')
+	.sect	'.debug_loc'
+.L5:
+	.word	-1,.L6,0,.L67-.L6
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Os_Task_Default_Init_Task')
+	.sect	'.debug_loc'
+.L7:
+	.word	-1,.L8,0,.L65-.L8
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Os_Task_Default_Init_Task_Trusted')
+	.sect	'.debug_loc'
+.L9:
+	.word	-1,.L10,0,.L66-.L10
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('SchM_Enter_ComM_COMM_EXCLUSIVE_AREA_1')
+	.sect	'.debug_loc'
+.L17:
+	.word	-1,.L18,0,.L79-.L18
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('SchM_Exit_ComM_COMM_EXCLUSIVE_AREA_1')
+	.sect	'.debug_loc'
+.L19:
+	.word	-1,.L20,0,.L80-.L20
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('main')
+	.sect	'.debug_loc'
+.L15:
+	.word	-1,.L16,0,.L78-.L16
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L131:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,27,8,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('BrsMainInit')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L131,.L6,.L67-.L6
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('Os_Task_Default_Init_Task')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L131,.L8,.L65-.L8
+	.sdecl	'.debug_frame',debug,cluster('Os_Task_Default_Init_Task_Trusted')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L131,.L10,.L66-.L10
+	.sdecl	'.debug_frame',debug,cluster('BrsMainExceptionHandler')
+	.sect	'.debug_frame'
+	.word	36
+	.word	.L131,.L12,.L68-.L12
+	.byte	4
+	.word	(.L81-.L12)/2
+	.byte	19,8,22,26,3,19,138,8,4
+	.word	(.L68-.L81)/2
+	.byte	19,0,8,26,0,0
+	.sdecl	'.debug_frame',debug,cluster('BrsMainExceptionStartup')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L131,.L14,.L76-.L14
+	.sdecl	'.debug_frame',debug,cluster('main')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L131,.L16,.L78-.L16
+	.sdecl	'.debug_frame',debug,cluster('SchM_Enter_ComM_COMM_EXCLUSIVE_AREA_1')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L131,.L18,.L79-.L18
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('SchM_Exit_ComM_COMM_EXCLUSIVE_AREA_1')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L131,.L20,.L80-.L20
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+
+; ..\appl\Source\BrsMain.c	  1203  # if defined (BRS_ENABLE_FBL_SUPPORT)
+; ..\appl\Source\BrsMain.c	  1204    #define BRS_STOP_SEC_RAM_CODE
+; ..\appl\Source\BrsMain.c	  1205    #include "Brs_MemMap.h"
+; ..\appl\Source\BrsMain.c	  1206  # endif
+
+	; Module end

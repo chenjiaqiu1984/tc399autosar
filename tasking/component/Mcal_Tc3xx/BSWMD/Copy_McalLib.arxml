@@ -1,0 +1,712 @@
+<?xml version='1.0'?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00046.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="ECUC:AUTOSAR">
+      <SHORT-NAME>AURIX2G</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE UUID="ECUC:ECUCDEFS">
+          <SHORT-NAME>EcucDefs</SHORT-NAME>
+          <ELEMENTS>
+            <ECUC-MODULE-DEF UUID="13aa2440-e790-4121-9e12-3a380efb0d6b">
+              <SHORT-NAME>McalLib</SHORT-NAME>
+              <DESC>
+                <L-2 L="EN">Published information of Mcal Library.</L-2>
+              </DESC>
+              <ADMIN-DATA>
+                <DOC-REVISIONS>
+                  <DOC-REVISION>
+                    <REVISION-LABEL>4.4.0</REVISION-LABEL>
+                    <ISSUED-BY>AUTOSAR</ISSUED-BY>
+                    <DATE>2020-02-28</DATE>
+                  </DOC-REVISION>
+                </DOC-REVISIONS>
+              </ADMIN-DATA>
+              <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+              <SUPPORTED-CONFIG-VARIANTS>
+                <SUPPORTED-CONFIG-VARIANT>VARIANT-PRE-COMPILE</SUPPORTED-CONFIG-VARIANT>
+              </SUPPORTED-CONFIG-VARIANTS>
+              <CONTAINERS>
+                <ECUC-PARAM-CONF-CONTAINER-DEF UUID="dcc39b88-cc2b-4358-ba88-30120722c6ca">
+                  <SHORT-NAME>McalLibPublishedInformation</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">This is the general container that contains the pre-build configuration parameters</L-2>
+                  </DESC>
+                  <PARAMETERS>
+                    <ECUC-INTEGER-PARAM-DEF UUID="bd0a8d38-4d8c-4ee9-3333-1166b258bcca">
+                      <SHORT-NAME>McalLibMcalAvailableCores</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Mentions the number of cores available on the current variant of Aurix2G HW.</L-2>
+                      </DESC>
+                      <ORIGIN>INFINEON_AURIX2G</ORIGIN>
+                      <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                      <VALUE-CONFIG-CLASSES>
+                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PUBLISHED-INFORMATION</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                      </VALUE-CONFIG-CLASSES>
+                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                      <DEFAULT-VALUE>6</DEFAULT-VALUE>
+                      <MAX>6</MAX>
+                      <MIN>6</MIN>
+                    </ECUC-INTEGER-PARAM-DEF>
+                    <ECUC-INTEGER-PARAM-DEF UUID="bd0a8d38-4d8c-4ee9-3333-1166b358bcca">
+                      <SHORT-NAME>McalLibDsprCore0StartAddr</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Mentions the DSPR start address for Core 0 of the current variant of Aurix2G HW.</L-2>
+                      </DESC>
+                      <ORIGIN>INFINEON_AURIX2G</ORIGIN>
+                      <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                      <VALUE-CONFIG-CLASSES>
+                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PUBLISHED-INFORMATION</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                      </VALUE-CONFIG-CLASSES>
+                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                      <DEFAULT-VALUE>1879048192</DEFAULT-VALUE>
+                      <MAX>1879048192</MAX>
+                      <MIN>1879048192</MIN>
+                    </ECUC-INTEGER-PARAM-DEF>
+                    <ECUC-INTEGER-PARAM-DEF UUID="bd0a8d38-4d8c-4ee9-3333-1166b458bcca">
+                      <SHORT-NAME>McalLibDsprCore0EndAddr</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Mentions the DSPR end address for Core 0 of the current variant of Aurix2G HW.</L-2>
+                      </DESC>
+                      <ORIGIN>INFINEON_AURIX2G</ORIGIN>
+                      <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                      <VALUE-CONFIG-CLASSES>
+                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PUBLISHED-INFORMATION</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                      </VALUE-CONFIG-CLASSES>
+                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                      <DEFAULT-VALUE>1879293951</DEFAULT-VALUE>
+                      <MAX>1879293951</MAX>
+                      <MIN>1879293951</MIN>
+                    </ECUC-INTEGER-PARAM-DEF>
+                    <ECUC-INTEGER-PARAM-DEF UUID="bd0a8d38-4d8c-4ee9-3333-1166b558bcca">
+                      <SHORT-NAME>McalLibDsprCore1StartAddr</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Mentions the DSPR start address for Core 1 of the current variant of Aurix2G HW.</L-2>
+                      </DESC>
+                      <ORIGIN>INFINEON_AURIX2G</ORIGIN>
+                      <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                      <VALUE-CONFIG-CLASSES>
+                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PUBLISHED-INFORMATION</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                      </VALUE-CONFIG-CLASSES>
+                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                      <DEFAULT-VALUE>1610612736</DEFAULT-VALUE>
+                      <MAX>1610612736</MAX>
+                      <MIN>1610612736</MIN>
+                    </ECUC-INTEGER-PARAM-DEF>
+                    <ECUC-INTEGER-PARAM-DEF UUID="bd0a8d38-4d8c-4ee9-3333-1166b658bcca">
+                      <SHORT-NAME>McalLibDsprCore1EndAddr</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Mentions the DSPR end address for Core 1 of the current variant of Aurix2G HW.</L-2>
+                      </DESC>
+                      <ORIGIN>INFINEON_AURIX2G</ORIGIN>
+                      <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                      <VALUE-CONFIG-CLASSES>
+                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PUBLISHED-INFORMATION</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                      </VALUE-CONFIG-CLASSES>
+                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                      <DEFAULT-VALUE>1610858495</DEFAULT-VALUE>
+                      <MAX>1610858495</MAX>
+                      <MIN>1610858495</MIN>
+                    </ECUC-INTEGER-PARAM-DEF>
+                    <ECUC-INTEGER-PARAM-DEF UUID="bd0a8d38-4d8c-4ee9-3333-1166b758bcca">
+                      <SHORT-NAME>McalLibDsprCore2StartAddr</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Mentions the DSPR start address for Core 2 of the current variant of Aurix2G HW.</L-2>
+                      </DESC>
+                      <ORIGIN>INFINEON_AURIX2G</ORIGIN>
+                      <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                      <VALUE-CONFIG-CLASSES>
+                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PUBLISHED-INFORMATION</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                      </VALUE-CONFIG-CLASSES>
+                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                      <DEFAULT-VALUE>1342177280</DEFAULT-VALUE>
+                      <MAX>1342177280</MAX>
+                      <MIN>1342177280</MIN>
+                    </ECUC-INTEGER-PARAM-DEF>
+                    <ECUC-INTEGER-PARAM-DEF UUID="bd0a8d38-4d8c-4ee9-3333-1166b858bcca">
+                      <SHORT-NAME>McalLibDsprCore2EndAddr</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Mentions the DSPR end address for Core 2 of the current variant of Aurix2G HW.</L-2>
+                      </DESC>
+                      <ORIGIN>INFINEON_AURIX2G</ORIGIN>
+                      <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                      <VALUE-CONFIG-CLASSES>
+                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PUBLISHED-INFORMATION</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                      </VALUE-CONFIG-CLASSES>
+                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                      <DEFAULT-VALUE>1342275583</DEFAULT-VALUE>
+                      <MAX>1342275583</MAX>
+                      <MIN>1342275583</MIN>
+                    </ECUC-INTEGER-PARAM-DEF>
+                    <ECUC-INTEGER-PARAM-DEF UUID="bd0a8d38-4d8c-4ee9-3333-1166b958bcca">
+                      <SHORT-NAME>McalLibDsprCore3StartAddr</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Mentions the DSPR start address for Core 3 of the current variant of Aurix2G HW.</L-2>
+                      </DESC>
+                      <ORIGIN>INFINEON_AURIX2G</ORIGIN>
+                      <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                      <VALUE-CONFIG-CLASSES>
+                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PUBLISHED-INFORMATION</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                      </VALUE-CONFIG-CLASSES>
+                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                      <DEFAULT-VALUE>1073741824</DEFAULT-VALUE>
+                      <MAX>1073741824</MAX>
+                      <MIN>1073741824</MIN>
+                    </ECUC-INTEGER-PARAM-DEF>
+                    <ECUC-INTEGER-PARAM-DEF UUID="bd0a8d38-4d8c-4ee9-3333-1166b268bcca">
+                      <SHORT-NAME>McalLibDsprCore3EndAddr</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Mentions the DSPR end address for Core 3 of the current variant of Aurix2G HW.</L-2>
+                      </DESC>
+                      <ORIGIN>INFINEON_AURIX2G</ORIGIN>
+                      <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                      <VALUE-CONFIG-CLASSES>
+                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PUBLISHED-INFORMATION</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                      </VALUE-CONFIG-CLASSES>
+                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                      <DEFAULT-VALUE>1073840127</DEFAULT-VALUE>
+                      <MAX>1073840127</MAX>
+                      <MIN>1073840127</MIN>
+                    </ECUC-INTEGER-PARAM-DEF>
+                    <ECUC-INTEGER-PARAM-DEF UUID="bd0a8d38-4d8c-4ee9-3333-1166b278bcca">
+                      <SHORT-NAME>McalLibDsprCore4StartAddr</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Mentions the DSPR start address for Core 4 of the current variant of Aurix2G HW.</L-2>
+                      </DESC>
+                      <ORIGIN>INFINEON_AURIX2G</ORIGIN>
+                      <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                      <VALUE-CONFIG-CLASSES>
+                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PUBLISHED-INFORMATION</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                      </VALUE-CONFIG-CLASSES>
+                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                      <DEFAULT-VALUE>805306368</DEFAULT-VALUE>
+                      <MAX>805306368</MAX>
+                      <MIN>805306368</MIN>
+                    </ECUC-INTEGER-PARAM-DEF>
+                    <ECUC-INTEGER-PARAM-DEF UUID="bd0a8d38-4d8c-4ee9-3333-1166b288bcca">
+                      <SHORT-NAME>McalLibDsprCore4EndAddr</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Mentions the DSPR end address for Core 4 of the current variant of Aurix2G HW.</L-2>
+                      </DESC>
+                      <ORIGIN>INFINEON_AURIX2G</ORIGIN>
+                      <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                      <VALUE-CONFIG-CLASSES>
+                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PUBLISHED-INFORMATION</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                      </VALUE-CONFIG-CLASSES>
+                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                      <DEFAULT-VALUE>805404671</DEFAULT-VALUE>
+                      <MAX>805404671</MAX>
+                      <MIN>805404671</MIN>
+                    </ECUC-INTEGER-PARAM-DEF>
+                    <ECUC-INTEGER-PARAM-DEF UUID="bd0a8d38-4d8c-4ee9-3333-1166b298bcca">
+                      <SHORT-NAME>McalLibDsprCore5StartAddr</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Mentions the DSPR start address for Core 5 of the current variant of Aurix2G HW.</L-2>
+                      </DESC>
+                      <ORIGIN>INFINEON_AURIX2G</ORIGIN>
+                      <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                      <VALUE-CONFIG-CLASSES>
+                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PUBLISHED-INFORMATION</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                      </VALUE-CONFIG-CLASSES>
+                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                      <DEFAULT-VALUE>268435456</DEFAULT-VALUE>
+                      <MAX>268435456</MAX>
+                      <MIN>268435456</MIN>
+                    </ECUC-INTEGER-PARAM-DEF>
+                    <ECUC-INTEGER-PARAM-DEF UUID="bd0a8d38-4d8c-4ee9-3333-1166b259bcca">
+                      <SHORT-NAME>McalLibDsprCore5EndAddr</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Mentions the DSPR end address for Core 5 of the current variant of Aurix2G HW.</L-2>
+                      </DESC>
+                      <ORIGIN>INFINEON_AURIX2G</ORIGIN>
+                      <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                      <VALUE-CONFIG-CLASSES>
+                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PUBLISHED-INFORMATION</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                      </VALUE-CONFIG-CLASSES>
+                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                      <DEFAULT-VALUE>268533759</DEFAULT-VALUE>
+                      <MAX>268533759</MAX>
+                      <MIN>268533759</MIN>
+                    </ECUC-INTEGER-PARAM-DEF>
+                    <ECUC-INTEGER-PARAM-DEF UUID="bd0a8d38-4d8c-4ee9-3333-1167b258bcca">
+                      <SHORT-NAME>McalLibPsprCore0StartAddr</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Mentions the PSPR start address for Core 0 of the current variant of Aurix2G HW.</L-2>
+                      </DESC>
+                      <ORIGIN>INFINEON_AURIX2G</ORIGIN>
+                      <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                      <VALUE-CONFIG-CLASSES>
+                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PUBLISHED-INFORMATION</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                      </VALUE-CONFIG-CLASSES>
+                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                      <DEFAULT-VALUE>1880096768</DEFAULT-VALUE>
+                      <MAX>1880096768</MAX>
+                      <MIN>1880096768</MIN>
+                    </ECUC-INTEGER-PARAM-DEF>
+                    <ECUC-INTEGER-PARAM-DEF UUID="bd0a8d38-4d8c-4ee9-3333-1168b258bcca">
+                      <SHORT-NAME>McalLibPsprCore0EndAddr</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Mentions the PSPR end address for Core 0 of the current variant of Aurix2G HW.</L-2>
+                      </DESC>
+                      <ORIGIN>INFINEON_AURIX2G</ORIGIN>
+                      <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                      <VALUE-CONFIG-CLASSES>
+                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PUBLISHED-INFORMATION</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                      </VALUE-CONFIG-CLASSES>
+                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                      <DEFAULT-VALUE>1880162303</DEFAULT-VALUE>
+                      <MAX>1880162303</MAX>
+                      <MIN>1880162303</MIN>
+                    </ECUC-INTEGER-PARAM-DEF>
+                    <ECUC-INTEGER-PARAM-DEF UUID="bd0a8d38-4d8c-4ee9-3333-1169b258bcca">
+                      <SHORT-NAME>McalLibPsprCore1StartAddr</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Mentions the PSPR start address for Core 1 of the current variant of Aurix2G HW.</L-2>
+                      </DESC>
+                      <ORIGIN>INFINEON_AURIX2G</ORIGIN>
+                      <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                      <VALUE-CONFIG-CLASSES>
+                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PUBLISHED-INFORMATION</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                      </VALUE-CONFIG-CLASSES>
+                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                      <DEFAULT-VALUE>1611661312</DEFAULT-VALUE>
+                      <MAX>1611661312</MAX>
+                      <MIN>1611661312</MIN>
+                    </ECUC-INTEGER-PARAM-DEF>
+                    <ECUC-INTEGER-PARAM-DEF UUID="bd0a8d38-4d8c-4ee9-3333-1176b258bcca">
+                      <SHORT-NAME>McalLibPsprCore1EndAddr</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Mentions the PSPR end address for Core 1 of the current variant of Aurix2G HW.</L-2>
+                      </DESC>
+                      <ORIGIN>INFINEON_AURIX2G</ORIGIN>
+                      <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                      <VALUE-CONFIG-CLASSES>
+                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PUBLISHED-INFORMATION</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                      </VALUE-CONFIG-CLASSES>
+                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                      <DEFAULT-VALUE>1611726847</DEFAULT-VALUE>
+                      <MAX>1611726847</MAX>
+                      <MIN>1611726847</MIN>
+                    </ECUC-INTEGER-PARAM-DEF>
+                    <ECUC-INTEGER-PARAM-DEF UUID="bd0a8d38-4d8c-4ee9-3333-1186b258bcca">
+                      <SHORT-NAME>McalLibPsprCore2StartAddr</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Mentions the PSPR start address for Core 2 of the current variant of Aurix2G HW.</L-2>
+                      </DESC>
+                      <ORIGIN>INFINEON_AURIX2G</ORIGIN>
+                      <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                      <VALUE-CONFIG-CLASSES>
+                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PUBLISHED-INFORMATION</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                      </VALUE-CONFIG-CLASSES>
+                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                      <DEFAULT-VALUE>1343225856</DEFAULT-VALUE>
+                      <MAX>1343225856</MAX>
+                      <MIN>1343225856</MIN>
+                    </ECUC-INTEGER-PARAM-DEF>
+                    <ECUC-INTEGER-PARAM-DEF UUID="bd0a8d38-4d8c-4ee9-3333-1196b258bcca">
+                      <SHORT-NAME>McalLibPsprCore2EndAddr</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Mentions the PSPR end address for Core 2 of the current variant of Aurix2G HW.</L-2>
+                      </DESC>
+                      <ORIGIN>INFINEON_AURIX2G</ORIGIN>
+                      <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                      <VALUE-CONFIG-CLASSES>
+                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PUBLISHED-INFORMATION</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                      </VALUE-CONFIG-CLASSES>
+                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                      <DEFAULT-VALUE>1343291391</DEFAULT-VALUE>
+                      <MAX>1343291391</MAX>
+                      <MIN>1343291391</MIN>
+                    </ECUC-INTEGER-PARAM-DEF>
+                    <ECUC-INTEGER-PARAM-DEF UUID="bd0a8d38-4d8c-4ee9-3333-1266b258bcca">
+                      <SHORT-NAME>McalLibPsprCore3StartAddr</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Mentions the PSPR start address for Core 3 of the current variant of Aurix2G HW.</L-2>
+                      </DESC>
+                      <ORIGIN>INFINEON_AURIX2G</ORIGIN>
+                      <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                      <VALUE-CONFIG-CLASSES>
+                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PUBLISHED-INFORMATION</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                      </VALUE-CONFIG-CLASSES>
+                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                      <DEFAULT-VALUE>1074790400</DEFAULT-VALUE>
+                      <MAX>1074790400</MAX>
+                      <MIN>1074790400</MIN>
+                    </ECUC-INTEGER-PARAM-DEF>
+                    <ECUC-INTEGER-PARAM-DEF UUID="bd0a8d38-4d8c-4ee9-3333-1366b258bcca">
+                      <SHORT-NAME>McalLibPsprCore3EndAddr</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Mentions the PSPR end address for Core 3 of the current variant of Aurix2G HW.</L-2>
+                      </DESC>
+                      <ORIGIN>INFINEON_AURIX2G</ORIGIN>
+                      <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                      <VALUE-CONFIG-CLASSES>
+                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PUBLISHED-INFORMATION</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                      </VALUE-CONFIG-CLASSES>
+                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                      <DEFAULT-VALUE>1074855935</DEFAULT-VALUE>
+                      <MAX>1074855935</MAX>
+                      <MIN>1074855935</MIN>
+                    </ECUC-INTEGER-PARAM-DEF>
+                    <ECUC-INTEGER-PARAM-DEF UUID="bd0a8d38-4d8c-4ee9-3333-1466b258bcca">
+                      <SHORT-NAME>McalLibPsprCore4StartAddr</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Mentions the PSPR start address for Core 4 of the current variant of Aurix2G HW.</L-2>
+                      </DESC>
+                      <ORIGIN>INFINEON_AURIX2G</ORIGIN>
+                      <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                      <VALUE-CONFIG-CLASSES>
+                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PUBLISHED-INFORMATION</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                      </VALUE-CONFIG-CLASSES>
+                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                      <DEFAULT-VALUE>806354944</DEFAULT-VALUE>
+                      <MAX>806354944</MAX>
+                      <MIN>806354944</MIN>
+                    </ECUC-INTEGER-PARAM-DEF>
+                    <ECUC-INTEGER-PARAM-DEF UUID="bd0a8d38-4d8c-4ee9-3333-1566b258bcca">
+                      <SHORT-NAME>McalLibPsprCore4EndAddr</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Mentions the PSPR end address for Core 4 of the current variant of Aurix2G HW.</L-2>
+                      </DESC>
+                      <ORIGIN>INFINEON_AURIX2G</ORIGIN>
+                      <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                      <VALUE-CONFIG-CLASSES>
+                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PUBLISHED-INFORMATION</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                      </VALUE-CONFIG-CLASSES>
+                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                      <DEFAULT-VALUE>806420479</DEFAULT-VALUE>
+                      <MAX>806420479</MAX>
+                      <MIN>806420479</MIN>
+                    </ECUC-INTEGER-PARAM-DEF>
+                    <ECUC-INTEGER-PARAM-DEF UUID="bd0a8d38-4d8c-4ee9-3333-1666b258bcca">
+                      <SHORT-NAME>McalLibPsprCore5StartAddr</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Mentions the PSPR start address for Core 5 of the current variant of Aurix2G HW.</L-2>
+                      </DESC>
+                      <ORIGIN>INFINEON_AURIX2G</ORIGIN>
+                      <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                      <VALUE-CONFIG-CLASSES>
+                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PUBLISHED-INFORMATION</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                      </VALUE-CONFIG-CLASSES>
+                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                      <DEFAULT-VALUE>269484032</DEFAULT-VALUE>
+                      <MAX>269484032</MAX>
+                      <MIN>269484032</MIN>
+                    </ECUC-INTEGER-PARAM-DEF>
+                    <ECUC-INTEGER-PARAM-DEF UUID="bd0a8d38-4d8c-4ee9-3333-1766b258bcca">
+                      <SHORT-NAME>McalLibPsprCore5EndAddr</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Mentions the PSPR end address for Core 5 of the current variant of Aurix2G HW.</L-2>
+                      </DESC>
+                      <ORIGIN>INFINEON_AURIX2G</ORIGIN>
+                      <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                      <VALUE-CONFIG-CLASSES>
+                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PUBLISHED-INFORMATION</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                      </VALUE-CONFIG-CLASSES>
+                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                      <DEFAULT-VALUE>269549567</DEFAULT-VALUE>
+                      <MAX>269549567</MAX>
+                      <MIN>269549567</MIN>
+                    </ECUC-INTEGER-PARAM-DEF>
+                    <ECUC-INTEGER-PARAM-DEF UUID="bd0a8d38-4d8c-4ee9-3333-1866b258bcca">
+                      <SHORT-NAME>McalLibBackUpClockFreq</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Mentions the backup clock frequency of the current variant of Aurix2G HW.</L-2>
+                      </DESC>
+                      <ORIGIN>INFINEON_AURIX2G</ORIGIN>
+                      <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                      <VALUE-CONFIG-CLASSES>
+                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PUBLISHED-INFORMATION</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                      </VALUE-CONFIG-CLASSES>
+                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                      <DEFAULT-VALUE>100</DEFAULT-VALUE>
+                      <MAX>100</MAX>
+                      <MIN>100</MIN>
+                    </ECUC-INTEGER-PARAM-DEF>
+                  </PARAMETERS>
+                </ECUC-PARAM-CONF-CONTAINER-DEF>
+                <ECUC-PARAM-CONF-CONTAINER-DEF UUID="492f8482-3e2c-4bf1-b27f-01fd7ac35cc8">
+                  <SHORT-NAME>CommonPublishedInformation</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">This container contains the published information of the Mcal Library.</L-2>
+                  </DESC>
+                  <PARAMETERS>
+                    <ECUC-INTEGER-PARAM-DEF UUID="bd0a8d38-4d8c-4ee9-3333-1166b358b887">
+                      <SHORT-NAME>ArMajorVersion</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Major version number of AUTOSAR specification on which the appropriate implementation is based on.</L-2>
+                      </DESC>
+                      <ORIGIN>INFINEON_AURIX2G</ORIGIN>
+                      <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                      <VALUE-CONFIG-CLASSES>
+                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PUBLISHED-INFORMATION</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                      </VALUE-CONFIG-CLASSES>
+                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                      <DEFAULT-VALUE>4</DEFAULT-VALUE>
+                      <MAX>255</MAX>
+                      <MIN>0</MIN>
+                    </ECUC-INTEGER-PARAM-DEF>
+                    <ECUC-INTEGER-PARAM-DEF UUID="73f87c7f-e230-4178-3333-ea2704aaecc6">
+                      <SHORT-NAME>ArMinorVersion</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Minor version number of AUTOSAR specification on which the appropriate implementation is based on.</L-2>
+                      </DESC>
+                      <ORIGIN>INFINEON_AURIX2G</ORIGIN>
+                      <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                      <VALUE-CONFIG-CLASSES>
+                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PUBLISHED-INFORMATION</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                      </VALUE-CONFIG-CLASSES>
+                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                      <DEFAULT-VALUE>4</DEFAULT-VALUE>
+                      <MAX>255</MAX>
+                      <MIN>0</MIN>
+                    </ECUC-INTEGER-PARAM-DEF>
+                    <ECUC-INTEGER-PARAM-DEF UUID="2380135d-6778-417a-3333-e100aad4cc54">
+                      <SHORT-NAME>ArPatchVersion</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Revision version number of AUTOSAR specification on which the appropriate implementation is based on.</L-2>
+                      </DESC>
+                      <ORIGIN>INFINEON_AURIX2G</ORIGIN>
+                      <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                      <VALUE-CONFIG-CLASSES>
+                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PUBLISHED-INFORMATION</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                      </VALUE-CONFIG-CLASSES>
+                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                      <DEFAULT-VALUE>0</DEFAULT-VALUE>
+                      <MAX>255</MAX>
+                      <MIN>0</MIN>
+                    </ECUC-INTEGER-PARAM-DEF>
+                    <ECUC-INTEGER-PARAM-DEF UUID="fca015e3-5f28-4cbe-3333-8fab87d8cc27">
+                      <SHORT-NAME>SwMajorVersion</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Major version number of the vendor specific implementation of the module. The numbering is vendor specific.</L-2>
+                      </DESC>
+                      <ORIGIN>INFINEON_AURIX2G</ORIGIN>
+                      <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                      <VALUE-CONFIG-CLASSES>
+                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PUBLISHED-INFORMATION</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                      </VALUE-CONFIG-CLASSES>
+                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                      <DEFAULT-VALUE>20</DEFAULT-VALUE>
+                      <MAX>255</MAX>
+                      <MIN>0</MIN>
+                    </ECUC-INTEGER-PARAM-DEF>
+                    <ECUC-INTEGER-PARAM-DEF UUID="14ab81e0-3d80-43dc-3333-2a7e5a54ccf9">
+                      <SHORT-NAME>SwMinorVersion</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Minor version number of the vendor specific implementation of the module. The numbering is vendor specific.</L-2>
+                      </DESC>
+                      <ORIGIN>INFINEON_AURIX2G</ORIGIN>
+                      <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                      <VALUE-CONFIG-CLASSES>
+                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PUBLISHED-INFORMATION</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                      </VALUE-CONFIG-CLASSES>
+                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                      <DEFAULT-VALUE>25</DEFAULT-VALUE>
+                      <MAX>255</MAX>
+                      <MIN>0</MIN>
+                    </ECUC-INTEGER-PARAM-DEF>
+                    <ECUC-INTEGER-PARAM-DEF UUID="32e37bfd-18b6-41d1-3333-a81dae0cc4c5">
+                      <SHORT-NAME>SwPatchVersion</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Patch level version number of the vendor specific implementation of the module. The numbering is vendor specific.</L-2>
+                      </DESC>
+                      <ORIGIN>INFINEON_AURIX2G</ORIGIN>
+                      <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                      <VALUE-CONFIG-CLASSES>
+                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PUBLISHED-INFORMATION</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                      </VALUE-CONFIG-CLASSES>
+                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                      <DEFAULT-VALUE>0</DEFAULT-VALUE>
+                      <MAX>255</MAX>
+                      <MIN>0</MIN>
+                    </ECUC-INTEGER-PARAM-DEF>
+                    <ECUC-INTEGER-PARAM-DEF UUID="3b407478-6902-4f80-3333-f33b08cce638">
+                      <SHORT-NAME>ModuleId</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Module ID of this module from Module List</L-2>
+                      </DESC>
+                      <ORIGIN>INFINEON_AURIX2G</ORIGIN>
+                      <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                      <VALUE-CONFIG-CLASSES>
+                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PUBLISHED-INFORMATION</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                      </VALUE-CONFIG-CLASSES>
+                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                      <DEFAULT-VALUE>255</DEFAULT-VALUE>
+                      <MAX>65535</MAX>
+                      <MIN>0</MIN>
+                    </ECUC-INTEGER-PARAM-DEF>
+                    <ECUC-INTEGER-PARAM-DEF UUID="7d650b2d-4adb-41f0-3333-5f0c41cc01d1">
+                      <SHORT-NAME>VendorId</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Vendor ID of the dedicated implementation of this module according to the AUTOSAR vendor list</L-2>
+                      </DESC>
+                      <ORIGIN>INFINEON_AURIX2G</ORIGIN>
+                      <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                      <VALUE-CONFIG-CLASSES>
+                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PUBLISHED-INFORMATION</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                      </VALUE-CONFIG-CLASSES>
+                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                      <DEFAULT-VALUE>17</DEFAULT-VALUE>
+                      <MAX>65535</MAX>
+                      <MIN>0</MIN>
+                    </ECUC-INTEGER-PARAM-DEF>
+                    <ECUC-STRING-PARAM-DEF UUID="3b407478-6902-4f40-b7cf-f33b0854e638">
+                      <SHORT-NAME>Release</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Aurix2G derivative used for the implementation</L-2>
+                      </DESC>
+                      <ORIGIN>INFINEON_AURIX2G</ORIGIN>
+                      <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                      <VALUE-CONFIG-CLASSES>
+                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PUBLISHED-INFORMATION</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                      </VALUE-CONFIG-CLASSES>
+                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                      <ECUC-STRING-PARAM-DEF-VARIANTS>
+                        <ECUC-STRING-PARAM-DEF-CONDITIONAL>
+                          <DEFAULT-VALUE>_TRICORE_TC399</DEFAULT-VALUE>
+                        </ECUC-STRING-PARAM-DEF-CONDITIONAL>
+                      </ECUC-STRING-PARAM-DEF-VARIANTS>
+                    </ECUC-STRING-PARAM-DEF>
+                  </PARAMETERS>
+                </ECUC-PARAM-CONF-CONTAINER-DEF>
+                <ECUC-PARAM-CONF-CONTAINER-DEF UUID="ECUC:9d811d70-8cc9-4c5c-bb07-fc5de786d2ec">
+                  <SHORT-NAME>McalLibGeneral</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">Module wide configuration parameters of the McalLib driver.</L-2>
+                  </DESC>
+                  <PARAMETERS>
+                    <ECUC-BOOLEAN-PARAM-DEF UUID="ECUC:412da385-6bf4-4819-87e4-8ec223fb5b17">
+                      <SHORT-NAME>McalLibSafetyEnable</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Enable/Disable the Safety check and all associated notifications.</L-2>
+                      </DESC>
+                      <SCOPE>LOCAL</SCOPE>
+                      <ORIGIN>INFINEON_AURIX2G</ORIGIN>
+                      <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                      <VALUE-CONFIG-CLASSES>
+                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                      </VALUE-CONFIG-CLASSES>
+                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                      <DEFAULT-VALUE>true</DEFAULT-VALUE>
+                    </ECUC-BOOLEAN-PARAM-DEF>
+                  </PARAMETERS>
+                </ECUC-PARAM-CONF-CONTAINER-DEF>
+              </CONTAINERS>
+            </ECUC-MODULE-DEF>
+          </ELEMENTS>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

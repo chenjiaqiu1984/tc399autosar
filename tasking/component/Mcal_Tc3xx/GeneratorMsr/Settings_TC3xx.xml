@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+=================================================================================
+
+Copyright (c) 2021 by Vector Informatik GmbH. All rights reserved.
+
+This software is copyright protected and proprietary to Vector Informatik GmbH.
+Vector Informatik GmbH grants to you only those rights as set out in the license
+conditions.
+All other rights remain with Vector Informatik GmbH.
+
+=================================================================================
+
+This file is needed for internal use.
+Please do not modify this file, otherwise the software may behave in
+unexpected way.
+
+=================================================================================
+
+=================================================================================
+                P R O J E C T
+=================================================================================
+Module
+==========================
+Tc3xxInf01Asr4Sub
+=================================================================================
+                R E V I S I O N   H I S T O R Y
+=================================================================================
+Date		Ver		  Author	Description
+=========	=======   ======	=================================================
+2018-03-05	1.00.00	  virgaj	Initial revision
+2018-03-15	1.00.01	  virgaj	Added Irq
+2018-04-24	1.00.02	  virgaj	Added Fee into InitFunctions_Settings.xml
+2018-04-25	1.00.03	  virgaj	Corrected Irq list of referenced module 
+			1.00.04	  virgaj	Corrected Irq list of referenced module - yes, once again! 
+2018-04-26	1.00.05	  virrsu	Fixed ESCAN00099228: Mcu generation fails allocating GTM channel for Adc 
+2018-06-15	1.00.06	  virgaj	InitFunction_Settings.xml - Splitted into two files
+								dependending on CFG5 Release
+2018-07-02	1.00.07	  virgaj	InitFunction_Settings.xml - Corrected ModuleRef
+2018-07-02	1.00.08	  virgaj	InitFunction_Settings.xml - Corrected ModuleRef Mcu
+2018-07-24  1.01.00   virgki    Dependencies to the Spi_Aurix module has been added.
+2018-08-21  1.01.02   virgki    Add few exclusive areas in DMA, SPI, WDG and change the initialization config poiter for Spi init.
+2018-10-22  1.02.00   virgki    Integrate the latest Package. 
+                                MC-ISAR_AS42x_AURIX2G_TC38xA_TC39xB_BASIC_1.0.0-rc 
+                                MC-ISAR_AS42x_AURIX2G_TC38xA_TC39xB_CD_1.0.0-rc	
+2018-12-12	1.02.01	  virrsu	CS0183974: Wrong path to XSL Transformation script (Settings_Tresos.xml)
+2019-03-14	1.02.02	  virgki	PSC-2088: Add the missing Dma-init section to InitFunctions_Settings.xml file
+2019-08-09  1.03.00   virnid    Integration of MC-ISAR_AS42x_AURIX2G_TC38xA_TC39xB_TC35xA_TC37xA_BASIC_1.30.0-rc
+2019-10-08	1.04.00	  virgaj	Integration of module Crc
+2019-11-18	1.05.00   virgaj	MC-ISAR_AS42x_TC3xx_BASIC_1.30.0
+								Removed InitFunctions_Settings_until_R19 and renamed 
+								InitFunctions_Settings_from_R20 into InitFunctions_Settings
+2019-11-27	1.05.01	  virgaj	Commented reference to Ocu per default
+2020-01-14	1.05.02	  virgaj	Update of Mcu Handling in InitFunctions_Settings.xml
+2020-02-20  1.06.00   virnid    Integartion of MC-ISAR_AS422_TC3xx_BASIC_1.40.0-alpha1, added NO_INIT for Irq and McalLib
+2020-03-31  1.06.01   virrsu    Fixed ESCAN00105973: Start of Tresos Proxy Geneartor is Blocked (Uart / Dma)
+2020-08-27	1.06.02   virnid	changed configptr from const to AUTOMATIC (InitFunctions_Settings)
+2020-10-16	1.06.03	  virnid	changed Resource in prepare file to ResourceM
+2020-01-12	1.07.00	  virnid	Integration of MC-ISAR_AS422_TC3xx_BASIC_2.0.0-rc and MC-ISAR_AS440_TC3xx_BASIC_2.0.0-rc
+*********************************************************************************
+-->
+<Settings>
+	<Settings Name="com.vector.cfg.gen.Tresos_proxy.settings.TresosSettings">   <!-- Constant -->
+		<Settings Name="ModuleList">
+			<Settings Name="Adc_Aurix">   							<!--ModuleName -->
+			    <Setting Name="ModuleDefRef" Value="/AURIX2G/EcucDefs/Adc"/>		<!-- ModuleDefinition Path -->
+				<Setting Name="PluginName" Value="Adc_Aurix2GAS440"/>   		<!-- Tresos Plugin name -->
+				<Setting Name="Target" Value="AURIX2G"/>
+				<Setting Name="Derivate" Value="TC399"/>
+				<Setting Name="TransformationXsltFile" Value="$(SipRootPath)\Components\Mcal_Tc3xx\GeneratorMsr\prepare_output_TC3xx.xsl"/>	
+				<Settings Name="AdditionalModulesForGeneration">	
+				<!-- N-times modules, dependencies to validate the current module -->
+				    <Setting Name="ResourceM" Value="/AURIX2G/EcucDefs/ResourceM"/>
+				    <Setting Name="Mcu" Value="/AURIX2G/EcucDefs/Mcu"/>
+					<Setting Name="Dem" Value="/[ANY]/Dem"/>
+					<Setting Name="EcuC" Value="/[ANY]/EcuC"/>
+			    </Settings>  
+			</Settings>
+			<Settings Name="Crc_Aurix">   							<!--ModuleName -->
+			    <Setting Name="ModuleDefRef" Value="/AURIX2G/EcucDefs/Crc"/>		<!-- ModuleDefinition Path -->
+				<Setting Name="PluginName" Value="Crc_Aurix2GAS440"/>   		<!-- Tresos Plugin name -->
+				<Setting Name="Target" Value="AURIX2G"/>
+				<Setting Name="Derivate" Value="TC399"/>
+				<Setting Name="TransformationXsltFile" Value="$(SipRootPath)\Components\Mcal_Tc3xx\GeneratorMsr\prepare_output_TC3xx.xsl"/>	
+				<Settings Name="AdditionalModulesForGeneration">	
+				<!-- N-times modules, dependencies to validate the current module -->
+				    <Setting Name="ResourceM" Value="/AURIX2G/EcucDefs/ResourceM"/>
+				    <Setting Name="Dma" Value="/AURIX2G/EcucDefs/Dma"/>
+				    <Setting Name="Mcu" Value="/AURIX2G/EcucDefs/Mcu"/>
+				    <Setting Name="McalLib" Value="/AURIX2G/EcucDefs/McalLib"/>
+			    </Settings>  
+			</Settings>					
+			<Settings Name="Dio_Aurix">   							<!--ModuleName -->
+			    <Setting Name="ModuleDefRef" Value="/AURIX2G/EcucDefs/Dio"/>		<!-- ModuleDefinition Path -->
+				<Setting Name="PluginName" Value="Dio_Aurix2GAS440"/>   		<!-- Tresos Plugin name -->
+				<Setting Name="Target" Value="AURIX2G"/>
+				<Setting Name="Derivate" Value="TC399"/>
+				<Setting Name="TransformationXsltFile" Value="$(SipRootPath)\Components\Mcal_Tc3xx\GeneratorMsr\prepare_output_TC3xx.xsl"/>	
+				<Settings Name="AdditionalModulesForGeneration">	
+				<!-- N-times modules, dependencies to validate the current module -->
+				    <Setting Name="ResourceM" Value="/AURIX2G/EcucDefs/ResourceM"/>
+				    <Setting Name="EcuC" Value="/[ANY]/EcuC"/>
+			    </Settings>  
+			</Settings>
+			<Settings Name="Dma_Aurix">   							<!--ModuleName -->
+			    <Setting Name="ModuleDefRef" Value="/AURIX2G/EcucDefs/Dma"/>		<!-- ModuleDefinition Path -->
+				<Setting Name="PluginName" Value="Dma_Aurix2GAS440"/>   		<!-- Tresos Plugin name -->
+				<Setting Name="Target" Value="AURIX2G"/>
+				<Setting Name="Derivate" Value="TC399"/>
+				<Setting Name="TransformationXsltFile" Value="$(SipRootPath)\Components\Mcal_Tc3xx\GeneratorMsr\prepare_output_TC3xx.xsl"/>	
+				<Settings Name="AdditionalModulesForGeneration">	
+				<!-- N-times modules, dependencies to validate the current module -->
+				    <Setting Name="ResourceM" Value="/AURIX2G/EcucDefs/ResourceM"/>
+					<Setting Name="Mcu" Value="/AURIX2G/EcucDefs/Mcu"/>
+					<Setting Name="McalLib" Value="/AURIX2G/EcucDefs/McalLib"/>
+					<Setting Name="Spi" Value="/AURIX2G/EcucDefs/Spi"/>
+					<Setting Name="Crc" Value="/AURIX2G/EcucDefs/Crc"/>
+			    </Settings>  
+			</Settings>
+			<Settings Name="Dsadc_Aurix">   							<!--ModuleName -->
+			    <Setting Name="ModuleDefRef" Value="/AURIX2G/EcucDefs/Dsadc"/>		<!-- ModuleDefinition Path -->
+				<Setting Name="PluginName" Value="Dsadc_Aurix2GAS440"/>   		<!-- Tresos Plugin name -->
+				<Setting Name="Target" Value="AURIX2G"/>
+				<Setting Name="Derivate" Value="TC399"/>
+				<Setting Name="TransformationXsltFile" Value="$(SipRootPath)\Components\Mcal_Tc3xx\GeneratorMsr\prepare_output_TC3xx.xsl"/>	
+				<Settings Name="AdditionalModulesForGeneration">	
+				<!-- N-times modules, dependencies to validate the current module -->
+				    <Setting Name="ResourceM" Value="/AURIX2G/EcucDefs/ResourceM"/>
+				    <Setting Name="Mcu" Value="/AURIX2G/EcucDefs/Mcu"/>
+					<Setting Name="Dem" Value="/[ANY]/Dem"/>
+					<Setting Name="EcuC" Value="/[ANY]/EcuC"/>
+			    </Settings>  
+			</Settings>	
+			<Settings Name="Fee_Aurix">   							<!--ModuleName -->
+			    <Setting Name="ModuleDefRef" Value="/AURIX2G/EcucDefs/Fee"/>		<!-- ModuleDefinition Path -->
+				<Setting Name="PluginName" Value="Fee_Aurix2GAS440"/>   		<!-- Tresos Plugin name -->
+				<Setting Name="Target" Value="AURIX2G"/>
+				<Setting Name="Derivate" Value="TC399"/>
+				<Setting Name="TransformationXsltFile" Value="$(SipRootPath)\Components\Mcal_Tc3xx\GeneratorMsr\prepare_output_TC3xx.xsl"/>	
+				<Settings Name="AdditionalModulesForGeneration">	
+				<!-- N-times modules, dependencies to validate the current module -->
+				    <Setting Name="ResourceM" Value="/AURIX2G/EcucDefs/ResourceM"/>
+				    <Setting Name="Fls" Value="/AURIX2G/EcucDefs/Fls"/>
+					<Setting Name="Dem" Value="/[ANY]/Dem"/>
+					<Setting Name="EcuC" Value="/[ANY]/EcuC"/>				    
+			    </Settings>  
+			</Settings>
+			<Settings Name="Fls_Aurix">   							<!--ModuleName -->
+			    <Setting Name="ModuleDefRef" Value="/AURIX2G/EcucDefs/Fls"/>		<!-- ModuleDefinition Path -->
+				<Setting Name="PluginName" Value="Fls_Aurix2GAS440"/>   		<!-- Tresos Plugin name -->
+				<Setting Name="Target" Value="AURIX2G"/>
+				<Setting Name="Derivate" Value="TC399"/>
+				<Setting Name="TransformationXsltFile" Value="$(SipRootPath)\Components\Mcal_Tc3xx\GeneratorMsr\prepare_output_TC3xx.xsl"/>	
+				<Settings Name="AdditionalModulesForGeneration">	
+				<!-- N-times modules, dependencies to validate the current module -->
+				    <Setting Name="ResourceM" Value="/AURIX2G/EcucDefs/ResourceM"/>
+				    <Setting Name="Dem" Value="/[ANY]/Dem"/>
+				    <Setting Name="EcuC" Value="/[ANY]/EcuC"/>
+				    <Setting Name="Spi" Value="/AURIX2G/EcucDefs/Spi"/>
+				    <Setting Name="Fee" Value="/AURIX2G/EcucDefs/Fee"/>
+			    </Settings>  
+			</Settings>
+			<Settings Name="FlsLoader_Aurix">   							<!--ModuleName -->
+			    <Setting Name="ModuleDefRef" Value="/AURIX2G/EcucDefs/FlsLoader"/>		<!-- ModuleDefinition Path -->
+				<Setting Name="PluginName" Value="FlsLoader_Aurix2GAS440"/>   		<!-- Tresos Plugin name -->
+				<Setting Name="Target" Value="AURIX2G"/>
+				<Setting Name="Derivate" Value="TC399"/>
+				<Setting Name="TransformationXsltFile" Value="$(SipRootPath)\Components\Mcal_Tc3xx\GeneratorMsr\prepare_output_TC3xx.xsl"/>	
+				<Settings Name="AdditionalModulesForGeneration">	
+				<!-- N-times modules, dependencies to validate the current module -->
+				    <Setting Name="ResourceM" Value="/AURIX2G/EcucDefs/ResourceM"/>
+			    </Settings>  
+			</Settings>
+			<Settings Name="Gpt_Aurix">   							<!--ModuleName -->
+			    <Setting Name="ModuleDefRef" Value="/AURIX2G/EcucDefs/Gpt"/>		<!-- ModuleDefinition Path -->
+				<Setting Name="PluginName" Value="Gpt_Aurix2GAS440"/>   		<!-- Tresos Plugin name -->
+				<Setting Name="Target" Value="AURIX2G"/>
+				<Setting Name="Derivate" Value="TC399"/>
+				<Setting Name="TransformationXsltFile" Value="$(SipRootPath)\Components\Mcal_Tc3xx\GeneratorMsr\prepare_output_TC3xx.xsl"/>	
+				<Settings Name="AdditionalModulesForGeneration">	
+				<!-- N-times modules, dependencies to validate the current module -->
+				    <Setting Name="ResourceM" Value="/AURIX2G/EcucDefs/ResourceM"/>
+				    <Setting Name="EcuM" Value="/[ANY]/EcuM"/>
+				    <Setting Name="EcuC" Value="/[ANY]/EcuC"/>
+				    <Setting Name="Mcu" Value="/AURIX2G/EcucDefs/Mcu"/>	
+			    </Settings>  
+			</Settings>
+			<Settings Name="Icu_Aurix">   							<!--ModuleName -->
+			    <Setting Name="ModuleDefRef" Value="/AURIX2G/EcucDefs/Icu"/>		<!-- ModuleDefinition Path -->
+				<Setting Name="PluginName" Value="Icu_Aurix2GAS440"/>   		<!-- Tresos Plugin name -->
+				<Setting Name="Target" Value="AURIX2G"/>
+				<Setting Name="Derivate" Value="TC399"/>
+				<Setting Name="TransformationXsltFile" Value="$(SipRootPath)\Components\Mcal_Tc3xx\GeneratorMsr\prepare_output_TC3xx.xsl"/>	
+				<Settings Name="AdditionalModulesForGeneration">	
+				<!-- N-times modules, dependencies to validate the current module -->
+				    <Setting Name="ResourceM" Value="/AURIX2G/EcucDefs/ResourceM"/>
+				    <Setting Name="Mcu" Value="/AURIX2G/EcucDefs/Mcu"/>
+				    <Setting Name="EcuM" Value="/[ANY]/EcuM"/>
+				    <Setting Name="EcuC" Value="/[ANY]/EcuC"/>
+			    </Settings>  
+			</Settings>
+			<Settings Name="Irq_Aurix">   							<!--ModuleName -->
+			    <Setting Name="ModuleDefRef" Value="/AURIX2G/EcucDefs/Irq"/>		<!-- ModuleDefinition Path -->
+				<Setting Name="PluginName" Value="Irq_Aurix2GAS440"/>   		<!-- Tresos Plugin name -->
+				<Setting Name="Target" Value="AURIX2G"/>
+				<Setting Name="Derivate" Value="TC399"/>
+				<Setting Name="TransformationXsltFile" Value="$(SipRootPath)\Components\Mcal_Tc3xx\GeneratorMsr\prepare_output_TC3xx.xsl"/>	
+				<Settings Name="AdditionalModulesForGeneration">	
+				<!-- N-times modules, dependencies to validate the current module -->
+				    <Setting Name="Resource" Value="/AURIX2G/EcucDefs/ResourceM"/>
+				    <Setting Name="Icu" Value="/AURIX2G/EcucDefs/Icu"/>
+				    <Setting Name="Adc" Value="/AURIX2G/EcucDefs/Adc"/>
+				    <Setting Name="Gpt" Value="/AURIX2G/EcucDefs/Gpt"/>
+				    <Setting Name="Spi" Value="/AURIX2G/EcucDefs/Spi"/>
+				    <Setting Name="Mcu" Value="/AURIX2G/EcucDefs/Mcu"/>
+				    <Setting Name="Pwm" Value="/AURIX2G/EcucDefs/Pwm"/>
+				    <Setting Name="Wdg" Value="/AURIX2G/EcucDefs/Wdg"/>
+				    <Setting Name="Fls" Value="/AURIX2G/EcucDefs/Fls"/>
+				    <Setting Name="Uart" Value="/AURIX2G/EcucDefs/Uart"/>
+<Setting Name="Dsadc" Value="/AURIX2G/EcucDefs/Dsadc"/>
+			    </Settings>  
+			</Settings>			
+			<Settings Name="McalLib_Aurix">   							<!--ModuleName -->
+			    <Setting Name="ModuleDefRef" Value="/AURIX2G/EcucDefs/McalLib"/>		<!-- ModuleDefinition Path -->
+				<Setting Name="PluginName" Value="McalLib_Aurix2GAS440"/>   		<!-- Tresos Plugin name -->
+				<Setting Name="Target" Value="AURIX2G"/>
+				<Setting Name="Derivate" Value="TC399"/>
+				<Setting Name="TransformationXsltFile" Value="$(SipRootPath)\Components\Mcal_Tc3xx\GeneratorMsr\prepare_output_TC3xx.xsl"/>	
+				<Settings Name="AdditionalModulesForGeneration">	
+				<!-- N-times modules, dependencies to validate the current module -->
+				    <Setting Name="ResourceM" Value="/AURIX2G/EcucDefs/ResourceM"/>
+			    </Settings>  
+			</Settings>			
+			<Settings Name="Mcu_Aurix">   							<!--ModuleName -->
+			    <Setting Name="ModuleDefRef" Value="/AURIX2G/EcucDefs/Mcu"/>		<!-- ModuleDefinition Path -->
+				<Setting Name="PluginName" Value="Mcu_Aurix2GAS440"/>   		<!-- Tresos Plugin name -->
+				<Setting Name="Target" Value="AURIX2G"/>
+				<Setting Name="Derivate" Value="TC399"/>
+				<Setting Name="TransformationXsltFile" Value="$(SipRootPath)\Components\Mcal_Tc3xx\GeneratorMsr\prepare_output_TC3xx.xsl"/>	
+				<Settings Name="AdditionalModulesForGeneration">	
+				<!-- N-times modules, dependencies to validate the current module -->
+				    <Setting Name="ResourceM" Value="/AURIX2G/EcucDefs/ResourceM"/>
+				    <Setting Name="Pwm" Value="/AURIX2G/EcucDefs/Pwm"/>
+				    <Setting Name="Gpt" Value="/AURIX2G/EcucDefs/Gpt"/>
+				    <Setting Name="Icu" Value="/AURIX2G/EcucDefs/Icu"/>
+				    <Setting Name="Adc" Value="/AURIX2G/EcucDefs/Adc"/>				    				    
+				    <Setting Name="Wdg" Value="/AURIX2G/EcucDefs/Wdg"/>
+				    <Setting Name="McalLib" Value="/AURIX2G/EcucDefs/McalLib"/>
+				    <Setting Name="Ocu" Value="/AURIX2G/EcucDefs/Ocu"/>	
+				    <Setting Name="Dem" Value="/[ANY]/Dem"/>
+				    <Setting Name="EcuC" Value="/[ANY]/EcuC"/>
+<Setting Name="Dsadc" Value="/AURIX2G/EcucDefs/Dsadc"/>
+			    </Settings>  
+			</Settings>
+			<Settings Name="Ocu_Aurix">   							<!--ModuleName -->
+			    <Setting Name="ModuleDefRef" Value="/AURIX2G/EcucDefs/Ocu"/>		<!-- ModuleDefinition Path -->
+				<Setting Name="PluginName" Value="Ocu_Aurix2GAS440"/>   		<!-- Tresos Plugin name -->
+				<Setting Name="Target" Value="AURIX2G"/>
+				<Setting Name="Derivate" Value="TC399"/>
+				<Setting Name="TransformationXsltFile" Value="$(SipRootPath)\Components\Mcal_Tc3xx\GeneratorMsr\prepare_output_TC3xx.xsl"/>	
+				<Settings Name="AdditionalModulesForGeneration">	
+				<!-- N-times modules, dependencies to validate the current module -->
+				    <Setting Name="ResourceM" Value="/AURIX2G/EcucDefs/ResourceM"/>
+				    <Setting Name="Mcu" Value="/AURIX2G/EcucDefs/Mcu"/>
+				    <Setting Name="Pwm" Value="/AURIX2G/EcucDefs/Pwm"/>
+				    <Setting Name="EcuC" Value="/[ANY]/EcuC"/>
+			    </Settings>  
+			</Settings>
+			<Settings Name="Port_Aurix">   							<!--ModuleName -->
+			    <Setting Name="ModuleDefRef" Value="/AURIX2G/EcucDefs/Port"/>		<!-- ModuleDefinition Path -->
+				<Setting Name="PluginName" Value="Port_Aurix2GAS440"/>   		<!-- Tresos Plugin name -->
+				<Setting Name="Target" Value="AURIX2G"/>
+				<Setting Name="Derivate" Value="TC399"/>
+				<Setting Name="TransformationXsltFile" Value="$(SipRootPath)\Components\Mcal_Tc3xx\GeneratorMsr\prepare_output_TC3xx.xsl"/>	
+				<Settings Name="AdditionalModulesForGeneration">	
+				<!-- N-times modules, dependencies to validate the current module -->
+				    <Setting Name="ResourceM" Value="/AURIX2G/EcucDefs/ResourceM"/>
+				    <Setting Name="EcuC" Value="/[ANY]/EcuC"/>
+			    </Settings>  
+			</Settings>
+			<Settings Name="Pwm_Aurix">   							<!--ModuleName -->
+			    <Setting Name="ModuleDefRef" Value="/AURIX2G/EcucDefs/Pwm"/>		<!-- ModuleDefinition Path -->
+				<Setting Name="PluginName" Value="Pwm_Aurix2GAS440"/>   		<!-- Tresos Plugin name -->
+				<Setting Name="Target" Value="AURIX2G"/>
+				<Setting Name="Derivate" Value="TC399"/>
+				<Setting Name="TransformationXsltFile" Value="$(SipRootPath)\Components\Mcal_Tc3xx\GeneratorMsr\prepare_output_TC3xx.xsl"/>	
+				<Settings Name="AdditionalModulesForGeneration">	
+				<!-- N-times modules, dependencies to validate the current module -->
+				    <Setting Name="ResourceM" Value="/AURIX2G/EcucDefs/ResourceM"/> 
+				    <Setting Name="Mcu" Value="/AURIX2G/EcucDefs/Mcu"/>
+				    <Setting Name="EcuC" Value="/[ANY]/EcuC"/>
+			    </Settings>  
+			</Settings>
+			<Settings Name="Smu_Aurix">   							<!--ModuleName -->
+			    <Setting Name="ModuleDefRef" Value="/AURIX2G/EcucDefs/Smu"/>		<!-- ModuleDefinition Path -->
+				<Setting Name="PluginName" Value="Smu_Aurix2GAS440"/>   		<!-- Tresos Plugin name -->
+				<Setting Name="Target" Value="AURIX2G"/>
+				<Setting Name="Derivate" Value="TC399"/>
+				<Setting Name="TransformationXsltFile" Value="$(SipRootPath)\Components\Mcal_Tc3xx\GeneratorMsr\prepare_output_TC3xx.xsl"/>	
+				<Settings Name="AdditionalModulesForGeneration">	
+				<!-- N-times modules, dependencies to validate the current module -->
+				    <Setting Name="ResourceM" Value="/AURIX2G/EcucDefs/ResourceM"/> 
+				    <Setting Name="Dem" Value="/[ANY]/Dem"/>
+				    <Setting Name="McalLib" Value="/AURIX2G/EcucDefs/McalLib"/>
+				    <Setting Name="EcuC" Value="/[ANY]/EcuC"/>
+			    </Settings>  
+			</Settings>
+			<Settings Name="Spi_Aurix">   							<!--ModuleName -->
+			    <Setting Name="ModuleDefRef" Value="/AURIX2G/EcucDefs/Spi"/>		<!-- ModuleDefinition Path -->
+				<Setting Name="PluginName" Value="Spi_Aurix2GAS440"/>   		<!-- Tresos Plugin name -->
+				<Setting Name="Target" Value="AURIX2G"/>
+				<Setting Name="Derivate" Value="TC399"/>
+				<Setting Name="TransformationXsltFile" Value="$(SipRootPath)\Components\Mcal_Tc3xx\GeneratorMsr\prepare_output_TC3xx.xsl"/>	
+				<Settings Name="AdditionalModulesForGeneration">	
+				<!-- N-times modules, dependencies to validate the current module -->
+				    <Setting Name="ResourceM" Value="/AURIX2G/EcucDefs/ResourceM"/>
+				    <Setting Name="Dem" Value="/[ANY]/Dem"/>
+					<Setting Name="Mcu" Value="/AURIX2G/EcucDefs/Mcu"/>				    
+					<Setting Name="Dma" Value="/AURIX2G/EcucDefs/Dma"/>
+					<Setting Name="Port" Value="/AURIX2G/EcucDefs/Port"/>
+                    <Setting Name="McalLib" Value="/AURIX2G/EcucDefs/McalLib"/>
+                    <Setting Name="Irq" Value="/AURIX2G/EcucDefs/Irq"/>
+                    <Setting Name="EcuC" Value="/[ANY]/EcuC"/>
+			    </Settings>  
+			</Settings>
+			<Settings Name="Uart_Aurix">   							<!--ModuleName -->
+			    <Setting Name="ModuleDefRef" Value="/AURIX2G/EcucDefs/Uart"/>		<!-- ModuleDefinition Path -->
+				<Setting Name="PluginName" Value="Uart_Aurix2GAS440"/>   		<!-- Tresos Plugin name -->
+				<Setting Name="Target" Value="AURIX2G"/>
+				<Setting Name="Derivate" Value="TC399"/>
+				<Setting Name="TransformationXsltFile" Value="$(SipRootPath)\Components\Mcal_Tc3xx\GeneratorMsr\prepare_output_TC3xx.xsl"/>	
+				<Settings Name="AdditionalModulesForGeneration">	
+				<!-- N-times modules, dependencies to validate the current module -->
+				    <Setting Name="ResourceM" Value="/AURIX2G/EcucDefs/ResourceM"/>
+					<Setting Name="Mcu" Value="/AURIX2G/EcucDefs/Mcu"/>
+					<Setting Name="EcuC" Value="/[ANY]/EcuC"/>
+			    </Settings>  
+			</Settings>
+			<Settings Name="Wdg_Aurix">   							<!--ModuleName -->
+			    <Setting Name="ModuleDefRef" Value="/AURIX2G/EcucDefs/Wdg"/>		<!-- ModuleDefinition Path -->
+				<Setting Name="PluginName" Value="Wdg_Aurix2GAS440"/>   		<!-- Tresos Plugin name -->
+				<Setting Name="Target" Value="AURIX2G"/>
+				<Setting Name="Derivate" Value="TC399"/>
+				<Setting Name="TransformationXsltFile" Value="$(SipRootPath)\Components\Mcal_Tc3xx\GeneratorMsr\prepare_output_TC3xx.xsl"/>	
+				<Settings Name="AdditionalModulesForGeneration">	
+				<!-- N-times modules, dependencies to validate the current module -->
+				    <Setting Name="ResourceM" Value="/AURIX2G/EcucDefs/ResourceM"/>
+				    <Setting Name="Dem" Value="/[ANY]/Dem"/>	 <!-- DefRef ModuleDefinition of the Dependency -->
+				    <Setting Name="Dio" Value="/AURIX2G/EcucDefs/Dio"/>	 <!-- DefRef ModuleDefinition of the Dependency -->
+				    <Setting Name="Mcu" Value="/AURIX2G/EcucDefs/Mcu"/>	 <!-- DefRef ModuleDefinition of the Dependency -->
+				    <Setting Name="McalLib" Value="/AURIX2G/EcucDefs/McalLib"/>	 <!-- DefRef ModuleDefinition of the Dependency -->
+				    <Setting Name="Spi" Value="/AURIX2G/EcucDefs/Spi"/>	 <!-- DefRef ModuleDefinition of the Dependency -->
+				    <Setting Name="EcuC" Value="/[ANY]/EcuC"/>
+			    </Settings>  
+			</Settings>			
+		</Settings>
+	</Settings>
+</Settings>	

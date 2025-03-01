@@ -1,0 +1,419 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 21092262 SN 73118428"
+	.compiler_invocation	"ctc --dep-file=appl\\GenData\\src\\.Dio_Lcfg.o.d --fp-model=c,f,l,n,r,S,T,z -D__CPU__=tc39xb -D__CPU_TC39XB__ --core=tc1.6.2 --iso=99 -DBRS_COMP_TASKING -ID:\\Zonal\\demo011\\tasking -ID:\\Zonal\\testdemo\\taskingdemo\\demo001 -ID:\\Zonal\\demo011\\tasking -ID:\\Zonal\\demo011\\tasking\\appl -ID:\\Zonal\\demo011\\tasking\\appl\\GenData -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\Components -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\ContractPhase -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\inc -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\src -ID:\\Zonal\\demo011\\tasking\\appl\\Include -ID:\\Zonal\\demo011\\tasking\\appl\\Source -ID:\\Zonal\\demo011\\tasking\\appl\\Source\\swc_test -ID:\\Zonal\\demo011\\tasking\\component -ID:\\Zonal\\demo011\\tasking\\component\\_Common -ID:\\Zonal\\demo011\\tasking\\component\\_Common\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\BswM -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\EcuM -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\Os -ID:\\Zonal\\demo011\\tasking\\component\\Os\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\Os\\BSWMD\\Os -ID:\\Zonal\\demo011\\tasking\\component\\Os\\BSWMD\\Os\\TC39xQ -ID:\\Zonal\\demo011\\tasking\\component\\Os\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\Os\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\Os\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug -ID:\\Zonal\\demo011\\tasking\\Debug\\appl -ID:\\Zonal\\demo011\\tasking\\Debug\\appl\\GenData -ID:\\Zonal\\demo011\\tasking\\Debug\\appl\\GenData\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\appl\\Source -ID:\\Zonal\\demo011\\tasking\\Debug\\component -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\BswM -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\BswM\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\EcuM -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\EcuM\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\Os -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\Os\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\VStdLib -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\VStdLib\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Dio -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Dio\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Dio\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\McalLib -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\McalLib\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\McalLib\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Mcu -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Mcu\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Mcu\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Port -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Port\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Port\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Platform -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Platform\\AS440 -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Sfr -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Sfr\\TC39xB -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Sfr\\TC39xB\\_Reg -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc\\inc\\AS440 -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal\\Port -ID:\\Zonal\\demo011\\tasking\\mcal\\Port\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\Port\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\Port\\ssc\\src -g2 --make-target=appl\\GenData\\src\\Dio_Lcfg.o -t2 --language=-gcc,-volatile,+strings,-kanji --default-near-size=0 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o appl\\GenData\\src\\Dio_Lcfg.src ..\\appl\\GenData\\src\\Dio_Lcfg.c"
+	.compiler_name		"ctc"
+	;source	'..\\appl\\GenData\\src\\Dio_Lcfg.c'
+
+	
+$TC162
+	
+	.sdecl	'.rodata.Dio_Lcfg.Dio_kPortChannelConfig',data,rom,cluster('Dio_kPortChannelConfig')
+	.sect	'.rodata.Dio_Lcfg.Dio_kPortChannelConfig'
+	.align	2
+Dio_kPortChannelConfig:	.type	object
+	.size	Dio_kPortChannelConfig,92
+	.space	36
+	.byte	1
+	.space	1
+	.half	30720
+	.space	36
+	.byte	1
+	.space	1
+	.half	240
+	.space	12
+	.sdecl	'.rodata.Dio_Lcfg.Dio_Config',data,rom,cluster('Dio_Config')
+	.sect	'.rodata.Dio_Lcfg.Dio_Config'
+	.global	Dio_Config
+	.align	4
+Dio_Config:	.type	object
+	.size	Dio_Config,12
+	.word	Dio_kPortChannelConfig
+	.space	8
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L3:
+	.word	766
+	.half	3
+	.word	.L4
+	.byte	4
+.L2:
+	.byte	1
+	.byte	'..\\appl\\GenData\\src\\Dio_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
+	.word	.L5
+	.byte	2
+	.byte	'int',0,4,5,3
+	.word	124
+	.byte	4
+	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,5
+	.word	131
+	.byte	0,2
+	.byte	'unsigned int',0,4,7,6
+	.word	173
+	.byte	7
+	.word	173
+	.byte	8
+	.byte	'__cmpswapw',0
+	.word	189
+	.byte	1,1,1,1,9
+	.byte	'p',0
+	.word	194
+	.byte	9
+	.byte	'value',0
+	.word	173
+	.byte	9
+	.byte	'compare',0
+	.word	173
+	.byte	0,10,1,7
+	.word	251
+	.byte	11
+	.byte	'__codeptr',0,1,1,1
+	.word	253
+	.byte	2
+	.byte	'unsigned char',0,1,8,11
+	.byte	'uint8',0,2,104,31
+	.word	276
+	.byte	2
+	.byte	'unsigned short int',0,2,7,11
+	.byte	'uint16',0,2,106,31
+	.word	307
+	.byte	2
+	.byte	'unsigned long int',0,4,7,11
+	.byte	'uint32',0,2,108,31
+	.word	344
+	.byte	12,3,163,1,9,4,13
+	.byte	'Dio_PortIdConfig',0
+	.word	276
+	.byte	1,2,35,0,13
+	.byte	'Dio_ChannelConfig',0
+	.word	307
+	.byte	2,2,35,2,0,3
+	.word	380
+	.byte	7
+	.word	440
+	.byte	12,3,148,1,9,4,13
+	.byte	'mask',0
+	.word	307
+	.byte	2,2,35,0,13
+	.byte	'offset',0
+	.word	276
+	.byte	1,2,35,2,13
+	.byte	'port',0
+	.word	276
+	.byte	1,2,35,3,0,3
+	.word	450
+	.byte	7
+	.word	501
+	.byte	14
+	.byte	'Dio_ConfigType',0,3,176,1,16,12,13
+	.byte	'Dio_PortChannelIdConfigPtr',0
+	.word	445
+	.byte	4,2,35,0,13
+	.byte	'Dio_ChannelGroupConfigPtr',0
+	.word	506
+	.byte	4,2,35,4,13
+	.byte	'Dio_ChannelGroupConfigSize',0
+	.word	344
+	.byte	4,2,35,8,0
+.L10:
+	.byte	3
+	.word	511
+	.byte	11
+	.byte	'Dio_PortType',0,3,138,1,15
+	.word	276
+	.byte	11
+	.byte	'Dio_PortLevelType',0,3,143,1,16
+	.word	307
+	.byte	11
+	.byte	'Dio_ChannelGroupType',0,3,158,1,3
+	.word	450
+	.byte	11
+	.byte	'Dio_PortChannelIdType',0,3,171,1,3
+	.word	380
+	.byte	15,92
+	.word	380
+	.byte	16,22,0
+.L11:
+	.byte	3
+	.word	755
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L4:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,38,0,73,19,0,0,4,46,1,3,8,54
+	.byte	15,39,12,63,12,60,12,0,0,5,5,0,73,19,0,0,6,53,0,73,19,0,0,7,15,0,73,19,0,0,8,46,1,3,8,73,19,54,15,39,12
+	.byte	63,12,60,12,0,0,9,5,0,3,8,73,19,0,0,10,21,0,54,15,0,0,11,22,0,3,8,58,15,59,15,57,15,73,19,0,0,12,19,1
+	.byte	58,15,59,15,57,15,11,15,0,0,13,13,0,3,8,73,19,11,15,56,9,0,0,14,19,1,3,8,58,15,59,15,57,15,11,15,0,0,15
+	.byte	1,1,11,15,73,19,0,0,16,33,0,47,15,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L5:
+	.word	.L13-.L12
+.L12:
+	.half	3
+	.word	.L15-.L14
+.L14:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'D:\\Zonal\\demo011\\tasking\\component\\_Common\\Implementation',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\mcal\\Dio\\ssc\\inc',0,0
+	.byte	'..\\appl\\GenData\\src\\Dio_Lcfg.c',0,0,0,0
+	.byte	'Platform_Types.h',0,1,0,0
+	.byte	'Dio.h',0,2,0,0,0
+.L15:
+.L13:
+	.sdecl	'.debug_info',debug,cluster('Dio_Config')
+	.sect	'.debug_info'
+.L6:
+	.word	149
+	.half	3
+	.word	.L7
+	.byte	4,1
+	.byte	'..\\appl\\GenData\\src\\Dio_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1,2
+	.word	.L2
+	.byte	3
+	.byte	'Dio_Config',0,1,189,1,26
+	.word	.L10
+	.byte	1,5,3
+	.word	Dio_Config
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('Dio_Config')
+	.sect	'.debug_abbrev'
+.L7:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('Dio_kPortChannelConfig')
+	.sect	'.debug_info'
+.L8:
+	.word	159
+	.half	3
+	.word	.L9
+	.byte	4,1
+	.byte	'..\\appl\\GenData\\src\\Dio_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1,2
+	.word	.L2
+	.byte	3
+	.byte	'Dio_kPortChannelConfig',0,1,71,38
+	.word	.L11
+	.byte	5,3
+	.word	Dio_kPortChannelConfig
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('Dio_kPortChannelConfig')
+	.sect	'.debug_abbrev'
+.L9:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
+
+; ..\appl\GenData\src\Dio_Lcfg.c	     1  
+; ..\appl\GenData\src\Dio_Lcfg.c	     2  /*******************************************************************************
+; ..\appl\GenData\src\Dio_Lcfg.c	     3  **                                                                            **
+; ..\appl\GenData\src\Dio_Lcfg.c	     4  ** Copyright (C) Infineon Technologies (2020)                                 **
+; ..\appl\GenData\src\Dio_Lcfg.c	     5  **                                                                            **
+; ..\appl\GenData\src\Dio_Lcfg.c	     6  ** All rights reserved.                                                       **
+; ..\appl\GenData\src\Dio_Lcfg.c	     7  **                                                                            **
+; ..\appl\GenData\src\Dio_Lcfg.c	     8  ** This document contains proprietary information belonging to Infineon       **
+; ..\appl\GenData\src\Dio_Lcfg.c	     9  ** Technologies. Passing on and copying of this document, and communication   **
+; ..\appl\GenData\src\Dio_Lcfg.c	    10  ** of its contents is not permitted without prior written authorization.      **
+; ..\appl\GenData\src\Dio_Lcfg.c	    11  **                                                                            **
+; ..\appl\GenData\src\Dio_Lcfg.c	    12  ********************************************************************************
+; ..\appl\GenData\src\Dio_Lcfg.c	    13  **                                                                            **
+; ..\appl\GenData\src\Dio_Lcfg.c	    14  **  FILENAME  : Dio_Lcfg.c                                                    **
+; ..\appl\GenData\src\Dio_Lcfg.c	    15  **                                                                            **
+; ..\appl\GenData\src\Dio_Lcfg.c	    16  **  VERSION   : 7.0.0                                                         **
+; ..\appl\GenData\src\Dio_Lcfg.c	    17  **                                                                            **
+; ..\appl\GenData\src\Dio_Lcfg.c	    18  **  DATE, TIME: 2025-03-01, 12:57:15       !!!IGNORE-LINE!!!                  **
+; ..\appl\GenData\src\Dio_Lcfg.c	    19  **                                                                            **
+; ..\appl\GenData\src\Dio_Lcfg.c	    20  **  GENERATOR : Build b191017-0938           !!!IGNORE-LINE!!!                **
+; ..\appl\GenData\src\Dio_Lcfg.c	    21  **                                                                            **
+; ..\appl\GenData\src\Dio_Lcfg.c	    22  **  BSW MODULE DECRIPTION : Dio.bmd                                           **
+; ..\appl\GenData\src\Dio_Lcfg.c	    23  **                                                                            **
+; ..\appl\GenData\src\Dio_Lcfg.c	    24  **  VARIANT   : Variant LT                                                    **
+; ..\appl\GenData\src\Dio_Lcfg.c	    25  **                                                                            **
+; ..\appl\GenData\src\Dio_Lcfg.c	    26  **  PLATFORM  : Infineon AURIX2G                                              **
+; ..\appl\GenData\src\Dio_Lcfg.c	    27  **                                                                            **
+; ..\appl\GenData\src\Dio_Lcfg.c	    28  **  AUTHOR    : DL-AUTOSAR-Engineering                                        **
+; ..\appl\GenData\src\Dio_Lcfg.c	    29  **                                                                            **
+; ..\appl\GenData\src\Dio_Lcfg.c	    30  **  VENDOR    : Infineon Technologies                                         **
+; ..\appl\GenData\src\Dio_Lcfg.c	    31  **                                                                            **
+; ..\appl\GenData\src\Dio_Lcfg.c	    32  **  DESCRIPTION  : Dio configuration generated out of ECUC file               **
+; ..\appl\GenData\src\Dio_Lcfg.c	    33  **                                                                            **
+; ..\appl\GenData\src\Dio_Lcfg.c	    34  **  SPECIFICATION(S) : Specification of Dio Driver, AUTOSAR Release 4.2.2     **
+; ..\appl\GenData\src\Dio_Lcfg.c	    35  **                    and AUTOSAR Release 4.4.0                               **
+; ..\appl\GenData\src\Dio_Lcfg.c	    36  **                                                                            **
+; ..\appl\GenData\src\Dio_Lcfg.c	    37  ** MAY BE CHANGED BY USER : no                                                **
+; ..\appl\GenData\src\Dio_Lcfg.c	    38  **                                                                            **
+; ..\appl\GenData\src\Dio_Lcfg.c	    39  *******************************************************************************/
+; ..\appl\GenData\src\Dio_Lcfg.c	    40  
+; ..\appl\GenData\src\Dio_Lcfg.c	    41  
+; ..\appl\GenData\src\Dio_Lcfg.c	    42      
+; ..\appl\GenData\src\Dio_Lcfg.c	    43    /*******************************************************************************
+; ..\appl\GenData\src\Dio_Lcfg.c	    44    **                             Includes                                       **
+; ..\appl\GenData\src\Dio_Lcfg.c	    45    *******************************************************************************/
+; ..\appl\GenData\src\Dio_Lcfg.c	    46  
+; ..\appl\GenData\src\Dio_Lcfg.c	    47    /* Include Port Module File */
+; ..\appl\GenData\src\Dio_Lcfg.c	    48    #include "Dio.h"
+; ..\appl\GenData\src\Dio_Lcfg.c	    49  
+; ..\appl\GenData\src\Dio_Lcfg.c	    50    /*******************************************************************************
+; ..\appl\GenData\src\Dio_Lcfg.c	    51    **                      Private Macro Definitions                             **
+; ..\appl\GenData\src\Dio_Lcfg.c	    52    *******************************************************************************/
+; ..\appl\GenData\src\Dio_Lcfg.c	    53  
+; ..\appl\GenData\src\Dio_Lcfg.c	    54    /*******************************************************************************
+; ..\appl\GenData\src\Dio_Lcfg.c	    55    **                      Global Constant Definitions                           **
+; ..\appl\GenData\src\Dio_Lcfg.c	    56    *******************************************************************************/
+; ..\appl\GenData\src\Dio_Lcfg.c	    57    
+; ..\appl\GenData\src\Dio_Lcfg.c	    58    /* Memory mapping of the DIO configuration */
+; ..\appl\GenData\src\Dio_Lcfg.c	    59    #define DIO_START_SEC_CONFIG_DATA_ASIL_B_GLOBAL_UNSPECIFIED
+; ..\appl\GenData\src\Dio_Lcfg.c	    60    /* MISRA2012_RULE_4_10_JUSTIFICATION: To be compliant with autosar guidelines 
+; ..\appl\GenData\src\Dio_Lcfg.c	    61    Dio_Memmap.h header is included without safegaurd.*/
+; ..\appl\GenData\src\Dio_Lcfg.c	    62    #include "Dio_MemMap.h"
+; ..\appl\GenData\src\Dio_Lcfg.c	    63    /*
+; ..\appl\GenData\src\Dio_Lcfg.c	    64        Configuration of DIO Channel groups 
+; ..\appl\GenData\src\Dio_Lcfg.c	    65    */
+; ..\appl\GenData\src\Dio_Lcfg.c	    66            
+; ..\appl\GenData\src\Dio_Lcfg.c	    67      
+; ..\appl\GenData\src\Dio_Lcfg.c	    68  /* No Groups are configured */
+; ..\appl\GenData\src\Dio_Lcfg.c	    69  
+; ..\appl\GenData\src\Dio_Lcfg.c	    70      
+; ..\appl\GenData\src\Dio_Lcfg.c	    71    static const Dio_PortChannelIdType Dio_kPortChannelConfig[] =
+; ..\appl\GenData\src\Dio_Lcfg.c	    72    { 
+; ..\appl\GenData\src\Dio_Lcfg.c	    73      {
+; ..\appl\GenData\src\Dio_Lcfg.c	    74      /* Port0*/
+; ..\appl\GenData\src\Dio_Lcfg.c	    75        DIO_PORT_NOT_CONFIGURED,
+; ..\appl\GenData\src\Dio_Lcfg.c	    76        (0x0000U)
+; ..\appl\GenData\src\Dio_Lcfg.c	    77      },
+; ..\appl\GenData\src\Dio_Lcfg.c	    78      {
+; ..\appl\GenData\src\Dio_Lcfg.c	    79      /* Port1*/
+; ..\appl\GenData\src\Dio_Lcfg.c	    80        DIO_PORT_NOT_CONFIGURED,
+; ..\appl\GenData\src\Dio_Lcfg.c	    81        (0x0000U)
+; ..\appl\GenData\src\Dio_Lcfg.c	    82      },
+; ..\appl\GenData\src\Dio_Lcfg.c	    83      {
+; ..\appl\GenData\src\Dio_Lcfg.c	    84      /* Port2*/
+; ..\appl\GenData\src\Dio_Lcfg.c	    85        DIO_PORT_NOT_CONFIGURED,
+; ..\appl\GenData\src\Dio_Lcfg.c	    86        (0x0000U)
+; ..\appl\GenData\src\Dio_Lcfg.c	    87      },
+; ..\appl\GenData\src\Dio_Lcfg.c	    88      {
+; ..\appl\GenData\src\Dio_Lcfg.c	    89      /* Port10*/
+; ..\appl\GenData\src\Dio_Lcfg.c	    90        DIO_PORT_NOT_CONFIGURED,
+; ..\appl\GenData\src\Dio_Lcfg.c	    91        (0x0000U)
+; ..\appl\GenData\src\Dio_Lcfg.c	    92      },
+; ..\appl\GenData\src\Dio_Lcfg.c	    93      {
+; ..\appl\GenData\src\Dio_Lcfg.c	    94      /* Port11*/
+; ..\appl\GenData\src\Dio_Lcfg.c	    95        DIO_PORT_NOT_CONFIGURED,
+; ..\appl\GenData\src\Dio_Lcfg.c	    96        (0x0000U)
+; ..\appl\GenData\src\Dio_Lcfg.c	    97      },
+; ..\appl\GenData\src\Dio_Lcfg.c	    98      {
+; ..\appl\GenData\src\Dio_Lcfg.c	    99      /* Port12*/
+; ..\appl\GenData\src\Dio_Lcfg.c	   100        DIO_PORT_NOT_CONFIGURED,
+; ..\appl\GenData\src\Dio_Lcfg.c	   101        (0x0000U)
+; ..\appl\GenData\src\Dio_Lcfg.c	   102      },
+; ..\appl\GenData\src\Dio_Lcfg.c	   103      {
+; ..\appl\GenData\src\Dio_Lcfg.c	   104      /* Port13*/
+; ..\appl\GenData\src\Dio_Lcfg.c	   105        DIO_PORT_NOT_CONFIGURED,
+; ..\appl\GenData\src\Dio_Lcfg.c	   106        (0x0000U)
+; ..\appl\GenData\src\Dio_Lcfg.c	   107      },
+; ..\appl\GenData\src\Dio_Lcfg.c	   108      {
+; ..\appl\GenData\src\Dio_Lcfg.c	   109      /* Port14*/
+; ..\appl\GenData\src\Dio_Lcfg.c	   110        DIO_PORT_NOT_CONFIGURED,
+; ..\appl\GenData\src\Dio_Lcfg.c	   111        (0x0000U)
+; ..\appl\GenData\src\Dio_Lcfg.c	   112      },
+; ..\appl\GenData\src\Dio_Lcfg.c	   113      {
+; ..\appl\GenData\src\Dio_Lcfg.c	   114      /* Port15*/
+; ..\appl\GenData\src\Dio_Lcfg.c	   115        DIO_PORT_NOT_CONFIGURED,
+; ..\appl\GenData\src\Dio_Lcfg.c	   116        (0x0000U)
+; ..\appl\GenData\src\Dio_Lcfg.c	   117      },
+; ..\appl\GenData\src\Dio_Lcfg.c	   118      {
+; ..\appl\GenData\src\Dio_Lcfg.c	   119      /* Port20*/
+; ..\appl\GenData\src\Dio_Lcfg.c	   120        DIO_PORT_CONFIGURED,
+; ..\appl\GenData\src\Dio_Lcfg.c	   121        (0x7800U)
+; ..\appl\GenData\src\Dio_Lcfg.c	   122      },
+; ..\appl\GenData\src\Dio_Lcfg.c	   123      {
+; ..\appl\GenData\src\Dio_Lcfg.c	   124      /* Port21*/
+; ..\appl\GenData\src\Dio_Lcfg.c	   125        DIO_PORT_NOT_CONFIGURED,
+; ..\appl\GenData\src\Dio_Lcfg.c	   126        (0x0000U)
+; ..\appl\GenData\src\Dio_Lcfg.c	   127      },
+; ..\appl\GenData\src\Dio_Lcfg.c	   128      {
+; ..\appl\GenData\src\Dio_Lcfg.c	   129      /* Port22*/
+; ..\appl\GenData\src\Dio_Lcfg.c	   130        DIO_PORT_NOT_CONFIGURED,
+; ..\appl\GenData\src\Dio_Lcfg.c	   131        (0x0000U)
+; ..\appl\GenData\src\Dio_Lcfg.c	   132      },
+; ..\appl\GenData\src\Dio_Lcfg.c	   133      {
+; ..\appl\GenData\src\Dio_Lcfg.c	   134      /* Port23*/
+; ..\appl\GenData\src\Dio_Lcfg.c	   135        DIO_PORT_NOT_CONFIGURED,
+; ..\appl\GenData\src\Dio_Lcfg.c	   136        (0x0000U)
+; ..\appl\GenData\src\Dio_Lcfg.c	   137      },
+; ..\appl\GenData\src\Dio_Lcfg.c	   138      {
+; ..\appl\GenData\src\Dio_Lcfg.c	   139      /* Port24*/
+; ..\appl\GenData\src\Dio_Lcfg.c	   140        DIO_PORT_NOT_CONFIGURED,
+; ..\appl\GenData\src\Dio_Lcfg.c	   141        (0x0000U)
+; ..\appl\GenData\src\Dio_Lcfg.c	   142      },
+; ..\appl\GenData\src\Dio_Lcfg.c	   143      {
+; ..\appl\GenData\src\Dio_Lcfg.c	   144      /* Port25*/
+; ..\appl\GenData\src\Dio_Lcfg.c	   145        DIO_PORT_NOT_CONFIGURED,
+; ..\appl\GenData\src\Dio_Lcfg.c	   146        (0x0000U)
+; ..\appl\GenData\src\Dio_Lcfg.c	   147      },
+; ..\appl\GenData\src\Dio_Lcfg.c	   148      {
+; ..\appl\GenData\src\Dio_Lcfg.c	   149      /* Port26*/
+; ..\appl\GenData\src\Dio_Lcfg.c	   150        DIO_PORT_NOT_CONFIGURED,
+; ..\appl\GenData\src\Dio_Lcfg.c	   151        (0x0000U)
+; ..\appl\GenData\src\Dio_Lcfg.c	   152      },
+; ..\appl\GenData\src\Dio_Lcfg.c	   153      {
+; ..\appl\GenData\src\Dio_Lcfg.c	   154      /* Port30*/
+; ..\appl\GenData\src\Dio_Lcfg.c	   155        DIO_PORT_NOT_CONFIGURED,
+; ..\appl\GenData\src\Dio_Lcfg.c	   156        (0x0000U)
+; ..\appl\GenData\src\Dio_Lcfg.c	   157      },
+; ..\appl\GenData\src\Dio_Lcfg.c	   158      {
+; ..\appl\GenData\src\Dio_Lcfg.c	   159      /* Port31*/
+; ..\appl\GenData\src\Dio_Lcfg.c	   160        DIO_PORT_NOT_CONFIGURED,
+; ..\appl\GenData\src\Dio_Lcfg.c	   161        (0x0000U)
+; ..\appl\GenData\src\Dio_Lcfg.c	   162      },
+; ..\appl\GenData\src\Dio_Lcfg.c	   163      {
+; ..\appl\GenData\src\Dio_Lcfg.c	   164      /* Port32*/
+; ..\appl\GenData\src\Dio_Lcfg.c	   165        DIO_PORT_NOT_CONFIGURED,
+; ..\appl\GenData\src\Dio_Lcfg.c	   166        (0x0000U)
+; ..\appl\GenData\src\Dio_Lcfg.c	   167      },
+; ..\appl\GenData\src\Dio_Lcfg.c	   168      {
+; ..\appl\GenData\src\Dio_Lcfg.c	   169      /* Port33*/
+; ..\appl\GenData\src\Dio_Lcfg.c	   170        DIO_PORT_CONFIGURED,
+; ..\appl\GenData\src\Dio_Lcfg.c	   171        (0x00f0U)
+; ..\appl\GenData\src\Dio_Lcfg.c	   172      },
+; ..\appl\GenData\src\Dio_Lcfg.c	   173      {
+; ..\appl\GenData\src\Dio_Lcfg.c	   174      /* Port34*/
+; ..\appl\GenData\src\Dio_Lcfg.c	   175        DIO_PORT_NOT_CONFIGURED,
+; ..\appl\GenData\src\Dio_Lcfg.c	   176        (0x0000U)
+; ..\appl\GenData\src\Dio_Lcfg.c	   177      },
+; ..\appl\GenData\src\Dio_Lcfg.c	   178      {
+; ..\appl\GenData\src\Dio_Lcfg.c	   179      /* Port40*/
+; ..\appl\GenData\src\Dio_Lcfg.c	   180        DIO_PORT_NOT_CONFIGURED,
+; ..\appl\GenData\src\Dio_Lcfg.c	   181        (0x0000U)
+; ..\appl\GenData\src\Dio_Lcfg.c	   182      },
+; ..\appl\GenData\src\Dio_Lcfg.c	   183      {
+; ..\appl\GenData\src\Dio_Lcfg.c	   184      /* Port41*/
+; ..\appl\GenData\src\Dio_Lcfg.c	   185        DIO_PORT_NOT_CONFIGURED,
+; ..\appl\GenData\src\Dio_Lcfg.c	   186        (0x0000U)
+; ..\appl\GenData\src\Dio_Lcfg.c	   187      }
+; ..\appl\GenData\src\Dio_Lcfg.c	   188    };
+; ..\appl\GenData\src\Dio_Lcfg.c	   189      const Dio_ConfigType Dio_Config =
+; ..\appl\GenData\src\Dio_Lcfg.c	   190      {
+; ..\appl\GenData\src\Dio_Lcfg.c	   191                  
+; ..\appl\GenData\src\Dio_Lcfg.c	   192        /* Dio Port and Channelconfiguration */
+; ..\appl\GenData\src\Dio_Lcfg.c	   193              &Dio_kPortChannelConfig[0],
+; ..\appl\GenData\src\Dio_Lcfg.c	   194        /* Dio Channelgroup configuration */
+; ..\appl\GenData\src\Dio_Lcfg.c	   195        
+; ..\appl\GenData\src\Dio_Lcfg.c	   196        NULL_PTR,
+; ..\appl\GenData\src\Dio_Lcfg.c	   197        /* Configured number of Dio Channelgroups for configuration */
+; ..\appl\GenData\src\Dio_Lcfg.c	   198        DIO_CHANNELGROUPCOUNT
+; ..\appl\GenData\src\Dio_Lcfg.c	   199      };
+; ..\appl\GenData\src\Dio_Lcfg.c	   200    #define DIO_STOP_SEC_CONFIG_DATA_ASIL_B_GLOBAL_UNSPECIFIED
+; ..\appl\GenData\src\Dio_Lcfg.c	   201      /* MISRA2012_RULE_4_10_JUSTIFICATION: To be compliant with autosar guidelines 
+; ..\appl\GenData\src\Dio_Lcfg.c	   202      Dio_Memmap.h header is included without safegaurd.*/
+; ..\appl\GenData\src\Dio_Lcfg.c	   203      /* MISRA2012_RULE_20_1_JUSTIFICATION: Dio_Memmap.h header included as per Autosar 
+; ..\appl\GenData\src\Dio_Lcfg.c	   204      guidelines. */
+; ..\appl\GenData\src\Dio_Lcfg.c	   205    #include "Dio_MemMap.h"
+; ..\appl\GenData\src\Dio_Lcfg.c	   206  
+; ..\appl\GenData\src\Dio_Lcfg.c	   207  /*******************************************************************************
+; ..\appl\GenData\src\Dio_Lcfg.c	   208  **                      Private Constant Definitions                          **
+; ..\appl\GenData\src\Dio_Lcfg.c	   209  *******************************************************************************/
+
+	; Module end

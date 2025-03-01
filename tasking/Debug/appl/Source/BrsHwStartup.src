@@ -1,0 +1,2791 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 21092262 SN 73118428"
+	.compiler_invocation	"ctc --dep-file=appl\\Source\\.BrsHwStartup.o.d --fp-model=c,f,l,n,r,S,T,z -D__CPU__=tc39xb -D__CPU_TC39XB__ --core=tc1.6.2 --iso=99 -DBRS_COMP_TASKING -ID:\\Zonal\\demo011\\tasking -ID:\\Zonal\\testdemo\\taskingdemo\\demo001 -ID:\\Zonal\\demo011\\tasking -ID:\\Zonal\\demo011\\tasking\\appl -ID:\\Zonal\\demo011\\tasking\\appl\\GenData -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\Components -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\ContractPhase -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\inc -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\src -ID:\\Zonal\\demo011\\tasking\\appl\\Include -ID:\\Zonal\\demo011\\tasking\\appl\\Source -ID:\\Zonal\\demo011\\tasking\\appl\\Source\\swc_test -ID:\\Zonal\\demo011\\tasking\\component -ID:\\Zonal\\demo011\\tasking\\component\\_Common -ID:\\Zonal\\demo011\\tasking\\component\\_Common\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\BswM -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\EcuM -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\Os -ID:\\Zonal\\demo011\\tasking\\component\\Os\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\Os\\BSWMD\\Os -ID:\\Zonal\\demo011\\tasking\\component\\Os\\BSWMD\\Os\\TC39xQ -ID:\\Zonal\\demo011\\tasking\\component\\Os\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\Os\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\Os\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug -ID:\\Zonal\\demo011\\tasking\\Debug\\appl -ID:\\Zonal\\demo011\\tasking\\Debug\\appl\\GenData -ID:\\Zonal\\demo011\\tasking\\Debug\\appl\\GenData\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\appl\\Source -ID:\\Zonal\\demo011\\tasking\\Debug\\component -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\BswM -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\BswM\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\EcuM -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\EcuM\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\Os -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\Os\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\VStdLib -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\VStdLib\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Dio -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Dio\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Dio\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\McalLib -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\McalLib\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\McalLib\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Mcu -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Mcu\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Mcu\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Port -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Port\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Port\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Platform -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Platform\\AS440 -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Sfr -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Sfr\\TC39xB -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Sfr\\TC39xB\\_Reg -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc\\inc\\AS440 -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal\\Port -ID:\\Zonal\\demo011\\tasking\\mcal\\Port\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\Port\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\Port\\ssc\\src -g2 --make-target=appl\\Source\\BrsHwStartup.o -t2 --language=-gcc,-volatile,+strings,-kanji --default-near-size=0 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o appl\\Source\\BrsHwStartup.src ..\\appl\\Source\\BrsHwStartup.c"
+	.compiler_name		"ctc"
+	;source	'..\\appl\\Source\\BrsHwStartup.c'
+
+	
+$TC162
+	
+	.sdecl	'.text.brsStartupEntry',code,cluster('brsStartupEntry')
+	.sect	'.text.brsStartupEntry'
+	.align	2
+	
+	.global	brsStartupEntry
+
+; ..\appl\Source\BrsHwStartup.c	     1  
+; ..\appl\Source\BrsHwStartup.c	     2  /**********************************************************************************************************************
+; ..\appl\Source\BrsHwStartup.c	     3    COPYRIGHT
+; ..\appl\Source\BrsHwStartup.c	     4  -----------------------------------------------------------------------------------------------------------------------
+; ..\appl\Source\BrsHwStartup.c	     5    \par      copyright
+; ..\appl\Source\BrsHwStartup.c	     6    \verbatim
+; ..\appl\Source\BrsHwStartup.c	     7    Copyright (c) 2020 by Vector Informatik GmbH.                                                  All rights reserved.
+; ..\appl\Source\BrsHwStartup.c	     8  
+; ..\appl\Source\BrsHwStartup.c	     9                  This software is copyright protected and proprietary to Vector Informatik GmbH.
+; ..\appl\Source\BrsHwStartup.c	    10                  Vector Informatik GmbH grants to you only those rights as set out in the license conditions.
+; ..\appl\Source\BrsHwStartup.c	    11                  All other rights remain with Vector Informatik GmbH.
+; ..\appl\Source\BrsHwStartup.c	    12    \endverbatim
+; ..\appl\Source\BrsHwStartup.c	    13  -----------------------------------------------------------------------------------------------------------------------
+; ..\appl\Source\BrsHwStartup.c	    14    FILE DESCRIPTION
+; ..\appl\Source\BrsHwStartup.c	    15  -----------------------------------------------------------------------------------------------------------------------
+; ..\appl\Source\BrsHwStartup.c	    16    \file  File:  BrsHwStartup.c
+; ..\appl\Source\BrsHwStartup.c	    17        Project:  Vector Basic Runtime System
+; ..\appl\Source\BrsHwStartup.c	    18         Module:  BrsHw for platform Aurix and AurixPlus
+; ..\appl\Source\BrsHwStartup.c	    19       Template:  This file is reviewed according to Brs_Template@Implementation[1.00.00]
+; ..\appl\Source\BrsHwStartup.c	    20  
+; ..\appl\Source\BrsHwStartup.c	    21    \brief Description:  This file contains the assembler part of the BRS StartUpCode.
+; ..\appl\Source\BrsHwStartup.c	    22  
+; ..\appl\Source\BrsHwStartup.c	    23    \attention Please note:
+; ..\appl\Source\BrsHwStartup.c	    24      The demo and example programs only show special aspects of the software. With regard to the fact
+; ..\appl\Source\BrsHwStartup.c	    25      that these programs are meant for demonstration purposes only, Vector Informatik liability shall be
+; ..\appl\Source\BrsHwStartup.c	    26      expressly excluded in cases of ordinary negligence, to the extent admissible by law or statute.
+; ..\appl\Source\BrsHwStartup.c	    27  **********************************************************************************************************************/
+; ..\appl\Source\BrsHwStartup.c	    28  
+; ..\appl\Source\BrsHwStartup.c	    29  /**********************************************************************************************************************
+; ..\appl\Source\BrsHwStartup.c	    30    AUTHOR IDENTITY
+; ..\appl\Source\BrsHwStartup.c	    31   ----------------------------------------------------------------------------------------------------------------------
+; ..\appl\Source\BrsHwStartup.c	    32    Name                          Initials      Company
+; ..\appl\Source\BrsHwStartup.c	    33    ----------------------------  ------------  -------------------------------------------------------------------------
+; ..\appl\Source\BrsHwStartup.c	    34    Torsten Schmidt               visto         Vector Informatik GmbH
+; ..\appl\Source\BrsHwStartup.c	    35    Lukas Rohrwild                virrlu        Vector Informatik GmbH
+; ..\appl\Source\BrsHwStartup.c	    36    Sascha Mauser                 vismaa        Vector Informatik GmbH
+; ..\appl\Source\BrsHwStartup.c	    37    Manuel Rettig                 visrgm        Vector Informatik GmbH
+; ..\appl\Source\BrsHwStartup.c	    38  -----------------------------------------------------------------------------------------------------------------------
+; ..\appl\Source\BrsHwStartup.c	    39    REVISION HISTORY
+; ..\appl\Source\BrsHwStartup.c	    40   ----------------------------------------------------------------------------------------------------------------------
+; ..\appl\Source\BrsHwStartup.c	    41    Version   Date        Author  Description
+; ..\appl\Source\BrsHwStartup.c	    42    --------  ----------  ------  ---------------------------------------------------------------------------------------
+; ..\appl\Source\BrsHwStartup.c	    43    01.00.00  2020-05-28  visto   Initial version based on Template for vBaseEnv 2.0
+; ..\appl\Source\BrsHwStartup.c	    44              2020-06-03  virrlu  Adaptions for vLinkGen 2.0
+; ..\appl\Source\BrsHwStartup.c	    45    01.00.01  2020-06-12  vismaa  Changed brsStartupEntry in StartupEntry (Symbol is used with vLinGen 2.0)
+; ..\appl\Source\BrsHwStartup.c	    46    01.01.00  2020-07-28  virrlu  Revert previous change of symbol brsStartupEntry, change Tasking startup stack labels
+; ..\appl\Source\BrsHwStartup.c	    47    01.02.00  2020-08-04  visbwa  Experimental support for FBL UseCase Legacy w/o OS (usage of brs exception table)
+; ..\appl\Source\BrsHwStartup.c	    48              2020-09-18  visrgm  Added linking of StartupCode to section .brsStartup and changed linker options for 
+; ..\appl\Source\BrsHwStartup.c	    49                                  hightec/tricore
+; ..\appl\Source\BrsHwStartup.c	    50              2020-09-22  visto   HALBE-2176 create inline functions for ENDINIT handling
+; ..\appl\Source\BrsHwStartup.c	    51    01.03.00  2020-10-26  visto   HALBE-2633 - vBaseEnv_TricoreAurix: Adaptions for FBL UseCase
+; ..\appl\Source\BrsHwStartup.c	    52  **********************************************************************************************************************/
+; ..\appl\Source\BrsHwStartup.c	    53  
+; ..\appl\Source\BrsHwStartup.c	    54  /**********************************************************************************************************************
+; ..\appl\Source\BrsHwStartup.c	    55  *  EXAMPLE CODE ONLY
+; ..\appl\Source\BrsHwStartup.c	    56  *  -------------------------------------------------------------------------------------------------------------------
+; ..\appl\Source\BrsHwStartup.c	    57  *  This Example Code is only intended for illustrating an example of a possible BSW integration and BSW configuration.
+; ..\appl\Source\BrsHwStartup.c	    58  *  The Example Code has not passed any quality control measures and may be incomplete. The Example Code is neither
+; ..\appl\Source\BrsHwStartup.c	    59  *  intended nor qualified for use in series production. The Example Code as well as any of its modifications and/or
+; ..\appl\Source\BrsHwStartup.c	    60  *  implementations must be tested with diligent care and must comply with all quality requirements which are necessary
+; ..\appl\Source\BrsHwStartup.c	    61  *  according to the state of the art before their use.
+; ..\appl\Source\BrsHwStartup.c	    62  *********************************************************************************************************************/
+; ..\appl\Source\BrsHwStartup.c	    63  
+; ..\appl\Source\BrsHwStartup.c	    64  /**********************************************************************************************************************
+; ..\appl\Source\BrsHwStartup.c	    65    INCLUDES
+; ..\appl\Source\BrsHwStartup.c	    66  **********************************************************************************************************************/
+; ..\appl\Source\BrsHwStartup.c	    67  #include "BrsHw.h"
+; ..\appl\Source\BrsHwStartup.c	    68  #include "BrsMain.h"
+; ..\appl\Source\BrsHwStartup.c	    69  #include "BrsMainStartup.h"
+; ..\appl\Source\BrsHwStartup.c	    70  #include "vLinkGen_Lcfg.h"
+; ..\appl\Source\BrsHwStartup.c	    71  
+; ..\appl\Source\BrsHwStartup.c	    72  /**********************************************************************************************************************
+; ..\appl\Source\BrsHwStartup.c	    73    CONFIGURATION CHECK
+; ..\appl\Source\BrsHwStartup.c	    74  **********************************************************************************************************************/
+; ..\appl\Source\BrsHwStartup.c	    75  #if defined (BRS_COMP_TASKING) 
+; ..\appl\Source\BrsHwStartup.c	    76  
+; ..\appl\Source\BrsHwStartup.c	    77  #else
+; ..\appl\Source\BrsHwStartup.c	    78    #error "Unknown compiler specified!"
+; ..\appl\Source\BrsHwStartup.c	    79  #endif
+; ..\appl\Source\BrsHwStartup.c	    80  
+; ..\appl\Source\BrsHwStartup.c	    81  #if (VLINKGEN_CFG_MAJOR_VERSION != 2u)
+; ..\appl\Source\BrsHwStartup.c	    82    #error "This StartUpCode is dependent to the vLinkGen version! vLinkGen major version does not fit!"
+; ..\appl\Source\BrsHwStartup.c	    83  #else
+; ..\appl\Source\BrsHwStartup.c	    84  # if (VLINKGEN_CFG_MINOR_VERSION < 0u)
+; ..\appl\Source\BrsHwStartup.c	    85    #error "This StartUpCode is dependent to the vLinkGen version! Your vLinkGen minor version is too old!"
+; ..\appl\Source\BrsHwStartup.c	    86  # endif
+; ..\appl\Source\BrsHwStartup.c	    87  #endif
+; ..\appl\Source\BrsHwStartup.c	    88  
+; ..\appl\Source\BrsHwStartup.c	    89  /**********************************************************************************************************************
+; ..\appl\Source\BrsHwStartup.c	    90    Compiler abstraction
+; ..\appl\Source\BrsHwStartup.c	    91  **********************************************************************************************************************/
+; ..\appl\Source\BrsHwStartup.c	    92  #if defined (BRS_COMP_TASKING)
+; ..\appl\Source\BrsHwStartup.c	    93    /**********************************************************************************/
+; ..\appl\Source\BrsHwStartup.c	    94    /* external symbols of context saving areas */
+; ..\appl\Source\BrsHwStartup.c	    95    /**********************************************************************************/
+; ..\appl\Source\BrsHwStartup.c	    96    extern int __CSA_BEGIN_CPU0_[][16];  /* context save area core 0 begin */
+; ..\appl\Source\BrsHwStartup.c	    97    extern int __CSA_END_CPU0_[][16];  /* context save area core 0 end   */
+; ..\appl\Source\BrsHwStartup.c	    98    extern int __CSA_BEGIN_CPU1_[][16];  /* context save area core 1 begin */
+; ..\appl\Source\BrsHwStartup.c	    99    extern int __CSA_END_CPU1_[][16];  /* context save area core 1 end   */
+; ..\appl\Source\BrsHwStartup.c	   100    extern int __CSA_BEGIN_CPU2_[][16];  /* context save area core 2 begin */
+; ..\appl\Source\BrsHwStartup.c	   101    extern int __CSA_END_CPU2_[][16];  /* context save area core 2 end   */
+; ..\appl\Source\BrsHwStartup.c	   102    extern int __CSA_BEGIN_CPU3_[][16];  /* context save area core 3 begin */
+; ..\appl\Source\BrsHwStartup.c	   103    extern int __CSA_END_CPU3_[][16];  /* context save area core 3 end   */
+; ..\appl\Source\BrsHwStartup.c	   104    extern int __CSA_BEGIN_CPU4_[][16];  /* context save area core 4 begin */
+; ..\appl\Source\BrsHwStartup.c	   105    extern int __CSA_END_CPU4_[][16];  /* context save area core 4 end   */
+; ..\appl\Source\BrsHwStartup.c	   106    extern int __CSA_BEGIN_CPU5_[][16];  /* context save area core 5 begin */
+; ..\appl\Source\BrsHwStartup.c	   107    extern int __CSA_END_CPU5_[][16];  /* context save area core 5 end   */
+; ..\appl\Source\BrsHwStartup.c	   108    #define BRS_CSA_STARTADDRESS_CORE0  __CSA_BEGIN_CPU0_
+; ..\appl\Source\BrsHwStartup.c	   109    #define BRS_CSA_STARTADDRESS_CORE1  __CSA_BEGIN_CPU1_
+; ..\appl\Source\BrsHwStartup.c	   110    #define BRS_CSA_STARTADDRESS_CORE2  __CSA_BEGIN_CPU2_
+; ..\appl\Source\BrsHwStartup.c	   111    #define BRS_CSA_STARTADDRESS_CORE3  __CSA_BEGIN_CPU3_
+; ..\appl\Source\BrsHwStartup.c	   112    #define BRS_CSA_STARTADDRESS_CORE4  __CSA_BEGIN_CPU4_
+; ..\appl\Source\BrsHwStartup.c	   113    #define BRS_CSA_STARTADDRESS_CORE5  __CSA_BEGIN_CPU5_
+; ..\appl\Source\BrsHwStartup.c	   114    #define BRS_CSA_ENDADDRESS_CORE0    __CSA_END_CPU0_
+; ..\appl\Source\BrsHwStartup.c	   115    #define BRS_CSA_ENDADDRESS_CORE1    __CSA_END_CPU1_
+; ..\appl\Source\BrsHwStartup.c	   116    #define BRS_CSA_ENDADDRESS_CORE2    __CSA_END_CPU2_
+; ..\appl\Source\BrsHwStartup.c	   117    #define BRS_CSA_ENDADDRESS_CORE3    __CSA_END_CPU3_
+; ..\appl\Source\BrsHwStartup.c	   118    #define BRS_CSA_ENDADDRESS_CORE4    __CSA_END_CPU4_
+; ..\appl\Source\BrsHwStartup.c	   119    #define BRS_CSA_ENDADDRESS_CORE5    __CSA_END_CPU5_
+; ..\appl\Source\BrsHwStartup.c	   120  
+; ..\appl\Source\BrsHwStartup.c	   121    /**********************************************************************************/
+; ..\appl\Source\BrsHwStartup.c	   122    /* compiler generated stack symbols used during startup */
+; ..\appl\Source\BrsHwStartup.c	   123    /* BRS_STARTUPSTACK_CORE<x> must be the end address */
+; ..\appl\Source\BrsHwStartup.c	   124    /**********************************************************************************/
+; ..\appl\Source\BrsHwStartup.c	   125    extern __far void __STARTUPSTACK_CORE0[];
+; ..\appl\Source\BrsHwStartup.c	   126    extern __far void __STARTUPSTACK_CORE1[];
+; ..\appl\Source\BrsHwStartup.c	   127    extern __far void __STARTUPSTACK_CORE2[];
+; ..\appl\Source\BrsHwStartup.c	   128    extern __far void __STARTUPSTACK_CORE3[];
+; ..\appl\Source\BrsHwStartup.c	   129    extern __far void __STARTUPSTACK_CORE4[];
+; ..\appl\Source\BrsHwStartup.c	   130    extern __far void __STARTUPSTACK_CORE5[];
+; ..\appl\Source\BrsHwStartup.c	   131    #define BRS_STARTUPSTACK_CORE0  __STARTUPSTACK_CORE0
+; ..\appl\Source\BrsHwStartup.c	   132    #define BRS_STARTUPSTACK_CORE1  __STARTUPSTACK_CORE1
+; ..\appl\Source\BrsHwStartup.c	   133    #define BRS_STARTUPSTACK_CORE2  __STARTUPSTACK_CORE2
+; ..\appl\Source\BrsHwStartup.c	   134    #define BRS_STARTUPSTACK_CORE3  __STARTUPSTACK_CORE3
+; ..\appl\Source\BrsHwStartup.c	   135    #define BRS_STARTUPSTACK_CORE4  __STARTUPSTACK_CORE4
+; ..\appl\Source\BrsHwStartup.c	   136    #define BRS_STARTUPSTACK_CORE5  __STARTUPSTACK_CORE5
+; ..\appl\Source\BrsHwStartup.c	   137  
+; ..\appl\Source\BrsHwStartup.c	   138    /**********************************************************************************/
+; ..\appl\Source\BrsHwStartup.c	   139    /* external symbols of trap vectors */
+; ..\appl\Source\BrsHwStartup.c	   140    /**********************************************************************************/
+; ..\appl\Source\BrsHwStartup.c	   141  #if defined (BRS_ENABLE_FBL_SUPPORT)
+; ..\appl\Source\BrsHwStartup.c	   142    extern uint32 _brsExcVect_START[];
+; ..\appl\Source\BrsHwStartup.c	   143    #define BRS_TRAPTAB_CORE0  _brsExcVect_START
+; ..\appl\Source\BrsHwStartup.c	   144  
+; ..\appl\Source\BrsHwStartup.c	   145  #else
+; ..\appl\Source\BrsHwStartup.c	   146    extern __far void _OS_EXCVEC_CORE0_CODE_START[];
+; ..\appl\Source\BrsHwStartup.c	   147    extern __far void _OS_EXCVEC_CORE1_CODE_START[];
+; ..\appl\Source\BrsHwStartup.c	   148    extern __far void _OS_EXCVEC_CORE2_CODE_START[];
+; ..\appl\Source\BrsHwStartup.c	   149    extern __far void _OS_EXCVEC_CORE3_CODE_START[];
+; ..\appl\Source\BrsHwStartup.c	   150    extern __far void _OS_EXCVEC_CORE4_CODE_START[];
+; ..\appl\Source\BrsHwStartup.c	   151    extern __far void _OS_EXCVEC_CORE5_CODE_START[];
+; ..\appl\Source\BrsHwStartup.c	   152    #define BRS_TRAPTAB_CORE0  _OS_EXCVEC_CORE0_CODE_START
+; ..\appl\Source\BrsHwStartup.c	   153    #define BRS_TRAPTAB_CORE1  _OS_EXCVEC_CORE1_CODE_START
+; ..\appl\Source\BrsHwStartup.c	   154    #define BRS_TRAPTAB_CORE2  _OS_EXCVEC_CORE2_CODE_START
+; ..\appl\Source\BrsHwStartup.c	   155    #define BRS_TRAPTAB_CORE3  _OS_EXCVEC_CORE3_CODE_START
+; ..\appl\Source\BrsHwStartup.c	   156    #define BRS_TRAPTAB_CORE4  _OS_EXCVEC_CORE4_CODE_START
+; ..\appl\Source\BrsHwStartup.c	   157    #define BRS_TRAPTAB_CORE5  _OS_EXCVEC_CORE5_CODE_START
+; ..\appl\Source\BrsHwStartup.c	   158  #endif /*else BRS_ENABLE_FBL_SUPPORT*/
+; ..\appl\Source\BrsHwStartup.c	   159  
+; ..\appl\Source\BrsHwStartup.c	   160    /**********************************************************************************/
+; ..\appl\Source\BrsHwStartup.c	   161    /* external symbols of interrupt vectors */
+; ..\appl\Source\BrsHwStartup.c	   162    /**********************************************************************************/
+; ..\appl\Source\BrsHwStartup.c	   163    extern __far void _OS_INTVEC_CORE0_CODE_START[];
+; ..\appl\Source\BrsHwStartup.c	   164    extern __far void _OS_INTVEC_CORE1_CODE_START[];
+; ..\appl\Source\BrsHwStartup.c	   165    extern __far void _OS_INTVEC_CORE2_CODE_START[];
+; ..\appl\Source\BrsHwStartup.c	   166    extern __far void _OS_INTVEC_CORE3_CODE_START[];
+; ..\appl\Source\BrsHwStartup.c	   167    extern __far void _OS_INTVEC_CORE4_CODE_START[];
+; ..\appl\Source\BrsHwStartup.c	   168    extern __far void _OS_INTVEC_CORE5_CODE_START[];
+; ..\appl\Source\BrsHwStartup.c	   169    #define BRS_INTVECTTAB_CORE0  _OS_INTVEC_CORE0_CODE_START
+; ..\appl\Source\BrsHwStartup.c	   170    #define BRS_INTVECTTAB_CORE1  _OS_INTVEC_CORE1_CODE_START
+; ..\appl\Source\BrsHwStartup.c	   171    #define BRS_INTVECTTAB_CORE2  _OS_INTVEC_CORE2_CODE_START
+; ..\appl\Source\BrsHwStartup.c	   172    #define BRS_INTVECTTAB_CORE3  _OS_INTVEC_CORE3_CODE_START
+; ..\appl\Source\BrsHwStartup.c	   173    #define BRS_INTVECTTAB_CORE4  _OS_INTVEC_CORE4_CODE_START
+; ..\appl\Source\BrsHwStartup.c	   174    #define BRS_INTVECTTAB_CORE5  _OS_INTVEC_CORE5_CODE_START
+; ..\appl\Source\BrsHwStartup.c	   175  
+; ..\appl\Source\BrsHwStartup.c	   176  #else
+; ..\appl\Source\BrsHwStartup.c	   177    /**********************************************************************************/
+; ..\appl\Source\BrsHwStartup.c	   178    /* external symbols of context saving areas */
+; ..\appl\Source\BrsHwStartup.c	   179    /**********************************************************************************/
+; ..\appl\Source\BrsHwStartup.c	   180    extern uint32 __CSA_BEGIN_CPU0_;
+; ..\appl\Source\BrsHwStartup.c	   181    extern uint32 __CSA_END_CPU0_;
+; ..\appl\Source\BrsHwStartup.c	   182    extern uint32 __CSA_BEGIN_CPU1_;
+; ..\appl\Source\BrsHwStartup.c	   183    extern uint32 __CSA_END_CPU1_;
+; ..\appl\Source\BrsHwStartup.c	   184    extern uint32 __CSA_BEGIN_CPU2_;
+; ..\appl\Source\BrsHwStartup.c	   185    extern uint32 __CSA_END_CPU2_;
+; ..\appl\Source\BrsHwStartup.c	   186    extern uint32 __CSA_BEGIN_CPU3_;
+; ..\appl\Source\BrsHwStartup.c	   187    extern uint32 __CSA_END_CPU3_;
+; ..\appl\Source\BrsHwStartup.c	   188    extern uint32 __CSA_BEGIN_CPU4_;
+; ..\appl\Source\BrsHwStartup.c	   189    extern uint32 __CSA_END_CPU4_;
+; ..\appl\Source\BrsHwStartup.c	   190    extern uint32 __CSA_BEGIN_CPU5_;
+; ..\appl\Source\BrsHwStartup.c	   191    extern uint32 __CSA_END_CPU5_;
+; ..\appl\Source\BrsHwStartup.c	   192    #define BRS_CSA_STARTADDRESS_CORE0  &__CSA_BEGIN_CPU0_
+; ..\appl\Source\BrsHwStartup.c	   193    #define BRS_CSA_STARTADDRESS_CORE1  &__CSA_BEGIN_CPU1_
+; ..\appl\Source\BrsHwStartup.c	   194    #define BRS_CSA_STARTADDRESS_CORE2  &__CSA_BEGIN_CPU2_
+; ..\appl\Source\BrsHwStartup.c	   195    #define BRS_CSA_STARTADDRESS_CORE3  &__CSA_BEGIN_CPU3_
+; ..\appl\Source\BrsHwStartup.c	   196    #define BRS_CSA_STARTADDRESS_CORE4  &__CSA_BEGIN_CPU4_
+; ..\appl\Source\BrsHwStartup.c	   197    #define BRS_CSA_STARTADDRESS_CORE5  &__CSA_BEGIN_CPU5_
+; ..\appl\Source\BrsHwStartup.c	   198    #define BRS_CSA_ENDADDRESS_CORE0    &__CSA_END_CPU0_
+; ..\appl\Source\BrsHwStartup.c	   199    #define BRS_CSA_ENDADDRESS_CORE1    &__CSA_END_CPU1_
+; ..\appl\Source\BrsHwStartup.c	   200    #define BRS_CSA_ENDADDRESS_CORE2    &__CSA_END_CPU2_
+; ..\appl\Source\BrsHwStartup.c	   201    #define BRS_CSA_ENDADDRESS_CORE3    &__CSA_END_CPU3_
+; ..\appl\Source\BrsHwStartup.c	   202    #define BRS_CSA_ENDADDRESS_CORE4    &__CSA_END_CPU4_
+; ..\appl\Source\BrsHwStartup.c	   203    #define BRS_CSA_ENDADDRESS_CORE5    &__CSA_END_CPU5_
+; ..\appl\Source\BrsHwStartup.c	   204  
+; ..\appl\Source\BrsHwStartup.c	   205    /**********************************************************************************/
+; ..\appl\Source\BrsHwStartup.c	   206    /* compiler generated stack symbols used during startup */
+; ..\appl\Source\BrsHwStartup.c	   207    /* BRS_STARTUPSTACK_CORE<x> must be the end address */
+; ..\appl\Source\BrsHwStartup.c	   208    /**********************************************************************************/
+; ..\appl\Source\BrsHwStartup.c	   209    extern uint32 __STARTUPSTACK_CORE0;
+; ..\appl\Source\BrsHwStartup.c	   210    extern uint32 __STARTUPSTACK_CORE1;
+; ..\appl\Source\BrsHwStartup.c	   211    extern uint32 __STARTUPSTACK_CORE2;
+; ..\appl\Source\BrsHwStartup.c	   212    extern uint32 __STARTUPSTACK_CORE3;
+; ..\appl\Source\BrsHwStartup.c	   213    extern uint32 __STARTUPSTACK_CORE4;
+; ..\appl\Source\BrsHwStartup.c	   214    extern uint32 __STARTUPSTACK_CORE5;
+; ..\appl\Source\BrsHwStartup.c	   215    #define BRS_STARTUPSTACK_CORE0  &__STARTUPSTACK_CORE0
+; ..\appl\Source\BrsHwStartup.c	   216    #define BRS_STARTUPSTACK_CORE1  &__STARTUPSTACK_CORE1
+; ..\appl\Source\BrsHwStartup.c	   217    #define BRS_STARTUPSTACK_CORE2  &__STARTUPSTACK_CORE2
+; ..\appl\Source\BrsHwStartup.c	   218    #define BRS_STARTUPSTACK_CORE3  &__STARTUPSTACK_CORE3
+; ..\appl\Source\BrsHwStartup.c	   219    #define BRS_STARTUPSTACK_CORE4  &__STARTUPSTACK_CORE4
+; ..\appl\Source\BrsHwStartup.c	   220    #define BRS_STARTUPSTACK_CORE5  &__STARTUPSTACK_CORE5
+; ..\appl\Source\BrsHwStartup.c	   221  
+; ..\appl\Source\BrsHwStartup.c	   222    /**********************************************************************************/
+; ..\appl\Source\BrsHwStartup.c	   223    /* external symbols of trap vectors */
+; ..\appl\Source\BrsHwStartup.c	   224    /* OS symbols are used */
+; ..\appl\Source\BrsHwStartup.c	   225    /**********************************************************************************/
+; ..\appl\Source\BrsHwStartup.c	   226  #if defined (BRS_ENABLE_FBL_SUPPORT)
+; ..\appl\Source\BrsHwStartup.c	   227    extern uint32 _brsExcVect_START[];
+; ..\appl\Source\BrsHwStartup.c	   228    #define BRS_TRAPTAB_CORE0  _brsExcVect_START
+; ..\appl\Source\BrsHwStartup.c	   229  #else
+; ..\appl\Source\BrsHwStartup.c	   230    extern uint32 _OS_EXCVEC_CORE0_CODE_START;
+; ..\appl\Source\BrsHwStartup.c	   231    extern uint32 _OS_EXCVEC_CORE1_CODE_START;
+; ..\appl\Source\BrsHwStartup.c	   232    extern uint32 _OS_EXCVEC_CORE2_CODE_START;
+; ..\appl\Source\BrsHwStartup.c	   233    extern uint32 _OS_EXCVEC_CORE3_CODE_START;
+; ..\appl\Source\BrsHwStartup.c	   234    extern uint32 _OS_EXCVEC_CORE4_CODE_START;
+; ..\appl\Source\BrsHwStartup.c	   235    extern uint32 _OS_EXCVEC_CORE5_CODE_START;
+; ..\appl\Source\BrsHwStartup.c	   236    #define BRS_TRAPTAB_CORE0  &_OS_EXCVEC_CORE0_CODE_START
+; ..\appl\Source\BrsHwStartup.c	   237    #define BRS_TRAPTAB_CORE1  &_OS_EXCVEC_CORE1_CODE_START
+; ..\appl\Source\BrsHwStartup.c	   238    #define BRS_TRAPTAB_CORE2  &_OS_EXCVEC_CORE2_CODE_START
+; ..\appl\Source\BrsHwStartup.c	   239    #define BRS_TRAPTAB_CORE3  &_OS_EXCVEC_CORE3_CODE_START
+; ..\appl\Source\BrsHwStartup.c	   240    #define BRS_TRAPTAB_CORE4  &_OS_EXCVEC_CORE4_CODE_START
+; ..\appl\Source\BrsHwStartup.c	   241    #define BRS_TRAPTAB_CORE5  &_OS_EXCVEC_CORE5_CODE_START
+; ..\appl\Source\BrsHwStartup.c	   242  #endif
+; ..\appl\Source\BrsHwStartup.c	   243    /**********************************************************************************/
+; ..\appl\Source\BrsHwStartup.c	   244    /* external symbols of interrupt vectors */
+; ..\appl\Source\BrsHwStartup.c	   245    /* OS symbols are used */
+; ..\appl\Source\BrsHwStartup.c	   246    /**********************************************************************************/
+; ..\appl\Source\BrsHwStartup.c	   247    extern uint32 _OS_INTVEC_CORE0_CODE_START;
+; ..\appl\Source\BrsHwStartup.c	   248    extern uint32 _OS_INTVEC_CORE1_CODE_START;
+; ..\appl\Source\BrsHwStartup.c	   249    extern uint32 _OS_INTVEC_CORE2_CODE_START;
+; ..\appl\Source\BrsHwStartup.c	   250    extern uint32 _OS_INTVEC_CORE3_CODE_START;
+; ..\appl\Source\BrsHwStartup.c	   251    extern uint32 _OS_INTVEC_CORE4_CODE_START;
+; ..\appl\Source\BrsHwStartup.c	   252    extern uint32 _OS_INTVEC_CORE5_CODE_START;
+; ..\appl\Source\BrsHwStartup.c	   253    #define BRS_INTVECTTAB_CORE0  &_OS_INTVEC_CORE0_CODE_START
+; ..\appl\Source\BrsHwStartup.c	   254    #define BRS_INTVECTTAB_CORE1  &_OS_INTVEC_CORE1_CODE_START
+; ..\appl\Source\BrsHwStartup.c	   255    #define BRS_INTVECTTAB_CORE2  &_OS_INTVEC_CORE2_CODE_START
+; ..\appl\Source\BrsHwStartup.c	   256    #define BRS_INTVECTTAB_CORE3  &_OS_INTVEC_CORE3_CODE_START
+; ..\appl\Source\BrsHwStartup.c	   257    #define BRS_INTVECTTAB_CORE4  &_OS_INTVEC_CORE4_CODE_START
+; ..\appl\Source\BrsHwStartup.c	   258    #define BRS_INTVECTTAB_CORE5  &_OS_INTVEC_CORE5_CODE_START
+; ..\appl\Source\BrsHwStartup.c	   259  #endif /*BRS_COMP_x*/
+; ..\appl\Source\BrsHwStartup.c	   260  
+; ..\appl\Source\BrsHwStartup.c	   261  typedef uint32 BRS_CSA_Element[16]; /* one CSA element consists of 16 x 32 bit */
+; ..\appl\Source\BrsHwStartup.c	   262  
+; ..\appl\Source\BrsHwStartup.c	   263  /**********************************************************************************************************************
+; ..\appl\Source\BrsHwStartup.c	   264    FUNCTION DEFINITIONS
+; ..\appl\Source\BrsHwStartup.c	   265  **********************************************************************************************************************/
+; ..\appl\Source\BrsHwStartup.c	   266  
+; ..\appl\Source\BrsHwStartup.c	   267  /* =========================================================================== */
+; ..\appl\Source\BrsHwStartup.c	   268  /*                                                                             */
+; ..\appl\Source\BrsHwStartup.c	   269  /* Description: Entry point for all cores                                      */
+; ..\appl\Source\BrsHwStartup.c	   270  /*                                                                             */
+; ..\appl\Source\BrsHwStartup.c	   271  /* =========================================================================== */
+; ..\appl\Source\BrsHwStartup.c	   272  BRS_STARTUP_LABEL(brsStartupEntry)
+; Function brsStartupEntry
+.L23:
+brsStartupEntry:	.type	func
+	.GLOBAL StartupEntry
+	StartupEntry:
+	movh.a a4, #@his(brsStartupEntry_internal)
+	lea a4,[a4]@los(brsStartupEntry_internal)
+	ji a4
+	ret
+.L40:
+	
+__brsStartupEntry_function_end:
+	.size	brsStartupEntry,__brsStartupEntry_function_end-brsStartupEntry
+.L34:
+	; End of function
+	
+	.sdecl	'.text.brsStartup',code,cluster('brsStartupEntry_internal'),protect
+	.sect	'.text.brsStartup'
+	.align	2
+	
+	.global	brsStartupEntry_internal
+
+; ..\appl\Source\BrsHwStartup.c	   273  
+; ..\appl\Source\BrsHwStartup.c	   274  #if defined (BRS_COMP_TASKING)
+; ..\appl\Source\BrsHwStartup.c	   275  #pragma section code "brsStartup"
+; ..\appl\Source\BrsHwStartup.c	   276  #endif
+; ..\appl\Source\BrsHwStartup.c	   277  
+; ..\appl\Source\BrsHwStartup.c	   278  void BRS_FORCE_ACTIVE brsStartupEntry_internal(void)
+; Function brsStartupEntry_internal
+.L25:
+brsStartupEntry_internal:	.type	func
+	sub.a	a10,#8
+.L85:
+
+; ..\appl\Source\BrsHwStartup.c	   279  {
+; ..\appl\Source\BrsHwStartup.c	   280    uint32 CurrentCoreId = BRS_READ_COREID();
+	mfcr	d5,#65052
+.L86:
+
+; ..\appl\Source\BrsHwStartup.c	   281    uint32 AuxVariable = 0;
+; ..\appl\Source\BrsHwStartup.c	   282    uint32 SPAddressInit = 0;
+	mov	d6,#0
+.L120:
+	mov	d0,d6
+.L88:
+
+; ..\appl\Source\BrsHwStartup.c	   283    uint32 BTVAddressInit = 0;
+	mov	d7,d6
+.L90:
+
+; ..\appl\Source\BrsHwStartup.c	   284  #if !defined (BRS_ENABLE_FBL_SUPPORT)
+; ..\appl\Source\BrsHwStartup.c	   285    uint32 BIVAddressInit = 0;
+; ..\appl\Source\BrsHwStartup.c	   286  #endif
+; ..\appl\Source\BrsHwStartup.c	   287    BRS_CSA_Element* CSAAddress = 0;
+	mov	d9,d6
+	mov.a	a6,#0
+.L92:
+
+; ..\appl\Source\BrsHwStartup.c	   288    uint32 CSA_Numbers = 0;
+	mov	d8,d6
+.L94:
+
+; ..\appl\Source\BrsHwStartup.c	   289  
+; ..\appl\Source\BrsHwStartup.c	   290    switch(CurrentCoreId)
+	jne	d5,#0,.L2
+.L121:
+
+; ..\appl\Source\BrsHwStartup.c	   291    {
+; ..\appl\Source\BrsHwStartup.c	   292      case (0):
+; ..\appl\Source\BrsHwStartup.c	   293        CSAAddress = (BRS_CSA_Element*)BRS_CSA_STARTADDRESS_CORE0;
+	movh.a	a6,#@his(__CSA_BEGIN_CPU0_)
+	lea	a6,[a6]@los(__CSA_BEGIN_CPU0_)
+.L122:
+
+; ..\appl\Source\BrsHwStartup.c	   294        CSA_Numbers = ((uint32)BRS_CSA_ENDADDRESS_CORE0 - (uint32)BRS_CSA_STARTADDRESS_CORE0) / 64;
+	movh.a	a15,#@his(__CSA_END_CPU0_)
+	lea	a15,[a15]@los(__CSA_END_CPU0_)
+	mov.d	d0,a15
+.L89:
+	mov.d	d1,a6
+.L123:
+	sub	d0,d1
+.L124:
+
+; ..\appl\Source\BrsHwStartup.c	   295        SPAddressInit = (uint32)BRS_STARTUPSTACK_CORE0 & 0xfffffff8UL; /* align it on an 8 byte boundary */
+	sh	d8,d0,#-6
+	movh.a	a15,#@his(__STARTUPSTACK_CORE0)
+	lea	a15,[a15]@los(__STARTUPSTACK_CORE0)
+	mov.d	d1,a15
+.L125:
+
+; ..\appl\Source\BrsHwStartup.c	   296        BTVAddressInit = (uint32)BRS_TRAPTAB_CORE0;
+	insert	d0,d1,#0,#0,#3
+	movh.a	a15,#@his(_OS_EXCVEC_CORE0_CODE_START)
+.L91:
+	lea	a15,[a15]@los(_OS_EXCVEC_CORE0_CODE_START)
+	mov.d	d7,a15
+.L96:
+
+; ..\appl\Source\BrsHwStartup.c	   297  #if !defined (BRS_ENABLE_FBL_SUPPORT)
+; ..\appl\Source\BrsHwStartup.c	   298        BIVAddressInit = (uint32)BRS_INTVECTTAB_CORE0;
+	movh.a	a15,#@his(_OS_INTVEC_CORE0_CODE_START)
+.L93:
+	lea	a15,[a15]@los(_OS_INTVEC_CORE0_CODE_START)
+	mov.d	d9,a15
+
+; ..\appl\Source\BrsHwStartup.c	   299  #endif
+; ..\appl\Source\BrsHwStartup.c	   300      break;
+; ..\appl\Source\BrsHwStartup.c	   301  # if defined (BRS_ENABLE_OS_MULTICORESUPPORT)
+; ..\appl\Source\BrsHwStartup.c	   302  #  if (BRS_CPU_CORE_AMOUNT > 1)
+; ..\appl\Source\BrsHwStartup.c	   303      case (1):
+; ..\appl\Source\BrsHwStartup.c	   304        CSAAddress = (BRS_CSA_Element*)BRS_CSA_STARTADDRESS_CORE1;
+; ..\appl\Source\BrsHwStartup.c	   305        CSA_Numbers = ((uint32)BRS_CSA_ENDADDRESS_CORE1 - (uint32)BRS_CSA_STARTADDRESS_CORE1) / 64;
+; ..\appl\Source\BrsHwStartup.c	   306        SPAddressInit = (uint32)BRS_STARTUPSTACK_CORE1 & 0xfffffff8UL; /* align it on an 8 byte boundary */
+; ..\appl\Source\BrsHwStartup.c	   307        BTVAddressInit = (uint32)BRS_TRAPTAB_CORE1;
+; ..\appl\Source\BrsHwStartup.c	   308        BIVAddressInit = (uint32)BRS_INTVECTTAB_CORE1;
+; ..\appl\Source\BrsHwStartup.c	   309      break;
+; ..\appl\Source\BrsHwStartup.c	   310  #  endif
+; ..\appl\Source\BrsHwStartup.c	   311  #  if (BRS_CPU_CORE_AMOUNT > 2)
+; ..\appl\Source\BrsHwStartup.c	   312      case (2):
+; ..\appl\Source\BrsHwStartup.c	   313        CSAAddress = (BRS_CSA_Element*)BRS_CSA_STARTADDRESS_CORE2;
+; ..\appl\Source\BrsHwStartup.c	   314        CSA_Numbers = ((uint32)BRS_CSA_ENDADDRESS_CORE2 - (uint32)BRS_CSA_STARTADDRESS_CORE2) / 64;
+; ..\appl\Source\BrsHwStartup.c	   315        SPAddressInit = (uint32)BRS_STARTUPSTACK_CORE2 & 0xfffffff8UL; /* align it on an 8 byte boundary */
+; ..\appl\Source\BrsHwStartup.c	   316        BTVAddressInit = (uint32)BRS_TRAPTAB_CORE2;
+; ..\appl\Source\BrsHwStartup.c	   317        BIVAddressInit = (uint32)BRS_INTVECTTAB_CORE2;
+; ..\appl\Source\BrsHwStartup.c	   318      break;
+; ..\appl\Source\BrsHwStartup.c	   319  #  endif
+; ..\appl\Source\BrsHwStartup.c	   320  #  if (BRS_CPU_CORE_AMOUNT > 3)
+; ..\appl\Source\BrsHwStartup.c	   321      case (3):
+; ..\appl\Source\BrsHwStartup.c	   322        CSAAddress = (BRS_CSA_Element*)BRS_CSA_STARTADDRESS_CORE3;
+; ..\appl\Source\BrsHwStartup.c	   323        CSA_Numbers = ((uint32)BRS_CSA_ENDADDRESS_CORE3 - (uint32)BRS_CSA_STARTADDRESS_CORE3) / 64;
+; ..\appl\Source\BrsHwStartup.c	   324        SPAddressInit = (uint32)BRS_STARTUPSTACK_CORE3 & 0xfffffff8UL; /* align it on an 8 byte boundary */
+; ..\appl\Source\BrsHwStartup.c	   325        BTVAddressInit = (uint32)BRS_TRAPTAB_CORE3;
+; ..\appl\Source\BrsHwStartup.c	   326        BIVAddressInit = (uint32)BRS_INTVECTTAB_CORE3;
+; ..\appl\Source\BrsHwStartup.c	   327      break;
+; ..\appl\Source\BrsHwStartup.c	   328  #  endif
+; ..\appl\Source\BrsHwStartup.c	   329  #  if (BRS_CPU_CORE_AMOUNT > 4)
+; ..\appl\Source\BrsHwStartup.c	   330      case (4):
+; ..\appl\Source\BrsHwStartup.c	   331        CSAAddress = (BRS_CSA_Element*)BRS_CSA_STARTADDRESS_CORE4;
+; ..\appl\Source\BrsHwStartup.c	   332        CSA_Numbers = ((uint32)BRS_CSA_ENDADDRESS_CORE4 - (uint32)BRS_CSA_STARTADDRESS_CORE4) / 64;
+; ..\appl\Source\BrsHwStartup.c	   333        SPAddressInit = (uint32)BRS_STARTUPSTACK_CORE4 & 0xfffffff8UL; /* align it on an 8 byte boundary */
+; ..\appl\Source\BrsHwStartup.c	   334        BTVAddressInit = (uint32)BRS_TRAPTAB_CORE4;
+; ..\appl\Source\BrsHwStartup.c	   335        BIVAddressInit = (uint32)BRS_INTVECTTAB_CORE4;
+; ..\appl\Source\BrsHwStartup.c	   336      break;
+; ..\appl\Source\BrsHwStartup.c	   337  #  endif
+; ..\appl\Source\BrsHwStartup.c	   338  #  if (BRS_CPU_CORE_AMOUNT > 5)
+; ..\appl\Source\BrsHwStartup.c	   339      case (6):
+; ..\appl\Source\BrsHwStartup.c	   340        CSAAddress = (BRS_CSA_Element*)BRS_CSA_STARTADDRESS_CORE5;
+; ..\appl\Source\BrsHwStartup.c	   341        CSA_Numbers = ((uint32)BRS_CSA_ENDADDRESS_CORE5 - (uint32)BRS_CSA_STARTADDRESS_CORE5) / 64;
+; ..\appl\Source\BrsHwStartup.c	   342        SPAddressInit = (uint32)BRS_STARTUPSTACK_CORE5 & 0xfffffff8UL; /* align it on an 8 byte boundary */
+; ..\appl\Source\BrsHwStartup.c	   343        BTVAddressInit = (uint32)BRS_TRAPTAB_CORE5;
+; ..\appl\Source\BrsHwStartup.c	   344        BIVAddressInit = (uint32)BRS_INTVECTTAB_CORE5;
+; ..\appl\Source\BrsHwStartup.c	   345      break;
+; ..\appl\Source\BrsHwStartup.c	   346  #  endif
+; ..\appl\Source\BrsHwStartup.c	   347  # endif /* defined (BRS_ENABLE_OS_MULTICORESUPPORT) */
+; ..\appl\Source\BrsHwStartup.c	   348      default:
+.L2:
+
+; ..\appl\Source\BrsHwStartup.c	   349      break;
+; ..\appl\Source\BrsHwStartup.c	   350    }
+; ..\appl\Source\BrsHwStartup.c	   351  
+; ..\appl\Source\BrsHwStartup.c	   352  /* =========================================================================== */
+; ..\appl\Source\BrsHwStartup.c	   353  /*                                                                             */
+; ..\appl\Source\BrsHwStartup.c	   354  /* Description: Initialize memory blocks and areas with zero                   */
+; ..\appl\Source\BrsHwStartup.c	   355  /*                                                                             */
+; ..\appl\Source\BrsHwStartup.c	   356  /* =========================================================================== */
+; ..\appl\Source\BrsHwStartup.c	   357  #if defined (VLINKGEN_CFG_NUM_ZERO_INIT_EARLY_BLOCKS)
+; ..\appl\Source\BrsHwStartup.c	   358  # if (VLINKGEN_CFG_NUM_ZERO_INIT_EARLY_BLOCKS>1uL)
+; ..\appl\Source\BrsHwStartup.c	   359    /* Loop over all entries of vLinkGen_ZeroInit_Early_Blocks and zero the configured memory blocks. */
+; ..\appl\Source\BrsHwStartup.c	   360    volatile uint32 *memPtr;
+; ..\appl\Source\BrsHwStartup.c	   361    uint8 blockNum;
+; ..\appl\Source\BrsHwStartup.c	   362    for(blockNum = 0; blockNum < vLinkGen_ZeroInit_Early_BlocksSet.Num; blockNum++)
+; ..\appl\Source\BrsHwStartup.c	   363    {
+; ..\appl\Source\BrsHwStartup.c	   364      if(vLinkGen_ZeroInit_Early_BlocksSet.Areas[blockNum].Core == CurrentCoreId &&
+; ..\appl\Source\BrsHwStartup.c	   365        (vLinkGen_ZeroInit_Early_BlocksSet.Areas[blockNum].End - vLinkGen_ZeroInit_Early_BlocksSet.Areas[blockNum].Start) > 0)
+; ..\appl\Source\BrsHwStartup.c	   366      {
+; ..\appl\Source\BrsHwStartup.c	   367        memPtr = (volatile uint32 *)vLinkGen_ZeroInit_Early_BlocksSet.Areas[blockNum].Start;
+; ..\appl\Source\BrsHwStartup.c	   368        while((uint32)memPtr < vLinkGen_ZeroInit_Early_BlocksSet.Areas[blockNum].End)
+; ..\appl\Source\BrsHwStartup.c	   369        {
+; ..\appl\Source\BrsHwStartup.c	   370          *memPtr = 0x0;
+; ..\appl\Source\BrsHwStartup.c	   371          memPtr++;
+; ..\appl\Source\BrsHwStartup.c	   372        }
+; ..\appl\Source\BrsHwStartup.c	   373      }
+; ..\appl\Source\BrsHwStartup.c	   374    }
+; ..\appl\Source\BrsHwStartup.c	   375  # endif /*VLINKGEN_CFG_NUM_ZERO_INIT_EARLY_BLOCKS>1uL*/
+; ..\appl\Source\BrsHwStartup.c	   376  
+; ..\appl\Source\BrsHwStartup.c	   377  #else
+; ..\appl\Source\BrsHwStartup.c	   378    #error "Mandatory define VLINKGEN_CFG_NUM_ZERO_INIT_EARLY_BLOCKS missing within vLinkGen configuration!"
+; ..\appl\Source\BrsHwStartup.c	   379  #endif /*VLINKGEN_CFG_NUM_ZERO_INIT_EARLY_BLOCKS*/
+; ..\appl\Source\BrsHwStartup.c	   380  
+; ..\appl\Source\BrsHwStartup.c	   381  #if defined (VLINKGEN_CFG_NUM_ZERO_INIT_EARLY_GROUPS)
+; ..\appl\Source\BrsHwStartup.c	   382  # if (VLINKGEN_CFG_NUM_ZERO_INIT_EARLY_GROUPS>1uL)
+; ..\appl\Source\BrsHwStartup.c	   383    /* Loop over all entries of vLinkGen_ZeroInit_Early_Groups and zero the configured memory areas. */
+; ..\appl\Source\BrsHwStartup.c	   384    volatile uint32 *memPtr2;
+; ..\appl\Source\BrsHwStartup.c	   385    uint8 areaNum;
+; ..\appl\Source\BrsHwStartup.c	   386    for(areaNum = 0; areaNum < vLinkGen_ZeroInit_Early_GroupsSet.Num; areaNum++)
+	mov	d1,d6
+	movh.a	a2,#@his(vLinkGen_ZeroInit_Early_GroupsSet)
+.L97:
+	lea	a2,[a2]@los(vLinkGen_ZeroInit_Early_GroupsSet)
+.L126:
+
+; ..\appl\Source\BrsHwStartup.c	   387    {
+; ..\appl\Source\BrsHwStartup.c	   388      if(vLinkGen_ZeroInit_Early_GroupsSet.Areas[areaNum].Core == CurrentCoreId &&
+	lea	a4,[a2]4
+.L127:
+	j	.L3
+.L4:
+	ld.a	a15,[a4]
+.L128:
+	sha	d2,d1,#4
+.L129:
+	addsc.a	a15,a15,d2,#0
+.L130:
+	ld.w	d15,[a15]8
+.L131:
+	jne	d15,d5,.L5
+.L132:
+
+; ..\appl\Source\BrsHwStartup.c	   389        (vLinkGen_ZeroInit_Early_GroupsSet.Areas[areaNum].End - vLinkGen_ZeroInit_Early_GroupsSet.Areas[areaNum].Start) > 0)
+	ld.w	d3,[a15]
+.L133:
+	ld.w	d15,[a15]4
+.L134:
+	sub	d4,d15,d3
+.L135:
+	jeq	d4,#0,.L6
+.L136:
+
+; ..\appl\Source\BrsHwStartup.c	   390      {
+; ..\appl\Source\BrsHwStartup.c	   391        memPtr2 = (volatile uint32 *)vLinkGen_ZeroInit_Early_GroupsSet.Areas[areaNum].Start;
+	mov.a	a5,d3
+.L99:
+
+; ..\appl\Source\BrsHwStartup.c	   392        while((uint32)memPtr2 < vLinkGen_ZeroInit_Early_GroupsSet.Areas[areaNum].End)
+	jge.u	d3,d15,.L7
+.L8:
+
+; ..\appl\Source\BrsHwStartup.c	   393        {
+; ..\appl\Source\BrsHwStartup.c	   394          *memPtr2 = 0x0;
+	st.w	[a5+],d6
+.L137:
+	mov.d	d3,a5
+.L100:
+	ld.a	a15,[a4]
+.L138:
+	addsc.a	a15,a15,d2,#0
+.L139:
+	ld.w	d15,[a15]4
+.L140:
+	jlt.u	d3,d15,.L8
+.L7:
+.L6:
+.L5:
+	add	d1,#1
+.L98:
+	extr.u	d1,d1,#0,#8
+.L3:
+	ld.w	d2,[a2]
+.L141:
+	jlt.u	d1,d2,.L4
+.L142:
+
+; ..\appl\Source\BrsHwStartup.c	   395          memPtr2++;
+; ..\appl\Source\BrsHwStartup.c	   396        }
+; ..\appl\Source\BrsHwStartup.c	   397      }
+; ..\appl\Source\BrsHwStartup.c	   398    }
+; ..\appl\Source\BrsHwStartup.c	   399  # endif /*VLINKGEN_CFG_NUM_ZERO_INIT_EARLY_GROUPS>1uL*/
+; ..\appl\Source\BrsHwStartup.c	   400  
+; ..\appl\Source\BrsHwStartup.c	   401  #else
+; ..\appl\Source\BrsHwStartup.c	   402    #error "Mandatory define VLINKGEN_CFG_NUM_ZERO_INIT_EARLY_GROUPS missing within vLinkGen configuration!"
+; ..\appl\Source\BrsHwStartup.c	   403  #endif /*VLINKGEN_CFG_NUM_ZERO_INIT_EARLY_GROUPS*/
+; ..\appl\Source\BrsHwStartup.c	   404  
+; ..\appl\Source\BrsHwStartup.c	   405  /* =========================================================================== */
+; ..\appl\Source\BrsHwStartup.c	   406  /* Set stack pointer (compiler generated stack is used) */
+; ..\appl\Source\BrsHwStartup.c	   407  /* =========================================================================== */
+; ..\appl\Source\BrsHwStartup.c	   408    BRS_SET_SP(SPAddressInit);
+	
+	mov.a  a10, d0
+	
+.L143:
+
+; ..\appl\Source\BrsHwStartup.c	   409  
+; ..\appl\Source\BrsHwStartup.c	   410  /* =========================================================================== */
+; ..\appl\Source\BrsHwStartup.c	   411  /* Set the PSW to its reset value in case of a warm start */
+; ..\appl\Source\BrsHwStartup.c	   412  /* =========================================================================== */
+; ..\appl\Source\BrsHwStartup.c	   413    BRS_MOVE_TO_CSFR(BRS_PSW_OFFSET, 0x00000B80UL);
+	dsync
+	mov	d15,#2944
+	mtcr  #0xFE04, d15
+	isync
+.L144:
+
+; ..\appl\Source\BrsHwStartup.c	   414  
+; ..\appl\Source\BrsHwStartup.c	   415  /* =========================================================================== */
+; ..\appl\Source\BrsHwStartup.c	   416  /* Set the PCXS and PCXO to its reset value in case of a warm start */
+; ..\appl\Source\BrsHwStartup.c	   417  /* =========================================================================== */
+; ..\appl\Source\BrsHwStartup.c	   418    AuxVariable = BRS_MOVE_FROM_CSFR(BRS_PCXI_OFFSET);
+	mfcr	d15,#65024
+.L145:
+
+; ..\appl\Source\BrsHwStartup.c	   419    AuxVariable &= 0xfff00000UL;
+	insert	d15,d15,#0,#0,#20
+.L102:
+
+; ..\appl\Source\BrsHwStartup.c	   420    BRS_MOVE_TO_CSFR(BRS_PCXI_OFFSET, AuxVariable);
+	dsync
+	mtcr  #0xFE00, d15
+	isync
+.L55:
+
+; ..\appl\Source\BrsHwStartup.c	   421  
+; ..\appl\Source\BrsHwStartup.c	   422  /* =========================================================================== */
+; ..\appl\Source\BrsHwStartup.c	   423  /* initialize the CSAs (inlined function) */
+; ..\appl\Source\BrsHwStartup.c	   424  /* aftwerwards function calls are possible */
+; ..\appl\Source\BrsHwStartup.c	   425  /* =========================================================================== */
+; ..\appl\Source\BrsHwStartup.c	   426    BRS_CSA_Element* CSA;
+; ..\appl\Source\BrsHwStartup.c	   427    uint32 NumberOfCSA;
+; ..\appl\Source\BrsHwStartup.c	   428    uint32 pcxi_val = 0;    /* the last PCXI has to point to 0 */
+; ..\appl\Source\BrsHwStartup.c	   429    uint32 CSAReserve = 20; /* the LCX will be initalized to point to 20 CSAs before the very last CSA */
+; ..\appl\Source\BrsHwStartup.c	   430    uint32 seg_nr, seg_idx; /* auxiliary variables to assemble the PCXI value */
+; ..\appl\Source\BrsHwStartup.c	   431  
+; ..\appl\Source\BrsHwStartup.c	   432    if(CSAAddress != 0)
+	mov	d0,#0
+	jz.a	a6,.L9
+.L95:
+
+; ..\appl\Source\BrsHwStartup.c	   433    {
+; ..\appl\Source\BrsHwStartup.c	   434      CSA = CSAAddress;
+; ..\appl\Source\BrsHwStartup.c	   435      for (NumberOfCSA=0; NumberOfCSA < CSA_Numbers; NumberOfCSA++) /* loop over all CSA elements */
+	mov	d1,d0
+.L101:
+	jeq	d8,#0,.L10
+.L146:
+	add	d8,#-1
+	mov.a	a15,d8
+.L104:
+
+; ..\appl\Source\BrsHwStartup.c	   436      {
+; ..\appl\Source\BrsHwStartup.c	   437        *CSA[0] = pcxi_val; /* *CSA is equal to CSA[0] is equal to CSA.PCXI (it holds the PCXI value and has to point to the next PCXI) */
+; ..\appl\Source\BrsHwStartup.c	   438  
+; ..\appl\Source\BrsHwStartup.c	   439        /* now translate the current CSA address to a valid PCXI value which is used within the AURIX registers */
+; ..\appl\Source\BrsHwStartup.c	   440        seg_nr  = (((unsigned int)CSA >> 28) & 0xf) << 16;
+; ..\appl\Source\BrsHwStartup.c	   441        seg_idx = (((unsigned int)CSA >> 6) & 0xffff);
+; ..\appl\Source\BrsHwStartup.c	   442        pcxi_val = seg_nr | seg_idx;
+; ..\appl\Source\BrsHwStartup.c	   443        if (NumberOfCSA == CSAReserve) /* reserve CSAs for exception handling */
+	mov	d15,#20
+.L11:
+	mov.d	d2,a6
+.L147:
+	st.w	[a6],d0
+.L148:
+	sh	d0,d2,#-28
+.L103:
+	extr.u	d2,d2,#6,#16
+.L105:
+	sh	d0,d0,#16
+.L106:
+	or	d0,d2
+.L107:
+	jne	d15,d1,.L12
+.L149:
+
+; ..\appl\Source\BrsHwStartup.c	   444        {
+; ..\appl\Source\BrsHwStartup.c	   445          BRS_MOVE_TO_CSFR(BRS_LCX_OFFSET, pcxi_val);
+	dsync
+	mtcr  #0xFE3C, d0
+	isync
+.L12:
+
+; ..\appl\Source\BrsHwStartup.c	   446        }
+; ..\appl\Source\BrsHwStartup.c	   447        CSA++; /* point to the next CSA */
+	add	d1,#1
+	lea	a6,[a6]64
+	loop	a15,.L11
+.L10:
+
+; ..\appl\Source\BrsHwStartup.c	   448      }
+; ..\appl\Source\BrsHwStartup.c	   449      BRS_MOVE_TO_CSFR(BRS_FCX_OFFSET, pcxi_val);
+	dsync
+	mtcr  #0xFE38, d0
+	isync
+.L9:
+
+; ..\appl\Source\BrsHwStartup.c	   450    }
+; ..\appl\Source\BrsHwStartup.c	   451  
+; ..\appl\Source\BrsHwStartup.c	   452  /* =========================================================================== */
+; ..\appl\Source\BrsHwStartup.c	   453  /* initialize BIV and BTV / endinit protected */
+; ..\appl\Source\BrsHwStartup.c	   454  /* =========================================================================== */
+; ..\appl\Source\BrsHwStartup.c	   455    if((BTVAddressInit % 0x100) != 0)
+	and	d15,d7,#255
+.L150:
+	jeq	d15,#0,.L14
+
+; ..\appl\Source\BrsHwStartup.c	   456    {
+; ..\appl\Source\BrsHwStartup.c	   457      /* the trap vector table must be aligned on a 256 byte boundary */
+; ..\appl\Source\BrsHwStartup.c	   458      for(;;);
+.L15:
+	j	.L15
+.L14:
+
+; ..\appl\Source\BrsHwStartup.c	   459    }
+; ..\appl\Source\BrsHwStartup.c	   460  #if !defined (BRS_ENABLE_FBL_SUPPORT)
+; ..\appl\Source\BrsHwStartup.c	   461    if((BIVAddressInit % 0x2000) != 0)
+	insert	d15,d9,#0,#13,#19
+.L151:
+	jeq	d15,#0,.L16
+
+; ..\appl\Source\BrsHwStartup.c	   462    {
+; ..\appl\Source\BrsHwStartup.c	   463      /* the interrupt vector table must be aligned on a 8192 byte boundary */
+; ..\appl\Source\BrsHwStartup.c	   464      for(;;);
+.L17:
+	j	.L17
+.L16:
+
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	     1  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	     2  /**********************************************************************************************************************
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	     3    COPYRIGHT
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	     4  -----------------------------------------------------------------------------------------------------------------------
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	     5    \par      copyright
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	     6    \verbatim
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	     7    Copyright (c) 2020 by Vector Informatik GmbH.                                                  All rights reserved.
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	     8  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	     9                  This software is copyright protected and proprietary to Vector Informatik GmbH.
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    10                  Vector Informatik GmbH grants to you only those rights as set out in the license conditions.
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    11                  All other rights remain with Vector Informatik GmbH.
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    12    \endverbatim
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    13  -----------------------------------------------------------------------------------------------------------------------
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    14    FILE DESCRIPTION
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    15  -----------------------------------------------------------------------------------------------------------------------
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    16    \file  File:  BrsHw.h
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    17        Project:  Vector Basic Runtime System
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    18         Module:  BrsHw for platform Infineon Aurix/AurixPlus
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    19  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    20    \brief Description:  This is the hardware specific header file for Vector Basic Runtime System (BRS).
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    21  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    22    \attention Please note:
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    23      The demo and example programs only show special aspects of the software. With regard to the fact
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    24      that these programs are meant for demonstration purposes only, Vector Informatik liability shall be
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    25      expressly excluded in cases of ordinary negligence, to the extent admissible by law or statute.
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    26  **********************************************************************************************************************/
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    27  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    28  #ifndef _BRSHW_H_
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    29  #define _BRSHW_H_
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    30  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    31  /**********************************************************************************************************************
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    32    INCLUDES
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    33  **********************************************************************************************************************/
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    34  /*
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    35   * Description: The BrsCfg header is used to configure different types of
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    36   *              tests and system setups. Therefore it must be included first
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    37   *              in each BRS and test module.
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    38   *              This file is part of the BRS.
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    39   */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    40  #include "vBrsCfg.h"
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    41  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    42  #if defined (BRS_ENABLE_PORT)
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    43    #include "BrsHw_Ports.h"
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    44  #endif
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    45  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    46  /**********************************************************************************************************************
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    47    MODULE VERSION
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    48  **********************************************************************************************************************/
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    49  /*
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    50   * Description: This is the BrsHw main and bug fix version. The version numbers are BCD coded.
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    51   *              E.g. a main version of 1.23 is coded with 0x0123, a bug fix version of 9 is coded 0x09.
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    52   */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    53  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    54  /* This is the BrsHw template main and bug fix version, the platform BrsHw is reviewed to */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    55  #define BRSHW_SOURCECODE_TEMPLATE_VERSION        0x0101u
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    56  #define BRSHW_SOURCECODE_TEMPLATE_BUGFIX_VERSION 0x01u
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    57  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    58  /* This is the BrsHw main and bug fix version */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    59  #define BRSHW_VERSION        0x0103u
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    60  #define BRSHW_BUGFIX_VERSION 0x02u
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    61  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    62  /**********************************************************************************************************************
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    63    CONFIGURATION CHECK
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    64  **********************************************************************************************************************/
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    65  /* The following parameters are necessary for this platform, to be generated by BRS-Cfg5-Generator into BrsCfg.h */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    66  #if !defined (BRS_OSC_CLK)
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    67    #error "BRS CHECK: The parameter BRS_OSC_CLK is missing! Please check your BRS Cfg5 configuration."
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    68  #endif
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    69  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    70  #if !defined (BRS_TIMEBASE_CLOCK)
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    71    #error "BRS CHECK: The parameter BRS_TIMEBASE_CLOCK is missing! Please check your BRS Cfg5 configuration."
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    72  #endif
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    73  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    74  #if !defined (BRS_PERIPH_CLOCK)
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    75    #error "BRS CHECK: The parameter BRS_PERIPH_CLOCK is missing! Please check your BRS Cfg5 configuration."
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    76  #endif
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    77  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    78  #if !defined (BRS_CPU_MAX_FREQUENCY)
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    79    #error "BRS CHECK: The parameter BRS_CPU_MAX_FREQUENCY is missing! Please check your BRS Cfg5 configuration."
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    80  #endif
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    81  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    82  #if !(defined (BRS_CPU_CORE_TC161) || defined (BRS_CPU_CORE_TC162) || defined (BRS_CPU_CORE_TC18))
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    83    #error "BRS CHECK: The parameter BRS_CPU_CORE_x is missing or not supported! Please check your BRS Cfg5 configuration."
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    84  #endif
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    85  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    86  #if !defined (BRS_CPU_CORE_AMOUNT)
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    87    #error "BRS CHECK: The parameter BRS_CPU_CORE_AMOUNT is missing! Please check your BRS Cfg5 configuration."
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    88  #endif
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    89  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    90  /**********************************************************************************************************************
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    91    GLOBAL CONSTANT MACROS
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    92  **********************************************************************************************************************/
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    93  /*
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    94   * Description: Macro for access to IO addresses
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    95   */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    96  #define BRSHW_IOS(type, address) (*((volatile type *)(address)))
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    97  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    98  /* STATIC */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    99  #define BRSHW_DERIVATIVE_CORE0_ID  0x0
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   100  #define BRSHW_DERIVATIVE_CORE1_ID  0x1
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   101  #define BRSHW_DERIVATIVE_CORE2_ID  0x2
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   102  #define BRSHW_DERIVATIVE_CORE3_ID  0x3
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   103  #define BRSHW_DERIVATIVE_CORE4_ID  0x4
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   104  #define BRSHW_DERIVATIVE_CORE5_ID  0x6
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   105  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   106  /* DERIVATIVE DEPENDENT STATIC */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   107  #define BRSHW_INIT_CORE_ID  BRSHW_DERIVATIVE_CORE0_ID
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   108  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   109  #define BRS_CORE_ID_REGISTER  0xFE1C
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   110  #define BRS_PCXI_OFFSET       0xFE00
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   111  #define BRS_PSW_OFFSET        0xFE04
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   112  #define BRS_FCX_OFFSET        0xFE38
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   113  #define BRS_LCX_OFFSET        0xFE3C
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   114  #define BRS_BTV_OFFSET        0xFE24
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   115  #define BRS_BIV_OFFSET        0xFE20
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   116  #define BRS_PCON0_OFFSET      0x920C
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   117  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   118  /**********************************************************************************************************************
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   119    Compiler abstraction
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   120  **********************************************************************************************************************/
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   121  #if defined (BRS_COMP_TASKING)
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   122    #define nop()                    __nop()
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   123  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   124    #define BRS_FORCE_ACTIVE         __attribute__((protect))
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   125  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   126    #define BRS_ISYNC()              __isync()
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   127    #define BRS_DSYNC()              __dsync()
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   128  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   129    #define BRS_HAL_EXPAND(x)        #x
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   130  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   131    #define BRS_MOVE_FROM_CSFR(x)    (uint32)__mfcr((sint32)(x))
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   132    #define BRS_MOVE_TO_CSFR(x, y)   BRS_DSYNC(); __asm("mtcr  #"BRS_HAL_EXPAND(x)", %0" ::"d"(y):); BRS_ISYNC()
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   133  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   134    #define BRS_SET_SP(x)            __asm("mov.a  a10, %0" ::"d"(x):"a10")
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   135  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   136    #define BRS_STARTUP_LABEL(c)     _Pragma("section code brsStartupEntry") \ 
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   137                                     _Pragma("optimize g")                   \ 
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   138                                     void c(void)                            \ 
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   139                                     {                                       \ 
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   140                                      __asm(".GLOBAL StartupEntry");                       \ 
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   141                                      __asm("StartupEntry:");                              \ 
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   142                                      __asm("movh.a a4, #@his(brsStartupEntry_internal)"); \ 
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   143                                      __asm("lea a4,[a4]@los(brsStartupEntry_internal)");  \ 
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   144                                      __asm("ji a4");                       \ 
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   145                                     }                                      \ 
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   146                                     _Pragma("optimize restore")            \ 
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   147                                     _Pragma("section code restore")
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   148  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   149      #define BRS_FUNC_DECLARATION(rettype, attribute, functionName, arguments) \ 
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   150           rettype functionName (arguments) __attribute__((attribute))
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   151  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   152      #define BRS_FUNC_DECLARATION_PROTOTYPE(rettype, attribute, functionName, arguments) \ 
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   153           rettype functionName (arguments) __attribute__((attribute))
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   154   
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   155  #else
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   156    #error "Compiler not yet supported"
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   157  #endif /*BRS_COMP_x*/
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   158  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   159  /* Reads core id value */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   160  #define BRS_READ_COREID()  BRS_MOVE_FROM_CSFR(BRS_CORE_ID_REGISTER)
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   161  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   162  /**********************************************************************************************************************
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   163    BrsHW configuration
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   164  **********************************************************************************************************************/
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   165  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   166  /*******************************************************************************
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   167    WATCHDOG  GROUP  CONFIG
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   168  *******************************************************************************/
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   169  #define BRS_SAFETY_WATCHDOG_INDEX  -1
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   170  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   171  #if defined (BRS_WATCHDOG_GROUP_A)
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   172    #define BRS_SFR_WDTCPU0CON0_ADDRESS 0xF0036100
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   173    #define BRS_SFR_WDTCPU1CON0_ADDRESS 0xF003610C
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   174    #define BRS_SFR_WDTCPU2CON0_ADDRESS 0xF0036118
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   175    #define BRS_SFR_WDTSCON0_ADDRESS    0xF00360F0
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   176  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   177    #define BRS_SFR_WDTCPU0CON0  BRSHW_IOS(uint32, BRS_SFR_WDTCPU0CON0_ADDRESS)  /* original name: SCU_WDTCPU0CON0 */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   178    #define BRS_SFR_WDTCPU0CON1  BRSHW_IOS(uint32, 0xF0036104)  /* original name: SCU_WDTCPU0CON1 */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   179  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   180    #define BRS_SFR_WDTCPU1CON0  BRSHW_IOS(uint32, BRS_SFR_WDTCPU1CON0_ADDRESS)  /* original name: SCU_WDTCPU1CON0 */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   181    #define BRS_SFR_WDTCPU1CON1  BRSHW_IOS(uint32, 0xF0036110)  /* original name: SCU_WDTCPU1CON1 */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   182  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   183    #define BRS_SFR_WDTCPU2CON0  BRSHW_IOS(uint32, BRS_SFR_WDTCPU2CON0_ADDRESS)  /* original name: SCU_WDTCPU2CON0 */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   184    #define BRS_SFR_WDTCPU2CON1  BRSHW_IOS(uint32, 0xF003611C)  /* original name: SCU_WDTCPU2CON1 */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   185  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   186    #define BRS_SFR_WDTSCON0     BRSHW_IOS(uint32, BRS_SFR_WDTSCON0_ADDRESS)  /* original name: SCU_WDTSCON0 */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   187    #define BRS_SFR_WDTSCON1     BRSHW_IOS(uint32, 0xF00360F4)  /* original name: SCU_WDTSCON1 */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   188    
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   189    #define BRS_SAFETY_WATCHDOG_ARRAY_INDEX 3
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   190  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   191  #elif defined (BRS_WATCHDOG_GROUP_B)
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   192    #define BRS_SFR_WDTCPU0CON0_ADDRESS 0xF003624C
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   193    #define BRS_SFR_WDTCPU1CON0_ADDRESS 0xF0036258
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   194    #define BRS_SFR_WDTCPU2CON0_ADDRESS 0xF0036264
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   195    #define BRS_SFR_WDTCPU3CON0_ADDRESS 0xF0036270
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   196    #define BRS_SFR_WDTCPU4CON0_ADDRESS 0xF003627C
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   197    #define BRS_SFR_WDTCPU5CON0_ADDRESS 0xF0036288
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   198    #define BRS_SFR_WDTSCON0_ADDRESS    0xF00362A8
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   199  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   200    #define BRS_SFR_WDTCPU0CON0  BRSHW_IOS(uint32, BRS_SFR_WDTCPU0CON0_ADDRESS)  /* CPU0 WDT Control Register 0 - original name: SCU_WDTCPU0CON0 */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   201    #define BRS_SFR_WDTCPU0CON1  BRSHW_IOS(uint32, 0xF0036250)  /* CPU0 WDT Control Register 1 - original name: SCU_WDTCPU0CON1 */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   202    #define BRS_SFR_WDTCPU0_SR   BRSHW_IOS(uint32, 0xF0036254)  /* CPU0 WDT Status Register - original name: SCU_WDTCPU0_SR */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   203  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   204    #define BRS_SFR_WDTCPU1CON0  BRSHW_IOS(uint32, BRS_SFR_WDTCPU1CON0_ADDRESS)  /* CPU1 WDT Control Register 0 - original name: SCU_WDTCPU1CON0 */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   205    #define BRS_SFR_WDTCPU1CON1  BRSHW_IOS(uint32, 0xF003625C)  /* CPU1 WDT Control Register 1 - original name: SCU_WDTCPU1CON1 */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   206    #define BRS_SFR_WDTCPU1_SR   BRSHW_IOS(uint32, 0xF0036260)  /* CPU1 WDT Status Register - original name: SCU_WDTCPU1_SR */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   207  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   208    #define BRS_SFR_WDTCPU2CON0  BRSHW_IOS(uint32, BRS_SFR_WDTCPU2CON0_ADDRESS)  /* CPU2 WDT Control Register 0 - original name: SCU_WDTCPU2CON0 */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   209    #define BRS_SFR_WDTCPU2CON1  BRSHW_IOS(uint32, 0xF0036268)  /* CPU2 WDT Control Register 1 - original name: SCU_WDTCPU2CON1 */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   210    #define BRS_SFR_WDTCPU2_SR   BRSHW_IOS(uint32, 0xF003626C)  /* CPU2 WDT Status Register - original name: SCU_WDTCPU2_SR */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   211  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   212    #define BRS_SFR_WDTCPU3CON0  BRSHW_IOS(uint32, BRS_SFR_WDTCPU3CON0_ADDRESS)  /* CPU3 WDT Control Register 0 - original name: SCU_WDTCPU3CON0 */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   213    #define BRS_SFR_WDTCPU3CON1  BRSHW_IOS(uint32, 0xF0036274)  /* CPU3 WDT Control Register 1 - original name: SCU_WDTCPU3CON1 */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   214    #define BRS_SFR_WDTCPU3_SR   BRSHW_IOS(uint32, 0xF0036278)  /* CPU3 WDT Status Register - original name: SCU_WDTCPU3_SR */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   215  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   216    #define BRS_SFR_WDTCPU4CON0  BRSHW_IOS(uint32, BRS_SFR_WDTCPU4CON0_ADDRESS)  /* CPU4 WDT Control Register 0 - original name: SCU_WDTCPU4CON0 */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   217    #define BRS_SFR_WDTCPU4CON1  BRSHW_IOS(uint32, 0xF0036280)  /* CPU4 WDT Control Register 1 - original name: SCU_WDTCPU4CON1 */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   218    #define BRS_SFR_WDTCPU4_SR   BRSHW_IOS(uint32, 0xF0036284)  /* CPU4 WDT Status Register - original name: SCU_WDTCPU4_SR */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   219  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   220    #define BRS_SFR_WDTCPU5CON0  BRSHW_IOS(uint32, BRS_SFR_WDTCPU5CON0_ADDRESS)  /* CPU5 WDT Control Register 0 - original name: SCU_WDTCPU5CON0 */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   221    #define BRS_SFR_WDTCPU5CON1  BRSHW_IOS(uint32, 0xF003628C)  /* CPU5 WDT Control Register 1 - original name: SCU_WDTCPU5CON1 */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   222    #define BRS_SFR_WDTCPU5_SR   BRSHW_IOS(uint32, 0xF0036290)  /* CPU5 WDT Status Register - original name: SCU_WDTCPU5_SR */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   223  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   224    #define BRS_SFR_WDTSCON0     BRSHW_IOS(uint32, BRS_SFR_WDTSCON0_ADDRESS)  /* Safety WDT Control Register 0 - original name: SCU_WDTS_CON0 */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   225    #define BRS_SFR_WDTSCON1     BRSHW_IOS(uint32, 0xF00362AC)  /* Safety WDT Control Register 1 - original name: SCU_WDTS_CON1 */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   226  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   227    #define BRS_SAFETY_WATCHDOG_ARRAY_INDEX 7
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   228  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   229    #define BRS_SFR_WDTS_SR      BRSHW_IOS(uint32, 0xF00362B0)  /* Safety WDT Status Register - original name: SCU_WDTS_SR */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   230  #endif /*BRS_WATCHDOG_GROUP_x*/
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   231  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   232  /**********************************************************************************************************************
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   233    Global variables
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   234  **********************************************************************************************************************/
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   235  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   236  /**********************************************************************************************************************
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   237    Global const variables
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   238  **********************************************************************************************************************/
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   239  /*
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   240   * Description: These constants are used to propagate the Versions over module boundaries.
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   241   *              The version numbers are BCD coded. E.g. a sub version of 23 is coded with 0x23, 
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   242   *              a bug fix version of 9 is coded 0x09.
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   243   */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   244  extern uint8 const kBrsHwMainVersion;
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   245  extern uint8 const kBrsHwSubVersion;
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   246  extern uint8 const kBrsHwBugfixVersion;
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   247  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   248  #if defined (BRS_WATCHDOG_GROUP_A)
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   249  extern const uint32 kBrsWdtCon0Addresses[4];
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   250  #elif defined (BRS_WATCHDOG_GROUP_B)
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   251  extern const uint32 kBrsWdtCon0Addresses[8];
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   252  #endif
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   253  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   254  /**********************************************************************************************************************
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   255    Global function prototypes
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   256  **********************************************************************************************************************/
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   257  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   258   /*******************************************************************************
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   259   CPU Core Amount (number of cores)
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   260  *******************************************************************************/
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   261  BRS_FUNC_DECLARATION_PROTOTYPE(static uint32 *, always_inline, BrsHw_GetAddrWDTCON0, sint32 nr);
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   262  BRS_FUNC_DECLARATION(static uint32 *, always_inline, BrsHw_GetAddrWDTCON0, sint32 nr)
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   263  {
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   264    if (nr == BRS_SAFETY_WATCHDOG_INDEX)
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   265    {
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   266      return (uint32*)(kBrsWdtCon0Addresses[BRS_SAFETY_WATCHDOG_ARRAY_INDEX]);
+	movh.a	a15,#@his(kBrsWdtCon0Addresses)
+	lea	a15,[a15]@los(kBrsWdtCon0Addresses)
+.L152:
+
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   264    if (nr == BRS_SAFETY_WATCHDOG_INDEX)      (inlined)
+	jne	d5,#-1,.L18
+.L153:
+	ld.w	d15,[a15]28
+.L154:
+
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   266      return (uint32*)(kBrsWdtCon0Addresses[BRS_SAFETY_WATCHDOG_ARRAY_INDEX]);      (inlined)
+	j	.L19
+
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   264    if (nr == BRS_SAFETY_WATCHDOG_INDEX)      (inlined)
+.L18:
+
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   267    }
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   268    else
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   269    {
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   270      return (uint32*)(kBrsWdtCon0Addresses[nr]);
+	addsc.a	a2,a15,d5,#2
+	ld.w	d15,[a2]
+
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   272  }      (inlined)
+.L19:
+	mov.a	a2,d15
+.L71:
+
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   271    }
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   272  }
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   273  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   274  /*****************************************************************************/
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   275  /**
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   276   * @brief Routine to unlock registers that are normally protected
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   277   * @pre   Interrupts must be disabled
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   278   */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   279  /*****************************************************************************/
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   280  BRS_FUNC_DECLARATION_PROTOTYPE(static void, always_inline, BrsHwUnlockInitInline, sint32 coreID);
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   281  BRS_FUNC_DECLARATION(static void, always_inline, BrsHwUnlockInitInline, sint32 coreID)
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   282  {
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   283    volatile uint32 wdtcon0value;
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   284    uint32 *WDTCON0;
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   285  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   286    WDTCON0 = BrsHw_GetAddrWDTCON0(coreID);
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   287  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   288    /*
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   289     * 1st step: Password access (create password and send to WDT_CON0)
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   290     */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   291    wdtcon0value = *WDTCON0;
+	ld.w	d15,[a2]
+.L155:
+	st.w	[a10],d15
+.L156:
+
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   292    wdtcon0value &= 0xFFFFFF01;  /* clear WDTLCK, WDTHPW0, WDTHPW1 */
+	ld.w	d15,[a10]
+.L157:
+	insert	d15,d15,#0,#1,#7
+	st.w	[a10],d15
+.L158:
+
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   293    wdtcon0value |= 0xF0;        /* set WDTHPW1 to 0xf */
+	ld.w	d15,[a10]
+.L159:
+	or	d15,#240
+	st.w	[a10],d15
+.L160:
+
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   294    wdtcon0value |= 0x01;        /* 1 must be written to ENDINIT for password access
+	ld.w	d15,[a10]
+.L161:
+	or	d15,#1
+	st.w	[a10],d15
+.L162:
+
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   295                                  (but this will not actually modify the bit) */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   296    *WDTCON0 = wdtcon0value; /* modify access to WDTCON0 */
+	ld.w	d15,[a10]
+.L163:
+	st.w	[a2],d15
+.L164:
+
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   297    /*
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   298     * 2nd step: Modify access, set the bit ENDINIT to 1 or 0 to allow access to
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   299     *           registers: WDT_CON1, BTV, BIV, ISP and mod_CLC
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   300     */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   301    wdtcon0value &= 0xFFFFFFF0;  /* clear WDTHPW0, WDTLCK, ENDINIT  */
+	ld.w	d15,[a10]
+.L165:
+	insert	d15,d15,#0,#0,#4
+	st.w	[a10],d15
+.L166:
+
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   302    wdtcon0value |= 0x02;        /* WDTHPW0=0, WDTLCK=1, ENDINIT=0 */
+	ld.w	d15,[a10]
+.L167:
+	or	d15,#2
+	st.w	[a10],d15
+.L168:
+
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   303    BRS_ISYNC();
+	isync
+.L169:
+
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   304    *WDTCON0 = wdtcon0value;
+	ld.w	d15,[a10]
+.L170:
+	st.w	[a2],d15
+.L171:
+
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   305    wdtcon0value = *WDTCON0; /* read is required */
+	st.w	[a10],d15
+.L172:
+
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   306    BRS_ISYNC();
+	isync
+.L173:
+
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   307    BRS_DSYNC();
+	dsync
+.L62:
+
+; ..\appl\Source\BrsHwStartup.c	   465    }
+; ..\appl\Source\BrsHwStartup.c	   466  #endif
+; ..\appl\Source\BrsHwStartup.c	   467  
+; ..\appl\Source\BrsHwStartup.c	   468    BrsHwUnlockInitInline(CurrentCoreId);
+; ..\appl\Source\BrsHwStartup.c	   469    BRS_MOVE_TO_CSFR(BRS_BTV_OFFSET, BTVAddressInit);
+	dsync
+	mtcr  #0xFE24, d7
+	isync
+.L174:
+
+; ..\appl\Source\BrsHwStartup.c	   470  #if !defined (BRS_ENABLE_FBL_SUPPORT)
+; ..\appl\Source\BrsHwStartup.c	   471    BRS_MOVE_TO_CSFR(BRS_BIV_OFFSET, BIVAddressInit);
+	dsync
+	mtcr  #0xFE20, d9
+	isync
+.L175:
+
+; ..\appl\Source\BrsHwStartup.c	   472  #endif
+; ..\appl\Source\BrsHwStartup.c	   473    BRS_MOVE_TO_CSFR(BRS_PCON0_OFFSET, 0x0UL); /* setting the PCON0 to zero disables the cache bypass (thus program caching is enabled) */
+	dsync
+	mtcr  #0x920C, d6
+	isync
+.L76:
+
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   264    if (nr == BRS_SAFETY_WATCHDOG_INDEX)      (inlined)
+	jne	d5,#-1,.L20
+.L176:
+
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	     1  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	     2  /**********************************************************************************************************************
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	     3    COPYRIGHT
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	     4  -----------------------------------------------------------------------------------------------------------------------
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	     5    \par      copyright
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	     6    \verbatim
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	     7    Copyright (c) 2020 by Vector Informatik GmbH.                                                  All rights reserved.
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	     8  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	     9                  This software is copyright protected and proprietary to Vector Informatik GmbH.
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    10                  Vector Informatik GmbH grants to you only those rights as set out in the license conditions.
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    11                  All other rights remain with Vector Informatik GmbH.
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    12    \endverbatim
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    13  -----------------------------------------------------------------------------------------------------------------------
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    14    FILE DESCRIPTION
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    15  -----------------------------------------------------------------------------------------------------------------------
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    16    \file  File:  BrsHw.h
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    17        Project:  Vector Basic Runtime System
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    18         Module:  BrsHw for platform Infineon Aurix/AurixPlus
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    19  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    20    \brief Description:  This is the hardware specific header file for Vector Basic Runtime System (BRS).
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    21  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    22    \attention Please note:
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    23      The demo and example programs only show special aspects of the software. With regard to the fact
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    24      that these programs are meant for demonstration purposes only, Vector Informatik liability shall be
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    25      expressly excluded in cases of ordinary negligence, to the extent admissible by law or statute.
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    26  **********************************************************************************************************************/
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    27  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    28  #ifndef _BRSHW_H_
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    29  #define _BRSHW_H_
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    30  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    31  /**********************************************************************************************************************
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    32    INCLUDES
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    33  **********************************************************************************************************************/
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    34  /*
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    35   * Description: The BrsCfg header is used to configure different types of
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    36   *              tests and system setups. Therefore it must be included first
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    37   *              in each BRS and test module.
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    38   *              This file is part of the BRS.
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    39   */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    40  #include "vBrsCfg.h"
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    41  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    42  #if defined (BRS_ENABLE_PORT)
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    43    #include "BrsHw_Ports.h"
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    44  #endif
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    45  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    46  /**********************************************************************************************************************
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    47    MODULE VERSION
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    48  **********************************************************************************************************************/
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    49  /*
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    50   * Description: This is the BrsHw main and bug fix version. The version numbers are BCD coded.
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    51   *              E.g. a main version of 1.23 is coded with 0x0123, a bug fix version of 9 is coded 0x09.
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    52   */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    53  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    54  /* This is the BrsHw template main and bug fix version, the platform BrsHw is reviewed to */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    55  #define BRSHW_SOURCECODE_TEMPLATE_VERSION        0x0101u
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    56  #define BRSHW_SOURCECODE_TEMPLATE_BUGFIX_VERSION 0x01u
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    57  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    58  /* This is the BrsHw main and bug fix version */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    59  #define BRSHW_VERSION        0x0103u
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    60  #define BRSHW_BUGFIX_VERSION 0x02u
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    61  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    62  /**********************************************************************************************************************
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    63    CONFIGURATION CHECK
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    64  **********************************************************************************************************************/
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    65  /* The following parameters are necessary for this platform, to be generated by BRS-Cfg5-Generator into BrsCfg.h */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    66  #if !defined (BRS_OSC_CLK)
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    67    #error "BRS CHECK: The parameter BRS_OSC_CLK is missing! Please check your BRS Cfg5 configuration."
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    68  #endif
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    69  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    70  #if !defined (BRS_TIMEBASE_CLOCK)
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    71    #error "BRS CHECK: The parameter BRS_TIMEBASE_CLOCK is missing! Please check your BRS Cfg5 configuration."
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    72  #endif
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    73  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    74  #if !defined (BRS_PERIPH_CLOCK)
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    75    #error "BRS CHECK: The parameter BRS_PERIPH_CLOCK is missing! Please check your BRS Cfg5 configuration."
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    76  #endif
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    77  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    78  #if !defined (BRS_CPU_MAX_FREQUENCY)
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    79    #error "BRS CHECK: The parameter BRS_CPU_MAX_FREQUENCY is missing! Please check your BRS Cfg5 configuration."
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    80  #endif
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    81  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    82  #if !(defined (BRS_CPU_CORE_TC161) || defined (BRS_CPU_CORE_TC162) || defined (BRS_CPU_CORE_TC18))
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    83    #error "BRS CHECK: The parameter BRS_CPU_CORE_x is missing or not supported! Please check your BRS Cfg5 configuration."
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    84  #endif
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    85  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    86  #if !defined (BRS_CPU_CORE_AMOUNT)
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    87    #error "BRS CHECK: The parameter BRS_CPU_CORE_AMOUNT is missing! Please check your BRS Cfg5 configuration."
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    88  #endif
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    89  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    90  /**********************************************************************************************************************
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    91    GLOBAL CONSTANT MACROS
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    92  **********************************************************************************************************************/
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    93  /*
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    94   * Description: Macro for access to IO addresses
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    95   */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    96  #define BRSHW_IOS(type, address) (*((volatile type *)(address)))
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    97  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    98  /* STATIC */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	    99  #define BRSHW_DERIVATIVE_CORE0_ID  0x0
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   100  #define BRSHW_DERIVATIVE_CORE1_ID  0x1
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   101  #define BRSHW_DERIVATIVE_CORE2_ID  0x2
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   102  #define BRSHW_DERIVATIVE_CORE3_ID  0x3
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   103  #define BRSHW_DERIVATIVE_CORE4_ID  0x4
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   104  #define BRSHW_DERIVATIVE_CORE5_ID  0x6
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   105  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   106  /* DERIVATIVE DEPENDENT STATIC */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   107  #define BRSHW_INIT_CORE_ID  BRSHW_DERIVATIVE_CORE0_ID
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   108  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   109  #define BRS_CORE_ID_REGISTER  0xFE1C
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   110  #define BRS_PCXI_OFFSET       0xFE00
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   111  #define BRS_PSW_OFFSET        0xFE04
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   112  #define BRS_FCX_OFFSET        0xFE38
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   113  #define BRS_LCX_OFFSET        0xFE3C
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   114  #define BRS_BTV_OFFSET        0xFE24
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   115  #define BRS_BIV_OFFSET        0xFE20
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   116  #define BRS_PCON0_OFFSET      0x920C
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   117  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   118  /**********************************************************************************************************************
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   119    Compiler abstraction
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   120  **********************************************************************************************************************/
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   121  #if defined (BRS_COMP_TASKING)
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   122    #define nop()                    __nop()
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   123  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   124    #define BRS_FORCE_ACTIVE         __attribute__((protect))
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   125  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   126    #define BRS_ISYNC()              __isync()
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   127    #define BRS_DSYNC()              __dsync()
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   128  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   129    #define BRS_HAL_EXPAND(x)        #x
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   130  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   131    #define BRS_MOVE_FROM_CSFR(x)    (uint32)__mfcr((sint32)(x))
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   132    #define BRS_MOVE_TO_CSFR(x, y)   BRS_DSYNC(); __asm("mtcr  #"BRS_HAL_EXPAND(x)", %0" ::"d"(y):); BRS_ISYNC()
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   133  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   134    #define BRS_SET_SP(x)            __asm("mov.a  a10, %0" ::"d"(x):"a10")
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   135  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   136    #define BRS_STARTUP_LABEL(c)     _Pragma("section code brsStartupEntry") \ 
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   137                                     _Pragma("optimize g")                   \ 
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   138                                     void c(void)                            \ 
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   139                                     {                                       \ 
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   140                                      __asm(".GLOBAL StartupEntry");                       \ 
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   141                                      __asm("StartupEntry:");                              \ 
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   142                                      __asm("movh.a a4, #@his(brsStartupEntry_internal)"); \ 
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   143                                      __asm("lea a4,[a4]@los(brsStartupEntry_internal)");  \ 
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   144                                      __asm("ji a4");                       \ 
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   145                                     }                                      \ 
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   146                                     _Pragma("optimize restore")            \ 
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   147                                     _Pragma("section code restore")
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   148  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   149      #define BRS_FUNC_DECLARATION(rettype, attribute, functionName, arguments) \ 
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   150           rettype functionName (arguments) __attribute__((attribute))
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   151  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   152      #define BRS_FUNC_DECLARATION_PROTOTYPE(rettype, attribute, functionName, arguments) \ 
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   153           rettype functionName (arguments) __attribute__((attribute))
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   154   
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   155  #else
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   156    #error "Compiler not yet supported"
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   157  #endif /*BRS_COMP_x*/
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   158  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   159  /* Reads core id value */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   160  #define BRS_READ_COREID()  BRS_MOVE_FROM_CSFR(BRS_CORE_ID_REGISTER)
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   161  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   162  /**********************************************************************************************************************
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   163    BrsHW configuration
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   164  **********************************************************************************************************************/
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   165  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   166  /*******************************************************************************
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   167    WATCHDOG  GROUP  CONFIG
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   168  *******************************************************************************/
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   169  #define BRS_SAFETY_WATCHDOG_INDEX  -1
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   170  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   171  #if defined (BRS_WATCHDOG_GROUP_A)
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   172    #define BRS_SFR_WDTCPU0CON0_ADDRESS 0xF0036100
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   173    #define BRS_SFR_WDTCPU1CON0_ADDRESS 0xF003610C
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   174    #define BRS_SFR_WDTCPU2CON0_ADDRESS 0xF0036118
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   175    #define BRS_SFR_WDTSCON0_ADDRESS    0xF00360F0
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   176  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   177    #define BRS_SFR_WDTCPU0CON0  BRSHW_IOS(uint32, BRS_SFR_WDTCPU0CON0_ADDRESS)  /* original name: SCU_WDTCPU0CON0 */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   178    #define BRS_SFR_WDTCPU0CON1  BRSHW_IOS(uint32, 0xF0036104)  /* original name: SCU_WDTCPU0CON1 */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   179  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   180    #define BRS_SFR_WDTCPU1CON0  BRSHW_IOS(uint32, BRS_SFR_WDTCPU1CON0_ADDRESS)  /* original name: SCU_WDTCPU1CON0 */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   181    #define BRS_SFR_WDTCPU1CON1  BRSHW_IOS(uint32, 0xF0036110)  /* original name: SCU_WDTCPU1CON1 */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   182  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   183    #define BRS_SFR_WDTCPU2CON0  BRSHW_IOS(uint32, BRS_SFR_WDTCPU2CON0_ADDRESS)  /* original name: SCU_WDTCPU2CON0 */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   184    #define BRS_SFR_WDTCPU2CON1  BRSHW_IOS(uint32, 0xF003611C)  /* original name: SCU_WDTCPU2CON1 */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   185  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   186    #define BRS_SFR_WDTSCON0     BRSHW_IOS(uint32, BRS_SFR_WDTSCON0_ADDRESS)  /* original name: SCU_WDTSCON0 */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   187    #define BRS_SFR_WDTSCON1     BRSHW_IOS(uint32, 0xF00360F4)  /* original name: SCU_WDTSCON1 */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   188    
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   189    #define BRS_SAFETY_WATCHDOG_ARRAY_INDEX 3
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   190  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   191  #elif defined (BRS_WATCHDOG_GROUP_B)
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   192    #define BRS_SFR_WDTCPU0CON0_ADDRESS 0xF003624C
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   193    #define BRS_SFR_WDTCPU1CON0_ADDRESS 0xF0036258
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   194    #define BRS_SFR_WDTCPU2CON0_ADDRESS 0xF0036264
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   195    #define BRS_SFR_WDTCPU3CON0_ADDRESS 0xF0036270
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   196    #define BRS_SFR_WDTCPU4CON0_ADDRESS 0xF003627C
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   197    #define BRS_SFR_WDTCPU5CON0_ADDRESS 0xF0036288
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   198    #define BRS_SFR_WDTSCON0_ADDRESS    0xF00362A8
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   199  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   200    #define BRS_SFR_WDTCPU0CON0  BRSHW_IOS(uint32, BRS_SFR_WDTCPU0CON0_ADDRESS)  /* CPU0 WDT Control Register 0 - original name: SCU_WDTCPU0CON0 */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   201    #define BRS_SFR_WDTCPU0CON1  BRSHW_IOS(uint32, 0xF0036250)  /* CPU0 WDT Control Register 1 - original name: SCU_WDTCPU0CON1 */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   202    #define BRS_SFR_WDTCPU0_SR   BRSHW_IOS(uint32, 0xF0036254)  /* CPU0 WDT Status Register - original name: SCU_WDTCPU0_SR */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   203  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   204    #define BRS_SFR_WDTCPU1CON0  BRSHW_IOS(uint32, BRS_SFR_WDTCPU1CON0_ADDRESS)  /* CPU1 WDT Control Register 0 - original name: SCU_WDTCPU1CON0 */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   205    #define BRS_SFR_WDTCPU1CON1  BRSHW_IOS(uint32, 0xF003625C)  /* CPU1 WDT Control Register 1 - original name: SCU_WDTCPU1CON1 */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   206    #define BRS_SFR_WDTCPU1_SR   BRSHW_IOS(uint32, 0xF0036260)  /* CPU1 WDT Status Register - original name: SCU_WDTCPU1_SR */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   207  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   208    #define BRS_SFR_WDTCPU2CON0  BRSHW_IOS(uint32, BRS_SFR_WDTCPU2CON0_ADDRESS)  /* CPU2 WDT Control Register 0 - original name: SCU_WDTCPU2CON0 */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   209    #define BRS_SFR_WDTCPU2CON1  BRSHW_IOS(uint32, 0xF0036268)  /* CPU2 WDT Control Register 1 - original name: SCU_WDTCPU2CON1 */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   210    #define BRS_SFR_WDTCPU2_SR   BRSHW_IOS(uint32, 0xF003626C)  /* CPU2 WDT Status Register - original name: SCU_WDTCPU2_SR */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   211  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   212    #define BRS_SFR_WDTCPU3CON0  BRSHW_IOS(uint32, BRS_SFR_WDTCPU3CON0_ADDRESS)  /* CPU3 WDT Control Register 0 - original name: SCU_WDTCPU3CON0 */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   213    #define BRS_SFR_WDTCPU3CON1  BRSHW_IOS(uint32, 0xF0036274)  /* CPU3 WDT Control Register 1 - original name: SCU_WDTCPU3CON1 */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   214    #define BRS_SFR_WDTCPU3_SR   BRSHW_IOS(uint32, 0xF0036278)  /* CPU3 WDT Status Register - original name: SCU_WDTCPU3_SR */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   215  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   216    #define BRS_SFR_WDTCPU4CON0  BRSHW_IOS(uint32, BRS_SFR_WDTCPU4CON0_ADDRESS)  /* CPU4 WDT Control Register 0 - original name: SCU_WDTCPU4CON0 */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   217    #define BRS_SFR_WDTCPU4CON1  BRSHW_IOS(uint32, 0xF0036280)  /* CPU4 WDT Control Register 1 - original name: SCU_WDTCPU4CON1 */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   218    #define BRS_SFR_WDTCPU4_SR   BRSHW_IOS(uint32, 0xF0036284)  /* CPU4 WDT Status Register - original name: SCU_WDTCPU4_SR */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   219  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   220    #define BRS_SFR_WDTCPU5CON0  BRSHW_IOS(uint32, BRS_SFR_WDTCPU5CON0_ADDRESS)  /* CPU5 WDT Control Register 0 - original name: SCU_WDTCPU5CON0 */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   221    #define BRS_SFR_WDTCPU5CON1  BRSHW_IOS(uint32, 0xF003628C)  /* CPU5 WDT Control Register 1 - original name: SCU_WDTCPU5CON1 */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   222    #define BRS_SFR_WDTCPU5_SR   BRSHW_IOS(uint32, 0xF0036290)  /* CPU5 WDT Status Register - original name: SCU_WDTCPU5_SR */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   223  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   224    #define BRS_SFR_WDTSCON0     BRSHW_IOS(uint32, BRS_SFR_WDTSCON0_ADDRESS)  /* Safety WDT Control Register 0 - original name: SCU_WDTS_CON0 */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   225    #define BRS_SFR_WDTSCON1     BRSHW_IOS(uint32, 0xF00362AC)  /* Safety WDT Control Register 1 - original name: SCU_WDTS_CON1 */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   226  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   227    #define BRS_SAFETY_WATCHDOG_ARRAY_INDEX 7
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   228  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   229    #define BRS_SFR_WDTS_SR      BRSHW_IOS(uint32, 0xF00362B0)  /* Safety WDT Status Register - original name: SCU_WDTS_SR */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   230  #endif /*BRS_WATCHDOG_GROUP_x*/
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   231  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   232  /**********************************************************************************************************************
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   233    Global variables
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   234  **********************************************************************************************************************/
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   235  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   236  /**********************************************************************************************************************
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   237    Global const variables
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   238  **********************************************************************************************************************/
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   239  /*
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   240   * Description: These constants are used to propagate the Versions over module boundaries.
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   241   *              The version numbers are BCD coded. E.g. a sub version of 23 is coded with 0x23, 
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   242   *              a bug fix version of 9 is coded 0x09.
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   243   */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   244  extern uint8 const kBrsHwMainVersion;
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   245  extern uint8 const kBrsHwSubVersion;
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   246  extern uint8 const kBrsHwBugfixVersion;
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   247  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   248  #if defined (BRS_WATCHDOG_GROUP_A)
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   249  extern const uint32 kBrsWdtCon0Addresses[4];
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   250  #elif defined (BRS_WATCHDOG_GROUP_B)
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   251  extern const uint32 kBrsWdtCon0Addresses[8];
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   252  #endif
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   253  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   254  /**********************************************************************************************************************
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   255    Global function prototypes
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   256  **********************************************************************************************************************/
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   257  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   258   /*******************************************************************************
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   259   CPU Core Amount (number of cores)
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   260  *******************************************************************************/
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   261  BRS_FUNC_DECLARATION_PROTOTYPE(static uint32 *, always_inline, BrsHw_GetAddrWDTCON0, sint32 nr);
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   262  BRS_FUNC_DECLARATION(static uint32 *, always_inline, BrsHw_GetAddrWDTCON0, sint32 nr)
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   263  {
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   264    if (nr == BRS_SAFETY_WATCHDOG_INDEX)
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   265    {
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   266      return (uint32*)(kBrsWdtCon0Addresses[BRS_SAFETY_WATCHDOG_ARRAY_INDEX]);
+	ld.w	d15,[a15]28
+.L177:
+
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   266      return (uint32*)(kBrsWdtCon0Addresses[BRS_SAFETY_WATCHDOG_ARRAY_INDEX]);      (inlined)
+	j	.L21
+
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   264    if (nr == BRS_SAFETY_WATCHDOG_INDEX)      (inlined)
+.L20:
+
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   267    }
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   268    else
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   269    {
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   270      return (uint32*)(kBrsWdtCon0Addresses[nr]);
+	addsc.a	a15,a15,d5,#2
+	ld.w	d15,[a15]
+
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   272  }      (inlined)
+.L21:
+	mov.a	a15,d15
+.L84:
+
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   271    }
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   272  }
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   273  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   274  /*****************************************************************************/
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   275  /**
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   276   * @brief Routine to unlock registers that are normally protected
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   277   * @pre   Interrupts must be disabled
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   278   */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   279  /*****************************************************************************/
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   280  BRS_FUNC_DECLARATION_PROTOTYPE(static void, always_inline, BrsHwUnlockInitInline, sint32 coreID);
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   281  BRS_FUNC_DECLARATION(static void, always_inline, BrsHwUnlockInitInline, sint32 coreID)
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   282  {
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   283    volatile uint32 wdtcon0value;
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   284    uint32 *WDTCON0;
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   285  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   286    WDTCON0 = BrsHw_GetAddrWDTCON0(coreID);
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   287  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   288    /*
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   289     * 1st step: Password access (create password and send to WDT_CON0)
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   290     */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   291    wdtcon0value = *WDTCON0;
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   292    wdtcon0value &= 0xFFFFFF01;  /* clear WDTLCK, WDTHPW0, WDTHPW1 */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   293    wdtcon0value |= 0xF0;        /* set WDTHPW1 to 0xf */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   294    wdtcon0value |= 0x01;        /* 1 must be written to ENDINIT for password access
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   295                                  (but this will not actually modify the bit) */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   296    *WDTCON0 = wdtcon0value; /* modify access to WDTCON0 */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   297    /*
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   298     * 2nd step: Modify access, set the bit ENDINIT to 1 or 0 to allow access to
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   299     *           registers: WDT_CON1, BTV, BIV, ISP and mod_CLC
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   300     */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   301    wdtcon0value &= 0xFFFFFFF0;  /* clear WDTHPW0, WDTLCK, ENDINIT  */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   302    wdtcon0value |= 0x02;        /* WDTHPW0=0, WDTLCK=1, ENDINIT=0 */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   303    BRS_ISYNC();
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   304    *WDTCON0 = wdtcon0value;
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   305    wdtcon0value = *WDTCON0; /* read is required */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   306    BRS_ISYNC();
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   307    BRS_DSYNC();
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   308  }
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   309  
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   310  /*****************************************************************************/
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   311  /**
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   312   * @brief Routine to lock registers that are normally protected
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   313   * @pre   Interrupts must be disabled
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   314   */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   315  /*****************************************************************************/
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   316  BRS_FUNC_DECLARATION_PROTOTYPE(static void, always_inline, BrsHwLockInitInline, sint32 coreID);
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   317  BRS_FUNC_DECLARATION(static void, always_inline, BrsHwLockInitInline, sint32 coreID)
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   318  {
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   319    volatile uint32 wdtcon0value;
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   320    uint32 *WDTCON0;
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   321    WDTCON0 = BrsHw_GetAddrWDTCON0(coreID);
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   322    /*
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   323     * 1st step: Password access (create password and send to WDT_CON0)
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   324     */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   325    wdtcon0value = *WDTCON0;
+	ld.w	d15,[a15]
+.L178:
+	st.w	[a10],d15
+.L179:
+
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   326    wdtcon0value &= 0xFFFFFF01;  /* clear WDTLCK, WDTHPW0, WDTHPW1 */
+	ld.w	d15,[a10]
+.L180:
+	insert	d15,d15,#0,#1,#7
+	st.w	[a10],d15
+.L181:
+
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   327    wdtcon0value |= 0xF0;        /* set WDTHPW1 to 0xf */
+	ld.w	d15,[a10]
+.L182:
+	or	d15,#240
+	st.w	[a10],d15
+.L183:
+
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   328    wdtcon0value |= 0x01;        /* 1 must be written to ENDINIT for password access
+	ld.w	d15,[a10]
+.L184:
+	or	d15,#1
+	st.w	[a10],d15
+.L185:
+
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   329                                   (but this will not actually modify the bit) */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   330    *WDTCON0 = wdtcon0value; /* modify access to WDTCON0 */
+	ld.w	d15,[a10]
+.L186:
+	st.w	[a15],d15
+.L187:
+
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   331    /*
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   332     * 2nd step: Modify access, set the bit ENDINIT to 1 or 0 to allow access to
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   333     *           registers: WDT_CON1, BTV, BIV, ISP and mod_CLC
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   334     */
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   335    wdtcon0value &= 0xFFFFFFF0;  /* clear WDTHPW0, WDTLCK, ENDINIT  */
+	ld.w	d15,[a10]
+.L188:
+	insert	d15,d15,#0,#0,#4
+	st.w	[a10],d15
+.L189:
+
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   336    wdtcon0value |= 0x03;        /* WDTHPW0=0, WDTLCK=1, ENDINIT=1 */
+	ld.w	d15,[a10]
+.L190:
+	or	d15,#3
+	st.w	[a10],d15
+.L191:
+
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   337    BRS_ISYNC();
+	isync
+.L192:
+
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   338    *WDTCON0 = wdtcon0value;
+	ld.w	d15,[a10]
+.L193:
+	st.w	[a15],d15
+.L194:
+
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   339    wdtcon0value = *WDTCON0; /* read is required */
+	st.w	[a10],d15
+.L195:
+
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   340    BRS_ISYNC();
+	isync
+.L196:
+
+; D:\Zonal\demo011\tasking\appl\Include\BrsHw.h	   341    BRS_DSYNC();
+	dsync
+.L77:
+
+; ..\appl\Source\BrsHwStartup.c	   474    BrsHwLockInitInline(CurrentCoreId);
+; ..\appl\Source\BrsHwStartup.c	   475  
+; ..\appl\Source\BrsHwStartup.c	   476  /* =========================================================================== */
+; ..\appl\Source\BrsHwStartup.c	   477  /*                                                                             */
+; ..\appl\Source\BrsHwStartup.c	   478  /* Description: Jump to Brs_PreMainStartup() (BrsMainStartup.c)                */
+; ..\appl\Source\BrsHwStartup.c	   479  /*                                                                             */
+; ..\appl\Source\BrsHwStartup.c	   480  /* =========================================================================== */
+; ..\appl\Source\BrsHwStartup.c	   481    Brs_PreMainStartup();
+	call	Brs_PreMainStartup
+.L87:
+
+; ..\appl\Source\BrsHwStartup.c	   482  
+; ..\appl\Source\BrsHwStartup.c	   483  /* =========================================================================== */
+; ..\appl\Source\BrsHwStartup.c	   484  /*                                                                             */
+; ..\appl\Source\BrsHwStartup.c	   485  /* Description: Jump to BrsMainExceptionStartup() in case of an unexpected     */
+; ..\appl\Source\BrsHwStartup.c	   486  /*              return from PreMain/main                                       */
+; ..\appl\Source\BrsHwStartup.c	   487  /*                                                                             */
+; ..\appl\Source\BrsHwStartup.c	   488  /* =========================================================================== */
+; ..\appl\Source\BrsHwStartup.c	   489    BrsMainExceptionStartup();
+	j	BrsMainExceptionStartup
+.L41:
+	
+__brsStartupEntry_internal_function_end:
+	.size	brsStartupEntry_internal,__brsStartupEntry_internal_function_end-brsStartupEntry_internal
+.L39:
+	; End of function
+	
+	.calls	'brsStartupEntry_internal','Brs_PreMainStartup'
+	.calls	'brsStartupEntry_internal','BrsMainExceptionStartup'
+	.calls	'brsStartupEntry','',0
+	.extern	kBrsWdtCon0Addresses
+	.extern	BrsMainExceptionStartup
+	.extern	Brs_PreMainStartup
+	.extern	vLinkGen_ZeroInit_Early_GroupsSet
+	.extern	__CSA_BEGIN_CPU0_
+	.extern	__CSA_END_CPU0_
+	.extern	__STARTUPSTACK_CORE0
+	.extern	_OS_EXCVEC_CORE0_CODE_START
+	.extern	_OS_INTVEC_CORE0_CODE_START
+	.calls	'brsStartupEntry_internal','',8
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L27:
+	.word	9200
+	.half	3
+	.word	.L28
+	.byte	4
+.L26:
+	.byte	1
+	.byte	'..\\appl\\Source\\BrsHwStartup.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
+	.word	.L29
+.L42:
+	.byte	2
+	.byte	'unsigned long int',0,4,7
+.L68:
+	.byte	3
+	.word	123
+	.byte	2
+	.byte	'long int',0,4,5
+.L70:
+	.byte	4
+	.byte	'BrsHw_GetAddrWDTCON0',0,1,1,134,2,1
+	.word	144
+	.byte	1,1
+.L72:
+	.byte	5
+	.byte	'nr',0,1,134,2,1
+	.word	149
+.L74:
+	.byte	6,0
+.L61:
+	.byte	7
+	.byte	'BrsHwUnlockInitInline',0,1,1,153,2,1,1,1
+.L63:
+	.byte	5
+	.byte	'coreID',0,1,153,2,1
+	.word	149
+.L65:
+	.byte	8,6,0,0
+.L75:
+	.byte	7
+	.byte	'BrsHwLockInitInline',0,1,1,189,2,1,1,1
+.L78:
+	.byte	5
+	.byte	'coreID',0,1,189,2,1
+	.word	149
+.L80:
+	.byte	8,6,0,0,2
+	.byte	'int',0,4,5,9
+	.word	306
+	.byte	10
+	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,11
+	.word	313
+	.byte	0,2
+	.byte	'unsigned int',0,4,7,12
+	.word	355
+	.byte	3
+	.word	355
+	.byte	13
+	.byte	'__cmpswapw',0
+	.word	371
+	.byte	1,1,1,1,14
+	.byte	'p',0
+	.word	376
+	.byte	14
+	.byte	'value',0
+	.word	355
+	.byte	14
+	.byte	'compare',0
+	.word	355
+	.byte	0,12
+	.word	306
+	.byte	13
+	.byte	'__mfcr',0
+	.word	433
+	.byte	1,1,1,1,11
+	.word	306
+	.byte	0,15
+	.byte	'__isync',0,1,1,1,1,15
+	.byte	'__dsync',0,1,1,1,1,16
+	.word	161
+	.byte	17
+	.word	194
+	.byte	6,0,16
+	.word	208
+	.byte	17
+	.word	238
+	.byte	8,18
+	.word	161
+	.byte	17
+	.word	194
+	.byte	19
+	.word	206
+	.byte	0,6,0,0,16
+	.word	258
+	.byte	17
+	.word	286
+	.byte	8,18
+	.word	161
+	.byte	17
+	.word	194
+	.byte	19
+	.word	206
+	.byte	0,6,0,0,20
+	.byte	'BrsMainExceptionStartup',0,2,237,1,6,1,1,1,1,20
+	.byte	'Brs_PreMainStartup',0,3,65,6,1,1,1,1,21,64
+	.word	123
+	.byte	22,15,0,23
+	.byte	'BRS_CSA_Element',0,4,133,2,16
+	.word	618
+.L48:
+	.byte	3
+	.word	627
+	.byte	21,64
+	.word	123
+	.byte	22,15,0,12
+	.word	123
+.L51:
+	.byte	3
+	.word	666
+.L53:
+	.byte	2
+	.byte	'unsigned char',0,1,8
+.L66:
+	.byte	12
+	.word	123
+.L81:
+	.byte	12
+	.word	123
+	.byte	24,1,3
+	.word	703
+	.byte	23
+	.byte	'__codeptr',0,4,1,1
+	.word	705
+	.byte	23
+	.byte	'uint8',0,5,104,31
+	.word	676
+	.byte	2
+	.byte	'unsigned short int',0,2,7,23
+	.byte	'uint16',0,5,106,31
+	.word	742
+	.byte	23
+	.byte	'sint32',0,5,107,31
+	.word	149
+	.byte	23
+	.byte	'uint32',0,5,108,31
+	.word	123
+	.byte	23
+	.byte	'uint8_least',0,5,111,31
+	.word	676
+	.byte	2
+	.byte	'unsigned long long int',0,8,7,23
+	.byte	'uint64',0,5,121,30
+	.word	829
+	.byte	23
+	.byte	'StatusType',0,6,127,23
+	.word	676
+	.byte	21,32
+	.word	123
+	.byte	22,7,0,9
+	.word	889
+	.byte	25
+	.byte	'kBrsWdtCon0Addresses',0,1,251,1,21
+	.word	898
+	.byte	1,1,26,7,145,1,9,1,27
+	.byte	'Default_Init_Task',0,0,27
+	.byte	'Default_Init_Task_Trusted',0,1,27
+	.byte	'IdleTask_OsCore0',0,2,27
+	.byte	'bsw_task',0,3,27
+	.byte	'swc_init',0,4,27
+	.byte	'swc_task',0,5,27
+	.byte	'INVALID_TASK',0,6,27
+	.byte	'OS_TASKID_COUNT',0,6,0,23
+	.byte	'TaskType',0,7,155,1,3
+	.word	935
+	.byte	23
+	.byte	'Os_Hal_AddressType',0,8,61,16
+	.word	123
+	.byte	28
+	.byte	'Os_ExceptionContextType_Tag',0,9,71,8,160,1,29
+	.byte	'AddressRegisters',0
+	.word	618
+	.byte	64,2,35,0,29
+	.byte	'DataRegisters',0
+	.word	618
+	.byte	64,2,35,64,29
+	.byte	'Ra',0
+	.word	123
+	.byte	4,3,35,128,1,29
+	.byte	'Psw',0
+	.word	123
+	.byte	4,3,35,132,1,29
+	.byte	'ExceptionSource',0
+	.word	123
+	.byte	4,3,35,136,1,29
+	.byte	'Pcpn',0
+	.word	123
+	.byte	4,3,35,140,1,29
+	.byte	'Pie',0
+	.word	123
+	.byte	4,3,35,144,1,29
+	.byte	'MpuRegionForStackLow',0
+	.word	123
+	.byte	4,3,35,148,1,29
+	.byte	'MpuRegionForStackUpper',0
+	.word	123
+	.byte	4,3,35,152,1,29
+	.byte	'RawPCXI',0
+	.word	123
+	.byte	4,3,35,156,1,0,23
+	.byte	'Os_ExceptionContextType',0,8,66,44
+	.word	1120
+	.byte	23
+	.byte	'Os_InterruptSourceIdType',0,10,238,1,16
+	.word	123
+	.byte	23
+	.byte	'Os_ExceptionSourceIdType',0,10,246,1,16
+	.word	123
+	.byte	26,10,161,2,9,1,27
+	.byte	'RUNNING',0,0,27
+	.byte	'READY',0,1,27
+	.byte	'WAITING',0,2,27
+	.byte	'SUSPENDED',0,3,0,23
+	.byte	'TaskStateType',0,10,175,2,3
+	.word	1468
+	.byte	23
+	.byte	'EventMaskType',0,10,182,2,16
+	.word	829
+	.byte	23
+	.byte	'Os_TickType',0,10,200,2,19
+	.word	123
+	.byte	23
+	.byte	'TickType',0,10,206,2,21
+	.word	123
+	.byte	30,10,220,2,9,12,29
+	.byte	'maxallowedvalue',0
+	.word	123
+	.byte	4,2,35,0,29
+	.byte	'ticksperbase',0
+	.word	123
+	.byte	4,2,35,4,29
+	.byte	'mincycle',0
+	.word	123
+	.byte	4,2,35,8,0,23
+	.byte	'AlarmBaseType',0,10,228,2,2
+	.word	1600
+	.byte	26,10,128,3,9,1,27
+	.byte	'APPLICATION_TERMINATED',0,0,27
+	.byte	'APPLICATION_RESTARTING',0,1,27
+	.byte	'APPLICATION_ACCESSIBLE',0,2,0,23
+	.byte	'ApplicationStateType',0,10,133,3,3
+	.word	1695
+	.byte	26,10,177,3,9,1,27
+	.byte	'OSServiceId_GetApplicationID',0,0,27
+	.byte	'OSServiceId_GetISRID',0,1,27
+	.byte	'OSServiceId_CallTrustedFunction',0,2,27
+	.byte	'OSServiceId_CheckISRMemoryAccess',0,3,27
+	.byte	'OSServiceId_CheckTaskMemoryAccess',0,4,27
+	.byte	'OSServiceId_CheckObjectAccess',0,5,27
+	.byte	'OSServiceId_CheckObjectOwnership',0,6,27
+	.byte	'OSServiceId_StartScheduleTableRel',0,7,27
+	.byte	'OSServiceId_StartScheduleTableAbs',0,8,27
+	.byte	'OSServiceId_StopScheduleTable',0,9,27
+	.byte	'OSServiceId_NextScheduleTable',0,10,27
+	.byte	'OSServiceId_StartScheduleTableSynchron',0,11,27
+	.byte	'OSServiceId_SyncScheduleTable',0,12,27
+	.byte	'OSServiceId_SetScheduleTableAsync',0,13,27
+	.byte	'OSServiceId_GetScheduleTableStatus',0,14,27
+	.byte	'OSServiceId_IncrementCounter',0,15,27
+	.byte	'OSServiceId_GetCounterValue',0,16,27
+	.byte	'OSServiceId_GetElapsedValue',0,17,27
+	.byte	'OSServiceId_TerminateApplication',0,18,27
+	.byte	'OSServiceId_AllowAccess',0,19,27
+	.byte	'OSServiceId_GetApplicationState',0,20,27
+	.byte	'OSServiceId_GetNumberOfActivatedCores',0,21,27
+	.byte	'OSServiceId_GetCoreID',0,22,27
+	.byte	'OSServiceId_StartCore',0,23,27
+	.byte	'OSServiceId_StartNonAutosarCore',0,24,27
+	.byte	'OSServiceId_GetSpinlock',0,25,27
+	.byte	'OSServiceId_ReleaseSpinlock',0,26,27
+	.byte	'OSServiceId_TryToGetSpinlock',0,27,27
+	.byte	'OSServiceId_ShutdownAllCores',0,28,27
+	.byte	'OSServiceId_ControlIdle',0,29,27
+	.byte	'OSServiceId_IocSend',0,30,27
+	.byte	'OSServiceId_IocWrite',0,31,27
+	.byte	'OSServiceId_IocSendGroup',0,32,27
+	.byte	'OSServiceId_IocWriteGroup',0,33,27
+	.byte	'OSServiceId_IocReceive',0,34,27
+	.byte	'OSServiceId_IocRead',0,35,27
+	.byte	'OSServiceId_IocReceiveGroup',0,36,27
+	.byte	'OSServiceId_IocReadGroup',0,37,27
+	.byte	'OSServiceId_IocEmptyQueue',0,38,27
+	.byte	'OSServiceId_GetCurrentApplicationID',0,39,27
+	.byte	'OSServiceId_GetExceptionContext',0,160,1,27
+	.byte	'OSServiceId_SetExceptionContext',0,161,1,27
+	.byte	'OSServiceId_CallNonTrustedFunction',0,162,1,27
+	.byte	'OSServiceId_AppKill',0,163,1,27
+	.byte	'OSServiceId_AlarmActionSetEvent',0,164,1,27
+	.byte	'OSServiceId_AlarmActionActivateTask',0,165,1,27
+	.byte	'OSServiceId_AlarmActionIncrementCounter',0,166,1,27
+	.byte	'OSServiceId_AlarmActionCallback',0,167,1,27
+	.byte	'OSServiceId_TimerIsr',0,168,1,27
+	.byte	'OSServiceId_IsrWrapper',0,169,1,27
+	.byte	'OSServiceId_GetTaskStackUsage',0,170,1,27
+	.byte	'OSServiceId_GetISRStackUsage',0,171,1,27
+	.byte	'OSServiceId_GetKernelStackUsage',0,172,1,27
+	.byte	'OSServiceId_GetStartupHookStackUsage',0,173,1,27
+	.byte	'OSServiceId_GetErrorHookStackUsage',0,174,1,27
+	.byte	'OSServiceId_GetShutdownHookStackUsage',0,175,1,27
+	.byte	'OSServiceId_GetProtectionHookStackUsage',0,176,1,27
+	.byte	'OSServiceId_GetSemaphore',0,177,1,27
+	.byte	'OSServiceId_ReleaseSemaphore',0,178,1,27
+	.byte	'OSServiceId_ScheduleTableActivateTask',0,179,1,27
+	.byte	'OSServiceId_ScheduleTableSetEvent',0,180,1,27
+	.byte	'OSServiceId_DisableInterruptSource',0,181,1,27
+	.byte	'OSServiceId_EnableInterruptSource',0,182,1,27
+	.byte	'OSServiceId_ClearPendingInterrupt',0,183,1,27
+	.byte	'OSServiceId_GetUnhandledIrq',0,184,1,27
+	.byte	'OSServiceId_GetUnhandledExc',0,185,1,27
+	.byte	'OSServiceId_HookCallCallback',0,186,1,27
+	.byte	'OSServiceId_IsInterruptSourceEnabled',0,187,1,27
+	.byte	'OSServiceId_IsInterruptPending',0,188,1,27
+	.byte	'OSServiceId_CallFastTrustedFunction',0,189,1,27
+	.byte	'OSServiceId_BarrierSynchronize',0,190,1,27
+	.byte	'OSServiceId_InitialEnableInterruptSources',0,191,1,27
+	.byte	'OSServiceId_GetCoreStartState',0,192,1,27
+	.byte	'OSServiceId_StartOS',0,208,1,27
+	.byte	'OSServiceId_GetActiveApplicationMode',0,210,1,27
+	.byte	'OSServiceId_DisableAllInterrupts',0,211,1,27
+	.byte	'OSServiceId_EnableAllInterrupts',0,212,1,27
+	.byte	'OSServiceId_SuspendAllInterrupts',0,213,1,27
+	.byte	'OSServiceId_ResumeAllInterrupts',0,214,1,27
+	.byte	'OSServiceId_SuspendOSInterrupts',0,215,1,27
+	.byte	'OSServiceId_ResumeOSInterrupts',0,216,1,27
+	.byte	'OSServiceId_ActivateTask',0,217,1,27
+	.byte	'OSServiceId_TerminateTask',0,218,1,27
+	.byte	'OSServiceId_ChainTask',0,219,1,27
+	.byte	'OSServiceId_GetTaskID',0,220,1,27
+	.byte	'OSServiceId_GetTaskState',0,221,1,27
+	.byte	'OSServiceId_Schedule',0,222,1,27
+	.byte	'OSServiceId_SetEvent',0,223,1,27
+	.byte	'OSServiceId_ClearEvent',0,224,1,27
+	.byte	'OSServiceId_GetEvent',0,225,1,27
+	.byte	'OSServiceId_WaitEvent',0,226,1,27
+	.byte	'OSServiceId_GetAlarmBase',0,227,1,27
+	.byte	'OSServiceId_GetAlarm',0,228,1,27
+	.byte	'OSServiceId_SetRelAlarm',0,229,1,27
+	.byte	'OSServiceId_SetAbsAlarm',0,230,1,27
+	.byte	'OSServiceId_CancelAlarm',0,231,1,27
+	.byte	'OSServiceId_GetResource',0,232,1,27
+	.byte	'OSServiceId_ReleaseResource',0,233,1,27
+	.byte	'OSSERVICEID_COUNT',0,255,1,0,23
+	.byte	'OSServiceIdType',0,10,156,4,3
+	.word	1807
+	.byte	26,10,172,4,9,2,27
+	.byte	'OS_STATUS_OK',0,0,27
+	.byte	'OS_STATUS_CALLEVEL',0,2,27
+	.byte	'OS_STATUS_LIMIT',0,4,27
+	.byte	'OS_STATUS_RESOURCE',0,6,27
+	.byte	'OS_STATUS_SERVICEID',0,9,27
+	.byte	'OS_STATUS_ILLEGAL_ADDRESS',0,10,27
+	.byte	'OS_STATUS_MISSINGEND',0,11,27
+	.byte	'OS_STATUS_DISABLEDINT',0,12,27
+	.byte	'OS_STATUS_STACKFAULT',0,13,27
+	.byte	'OS_STATUS_PROTECTION_MEMORY',0,14,27
+	.byte	'OS_STATUS_PROTECTION_TIME',0,15,27
+	.byte	'OS_STATUS_PROTECTION_ARRIVAL',0,16,27
+	.byte	'OS_STATUS_PROTECTION_LOCKED',0,17,27
+	.byte	'OS_STATUS_PROTECTION_EXCEPTION',0,18,27
+	.byte	'OS_STATUS_INTERFERENCE_DEADLOCK',0,19,27
+	.byte	'OS_STATUS_NESTING_DEADLOCK',0,20,27
+	.byte	'OS_STATUS_SPINLOCK',0,21,27
+	.byte	'OS_STATUS_CORE',0,22,27
+	.byte	'OS_STATUS_OVERFLOW',0,245,1,27
+	.byte	'OS_STATUS_KILL_KERNEL_OBJ',0,246,1,27
+	.byte	'OS_STATUS_NO_RESTARTTASK',0,247,1,27
+	.byte	'OS_STATUS_CALL_NOT_ALLOWED',0,248,1,27
+	.byte	'OS_STATUS_FUNCTION_UNAVAILABLE',0,249,1,27
+	.byte	'OS_STATUS_PROTECTION_SYSCALL',0,250,1,27
+	.byte	'OS_STATUS_PROTECTION_IRQ',0,251,1,27
+	.byte	'OS_STATUS_API_ERROR',0,252,1,27
+	.byte	'OS_STATUS_ASSERTION',0,253,1,27
+	.byte	'OS_STATUS_OVERLOAD',0,254,1,27
+	.byte	'OS_STATUS_ACCESSRIGHTS_1',0,129,2,27
+	.byte	'OS_STATUS_CALLEVEL_SHARED_STACK',0,130,2,27
+	.byte	'OS_STATUS_ID_1',0,131,2,27
+	.byte	'OS_STATUS_UNLOCKED',0,133,2,27
+	.byte	'OS_STATUS_STATE_1',0,135,2,27
+	.byte	'OS_STATUS_VALUE_IS_ZERO_1',0,136,2,27
+	.byte	'OS_STATUS_CORE_CROSS_DATA',0,150,2,27
+	.byte	'OS_STATUS_PARAM_POINTER_1',0,151,2,27
+	.byte	'OS_STATUS_STACKUSAGE_DISABLED_BY_CONFIG',0,241,3,27
+	.byte	'OS_STATUS_NO_BARRIER_PARTICIPANT',0,242,3,27
+	.byte	'OS_STATUS_UNIMPLEMENTED_CLEARPENDING',0,243,3,27
+	.byte	'OS_STATUS_NO_NTFSTACK_POOL_EMPTY',0,244,3,27
+	.byte	'OS_STATUS_ACCESSRIGHTS_2',0,129,4,27
+	.byte	'OS_STATUS_CALLEVEL_CROSS_CORE_SYNC',0,130,4,27
+	.byte	'OS_STATUS_ID_2',0,131,4,27
+	.byte	'OS_STATUS_NOFUNC_1',0,133,4,27
+	.byte	'OS_STATUS_STATE_2',0,135,4,27
+	.byte	'OS_STATUS_VALUE_IS_ZERO_2',0,136,4,27
+	.byte	'OS_STATUS_PARAM_POINTER_2',0,151,4,27
+	.byte	'OS_STATUS_EVENT_DISABLED_BY_CONFIG',0,241,5,27
+	.byte	'OS_STATUS_UNIMPLEMENTED_EXCEPTIONCONTEXT',0,243,5,27
+	.byte	'OS_STATUS_NO_NTFSTACK_APPLIMIT_EXCEEDED',0,244,5,27
+	.byte	'OS_STATUS_NOTACCESSIBLE_1',0,129,6,27
+	.byte	'OS_STATUS_ID_TYPE_1',0,131,6,27
+	.byte	'OS_STATUS_NOFUNC_2',0,133,6,27
+	.byte	'OS_STATUS_STATE_STOPPED',0,135,6,27
+	.byte	'OS_STATUS_VALUE_IS_TOO_HIGH_1',0,136,6,27
+	.byte	'OS_STATUS_PARAM_POINTER_3',0,151,6,27
+	.byte	'OS_STATUS_NOTACCESSIBLE_2',0,129,8,27
+	.byte	'OS_STATUS_ID_DIFFERENT_COUNTER',0,131,8,27
+	.byte	'OS_STATUS_SPINLOCK_ORDER',0,133,8,27
+	.byte	'OS_STATUS_STATE_RUNNING',0,135,8,27
+	.byte	'OS_STATUS_VALUE_IS_TOO_HIGH_2',0,136,8,27
+	.byte	'OS_STATUS_NOEXTENDEDTASK_1',0,129,10,27
+	.byte	'OS_STATUS_ID_DIFFERENT_SYNC',0,131,10,27
+	.byte	'OS_STATUS_STOPPED_1',0,133,10,27
+	.byte	'OS_STATUS_STATE_NEXTED',0,135,10,27
+	.byte	'OS_STATUS_VALUE_IS_TOO_HIGH_3',0,136,10,27
+	.byte	'OS_STATUS_NOEXTENDEDTASK_2',0,129,12,27
+	.byte	'OS_STATUS_HOOK_NOT_AVAILABLE',0,131,12,27
+	.byte	'OS_STATUS_NOT_STOPPED_2',0,133,12,27
+	.byte	'OS_STATUS_STATE_WAITING',0,135,12,27
+	.byte	'OS_STATUS_VALUE_IS_OUT_OF_BOUNDS_1',0,136,12,27
+	.byte	'OS_STATUS_NOEXTENDEDTASK_CALLER',0,129,14,27
+	.byte	'OS_STATUS_NEXTED_1',0,133,14,27
+	.byte	'OS_STATUS_STATE_NO_RESTART',0,135,14,27
+	.byte	'OS_STATUS_VALUE_IS_OUT_OF_BOUNDS_2',0,136,14,27
+	.byte	'OS_STATUS_LOCKED',0,129,16,27
+	.byte	'OS_STATUS_KILLING_IS_DISABLED',0,133,16,27
+	.byte	'OS_STATUS_STATE_ALREADY_TERMINATED',0,135,16,27
+	.byte	'OS_STATUS_VALUE_IS_TOO_LOW_1',0,136,16,27
+	.byte	'OS_STATUS_PRIORITY',0,129,18,27
+	.byte	'OS_STATUS_ORDER',0,133,18,27
+	.byte	'OS_STATUS_STATE_RESTARTING_NO_MEMBER',0,135,18,27
+	.byte	'OS_STATUS_VALUE_IS_TOO_LOW_2',0,136,18,27
+	.byte	'OS_STATUS_NOT_THE_OWNER_1',0,129,20,27
+	.byte	'OS_STATUS_STATE_ALREADY_RESTARTING',0,135,20,27
+	.byte	'OS_STATUS_VALUE_IS_TOO_LOW_3',0,136,20,27
+	.byte	'OS_STATUS_VALUE_IS_NOT_BOOLEAN',0,136,22,0,23
+	.byte	'Os_StatusType',0,10,232,5,3
+	.word	4977
+	.byte	30,10,133,6,9,4,29
+	.byte	'Service',0
+	.word	1807
+	.byte	1,2,35,0,29
+	.byte	'Error',0
+	.word	676
+	.byte	1,2,35,1,29
+	.byte	'DetailedError',0
+	.word	4977
+	.byte	2,2,35,2,0,23
+	.byte	'Os_ErrorInformationType',0,10,143,6,3
+	.word	7507
+	.byte	26,10,175,6,9,1,27
+	.byte	'SCHEDULETABLE_STOPPED',0,0,27
+	.byte	'SCHEDULETABLE_NEXT',0,1,27
+	.byte	'SCHEDULETABLE_WAITING',0,2,27
+	.byte	'SCHEDULETABLE_RUNNING',0,3,27
+	.byte	'SCHEDULETABLE_RUNNING_AND_SYNCHRONOUS',0,4,0,23
+	.byte	'ScheduleTableStatusType',0,10,192,6,3
+	.word	7602
+	.byte	23
+	.byte	'Os_AccessCheckAddress',0,10,199,6,29
+	.word	123
+	.byte	26,10,211,6,9,1,27
+	.byte	'OS_MEM_ACCESS_TYPE_NON',0,0,27
+	.byte	'OS_MEM_ACCESS_TYPE_R',0,1,27
+	.byte	'OS_MEM_ACCESS_TYPE_READ',0,1,27
+	.byte	'OS_MEM_ACCESS_TYPE_W',0,2,27
+	.byte	'OS_MEM_ACCESS_TYPE_WRITE',0,2,27
+	.byte	'OS_MEM_ACCESS_TYPE_RW',0,3,27
+	.byte	'OS_MEM_ACCESS_TYPE_EXECUTE',0,4,27
+	.byte	'OS_MEM_ACCESS_TYPE_X',0,4,27
+	.byte	'OS_MEM_ACCESS_TYPE_RX',0,5,27
+	.byte	'OS_MEM_ACCESS_TYPE_WX',0,6,27
+	.byte	'OS_MEM_ACCESS_TYPE_RWX',0,7,27
+	.byte	'OS_MEM_ACCESS_TYPE_S',0,8,27
+	.byte	'OS_MEM_ACCESS_TYPE_STACK',0,8,27
+	.byte	'OS_MEM_ACCESS_TYPE_RS',0,9,27
+	.byte	'OS_MEM_ACCESS_TYPE_WS',0,10,27
+	.byte	'OS_MEM_ACCESS_TYPE_RWS',0,11,27
+	.byte	'OS_MEM_ACCESS_TYPE_XS',0,12,27
+	.byte	'OS_MEM_ACCESS_TYPE_RXS',0,13,27
+	.byte	'OS_MEM_ACCESS_TYPE_WXS',0,14,27
+	.byte	'OS_MEM_ACCESS_TYPE_RWXS',0,15,0,23
+	.byte	'Os_MemAccessType',0,10,233,6,3
+	.word	7806
+	.byte	23
+	.byte	'EcuM_ModeType',0,11,55,15
+	.word	676
+	.byte	23
+	.byte	'EcuM_StateType',0,11,61,15
+	.word	676
+	.byte	31,1,1,3
+	.word	8380
+	.byte	23
+	.byte	'EcuM_DriverFuncType',0,12,194,2,9
+	.word	8383
+	.byte	23
+	.byte	'EcuM_DefaultAppModeType',0,12,227,2,16
+	.word	123
+	.byte	23
+	.byte	'EcuM_NormalMcuModeType',0,12,245,2,16
+	.word	123
+	.byte	28
+	.byte	'sEcuM_DriverInitOneType',0,12,136,3,16,4,29
+	.byte	'FunctionOfDriverInitOne',0
+	.word	8388
+	.byte	4,2,35,0,0,23
+	.byte	'EcuM_DriverInitOneType',0,12,139,3,3
+	.word	8482
+	.byte	3
+	.word	8380
+	.byte	28
+	.byte	'sEcuM_PCConfigType',0,12,175,3,16,1,29
+	.byte	'EcuM_PCConfigNeverUsed',0
+	.word	676
+	.byte	1,2,35,0,0,23
+	.byte	'EcuM_PCConfigType',0,12,178,3,3
+	.word	8583
+	.byte	30,13,77,9,16,29
+	.byte	'Start',0
+	.word	123
+	.byte	4,2,35,0,29
+	.byte	'End',0
+	.word	123
+	.byte	4,2,35,4,29
+	.byte	'Core',0
+	.word	123
+	.byte	4,2,35,8,29
+	.byte	'Alignment',0
+	.word	123
+	.byte	4,2,35,12,0,23
+	.byte	'vLinkGen_MemArea',0,13,87,3
+	.word	8668
+	.byte	9
+	.word	8668
+	.byte	3
+	.word	8760
+	.byte	30,13,90,9,8,29
+	.byte	'Num',0
+	.word	123
+	.byte	4,2,35,0,29
+	.byte	'Areas',0
+	.word	8765
+	.byte	4,2,35,4,0,23
+	.byte	'vLinkGen_MemAreaSet',0,13,96,3
+	.word	8770
+	.byte	30,13,99,9,24,29
+	.byte	'Start',0
+	.word	123
+	.byte	4,2,35,0,29
+	.byte	'End',0
+	.word	123
+	.byte	4,2,35,4,29
+	.byte	'Romstart',0
+	.word	123
+	.byte	4,2,35,8,29
+	.byte	'Romend',0
+	.word	123
+	.byte	4,2,35,12,29
+	.byte	'Core',0
+	.word	123
+	.byte	4,2,35,16,29
+	.byte	'Alignment',0
+	.word	123
+	.byte	4,2,35,20,0,23
+	.byte	'vLinkGen_RamMemArea',0,13,113,3
+	.word	8832
+	.byte	9
+	.word	8770
+	.byte	25
+	.byte	'vLinkGen_ZeroInit_Early_GroupsSet',0,13,228,1,34
+	.word	8961
+	.byte	1,1,21,64
+	.word	306
+	.byte	22,15,0,32
+	.word	9011
+	.byte	33,0,25
+	.byte	'__CSA_BEGIN_CPU0_',0,4,96,14
+	.word	9020
+	.byte	1,1,25
+	.byte	'__CSA_END_CPU0_',0,4,97,14
+	.word	9020
+	.byte	1,1,34
+	.byte	'void',0,32
+	.word	9081
+	.byte	33,0,25
+	.byte	'__STARTUPSTACK_CORE0',0,4,125,21
+	.word	9087
+	.byte	1,1,25
+	.byte	'_OS_EXCVEC_CORE0_CODE_START',0,4,146,1,21
+	.word	9087
+	.byte	1,1,25
+	.byte	'_OS_INTVEC_CORE0_CODE_START',0,4,163,1,21
+	.word	9087
+	.byte	1,1,0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L28:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,15,0,73,19,0,0,4,46,1,3,8,32
+	.byte	13,58,15,59,15,57,15,73,19,54,15,39,12,0,0,5,5,0,3,8,58,15,59,15,57,15,73,19,0,0,6,11,0,0,0,7,46,1,3,8
+	.byte	32,13,58,15,59,15,57,15,54,15,39,12,0,0,8,11,1,0,0,9,38,0,73,19,0,0,10,46,1,3,8,54,15,39,12,63,12,60,12
+	.byte	0,0,11,5,0,73,19,0,0,12,53,0,73,19,0,0,13,46,1,3,8,73,19,54,15,39,12,63,12,60,12,0,0,14,5,0,3,8,73,19
+	.byte	0,0,15,46,0,3,8,54,15,39,12,63,12,60,12,0,0,16,46,1,49,19,0,0,17,5,0,49,19,0,0,18,29,1,49,19,0,0,19,11
+	.byte	0,49,19,0,0,20,46,0,3,8,58,15,59,15,57,15,54,15,39,12,63,12,60,12,0,0,21,1,1,11,15,73,19,0,0,22,33,0,47
+	.byte	15,0,0,23,22,0,3,8,58,15,59,15,57,15,73,19,0,0,24,21,0,54,15,0,0,25,52,0,3,8,58,15,59,15,57,15,73,19,63
+	.byte	12,60,12,0,0,26,4,1,58,15,59,15,57,15,11,15,0,0,27,40,0,3,8,28,13,0,0,28,19,1,3,8,58,15,59,15,57,15,11
+	.byte	15,0,0,29,13,0,3,8,73,19,11,15,56,9,0,0,30,19,1,58,15,59,15,57,15,11,15,0,0,31,21,0,54,15,39,12,0,0,32
+	.byte	1,1,73,19,0,0,33,33,0,0,0,34,59,0,3,8,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L29:
+	.word	.L109-.L108
+.L108:
+	.half	3
+	.word	.L111-.L110
+.L110:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'D:\\Zonal\\demo011\\tasking\\appl\\Include',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\component\\_Common\\Implementation',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\appl\\GenData',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\component\\Os\\Implementation',0,0
+	.byte	'BrsHw.h',0,1,0,0
+	.byte	'BrsMain.h',0,1,0,0
+	.byte	'BrsMainStartup.h',0,1,0,0
+	.byte	'..\\appl\\Source\\BrsHwStartup.c',0,0,0,0
+	.byte	'Platform_Types.h',0,2,0,0
+	.byte	'Std_Types.h',0,2,0,0
+	.byte	'Os_Types_Lcfg.h',0,3,0,0
+	.byte	'Os_Hal_Os_Types.h',0,4,0,0
+	.byte	'Os_Hal_OsInt.h',0,4,0,0
+	.byte	'Os_Types.h',0,4,0,0
+	.byte	'Rte_Type.h',0,3,0,0
+	.byte	'EcuM_Cfg.h',0,3,0,0
+	.byte	'vLinkGen_Lcfg.h',0,3,0,0,0
+.L111:
+.L109:
+	.sdecl	'.debug_info',debug,cluster('brsStartupEntry')
+	.sect	'.debug_info'
+.L30:
+	.word	175
+	.half	3
+	.word	.L31
+	.byte	4,1
+	.byte	'..\\appl\\Source\\BrsHwStartup.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
+	.word	.L33,.L32
+	.byte	2
+	.word	.L26
+	.byte	3
+	.byte	'brsStartupEntry',0,1,144,2,1,1,1,1
+	.word	.L23,.L40,.L22
+	.byte	4
+	.word	.L23,.L40
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('brsStartupEntry')
+	.sect	'.debug_abbrev'
+.L31:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('brsStartupEntry')
+	.sect	'.debug_line'
+.L32:
+	.word	.L113-.L112
+.L112:
+	.half	3
+	.word	.L115-.L114
+.L114:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\appl\\Source\\BrsHwStartup.c',0,0,0,0,0
+.L115:
+	.byte	5,1,7,0,5,2
+	.word	.L23
+	.byte	3,143,2,1,9
+	.half	.L34-.L23
+	.byte	0,1,1
+.L113:
+	.sdecl	'.debug_ranges',debug,cluster('brsStartupEntry')
+	.sect	'.debug_ranges'
+.L33:
+	.word	-1,.L23,0,.L34-.L23,0,0
+	.sdecl	'.debug_info',debug,cluster('brsStartupEntry_internal')
+	.sect	'.debug_info'
+.L35:
+	.word	776
+	.half	3
+	.word	.L36
+	.byte	4,1
+	.byte	'..\\appl\\Source\\BrsHwStartup.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
+	.word	.L38,.L37
+	.byte	2
+	.word	.L26
+	.byte	3
+	.byte	'brsStartupEntry_internal',0,1,150,2,23,1,1,1
+	.word	.L25,.L41,.L24
+	.byte	4
+	.word	.L25,.L41
+	.byte	5
+	.byte	'CurrentCoreId',0,1,152,2,10
+	.word	.L42,.L43
+	.byte	5
+	.byte	'AuxVariable',0,1,153,2,10
+	.word	.L42,.L44
+	.byte	5
+	.byte	'SPAddressInit',0,1,154,2,10
+	.word	.L42,.L45
+	.byte	5
+	.byte	'BTVAddressInit',0,1,155,2,10
+	.word	.L42,.L46
+	.byte	5
+	.byte	'BIVAddressInit',0,1,157,2,10
+	.word	.L42,.L47
+	.byte	5
+	.byte	'CSAAddress',0,1,159,2,20
+	.word	.L48,.L49
+	.byte	5
+	.byte	'CSA_Numbers',0,1,160,2,10
+	.word	.L42,.L50
+	.byte	4
+	.word	.L2,.L41
+	.byte	5
+	.byte	'memPtr2',0,1,128,3,20
+	.word	.L51,.L52
+	.byte	5
+	.byte	'areaNum',0,1,129,3,9
+	.word	.L53,.L54
+	.byte	4
+	.word	.L55,.L41
+	.byte	5
+	.byte	'CSA',0,1,170,3,20
+	.word	.L48,.L56
+	.byte	5
+	.byte	'NumberOfCSA',0,1,171,3,10
+	.word	.L42,.L57
+	.byte	5
+	.byte	'pcxi_val',0,1,172,3,10
+	.word	.L42,.L58
+	.byte	5
+	.byte	'seg_nr',0,1,174,3,10
+	.word	.L42,.L59
+	.byte	5
+	.byte	'seg_idx',0,1,174,3,18
+	.word	.L42,.L60
+	.byte	6
+	.word	.L61,.L16,.L62
+	.byte	7
+	.word	.L63,.L64
+	.byte	8
+	.word	.L65,.L16,.L62
+	.byte	5
+	.byte	'wdtcon0value',0,2,155,2,19
+	.word	.L66,.L67
+	.byte	5
+	.byte	'WDTCON0',0,2,156,2,11
+	.word	.L68,.L69
+	.byte	6
+	.word	.L70,.L16,.L71
+	.byte	7
+	.word	.L72,.L73
+	.byte	9
+	.word	.L74,.L16,.L71
+	.byte	0,0,0,6
+	.word	.L75,.L76,.L77
+	.byte	7
+	.word	.L78,.L79
+	.byte	8
+	.word	.L80,.L76,.L77
+	.byte	5
+	.byte	'wdtcon0value',0,2,191,2,19
+	.word	.L81,.L82
+	.byte	5
+	.byte	'WDTCON0',0,2,192,2,11
+	.word	.L68,.L83
+	.byte	6
+	.word	.L70,.L76,.L84
+	.byte	7
+	.word	.L72,.L73
+	.byte	9
+	.word	.L74,.L76,.L84
+	.byte	0,0,0,0,0,0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('brsStartupEntry_internal')
+	.sect	'.debug_abbrev'
+.L36:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,6,29,1
+	.byte	49,16,17,1,18,1,0,0,7,5,0,49,16,2,6,0,0,8,11,1,49,16,17,1,18,1,0,0,9,11,0,49,16,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('brsStartupEntry_internal')
+	.sect	'.debug_line'
+.L37:
+	.word	.L117-.L116
+.L116:
+	.half	3
+	.word	.L119-.L118
+.L118:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'D:\\Zonal\\demo011\\tasking\\appl\\Include',0,0
+	.byte	'..\\appl\\Source\\BrsHwStartup.c',0,0,0,0
+	.byte	'BrsHw.h',0,1,0,0,0
+.L119:
+	.byte	5,23,7,0,5,2
+	.word	.L25
+	.byte	3,149,2,1,5,26,9
+	.half	.L85-.L25
+	.byte	3,2,1,9
+	.half	.L86-.L85
+	.byte	3,2,1,5,24,9
+	.half	.L120-.L86
+	.byte	1,5,25,9
+	.half	.L88-.L120
+	.byte	3,1,1,9
+	.half	.L90-.L88
+	.byte	3,2,1,5,31,3,2,1,5,22,9
+	.half	.L92-.L90
+	.byte	3,1,1,5,3,9
+	.half	.L94-.L92
+	.byte	3,2,1,5,38,7,9
+	.half	.L121-.L94
+	.byte	3,3,1,5,30,9
+	.half	.L122-.L121
+	.byte	3,1,1,5,65,9
+	.half	.L89-.L122
+	.byte	1,5,55,9
+	.half	.L123-.L89
+	.byte	1,5,31,9
+	.half	.L124-.L123
+	.byte	3,1,1,5,54,9
+	.half	.L125-.L124
+	.byte	1,5,32,3,1,1,9
+	.half	.L96-.L125
+	.byte	3,2,1,5,15,9
+	.half	.L2-.L96
+	.byte	3,216,0,1,5,30,1,5,41,9
+	.half	.L126-.L2
+	.byte	3,2,1,5,67,9
+	.half	.L127-.L126
+	.byte	3,126,1,5,41,9
+	.half	.L4-.L127
+	.byte	3,2,1,5,48,9
+	.half	.L128-.L4
+	.byte	1,5,47,9
+	.half	.L129-.L128
+	.byte	1,5,56,9
+	.half	.L130-.L129
+	.byte	1,5,8,9
+	.half	.L131-.L130
+	.byte	1,5,111,7,9
+	.half	.L132-.L131
+	.byte	3,1,1,5,56,9
+	.half	.L133-.L132
+	.byte	1,5,61,9
+	.half	.L134-.L133
+	.byte	1,5,119,9
+	.half	.L135-.L134
+	.byte	1,5,15,7,9
+	.half	.L136-.L135
+	.byte	3,2,1,5,83,9
+	.half	.L99-.L136
+	.byte	3,1,1,5,18,7,9
+	.half	.L8-.L99
+	.byte	3,2,1,5,21,9
+	.half	.L137-.L8
+	.byte	3,126,1,5,64,9
+	.half	.L100-.L137
+	.byte	1,5,70,9
+	.half	.L138-.L100
+	.byte	1,5,79,9
+	.half	.L139-.L138
+	.byte	1,5,83,9
+	.half	.L140-.L139
+	.byte	1,5,76,7,9
+	.half	.L5-.L140
+	.byte	3,122,1,5,63,9
+	.half	.L3-.L5
+	.byte	1,5,67,9
+	.half	.L141-.L3
+	.byte	1,5,3,7,9
+	.half	.L142-.L141
+	.byte	3,22,1,9
+	.half	.L143-.L142
+	.byte	3,5,1,5,17,9
+	.half	.L144-.L143
+	.byte	3,5,1,5,15,9
+	.half	.L145-.L144
+	.byte	3,1,1,5,3,9
+	.half	.L102-.L145
+	.byte	3,1,1,5,19,9
+	.half	.L55-.L102
+	.byte	3,8,1,5,3,3,4,1,5,21,7,9
+	.half	.L95-.L55
+	.byte	3,3,1,5,50,9
+	.half	.L101-.L95
+	.byte	1,5,39,7,9
+	.half	.L146-.L101
+	.byte	1,5,26,9
+	.half	.L104-.L146
+	.byte	3,8,1,5,33,9
+	.half	.L11-.L104
+	.byte	3,125,1,5,15,9
+	.half	.L147-.L11
+	.byte	3,125,1,5,37,9
+	.half	.L148-.L147
+	.byte	3,3,1,5,43,9
+	.half	.L103-.L148
+	.byte	3,1,1,5,51,9
+	.half	.L105-.L103
+	.byte	3,127,1,5,25,9
+	.half	.L106-.L105
+	.byte	3,2,1,5,7,9
+	.half	.L107-.L106
+	.byte	3,1,1,5,9,7,9
+	.half	.L149-.L107
+	.byte	3,2,1,5,63,9
+	.half	.L12-.L149
+	.byte	3,118,1,5,10,3,12,1,5,39,3,116,1,5,5,7,9
+	.half	.L10-.L12
+	.byte	3,14,1,5,7,9
+	.half	.L9-.L10
+	.byte	3,6,1,5,3,9
+	.half	.L150-.L9
+	.byte	1,5,10,7,9
+	.half	.L15-.L150
+	.byte	3,3,1,5,7,9
+	.half	.L14-.L15
+	.byte	3,3,1,5,3,9
+	.half	.L151-.L14
+	.byte	1,5,10,7,9
+	.half	.L17-.L151
+	.byte	3,3,1,4,2,5,22,9
+	.half	.L16-.L17
+	.byte	3,186,126,1,5,3,9
+	.half	.L152-.L16
+	.byte	3,126,1,5,42,7,9
+	.half	.L153-.L152
+	.byte	3,2,1,5,5,9
+	.half	.L154-.L153
+	.byte	1,5,42,9
+	.half	.L18-.L154
+	.byte	3,4,1,5,5,9
+	.half	.L19-.L18
+	.byte	1,5,18,9
+	.half	.L71-.L19
+	.byte	3,21,1,5,16,9
+	.half	.L155-.L71
+	.byte	1,5,3,9
+	.half	.L156-.L155
+	.byte	3,1,1,5,16,9
+	.half	.L157-.L156
+	.byte	1,5,3,9
+	.half	.L158-.L157
+	.byte	3,1,1,5,16,9
+	.half	.L159-.L158
+	.byte	1,5,3,9
+	.half	.L160-.L159
+	.byte	3,1,1,5,16,9
+	.half	.L161-.L160
+	.byte	1,5,14,9
+	.half	.L162-.L161
+	.byte	3,2,1,5,12,9
+	.half	.L163-.L162
+	.byte	1,5,3,9
+	.half	.L164-.L163
+	.byte	3,5,1,5,16,9
+	.half	.L165-.L164
+	.byte	1,5,3,9
+	.half	.L166-.L165
+	.byte	3,1,1,5,16,9
+	.half	.L167-.L166
+	.byte	1,5,3,9
+	.half	.L168-.L167
+	.byte	3,1,1,5,14,9
+	.half	.L169-.L168
+	.byte	3,1,1,5,12,9
+	.half	.L170-.L169
+	.byte	1,5,16,9
+	.half	.L171-.L170
+	.byte	3,1,1,5,3,9
+	.half	.L172-.L171
+	.byte	3,1,1,9
+	.half	.L173-.L172
+	.byte	3,1,1,4,1,9
+	.half	.L62-.L173
+	.byte	3,162,1,1,9
+	.half	.L174-.L62
+	.byte	3,2,1,9
+	.half	.L175-.L174
+	.byte	3,2,1,4,2,9
+	.half	.L76-.L175
+	.byte	3,175,126,1,5,42,7,9
+	.half	.L176-.L76
+	.byte	3,2,1,5,5,9
+	.half	.L177-.L176
+	.byte	1,5,42,9
+	.half	.L20-.L177
+	.byte	3,4,1,5,5,9
+	.half	.L21-.L20
+	.byte	1,5,18,9
+	.half	.L84-.L21
+	.byte	3,55,1,5,16,9
+	.half	.L178-.L84
+	.byte	1,5,3,9
+	.half	.L179-.L178
+	.byte	3,1,1,5,16,9
+	.half	.L180-.L179
+	.byte	1,5,3,9
+	.half	.L181-.L180
+	.byte	3,1,1,5,16,9
+	.half	.L182-.L181
+	.byte	1,5,3,9
+	.half	.L183-.L182
+	.byte	3,1,1,5,16,9
+	.half	.L184-.L183
+	.byte	1,5,14,9
+	.half	.L185-.L184
+	.byte	3,2,1,5,12,9
+	.half	.L186-.L185
+	.byte	1,5,3,9
+	.half	.L187-.L186
+	.byte	3,5,1,5,16,9
+	.half	.L188-.L187
+	.byte	1,5,3,9
+	.half	.L189-.L188
+	.byte	3,1,1,5,16,9
+	.half	.L190-.L189
+	.byte	1,5,3,9
+	.half	.L191-.L190
+	.byte	3,1,1,5,14,9
+	.half	.L192-.L191
+	.byte	3,1,1,5,12,9
+	.half	.L193-.L192
+	.byte	1,5,16,9
+	.half	.L194-.L193
+	.byte	3,1,1,5,3,9
+	.half	.L195-.L194
+	.byte	3,1,1,9
+	.half	.L196-.L195
+	.byte	3,1,1,4,1,5,21,9
+	.half	.L77-.L196
+	.byte	3,140,1,1,5,26,9
+	.half	.L87-.L77
+	.byte	3,8,1,5,1,7,9
+	.half	.L39-.L87
+	.byte	3,1,0,1,1
+.L117:
+	.sdecl	'.debug_ranges',debug,cluster('brsStartupEntry_internal')
+	.sect	'.debug_ranges'
+.L38:
+	.word	-1,.L25,0,.L39-.L25,0,0
+	.sdecl	'.debug_loc',debug,cluster('brsStartupEntry')
+	.sect	'.debug_loc'
+.L22:
+	.word	-1,.L23,0,.L40-.L23
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('brsStartupEntry_internal')
+	.sect	'.debug_loc'
+.L44:
+	.word	-1,.L25,.L102-.L25,.L11-.L25
+	.half	1
+	.byte	95
+	.word	0,0
+.L47:
+	.word	-1,.L25,.L92-.L25,.L93-.L25
+	.half	1
+	.byte	89
+	.word	.L93-.L25,.L2-.L25
+	.half	1
+	.byte	111
+	.word	.L2-.L25,.L41-.L25
+	.half	1
+	.byte	89
+	.word	0,0
+.L46:
+	.word	-1,.L25,.L90-.L25,.L91-.L25
+	.half	1
+	.byte	87
+	.word	.L91-.L25,.L93-.L25
+	.half	1
+	.byte	111
+	.word	.L96-.L25,.L87-.L25
+	.half	1
+	.byte	87
+	.word	0,0
+.L56:
+	.word	0,0
+.L49:
+	.word	-1,.L25,.L92-.L25,.L87-.L25
+	.half	1
+	.byte	102
+	.word	0,0
+.L50:
+	.word	-1,.L25,.L94-.L25,.L11-.L25
+	.half	1
+	.byte	88
+	.word	.L104-.L25,.L10-.L25
+	.half	1
+	.byte	111
+	.word	0,0
+.L43:
+	.word	-1,.L25,.L86-.L25,.L87-.L25
+	.half	1
+	.byte	85
+	.word	0,0
+.L57:
+	.word	-1,.L25,.L101-.L25,.L9-.L25
+	.half	1
+	.byte	81
+	.word	0,0
+.L45:
+	.word	-1,.L25,.L88-.L25,.L89-.L25
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L91-.L25,.L95-.L25
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L69:
+	.word	0,0
+.L83:
+	.word	0,0
+.L54:
+	.word	-1,.L25,.L97-.L25,.L98-.L25
+	.half	1
+	.byte	81
+	.word	.L3-.L25,.L101-.L25
+	.half	1
+	.byte	81
+	.word	0,0
+.L24:
+	.word	-1,.L25,0,.L85-.L25
+	.half	2
+	.byte	138,0
+	.word	.L85-.L25,.L41-.L25
+	.half	2
+	.byte	138,8
+	.word	.L41-.L25,.L41-.L25
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L64:
+	.word	0,0
+.L79:
+	.word	0,0
+.L52:
+	.word	-1,.L25,.L99-.L25,.L5-.L25
+	.half	1
+	.byte	101
+	.word	.L100-.L25,.L5-.L25
+	.half	1
+	.byte	83
+	.word	0,0
+.L73:
+	.word	0,0
+.L58:
+	.word	-1,.L25,.L95-.L25,.L103-.L25
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L106-.L25,.L87-.L25
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L60:
+	.word	-1,.L25,.L105-.L25,.L10-.L25
+	.half	1
+	.byte	82
+	.word	0,0
+.L59:
+	.word	-1,.L25,.L106-.L25,.L107-.L25
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L67:
+	.word	-1,.L25,0,.L41-.L25
+	.half	2
+	.byte	145,120
+	.word	0,0
+.L82:
+	.word	-1,.L25,0,.L41-.L25
+	.half	2
+	.byte	145,120
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L197:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,27,8,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('brsStartupEntry')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L197,.L23,.L40-.L23
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('brsStartupEntry_internal')
+	.sect	'.debug_frame'
+	.word	36
+	.word	.L197,.L25,.L41-.L25
+	.byte	4
+	.word	(.L85-.L25)/2
+	.byte	19,8,22,26,3,19,138,8,4
+	.word	(.L41-.L85)/2
+	.byte	19,0,8,26,0,0
+
+; ..\appl\Source\BrsHwStartup.c	   490  }
+; ..\appl\Source\BrsHwStartup.c	   491  #if defined (BRS_COMP_TASKING)
+; ..\appl\Source\BrsHwStartup.c	   492  #pragma section code restore
+; ..\appl\Source\BrsHwStartup.c	   493  #endif
+
+	; Module end

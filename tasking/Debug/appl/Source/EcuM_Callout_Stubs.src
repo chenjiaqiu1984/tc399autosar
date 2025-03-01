@@ -1,0 +1,3112 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 21092262 SN 73118428"
+	.compiler_invocation	"ctc --dep-file=appl\\Source\\.EcuM_Callout_Stubs.o.d --fp-model=c,f,l,n,r,S,T,z -D__CPU__=tc39xb -D__CPU_TC39XB__ --core=tc1.6.2 --iso=99 -DBRS_COMP_TASKING -ID:\\Zonal\\demo011\\tasking -ID:\\Zonal\\testdemo\\taskingdemo\\demo001 -ID:\\Zonal\\demo011\\tasking -ID:\\Zonal\\demo011\\tasking\\appl -ID:\\Zonal\\demo011\\tasking\\appl\\GenData -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\Components -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\ContractPhase -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\inc -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\src -ID:\\Zonal\\demo011\\tasking\\appl\\Include -ID:\\Zonal\\demo011\\tasking\\appl\\Source -ID:\\Zonal\\demo011\\tasking\\appl\\Source\\swc_test -ID:\\Zonal\\demo011\\tasking\\component -ID:\\Zonal\\demo011\\tasking\\component\\_Common -ID:\\Zonal\\demo011\\tasking\\component\\_Common\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\BswM -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\EcuM -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\Os -ID:\\Zonal\\demo011\\tasking\\component\\Os\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\Os\\BSWMD\\Os -ID:\\Zonal\\demo011\\tasking\\component\\Os\\BSWMD\\Os\\TC39xQ -ID:\\Zonal\\demo011\\tasking\\component\\Os\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\Os\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\Os\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug -ID:\\Zonal\\demo011\\tasking\\Debug\\appl -ID:\\Zonal\\demo011\\tasking\\Debug\\appl\\GenData -ID:\\Zonal\\demo011\\tasking\\Debug\\appl\\GenData\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\appl\\Source -ID:\\Zonal\\demo011\\tasking\\Debug\\component -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\BswM -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\BswM\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\EcuM -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\EcuM\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\Os -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\Os\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\VStdLib -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\VStdLib\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Dio -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Dio\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Dio\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\McalLib -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\McalLib\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\McalLib\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Mcu -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Mcu\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Mcu\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Port -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Port\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Port\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Platform -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Platform\\AS440 -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Sfr -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Sfr\\TC39xB -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Sfr\\TC39xB\\_Reg -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc\\inc\\AS440 -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal\\Port -ID:\\Zonal\\demo011\\tasking\\mcal\\Port\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\Port\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\Port\\ssc\\src -g2 --make-target=appl\\Source\\EcuM_Callout_Stubs.o -t2 --language=-gcc,-volatile,+strings,-kanji --default-near-size=0 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o appl\\Source\\EcuM_Callout_Stubs.src ..\\appl\\Source\\EcuM_Callout_Stubs.c"
+	.compiler_name		"ctc"
+	;source	'..\\appl\\Source\\EcuM_Callout_Stubs.c'
+
+	
+$TC162
+	
+	.sdecl	'.text.EcuM_Callout_Stubs.EcuM_ErrorHook',code,cluster('EcuM_ErrorHook')
+	.sect	'.text.EcuM_Callout_Stubs.EcuM_ErrorHook'
+	.align	2
+	
+	.global	EcuM_ErrorHook
+
+; ..\appl\Source\EcuM_Callout_Stubs.c	     1  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	     2   *  COPYRIGHT
+; ..\appl\Source\EcuM_Callout_Stubs.c	     3   *  -------------------------------------------------------------------------------------------------------------------
+; ..\appl\Source\EcuM_Callout_Stubs.c	     4   *  \verbatim
+; ..\appl\Source\EcuM_Callout_Stubs.c	     5   *
+; ..\appl\Source\EcuM_Callout_Stubs.c	     6   *                 This software is copyright protected and proprietary to Vector Informatik GmbH.
+; ..\appl\Source\EcuM_Callout_Stubs.c	     7   *                 Vector Informatik GmbH grants to you only those rights as set out in the license conditions.
+; ..\appl\Source\EcuM_Callout_Stubs.c	     8   *                 All other rights remain with Vector Informatik GmbH.
+; ..\appl\Source\EcuM_Callout_Stubs.c	     9   *  \endverbatim
+; ..\appl\Source\EcuM_Callout_Stubs.c	    10   *  -------------------------------------------------------------------------------------------------------------------
+; ..\appl\Source\EcuM_Callout_Stubs.c	    11   *  LICENSE
+; ..\appl\Source\EcuM_Callout_Stubs.c	    12   *  -------------------------------------------------------------------------------------------------------------------
+; ..\appl\Source\EcuM_Callout_Stubs.c	    13   *            Module: EcuM
+; ..\appl\Source\EcuM_Callout_Stubs.c	    14   *           Program: MSR_Vector_SLP4
+; ..\appl\Source\EcuM_Callout_Stubs.c	    15   *          Customer: Aptiv Electronics (Suzhou) Co., Ltd.
+; ..\appl\Source\EcuM_Callout_Stubs.c	    16   *       Expiry Date: Not restricted
+; ..\appl\Source\EcuM_Callout_Stubs.c	    17   *  Ordered Derivat.: TC399XP
+; ..\appl\Source\EcuM_Callout_Stubs.c	    18   *    License Scope : The usage is restricted to CBD2100010_D00
+; ..\appl\Source\EcuM_Callout_Stubs.c	    19   *
+; ..\appl\Source\EcuM_Callout_Stubs.c	    20   *  -------------------------------------------------------------------------------------------------------------------
+; ..\appl\Source\EcuM_Callout_Stubs.c	    21   *  FILE DESCRIPTION
+; ..\appl\Source\EcuM_Callout_Stubs.c	    22   *  -------------------------------------------------------------------------------------------------------------------
+; ..\appl\Source\EcuM_Callout_Stubs.c	    23   *              File: EcuM_Callout_Stubs.c
+; ..\appl\Source\EcuM_Callout_Stubs.c	    24   *   Generation Time: 2025-04-01 10:51:24
+; ..\appl\Source\EcuM_Callout_Stubs.c	    25   *           Project: tc399demo - Version 1.0
+; ..\appl\Source\EcuM_Callout_Stubs.c	    26   *          Delivery: CBD2100010_D00
+; ..\appl\Source\EcuM_Callout_Stubs.c	    27   *      Tool Version: DaVinci Configurator (beta) 5.22.45 SP3
+; ..\appl\Source\EcuM_Callout_Stubs.c	    28   *
+; ..\appl\Source\EcuM_Callout_Stubs.c	    29   *
+; ..\appl\Source\EcuM_Callout_Stubs.c	    30   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	    31  
+; ..\appl\Source\EcuM_Callout_Stubs.c	    32  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	    33   ! BETA VERSION                                                                                                       !
+; ..\appl\Source\EcuM_Callout_Stubs.c	    34   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+; ..\appl\Source\EcuM_Callout_Stubs.c	    35   ! This version of DaVinci Configurator Pro and/or the related Basic Software Package is BETA software.               !
+; ..\appl\Source\EcuM_Callout_Stubs.c	    36   ! BETA Software is basically operable, but not sufficiently tested, verified and/or qualified for use in series      !
+; ..\appl\Source\EcuM_Callout_Stubs.c	    37   ! production and/or in vehicles operating on public or non-public roads.                                             !
+; ..\appl\Source\EcuM_Callout_Stubs.c	    38   ! In particular, without limitation, BETA Software may cause unpredictable ECU behavior, may not provide all         !
+; ..\appl\Source\EcuM_Callout_Stubs.c	    39   ! functions necessary for use in series production and/or may not comply with quality requirements which are         !
+; ..\appl\Source\EcuM_Callout_Stubs.c	    40   ! necessary according to the state of the art. BETA Software must not be used in series production.                  !
+; ..\appl\Source\EcuM_Callout_Stubs.c	    41   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+; ..\appl\Source\EcuM_Callout_Stubs.c	    42  **********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	    43  
+; ..\appl\Source\EcuM_Callout_Stubs.c	    44  
+; ..\appl\Source\EcuM_Callout_Stubs.c	    45  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	    46   * DO NOT CHANGE THIS COMMENT!           <USERBLOCK User Version>                           DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\EcuM_Callout_Stubs.c	    47   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	    48  
+; ..\appl\Source\EcuM_Callout_Stubs.c	    49  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	    50   * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>                                       DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\EcuM_Callout_Stubs.c	    51   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	    52  
+; ..\appl\Source\EcuM_Callout_Stubs.c	    53  /*********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	    54      INCLUDES
+; ..\appl\Source\EcuM_Callout_Stubs.c	    55   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	    56  #define ECUM_CALLOUT_STUBS_SOURCE
+; ..\appl\Source\EcuM_Callout_Stubs.c	    57  #include "EcuM.h"
+; ..\appl\Source\EcuM_Callout_Stubs.c	    58  
+; ..\appl\Source\EcuM_Callout_Stubs.c	    59  #define ECUM_PRIVATE_CFG_INCLUDE
+; ..\appl\Source\EcuM_Callout_Stubs.c	    60  #include "EcuM_PrivateCfg.h"
+; ..\appl\Source\EcuM_Callout_Stubs.c	    61  #undef ECUM_PRIVATE_CFG_INCLUDE /* PRQA S 0841 */ /* MD_EcuM_0841 */
+; ..\appl\Source\EcuM_Callout_Stubs.c	    62  
+; ..\appl\Source\EcuM_Callout_Stubs.c	    63  
+; ..\appl\Source\EcuM_Callout_Stubs.c	    64  
+; ..\appl\Source\EcuM_Callout_Stubs.c	    65  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	    66   *  All configured EcuM Wakeup Sources (as bitmasks) for usage in Callouts
+; ..\appl\Source\EcuM_Callout_Stubs.c	    67   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	    68  /*
+; ..\appl\Source\EcuM_Callout_Stubs.c	    69   * ECUM_WKSOURCE_NONE           (EcuM_WakeupSourceType)(0x00000000uL) 
+; ..\appl\Source\EcuM_Callout_Stubs.c	    70   * ECUM_WKSOURCE_ALL_SOURCES    (EcuM_WakeupSourceType)(~((EcuM_WakeupSourceType)0x00UL)) 
+; ..\appl\Source\EcuM_Callout_Stubs.c	    71   * ECUM_WKSOURCE_POWER          (EcuM_WakeupSourceType)(1uL) 
+; ..\appl\Source\EcuM_Callout_Stubs.c	    72   * ECUM_WKSOURCE_RESET          (EcuM_WakeupSourceType)(2uL) 
+; ..\appl\Source\EcuM_Callout_Stubs.c	    73   * ECUM_WKSOURCE_INTERNAL_RESET (EcuM_WakeupSourceType)(4uL) 
+; ..\appl\Source\EcuM_Callout_Stubs.c	    74   * ECUM_WKSOURCE_INTERNAL_WDG   (EcuM_WakeupSourceType)(8uL) 
+; ..\appl\Source\EcuM_Callout_Stubs.c	    75   * ECUM_WKSOURCE_EXTERNAL_WDG   (EcuM_WakeupSourceType)(16uL) 
+; ..\appl\Source\EcuM_Callout_Stubs.c	    76   */
+; ..\appl\Source\EcuM_Callout_Stubs.c	    77  
+; ..\appl\Source\EcuM_Callout_Stubs.c	    78  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	    79   *  Additional configured User includes
+; ..\appl\Source\EcuM_Callout_Stubs.c	    80   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	    81  #include "BswM.h" 
+; ..\appl\Source\EcuM_Callout_Stubs.c	    82  #include "Rte_Main.h" 
+; ..\appl\Source\EcuM_Callout_Stubs.c	    83  #include "Mcu.h" 
+; ..\appl\Source\EcuM_Callout_Stubs.c	    84  #include "Port.h" 
+; ..\appl\Source\EcuM_Callout_Stubs.c	    85  
+; ..\appl\Source\EcuM_Callout_Stubs.c	    86  
+; ..\appl\Source\EcuM_Callout_Stubs.c	    87  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	    88   * DO NOT CHANGE THIS COMMENT!           <USERBLOCK User Includes>                          DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\EcuM_Callout_Stubs.c	    89   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	    90   
+; ..\appl\Source\EcuM_Callout_Stubs.c	    91  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	    92   * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>                                       DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\EcuM_Callout_Stubs.c	    93   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	    94  
+; ..\appl\Source\EcuM_Callout_Stubs.c	    95  
+; ..\appl\Source\EcuM_Callout_Stubs.c	    96  
+; ..\appl\Source\EcuM_Callout_Stubs.c	    97  
+; ..\appl\Source\EcuM_Callout_Stubs.c	    98  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	    99   *  CALLOUT FUNCTIONS
+; ..\appl\Source\EcuM_Callout_Stubs.c	   100   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	   101  #define ECUM_START_SEC_CODE
+; ..\appl\Source\EcuM_Callout_Stubs.c	   102  #include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   103  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   104  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   105  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   106  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   107  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	   108   *  GENERIC CALLOUTS
+; ..\appl\Source\EcuM_Callout_Stubs.c	   109   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	   110  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   111  FUNC(void, ECUM_CODE) EcuM_ErrorHook(Std_ReturnType reason) /* COV_ECUM_CALLOUT */ /* PRQA S 3206 */ /* MD_EcuM_3206 */
+; Function EcuM_ErrorHook
+.L8:
+EcuM_ErrorHook:	.type	func
+
+; ..\appl\Source\EcuM_Callout_Stubs.c	   112  {
+; ..\appl\Source\EcuM_Callout_Stubs.c	   113  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	   114   * DO NOT CHANGE THIS COMMENT!           <USERBLOCK EcuM_ErrorHook>                         DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\EcuM_Callout_Stubs.c	   115   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	   116  #if (ECUM_USE_DUMMY_STATEMENT == STD_ON)
+; ..\appl\Source\EcuM_Callout_Stubs.c	   117    /* dummy assignment to prevent compiler warnings on most of the compilers. */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   118    (void)reason;     /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   119  #endif
+; ..\appl\Source\EcuM_Callout_Stubs.c	   120    /* Add implementation of EcuM_ErrorHook() */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   121    
+; ..\appl\Source\EcuM_Callout_Stubs.c	   122    /* In case of an inconsistent configuration data, abort initialization here */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   123    if(reason == ECUM_E_HOOK_CONFIGURATION_DATA_INCONSISTENT)
+	mov	d15,#8
+.L149:
+	jne	d15,d4,.L2
+
+; ..\appl\Source\EcuM_Callout_Stubs.c	   124    {
+; ..\appl\Source\EcuM_Callout_Stubs.c	   125      while(1)
+.L3:
+	j	.L3
+.L2:
+
+; ..\appl\Source\EcuM_Callout_Stubs.c	   126      {
+; ..\appl\Source\EcuM_Callout_Stubs.c	   127      }
+; ..\appl\Source\EcuM_Callout_Stubs.c	   128    }
+; ..\appl\Source\EcuM_Callout_Stubs.c	   129    
+; ..\appl\Source\EcuM_Callout_Stubs.c	   130  # if(ECUM_NUMBER_OF_CORES > 1)
+; ..\appl\Source\EcuM_Callout_Stubs.c	   131    /* In case of an invalid coreId, returned by the OS */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   132    if(reason == ECUM_E_HOOK_INVALID_COREID)
+; ..\appl\Source\EcuM_Callout_Stubs.c	   133    {
+; ..\appl\Source\EcuM_Callout_Stubs.c	   134      while(1)
+; ..\appl\Source\EcuM_Callout_Stubs.c	   135      {
+; ..\appl\Source\EcuM_Callout_Stubs.c	   136      }
+; ..\appl\Source\EcuM_Callout_Stubs.c	   137    }
+; ..\appl\Source\EcuM_Callout_Stubs.c	   138  # endif
+; ..\appl\Source\EcuM_Callout_Stubs.c	   139    
+; ..\appl\Source\EcuM_Callout_Stubs.c	   140    return;
+; ..\appl\Source\EcuM_Callout_Stubs.c	   141  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	   142   * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>                                       DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\EcuM_Callout_Stubs.c	   143   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	   144  } /* End of EcuM_ErrorHook() */
+	ret
+.L107:
+	
+__EcuM_ErrorHook_function_end:
+	.size	EcuM_ErrorHook,__EcuM_ErrorHook_function_end-EcuM_ErrorHook
+.L69:
+	; End of function
+	
+	.sdecl	'.text.EcuM_Callout_Stubs.EcuM_OnGoOffOne',code,cluster('EcuM_OnGoOffOne')
+	.sect	'.text.EcuM_Callout_Stubs.EcuM_OnGoOffOne'
+	.align	2
+	
+	.global	EcuM_OnGoOffOne
+
+; ..\appl\Source\EcuM_Callout_Stubs.c	   145  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   146  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   147  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   148  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   149  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	   150   *  CALLOUTS FROM THE SHUTDOWN PHASE
+; ..\appl\Source\EcuM_Callout_Stubs.c	   151   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	   152  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   153  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   154  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   155  FUNC(void, ECUM_CODE) EcuM_OnGoOffOne(void)
+; Function EcuM_OnGoOffOne
+.L10:
+EcuM_OnGoOffOne:	.type	func
+
+; ..\appl\Source\EcuM_Callout_Stubs.c	   156  {
+; ..\appl\Source\EcuM_Callout_Stubs.c	   157  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	   158   * DO NOT CHANGE THIS COMMENT!           <USERBLOCK EcuM_OnGoOffOne>                        DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\EcuM_Callout_Stubs.c	   159   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	   160    /* Add implementation of EcuM_OnGoOffOne() */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   161    
+; ..\appl\Source\EcuM_Callout_Stubs.c	   162    return;
+; ..\appl\Source\EcuM_Callout_Stubs.c	   163  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	   164   * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>                                       DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\EcuM_Callout_Stubs.c	   165   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	   166  } /* End of EcuM_OnGoOffOne() */
+	ret
+.L109:
+	
+__EcuM_OnGoOffOne_function_end:
+	.size	EcuM_OnGoOffOne,__EcuM_OnGoOffOne_function_end-EcuM_OnGoOffOne
+.L74:
+	; End of function
+	
+	.sdecl	'.text.EcuM_Callout_Stubs.EcuM_ShutdownOS',code,cluster('EcuM_ShutdownOS')
+	.sect	'.text.EcuM_Callout_Stubs.EcuM_ShutdownOS'
+	.align	2
+	
+	.global	EcuM_ShutdownOS
+
+; ..\appl\Source\EcuM_Callout_Stubs.c	   167  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   168  FUNC(void, ECUM_CODE) EcuM_ShutdownOS(Std_ReturnType ErrCode)
+; Function EcuM_ShutdownOS
+.L12:
+EcuM_ShutdownOS:	.type	func
+
+; ..\appl\Source\EcuM_Callout_Stubs.c	   169  {
+; ..\appl\Source\EcuM_Callout_Stubs.c	   170  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	   171   * DO NOT CHANGE THIS COMMENT!           <USERBLOCK EcuM_ShutdownOS>                        DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\EcuM_Callout_Stubs.c	   172   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	   173    /* Add implementation of EcuM_ShutdownOS() */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   174  #if ( ECUM_NUMBER_OF_CORES > 1 )
+; ..\appl\Source\EcuM_Callout_Stubs.c	   175    ShutdownAllCores(ErrCode);
+; ..\appl\Source\EcuM_Callout_Stubs.c	   176  #else
+; ..\appl\Source\EcuM_Callout_Stubs.c	   177    ShutdownOS(ErrCode);
+	j	ShutdownOS
+.L102:
+	
+__EcuM_ShutdownOS_function_end:
+	.size	EcuM_ShutdownOS,__EcuM_ShutdownOS_function_end-EcuM_ShutdownOS
+.L54:
+	; End of function
+	
+	.sdecl	'.text.EcuM_Callout_Stubs.EcuM_OnGoOffTwo',code,cluster('EcuM_OnGoOffTwo')
+	.sect	'.text.EcuM_Callout_Stubs.EcuM_OnGoOffTwo'
+	.align	2
+	
+	.global	EcuM_OnGoOffTwo
+
+; ..\appl\Source\EcuM_Callout_Stubs.c	   178  #endif
+; ..\appl\Source\EcuM_Callout_Stubs.c	   179    
+; ..\appl\Source\EcuM_Callout_Stubs.c	   180    return;
+; ..\appl\Source\EcuM_Callout_Stubs.c	   181  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	   182   * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>                                       DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\EcuM_Callout_Stubs.c	   183   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	   184  } /* End of EcuM_ShutdownOS() */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   185  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   186  FUNC(void, ECUM_CODE) EcuM_OnGoOffTwo(void)
+; Function EcuM_OnGoOffTwo
+.L14:
+EcuM_OnGoOffTwo:	.type	func
+
+; ..\appl\Source\EcuM_Callout_Stubs.c	   187  {
+; ..\appl\Source\EcuM_Callout_Stubs.c	   188  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	   189   * DO NOT CHANGE THIS COMMENT!           <USERBLOCK EcuM_OnGoOffTwo>                        DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\EcuM_Callout_Stubs.c	   190   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	   191    /* Add implementation of EcuM_OnGoOffTwo() */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   192    
+; ..\appl\Source\EcuM_Callout_Stubs.c	   193    return;
+; ..\appl\Source\EcuM_Callout_Stubs.c	   194  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	   195   * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>                                       DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\EcuM_Callout_Stubs.c	   196   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	   197  } /* End of EcuM_OnGoOffTwo() */
+	ret
+.L110:
+	
+__EcuM_OnGoOffTwo_function_end:
+	.size	EcuM_OnGoOffTwo,__EcuM_OnGoOffTwo_function_end-EcuM_OnGoOffTwo
+.L79:
+	; End of function
+	
+	.sdecl	'.text.EcuM_Callout_Stubs.EcuM_AL_SwitchOff',code,cluster('EcuM_AL_SwitchOff')
+	.sect	'.text.EcuM_Callout_Stubs.EcuM_AL_SwitchOff'
+	.align	2
+	
+	.global	EcuM_AL_SwitchOff
+
+; ..\appl\Source\EcuM_Callout_Stubs.c	   198  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   199  FUNC(void, ECUM_CODE) EcuM_AL_SwitchOff(void)
+; Function EcuM_AL_SwitchOff
+.L16:
+EcuM_AL_SwitchOff:	.type	func
+
+; ..\appl\Source\EcuM_Callout_Stubs.c	   200  {
+; ..\appl\Source\EcuM_Callout_Stubs.c	   201  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	   202   * DO NOT CHANGE THIS COMMENT!           <USERBLOCK EcuM_AL_SwitchOff>                      DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\EcuM_Callout_Stubs.c	   203   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	   204    /* Add implementation of EcuM_AL_SwitchOff() */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   205    
+; ..\appl\Source\EcuM_Callout_Stubs.c	   206    return;
+; ..\appl\Source\EcuM_Callout_Stubs.c	   207  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	   208   * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>                                       DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\EcuM_Callout_Stubs.c	   209   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	   210  } /* End of EcuM_AL_SwitchOff() */
+	ret
+.L104:
+	
+__EcuM_AL_SwitchOff_function_end:
+	.size	EcuM_AL_SwitchOff,__EcuM_AL_SwitchOff_function_end-EcuM_AL_SwitchOff
+.L59:
+	; End of function
+	
+	.sdecl	'.text.EcuM_Callout_Stubs.EcuM_AL_Reset',code,cluster('EcuM_AL_Reset')
+	.sect	'.text.EcuM_Callout_Stubs.EcuM_AL_Reset'
+	.align	2
+	
+	.global	EcuM_AL_Reset
+
+; ..\appl\Source\EcuM_Callout_Stubs.c	   211  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   212  FUNC(void, ECUM_CODE) EcuM_AL_Reset(EcuM_ResetType Reset) /* PRQA S 3206 */ /* MD_EcuM_3206 */
+; Function EcuM_AL_Reset
+.L18:
+EcuM_AL_Reset:	.type	func
+
+; ..\appl\Source\EcuM_Callout_Stubs.c	   213  {
+; ..\appl\Source\EcuM_Callout_Stubs.c	   214  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	   215   * DO NOT CHANGE THIS COMMENT!           <USERBLOCK EcuM_AL_Reset>                          DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\EcuM_Callout_Stubs.c	   216   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	   217  #if (ECUM_USE_DUMMY_STATEMENT == STD_ON)
+; ..\appl\Source\EcuM_Callout_Stubs.c	   218    /* dummy assignment to prevent compiler warnings on most of the compilers. */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   219    (void)Reset;  /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   220  #endif
+; ..\appl\Source\EcuM_Callout_Stubs.c	   221    /* Add implementation of EcuM_AL_Reset() */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   222  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   223    return;
+; ..\appl\Source\EcuM_Callout_Stubs.c	   224  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	   225   * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>                                       DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\EcuM_Callout_Stubs.c	   226   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	   227  } /* End of EcuM_AL_Reset() */
+	ret
+.L105:
+	
+__EcuM_AL_Reset_function_end:
+	.size	EcuM_AL_Reset,__EcuM_AL_Reset_function_end-EcuM_AL_Reset
+.L64:
+	; End of function
+	
+	.sdecl	'.text.EcuM_Callout_Stubs.EcuM_AL_DriverInitZero',code,cluster('EcuM_AL_DriverInitZero')
+	.sect	'.text.EcuM_Callout_Stubs.EcuM_AL_DriverInitZero'
+	.align	2
+	
+	.global	EcuM_AL_DriverInitZero
+
+; ..\appl\Source\EcuM_Callout_Stubs.c	   228  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   229  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   230  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   231  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	   232   *  CALLOUTS FROM THE STARTUP PHASE
+; ..\appl\Source\EcuM_Callout_Stubs.c	   233   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	   234  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   235  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   236  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	   237  * EcuM_AL_DriverInitZero
+; ..\appl\Source\EcuM_Callout_Stubs.c	   238  **********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	   239  FUNC(void, ECUM_CODE) EcuM_AL_DriverInitZero(void) 
+; Function EcuM_AL_DriverInitZero
+.L20:
+EcuM_AL_DriverInitZero:	.type	func
+
+; ..\appl\Source\EcuM_Callout_Stubs.c	   240  {
+; ..\appl\Source\EcuM_Callout_Stubs.c	   241    BswM_InitMemory();
+	call	BswM_InitMemory
+.L162:
+
+; ..\appl\Source\EcuM_Callout_Stubs.c	   242    Rte_InitMemory();
+	j	Rte_InitMemory
+.L111:
+	
+__EcuM_AL_DriverInitZero_function_end:
+	.size	EcuM_AL_DriverInitZero,__EcuM_AL_DriverInitZero_function_end-EcuM_AL_DriverInitZero
+.L84:
+	; End of function
+	
+	.sdecl	'.text.EcuM_Callout_Stubs.EcuM_AL_DriverInitOne',code,cluster('EcuM_AL_DriverInitOne')
+	.sect	'.text.EcuM_Callout_Stubs.EcuM_AL_DriverInitOne'
+	.align	2
+	
+	.global	EcuM_AL_DriverInitOne
+
+; ..\appl\Source\EcuM_Callout_Stubs.c	   243  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   244  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	   245   * DO NOT CHANGE THIS COMMENT!           <USERBLOCK EcuM_AL_DriverInitZero>                 DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\EcuM_Callout_Stubs.c	   246   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	   247  /* Add implementation of EcuM_AL_DriverInitZero  */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   248  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   249    return;
+; ..\appl\Source\EcuM_Callout_Stubs.c	   250  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	   251   * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>                                       DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\EcuM_Callout_Stubs.c	   252   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	   253  }
+; ..\appl\Source\EcuM_Callout_Stubs.c	   254  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   255  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	   256  * EcuM_AL_DriverInitOne
+; ..\appl\Source\EcuM_Callout_Stubs.c	   257  **********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	   258  FUNC(void, ECUM_CODE) EcuM_AL_DriverInitOne(void) 
+; Function EcuM_AL_DriverInitOne
+.L22:
+EcuM_AL_DriverInitOne:	.type	func
+
+; ..\appl\Source\EcuM_Callout_Stubs.c	   259  {
+; ..\appl\Source\EcuM_Callout_Stubs.c	   260    Mcu_Init( &Mcu_Config );
+	movh.a	a4,#@his(Mcu_Config)
+	lea	a4,[a4]@los(Mcu_Config)
+	call	Mcu_Init
+.L167:
+
+; ..\appl\Source\EcuM_Callout_Stubs.c	   261    Mcu_InitClock(0);while (MCU_PLL_LOCKED != Mcu_GetPllStatus());Mcu_DistributePllClock();
+	mov	d4,#0
+	call	Mcu_InitClock
+.L4:
+	call	Mcu_GetPllStatus
+.L168:
+	jne	d2,#0,.L4
+.L169:
+	call	Mcu_DistributePllClock
+.L170:
+
+; ..\appl\Source\EcuM_Callout_Stubs.c	   262    Port_Init( &Port_Config );
+	movh.a	a4,#@his(Port_Config)
+	lea	a4,[a4]@los(Port_Config)
+	call	Port_Init
+.L171:
+
+; ..\appl\Source\EcuM_Callout_Stubs.c	   263    BswM_PreInit( BswM_Config_Ptr );
+	mov.a	a4,#0
+	j	BswM_PreInit
+.L112:
+	
+__EcuM_AL_DriverInitOne_function_end:
+	.size	EcuM_AL_DriverInitOne,__EcuM_AL_DriverInitOne_function_end-EcuM_AL_DriverInitOne
+.L89:
+	; End of function
+	
+	.sdecl	'.text.EcuM_Callout_Stubs.EcuM_StartOS',code,cluster('EcuM_StartOS')
+	.sect	'.text.EcuM_Callout_Stubs.EcuM_StartOS'
+	.align	2
+	
+	.global	EcuM_StartOS
+
+; ..\appl\Source\EcuM_Callout_Stubs.c	   264  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   265  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	   266   * DO NOT CHANGE THIS COMMENT!           <USERBLOCK EcuM_AL_DriverInitOne>                  DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\EcuM_Callout_Stubs.c	   267   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	   268  /* Add implementation of EcuM_AL_DriverInitOne  */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   269  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   270    return;
+; ..\appl\Source\EcuM_Callout_Stubs.c	   271  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	   272   * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>                                       DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\EcuM_Callout_Stubs.c	   273   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	   274  }
+; ..\appl\Source\EcuM_Callout_Stubs.c	   275  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   276  #if (ECUM_SLEEPMODELIST == STD_ON)
+; ..\appl\Source\EcuM_Callout_Stubs.c	   277  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	   278  * EcuM_AL_DriverRestartList
+; ..\appl\Source\EcuM_Callout_Stubs.c	   279  **********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	   280  FUNC(void, ECUM_CODE) EcuM_AL_DriverRestartList(void) 
+; ..\appl\Source\EcuM_Callout_Stubs.c	   281  {
+; ..\appl\Source\EcuM_Callout_Stubs.c	   282    /* DriverRestartList will not be called () because no sleepmode is configured - So don't use this function! */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   283  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   284  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	   285   * DO NOT CHANGE THIS COMMENT!           <USERBLOCK EcuM_AL_DriverRestartList>              DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\EcuM_Callout_Stubs.c	   286   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	   287  /* Add implementation of EcuM_AL_DriverRestartList  */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   288  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   289    return;
+; ..\appl\Source\EcuM_Callout_Stubs.c	   290  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	   291   * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>                                       DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\EcuM_Callout_Stubs.c	   292   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	   293  }
+; ..\appl\Source\EcuM_Callout_Stubs.c	   294  #endif
+; ..\appl\Source\EcuM_Callout_Stubs.c	   295  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   296  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   297  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   298  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   299  FUNC(void, ECUM_CODE) EcuM_StartOS(AppModeType appMode)
+; Function EcuM_StartOS
+.L24:
+EcuM_StartOS:	.type	func
+
+; ..\appl\Source\EcuM_Callout_Stubs.c	   300  {
+; ..\appl\Source\EcuM_Callout_Stubs.c	   301  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	   302   * DO NOT CHANGE THIS COMMENT!           <USERBLOCK EcuM_StartOS>                           DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\EcuM_Callout_Stubs.c	   303   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	   304    /* Add implementation of EcuM_StartOS() */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   305  #if ( ECUM_NUMBER_OF_CORES > 1 )
+; ..\appl\Source\EcuM_Callout_Stubs.c	   306    uint8 coreId;
+; ..\appl\Source\EcuM_Callout_Stubs.c	   307    StatusType status;
+; ..\appl\Source\EcuM_Callout_Stubs.c	   308    if(GetCoreID()==ECUM_CORE_ID_STARTUP)
+; ..\appl\Source\EcuM_Callout_Stubs.c	   309    {
+; ..\appl\Source\EcuM_Callout_Stubs.c	   310      for(coreId=0; coreId < ECUM_NUMBER_OF_CORES; coreId++)
+; ..\appl\Source\EcuM_Callout_Stubs.c	   311      {
+; ..\appl\Source\EcuM_Callout_Stubs.c	   312        if(coreId!=ECUM_CORE_ID_STARTUP)
+; ..\appl\Source\EcuM_Callout_Stubs.c	   313        {
+; ..\appl\Source\EcuM_Callout_Stubs.c	   314          StartCore(coreId, &status); /* SBSW_ECUM_ADRESSPARAMETER_TOOS */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   315        }
+; ..\appl\Source\EcuM_Callout_Stubs.c	   316      }
+; ..\appl\Source\EcuM_Callout_Stubs.c	   317    }
+; ..\appl\Source\EcuM_Callout_Stubs.c	   318  #endif
+; ..\appl\Source\EcuM_Callout_Stubs.c	   319  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   320    /* Start OS must be called for each core */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   321    StartOS(appMode);
+	j	StartOS
+.L99:
+	
+__EcuM_StartOS_function_end:
+	.size	EcuM_StartOS,__EcuM_StartOS_function_end-EcuM_StartOS
+.L49:
+	; End of function
+	
+	.sdecl	'.text.EcuM_Callout_Stubs.EcuM_AL_SetProgrammableInterrupts',code,cluster('EcuM_AL_SetProgrammableInterrupts')
+	.sect	'.text.EcuM_Callout_Stubs.EcuM_AL_SetProgrammableInterrupts'
+	.align	2
+	
+	.global	EcuM_AL_SetProgrammableInterrupts
+
+; ..\appl\Source\EcuM_Callout_Stubs.c	   322  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   323    return;
+; ..\appl\Source\EcuM_Callout_Stubs.c	   324  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	   325   * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>                                       DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\EcuM_Callout_Stubs.c	   326   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	   327  } /* End of EcuM_StartOS() */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   328  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   329  FUNC(void, ECUM_CODE) EcuM_AL_SetProgrammableInterrupts(void)
+; Function EcuM_AL_SetProgrammableInterrupts
+.L26:
+EcuM_AL_SetProgrammableInterrupts:	.type	func
+
+; ..\appl\Source\EcuM_Callout_Stubs.c	   330  {
+; ..\appl\Source\EcuM_Callout_Stubs.c	   331  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	   332   * DO NOT CHANGE THIS COMMENT!           <USERBLOCK EcuM_AL_SetProgrammableInterrupts>      DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\EcuM_Callout_Stubs.c	   333   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	   334    /* Add implementation of EcuM_AL_SetProgrammableInterrupts() */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   335  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   336    return;
+; ..\appl\Source\EcuM_Callout_Stubs.c	   337  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	   338   * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>                                       DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\EcuM_Callout_Stubs.c	   339   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	   340  } /* End of EcuM_AL_SetProgrammableInterrupts() */
+	ret
+.L98:
+	
+__EcuM_AL_SetProgrammableInterrupts_function_end:
+	.size	EcuM_AL_SetProgrammableInterrupts,__EcuM_AL_SetProgrammableInterrupts_function_end-EcuM_AL_SetProgrammableInterrupts
+.L44:
+	; End of function
+	
+	.sdecl	'.text.EcuM_Callout_Stubs.EcuM_CheckWakeup',code,cluster('EcuM_CheckWakeup')
+	.sect	'.text.EcuM_Callout_Stubs.EcuM_CheckWakeup'
+	.align	2
+	
+	.global	EcuM_CheckWakeup
+
+; ..\appl\Source\EcuM_Callout_Stubs.c	   341  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   342  #if((ECUM_CONFIGURATION_VARIANT == ECUM_CONFIGURATION_VARIANT_POSTBUILD_LOADABLE) || (ECUM_POSTBUILD_VARIANT_SUPPORT == STD_ON))
+; ..\appl\Source\EcuM_Callout_Stubs.c	   343  FUNC(EcuM_GlobalConfigRefType, ECUM_CODE) EcuM_DeterminePbConfiguration(void)
+; ..\appl\Source\EcuM_Callout_Stubs.c	   344  {
+; ..\appl\Source\EcuM_Callout_Stubs.c	   345  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	   346   * DO NOT CHANGE THIS COMMENT!           <USERBLOCK EcuM_DeterminePbConfiguration>          DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\EcuM_Callout_Stubs.c	   347   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	   348    /* Add implementation of EcuM_DeterminePbConfiguration() */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   349    
+; ..\appl\Source\EcuM_Callout_Stubs.c	   350    return ;
+; ..\appl\Source\EcuM_Callout_Stubs.c	   351  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	   352   * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>                                       DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\EcuM_Callout_Stubs.c	   353   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	   354  } /* End of EcuM_DeterminePbConfiguration() */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   355  #endif
+; ..\appl\Source\EcuM_Callout_Stubs.c	   356  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   357  #if (ECUM_ALARM_CLOCK_PRESENT == STD_ON)
+; ..\appl\Source\EcuM_Callout_Stubs.c	   358  FUNC(void, ECUM_CODE) EcuM_GptStartClock(Gpt_ChannelType GptChannel, Gpt_ModeType Mode, Gpt_ValueType Value)
+; ..\appl\Source\EcuM_Callout_Stubs.c	   359  {
+; ..\appl\Source\EcuM_Callout_Stubs.c	   360  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	   361   * DO NOT CHANGE THIS COMMENT!           <USERBLOCK EcuM_GptStartClock>                     DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\EcuM_Callout_Stubs.c	   362   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	   363    /* Add implementation of EcuM_GptStartClock() */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   364  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   365    Gpt_EnableNotification(GptChannel);
+; ..\appl\Source\EcuM_Callout_Stubs.c	   366    Gpt_StartTimer(GptChannel, Value);
+; ..\appl\Source\EcuM_Callout_Stubs.c	   367    Gpt_SetMode(Mode);
+; ..\appl\Source\EcuM_Callout_Stubs.c	   368  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   369    return;
+; ..\appl\Source\EcuM_Callout_Stubs.c	   370  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	   371   * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>                                       DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\EcuM_Callout_Stubs.c	   372   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	   373  } /* End of EcuM_GptStartClock() */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   374  #endif
+; ..\appl\Source\EcuM_Callout_Stubs.c	   375  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   376  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   377  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   378  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   379  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	   380   *  CALLOUTS FROM THE SLEEP PHASE
+; ..\appl\Source\EcuM_Callout_Stubs.c	   381   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	   382  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   383  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   384  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   385  #if(ECUM_SLAVE_CORE_HANDLING == STD_ON)
+; ..\appl\Source\EcuM_Callout_Stubs.c	   386  FUNC(void, ECUM_CODE) EcuM_WaitForSlaveCores(void)
+; ..\appl\Source\EcuM_Callout_Stubs.c	   387  {
+; ..\appl\Source\EcuM_Callout_Stubs.c	   388  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	   389   * DO NOT CHANGE THIS COMMENT!           <USERBLOCK EcuM_WaitForSlaveCores>                 DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\EcuM_Callout_Stubs.c	   390   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	   391    /* Add implementation of EcuM_WaitForSlaveCores() */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   392    
+; ..\appl\Source\EcuM_Callout_Stubs.c	   393    return;
+; ..\appl\Source\EcuM_Callout_Stubs.c	   394  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	   395   * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>                                       DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\EcuM_Callout_Stubs.c	   396   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	   397  } /* End of EcuM_WaitForSlaveCores() */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   398  #endif
+; ..\appl\Source\EcuM_Callout_Stubs.c	   399  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   400  #if(ECUM_SLEEPMODELIST == STD_ON)
+; ..\appl\Source\EcuM_Callout_Stubs.c	   401  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   402  FUNC(void, ECUM_CODE) EcuM_GenerateRamHash(void)
+; ..\appl\Source\EcuM_Callout_Stubs.c	   403  {
+; ..\appl\Source\EcuM_Callout_Stubs.c	   404  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	   405   * DO NOT CHANGE THIS COMMENT!           <USERBLOCK EcuM_GenerateRamHash>                   DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\EcuM_Callout_Stubs.c	   406   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	   407    /* Add implementation of EcuM_GenerateRamHash() */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   408    
+; ..\appl\Source\EcuM_Callout_Stubs.c	   409    return;
+; ..\appl\Source\EcuM_Callout_Stubs.c	   410  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	   411   * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>                                       DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\EcuM_Callout_Stubs.c	   412   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	   413  } /* End of EcuM_GenerateRamHash() */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   414  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   415  FUNC(uint8, ECUM_CODE) EcuM_CheckRamHash(void)
+; ..\appl\Source\EcuM_Callout_Stubs.c	   416  {
+; ..\appl\Source\EcuM_Callout_Stubs.c	   417  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	   418   * DO NOT CHANGE THIS COMMENT!           <USERBLOCK EcuM_CheckRamHash>                      DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\EcuM_Callout_Stubs.c	   419   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	   420    /* Add implementation of EcuM_CheckRamHash() */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   421    
+; ..\appl\Source\EcuM_Callout_Stubs.c	   422    return (1u);
+; ..\appl\Source\EcuM_Callout_Stubs.c	   423  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	   424   * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>                                       DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\EcuM_Callout_Stubs.c	   425   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	   426  } /* End of EcuM_CheckRamHash() */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   427  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   428  FUNC(void, ECUM_CODE) EcuM_McuSetMode(Mcu_ModeType McuMode)
+; ..\appl\Source\EcuM_Callout_Stubs.c	   429  {
+; ..\appl\Source\EcuM_Callout_Stubs.c	   430  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	   431   * DO NOT CHANGE THIS COMMENT!           <USERBLOCK EcuM_McuSetMode>                        DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\EcuM_Callout_Stubs.c	   432   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	   433    /* Add implementation of EcuM_McuSetMode() */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   434    Mcu_SetMode(McuMode);
+; ..\appl\Source\EcuM_Callout_Stubs.c	   435    
+; ..\appl\Source\EcuM_Callout_Stubs.c	   436    return;
+; ..\appl\Source\EcuM_Callout_Stubs.c	   437  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	   438   * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>                                       DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\EcuM_Callout_Stubs.c	   439   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	   440  } /* End of EcuM_McuSetMode() */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   441  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   442  #if(ECUM_POLLINGOFSLEEPMODELIST == STD_ON)
+; ..\appl\Source\EcuM_Callout_Stubs.c	   443  FUNC(void, ECUM_CODE) EcuM_SleepActivity(void)
+; ..\appl\Source\EcuM_Callout_Stubs.c	   444  {
+; ..\appl\Source\EcuM_Callout_Stubs.c	   445  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	   446   * DO NOT CHANGE THIS COMMENT!           <USERBLOCK EcuM_SleepActivity>                     DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\EcuM_Callout_Stubs.c	   447   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	   448    /* Add implementation of EcuM_SleepActivity() */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   449    
+; ..\appl\Source\EcuM_Callout_Stubs.c	   450    return;
+; ..\appl\Source\EcuM_Callout_Stubs.c	   451  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	   452   * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>                                       DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\EcuM_Callout_Stubs.c	   453   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	   454  } /* End of EcuM_SleepActivity() */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   455  #endif
+; ..\appl\Source\EcuM_Callout_Stubs.c	   456  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   457  FUNC(void, ECUM_CODE) EcuM_EnableWakeupSources(EcuM_WakeupSourceType wakeupSource) /* PRQA S 3206 */ /* MD_EcuM_3206 */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   458  {
+; ..\appl\Source\EcuM_Callout_Stubs.c	   459  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	   460   * DO NOT CHANGE THIS COMMENT!           <USERBLOCK EcuM_EnableWakeupSources>               DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\EcuM_Callout_Stubs.c	   461   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	   462  #if (ECUM_USE_DUMMY_STATEMENT == STD_ON)
+; ..\appl\Source\EcuM_Callout_Stubs.c	   463    /* dummy assignment to prevent compiler warnings on most of the compilers. */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   464    (void)wakeupSource; /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   465  #endif
+; ..\appl\Source\EcuM_Callout_Stubs.c	   466    /* Add implementation of EcuM_EnableWakeupSources() */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   467    
+; ..\appl\Source\EcuM_Callout_Stubs.c	   468    return;
+; ..\appl\Source\EcuM_Callout_Stubs.c	   469  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	   470   * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>                                       DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\EcuM_Callout_Stubs.c	   471   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	   472  } /* End of EcuM_EnableWakeupSources() */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   473  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   474  FUNC(void, ECUM_CODE) EcuM_DisableWakeupSources(EcuM_WakeupSourceType wakeupSource) /* PRQA S 3206 */ /* MD_EcuM_3206 */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   475  {
+; ..\appl\Source\EcuM_Callout_Stubs.c	   476  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	   477   * DO NOT CHANGE THIS COMMENT!           <USERBLOCK EcuM_DisableWakeupSources>              DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\EcuM_Callout_Stubs.c	   478   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	   479  #if (ECUM_USE_DUMMY_STATEMENT == STD_ON)
+; ..\appl\Source\EcuM_Callout_Stubs.c	   480    /* dummy assignment to prevent compiler warnings on most of the compilers. */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   481    (void)wakeupSource; /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   482  #endif
+; ..\appl\Source\EcuM_Callout_Stubs.c	   483    /* Add implementation of EcuM_DisableWakeupSources() */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   484    
+; ..\appl\Source\EcuM_Callout_Stubs.c	   485    return;
+; ..\appl\Source\EcuM_Callout_Stubs.c	   486  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	   487   * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>                                       DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\EcuM_Callout_Stubs.c	   488   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	   489  } /* End of EcuM_DisableWakeupSources() */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   490  #endif
+; ..\appl\Source\EcuM_Callout_Stubs.c	   491  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   492  FUNC(void, ECUM_CODE) EcuM_CheckWakeup(EcuM_WakeupSourceType wakeupSource) /* COV_ECUM_CALLOUT */
+; Function EcuM_CheckWakeup
+.L28:
+EcuM_CheckWakeup:	.type	func
+
+; ..\appl\Source\EcuM_Callout_Stubs.c	   493  {
+; ..\appl\Source\EcuM_Callout_Stubs.c	   494  #if (ECUM_CHECKWAKEUPTIMEOFWAKEUPSOURCELIST == STD_ON)
+; ..\appl\Source\EcuM_Callout_Stubs.c	   495    /* Do not remove the following function call. It is necessary for the CheckWakeup timeout mechanism */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   496    EcuM_StartCheckWakeup(wakeupSource);
+; ..\appl\Source\EcuM_Callout_Stubs.c	   497  #endif
+; ..\appl\Source\EcuM_Callout_Stubs.c	   498  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   499  #if (ECUM_ALARM_CLOCK_PRESENT == STD_ON)
+; ..\appl\Source\EcuM_Callout_Stubs.c	   500    if((ECUM_ALARM_WKSOURCE & wakeupSource) != 0u)
+; ..\appl\Source\EcuM_Callout_Stubs.c	   501    {
+; ..\appl\Source\EcuM_Callout_Stubs.c	   502      EcuM_AlarmCheckWakeup();
+; ..\appl\Source\EcuM_Callout_Stubs.c	   503    }
+; ..\appl\Source\EcuM_Callout_Stubs.c	   504  #endif
+; ..\appl\Source\EcuM_Callout_Stubs.c	   505  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   506  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	   507   * DO NOT CHANGE THIS COMMENT!           <USERBLOCK EcuM_CheckWakeup>                       DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\EcuM_Callout_Stubs.c	   508   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	   509  #if (ECUM_USE_DUMMY_STATEMENT == STD_ON)
+; ..\appl\Source\EcuM_Callout_Stubs.c	   510    /* dummy assignment to prevent compiler warnings on most of the compilers. */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   511    (void)wakeupSource; /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   512  #endif
+; ..\appl\Source\EcuM_Callout_Stubs.c	   513    /* Add implementation of EcuM_CheckWakeup() */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   514  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   515    return;
+; ..\appl\Source\EcuM_Callout_Stubs.c	   516  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	   517   * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>                                       DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\EcuM_Callout_Stubs.c	   518   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	   519  } /* End of EcuM_CheckWakeup() */
+	ret
+.L95:
+	
+__EcuM_CheckWakeup_function_end:
+	.size	EcuM_CheckWakeup,__EcuM_CheckWakeup_function_end-EcuM_CheckWakeup
+.L39:
+	; End of function
+	
+	.sdecl	'.text.EcuM_Callout_Stubs.EcuM_BswErrorHook',code,cluster('EcuM_BswErrorHook')
+	.sect	'.text.EcuM_Callout_Stubs.EcuM_BswErrorHook'
+	.align	2
+	
+	.global	EcuM_BswErrorHook
+
+; ..\appl\Source\EcuM_Callout_Stubs.c	   520  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   521  #if ((ECUM_ALARM_CLOCK_PRESENT == STD_ON) && (ECUM_SLEEPMODELIST == STD_ON))
+; ..\appl\Source\EcuM_Callout_Stubs.c	   522  FUNC(void, ECUM_CODE) EcuM_GptSetNormal(Gpt_ChannelType GptChannel, Gpt_ModeType Mode)
+; ..\appl\Source\EcuM_Callout_Stubs.c	   523  {
+; ..\appl\Source\EcuM_Callout_Stubs.c	   524  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	   525   * DO NOT CHANGE THIS COMMENT!           <USERBLOCK EcuM_GptSetNormal>                      DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\EcuM_Callout_Stubs.c	   526   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	   527    /* Add implementation of EcuM_GptSetNormal() */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   528  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   529    Gpt_EnableNotification(GptChannel);
+; ..\appl\Source\EcuM_Callout_Stubs.c	   530    Gpt_SetMode(Mode);
+; ..\appl\Source\EcuM_Callout_Stubs.c	   531  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   532    return;
+; ..\appl\Source\EcuM_Callout_Stubs.c	   533  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	   534   * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>                                       DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\EcuM_Callout_Stubs.c	   535   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	   536  } /* End of EcuM_GptSetNormal() */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   537  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   538  FUNC(void, ECUM_CODE) EcuM_GptSetSleep(Gpt_ChannelType GptChannel, Gpt_ModeType Mode)
+; ..\appl\Source\EcuM_Callout_Stubs.c	   539  {
+; ..\appl\Source\EcuM_Callout_Stubs.c	   540  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	   541   * DO NOT CHANGE THIS COMMENT!           <USERBLOCK EcuM_GptSetSleep>                       DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\EcuM_Callout_Stubs.c	   542   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	   543    /* Add implementation of EcuM_GptSetSleep() */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   544  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   545    Gpt_EnableWakeup(GptChannel);
+; ..\appl\Source\EcuM_Callout_Stubs.c	   546    Gpt_SetMode(Mode);
+; ..\appl\Source\EcuM_Callout_Stubs.c	   547  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   548    return;
+; ..\appl\Source\EcuM_Callout_Stubs.c	   549  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	   550   * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>                                       DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\EcuM_Callout_Stubs.c	   551   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	   552  } /* End of EcuM_GptSetSleep() */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   553  #endif
+; ..\appl\Source\EcuM_Callout_Stubs.c	   554  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   555  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   556  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   557  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	   558   *  CALLOUTS FROM THE UP PHASE
+; ..\appl\Source\EcuM_Callout_Stubs.c	   559   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	   560  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   561  #if(ECUM_VALIDATIONTIMEOFWAKEUPSOURCELIST == STD_ON)
+; ..\appl\Source\EcuM_Callout_Stubs.c	   562  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   563  FUNC(void, ECUM_CODE) EcuM_StartWakeupSources(EcuM_WakeupSourceType wakeupSource) /* PRQA S 3206 */ /* MD_EcuM_3206 */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   564  {
+; ..\appl\Source\EcuM_Callout_Stubs.c	   565  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	   566   * DO NOT CHANGE THIS COMMENT!           <USERBLOCK EcuM_StartWakeupSources>                DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\EcuM_Callout_Stubs.c	   567   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	   568  #if (ECUM_USE_DUMMY_STATEMENT == STD_ON)
+; ..\appl\Source\EcuM_Callout_Stubs.c	   569    /* dummy assignment to prevent compiler warnings on most of the compilers. */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   570    (void)wakeupSource; /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   571  #endif
+; ..\appl\Source\EcuM_Callout_Stubs.c	   572    /* Add implementation of EcuM_StartWakeupSources() */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   573    
+; ..\appl\Source\EcuM_Callout_Stubs.c	   574    return;
+; ..\appl\Source\EcuM_Callout_Stubs.c	   575  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	   576   * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>                                       DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\EcuM_Callout_Stubs.c	   577   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	   578  } /* End of EcuM_StartWakeupSources() */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   579  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   580  FUNC(void, ECUM_CODE) EcuM_StopWakeupSources(EcuM_WakeupSourceType wakeupSource) /* PRQA S 3206 */ /* MD_EcuM_3206 */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   581  {
+; ..\appl\Source\EcuM_Callout_Stubs.c	   582  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	   583   * DO NOT CHANGE THIS COMMENT!           <USERBLOCK EcuM_StopWakeupSources>                 DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\EcuM_Callout_Stubs.c	   584   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	   585  #if (ECUM_USE_DUMMY_STATEMENT == STD_ON)
+; ..\appl\Source\EcuM_Callout_Stubs.c	   586    /* dummy assignment to prevent compiler warnings on most of the compilers. */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   587    (void)wakeupSource; /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   588  #endif
+; ..\appl\Source\EcuM_Callout_Stubs.c	   589    /* Add implementation of EcuM_StopWakeupSources() */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   590    
+; ..\appl\Source\EcuM_Callout_Stubs.c	   591    return;
+; ..\appl\Source\EcuM_Callout_Stubs.c	   592  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	   593   * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>                                       DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\EcuM_Callout_Stubs.c	   594   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	   595  } /* End of EcuM_StopWakeupSources() */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   596  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   597  FUNC(void, ECUM_CODE) EcuM_CheckValidation(EcuM_WakeupSourceType wakeupSource)
+; ..\appl\Source\EcuM_Callout_Stubs.c	   598  {
+; ..\appl\Source\EcuM_Callout_Stubs.c	   599  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	   600   * DO NOT CHANGE THIS COMMENT!           <USERBLOCK EcuM_CheckValidation>                   DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\EcuM_Callout_Stubs.c	   601   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	   602  #if (ECUM_USE_DUMMY_STATEMENT == STD_ON)
+; ..\appl\Source\EcuM_Callout_Stubs.c	   603    /* dummy assignment to prevent compiler warnings on most of the compilers. */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   604    (void)wakeupSource; /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   605  #endif
+; ..\appl\Source\EcuM_Callout_Stubs.c	   606    /* Add implementation of EcuM_CheckValidation() */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   607  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   608    return;
+; ..\appl\Source\EcuM_Callout_Stubs.c	   609  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	   610   * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>                                       DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\EcuM_Callout_Stubs.c	   611   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	   612  } /* End of EcuM_CheckValidation() */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   613  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   614  #endif
+; ..\appl\Source\EcuM_Callout_Stubs.c	   615  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   616  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   617  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   618  #if (ECUM_BSW_ERROR_HOOK == STD_ON)
+; ..\appl\Source\EcuM_Callout_Stubs.c	   619  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	   620   *  Errorhook for BSW errors during initialization
+; ..\appl\Source\EcuM_Callout_Stubs.c	   621   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	   622  FUNC(void, ECUM_CODE) EcuM_BswErrorHook(uint16 BswModuleId, uint8 ErrorId) /* PRQA S 3206 */ /* MD_EcuM_3206 */ /* COV_ECUM_CALLOUT */
+; Function EcuM_BswErrorHook
+.L30:
+EcuM_BswErrorHook:	.type	func
+
+; ..\appl\Source\EcuM_Callout_Stubs.c	   623  {
+; ..\appl\Source\EcuM_Callout_Stubs.c	   624  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	   625   * DO NOT CHANGE THIS COMMENT!           <USERBLOCK EcuM_BswErrorHook>                      DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\EcuM_Callout_Stubs.c	   626   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	   627   
+; ..\appl\Source\EcuM_Callout_Stubs.c	   628  #if (ECUM_USE_DUMMY_STATEMENT == STD_ON)
+; ..\appl\Source\EcuM_Callout_Stubs.c	   629    /* dummy assignment to prevent compiler warnings on most of the compilers. */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   630    (void)BswModuleId;  /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   631    (void)ErrorId;      /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   632  #endif
+; ..\appl\Source\EcuM_Callout_Stubs.c	   633    /* Add implementation of EcuM_BswErrorHook() */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   634    
+; ..\appl\Source\EcuM_Callout_Stubs.c	   635    if(BswModuleId == ECUM_MODULE_ID)
+	mov	d15,#10
+.L176:
+	jne	d15,d4,.L5
+
+; ..\appl\Source\EcuM_Callout_Stubs.c	   636    {
+; ..\appl\Source\EcuM_Callout_Stubs.c	   637      /* Abort initialization per default if the EcuM has reported an BswError */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   638      while(1)
+.L6:
+	j	.L6
+.L5:
+
+; ..\appl\Source\EcuM_Callout_Stubs.c	   639      {
+; ..\appl\Source\EcuM_Callout_Stubs.c	   640      }
+; ..\appl\Source\EcuM_Callout_Stubs.c	   641    }
+; ..\appl\Source\EcuM_Callout_Stubs.c	   642  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   643    return;
+; ..\appl\Source\EcuM_Callout_Stubs.c	   644  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	   645   * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>                                       DO NOT CHANGE THIS COMMENT!
+; ..\appl\Source\EcuM_Callout_Stubs.c	   646   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	   647  } /* End of EcuM_BswErrorHook() */
+	ret
+.L113:
+	
+__EcuM_BswErrorHook_function_end:
+	.size	EcuM_BswErrorHook,__EcuM_BswErrorHook_function_end-EcuM_BswErrorHook
+.L94:
+	; End of function
+	
+	.calls	'EcuM_ShutdownOS','ShutdownOS'
+	.calls	'EcuM_AL_DriverInitZero','BswM_InitMemory'
+	.calls	'EcuM_AL_DriverInitZero','Rte_InitMemory'
+	.calls	'EcuM_AL_DriverInitOne','Mcu_Init'
+	.calls	'EcuM_AL_DriverInitOne','Mcu_InitClock'
+	.calls	'EcuM_AL_DriverInitOne','Mcu_GetPllStatus'
+	.calls	'EcuM_AL_DriverInitOne','Mcu_DistributePllClock'
+	.calls	'EcuM_AL_DriverInitOne','Port_Init'
+	.calls	'EcuM_AL_DriverInitOne','BswM_PreInit'
+	.calls	'EcuM_StartOS','StartOS'
+	.calls	'EcuM_ErrorHook','',0
+	.calls	'EcuM_OnGoOffOne','',0
+	.calls	'EcuM_ShutdownOS','',0
+	.calls	'EcuM_OnGoOffTwo','',0
+	.calls	'EcuM_AL_SwitchOff','',0
+	.calls	'EcuM_AL_Reset','',0
+	.calls	'EcuM_AL_DriverInitZero','',0
+	.calls	'EcuM_AL_DriverInitOne','',0
+	.calls	'EcuM_StartOS','',0
+	.calls	'EcuM_AL_SetProgrammableInterrupts','',0
+	.calls	'EcuM_CheckWakeup','',0
+	.extern	StartOS
+	.extern	ShutdownOS
+	.extern	Mcu_Init
+	.extern	Mcu_InitClock
+	.extern	Mcu_DistributePllClock
+	.extern	Mcu_GetPllStatus
+	.extern	Mcu_Config
+	.extern	BswM_InitMemory
+	.extern	BswM_PreInit
+	.extern	Rte_InitMemory
+	.extern	Port_Init
+	.extern	Port_Config
+	.calls	'EcuM_BswErrorHook','',0
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L32:
+	.word	15954
+	.half	3
+	.word	.L33
+	.byte	4
+.L31:
+	.byte	1
+	.byte	'..\\appl\\Source\\EcuM_Callout_Stubs.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
+	.word	.L34
+	.byte	2
+	.byte	'int',0,4,5,3
+	.word	129
+	.byte	4
+	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,5
+	.word	136
+	.byte	0,2
+	.byte	'unsigned int',0,4,7,6
+	.word	178
+	.byte	7
+	.word	178
+	.byte	8
+	.byte	'__cmpswapw',0
+	.word	194
+	.byte	1,1,1,1,9
+	.byte	'p',0
+	.word	199
+	.byte	9
+	.byte	'value',0
+	.word	178
+	.byte	9
+	.byte	'compare',0
+	.word	178
+	.byte	0
+.L96:
+	.byte	2
+	.byte	'unsigned long int',0,4,7
+.L100:
+	.byte	2
+	.byte	'unsigned char',0,1,8,10
+	.byte	'StartOS',0,1,253,6,21,1,1,1,1,11
+	.byte	'Mode',0,1,255,6,15
+	.word	277
+	.byte	0,10
+	.byte	'ShutdownOS',0,1,150,7,21,1,1,1,1,11
+	.byte	'Error',0,1,152,7,14
+	.word	277
+	.byte	0
+.L114:
+	.byte	2
+	.byte	'unsigned short int',0,2,7,12,2,226,2,9,4,13
+	.byte	'Insel',0,1
+	.word	277
+	.byte	2,6,2,35,0,13
+	.byte	'SysPllPDiv',0,1
+	.word	277
+	.byte	3,3,2,35,0,13
+	.byte	'SysPllNDiv',0,2
+	.word	362
+	.byte	7,4,2,35,0,13
+	.byte	'SysPllK2Div',0,1
+	.word	277
+	.byte	3,1,2,35,1,13
+	.byte	'FmPllEn',0,1
+	.word	277
+	.byte	1,0,2,35,1,13
+	.byte	'ModulationAmplitude',0,2
+	.word	362
+	.byte	16,0,2,35,2,0,12,2,243,2,9,4,13
+	.byte	'PerPllNDiv',0,1
+	.word	277
+	.byte	7,1,2,35,0,13
+	.byte	'PerPllPDiv',0,2
+	.word	362
+	.byte	3,6,2,35,0,13
+	.byte	'PerPllK2Div',0,1
+	.word	277
+	.byte	3,3,2,35,1,13
+	.byte	'PerPllK3Div',0,1
+	.word	277
+	.byte	3,0,2,35,1,13
+	.byte	'K3DivByPass',0,1
+	.word	277
+	.byte	1,7,2,35,2,13
+	.byte	'Reserved',0,2
+	.word	362
+	.byte	15,0,2,35,2,0,14,24
+	.word	256
+	.byte	15,5,0,12,2,131,3,9,40,16
+	.byte	'Ccucon0',0
+	.word	256
+	.byte	4,2,35,0,16
+	.byte	'Ccucon1',0
+	.word	256
+	.byte	4,2,35,4,16
+	.byte	'Ccucon2',0
+	.word	256
+	.byte	4,2,35,8,16
+	.byte	'Ccucon5',0
+	.word	256
+	.byte	4,2,35,12,16
+	.byte	'CcuconCpu',0
+	.word	665
+	.byte	24,2,35,16,0,3
+	.word	674
+	.byte	7
+	.word	768
+	.byte	12,2,151,3,9,44,16
+	.byte	'SystemPllCfg',0
+	.word	384
+	.byte	4,2,35,0,16
+	.byte	'PeripheralPllCfg',0
+	.word	525
+	.byte	4,2,35,4,16
+	.byte	'SysPllK2DivStepUpChangeDelay',0
+	.word	256
+	.byte	4,2,35,8,16
+	.byte	'SysPllK2DivStepDownChangeDelay',0
+	.word	256
+	.byte	4,2,35,12,16
+	.byte	'PeripheralPllK2StepUpChangeDelay',0
+	.word	256
+	.byte	4,2,35,16,16
+	.byte	'PeripheralPllK2StepDownChangeDelay',0
+	.word	256
+	.byte	4,2,35,20,16
+	.byte	'PeripheralPllK3StepUpChangeDelay',0
+	.word	256
+	.byte	4,2,35,24,16
+	.byte	'PeripheralPllK3StepDownChangeDelay',0
+	.word	256
+	.byte	4,2,35,28,16
+	.byte	'PllDistributionCfgPtr',0
+	.word	773
+	.byte	4,2,35,32,16
+	.byte	'ExternalClockCfg',0
+	.word	256
+	.byte	4,2,35,36,16
+	.byte	'BackupFreqKDiv',0
+	.word	362
+	.byte	2,2,35,40,16
+	.byte	'ConvCtrlBlockConf',0
+	.word	277
+	.byte	1,2,35,42,0,3
+	.word	778
+	.byte	7
+	.word	1191
+	.byte	17
+	.byte	'void',0,7
+	.word	1201
+	.byte	18
+	.byte	'Mcu_RamBaseAdrType',0,2,233,1,18
+	.word	1207
+	.byte	2
+	.byte	'unsigned long long int',0,8,7,12,2,184,3,9,28,16
+	.byte	'RamBaseAdrPtr',0
+	.word	1212
+	.byte	4,2,35,0,16
+	.byte	'RamSize',0
+	.word	256
+	.byte	4,2,35,4,16
+	.byte	'RamPrstData',0
+	.word	1240
+	.byte	8,2,35,8,16
+	.byte	'RamData',0
+	.word	1240
+	.byte	8,2,35,16,16
+	.byte	'RamWriteSize',0
+	.word	256
+	.byte	4,2,35,24,0,3
+	.word	1266
+	.byte	7
+	.word	1373
+	.byte	14,32
+	.word	256
+	.byte	15,7,0,12,2,250,3,9,8,16
+	.byte	'GtmCmuExtClockNum',0
+	.word	256
+	.byte	4,2,35,0,16
+	.byte	'GtmCmuExtClockDen',0
+	.word	256
+	.byte	4,2,35,4,0,14,24
+	.word	1392
+	.byte	15,2,0,12,2,135,4,9,76,16
+	.byte	'GtmCmuClockEnable',0
+	.word	256
+	.byte	4,2,35,0,16
+	.byte	'GtmCmuGlobalNumerator',0
+	.word	256
+	.byte	4,2,35,4,16
+	.byte	'GtmCmuGlobalDenominator',0
+	.word	256
+	.byte	4,2,35,8,16
+	.byte	'GtmCmuConfClkCtrl',0
+	.word	1383
+	.byte	32,2,35,12,16
+	.byte	'GtmCmuFixedClkCtrl',0
+	.word	256
+	.byte	4,2,35,44,16
+	.byte	'GtmCmuClsInDiv',0
+	.word	256
+	.byte	4,2,35,48,16
+	.byte	'GtmEclkCtrl',0
+	.word	1453
+	.byte	24,2,35,52,0,3
+	.word	1462
+	.byte	7
+	.word	1660
+	.byte	12,2,158,4,9,12,16
+	.byte	'GtmCcmCfg',0
+	.word	256
+	.byte	4,2,35,0,16
+	.byte	'GtmCcmConfClockCfg',0
+	.word	256
+	.byte	4,2,35,4,16
+	.byte	'GtmCcmFixedClockCfg',0
+	.word	256
+	.byte	4,2,35,8,0,3
+	.word	1670
+	.byte	7
+	.word	1753
+	.byte	12,2,173,4,9,8,16
+	.byte	'TomTgcIntTrigRstCn0',0
+	.word	256
+	.byte	4,2,35,0,16
+	.byte	'TomTgcActTb',0
+	.word	256
+	.byte	4,2,35,4,0,14,96
+	.word	1763
+	.byte	15,11,0,12,2,195,4,9,8,16
+	.byte	'AtomAgcIntTrigRstCn0',0
+	.word	256
+	.byte	4,2,35,0,16
+	.byte	'AtomAgcActTb',0
+	.word	256
+	.byte	4,2,35,4,0,14,96
+	.word	1829
+	.byte	15,11,0,12,2,217,4,9,8,16
+	.byte	'GtmAdcTrigOut0',0
+	.word	256
+	.byte	4,2,35,0,16
+	.byte	'GtmAdcTrigOut1',0
+	.word	256
+	.byte	4,2,35,4,0,14,40
+	.word	1897
+	.byte	15,4,0,12,2,225,4,9,8,16
+	.byte	'GtmDsadcTrigOut0',0
+	.word	256
+	.byte	4,2,35,0,16
+	.byte	'GtmDsadcTrigOut1',0
+	.word	256
+	.byte	4,2,35,4,0,14,32
+	.word	1961
+	.byte	15,3,0,14,136,1
+	.word	256
+	.byte	15,33,0,12,2,237,4,9,204,4,16
+	.byte	'GtmClockCfgPtr',0
+	.word	1665
+	.byte	4,2,35,0,16
+	.byte	'GtmClusterCfgPtr',0
+	.word	1758
+	.byte	4,2,35,4,16
+	.byte	'GtmTomCfg',0
+	.word	1820
+	.byte	96,2,35,8,16
+	.byte	'GtmAtomCfg',0
+	.word	1888
+	.byte	96,2,35,104,16
+	.byte	'GtmAdcTrigCfg',0
+	.word	1952
+	.byte	40,3,35,200,1,16
+	.byte	'GtmDsadcTrigCfg',0
+	.word	2020
+	.byte	32,3,35,240,1,16
+	.byte	'GtmToutSelCfg',0
+	.word	2029
+	.byte	136,1,3,35,144,2,16
+	.byte	'GtmToutSelCfgMsk',0
+	.word	2029
+	.byte	136,1,3,35,152,3,16
+	.byte	'GtmTimInSelCfg',0
+	.word	1383
+	.byte	32,3,35,160,4,16
+	.byte	'GtmTbuCfg',0
+	.word	256
+	.byte	4,3,35,192,4,16
+	.byte	'GtmTomModuleUsage',0
+	.word	362
+	.byte	2,3,35,196,4,16
+	.byte	'GtmAtomModuleUsage',0
+	.word	362
+	.byte	2,3,35,198,4,16
+	.byte	'IsGtmSleepModeEnabled',0
+	.word	277
+	.byte	1,3,35,200,4,0,3
+	.word	2039
+	.byte	7
+	.word	2373
+	.byte	12,2,201,3,9,4,13
+	.byte	'McuMode',0,1
+	.word	277
+	.byte	3,5,2,35,0,13
+	.byte	'EvrcLowPowerMode',0,1
+	.word	277
+	.byte	1,4,2,35,0,13
+	.byte	'Reserved',0,4
+	.word	178
+	.byte	28,0,2,35,0,0,12,2,223,3,9,28,16
+	.byte	'MaxModeEvrcCtrl',0
+	.word	2383
+	.byte	4,2,35,0,16
+	.byte	'Pmswcr0',0
+	.word	256
+	.byte	4,2,35,4,16
+	.byte	'Pmswcr3',0
+	.word	256
+	.byte	4,2,35,8,16
+	.byte	'Pmswcr4',0
+	.word	256
+	.byte	4,2,35,12,16
+	.byte	'Pmswcr5',0
+	.word	256
+	.byte	4,2,35,16,16
+	.byte	'Evruvmon',0
+	.word	256
+	.byte	4,2,35,20,16
+	.byte	'EvrmonCtrl',0
+	.word	256
+	.byte	4,2,35,24,0,3
+	.word	2457
+	.byte	7
+	.word	2595
+	.byte	12,2,147,5,9,44,16
+	.byte	'McuClockSettingPtr',0
+	.word	1196
+	.byte	4,2,35,0,16
+	.byte	'McuRamCfgPtr',0
+	.word	1378
+	.byte	4,2,35,4,16
+	.byte	'McuGtmConfigPtr',0
+	.word	2378
+	.byte	4,2,35,8,16
+	.byte	'McuLowPowerModeCfgPtr',0
+	.word	2600
+	.byte	4,2,35,12,16
+	.byte	'McuResetCfg',0
+	.word	256
+	.byte	4,2,35,16,16
+	.byte	'McuArstDisCfg',0
+	.word	256
+	.byte	4,2,35,20,16
+	.byte	'McuTrapSettingConf0',0
+	.word	256
+	.byte	4,2,35,24,16
+	.byte	'McuTrapSettingConf1',0
+	.word	256
+	.byte	4,2,35,28,16
+	.byte	'McuEruEiFiltCfg',0
+	.word	256
+	.byte	4,2,35,32,16
+	.byte	'McuNoOfClockCfg',0
+	.word	256
+	.byte	4,2,35,36,16
+	.byte	'McuNoOfRamCfg',0
+	.word	256
+	.byte	4,2,35,40,0,3
+	.word	2605
+	.byte	7
+	.word	2893
+	.byte	3
+	.word	2898
+	.byte	10
+	.byte	'Mcu_Init',0,2,231,5,13,1,1,1,1,11
+	.byte	'ConfigPtr',0,2,231,5,51
+	.word	2903
+	.byte	0,7
+	.word	1201
+	.byte	3
+	.word	256
+	.byte	19
+	.byte	'Mcu_InitClock',0,2,173,6,23
+	.word	277
+	.byte	1,1,1,1,11
+	.byte	'ClockSetting',0,2,173,6,57
+	.word	2951
+	.byte	0,20
+	.byte	'Mcu_DistributePllClock',0,2,205,6,23
+	.word	277
+	.byte	1,1,1,1,21,2,255,1,9,1,22
+	.byte	'MCU_PLL_LOCKED',0,0,22
+	.byte	'MCU_PLL_UNLOCKED',0,1,22
+	.byte	'MCU_PLL_STATUS_UNDEFINED',0,2,0,20
+	.byte	'Mcu_GetPllStatus',0,2,236,6,26
+	.word	3042
+	.byte	1,1,1,1,23
+	.byte	'BswM_InitMemory',0,3,141,2,30,1,1,1,1,24
+	.byte	'sBswM_PCConfigType',0,4,198,9,16,1,16
+	.byte	'BswM_PCConfigNeverUsed',0
+	.word	277
+	.byte	1,2,35,0,0,3
+	.word	3167
+	.byte	7
+	.word	3225
+	.byte	10
+	.byte	'BswM_PreInit',0,3,187,2,30,1,1,1,1,11
+	.byte	'ConfigPtr',0,3,187,2,95
+	.word	3230
+	.byte	0,23
+	.byte	'Rte_InitMemory',0,5,42,22,1,1,1,1,12,6,194,1,9,16,16
+	.byte	'PC0',0
+	.word	277
+	.byte	1,2,35,0,16
+	.byte	'PC1',0
+	.word	277
+	.byte	1,2,35,1,16
+	.byte	'PC2',0
+	.word	277
+	.byte	1,2,35,2,16
+	.byte	'PC3',0
+	.word	277
+	.byte	1,2,35,3,16
+	.byte	'PC4',0
+	.word	277
+	.byte	1,2,35,4,16
+	.byte	'PC5',0
+	.word	277
+	.byte	1,2,35,5,16
+	.byte	'PC6',0
+	.word	277
+	.byte	1,2,35,6,16
+	.byte	'PC7',0
+	.word	277
+	.byte	1,2,35,7,16
+	.byte	'PC8',0
+	.word	277
+	.byte	1,2,35,8,16
+	.byte	'PC9',0
+	.word	277
+	.byte	1,2,35,9,16
+	.byte	'PC10',0
+	.word	277
+	.byte	1,2,35,10,16
+	.byte	'PC11',0
+	.word	277
+	.byte	1,2,35,11,16
+	.byte	'PC12',0
+	.word	277
+	.byte	1,2,35,12,16
+	.byte	'PC13',0
+	.word	277
+	.byte	1,2,35,13,16
+	.byte	'PC14',0
+	.word	277
+	.byte	1,2,35,14,16
+	.byte	'PC15',0
+	.word	277
+	.byte	1,2,35,15,0,12,6,218,1,9,4,13
+	.byte	'P0',0,1
+	.word	277
+	.byte	1,7,2,35,0,13
+	.byte	'P1',0,1
+	.word	277
+	.byte	1,6,2,35,0,13
+	.byte	'P2',0,1
+	.word	277
+	.byte	1,5,2,35,0,13
+	.byte	'P3',0,1
+	.word	277
+	.byte	1,4,2,35,0,13
+	.byte	'P4',0,1
+	.word	277
+	.byte	1,3,2,35,0,13
+	.byte	'P5',0,1
+	.word	277
+	.byte	1,2,2,35,0,13
+	.byte	'P6',0,1
+	.word	277
+	.byte	1,1,2,35,0,13
+	.byte	'P7',0,1
+	.word	277
+	.byte	1,0,2,35,0,13
+	.byte	'P8',0,1
+	.word	277
+	.byte	1,7,2,35,1,13
+	.byte	'P9',0,1
+	.word	277
+	.byte	1,6,2,35,1,13
+	.byte	'P10',0,1
+	.word	277
+	.byte	1,5,2,35,1,13
+	.byte	'P11',0,1
+	.word	277
+	.byte	1,4,2,35,1,13
+	.byte	'P12',0,1
+	.word	277
+	.byte	1,3,2,35,1,13
+	.byte	'P13',0,1
+	.word	277
+	.byte	1,2,2,35,1,13
+	.byte	'P14',0,1
+	.word	277
+	.byte	1,1,2,35,1,13
+	.byte	'P15',0,1
+	.word	277
+	.byte	1,0,2,35,1,13
+	.byte	'reserved',0,2
+	.word	362
+	.byte	16,0,2,35,2,0,12,6,131,2,9,32,16
+	.byte	'PinControl',0
+	.word	3300
+	.byte	16,2,35,0,16
+	.byte	'PinLevel',0
+	.word	3521
+	.byte	4,2,35,16,16
+	.byte	'DriverStrength0',0
+	.word	256
+	.byte	4,2,35,20,16
+	.byte	'DriverStrength1',0
+	.word	256
+	.byte	4,2,35,24,16
+	.byte	'EmergencyStopConf',0
+	.word	3521
+	.byte	4,2,35,28,0,3
+	.word	3778
+	.byte	7
+	.word	3900
+	.byte	3
+	.word	256
+	.byte	7
+	.word	3910
+	.byte	12,6,161,2,9,28,16
+	.byte	'LPCR0',0
+	.word	256
+	.byte	4,2,35,0,16
+	.byte	'LPCR1',0
+	.word	256
+	.byte	4,2,35,4,16
+	.byte	'LPCR2',0
+	.word	256
+	.byte	4,2,35,8,16
+	.byte	'LPCR3',0
+	.word	256
+	.byte	4,2,35,12,16
+	.byte	'LPCR4',0
+	.word	256
+	.byte	4,2,35,16,16
+	.byte	'LPCR5',0
+	.word	256
+	.byte	4,2,35,20,16
+	.byte	'LPCR6',0
+	.word	256
+	.byte	4,2,35,24,0,3
+	.word	3920
+	.byte	7
+	.word	4032
+	.byte	3
+	.word	256
+	.byte	7
+	.word	4042
+	.byte	12,6,196,2,9,16,16
+	.byte	'PortConfigSetPtr',0
+	.word	3905
+	.byte	4,2,35,0,16
+	.byte	'PDiscSet',0
+	.word	3915
+	.byte	4,2,35,4,16
+	.byte	'Port_LVDSConfigTypePtr',0
+	.word	4037
+	.byte	4,2,35,8,16
+	.byte	'Port_PCSRConfigTypePtr',0
+	.word	4047
+	.byte	4,2,35,12,0,3
+	.word	4052
+	.byte	7
+	.word	4167
+	.byte	10
+	.byte	'Port_Init',0,6,133,3,13,1,1,1,1,11
+	.byte	'ConfigPtr',0,6,135,3,27
+	.word	4172
+	.byte	0,25,1,7
+	.word	4216
+	.byte	18
+	.byte	'__codeptr',0,7,1,1
+	.word	4218
+	.byte	18
+	.byte	'boolean',0,8,101,31
+	.word	277
+	.byte	18
+	.byte	'uint8',0,8,104,31
+	.word	277
+	.byte	18
+	.byte	'uint16',0,8,106,31
+	.word	362
+	.byte	2
+	.byte	'long int',0,4,5,18
+	.byte	'sint32',0,8,107,31
+	.word	4286
+	.byte	18
+	.byte	'uint32',0,8,108,31
+	.word	256
+	.byte	18
+	.byte	'uint8_least',0,8,111,31
+	.word	277
+	.byte	18
+	.byte	'uint64',0,8,121,30
+	.word	1240
+	.byte	18
+	.byte	'StatusType',0,9,127,23
+	.word	277
+	.byte	18
+	.byte	'Std_ReturnType',0,9,132,1,15
+	.word	277
+	.byte	18
+	.byte	'BswM_ESH_Mode',0,10,46,15
+	.word	277
+	.byte	18
+	.byte	'BswM_ESH_RunRequest',0,10,49,15
+	.word	277
+	.byte	18
+	.byte	'EcuM_ModeType',0,10,55,15
+	.word	277
+	.byte	18
+	.byte	'EcuM_StateType',0,10,61,15
+	.word	277
+	.byte	18
+	.byte	'EcuM_WakeupSourceType',0,11,58,17
+	.word	256
+	.byte	18
+	.byte	'EcuM_ResetType',0,11,126,23
+	.word	277
+	.byte	26,1,1,7
+	.word	4554
+	.byte	18
+	.byte	'EcuM_DriverFuncType',0,12,194,2,9
+	.word	4557
+	.byte	18
+	.byte	'EcuM_DefaultAppModeType',0,12,227,2,16
+	.word	256
+	.byte	18
+	.byte	'EcuM_NormalMcuModeType',0,12,245,2,16
+	.word	256
+	.byte	24
+	.byte	'sEcuM_DriverInitOneType',0,12,136,3,16,4,16
+	.byte	'FunctionOfDriverInitOne',0
+	.word	4562
+	.byte	4,2,35,0,0,18
+	.byte	'EcuM_DriverInitOneType',0,12,139,3,3
+	.word	4656
+	.byte	7
+	.word	4554
+	.byte	24
+	.byte	'sEcuM_PCConfigType',0,12,175,3,16,1,16
+	.byte	'EcuM_PCConfigNeverUsed',0
+	.word	277
+	.byte	1,2,35,0,0,18
+	.byte	'EcuM_PCConfigType',0,12,178,3,3
+	.word	4757
+	.byte	21,13,145,1,9,1,22
+	.byte	'Default_Init_Task',0,0,22
+	.byte	'Default_Init_Task_Trusted',0,1,22
+	.byte	'IdleTask_OsCore0',0,2,22
+	.byte	'bsw_task',0,3,22
+	.byte	'swc_init',0,4,22
+	.byte	'swc_task',0,5,22
+	.byte	'INVALID_TASK',0,6,22
+	.byte	'OS_TASKID_COUNT',0,6,0,18
+	.byte	'TaskType',0,13,155,1,3
+	.word	4842
+	.byte	18
+	.byte	'Os_Hal_AddressType',0,14,61,16
+	.word	256
+	.byte	14,64
+	.word	256
+	.byte	15,15,0,24
+	.byte	'Os_ExceptionContextType_Tag',0,15,71,8,160,1,16
+	.byte	'AddressRegisters',0
+	.word	5027
+	.byte	64,2,35,0,16
+	.byte	'DataRegisters',0
+	.word	5027
+	.byte	64,2,35,64,16
+	.byte	'Ra',0
+	.word	256
+	.byte	4,3,35,128,1,16
+	.byte	'Psw',0
+	.word	256
+	.byte	4,3,35,132,1,16
+	.byte	'ExceptionSource',0
+	.word	256
+	.byte	4,3,35,136,1,16
+	.byte	'Pcpn',0
+	.word	256
+	.byte	4,3,35,140,1,16
+	.byte	'Pie',0
+	.word	256
+	.byte	4,3,35,144,1,16
+	.byte	'MpuRegionForStackLow',0
+	.word	256
+	.byte	4,3,35,148,1,16
+	.byte	'MpuRegionForStackUpper',0
+	.word	256
+	.byte	4,3,35,152,1,16
+	.byte	'RawPCXI',0
+	.word	256
+	.byte	4,3,35,156,1,0,18
+	.byte	'Os_ExceptionContextType',0,14,66,44
+	.word	5036
+	.byte	18
+	.byte	'AppModeType',0,16,216,1,16
+	.word	277
+	.byte	18
+	.byte	'Os_InterruptSourceIdType',0,16,238,1,16
+	.word	256
+	.byte	18
+	.byte	'Os_ExceptionSourceIdType',0,16,246,1,16
+	.word	256
+	.byte	21,16,161,2,9,1,22
+	.byte	'RUNNING',0,0,22
+	.byte	'READY',0,1,22
+	.byte	'WAITING',0,2,22
+	.byte	'SUSPENDED',0,3,0,18
+	.byte	'TaskStateType',0,16,175,2,3
+	.word	5405
+	.byte	18
+	.byte	'EventMaskType',0,16,182,2,16
+	.word	1240
+	.byte	18
+	.byte	'Os_TickType',0,16,200,2,19
+	.word	256
+	.byte	18
+	.byte	'TickType',0,16,206,2,21
+	.word	256
+	.byte	12,16,220,2,9,12,16
+	.byte	'maxallowedvalue',0
+	.word	256
+	.byte	4,2,35,0,16
+	.byte	'ticksperbase',0
+	.word	256
+	.byte	4,2,35,4,16
+	.byte	'mincycle',0
+	.word	256
+	.byte	4,2,35,8,0,18
+	.byte	'AlarmBaseType',0,16,228,2,2
+	.word	5537
+	.byte	21,16,128,3,9,1,22
+	.byte	'APPLICATION_TERMINATED',0,0,22
+	.byte	'APPLICATION_RESTARTING',0,1,22
+	.byte	'APPLICATION_ACCESSIBLE',0,2,0,18
+	.byte	'ApplicationStateType',0,16,133,3,3
+	.word	5632
+	.byte	21,16,177,3,9,1,22
+	.byte	'OSServiceId_GetApplicationID',0,0,22
+	.byte	'OSServiceId_GetISRID',0,1,22
+	.byte	'OSServiceId_CallTrustedFunction',0,2,22
+	.byte	'OSServiceId_CheckISRMemoryAccess',0,3,22
+	.byte	'OSServiceId_CheckTaskMemoryAccess',0,4,22
+	.byte	'OSServiceId_CheckObjectAccess',0,5,22
+	.byte	'OSServiceId_CheckObjectOwnership',0,6,22
+	.byte	'OSServiceId_StartScheduleTableRel',0,7,22
+	.byte	'OSServiceId_StartScheduleTableAbs',0,8,22
+	.byte	'OSServiceId_StopScheduleTable',0,9,22
+	.byte	'OSServiceId_NextScheduleTable',0,10,22
+	.byte	'OSServiceId_StartScheduleTableSynchron',0,11,22
+	.byte	'OSServiceId_SyncScheduleTable',0,12,22
+	.byte	'OSServiceId_SetScheduleTableAsync',0,13,22
+	.byte	'OSServiceId_GetScheduleTableStatus',0,14,22
+	.byte	'OSServiceId_IncrementCounter',0,15,22
+	.byte	'OSServiceId_GetCounterValue',0,16,22
+	.byte	'OSServiceId_GetElapsedValue',0,17,22
+	.byte	'OSServiceId_TerminateApplication',0,18,22
+	.byte	'OSServiceId_AllowAccess',0,19,22
+	.byte	'OSServiceId_GetApplicationState',0,20,22
+	.byte	'OSServiceId_GetNumberOfActivatedCores',0,21,22
+	.byte	'OSServiceId_GetCoreID',0,22,22
+	.byte	'OSServiceId_StartCore',0,23,22
+	.byte	'OSServiceId_StartNonAutosarCore',0,24,22
+	.byte	'OSServiceId_GetSpinlock',0,25,22
+	.byte	'OSServiceId_ReleaseSpinlock',0,26,22
+	.byte	'OSServiceId_TryToGetSpinlock',0,27,22
+	.byte	'OSServiceId_ShutdownAllCores',0,28,22
+	.byte	'OSServiceId_ControlIdle',0,29,22
+	.byte	'OSServiceId_IocSend',0,30,22
+	.byte	'OSServiceId_IocWrite',0,31,22
+	.byte	'OSServiceId_IocSendGroup',0,32,22
+	.byte	'OSServiceId_IocWriteGroup',0,33,22
+	.byte	'OSServiceId_IocReceive',0,34,22
+	.byte	'OSServiceId_IocRead',0,35,22
+	.byte	'OSServiceId_IocReceiveGroup',0,36,22
+	.byte	'OSServiceId_IocReadGroup',0,37,22
+	.byte	'OSServiceId_IocEmptyQueue',0,38,22
+	.byte	'OSServiceId_GetCurrentApplicationID',0,39,22
+	.byte	'OSServiceId_GetExceptionContext',0,160,1,22
+	.byte	'OSServiceId_SetExceptionContext',0,161,1,22
+	.byte	'OSServiceId_CallNonTrustedFunction',0,162,1,22
+	.byte	'OSServiceId_AppKill',0,163,1,22
+	.byte	'OSServiceId_AlarmActionSetEvent',0,164,1,22
+	.byte	'OSServiceId_AlarmActionActivateTask',0,165,1,22
+	.byte	'OSServiceId_AlarmActionIncrementCounter',0,166,1,22
+	.byte	'OSServiceId_AlarmActionCallback',0,167,1,22
+	.byte	'OSServiceId_TimerIsr',0,168,1,22
+	.byte	'OSServiceId_IsrWrapper',0,169,1,22
+	.byte	'OSServiceId_GetTaskStackUsage',0,170,1,22
+	.byte	'OSServiceId_GetISRStackUsage',0,171,1,22
+	.byte	'OSServiceId_GetKernelStackUsage',0,172,1,22
+	.byte	'OSServiceId_GetStartupHookStackUsage',0,173,1,22
+	.byte	'OSServiceId_GetErrorHookStackUsage',0,174,1,22
+	.byte	'OSServiceId_GetShutdownHookStackUsage',0,175,1,22
+	.byte	'OSServiceId_GetProtectionHookStackUsage',0,176,1,22
+	.byte	'OSServiceId_GetSemaphore',0,177,1,22
+	.byte	'OSServiceId_ReleaseSemaphore',0,178,1,22
+	.byte	'OSServiceId_ScheduleTableActivateTask',0,179,1,22
+	.byte	'OSServiceId_ScheduleTableSetEvent',0,180,1,22
+	.byte	'OSServiceId_DisableInterruptSource',0,181,1,22
+	.byte	'OSServiceId_EnableInterruptSource',0,182,1,22
+	.byte	'OSServiceId_ClearPendingInterrupt',0,183,1,22
+	.byte	'OSServiceId_GetUnhandledIrq',0,184,1,22
+	.byte	'OSServiceId_GetUnhandledExc',0,185,1,22
+	.byte	'OSServiceId_HookCallCallback',0,186,1,22
+	.byte	'OSServiceId_IsInterruptSourceEnabled',0,187,1,22
+	.byte	'OSServiceId_IsInterruptPending',0,188,1,22
+	.byte	'OSServiceId_CallFastTrustedFunction',0,189,1,22
+	.byte	'OSServiceId_BarrierSynchronize',0,190,1,22
+	.byte	'OSServiceId_InitialEnableInterruptSources',0,191,1,22
+	.byte	'OSServiceId_GetCoreStartState',0,192,1,22
+	.byte	'OSServiceId_StartOS',0,208,1,22
+	.byte	'OSServiceId_GetActiveApplicationMode',0,210,1,22
+	.byte	'OSServiceId_DisableAllInterrupts',0,211,1,22
+	.byte	'OSServiceId_EnableAllInterrupts',0,212,1,22
+	.byte	'OSServiceId_SuspendAllInterrupts',0,213,1,22
+	.byte	'OSServiceId_ResumeAllInterrupts',0,214,1,22
+	.byte	'OSServiceId_SuspendOSInterrupts',0,215,1,22
+	.byte	'OSServiceId_ResumeOSInterrupts',0,216,1,22
+	.byte	'OSServiceId_ActivateTask',0,217,1,22
+	.byte	'OSServiceId_TerminateTask',0,218,1,22
+	.byte	'OSServiceId_ChainTask',0,219,1,22
+	.byte	'OSServiceId_GetTaskID',0,220,1,22
+	.byte	'OSServiceId_GetTaskState',0,221,1,22
+	.byte	'OSServiceId_Schedule',0,222,1,22
+	.byte	'OSServiceId_SetEvent',0,223,1,22
+	.byte	'OSServiceId_ClearEvent',0,224,1,22
+	.byte	'OSServiceId_GetEvent',0,225,1,22
+	.byte	'OSServiceId_WaitEvent',0,226,1,22
+	.byte	'OSServiceId_GetAlarmBase',0,227,1,22
+	.byte	'OSServiceId_GetAlarm',0,228,1,22
+	.byte	'OSServiceId_SetRelAlarm',0,229,1,22
+	.byte	'OSServiceId_SetAbsAlarm',0,230,1,22
+	.byte	'OSServiceId_CancelAlarm',0,231,1,22
+	.byte	'OSServiceId_GetResource',0,232,1,22
+	.byte	'OSServiceId_ReleaseResource',0,233,1,22
+	.byte	'OSSERVICEID_COUNT',0,255,1,0,18
+	.byte	'OSServiceIdType',0,16,156,4,3
+	.word	5744
+	.byte	21,16,172,4,9,2,22
+	.byte	'OS_STATUS_OK',0,0,22
+	.byte	'OS_STATUS_CALLEVEL',0,2,22
+	.byte	'OS_STATUS_LIMIT',0,4,22
+	.byte	'OS_STATUS_RESOURCE',0,6,22
+	.byte	'OS_STATUS_SERVICEID',0,9,22
+	.byte	'OS_STATUS_ILLEGAL_ADDRESS',0,10,22
+	.byte	'OS_STATUS_MISSINGEND',0,11,22
+	.byte	'OS_STATUS_DISABLEDINT',0,12,22
+	.byte	'OS_STATUS_STACKFAULT',0,13,22
+	.byte	'OS_STATUS_PROTECTION_MEMORY',0,14,22
+	.byte	'OS_STATUS_PROTECTION_TIME',0,15,22
+	.byte	'OS_STATUS_PROTECTION_ARRIVAL',0,16,22
+	.byte	'OS_STATUS_PROTECTION_LOCKED',0,17,22
+	.byte	'OS_STATUS_PROTECTION_EXCEPTION',0,18,22
+	.byte	'OS_STATUS_INTERFERENCE_DEADLOCK',0,19,22
+	.byte	'OS_STATUS_NESTING_DEADLOCK',0,20,22
+	.byte	'OS_STATUS_SPINLOCK',0,21,22
+	.byte	'OS_STATUS_CORE',0,22,22
+	.byte	'OS_STATUS_OVERFLOW',0,245,1,22
+	.byte	'OS_STATUS_KILL_KERNEL_OBJ',0,246,1,22
+	.byte	'OS_STATUS_NO_RESTARTTASK',0,247,1,22
+	.byte	'OS_STATUS_CALL_NOT_ALLOWED',0,248,1,22
+	.byte	'OS_STATUS_FUNCTION_UNAVAILABLE',0,249,1,22
+	.byte	'OS_STATUS_PROTECTION_SYSCALL',0,250,1,22
+	.byte	'OS_STATUS_PROTECTION_IRQ',0,251,1,22
+	.byte	'OS_STATUS_API_ERROR',0,252,1,22
+	.byte	'OS_STATUS_ASSERTION',0,253,1,22
+	.byte	'OS_STATUS_OVERLOAD',0,254,1,22
+	.byte	'OS_STATUS_ACCESSRIGHTS_1',0,129,2,22
+	.byte	'OS_STATUS_CALLEVEL_SHARED_STACK',0,130,2,22
+	.byte	'OS_STATUS_ID_1',0,131,2,22
+	.byte	'OS_STATUS_UNLOCKED',0,133,2,22
+	.byte	'OS_STATUS_STATE_1',0,135,2,22
+	.byte	'OS_STATUS_VALUE_IS_ZERO_1',0,136,2,22
+	.byte	'OS_STATUS_CORE_CROSS_DATA',0,150,2,22
+	.byte	'OS_STATUS_PARAM_POINTER_1',0,151,2,22
+	.byte	'OS_STATUS_STACKUSAGE_DISABLED_BY_CONFIG',0,241,3,22
+	.byte	'OS_STATUS_NO_BARRIER_PARTICIPANT',0,242,3,22
+	.byte	'OS_STATUS_UNIMPLEMENTED_CLEARPENDING',0,243,3,22
+	.byte	'OS_STATUS_NO_NTFSTACK_POOL_EMPTY',0,244,3,22
+	.byte	'OS_STATUS_ACCESSRIGHTS_2',0,129,4,22
+	.byte	'OS_STATUS_CALLEVEL_CROSS_CORE_SYNC',0,130,4,22
+	.byte	'OS_STATUS_ID_2',0,131,4,22
+	.byte	'OS_STATUS_NOFUNC_1',0,133,4,22
+	.byte	'OS_STATUS_STATE_2',0,135,4,22
+	.byte	'OS_STATUS_VALUE_IS_ZERO_2',0,136,4,22
+	.byte	'OS_STATUS_PARAM_POINTER_2',0,151,4,22
+	.byte	'OS_STATUS_EVENT_DISABLED_BY_CONFIG',0,241,5,22
+	.byte	'OS_STATUS_UNIMPLEMENTED_EXCEPTIONCONTEXT',0,243,5,22
+	.byte	'OS_STATUS_NO_NTFSTACK_APPLIMIT_EXCEEDED',0,244,5,22
+	.byte	'OS_STATUS_NOTACCESSIBLE_1',0,129,6,22
+	.byte	'OS_STATUS_ID_TYPE_1',0,131,6,22
+	.byte	'OS_STATUS_NOFUNC_2',0,133,6,22
+	.byte	'OS_STATUS_STATE_STOPPED',0,135,6,22
+	.byte	'OS_STATUS_VALUE_IS_TOO_HIGH_1',0,136,6,22
+	.byte	'OS_STATUS_PARAM_POINTER_3',0,151,6,22
+	.byte	'OS_STATUS_NOTACCESSIBLE_2',0,129,8,22
+	.byte	'OS_STATUS_ID_DIFFERENT_COUNTER',0,131,8,22
+	.byte	'OS_STATUS_SPINLOCK_ORDER',0,133,8,22
+	.byte	'OS_STATUS_STATE_RUNNING',0,135,8,22
+	.byte	'OS_STATUS_VALUE_IS_TOO_HIGH_2',0,136,8,22
+	.byte	'OS_STATUS_NOEXTENDEDTASK_1',0,129,10,22
+	.byte	'OS_STATUS_ID_DIFFERENT_SYNC',0,131,10,22
+	.byte	'OS_STATUS_STOPPED_1',0,133,10,22
+	.byte	'OS_STATUS_STATE_NEXTED',0,135,10,22
+	.byte	'OS_STATUS_VALUE_IS_TOO_HIGH_3',0,136,10,22
+	.byte	'OS_STATUS_NOEXTENDEDTASK_2',0,129,12,22
+	.byte	'OS_STATUS_HOOK_NOT_AVAILABLE',0,131,12,22
+	.byte	'OS_STATUS_NOT_STOPPED_2',0,133,12,22
+	.byte	'OS_STATUS_STATE_WAITING',0,135,12,22
+	.byte	'OS_STATUS_VALUE_IS_OUT_OF_BOUNDS_1',0,136,12,22
+	.byte	'OS_STATUS_NOEXTENDEDTASK_CALLER',0,129,14,22
+	.byte	'OS_STATUS_NEXTED_1',0,133,14,22
+	.byte	'OS_STATUS_STATE_NO_RESTART',0,135,14,22
+	.byte	'OS_STATUS_VALUE_IS_OUT_OF_BOUNDS_2',0,136,14,22
+	.byte	'OS_STATUS_LOCKED',0,129,16,22
+	.byte	'OS_STATUS_KILLING_IS_DISABLED',0,133,16,22
+	.byte	'OS_STATUS_STATE_ALREADY_TERMINATED',0,135,16,22
+	.byte	'OS_STATUS_VALUE_IS_TOO_LOW_1',0,136,16,22
+	.byte	'OS_STATUS_PRIORITY',0,129,18,22
+	.byte	'OS_STATUS_ORDER',0,133,18,22
+	.byte	'OS_STATUS_STATE_RESTARTING_NO_MEMBER',0,135,18,22
+	.byte	'OS_STATUS_VALUE_IS_TOO_LOW_2',0,136,18,22
+	.byte	'OS_STATUS_NOT_THE_OWNER_1',0,129,20,22
+	.byte	'OS_STATUS_STATE_ALREADY_RESTARTING',0,135,20,22
+	.byte	'OS_STATUS_VALUE_IS_TOO_LOW_3',0,136,20,22
+	.byte	'OS_STATUS_VALUE_IS_NOT_BOOLEAN',0,136,22,0,18
+	.byte	'Os_StatusType',0,16,232,5,3
+	.word	8914
+	.byte	12,16,133,6,9,4,16
+	.byte	'Service',0
+	.word	5744
+	.byte	1,2,35,0,16
+	.byte	'Error',0
+	.word	277
+	.byte	1,2,35,1,16
+	.byte	'DetailedError',0
+	.word	8914
+	.byte	2,2,35,2,0,18
+	.byte	'Os_ErrorInformationType',0,16,143,6,3
+	.word	11444
+	.byte	21,16,175,6,9,1,22
+	.byte	'SCHEDULETABLE_STOPPED',0,0,22
+	.byte	'SCHEDULETABLE_NEXT',0,1,22
+	.byte	'SCHEDULETABLE_WAITING',0,2,22
+	.byte	'SCHEDULETABLE_RUNNING',0,3,22
+	.byte	'SCHEDULETABLE_RUNNING_AND_SYNCHRONOUS',0,4,0,18
+	.byte	'ScheduleTableStatusType',0,16,192,6,3
+	.word	11539
+	.byte	18
+	.byte	'Os_AccessCheckAddress',0,16,199,6,29
+	.word	256
+	.byte	21,16,211,6,9,1,22
+	.byte	'OS_MEM_ACCESS_TYPE_NON',0,0,22
+	.byte	'OS_MEM_ACCESS_TYPE_R',0,1,22
+	.byte	'OS_MEM_ACCESS_TYPE_READ',0,1,22
+	.byte	'OS_MEM_ACCESS_TYPE_W',0,2,22
+	.byte	'OS_MEM_ACCESS_TYPE_WRITE',0,2,22
+	.byte	'OS_MEM_ACCESS_TYPE_RW',0,3,22
+	.byte	'OS_MEM_ACCESS_TYPE_EXECUTE',0,4,22
+	.byte	'OS_MEM_ACCESS_TYPE_X',0,4,22
+	.byte	'OS_MEM_ACCESS_TYPE_RX',0,5,22
+	.byte	'OS_MEM_ACCESS_TYPE_WX',0,6,22
+	.byte	'OS_MEM_ACCESS_TYPE_RWX',0,7,22
+	.byte	'OS_MEM_ACCESS_TYPE_S',0,8,22
+	.byte	'OS_MEM_ACCESS_TYPE_STACK',0,8,22
+	.byte	'OS_MEM_ACCESS_TYPE_RS',0,9,22
+	.byte	'OS_MEM_ACCESS_TYPE_WS',0,10,22
+	.byte	'OS_MEM_ACCESS_TYPE_RWS',0,11,22
+	.byte	'OS_MEM_ACCESS_TYPE_XS',0,12,22
+	.byte	'OS_MEM_ACCESS_TYPE_RXS',0,13,22
+	.byte	'OS_MEM_ACCESS_TYPE_WXS',0,14,22
+	.byte	'OS_MEM_ACCESS_TYPE_RWXS',0,15,0,18
+	.byte	'Os_MemAccessType',0,16,233,6,3
+	.word	11743
+	.byte	18
+	.byte	'unsigned_int',0,17,75,22
+	.word	178
+	.byte	18
+	.byte	'Mcu_ExternalClockConfigType',0,2,212,1,18
+	.word	256
+	.byte	18
+	.byte	'Mcu_ClockType',0,2,217,1,18
+	.word	256
+	.byte	18
+	.byte	'Mcu_RamSectionType',0,2,222,1,18
+	.word	256
+	.byte	18
+	.byte	'Mcu_RamSizeType',0,2,237,1,18
+	.word	256
+	.byte	18
+	.byte	'Mcu_RamWriteSizeType',0,2,241,1,18
+	.word	256
+	.byte	18
+	.byte	'Mcu_RamPrstDatType',0,2,245,1,19
+	.word	1240
+	.byte	18
+	.byte	'Mcu_PllStatusType',0,2,132,2,3
+	.word	3042
+	.byte	18
+	.byte	'Mcu_SystemPllConfigType',0,2,235,2,3
+	.word	384
+	.byte	18
+	.byte	'Mcu_PeripheralPllConfigType',0,2,251,2,3
+	.word	525
+	.byte	18
+	.byte	'Mcu_PllDistributionConfigType',0,2,143,3,3
+	.word	674
+	.byte	18
+	.byte	'Mcu_ClockConfigType',0,2,177,3,3
+	.word	778
+	.byte	18
+	.byte	'Mcu_RamConfigType',0,2,193,3,3
+	.word	1266
+	.byte	18
+	.byte	'Mcu_ModeEvrcCtrlType',0,2,206,3,3
+	.word	2383
+	.byte	18
+	.byte	'Mcu_LowPowerModeType',0,2,242,3,3
+	.word	2457
+	.byte	18
+	.byte	'Mcu_GtmExtClkType',0,2,128,4,3
+	.word	1392
+	.byte	18
+	.byte	'Mcu_GtmClockSettingType',0,2,151,4,3
+	.word	1462
+	.byte	18
+	.byte	'Mcu_GtmClusterConfigType',0,2,166,4,3
+	.word	1670
+	.byte	18
+	.byte	'Mcu_GtmTomConfigType',0,2,188,4,3
+	.word	1763
+	.byte	18
+	.byte	'Mcu_GtmAtomConfigType',0,2,210,4,3
+	.word	1829
+	.byte	18
+	.byte	'Mcu_GtmAdcTrigType',0,2,221,4,3
+	.word	1897
+	.byte	18
+	.byte	'Mcu_GtmDsadcTrigType',0,2,229,4,3
+	.word	1961
+	.byte	18
+	.byte	'Mcu_GtmConfigType',0,2,137,5,3
+	.word	2039
+	.byte	18
+	.byte	'Mcu_ConfigType',0,2,190,5,3
+	.word	2605
+	.byte	3
+	.word	2605
+	.byte	27
+	.byte	'Mcu_Config',0,18,54,29
+	.word	12980
+	.byte	1,1,18
+	.byte	'BswM_ActionListsIterType',0,4,136,6,21
+	.word	277
+	.byte	18
+	.byte	'BswM_ImmediateUserIterType',0,4,148,6,21
+	.word	277
+	.byte	18
+	.byte	'BswM_ActionListQueueType',0,4,205,6,15
+	.word	277
+	.byte	18
+	.byte	'BswM_RulesIdxOfDeferredRulesType',0,4,208,6,15
+	.word	277
+	.byte	18
+	.byte	'BswM_ForcedActionListPriorityType',0,4,211,6,15
+	.word	277
+	.byte	18
+	.byte	'BswM_InitializedType',0,4,241,6,17
+	.word	277
+	.byte	18
+	.byte	'BswM_ModeRequestQueueType',0,4,244,6,15
+	.word	277
+	.byte	18
+	.byte	'BswM_PCPartitionConfigIdxOfPartitionIdentifiersType',0,4,247,6,15
+	.word	277
+	.byte	18
+	.byte	'BswM_PartitionSNVOfPartitionIdentifiersType',0,4,250,6,16
+	.word	256
+	.byte	18
+	.byte	'BswM_QueueSemaphoreType',0,4,253,6,15
+	.word	277
+	.byte	18
+	.byte	'BswM_QueueWrittenType',0,4,128,7,17
+	.word	277
+	.byte	18
+	.byte	'BswM_RuleStatesType',0,4,131,7,15
+	.word	277
+	.byte	18
+	.byte	'BswM_IdOfRulesType',0,4,134,7,15
+	.word	277
+	.byte	18
+	.byte	'BswM_RuleStatesIdxOfRulesType',0,4,140,7,15
+	.word	277
+	.byte	18
+	.byte	'BswM_RulesIndType',0,4,143,7,15
+	.word	277
+	.byte	18
+	.byte	'BswM_TimerStateType',0,4,194,7,15
+	.word	277
+	.byte	18
+	.byte	'BswM_TimerValueType',0,4,197,7,16
+	.word	256
+	.byte	18
+	.byte	'BswM_ModeType',0,4,210,7,16
+	.word	362
+	.byte	18
+	.byte	'BswM_HandleType',0,4,211,7,15
+	.word	277
+	.byte	28,1,1,5
+	.word	277
+	.byte	0,7
+	.word	13667
+	.byte	18
+	.byte	'BswM_InitGenVarAndInitALType',0,4,212,7,9
+	.word	13676
+	.byte	29
+	.word	277
+	.byte	1,1,5
+	.word	277
+	.byte	0,7
+	.word	13719
+	.byte	18
+	.byte	'BswM_RuleTableFctPtrType',0,4,213,7,9
+	.word	13732
+	.byte	7
+	.word	13719
+	.byte	18
+	.byte	'BswM_ActionListFuncType',0,4,214,7,9
+	.word	13771
+	.byte	18
+	.byte	'BswM_PartitionFunctionType',0,4,216,7,9
+	.word	4557
+	.byte	24
+	.byte	'sBswM_ActionListsType',0,4,229,7,16,4,16
+	.byte	'FctPtrOfActionLists',0
+	.word	13776
+	.byte	4,2,35,0,0,18
+	.byte	'BswM_ActionListsType',0,4,232,7,3
+	.word	13845
+	.byte	7
+	.word	13719
+	.byte	24
+	.byte	'sBswM_DeferredRulesType',0,4,235,7,16,1,16
+	.byte	'RulesIdxOfDeferredRules',0
+	.word	277
+	.byte	1,2,35,0,0,18
+	.byte	'BswM_DeferredRulesType',0,4,238,7,3
+	.word	13938
+	.byte	24
+	.byte	'sBswM_GenericMappingType',0,4,241,7,16,1,16
+	.byte	'BswM_GenericMappingNeverUsed',0
+	.word	277
+	.byte	1,2,35,0,0,18
+	.byte	'BswM_GenericMappingType',0,4,244,7,3
+	.word	14034
+	.byte	24
+	.byte	'sBswM_ImmediateUserType',0,4,247,7,16,1,16
+	.byte	'BswM_ImmediateUserNeverUsed',0
+	.word	277
+	.byte	1,2,35,0,0,18
+	.byte	'BswM_ImmediateUserType',0,4,250,7,3
+	.word	14137
+	.byte	24
+	.byte	'sBswM_PartitionIdentifiersType',0,4,253,7,16,6,16
+	.byte	'PartitionSNVOfPartitionIdentifiers',0
+	.word	256
+	.byte	4,2,35,0,16
+	.byte	'PCPartitionConfigIdxOfPartitionIdentifiers',0
+	.word	277
+	.byte	1,2,35,4,0,18
+	.byte	'BswM_PartitionIdentifiersType',0,4,129,8,3
+	.word	14237
+	.byte	24
+	.byte	'sBswM_RulesType',0,4,132,8,16,8,16
+	.byte	'IdOfRules',0
+	.word	277
+	.byte	1,2,35,0,16
+	.byte	'RuleStatesIdxOfRules',0
+	.word	277
+	.byte	1,2,35,1,16
+	.byte	'FctPtrOfRules',0
+	.word	13737
+	.byte	4,2,35,4,0,18
+	.byte	'BswM_RulesType',0,4,137,8,3
+	.word	14410
+	.byte	7
+	.word	13719
+	.byte	24
+	.byte	'BswM_ActionListQueueStructSTag',0,4,149,8,16,12,16
+	.byte	'AL_ESH_AL_RunToPostRun',0
+	.word	277
+	.byte	1,2,35,0,16
+	.byte	'AL_ESH_AL_WaitForNvMToShutdown',0
+	.word	277
+	.byte	1,2,35,1,16
+	.byte	'AL_ESH_AL_WakeupToPrep',0
+	.word	277
+	.byte	1,2,35,2,16
+	.byte	'AL_ESH_AL_WaitForNvMWakeup',0
+	.word	277
+	.byte	1,2,35,3,16
+	.byte	'AL_ESH_AL_WakeupToRun',0
+	.word	277
+	.byte	1,2,35,4,16
+	.byte	'AL_ESH_AL_InitToWakeup',0
+	.word	277
+	.byte	1,2,35,5,16
+	.byte	'AL_ESH_AL_PostRunToPrepShutdown',0
+	.word	277
+	.byte	1,2,35,6,16
+	.byte	'AL_ESH_AL_ESH_PostRunToPrepCheck',0
+	.word	277
+	.byte	1,2,35,7,16
+	.byte	'AL_ESH_AL_PostRunToRun',0
+	.word	277
+	.byte	1,2,35,8,16
+	.byte	'AL_ESH_AL_ExitPostRun',0
+	.word	277
+	.byte	1,2,35,9,16
+	.byte	'AL_ESH_AL_PrepShutdownToWaitForNvM',0
+	.word	277
+	.byte	1,2,35,10,16
+	.byte	'AL_INIT_AL_Initialize',0
+	.word	277
+	.byte	1,2,35,11,0,18
+	.byte	'BswM_ActionListQueueStructSType',0,4,163,8,3
+	.word	14534
+	.byte	24
+	.byte	'BswM_RuleStatesStructSTag',0,4,166,8,16,12,16
+	.byte	'R_ESH_RunToPostRun',0
+	.word	277
+	.byte	1,2,35,0,16
+	.byte	'R_ESH_WaitToShutdown',0
+	.word	277
+	.byte	1,2,35,1,16
+	.byte	'R_ESH_WakeupToPrep',0
+	.word	277
+	.byte	1,2,35,2,16
+	.byte	'R_ESH_WaitToWakeup',0
+	.word	277
+	.byte	1,2,35,3,16
+	.byte	'R_ESH_WakeupToRun',0
+	.word	277
+	.byte	1,2,35,4,16
+	.byte	'R_ESH_InitToWakeup',0
+	.word	277
+	.byte	1,2,35,5,16
+	.byte	'R_ESH_PostRunToPrepNested',0
+	.word	277
+	.byte	1,2,35,6,16
+	.byte	'R_ESH_PostRunNested',0
+	.word	277
+	.byte	1,2,35,7,16
+	.byte	'R_ESH_PostRun',0
+	.word	277
+	.byte	1,2,35,8,16
+	.byte	'R_ESH_PrepToWait',0
+	.word	277
+	.byte	1,2,35,9,0,18
+	.byte	'BswM_RuleStatesStructSType',0,4,178,8,3
+	.word	15037
+	.byte	24
+	.byte	'BswM_TimerStateStructSTag',0,4,181,8,16,1,16
+	.byte	'MRP_ESH_SelfRunRequestTimer',0
+	.word	277
+	.byte	1,2,35,0,0,18
+	.byte	'BswM_TimerStateStructSType',0,4,184,8,3
+	.word	15388
+	.byte	24
+	.byte	'BswM_TimerValueStructSTag',0,4,187,8,16,4,16
+	.byte	'MRP_ESH_SelfRunRequestTimer',0
+	.word	256
+	.byte	4,2,35,0,0,18
+	.byte	'BswM_TimerValueStructSType',0,4,190,8,3
+	.word	15494
+	.byte	24
+	.byte	'sBswM_PCPartitionConfigType',0,4,180,9,16,1,16
+	.byte	'BswM_PCPartitionConfigNeverUsed',0
+	.word	277
+	.byte	1,2,35,0,0,18
+	.byte	'BswM_PCPartitionConfigType',0,4,183,9,3
+	.word	15600
+	.byte	18
+	.byte	'BswM_PCConfigType',0,4,201,9,3
+	.word	3167
+	.byte	18
+	.byte	'BswM_ConfigType',0,4,203,9,27
+	.word	3167
+	.byte	18
+	.byte	'Port_n_ControlType',0,6,214,1,3
+	.word	3300
+	.byte	18
+	.byte	'Port_n_PinType',0,6,239,1,3
+	.word	3521
+	.byte	18
+	.byte	'Port_n_ConfigType',0,6,155,2,3
+	.word	3778
+	.byte	18
+	.byte	'Port_n_LVDSConfigType',0,6,185,2,3
+	.word	3920
+	.byte	18
+	.byte	'Port_n_PCSRConfigType',0,6,189,2,16
+	.word	256
+	.byte	18
+	.byte	'Port_ConfigType',0,6,212,2,3
+	.word	4052
+	.byte	3
+	.word	4052
+	.byte	27
+	.byte	'Port_Config',0,19,53,30
+	.word	15930
+	.byte	1,1,0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L33:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,38,0,73,19,0,0,4,46,1,3,8,54
+	.byte	15,39,12,63,12,60,12,0,0,5,5,0,73,19,0,0,6,53,0,73,19,0,0,7,15,0,73,19,0,0,8,46,1,3,8,73,19,54,15,39,12
+	.byte	63,12,60,12,0,0,9,5,0,3,8,73,19,0,0,10,46,1,3,8,58,15,59,15,57,15,54,15,39,12,63,12,60,12,0,0,11,5,0,3
+	.byte	8,58,15,59,15,57,15,73,19,0,0,12,19,1,58,15,59,15,57,15,11,15,0,0,13,13,0,3,8,11,15,73,19,13,15,12,15
+	.byte	56,9,0,0,14,1,1,11,15,73,19,0,0,15,33,0,47,15,0,0,16,13,0,3,8,73,19,11,15,56,9,0,0,17,59,0,3,8,0,0,18
+	.byte	22,0,3,8,58,15,59,15,57,15,73,19,0,0,19,46,1,3,8,58,15,59,15,57,15,73,19,54,15,39,12,63,12,60,12,0,0,20
+	.byte	46,0,3,8,58,15,59,15,57,15,73,19,54,15,39,12,63,12,60,12,0,0,21,4,1,58,15,59,15,57,15,11,15,0,0,22,40
+	.byte	0,3,8,28,13,0,0,23,46,0,3,8,58,15,59,15,57,15,54,15,39,12,63,12,60,12,0,0,24,19,1,3,8,58,15,59,15,57,15
+	.byte	11,15,0,0,25,21,0,54,15,0,0,26,21,0,54,15,39,12,0,0,27,52,0,3,8,58,15,59,15,57,15,73,19,63,12,60,12,0
+	.byte	0,28,21,1,54,15,39,12,0,0,29,21,1,73,19,54,15,39,12,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L34:
+	.word	.L118-.L117
+.L117:
+	.half	3
+	.word	.L120-.L119
+.L119:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'D:\\Zonal\\demo011\\tasking\\component\\Os\\Implementation',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\mcal\\Mcu\\ssc\\inc',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\component\\BswM\\Implementation',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\appl\\GenData',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\mcal\\Port\\ssc\\inc',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\component\\_Common\\Implementation',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc\\inc',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\appl\\GenData\\inc',0,0
+	.byte	'Os.h',0,1,0,0
+	.byte	'Mcu.h',0,2,0,0
+	.byte	'BswM.h',0,3,0,0
+	.byte	'BswM_Cfg.h',0,4,0,0
+	.byte	'Rte_Main.h',0,4,0,0
+	.byte	'Port.h',0,5,0,0
+	.byte	'..\\appl\\Source\\EcuM_Callout_Stubs.c',0,0,0,0
+	.byte	'Platform_Types.h',0,6,0,0
+	.byte	'Std_Types.h',0,6,0,0
+	.byte	'Rte_Type.h',0,4,0,0
+	.byte	'EcuM_Generated_Types.h',0,4,0,0
+	.byte	'EcuM_Cfg.h',0,4,0,0
+	.byte	'Os_Types_Lcfg.h',0,4,0,0
+	.byte	'Os_Hal_Os_Types.h',0,1,0,0
+	.byte	'Os_Hal_OsInt.h',0,1,0,0
+	.byte	'Os_Types.h',0,1,0,0
+	.byte	'Mcal_Compiler.h',0,7,0,0
+	.byte	'Mcu_PBcfg.h',0,8,0,0
+	.byte	'Port_PBcfg.h',0,8,0,0,0
+.L120:
+.L118:
+	.sdecl	'.debug_info',debug,cluster('EcuM_CheckWakeup')
+	.sect	'.debug_info'
+.L35:
+	.word	208
+	.half	3
+	.word	.L36
+	.byte	4,1
+	.byte	'..\\appl\\Source\\EcuM_Callout_Stubs.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
+	.word	.L38,.L37
+	.byte	2
+	.word	.L31
+	.byte	3
+	.byte	'EcuM_CheckWakeup',0,1,236,3,23,1,1,1
+	.word	.L28,.L95,.L27
+	.byte	4
+	.byte	'wakeupSource',0,1,236,3,62
+	.word	.L96,.L97
+	.byte	5
+	.word	.L28,.L95
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('EcuM_CheckWakeup')
+	.sect	'.debug_abbrev'
+.L36:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('EcuM_CheckWakeup')
+	.sect	'.debug_line'
+.L37:
+	.word	.L122-.L121
+.L121:
+	.half	3
+	.word	.L124-.L123
+.L123:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\appl\\Source\\EcuM_Callout_Stubs.c',0,0,0,0,0
+.L124:
+	.byte	5,1,7,0,5,2
+	.word	.L28
+	.byte	3,134,4,1,7,9
+	.half	.L39-.L28
+	.byte	0,1,1
+.L122:
+	.sdecl	'.debug_ranges',debug,cluster('EcuM_CheckWakeup')
+	.sect	'.debug_ranges'
+.L38:
+	.word	-1,.L28,0,.L39-.L28,0,0
+	.sdecl	'.debug_info',debug,cluster('EcuM_AL_SetProgrammableInterrupts')
+	.sect	'.debug_info'
+.L40:
+	.word	199
+	.half	3
+	.word	.L41
+	.byte	4,1
+	.byte	'..\\appl\\Source\\EcuM_Callout_Stubs.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
+	.word	.L43,.L42
+	.byte	2
+	.word	.L31
+	.byte	3
+	.byte	'EcuM_AL_SetProgrammableInterrupts',0,1,201,2,23,1,1,1
+	.word	.L26,.L98,.L25
+	.byte	4
+	.word	.L26,.L98
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('EcuM_AL_SetProgrammableInterrupts')
+	.sect	'.debug_abbrev'
+.L41:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('EcuM_AL_SetProgrammableInterrupts')
+	.sect	'.debug_line'
+.L42:
+	.word	.L126-.L125
+.L125:
+	.half	3
+	.word	.L128-.L127
+.L127:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\appl\\Source\\EcuM_Callout_Stubs.c',0,0,0,0,0
+.L128:
+	.byte	5,1,7,0,5,2
+	.word	.L26
+	.byte	3,211,2,1,7,9
+	.half	.L44-.L26
+	.byte	0,1,1
+.L126:
+	.sdecl	'.debug_ranges',debug,cluster('EcuM_AL_SetProgrammableInterrupts')
+	.sect	'.debug_ranges'
+.L43:
+	.word	-1,.L26,0,.L44-.L26,0,0
+	.sdecl	'.debug_info',debug,cluster('EcuM_StartOS')
+	.sect	'.debug_info'
+.L45:
+	.word	199
+	.half	3
+	.word	.L46
+	.byte	4,1
+	.byte	'..\\appl\\Source\\EcuM_Callout_Stubs.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
+	.word	.L48,.L47
+	.byte	2
+	.word	.L31
+	.byte	3
+	.byte	'EcuM_StartOS',0,1,171,2,23,1,1,1
+	.word	.L24,.L99,.L23
+	.byte	4
+	.byte	'appMode',0,1,171,2,48
+	.word	.L100,.L101
+	.byte	5
+	.word	.L24,.L99
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('EcuM_StartOS')
+	.sect	'.debug_abbrev'
+.L46:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('EcuM_StartOS')
+	.sect	'.debug_line'
+.L47:
+	.word	.L130-.L129
+.L129:
+	.half	3
+	.word	.L132-.L131
+.L131:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\appl\\Source\\EcuM_Callout_Stubs.c',0,0,0,0,0
+.L132:
+	.byte	5,11,7,0,5,2
+	.word	.L24
+	.byte	3,192,2,1,5,1,7,9
+	.half	.L49-.L24
+	.byte	3,6,0,1,1
+.L130:
+	.sdecl	'.debug_ranges',debug,cluster('EcuM_StartOS')
+	.sect	'.debug_ranges'
+.L48:
+	.word	-1,.L24,0,.L49-.L24,0,0
+	.sdecl	'.debug_info',debug,cluster('EcuM_ShutdownOS')
+	.sect	'.debug_info'
+.L50:
+	.word	202
+	.half	3
+	.word	.L51
+	.byte	4,1
+	.byte	'..\\appl\\Source\\EcuM_Callout_Stubs.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
+	.word	.L53,.L52
+	.byte	2
+	.word	.L31
+	.byte	3
+	.byte	'EcuM_ShutdownOS',0,1,168,1,23,1,1,1
+	.word	.L12,.L102,.L11
+	.byte	4
+	.byte	'ErrCode',0,1,168,1,54
+	.word	.L100,.L103
+	.byte	5
+	.word	.L12,.L102
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('EcuM_ShutdownOS')
+	.sect	'.debug_abbrev'
+.L51:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('EcuM_ShutdownOS')
+	.sect	'.debug_line'
+.L52:
+	.word	.L134-.L133
+.L133:
+	.half	3
+	.word	.L136-.L135
+.L135:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\appl\\Source\\EcuM_Callout_Stubs.c',0,0,0,0,0
+.L136:
+	.byte	5,14,7,0,5,2
+	.word	.L12
+	.byte	3,176,1,1,5,1,7,9
+	.half	.L54-.L12
+	.byte	3,7,0,1,1
+.L134:
+	.sdecl	'.debug_ranges',debug,cluster('EcuM_ShutdownOS')
+	.sect	'.debug_ranges'
+.L53:
+	.word	-1,.L12,0,.L54-.L12,0,0
+	.sdecl	'.debug_info',debug,cluster('EcuM_AL_SwitchOff')
+	.sect	'.debug_info'
+.L55:
+	.word	183
+	.half	3
+	.word	.L56
+	.byte	4,1
+	.byte	'..\\appl\\Source\\EcuM_Callout_Stubs.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
+	.word	.L58,.L57
+	.byte	2
+	.word	.L31
+	.byte	3
+	.byte	'EcuM_AL_SwitchOff',0,1,199,1,23,1,1,1
+	.word	.L16,.L104,.L15
+	.byte	4
+	.word	.L16,.L104
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('EcuM_AL_SwitchOff')
+	.sect	'.debug_abbrev'
+.L56:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('EcuM_AL_SwitchOff')
+	.sect	'.debug_line'
+.L57:
+	.word	.L138-.L137
+.L137:
+	.half	3
+	.word	.L140-.L139
+.L139:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\appl\\Source\\EcuM_Callout_Stubs.c',0,0,0,0,0
+.L140:
+	.byte	5,1,7,0,5,2
+	.word	.L16
+	.byte	3,209,1,1,7,9
+	.half	.L59-.L16
+	.byte	0,1,1
+.L138:
+	.sdecl	'.debug_ranges',debug,cluster('EcuM_AL_SwitchOff')
+	.sect	'.debug_ranges'
+.L58:
+	.word	-1,.L16,0,.L59-.L16,0,0
+	.sdecl	'.debug_info',debug,cluster('EcuM_AL_Reset')
+	.sect	'.debug_info'
+.L60:
+	.word	198
+	.half	3
+	.word	.L61
+	.byte	4,1
+	.byte	'..\\appl\\Source\\EcuM_Callout_Stubs.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
+	.word	.L63,.L62
+	.byte	2
+	.word	.L31
+	.byte	3
+	.byte	'EcuM_AL_Reset',0,1,212,1,23,1,1,1
+	.word	.L18,.L105,.L17
+	.byte	4
+	.byte	'Reset',0,1,212,1,52
+	.word	.L100,.L106
+	.byte	5
+	.word	.L18,.L105
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('EcuM_AL_Reset')
+	.sect	'.debug_abbrev'
+.L61:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('EcuM_AL_Reset')
+	.sect	'.debug_line'
+.L62:
+	.word	.L142-.L141
+.L141:
+	.half	3
+	.word	.L144-.L143
+.L143:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\appl\\Source\\EcuM_Callout_Stubs.c',0,0,0,0,0
+.L144:
+	.byte	5,1,7,0,5,2
+	.word	.L18
+	.byte	3,226,1,1,7,9
+	.half	.L64-.L18
+	.byte	0,1,1
+.L142:
+	.sdecl	'.debug_ranges',debug,cluster('EcuM_AL_Reset')
+	.sect	'.debug_ranges'
+.L63:
+	.word	-1,.L18,0,.L64-.L18,0,0
+	.sdecl	'.debug_info',debug,cluster('EcuM_ErrorHook')
+	.sect	'.debug_info'
+.L65:
+	.word	198
+	.half	3
+	.word	.L66
+	.byte	4,1
+	.byte	'..\\appl\\Source\\EcuM_Callout_Stubs.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
+	.word	.L68,.L67
+	.byte	2
+	.word	.L31
+	.byte	3
+	.byte	'EcuM_ErrorHook',0,1,111,23,1,1,1
+	.word	.L8,.L107,.L7
+	.byte	4
+	.byte	'reason',0,1,111,53
+	.word	.L100,.L108
+	.byte	5
+	.word	.L8,.L107
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('EcuM_ErrorHook')
+	.sect	'.debug_abbrev'
+.L66:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('EcuM_ErrorHook')
+	.sect	'.debug_line'
+.L67:
+	.word	.L146-.L145
+.L145:
+	.half	3
+	.word	.L148-.L147
+.L147:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\appl\\Source\\EcuM_Callout_Stubs.c',0,0,0,0,0
+.L148:
+	.byte	5,16,7,0,5,2
+	.word	.L8
+	.byte	3,250,0,1,5,3,9
+	.half	.L149-.L8
+	.byte	1,5,12,7,9
+	.half	.L3-.L149
+	.byte	3,2,1,5,1,9
+	.half	.L2-.L3
+	.byte	3,19,1,7,9
+	.half	.L69-.L2
+	.byte	0,1,1
+.L146:
+	.sdecl	'.debug_ranges',debug,cluster('EcuM_ErrorHook')
+	.sect	'.debug_ranges'
+.L68:
+	.word	-1,.L8,0,.L69-.L8,0,0
+	.sdecl	'.debug_info',debug,cluster('EcuM_OnGoOffOne')
+	.sect	'.debug_info'
+.L70:
+	.word	181
+	.half	3
+	.word	.L71
+	.byte	4,1
+	.byte	'..\\appl\\Source\\EcuM_Callout_Stubs.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
+	.word	.L73,.L72
+	.byte	2
+	.word	.L31
+	.byte	3
+	.byte	'EcuM_OnGoOffOne',0,1,155,1,23,1,1,1
+	.word	.L10,.L109,.L9
+	.byte	4
+	.word	.L10,.L109
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('EcuM_OnGoOffOne')
+	.sect	'.debug_abbrev'
+.L71:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('EcuM_OnGoOffOne')
+	.sect	'.debug_line'
+.L72:
+	.word	.L151-.L150
+.L150:
+	.half	3
+	.word	.L153-.L152
+.L152:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\appl\\Source\\EcuM_Callout_Stubs.c',0,0,0,0,0
+.L153:
+	.byte	5,1,7,0,5,2
+	.word	.L10
+	.byte	3,165,1,1,7,9
+	.half	.L74-.L10
+	.byte	0,1,1
+.L151:
+	.sdecl	'.debug_ranges',debug,cluster('EcuM_OnGoOffOne')
+	.sect	'.debug_ranges'
+.L73:
+	.word	-1,.L10,0,.L74-.L10,0,0
+	.sdecl	'.debug_info',debug,cluster('EcuM_OnGoOffTwo')
+	.sect	'.debug_info'
+.L75:
+	.word	181
+	.half	3
+	.word	.L76
+	.byte	4,1
+	.byte	'..\\appl\\Source\\EcuM_Callout_Stubs.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
+	.word	.L78,.L77
+	.byte	2
+	.word	.L31
+	.byte	3
+	.byte	'EcuM_OnGoOffTwo',0,1,186,1,23,1,1,1
+	.word	.L14,.L110,.L13
+	.byte	4
+	.word	.L14,.L110
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('EcuM_OnGoOffTwo')
+	.sect	'.debug_abbrev'
+.L76:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('EcuM_OnGoOffTwo')
+	.sect	'.debug_line'
+.L77:
+	.word	.L155-.L154
+.L154:
+	.half	3
+	.word	.L157-.L156
+.L156:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\appl\\Source\\EcuM_Callout_Stubs.c',0,0,0,0,0
+.L157:
+	.byte	5,1,7,0,5,2
+	.word	.L14
+	.byte	3,196,1,1,7,9
+	.half	.L79-.L14
+	.byte	0,1,1
+.L155:
+	.sdecl	'.debug_ranges',debug,cluster('EcuM_OnGoOffTwo')
+	.sect	'.debug_ranges'
+.L78:
+	.word	-1,.L14,0,.L79-.L14,0,0
+	.sdecl	'.debug_info',debug,cluster('EcuM_AL_DriverInitZero')
+	.sect	'.debug_info'
+.L80:
+	.word	188
+	.half	3
+	.word	.L81
+	.byte	4,1
+	.byte	'..\\appl\\Source\\EcuM_Callout_Stubs.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
+	.word	.L83,.L82
+	.byte	2
+	.word	.L31
+	.byte	3
+	.byte	'EcuM_AL_DriverInitZero',0,1,239,1,23,1,1,1
+	.word	.L20,.L111,.L19
+	.byte	4
+	.word	.L20,.L111
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('EcuM_AL_DriverInitZero')
+	.sect	'.debug_abbrev'
+.L81:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('EcuM_AL_DriverInitZero')
+	.sect	'.debug_line'
+.L82:
+	.word	.L159-.L158
+.L158:
+	.half	3
+	.word	.L161-.L160
+.L160:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\appl\\Source\\EcuM_Callout_Stubs.c',0,0,0,0,0
+.L161:
+	.byte	5,18,7,0,5,2
+	.word	.L20
+	.byte	3,240,1,1,5,17,9
+	.half	.L162-.L20
+	.byte	3,1,1,5,1,7,9
+	.half	.L84-.L162
+	.byte	3,11,0,1,1
+.L159:
+	.sdecl	'.debug_ranges',debug,cluster('EcuM_AL_DriverInitZero')
+	.sect	'.debug_ranges'
+.L83:
+	.word	-1,.L20,0,.L84-.L20,0,0
+	.sdecl	'.debug_info',debug,cluster('EcuM_AL_DriverInitOne')
+	.sect	'.debug_info'
+.L85:
+	.word	187
+	.half	3
+	.word	.L86
+	.byte	4,1
+	.byte	'..\\appl\\Source\\EcuM_Callout_Stubs.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
+	.word	.L88,.L87
+	.byte	2
+	.word	.L31
+	.byte	3
+	.byte	'EcuM_AL_DriverInitOne',0,1,130,2,23,1,1,1
+	.word	.L22,.L112,.L21
+	.byte	4
+	.word	.L22,.L112
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('EcuM_AL_DriverInitOne')
+	.sect	'.debug_abbrev'
+.L86:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('EcuM_AL_DriverInitOne')
+	.sect	'.debug_line'
+.L87:
+	.word	.L164-.L163
+.L163:
+	.half	3
+	.word	.L166-.L165
+.L165:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\appl\\Source\\EcuM_Callout_Stubs.c',0,0,0,0,0
+.L166:
+	.byte	5,14,7,0,5,2
+	.word	.L22
+	.byte	3,131,2,1,5,17,9
+	.half	.L167-.L22
+	.byte	3,1,1,5,61,9
+	.half	.L4-.L167
+	.byte	1,5,63,9
+	.half	.L168-.L4
+	.byte	1,5,87,7,9
+	.half	.L169-.L168
+	.byte	1,5,15,9
+	.half	.L170-.L169
+	.byte	3,1,1,5,17,9
+	.half	.L171-.L170
+	.byte	3,1,1,5,1,9
+	.half	.L89-.L171
+	.byte	3,11,0,1,1
+.L164:
+	.sdecl	'.debug_ranges',debug,cluster('EcuM_AL_DriverInitOne')
+	.sect	'.debug_ranges'
+.L88:
+	.word	-1,.L22,0,.L89-.L22,0,0
+	.sdecl	'.debug_info',debug,cluster('EcuM_BswErrorHook')
+	.sect	'.debug_info'
+.L90:
+	.word	229
+	.half	3
+	.word	.L91
+	.byte	4,1
+	.byte	'..\\appl\\Source\\EcuM_Callout_Stubs.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
+	.word	.L93,.L92
+	.byte	2
+	.word	.L31
+	.byte	3
+	.byte	'EcuM_BswErrorHook',0,1,238,4,23,1,1,1
+	.word	.L30,.L113,.L29
+	.byte	4
+	.byte	'BswModuleId',0,1,238,4,48
+	.word	.L114,.L115
+	.byte	4
+	.byte	'ErrorId',0,1,238,4,67
+	.word	.L100,.L116
+	.byte	5
+	.word	.L30,.L113
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('EcuM_BswErrorHook')
+	.sect	'.debug_abbrev'
+.L91:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('EcuM_BswErrorHook')
+	.sect	'.debug_line'
+.L92:
+	.word	.L173-.L172
+.L172:
+	.half	3
+	.word	.L175-.L174
+.L174:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\appl\\Source\\EcuM_Callout_Stubs.c',0,0,0,0,0
+.L175:
+	.byte	5,21,7,0,5,2
+	.word	.L30
+	.byte	3,250,4,1,5,3,9
+	.half	.L176-.L30
+	.byte	1,5,12,7,9
+	.half	.L6-.L176
+	.byte	3,3,1,5,1,9
+	.half	.L5-.L6
+	.byte	3,9,1,7,9
+	.half	.L94-.L5
+	.byte	0,1,1
+.L173:
+	.sdecl	'.debug_ranges',debug,cluster('EcuM_BswErrorHook')
+	.sect	'.debug_ranges'
+.L93:
+	.word	-1,.L30,0,.L94-.L30,0,0
+	.sdecl	'.debug_loc',debug,cluster('EcuM_AL_DriverInitOne')
+	.sect	'.debug_loc'
+.L21:
+	.word	-1,.L22,0,.L112-.L22
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('EcuM_AL_DriverInitZero')
+	.sect	'.debug_loc'
+.L19:
+	.word	-1,.L20,0,.L111-.L20
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('EcuM_AL_Reset')
+	.sect	'.debug_loc'
+.L17:
+	.word	-1,.L18,0,.L105-.L18
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L106:
+	.word	-1,.L18,0,.L105-.L18
+	.half	1
+	.byte	84
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('EcuM_AL_SetProgrammableInterrupts')
+	.sect	'.debug_loc'
+.L25:
+	.word	-1,.L26,0,.L98-.L26
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('EcuM_AL_SwitchOff')
+	.sect	'.debug_loc'
+.L15:
+	.word	-1,.L16,0,.L104-.L16
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('EcuM_BswErrorHook')
+	.sect	'.debug_loc'
+.L115:
+	.word	-1,.L30,0,.L113-.L30
+	.half	1
+	.byte	84
+	.word	0,0
+.L29:
+	.word	-1,.L30,0,.L113-.L30
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L116:
+	.word	-1,.L30,0,.L113-.L30
+	.half	1
+	.byte	85
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('EcuM_CheckWakeup')
+	.sect	'.debug_loc'
+.L27:
+	.word	-1,.L28,0,.L95-.L28
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L97:
+	.word	-1,.L28,0,.L95-.L28
+	.half	1
+	.byte	84
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('EcuM_ErrorHook')
+	.sect	'.debug_loc'
+.L7:
+	.word	-1,.L8,0,.L107-.L8
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L108:
+	.word	-1,.L8,0,.L107-.L8
+	.half	1
+	.byte	84
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('EcuM_OnGoOffOne')
+	.sect	'.debug_loc'
+.L9:
+	.word	-1,.L10,0,.L109-.L10
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('EcuM_OnGoOffTwo')
+	.sect	'.debug_loc'
+.L13:
+	.word	-1,.L14,0,.L110-.L14
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('EcuM_ShutdownOS')
+	.sect	'.debug_loc'
+.L11:
+	.word	-1,.L12,0,.L102-.L12
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L103:
+	.word	-1,.L12,0,.L102-.L12
+	.half	1
+	.byte	84
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('EcuM_StartOS')
+	.sect	'.debug_loc'
+.L23:
+	.word	-1,.L24,0,.L99-.L24
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L101:
+	.word	-1,.L24,0,.L99-.L24
+	.half	1
+	.byte	84
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L177:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,27,8,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('EcuM_ErrorHook')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L177,.L8,.L107-.L8
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('EcuM_OnGoOffOne')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L177,.L10,.L109-.L10
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('EcuM_ShutdownOS')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L177,.L12,.L102-.L12
+	.sdecl	'.debug_frame',debug,cluster('EcuM_OnGoOffTwo')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L177,.L14,.L110-.L14
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('EcuM_AL_SwitchOff')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L177,.L16,.L104-.L16
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('EcuM_AL_Reset')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L177,.L18,.L105-.L18
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('EcuM_AL_DriverInitZero')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L177,.L20,.L111-.L20
+	.sdecl	'.debug_frame',debug,cluster('EcuM_AL_DriverInitOne')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L177,.L22,.L112-.L22
+	.sdecl	'.debug_frame',debug,cluster('EcuM_StartOS')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L177,.L24,.L99-.L24
+	.sdecl	'.debug_frame',debug,cluster('EcuM_AL_SetProgrammableInterrupts')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L177,.L26,.L98-.L26
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('EcuM_CheckWakeup')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L177,.L28,.L95-.L28
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('EcuM_BswErrorHook')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L177,.L30,.L113-.L30
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+
+; ..\appl\Source\EcuM_Callout_Stubs.c	   648  #endif
+; ..\appl\Source\EcuM_Callout_Stubs.c	   649  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   650  #define ECUM_STOP_SEC_CODE
+; ..\appl\Source\EcuM_Callout_Stubs.c	   651  #include "MemMap.h"  /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\appl\Source\EcuM_Callout_Stubs.c	   652  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   653  #if 0
+; ..\appl\Source\EcuM_Callout_Stubs.c	   654  #endif
+; ..\appl\Source\EcuM_Callout_Stubs.c	   655  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   656  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   657  /**********************************************************************************************************************
+; ..\appl\Source\EcuM_Callout_Stubs.c	   658   *  END OF FILE: ECUM_CALLOUT_STUBS.C
+; ..\appl\Source\EcuM_Callout_Stubs.c	   659   *********************************************************************************************************************/
+; ..\appl\Source\EcuM_Callout_Stubs.c	   660  
+; ..\appl\Source\EcuM_Callout_Stubs.c	   661  
+
+	; Module end

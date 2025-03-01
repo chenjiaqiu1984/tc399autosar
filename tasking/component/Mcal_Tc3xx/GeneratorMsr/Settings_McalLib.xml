@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+============================================================================
+
+Copyright (c) 2021 by Vector Informatik GmbH. All rights reserved.
+
+This software is copyright protected and proprietary to Vector Informatik GmbH.
+Vector Informatik GmbH grants to you only those rights as set out in the license conditions.
+All other rights remain with Vector Informatik GmbH.
+
+============================================================================
+
+This file is needed for internal use.
+Please do not modify this file, otherwise the software may behave in
+unexpected way.
+
+============================================================================
+
+============================================================================
+                P R O J E C T
+============================================================================
+Module
+=======================
+
+============================================================================
+                R E V I S I O N   H I S T O R Y
+============================================================================
+Date		Version	Author	Description
+=========	=======	=======	=================================================
+Refer to Settings_TC3xx.xml
+*****************************************************************************
+-->
+<Settings>
+ <!-- internal behavior -->
+  <Settings Name="com.vector.cfg.model.services.bswintbehavior.synchronization.Settings">
+    <Settings Name="ModuleList">
+      <Settings Name="DrvMcalLib_Tc3xxInf01Asr4Sub">
+        <XmlSetting Name="Xml"><![CDATA[
+          <Synchronization>
+            <BswImplementationName>/AURIX2G/EcucDefs/McalLib_Impl</BswImplementationName>
+            <ModuleName>McalLib</ModuleName>
+            <ExclusiveAreas>
+				<ExclusiveArea name="PeripheralEndInit"/>                       
+				<ExclusiveArea name="SafetyEndInit"/>                       
+				<ExclusiveArea name="CpuEndInit"/>                       
+				<ExclusiveArea name="StmTimerResolution"/>                       
+            </ExclusiveAreas>
+            <TimingEvents>
+            </TimingEvents>
+          </Synchronization>
+        ]]></XmlSetting>
+      </Settings>
+    </Settings>
+  </Settings>	
+</Settings>

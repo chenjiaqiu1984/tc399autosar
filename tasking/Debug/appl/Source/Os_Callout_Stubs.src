@@ -1,0 +1,888 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 21092262 SN 73118428"
+	.compiler_invocation	"ctc --dep-file=appl\\Source\\.Os_Callout_Stubs.o.d --fp-model=c,f,l,n,r,S,T,z -D__CPU__=tc39xb -D__CPU_TC39XB__ --core=tc1.6.2 --iso=99 -DBRS_COMP_TASKING -ID:\\Zonal\\demo011\\tasking -ID:\\Zonal\\testdemo\\taskingdemo\\demo001 -ID:\\Zonal\\demo011\\tasking -ID:\\Zonal\\demo011\\tasking\\appl -ID:\\Zonal\\demo011\\tasking\\appl\\GenData -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\Components -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\ContractPhase -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\inc -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\src -ID:\\Zonal\\demo011\\tasking\\appl\\Include -ID:\\Zonal\\demo011\\tasking\\appl\\Source -ID:\\Zonal\\demo011\\tasking\\appl\\Source\\swc_test -ID:\\Zonal\\demo011\\tasking\\component -ID:\\Zonal\\demo011\\tasking\\component\\_Common -ID:\\Zonal\\demo011\\tasking\\component\\_Common\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\BswM -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\EcuM -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\Os -ID:\\Zonal\\demo011\\tasking\\component\\Os\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\Os\\BSWMD\\Os -ID:\\Zonal\\demo011\\tasking\\component\\Os\\BSWMD\\Os\\TC39xQ -ID:\\Zonal\\demo011\\tasking\\component\\Os\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\Os\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\Os\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug -ID:\\Zonal\\demo011\\tasking\\Debug\\appl -ID:\\Zonal\\demo011\\tasking\\Debug\\appl\\GenData -ID:\\Zonal\\demo011\\tasking\\Debug\\appl\\GenData\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\appl\\Source -ID:\\Zonal\\demo011\\tasking\\Debug\\component -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\BswM -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\BswM\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\EcuM -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\EcuM\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\Os -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\Os\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\VStdLib -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\VStdLib\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Dio -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Dio\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Dio\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\McalLib -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\McalLib\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\McalLib\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Mcu -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Mcu\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Mcu\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Port -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Port\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Port\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Platform -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Platform\\AS440 -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Sfr -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Sfr\\TC39xB -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Sfr\\TC39xB\\_Reg -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc\\inc\\AS440 -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal\\Port -ID:\\Zonal\\demo011\\tasking\\mcal\\Port\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\Port\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\Port\\ssc\\src -g2 --make-target=appl\\Source\\Os_Callout_Stubs.o -t2 --language=-gcc,-volatile,+strings,-kanji --default-near-size=0 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o appl\\Source\\Os_Callout_Stubs.src ..\\appl\\Source\\Os_Callout_Stubs.c"
+	.compiler_name		"ctc"
+	;source	'..\\appl\\Source\\Os_Callout_Stubs.c'
+
+	
+$TC162
+	
+	.sdecl	'.text.OS_ERRORHOOK_CODE',code,cluster('ErrorHook')
+	.sect	'.text.OS_ERRORHOOK_CODE'
+	.align	2
+	
+	.global	ErrorHook
+
+; ..\appl\Source\Os_Callout_Stubs.c	     1  /**********************************************************************************************************************
+; ..\appl\Source\Os_Callout_Stubs.c	     2   *  COPYRIGHT
+; ..\appl\Source\Os_Callout_Stubs.c	     3   *  -------------------------------------------------------------------------------------------------------------------
+; ..\appl\Source\Os_Callout_Stubs.c	     4   *  \verbatim
+; ..\appl\Source\Os_Callout_Stubs.c	     5   *
+; ..\appl\Source\Os_Callout_Stubs.c	     6   *                 This software is copyright protected and proprietary to Vector Informatik GmbH.
+; ..\appl\Source\Os_Callout_Stubs.c	     7   *                 Vector Informatik GmbH grants to you only those rights as set out in the license conditions.
+; ..\appl\Source\Os_Callout_Stubs.c	     8   *                 All other rights remain with Vector Informatik GmbH.
+; ..\appl\Source\Os_Callout_Stubs.c	     9   *  \endverbatim
+; ..\appl\Source\Os_Callout_Stubs.c	    10   *  -------------------------------------------------------------------------------------------------------------------
+; ..\appl\Source\Os_Callout_Stubs.c	    11   *  LICENSE
+; ..\appl\Source\Os_Callout_Stubs.c	    12   *  -------------------------------------------------------------------------------------------------------------------
+; ..\appl\Source\Os_Callout_Stubs.c	    13   *            Module: Os
+; ..\appl\Source\Os_Callout_Stubs.c	    14   *           Program: MSR_Vector_SLP4
+; ..\appl\Source\Os_Callout_Stubs.c	    15   *          Customer: Aptiv Electronics (Suzhou) Co., Ltd.
+; ..\appl\Source\Os_Callout_Stubs.c	    16   *       Expiry Date: Not restricted
+; ..\appl\Source\Os_Callout_Stubs.c	    17   *  Ordered Derivat.: TC399XP
+; ..\appl\Source\Os_Callout_Stubs.c	    18   *    License Scope : The usage is restricted to CBD2100010_D00
+; ..\appl\Source\Os_Callout_Stubs.c	    19   *
+; ..\appl\Source\Os_Callout_Stubs.c	    20   *  -------------------------------------------------------------------------------------------------------------------
+; ..\appl\Source\Os_Callout_Stubs.c	    21   *  FILE DESCRIPTION
+; ..\appl\Source\Os_Callout_Stubs.c	    22   *  -------------------------------------------------------------------------------------------------------------------
+; ..\appl\Source\Os_Callout_Stubs.c	    23   *              File: Os_Callout_Stubs.c
+; ..\appl\Source\Os_Callout_Stubs.c	    24   *   Generation Time: 2025-04-01 10:51:24
+; ..\appl\Source\Os_Callout_Stubs.c	    25   *           Project: tc399demo - Version 1.0
+; ..\appl\Source\Os_Callout_Stubs.c	    26   *          Delivery: CBD2100010_D00
+; ..\appl\Source\Os_Callout_Stubs.c	    27   *      Tool Version: DaVinci Configurator (beta) 5.22.45 SP3
+; ..\appl\Source\Os_Callout_Stubs.c	    28   *
+; ..\appl\Source\Os_Callout_Stubs.c	    29   *
+; ..\appl\Source\Os_Callout_Stubs.c	    30   *********************************************************************************************************************/
+; ..\appl\Source\Os_Callout_Stubs.c	    31  
+; ..\appl\Source\Os_Callout_Stubs.c	    32  /**********************************************************************************************************************
+; ..\appl\Source\Os_Callout_Stubs.c	    33   ! BETA VERSION                                                                                                       !
+; ..\appl\Source\Os_Callout_Stubs.c	    34   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+; ..\appl\Source\Os_Callout_Stubs.c	    35   ! This version of DaVinci Configurator Pro and/or the related Basic Software Package is BETA software.               !
+; ..\appl\Source\Os_Callout_Stubs.c	    36   ! BETA Software is basically operable, but not sufficiently tested, verified and/or qualified for use in series      !
+; ..\appl\Source\Os_Callout_Stubs.c	    37   ! production and/or in vehicles operating on public or non-public roads.                                             !
+; ..\appl\Source\Os_Callout_Stubs.c	    38   ! In particular, without limitation, BETA Software may cause unpredictable ECU behavior, may not provide all         !
+; ..\appl\Source\Os_Callout_Stubs.c	    39   ! functions necessary for use in series production and/or may not comply with quality requirements which are         !
+; ..\appl\Source\Os_Callout_Stubs.c	    40   ! necessary according to the state of the art. BETA Software must not be used in series production.                  !
+; ..\appl\Source\Os_Callout_Stubs.c	    41   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+; ..\appl\Source\Os_Callout_Stubs.c	    42  **********************************************************************************************************************/
+; ..\appl\Source\Os_Callout_Stubs.c	    43  
+; ..\appl\Source\Os_Callout_Stubs.c	    44  #define OS_CALLOUT_STUBS_SOURCE
+; ..\appl\Source\Os_Callout_Stubs.c	    45  
+; ..\appl\Source\Os_Callout_Stubs.c	    46  /**********************************************************************************************************************
+; ..\appl\Source\Os_Callout_Stubs.c	    47   *  INCLUDES
+; ..\appl\Source\Os_Callout_Stubs.c	    48   *********************************************************************************************************************/
+; ..\appl\Source\Os_Callout_Stubs.c	    49  
+; ..\appl\Source\Os_Callout_Stubs.c	    50  #include "Os.h"
+; ..\appl\Source\Os_Callout_Stubs.c	    51  
+; ..\appl\Source\Os_Callout_Stubs.c	    52  /**********************************************************************************************************************
+; ..\appl\Source\Os_Callout_Stubs.c	    53   * DO NOT CHANGE THIS COMMENT!           <USERBLOCK OS_Callout_Stubs_Include>
+; ..\appl\Source\Os_Callout_Stubs.c	    54   *********************************************************************************************************************/
+; ..\appl\Source\Os_Callout_Stubs.c	    55  #include "EcuM.h"
+; ..\appl\Source\Os_Callout_Stubs.c	    56  /**********************************************************************************************************************
+; ..\appl\Source\Os_Callout_Stubs.c	    57   * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>
+; ..\appl\Source\Os_Callout_Stubs.c	    58   *********************************************************************************************************************/
+; ..\appl\Source\Os_Callout_Stubs.c	    59  
+; ..\appl\Source\Os_Callout_Stubs.c	    60  
+; ..\appl\Source\Os_Callout_Stubs.c	    61  /**********************************************************************************************************************
+; ..\appl\Source\Os_Callout_Stubs.c	    62   *  GLOBAL FUNCTIONS
+; ..\appl\Source\Os_Callout_Stubs.c	    63   *********************************************************************************************************************/
+; ..\appl\Source\Os_Callout_Stubs.c	    64  
+; ..\appl\Source\Os_Callout_Stubs.c	    65  /**********************************************************************************************************************
+; ..\appl\Source\Os_Callout_Stubs.c	    66   *  StartupHook()
+; ..\appl\Source\Os_Callout_Stubs.c	    67   *********************************************************************************************************************/
+; ..\appl\Source\Os_Callout_Stubs.c	    68  #if OS_CFG_STARTUPHOOK_SYSTEM == STD_ON
+; ..\appl\Source\Os_Callout_Stubs.c	    69  # define OS_START_SEC_STARTUPHOOK_CODE
+; ..\appl\Source\Os_Callout_Stubs.c	    70  # include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\appl\Source\Os_Callout_Stubs.c	    71  
+; ..\appl\Source\Os_Callout_Stubs.c	    72  FUNC(void, OS_STARTUPHOOK_CODE) StartupHook(void)
+; ..\appl\Source\Os_Callout_Stubs.c	    73  {
+; ..\appl\Source\Os_Callout_Stubs.c	    74  /**********************************************************************************************************************
+; ..\appl\Source\Os_Callout_Stubs.c	    75   * DO NOT CHANGE THIS COMMENT!           <USERBLOCK OS_Callout_Stubs_StartupHook>
+; ..\appl\Source\Os_Callout_Stubs.c	    76   *********************************************************************************************************************/
+; ..\appl\Source\Os_Callout_Stubs.c	    77  
+; ..\appl\Source\Os_Callout_Stubs.c	    78  /**********************************************************************************************************************
+; ..\appl\Source\Os_Callout_Stubs.c	    79   * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>
+; ..\appl\Source\Os_Callout_Stubs.c	    80   *********************************************************************************************************************/
+; ..\appl\Source\Os_Callout_Stubs.c	    81  
+; ..\appl\Source\Os_Callout_Stubs.c	    82  }
+; ..\appl\Source\Os_Callout_Stubs.c	    83  
+; ..\appl\Source\Os_Callout_Stubs.c	    84  # define OS_STOP_SEC_STARTUPHOOK_CODE
+; ..\appl\Source\Os_Callout_Stubs.c	    85  # include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\appl\Source\Os_Callout_Stubs.c	    86  #endif /* OS_CFG_STARTUPHOOK_SYSTEM */
+; ..\appl\Source\Os_Callout_Stubs.c	    87  
+; ..\appl\Source\Os_Callout_Stubs.c	    88  
+; ..\appl\Source\Os_Callout_Stubs.c	    89  /**********************************************************************************************************************
+; ..\appl\Source\Os_Callout_Stubs.c	    90   *  ShutdownHook()
+; ..\appl\Source\Os_Callout_Stubs.c	    91   *********************************************************************************************************************/
+; ..\appl\Source\Os_Callout_Stubs.c	    92  #if OS_CFG_SHUTDOWNHOOK_SYSTEM == STD_ON
+; ..\appl\Source\Os_Callout_Stubs.c	    93  # define OS_START_SEC_SHUTDOWNHOOK_CODE
+; ..\appl\Source\Os_Callout_Stubs.c	    94  # include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\appl\Source\Os_Callout_Stubs.c	    95  
+; ..\appl\Source\Os_Callout_Stubs.c	    96  FUNC(void, OS_SHUTDOWNHOOK_CODE) ShutdownHook(StatusType Fatalerror)
+; ..\appl\Source\Os_Callout_Stubs.c	    97  {
+; ..\appl\Source\Os_Callout_Stubs.c	    98  /**********************************************************************************************************************
+; ..\appl\Source\Os_Callout_Stubs.c	    99   * DO NOT CHANGE THIS COMMENT!           <USERBLOCK OS_Callout_Stubs_ShutdownHook>
+; ..\appl\Source\Os_Callout_Stubs.c	   100   *********************************************************************************************************************/
+; ..\appl\Source\Os_Callout_Stubs.c	   101    EcuM_Shutdown();
+; ..\appl\Source\Os_Callout_Stubs.c	   102  /**********************************************************************************************************************
+; ..\appl\Source\Os_Callout_Stubs.c	   103   * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>
+; ..\appl\Source\Os_Callout_Stubs.c	   104   *********************************************************************************************************************/
+; ..\appl\Source\Os_Callout_Stubs.c	   105  
+; ..\appl\Source\Os_Callout_Stubs.c	   106  }
+; ..\appl\Source\Os_Callout_Stubs.c	   107  
+; ..\appl\Source\Os_Callout_Stubs.c	   108  # define OS_STOP_SEC_SHUTDOWNHOOK_CODE
+; ..\appl\Source\Os_Callout_Stubs.c	   109  # include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\appl\Source\Os_Callout_Stubs.c	   110  #endif /* OS_CFG_SHUTDOWNHOOK_SYSTEM */
+; ..\appl\Source\Os_Callout_Stubs.c	   111  
+; ..\appl\Source\Os_Callout_Stubs.c	   112  
+; ..\appl\Source\Os_Callout_Stubs.c	   113  /**********************************************************************************************************************
+; ..\appl\Source\Os_Callout_Stubs.c	   114   *  ErrorHook()
+; ..\appl\Source\Os_Callout_Stubs.c	   115   *********************************************************************************************************************/
+; ..\appl\Source\Os_Callout_Stubs.c	   116  #if OS_CFG_ERRORHOOK_SYSTEM == STD_ON
+; ..\appl\Source\Os_Callout_Stubs.c	   117  # define OS_START_SEC_ERRORHOOK_CODE
+; ..\appl\Source\Os_Callout_Stubs.c	   118  # include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\appl\Source\Os_Callout_Stubs.c	   119  
+; ..\appl\Source\Os_Callout_Stubs.c	   120  FUNC(void, OS_ERRORHOOK_CODE) ErrorHook(StatusType Error)
+; Function ErrorHook
+.L4:
+ErrorHook:	.type	func
+	sub.a	a10,#8
+.L21:
+
+; ..\appl\Source\Os_Callout_Stubs.c	   121  {
+; ..\appl\Source\Os_Callout_Stubs.c	   122  /**********************************************************************************************************************
+; ..\appl\Source\Os_Callout_Stubs.c	   123   * DO NOT CHANGE THIS COMMENT!           <USERBLOCK OS_Callout_Stubs_ErrorHook>
+; ..\appl\Source\Os_Callout_Stubs.c	   124   *********************************************************************************************************************/
+; ..\appl\Source\Os_Callout_Stubs.c	   125    Os_ErrorInformationType CurrentError;
+; ..\appl\Source\Os_Callout_Stubs.c	   126    volatile uint8 endless = 1u;
+	mov	d15,#1
+	st.b	[a10]4,d15
+.L30:
+
+; ..\appl\Source\Os_Callout_Stubs.c	   127    (void)Os_GetDetailedError(&CurrentError);
+	mov.aa	a4,a10
+	call	Os_GetDetailedError
+
+; ..\appl\Source\Os_Callout_Stubs.c	   128    while(endless)
+.L2:
+	ld.bu	d15,[a10]4
+.L31:
+	jne	d15,#0,.L2
+.L32:
+
+; ..\appl\Source\Os_Callout_Stubs.c	   129    {
+; ..\appl\Source\Os_Callout_Stubs.c	   130      
+; ..\appl\Source\Os_Callout_Stubs.c	   131    }
+; ..\appl\Source\Os_Callout_Stubs.c	   132  /**********************************************************************************************************************
+; ..\appl\Source\Os_Callout_Stubs.c	   133   * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>
+; ..\appl\Source\Os_Callout_Stubs.c	   134   *********************************************************************************************************************/
+; ..\appl\Source\Os_Callout_Stubs.c	   135  
+; ..\appl\Source\Os_Callout_Stubs.c	   136  }
+	ret
+.L14:
+	
+__ErrorHook_function_end:
+	.size	ErrorHook,__ErrorHook_function_end-ErrorHook
+.L13:
+	; End of function
+	
+	.calls	'ErrorHook','Os_GetDetailedError'
+	.extern	Os_GetDetailedError
+	.calls	'ErrorHook','',8
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L6:
+	.word	8332
+	.half	3
+	.word	.L7
+	.byte	4
+.L5:
+	.byte	1
+	.byte	'..\\appl\\Source\\Os_Callout_Stubs.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
+	.word	.L8
+	.byte	2
+	.byte	'int',0,4,5,3
+	.word	127
+	.byte	4
+	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,5
+	.word	134
+	.byte	0,2
+	.byte	'unsigned int',0,4,7,6
+	.word	176
+	.byte	7
+	.word	176
+	.byte	8
+	.byte	'__cmpswapw',0
+	.word	192
+	.byte	1,1,1,1,9
+	.byte	'p',0
+	.word	197
+	.byte	9
+	.byte	'value',0
+	.word	176
+	.byte	9
+	.byte	'compare',0
+	.word	176
+	.byte	0
+.L15:
+	.byte	2
+	.byte	'unsigned char',0,1,8,10,1,177,3,9,1,11
+	.byte	'OSServiceId_GetApplicationID',0,0,11
+	.byte	'OSServiceId_GetISRID',0,1,11
+	.byte	'OSServiceId_CallTrustedFunction',0,2,11
+	.byte	'OSServiceId_CheckISRMemoryAccess',0,3,11
+	.byte	'OSServiceId_CheckTaskMemoryAccess',0,4,11
+	.byte	'OSServiceId_CheckObjectAccess',0,5,11
+	.byte	'OSServiceId_CheckObjectOwnership',0,6,11
+	.byte	'OSServiceId_StartScheduleTableRel',0,7,11
+	.byte	'OSServiceId_StartScheduleTableAbs',0,8,11
+	.byte	'OSServiceId_StopScheduleTable',0,9,11
+	.byte	'OSServiceId_NextScheduleTable',0,10,11
+	.byte	'OSServiceId_StartScheduleTableSynchron',0,11,11
+	.byte	'OSServiceId_SyncScheduleTable',0,12,11
+	.byte	'OSServiceId_SetScheduleTableAsync',0,13,11
+	.byte	'OSServiceId_GetScheduleTableStatus',0,14,11
+	.byte	'OSServiceId_IncrementCounter',0,15,11
+	.byte	'OSServiceId_GetCounterValue',0,16,11
+	.byte	'OSServiceId_GetElapsedValue',0,17,11
+	.byte	'OSServiceId_TerminateApplication',0,18,11
+	.byte	'OSServiceId_AllowAccess',0,19,11
+	.byte	'OSServiceId_GetApplicationState',0,20,11
+	.byte	'OSServiceId_GetNumberOfActivatedCores',0,21,11
+	.byte	'OSServiceId_GetCoreID',0,22,11
+	.byte	'OSServiceId_StartCore',0,23,11
+	.byte	'OSServiceId_StartNonAutosarCore',0,24,11
+	.byte	'OSServiceId_GetSpinlock',0,25,11
+	.byte	'OSServiceId_ReleaseSpinlock',0,26,11
+	.byte	'OSServiceId_TryToGetSpinlock',0,27,11
+	.byte	'OSServiceId_ShutdownAllCores',0,28,11
+	.byte	'OSServiceId_ControlIdle',0,29,11
+	.byte	'OSServiceId_IocSend',0,30,11
+	.byte	'OSServiceId_IocWrite',0,31,11
+	.byte	'OSServiceId_IocSendGroup',0,32,11
+	.byte	'OSServiceId_IocWriteGroup',0,33,11
+	.byte	'OSServiceId_IocReceive',0,34,11
+	.byte	'OSServiceId_IocRead',0,35,11
+	.byte	'OSServiceId_IocReceiveGroup',0,36,11
+	.byte	'OSServiceId_IocReadGroup',0,37,11
+	.byte	'OSServiceId_IocEmptyQueue',0,38,11
+	.byte	'OSServiceId_GetCurrentApplicationID',0,39,11
+	.byte	'OSServiceId_GetExceptionContext',0,160,1,11
+	.byte	'OSServiceId_SetExceptionContext',0,161,1,11
+	.byte	'OSServiceId_CallNonTrustedFunction',0,162,1,11
+	.byte	'OSServiceId_AppKill',0,163,1,11
+	.byte	'OSServiceId_AlarmActionSetEvent',0,164,1,11
+	.byte	'OSServiceId_AlarmActionActivateTask',0,165,1,11
+	.byte	'OSServiceId_AlarmActionIncrementCounter',0,166,1,11
+	.byte	'OSServiceId_AlarmActionCallback',0,167,1,11
+	.byte	'OSServiceId_TimerIsr',0,168,1,11
+	.byte	'OSServiceId_IsrWrapper',0,169,1,11
+	.byte	'OSServiceId_GetTaskStackUsage',0,170,1,11
+	.byte	'OSServiceId_GetISRStackUsage',0,171,1,11
+	.byte	'OSServiceId_GetKernelStackUsage',0,172,1,11
+	.byte	'OSServiceId_GetStartupHookStackUsage',0,173,1,11
+	.byte	'OSServiceId_GetErrorHookStackUsage',0,174,1,11
+	.byte	'OSServiceId_GetShutdownHookStackUsage',0,175,1,11
+	.byte	'OSServiceId_GetProtectionHookStackUsage',0,176,1,11
+	.byte	'OSServiceId_GetSemaphore',0,177,1,11
+	.byte	'OSServiceId_ReleaseSemaphore',0,178,1,11
+	.byte	'OSServiceId_ScheduleTableActivateTask',0,179,1,11
+	.byte	'OSServiceId_ScheduleTableSetEvent',0,180,1,11
+	.byte	'OSServiceId_DisableInterruptSource',0,181,1,11
+	.byte	'OSServiceId_EnableInterruptSource',0,182,1,11
+	.byte	'OSServiceId_ClearPendingInterrupt',0,183,1,11
+	.byte	'OSServiceId_GetUnhandledIrq',0,184,1,11
+	.byte	'OSServiceId_GetUnhandledExc',0,185,1,11
+	.byte	'OSServiceId_HookCallCallback',0,186,1,11
+	.byte	'OSServiceId_IsInterruptSourceEnabled',0,187,1,11
+	.byte	'OSServiceId_IsInterruptPending',0,188,1,11
+	.byte	'OSServiceId_CallFastTrustedFunction',0,189,1,11
+	.byte	'OSServiceId_BarrierSynchronize',0,190,1,11
+	.byte	'OSServiceId_InitialEnableInterruptSources',0,191,1,11
+	.byte	'OSServiceId_GetCoreStartState',0,192,1,11
+	.byte	'OSServiceId_StartOS',0,208,1,11
+	.byte	'OSServiceId_GetActiveApplicationMode',0,210,1,11
+	.byte	'OSServiceId_DisableAllInterrupts',0,211,1,11
+	.byte	'OSServiceId_EnableAllInterrupts',0,212,1,11
+	.byte	'OSServiceId_SuspendAllInterrupts',0,213,1,11
+	.byte	'OSServiceId_ResumeAllInterrupts',0,214,1,11
+	.byte	'OSServiceId_SuspendOSInterrupts',0,215,1,11
+	.byte	'OSServiceId_ResumeOSInterrupts',0,216,1,11
+	.byte	'OSServiceId_ActivateTask',0,217,1,11
+	.byte	'OSServiceId_TerminateTask',0,218,1,11
+	.byte	'OSServiceId_ChainTask',0,219,1,11
+	.byte	'OSServiceId_GetTaskID',0,220,1,11
+	.byte	'OSServiceId_GetTaskState',0,221,1,11
+	.byte	'OSServiceId_Schedule',0,222,1,11
+	.byte	'OSServiceId_SetEvent',0,223,1,11
+	.byte	'OSServiceId_ClearEvent',0,224,1,11
+	.byte	'OSServiceId_GetEvent',0,225,1,11
+	.byte	'OSServiceId_WaitEvent',0,226,1,11
+	.byte	'OSServiceId_GetAlarmBase',0,227,1,11
+	.byte	'OSServiceId_GetAlarm',0,228,1,11
+	.byte	'OSServiceId_SetRelAlarm',0,229,1,11
+	.byte	'OSServiceId_SetAbsAlarm',0,230,1,11
+	.byte	'OSServiceId_CancelAlarm',0,231,1,11
+	.byte	'OSServiceId_GetResource',0,232,1,11
+	.byte	'OSServiceId_ReleaseResource',0,233,1,11
+	.byte	'OSSERVICEID_COUNT',0,255,1,0,10,1,172,4,9,2,11
+	.byte	'OS_STATUS_OK',0,0,11
+	.byte	'OS_STATUS_CALLEVEL',0,2,11
+	.byte	'OS_STATUS_LIMIT',0,4,11
+	.byte	'OS_STATUS_RESOURCE',0,6,11
+	.byte	'OS_STATUS_SERVICEID',0,9,11
+	.byte	'OS_STATUS_ILLEGAL_ADDRESS',0,10,11
+	.byte	'OS_STATUS_MISSINGEND',0,11,11
+	.byte	'OS_STATUS_DISABLEDINT',0,12,11
+	.byte	'OS_STATUS_STACKFAULT',0,13,11
+	.byte	'OS_STATUS_PROTECTION_MEMORY',0,14,11
+	.byte	'OS_STATUS_PROTECTION_TIME',0,15,11
+	.byte	'OS_STATUS_PROTECTION_ARRIVAL',0,16,11
+	.byte	'OS_STATUS_PROTECTION_LOCKED',0,17,11
+	.byte	'OS_STATUS_PROTECTION_EXCEPTION',0,18,11
+	.byte	'OS_STATUS_INTERFERENCE_DEADLOCK',0,19,11
+	.byte	'OS_STATUS_NESTING_DEADLOCK',0,20,11
+	.byte	'OS_STATUS_SPINLOCK',0,21,11
+	.byte	'OS_STATUS_CORE',0,22,11
+	.byte	'OS_STATUS_OVERFLOW',0,245,1,11
+	.byte	'OS_STATUS_KILL_KERNEL_OBJ',0,246,1,11
+	.byte	'OS_STATUS_NO_RESTARTTASK',0,247,1,11
+	.byte	'OS_STATUS_CALL_NOT_ALLOWED',0,248,1,11
+	.byte	'OS_STATUS_FUNCTION_UNAVAILABLE',0,249,1,11
+	.byte	'OS_STATUS_PROTECTION_SYSCALL',0,250,1,11
+	.byte	'OS_STATUS_PROTECTION_IRQ',0,251,1,11
+	.byte	'OS_STATUS_API_ERROR',0,252,1,11
+	.byte	'OS_STATUS_ASSERTION',0,253,1,11
+	.byte	'OS_STATUS_OVERLOAD',0,254,1,11
+	.byte	'OS_STATUS_ACCESSRIGHTS_1',0,129,2,11
+	.byte	'OS_STATUS_CALLEVEL_SHARED_STACK',0,130,2,11
+	.byte	'OS_STATUS_ID_1',0,131,2,11
+	.byte	'OS_STATUS_UNLOCKED',0,133,2,11
+	.byte	'OS_STATUS_STATE_1',0,135,2,11
+	.byte	'OS_STATUS_VALUE_IS_ZERO_1',0,136,2,11
+	.byte	'OS_STATUS_CORE_CROSS_DATA',0,150,2,11
+	.byte	'OS_STATUS_PARAM_POINTER_1',0,151,2,11
+	.byte	'OS_STATUS_STACKUSAGE_DISABLED_BY_CONFIG',0,241,3,11
+	.byte	'OS_STATUS_NO_BARRIER_PARTICIPANT',0,242,3,11
+	.byte	'OS_STATUS_UNIMPLEMENTED_CLEARPENDING',0,243,3,11
+	.byte	'OS_STATUS_NO_NTFSTACK_POOL_EMPTY',0,244,3,11
+	.byte	'OS_STATUS_ACCESSRIGHTS_2',0,129,4,11
+	.byte	'OS_STATUS_CALLEVEL_CROSS_CORE_SYNC',0,130,4,11
+	.byte	'OS_STATUS_ID_2',0,131,4,11
+	.byte	'OS_STATUS_NOFUNC_1',0,133,4,11
+	.byte	'OS_STATUS_STATE_2',0,135,4,11
+	.byte	'OS_STATUS_VALUE_IS_ZERO_2',0,136,4,11
+	.byte	'OS_STATUS_PARAM_POINTER_2',0,151,4,11
+	.byte	'OS_STATUS_EVENT_DISABLED_BY_CONFIG',0,241,5,11
+	.byte	'OS_STATUS_UNIMPLEMENTED_EXCEPTIONCONTEXT',0,243,5,11
+	.byte	'OS_STATUS_NO_NTFSTACK_APPLIMIT_EXCEEDED',0,244,5,11
+	.byte	'OS_STATUS_NOTACCESSIBLE_1',0,129,6,11
+	.byte	'OS_STATUS_ID_TYPE_1',0,131,6,11
+	.byte	'OS_STATUS_NOFUNC_2',0,133,6,11
+	.byte	'OS_STATUS_STATE_STOPPED',0,135,6,11
+	.byte	'OS_STATUS_VALUE_IS_TOO_HIGH_1',0,136,6,11
+	.byte	'OS_STATUS_PARAM_POINTER_3',0,151,6,11
+	.byte	'OS_STATUS_NOTACCESSIBLE_2',0,129,8,11
+	.byte	'OS_STATUS_ID_DIFFERENT_COUNTER',0,131,8,11
+	.byte	'OS_STATUS_SPINLOCK_ORDER',0,133,8,11
+	.byte	'OS_STATUS_STATE_RUNNING',0,135,8,11
+	.byte	'OS_STATUS_VALUE_IS_TOO_HIGH_2',0,136,8,11
+	.byte	'OS_STATUS_NOEXTENDEDTASK_1',0,129,10,11
+	.byte	'OS_STATUS_ID_DIFFERENT_SYNC',0,131,10,11
+	.byte	'OS_STATUS_STOPPED_1',0,133,10,11
+	.byte	'OS_STATUS_STATE_NEXTED',0,135,10,11
+	.byte	'OS_STATUS_VALUE_IS_TOO_HIGH_3',0,136,10,11
+	.byte	'OS_STATUS_NOEXTENDEDTASK_2',0,129,12,11
+	.byte	'OS_STATUS_HOOK_NOT_AVAILABLE',0,131,12,11
+	.byte	'OS_STATUS_NOT_STOPPED_2',0,133,12,11
+	.byte	'OS_STATUS_STATE_WAITING',0,135,12,11
+	.byte	'OS_STATUS_VALUE_IS_OUT_OF_BOUNDS_1',0,136,12,11
+	.byte	'OS_STATUS_NOEXTENDEDTASK_CALLER',0,129,14,11
+	.byte	'OS_STATUS_NEXTED_1',0,133,14,11
+	.byte	'OS_STATUS_STATE_NO_RESTART',0,135,14,11
+	.byte	'OS_STATUS_VALUE_IS_OUT_OF_BOUNDS_2',0,136,14,11
+	.byte	'OS_STATUS_LOCKED',0,129,16,11
+	.byte	'OS_STATUS_KILLING_IS_DISABLED',0,133,16,11
+	.byte	'OS_STATUS_STATE_ALREADY_TERMINATED',0,135,16,11
+	.byte	'OS_STATUS_VALUE_IS_TOO_LOW_1',0,136,16,11
+	.byte	'OS_STATUS_PRIORITY',0,129,18,11
+	.byte	'OS_STATUS_ORDER',0,133,18,11
+	.byte	'OS_STATUS_STATE_RESTARTING_NO_MEMBER',0,135,18,11
+	.byte	'OS_STATUS_VALUE_IS_TOO_LOW_2',0,136,18,11
+	.byte	'OS_STATUS_NOT_THE_OWNER_1',0,129,20,11
+	.byte	'OS_STATUS_STATE_ALREADY_RESTARTING',0,135,20,11
+	.byte	'OS_STATUS_VALUE_IS_TOO_LOW_3',0,136,20,11
+	.byte	'OS_STATUS_VALUE_IS_NOT_BOOLEAN',0,136,22,0
+.L17:
+	.byte	12,1,133,6,9,4,13
+	.byte	'Service',0
+	.word	271
+	.byte	1,2,35,0,13
+	.byte	'Error',0
+	.word	254
+	.byte	1,2,35,1,13
+	.byte	'DetailedError',0
+	.word	3416
+	.byte	2,2,35,2,0
+.L19:
+	.byte	6
+	.word	254
+	.byte	7
+	.word	5923
+	.byte	14
+	.byte	'Os_ErrorInformationRefType',0,1,147,6,64
+	.word	5990
+	.byte	15
+	.byte	'Os_GetDetailedError',0,2,128,31,27
+	.word	254
+	.byte	1,1,1,1,16
+	.byte	'ErrorRef',0,2,128,31,74
+	.word	5995
+	.byte	0,7
+	.word	5923
+	.byte	17,1,7
+	.word	6088
+	.byte	14
+	.byte	'__codeptr',0,3,1,1
+	.word	6090
+	.byte	14
+	.byte	'uint8',0,4,104,31
+	.word	254
+	.byte	2
+	.byte	'unsigned short int',0,2,7,14
+	.byte	'uint16',0,4,106,31
+	.word	6127
+	.byte	2
+	.byte	'long int',0,4,5,14
+	.byte	'sint32',0,4,107,31
+	.word	6164
+	.byte	2
+	.byte	'unsigned long int',0,4,7,14
+	.byte	'uint32',0,4,108,31
+	.word	6191
+	.byte	14
+	.byte	'uint8_least',0,4,111,31
+	.word	254
+	.byte	2
+	.byte	'unsigned long long int',0,8,7,14
+	.byte	'uint64',0,4,121,30
+	.word	6247
+	.byte	14
+	.byte	'StatusType',0,5,127,23
+	.word	254
+	.byte	10,6,145,1,9,1,11
+	.byte	'Default_Init_Task',0,0,11
+	.byte	'Default_Init_Task_Trusted',0,1,11
+	.byte	'IdleTask_OsCore0',0,2,11
+	.byte	'bsw_task',0,3,11
+	.byte	'swc_init',0,4,11
+	.byte	'swc_task',0,5,11
+	.byte	'INVALID_TASK',0,6,11
+	.byte	'OS_TASKID_COUNT',0,6,0,14
+	.byte	'TaskType',0,6,155,1,3
+	.word	6307
+	.byte	14
+	.byte	'Os_Hal_AddressType',0,7,61,16
+	.word	6191
+	.byte	18,64
+	.word	6191
+	.byte	19,15,0,20
+	.byte	'Os_ExceptionContextType_Tag',0,8,71,8,160,1,13
+	.byte	'AddressRegisters',0
+	.word	6492
+	.byte	64,2,35,0,13
+	.byte	'DataRegisters',0
+	.word	6492
+	.byte	64,2,35,64,13
+	.byte	'Ra',0
+	.word	6191
+	.byte	4,3,35,128,1,13
+	.byte	'Psw',0
+	.word	6191
+	.byte	4,3,35,132,1,13
+	.byte	'ExceptionSource',0
+	.word	6191
+	.byte	4,3,35,136,1,13
+	.byte	'Pcpn',0
+	.word	6191
+	.byte	4,3,35,140,1,13
+	.byte	'Pie',0
+	.word	6191
+	.byte	4,3,35,144,1,13
+	.byte	'MpuRegionForStackLow',0
+	.word	6191
+	.byte	4,3,35,148,1,13
+	.byte	'MpuRegionForStackUpper',0
+	.word	6191
+	.byte	4,3,35,152,1,13
+	.byte	'RawPCXI',0
+	.word	6191
+	.byte	4,3,35,156,1,0,14
+	.byte	'Os_ExceptionContextType',0,7,66,44
+	.word	6501
+	.byte	14
+	.byte	'Os_InterruptSourceIdType',0,1,238,1,16
+	.word	6191
+	.byte	14
+	.byte	'Os_ExceptionSourceIdType',0,1,246,1,16
+	.word	6191
+	.byte	10,1,161,2,9,1,11
+	.byte	'RUNNING',0,0,11
+	.byte	'READY',0,1,11
+	.byte	'WAITING',0,2,11
+	.byte	'SUSPENDED',0,3,0,14
+	.byte	'TaskStateType',0,1,175,2,3
+	.word	6849
+	.byte	14
+	.byte	'EventMaskType',0,1,182,2,16
+	.word	6247
+	.byte	14
+	.byte	'Os_TickType',0,1,200,2,19
+	.word	6191
+	.byte	14
+	.byte	'TickType',0,1,206,2,21
+	.word	6191
+	.byte	12,1,220,2,9,12,13
+	.byte	'maxallowedvalue',0
+	.word	6191
+	.byte	4,2,35,0,13
+	.byte	'ticksperbase',0
+	.word	6191
+	.byte	4,2,35,4,13
+	.byte	'mincycle',0
+	.word	6191
+	.byte	4,2,35,8,0,14
+	.byte	'AlarmBaseType',0,1,228,2,2
+	.word	6981
+	.byte	10,1,128,3,9,1,11
+	.byte	'APPLICATION_TERMINATED',0,0,11
+	.byte	'APPLICATION_RESTARTING',0,1,11
+	.byte	'APPLICATION_ACCESSIBLE',0,2,0,14
+	.byte	'ApplicationStateType',0,1,133,3,3
+	.word	7076
+	.byte	14
+	.byte	'OSServiceIdType',0,1,156,4,3
+	.word	271
+	.byte	14
+	.byte	'Os_StatusType',0,1,232,5,3
+	.word	3416
+	.byte	14
+	.byte	'Os_ErrorInformationType',0,1,143,6,3
+	.word	5923
+	.byte	10,1,175,6,9,1,11
+	.byte	'SCHEDULETABLE_STOPPED',0,0,11
+	.byte	'SCHEDULETABLE_NEXT',0,1,11
+	.byte	'SCHEDULETABLE_WAITING',0,2,11
+	.byte	'SCHEDULETABLE_RUNNING',0,3,11
+	.byte	'SCHEDULETABLE_RUNNING_AND_SYNCHRONOUS',0,4,0,14
+	.byte	'ScheduleTableStatusType',0,1,192,6,3
+	.word	7269
+	.byte	14
+	.byte	'Os_AccessCheckAddress',0,1,199,6,29
+	.word	6191
+	.byte	10,1,211,6,9,1,11
+	.byte	'OS_MEM_ACCESS_TYPE_NON',0,0,11
+	.byte	'OS_MEM_ACCESS_TYPE_R',0,1,11
+	.byte	'OS_MEM_ACCESS_TYPE_READ',0,1,11
+	.byte	'OS_MEM_ACCESS_TYPE_W',0,2,11
+	.byte	'OS_MEM_ACCESS_TYPE_WRITE',0,2,11
+	.byte	'OS_MEM_ACCESS_TYPE_RW',0,3,11
+	.byte	'OS_MEM_ACCESS_TYPE_EXECUTE',0,4,11
+	.byte	'OS_MEM_ACCESS_TYPE_X',0,4,11
+	.byte	'OS_MEM_ACCESS_TYPE_RX',0,5,11
+	.byte	'OS_MEM_ACCESS_TYPE_WX',0,6,11
+	.byte	'OS_MEM_ACCESS_TYPE_RWX',0,7,11
+	.byte	'OS_MEM_ACCESS_TYPE_S',0,8,11
+	.byte	'OS_MEM_ACCESS_TYPE_STACK',0,8,11
+	.byte	'OS_MEM_ACCESS_TYPE_RS',0,9,11
+	.byte	'OS_MEM_ACCESS_TYPE_WS',0,10,11
+	.byte	'OS_MEM_ACCESS_TYPE_RWS',0,11,11
+	.byte	'OS_MEM_ACCESS_TYPE_XS',0,12,11
+	.byte	'OS_MEM_ACCESS_TYPE_RXS',0,13,11
+	.byte	'OS_MEM_ACCESS_TYPE_WXS',0,14,11
+	.byte	'OS_MEM_ACCESS_TYPE_RWXS',0,15,0,14
+	.byte	'Os_MemAccessType',0,1,233,6,3
+	.word	7473
+	.byte	14
+	.byte	'EcuM_ModeType',0,9,55,15
+	.word	254
+	.byte	14
+	.byte	'EcuM_StateType',0,9,61,15
+	.word	254
+	.byte	21,1,1,7
+	.word	8047
+	.byte	14
+	.byte	'EcuM_DriverFuncType',0,10,194,2,9
+	.word	8050
+	.byte	14
+	.byte	'EcuM_DefaultAppModeType',0,10,227,2,16
+	.word	6191
+	.byte	14
+	.byte	'EcuM_NormalMcuModeType',0,10,245,2,16
+	.word	6191
+	.byte	20
+	.byte	'sEcuM_DriverInitOneType',0,10,136,3,16,4,13
+	.byte	'FunctionOfDriverInitOne',0
+	.word	8055
+	.byte	4,2,35,0,0,14
+	.byte	'EcuM_DriverInitOneType',0,10,139,3,3
+	.word	8149
+	.byte	7
+	.word	8047
+	.byte	20
+	.byte	'sEcuM_PCConfigType',0,10,175,3,16,1,13
+	.byte	'EcuM_PCConfigNeverUsed',0
+	.word	254
+	.byte	1,2,35,0,0,14
+	.byte	'EcuM_PCConfigType',0,10,178,3,3
+	.word	8250
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L7:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,38,0,73,19,0,0,4,46,1,3,8,54
+	.byte	15,39,12,63,12,60,12,0,0,5,5,0,73,19,0,0,6,53,0,73,19,0,0,7,15,0,73,19,0,0,8,46,1,3,8,73,19,54,15,39,12
+	.byte	63,12,60,12,0,0,9,5,0,3,8,73,19,0,0,10,4,1,58,15,59,15,57,15,11,15,0,0,11,40,0,3,8,28,13,0,0,12,19,1,58
+	.byte	15,59,15,57,15,11,15,0,0,13,13,0,3,8,73,19,11,15,56,9,0,0,14,22,0,3,8,58,15,59,15,57,15,73,19,0,0,15,46
+	.byte	1,3,8,58,15,59,15,57,15,73,19,54,15,39,12,63,12,60,12,0,0,16,5,0,3,8,58,15,59,15,57,15,73,19,0,0,17,21
+	.byte	0,54,15,0,0,18,1,1,11,15,73,19,0,0,19,33,0,47,15,0,0,20,19,1,3,8,58,15,59,15,57,15,11,15,0,0,21,21,0,54
+	.byte	15,39,12,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L8:
+	.word	.L23-.L22
+.L22:
+	.half	3
+	.word	.L25-.L24
+.L24:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'D:\\Zonal\\demo011\\tasking\\component\\Os\\Implementation',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\component\\_Common\\Implementation',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\appl\\GenData',0,0
+	.byte	'Os_Types.h',0,1,0,0
+	.byte	'Os.h',0,1,0,0
+	.byte	'..\\appl\\Source\\Os_Callout_Stubs.c',0,0,0,0
+	.byte	'Platform_Types.h',0,2,0,0
+	.byte	'Std_Types.h',0,2,0,0
+	.byte	'Os_Types_Lcfg.h',0,3,0,0
+	.byte	'Os_Hal_Os_Types.h',0,1,0,0
+	.byte	'Os_Hal_OsInt.h',0,1,0,0
+	.byte	'Rte_Type.h',0,3,0,0
+	.byte	'EcuM_Cfg.h',0,3,0,0,0
+.L25:
+.L23:
+	.sdecl	'.debug_info',debug,cluster('ErrorHook')
+	.sect	'.debug_info'
+.L9:
+	.word	236
+	.half	3
+	.word	.L10
+	.byte	4,1
+	.byte	'..\\appl\\Source\\Os_Callout_Stubs.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
+	.word	.L12,.L11
+	.byte	2
+	.word	.L5
+	.byte	3
+	.byte	'ErrorHook',0,1,120,31,1,1,1
+	.word	.L4,.L14,.L3
+	.byte	4
+	.byte	'Error',0,1,120,52
+	.word	.L15,.L16
+	.byte	5
+	.word	.L4,.L14
+	.byte	6
+	.byte	'CurrentError',0,1,125,27
+	.word	.L17,.L18
+	.byte	6
+	.byte	'endless',0,1,126,18
+	.word	.L19,.L20
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('ErrorHook')
+	.sect	'.debug_abbrev'
+.L10:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('ErrorHook')
+	.sect	'.debug_line'
+.L11:
+	.word	.L27-.L26
+.L26:
+	.half	3
+	.word	.L29-.L28
+.L28:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\appl\\Source\\Os_Callout_Stubs.c',0,0,0,0,0
+.L29:
+	.byte	5,31,7,0,5,2
+	.word	.L4
+	.byte	3,247,0,1,5,28,9
+	.half	.L21-.L4
+	.byte	3,6,1,5,26,1,5,30,9
+	.half	.L30-.L21
+	.byte	3,1,1,5,9,9
+	.half	.L2-.L30
+	.byte	3,1,1,5,16,9
+	.half	.L31-.L2
+	.byte	1,5,1,7,9
+	.half	.L32-.L31
+	.byte	3,8,1,7,9
+	.half	.L13-.L32
+	.byte	0,1,1
+.L27:
+	.sdecl	'.debug_ranges',debug,cluster('ErrorHook')
+	.sect	'.debug_ranges'
+.L12:
+	.word	-1,.L4,0,.L13-.L4,0,0
+	.sdecl	'.debug_loc',debug,cluster('ErrorHook')
+	.sect	'.debug_loc'
+.L18:
+	.word	-1,.L4,0,.L14-.L4
+	.half	2
+	.byte	145,120
+	.word	0,0
+.L16:
+	.word	-1,.L4,0,.L2-.L4
+	.half	1
+	.byte	84
+	.word	0,0
+.L3:
+	.word	-1,.L4,0,.L21-.L4
+	.half	2
+	.byte	138,0
+	.word	.L21-.L4,.L14-.L4
+	.half	2
+	.byte	138,8
+	.word	.L14-.L4,.L14-.L4
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L20:
+	.word	-1,.L4,0,.L14-.L4
+	.half	2
+	.byte	145,124
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L33:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,27,8,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('ErrorHook')
+	.sect	'.debug_frame'
+	.word	36
+	.word	.L33,.L4,.L14-.L4
+	.byte	4
+	.word	(.L21-.L4)/2
+	.byte	19,8,22,26,3,19,138,8,4
+	.word	(.L14-.L21)/2
+	.byte	19,0,8,26,0,0
+
+; ..\appl\Source\Os_Callout_Stubs.c	   137  
+; ..\appl\Source\Os_Callout_Stubs.c	   138  # define OS_STOP_SEC_ERRORHOOK_CODE
+; ..\appl\Source\Os_Callout_Stubs.c	   139  # include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\appl\Source\Os_Callout_Stubs.c	   140  #endif /* OS_CFG_ERRORHOOK_SYSTEM */
+; ..\appl\Source\Os_Callout_Stubs.c	   141  
+; ..\appl\Source\Os_Callout_Stubs.c	   142  
+; ..\appl\Source\Os_Callout_Stubs.c	   143  /**********************************************************************************************************************
+; ..\appl\Source\Os_Callout_Stubs.c	   144   *  ProtectionHook()
+; ..\appl\Source\Os_Callout_Stubs.c	   145   *********************************************************************************************************************/
+; ..\appl\Source\Os_Callout_Stubs.c	   146  #if OS_CFG_PROTECTIONHOOK_SYSTEM == STD_ON
+; ..\appl\Source\Os_Callout_Stubs.c	   147  # define OS_START_SEC_PROTECTIONHOOK_CODE
+; ..\appl\Source\Os_Callout_Stubs.c	   148  # include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\appl\Source\Os_Callout_Stubs.c	   149  
+; ..\appl\Source\Os_Callout_Stubs.c	   150  FUNC(ProtectionReturnType, OS_PROTECTIONHOOK_CODE) ProtectionHook(StatusType Fatalerror)
+; ..\appl\Source\Os_Callout_Stubs.c	   151  {
+; ..\appl\Source\Os_Callout_Stubs.c	   152  /**********************************************************************************************************************
+; ..\appl\Source\Os_Callout_Stubs.c	   153   * DO NOT CHANGE THIS COMMENT!           <USERBLOCK OS_Callout_Stubs_ProtectionHook>
+; ..\appl\Source\Os_Callout_Stubs.c	   154   *********************************************************************************************************************/
+; ..\appl\Source\Os_Callout_Stubs.c	   155    return PRO_SHUTDOWN;
+; ..\appl\Source\Os_Callout_Stubs.c	   156  /**********************************************************************************************************************
+; ..\appl\Source\Os_Callout_Stubs.c	   157   * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>
+; ..\appl\Source\Os_Callout_Stubs.c	   158   *********************************************************************************************************************/
+; ..\appl\Source\Os_Callout_Stubs.c	   159  
+; ..\appl\Source\Os_Callout_Stubs.c	   160  }
+; ..\appl\Source\Os_Callout_Stubs.c	   161  
+; ..\appl\Source\Os_Callout_Stubs.c	   162  # define OS_STOP_SEC_PROTECTIONHOOK_CODE
+; ..\appl\Source\Os_Callout_Stubs.c	   163  # include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\appl\Source\Os_Callout_Stubs.c	   164  #endif /* OS_CFG_PROTECTIONHOOK_SYSTEM */
+; ..\appl\Source\Os_Callout_Stubs.c	   165  
+; ..\appl\Source\Os_Callout_Stubs.c	   166  
+; ..\appl\Source\Os_Callout_Stubs.c	   167  /**********************************************************************************************************************
+; ..\appl\Source\Os_Callout_Stubs.c	   168   *  PreTaskHook()
+; ..\appl\Source\Os_Callout_Stubs.c	   169   *********************************************************************************************************************/
+; ..\appl\Source\Os_Callout_Stubs.c	   170  #if OS_CFG_PRETASKHOOK == STD_ON
+; ..\appl\Source\Os_Callout_Stubs.c	   171  # define OS_START_SEC_PRETASKHOOK_CODE
+; ..\appl\Source\Os_Callout_Stubs.c	   172  # include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\appl\Source\Os_Callout_Stubs.c	   173  
+; ..\appl\Source\Os_Callout_Stubs.c	   174  FUNC(void, OS_PRETASKHOOK_CODE) PreTaskHook(void)
+; ..\appl\Source\Os_Callout_Stubs.c	   175  {
+; ..\appl\Source\Os_Callout_Stubs.c	   176  /**********************************************************************************************************************
+; ..\appl\Source\Os_Callout_Stubs.c	   177   * DO NOT CHANGE THIS COMMENT!           <USERBLOCK OS_Callout_Stubs_PreTaskHook>
+; ..\appl\Source\Os_Callout_Stubs.c	   178   *********************************************************************************************************************/
+; ..\appl\Source\Os_Callout_Stubs.c	   179  
+; ..\appl\Source\Os_Callout_Stubs.c	   180  /**********************************************************************************************************************
+; ..\appl\Source\Os_Callout_Stubs.c	   181   * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>
+; ..\appl\Source\Os_Callout_Stubs.c	   182   *********************************************************************************************************************/
+; ..\appl\Source\Os_Callout_Stubs.c	   183  
+; ..\appl\Source\Os_Callout_Stubs.c	   184  }
+; ..\appl\Source\Os_Callout_Stubs.c	   185  
+; ..\appl\Source\Os_Callout_Stubs.c	   186  # define OS_STOP_SEC_PRETASKHOOK_CODE
+; ..\appl\Source\Os_Callout_Stubs.c	   187  # include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\appl\Source\Os_Callout_Stubs.c	   188  #endif /* OS_CFG_PRETASKHOOK */
+; ..\appl\Source\Os_Callout_Stubs.c	   189  
+; ..\appl\Source\Os_Callout_Stubs.c	   190  
+; ..\appl\Source\Os_Callout_Stubs.c	   191  /**********************************************************************************************************************
+; ..\appl\Source\Os_Callout_Stubs.c	   192   *  PostTaskHook()
+; ..\appl\Source\Os_Callout_Stubs.c	   193   *********************************************************************************************************************/
+; ..\appl\Source\Os_Callout_Stubs.c	   194  #if OS_CFG_POSTTASKHOOK == STD_ON
+; ..\appl\Source\Os_Callout_Stubs.c	   195  # define OS_START_SEC_POSTTASKHOOK_CODE
+; ..\appl\Source\Os_Callout_Stubs.c	   196  # include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\appl\Source\Os_Callout_Stubs.c	   197  
+; ..\appl\Source\Os_Callout_Stubs.c	   198  FUNC(void, OS_POSTTASKHOOK_CODE) PostTaskHook(void)
+; ..\appl\Source\Os_Callout_Stubs.c	   199  {
+; ..\appl\Source\Os_Callout_Stubs.c	   200  /**********************************************************************************************************************
+; ..\appl\Source\Os_Callout_Stubs.c	   201   * DO NOT CHANGE THIS COMMENT!           <USERBLOCK OS_Callout_Stubs_PostTaskHook>
+; ..\appl\Source\Os_Callout_Stubs.c	   202   *********************************************************************************************************************/
+; ..\appl\Source\Os_Callout_Stubs.c	   203  
+; ..\appl\Source\Os_Callout_Stubs.c	   204  /**********************************************************************************************************************
+; ..\appl\Source\Os_Callout_Stubs.c	   205   * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>
+; ..\appl\Source\Os_Callout_Stubs.c	   206   *********************************************************************************************************************/
+; ..\appl\Source\Os_Callout_Stubs.c	   207  
+; ..\appl\Source\Os_Callout_Stubs.c	   208  }
+; ..\appl\Source\Os_Callout_Stubs.c	   209  
+; ..\appl\Source\Os_Callout_Stubs.c	   210  # define OS_STOP_SEC_POSTTASKHOOK_CODE
+; ..\appl\Source\Os_Callout_Stubs.c	   211  # include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\appl\Source\Os_Callout_Stubs.c	   212  #endif /* OS_CFG_POSTTASKHOOK */
+; ..\appl\Source\Os_Callout_Stubs.c	   213  
+; ..\appl\Source\Os_Callout_Stubs.c	   214  
+; ..\appl\Source\Os_Callout_Stubs.c	   215  /**********************************************************************************************************************
+; ..\appl\Source\Os_Callout_Stubs.c	   216   *  Os_PanicHook()
+; ..\appl\Source\Os_Callout_Stubs.c	   217   *********************************************************************************************************************/
+; ..\appl\Source\Os_Callout_Stubs.c	   218  #if OS_CFG_PANICHOOK == STD_ON
+; ..\appl\Source\Os_Callout_Stubs.c	   219  # define OS_START_SEC_PANICHOOK_CODE
+; ..\appl\Source\Os_Callout_Stubs.c	   220  # include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\appl\Source\Os_Callout_Stubs.c	   221  
+; ..\appl\Source\Os_Callout_Stubs.c	   222  FUNC(void, OS_PANICHOOK_CODE) Os_PanicHook(void)
+; ..\appl\Source\Os_Callout_Stubs.c	   223  {
+; ..\appl\Source\Os_Callout_Stubs.c	   224  /**********************************************************************************************************************
+; ..\appl\Source\Os_Callout_Stubs.c	   225   * DO NOT CHANGE THIS COMMENT!           <USERBLOCK OS_Callout_Stubs_PanicHook>
+; ..\appl\Source\Os_Callout_Stubs.c	   226   *********************************************************************************************************************/
+; ..\appl\Source\Os_Callout_Stubs.c	   227  
+; ..\appl\Source\Os_Callout_Stubs.c	   228  /**********************************************************************************************************************
+; ..\appl\Source\Os_Callout_Stubs.c	   229   * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>
+; ..\appl\Source\Os_Callout_Stubs.c	   230   *********************************************************************************************************************/
+; ..\appl\Source\Os_Callout_Stubs.c	   231  
+; ..\appl\Source\Os_Callout_Stubs.c	   232  }
+; ..\appl\Source\Os_Callout_Stubs.c	   233  
+; ..\appl\Source\Os_Callout_Stubs.c	   234  # define OS_STOP_SEC_PANICHOOK_CODE
+; ..\appl\Source\Os_Callout_Stubs.c	   235  # include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\appl\Source\Os_Callout_Stubs.c	   236  #endif /* OS_CFG_PANICHOOK */
+; ..\appl\Source\Os_Callout_Stubs.c	   237  
+; ..\appl\Source\Os_Callout_Stubs.c	   238  
+; ..\appl\Source\Os_Callout_Stubs.c	   239  
+; ..\appl\Source\Os_Callout_Stubs.c	   240  /* Unrecognized User Blocks */
+; ..\appl\Source\Os_Callout_Stubs.c	   241  #if 0
+; ..\appl\Source\Os_Callout_Stubs.c	   242  #endif
+; ..\appl\Source\Os_Callout_Stubs.c	   243  
+; ..\appl\Source\Os_Callout_Stubs.c	   244  
+; ..\appl\Source\Os_Callout_Stubs.c	   245  /**********************************************************************************************************************
+; ..\appl\Source\Os_Callout_Stubs.c	   246   *  END OF FILE: Os_Callout_Stubs.c
+; ..\appl\Source\Os_Callout_Stubs.c	   247   *********************************************************************************************************************/
+
+	; Module end

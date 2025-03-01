@@ -1,0 +1,1657 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 21092262 SN 73118428"
+	.compiler_invocation	"ctc --dep-file=appl\\Source\\.BrsMainStartup.o.d --fp-model=c,f,l,n,r,S,T,z -D__CPU__=tc39xb -D__CPU_TC39XB__ --core=tc1.6.2 --iso=99 -DBRS_COMP_TASKING -ID:\\Zonal\\demo011\\tasking -ID:\\Zonal\\testdemo\\taskingdemo\\demo001 -ID:\\Zonal\\demo011\\tasking -ID:\\Zonal\\demo011\\tasking\\appl -ID:\\Zonal\\demo011\\tasking\\appl\\GenData -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\Components -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\ContractPhase -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\inc -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\src -ID:\\Zonal\\demo011\\tasking\\appl\\Include -ID:\\Zonal\\demo011\\tasking\\appl\\Source -ID:\\Zonal\\demo011\\tasking\\appl\\Source\\swc_test -ID:\\Zonal\\demo011\\tasking\\component -ID:\\Zonal\\demo011\\tasking\\component\\_Common -ID:\\Zonal\\demo011\\tasking\\component\\_Common\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\BswM -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\EcuM -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\Os -ID:\\Zonal\\demo011\\tasking\\component\\Os\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\Os\\BSWMD\\Os -ID:\\Zonal\\demo011\\tasking\\component\\Os\\BSWMD\\Os\\TC39xQ -ID:\\Zonal\\demo011\\tasking\\component\\Os\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\Os\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\Os\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug -ID:\\Zonal\\demo011\\tasking\\Debug\\appl -ID:\\Zonal\\demo011\\tasking\\Debug\\appl\\GenData -ID:\\Zonal\\demo011\\tasking\\Debug\\appl\\GenData\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\appl\\Source -ID:\\Zonal\\demo011\\tasking\\Debug\\component -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\BswM -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\BswM\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\EcuM -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\EcuM\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\Os -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\Os\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\VStdLib -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\VStdLib\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Dio -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Dio\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Dio\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\McalLib -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\McalLib\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\McalLib\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Mcu -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Mcu\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Mcu\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Port -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Port\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Port\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Platform -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Platform\\AS440 -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Sfr -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Sfr\\TC39xB -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Sfr\\TC39xB\\_Reg -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc\\inc\\AS440 -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal\\Port -ID:\\Zonal\\demo011\\tasking\\mcal\\Port\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\Port\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\Port\\ssc\\src -g2 --make-target=appl\\Source\\BrsMainStartup.o -t2 --language=-gcc,-volatile,+strings,-kanji --default-near-size=0 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o appl\\Source\\BrsMainStartup.src ..\\appl\\Source\\BrsMainStartup.c"
+	.compiler_name		"ctc"
+	;source	'..\\appl\\Source\\BrsMainStartup.c'
+
+	
+$TC162
+	
+	.sdecl	'.text.BrsMainStartup.Brs_PreMainStartup',code,cluster('Brs_PreMainStartup')
+	.sect	'.text.BrsMainStartup.Brs_PreMainStartup'
+	.align	2
+	
+	.global	Brs_PreMainStartup
+
+; ..\appl\Source\BrsMainStartup.c	     1  /**********************************************************************************************************************
+; ..\appl\Source\BrsMainStartup.c	     2    COPYRIGHT
+; ..\appl\Source\BrsMainStartup.c	     3  -----------------------------------------------------------------------------------------------------------------------
+; ..\appl\Source\BrsMainStartup.c	     4    \par      copyright
+; ..\appl\Source\BrsMainStartup.c	     5    \verbatim
+; ..\appl\Source\BrsMainStartup.c	     6    Copyright (c) 2020 by Vector Informatik GmbH.                                                  All rights reserved.
+; ..\appl\Source\BrsMainStartup.c	     7  
+; ..\appl\Source\BrsMainStartup.c	     8                  This software is copyright protected and proprietary to Vector Informatik GmbH.
+; ..\appl\Source\BrsMainStartup.c	     9                  Vector Informatik GmbH grants to you only those rights as set out in the license conditions.
+; ..\appl\Source\BrsMainStartup.c	    10                  All other rights remain with Vector Informatik GmbH.
+; ..\appl\Source\BrsMainStartup.c	    11    \endverbatim
+; ..\appl\Source\BrsMainStartup.c	    12  -----------------------------------------------------------------------------------------------------------------------
+; ..\appl\Source\BrsMainStartup.c	    13    FILE DESCRIPTION
+; ..\appl\Source\BrsMainStartup.c	    14  -----------------------------------------------------------------------------------------------------------------------
+; ..\appl\Source\BrsMainStartup.c	    15    \file  File:  BrsMainStartup.c
+; ..\appl\Source\BrsMainStartup.c	    16        Project:  Vector Basic Runtime System
+; ..\appl\Source\BrsMainStartup.c	    17         Module:  BrsMain
+; ..\appl\Source\BrsMainStartup.c	    18  
+; ..\appl\Source\BrsMainStartup.c	    19    \brief Description:  Vector Basic Runtime System module source for startup routines.
+; ..\appl\Source\BrsMainStartup.c	    20  
+; ..\appl\Source\BrsMainStartup.c	    21    \attention Please note:
+; ..\appl\Source\BrsMainStartup.c	    22      The demo and example programs only show special aspects of the software. With regard to the fact
+; ..\appl\Source\BrsMainStartup.c	    23      that these programs are meant for demonstration purposes only, Vector Informatik liability shall be
+; ..\appl\Source\BrsMainStartup.c	    24      expressly excluded in cases of ordinary negligence, to the extent admissible by law or statute.
+; ..\appl\Source\BrsMainStartup.c	    25  **********************************************************************************************************************/
+; ..\appl\Source\BrsMainStartup.c	    26  
+; ..\appl\Source\BrsMainStartup.c	    27  /**********************************************************************************************************************
+; ..\appl\Source\BrsMainStartup.c	    28    REVISION HISTORY
+; ..\appl\Source\BrsMainStartup.c	    29   ----------------------------------------------------------------------------------------------------------------------
+; ..\appl\Source\BrsMainStartup.c	    30    Version   Date        Author  Description
+; ..\appl\Source\BrsMainStartup.c	    31    --------  ----------  ------  ---------------------------------------------------------------------------------------
+; ..\appl\Source\BrsMainStartup.c	    32    01.00.00  2017-11-14  visfsn  Initial creation
+; ..\appl\Source\BrsMainStartup.c	    33    01.01.00  2018-03-27  visbwa  Renamed BrsAsrStartup into BrsStartup, added version check, reworked includes,
+; ..\appl\Source\BrsMainStartup.c	    34                                  added example code text
+; ..\appl\Source\BrsMainStartup.c	    35    01.01.01  2018-05-16  visbwa  Added extern declaration of brsHwZeroRamAreaSet and brsHwInitRamAreaSet
+; ..\appl\Source\BrsMainStartup.c	    36    01.01.02  2018-07-02  visces  Removed outdated brsHwZeroRamAreaSet and brsHwInitRamAreaSet
+; ..\appl\Source\BrsMainStartup.c	    37    01.02.00  2018-08-16  visbwa  Replaced include of RamInitSections.h by vLinkGen_RamInitSections.h (vLinkGen used!)
+; ..\appl\Source\BrsMainStartup.c	    38    01.03.00  2018-10-08  visbwa  Changed include of BrsCfg.h into vBrsCfg.h in BrsMainStartup.h (vBaseEnv 1.1.0)
+; ..\appl\Source\BrsMainStartup.c	    39    01.04.00  2019-05-06  visbwa  Support for vLinkGen 1.04.00 (renamed struct names of vlinkGen areas),
+; ..\appl\Source\BrsMainStartup.c	    40                                  added support for zero init blocks, renamed Brs_RamZeroInit() to Brs_MemoryZeroInit(),
+; ..\appl\Source\BrsMainStartup.c	    41                                  renamed Brs_RomToRamInit() to Brs_MemoryInit(), check for missing hard reset detection
+; ..\appl\Source\BrsMainStartup.c	    42    01.04.01  2019-05-10  visbwa  Changed include of vLinkGen header to support new vLinkGen file structure
+; ..\appl\Source\BrsMainStartup.c	    43    01.04.02  2019-07-22  visbwa  Added check for configured VLINKGEN_ZERO_INIT_BLOCK_COUNT_HARD_RESET
+; ..\appl\Source\BrsMainStartup.c	    44    01.05.00  2019-08-07  visbwa  Added InitPattern parameter to Brs_MemoryZeroInit() and added the new configuration
+; ..\appl\Source\BrsMainStartup.c	    45                                  values for the init pattern to the depending calls,
+; ..\appl\Source\BrsMainStartup.c	    46                                  added sample implementation for Hard-reset blocks and areas
+; ..\appl\Source\BrsMainStartup.c	    47    01.06.00  2019-10-07  visbwa  Added support of platform individual ZeroInit function BrsHw_AsmMemoryZeroInitLoop()
+; ..\appl\Source\BrsMainStartup.c	    48                                  in Brs_MemoryZeroInit(), triggered with BRSHW_ASM_MEMORY_ZERO_INIT_LOOP_AVAILABLE
+; ..\appl\Source\BrsMainStartup.c	    49    01.07.00  2020-02-04  visbwa  Added filtering of MultiCore parts through C_BRSASR_USECASE_SINGLECORE_COMMENT,
+; ..\appl\Source\BrsMainStartup.c	    50                                  removed error directive at usage of BrsHwGetResetReason()
+; ..\appl\Source\BrsMainStartup.c	    51    02.00.00  2020-05-12  visbwa  Major updates for vBaseEnv 2.0.0 (new BrsMain hooks concept, vLinkGen 2.0)
+; ..\appl\Source\BrsMainStartup.c	    52              2020-06-03  visbwa  Updated vLinkGen define and struct names to new vLinkGen 2.0 naming schema,
+; ..\appl\Source\BrsMainStartup.c	    53                                  added version check for vLinkGen version
+; ..\appl\Source\BrsMainStartup.c	    54    02.01.00  2020-07-03  visbwa  Reduced calls of BrsHw_GetCore() inside Brs_PreMainStartup() to a single call
+; ..\appl\Source\BrsMainStartup.c	    55    02.01.01  2020-09-25  visbwa  Encapsuled memPtr in Brs_MemoryZeroInit() to prevent compiler warnings
+; ..\appl\Source\BrsMainStartup.c	    56    02.01.02  2020-12-07  visbwa  Increased for loop variable in Brs_MemoryZeroInit() and Brs_MemoryInit() from uint8 to
+; ..\appl\Source\BrsMainStartup.c	    57                                  uint32 (depending datatypes will be increased in vLinkGen), removed AUTHOR IDENTITY
+; ..\appl\Source\BrsMainStartup.c	    58  **********************************************************************************************************************/
+; ..\appl\Source\BrsMainStartup.c	    59  
+; ..\appl\Source\BrsMainStartup.c	    60  /**********************************************************************************************************************
+; ..\appl\Source\BrsMainStartup.c	    61  *  EXAMPLE CODE ONLY
+; ..\appl\Source\BrsMainStartup.c	    62  *  -------------------------------------------------------------------------------------------------------------------
+; ..\appl\Source\BrsMainStartup.c	    63  *  This Example Code is only intended for illustrating an example of a possible BSW integration and BSW configuration.
+; ..\appl\Source\BrsMainStartup.c	    64  *  The Example Code has not passed any quality control measures and may be incomplete. The Example Code is neither
+; ..\appl\Source\BrsMainStartup.c	    65  *  intended nor qualified for use in series production. The Example Code as well as any of its modifications and/or
+; ..\appl\Source\BrsMainStartup.c	    66  *  implementations must be tested with diligent care and must comply with all quality requirements which are necessary
+; ..\appl\Source\BrsMainStartup.c	    67  *  according to the state of the art before their use.
+; ..\appl\Source\BrsMainStartup.c	    68  *********************************************************************************************************************/
+; ..\appl\Source\BrsMainStartup.c	    69  
+; ..\appl\Source\BrsMainStartup.c	    70  /**********************************************************************************************************************
+; ..\appl\Source\BrsMainStartup.c	    71    INCLUDES
+; ..\appl\Source\BrsMainStartup.c	    72  **********************************************************************************************************************/
+; ..\appl\Source\BrsMainStartup.c	    73  #include "BrsMainStartup.h"
+; ..\appl\Source\BrsMainStartup.c	    74  #include "BrsHw.h"
+; ..\appl\Source\BrsMainStartup.c	    75  #include "BrsMain.h"
+; ..\appl\Source\BrsMainStartup.c	    76  
+; ..\appl\Source\BrsMainStartup.c	    77  #include "vLinkGen_Lcfg.h"
+; ..\appl\Source\BrsMainStartup.c	    78  
+; ..\appl\Source\BrsMainStartup.c	    79  /**********************************************************************************************************************
+; ..\appl\Source\BrsMainStartup.c	    80    VERSION CHECK
+; ..\appl\Source\BrsMainStartup.c	    81  **********************************************************************************************************************/
+; ..\appl\Source\BrsMainStartup.c	    82  #if (BRSMAINSTARTUP_VERSION != 0x0201u)
+; ..\appl\Source\BrsMainStartup.c	    83    #error "Header and source file are inconsistent!"
+; ..\appl\Source\BrsMainStartup.c	    84  #endif
+; ..\appl\Source\BrsMainStartup.c	    85  #if (BRSMAINSTARTUP_BUGFIX_VERSION != 0x02u)
+; ..\appl\Source\BrsMainStartup.c	    86    #error "Different versions of bugfix in Header and Source used!"
+; ..\appl\Source\BrsMainStartup.c	    87  #endif
+; ..\appl\Source\BrsMainStartup.c	    88  
+; ..\appl\Source\BrsMainStartup.c	    89  /**********************************************************************************************************************
+; ..\appl\Source\BrsMainStartup.c	    90    CONFIGURATION CHECK
+; ..\appl\Source\BrsMainStartup.c	    91  **********************************************************************************************************************/
+; ..\appl\Source\BrsMainStartup.c	    92  #if !defined (BRS_INIT_PATTERN_BLOCKS)           || \ 
+; ..\appl\Source\BrsMainStartup.c	    93      !defined (BRS_INIT_PATTERN_HARDRESET_BLOCKS) || \ 
+; ..\appl\Source\BrsMainStartup.c	    94      !defined (BRS_INIT_PATTERN_AREAS)            || \ 
+; ..\appl\Source\BrsMainStartup.c	    95      !defined (BRS_INIT_PATTERN_HARDRESET_AREAS)
+; ..\appl\Source\BrsMainStartup.c	    96    #error "Your environment is missing the mandatory init pattern. They should be generated out of vBRS in Configurator5."
+; ..\appl\Source\BrsMainStartup.c	    97  #endif
+; ..\appl\Source\BrsMainStartup.c	    98  
+; ..\appl\Source\BrsMainStartup.c	    99  #if (VLINKGEN_CFG_MAJOR_VERSION != 2u)
+; ..\appl\Source\BrsMainStartup.c	   100    #error "This StartUpCode is dependent to the vLinkGen version! vLinkGen major version does not fit!"
+; ..\appl\Source\BrsMainStartup.c	   101  #else
+; ..\appl\Source\BrsMainStartup.c	   102  # if (VLINKGEN_CFG_MINOR_VERSION < 0u)
+; ..\appl\Source\BrsMainStartup.c	   103    #error "This StartUpCode is dependent to the vLinkGen version! Your vLinkGen minor version is too old!"
+; ..\appl\Source\BrsMainStartup.c	   104  # endif
+; ..\appl\Source\BrsMainStartup.c	   105  #endif
+; ..\appl\Source\BrsMainStartup.c	   106  
+; ..\appl\Source\BrsMainStartup.c	   107  
+; ..\appl\Source\BrsMainStartup.c	   108  /**********************************************************************************************************************
+; ..\appl\Source\BrsMainStartup.c	   109    DEFINITION + MACROS
+; ..\appl\Source\BrsMainStartup.c	   110  **********************************************************************************************************************/
+; ..\appl\Source\BrsMainStartup.c	   111  
+; ..\appl\Source\BrsMainStartup.c	   112  /**********************************************************************************************************************
+; ..\appl\Source\BrsMainStartup.c	   113    GLOBAL VARIABLES
+; ..\appl\Source\BrsMainStartup.c	   114  **********************************************************************************************************************/
+; ..\appl\Source\BrsMainStartup.c	   115  
+; ..\appl\Source\BrsMainStartup.c	   116  /**********************************************************************************************************************
+; ..\appl\Source\BrsMainStartup.c	   117    GLOBAL CONST VARIABLES
+; ..\appl\Source\BrsMainStartup.c	   118  **********************************************************************************************************************/
+; ..\appl\Source\BrsMainStartup.c	   119  
+; ..\appl\Source\BrsMainStartup.c	   120  /**********************************************************************************************************************
+; ..\appl\Source\BrsMainStartup.c	   121    LOCAL VARIABLES
+; ..\appl\Source\BrsMainStartup.c	   122  **********************************************************************************************************************/
+; ..\appl\Source\BrsMainStartup.c	   123  
+; ..\appl\Source\BrsMainStartup.c	   124  /**********************************************************************************************************************
+; ..\appl\Source\BrsMainStartup.c	   125    LOCAL CONST VARIABLES
+; ..\appl\Source\BrsMainStartup.c	   126  **********************************************************************************************************************/
+; ..\appl\Source\BrsMainStartup.c	   127  
+; ..\appl\Source\BrsMainStartup.c	   128  /**********************************************************************************************************************
+; ..\appl\Source\BrsMainStartup.c	   129    PROTOTYPES OF GLOBAL FUNCTIONS
+; ..\appl\Source\BrsMainStartup.c	   130  **********************************************************************************************************************/
+; ..\appl\Source\BrsMainStartup.c	   131  extern void BrsMain_MemoryInit_StageZero_Hook(uint32);
+; ..\appl\Source\BrsMainStartup.c	   132  extern void BrsMain_MemoryInit_StageOne_Hook(uint32);
+; ..\appl\Source\BrsMainStartup.c	   133  extern void BrsMain_MemoryInit_StageHardReset_Hook(uint32);
+; ..\appl\Source\BrsMainStartup.c	   134  extern void BrsMain_MemoryInit_StageTwo_Hook(uint32);
+; ..\appl\Source\BrsMainStartup.c	   135  extern void BrsMain_MemoryInit_StageThree_Hook(uint32);
+; ..\appl\Source\BrsMainStartup.c	   136  extern void BrsMain_PreMainHook(uint32);
+; ..\appl\Source\BrsMainStartup.c	   137  
+; ..\appl\Source\BrsMainStartup.c	   138  /**********************************************************************************************************************
+; ..\appl\Source\BrsMainStartup.c	   139    PROTOTYPES OF LOCAL FUNCTIONS
+; ..\appl\Source\BrsMainStartup.c	   140  **********************************************************************************************************************/
+; ..\appl\Source\BrsMainStartup.c	   141  void Brs_MemoryZeroInit(const vLinkGen_MemAreaSet *, uint32, uint32);
+; ..\appl\Source\BrsMainStartup.c	   142  void Brs_MemoryInit(const vLinkGen_RamMemAreaSet *, uint32);
+; ..\appl\Source\BrsMainStartup.c	   143  
+; ..\appl\Source\BrsMainStartup.c	   144  /**********************************************************************************************************************
+; ..\appl\Source\BrsMainStartup.c	   145    FUNCTION DEFINITIONS
+; ..\appl\Source\BrsMainStartup.c	   146  **********************************************************************************************************************/
+; ..\appl\Source\BrsMainStartup.c	   147  /*****************************************************************************/
+; ..\appl\Source\BrsMainStartup.c	   148  /**
+; ..\appl\Source\BrsMainStartup.c	   149   * @brief      Unified routine for Pre Main() Startup.
+; ..\appl\Source\BrsMainStartup.c	   150   * @pre        Stack pointer needs to be initilialized in StartUpCode before.
+; ..\appl\Source\BrsMainStartup.c	   151   * @param[in]  -
+; ..\appl\Source\BrsMainStartup.c	   152   * @param[out] -
+; ..\appl\Source\BrsMainStartup.c	   153   * @return     -
+; ..\appl\Source\BrsMainStartup.c	   154   * @context    Function is called from assembler startup code
+; ..\appl\Source\BrsMainStartup.c	   155   *             Called by all cores
+; ..\appl\Source\BrsMainStartup.c	   156   *             All APIs are called with current Core ID
+; ..\appl\Source\BrsMainStartup.c	   157   */
+; ..\appl\Source\BrsMainStartup.c	   158  /*****************************************************************************/
+; ..\appl\Source\BrsMainStartup.c	   159  void Brs_PreMainStartup(void)
+; Function Brs_PreMainStartup
+.L16:
+Brs_PreMainStartup:	.type	func
+
+; ..\appl\Source\BrsMainStartup.c	   160  {
+; ..\appl\Source\BrsMainStartup.c	   161    uint32 coreID;
+; ..\appl\Source\BrsMainStartup.c	   162  #if (VLINKGEN_CFG_NUM_ZERO_INIT_HARD_RESET_BLOCKS>1uL) || \ 
+; ..\appl\Source\BrsMainStartup.c	   163      (VLINKGEN_CFG_NUM_ZERO_INIT_HARD_RESET_GROUPS>1uL) || \ 
+; ..\appl\Source\BrsMainStartup.c	   164      (VLINKGEN_CFG_NUM_INIT_HARD_RESET_GROUPS>1uL)
+; ..\appl\Source\BrsMainStartup.c	   165    brsHw_ResetReasonType ResetReason;
+; ..\appl\Source\BrsMainStartup.c	   166  #endif
+; ..\appl\Source\BrsMainStartup.c	   167  
+; ..\appl\Source\BrsMainStartup.c	   168    coreID = BrsHw_GetCore();
+	call	BrsHw_GetCore
+.L59:
+	mov	d15,d2
+.L61:
+
+; ..\appl\Source\BrsMainStartup.c	   169  
+; ..\appl\Source\BrsMainStartup.c	   170    BrsMain_MemoryInit_StageZero_Hook(coreID);
+	mov	d4,d15
+	call	BrsMain_MemoryInit_StageZero_Hook
+.L60:
+
+; ..\appl\Source\BrsMainStartup.c	   171  
+; ..\appl\Source\BrsMainStartup.c	   172  #if (VLINKGEN_CFG_NUM_ZERO_INIT_ZERO_GROUPS>1uL)
+; ..\appl\Source\BrsMainStartup.c	   173    /* vLinkGen_ZeroInit_Zero_GroupsSet contains vLinkGen VarSectionGroups, configured with Init Policy "ZERO_INIT" and Init Stage "ZERO" */
+; ..\appl\Source\BrsMainStartup.c	   174    Brs_MemoryZeroInit(&vLinkGen_ZeroInit_Zero_GroupsSet, BRS_INIT_PATTERN_AREAS, coreID);
+; ..\appl\Source\BrsMainStartup.c	   175  #endif
+; ..\appl\Source\BrsMainStartup.c	   176  
+; ..\appl\Source\BrsMainStartup.c	   177  #if (VLINKGEN_CFG_NUM_INIT_ZERO_GROUPS>1uL)
+; ..\appl\Source\BrsMainStartup.c	   178    /* vLinkGen_Init_Zero_GroupsSet contains vLinkGen VarSectionGroups, configured with Init Policy "INIT" and Init Stage "ZERO" */
+; ..\appl\Source\BrsMainStartup.c	   179    Brs_MemoryInit(&vLinkGen_Init_Zero_GroupsSet, coreID);
+; ..\appl\Source\BrsMainStartup.c	   180  #endif
+; ..\appl\Source\BrsMainStartup.c	   181  
+; ..\appl\Source\BrsMainStartup.c	   182    BrsMain_MemoryInit_StageOne_Hook(coreID);
+	mov	d4,d15
+	call	BrsMain_MemoryInit_StageOne_Hook
+.L83:
+
+; ..\appl\Source\BrsMainStartup.c	   183  
+; ..\appl\Source\BrsMainStartup.c	   184  #if (VLINKGEN_CFG_NUM_ZERO_INIT_ONE_BLOCKS>1uL)
+; ..\appl\Source\BrsMainStartup.c	   185    /* vLinkGen_ZeroInit_One_BlocksSet contains vLinkGen memory region blocks, configured with Init Stage "ONE" */
+; ..\appl\Source\BrsMainStartup.c	   186    Brs_MemoryZeroInit(&vLinkGen_ZeroInit_One_BlocksSet, BRS_INIT_PATTERN_BLOCKS, coreID);
+; ..\appl\Source\BrsMainStartup.c	   187  #endif
+; ..\appl\Source\BrsMainStartup.c	   188  
+; ..\appl\Source\BrsMainStartup.c	   189  #if (VLINKGEN_CFG_NUM_ZERO_INIT_ONE_GROUPS>1uL)
+; ..\appl\Source\BrsMainStartup.c	   190    /* vLinkGen_ZeroInit_One_GroupsSet contains vLinkGen VarSectionGroups, configured with Init Policy "ZERO_INIT" and Init Stage "ONE" */
+; ..\appl\Source\BrsMainStartup.c	   191    Brs_MemoryZeroInit(&vLinkGen_ZeroInit_One_GroupsSet, BRS_INIT_PATTERN_AREAS, coreID);
+	mov	d5,d15
+	movh.a	a4,#@his(vLinkGen_ZeroInit_One_GroupsSet)
+.L62:
+	mov	d4,#0
+	lea	a4,[a4]@los(vLinkGen_ZeroInit_One_GroupsSet)
+.L84:
+	call	Brs_MemoryZeroInit
+.L63:
+
+; ..\appl\Source\BrsMainStartup.c	   192  #endif
+; ..\appl\Source\BrsMainStartup.c	   193  
+; ..\appl\Source\BrsMainStartup.c	   194  #if (VLINKGEN_CFG_NUM_INIT_ONE_GROUPS>1uL)
+; ..\appl\Source\BrsMainStartup.c	   195    /* vLinkGen_Init_One_GroupsSet contains vLinkGen VarSectionGroups, configured with Init Policy "INIT" and Init Stage "ONE" */
+; ..\appl\Source\BrsMainStartup.c	   196    Brs_MemoryInit(&vLinkGen_Init_One_GroupsSet, coreID);
+	movh.a	a4,#@his(vLinkGen_Init_One_GroupsSet)
+	lea	a4,[a4]@los(vLinkGen_Init_One_GroupsSet)
+.L85:
+	mov	d4,d15
+	call	Brs_MemoryInit
+.L86:
+
+; ..\appl\Source\BrsMainStartup.c	   197  #endif
+; ..\appl\Source\BrsMainStartup.c	   198  
+; ..\appl\Source\BrsMainStartup.c	   199    BrsMain_MemoryInit_StageHardReset_Hook(coreID);
+	mov	d4,d15
+	call	BrsMain_MemoryInit_StageHardReset_Hook
+.L87:
+
+; ..\appl\Source\BrsMainStartup.c	   200  
+; ..\appl\Source\BrsMainStartup.c	   201  #if (VLINKGEN_CFG_NUM_ZERO_INIT_HARD_RESET_BLOCKS>1uL) || \ 
+; ..\appl\Source\BrsMainStartup.c	   202      (VLINKGEN_CFG_NUM_ZERO_INIT_HARD_RESET_GROUPS>1uL) || \ 
+; ..\appl\Source\BrsMainStartup.c	   203      (VLINKGEN_CFG_NUM_INIT_HARD_RESET_GROUPS>1uL)
+; ..\appl\Source\BrsMainStartup.c	   204    ResetReason = BrsHwGetResetReason();
+; ..\appl\Source\BrsMainStartup.c	   205  #endif
+; ..\appl\Source\BrsMainStartup.c	   206  
+; ..\appl\Source\BrsMainStartup.c	   207  #if (VLINKGEN_CFG_NUM_ZERO_INIT_HARD_RESET_BLOCKS>1uL)
+; ..\appl\Source\BrsMainStartup.c	   208    if (ResetReason != BRSHW_RESET_SW)
+; ..\appl\Source\BrsMainStartup.c	   209    {
+; ..\appl\Source\BrsMainStartup.c	   210      /* vLinkGen_ZeroInit_HardReset_BlocksSet contains vLinkGen memory region blocks, configured with Init Stage "HARD_RESET_ONLY" */
+; ..\appl\Source\BrsMainStartup.c	   211      Brs_MemoryZeroInit(&vLinkGen_ZeroInit_HardReset_BlocksSet, BRS_INIT_PATTERN_HARDRESET_BLOCKS, coreID);
+; ..\appl\Source\BrsMainStartup.c	   212    }
+; ..\appl\Source\BrsMainStartup.c	   213  #endif
+; ..\appl\Source\BrsMainStartup.c	   214  
+; ..\appl\Source\BrsMainStartup.c	   215  #if (VLINKGEN_CFG_NUM_ZERO_INIT_HARD_RESET_GROUPS>1uL)
+; ..\appl\Source\BrsMainStartup.c	   216    if (ResetReason != BRSHW_RESET_SW)
+; ..\appl\Source\BrsMainStartup.c	   217    {
+; ..\appl\Source\BrsMainStartup.c	   218      /* vLinkGen_ZeroInit_HardReset_GroupsSet contains vLinkGen VarSectionGroups, configured with Init Policy "ZERO_INIT" and Init Stage "HARD_RESET_ONLY" */
+; ..\appl\Source\BrsMainStartup.c	   219      Brs_MemoryZeroInit(&vLinkGen_ZeroInit_HardReset_GroupsSet, BRS_INIT_PATTERN_HARDRESET_AREAS, coreID);
+; ..\appl\Source\BrsMainStartup.c	   220    }
+; ..\appl\Source\BrsMainStartup.c	   221  #endif
+; ..\appl\Source\BrsMainStartup.c	   222  
+; ..\appl\Source\BrsMainStartup.c	   223  #if (VLINKGEN_CFG_NUM_INIT_HARD_RESET_GROUPS>1uL)
+; ..\appl\Source\BrsMainStartup.c	   224    if (ResetReason != BRSHW_RESET_SW)
+; ..\appl\Source\BrsMainStartup.c	   225    {
+; ..\appl\Source\BrsMainStartup.c	   226      /* vLinkGen_Init_HardReset_GroupsSet contains vLinkGen VarSectionGroups, configured with Init Policy "INIT" and Init Stage "HARD_RESET_ONLY" */
+; ..\appl\Source\BrsMainStartup.c	   227      Brs_MemoryInit(&vLinkGen_Init_HardReset_GroupsSet, coreID);
+; ..\appl\Source\BrsMainStartup.c	   228    }
+; ..\appl\Source\BrsMainStartup.c	   229  #endif
+; ..\appl\Source\BrsMainStartup.c	   230  
+; ..\appl\Source\BrsMainStartup.c	   231    BrsMain_MemoryInit_StageTwo_Hook(coreID);
+	mov	d4,d15
+	call	BrsMain_MemoryInit_StageTwo_Hook
+.L88:
+
+; ..\appl\Source\BrsMainStartup.c	   232  
+; ..\appl\Source\BrsMainStartup.c	   233  #if (VLINKGEN_CFG_NUM_ZERO_INIT_TWO_GROUPS>1uL)
+; ..\appl\Source\BrsMainStartup.c	   234    /* vLinkGen_ZeroInit_Two_GroupsSet contains vLinkGen VarSectionGroups, configured with Init Policy "ZERO_INIT" and Init Stage "TWO" */
+; ..\appl\Source\BrsMainStartup.c	   235    Brs_MemoryZeroInit(&vLinkGen_ZeroInit_Two_GroupsSet, BRS_INIT_PATTERN_AREAS, coreID);
+; ..\appl\Source\BrsMainStartup.c	   236  #endif
+; ..\appl\Source\BrsMainStartup.c	   237  
+; ..\appl\Source\BrsMainStartup.c	   238  #if (VLINKGEN_CFG_NUM_INIT_TWO_GROUPS>1uL)
+; ..\appl\Source\BrsMainStartup.c	   239    /* vLinkGen_Init_Two_GroupsSet contains vLinkGen VarSectionGroups, configured with Init Policy "INIT" and Init Stage "TWO" */
+; ..\appl\Source\BrsMainStartup.c	   240    Brs_MemoryInit(&vLinkGen_Init_Two_GroupsSet, coreID);
+; ..\appl\Source\BrsMainStartup.c	   241  #endif
+; ..\appl\Source\BrsMainStartup.c	   242  
+; ..\appl\Source\BrsMainStartup.c	   243    BrsMain_MemoryInit_StageThree_Hook(coreID);
+	mov	d4,d15
+	call	BrsMain_MemoryInit_StageThree_Hook
+.L89:
+
+; ..\appl\Source\BrsMainStartup.c	   244  
+; ..\appl\Source\BrsMainStartup.c	   245  #if (VLINKGEN_CFG_NUM_ZERO_INIT_THREE_GROUPS>1uL)
+; ..\appl\Source\BrsMainStartup.c	   246    /* vLinkGen_ZeroInit_Three_GroupsSet contains vLinkGen VarSectionGroups, configured with Init Policy "ZERO_INIT" and Init Stage "THREE" */
+; ..\appl\Source\BrsMainStartup.c	   247    Brs_MemoryZeroInit(&vLinkGen_ZeroInit_Three_GroupsSet, BRS_INIT_PATTERN_AREAS, coreID);
+; ..\appl\Source\BrsMainStartup.c	   248  #endif
+; ..\appl\Source\BrsMainStartup.c	   249  
+; ..\appl\Source\BrsMainStartup.c	   250  #if (VLINKGEN_CFG_NUM_INIT_THREE_GROUPS>1uL)
+; ..\appl\Source\BrsMainStartup.c	   251    /* vLinkGen_Init_Three_GroupsSet contains vLinkGen VarSectionGroups, configured with Init Policy "INIT" and Init Stage "THREE" */
+; ..\appl\Source\BrsMainStartup.c	   252    Brs_MemoryInit(&vLinkGen_Init_Three_GroupsSet, coreID);
+; ..\appl\Source\BrsMainStartup.c	   253  #endif
+; ..\appl\Source\BrsMainStartup.c	   254  
+; ..\appl\Source\BrsMainStartup.c	   255    BrsMain_PreMainHook(coreID);
+	mov	d4,d15
+	call	BrsMain_PreMainHook
+.L90:
+
+; ..\appl\Source\BrsMainStartup.c	   256  
+; ..\appl\Source\BrsMainStartup.c	   257  #if defined (BRS_ENABLE_OS_MULTICORESUPPORT)
+; ..\appl\Source\BrsMainStartup.c	   258    if (coreID == BRSHW_INIT_CORE_ID)
+; ..\appl\Source\BrsMainStartup.c	   259    {
+; ..\appl\Source\BrsMainStartup.c	   260      BrsHw_UnlockCores(coreID); /* unlocks all previously locked cores */
+; ..\appl\Source\BrsMainStartup.c	   261    }
+; ..\appl\Source\BrsMainStartup.c	   262  #endif
+; ..\appl\Source\BrsMainStartup.c	   263    main();
+	j	main
+.L40:
+	
+__Brs_PreMainStartup_function_end:
+	.size	Brs_PreMainStartup,__Brs_PreMainStartup_function_end-Brs_PreMainStartup
+.L29:
+	; End of function
+	
+	.sdecl	'.text.BrsMainStartup.Brs_MemoryZeroInit',code,cluster('Brs_MemoryZeroInit')
+	.sect	'.text.BrsMainStartup.Brs_MemoryZeroInit'
+	.align	2
+	
+	.global	Brs_MemoryZeroInit
+
+; ..\appl\Source\BrsMainStartup.c	   264  }
+; ..\appl\Source\BrsMainStartup.c	   265  
+; ..\appl\Source\BrsMainStartup.c	   266  /*****************************************************************************/
+; ..\appl\Source\BrsMainStartup.c	   267  /**
+; ..\appl\Source\BrsMainStartup.c	   268   * @brief      Generic routine for RAM zeroing.
+; ..\appl\Source\BrsMainStartup.c	   269   * @pre        -
+; ..\appl\Source\BrsMainStartup.c	   270   * @param[in]  memAreaSet shall point to the first element of a vLinkGen_MemAreaSet struct array
+; ..\appl\Source\BrsMainStartup.c	   271   * @param[in]  InitPattern describes the pattern, to be used for the memory initialization
+; ..\appl\Source\BrsMainStartup.c	   272   * @param[in]  coreId shall describe the ID of the current CPU
+; ..\appl\Source\BrsMainStartup.c	   273   * @param[out] -
+; ..\appl\Source\BrsMainStartup.c	   274   * @return     -
+; ..\appl\Source\BrsMainStartup.c	   275   * @context    Function is called from Brs_PreMainStartup() to initialize memory ares,
+; ..\appl\Source\BrsMainStartup.c	   276   *             generated out of vLinkGen configuration
+; ..\appl\Source\BrsMainStartup.c	   277   */
+; ..\appl\Source\BrsMainStartup.c	   278  /*****************************************************************************/
+; ..\appl\Source\BrsMainStartup.c	   279  void Brs_MemoryZeroInit(const vLinkGen_MemAreaSet *memAreaSet, uint32 InitPattern, uint32 coreId)
+; Function Brs_MemoryZeroInit
+.L18:
+Brs_MemoryZeroInit:	.type	func
+
+; ..\appl\Source\BrsMainStartup.c	   280  {
+; ..\appl\Source\BrsMainStartup.c	   281    uint8 i;
+; ..\appl\Source\BrsMainStartup.c	   282  #if !defined (BRSHW_ASM_MEMORY_ZERO_INIT_LOOP_AVAILABLE)
+; ..\appl\Source\BrsMainStartup.c	   283    volatile uint32 *memPtr;
+; ..\appl\Source\BrsMainStartup.c	   284  #endif
+; ..\appl\Source\BrsMainStartup.c	   285  
+; ..\appl\Source\BrsMainStartup.c	   286    for (i=0; i<memAreaSet->Num; i++)
+	mov	d0,#0
+	j	.L2
+.L3:
+
+; ..\appl\Source\BrsMainStartup.c	   287    {
+; ..\appl\Source\BrsMainStartup.c	   288      if (memAreaSet->Areas[i].Core==coreId && (memAreaSet->Areas[i].End - memAreaSet->Areas[i].Start) > 0)
+	ld.a	a15,[a4]4
+.L95:
+	sha	d1,d0,#4
+.L96:
+	addsc.a	a15,a15,d1,#0
+.L97:
+	ld.w	d15,[a15]8
+.L98:
+	jne	d15,d5,.L4
+.L99:
+	ld.w	d2,[a15]
+.L100:
+	ld.w	d15,[a15]4
+.L101:
+	sub	d3,d15,d2
+.L102:
+	jeq	d3,#0,.L5
+.L103:
+
+; ..\appl\Source\BrsMainStartup.c	   289      {
+; ..\appl\Source\BrsMainStartup.c	   290  #if defined (BRSHW_ASM_MEMORY_ZERO_INIT_LOOP_AVAILABLE)
+; ..\appl\Source\BrsMainStartup.c	   291        BrsHw_AsmMemoryZeroInitLoop(memAreaSet->Areas[i].Start, memAreaSet->Areas[i].End, InitPattern);
+; ..\appl\Source\BrsMainStartup.c	   292  
+; ..\appl\Source\BrsMainStartup.c	   293  #else
+; ..\appl\Source\BrsMainStartup.c	   294        memPtr = (volatile uint32*)memAreaSet->Areas[i].Start;
+	mov.a	a2,d2
+.L65:
+
+; ..\appl\Source\BrsMainStartup.c	   295        while ((uint32)memPtr < memAreaSet->Areas[i].End)
+	jge.u	d2,d15,.L6
+.L7:
+
+; ..\appl\Source\BrsMainStartup.c	   296        {
+; ..\appl\Source\BrsMainStartup.c	   297          *memPtr = InitPattern;
+	st.w	[a2+],d4
+.L104:
+	mov.d	d2,a2
+.L66:
+	ld.a	a15,[a4]4
+.L105:
+	addsc.a	a15,a15,d1,#0
+.L106:
+	ld.w	d15,[a15]4
+.L107:
+	jlt.u	d2,d15,.L7
+.L6:
+.L5:
+.L4:
+	add	d0,#1
+.L64:
+	extr.u	d0,d0,#0,#8
+.L2:
+	ld.w	d15,[a4]
+.L108:
+	jlt.u	d0,d15,.L3
+.L109:
+
+; ..\appl\Source\BrsMainStartup.c	   298          memPtr++;
+; ..\appl\Source\BrsMainStartup.c	   299        }
+; ..\appl\Source\BrsMainStartup.c	   300  #endif /*else BRSHW_ASM_MEMORY_ZERO_INIT_LOOP_AVAILABLE*/
+; ..\appl\Source\BrsMainStartup.c	   301      }
+; ..\appl\Source\BrsMainStartup.c	   302    }
+; ..\appl\Source\BrsMainStartup.c	   303  }
+	ret
+.L43:
+	
+__Brs_MemoryZeroInit_function_end:
+	.size	Brs_MemoryZeroInit,__Brs_MemoryZeroInit_function_end-Brs_MemoryZeroInit
+.L34:
+	; End of function
+	
+	.sdecl	'.text.BrsMainStartup.Brs_MemoryInit',code,cluster('Brs_MemoryInit')
+	.sect	'.text.BrsMainStartup.Brs_MemoryInit'
+	.align	2
+	
+	.global	Brs_MemoryInit
+
+; ..\appl\Source\BrsMainStartup.c	   304  
+; ..\appl\Source\BrsMainStartup.c	   305  /*****************************************************************************/
+; ..\appl\Source\BrsMainStartup.c	   306  /**
+; ..\appl\Source\BrsMainStartup.c	   307   * @brief      Generic routine for ROM to RAM initialization.
+; ..\appl\Source\BrsMainStartup.c	   308   * @pre        -
+; ..\appl\Source\BrsMainStartup.c	   309   * @param[in]  memAreasSet shall point to the first element of a vLinkGen_RamMemAreaSet struct array
+; ..\appl\Source\BrsMainStartup.c	   310   * @param[in]  coreId shall describe the ID of the current CPU
+; ..\appl\Source\BrsMainStartup.c	   311   * @param[out] -
+; ..\appl\Source\BrsMainStartup.c	   312   * @return     -
+; ..\appl\Source\BrsMainStartup.c	   313   * @context    Function is called from Brs_PreMainStartup() to initialize memory ares,
+; ..\appl\Source\BrsMainStartup.c	   314   *             generated out of vLinkGen configuration
+; ..\appl\Source\BrsMainStartup.c	   315   */
+; ..\appl\Source\BrsMainStartup.c	   316  /*****************************************************************************/
+; ..\appl\Source\BrsMainStartup.c	   317  void Brs_MemoryInit(const vLinkGen_RamMemAreaSet *memAreasSet, uint32 coreId)
+; Function Brs_MemoryInit
+.L20:
+Brs_MemoryInit:	.type	func
+	mov	d9,d4
+	mov.aa	a12,a4
+.L67:
+
+; ..\appl\Source\BrsMainStartup.c	   318  {
+; ..\appl\Source\BrsMainStartup.c	   319    volatile uint32 *memPtr;
+; ..\appl\Source\BrsMainStartup.c	   320    volatile uint32 *romPtr;
+; ..\appl\Source\BrsMainStartup.c	   321    uint8 i;
+; ..\appl\Source\BrsMainStartup.c	   322  
+; ..\appl\Source\BrsMainStartup.c	   323    for (i=0; i<memAreasSet->Num; i++)
+	mov	d8,#0
+	j	.L8
+.L9:
+
+; ..\appl\Source\BrsMainStartup.c	   324    {
+; ..\appl\Source\BrsMainStartup.c	   325      if (memAreasSet->Areas[i].Core==coreId && ((memAreasSet->Areas[i].End - memAreasSet->Areas[i].Start) > 0))
+	mul	d10,d8,#24
+	ld.a	a2,[a12]4
+.L114:
+	addsc.a	a15,a2,d10,#0
+.L115:
+	ld.w	d15,[a15]16
+.L116:
+	jne	d15,d9,.L10
+.L117:
+	ld.w	d15,[a15]4
+.L118:
+	ld.w	d0,[a15]
+.L119:
+	sub	d0,d15,d0
+.L120:
+	jeq	d0,#0,.L11
+.L121:
+
+; ..\appl\Source\BrsMainStartup.c	   326      {
+; ..\appl\Source\BrsMainStartup.c	   327        if ((memAreasSet->Areas[i].End - memAreasSet->Areas[i].Start) != (memAreasSet->Areas[i].Romend - memAreasSet->Areas[i].Romstart))
+	ld.w	d15,[a15]12
+.L122:
+	ld.w	d1,[a15]8
+.L123:
+	sub	d15,d1
+.L124:
+	jeq	d15,d0,.L12
+.L125:
+
+; ..\appl\Source\BrsMainStartup.c	   328        {
+; ..\appl\Source\BrsMainStartup.c	   329          /* Defined size in rom does not match ram size */
+; ..\appl\Source\BrsMainStartup.c	   330          BrsMainExceptionHandler(kBrsIllegalParameter, BRSERROR_MODULE_BRSMAINSTARTUP, (uint16)(__LINE__));
+	mov	d4,#5
+.L126:
+	mov	d5,#4
+.L127:
+	mov	d6,#330
+	call	BrsMainExceptionHandler
+.L12:
+
+; ..\appl\Source\BrsMainStartup.c	   331        }
+; ..\appl\Source\BrsMainStartup.c	   332  
+; ..\appl\Source\BrsMainStartup.c	   333        memPtr = (volatile uint32*)memAreasSet->Areas[i].Start;
+	ld.a	a2,[a12]4
+.L128:
+	addsc.a	a15,a2,d10,#0
+.L129:
+
+; ..\appl\Source\BrsMainStartup.c	   334        romPtr = (volatile uint32*)memAreasSet->Areas[i].Romstart;
+	ld.w	d15,[a15]8
+.L69:
+	ld.w	d0,[a15]
+.L71:
+	mov.a	a4,d15
+.L72:
+	mov.a	a2,d0
+.L73:
+
+; ..\appl\Source\BrsMainStartup.c	   335        while ((uint32)memPtr < memAreasSet->Areas[i].End)
+	ld.w	d15,[a15]4
+.L70:
+	jge.u	d0,d15,.L13
+.L14:
+
+; ..\appl\Source\BrsMainStartup.c	   336        {
+; ..\appl\Source\BrsMainStartup.c	   337          *memPtr = *romPtr;
+	ld.w	d15,[a4+]
+.L130:
+	st.w	[a2+],d15
+.L131:
+	mov.d	d0,a2
+.L74:
+	ld.a	a15,[a12]4
+.L132:
+	addsc.a	a15,a15,d10,#0
+.L133:
+	ld.w	d15,[a15]4
+.L134:
+	jlt.u	d0,d15,.L14
+.L13:
+.L11:
+.L10:
+	add	d8,#1
+.L68:
+	extr.u	d8,d8,#0,#8
+.L8:
+	ld.w	d15,[a12]
+.L135:
+	jlt.u	d8,d15,.L9
+.L136:
+
+; ..\appl\Source\BrsMainStartup.c	   338          memPtr++;
+; ..\appl\Source\BrsMainStartup.c	   339          romPtr++;
+; ..\appl\Source\BrsMainStartup.c	   340        }
+; ..\appl\Source\BrsMainStartup.c	   341      }
+; ..\appl\Source\BrsMainStartup.c	   342    }
+; ..\appl\Source\BrsMainStartup.c	   343  }
+	ret
+.L52:
+	
+__Brs_MemoryInit_function_end:
+	.size	Brs_MemoryInit,__Brs_MemoryInit_function_end-Brs_MemoryInit
+.L39:
+	; End of function
+	
+	.calls	'Brs_PreMainStartup','BrsHw_GetCore'
+	.calls	'Brs_PreMainStartup','BrsMain_MemoryInit_StageZero_Hook'
+	.calls	'Brs_PreMainStartup','BrsMain_MemoryInit_StageOne_Hook'
+	.calls	'Brs_PreMainStartup','Brs_MemoryZeroInit'
+	.calls	'Brs_PreMainStartup','Brs_MemoryInit'
+	.calls	'Brs_PreMainStartup','BrsMain_MemoryInit_StageHardReset_Hook'
+	.calls	'Brs_PreMainStartup','BrsMain_MemoryInit_StageTwo_Hook'
+	.calls	'Brs_PreMainStartup','BrsMain_MemoryInit_StageThree_Hook'
+	.calls	'Brs_PreMainStartup','BrsMain_PreMainHook'
+	.calls	'Brs_PreMainStartup','main'
+	.calls	'Brs_MemoryInit','BrsMainExceptionHandler'
+	.calls	'Brs_PreMainStartup','',0
+	.calls	'Brs_MemoryZeroInit','',0
+	.extern	BrsHw_GetCore
+	.extern	BrsMainExceptionHandler
+	.extern	main
+	.extern	vLinkGen_ZeroInit_One_GroupsSet
+	.extern	vLinkGen_Init_One_GroupsSet
+	.extern	BrsMain_MemoryInit_StageZero_Hook
+	.extern	BrsMain_MemoryInit_StageOne_Hook
+	.extern	BrsMain_MemoryInit_StageHardReset_Hook
+	.extern	BrsMain_MemoryInit_StageTwo_Hook
+	.extern	BrsMain_MemoryInit_StageThree_Hook
+	.extern	BrsMain_PreMainHook
+	.calls	'Brs_MemoryInit','',0
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L22:
+	.word	9227
+	.half	3
+	.word	.L23
+	.byte	4
+.L21:
+	.byte	1
+	.byte	'..\\appl\\Source\\BrsMainStartup.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
+	.word	.L24
+.L41:
+	.byte	2
+	.byte	'unsigned long int',0,4,7,3
+	.word	125
+	.byte	2
+	.byte	'long int',0,4,5,4
+	.byte	'BrsHw_GetAddrWDTCON0',0,1,1,134,2,1
+	.word	146
+	.byte	1,1,5
+	.byte	'nr',0,1,134,2,1
+	.word	151
+	.byte	6,0,2
+	.byte	'int',0,4,5,7
+	.word	210
+	.byte	8
+	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,9
+	.word	217
+	.byte	0,2
+	.byte	'unsigned int',0,4,7,10
+	.word	259
+	.byte	3
+	.word	259
+	.byte	11
+	.byte	'__cmpswapw',0
+	.word	275
+	.byte	1,1,1,1,12
+	.byte	'p',0
+	.word	280
+	.byte	12
+	.byte	'value',0
+	.word	259
+	.byte	12
+	.byte	'compare',0
+	.word	259
+	.byte	0,13
+	.word	163
+	.byte	14
+	.word	196
+	.byte	6,0,15
+	.byte	'BrsHw_GetCore',0,1,131,4,8
+	.word	125
+	.byte	1,1,1,1
+.L48:
+	.byte	2
+	.byte	'unsigned char',0,1,8,2
+	.byte	'unsigned short int',0,2,7,16
+	.byte	'BrsMainExceptionHandler',0,2,231,1,6,1,1,1,1,5
+	.byte	'ErrorCode',0,2,231,1,36
+	.word	376
+	.byte	5
+	.byte	'ModuleCode',0,2,231,1,53
+	.word	376
+	.byte	5
+	.byte	'LineNumber',0,2,231,1,72
+	.word	393
+	.byte	0,15
+	.byte	'main',0,2,239,1,5
+	.word	210
+	.byte	1,1,1,1,16
+	.byte	'BrsMain_MemoryInit_StageZero_Hook',0,3,131,1,13,1,1,1,1,17,3,131,1,47
+	.word	125
+	.byte	0,16
+	.byte	'BrsMain_MemoryInit_StageOne_Hook',0,3,132,1,13,1,1,1,1,17,3,132,1,46
+	.word	125
+	.byte	0,16
+	.byte	'BrsMain_MemoryInit_StageHardReset_Hook',0,3,133,1,13,1,1,1,1,17,3,133,1,52
+	.word	125
+	.byte	0,16
+	.byte	'BrsMain_MemoryInit_StageTwo_Hook',0,3,134,1,13,1,1,1,1,17,3,134,1,46
+	.word	125
+	.byte	0,16
+	.byte	'BrsMain_MemoryInit_StageThree_Hook',0,3,135,1,13,1,1,1,1,17,3,135,1,48
+	.word	125
+	.byte	0,16
+	.byte	'BrsMain_PreMainHook',0,3,136,1,13,1,1,1,1,17,3,136,1,33
+	.word	125
+	.byte	0,18,4,77,9,16,19
+	.byte	'Start',0
+	.word	125
+	.byte	4,2,35,0,19
+	.byte	'End',0
+	.word	125
+	.byte	4,2,35,4,19
+	.byte	'Core',0
+	.word	125
+	.byte	4,2,35,8,19
+	.byte	'Alignment',0
+	.word	125
+	.byte	4,2,35,12,0,7
+	.word	834
+	.byte	3
+	.word	901
+	.byte	18,4,90,9,8,19
+	.byte	'Num',0
+	.word	125
+	.byte	4,2,35,0,19
+	.byte	'Areas',0
+	.word	906
+	.byte	4,2,35,4,0,7
+	.word	911
+.L44:
+	.byte	3
+	.word	945
+	.byte	10
+	.word	125
+.L50:
+	.byte	3
+	.word	955
+	.byte	18,4,99,9,24,19
+	.byte	'Start',0
+	.word	125
+	.byte	4,2,35,0,19
+	.byte	'End',0
+	.word	125
+	.byte	4,2,35,4,19
+	.byte	'Romstart',0
+	.word	125
+	.byte	4,2,35,8,19
+	.byte	'Romend',0
+	.word	125
+	.byte	4,2,35,12,19
+	.byte	'Core',0
+	.word	125
+	.byte	4,2,35,16,19
+	.byte	'Alignment',0
+	.word	125
+	.byte	4,2,35,20,0,7
+	.word	965
+	.byte	3
+	.word	1066
+	.byte	18,4,116,9,8,19
+	.byte	'Num',0
+	.word	125
+	.byte	4,2,35,0,19
+	.byte	'Areas',0
+	.word	1071
+	.byte	4,2,35,4,0,7
+	.word	1076
+.L53:
+	.byte	3
+	.word	1110
+	.byte	20,1,3
+	.word	1120
+	.byte	21
+	.byte	'__codeptr',0,3,1,1
+	.word	1122
+	.byte	21
+	.byte	'uint8',0,5,104,31
+	.word	376
+	.byte	21
+	.byte	'uint16',0,5,106,31
+	.word	393
+	.byte	21
+	.byte	'sint32',0,5,107,31
+	.word	151
+	.byte	21
+	.byte	'uint32',0,5,108,31
+	.word	125
+	.byte	21
+	.byte	'uint8_least',0,5,111,31
+	.word	376
+	.byte	2
+	.byte	'unsigned long long int',0,8,7,21
+	.byte	'uint64',0,5,121,30
+	.word	1224
+	.byte	21
+	.byte	'StatusType',0,6,127,23
+	.word	376
+	.byte	22,7,145,1,9,1,23
+	.byte	'Default_Init_Task',0,0,23
+	.byte	'Default_Init_Task_Trusted',0,1,23
+	.byte	'IdleTask_OsCore0',0,2,23
+	.byte	'bsw_task',0,3,23
+	.byte	'swc_init',0,4,23
+	.byte	'swc_task',0,5,23
+	.byte	'INVALID_TASK',0,6,23
+	.byte	'OS_TASKID_COUNT',0,6,0,21
+	.byte	'TaskType',0,7,155,1,3
+	.word	1284
+	.byte	21
+	.byte	'Os_Hal_AddressType',0,8,61,16
+	.word	125
+	.byte	24,64
+	.word	125
+	.byte	25,15,0,26
+	.byte	'Os_ExceptionContextType_Tag',0,9,71,8,160,1,19
+	.byte	'AddressRegisters',0
+	.word	1469
+	.byte	64,2,35,0,19
+	.byte	'DataRegisters',0
+	.word	1469
+	.byte	64,2,35,64,19
+	.byte	'Ra',0
+	.word	125
+	.byte	4,3,35,128,1,19
+	.byte	'Psw',0
+	.word	125
+	.byte	4,3,35,132,1,19
+	.byte	'ExceptionSource',0
+	.word	125
+	.byte	4,3,35,136,1,19
+	.byte	'Pcpn',0
+	.word	125
+	.byte	4,3,35,140,1,19
+	.byte	'Pie',0
+	.word	125
+	.byte	4,3,35,144,1,19
+	.byte	'MpuRegionForStackLow',0
+	.word	125
+	.byte	4,3,35,148,1,19
+	.byte	'MpuRegionForStackUpper',0
+	.word	125
+	.byte	4,3,35,152,1,19
+	.byte	'RawPCXI',0
+	.word	125
+	.byte	4,3,35,156,1,0,21
+	.byte	'Os_ExceptionContextType',0,8,66,44
+	.word	1478
+	.byte	21
+	.byte	'Os_InterruptSourceIdType',0,10,238,1,16
+	.word	125
+	.byte	21
+	.byte	'Os_ExceptionSourceIdType',0,10,246,1,16
+	.word	125
+	.byte	22,10,161,2,9,1,23
+	.byte	'RUNNING',0,0,23
+	.byte	'READY',0,1,23
+	.byte	'WAITING',0,2,23
+	.byte	'SUSPENDED',0,3,0,21
+	.byte	'TaskStateType',0,10,175,2,3
+	.word	1826
+	.byte	21
+	.byte	'EventMaskType',0,10,182,2,16
+	.word	1224
+	.byte	21
+	.byte	'Os_TickType',0,10,200,2,19
+	.word	125
+	.byte	21
+	.byte	'TickType',0,10,206,2,21
+	.word	125
+	.byte	18,10,220,2,9,12,19
+	.byte	'maxallowedvalue',0
+	.word	125
+	.byte	4,2,35,0,19
+	.byte	'ticksperbase',0
+	.word	125
+	.byte	4,2,35,4,19
+	.byte	'mincycle',0
+	.word	125
+	.byte	4,2,35,8,0,21
+	.byte	'AlarmBaseType',0,10,228,2,2
+	.word	1958
+	.byte	22,10,128,3,9,1,23
+	.byte	'APPLICATION_TERMINATED',0,0,23
+	.byte	'APPLICATION_RESTARTING',0,1,23
+	.byte	'APPLICATION_ACCESSIBLE',0,2,0,21
+	.byte	'ApplicationStateType',0,10,133,3,3
+	.word	2053
+	.byte	22,10,177,3,9,1,23
+	.byte	'OSServiceId_GetApplicationID',0,0,23
+	.byte	'OSServiceId_GetISRID',0,1,23
+	.byte	'OSServiceId_CallTrustedFunction',0,2,23
+	.byte	'OSServiceId_CheckISRMemoryAccess',0,3,23
+	.byte	'OSServiceId_CheckTaskMemoryAccess',0,4,23
+	.byte	'OSServiceId_CheckObjectAccess',0,5,23
+	.byte	'OSServiceId_CheckObjectOwnership',0,6,23
+	.byte	'OSServiceId_StartScheduleTableRel',0,7,23
+	.byte	'OSServiceId_StartScheduleTableAbs',0,8,23
+	.byte	'OSServiceId_StopScheduleTable',0,9,23
+	.byte	'OSServiceId_NextScheduleTable',0,10,23
+	.byte	'OSServiceId_StartScheduleTableSynchron',0,11,23
+	.byte	'OSServiceId_SyncScheduleTable',0,12,23
+	.byte	'OSServiceId_SetScheduleTableAsync',0,13,23
+	.byte	'OSServiceId_GetScheduleTableStatus',0,14,23
+	.byte	'OSServiceId_IncrementCounter',0,15,23
+	.byte	'OSServiceId_GetCounterValue',0,16,23
+	.byte	'OSServiceId_GetElapsedValue',0,17,23
+	.byte	'OSServiceId_TerminateApplication',0,18,23
+	.byte	'OSServiceId_AllowAccess',0,19,23
+	.byte	'OSServiceId_GetApplicationState',0,20,23
+	.byte	'OSServiceId_GetNumberOfActivatedCores',0,21,23
+	.byte	'OSServiceId_GetCoreID',0,22,23
+	.byte	'OSServiceId_StartCore',0,23,23
+	.byte	'OSServiceId_StartNonAutosarCore',0,24,23
+	.byte	'OSServiceId_GetSpinlock',0,25,23
+	.byte	'OSServiceId_ReleaseSpinlock',0,26,23
+	.byte	'OSServiceId_TryToGetSpinlock',0,27,23
+	.byte	'OSServiceId_ShutdownAllCores',0,28,23
+	.byte	'OSServiceId_ControlIdle',0,29,23
+	.byte	'OSServiceId_IocSend',0,30,23
+	.byte	'OSServiceId_IocWrite',0,31,23
+	.byte	'OSServiceId_IocSendGroup',0,32,23
+	.byte	'OSServiceId_IocWriteGroup',0,33,23
+	.byte	'OSServiceId_IocReceive',0,34,23
+	.byte	'OSServiceId_IocRead',0,35,23
+	.byte	'OSServiceId_IocReceiveGroup',0,36,23
+	.byte	'OSServiceId_IocReadGroup',0,37,23
+	.byte	'OSServiceId_IocEmptyQueue',0,38,23
+	.byte	'OSServiceId_GetCurrentApplicationID',0,39,23
+	.byte	'OSServiceId_GetExceptionContext',0,160,1,23
+	.byte	'OSServiceId_SetExceptionContext',0,161,1,23
+	.byte	'OSServiceId_CallNonTrustedFunction',0,162,1,23
+	.byte	'OSServiceId_AppKill',0,163,1,23
+	.byte	'OSServiceId_AlarmActionSetEvent',0,164,1,23
+	.byte	'OSServiceId_AlarmActionActivateTask',0,165,1,23
+	.byte	'OSServiceId_AlarmActionIncrementCounter',0,166,1,23
+	.byte	'OSServiceId_AlarmActionCallback',0,167,1,23
+	.byte	'OSServiceId_TimerIsr',0,168,1,23
+	.byte	'OSServiceId_IsrWrapper',0,169,1,23
+	.byte	'OSServiceId_GetTaskStackUsage',0,170,1,23
+	.byte	'OSServiceId_GetISRStackUsage',0,171,1,23
+	.byte	'OSServiceId_GetKernelStackUsage',0,172,1,23
+	.byte	'OSServiceId_GetStartupHookStackUsage',0,173,1,23
+	.byte	'OSServiceId_GetErrorHookStackUsage',0,174,1,23
+	.byte	'OSServiceId_GetShutdownHookStackUsage',0,175,1,23
+	.byte	'OSServiceId_GetProtectionHookStackUsage',0,176,1,23
+	.byte	'OSServiceId_GetSemaphore',0,177,1,23
+	.byte	'OSServiceId_ReleaseSemaphore',0,178,1,23
+	.byte	'OSServiceId_ScheduleTableActivateTask',0,179,1,23
+	.byte	'OSServiceId_ScheduleTableSetEvent',0,180,1,23
+	.byte	'OSServiceId_DisableInterruptSource',0,181,1,23
+	.byte	'OSServiceId_EnableInterruptSource',0,182,1,23
+	.byte	'OSServiceId_ClearPendingInterrupt',0,183,1,23
+	.byte	'OSServiceId_GetUnhandledIrq',0,184,1,23
+	.byte	'OSServiceId_GetUnhandledExc',0,185,1,23
+	.byte	'OSServiceId_HookCallCallback',0,186,1,23
+	.byte	'OSServiceId_IsInterruptSourceEnabled',0,187,1,23
+	.byte	'OSServiceId_IsInterruptPending',0,188,1,23
+	.byte	'OSServiceId_CallFastTrustedFunction',0,189,1,23
+	.byte	'OSServiceId_BarrierSynchronize',0,190,1,23
+	.byte	'OSServiceId_InitialEnableInterruptSources',0,191,1,23
+	.byte	'OSServiceId_GetCoreStartState',0,192,1,23
+	.byte	'OSServiceId_StartOS',0,208,1,23
+	.byte	'OSServiceId_GetActiveApplicationMode',0,210,1,23
+	.byte	'OSServiceId_DisableAllInterrupts',0,211,1,23
+	.byte	'OSServiceId_EnableAllInterrupts',0,212,1,23
+	.byte	'OSServiceId_SuspendAllInterrupts',0,213,1,23
+	.byte	'OSServiceId_ResumeAllInterrupts',0,214,1,23
+	.byte	'OSServiceId_SuspendOSInterrupts',0,215,1,23
+	.byte	'OSServiceId_ResumeOSInterrupts',0,216,1,23
+	.byte	'OSServiceId_ActivateTask',0,217,1,23
+	.byte	'OSServiceId_TerminateTask',0,218,1,23
+	.byte	'OSServiceId_ChainTask',0,219,1,23
+	.byte	'OSServiceId_GetTaskID',0,220,1,23
+	.byte	'OSServiceId_GetTaskState',0,221,1,23
+	.byte	'OSServiceId_Schedule',0,222,1,23
+	.byte	'OSServiceId_SetEvent',0,223,1,23
+	.byte	'OSServiceId_ClearEvent',0,224,1,23
+	.byte	'OSServiceId_GetEvent',0,225,1,23
+	.byte	'OSServiceId_WaitEvent',0,226,1,23
+	.byte	'OSServiceId_GetAlarmBase',0,227,1,23
+	.byte	'OSServiceId_GetAlarm',0,228,1,23
+	.byte	'OSServiceId_SetRelAlarm',0,229,1,23
+	.byte	'OSServiceId_SetAbsAlarm',0,230,1,23
+	.byte	'OSServiceId_CancelAlarm',0,231,1,23
+	.byte	'OSServiceId_GetResource',0,232,1,23
+	.byte	'OSServiceId_ReleaseResource',0,233,1,23
+	.byte	'OSSERVICEID_COUNT',0,255,1,0,21
+	.byte	'OSServiceIdType',0,10,156,4,3
+	.word	2165
+	.byte	22,10,172,4,9,2,23
+	.byte	'OS_STATUS_OK',0,0,23
+	.byte	'OS_STATUS_CALLEVEL',0,2,23
+	.byte	'OS_STATUS_LIMIT',0,4,23
+	.byte	'OS_STATUS_RESOURCE',0,6,23
+	.byte	'OS_STATUS_SERVICEID',0,9,23
+	.byte	'OS_STATUS_ILLEGAL_ADDRESS',0,10,23
+	.byte	'OS_STATUS_MISSINGEND',0,11,23
+	.byte	'OS_STATUS_DISABLEDINT',0,12,23
+	.byte	'OS_STATUS_STACKFAULT',0,13,23
+	.byte	'OS_STATUS_PROTECTION_MEMORY',0,14,23
+	.byte	'OS_STATUS_PROTECTION_TIME',0,15,23
+	.byte	'OS_STATUS_PROTECTION_ARRIVAL',0,16,23
+	.byte	'OS_STATUS_PROTECTION_LOCKED',0,17,23
+	.byte	'OS_STATUS_PROTECTION_EXCEPTION',0,18,23
+	.byte	'OS_STATUS_INTERFERENCE_DEADLOCK',0,19,23
+	.byte	'OS_STATUS_NESTING_DEADLOCK',0,20,23
+	.byte	'OS_STATUS_SPINLOCK',0,21,23
+	.byte	'OS_STATUS_CORE',0,22,23
+	.byte	'OS_STATUS_OVERFLOW',0,245,1,23
+	.byte	'OS_STATUS_KILL_KERNEL_OBJ',0,246,1,23
+	.byte	'OS_STATUS_NO_RESTARTTASK',0,247,1,23
+	.byte	'OS_STATUS_CALL_NOT_ALLOWED',0,248,1,23
+	.byte	'OS_STATUS_FUNCTION_UNAVAILABLE',0,249,1,23
+	.byte	'OS_STATUS_PROTECTION_SYSCALL',0,250,1,23
+	.byte	'OS_STATUS_PROTECTION_IRQ',0,251,1,23
+	.byte	'OS_STATUS_API_ERROR',0,252,1,23
+	.byte	'OS_STATUS_ASSERTION',0,253,1,23
+	.byte	'OS_STATUS_OVERLOAD',0,254,1,23
+	.byte	'OS_STATUS_ACCESSRIGHTS_1',0,129,2,23
+	.byte	'OS_STATUS_CALLEVEL_SHARED_STACK',0,130,2,23
+	.byte	'OS_STATUS_ID_1',0,131,2,23
+	.byte	'OS_STATUS_UNLOCKED',0,133,2,23
+	.byte	'OS_STATUS_STATE_1',0,135,2,23
+	.byte	'OS_STATUS_VALUE_IS_ZERO_1',0,136,2,23
+	.byte	'OS_STATUS_CORE_CROSS_DATA',0,150,2,23
+	.byte	'OS_STATUS_PARAM_POINTER_1',0,151,2,23
+	.byte	'OS_STATUS_STACKUSAGE_DISABLED_BY_CONFIG',0,241,3,23
+	.byte	'OS_STATUS_NO_BARRIER_PARTICIPANT',0,242,3,23
+	.byte	'OS_STATUS_UNIMPLEMENTED_CLEARPENDING',0,243,3,23
+	.byte	'OS_STATUS_NO_NTFSTACK_POOL_EMPTY',0,244,3,23
+	.byte	'OS_STATUS_ACCESSRIGHTS_2',0,129,4,23
+	.byte	'OS_STATUS_CALLEVEL_CROSS_CORE_SYNC',0,130,4,23
+	.byte	'OS_STATUS_ID_2',0,131,4,23
+	.byte	'OS_STATUS_NOFUNC_1',0,133,4,23
+	.byte	'OS_STATUS_STATE_2',0,135,4,23
+	.byte	'OS_STATUS_VALUE_IS_ZERO_2',0,136,4,23
+	.byte	'OS_STATUS_PARAM_POINTER_2',0,151,4,23
+	.byte	'OS_STATUS_EVENT_DISABLED_BY_CONFIG',0,241,5,23
+	.byte	'OS_STATUS_UNIMPLEMENTED_EXCEPTIONCONTEXT',0,243,5,23
+	.byte	'OS_STATUS_NO_NTFSTACK_APPLIMIT_EXCEEDED',0,244,5,23
+	.byte	'OS_STATUS_NOTACCESSIBLE_1',0,129,6,23
+	.byte	'OS_STATUS_ID_TYPE_1',0,131,6,23
+	.byte	'OS_STATUS_NOFUNC_2',0,133,6,23
+	.byte	'OS_STATUS_STATE_STOPPED',0,135,6,23
+	.byte	'OS_STATUS_VALUE_IS_TOO_HIGH_1',0,136,6,23
+	.byte	'OS_STATUS_PARAM_POINTER_3',0,151,6,23
+	.byte	'OS_STATUS_NOTACCESSIBLE_2',0,129,8,23
+	.byte	'OS_STATUS_ID_DIFFERENT_COUNTER',0,131,8,23
+	.byte	'OS_STATUS_SPINLOCK_ORDER',0,133,8,23
+	.byte	'OS_STATUS_STATE_RUNNING',0,135,8,23
+	.byte	'OS_STATUS_VALUE_IS_TOO_HIGH_2',0,136,8,23
+	.byte	'OS_STATUS_NOEXTENDEDTASK_1',0,129,10,23
+	.byte	'OS_STATUS_ID_DIFFERENT_SYNC',0,131,10,23
+	.byte	'OS_STATUS_STOPPED_1',0,133,10,23
+	.byte	'OS_STATUS_STATE_NEXTED',0,135,10,23
+	.byte	'OS_STATUS_VALUE_IS_TOO_HIGH_3',0,136,10,23
+	.byte	'OS_STATUS_NOEXTENDEDTASK_2',0,129,12,23
+	.byte	'OS_STATUS_HOOK_NOT_AVAILABLE',0,131,12,23
+	.byte	'OS_STATUS_NOT_STOPPED_2',0,133,12,23
+	.byte	'OS_STATUS_STATE_WAITING',0,135,12,23
+	.byte	'OS_STATUS_VALUE_IS_OUT_OF_BOUNDS_1',0,136,12,23
+	.byte	'OS_STATUS_NOEXTENDEDTASK_CALLER',0,129,14,23
+	.byte	'OS_STATUS_NEXTED_1',0,133,14,23
+	.byte	'OS_STATUS_STATE_NO_RESTART',0,135,14,23
+	.byte	'OS_STATUS_VALUE_IS_OUT_OF_BOUNDS_2',0,136,14,23
+	.byte	'OS_STATUS_LOCKED',0,129,16,23
+	.byte	'OS_STATUS_KILLING_IS_DISABLED',0,133,16,23
+	.byte	'OS_STATUS_STATE_ALREADY_TERMINATED',0,135,16,23
+	.byte	'OS_STATUS_VALUE_IS_TOO_LOW_1',0,136,16,23
+	.byte	'OS_STATUS_PRIORITY',0,129,18,23
+	.byte	'OS_STATUS_ORDER',0,133,18,23
+	.byte	'OS_STATUS_STATE_RESTARTING_NO_MEMBER',0,135,18,23
+	.byte	'OS_STATUS_VALUE_IS_TOO_LOW_2',0,136,18,23
+	.byte	'OS_STATUS_NOT_THE_OWNER_1',0,129,20,23
+	.byte	'OS_STATUS_STATE_ALREADY_RESTARTING',0,135,20,23
+	.byte	'OS_STATUS_VALUE_IS_TOO_LOW_3',0,136,20,23
+	.byte	'OS_STATUS_VALUE_IS_NOT_BOOLEAN',0,136,22,0,21
+	.byte	'Os_StatusType',0,10,232,5,3
+	.word	5335
+	.byte	18,10,133,6,9,4,19
+	.byte	'Service',0
+	.word	2165
+	.byte	1,2,35,0,19
+	.byte	'Error',0
+	.word	376
+	.byte	1,2,35,1,19
+	.byte	'DetailedError',0
+	.word	5335
+	.byte	2,2,35,2,0,21
+	.byte	'Os_ErrorInformationType',0,10,143,6,3
+	.word	7865
+	.byte	22,10,175,6,9,1,23
+	.byte	'SCHEDULETABLE_STOPPED',0,0,23
+	.byte	'SCHEDULETABLE_NEXT',0,1,23
+	.byte	'SCHEDULETABLE_WAITING',0,2,23
+	.byte	'SCHEDULETABLE_RUNNING',0,3,23
+	.byte	'SCHEDULETABLE_RUNNING_AND_SYNCHRONOUS',0,4,0,21
+	.byte	'ScheduleTableStatusType',0,10,192,6,3
+	.word	7960
+	.byte	21
+	.byte	'Os_AccessCheckAddress',0,10,199,6,29
+	.word	125
+	.byte	22,10,211,6,9,1,23
+	.byte	'OS_MEM_ACCESS_TYPE_NON',0,0,23
+	.byte	'OS_MEM_ACCESS_TYPE_R',0,1,23
+	.byte	'OS_MEM_ACCESS_TYPE_READ',0,1,23
+	.byte	'OS_MEM_ACCESS_TYPE_W',0,2,23
+	.byte	'OS_MEM_ACCESS_TYPE_WRITE',0,2,23
+	.byte	'OS_MEM_ACCESS_TYPE_RW',0,3,23
+	.byte	'OS_MEM_ACCESS_TYPE_EXECUTE',0,4,23
+	.byte	'OS_MEM_ACCESS_TYPE_X',0,4,23
+	.byte	'OS_MEM_ACCESS_TYPE_RX',0,5,23
+	.byte	'OS_MEM_ACCESS_TYPE_WX',0,6,23
+	.byte	'OS_MEM_ACCESS_TYPE_RWX',0,7,23
+	.byte	'OS_MEM_ACCESS_TYPE_S',0,8,23
+	.byte	'OS_MEM_ACCESS_TYPE_STACK',0,8,23
+	.byte	'OS_MEM_ACCESS_TYPE_RS',0,9,23
+	.byte	'OS_MEM_ACCESS_TYPE_WS',0,10,23
+	.byte	'OS_MEM_ACCESS_TYPE_RWS',0,11,23
+	.byte	'OS_MEM_ACCESS_TYPE_XS',0,12,23
+	.byte	'OS_MEM_ACCESS_TYPE_RXS',0,13,23
+	.byte	'OS_MEM_ACCESS_TYPE_WXS',0,14,23
+	.byte	'OS_MEM_ACCESS_TYPE_RWXS',0,15,0,21
+	.byte	'Os_MemAccessType',0,10,233,6,3
+	.word	8164
+	.byte	21
+	.byte	'EcuM_ModeType',0,11,55,15
+	.word	376
+	.byte	21
+	.byte	'EcuM_StateType',0,11,61,15
+	.word	376
+	.byte	27,1,1,3
+	.word	8738
+	.byte	21
+	.byte	'EcuM_DriverFuncType',0,12,194,2,9
+	.word	8741
+	.byte	21
+	.byte	'EcuM_DefaultAppModeType',0,12,227,2,16
+	.word	125
+	.byte	21
+	.byte	'EcuM_NormalMcuModeType',0,12,245,2,16
+	.word	125
+	.byte	26
+	.byte	'sEcuM_DriverInitOneType',0,12,136,3,16,4,19
+	.byte	'FunctionOfDriverInitOne',0
+	.word	8746
+	.byte	4,2,35,0,0,21
+	.byte	'EcuM_DriverInitOneType',0,12,139,3,3
+	.word	8840
+	.byte	3
+	.word	8738
+	.byte	26
+	.byte	'sEcuM_PCConfigType',0,12,175,3,16,1,19
+	.byte	'EcuM_PCConfigNeverUsed',0
+	.word	376
+	.byte	1,2,35,0,0,21
+	.byte	'EcuM_PCConfigType',0,12,178,3,3
+	.word	8941
+	.byte	21
+	.byte	'vLinkGen_MemArea',0,4,87,3
+	.word	834
+	.byte	21
+	.byte	'vLinkGen_MemAreaSet',0,4,96,3
+	.word	911
+	.byte	21
+	.byte	'vLinkGen_RamMemArea',0,4,113,3
+	.word	965
+	.byte	21
+	.byte	'vLinkGen_RamMemAreaSet',0,4,122,3
+	.word	1076
+	.byte	7
+	.word	911
+	.byte	28
+	.byte	'vLinkGen_ZeroInit_One_GroupsSet',0,4,232,1,34
+	.word	9138
+	.byte	1,1,7
+	.word	1076
+	.byte	28
+	.byte	'vLinkGen_Init_One_GroupsSet',0,4,237,1,37
+	.word	9186
+	.byte	1,1,0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L23:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,15,0,73,19,0,0,4,46,1,3,8,32
+	.byte	13,58,15,59,15,57,15,73,19,54,15,39,12,0,0,5,5,0,3,8,58,15,59,15,57,15,73,19,0,0,6,11,0,0,0,7,38,0,73
+	.byte	19,0,0,8,46,1,3,8,54,15,39,12,63,12,60,12,0,0,9,5,0,73,19,0,0,10,53,0,73,19,0,0,11,46,1,3,8,73,19,54,15
+	.byte	39,12,63,12,60,12,0,0,12,5,0,3,8,73,19,0,0,13,46,1,49,19,0,0,14,5,0,49,19,0,0,15,46,0,3,8,58,15,59,15
+	.byte	57,15,73,19,54,15,39,12,63,12,60,12,0,0,16,46,1,3,8,58,15,59,15,57,15,54,15,39,12,63,12,60,12,0,0,17,5
+	.byte	0,58,15,59,15,57,15,73,19,0,0,18,19,1,58,15,59,15,57,15,11,15,0,0,19,13,0,3,8,73,19,11,15,56,9,0,0,20
+	.byte	21,0,54,15,0,0,21,22,0,3,8,58,15,59,15,57,15,73,19,0,0,22,4,1,58,15,59,15,57,15,11,15,0,0,23,40,0,3,8
+	.byte	28,13,0,0,24,1,1,11,15,73,19,0,0,25,33,0,47,15,0,0,26,19,1,3,8,58,15,59,15,57,15,11,15,0,0,27,21,0,54
+	.byte	15,39,12,0,0,28,52,0,3,8,58,15,59,15,57,15,73,19,63,12,60,12,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L24:
+	.word	.L76-.L75
+.L75:
+	.half	3
+	.word	.L78-.L77
+.L77:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'D:\\Zonal\\demo011\\tasking\\appl\\Include',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\appl\\GenData',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\component\\_Common\\Implementation',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\component\\Os\\Implementation',0,0
+	.byte	'BrsHw.h',0,1,0,0
+	.byte	'BrsMain.h',0,1,0,0
+	.byte	'..\\appl\\Source\\BrsMainStartup.c',0,0,0,0
+	.byte	'vLinkGen_Lcfg.h',0,2,0,0
+	.byte	'Platform_Types.h',0,3,0,0
+	.byte	'Std_Types.h',0,3,0,0
+	.byte	'Os_Types_Lcfg.h',0,2,0,0
+	.byte	'Os_Hal_Os_Types.h',0,4,0,0
+	.byte	'Os_Hal_OsInt.h',0,4,0,0
+	.byte	'Os_Types.h',0,4,0,0
+	.byte	'Rte_Type.h',0,2,0,0
+	.byte	'EcuM_Cfg.h',0,2,0,0,0
+.L78:
+.L76:
+	.sdecl	'.debug_info',debug,cluster('Brs_PreMainStartup')
+	.sect	'.debug_info'
+.L25:
+	.word	201
+	.half	3
+	.word	.L26
+	.byte	4,1
+	.byte	'..\\appl\\Source\\BrsMainStartup.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
+	.word	.L28,.L27
+	.byte	2
+	.word	.L21
+	.byte	3
+	.byte	'Brs_PreMainStartup',0,1,159,1,6,1,1,1
+	.word	.L16,.L40,.L15
+	.byte	4
+	.word	.L16,.L40
+	.byte	5
+	.byte	'coreID',0,1,161,1,10
+	.word	.L41,.L42
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Brs_PreMainStartup')
+	.sect	'.debug_abbrev'
+.L26:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Brs_PreMainStartup')
+	.sect	'.debug_line'
+.L27:
+	.word	.L80-.L79
+.L79:
+	.half	3
+	.word	.L82-.L81
+.L81:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\appl\\Source\\BrsMainStartup.c',0,0,0,0,0
+.L82:
+	.byte	5,25,7,0,5,2
+	.word	.L16
+	.byte	3,167,1,1,5,10,9
+	.half	.L59-.L16
+	.byte	1,5,37,9
+	.half	.L61-.L59
+	.byte	3,2,1,5,36,9
+	.half	.L60-.L61
+	.byte	3,12,1,5,80,9
+	.half	.L83-.L60
+	.byte	3,9,1,5,23,1,5,56,9
+	.half	.L62-.L83
+	.byte	1,5,23,1,5,80,9
+	.half	.L84-.L62
+	.byte	1,5,19,9
+	.half	.L63-.L84
+	.byte	3,5,1,5,48,9
+	.half	.L85-.L63
+	.byte	1,5,42,9
+	.half	.L86-.L85
+	.byte	3,3,1,5,36,9
+	.half	.L87-.L86
+	.byte	3,32,1,5,38,9
+	.half	.L88-.L87
+	.byte	3,12,1,5,23,9
+	.half	.L89-.L88
+	.byte	3,12,1,5,7,9
+	.half	.L90-.L89
+	.byte	3,8,1,5,1,7,9
+	.half	.L29-.L90
+	.byte	3,1,0,1,1
+.L80:
+	.sdecl	'.debug_ranges',debug,cluster('Brs_PreMainStartup')
+	.sect	'.debug_ranges'
+.L28:
+	.word	-1,.L16,0,.L29-.L16,0,0
+	.sdecl	'.debug_info',debug,cluster('Brs_MemoryZeroInit')
+	.sect	'.debug_info'
+.L30:
+	.word	285
+	.half	3
+	.word	.L31
+	.byte	4,1
+	.byte	'..\\appl\\Source\\BrsMainStartup.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
+	.word	.L33,.L32
+	.byte	2
+	.word	.L21
+	.byte	3
+	.byte	'Brs_MemoryZeroInit',0,1,151,2,6,1,1,1
+	.word	.L18,.L43,.L17
+	.byte	4
+	.byte	'memAreaSet',0,1,151,2,52
+	.word	.L44,.L45
+	.byte	4
+	.byte	'InitPattern',0,1,151,2,71
+	.word	.L41,.L46
+	.byte	4
+	.byte	'coreId',0,1,151,2,91
+	.word	.L41,.L47
+	.byte	5
+	.word	.L18,.L43
+	.byte	6
+	.byte	'i',0,1,153,2,9
+	.word	.L48,.L49
+	.byte	6
+	.byte	'memPtr',0,1,155,2,20
+	.word	.L50,.L51
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Brs_MemoryZeroInit')
+	.sect	'.debug_abbrev'
+.L31:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Brs_MemoryZeroInit')
+	.sect	'.debug_line'
+.L32:
+	.word	.L92-.L91
+.L91:
+	.half	3
+	.word	.L94-.L93
+.L93:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\appl\\Source\\BrsMainStartup.c',0,0,0,0,0
+.L94:
+	.byte	5,9,7,0,5,2
+	.word	.L18
+	.byte	3,157,2,1,5,30,1,5,19,9
+	.half	.L3-.L18
+	.byte	3,2,1,5,27,9
+	.half	.L95-.L3
+	.byte	1,5,26,9
+	.half	.L96-.L95
+	.byte	1,5,29,9
+	.half	.L97-.L96
+	.byte	1,5,9,9
+	.half	.L98-.L97
+	.byte	1,5,94,7,9
+	.half	.L99-.L98
+	.byte	1,5,67,9
+	.half	.L100-.L99
+	.byte	1,5,72,9
+	.half	.L101-.L100
+	.byte	1,5,102,9
+	.half	.L102-.L101
+	.byte	1,5,14,7,9
+	.half	.L103-.L102
+	.byte	3,6,1,5,55,9
+	.half	.L65-.L103
+	.byte	3,1,1,5,17,7,9
+	.half	.L7-.L65
+	.byte	3,2,1,5,22,9
+	.half	.L104-.L7
+	.byte	3,126,1,5,41,9
+	.half	.L66-.L104
+	.byte	1,5,48,9
+	.half	.L105-.L66
+	.byte	1,5,51,9
+	.half	.L106-.L105
+	.byte	1,5,55,9
+	.half	.L107-.L106
+	.byte	1,5,33,7,9
+	.half	.L4-.L107
+	.byte	3,119,1,5,25,9
+	.half	.L2-.L4
+	.byte	1,5,30,9
+	.half	.L108-.L2
+	.byte	1,5,1,7,9
+	.half	.L109-.L108
+	.byte	3,17,1,7,9
+	.half	.L34-.L109
+	.byte	0,1,1
+.L92:
+	.sdecl	'.debug_ranges',debug,cluster('Brs_MemoryZeroInit')
+	.sect	'.debug_ranges'
+.L33:
+	.word	-1,.L18,0,.L34-.L18,0,0
+	.sdecl	'.debug_info',debug,cluster('Brs_MemoryInit')
+	.sect	'.debug_info'
+.L35:
+	.word	277
+	.half	3
+	.word	.L36
+	.byte	4,1
+	.byte	'..\\appl\\Source\\BrsMainStartup.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
+	.word	.L38,.L37
+	.byte	2
+	.word	.L21
+	.byte	3
+	.byte	'Brs_MemoryInit',0,1,189,2,6,1,1,1
+	.word	.L20,.L52,.L19
+	.byte	4
+	.byte	'memAreasSet',0,1,189,2,51
+	.word	.L53,.L54
+	.byte	4
+	.byte	'coreId',0,1,189,2,71
+	.word	.L41,.L55
+	.byte	5
+	.word	.L20,.L52
+	.byte	6
+	.byte	'memPtr',0,1,191,2,20
+	.word	.L50,.L56
+	.byte	6
+	.byte	'romPtr',0,1,192,2,20
+	.word	.L50,.L57
+	.byte	6
+	.byte	'i',0,1,193,2,9
+	.word	.L48,.L58
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Brs_MemoryInit')
+	.sect	'.debug_abbrev'
+.L36:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Brs_MemoryInit')
+	.sect	'.debug_line'
+.L37:
+	.word	.L111-.L110
+.L110:
+	.half	3
+	.word	.L113-.L112
+.L112:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\appl\\Source\\BrsMainStartup.c',0,0,0,0,0
+.L113:
+	.byte	5,6,7,0,5,2
+	.word	.L20
+	.byte	3,188,2,1,5,9,9
+	.half	.L67-.L20
+	.byte	3,6,1,5,31,1,5,27,9
+	.half	.L9-.L67
+	.byte	3,2,1,5,20,1,5,27,9
+	.half	.L114-.L9
+	.byte	1,5,30,9
+	.half	.L115-.L114
+	.byte	1,5,9,9
+	.half	.L116-.L115
+	.byte	1,5,70,7,9
+	.half	.L117-.L116
+	.byte	1,5,98,9
+	.half	.L118-.L117
+	.byte	1,5,75,9
+	.half	.L119-.L118
+	.byte	1,5,106,9
+	.half	.L120-.L119
+	.byte	1,5,94,7,9
+	.half	.L121-.L120
+	.byte	3,2,1,5,125,9
+	.half	.L122-.L121
+	.byte	1,5,102,9
+	.half	.L123-.L122
+	.byte	1,5,7,9
+	.half	.L124-.L123
+	.byte	1,5,33,7,9
+	.half	.L125-.L124
+	.byte	3,3,1,5,55,9
+	.half	.L126-.L125
+	.byte	1,5,87,9
+	.half	.L127-.L126
+	.byte	1,5,45,9
+	.half	.L12-.L127
+	.byte	3,3,1,5,52,9
+	.half	.L128-.L12
+	.byte	1,5,55,9
+	.half	.L129-.L128
+	.byte	3,1,1,9
+	.half	.L69-.L129
+	.byte	3,127,1,5,14,9
+	.half	.L71-.L69
+	.byte	3,1,1,9
+	.half	.L72-.L71
+	.byte	3,127,1,5,52,9
+	.half	.L73-.L72
+	.byte	3,2,1,5,56,9
+	.half	.L70-.L73
+	.byte	1,5,19,7,9
+	.half	.L14-.L70
+	.byte	3,2,1,5,17,9
+	.half	.L130-.L14
+	.byte	1,5,22,9
+	.half	.L131-.L130
+	.byte	3,126,1,5,42,9
+	.half	.L74-.L131
+	.byte	1,5,49,9
+	.half	.L132-.L74
+	.byte	1,5,52,9
+	.half	.L133-.L132
+	.byte	1,5,56,9
+	.half	.L134-.L133
+	.byte	1,5,34,7,9
+	.half	.L10-.L134
+	.byte	3,116,1,5,26,9
+	.half	.L8-.L10
+	.byte	1,5,31,9
+	.half	.L135-.L8
+	.byte	1,5,1,7,9
+	.half	.L136-.L135
+	.byte	3,20,1,7,9
+	.half	.L39-.L136
+	.byte	0,1,1
+.L111:
+	.sdecl	'.debug_ranges',debug,cluster('Brs_MemoryInit')
+	.sect	'.debug_ranges'
+.L38:
+	.word	-1,.L20,0,.L39-.L20,0,0
+	.sdecl	'.debug_loc',debug,cluster('Brs_MemoryInit')
+	.sect	'.debug_loc'
+.L19:
+	.word	-1,.L20,0,.L52-.L20
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L55:
+	.word	-1,.L20,0,.L9-.L20
+	.half	1
+	.byte	84
+	.word	.L67-.L20,.L52-.L20
+	.half	1
+	.byte	89
+	.word	0,0
+.L58:
+	.word	-1,.L20,.L9-.L20,.L68-.L20
+	.half	1
+	.byte	88
+	.word	.L8-.L20,.L52-.L20
+	.half	1
+	.byte	88
+	.word	0,0
+.L54:
+	.word	-1,.L20,0,.L9-.L20
+	.half	1
+	.byte	100
+	.word	.L67-.L20,.L52-.L20
+	.half	1
+	.byte	108
+	.word	0,0
+.L56:
+	.word	-1,.L20,.L71-.L20,.L14-.L20
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L73-.L20,.L10-.L20
+	.half	1
+	.byte	98
+	.word	.L74-.L20,.L10-.L20
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L57:
+	.word	-1,.L20,.L69-.L20,.L70-.L20
+	.half	1
+	.byte	95
+	.word	.L72-.L20,.L10-.L20
+	.half	1
+	.byte	100
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Brs_MemoryZeroInit')
+	.sect	'.debug_loc'
+.L17:
+	.word	-1,.L18,0,.L43-.L18
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L46:
+	.word	-1,.L18,0,.L43-.L18
+	.half	1
+	.byte	84
+	.word	0,0
+.L47:
+	.word	-1,.L18,0,.L43-.L18
+	.half	1
+	.byte	85
+	.word	0,0
+.L49:
+	.word	-1,.L18,.L3-.L18,.L64-.L18
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L2-.L18,.L43-.L18
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L45:
+	.word	-1,.L18,0,.L43-.L18
+	.half	1
+	.byte	100
+	.word	0,0
+.L51:
+	.word	-1,.L18,.L65-.L18,.L4-.L18
+	.half	1
+	.byte	98
+	.word	.L66-.L18,.L4-.L18
+	.half	1
+	.byte	82
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Brs_PreMainStartup')
+	.sect	'.debug_loc'
+.L15:
+	.word	-1,.L16,0,.L40-.L16
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L42:
+	.word	-1,.L16,.L59-.L16,.L60-.L16
+	.half	1
+	.byte	82
+	.word	.L61-.L16,.L40-.L16
+	.half	1
+	.byte	95
+	.word	.L62-.L16,.L63-.L16
+	.half	1
+	.byte	85
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L137:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,27,8,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('Brs_PreMainStartup')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L137,.L16,.L40-.L16
+	.sdecl	'.debug_frame',debug,cluster('Brs_MemoryZeroInit')
+	.sect	'.debug_frame'
+	.word	20
+	.word	.L137,.L18,.L43-.L18
+	.byte	8,19,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('Brs_MemoryInit')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L137,.L20,.L52-.L20
+
+; ..\appl\Source\BrsMainStartup.c	   344  
+; ..\appl\Source\BrsMainStartup.c	   345  void BswM_MainFunction(void);
+
+	; Module end

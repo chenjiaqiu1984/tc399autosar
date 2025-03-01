@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DCF ARSCHEMA="450_DEV">
+	<Version>1.0</Version>
+	<PROFILESETTINGS>ProfileSettings.xml</PROFILESETTINGS>
+	<ADMINDATATEMPLATES>AdminDataTemplates.xml</ADMINDATATEMPLATES>
+	<PROJECTASSISTANT>../../tc399demo.dpa</PROJECTASSISTANT>
+	<FILEREF>
+		<ARXML>Packages.arxml</ARXML>
+	</FILEREF>
+	<FILEREF>
+		<ARXML>DataTypes.arxml</ARXML>
+	</FILEREF>
+	<FILEREF>
+		<ARXML>PortInterfaces.arxml</ARXML>
+	</FILEREF>
+	<FILEREF>
+		<ARXML>ECUProjects/tc399demo.arxml</ARXML>
+		<DVG>ECUProjects/tc399demo.dvg</DVG>
+	</FILEREF>
+	<FILEREF>
+		<ARXML>ComponentTypes/swc_test.arxml</ARXML>
+		<DVG>ComponentTypes/swc_test.dvg</DVG>
+	</FILEREF>
+</DCF>

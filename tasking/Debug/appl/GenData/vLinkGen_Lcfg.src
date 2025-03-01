@@ -1,0 +1,1999 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 21092262 SN 73118428"
+	.compiler_invocation	"ctc --dep-file=appl\\GenData\\.vLinkGen_Lcfg.o.d --fp-model=c,f,l,n,r,S,T,z -D__CPU__=tc39xb -D__CPU_TC39XB__ --core=tc1.6.2 --iso=99 -DBRS_COMP_TASKING -ID:\\Zonal\\demo011\\tasking -ID:\\Zonal\\testdemo\\taskingdemo\\demo001 -ID:\\Zonal\\demo011\\tasking -ID:\\Zonal\\demo011\\tasking\\appl -ID:\\Zonal\\demo011\\tasking\\appl\\GenData -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\Components -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\ContractPhase -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\inc -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\src -ID:\\Zonal\\demo011\\tasking\\appl\\Include -ID:\\Zonal\\demo011\\tasking\\appl\\Source -ID:\\Zonal\\demo011\\tasking\\appl\\Source\\swc_test -ID:\\Zonal\\demo011\\tasking\\component -ID:\\Zonal\\demo011\\tasking\\component\\_Common -ID:\\Zonal\\demo011\\tasking\\component\\_Common\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\BswM -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\EcuM -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\Os -ID:\\Zonal\\demo011\\tasking\\component\\Os\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\Os\\BSWMD\\Os -ID:\\Zonal\\demo011\\tasking\\component\\Os\\BSWMD\\Os\\TC39xQ -ID:\\Zonal\\demo011\\tasking\\component\\Os\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\Os\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\Os\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug -ID:\\Zonal\\demo011\\tasking\\Debug\\appl -ID:\\Zonal\\demo011\\tasking\\Debug\\appl\\GenData -ID:\\Zonal\\demo011\\tasking\\Debug\\appl\\GenData\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\appl\\Source -ID:\\Zonal\\demo011\\tasking\\Debug\\component -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\BswM -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\BswM\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\EcuM -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\EcuM\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\Os -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\Os\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\VStdLib -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\VStdLib\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Dio -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Dio\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Dio\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\McalLib -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\McalLib\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\McalLib\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Mcu -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Mcu\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Mcu\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Port -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Port\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Port\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Platform -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Platform\\AS440 -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Sfr -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Sfr\\TC39xB -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Sfr\\TC39xB\\_Reg -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc\\inc\\AS440 -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal\\Port -ID:\\Zonal\\demo011\\tasking\\mcal\\Port\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\Port\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\Port\\ssc\\src -g2 --make-target=appl\\GenData\\vLinkGen_Lcfg.o -t2 --language=-gcc,-volatile,+strings,-kanji --default-near-size=0 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o appl\\GenData\\vLinkGen_Lcfg.src ..\\appl\\GenData\\vLinkGen_Lcfg.c"
+	.compiler_name		"ctc"
+	;source	'..\\appl\\GenData\\vLinkGen_Lcfg.c'
+
+	
+$TC162
+	
+	.sdecl	'.rodata.vLinkGen_Lcfg.vLinkGen_ZeroInit_Early_Blocks',data,rom,cluster('vLinkGen_ZeroInit_Early_Blocks')
+	.sect	'.rodata.vLinkGen_Lcfg.vLinkGen_ZeroInit_Early_Blocks'
+	.global	vLinkGen_ZeroInit_Early_Blocks
+	.align	4
+vLinkGen_ZeroInit_Early_Blocks:	.type	object
+	.size	vLinkGen_ZeroInit_Early_Blocks,16
+	.space	16
+	.sdecl	'.rodata.vLinkGen_Lcfg.vLinkGen_ZeroInit_One_Blocks',data,rom,cluster('vLinkGen_ZeroInit_One_Blocks')
+	.sect	'.rodata.vLinkGen_Lcfg.vLinkGen_ZeroInit_One_Blocks'
+	.global	vLinkGen_ZeroInit_One_Blocks
+	.align	4
+vLinkGen_ZeroInit_One_Blocks:	.type	object
+	.size	vLinkGen_ZeroInit_One_Blocks,16
+	.space	16
+	.sdecl	'.rodata.vLinkGen_Lcfg.vLinkGen_ZeroInit_HardReset_Blocks',data,rom,cluster('vLinkGen_ZeroInit_HardReset_Blocks')
+	.sect	'.rodata.vLinkGen_Lcfg.vLinkGen_ZeroInit_HardReset_Blocks'
+	.global	vLinkGen_ZeroInit_HardReset_Blocks
+	.align	4
+vLinkGen_ZeroInit_HardReset_Blocks:	.type	object
+	.size	vLinkGen_ZeroInit_HardReset_Blocks,16
+	.space	16
+	.sdecl	'.rodata.vLinkGen_Lcfg.vLinkGen_ZeroInit_Early_Groups',data,rom,cluster('vLinkGen_ZeroInit_Early_Groups')
+	.sect	'.rodata.vLinkGen_Lcfg.vLinkGen_ZeroInit_Early_Groups'
+	.global	vLinkGen_ZeroInit_Early_Groups
+	.align	4
+vLinkGen_ZeroInit_Early_Groups:	.type	object
+	.size	vLinkGen_ZeroInit_Early_Groups,112
+	.word	_STACK_C0_START,_lc_ge_STACK_C0
+	.space	8
+	.word	_STACK_C1_START,_lc_ge_STACK_C1,1
+	.space	4
+	.word	_STACK_C2_START,_lc_ge_STACK_C2,2
+	.space	4
+	.word	_STACK_C3_START,_lc_ge_STACK_C3,3
+	.space	4
+	.word	_STACK_C4_START,_lc_ge_STACK_C4,4
+	.space	4
+	.word	_STACK_C5_START,_lc_ge_STACK_C5,6
+	.space	20
+	.sdecl	'.rodata.vLinkGen_Lcfg.vLinkGen_ZeroInit_Zero_Groups',data,rom,cluster('vLinkGen_ZeroInit_Zero_Groups')
+	.sect	'.rodata.vLinkGen_Lcfg.vLinkGen_ZeroInit_Zero_Groups'
+	.global	vLinkGen_ZeroInit_Zero_Groups
+	.align	4
+vLinkGen_ZeroInit_Zero_Groups:	.type	object
+	.size	vLinkGen_ZeroInit_Zero_Groups,16
+	.space	16
+	.sdecl	'.rodata.vLinkGen_Lcfg.vLinkGen_ZeroInit_One_Groups',data,rom,cluster('vLinkGen_ZeroInit_One_Groups')
+	.sect	'.rodata.vLinkGen_Lcfg.vLinkGen_ZeroInit_One_Groups'
+	.global	vLinkGen_ZeroInit_One_Groups
+	.align	4
+vLinkGen_ZeroInit_One_Groups:	.type	object
+	.size	vLinkGen_ZeroInit_One_Groups,240
+	.word	_OS_DATA_CORE0_VAR_FAST_ZERO_INIT_START,_lc_ge_OS_DATA_CORE0_VAR_FAST_ZERO_INIT
+	.space	8
+	.word	_OS_DATA_CORE0_VAR_FAST_ZERO_INIT_bss_START,_lc_ge_OS_DATA_CORE0_VAR_FAST_ZERO_INIT_bss
+	.space	8
+	.word	_OS_DATA_CORE0_VAR_ZERO_INIT_START,_lc_ge_OS_DATA_CORE0_VAR_ZERO_INIT
+	.space	8
+	.word	_OS_DATA_CORE0_VAR_ZERO_INIT_bss_START,_lc_ge_OS_DATA_CORE0_VAR_ZERO_INIT_bss
+	.space	8
+	.word	_OS_GLOBALSHARED_VAR_FAST_ZERO_INIT_START,_lc_ge_OS_GLOBALSHARED_VAR_FAST_ZERO_INIT
+	.space	8
+	.word	_OS_GLOBALSHARED_VAR_FAST_ZERO_INIT_bss_START,_lc_ge_OS_GLOBALSHARED_VAR_FAST_ZERO_INIT_bss
+	.space	8
+	.word	_OS_GLOBALSHARED_VAR_ZERO_INIT_START,_lc_ge_OS_GLOBALSHARED_VAR_ZERO_INIT
+	.space	8
+	.word	_OS_GLOBALSHARED_VAR_ZERO_INIT_bss_START,_lc_ge_OS_GLOBALSHARED_VAR_ZERO_INIT_bss
+	.space	8
+	.word	_OS_OsApplication_OsCore0_VAR_FAST_ZERO_INIT_START,_lc_ge_OS_OsApplication_OsCore0_VAR_FAST_ZERO_INIT
+	.space	8
+	.word	_OS_OsApplication_OsCore0_VAR_FAST_ZERO_INIT_bss_START,_lc_ge_OS_OsApplication_OsCore0_VAR_FAST_ZERO_INIT_bss
+	.space	8
+	.word	_OS_OsApplication_OsCore0_VAR_ZERO_INIT_START,_lc_ge_OS_OsApplication_OsCore0_VAR_ZERO_INIT
+	.space	8
+	.word	_OS_OsApplication_OsCore0_VAR_ZERO_INIT_bss_START,_lc_ge_OS_OsApplication_OsCore0_VAR_ZERO_INIT_bss
+	.space	8
+	.word	_bss_START,_lc_ge_bss
+	.space	8
+	.word	_zbss_START,_lc_ge_zbss
+	.space	24
+	.sdecl	'.rodata.vLinkGen_Lcfg.vLinkGen_ZeroInit_Two_Groups',data,rom,cluster('vLinkGen_ZeroInit_Two_Groups')
+	.sect	'.rodata.vLinkGen_Lcfg.vLinkGen_ZeroInit_Two_Groups'
+	.global	vLinkGen_ZeroInit_Two_Groups
+	.align	4
+vLinkGen_ZeroInit_Two_Groups:	.type	object
+	.size	vLinkGen_ZeroInit_Two_Groups,16
+	.space	16
+	.sdecl	'.rodata.vLinkGen_Lcfg.vLinkGen_ZeroInit_Three_Groups',data,rom,cluster('vLinkGen_ZeroInit_Three_Groups')
+	.sect	'.rodata.vLinkGen_Lcfg.vLinkGen_ZeroInit_Three_Groups'
+	.global	vLinkGen_ZeroInit_Three_Groups
+	.align	4
+vLinkGen_ZeroInit_Three_Groups:	.type	object
+	.size	vLinkGen_ZeroInit_Three_Groups,16
+	.space	16
+	.sdecl	'.rodata.vLinkGen_Lcfg.vLinkGen_ZeroInit_HardReset_Groups',data,rom,cluster('vLinkGen_ZeroInit_HardReset_Groups')
+	.sect	'.rodata.vLinkGen_Lcfg.vLinkGen_ZeroInit_HardReset_Groups'
+	.global	vLinkGen_ZeroInit_HardReset_Groups
+	.align	4
+vLinkGen_ZeroInit_HardReset_Groups:	.type	object
+	.size	vLinkGen_ZeroInit_HardReset_Groups,16
+	.space	16
+	.sdecl	'.rodata.vLinkGen_Lcfg.vLinkGen_Init_Zero_Groups',data,rom,cluster('vLinkGen_Init_Zero_Groups')
+	.sect	'.rodata.vLinkGen_Lcfg.vLinkGen_Init_Zero_Groups'
+	.global	vLinkGen_Init_Zero_Groups
+	.align	4
+vLinkGen_Init_Zero_Groups:	.type	object
+	.size	vLinkGen_Init_Zero_Groups,24
+	.space	24
+	.sdecl	'.rodata.vLinkGen_Lcfg.vLinkGen_Init_One_Groups',data,rom,cluster('vLinkGen_Init_One_Groups')
+	.sect	'.rodata.vLinkGen_Lcfg.vLinkGen_Init_One_Groups'
+	.global	vLinkGen_Init_One_Groups
+	.align	4
+vLinkGen_Init_One_Groups:	.type	object
+	.size	vLinkGen_Init_One_Groups,264
+	.word	_OS_DATA_CORE0_VAR_FAST_INIT_START,_lc_ge_OS_DATA_CORE0_VAR_FAST_INIT,_OS_DATA_CORE0_VAR_FAST_INIT_ROM_START,_OS_DATA_CORE0_VAR_FAST_INIT_ROM_LIMIT
+	.space	8
+	.word	_OS_DATA_CORE0_VAR_INIT_START,_lc_ge_OS_DATA_CORE0_VAR_INIT,_OS_DATA_CORE0_VAR_INIT_ROM_START,_OS_DATA_CORE0_VAR_INIT_ROM_LIMIT
+	.space	8
+	.word	_OS_DATA_SHARED_VAR_FAST_INIT_START,_lc_ge_OS_DATA_SHARED_VAR_FAST_INIT,_OS_DATA_SHARED_VAR_FAST_INIT_ROM_START,_OS_DATA_SHARED_VAR_FAST_INIT_ROM_LIMIT
+	.space	8
+	.word	_OS_DATA_SHARED_VAR_INIT_START,_lc_ge_OS_DATA_SHARED_VAR_INIT,_OS_DATA_SHARED_VAR_INIT_ROM_START,_OS_DATA_SHARED_VAR_INIT_ROM_LIMIT
+	.space	8
+	.word	_OS_GLOBALSHARED_VAR_FAST_INIT_START,_lc_ge_OS_GLOBALSHARED_VAR_FAST_INIT,_OS_GLOBALSHARED_VAR_FAST_INIT_ROM_START,_OS_GLOBALSHARED_VAR_FAST_INIT_ROM_LIMIT
+	.space	8
+	.word	_OS_GLOBALSHARED_VAR_INIT_START,_lc_ge_OS_GLOBALSHARED_VAR_INIT,_OS_GLOBALSHARED_VAR_INIT_ROM_START,_OS_GLOBALSHARED_VAR_INIT_ROM_LIMIT
+	.space	8
+	.word	_OS_OsApplication_OsCore0_VAR_FAST_INIT_START,_lc_ge_OS_OsApplication_OsCore0_VAR_FAST_INIT,_OS_OsApplication_OsCore0_VAR_FAST_INIT_ROM_START,_OS_OsApplication_OsCore0_VAR_FAST_INIT_ROM_LIMIT
+	.space	8
+	.word	_OS_OsApplication_OsCore0_VAR_INIT_START,_lc_ge_OS_OsApplication_OsCore0_VAR_INIT,_OS_OsApplication_OsCore0_VAR_INIT_ROM_START,_OS_OsApplication_OsCore0_VAR_INIT_ROM_LIMIT
+	.space	8
+	.word	_data_START,_lc_ge_data,_data_ROM_START,_data_ROM_LIMIT
+	.space	8
+	.word	_zdata_START,_lc_ge_zdata,_zdata_ROM_START,_zdata_ROM_LIMIT
+	.space	32
+	.sdecl	'.rodata.vLinkGen_Lcfg.vLinkGen_Init_Two_Groups',data,rom,cluster('vLinkGen_Init_Two_Groups')
+	.sect	'.rodata.vLinkGen_Lcfg.vLinkGen_Init_Two_Groups'
+	.global	vLinkGen_Init_Two_Groups
+	.align	4
+vLinkGen_Init_Two_Groups:	.type	object
+	.size	vLinkGen_Init_Two_Groups,24
+	.space	24
+	.sdecl	'.rodata.vLinkGen_Lcfg.vLinkGen_Init_Three_Groups',data,rom,cluster('vLinkGen_Init_Three_Groups')
+	.sect	'.rodata.vLinkGen_Lcfg.vLinkGen_Init_Three_Groups'
+	.global	vLinkGen_Init_Three_Groups
+	.align	4
+vLinkGen_Init_Three_Groups:	.type	object
+	.size	vLinkGen_Init_Three_Groups,24
+	.space	24
+	.sdecl	'.rodata.vLinkGen_Lcfg.vLinkGen_Init_HardReset_Groups',data,rom,cluster('vLinkGen_Init_HardReset_Groups')
+	.sect	'.rodata.vLinkGen_Lcfg.vLinkGen_Init_HardReset_Groups'
+	.global	vLinkGen_Init_HardReset_Groups
+	.align	4
+vLinkGen_Init_HardReset_Groups:	.type	object
+	.size	vLinkGen_Init_HardReset_Groups,24
+	.space	24
+	.sdecl	'.rodata.vLinkGen_Lcfg.vLinkGen_ZeroInit_Early_BlocksSet',data,rom,cluster('vLinkGen_ZeroInit_Early_BlocksSet')
+	.sect	'.rodata.vLinkGen_Lcfg.vLinkGen_ZeroInit_Early_BlocksSet'
+	.global	vLinkGen_ZeroInit_Early_BlocksSet
+	.align	4
+vLinkGen_ZeroInit_Early_BlocksSet:	.type	object
+	.size	vLinkGen_ZeroInit_Early_BlocksSet,8
+	.word	1,vLinkGen_ZeroInit_Early_Blocks
+	.sdecl	'.rodata.vLinkGen_Lcfg.vLinkGen_ZeroInit_One_BlocksSet',data,rom,cluster('vLinkGen_ZeroInit_One_BlocksSet')
+	.sect	'.rodata.vLinkGen_Lcfg.vLinkGen_ZeroInit_One_BlocksSet'
+	.global	vLinkGen_ZeroInit_One_BlocksSet
+	.align	4
+vLinkGen_ZeroInit_One_BlocksSet:	.type	object
+	.size	vLinkGen_ZeroInit_One_BlocksSet,8
+	.word	1,vLinkGen_ZeroInit_One_Blocks
+	.sdecl	'.rodata.vLinkGen_Lcfg.vLinkGen_ZeroInit_HardReset_BlocksSet',data,rom,cluster('vLinkGen_ZeroInit_HardReset_BlocksSet')
+	.sect	'.rodata.vLinkGen_Lcfg.vLinkGen_ZeroInit_HardReset_BlocksSet'
+	.global	vLinkGen_ZeroInit_HardReset_BlocksSet
+	.align	4
+vLinkGen_ZeroInit_HardReset_BlocksSet:	.type	object
+	.size	vLinkGen_ZeroInit_HardReset_BlocksSet,8
+	.word	1,vLinkGen_ZeroInit_HardReset_Blocks
+	.sdecl	'.rodata.vLinkGen_Lcfg.vLinkGen_ZeroInit_Early_GroupsSet',data,rom,cluster('vLinkGen_ZeroInit_Early_GroupsSet')
+	.sect	'.rodata.vLinkGen_Lcfg.vLinkGen_ZeroInit_Early_GroupsSet'
+	.global	vLinkGen_ZeroInit_Early_GroupsSet
+	.align	4
+vLinkGen_ZeroInit_Early_GroupsSet:	.type	object
+	.size	vLinkGen_ZeroInit_Early_GroupsSet,8
+	.word	7,vLinkGen_ZeroInit_Early_Groups
+	.sdecl	'.rodata.vLinkGen_Lcfg.vLinkGen_ZeroInit_Zero_GroupsSet',data,rom,cluster('vLinkGen_ZeroInit_Zero_GroupsSet')
+	.sect	'.rodata.vLinkGen_Lcfg.vLinkGen_ZeroInit_Zero_GroupsSet'
+	.global	vLinkGen_ZeroInit_Zero_GroupsSet
+	.align	4
+vLinkGen_ZeroInit_Zero_GroupsSet:	.type	object
+	.size	vLinkGen_ZeroInit_Zero_GroupsSet,8
+	.word	1,vLinkGen_ZeroInit_Zero_Groups
+	.sdecl	'.rodata.vLinkGen_Lcfg.vLinkGen_ZeroInit_One_GroupsSet',data,rom,cluster('vLinkGen_ZeroInit_One_GroupsSet')
+	.sect	'.rodata.vLinkGen_Lcfg.vLinkGen_ZeroInit_One_GroupsSet'
+	.global	vLinkGen_ZeroInit_One_GroupsSet
+	.align	4
+vLinkGen_ZeroInit_One_GroupsSet:	.type	object
+	.size	vLinkGen_ZeroInit_One_GroupsSet,8
+	.word	15,vLinkGen_ZeroInit_One_Groups
+	.sdecl	'.rodata.vLinkGen_Lcfg.vLinkGen_ZeroInit_Two_GroupsSet',data,rom,cluster('vLinkGen_ZeroInit_Two_GroupsSet')
+	.sect	'.rodata.vLinkGen_Lcfg.vLinkGen_ZeroInit_Two_GroupsSet'
+	.global	vLinkGen_ZeroInit_Two_GroupsSet
+	.align	4
+vLinkGen_ZeroInit_Two_GroupsSet:	.type	object
+	.size	vLinkGen_ZeroInit_Two_GroupsSet,8
+	.word	1,vLinkGen_ZeroInit_Two_Groups
+	.sdecl	'.rodata.vLinkGen_Lcfg.vLinkGen_ZeroInit_Three_GroupsSet',data,rom,cluster('vLinkGen_ZeroInit_Three_GroupsSet')
+	.sect	'.rodata.vLinkGen_Lcfg.vLinkGen_ZeroInit_Three_GroupsSet'
+	.global	vLinkGen_ZeroInit_Three_GroupsSet
+	.align	4
+vLinkGen_ZeroInit_Three_GroupsSet:	.type	object
+	.size	vLinkGen_ZeroInit_Three_GroupsSet,8
+	.word	1,vLinkGen_ZeroInit_Three_Groups
+	.sdecl	'.rodata.vLinkGen_Lcfg.vLinkGen_ZeroInit_HardReset_GroupsSet',data,rom,cluster('vLinkGen_ZeroInit_HardReset_GroupsSet')
+	.sect	'.rodata.vLinkGen_Lcfg.vLinkGen_ZeroInit_HardReset_GroupsSet'
+	.global	vLinkGen_ZeroInit_HardReset_GroupsSet
+	.align	4
+vLinkGen_ZeroInit_HardReset_GroupsSet:	.type	object
+	.size	vLinkGen_ZeroInit_HardReset_GroupsSet,8
+	.word	1,vLinkGen_ZeroInit_HardReset_Groups
+	.sdecl	'.rodata.vLinkGen_Lcfg.vLinkGen_Init_Zero_GroupsSet',data,rom,cluster('vLinkGen_Init_Zero_GroupsSet')
+	.sect	'.rodata.vLinkGen_Lcfg.vLinkGen_Init_Zero_GroupsSet'
+	.global	vLinkGen_Init_Zero_GroupsSet
+	.align	4
+vLinkGen_Init_Zero_GroupsSet:	.type	object
+	.size	vLinkGen_Init_Zero_GroupsSet,8
+	.word	1,vLinkGen_Init_Zero_Groups
+	.sdecl	'.rodata.vLinkGen_Lcfg.vLinkGen_Init_One_GroupsSet',data,rom,cluster('vLinkGen_Init_One_GroupsSet')
+	.sect	'.rodata.vLinkGen_Lcfg.vLinkGen_Init_One_GroupsSet'
+	.global	vLinkGen_Init_One_GroupsSet
+	.align	4
+vLinkGen_Init_One_GroupsSet:	.type	object
+	.size	vLinkGen_Init_One_GroupsSet,8
+	.word	11,vLinkGen_Init_One_Groups
+	.sdecl	'.rodata.vLinkGen_Lcfg.vLinkGen_Init_Two_GroupsSet',data,rom,cluster('vLinkGen_Init_Two_GroupsSet')
+	.sect	'.rodata.vLinkGen_Lcfg.vLinkGen_Init_Two_GroupsSet'
+	.global	vLinkGen_Init_Two_GroupsSet
+	.align	4
+vLinkGen_Init_Two_GroupsSet:	.type	object
+	.size	vLinkGen_Init_Two_GroupsSet,8
+	.word	1,vLinkGen_Init_Two_Groups
+	.sdecl	'.rodata.vLinkGen_Lcfg.vLinkGen_Init_Three_GroupsSet',data,rom,cluster('vLinkGen_Init_Three_GroupsSet')
+	.sect	'.rodata.vLinkGen_Lcfg.vLinkGen_Init_Three_GroupsSet'
+	.global	vLinkGen_Init_Three_GroupsSet
+	.align	4
+vLinkGen_Init_Three_GroupsSet:	.type	object
+	.size	vLinkGen_Init_Three_GroupsSet,8
+	.word	1,vLinkGen_Init_Three_Groups
+	.sdecl	'.rodata.vLinkGen_Lcfg.vLinkGen_Init_HardReset_GroupsSet',data,rom,cluster('vLinkGen_Init_HardReset_GroupsSet')
+	.sect	'.rodata.vLinkGen_Lcfg.vLinkGen_Init_HardReset_GroupsSet'
+	.global	vLinkGen_Init_HardReset_GroupsSet
+	.align	4
+vLinkGen_Init_HardReset_GroupsSet:	.type	object
+	.size	vLinkGen_Init_HardReset_GroupsSet,8
+	.word	1,vLinkGen_Init_HardReset_Groups
+	.extern	_OS_DATA_CORE0_VAR_FAST_INIT_ROM_LIMIT
+	.extern	_OS_DATA_CORE0_VAR_FAST_INIT_ROM_START
+	.extern	_OS_DATA_CORE0_VAR_FAST_INIT_START
+	.extern	_OS_DATA_CORE0_VAR_FAST_ZERO_INIT_START
+	.extern	_OS_DATA_CORE0_VAR_FAST_ZERO_INIT_bss_START
+	.extern	_OS_DATA_CORE0_VAR_INIT_ROM_LIMIT
+	.extern	_OS_DATA_CORE0_VAR_INIT_ROM_START
+	.extern	_OS_DATA_CORE0_VAR_INIT_START
+	.extern	_OS_DATA_CORE0_VAR_ZERO_INIT_START
+	.extern	_OS_DATA_CORE0_VAR_ZERO_INIT_bss_START
+	.extern	_OS_DATA_SHARED_VAR_FAST_INIT_ROM_LIMIT
+	.extern	_OS_DATA_SHARED_VAR_FAST_INIT_ROM_START
+	.extern	_OS_DATA_SHARED_VAR_FAST_INIT_START
+	.extern	_OS_DATA_SHARED_VAR_INIT_ROM_LIMIT
+	.extern	_OS_DATA_SHARED_VAR_INIT_ROM_START
+	.extern	_OS_DATA_SHARED_VAR_INIT_START
+	.extern	_OS_GLOBALSHARED_VAR_FAST_INIT_ROM_LIMIT
+	.extern	_OS_GLOBALSHARED_VAR_FAST_INIT_ROM_START
+	.extern	_OS_GLOBALSHARED_VAR_FAST_INIT_START
+	.extern	_OS_GLOBALSHARED_VAR_FAST_ZERO_INIT_START
+	.extern	_OS_GLOBALSHARED_VAR_FAST_ZERO_INIT_bss_START
+	.extern	_OS_GLOBALSHARED_VAR_INIT_ROM_LIMIT
+	.extern	_OS_GLOBALSHARED_VAR_INIT_ROM_START
+	.extern	_OS_GLOBALSHARED_VAR_INIT_START
+	.extern	_OS_GLOBALSHARED_VAR_ZERO_INIT_START
+	.extern	_OS_GLOBALSHARED_VAR_ZERO_INIT_bss_START
+	.extern	_OS_OsApplication_OsCore0_VAR_FAST_INIT_ROM_LIMIT
+	.extern	_OS_OsApplication_OsCore0_VAR_FAST_INIT_ROM_START
+	.extern	_OS_OsApplication_OsCore0_VAR_FAST_INIT_START
+	.extern	_OS_OsApplication_OsCore0_VAR_FAST_ZERO_INIT_START
+	.extern	_OS_OsApplication_OsCore0_VAR_FAST_ZERO_INIT_bss_START
+	.extern	_OS_OsApplication_OsCore0_VAR_INIT_ROM_LIMIT
+	.extern	_OS_OsApplication_OsCore0_VAR_INIT_ROM_START
+	.extern	_OS_OsApplication_OsCore0_VAR_INIT_START
+	.extern	_OS_OsApplication_OsCore0_VAR_ZERO_INIT_START
+	.extern	_OS_OsApplication_OsCore0_VAR_ZERO_INIT_bss_START
+	.extern	_STACK_C0_START
+	.extern	_STACK_C1_START
+	.extern	_STACK_C2_START
+	.extern	_STACK_C3_START
+	.extern	_STACK_C4_START
+	.extern	_STACK_C5_START
+	.extern	_bss_START
+	.extern	_data_ROM_LIMIT
+	.extern	_data_ROM_START
+	.extern	_data_START
+	.extern	_lc_ge_OS_DATA_CORE0_VAR_FAST_INIT
+	.extern	_lc_ge_OS_DATA_CORE0_VAR_FAST_ZERO_INIT
+	.extern	_lc_ge_OS_DATA_CORE0_VAR_FAST_ZERO_INIT_bss
+	.extern	_lc_ge_OS_DATA_CORE0_VAR_INIT
+	.extern	_lc_ge_OS_DATA_CORE0_VAR_ZERO_INIT
+	.extern	_lc_ge_OS_DATA_CORE0_VAR_ZERO_INIT_bss
+	.extern	_lc_ge_OS_DATA_SHARED_VAR_FAST_INIT
+	.extern	_lc_ge_OS_DATA_SHARED_VAR_INIT
+	.extern	_lc_ge_OS_GLOBALSHARED_VAR_FAST_INIT
+	.extern	_lc_ge_OS_GLOBALSHARED_VAR_FAST_ZERO_INIT
+	.extern	_lc_ge_OS_GLOBALSHARED_VAR_FAST_ZERO_INIT_bss
+	.extern	_lc_ge_OS_GLOBALSHARED_VAR_INIT
+	.extern	_lc_ge_OS_GLOBALSHARED_VAR_ZERO_INIT
+	.extern	_lc_ge_OS_GLOBALSHARED_VAR_ZERO_INIT_bss
+	.extern	_lc_ge_OS_OsApplication_OsCore0_VAR_FAST_INIT
+	.extern	_lc_ge_OS_OsApplication_OsCore0_VAR_FAST_ZERO_INIT
+	.extern	_lc_ge_OS_OsApplication_OsCore0_VAR_FAST_ZERO_INIT_bss
+	.extern	_lc_ge_OS_OsApplication_OsCore0_VAR_INIT
+	.extern	_lc_ge_OS_OsApplication_OsCore0_VAR_ZERO_INIT
+	.extern	_lc_ge_OS_OsApplication_OsCore0_VAR_ZERO_INIT_bss
+	.extern	_lc_ge_STACK_C0
+	.extern	_lc_ge_STACK_C1
+	.extern	_lc_ge_STACK_C2
+	.extern	_lc_ge_STACK_C3
+	.extern	_lc_ge_STACK_C4
+	.extern	_lc_ge_STACK_C5
+	.extern	_lc_ge_bss
+	.extern	_lc_ge_data
+	.extern	_lc_ge_zbss
+	.extern	_lc_ge_zdata
+	.extern	_zbss_START
+	.extern	_zdata_ROM_LIMIT
+	.extern	_zdata_ROM_START
+	.extern	_zdata_START
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L3:
+	.word	4442
+	.half	3
+	.word	.L4
+	.byte	4
+.L2:
+	.byte	1
+	.byte	'..\\appl\\GenData\\vLinkGen_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
+	.word	.L5
+	.byte	2
+	.byte	'int',0,4,5,3
+	.word	125
+	.byte	4
+	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,5
+	.word	132
+	.byte	0,2
+	.byte	'unsigned int',0,4,7,6
+	.word	174
+	.byte	7
+	.word	174
+	.byte	8
+	.byte	'__cmpswapw',0
+	.word	190
+	.byte	1,1,1,1,9
+	.byte	'p',0
+	.word	195
+	.byte	9
+	.byte	'value',0
+	.word	174
+	.byte	9
+	.byte	'compare',0
+	.word	174
+	.byte	0,10,1,7
+	.word	252
+	.byte	11
+	.byte	'__codeptr',0,1,1,1
+	.word	254
+	.byte	2
+	.byte	'unsigned char',0,1,8,11
+	.byte	'uint8',0,2,104,31
+	.word	277
+	.byte	2
+	.byte	'unsigned short int',0,2,7,11
+	.byte	'uint16',0,2,106,31
+	.word	308
+	.byte	2
+	.byte	'unsigned long int',0,4,7,11
+	.byte	'uint32',0,2,108,31
+	.word	345
+	.byte	12,3,77,9,16,13
+	.byte	'Start',0
+	.word	345
+	.byte	4,2,35,0,13
+	.byte	'End',0
+	.word	345
+	.byte	4,2,35,4,13
+	.byte	'Core',0
+	.word	345
+	.byte	4,2,35,8,13
+	.byte	'Alignment',0
+	.word	345
+	.byte	4,2,35,12,0,11
+	.byte	'vLinkGen_MemArea',0,3,87,3
+	.word	381
+	.byte	3
+	.word	381
+	.byte	7
+	.word	473
+	.byte	12,3,90,9,8,13
+	.byte	'Num',0
+	.word	345
+	.byte	4,2,35,0,13
+	.byte	'Areas',0
+	.word	478
+	.byte	4,2,35,4,0,11
+	.byte	'vLinkGen_MemAreaSet',0,3,96,3
+	.word	483
+	.byte	12,3,99,9,24,13
+	.byte	'Start',0
+	.word	345
+	.byte	4,2,35,0,13
+	.byte	'End',0
+	.word	345
+	.byte	4,2,35,4,13
+	.byte	'Romstart',0
+	.word	345
+	.byte	4,2,35,8,13
+	.byte	'Romend',0
+	.word	345
+	.byte	4,2,35,12,13
+	.byte	'Core',0
+	.word	345
+	.byte	4,2,35,16,13
+	.byte	'Alignment',0
+	.word	345
+	.byte	4,2,35,20,0,11
+	.byte	'vLinkGen_RamMemArea',0,3,113,3
+	.word	545
+	.byte	3
+	.word	545
+	.byte	7
+	.word	674
+	.byte	12,3,116,9,8,13
+	.byte	'Num',0
+	.word	345
+	.byte	4,2,35,0,13
+	.byte	'Areas',0
+	.word	679
+	.byte	4,2,35,4,0,11
+	.byte	'vLinkGen_RamMemAreaSet',0,3,122,3
+	.word	684
+	.byte	14
+	.word	277
+	.byte	15,0,16
+	.byte	'_OS_DATA_CORE0_VAR_FAST_INIT_ROM_LIMIT',0,3,129,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_OS_DATA_CORE0_VAR_FAST_INIT_ROM_START',0,3,130,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_OS_DATA_CORE0_VAR_FAST_INIT_START',0,3,131,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_OS_DATA_CORE0_VAR_FAST_ZERO_INIT_START',0,3,132,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_OS_DATA_CORE0_VAR_FAST_ZERO_INIT_bss_START',0,3,133,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_OS_DATA_CORE0_VAR_INIT_ROM_LIMIT',0,3,134,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_OS_DATA_CORE0_VAR_INIT_ROM_START',0,3,135,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_OS_DATA_CORE0_VAR_INIT_START',0,3,136,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_OS_DATA_CORE0_VAR_ZERO_INIT_START',0,3,137,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_OS_DATA_CORE0_VAR_ZERO_INIT_bss_START',0,3,138,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_OS_DATA_SHARED_VAR_FAST_INIT_ROM_LIMIT',0,3,139,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_OS_DATA_SHARED_VAR_FAST_INIT_ROM_START',0,3,140,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_OS_DATA_SHARED_VAR_FAST_INIT_START',0,3,141,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_OS_DATA_SHARED_VAR_INIT_ROM_LIMIT',0,3,142,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_OS_DATA_SHARED_VAR_INIT_ROM_START',0,3,143,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_OS_DATA_SHARED_VAR_INIT_START',0,3,144,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_OS_GLOBALSHARED_VAR_FAST_INIT_ROM_LIMIT',0,3,145,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_OS_GLOBALSHARED_VAR_FAST_INIT_ROM_START',0,3,146,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_OS_GLOBALSHARED_VAR_FAST_INIT_START',0,3,147,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_OS_GLOBALSHARED_VAR_FAST_ZERO_INIT_START',0,3,148,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_OS_GLOBALSHARED_VAR_FAST_ZERO_INIT_bss_START',0,3,149,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_OS_GLOBALSHARED_VAR_INIT_ROM_LIMIT',0,3,150,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_OS_GLOBALSHARED_VAR_INIT_ROM_START',0,3,151,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_OS_GLOBALSHARED_VAR_INIT_START',0,3,152,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_OS_GLOBALSHARED_VAR_ZERO_INIT_START',0,3,153,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_OS_GLOBALSHARED_VAR_ZERO_INIT_bss_START',0,3,154,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_OS_OsApplication_OsCore0_VAR_FAST_INIT_ROM_LIMIT',0,3,155,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_OS_OsApplication_OsCore0_VAR_FAST_INIT_ROM_START',0,3,156,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_OS_OsApplication_OsCore0_VAR_FAST_INIT_START',0,3,157,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_OS_OsApplication_OsCore0_VAR_FAST_ZERO_INIT_START',0,3,158,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_OS_OsApplication_OsCore0_VAR_FAST_ZERO_INIT_bss_START',0,3,159,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_OS_OsApplication_OsCore0_VAR_INIT_ROM_LIMIT',0,3,160,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_OS_OsApplication_OsCore0_VAR_INIT_ROM_START',0,3,161,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_OS_OsApplication_OsCore0_VAR_INIT_START',0,3,162,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_OS_OsApplication_OsCore0_VAR_ZERO_INIT_START',0,3,163,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_OS_OsApplication_OsCore0_VAR_ZERO_INIT_bss_START',0,3,164,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_STACK_C0_START',0,3,165,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_STACK_C1_START',0,3,166,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_STACK_C2_START',0,3,167,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_STACK_C3_START',0,3,168,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_STACK_C4_START',0,3,169,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_STACK_C5_START',0,3,170,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_bss_START',0,3,171,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_data_ROM_LIMIT',0,3,172,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_data_ROM_START',0,3,173,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_data_START',0,3,174,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_lc_ge_OS_DATA_CORE0_VAR_FAST_INIT',0,3,175,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_lc_ge_OS_DATA_CORE0_VAR_FAST_ZERO_INIT',0,3,176,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_lc_ge_OS_DATA_CORE0_VAR_FAST_ZERO_INIT_bss',0,3,177,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_lc_ge_OS_DATA_CORE0_VAR_INIT',0,3,178,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_lc_ge_OS_DATA_CORE0_VAR_ZERO_INIT',0,3,179,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_lc_ge_OS_DATA_CORE0_VAR_ZERO_INIT_bss',0,3,180,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_lc_ge_OS_DATA_SHARED_VAR_FAST_INIT',0,3,181,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_lc_ge_OS_DATA_SHARED_VAR_INIT',0,3,182,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_lc_ge_OS_GLOBALSHARED_VAR_FAST_INIT',0,3,183,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_lc_ge_OS_GLOBALSHARED_VAR_FAST_ZERO_INIT',0,3,184,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_lc_ge_OS_GLOBALSHARED_VAR_FAST_ZERO_INIT_bss',0,3,185,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_lc_ge_OS_GLOBALSHARED_VAR_INIT',0,3,186,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_lc_ge_OS_GLOBALSHARED_VAR_ZERO_INIT',0,3,187,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_lc_ge_OS_GLOBALSHARED_VAR_ZERO_INIT_bss',0,3,188,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_lc_ge_OS_OsApplication_OsCore0_VAR_FAST_INIT',0,3,189,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_lc_ge_OS_OsApplication_OsCore0_VAR_FAST_ZERO_INIT',0,3,190,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_lc_ge_OS_OsApplication_OsCore0_VAR_FAST_ZERO_INIT_bss',0,3,191,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_lc_ge_OS_OsApplication_OsCore0_VAR_INIT',0,3,192,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_lc_ge_OS_OsApplication_OsCore0_VAR_ZERO_INIT',0,3,193,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_lc_ge_OS_OsApplication_OsCore0_VAR_ZERO_INIT_bss',0,3,194,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_lc_ge_STACK_C0',0,3,195,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_lc_ge_STACK_C1',0,3,196,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_lc_ge_STACK_C2',0,3,197,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_lc_ge_STACK_C3',0,3,198,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_lc_ge_STACK_C4',0,3,199,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_lc_ge_STACK_C5',0,3,200,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_lc_ge_bss',0,3,201,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_lc_ge_data',0,3,202,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_lc_ge_zbss',0,3,203,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_lc_ge_zdata',0,3,204,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_zbss_START',0,3,205,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_zdata_ROM_LIMIT',0,3,206,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_zdata_ROM_START',0,3,207,1,14
+	.word	749
+	.byte	1,1,16
+	.byte	'_zdata_START',0,3,208,1,14
+	.word	749
+	.byte	1,1,17,16
+	.word	381
+	.byte	18,0,0
+.L62:
+	.byte	3
+	.word	4258
+	.byte	17,112
+	.word	381
+	.byte	18,6,0
+.L63:
+	.byte	3
+	.word	4272
+.L64:
+	.byte	3
+	.word	4258
+.L65:
+	.byte	3
+	.word	4258
+.L66:
+	.byte	3
+	.word	4258
+	.byte	17,240,1
+	.word	381
+	.byte	18,14,0
+.L67:
+	.byte	3
+	.word	4301
+.L68:
+	.byte	3
+	.word	4258
+.L69:
+	.byte	3
+	.word	4258
+.L70:
+	.byte	3
+	.word	4258
+	.byte	17,24
+	.word	545
+	.byte	18,0,0
+.L71:
+	.byte	3
+	.word	4331
+	.byte	17,136,2
+	.word	545
+	.byte	18,10,0
+.L72:
+	.byte	3
+	.word	4345
+.L73:
+	.byte	3
+	.word	4331
+.L74:
+	.byte	3
+	.word	4331
+.L75:
+	.byte	3
+	.word	4331
+.L76:
+	.byte	3
+	.word	483
+.L77:
+	.byte	3
+	.word	483
+.L78:
+	.byte	3
+	.word	483
+.L79:
+	.byte	3
+	.word	483
+.L80:
+	.byte	3
+	.word	483
+.L81:
+	.byte	3
+	.word	483
+.L82:
+	.byte	3
+	.word	483
+.L83:
+	.byte	3
+	.word	483
+.L84:
+	.byte	3
+	.word	483
+.L85:
+	.byte	3
+	.word	684
+.L86:
+	.byte	3
+	.word	684
+.L87:
+	.byte	3
+	.word	684
+.L88:
+	.byte	3
+	.word	684
+.L89:
+	.byte	3
+	.word	684
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L4:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,38,0,73,19,0,0,4,46,1,3,8,54
+	.byte	15,39,12,63,12,60,12,0,0,5,5,0,73,19,0,0,6,53,0,73,19,0,0,7,15,0,73,19,0,0,8,46,1,3,8,73,19,54,15,39,12
+	.byte	63,12,60,12,0,0,9,5,0,3,8,73,19,0,0,10,21,0,54,15,0,0,11,22,0,3,8,58,15,59,15,57,15,73,19,0,0,12,19,1
+	.byte	58,15,59,15,57,15,11,15,0,0,13,13,0,3,8,73,19,11,15,56,9,0,0,14,1,1,73,19,0,0,15,33,0,0,0,16,52,0,3,8
+	.byte	58,15,59,15,57,15,73,19,63,12,60,12,0,0,17,1,1,11,15,73,19,0,0,18,33,0,47,15,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L5:
+	.word	.L91-.L90
+.L90:
+	.half	3
+	.word	.L93-.L92
+.L92:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'D:\\Zonal\\demo011\\tasking\\component\\_Common\\Implementation',0,0
+	.byte	'..\\appl\\GenData\\vLinkGen_Lcfg.c',0,0,0,0
+	.byte	'Platform_Types.h',0,1,0,0
+	.byte	'..\\appl\\GenData\\vLinkGen_Lcfg.h',0,0,0,0,0
+.L93:
+.L91:
+	.sdecl	'.debug_info',debug,cluster('vLinkGen_ZeroInit_Early_Blocks')
+	.sect	'.debug_info'
+.L6:
+	.word	169
+	.half	3
+	.word	.L7
+	.byte	4,1
+	.byte	'..\\appl\\GenData\\vLinkGen_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1,2
+	.word	.L2
+	.byte	3
+	.byte	'vLinkGen_ZeroInit_Early_Blocks',0,1,83,24
+	.word	.L62
+	.byte	1,5,3
+	.word	vLinkGen_ZeroInit_Early_Blocks
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('vLinkGen_ZeroInit_Early_Blocks')
+	.sect	'.debug_abbrev'
+.L7:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('vLinkGen_ZeroInit_Early_Groups')
+	.sect	'.debug_info'
+.L8:
+	.word	169
+	.half	3
+	.word	.L9
+	.byte	4,1
+	.byte	'..\\appl\\GenData\\vLinkGen_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1,2
+	.word	.L2
+	.byte	3
+	.byte	'vLinkGen_ZeroInit_Early_Groups',0,1,116,24
+	.word	.L63
+	.byte	1,5,3
+	.word	vLinkGen_ZeroInit_Early_Groups
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('vLinkGen_ZeroInit_Early_Groups')
+	.sect	'.debug_abbrev'
+.L9:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('vLinkGen_ZeroInit_HardReset_Blocks')
+	.sect	'.debug_info'
+.L10:
+	.word	173
+	.half	3
+	.word	.L11
+	.byte	4,1
+	.byte	'..\\appl\\GenData\\vLinkGen_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1,2
+	.word	.L2
+	.byte	3
+	.byte	'vLinkGen_ZeroInit_HardReset_Blocks',0,1,105,24
+	.word	.L64
+	.byte	1,5,3
+	.word	vLinkGen_ZeroInit_HardReset_Blocks
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('vLinkGen_ZeroInit_HardReset_Blocks')
+	.sect	'.debug_abbrev'
+.L11:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('vLinkGen_ZeroInit_HardReset_Groups')
+	.sect	'.debug_info'
+.L12:
+	.word	174
+	.half	3
+	.word	.L13
+	.byte	4,1
+	.byte	'..\\appl\\GenData\\vLinkGen_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1,2
+	.word	.L2
+	.byte	3
+	.byte	'vLinkGen_ZeroInit_HardReset_Groups',0,1,163,2,24
+	.word	.L65
+	.byte	1,5,3
+	.word	vLinkGen_ZeroInit_HardReset_Groups
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('vLinkGen_ZeroInit_HardReset_Groups')
+	.sect	'.debug_abbrev'
+.L13:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('vLinkGen_ZeroInit_One_Blocks')
+	.sect	'.debug_info'
+.L14:
+	.word	167
+	.half	3
+	.word	.L15
+	.byte	4,1
+	.byte	'..\\appl\\GenData\\vLinkGen_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1,2
+	.word	.L2
+	.byte	3
+	.byte	'vLinkGen_ZeroInit_One_Blocks',0,1,94,24
+	.word	.L66
+	.byte	1,5,3
+	.word	vLinkGen_ZeroInit_One_Blocks
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('vLinkGen_ZeroInit_One_Blocks')
+	.sect	'.debug_abbrev'
+.L15:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('vLinkGen_ZeroInit_One_Groups')
+	.sect	'.debug_info'
+.L16:
+	.word	168
+	.half	3
+	.word	.L17
+	.byte	4,1
+	.byte	'..\\appl\\GenData\\vLinkGen_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1,2
+	.word	.L2
+	.byte	3
+	.byte	'vLinkGen_ZeroInit_One_Groups',0,1,174,1,24
+	.word	.L67
+	.byte	1,5,3
+	.word	vLinkGen_ZeroInit_One_Groups
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('vLinkGen_ZeroInit_One_Groups')
+	.sect	'.debug_abbrev'
+.L17:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('vLinkGen_ZeroInit_Three_Groups')
+	.sect	'.debug_info'
+.L18:
+	.word	170
+	.half	3
+	.word	.L19
+	.byte	4,1
+	.byte	'..\\appl\\GenData\\vLinkGen_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1,2
+	.word	.L2
+	.byte	3
+	.byte	'vLinkGen_ZeroInit_Three_Groups',0,1,152,2,24
+	.word	.L68
+	.byte	1,5,3
+	.word	vLinkGen_ZeroInit_Three_Groups
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('vLinkGen_ZeroInit_Three_Groups')
+	.sect	'.debug_abbrev'
+.L19:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('vLinkGen_ZeroInit_Two_Groups')
+	.sect	'.debug_info'
+.L20:
+	.word	168
+	.half	3
+	.word	.L21
+	.byte	4,1
+	.byte	'..\\appl\\GenData\\vLinkGen_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1,2
+	.word	.L2
+	.byte	3
+	.byte	'vLinkGen_ZeroInit_Two_Groups',0,1,141,2,24
+	.word	.L69
+	.byte	1,5,3
+	.word	vLinkGen_ZeroInit_Two_Groups
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('vLinkGen_ZeroInit_Two_Groups')
+	.sect	'.debug_abbrev'
+.L21:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('vLinkGen_ZeroInit_Zero_Groups')
+	.sect	'.debug_info'
+.L22:
+	.word	169
+	.half	3
+	.word	.L23
+	.byte	4,1
+	.byte	'..\\appl\\GenData\\vLinkGen_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1,2
+	.word	.L2
+	.byte	3
+	.byte	'vLinkGen_ZeroInit_Zero_Groups',0,1,163,1,24
+	.word	.L70
+	.byte	1,5,3
+	.word	vLinkGen_ZeroInit_Zero_Groups
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('vLinkGen_ZeroInit_Zero_Groups')
+	.sect	'.debug_abbrev'
+.L23:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('vLinkGen_Init_HardReset_Groups')
+	.sect	'.debug_info'
+.L24:
+	.word	170
+	.half	3
+	.word	.L25
+	.byte	4,1
+	.byte	'..\\appl\\GenData\\vLinkGen_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1,2
+	.word	.L2
+	.byte	3
+	.byte	'vLinkGen_Init_HardReset_Groups',0,1,178,3,27
+	.word	.L71
+	.byte	1,5,3
+	.word	vLinkGen_Init_HardReset_Groups
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('vLinkGen_Init_HardReset_Groups')
+	.sect	'.debug_abbrev'
+.L25:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('vLinkGen_Init_One_Groups')
+	.sect	'.debug_info'
+.L26:
+	.word	164
+	.half	3
+	.word	.L27
+	.byte	4,1
+	.byte	'..\\appl\\GenData\\vLinkGen_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1,2
+	.word	.L2
+	.byte	3
+	.byte	'vLinkGen_Init_One_Groups',0,1,187,2,27
+	.word	.L72
+	.byte	1,5,3
+	.word	vLinkGen_Init_One_Groups
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('vLinkGen_Init_One_Groups')
+	.sect	'.debug_abbrev'
+.L27:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('vLinkGen_Init_Three_Groups')
+	.sect	'.debug_info'
+.L28:
+	.word	166
+	.half	3
+	.word	.L29
+	.byte	4,1
+	.byte	'..\\appl\\GenData\\vLinkGen_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1,2
+	.word	.L2
+	.byte	3
+	.byte	'vLinkGen_Init_Three_Groups',0,1,165,3,27
+	.word	.L73
+	.byte	1,5,3
+	.word	vLinkGen_Init_Three_Groups
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('vLinkGen_Init_Three_Groups')
+	.sect	'.debug_abbrev'
+.L29:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('vLinkGen_Init_Two_Groups')
+	.sect	'.debug_info'
+.L30:
+	.word	164
+	.half	3
+	.word	.L31
+	.byte	4,1
+	.byte	'..\\appl\\GenData\\vLinkGen_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1,2
+	.word	.L2
+	.byte	3
+	.byte	'vLinkGen_Init_Two_Groups',0,1,152,3,27
+	.word	.L74
+	.byte	1,5,3
+	.word	vLinkGen_Init_Two_Groups
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('vLinkGen_Init_Two_Groups')
+	.sect	'.debug_abbrev'
+.L31:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('vLinkGen_Init_Zero_Groups')
+	.sect	'.debug_info'
+.L32:
+	.word	165
+	.half	3
+	.word	.L33
+	.byte	4,1
+	.byte	'..\\appl\\GenData\\vLinkGen_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1,2
+	.word	.L2
+	.byte	3
+	.byte	'vLinkGen_Init_Zero_Groups',0,1,174,2,27
+	.word	.L75
+	.byte	1,5,3
+	.word	vLinkGen_Init_Zero_Groups
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('vLinkGen_Init_Zero_Groups')
+	.sect	'.debug_abbrev'
+.L33:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('vLinkGen_ZeroInit_Early_BlocksSet')
+	.sect	'.debug_info'
+.L34:
+	.word	173
+	.half	3
+	.word	.L35
+	.byte	4,1
+	.byte	'..\\appl\\GenData\\vLinkGen_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1,2
+	.word	.L2
+	.byte	3
+	.byte	'vLinkGen_ZeroInit_Early_BlocksSet',0,1,191,3,27
+	.word	.L76
+	.byte	1,5,3
+	.word	vLinkGen_ZeroInit_Early_BlocksSet
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('vLinkGen_ZeroInit_Early_BlocksSet')
+	.sect	'.debug_abbrev'
+.L35:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('vLinkGen_ZeroInit_Early_GroupsSet')
+	.sect	'.debug_info'
+.L36:
+	.word	173
+	.half	3
+	.word	.L37
+	.byte	4,1
+	.byte	'..\\appl\\GenData\\vLinkGen_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1,2
+	.word	.L2
+	.byte	3
+	.byte	'vLinkGen_ZeroInit_Early_GroupsSet',0,1,212,3,27
+	.word	.L77
+	.byte	1,5,3
+	.word	vLinkGen_ZeroInit_Early_GroupsSet
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('vLinkGen_ZeroInit_Early_GroupsSet')
+	.sect	'.debug_abbrev'
+.L37:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('vLinkGen_ZeroInit_HardReset_BlocksSet')
+	.sect	'.debug_info'
+.L38:
+	.word	177
+	.half	3
+	.word	.L39
+	.byte	4,1
+	.byte	'..\\appl\\GenData\\vLinkGen_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1,2
+	.word	.L2
+	.byte	3
+	.byte	'vLinkGen_ZeroInit_HardReset_BlocksSet',0,1,205,3,27
+	.word	.L78
+	.byte	1,5,3
+	.word	vLinkGen_ZeroInit_HardReset_BlocksSet
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('vLinkGen_ZeroInit_HardReset_BlocksSet')
+	.sect	'.debug_abbrev'
+.L39:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('vLinkGen_ZeroInit_HardReset_GroupsSet')
+	.sect	'.debug_info'
+.L40:
+	.word	177
+	.half	3
+	.word	.L41
+	.byte	4,1
+	.byte	'..\\appl\\GenData\\vLinkGen_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1,2
+	.word	.L2
+	.byte	3
+	.byte	'vLinkGen_ZeroInit_HardReset_GroupsSet',0,1,247,3,27
+	.word	.L79
+	.byte	1,5,3
+	.word	vLinkGen_ZeroInit_HardReset_GroupsSet
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('vLinkGen_ZeroInit_HardReset_GroupsSet')
+	.sect	'.debug_abbrev'
+.L41:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('vLinkGen_ZeroInit_One_BlocksSet')
+	.sect	'.debug_info'
+.L42:
+	.word	171
+	.half	3
+	.word	.L43
+	.byte	4,1
+	.byte	'..\\appl\\GenData\\vLinkGen_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1,2
+	.word	.L2
+	.byte	3
+	.byte	'vLinkGen_ZeroInit_One_BlocksSet',0,1,198,3,27
+	.word	.L80
+	.byte	1,5,3
+	.word	vLinkGen_ZeroInit_One_BlocksSet
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('vLinkGen_ZeroInit_One_BlocksSet')
+	.sect	'.debug_abbrev'
+.L43:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('vLinkGen_ZeroInit_One_GroupsSet')
+	.sect	'.debug_info'
+.L44:
+	.word	171
+	.half	3
+	.word	.L45
+	.byte	4,1
+	.byte	'..\\appl\\GenData\\vLinkGen_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1,2
+	.word	.L2
+	.byte	3
+	.byte	'vLinkGen_ZeroInit_One_GroupsSet',0,1,226,3,27
+	.word	.L81
+	.byte	1,5,3
+	.word	vLinkGen_ZeroInit_One_GroupsSet
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('vLinkGen_ZeroInit_One_GroupsSet')
+	.sect	'.debug_abbrev'
+.L45:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('vLinkGen_ZeroInit_Three_GroupsSet')
+	.sect	'.debug_info'
+.L46:
+	.word	173
+	.half	3
+	.word	.L47
+	.byte	4,1
+	.byte	'..\\appl\\GenData\\vLinkGen_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1,2
+	.word	.L2
+	.byte	3
+	.byte	'vLinkGen_ZeroInit_Three_GroupsSet',0,1,240,3,27
+	.word	.L82
+	.byte	1,5,3
+	.word	vLinkGen_ZeroInit_Three_GroupsSet
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('vLinkGen_ZeroInit_Three_GroupsSet')
+	.sect	'.debug_abbrev'
+.L47:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('vLinkGen_ZeroInit_Two_GroupsSet')
+	.sect	'.debug_info'
+.L48:
+	.word	171
+	.half	3
+	.word	.L49
+	.byte	4,1
+	.byte	'..\\appl\\GenData\\vLinkGen_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1,2
+	.word	.L2
+	.byte	3
+	.byte	'vLinkGen_ZeroInit_Two_GroupsSet',0,1,233,3,27
+	.word	.L83
+	.byte	1,5,3
+	.word	vLinkGen_ZeroInit_Two_GroupsSet
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('vLinkGen_ZeroInit_Two_GroupsSet')
+	.sect	'.debug_abbrev'
+.L49:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('vLinkGen_ZeroInit_Zero_GroupsSet')
+	.sect	'.debug_info'
+.L50:
+	.word	172
+	.half	3
+	.word	.L51
+	.byte	4,1
+	.byte	'..\\appl\\GenData\\vLinkGen_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1,2
+	.word	.L2
+	.byte	3
+	.byte	'vLinkGen_ZeroInit_Zero_GroupsSet',0,1,219,3,27
+	.word	.L84
+	.byte	1,5,3
+	.word	vLinkGen_ZeroInit_Zero_GroupsSet
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('vLinkGen_ZeroInit_Zero_GroupsSet')
+	.sect	'.debug_abbrev'
+.L51:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('vLinkGen_Init_HardReset_GroupsSet')
+	.sect	'.debug_info'
+.L52:
+	.word	173
+	.half	3
+	.word	.L53
+	.byte	4,1
+	.byte	'..\\appl\\GenData\\vLinkGen_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1,2
+	.word	.L2
+	.byte	3
+	.byte	'vLinkGen_Init_HardReset_GroupsSet',0,1,154,4,30
+	.word	.L85
+	.byte	1,5,3
+	.word	vLinkGen_Init_HardReset_GroupsSet
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('vLinkGen_Init_HardReset_GroupsSet')
+	.sect	'.debug_abbrev'
+.L53:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('vLinkGen_Init_One_GroupsSet')
+	.sect	'.debug_info'
+.L54:
+	.word	167
+	.half	3
+	.word	.L55
+	.byte	4,1
+	.byte	'..\\appl\\GenData\\vLinkGen_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1,2
+	.word	.L2
+	.byte	3
+	.byte	'vLinkGen_Init_One_GroupsSet',0,1,133,4,30
+	.word	.L86
+	.byte	1,5,3
+	.word	vLinkGen_Init_One_GroupsSet
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('vLinkGen_Init_One_GroupsSet')
+	.sect	'.debug_abbrev'
+.L55:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('vLinkGen_Init_Three_GroupsSet')
+	.sect	'.debug_info'
+.L56:
+	.word	169
+	.half	3
+	.word	.L57
+	.byte	4,1
+	.byte	'..\\appl\\GenData\\vLinkGen_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1,2
+	.word	.L2
+	.byte	3
+	.byte	'vLinkGen_Init_Three_GroupsSet',0,1,147,4,30
+	.word	.L87
+	.byte	1,5,3
+	.word	vLinkGen_Init_Three_GroupsSet
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('vLinkGen_Init_Three_GroupsSet')
+	.sect	'.debug_abbrev'
+.L57:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('vLinkGen_Init_Two_GroupsSet')
+	.sect	'.debug_info'
+.L58:
+	.word	167
+	.half	3
+	.word	.L59
+	.byte	4,1
+	.byte	'..\\appl\\GenData\\vLinkGen_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1,2
+	.word	.L2
+	.byte	3
+	.byte	'vLinkGen_Init_Two_GroupsSet',0,1,140,4,30
+	.word	.L88
+	.byte	1,5,3
+	.word	vLinkGen_Init_Two_GroupsSet
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('vLinkGen_Init_Two_GroupsSet')
+	.sect	'.debug_abbrev'
+.L59:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('vLinkGen_Init_Zero_GroupsSet')
+	.sect	'.debug_info'
+.L60:
+	.word	168
+	.half	3
+	.word	.L61
+	.byte	4,1
+	.byte	'..\\appl\\GenData\\vLinkGen_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1,2
+	.word	.L2
+	.byte	3
+	.byte	'vLinkGen_Init_Zero_GroupsSet',0,1,254,3,30
+	.word	.L89
+	.byte	1,5,3
+	.word	vLinkGen_Init_Zero_GroupsSet
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('vLinkGen_Init_Zero_GroupsSet')
+	.sect	'.debug_abbrev'
+.L61:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+
+; ..\appl\GenData\vLinkGen_Lcfg.c	     1  /**********************************************************************************************************************
+; ..\appl\GenData\vLinkGen_Lcfg.c	     2   *  COPYRIGHT
+; ..\appl\GenData\vLinkGen_Lcfg.c	     3   *  -------------------------------------------------------------------------------------------------------------------
+; ..\appl\GenData\vLinkGen_Lcfg.c	     4   *  \verbatim
+; ..\appl\GenData\vLinkGen_Lcfg.c	     5   *
+; ..\appl\GenData\vLinkGen_Lcfg.c	     6   *                 This software is copyright protected and proprietary to Vector Informatik GmbH.
+; ..\appl\GenData\vLinkGen_Lcfg.c	     7   *                 Vector Informatik GmbH grants to you only those rights as set out in the license conditions.
+; ..\appl\GenData\vLinkGen_Lcfg.c	     8   *                 All other rights remain with Vector Informatik GmbH.
+; ..\appl\GenData\vLinkGen_Lcfg.c	     9   *  \endverbatim
+; ..\appl\GenData\vLinkGen_Lcfg.c	    10   *  -------------------------------------------------------------------------------------------------------------------
+; ..\appl\GenData\vLinkGen_Lcfg.c	    11   *  LICENSE
+; ..\appl\GenData\vLinkGen_Lcfg.c	    12   *  -------------------------------------------------------------------------------------------------------------------
+; ..\appl\GenData\vLinkGen_Lcfg.c	    13   *            Module: vLinkGen
+; ..\appl\GenData\vLinkGen_Lcfg.c	    14   *           Program: MSR_Vector_SLP4
+; ..\appl\GenData\vLinkGen_Lcfg.c	    15   *          Customer: Aptiv Electronics (Suzhou) Co., Ltd.
+; ..\appl\GenData\vLinkGen_Lcfg.c	    16   *       Expiry Date: Not restricted
+; ..\appl\GenData\vLinkGen_Lcfg.c	    17   *  Ordered Derivat.: TC399XP
+; ..\appl\GenData\vLinkGen_Lcfg.c	    18   *    License Scope : The usage is restricted to CBD2100010_D00
+; ..\appl\GenData\vLinkGen_Lcfg.c	    19   *
+; ..\appl\GenData\vLinkGen_Lcfg.c	    20   *  -------------------------------------------------------------------------------------------------------------------
+; ..\appl\GenData\vLinkGen_Lcfg.c	    21   *  FILE DESCRIPTION
+; ..\appl\GenData\vLinkGen_Lcfg.c	    22   *  -------------------------------------------------------------------------------------------------------------------
+; ..\appl\GenData\vLinkGen_Lcfg.c	    23   *              File: vLinkGen_Lcfg.c
+; ..\appl\GenData\vLinkGen_Lcfg.c	    24   *   Generation Time: 2025-04-01 10:51:24
+; ..\appl\GenData\vLinkGen_Lcfg.c	    25   *           Project: tc399demo - Version 1.0
+; ..\appl\GenData\vLinkGen_Lcfg.c	    26   *          Delivery: CBD2100010_D00
+; ..\appl\GenData\vLinkGen_Lcfg.c	    27   *      Tool Version: DaVinci Configurator (beta) 5.22.45 SP3
+; ..\appl\GenData\vLinkGen_Lcfg.c	    28   *
+; ..\appl\GenData\vLinkGen_Lcfg.c	    29   *
+; ..\appl\GenData\vLinkGen_Lcfg.c	    30   *********************************************************************************************************************/
+; ..\appl\GenData\vLinkGen_Lcfg.c	    31  
+; ..\appl\GenData\vLinkGen_Lcfg.c	    32  /**********************************************************************************************************************
+; ..\appl\GenData\vLinkGen_Lcfg.c	    33   ! BETA VERSION                                                                                                       !
+; ..\appl\GenData\vLinkGen_Lcfg.c	    34   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+; ..\appl\GenData\vLinkGen_Lcfg.c	    35   ! This version of DaVinci Configurator Pro and/or the related Basic Software Package is BETA software.               !
+; ..\appl\GenData\vLinkGen_Lcfg.c	    36   ! BETA Software is basically operable, but not sufficiently tested, verified and/or qualified for use in series      !
+; ..\appl\GenData\vLinkGen_Lcfg.c	    37   ! production and/or in vehicles operating on public or non-public roads.                                             !
+; ..\appl\GenData\vLinkGen_Lcfg.c	    38   ! In particular, without limitation, BETA Software may cause unpredictable ECU behavior, may not provide all         !
+; ..\appl\GenData\vLinkGen_Lcfg.c	    39   ! functions necessary for use in series production and/or may not comply with quality requirements which are         !
+; ..\appl\GenData\vLinkGen_Lcfg.c	    40   ! necessary according to the state of the art. BETA Software must not be used in series production.                  !
+; ..\appl\GenData\vLinkGen_Lcfg.c	    41   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+; ..\appl\GenData\vLinkGen_Lcfg.c	    42  **********************************************************************************************************************/
+; ..\appl\GenData\vLinkGen_Lcfg.c	    43  
+; ..\appl\GenData\vLinkGen_Lcfg.c	    44  /**********************************************************************************************************************
+; ..\appl\GenData\vLinkGen_Lcfg.c	    45   *  EXAMPLE CODE ONLY
+; ..\appl\GenData\vLinkGen_Lcfg.c	    46   *  -------------------------------------------------------------------------------------------------------------------
+; ..\appl\GenData\vLinkGen_Lcfg.c	    47   *  This Example Code is only intended for illustrating an example of a possible BSW integration and BSW configuration.
+; ..\appl\GenData\vLinkGen_Lcfg.c	    48   *  The Example Code has not passed any quality control measures and may be incomplete. The Example Code is neither
+; ..\appl\GenData\vLinkGen_Lcfg.c	    49   *  intended nor qualified for use in series production. The Example Code as well as any of its modifications and/or
+; ..\appl\GenData\vLinkGen_Lcfg.c	    50   *  implementations must be tested with diligent care and must comply with all quality requirements which are necessary
+; ..\appl\GenData\vLinkGen_Lcfg.c	    51   *  according to the state of the art before their use.
+; ..\appl\GenData\vLinkGen_Lcfg.c	    52   *********************************************************************************************************************/
+; ..\appl\GenData\vLinkGen_Lcfg.c	    53  
+; ..\appl\GenData\vLinkGen_Lcfg.c	    54  #define VLINKGEN_LCFG_SOURCE
+; ..\appl\GenData\vLinkGen_Lcfg.c	    55  
+; ..\appl\GenData\vLinkGen_Lcfg.c	    56  /**********************************************************************************************************************
+; ..\appl\GenData\vLinkGen_Lcfg.c	    57   *  INCLUDES
+; ..\appl\GenData\vLinkGen_Lcfg.c	    58   *********************************************************************************************************************/
+; ..\appl\GenData\vLinkGen_Lcfg.c	    59  
+; ..\appl\GenData\vLinkGen_Lcfg.c	    60  #include "vLinkGen_Lcfg.h"
+; ..\appl\GenData\vLinkGen_Lcfg.c	    61  
+; ..\appl\GenData\vLinkGen_Lcfg.c	    62  /**********************************************************************************************************************
+; ..\appl\GenData\vLinkGen_Lcfg.c	    63   *  LOCAL CONSTANT MACROS
+; ..\appl\GenData\vLinkGen_Lcfg.c	    64   *********************************************************************************************************************/
+; ..\appl\GenData\vLinkGen_Lcfg.c	    65  
+; ..\appl\GenData\vLinkGen_Lcfg.c	    66  /**********************************************************************************************************************
+; ..\appl\GenData\vLinkGen_Lcfg.c	    67   *  LOCAL FUNCTION MACROS
+; ..\appl\GenData\vLinkGen_Lcfg.c	    68   *********************************************************************************************************************/
+; ..\appl\GenData\vLinkGen_Lcfg.c	    69  
+; ..\appl\GenData\vLinkGen_Lcfg.c	    70  /**********************************************************************************************************************
+; ..\appl\GenData\vLinkGen_Lcfg.c	    71   *  LOCAL DATA TYPES AND STRUCTURES
+; ..\appl\GenData\vLinkGen_Lcfg.c	    72   *********************************************************************************************************************/
+; ..\appl\GenData\vLinkGen_Lcfg.c	    73  
+; ..\appl\GenData\vLinkGen_Lcfg.c	    74  /**********************************************************************************************************************
+; ..\appl\GenData\vLinkGen_Lcfg.c	    75   *  LOCAL DATA PROTOTYPES
+; ..\appl\GenData\vLinkGen_Lcfg.c	    76   *********************************************************************************************************************/
+; ..\appl\GenData\vLinkGen_Lcfg.c	    77  
+; ..\appl\GenData\vLinkGen_Lcfg.c	    78  /**********************************************************************************************************************
+; ..\appl\GenData\vLinkGen_Lcfg.c	    79   *  GLOBAL DATA
+; ..\appl\GenData\vLinkGen_Lcfg.c	    80   *********************************************************************************************************************/
+; ..\appl\GenData\vLinkGen_Lcfg.c	    81  
+; ..\appl\GenData\vLinkGen_Lcfg.c	    82  /* Memory region blocks to be initialized with zeros in stage Early */
+; ..\appl\GenData\vLinkGen_Lcfg.c	    83  const vLinkGen_MemArea vLinkGen_ZeroInit_Early_Blocks[VLINKGEN_CFG_NUM_ZERO_INIT_EARLY_BLOCKS] =
+; ..\appl\GenData\vLinkGen_Lcfg.c	    84  {
+; ..\appl\GenData\vLinkGen_Lcfg.c	    85    {
+; ..\appl\GenData\vLinkGen_Lcfg.c	    86      0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	    87      0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	    88      0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	    89      0uL
+; ..\appl\GenData\vLinkGen_Lcfg.c	    90    }
+; ..\appl\GenData\vLinkGen_Lcfg.c	    91  };
+; ..\appl\GenData\vLinkGen_Lcfg.c	    92  
+; ..\appl\GenData\vLinkGen_Lcfg.c	    93  /* Memory region blocks to be initialized with zeros in stage One */
+; ..\appl\GenData\vLinkGen_Lcfg.c	    94  const vLinkGen_MemArea vLinkGen_ZeroInit_One_Blocks[VLINKGEN_CFG_NUM_ZERO_INIT_ONE_BLOCKS] =
+; ..\appl\GenData\vLinkGen_Lcfg.c	    95  {
+; ..\appl\GenData\vLinkGen_Lcfg.c	    96    {
+; ..\appl\GenData\vLinkGen_Lcfg.c	    97      0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	    98      0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	    99      0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   100      0uL
+; ..\appl\GenData\vLinkGen_Lcfg.c	   101    }
+; ..\appl\GenData\vLinkGen_Lcfg.c	   102  };
+; ..\appl\GenData\vLinkGen_Lcfg.c	   103  
+; ..\appl\GenData\vLinkGen_Lcfg.c	   104  /* Memory region blocks to be initialized with zeros in stage HardReset */
+; ..\appl\GenData\vLinkGen_Lcfg.c	   105  const vLinkGen_MemArea vLinkGen_ZeroInit_HardReset_Blocks[VLINKGEN_CFG_NUM_ZERO_INIT_HARD_RESET_BLOCKS] =
+; ..\appl\GenData\vLinkGen_Lcfg.c	   106  {
+; ..\appl\GenData\vLinkGen_Lcfg.c	   107    {
+; ..\appl\GenData\vLinkGen_Lcfg.c	   108      0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   109      0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   110      0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   111      0uL
+; ..\appl\GenData\vLinkGen_Lcfg.c	   112    }
+; ..\appl\GenData\vLinkGen_Lcfg.c	   113  };
+; ..\appl\GenData\vLinkGen_Lcfg.c	   114  
+; ..\appl\GenData\vLinkGen_Lcfg.c	   115  /* Section groups to be initialized with zeros in stage Early */
+; ..\appl\GenData\vLinkGen_Lcfg.c	   116  const vLinkGen_MemArea vLinkGen_ZeroInit_Early_Groups[VLINKGEN_CFG_NUM_ZERO_INIT_EARLY_GROUPS] =
+; ..\appl\GenData\vLinkGen_Lcfg.c	   117  {
+; ..\appl\GenData\vLinkGen_Lcfg.c	   118    { /*  STACK_C0  */ 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   119       /*  .Start  */ (uint32)_STACK_C0_START, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   120       /*  .End  */ (uint32)_lc_ge_STACK_C0, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   121       /*  .Core  */ 0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   122       /*  .Alignment  */ 0uL
+; ..\appl\GenData\vLinkGen_Lcfg.c	   123    }, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   124    { /*  STACK_C1  */ 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   125       /*  .Start  */ (uint32)_STACK_C1_START, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   126       /*  .End  */ (uint32)_lc_ge_STACK_C1, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   127       /*  .Core  */ 1uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   128       /*  .Alignment  */ 0uL
+; ..\appl\GenData\vLinkGen_Lcfg.c	   129    }, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   130    { /*  STACK_C2  */ 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   131       /*  .Start  */ (uint32)_STACK_C2_START, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   132       /*  .End  */ (uint32)_lc_ge_STACK_C2, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   133       /*  .Core  */ 2uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   134       /*  .Alignment  */ 0uL
+; ..\appl\GenData\vLinkGen_Lcfg.c	   135    }, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   136    { /*  STACK_C3  */ 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   137       /*  .Start  */ (uint32)_STACK_C3_START, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   138       /*  .End  */ (uint32)_lc_ge_STACK_C3, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   139       /*  .Core  */ 3uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   140       /*  .Alignment  */ 0uL
+; ..\appl\GenData\vLinkGen_Lcfg.c	   141    }, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   142    { /*  STACK_C4  */ 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   143       /*  .Start  */ (uint32)_STACK_C4_START, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   144       /*  .End  */ (uint32)_lc_ge_STACK_C4, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   145       /*  .Core  */ 4uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   146       /*  .Alignment  */ 0uL
+; ..\appl\GenData\vLinkGen_Lcfg.c	   147    }, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   148    { /*  STACK_C5  */ 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   149       /*  .Start  */ (uint32)_STACK_C5_START, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   150       /*  .End  */ (uint32)_lc_ge_STACK_C5, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   151       /*  .Core  */ 6uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   152       /*  .Alignment  */ 0uL
+; ..\appl\GenData\vLinkGen_Lcfg.c	   153    }, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   154    {
+; ..\appl\GenData\vLinkGen_Lcfg.c	   155      0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   156      0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   157      0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   158      0uL
+; ..\appl\GenData\vLinkGen_Lcfg.c	   159    }
+; ..\appl\GenData\vLinkGen_Lcfg.c	   160  };
+; ..\appl\GenData\vLinkGen_Lcfg.c	   161  
+; ..\appl\GenData\vLinkGen_Lcfg.c	   162  /* Section groups to be initialized with zeros in stage Zero */
+; ..\appl\GenData\vLinkGen_Lcfg.c	   163  const vLinkGen_MemArea vLinkGen_ZeroInit_Zero_Groups[VLINKGEN_CFG_NUM_ZERO_INIT_ZERO_GROUPS] =
+; ..\appl\GenData\vLinkGen_Lcfg.c	   164  {
+; ..\appl\GenData\vLinkGen_Lcfg.c	   165    {
+; ..\appl\GenData\vLinkGen_Lcfg.c	   166      0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   167      0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   168      0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   169      0uL
+; ..\appl\GenData\vLinkGen_Lcfg.c	   170    }
+; ..\appl\GenData\vLinkGen_Lcfg.c	   171  };
+; ..\appl\GenData\vLinkGen_Lcfg.c	   172  
+; ..\appl\GenData\vLinkGen_Lcfg.c	   173  /* Section groups to be initialized with zeros in stage One */
+; ..\appl\GenData\vLinkGen_Lcfg.c	   174  const vLinkGen_MemArea vLinkGen_ZeroInit_One_Groups[VLINKGEN_CFG_NUM_ZERO_INIT_ONE_GROUPS] =
+; ..\appl\GenData\vLinkGen_Lcfg.c	   175  {
+; ..\appl\GenData\vLinkGen_Lcfg.c	   176    { /*  OS_DATA_CORE0_VAR_FAST_ZERO_INIT  */ 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   177       /*  .Start  */ (uint32)_OS_DATA_CORE0_VAR_FAST_ZERO_INIT_START, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   178       /*  .End  */ (uint32)_lc_ge_OS_DATA_CORE0_VAR_FAST_ZERO_INIT, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   179       /*  .Core  */ 0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   180       /*  .Alignment  */ 0uL
+; ..\appl\GenData\vLinkGen_Lcfg.c	   181    }, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   182    { /*  OS_DATA_CORE0_VAR_FAST_ZERO_INIT_bss  */ 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   183       /*  .Start  */ (uint32)_OS_DATA_CORE0_VAR_FAST_ZERO_INIT_bss_START, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   184       /*  .End  */ (uint32)_lc_ge_OS_DATA_CORE0_VAR_FAST_ZERO_INIT_bss, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   185       /*  .Core  */ 0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   186       /*  .Alignment  */ 0uL
+; ..\appl\GenData\vLinkGen_Lcfg.c	   187    }, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   188    { /*  OS_DATA_CORE0_VAR_ZERO_INIT  */ 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   189       /*  .Start  */ (uint32)_OS_DATA_CORE0_VAR_ZERO_INIT_START, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   190       /*  .End  */ (uint32)_lc_ge_OS_DATA_CORE0_VAR_ZERO_INIT, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   191       /*  .Core  */ 0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   192       /*  .Alignment  */ 0uL
+; ..\appl\GenData\vLinkGen_Lcfg.c	   193    }, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   194    { /*  OS_DATA_CORE0_VAR_ZERO_INIT_bss  */ 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   195       /*  .Start  */ (uint32)_OS_DATA_CORE0_VAR_ZERO_INIT_bss_START, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   196       /*  .End  */ (uint32)_lc_ge_OS_DATA_CORE0_VAR_ZERO_INIT_bss, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   197       /*  .Core  */ 0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   198       /*  .Alignment  */ 0uL
+; ..\appl\GenData\vLinkGen_Lcfg.c	   199    }, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   200    { /*  OS_GLOBALSHARED_VAR_FAST_ZERO_INIT  */ 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   201       /*  .Start  */ (uint32)_OS_GLOBALSHARED_VAR_FAST_ZERO_INIT_START, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   202       /*  .End  */ (uint32)_lc_ge_OS_GLOBALSHARED_VAR_FAST_ZERO_INIT, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   203       /*  .Core  */ 0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   204       /*  .Alignment  */ 0uL
+; ..\appl\GenData\vLinkGen_Lcfg.c	   205    }, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   206    { /*  OS_GLOBALSHARED_VAR_FAST_ZERO_INIT_bss  */ 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   207       /*  .Start  */ (uint32)_OS_GLOBALSHARED_VAR_FAST_ZERO_INIT_bss_START, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   208       /*  .End  */ (uint32)_lc_ge_OS_GLOBALSHARED_VAR_FAST_ZERO_INIT_bss, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   209       /*  .Core  */ 0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   210       /*  .Alignment  */ 0uL
+; ..\appl\GenData\vLinkGen_Lcfg.c	   211    }, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   212    { /*  OS_GLOBALSHARED_VAR_ZERO_INIT  */ 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   213       /*  .Start  */ (uint32)_OS_GLOBALSHARED_VAR_ZERO_INIT_START, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   214       /*  .End  */ (uint32)_lc_ge_OS_GLOBALSHARED_VAR_ZERO_INIT, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   215       /*  .Core  */ 0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   216       /*  .Alignment  */ 0uL
+; ..\appl\GenData\vLinkGen_Lcfg.c	   217    }, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   218    { /*  OS_GLOBALSHARED_VAR_ZERO_INIT_bss  */ 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   219       /*  .Start  */ (uint32)_OS_GLOBALSHARED_VAR_ZERO_INIT_bss_START, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   220       /*  .End  */ (uint32)_lc_ge_OS_GLOBALSHARED_VAR_ZERO_INIT_bss, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   221       /*  .Core  */ 0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   222       /*  .Alignment  */ 0uL
+; ..\appl\GenData\vLinkGen_Lcfg.c	   223    }, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   224    { /*  OS_OsApplication_OsCore0_VAR_FAST_ZERO_INIT  */ 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   225       /*  .Start  */ (uint32)_OS_OsApplication_OsCore0_VAR_FAST_ZERO_INIT_START, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   226       /*  .End  */ (uint32)_lc_ge_OS_OsApplication_OsCore0_VAR_FAST_ZERO_INIT, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   227       /*  .Core  */ 0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   228       /*  .Alignment  */ 0uL
+; ..\appl\GenData\vLinkGen_Lcfg.c	   229    }, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   230    { /*  OS_OsApplication_OsCore0_VAR_FAST_ZERO_INIT_bss  */ 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   231       /*  .Start  */ (uint32)_OS_OsApplication_OsCore0_VAR_FAST_ZERO_INIT_bss_START, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   232       /*  .End  */ (uint32)_lc_ge_OS_OsApplication_OsCore0_VAR_FAST_ZERO_INIT_bss, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   233       /*  .Core  */ 0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   234       /*  .Alignment  */ 0uL
+; ..\appl\GenData\vLinkGen_Lcfg.c	   235    }, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   236    { /*  OS_OsApplication_OsCore0_VAR_ZERO_INIT  */ 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   237       /*  .Start  */ (uint32)_OS_OsApplication_OsCore0_VAR_ZERO_INIT_START, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   238       /*  .End  */ (uint32)_lc_ge_OS_OsApplication_OsCore0_VAR_ZERO_INIT, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   239       /*  .Core  */ 0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   240       /*  .Alignment  */ 0uL
+; ..\appl\GenData\vLinkGen_Lcfg.c	   241    }, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   242    { /*  OS_OsApplication_OsCore0_VAR_ZERO_INIT_bss  */ 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   243       /*  .Start  */ (uint32)_OS_OsApplication_OsCore0_VAR_ZERO_INIT_bss_START, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   244       /*  .End  */ (uint32)_lc_ge_OS_OsApplication_OsCore0_VAR_ZERO_INIT_bss, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   245       /*  .Core  */ 0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   246       /*  .Alignment  */ 0uL
+; ..\appl\GenData\vLinkGen_Lcfg.c	   247    }, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   248    { /*  bss  */ 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   249       /*  .Start  */ (uint32)_bss_START, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   250       /*  .End  */ (uint32)_lc_ge_bss, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   251       /*  .Core  */ 0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   252       /*  .Alignment  */ 0uL
+; ..\appl\GenData\vLinkGen_Lcfg.c	   253    }, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   254    { /*  zbss  */ 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   255       /*  .Start  */ (uint32)_zbss_START, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   256       /*  .End  */ (uint32)_lc_ge_zbss, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   257       /*  .Core  */ 0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   258       /*  .Alignment  */ 0uL
+; ..\appl\GenData\vLinkGen_Lcfg.c	   259    }, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   260    {
+; ..\appl\GenData\vLinkGen_Lcfg.c	   261      0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   262      0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   263      0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   264      0uL
+; ..\appl\GenData\vLinkGen_Lcfg.c	   265    }
+; ..\appl\GenData\vLinkGen_Lcfg.c	   266  };
+; ..\appl\GenData\vLinkGen_Lcfg.c	   267  
+; ..\appl\GenData\vLinkGen_Lcfg.c	   268  /* Section groups to be initialized with zeros in stage Two */
+; ..\appl\GenData\vLinkGen_Lcfg.c	   269  const vLinkGen_MemArea vLinkGen_ZeroInit_Two_Groups[VLINKGEN_CFG_NUM_ZERO_INIT_TWO_GROUPS] =
+; ..\appl\GenData\vLinkGen_Lcfg.c	   270  {
+; ..\appl\GenData\vLinkGen_Lcfg.c	   271    {
+; ..\appl\GenData\vLinkGen_Lcfg.c	   272      0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   273      0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   274      0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   275      0uL
+; ..\appl\GenData\vLinkGen_Lcfg.c	   276    }
+; ..\appl\GenData\vLinkGen_Lcfg.c	   277  };
+; ..\appl\GenData\vLinkGen_Lcfg.c	   278  
+; ..\appl\GenData\vLinkGen_Lcfg.c	   279  /* Section groups to be initialized with zeros in stage Three */
+; ..\appl\GenData\vLinkGen_Lcfg.c	   280  const vLinkGen_MemArea vLinkGen_ZeroInit_Three_Groups[VLINKGEN_CFG_NUM_ZERO_INIT_THREE_GROUPS] =
+; ..\appl\GenData\vLinkGen_Lcfg.c	   281  {
+; ..\appl\GenData\vLinkGen_Lcfg.c	   282    {
+; ..\appl\GenData\vLinkGen_Lcfg.c	   283      0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   284      0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   285      0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   286      0uL
+; ..\appl\GenData\vLinkGen_Lcfg.c	   287    }
+; ..\appl\GenData\vLinkGen_Lcfg.c	   288  };
+; ..\appl\GenData\vLinkGen_Lcfg.c	   289  
+; ..\appl\GenData\vLinkGen_Lcfg.c	   290  /* Section groups to be initialized with zeros in stage HardReset */
+; ..\appl\GenData\vLinkGen_Lcfg.c	   291  const vLinkGen_MemArea vLinkGen_ZeroInit_HardReset_Groups[VLINKGEN_CFG_NUM_ZERO_INIT_HARD_RESET_GROUPS] =
+; ..\appl\GenData\vLinkGen_Lcfg.c	   292  {
+; ..\appl\GenData\vLinkGen_Lcfg.c	   293    {
+; ..\appl\GenData\vLinkGen_Lcfg.c	   294      0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   295      0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   296      0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   297      0uL
+; ..\appl\GenData\vLinkGen_Lcfg.c	   298    }
+; ..\appl\GenData\vLinkGen_Lcfg.c	   299  };
+; ..\appl\GenData\vLinkGen_Lcfg.c	   300  
+; ..\appl\GenData\vLinkGen_Lcfg.c	   301  /* Section groups to be initialized with concrete data in stage Zero */
+; ..\appl\GenData\vLinkGen_Lcfg.c	   302  const vLinkGen_RamMemArea vLinkGen_Init_Zero_Groups[VLINKGEN_CFG_NUM_INIT_ZERO_GROUPS] =
+; ..\appl\GenData\vLinkGen_Lcfg.c	   303  {
+; ..\appl\GenData\vLinkGen_Lcfg.c	   304    {
+; ..\appl\GenData\vLinkGen_Lcfg.c	   305      0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   306      0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   307      0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   308      0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   309      0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   310      0uL
+; ..\appl\GenData\vLinkGen_Lcfg.c	   311    }
+; ..\appl\GenData\vLinkGen_Lcfg.c	   312  };
+; ..\appl\GenData\vLinkGen_Lcfg.c	   313  
+; ..\appl\GenData\vLinkGen_Lcfg.c	   314  /* Section groups to be initialized with concrete data in stage One */
+; ..\appl\GenData\vLinkGen_Lcfg.c	   315  const vLinkGen_RamMemArea vLinkGen_Init_One_Groups[VLINKGEN_CFG_NUM_INIT_ONE_GROUPS] =
+; ..\appl\GenData\vLinkGen_Lcfg.c	   316  {
+; ..\appl\GenData\vLinkGen_Lcfg.c	   317    { /*  OS_DATA_CORE0_VAR_FAST_INIT  */ 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   318       /*  .Start  */ (uint32)_OS_DATA_CORE0_VAR_FAST_INIT_START, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   319       /*  .End  */ (uint32)_lc_ge_OS_DATA_CORE0_VAR_FAST_INIT, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   320       /*  .Romstart  */ (uint32)_OS_DATA_CORE0_VAR_FAST_INIT_ROM_START, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   321       /*  .Romend  */ (uint32)_OS_DATA_CORE0_VAR_FAST_INIT_ROM_LIMIT, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   322       /*  .Core  */ 0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   323       /*  .Alignment  */ 0uL
+; ..\appl\GenData\vLinkGen_Lcfg.c	   324    }, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   325    { /*  OS_DATA_CORE0_VAR_INIT  */ 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   326       /*  .Start  */ (uint32)_OS_DATA_CORE0_VAR_INIT_START, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   327       /*  .End  */ (uint32)_lc_ge_OS_DATA_CORE0_VAR_INIT, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   328       /*  .Romstart  */ (uint32)_OS_DATA_CORE0_VAR_INIT_ROM_START, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   329       /*  .Romend  */ (uint32)_OS_DATA_CORE0_VAR_INIT_ROM_LIMIT, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   330       /*  .Core  */ 0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   331       /*  .Alignment  */ 0uL
+; ..\appl\GenData\vLinkGen_Lcfg.c	   332    }, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   333    { /*  OS_DATA_SHARED_VAR_FAST_INIT  */ 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   334       /*  .Start  */ (uint32)_OS_DATA_SHARED_VAR_FAST_INIT_START, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   335       /*  .End  */ (uint32)_lc_ge_OS_DATA_SHARED_VAR_FAST_INIT, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   336       /*  .Romstart  */ (uint32)_OS_DATA_SHARED_VAR_FAST_INIT_ROM_START, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   337       /*  .Romend  */ (uint32)_OS_DATA_SHARED_VAR_FAST_INIT_ROM_LIMIT, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   338       /*  .Core  */ 0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   339       /*  .Alignment  */ 0uL
+; ..\appl\GenData\vLinkGen_Lcfg.c	   340    }, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   341    { /*  OS_DATA_SHARED_VAR_INIT  */ 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   342       /*  .Start  */ (uint32)_OS_DATA_SHARED_VAR_INIT_START, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   343       /*  .End  */ (uint32)_lc_ge_OS_DATA_SHARED_VAR_INIT, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   344       /*  .Romstart  */ (uint32)_OS_DATA_SHARED_VAR_INIT_ROM_START, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   345       /*  .Romend  */ (uint32)_OS_DATA_SHARED_VAR_INIT_ROM_LIMIT, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   346       /*  .Core  */ 0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   347       /*  .Alignment  */ 0uL
+; ..\appl\GenData\vLinkGen_Lcfg.c	   348    }, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   349    { /*  OS_GLOBALSHARED_VAR_FAST_INIT  */ 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   350       /*  .Start  */ (uint32)_OS_GLOBALSHARED_VAR_FAST_INIT_START, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   351       /*  .End  */ (uint32)_lc_ge_OS_GLOBALSHARED_VAR_FAST_INIT, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   352       /*  .Romstart  */ (uint32)_OS_GLOBALSHARED_VAR_FAST_INIT_ROM_START, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   353       /*  .Romend  */ (uint32)_OS_GLOBALSHARED_VAR_FAST_INIT_ROM_LIMIT, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   354       /*  .Core  */ 0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   355       /*  .Alignment  */ 0uL
+; ..\appl\GenData\vLinkGen_Lcfg.c	   356    }, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   357    { /*  OS_GLOBALSHARED_VAR_INIT  */ 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   358       /*  .Start  */ (uint32)_OS_GLOBALSHARED_VAR_INIT_START, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   359       /*  .End  */ (uint32)_lc_ge_OS_GLOBALSHARED_VAR_INIT, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   360       /*  .Romstart  */ (uint32)_OS_GLOBALSHARED_VAR_INIT_ROM_START, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   361       /*  .Romend  */ (uint32)_OS_GLOBALSHARED_VAR_INIT_ROM_LIMIT, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   362       /*  .Core  */ 0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   363       /*  .Alignment  */ 0uL
+; ..\appl\GenData\vLinkGen_Lcfg.c	   364    }, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   365    { /*  OS_OsApplication_OsCore0_VAR_FAST_INIT  */ 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   366       /*  .Start  */ (uint32)_OS_OsApplication_OsCore0_VAR_FAST_INIT_START, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   367       /*  .End  */ (uint32)_lc_ge_OS_OsApplication_OsCore0_VAR_FAST_INIT, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   368       /*  .Romstart  */ (uint32)_OS_OsApplication_OsCore0_VAR_FAST_INIT_ROM_START, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   369       /*  .Romend  */ (uint32)_OS_OsApplication_OsCore0_VAR_FAST_INIT_ROM_LIMIT, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   370       /*  .Core  */ 0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   371       /*  .Alignment  */ 0uL
+; ..\appl\GenData\vLinkGen_Lcfg.c	   372    }, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   373    { /*  OS_OsApplication_OsCore0_VAR_INIT  */ 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   374       /*  .Start  */ (uint32)_OS_OsApplication_OsCore0_VAR_INIT_START, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   375       /*  .End  */ (uint32)_lc_ge_OS_OsApplication_OsCore0_VAR_INIT, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   376       /*  .Romstart  */ (uint32)_OS_OsApplication_OsCore0_VAR_INIT_ROM_START, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   377       /*  .Romend  */ (uint32)_OS_OsApplication_OsCore0_VAR_INIT_ROM_LIMIT, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   378       /*  .Core  */ 0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   379       /*  .Alignment  */ 0uL
+; ..\appl\GenData\vLinkGen_Lcfg.c	   380    }, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   381    { /*  data  */ 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   382       /*  .Start  */ (uint32)_data_START, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   383       /*  .End  */ (uint32)_lc_ge_data, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   384       /*  .Romstart  */ (uint32)_data_ROM_START, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   385       /*  .Romend  */ (uint32)_data_ROM_LIMIT, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   386       /*  .Core  */ 0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   387       /*  .Alignment  */ 0uL
+; ..\appl\GenData\vLinkGen_Lcfg.c	   388    }, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   389    { /*  zdata  */ 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   390       /*  .Start  */ (uint32)_zdata_START, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   391       /*  .End  */ (uint32)_lc_ge_zdata, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   392       /*  .Romstart  */ (uint32)_zdata_ROM_START, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   393       /*  .Romend  */ (uint32)_zdata_ROM_LIMIT, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   394       /*  .Core  */ 0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   395       /*  .Alignment  */ 0uL
+; ..\appl\GenData\vLinkGen_Lcfg.c	   396    }, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   397    {
+; ..\appl\GenData\vLinkGen_Lcfg.c	   398      0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   399      0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   400      0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   401      0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   402      0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   403      0uL
+; ..\appl\GenData\vLinkGen_Lcfg.c	   404    }
+; ..\appl\GenData\vLinkGen_Lcfg.c	   405  };
+; ..\appl\GenData\vLinkGen_Lcfg.c	   406  
+; ..\appl\GenData\vLinkGen_Lcfg.c	   407  /* Section groups to be initialized with concrete data in stage Two */
+; ..\appl\GenData\vLinkGen_Lcfg.c	   408  const vLinkGen_RamMemArea vLinkGen_Init_Two_Groups[VLINKGEN_CFG_NUM_INIT_TWO_GROUPS] =
+; ..\appl\GenData\vLinkGen_Lcfg.c	   409  {
+; ..\appl\GenData\vLinkGen_Lcfg.c	   410    {
+; ..\appl\GenData\vLinkGen_Lcfg.c	   411      0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   412      0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   413      0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   414      0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   415      0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   416      0uL
+; ..\appl\GenData\vLinkGen_Lcfg.c	   417    }
+; ..\appl\GenData\vLinkGen_Lcfg.c	   418  };
+; ..\appl\GenData\vLinkGen_Lcfg.c	   419  
+; ..\appl\GenData\vLinkGen_Lcfg.c	   420  /* Section groups to be initialized with concrete data in stage Three */
+; ..\appl\GenData\vLinkGen_Lcfg.c	   421  const vLinkGen_RamMemArea vLinkGen_Init_Three_Groups[VLINKGEN_CFG_NUM_INIT_THREE_GROUPS] =
+; ..\appl\GenData\vLinkGen_Lcfg.c	   422  {
+; ..\appl\GenData\vLinkGen_Lcfg.c	   423    {
+; ..\appl\GenData\vLinkGen_Lcfg.c	   424      0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   425      0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   426      0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   427      0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   428      0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   429      0uL
+; ..\appl\GenData\vLinkGen_Lcfg.c	   430    }
+; ..\appl\GenData\vLinkGen_Lcfg.c	   431  };
+; ..\appl\GenData\vLinkGen_Lcfg.c	   432  
+; ..\appl\GenData\vLinkGen_Lcfg.c	   433  /* Section groups to be initialized with concrete data in stage HardReset */
+; ..\appl\GenData\vLinkGen_Lcfg.c	   434  const vLinkGen_RamMemArea vLinkGen_Init_HardReset_Groups[VLINKGEN_CFG_NUM_INIT_HARD_RESET_GROUPS] =
+; ..\appl\GenData\vLinkGen_Lcfg.c	   435  {
+; ..\appl\GenData\vLinkGen_Lcfg.c	   436    {
+; ..\appl\GenData\vLinkGen_Lcfg.c	   437      0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   438      0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   439      0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   440      0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   441      0uL, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   442      0uL
+; ..\appl\GenData\vLinkGen_Lcfg.c	   443    }
+; ..\appl\GenData\vLinkGen_Lcfg.c	   444  };
+; ..\appl\GenData\vLinkGen_Lcfg.c	   445  
+; ..\appl\GenData\vLinkGen_Lcfg.c	   446  /* Memory region blocks to be initialized with zeros in stage Early */
+; ..\appl\GenData\vLinkGen_Lcfg.c	   447  const vLinkGen_MemAreaSet vLinkGen_ZeroInit_Early_BlocksSet =
+; ..\appl\GenData\vLinkGen_Lcfg.c	   448  {
+; ..\appl\GenData\vLinkGen_Lcfg.c	   449    VLINKGEN_CFG_NUM_ZERO_INIT_EARLY_BLOCKS, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   450    vLinkGen_ZeroInit_Early_Blocks
+; ..\appl\GenData\vLinkGen_Lcfg.c	   451  };
+; ..\appl\GenData\vLinkGen_Lcfg.c	   452  
+; ..\appl\GenData\vLinkGen_Lcfg.c	   453  /* Memory region blocks to be initialized with zeros in stage One */
+; ..\appl\GenData\vLinkGen_Lcfg.c	   454  const vLinkGen_MemAreaSet vLinkGen_ZeroInit_One_BlocksSet =
+; ..\appl\GenData\vLinkGen_Lcfg.c	   455  {
+; ..\appl\GenData\vLinkGen_Lcfg.c	   456    VLINKGEN_CFG_NUM_ZERO_INIT_ONE_BLOCKS, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   457    vLinkGen_ZeroInit_One_Blocks
+; ..\appl\GenData\vLinkGen_Lcfg.c	   458  };
+; ..\appl\GenData\vLinkGen_Lcfg.c	   459  
+; ..\appl\GenData\vLinkGen_Lcfg.c	   460  /* Memory region blocks to be initialized with zeros in stage HardReset */
+; ..\appl\GenData\vLinkGen_Lcfg.c	   461  const vLinkGen_MemAreaSet vLinkGen_ZeroInit_HardReset_BlocksSet =
+; ..\appl\GenData\vLinkGen_Lcfg.c	   462  {
+; ..\appl\GenData\vLinkGen_Lcfg.c	   463    VLINKGEN_CFG_NUM_ZERO_INIT_HARD_RESET_BLOCKS, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   464    vLinkGen_ZeroInit_HardReset_Blocks
+; ..\appl\GenData\vLinkGen_Lcfg.c	   465  };
+; ..\appl\GenData\vLinkGen_Lcfg.c	   466  
+; ..\appl\GenData\vLinkGen_Lcfg.c	   467  /* Section groups to be initialized with zeros in stage Early */
+; ..\appl\GenData\vLinkGen_Lcfg.c	   468  const vLinkGen_MemAreaSet vLinkGen_ZeroInit_Early_GroupsSet =
+; ..\appl\GenData\vLinkGen_Lcfg.c	   469  {
+; ..\appl\GenData\vLinkGen_Lcfg.c	   470    VLINKGEN_CFG_NUM_ZERO_INIT_EARLY_GROUPS, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   471    vLinkGen_ZeroInit_Early_Groups
+; ..\appl\GenData\vLinkGen_Lcfg.c	   472  };
+; ..\appl\GenData\vLinkGen_Lcfg.c	   473  
+; ..\appl\GenData\vLinkGen_Lcfg.c	   474  /* Section groups to be initialized with zeros in stage Zero */
+; ..\appl\GenData\vLinkGen_Lcfg.c	   475  const vLinkGen_MemAreaSet vLinkGen_ZeroInit_Zero_GroupsSet =
+; ..\appl\GenData\vLinkGen_Lcfg.c	   476  {
+; ..\appl\GenData\vLinkGen_Lcfg.c	   477    VLINKGEN_CFG_NUM_ZERO_INIT_ZERO_GROUPS, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   478    vLinkGen_ZeroInit_Zero_Groups
+; ..\appl\GenData\vLinkGen_Lcfg.c	   479  };
+; ..\appl\GenData\vLinkGen_Lcfg.c	   480  
+; ..\appl\GenData\vLinkGen_Lcfg.c	   481  /* Section groups to be initialized with zeros in stage One */
+; ..\appl\GenData\vLinkGen_Lcfg.c	   482  const vLinkGen_MemAreaSet vLinkGen_ZeroInit_One_GroupsSet =
+; ..\appl\GenData\vLinkGen_Lcfg.c	   483  {
+; ..\appl\GenData\vLinkGen_Lcfg.c	   484    VLINKGEN_CFG_NUM_ZERO_INIT_ONE_GROUPS, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   485    vLinkGen_ZeroInit_One_Groups
+; ..\appl\GenData\vLinkGen_Lcfg.c	   486  };
+; ..\appl\GenData\vLinkGen_Lcfg.c	   487  
+; ..\appl\GenData\vLinkGen_Lcfg.c	   488  /* Section groups to be initialized with zeros in stage Two */
+; ..\appl\GenData\vLinkGen_Lcfg.c	   489  const vLinkGen_MemAreaSet vLinkGen_ZeroInit_Two_GroupsSet =
+; ..\appl\GenData\vLinkGen_Lcfg.c	   490  {
+; ..\appl\GenData\vLinkGen_Lcfg.c	   491    VLINKGEN_CFG_NUM_ZERO_INIT_TWO_GROUPS, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   492    vLinkGen_ZeroInit_Two_Groups
+; ..\appl\GenData\vLinkGen_Lcfg.c	   493  };
+; ..\appl\GenData\vLinkGen_Lcfg.c	   494  
+; ..\appl\GenData\vLinkGen_Lcfg.c	   495  /* Section groups to be initialized with zeros in stage Three */
+; ..\appl\GenData\vLinkGen_Lcfg.c	   496  const vLinkGen_MemAreaSet vLinkGen_ZeroInit_Three_GroupsSet =
+; ..\appl\GenData\vLinkGen_Lcfg.c	   497  {
+; ..\appl\GenData\vLinkGen_Lcfg.c	   498    VLINKGEN_CFG_NUM_ZERO_INIT_THREE_GROUPS, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   499    vLinkGen_ZeroInit_Three_Groups
+; ..\appl\GenData\vLinkGen_Lcfg.c	   500  };
+; ..\appl\GenData\vLinkGen_Lcfg.c	   501  
+; ..\appl\GenData\vLinkGen_Lcfg.c	   502  /* Section groups to be initialized with zeros in stage HardReset */
+; ..\appl\GenData\vLinkGen_Lcfg.c	   503  const vLinkGen_MemAreaSet vLinkGen_ZeroInit_HardReset_GroupsSet =
+; ..\appl\GenData\vLinkGen_Lcfg.c	   504  {
+; ..\appl\GenData\vLinkGen_Lcfg.c	   505    VLINKGEN_CFG_NUM_ZERO_INIT_HARD_RESET_GROUPS, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   506    vLinkGen_ZeroInit_HardReset_Groups
+; ..\appl\GenData\vLinkGen_Lcfg.c	   507  };
+; ..\appl\GenData\vLinkGen_Lcfg.c	   508  
+; ..\appl\GenData\vLinkGen_Lcfg.c	   509  /* Section groups to be initialized with concrete data in stage Zero */
+; ..\appl\GenData\vLinkGen_Lcfg.c	   510  const vLinkGen_RamMemAreaSet vLinkGen_Init_Zero_GroupsSet =
+; ..\appl\GenData\vLinkGen_Lcfg.c	   511  {
+; ..\appl\GenData\vLinkGen_Lcfg.c	   512    VLINKGEN_CFG_NUM_INIT_ZERO_GROUPS, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   513    vLinkGen_Init_Zero_Groups
+; ..\appl\GenData\vLinkGen_Lcfg.c	   514  };
+; ..\appl\GenData\vLinkGen_Lcfg.c	   515  
+; ..\appl\GenData\vLinkGen_Lcfg.c	   516  /* Section groups to be initialized with concrete data in stage One */
+; ..\appl\GenData\vLinkGen_Lcfg.c	   517  const vLinkGen_RamMemAreaSet vLinkGen_Init_One_GroupsSet =
+; ..\appl\GenData\vLinkGen_Lcfg.c	   518  {
+; ..\appl\GenData\vLinkGen_Lcfg.c	   519    VLINKGEN_CFG_NUM_INIT_ONE_GROUPS, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   520    vLinkGen_Init_One_Groups
+; ..\appl\GenData\vLinkGen_Lcfg.c	   521  };
+; ..\appl\GenData\vLinkGen_Lcfg.c	   522  
+; ..\appl\GenData\vLinkGen_Lcfg.c	   523  /* Section groups to be initialized with concrete data in stage Two */
+; ..\appl\GenData\vLinkGen_Lcfg.c	   524  const vLinkGen_RamMemAreaSet vLinkGen_Init_Two_GroupsSet =
+; ..\appl\GenData\vLinkGen_Lcfg.c	   525  {
+; ..\appl\GenData\vLinkGen_Lcfg.c	   526    VLINKGEN_CFG_NUM_INIT_TWO_GROUPS, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   527    vLinkGen_Init_Two_Groups
+; ..\appl\GenData\vLinkGen_Lcfg.c	   528  };
+; ..\appl\GenData\vLinkGen_Lcfg.c	   529  
+; ..\appl\GenData\vLinkGen_Lcfg.c	   530  /* Section groups to be initialized with concrete data in stage Three */
+; ..\appl\GenData\vLinkGen_Lcfg.c	   531  const vLinkGen_RamMemAreaSet vLinkGen_Init_Three_GroupsSet =
+; ..\appl\GenData\vLinkGen_Lcfg.c	   532  {
+; ..\appl\GenData\vLinkGen_Lcfg.c	   533    VLINKGEN_CFG_NUM_INIT_THREE_GROUPS, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   534    vLinkGen_Init_Three_Groups
+; ..\appl\GenData\vLinkGen_Lcfg.c	   535  };
+; ..\appl\GenData\vLinkGen_Lcfg.c	   536  
+; ..\appl\GenData\vLinkGen_Lcfg.c	   537  /* Section groups to be initialized with concrete data in stage HardReset */
+; ..\appl\GenData\vLinkGen_Lcfg.c	   538  const vLinkGen_RamMemAreaSet vLinkGen_Init_HardReset_GroupsSet =
+; ..\appl\GenData\vLinkGen_Lcfg.c	   539  {
+; ..\appl\GenData\vLinkGen_Lcfg.c	   540    VLINKGEN_CFG_NUM_INIT_HARD_RESET_GROUPS, 
+; ..\appl\GenData\vLinkGen_Lcfg.c	   541    vLinkGen_Init_HardReset_Groups
+; ..\appl\GenData\vLinkGen_Lcfg.c	   542  };
+; ..\appl\GenData\vLinkGen_Lcfg.c	   543  
+; ..\appl\GenData\vLinkGen_Lcfg.c	   544  /**********************************************************************************************************************
+; ..\appl\GenData\vLinkGen_Lcfg.c	   545   *  LOCAL FUNCTION PROTOTYPES
+; ..\appl\GenData\vLinkGen_Lcfg.c	   546   *********************************************************************************************************************/
+; ..\appl\GenData\vLinkGen_Lcfg.c	   547  
+; ..\appl\GenData\vLinkGen_Lcfg.c	   548  /**********************************************************************************************************************
+; ..\appl\GenData\vLinkGen_Lcfg.c	   549   *  LOCAL FUNCTIONS
+; ..\appl\GenData\vLinkGen_Lcfg.c	   550   *********************************************************************************************************************/
+; ..\appl\GenData\vLinkGen_Lcfg.c	   551  
+; ..\appl\GenData\vLinkGen_Lcfg.c	   552  /**********************************************************************************************************************
+; ..\appl\GenData\vLinkGen_Lcfg.c	   553   *  GLOBAL FUNCTIONS
+; ..\appl\GenData\vLinkGen_Lcfg.c	   554   *********************************************************************************************************************/
+; ..\appl\GenData\vLinkGen_Lcfg.c	   555  
+; ..\appl\GenData\vLinkGen_Lcfg.c	   556  /**********************************************************************************************************************
+; ..\appl\GenData\vLinkGen_Lcfg.c	   557   *  END OF FILE: vLinkGen_Lcfg.c
+; ..\appl\GenData\vLinkGen_Lcfg.c	   558   *********************************************************************************************************************/
+
+	; Module end
