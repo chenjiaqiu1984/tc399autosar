@@ -376,7 +376,7 @@ Can_ControllerData:	.type	object
 	.byte	11
 	.byte	'Can_SduPtrType',0,6,58,45
 	.word	567
-	.byte	12,7,148,1,9,1,13
+	.byte	12,7,147,1,9,1,13
 	.byte	'Default_Init_Task',0,0,13
 	.byte	'Default_Init_Task_Trusted',0,1,13
 	.byte	'IdleTask_OsCore0',0,2,13
@@ -385,14 +385,14 @@ Can_ControllerData:	.type	object
 	.byte	'swc_task',0,5,13
 	.byte	'INVALID_TASK',0,6,13
 	.byte	'OS_TASKID_COUNT',0,6,0,11
-	.byte	'TaskType',0,7,158,1,3
+	.byte	'TaskType',0,7,157,1,3
 	.word	741
-	.byte	12,7,161,1,9,1,13
+	.byte	12,7,160,1,9,1,13
 	.byte	'CanIsr_0',0,0,13
 	.byte	'CounterIsr_SystemTimer',0,1,13
 	.byte	'INVALID_ISR',0,2,13
 	.byte	'OS_ISRID_COUNT',0,2,0,11
-	.byte	'ISRType',0,7,167,1,3
+	.byte	'ISRType',0,7,166,1,3
 	.word	899
 	.byte	11
 	.byte	'Os_Hal_AddressType',0,8,61,16

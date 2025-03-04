@@ -7023,7 +7023,7 @@ EcuM_ComM_BufferedWakeups:	.type	object
 	.sdecl	'.debug_info',debug
 	.sect	'.debug_info'
 .L176:
-	.word	16256
+	.word	17547
 	.half	3
 	.word	.L177
 	.byte	4
@@ -7175,7 +7175,7 @@ EcuM_ComM_BufferedWakeups:	.type	object
 	.byte	'state',0,7,94,105
 	.word	133
 	.byte	0,17
-	.byte	'sBswM_PCConfigType',0,9,201,9,16,1,18
+	.byte	'sBswM_PCConfigType',0,9,196,10,16,1,18
 	.byte	'BswM_PCConfigNeverUsed',0
 	.word	133
 	.byte	1,2,35,0,0,8
@@ -7334,7 +7334,7 @@ EcuM_ComM_BufferedWakeups:	.type	object
 	.byte	1,2,35,0,0,23
 	.byte	'EcuM_PCConfigType',0,18,203,3,3
 	.word	2537
-	.byte	24,19,148,1,9,1,25
+	.byte	24,19,147,1,9,1,25
 	.byte	'Default_Init_Task',0,0,25
 	.byte	'Default_Init_Task_Trusted',0,1,25
 	.byte	'IdleTask_OsCore0',0,2,25
@@ -7343,7 +7343,7 @@ EcuM_ComM_BufferedWakeups:	.type	object
 	.byte	'swc_task',0,5,25
 	.byte	'INVALID_TASK',0,6,25
 	.byte	'OS_TASKID_COUNT',0,6,0,23
-	.byte	'TaskType',0,19,158,1,3
+	.byte	'TaskType',0,19,157,1,3
 	.word	2622
 	.byte	23
 	.byte	'Os_Hal_AddressType',0,20,61,16
@@ -8060,128 +8060,178 @@ EcuM_ComM_BufferedWakeups:	.type	object
 	.byte	'ComM_PCConfigType',0,26,236,4,3
 	.word	13416
 	.byte	23
-	.byte	'BswM_ActionListsIterType',0,9,139,6,21
+	.byte	'CanSM_BswMCurrentStateType',0,27,65,15
 	.word	133
 	.byte	23
-	.byte	'BswM_ImmediateUserIterType',0,9,151,6,21
+	.byte	'BswM_ActionListsIterType',0,9,183,6,21
 	.word	133
 	.byte	23
-	.byte	'BswM_ActionListQueueType',0,9,208,6,15
+	.byte	'BswM_ImmediateUserIterType',0,9,207,6,21
 	.word	133
 	.byte	23
-	.byte	'BswM_RulesIdxOfDeferredRulesType',0,9,211,6,15
+	.byte	'BswM_ActionListQueueType',0,9,136,7,15
 	.word	133
 	.byte	23
-	.byte	'BswM_ForcedActionListPriorityType',0,9,214,6,15
+	.byte	'BswM_RulesIdxOfDeferredRulesType',0,9,154,7,15
 	.word	133
 	.byte	23
-	.byte	'BswM_InitializedType',0,9,244,6,17
+	.byte	'BswM_ForcedActionListPriorityType',0,9,157,7,15
 	.word	133
 	.byte	23
-	.byte	'BswM_ModeRequestQueueType',0,9,247,6,15
-	.word	133
-	.byte	23
-	.byte	'BswM_PCPartitionConfigIdxOfPartitionIdentifiersType',0,9,250,6,15
-	.word	133
-	.byte	23
-	.byte	'BswM_PartitionSNVOfPartitionIdentifiersType',0,9,253,6,16
+	.byte	'BswM_ExternalIdOfGenericMappingType',0,9,160,7,16
 	.word	359
 	.byte	23
-	.byte	'BswM_QueueSemaphoreType',0,9,128,7,15
+	.byte	'BswM_ImmediateUserEndIdxOfGenericMappingType',0,9,163,7,15
 	.word	133
 	.byte	23
-	.byte	'BswM_QueueWrittenType',0,9,131,7,17
+	.byte	'BswM_ImmediateUserStartIdxOfGenericMappingType',0,9,166,7,15
 	.word	133
 	.byte	23
-	.byte	'BswM_RuleStatesType',0,9,134,7,15
+	.byte	'BswM_MaskedBitsOfImmediateUserType',0,9,172,7,15
 	.word	133
 	.byte	23
-	.byte	'BswM_IdOfRulesType',0,9,137,7,15
+	.byte	'BswM_RulesIndEndIdxOfImmediateUserType',0,9,178,7,15
 	.word	133
 	.byte	23
-	.byte	'BswM_RuleStatesIdxOfRulesType',0,9,143,7,15
+	.byte	'BswM_RulesIndStartIdxOfImmediateUserType',0,9,181,7,15
 	.word	133
 	.byte	23
-	.byte	'BswM_RulesIndType',0,9,146,7,15
+	.byte	'BswM_InitializedType',0,9,187,7,17
 	.word	133
 	.byte	23
-	.byte	'BswM_TimerStateType',0,9,197,7,15
+	.byte	'BswM_ModeRequestQueueType',0,9,190,7,15
 	.word	133
 	.byte	23
-	.byte	'BswM_TimerValueType',0,9,200,7,16
+	.byte	'BswM_PCPartitionConfigIdxOfPartitionIdentifiersType',0,9,193,7,15
+	.word	133
+	.byte	23
+	.byte	'BswM_PartitionSNVOfPartitionIdentifiersType',0,9,196,7,16
 	.word	359
 	.byte	23
-	.byte	'BswM_ModeType',0,9,213,7,16
+	.byte	'BswM_QueueSemaphoreType',0,9,199,7,15
+	.word	133
+	.byte	23
+	.byte	'BswM_QueueWrittenType',0,9,202,7,17
+	.word	133
+	.byte	23
+	.byte	'BswM_RuleStatesType',0,9,205,7,15
+	.word	133
+	.byte	23
+	.byte	'BswM_IdOfRulesType',0,9,208,7,15
+	.word	133
+	.byte	23
+	.byte	'BswM_RuleStatesIdxOfRulesType',0,9,214,7,15
+	.word	133
+	.byte	23
+	.byte	'BswM_RulesIndType',0,9,217,7,15
+	.word	133
+	.byte	23
+	.byte	'BswM_TimerStateType',0,9,152,8,15
+	.word	133
+	.byte	23
+	.byte	'BswM_TimerValueType',0,9,155,8,16
+	.word	359
+	.byte	23
+	.byte	'BswM_ModeType',0,9,168,8,16
 	.word	569
 	.byte	23
-	.byte	'BswM_HandleType',0,9,214,7,15
+	.byte	'BswM_HandleType',0,9,169,8,15
 	.word	133
 	.byte	33,1,1,10
 	.word	133
 	.byte	0,3
-	.word	14162
+	.word	14494
 	.byte	23
-	.byte	'BswM_InitGenVarAndInitALType',0,9,215,7,9
-	.word	14171
+	.byte	'BswM_InitGenVarAndInitALType',0,9,170,8,9
+	.word	14503
 	.byte	34
 	.word	133
 	.byte	1,1,10
 	.word	133
 	.byte	0,3
-	.word	14214
+	.word	14546
 	.byte	23
-	.byte	'BswM_RuleTableFctPtrType',0,9,216,7,9
-	.word	14227
+	.byte	'BswM_RuleTableFctPtrType',0,9,171,8,9
+	.word	14559
 	.byte	3
-	.word	14214
+	.word	14546
 	.byte	23
-	.byte	'BswM_ActionListFuncType',0,9,217,7,9
-	.word	14266
+	.byte	'BswM_ActionListFuncType',0,9,172,8,9
+	.word	14598
 	.byte	23
-	.byte	'BswM_PartitionFunctionType',0,9,219,7,9
+	.byte	'BswM_PartitionFunctionType',0,9,174,8,9
 	.word	2189
 	.byte	17
-	.byte	'sBswM_ActionListsType',0,9,232,7,16,4,18
+	.byte	'sBswM_ActionListsType',0,9,187,8,16,4,18
 	.byte	'FctPtrOfActionLists',0
-	.word	14271
+	.word	14603
 	.byte	4,2,35,0,0,23
-	.byte	'BswM_ActionListsType',0,9,235,7,3
-	.word	14340
+	.byte	'BswM_ActionListsType',0,9,190,8,3
+	.word	14672
 	.byte	3
-	.word	14214
+	.word	14546
 	.byte	17
-	.byte	'sBswM_DeferredRulesType',0,9,238,7,16,1,18
+	.byte	'sBswM_CanSMChannelMappingType',0,9,193,8,16,1,18
+	.byte	'BswM_CanSMChannelMappingNeverUsed',0
+	.word	133
+	.byte	1,2,35,0,0,23
+	.byte	'BswM_CanSMChannelMappingType',0,9,196,8,3
+	.word	14765
+	.byte	17
+	.byte	'sBswM_ComMChannelMappingType',0,9,199,8,16,1,18
+	.byte	'BswM_ComMChannelMappingNeverUsed',0
+	.word	133
+	.byte	1,2,35,0,0,23
+	.byte	'BswM_ComMChannelMappingType',0,9,202,8,3
+	.word	14883
+	.byte	17
+	.byte	'sBswM_DeferredRulesType',0,9,205,8,16,1,18
 	.byte	'RulesIdxOfDeferredRules',0
 	.word	133
 	.byte	1,2,35,0,0,23
-	.byte	'BswM_DeferredRulesType',0,9,241,7,3
-	.word	14433
+	.byte	'BswM_DeferredRulesType',0,9,208,8,3
+	.word	14998
 	.byte	17
-	.byte	'sBswM_GenericMappingType',0,9,244,7,16,1,18
-	.byte	'BswM_GenericMappingNeverUsed',0
+	.byte	'sBswM_GenericMappingType',0,9,211,8,16,8,18
+	.byte	'ExternalIdOfGenericMapping',0
+	.word	359
+	.byte	4,2,35,0,18
+	.byte	'ImmediateUserEndIdxOfGenericMapping',0
 	.word	133
-	.byte	1,2,35,0,0,23
-	.byte	'BswM_GenericMappingType',0,9,247,7,3
-	.word	14529
-	.byte	17
-	.byte	'sBswM_ImmediateUserType',0,9,250,7,16,1,18
-	.byte	'BswM_ImmediateUserNeverUsed',0
+	.byte	1,2,35,4,18
+	.byte	'ImmediateUserStartIdxOfGenericMapping',0
 	.word	133
-	.byte	1,2,35,0,0,23
-	.byte	'BswM_ImmediateUserType',0,9,253,7,3
-	.word	14632
+	.byte	1,2,35,5,18
+	.byte	'InitValueOfGenericMapping',0
+	.word	569
+	.byte	2,2,35,6,0,23
+	.byte	'BswM_GenericMappingType',0,9,217,8,3
+	.word	15094
 	.byte	17
-	.byte	'sBswM_PartitionIdentifiersType',0,9,128,8,16,6,18
+	.byte	'sBswM_ImmediateUserType',0,9,220,8,16,4,18
+	.byte	'MaskedBitsOfImmediateUser',0
+	.word	133
+	.byte	1,2,35,0,18
+	.byte	'RulesIndEndIdxOfImmediateUser',0
+	.word	133
+	.byte	1,2,35,1,18
+	.byte	'RulesIndStartIdxOfImmediateUser',0
+	.word	133
+	.byte	1,2,35,2,0,23
+	.byte	'BswM_ImmediateUserType',0,9,225,8,3
+	.word	15322
+	.byte	17
+	.byte	'sBswM_PartitionIdentifiersType',0,9,228,8,16,6,18
 	.byte	'PartitionSNVOfPartitionIdentifiers',0
 	.word	359
 	.byte	4,2,35,0,18
 	.byte	'PCPartitionConfigIdxOfPartitionIdentifiers',0
 	.word	133
 	.byte	1,2,35,4,0,23
-	.byte	'BswM_PartitionIdentifiersType',0,9,132,8,3
-	.word	14732
+	.byte	'BswM_PartitionIdentifiersType',0,9,232,8,3
+	.word	15500
 	.byte	17
-	.byte	'sBswM_RulesType',0,9,135,8,16,8,18
+	.byte	'sBswM_RulesType',0,9,235,8,16,8,18
 	.byte	'IdOfRules',0
 	.word	133
 	.byte	1,2,35,0,18
@@ -8189,14 +8239,14 @@ EcuM_ComM_BufferedWakeups:	.type	object
 	.word	133
 	.byte	1,2,35,1,18
 	.byte	'FctPtrOfRules',0
-	.word	14232
+	.word	14564
 	.byte	4,2,35,4,0,23
-	.byte	'BswM_RulesType',0,9,140,8,3
-	.word	14905
+	.byte	'BswM_RulesType',0,9,240,8,3
+	.word	15673
 	.byte	3
-	.word	14214
+	.word	14546
 	.byte	17
-	.byte	'BswM_ActionListQueueStructSTag',0,9,152,8,16,12,18
+	.byte	'BswM_ActionListQueueStructSTag',0,9,252,8,16,20,18
 	.byte	'AL_ESH_AL_RunToPostRun',0
 	.word	133
 	.byte	1,2,35,0,18
@@ -8232,11 +8282,32 @@ EcuM_ComM_BufferedWakeups:	.type	object
 	.byte	1,2,35,10,18
 	.byte	'AL_INIT_AL_Initialize',0
 	.word	133
-	.byte	1,2,35,11,0,23
-	.byte	'BswM_ActionListQueueStructSType',0,9,166,8,3
-	.word	15029
+	.byte	1,2,35,11,18
+	.byte	'AL_CC_AL_CN_testCANFDdbc_9817eee0_TX_Disable',0
+	.word	133
+	.byte	1,2,35,12,18
+	.byte	'AL_CC_AL_CN_testCANFDdbc_9817eee0_TX_EnableNoinit',0
+	.word	133
+	.byte	1,2,35,13,18
+	.byte	'AL_CC_AL_CN_testCANFDdbc_9817eee0_Disable_DM',0
+	.word	133
+	.byte	1,2,35,14,18
+	.byte	'AL_CC_AL_CN_testCANFDdbc_9817eee0_Enable_DM',0
+	.word	133
+	.byte	1,2,35,15,18
+	.byte	'AL_CC_AL_CN_testCANFDdbc_9817eee0_RX_Disable',0
+	.word	133
+	.byte	1,2,35,16,18
+	.byte	'AL_CC_AL_CN_testCANFDdbc_9817eee0_RX_EnableNoinit',0
+	.word	133
+	.byte	1,2,35,17,18
+	.byte	'AL_ESH_AL_ExitRun',0
+	.word	133
+	.byte	1,2,35,18,0,23
+	.byte	'BswM_ActionListQueueStructSType',0,9,145,9,3
+	.word	15797
 	.byte	17
-	.byte	'BswM_RuleStatesStructSTag',0,9,169,8,16,12,18
+	.byte	'BswM_RuleStatesStructSTag',0,9,148,9,16,16,18
 	.byte	'R_ESH_RunToPostRun',0
 	.word	133
 	.byte	1,2,35,0,18
@@ -8266,35 +8337,47 @@ EcuM_ComM_BufferedWakeups:	.type	object
 	.byte	1,2,35,8,18
 	.byte	'R_ESH_PrepToWait',0
 	.word	133
-	.byte	1,2,35,9,0,23
-	.byte	'BswM_RuleStatesStructSType',0,9,181,8,3
-	.word	15532
+	.byte	1,2,35,9,18
+	.byte	'R_CC_CN_testCANFDdbc_9817eee0_TX',0
+	.word	133
+	.byte	1,2,35,10,18
+	.byte	'R_CC_CN_testCANFDdbc_9817eee0_RX_DM',0
+	.word	133
+	.byte	1,2,35,11,18
+	.byte	'R_CC_CN_testCANFDdbc_9817eee0_RX',0
+	.word	133
+	.byte	1,2,35,12,18
+	.byte	'R_ESH_RunToPostRunNested',0
+	.word	133
+	.byte	1,2,35,13,0,23
+	.byte	'BswM_RuleStatesStructSType',0,9,164,9,3
+	.word	16660
 	.byte	17
-	.byte	'BswM_TimerStateStructSTag',0,9,184,8,16,1,18
+	.byte	'BswM_TimerStateStructSTag',0,9,167,9,16,1,18
 	.byte	'MRP_ESH_SelfRunRequestTimer',0
 	.word	133
 	.byte	1,2,35,0,0,23
-	.byte	'BswM_TimerStateStructSType',0,9,187,8,3
-	.word	15883
+	.byte	'BswM_TimerStateStructSType',0,9,170,9,3
+	.word	17174
 	.byte	17
-	.byte	'BswM_TimerValueStructSTag',0,9,190,8,16,4,18
+	.byte	'BswM_TimerValueStructSTag',0,9,173,9,16,4,18
 	.byte	'MRP_ESH_SelfRunRequestTimer',0
 	.word	359
 	.byte	4,2,35,0,0,23
-	.byte	'BswM_TimerValueStructSType',0,9,193,8,3
-	.word	15989
+	.byte	'BswM_TimerValueStructSType',0,9,176,9,3
+	.word	17280
 	.byte	17
-	.byte	'sBswM_PCPartitionConfigType',0,9,183,9,16,1,18
+	.byte	'sBswM_PCPartitionConfigType',0,9,178,10,16,1,18
 	.byte	'BswM_PCPartitionConfigNeverUsed',0
 	.word	133
 	.byte	1,2,35,0,0,23
-	.byte	'BswM_PCPartitionConfigType',0,9,186,9,3
-	.word	16095
+	.byte	'BswM_PCPartitionConfigType',0,9,181,10,3
+	.word	17386
 	.byte	23
-	.byte	'BswM_PCConfigType',0,9,204,9,3
+	.byte	'BswM_PCConfigType',0,9,199,10,3
 	.word	1203
 	.byte	23
-	.byte	'BswM_ConfigType',0,9,206,9,27
+	.byte	'BswM_ConfigType',0,9,201,10,27
 	.word	1203
 	.byte	0
 	.sdecl	'.debug_abbrev',debug
@@ -8327,7 +8410,8 @@ EcuM_ComM_BufferedWakeups:	.type	object
 	.byte	'D:\\Zonal\\demo011\\tasking\\component\\BswM\\Implementation',0
 	.byte	'D:\\Zonal\\demo011\\tasking\\component\\_Common\\Implementation',0
 	.byte	'D:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc\\inc',0
-	.byte	'D:\\Zonal\\demo011\\tasking\\mcal\\Mcu\\ssc\\inc',0,0
+	.byte	'D:\\Zonal\\demo011\\tasking\\mcal\\Mcu\\ssc\\inc',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\component\\CanSM\\Implementation',0,0
 	.byte	'..\\component\\EcuM\\Implementation\\EcuM.c',0,0,0,0
 	.byte	'Det.h',0,1,0,0
 	.byte	'Os.h',0,2,0,0
@@ -8353,7 +8437,8 @@ EcuM_ComM_BufferedWakeups:	.type	object
 	.byte	'Mcal_Compiler.h',0,7,0,0
 	.byte	'Mcu.h',0,8,0,0
 	.byte	'ComM_Types.h',0,4,0,0
-	.byte	'ComM_Cfg.h',0,3,0,0,0
+	.byte	'ComM_Cfg.h',0,3,0,0
+	.byte	'CanSM_BswM.h',0,9,0,0,0
 .L546:
 .L544:
 	.sdecl	'.debug_info',debug,cluster('EcuM_ValidateWakeupEvent')

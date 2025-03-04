@@ -585,7 +585,7 @@ __Os_Isr_CanIsr_0_function_end:
 	.byte	'CAN_ERRORSTATE_BUSOFF',0,2,0,12
 	.byte	'Can_ErrorStateType',0,7,88,3
 	.word	1139
-	.byte	15,8,148,1,9,1,16
+	.byte	15,8,147,1,9,1,16
 	.byte	'Default_Init_Task',0,0,16
 	.byte	'Default_Init_Task_Trusted',0,1,16
 	.byte	'IdleTask_OsCore0',0,2,16
@@ -594,14 +594,14 @@ __Os_Isr_CanIsr_0_function_end:
 	.byte	'swc_task',0,5,16
 	.byte	'INVALID_TASK',0,6,16
 	.byte	'OS_TASKID_COUNT',0,6,0,12
-	.byte	'TaskType',0,8,158,1,3
+	.byte	'TaskType',0,8,157,1,3
 	.word	1245
-	.byte	15,8,161,1,9,1,16
+	.byte	15,8,160,1,9,1,16
 	.byte	'CanIsr_0',0,0,16
 	.byte	'CounterIsr_SystemTimer',0,1,16
 	.byte	'INVALID_ISR',0,2,16
 	.byte	'OS_ISRID_COUNT',0,2,0,12
-	.byte	'ISRType',0,8,167,1,3
+	.byte	'ISRType',0,8,166,1,3
 	.word	1403
 	.byte	12
 	.byte	'Os_Hal_AddressType',0,9,61,16

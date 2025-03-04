@@ -2566,7 +2566,7 @@ CanIf_SetControllerMode:	.type	func
 ; ..\component\CanIf\Implementation\CanIf.c	  2390        /* return E_NOT_OK if requested device mode already active */
 ; ..\component\CanIf\Implementation\CanIf.c	  2391        /* #110 Perform mode transition only within critical section */
 ; ..\component\CanIf\Implementation\CanIf.c	  2392        CanIf_EnterCritical(CANIF_EXCLUSIVE_AREA_0);
-	call	SuspendAllInterrupts
+	call	SchM_Enter_CanIf_CANIF_EXCLUSIVE_AREA_0
 .L407:
 	jeq	d8,#1,.L11
 .L707:
@@ -2746,7 +2746,7 @@ CanIf_SetControllerMode:	.type	func
 
 ; ..\component\CanIf\Implementation\CanIf.c	  2393        retval = CanIf_SetControllerModeSubSwitch(CANIF_CHANNEL_CANPARA_FIRST ControllerMode);
 ; ..\component\CanIf\Implementation\CanIf.c	  2394        CanIf_LeaveCritical(CANIF_EXCLUSIVE_AREA_0);
-	call	ResumeAllInterrupts
+	call	SchM_Exit_CanIf_CANIF_EXCLUSIVE_AREA_0
 .L10:
 .L8:
 
@@ -10432,11 +10432,11 @@ RxDlcMaxValueLookUp:	.type	object
 	.calls	'CanIf_ClearQueue','SuspendAllInterrupts'
 	.calls	'CanIf_ClearQueue','ResumeAllInterrupts'
 	.calls	'CanIf_Init','CanIf_ClearQueue'
-	.calls	'CanIf_SetControllerMode','SuspendAllInterrupts'
+	.calls	'CanIf_SetControllerMode','SchM_Enter_CanIf_CANIF_EXCLUSIVE_AREA_0'
 	.calls	'CanIf_SetControllerMode','Can_SetControllerMode'
 	.calls	'CanIf_SetControllerMode','CanIf_ClearQueue'
 	.calls	'CanIf_SetControllerMode','Det_ReportError'
-	.calls	'CanIf_SetControllerMode','ResumeAllInterrupts'
+	.calls	'CanIf_SetControllerMode','SchM_Exit_CanIf_CANIF_EXCLUSIVE_AREA_0'
 	.calls	'CanIf_GetControllerMode','Det_ReportError'
 	.calls	'CanIf_Transmit','SuspendAllInterrupts'
 	.calls	'CanIf_Transmit','Can_Write'
@@ -10545,12 +10545,14 @@ RxDlcMaxValueLookUp:	.type	object
 	.extern	Det_ReportError
 	.extern	SuspendAllInterrupts
 	.extern	ResumeAllInterrupts
+	.extern	SchM_Enter_CanIf_CANIF_EXCLUSIVE_AREA_0
+	.extern	SchM_Exit_CanIf_CANIF_EXCLUSIVE_AREA_0
 	.extern	__INDIRECT__
 	.calls	'CanIf_ControllerModeIndication','',0
 	.sdecl	'.debug_info',debug
 	.sect	'.debug_info'
 .L250:
-	.word	28485
+	.word	28580
 	.half	3
 	.word	.L251
 	.byte	4
@@ -10929,7 +10931,9 @@ RxDlcMaxValueLookUp:	.type	object
 	.word	135
 	.byte	0,25
 	.byte	'SuspendAllInterrupts',0,9,222,10,21,1,1,1,1,25
-	.byte	'ResumeAllInterrupts',0,9,241,10,21,1,1,1,1,26
+	.byte	'ResumeAllInterrupts',0,9,241,10,21,1,1,1,1,25
+	.byte	'SchM_Enter_CanIf_CANIF_EXCLUSIVE_AREA_0',0,10,65,22,1,1,1,1,25
+	.byte	'SchM_Exit_CanIf_CANIF_EXCLUSIVE_AREA_0',0,10,66,22,1,1,1,1,26
 	.word	152
 	.byte	27
 	.word	198
@@ -10940,19 +10944,19 @@ RxDlcMaxValueLookUp:	.type	object
 	.byte	5,0,8
 	.word	2037
 	.byte	9
-	.word	2916
+	.word	3011
 	.byte	22,1,1,16
 	.word	135
 	.byte	16
-	.word	2921
+	.word	3016
 	.byte	0,9
-	.word	2926
+	.word	3021
 	.byte	9
-	.word	2926
+	.word	3021
 .L593:
 	.byte	10
 	.byte	'CanIf_AdvancedRxIndicationFctType',0,2,186,3,9
-	.word	2945
+	.word	3040
 	.byte	9
 	.word	2585
 .L602:
@@ -11087,47 +11091,47 @@ RxDlcMaxValueLookUp:	.type	object
 	.word	1483
 	.byte	5,0,31
 	.byte	'__INDIRECT__',0,1,1,1,1,1,1,32,1,9
-	.word	3418
+	.word	3513
 	.byte	10
 	.byte	'__codeptr',0,1,1,1
-	.word	3420
+	.word	3515
 	.byte	10
-	.byte	'boolean',0,10,101,31
+	.byte	'boolean',0,11,101,31
 	.word	135
 	.byte	10
-	.byte	'uint8',0,10,104,31
+	.byte	'uint8',0,11,104,31
 	.word	135
 	.byte	2
 	.byte	'short int',0,2,5,10
-	.byte	'sint16',0,10,105,31
-	.word	3473
+	.byte	'sint16',0,11,105,31
+	.word	3568
 	.byte	10
-	.byte	'uint16',0,10,106,31
+	.byte	'uint16',0,11,106,31
 	.word	336
 	.byte	2
 	.byte	'long int',0,4,5,10
-	.byte	'sint32',0,10,107,31
-	.word	3516
+	.byte	'sint32',0,11,107,31
+	.word	3611
 	.byte	10
-	.byte	'uint32',0,10,108,31
+	.byte	'uint32',0,11,108,31
 	.word	2098
 	.byte	10
-	.byte	'uint8_least',0,10,111,31
+	.byte	'uint8_least',0,11,111,31
 	.word	135
 	.byte	10
-	.byte	'uint32_least',0,10,115,31
+	.byte	'uint32_least',0,11,115,31
 	.word	2098
 	.byte	2
 	.byte	'unsigned long long int',0,8,7,10
-	.byte	'uint64',0,10,121,30
-	.word	3599
+	.byte	'uint64',0,11,121,30
+	.word	3694
 	.byte	10
-	.byte	'StatusType',0,11,127,23
+	.byte	'StatusType',0,12,127,23
 	.word	135
 	.byte	10
-	.byte	'Std_ReturnType',0,11,132,1,15
+	.byte	'Std_ReturnType',0,12,132,1,15
 	.word	135
-	.byte	21,11,134,1,9,8,12
+	.byte	21,12,134,1,9,8,12
 	.byte	'vendorID',0
 	.word	336
 	.byte	2,2,35,0,12
@@ -11143,13 +11147,13 @@ RxDlcMaxValueLookUp:	.type	object
 	.byte	'sw_patch_version',0
 	.word	135
 	.byte	1,2,35,6,0,10
-	.byte	'Std_VersionInfoType',0,11,141,1,3
-	.word	3683
+	.byte	'Std_VersionInfoType',0,12,141,1,3
+	.word	3778
 	.byte	10
-	.byte	'PduIdType',0,12,63,15
+	.byte	'PduIdType',0,13,63,15
 	.word	135
 	.byte	10
-	.byte	'PduLengthType',0,12,65,15
+	.byte	'PduLengthType',0,13,65,15
 	.word	135
 	.byte	10
 	.byte	'PduInfoType',0,6,201,1,3
@@ -11159,7 +11163,7 @@ RxDlcMaxValueLookUp:	.type	object
 	.byte	'TP_DATARETRY',0,1,7
 	.byte	'TP_CONFPENDING',0,2,0,10
 	.byte	'TpDataStateType',0,6,226,1,3
-	.word	3894
+	.word	3989
 	.byte	10
 	.byte	'Can_IdType',0,3,52,30
 	.word	336
@@ -11178,318 +11182,318 @@ RxDlcMaxValueLookUp:	.type	object
 	.byte	'CAN_CS_STOPPED',0,2,7
 	.byte	'CAN_CS_SLEEP',0,3,0,10
 	.byte	'Can_ControllerStateType',0,3,82,3
-	.word	4068
+	.word	4163
 	.byte	6,3,84,9,1,7
 	.byte	'CAN_ERRORSTATE_ACTIVE',0,0,7
 	.byte	'CAN_ERRORSTATE_PASSIVE',0,1,7
 	.byte	'CAN_ERRORSTATE_BUSOFF',0,2,0,10
 	.byte	'Can_ErrorStateType',0,3,88,3
-	.word	4171
+	.word	4266
 	.byte	10
 	.byte	'Can_ReturnType',0,3,98,3
 	.word	1633
 	.byte	10
-	.byte	'tCanLLCanIntOld',0,13,161,3,37
+	.byte	'tCanLLCanIntOld',0,14,161,3,37
 	.word	2098
 	.byte	10
-	.byte	'Can_OsIsrType',0,13,167,3,15
+	.byte	'Can_OsIsrType',0,14,167,3,15
 	.word	135
 	.byte	10
-	.byte	'Can_ExternalTickType',0,13,180,3,16
+	.byte	'Can_ExternalTickType',0,14,180,3,16
 	.word	2098
 	.byte	33,32
 	.word	2098
 	.byte	34,7,0,10
-	.byte	'Can_LoopTimeout_dim_type',0,13,183,3,44
-	.word	4378
+	.byte	'Can_LoopTimeout_dim_type',0,14,183,3,44
+	.word	4473
 	.byte	10
-	.byte	'Can_ControllerConfigIterType',0,13,192,13,21
+	.byte	'Can_ControllerConfigIterType',0,14,192,13,21
 	.word	135
 	.byte	10
-	.byte	'Can_PduOfActiveSendObjectType',0,13,148,14,19
+	.byte	'Can_PduOfActiveSendObjectType',0,14,148,14,19
 	.word	135
 	.byte	10
-	.byte	'Can_StateOfActiveSendObjectType',0,13,151,14,16
+	.byte	'Can_StateOfActiveSendObjectType',0,14,151,14,16
 	.word	336
 	.byte	10
-	.byte	'Can_BTPType',0,13,154,14,16
+	.byte	'Can_BTPType',0,14,154,14,16
 	.word	2098
 	.byte	10
-	.byte	'Can_RXBCOfBufferConfigType',0,13,160,14,15
+	.byte	'Can_RXBCOfBufferConfigType',0,14,160,14,15
 	.word	135
 	.byte	10
-	.byte	'Can_RXF0COfBufferConfigType',0,13,163,14,16
+	.byte	'Can_RXF0COfBufferConfigType',0,14,163,14,16
 	.word	2098
 	.byte	10
-	.byte	'Can_RXF1COfBufferConfigType',0,13,166,14,15
+	.byte	'Can_RXF1COfBufferConfigType',0,14,166,14,15
 	.word	135
 	.byte	10
-	.byte	'Can_TXBCOfBufferConfigType',0,13,169,14,16
+	.byte	'Can_TXBCOfBufferConfigType',0,14,169,14,16
 	.word	2098
 	.byte	10
-	.byte	'Can_TXEFCOfBufferConfigType',0,13,172,14,15
+	.byte	'Can_TXEFCOfBufferConfigType',0,14,172,14,15
 	.word	135
 	.byte	10
-	.byte	'Can_CanIfChannelIdType',0,13,190,14,15
+	.byte	'Can_CanIfChannelIdType',0,14,190,14,15
 	.word	135
 	.byte	10
-	.byte	'Can_CanSubSystemBaseAdrType',0,13,193,14,16
+	.byte	'Can_CanSubSystemBaseAdrType',0,14,193,14,16
 	.word	2098
 	.byte	10
-	.byte	'Can_BasisAdrOfControllerConfigType',0,13,196,14,16
+	.byte	'Can_BasisAdrOfControllerConfigType',0,14,196,14,16
 	.word	2098
 	.byte	10
-	.byte	'Can_CanControllerDefaultBaudrateIdxOfControllerConfigType',0,13,199,14,15
+	.byte	'Can_CanControllerDefaultBaudrateIdxOfControllerConfigType',0,14,199,14,15
 	.word	135
 	.byte	10
-	.byte	'Can_CanControllerDefaultBaudrateOfControllerConfigType',0,13,202,14,16
+	.byte	'Can_CanControllerDefaultBaudrateOfControllerConfigType',0,14,202,14,16
 	.word	336
 	.byte	10
-	.byte	'Can_IsTTCanOfControllerConfigType',0,13,205,14,17
+	.byte	'Can_IsTTCanOfControllerConfigType',0,14,205,14,17
 	.word	135
 	.byte	10
-	.byte	'Can_MailboxRxBasicEndIdxOfControllerConfigType',0,13,208,14,15
+	.byte	'Can_MailboxRxBasicEndIdxOfControllerConfigType',0,14,208,14,15
 	.word	135
 	.byte	10
-	.byte	'Can_MailboxRxBasicLengthOfControllerConfigType',0,13,211,14,15
+	.byte	'Can_MailboxRxBasicLengthOfControllerConfigType',0,14,211,14,15
 	.word	135
 	.byte	10
-	.byte	'Can_MailboxRxBasicStartIdxOfControllerConfigType',0,13,214,14,15
+	.byte	'Can_MailboxRxBasicStartIdxOfControllerConfigType',0,14,214,14,15
 	.word	135
 	.byte	10
-	.byte	'Can_MailboxTxBasicEndIdxOfControllerConfigType',0,13,220,14,15
+	.byte	'Can_MailboxTxBasicEndIdxOfControllerConfigType',0,14,220,14,15
 	.word	135
 	.byte	10
-	.byte	'Can_MailboxTxBasicLengthOfControllerConfigType',0,13,223,14,15
+	.byte	'Can_MailboxTxBasicLengthOfControllerConfigType',0,14,223,14,15
 	.word	135
 	.byte	10
-	.byte	'Can_MailboxTxBasicStartIdxOfControllerConfigType',0,13,226,14,15
+	.byte	'Can_MailboxTxBasicStartIdxOfControllerConfigType',0,14,226,14,15
 	.word	135
 	.byte	10
-	.byte	'Can_RxBasicHwStartOfControllerConfigType',0,13,232,14,15
+	.byte	'Can_RxBasicHwStartOfControllerConfigType',0,14,232,14,15
 	.word	135
 	.byte	10
-	.byte	'Can_RxBasicHwStopOfControllerConfigType',0,13,235,14,15
+	.byte	'Can_RxBasicHwStopOfControllerConfigType',0,14,235,14,15
 	.word	135
 	.byte	10
-	.byte	'Can_RxFullHwStartOfControllerConfigType',0,13,238,14,15
+	.byte	'Can_RxFullHwStartOfControllerConfigType',0,14,238,14,15
 	.word	135
 	.byte	10
-	.byte	'Can_RxFullHwStopOfControllerConfigType',0,13,241,14,15
+	.byte	'Can_RxFullHwStopOfControllerConfigType',0,14,241,14,15
 	.word	135
 	.byte	10
-	.byte	'Can_RxSelectionOfControllerConfigType',0,13,244,14,15
+	.byte	'Can_RxSelectionOfControllerConfigType',0,14,244,14,15
 	.word	135
 	.byte	10
-	.byte	'Can_TxBasicHwStartOfControllerConfigType',0,13,247,14,15
+	.byte	'Can_TxBasicHwStartOfControllerConfigType',0,14,247,14,15
 	.word	135
 	.byte	10
-	.byte	'Can_TxBasicHwStopOfControllerConfigType',0,13,250,14,15
+	.byte	'Can_TxBasicHwStopOfControllerConfigType',0,14,250,14,15
 	.word	135
 	.byte	10
-	.byte	'Can_TxFullHwStartOfControllerConfigType',0,13,253,14,15
+	.byte	'Can_TxFullHwStartOfControllerConfigType',0,14,253,14,15
 	.word	135
 	.byte	10
-	.byte	'Can_TxFullHwStopOfControllerConfigType',0,13,128,15,15
+	.byte	'Can_TxFullHwStopOfControllerConfigType',0,14,128,15,15
 	.word	135
 	.byte	10
-	.byte	'Can_UnusedHwStartOfControllerConfigType',0,13,131,15,15
+	.byte	'Can_UnusedHwStartOfControllerConfigType',0,14,131,15,15
 	.word	135
 	.byte	10
-	.byte	'Can_UnusedHwStopOfControllerConfigType',0,13,134,15,15
+	.byte	'Can_UnusedHwStopOfControllerConfigType',0,14,134,15,15
 	.word	135
 	.byte	10
-	.byte	'Can_BusOffNotificationOfControllerDataType',0,13,137,15,15
+	.byte	'Can_BusOffNotificationOfControllerDataType',0,14,137,15,15
 	.word	135
 	.byte	10
-	.byte	'Can_BusOffTransitionRequestOfControllerDataType',0,13,140,15,15
+	.byte	'Can_BusOffTransitionRequestOfControllerDataType',0,14,140,15,15
 	.word	135
 	.byte	10
-	.byte	'Can_CanInterruptCounterOfControllerDataType',0,13,143,15,15
+	.byte	'Can_CanInterruptCounterOfControllerDataType',0,14,143,15,15
 	.word	135
 	.byte	10
-	.byte	'Can_IntEnableOfControllerDataType',0,13,146,15,16
+	.byte	'Can_IntEnableOfControllerDataType',0,14,146,15,16
 	.word	2098
 	.byte	10
-	.byte	'Can_IsBusOffOfControllerDataType',0,13,149,15,17
+	.byte	'Can_IsBusOffOfControllerDataType',0,14,149,15,17
 	.word	135
 	.byte	10
-	.byte	'Can_LastInitObjectOfControllerDataType',0,13,152,15,15
+	.byte	'Can_LastInitObjectOfControllerDataType',0,14,152,15,15
 	.word	135
 	.byte	10
-	.byte	'Can_LastStateOfControllerDataType',0,13,155,15,15
+	.byte	'Can_LastStateOfControllerDataType',0,14,155,15,15
 	.word	135
 	.byte	10
-	.byte	'Can_LogStatusOfControllerDataType',0,13,158,15,15
+	.byte	'Can_LogStatusOfControllerDataType',0,14,158,15,15
 	.word	135
 	.byte	10
-	.byte	'Can_ModeTransitionRequestOfControllerDataType',0,13,161,15,15
+	.byte	'Can_ModeTransitionRequestOfControllerDataType',0,14,161,15,15
 	.word	135
 	.byte	10
-	.byte	'Can_NonFdObjectsPendingFlagOfControllerDataType',0,13,164,15,16
+	.byte	'Can_NonFdObjectsPendingFlagOfControllerDataType',0,14,164,15,16
 	.word	2098
 	.byte	10
-	.byte	'Can_PrevModeOfControllerDataType',0,13,167,15,15
+	.byte	'Can_PrevModeOfControllerDataType',0,14,167,15,15
 	.word	135
 	.byte	10
-	.byte	'Can_RamCheckTransitionRequestOfControllerDataType',0,13,170,15,15
+	.byte	'Can_RamCheckTransitionRequestOfControllerDataType',0,14,170,15,15
 	.word	135
 	.byte	10
-	.byte	'Can_TXBCROfControllerDataType',0,13,173,15,16
+	.byte	'Can_TXBCROfControllerDataType',0,14,173,15,16
 	.word	2098
 	.byte	10
-	.byte	'Can_TXBRPOfControllerDataType',0,13,176,15,16
+	.byte	'Can_TXBRPOfControllerDataType',0,14,176,15,16
 	.word	2098
 	.byte	10
-	.byte	'Can_FBTPType',0,13,179,15,16
+	.byte	'Can_FBTPType',0,14,179,15,16
 	.word	2098
 	.byte	10
-	.byte	'Can_GFCType',0,13,182,15,15
+	.byte	'Can_GFCType',0,14,182,15,15
 	.word	135
 	.byte	10
-	.byte	'Can_INT_PriorityType',0,13,185,15,15
+	.byte	'Can_INT_PriorityType',0,14,185,15,15
 	.word	135
 	.byte	10
-	.byte	'Can_INT_RoutingGroupType',0,13,188,15,15
+	.byte	'Can_INT_RoutingGroupType',0,14,188,15,15
 	.word	135
 	.byte	10
-	.byte	'Can_InitObjectBaudrateType',0,13,191,15,16
+	.byte	'Can_InitObjectBaudrateType',0,14,191,15,16
 	.word	336
 	.byte	10
-	.byte	'Can_InitObjectFdBrsConfigType',0,13,194,15,15
+	.byte	'Can_InitObjectFdBrsConfigType',0,14,194,15,15
 	.word	135
 	.byte	10
-	.byte	'Can_InitObjectStartIndexType',0,13,197,15,15
+	.byte	'Can_InitObjectStartIndexType',0,14,197,15,15
 	.word	135
 	.byte	10
-	.byte	'Can_ActiveSendObjectOfMailboxType',0,13,200,15,15
+	.byte	'Can_ActiveSendObjectOfMailboxType',0,14,200,15,15
 	.word	135
 	.byte	10
-	.byte	'Can_ControllerConfigIdxOfMailboxType',0,13,203,15,15
+	.byte	'Can_ControllerConfigIdxOfMailboxType',0,14,203,15,15
 	.word	135
 	.byte	10
-	.byte	'Can_FdPaddingOfMailboxType',0,13,206,15,15
+	.byte	'Can_FdPaddingOfMailboxType',0,14,206,15,15
 	.word	135
 	.byte	10
-	.byte	'Can_HwHandleOfMailboxType',0,13,209,15,15
+	.byte	'Can_HwHandleOfMailboxType',0,14,209,15,15
 	.word	135
 	.byte	10
-	.byte	'Can_IDValueOfMailboxType',0,13,212,15,15
+	.byte	'Can_IDValueOfMailboxType',0,14,212,15,15
 	.word	135
 	.byte	10
-	.byte	'Can_MailboxSizeOfMailboxType',0,13,215,15,15
+	.byte	'Can_MailboxSizeOfMailboxType',0,14,215,15,15
 	.word	135
 	.byte	10
-	.byte	'Can_MailboxTypeOfMailboxType',0,13,218,15,15
+	.byte	'Can_MailboxTypeOfMailboxType',0,14,218,15,15
 	.word	135
 	.byte	10
-	.byte	'Can_MaxDataLenOfMailboxType',0,13,221,15,15
+	.byte	'Can_MaxDataLenOfMailboxType',0,14,221,15,15
 	.word	135
 	.byte	10
-	.byte	'Can_MemorySectionsIndexOfMailboxType',0,13,224,15,15
+	.byte	'Can_MemorySectionsIndexOfMailboxType',0,14,224,15,15
 	.word	135
 	.byte	10
-	.byte	'Can_MemorySectionStartOfMemorySectionInfoType',0,13,227,15,15
+	.byte	'Can_MemorySectionStartOfMemorySectionInfoType',0,14,227,15,15
 	.word	135
 	.byte	10
-	.byte	'Can_HwHandleOfMemorySectionObjectsType',0,13,230,15,15
+	.byte	'Can_HwHandleOfMemorySectionObjectsType',0,14,230,15,15
 	.word	135
 	.byte	10
-	.byte	'Can_MailboxElementOfMemorySectionObjectsType',0,13,233,15,15
+	.byte	'Can_MailboxElementOfMemorySectionObjectsType',0,14,233,15,15
 	.word	135
 	.byte	10
-	.byte	'Can_MailboxHandleOfMemorySectionObjectsType',0,13,236,15,15
+	.byte	'Can_MailboxHandleOfMemorySectionObjectsType',0,14,236,15,15
 	.word	135
 	.byte	10
-	.byte	'Can_FLSSAOfSIDFCType',0,13,242,15,15
+	.byte	'Can_FLSSAOfSIDFCType',0,14,242,15,15
 	.word	135
 	.byte	10
-	.byte	'Can_LSSOfSIDFCType',0,13,245,15,15
+	.byte	'Can_LSSOfSIDFCType',0,14,245,15,15
 	.word	135
 	.byte	10
-	.byte	'Can_SIDFEEndIdxOfSIDFCType',0,13,248,15,15
+	.byte	'Can_SIDFEEndIdxOfSIDFCType',0,14,248,15,15
 	.word	135
 	.byte	10
-	.byte	'Can_SIDFEStartIdxOfSIDFCType',0,13,251,15,15
+	.byte	'Can_SIDFEStartIdxOfSIDFCType',0,14,251,15,15
 	.word	135
 	.byte	10
-	.byte	'Can_SIDFEType',0,13,129,16,16
+	.byte	'Can_SIDFEType',0,14,129,16,16
 	.word	2098
 	.byte	10
-	.byte	'Can_SRN_AddressType',0,13,132,16,16
+	.byte	'Can_SRN_AddressType',0,14,132,16,16
 	.word	2098
 	.byte	10
-	.byte	'Can_RXBAOfShmAdrType',0,13,135,16,16
+	.byte	'Can_RXBAOfShmAdrType',0,14,135,16,16
 	.word	2098
 	.byte	10
-	.byte	'Can_RXF0AOfShmAdrType',0,13,138,16,16
+	.byte	'Can_RXF0AOfShmAdrType',0,14,138,16,16
 	.word	2098
 	.byte	10
-	.byte	'Can_RXF1AOfShmAdrType',0,13,141,16,16
+	.byte	'Can_RXF1AOfShmAdrType',0,14,141,16,16
 	.word	2098
 	.byte	10
-	.byte	'Can_SIDFAOfShmAdrType',0,13,144,16,16
+	.byte	'Can_SIDFAOfShmAdrType',0,14,144,16,16
 	.word	2098
 	.byte	10
-	.byte	'Can_StartAdrOfShmAdrType',0,13,147,16,16
+	.byte	'Can_StartAdrOfShmAdrType',0,14,147,16,16
 	.word	2098
 	.byte	10
-	.byte	'Can_StopAdrOfShmAdrType',0,13,150,16,16
+	.byte	'Can_StopAdrOfShmAdrType',0,14,150,16,16
 	.word	2098
 	.byte	10
-	.byte	'Can_TXBAOfShmAdrType',0,13,153,16,16
+	.byte	'Can_TXBAOfShmAdrType',0,14,153,16,16
 	.word	2098
 	.byte	10
-	.byte	'Can_TXEFAOfShmAdrType',0,13,156,16,16
+	.byte	'Can_TXEFAOfShmAdrType',0,14,156,16,16
 	.word	2098
 	.byte	10
-	.byte	'Can_XIDFAOfShmAdrType',0,13,159,16,16
+	.byte	'Can_XIDFAOfShmAdrType',0,14,159,16,16
 	.word	2098
 	.byte	10
-	.byte	'Can_F0DSOfShmElementSizeType',0,13,162,16,15
+	.byte	'Can_F0DSOfShmElementSizeType',0,14,162,16,15
 	.word	135
 	.byte	10
-	.byte	'Can_F1DSOfShmElementSizeType',0,13,165,16,15
+	.byte	'Can_F1DSOfShmElementSizeType',0,14,165,16,15
 	.word	135
 	.byte	10
-	.byte	'Can_RBDSOfShmElementSizeType',0,13,168,16,15
+	.byte	'Can_RBDSOfShmElementSizeType',0,14,168,16,15
 	.word	135
 	.byte	10
-	.byte	'Can_TBDSOfShmElementSizeType',0,13,171,16,15
+	.byte	'Can_TBDSOfShmElementSizeType',0,14,171,16,15
 	.word	135
 	.byte	10
-	.byte	'Can_TEFBDSOfShmElementSizeType',0,13,174,16,15
+	.byte	'Can_TEFBDSOfShmElementSizeType',0,14,174,16,15
 	.word	135
 	.byte	10
-	.byte	'Can_TDCRType',0,13,130,17,15
+	.byte	'Can_TDCRType',0,14,130,17,15
 	.word	135
 	.byte	10
-	.byte	'Can_XIDAMType',0,13,133,17,16
+	.byte	'Can_XIDAMType',0,14,133,17,16
 	.word	2098
 	.byte	10
-	.byte	'Can_FLESAOfXIDFCType',0,13,136,17,15
+	.byte	'Can_FLESAOfXIDFCType',0,14,136,17,15
 	.word	135
 	.byte	10
-	.byte	'Can_LSEOfXIDFCType',0,13,139,17,15
+	.byte	'Can_LSEOfXIDFCType',0,14,139,17,15
 	.word	135
 	.byte	10
-	.byte	'Can_EIDFE_0OfXIDFEType',0,13,142,17,15
+	.byte	'Can_EIDFE_0OfXIDFEType',0,14,142,17,15
 	.word	135
 	.byte	10
-	.byte	'Can_EIDFE_1OfXIDFEType',0,13,145,17,15
+	.byte	'Can_EIDFE_1OfXIDFEType',0,14,145,17,15
 	.word	135
 	.byte	11
-	.byte	'sCan_ActiveSendObjectType',0,13,161,17,16,4,12
+	.byte	'sCan_ActiveSendObjectType',0,14,161,17,16,4,12
 	.byte	'StateOfActiveSendObject',0
 	.word	336
 	.byte	2,2,35,0,12
 	.byte	'PduOfActiveSendObject',0
 	.word	135
 	.byte	1,2,35,2,0,10
-	.byte	'Can_ActiveSendObjectType',0,13,165,17,3
-	.word	8186
+	.byte	'Can_ActiveSendObjectType',0,14,165,17,3
+	.word	8281
 	.byte	11
-	.byte	'sCan_BufferConfigType',0,13,168,17,16,12,12
+	.byte	'sCan_BufferConfigType',0,14,168,17,16,12,12
 	.byte	'RXF0COfBufferConfig',0
 	.word	2098
 	.byte	4,2,35,0,12
@@ -11505,10 +11509,10 @@ RxDlcMaxValueLookUp:	.type	object
 	.byte	'TXEFCOfBufferConfig',0
 	.word	135
 	.byte	1,2,35,10,0,10
-	.byte	'Can_BufferConfigType',0,13,175,17,3
-	.word	8317
+	.byte	'Can_BufferConfigType',0,14,175,17,3
+	.word	8412
 	.byte	11
-	.byte	'sCan_ControllerConfigType',0,13,178,17,16,28,12
+	.byte	'sCan_ControllerConfigType',0,14,178,17,16,28,12
 	.byte	'BasisAdrOfControllerConfig',0
 	.word	2098
 	.byte	4,2,35,0,12
@@ -11572,10 +11576,10 @@ RxDlcMaxValueLookUp:	.type	object
 	.byte	'UnusedHwStopOfControllerConfig',0
 	.word	135
 	.byte	1,2,35,24,0,10
-	.byte	'Can_ControllerConfigType',0,13,201,17,3
-	.word	8519
+	.byte	'Can_ControllerConfigType',0,14,201,17,3
+	.word	8614
 	.byte	11
-	.byte	'sCan_ControllerDataType',0,13,204,17,16,64,12
+	.byte	'sCan_ControllerDataType',0,14,204,17,16,64,12
 	.byte	'IntEnableOfControllerData',0
 	.word	2098
 	.byte	4,2,35,0,12
@@ -11622,14 +11626,14 @@ RxDlcMaxValueLookUp:	.type	object
 	.word	2098
 	.byte	4,2,35,26,12
 	.byte	'LoopTimeoutOfControllerData',0
-	.word	4387
+	.word	4482
 	.byte	32,2,35,30,0,10
-	.byte	'Can_ControllerDataType',0,13,222,17,3
-	.word	9512
+	.byte	'Can_ControllerDataType',0,14,222,17,3
+	.word	9607
 	.byte	33,32
 	.word	2098
 	.byte	34,7,0,11
-	.byte	'sCan_MailboxType',0,13,225,17,16,12,12
+	.byte	'sCan_MailboxType',0,14,225,17,16,12,12
 	.byte	'ActiveSendObjectOfMailbox',0
 	.word	135
 	.byte	1,2,35,0,12
@@ -11657,17 +11661,17 @@ RxDlcMaxValueLookUp:	.type	object
 	.byte	'MemorySectionsIndexOfMailbox',0
 	.word	135
 	.byte	1,2,35,8,0,10
-	.byte	'Can_MailboxType',0,13,236,17,3
-	.word	10228
+	.byte	'Can_MailboxType',0,14,236,17,3
+	.word	10323
 	.byte	11
-	.byte	'sCan_MemorySectionInfoType',0,13,239,17,16,1,12
+	.byte	'sCan_MemorySectionInfoType',0,14,239,17,16,1,12
 	.byte	'MemorySectionStartOfMemorySectionInfo',0
 	.word	135
 	.byte	1,2,35,0,0,10
-	.byte	'Can_MemorySectionInfoType',0,13,242,17,3
-	.word	10558
+	.byte	'Can_MemorySectionInfoType',0,14,242,17,3
+	.word	10653
 	.byte	11
-	.byte	'sCan_MemorySectionObjectsType',0,13,245,17,16,4,12
+	.byte	'sCan_MemorySectionObjectsType',0,14,245,17,16,4,12
 	.byte	'HwHandleOfMemorySectionObjects',0
 	.word	135
 	.byte	1,2,35,0,12
@@ -11677,10 +11681,10 @@ RxDlcMaxValueLookUp:	.type	object
 	.byte	'MailboxHandleOfMemorySectionObjects',0
 	.word	135
 	.byte	1,2,35,2,0,10
-	.byte	'Can_MemorySectionObjectsType',0,13,250,17,3
-	.word	10674
+	.byte	'Can_MemorySectionObjectsType',0,14,250,17,3
+	.word	10769
 	.byte	11
-	.byte	'sCan_SIDFCType',0,13,253,17,16,4,12
+	.byte	'sCan_SIDFCType',0,14,253,17,16,4,12
 	.byte	'FLSSAOfSIDFC',0
 	.word	135
 	.byte	1,2,35,0,12
@@ -11693,10 +11697,10 @@ RxDlcMaxValueLookUp:	.type	object
 	.byte	'SIDFEStartIdxOfSIDFC',0
 	.word	135
 	.byte	1,2,35,3,0,10
-	.byte	'Can_SIDFCType',0,13,131,18,3
-	.word	10880
+	.byte	'Can_SIDFCType',0,14,131,18,3
+	.word	10975
 	.byte	11
-	.byte	'sCan_ShmAdrType',0,13,134,18,16,36,12
+	.byte	'sCan_ShmAdrType',0,14,134,18,16,36,12
 	.byte	'RXBAOfShmAdr',0
 	.word	2098
 	.byte	4,2,35,0,12
@@ -11724,10 +11728,10 @@ RxDlcMaxValueLookUp:	.type	object
 	.byte	'XIDFAOfShmAdr',0
 	.word	2098
 	.byte	4,2,35,32,0,10
-	.byte	'Can_ShmAdrType',0,13,145,18,3
-	.word	11025
+	.byte	'Can_ShmAdrType',0,14,145,18,3
+	.word	11120
 	.byte	11
-	.byte	'sCan_ShmElementSizeType',0,13,148,18,16,6,12
+	.byte	'sCan_ShmElementSizeType',0,14,148,18,16,6,12
 	.byte	'F0DSOfShmElementSize',0
 	.word	135
 	.byte	1,2,35,0,12
@@ -11743,38 +11747,38 @@ RxDlcMaxValueLookUp:	.type	object
 	.byte	'TEFBDSOfShmElementSize',0
 	.word	135
 	.byte	1,2,35,4,0,10
-	.byte	'Can_ShmElementSizeType',0,13,155,18,3
-	.word	11282
+	.byte	'Can_ShmElementSizeType',0,14,155,18,3
+	.word	11377
 	.byte	11
-	.byte	'sCan_XIDFCType',0,13,158,18,16,2,12
+	.byte	'sCan_XIDFCType',0,14,158,18,16,2,12
 	.byte	'FLESAOfXIDFC',0
 	.word	135
 	.byte	1,2,35,0,12
 	.byte	'LSEOfXIDFC',0
 	.word	135
 	.byte	1,2,35,1,0,10
-	.byte	'Can_XIDFCType',0,13,162,18,3
-	.word	11497
+	.byte	'Can_XIDFCType',0,14,162,18,3
+	.word	11592
 	.byte	11
-	.byte	'sCan_XIDFEType',0,13,165,18,16,2,12
+	.byte	'sCan_XIDFEType',0,14,165,18,16,2,12
 	.byte	'EIDFE_0OfXIDFE',0
 	.word	135
 	.byte	1,2,35,0,12
 	.byte	'EIDFE_1OfXIDFE',0
 	.word	135
 	.byte	1,2,35,1,0,10
-	.byte	'Can_XIDFEType',0,13,169,18,3
-	.word	11584
+	.byte	'Can_XIDFEType',0,14,169,18,3
+	.word	11679
 	.byte	11
-	.byte	'sCan_PCConfigType',0,13,143,19,16,1,12
+	.byte	'sCan_PCConfigType',0,14,143,19,16,1,12
 	.byte	'Can_PCConfigNeverUsed',0
 	.word	135
 	.byte	1,2,35,0,0,10
-	.byte	'Can_PCConfigType',0,13,146,19,3
-	.word	11677
+	.byte	'Can_PCConfigType',0,14,146,19,3
+	.word	11772
 	.byte	10
-	.byte	'Can_ConfigType',0,13,148,19,26
-	.word	11677
+	.byte	'Can_ConfigType',0,14,148,19,26
+	.word	11772
 	.byte	17
 	.word	2098
 	.byte	17
@@ -11782,22 +11786,22 @@ RxDlcMaxValueLookUp:	.type	object
 	.byte	33,64
 	.word	2098
 	.byte	34,15,0,17
-	.word	11793
+	.word	11888
 	.byte	11
 	.byte	'tElmTypeTag',0,4,145,9,25,72,12
 	.byte	'E0',0
-	.word	11783
+	.word	11878
 	.byte	4,2,35,0,12
 	.byte	'E1',0
-	.word	11788
+	.word	11883
 	.byte	4,2,35,4,12
 	.byte	'data',0
-	.word	11802
+	.word	11897
 	.byte	64,2,35,8,0,17
-	.word	11807
+	.word	11902
 	.byte	10
 	.byte	'tElmType',0,4,162,9,3
-	.word	11864
+	.word	11959
 	.byte	17
 	.word	2098
 	.byte	17
@@ -11808,24 +11812,24 @@ RxDlcMaxValueLookUp:	.type	object
 	.word	135
 	.byte	21,4,224,9,5,4,35
 	.byte	'ID',0,4
-	.word	11887
+	.word	11982
 	.byte	29,3,2,35,0,35
 	.byte	'RTR',0,1
-	.word	11892
+	.word	11987
 	.byte	1,2,2,35,3,35
 	.byte	'XTD',0,1
-	.word	11897
+	.word	11992
 	.byte	1,1,2,35,3,35
 	.byte	'ESI',0,1
-	.word	11902
+	.word	11997
 	.byte	1,0,2,35,3,0,17
 	.word	2098
 	.byte	36,4,222,9,3,4,12
 	.byte	'b0',0
-	.word	11907
+	.word	12002
 	.byte	4,2,35,0,12
 	.byte	'B0',0
-	.word	11973
+	.word	12068
 	.byte	4,2,35,0,0,17
 	.word	336
 	.byte	17
@@ -11842,25 +11846,25 @@ RxDlcMaxValueLookUp:	.type	object
 	.word	135
 	.byte	21,4,235,9,5,4,35
 	.byte	'RXTS',0,2
-	.word	12009
+	.word	12104
 	.byte	16,0,2,35,0,35
 	.byte	'DLC',0,1
-	.word	12014
+	.word	12109
 	.byte	4,4,2,35,2,35
 	.byte	'BRS',0,1
-	.word	12019
+	.word	12114
 	.byte	1,3,2,35,2,35
 	.byte	'FDF',0,1
-	.word	12024
+	.word	12119
 	.byte	1,2,2,35,2,35
 	.byte	'r0',0,1
-	.word	12029
+	.word	12124
 	.byte	2,0,2,35,2,35
 	.byte	'FIDX',0,1
-	.word	12034
+	.word	12129
 	.byte	7,1,2,35,3,35
 	.byte	'ANMF',0,1
-	.word	12039
+	.word	12134
 	.byte	1,0,2,35,3,0,17
 	.word	336
 	.byte	17
@@ -11877,51 +11881,51 @@ RxDlcMaxValueLookUp:	.type	object
 	.word	135
 	.byte	21,4,245,9,5,4,35
 	.byte	'r1',0,2
-	.word	12158
+	.word	12253
 	.byte	16,0,2,35,0,35
 	.byte	'DLC',0,1
-	.word	12163
+	.word	12258
 	.byte	4,4,2,35,2,35
 	.byte	'BRS',0,1
-	.word	12168
+	.word	12263
 	.byte	1,3,2,35,2,35
 	.byte	'FDF',0,1
-	.word	12173
+	.word	12268
 	.byte	1,2,2,35,2,35
 	.byte	'r0',0,1
-	.word	12178
+	.word	12273
 	.byte	1,1,2,35,2,35
 	.byte	'EFC',0,1
-	.word	12183
+	.word	12278
 	.byte	1,0,2,35,2,35
 	.byte	'MM',0,1
-	.word	12188
+	.word	12283
 	.byte	8,0,2,35,3,0,36,4,233,9,3,4,12
 	.byte	'rb1',0
-	.word	12044
+	.word	12139
 	.byte	4,2,35,0,12
 	.byte	'tb1',0
-	.word	12193
+	.word	12288
 	.byte	4,2,35,0,12
 	.byte	'B1',0
 	.word	2098
 	.byte	4,2,35,0,0,17
-	.word	11793
+	.word	11888
 	.byte	11
 	.byte	'tCanChipMsgPtrTag',0,4,220,9,25,72,12
 	.byte	'uB0',0
-	.word	11978
+	.word	12073
 	.byte	4,2,35,0,12
 	.byte	'uB1',0
-	.word	12302
+	.word	12397
 	.byte	4,2,35,4,12
 	.byte	'data',0
-	.word	12347
+	.word	12442
 	.byte	64,2,35,8,0,17
-	.word	12352
+	.word	12447
 	.byte	10
 	.byte	'tCanChipMsgPtr',0,4,134,10,3
-	.word	12417
+	.word	12512
 	.byte	21,4,141,10,3,4,35
 	.byte	'FnFL',0,1
 	.word	135
@@ -11949,10 +11953,10 @@ RxDlcMaxValueLookUp:	.type	object
 	.word	2098
 	.byte	4,2,35,0,12
 	.byte	'B',0
-	.word	12446
+	.word	12541
 	.byte	4,2,35,0,0,10
 	.byte	'tRXFnS',0,4,151,10,3
-	.word	12558
+	.word	12653
 	.byte	21,4,156,10,3,4,38,1
 	.word	135
 	.byte	2,6,2,35,0,35
@@ -11974,10 +11978,10 @@ RxDlcMaxValueLookUp:	.type	object
 	.word	2098
 	.byte	4,2,35,0,12
 	.byte	'B',0
-	.word	12613
+	.word	12708
 	.byte	4,2,35,0,0,10
 	.byte	'tRXFnC',0,4,165,10,3
-	.word	12700
+	.word	12795
 	.byte	21,4,171,10,3,4,35
 	.byte	'F0DS',0,1
 	.word	135
@@ -11999,10 +12003,10 @@ RxDlcMaxValueLookUp:	.type	object
 	.word	2098
 	.byte	4,2,35,0,12
 	.byte	'B',0
-	.word	12755
+	.word	12850
 	.byte	4,2,35,0,0,10
 	.byte	'tRXESC',0,4,180,10,3
-	.word	12843
+	.word	12938
 	.byte	21,4,185,10,3,4,35
 	.byte	'TFFL',0,1
 	.word	135
@@ -12027,10 +12031,10 @@ RxDlcMaxValueLookUp:	.type	object
 	.word	2098
 	.byte	4,2,35,0,12
 	.byte	'B',0
-	.word	12898
+	.word	12993
 	.byte	4,2,35,0,0,10
 	.byte	'tTXFQS',0,4,195,10,3
-	.word	13003
+	.word	13098
 	.byte	21,4,200,10,3,4,35
 	.byte	'EFFL',0,1
 	.word	135
@@ -12057,10 +12061,10 @@ RxDlcMaxValueLookUp:	.type	object
 	.word	2098
 	.byte	4,2,35,0,12
 	.byte	'B',0
-	.word	13058
+	.word	13153
 	.byte	4,2,35,0,0,10
 	.byte	'tTXEFS',0,4,210,10,3
-	.word	13167
+	.word	13262
 	.byte	10
 	.byte	'CanIf_TxBufferSizeType',0,5,184,1,15
 	.word	135
@@ -12080,14 +12084,14 @@ RxDlcMaxValueLookUp:	.type	object
 	.byte	'CANIF_TxFullCANMailbox',0,3,7
 	.byte	'CANIF_UnusedCANMailbox',0,4,0,10
 	.byte	'CanIf_MailBoxTypeType',0,2,238,2,3
-	.word	13348
+	.word	13443
 	.byte	6,2,241,2,9,1,7
 	.byte	'CanIf_SimpleRxIndicationLayout',0,0,7
 	.byte	'CanIf_AdvancedRxIndicationLayout',0,1,7
 	.byte	'CanIf_NmOsekRxIndicationLayout',0,2,7
 	.byte	'CanIf_CddRxIndicationLayout',0,3,0,10
 	.byte	'CanIf_RxIndicationLayoutType',0,2,247,2,3
-	.word	13513
+	.word	13608
 	.byte	10
 	.byte	'CanIf_NotifStatusType',0,2,254,2,3
 	.word	853
@@ -12100,90 +12104,90 @@ RxDlcMaxValueLookUp:	.type	object
 	.byte	8
 	.word	135
 	.byte	9
-	.word	13787
+	.word	13882
 	.byte	22,1,1,16
 	.word	135
 	.byte	16
-	.word	13792
+	.word	13887
 	.byte	0,9
-	.word	13797
+	.word	13892
 	.byte	10
 	.byte	'CanIf_SimpleRxIndicationFctType',0,2,181,3,9
-	.word	13811
+	.word	13906
 	.byte	22,1,1,16
 	.word	135
 	.byte	16
-	.word	13792
+	.word	13887
 	.byte	16
 	.word	336
 	.byte	0,9
-	.word	13857
+	.word	13952
 	.byte	10
 	.byte	'CanIf_NmOsekRxIndicationFctType',0,2,190,3,9
-	.word	13876
+	.word	13971
 	.byte	22,1,1,16
 	.word	135
 	.byte	16
-	.word	2921
+	.word	3016
 	.byte	16
 	.word	336
 	.byte	0,9
-	.word	13922
+	.word	14017
 	.byte	10
 	.byte	'CanIf_CddRxIndicationFctType',0,2,194,3,9
-	.word	13941
+	.word	14036
 	.byte	36,2,203,4,9,4,12
 	.byte	'eSimpleRxIndicationType',0
-	.word	13816
+	.word	13911
 	.byte	4,2,35,0,12
 	.byte	'eAdvancedRxIndicationType',0
-	.word	2950
+	.word	3045
 	.byte	4,2,35,0,12
 	.byte	'eNmOsekRxIndicationType',0
-	.word	13881
+	.word	13976
 	.byte	4,2,35,0,12
 	.byte	'eCddRxIndicationType',0
-	.word	13946
+	.word	14041
 	.byte	4,2,35,0,0,10
 	.byte	'CanIf_RxIndicationFctType',0,2,209,4,3
-	.word	13984
+	.word	14079
 	.byte	9
-	.word	13797
+	.word	13892
 	.byte	9
-	.word	13857
+	.word	13952
 	.byte	9
-	.word	13922
+	.word	14017
 	.byte	11
 	.byte	'sCanIf_TxQueueBaseType',0,2,222,4,16,1,12
 	.byte	'eSduLength',0
 	.word	135
 	.byte	1,2,35,0,0,10
 	.byte	'CanIf_TxQueueBaseType',0,2,228,4,3
-	.word	14172
+	.word	14267
 	.byte	11
 	.byte	'sCanIf_TxQueueBaseWithDataType',0,2,231,4,16,1,12
 	.byte	'eBaseParams',0
-	.word	14172
+	.word	14267
 	.byte	1,2,35,0,0,10
 	.byte	'CanIf_TxQueueBaseWithDataType',0,2,237,4,3
-	.word	14253
+	.word	14348
 	.byte	11
 	.byte	'sCanIf_TxPrioByCanIdByteQueueType',0,2,242,4,16,2,12
 	.byte	'eQueueParams',0
-	.word	14253
+	.word	14348
 	.byte	1,2,35,0,12
 	.byte	'eQueued',0
 	.word	135
 	.byte	1,2,35,1,0,10
 	.byte	'CanIf_TxPrioByCanIdByteQueueType',0,2,246,4,3
-	.word	14351
+	.word	14446
 	.byte	11
 	.byte	'sCanIf_TxBufferPrioByCanIdBaseType',0,2,128,5,16,1,12
 	.byte	'eQueueCounter',0
 	.word	135
 	.byte	1,2,35,0,0,10
 	.byte	'CanIf_TxBufferPrioByCanIdBaseType',0,2,131,5,3
-	.word	14473
+	.word	14568
 	.byte	10
 	.byte	'CanIf_MappedTxBuffersConfigEndIdxOfCanIfCtrlId2MappedTxBuffersConfigType',0,5,138,9,15
 	.word	135
@@ -12289,7 +12293,7 @@ RxDlcMaxValueLookUp:	.type	object
 	.word	135
 	.byte	1,2,35,1,0,10
 	.byte	'CanIf_CanIfCtrlId2MappedTxBuffersConfigType',0,5,187,10,3
-	.word	16412
+	.word	16507
 	.byte	11
 	.byte	'sCanIf_CtrlStatesType',0,5,190,10,16,2,12
 	.byte	'CtrlModeOfCtrlStates',0
@@ -12299,7 +12303,7 @@ RxDlcMaxValueLookUp:	.type	object
 	.word	2323
 	.byte	1,2,35,1,0,10
 	.byte	'CanIf_CtrlStatesType',0,5,194,10,3
-	.word	16663
+	.word	16758
 	.byte	11
 	.byte	'sCanIf_MailBoxConfigType',0,5,200,10,16,6,12
 	.byte	'CtrlStatesIdxOfMailBoxConfig',0
@@ -12318,27 +12322,27 @@ RxDlcMaxValueLookUp:	.type	object
 	.word	135
 	.byte	1,2,35,4,12
 	.byte	'MailBoxTypeOfMailBoxConfig',0
-	.word	13348
+	.word	13443
 	.byte	1,2,35,5,0,10
 	.byte	'CanIf_MailBoxConfigType',0,5,208,10,3
-	.word	16781
+	.word	16876
 	.byte	11
 	.byte	'sCanIf_MappedTxBuffersConfigType',0,5,214,10,16,1,12
 	.byte	'MailBoxConfigIdxOfMappedTxBuffersConfig',0
 	.word	135
 	.byte	1,2,35,0,0,10
 	.byte	'CanIf_MappedTxBuffersConfigType',0,5,217,10,3
-	.word	17073
+	.word	17168
 	.byte	11
 	.byte	'sCanIf_RxIndicationFctListType',0,5,220,10,16,8,12
 	.byte	'RxIndicationFctOfRxIndicationFctList',0
-	.word	13984
+	.word	14079
 	.byte	4,2,35,0,12
 	.byte	'RxIndicationLayoutOfRxIndicationFctList',0
-	.word	13513
+	.word	13608
 	.byte	1,2,35,4,0,10
 	.byte	'CanIf_RxIndicationFctListType',0,5,224,10,3
-	.word	17203
+	.word	17298
 	.byte	11
 	.byte	'sCanIf_RxPduConfigType',0,5,230,10,16,6,12
 	.byte	'RxPduMaskOfRxPduConfig',0
@@ -12357,7 +12361,7 @@ RxDlcMaxValueLookUp:	.type	object
 	.word	135
 	.byte	1,2,35,5,0,10
 	.byte	'CanIf_RxPduConfigType',0,5,237,10,3
-	.word	17375
+	.word	17470
 	.byte	11
 	.byte	'sCanIf_TxBufferPrioByCanIdByteQueueConfigType',0,5,245,10,16,4,12
 	.byte	'TxBufferPrioByCanIdBaseIdxOfTxBufferPrioByCanIdByteQueueConfig',0
@@ -12373,14 +12377,14 @@ RxDlcMaxValueLookUp:	.type	object
 	.word	135
 	.byte	1,2,35,3,0,10
 	.byte	'CanIf_TxBufferPrioByCanIdByteQueueConfigType',0,5,251,10,3
-	.word	17610
+	.word	17705
 	.byte	11
 	.byte	'sCanIf_TxBufferPrioByCanIdByteQueueMappedTxPdusType',0,5,129,11,16,1,12
 	.byte	'TxPduConfigIdxOfTxBufferPrioByCanIdByteQueueMappedTxPdus',0
 	.word	135
 	.byte	1,2,35,0,0,10
 	.byte	'CanIf_TxBufferPrioByCanIdByteQueueMappedTxPdusType',0,5,132,11,3
-	.word	18067
+	.word	18162
 	.byte	11
 	.byte	'sCanIf_TxPduConfigType',0,5,140,11,16,8,12
 	.byte	'CanIdOfTxPduConfig',0
@@ -12405,7 +12409,7 @@ RxDlcMaxValueLookUp:	.type	object
 	.word	135
 	.byte	1,2,35,7,0,10
 	.byte	'CanIf_TxPduConfigType',0,5,149,11,3
-	.word	18252
+	.word	18347
 	.byte	11
 	.byte	'sCanIf_TxPduQueueIndexType',0,5,155,11,16,2,12
 	.byte	'TxQueueIdxOfTxPduQueueIndex',0
@@ -12415,7 +12419,7 @@ RxDlcMaxValueLookUp:	.type	object
 	.word	135
 	.byte	1,2,35,1,0,10
 	.byte	'CanIf_TxPduQueueIndexType',0,5,159,11,3
-	.word	18577
+	.word	18672
 	.byte	11
 	.byte	'sCanIf_TxQueueIndex2DataStartStopType',0,5,166,11,16,4,12
 	.byte	'TxQueueDataEndIdxOfTxQueueIndex2DataStartStop',0
@@ -12428,34 +12432,34 @@ RxDlcMaxValueLookUp:	.type	object
 	.word	135
 	.byte	1,2,35,2,0,10
 	.byte	'CanIf_TxQueueIndex2DataStartStopType',0,5,171,11,3
-	.word	18739
+	.word	18834
 	.byte	11
 	.byte	'CanIf_CtrlStatesStructSTag',0,5,183,11,16,2,12
 	.byte	'CT_testCANFDdbc_2c920817',0
-	.word	16663
+	.word	16758
 	.byte	2,2,35,0,0,10
 	.byte	'CanIf_CtrlStatesStructSType',0,5,186,11,3
-	.word	18997
+	.word	19092
 	.byte	11
 	.byte	'CanIf_TxBufferPrioByCanIdBaseStructSTag',0,5,189,11,16,1,12
 	.byte	'CHNL_7a25eeb6',0
-	.word	14473
+	.word	14568
 	.byte	1,2,35,0,0,10
 	.byte	'CanIf_TxBufferPrioByCanIdBaseStructSType',0,5,192,11,3
-	.word	19102
+	.word	19197
 	.byte	11
 	.byte	'CanIf_TxQueueStructSTag',0,5,195,11,16,6,12
 	.byte	'TxMessage3_otestCANFDdbc_547b0ac5_Tx',0
-	.word	14351
+	.word	14446
 	.byte	2,2,35,0,12
 	.byte	'TxMessage22_otestCANFDdbc_f66bbf36_Tx',0
-	.word	14351
+	.word	14446
 	.byte	2,2,35,2,12
 	.byte	'TxMessage1_otestCANFDdbc_815f4c47_Tx',0
-	.word	14351
+	.word	14446
 	.byte	2,2,35,4,0,10
 	.byte	'CanIf_TxQueueStructSType',0,5,200,11,3
-	.word	19222
+	.word	19317
 	.byte	33,32
 	.word	135
 	.byte	34,31,0,33,8
@@ -12465,64 +12469,64 @@ RxDlcMaxValueLookUp:	.type	object
 	.byte	34,63,0,11
 	.byte	'CanIf_TxQueueDataStructSTag',0,5,203,11,16,104,12
 	.byte	'TxMessage3_otestCANFDdbc_547b0ac5_Tx',0
-	.word	19426
+	.word	19521
 	.byte	32,2,35,0,12
 	.byte	'TxMessage22_otestCANFDdbc_f66bbf36_Tx',0
-	.word	19435
+	.word	19530
 	.byte	8,2,35,32,12
 	.byte	'TxMessage1_otestCANFDdbc_815f4c47_Tx',0
-	.word	19444
+	.word	19539
 	.byte	64,2,35,40,0,10
 	.byte	'CanIf_TxQueueDataStructSType',0,5,208,11,3
-	.word	19453
+	.word	19548
 	.byte	33,2
-	.word	16663
+	.word	16758
 	.byte	34,0,0,37
 	.byte	'CanIf_CtrlStatesUTag',0,5,220,11,15,2,12
 	.byte	'raw',0
-	.word	19665
+	.word	19760
 	.byte	2,2,35,0,12
 	.byte	'str',0
-	.word	18997
+	.word	19092
 	.byte	2,2,35,0,0,10
 	.byte	'CanIf_CtrlStatesUType',0,5,224,11,3
-	.word	19674
+	.word	19769
 	.byte	33,1
-	.word	14473
+	.word	14568
 	.byte	34,0,0,37
 	.byte	'CanIf_TxBufferPrioByCanIdBaseUTag',0,5,227,11,15,1,12
 	.byte	'raw',0
-	.word	19759
+	.word	19854
 	.byte	1,2,35,0,12
 	.byte	'str',0
-	.word	19102
+	.word	19197
 	.byte	1,2,35,0,0,10
 	.byte	'CanIf_TxBufferPrioByCanIdBaseUType',0,5,231,11,3
-	.word	19768
+	.word	19863
 	.byte	33,6
-	.word	14351
+	.word	14446
 	.byte	34,2,0,37
 	.byte	'CanIf_TxQueueUTag',0,5,234,11,15,6,12
 	.byte	'raw',0
-	.word	19879
+	.word	19974
 	.byte	6,2,35,0,12
 	.byte	'str',0
-	.word	19222
+	.word	19317
 	.byte	6,2,35,0,0,10
 	.byte	'CanIf_TxQueueUType',0,5,238,11,3
-	.word	19888
+	.word	19983
 	.byte	33,104
 	.word	135
 	.byte	34,103,0,37
 	.byte	'CanIf_TxQueueDataUTag',0,5,241,11,15,104,12
 	.byte	'raw',0
-	.word	19967
+	.word	20062
 	.byte	104,2,35,0,12
 	.byte	'str',0
-	.word	19453
+	.word	19548
 	.byte	104,2,35,0,0,10
 	.byte	'CanIf_TxQueueDataUType',0,5,245,11,3
-	.word	19976
+	.word	20071
 	.byte	10
 	.byte	'CanIf_PCConfigType',0,5,192,12,3
 	.word	1938
@@ -12533,101 +12537,101 @@ RxDlcMaxValueLookUp:	.type	object
 	.word	2604
 	.byte	39
 	.byte	'CanIf_BusOffNotificationFctPtr',0,5,234,12,60
-	.word	20117
+	.word	20212
 	.byte	1,1,33,2
-	.word	16412
+	.word	16507
 	.byte	34,0,0,8
-	.word	20164
+	.word	20259
 	.byte	39
 	.byte	'CanIf_CanIfCtrlId2MappedTxBuffersConfig',0,5,255,12,72
-	.word	20173
+	.word	20268
 	.byte	1,1,8
 	.word	2544
 	.byte	39
 	.byte	'CanIf_CtrlModeIndicationFctPtr',0,5,140,13,60
-	.word	20229
+	.word	20324
 	.byte	1,1,33,12
-	.word	16781
+	.word	16876
 	.byte	34,1,0,8
-	.word	20276
+	.word	20371
 	.byte	39
 	.byte	'CanIf_MailBoxConfig',0,5,165,13,52
-	.word	20285
+	.word	20380
 	.byte	1,1,33,1
-	.word	17073
+	.word	17168
 	.byte	34,0,0,8
-	.word	20321
+	.word	20416
 	.byte	39
 	.byte	'CanIf_MappedTxBuffersConfig',0,5,185,13,60
-	.word	20330
+	.word	20425
 	.byte	1,1,33,16
-	.word	17203
+	.word	17298
 	.byte	34,1,0,8
-	.word	20374
+	.word	20469
 	.byte	39
 	.byte	'CanIf_RxIndicationFctList',0,5,206,13,58
-	.word	20383
+	.word	20478
 	.byte	1,1,33,6
-	.word	17375
+	.word	17470
 	.byte	34,0,0,8
-	.word	20425
+	.word	20520
 	.byte	39
 	.byte	'CanIf_RxPduConfig',0,5,230,13,50
-	.word	20434
+	.word	20529
 	.byte	1,1,33,4
-	.word	17610
+	.word	17705
 	.byte	34,0,0,8
-	.word	20468
+	.word	20563
 	.byte	39
 	.byte	'CanIf_TxBufferPrioByCanIdByteQueueConfig',0,5,253,13,73
-	.word	20477
+	.word	20572
 	.byte	1,1,33,3
-	.word	18067
+	.word	18162
 	.byte	34,2,0,8
-	.word	20534
+	.word	20629
 	.byte	39
 	.byte	'CanIf_TxBufferPrioByCanIdByteQueueMappedTxPdus',0,5,145,14,79
-	.word	20543
+	.word	20638
 	.byte	1,1,33,8
-	.word	2998
+	.word	3093
 	.byte	34,1,0,8
-	.word	20606
+	.word	20701
 	.byte	39
 	.byte	'CanIf_TxConfirmationFctList',0,5,162,14,56
-	.word	20615
+	.word	20710
 	.byte	1,1,33,24
-	.word	18252
+	.word	18347
 	.byte	34,2,0,8
-	.word	20659
+	.word	20754
 	.byte	39
 	.byte	'CanIf_TxPduConfig',0,5,188,14,50
-	.word	20668
+	.word	20763
 	.byte	1,1,33,6
-	.word	18577
+	.word	18672
 	.byte	34,2,0,8
-	.word	20702
+	.word	20797
 	.byte	39
 	.byte	'CanIf_TxPduQueueIndex',0,5,209,14,54
-	.word	20711
+	.word	20806
 	.byte	1,1,33,12
-	.word	18739
+	.word	18834
 	.byte	34,2,0,8
-	.word	20749
+	.word	20844
 	.byte	39
 	.byte	'CanIf_TxQueueIndex2DataStartStop',0,5,230,14,65
-	.word	20758
+	.word	20853
 	.byte	1,1,39
 	.byte	'CanIf_CtrlStates',0,5,250,14,53
-	.word	19674
+	.word	19769
 	.byte	1,1,39
 	.byte	'CanIf_TxBufferPrioByCanIdBase',0,5,139,15,66
-	.word	19768
+	.word	19863
 	.byte	1,1,39
 	.byte	'CanIf_TxQueue',0,5,156,15,50
-	.word	19888
+	.word	19983
 	.byte	1,1,39
 	.byte	'CanIf_TxQueueData',0,5,173,15,59
-	.word	19976
+	.word	20071
 	.byte	1,1
 .L604:
 	.byte	8
@@ -12642,13 +12646,13 @@ RxDlcMaxValueLookUp:	.type	object
 	.byte	'VStdLib_CntType',0,7,100,22
 	.word	2098
 	.byte	11
-	.byte	'sDet_PCConfigType',0,14,238,1,16,1,12
+	.byte	'sDet_PCConfigType',0,15,238,1,16,1,12
 	.byte	'Det_PCConfigNeverUsed',0
 	.word	135
 	.byte	1,2,35,0,0,10
-	.byte	'Det_PCConfigType',0,14,241,1,3
-	.word	20969
-	.byte	6,15,148,1,9,1,7
+	.byte	'Det_PCConfigType',0,15,241,1,3
+	.word	21064
+	.byte	6,16,147,1,9,1,7
 	.byte	'Default_Init_Task',0,0,7
 	.byte	'Default_Init_Task_Trusted',0,1,7
 	.byte	'IdleTask_OsCore0',0,2,7
@@ -12657,18 +12661,18 @@ RxDlcMaxValueLookUp:	.type	object
 	.byte	'swc_task',0,5,7
 	.byte	'INVALID_TASK',0,6,7
 	.byte	'OS_TASKID_COUNT',0,6,0,10
-	.byte	'TaskType',0,15,158,1,3
-	.word	21051
+	.byte	'TaskType',0,16,157,1,3
+	.word	21146
 	.byte	10
-	.byte	'Os_Hal_AddressType',0,16,61,16
+	.byte	'Os_Hal_AddressType',0,17,61,16
 	.word	2098
 	.byte	11
-	.byte	'Os_ExceptionContextType_Tag',0,17,71,8,160,1,12
+	.byte	'Os_ExceptionContextType_Tag',0,18,71,8,160,1,12
 	.byte	'AddressRegisters',0
-	.word	11793
+	.word	11888
 	.byte	64,2,35,0,12
 	.byte	'DataRegisters',0
-	.word	11793
+	.word	11888
 	.byte	64,2,35,64,12
 	.byte	'Ra',0
 	.word	2098
@@ -12694,31 +12698,31 @@ RxDlcMaxValueLookUp:	.type	object
 	.byte	'RawPCXI',0
 	.word	2098
 	.byte	4,3,35,156,1,0,10
-	.byte	'Os_ExceptionContextType',0,16,66,44
-	.word	21236
+	.byte	'Os_ExceptionContextType',0,17,66,44
+	.word	21331
 	.byte	10
-	.byte	'Os_InterruptSourceIdType',0,18,238,1,16
+	.byte	'Os_InterruptSourceIdType',0,19,238,1,16
 	.word	2098
 	.byte	10
-	.byte	'Os_ExceptionSourceIdType',0,18,246,1,16
+	.byte	'Os_ExceptionSourceIdType',0,19,246,1,16
 	.word	2098
-	.byte	6,18,161,2,9,1,7
+	.byte	6,19,161,2,9,1,7
 	.byte	'RUNNING',0,0,7
 	.byte	'READY',0,1,7
 	.byte	'WAITING',0,2,7
 	.byte	'SUSPENDED',0,3,0,10
-	.byte	'TaskStateType',0,18,175,2,3
-	.word	21584
+	.byte	'TaskStateType',0,19,175,2,3
+	.word	21679
 	.byte	10
-	.byte	'EventMaskType',0,18,182,2,16
-	.word	3599
+	.byte	'EventMaskType',0,19,182,2,16
+	.word	3694
 	.byte	10
-	.byte	'Os_TickType',0,18,200,2,19
+	.byte	'Os_TickType',0,19,200,2,19
 	.word	2098
 	.byte	10
-	.byte	'TickType',0,18,206,2,21
+	.byte	'TickType',0,19,206,2,21
 	.word	2098
-	.byte	21,18,220,2,9,12,12
+	.byte	21,19,220,2,9,12,12
 	.byte	'maxallowedvalue',0
 	.word	2098
 	.byte	4,2,35,0,12
@@ -12728,15 +12732,15 @@ RxDlcMaxValueLookUp:	.type	object
 	.byte	'mincycle',0
 	.word	2098
 	.byte	4,2,35,8,0,10
-	.byte	'AlarmBaseType',0,18,228,2,2
-	.word	21716
-	.byte	6,18,128,3,9,1,7
+	.byte	'AlarmBaseType',0,19,228,2,2
+	.word	21811
+	.byte	6,19,128,3,9,1,7
 	.byte	'APPLICATION_TERMINATED',0,0,7
 	.byte	'APPLICATION_RESTARTING',0,1,7
 	.byte	'APPLICATION_ACCESSIBLE',0,2,0,10
-	.byte	'ApplicationStateType',0,18,133,3,3
-	.word	21811
-	.byte	6,18,177,3,9,1,7
+	.byte	'ApplicationStateType',0,19,133,3,3
+	.word	21906
+	.byte	6,19,177,3,9,1,7
 	.byte	'OSServiceId_GetApplicationID',0,0,7
 	.byte	'OSServiceId_GetISRID',0,1,7
 	.byte	'OSServiceId_CallTrustedFunction',0,2,7
@@ -12836,9 +12840,9 @@ RxDlcMaxValueLookUp:	.type	object
 	.byte	'OSServiceId_GetResource',0,232,1,7
 	.byte	'OSServiceId_ReleaseResource',0,233,1,7
 	.byte	'OSSERVICEID_COUNT',0,255,1,0,10
-	.byte	'OSServiceIdType',0,18,156,4,3
-	.word	21923
-	.byte	6,18,172,4,9,2,7
+	.byte	'OSServiceIdType',0,19,156,4,3
+	.word	22018
+	.byte	6,19,172,4,9,2,7
 	.byte	'OS_STATUS_OK',0,0,7
 	.byte	'OS_STATUS_CALLEVEL',0,2,7
 	.byte	'OS_STATUS_LIMIT',0,4,7
@@ -12926,32 +12930,32 @@ RxDlcMaxValueLookUp:	.type	object
 	.byte	'OS_STATUS_STATE_ALREADY_RESTARTING',0,135,20,7
 	.byte	'OS_STATUS_VALUE_IS_TOO_LOW_3',0,136,20,7
 	.byte	'OS_STATUS_VALUE_IS_NOT_BOOLEAN',0,136,22,0,10
-	.byte	'Os_StatusType',0,18,232,5,3
-	.word	25093
-	.byte	21,18,133,6,9,4,12
+	.byte	'Os_StatusType',0,19,232,5,3
+	.word	25188
+	.byte	21,19,133,6,9,4,12
 	.byte	'Service',0
-	.word	21923
+	.word	22018
 	.byte	1,2,35,0,12
 	.byte	'Error',0
 	.word	135
 	.byte	1,2,35,1,12
 	.byte	'DetailedError',0
-	.word	25093
+	.word	25188
 	.byte	2,2,35,2,0,10
-	.byte	'Os_ErrorInformationType',0,18,143,6,3
-	.word	27623
-	.byte	6,18,175,6,9,1,7
+	.byte	'Os_ErrorInformationType',0,19,143,6,3
+	.word	27718
+	.byte	6,19,175,6,9,1,7
 	.byte	'SCHEDULETABLE_STOPPED',0,0,7
 	.byte	'SCHEDULETABLE_NEXT',0,1,7
 	.byte	'SCHEDULETABLE_WAITING',0,2,7
 	.byte	'SCHEDULETABLE_RUNNING',0,3,7
 	.byte	'SCHEDULETABLE_RUNNING_AND_SYNCHRONOUS',0,4,0,10
-	.byte	'ScheduleTableStatusType',0,18,192,6,3
-	.word	27718
+	.byte	'ScheduleTableStatusType',0,19,192,6,3
+	.word	27813
 	.byte	10
-	.byte	'Os_AccessCheckAddress',0,18,199,6,29
+	.byte	'Os_AccessCheckAddress',0,19,199,6,29
 	.word	2098
-	.byte	6,18,211,6,9,1,7
+	.byte	6,19,211,6,9,1,7
 	.byte	'OS_MEM_ACCESS_TYPE_NON',0,0,7
 	.byte	'OS_MEM_ACCESS_TYPE_R',0,1,7
 	.byte	'OS_MEM_ACCESS_TYPE_READ',0,1,7
@@ -12972,22 +12976,22 @@ RxDlcMaxValueLookUp:	.type	object
 	.byte	'OS_MEM_ACCESS_TYPE_RXS',0,13,7
 	.byte	'OS_MEM_ACCESS_TYPE_WXS',0,14,7
 	.byte	'OS_MEM_ACCESS_TYPE_RWXS',0,15,0,10
-	.byte	'Os_MemAccessType',0,18,233,6,3
-	.word	27922
+	.byte	'Os_MemAccessType',0,19,233,6,3
+	.word	28017
 	.byte	33,7
 	.word	135
 	.byte	34,6,0,33,42
-	.word	28451
+	.word	28546
 	.byte	34,5,0
 .L607:
 	.byte	8
-	.word	28460
+	.word	28555
 	.byte	33,2
 	.word	135
 	.byte	34,1,0
 .L608:
 	.byte	8
-	.word	28474
+	.word	28569
 	.byte	0
 	.sdecl	'.debug_abbrev',debug
 	.sect	'.debug_abbrev'
@@ -13030,6 +13034,7 @@ RxDlcMaxValueLookUp:	.type	object
 	.byte	'vstdlib.h',0,5,0,0
 	.byte	'Det.h',0,6,0,0
 	.byte	'Os.h',0,7,0,0
+	.byte	'SchM_CanIf.h',0,2,0,0
 	.byte	'Platform_Types.h',0,4,0,0
 	.byte	'Std_Types.h',0,4,0,0
 	.byte	'ComStack_Cfg.h',0,2,0,0

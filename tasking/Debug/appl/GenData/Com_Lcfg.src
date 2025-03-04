@@ -750,7 +750,7 @@ Com_TxSduLength:	.type	object
 	.byte	1,2,35,0,0,11
 	.byte	'Det_PCConfigType',0,7,241,1,3
 	.word	4785
-	.byte	14,8,148,1,9,1,15
+	.byte	14,8,147,1,9,1,15
 	.byte	'Default_Init_Task',0,0,15
 	.byte	'Default_Init_Task_Trusted',0,1,15
 	.byte	'IdleTask_OsCore0',0,2,15
@@ -759,7 +759,7 @@ Com_TxSduLength:	.type	object
 	.byte	'swc_task',0,5,15
 	.byte	'INVALID_TASK',0,6,15
 	.byte	'OS_TASKID_COUNT',0,6,0,11
-	.byte	'TaskType',0,8,158,1,3
+	.byte	'TaskType',0,8,157,1,3
 	.word	4867
 	.byte	11
 	.byte	'Os_Hal_AddressType',0,9,61,16

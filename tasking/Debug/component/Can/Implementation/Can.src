@@ -10144,7 +10144,7 @@ CanHL_ErrorHandling:	.type	func
 ; ..\component\Can\Implementation\Can.c	  8093      {
 ; ..\component\Can\Implementation\Can.c	  8094        /* #90 EXCLUSIVE_AREA_6 secure mode changes */
 ; ..\component\Can\Implementation\Can.c	  8095        SchM_Enter_Can_CAN_EXCLUSIVE_AREA_6();
-	call	SuspendAllInterrupts
+	call	SchM_Enter_Can_CAN_EXCLUSIVE_AREA_6
 .L2043:
 
 ; ..\component\Can\Implementation\Can.c	  8096        /* #100 BUSOFF occur -> ECU Manager restart Controller (no ResetBusOffStart/End needed) */
@@ -10272,7 +10272,7 @@ CanHL_ErrorHandling:	.type	func
 .L2056:
 
 ; ..\component\Can\Implementation\Can.c	  8103        SchM_Exit_Can_CAN_EXCLUSIVE_AREA_6();
-	call	ResumeAllInterrupts
+	call	SchM_Exit_Can_CAN_EXCLUSIVE_AREA_6
 .L2057:
 
 ; ..\component\Can\Implementation\Can.c	  8104        /* #130 notify higher layer by call CanIf_ControllerBusOff() \trace SPEC-1726, SPEC-1578 */
@@ -11853,7 +11853,7 @@ Can_SetControllerMode:	.type	func
 ; ..\component\Can\Implementation\Can.c	  8767        /* ----- Implementation ----------------------------------------------- */
 ; ..\component\Can\Implementation\Can.c	  8768        /* #100 EXCLUSIVE_AREA_6 avoid nesting mode changes (e.g. same API, initialization or BUSOFF) */
 ; ..\component\Can\Implementation\Can.c	  8769        SchM_Enter_Can_CAN_EXCLUSIVE_AREA_6();
-	call	SuspendAllInterrupts
+	call	SchM_Enter_Can_CAN_EXCLUSIVE_AREA_6
 .L1373:
 
 ; ..\component\Can\Implementation\Can.c	  8770        /* #125 HW begin mode transition */
@@ -12229,7 +12229,7 @@ Can_SetControllerMode:	.type	func
 
 ; ..\component\Can\Implementation\Can.c	  1872    if ( transitionState == kCanOk ) /* COV_CAN_TRANSITION_REQUEST */      (inlined)
 .L204:
-	call	ResumeAllInterrupts
+	call	SchM_Exit_Can_CAN_EXCLUSIVE_AREA_6
 .L187:
 .L178:
 
@@ -13918,7 +13918,7 @@ Can_MainFunction_Mode:	.type	func
 ; ..\component\Can\Implementation\Can.c	  9766    { /* #15 EXCLUSIVE_AREA_6 avoid nesting mode changes (e.g. same API, initialization or BUSOFF) */
 ; ..\component\Can\Implementation\Can.c	  9767      /* ----- Implementation ----------------------------------------------- */
 ; ..\component\Can\Implementation\Can.c	  9768      SchM_Enter_Can_CAN_EXCLUSIVE_AREA_6();
-	call	SuspendAllInterrupts
+	call	SchM_Enter_Can_CAN_EXCLUSIVE_AREA_6
 .L1723:
 
 ; ..\component\Can\Implementation\Can.c	  9769  # if !defined( C_SINGLE_RECEIVE_CHANNEL )
@@ -14078,7 +14078,7 @@ Can_MainFunction_Mode:	.type	func
 ; ..\component\Can\Implementation\Can.c	  9824        }
 ; ..\component\Can\Implementation\Can.c	  9825      } /* over all channels */
 ; ..\component\Can\Implementation\Can.c	  9826      SchM_Exit_Can_CAN_EXCLUSIVE_AREA_6();
-	call	ResumeAllInterrupts
+	call	SchM_Exit_Can_CAN_EXCLUSIVE_AREA_6
 .L273:
 
 ; ..\component\Can\Implementation\Can.c	  9827    }
@@ -16047,9 +16047,9 @@ Can_ConfigDataPtr:	.type	object
 	.calls	'CanHL_ErrorHandling','GetCounterValue'
 	.calls	'CanHL_ErrorHandling','GetElapsedValue'
 	.calls	'CanHL_ErrorHandling','Det_ReportError'
-	.calls	'CanHL_ErrorHandling','SuspendAllInterrupts'
+	.calls	'CanHL_ErrorHandling','SchM_Enter_Can_CAN_EXCLUSIVE_AREA_6'
 	.calls	'CanHL_ErrorHandling','CanLL_ModeTransition'
-	.calls	'CanHL_ErrorHandling','ResumeAllInterrupts'
+	.calls	'CanHL_ErrorHandling','SchM_Exit_Can_CAN_EXCLUSIVE_AREA_6'
 	.calls	'CanHL_ErrorHandling','CanIf_ControllerBusOff'
 	.calls	'Can_ChangeBaudrate','CanLL_ModeTransition'
 	.calls	'Can_ChangeBaudrate','GetCounterValue'
@@ -16061,13 +16061,13 @@ Can_ConfigDataPtr:	.type	object
 	.calls	'Can_Init','GetCounterValue'
 	.calls	'Can_Init','GetElapsedValue'
 	.calls	'Can_Init','Det_ReportError'
-	.calls	'Can_SetControllerMode','SuspendAllInterrupts'
+	.calls	'Can_SetControllerMode','SchM_Enter_Can_CAN_EXCLUSIVE_AREA_6'
 	.calls	'Can_SetControllerMode','CanLL_ModeTransition'
 	.calls	'Can_SetControllerMode','GetCounterValue'
 	.calls	'Can_SetControllerMode','GetElapsedValue'
 	.calls	'Can_SetControllerMode','Det_ReportError'
 	.calls	'Can_SetControllerMode','CanIf_ControllerModeIndication'
-	.calls	'Can_SetControllerMode','ResumeAllInterrupts'
+	.calls	'Can_SetControllerMode','SchM_Exit_Can_CAN_EXCLUSIVE_AREA_6'
 	.calls	'Can_DisableControllerInterrupts','SuspendAllInterrupts'
 	.calls	'Can_DisableControllerInterrupts','Os_IsInterruptSourceEnabled'
 	.calls	'Can_DisableControllerInterrupts','Os_DisableInterruptSource'
@@ -16079,10 +16079,10 @@ Can_ConfigDataPtr:	.type	object
 	.calls	'Can_EnableControllerInterrupts','Det_ReportError'
 	.calls	'Can_Write','Det_ReportError'
 	.calls	'Can_MainFunction_Read','Det_ReportError'
-	.calls	'Can_MainFunction_Mode','SuspendAllInterrupts'
+	.calls	'Can_MainFunction_Mode','SchM_Enter_Can_CAN_EXCLUSIVE_AREA_6'
 	.calls	'Can_MainFunction_Mode','CanLL_ModeTransition'
 	.calls	'Can_MainFunction_Mode','CanIf_ControllerModeIndication'
-	.calls	'Can_MainFunction_Mode','ResumeAllInterrupts'
+	.calls	'Can_MainFunction_Mode','SchM_Exit_Can_CAN_EXCLUSIVE_AREA_6'
 	.calls	'Can_MainFunction_Mode','Det_ReportError'
 	.calls	'CanInterrupt','CanHL_ErrorHandling'
 	.calls	'CanInterrupt','GetCounterValue'
@@ -16232,11 +16232,13 @@ Can_ConfigDataPtr:	.type	object
 	.extern	CanIf_ControllerBusOff
 	.extern	CanIf_ControllerModeIndication
 	.extern	Det_ReportError
+	.extern	SchM_Enter_Can_CAN_EXCLUSIVE_AREA_6
+	.extern	SchM_Exit_Can_CAN_EXCLUSIVE_AREA_6
 	.calls	'.cocofun_20','',0
 	.sdecl	'.debug_info',debug
 	.sect	'.debug_info'
 .L431:
-	.word	36459
+	.word	36530
 	.half	3
 	.word	.L432
 	.byte	4
@@ -17128,7 +17130,7 @@ Can_ConfigDataPtr:	.type	object
 	.word	5086
 	.byte	0,26
 	.byte	'SuspendAllInterrupts',0,6,222,10,21,1,1,1,1,26
-	.byte	'ResumeAllInterrupts',0,6,241,10,21,1,1,1,1,20,7,161,1,9,1,21
+	.byte	'ResumeAllInterrupts',0,6,241,10,21,1,1,1,1,20,7,160,1,9,1,21
 	.byte	'CanIsr_0',0,0,21
 	.byte	'CounterIsr_SystemTimer',0,1,21
 	.byte	'INVALID_ISR',0,2,21
@@ -17158,14 +17160,13 @@ Can_ConfigDataPtr:	.type	object
 	.byte	12
 	.byte	'IsEnabled',0,6,193,14,44
 	.word	5428
-	.byte	0,20,7,180,1,9,1,21
-	.byte	'OsCounterCAN0',0,0,21
-	.byte	'SystemTimer',0,1,21
-	.byte	'OS_COUNTERID_COUNT',0,2,0,4
+	.byte	0,20,7,179,1,9,1,21
+	.byte	'SystemTimer',0,0,21
+	.byte	'OS_COUNTERID_COUNT',0,1,0,4
 	.word	148
 	.byte	5
 	.byte	'TickRefType',0,8,210,2,56
-	.word	5567
+	.word	5551
 	.byte	27
 	.byte	'GetCounterValue',0,6,172,18,27
 	.word	131
@@ -17174,7 +17175,7 @@ Can_ConfigDataPtr:	.type	object
 	.word	5509
 	.byte	12
 	.byte	'Value',0,6,175,18,15
-	.word	5572
+	.word	5556
 	.byte	0,4
 	.word	148
 	.byte	27
@@ -17185,26 +17186,26 @@ Can_ConfigDataPtr:	.type	object
 	.word	5509
 	.byte	12
 	.byte	'Value',0,6,216,18,15
-	.word	5572
+	.word	5556
 	.byte	12
 	.byte	'ElapsedValue',0,6,217,18,15
-	.word	5572
+	.word	5556
 	.byte	0,9
 	.byte	'sCan_PCConfigType',0,9,143,19,16,1,10
 	.byte	'Can_PCConfigNeverUsed',0
 	.word	131
 	.byte	1,2,35,0,0,6
-	.word	5748
+	.word	5732
 	.byte	4
-	.word	5804
+	.word	5788
 	.byte	6
-	.word	5748
+	.word	5732
 	.byte	4
-	.word	5814
+	.word	5798
 .L669:
 	.byte	5
 	.byte	'Can_ConfigPtrType',0,2,207,8,57
-	.word	5819
+	.word	5803
 .L721:
 	.byte	6
 	.word	204
@@ -17216,15 +17217,15 @@ Can_ConfigDataPtr:	.type	object
 	.byte	'CAN_T_WAKEUP',0,3,0,6
 	.word	1097
 	.byte	4
-	.word	5918
+	.word	5902
 	.byte	6
 	.word	1097
 	.byte	4
-	.word	5928
+	.word	5912
 .L804:
 	.byte	5
 	.byte	'Can_PduInfoPtrType',0,2,208,8,61
-	.word	5933
+	.word	5917
 	.byte	7,4
 	.word	131
 	.byte	8,3,0,7,4
@@ -17233,10 +17234,10 @@ Can_ConfigDataPtr:	.type	object
 .L849:
 	.byte	16,2,128,9,9,4,10
 	.byte	'b',0
-	.word	5966
+	.word	5950
 	.byte	4,2,35,0,10
 	.byte	'w',0
-	.word	5975
+	.word	5959
 	.byte	4,2,35,0,10
 	.byte	'dw',0
 	.word	148
@@ -17249,7 +17250,7 @@ Can_ConfigDataPtr:	.type	object
 	.byte	0,6
 	.word	131
 	.byte	4
-	.word	6128
+	.word	6112
 	.byte	28
 	.byte	'CanIf_RxIndicationAsr403',0,10,110,24,1,1,1,1,12
 	.byte	'Hrh',0,10,110,68
@@ -17262,7 +17263,7 @@ Can_ConfigDataPtr:	.type	object
 	.word	131
 	.byte	12
 	.byte	'CanSduPtr',0,10,110,149,1
-	.word	6133
+	.word	6117
 	.byte	0,28
 	.byte	'CanIf_ControllerBusOff',0,10,149,1,24,1,1,1,1,12
 	.byte	'ControllerId',0,10,149,1,53
@@ -17289,7 +17290,9 @@ Can_ConfigDataPtr:	.type	object
 	.byte	12
 	.byte	'ErrorId',0,12,154,2,103
 	.word	131
-	.byte	0,29
+	.byte	0,26
+	.byte	'SchM_Enter_Can_CAN_EXCLUSIVE_AREA_6',0,13,75,22,1,1,1,1,26
+	.byte	'SchM_Exit_Can_CAN_EXCLUSIVE_AREA_6',0,13,76,22,1,1,1,1,29
 	.word	592
 	.byte	30
 	.word	621
@@ -19100,47 +19103,47 @@ Can_ConfigDataPtr:	.type	object
 	.byte	30
 	.word	5008
 	.byte	13,0,34,1,4
-	.word	11372
+	.word	11443
 	.byte	5
 	.byte	'__codeptr',0,1,1,1
-	.word	11374
+	.word	11445
 	.byte	5
-	.byte	'boolean',0,13,101,31
+	.byte	'boolean',0,14,101,31
 	.word	131
 	.byte	5
-	.byte	'uint8',0,13,104,31
+	.byte	'uint8',0,14,104,31
 	.word	131
 	.byte	2
 	.byte	'short int',0,2,5,5
-	.byte	'sint16',0,13,105,31
-	.word	11427
+	.byte	'sint16',0,14,105,31
+	.word	11498
 	.byte	5
-	.byte	'uint16',0,13,106,31
+	.byte	'uint16',0,14,106,31
 	.word	204
 	.byte	2
 	.byte	'long int',0,4,5,5
-	.byte	'sint32',0,13,107,31
-	.word	11470
+	.byte	'sint32',0,14,107,31
+	.word	11541
 	.byte	5
-	.byte	'uint32',0,13,108,31
+	.byte	'uint32',0,14,108,31
 	.word	148
 	.byte	5
-	.byte	'uint8_least',0,13,111,31
+	.byte	'uint8_least',0,14,111,31
 	.word	131
 	.byte	5
-	.byte	'uint32_least',0,13,115,31
+	.byte	'uint32_least',0,14,115,31
 	.word	148
 	.byte	2
 	.byte	'unsigned long long int',0,8,7,5
-	.byte	'uint64',0,13,121,30
-	.word	11553
+	.byte	'uint64',0,14,121,30
+	.word	11624
 	.byte	5
-	.byte	'StatusType',0,14,127,23
+	.byte	'StatusType',0,15,127,23
 	.word	131
 	.byte	5
-	.byte	'Std_ReturnType',0,14,132,1,15
+	.byte	'Std_ReturnType',0,15,132,1,15
 	.word	131
-	.byte	17,14,134,1,9,8,10
+	.byte	17,15,134,1,9,8,10
 	.byte	'vendorID',0
 	.word	204
 	.byte	2,2,35,0,10
@@ -19156,23 +19159,23 @@ Can_ConfigDataPtr:	.type	object
 	.byte	'sw_patch_version',0
 	.word	131
 	.byte	1,2,35,6,0,5
-	.byte	'Std_VersionInfoType',0,14,141,1,3
-	.word	11637
+	.byte	'Std_VersionInfoType',0,15,141,1,3
+	.word	11708
 	.byte	5
-	.byte	'PduIdType',0,15,63,15
+	.byte	'PduIdType',0,16,63,15
 	.word	131
 	.byte	5
-	.byte	'PduLengthType',0,15,65,15
+	.byte	'PduLengthType',0,16,65,15
 	.word	131
 	.byte	5
-	.byte	'SduDataPtrType',0,16,196,1,54
+	.byte	'SduDataPtrType',0,17,196,1,54
 	.word	1069
-	.byte	20,16,219,1,9,1,21
+	.byte	20,17,219,1,9,1,21
 	.byte	'TP_DATACONF',0,0,21
 	.byte	'TP_DATARETRY',0,1,21
 	.byte	'TP_CONFPENDING',0,2,0,5
-	.byte	'TpDataStateType',0,16,226,1,3
-	.word	11851
+	.byte	'TpDataStateType',0,17,226,1,3
+	.word	11922
 	.byte	5
 	.byte	'Can_IdType',0,4,52,30
 	.word	204
@@ -19184,24 +19187,24 @@ Can_ConfigDataPtr:	.type	object
 	.word	1097
 	.byte	5
 	.byte	'Can_StateTransitionType',0,4,75,3
-	.word	5856
+	.word	5840
 	.byte	20,4,77,9,1,21
 	.byte	'CAN_CS_UNINIT',0,0,21
 	.byte	'CAN_CS_STARTED',0,1,21
 	.byte	'CAN_CS_STOPPED',0,2,21
 	.byte	'CAN_CS_SLEEP',0,3,0,5
 	.byte	'Can_ControllerStateType',0,4,82,3
-	.word	12025
+	.word	12096
 	.byte	20,4,84,9,1,21
 	.byte	'CAN_ERRORSTATE_ACTIVE',0,0,21
 	.byte	'CAN_ERRORSTATE_PASSIVE',0,1,21
 	.byte	'CAN_ERRORSTATE_BUSOFF',0,2,0,5
 	.byte	'Can_ErrorStateType',0,4,88,3
-	.word	12128
+	.word	12199
 	.byte	5
 	.byte	'Can_ReturnType',0,4,98,3
 	.word	4112
-	.byte	20,7,148,1,9,1,21
+	.byte	20,7,147,1,9,1,21
 	.byte	'Default_Init_Task',0,0,21
 	.byte	'Default_Init_Task_Trusted',0,1,21
 	.byte	'IdleTask_OsCore0',0,2,21
@@ -19210,19 +19213,19 @@ Can_ConfigDataPtr:	.type	object
 	.byte	'swc_task',0,5,21
 	.byte	'INVALID_TASK',0,6,21
 	.byte	'OS_TASKID_COUNT',0,6,0,5
-	.byte	'TaskType',0,7,158,1,3
-	.word	12257
+	.byte	'TaskType',0,7,157,1,3
+	.word	12328
 	.byte	5
-	.byte	'ISRType',0,7,167,1,3
+	.byte	'ISRType',0,7,166,1,3
 	.word	5223
 	.byte	5
-	.byte	'CounterType',0,7,185,1,3
+	.byte	'CounterType',0,7,183,1,3
 	.word	5509
 	.byte	5
-	.byte	'Os_Hal_AddressType',0,17,61,16
+	.byte	'Os_Hal_AddressType',0,18,61,16
 	.word	148
 	.byte	9
-	.byte	'Os_ExceptionContextType_Tag',0,18,71,8,160,1,10
+	.byte	'Os_ExceptionContextType_Tag',0,19,71,8,160,1,10
 	.byte	'AddressRegisters',0
 	.word	246
 	.byte	64,2,35,0,10
@@ -19253,8 +19256,8 @@ Can_ConfigDataPtr:	.type	object
 	.byte	'RawPCXI',0
 	.word	148
 	.byte	4,3,35,156,1,0,5
-	.byte	'Os_ExceptionContextType',0,17,66,44
-	.word	12480
+	.byte	'Os_ExceptionContextType',0,18,66,44
+	.word	12551
 	.byte	5
 	.byte	'Os_InterruptSourceIdType',0,8,238,1,16
 	.word	148
@@ -19267,10 +19270,10 @@ Can_ConfigDataPtr:	.type	object
 	.byte	'WAITING',0,2,21
 	.byte	'SUSPENDED',0,3,0,5
 	.byte	'TaskStateType',0,8,175,2,3
-	.word	12828
+	.word	12899
 	.byte	5
 	.byte	'EventMaskType',0,8,182,2,16
-	.word	11553
+	.word	11624
 	.byte	5
 	.byte	'Os_TickType',0,8,200,2,19
 	.word	148
@@ -19288,13 +19291,13 @@ Can_ConfigDataPtr:	.type	object
 	.word	148
 	.byte	4,2,35,8,0,5
 	.byte	'AlarmBaseType',0,8,228,2,2
-	.word	12960
+	.word	13031
 	.byte	20,8,128,3,9,1,21
 	.byte	'APPLICATION_TERMINATED',0,0,21
 	.byte	'APPLICATION_RESTARTING',0,1,21
 	.byte	'APPLICATION_ACCESSIBLE',0,2,0,5
 	.byte	'ApplicationStateType',0,8,133,3,3
-	.word	13055
+	.word	13126
 	.byte	20,8,177,3,9,1,21
 	.byte	'OSServiceId_GetApplicationID',0,0,21
 	.byte	'OSServiceId_GetISRID',0,1,21
@@ -19396,7 +19399,7 @@ Can_ConfigDataPtr:	.type	object
 	.byte	'OSServiceId_ReleaseResource',0,233,1,21
 	.byte	'OSSERVICEID_COUNT',0,255,1,0,5
 	.byte	'OSServiceIdType',0,8,156,4,3
-	.word	13167
+	.word	13238
 	.byte	20,8,172,4,9,2,21
 	.byte	'OS_STATUS_OK',0,0,21
 	.byte	'OS_STATUS_CALLEVEL',0,2,21
@@ -19486,19 +19489,19 @@ Can_ConfigDataPtr:	.type	object
 	.byte	'OS_STATUS_VALUE_IS_TOO_LOW_3',0,136,20,21
 	.byte	'OS_STATUS_VALUE_IS_NOT_BOOLEAN',0,136,22,0,5
 	.byte	'Os_StatusType',0,8,232,5,3
-	.word	16337
+	.word	16408
 	.byte	17,8,133,6,9,4,10
 	.byte	'Service',0
-	.word	13167
+	.word	13238
 	.byte	1,2,35,0,10
 	.byte	'Error',0
 	.word	131
 	.byte	1,2,35,1,10
 	.byte	'DetailedError',0
-	.word	16337
+	.word	16408
 	.byte	2,2,35,2,0,5
 	.byte	'Os_ErrorInformationType',0,8,143,6,3
-	.word	18867
+	.word	18938
 	.byte	20,8,175,6,9,1,21
 	.byte	'SCHEDULETABLE_STOPPED',0,0,21
 	.byte	'SCHEDULETABLE_NEXT',0,1,21
@@ -19506,7 +19509,7 @@ Can_ConfigDataPtr:	.type	object
 	.byte	'SCHEDULETABLE_RUNNING',0,3,21
 	.byte	'SCHEDULETABLE_RUNNING_AND_SYNCHRONOUS',0,4,0,5
 	.byte	'ScheduleTableStatusType',0,8,192,6,3
-	.word	18962
+	.word	19033
 	.byte	5
 	.byte	'Os_AccessCheckAddress',0,8,199,6,29
 	.word	148
@@ -19532,7 +19535,7 @@ Can_ConfigDataPtr:	.type	object
 	.byte	'OS_MEM_ACCESS_TYPE_WXS',0,14,21
 	.byte	'OS_MEM_ACCESS_TYPE_RWXS',0,15,0,5
 	.byte	'Os_MemAccessType',0,8,233,6,3
-	.word	19166
+	.word	19237
 	.byte	5
 	.byte	'tCanLLCanIntOld',0,9,161,3,37
 	.word	148
@@ -19546,7 +19549,7 @@ Can_ConfigDataPtr:	.type	object
 	.word	148
 	.byte	8,7,0,5
 	.byte	'Can_LoopTimeout_dim_type',0,9,183,3,44
-	.word	19773
+	.word	19844
 	.byte	5
 	.byte	'Can_ControllerConfigIterType',0,9,192,13,21
 	.word	131
@@ -19832,7 +19835,7 @@ Can_ConfigDataPtr:	.type	object
 	.word	131
 	.byte	1,2,35,2,0,5
 	.byte	'Can_ActiveSendObjectType',0,9,165,17,3
-	.word	23581
+	.word	23652
 	.byte	9
 	.byte	'sCan_BufferConfigType',0,9,168,17,16,12,10
 	.byte	'RXF0COfBufferConfig',0
@@ -19851,7 +19854,7 @@ Can_ConfigDataPtr:	.type	object
 	.word	131
 	.byte	1,2,35,10,0,5
 	.byte	'Can_BufferConfigType',0,9,175,17,3
-	.word	23712
+	.word	23783
 	.byte	9
 	.byte	'sCan_ControllerConfigType',0,9,178,17,16,28,10
 	.byte	'BasisAdrOfControllerConfig',0
@@ -19918,7 +19921,7 @@ Can_ConfigDataPtr:	.type	object
 	.word	131
 	.byte	1,2,35,24,0,5
 	.byte	'Can_ControllerConfigType',0,9,201,17,3
-	.word	23914
+	.word	23985
 	.byte	9
 	.byte	'sCan_ControllerDataType',0,9,204,17,16,64,10
 	.byte	'IntEnableOfControllerData',0
@@ -19967,10 +19970,10 @@ Can_ConfigDataPtr:	.type	object
 	.word	148
 	.byte	4,2,35,26,10
 	.byte	'LoopTimeoutOfControllerData',0
-	.word	19782
+	.word	19853
 	.byte	32,2,35,30,0,5
 	.byte	'Can_ControllerDataType',0,9,222,17,3
-	.word	24907
+	.word	24978
 	.byte	7,32
 	.word	148
 	.byte	8,7,0,9
@@ -20003,14 +20006,14 @@ Can_ConfigDataPtr:	.type	object
 	.word	131
 	.byte	1,2,35,8,0,5
 	.byte	'Can_MailboxType',0,9,236,17,3
-	.word	25623
+	.word	25694
 	.byte	9
 	.byte	'sCan_MemorySectionInfoType',0,9,239,17,16,1,10
 	.byte	'MemorySectionStartOfMemorySectionInfo',0
 	.word	131
 	.byte	1,2,35,0,0,5
 	.byte	'Can_MemorySectionInfoType',0,9,242,17,3
-	.word	25953
+	.word	26024
 	.byte	9
 	.byte	'sCan_MemorySectionObjectsType',0,9,245,17,16,4,10
 	.byte	'HwHandleOfMemorySectionObjects',0
@@ -20023,7 +20026,7 @@ Can_ConfigDataPtr:	.type	object
 	.word	131
 	.byte	1,2,35,2,0,5
 	.byte	'Can_MemorySectionObjectsType',0,9,250,17,3
-	.word	26069
+	.word	26140
 	.byte	9
 	.byte	'sCan_SIDFCType',0,9,253,17,16,4,10
 	.byte	'FLSSAOfSIDFC',0
@@ -20039,7 +20042,7 @@ Can_ConfigDataPtr:	.type	object
 	.word	131
 	.byte	1,2,35,3,0,5
 	.byte	'Can_SIDFCType',0,9,131,18,3
-	.word	26275
+	.word	26346
 	.byte	9
 	.byte	'sCan_ShmAdrType',0,9,134,18,16,36,10
 	.byte	'RXBAOfShmAdr',0
@@ -20070,7 +20073,7 @@ Can_ConfigDataPtr:	.type	object
 	.word	148
 	.byte	4,2,35,32,0,5
 	.byte	'Can_ShmAdrType',0,9,145,18,3
-	.word	26420
+	.word	26491
 	.byte	9
 	.byte	'sCan_ShmElementSizeType',0,9,148,18,16,6,10
 	.byte	'F0DSOfShmElementSize',0
@@ -20089,7 +20092,7 @@ Can_ConfigDataPtr:	.type	object
 	.word	131
 	.byte	1,2,35,4,0,5
 	.byte	'Can_ShmElementSizeType',0,9,155,18,3
-	.word	26677
+	.word	26748
 	.byte	9
 	.byte	'sCan_XIDFCType',0,9,158,18,16,2,10
 	.byte	'FLESAOfXIDFC',0
@@ -20099,7 +20102,7 @@ Can_ConfigDataPtr:	.type	object
 	.word	131
 	.byte	1,2,35,1,0,5
 	.byte	'Can_XIDFCType',0,9,162,18,3
-	.word	26892
+	.word	26963
 	.byte	9
 	.byte	'sCan_XIDFEType',0,9,165,18,16,2,10
 	.byte	'EIDFE_0OfXIDFE',0
@@ -20109,170 +20112,170 @@ Can_ConfigDataPtr:	.type	object
 	.word	131
 	.byte	1,2,35,1,0,5
 	.byte	'Can_XIDFEType',0,9,169,18,3
-	.word	26979
+	.word	27050
 	.byte	5
 	.byte	'Can_PCConfigType',0,9,146,19,3
-	.word	5748
+	.word	5732
 	.byte	5
 	.byte	'Can_ConfigType',0,9,148,19,26
-	.word	5748
+	.word	5732
 	.byte	7,4
 	.word	148
 	.byte	8,0,0,6
-	.word	27122
+	.word	27193
 	.byte	35
 	.byte	'Can_BTP',0,9,192,19,38
-	.word	27131
+	.word	27202
 	.byte	1,1,7,12
-	.word	23712
+	.word	23783
 	.byte	8,0,0,6
-	.word	27155
+	.word	27226
 	.byte	35
 	.byte	'Can_BufferConfig',0,9,216,19,47
-	.word	27164
+	.word	27235
 	.byte	1,1,7,1
 	.word	131
 	.byte	8,0,0,6
-	.word	27197
+	.word	27268
 	.byte	35
 	.byte	'Can_CanIfChannelId',0,9,233,19,49
-	.word	27206
+	.word	27277
 	.byte	1,1,7,4
 	.word	148
 	.byte	8,0,0,6
-	.word	27241
+	.word	27312
 	.byte	35
 	.byte	'Can_CanSubSystemBaseAdr',0,9,246,19,54
-	.word	27250
+	.word	27321
 	.byte	1,1,7,28
-	.word	23914
+	.word	23985
 	.byte	8,0,0,6
-	.word	27290
+	.word	27361
 	.byte	35
 	.byte	'Can_ControllerConfig',0,9,158,20,51
-	.word	27299
+	.word	27370
 	.byte	1,1,7,4
 	.word	148
 	.byte	8,0,0,6
-	.word	27336
+	.word	27407
 	.byte	35
 	.byte	'Can_FBTP',0,9,175,20,39
-	.word	27345
+	.word	27416
 	.byte	1,1,7,1
 	.word	131
 	.byte	8,0,0,6
-	.word	27370
+	.word	27441
 	.byte	35
 	.byte	'Can_GFC',0,9,188,20,38
-	.word	27379
+	.word	27450
 	.byte	1,1,7,1
 	.word	131
 	.byte	8,0,0,6
-	.word	27403
+	.word	27474
 	.byte	35
 	.byte	'Can_INT_RoutingGroup',0,9,222,20,51
-	.word	27412
+	.word	27483
 	.byte	1,1,7,2
 	.word	204
 	.byte	8,0,0,6
-	.word	27449
+	.word	27520
 	.byte	35
 	.byte	'Can_InitObjectBaudrate',0,9,239,20,53
-	.word	27458
+	.word	27529
 	.byte	1,1,7,1
 	.word	131
 	.byte	8,0,0,6
-	.word	27497
+	.word	27568
 	.byte	35
 	.byte	'Can_InitObjectFdBrsConfig',0,9,128,21,56
-	.word	27506
+	.word	27577
 	.byte	1,1,7,2
 	.word	131
 	.byte	8,1,0,6
-	.word	27548
+	.word	27619
 	.byte	35
 	.byte	'Can_InitObjectStartIndex',0,9,145,21,55
-	.word	27557
+	.word	27628
 	.byte	1,1,7,1
 	.word	5223
 	.byte	8,0,0,6
-	.word	27598
+	.word	27669
 	.byte	35
 	.byte	'Can_IsrOsId',0,9,162,21,40
-	.word	27607
+	.word	27678
 	.byte	1,1,7,24
-	.word	25623
+	.word	25694
 	.byte	8,1,0,6
-	.word	27635
+	.word	27706
 	.byte	35
 	.byte	'Can_Mailbox',0,9,190,21,42
-	.word	27644
+	.word	27715
 	.byte	1,1,7,1
-	.word	25953
+	.word	26024
 	.byte	8,0,0,6
-	.word	27672
+	.word	27743
 	.byte	35
 	.byte	'Can_MemorySectionInfo',0,9,210,21,52
-	.word	27681
+	.word	27752
 	.byte	1,1,7,128,1
-	.word	26069
+	.word	26140
 	.byte	8,31,0,6
-	.word	27719
+	.word	27790
 	.byte	35
 	.byte	'Can_MemorySectionObjects',0,9,232,21,55
-	.word	27729
+	.word	27800
 	.byte	1,1,7,4
-	.word	26275
+	.word	26346
 	.byte	8,0,0,6
-	.word	27770
+	.word	27841
 	.byte	35
 	.byte	'Can_SIDFC',0,9,255,21,40
-	.word	27779
+	.word	27850
 	.byte	1,1,7,4
 	.word	148
-	.byte	8,0,0,6
-	.word	27805
-	.byte	35
-	.byte	'Can_SIDFE',0,9,144,22,40
-	.word	27814
-	.byte	1,1,7,36
-	.word	26420
-	.byte	8,0,0,6
-	.word	27840
-	.byte	35
-	.byte	'Can_ShmAdr',0,9,189,22,41
-	.word	27849
-	.byte	1,1,7,6
-	.word	26677
 	.byte	8,0,0,6
 	.word	27876
 	.byte	35
-	.byte	'Can_ShmElementSize',0,9,213,22,49
+	.byte	'Can_SIDFE',0,9,144,22,40
 	.word	27885
+	.byte	1,1,7,36
+	.word	26491
+	.byte	8,0,0,6
+	.word	27911
+	.byte	35
+	.byte	'Can_ShmAdr',0,9,189,22,41
+	.word	27920
+	.byte	1,1,7,6
+	.word	26748
+	.byte	8,0,0,6
+	.word	27947
+	.byte	35
+	.byte	'Can_ShmElementSize',0,9,213,22,49
+	.word	27956
 	.byte	1,1,7,1
 	.word	131
 	.byte	8,0,0,6
-	.word	27920
+	.word	27991
 	.byte	35
 	.byte	'Can_TDCR',0,9,230,22,39
-	.word	27929
+	.word	28000
 	.byte	1,1,7,4
 	.word	148
 	.byte	8,0,0,6
-	.word	27954
+	.word	28025
 	.byte	35
 	.byte	'Can_XIDAM',0,9,243,22,40
-	.word	27963
+	.word	28034
 	.byte	1,1,7,4
-	.word	23581
+	.word	23652
 	.byte	8,0,0,35
 	.byte	'Can_ActiveSendObject',0,9,178,23,54
-	.word	27989
+	.word	28060
 	.byte	1,1,7,64
-	.word	24907
+	.word	24978
 	.byte	8,0,0,35
 	.byte	'Can_ControllerData',0,9,213,23,52
-	.word	28030
+	.word	28101
 	.byte	1,1,5
 	.byte	'CanInitHandle',0,2,223,8,33
 	.word	204
@@ -20289,12 +20292,12 @@ Can_ConfigDataPtr:	.type	object
 	.word	260
 	.byte	5
 	.byte	'tElmType',0,2,162,9,3
-	.word	28149
+	.word	28220
 	.byte	3
 	.word	260
 	.byte	5
 	.byte	'CanElmType',0,2,163,9,34
-	.word	28172
+	.word	28243
 	.byte	5
 	.byte	'tCanFdType',0,2,179,9,33
 	.word	148
@@ -20305,7 +20308,7 @@ Can_ConfigDataPtr:	.type	object
 	.word	2449
 	.byte	5
 	.byte	'tCanChipMsgPtr',0,2,134,10,3
-	.word	28240
+	.word	28311
 	.byte	5
 	.byte	'tRXFnS',0,2,151,10,3
 	.word	2820
@@ -20330,10 +20333,10 @@ Can_ConfigDataPtr:	.type	object
 	.word	148
 	.byte	4,2,35,0,10
 	.byte	'B',0
-	.word	28285
+	.word	28356
 	.byte	4,2,35,0,0,5
 	.byte	'tRXFnC',0,2,165,10,3
-	.word	28372
+	.word	28443
 	.byte	17,2,171,10,3,4,18
 	.byte	'F0DS',0,1
 	.word	131
@@ -20355,10 +20358,10 @@ Can_ConfigDataPtr:	.type	object
 	.word	148
 	.byte	4,2,35,0,10
 	.byte	'B',0
-	.word	28427
+	.word	28498
 	.byte	4,2,35,0,0,5
 	.byte	'tRXESC',0,2,180,10,3
-	.word	28515
+	.word	28586
 	.byte	17,2,185,10,3,4,18
 	.byte	'TFFL',0,1
 	.word	131
@@ -20383,10 +20386,10 @@ Can_ConfigDataPtr:	.type	object
 	.word	148
 	.byte	4,2,35,0,10
 	.byte	'B',0
-	.word	28570
+	.word	28641
 	.byte	4,2,35,0,0,5
 	.byte	'tTXFQS',0,2,195,10,3
-	.word	28675
+	.word	28746
 	.byte	17,2,200,10,3,4,18
 	.byte	'EFFL',0,1
 	.word	131
@@ -20413,12 +20416,12 @@ Can_ConfigDataPtr:	.type	object
 	.word	148
 	.byte	4,2,35,0,10
 	.byte	'B',0
-	.word	28730
+	.word	28801
 	.byte	4,2,35,0,0,5
 	.byte	'tTXEFS',0,2,210,10,3
-	.word	28839
+	.word	28910
 	.byte	5
-	.byte	'CanIf_TxBufferSizeType',0,19,184,1,15
+	.byte	'CanIf_TxBufferSizeType',0,20,184,1,15
 	.word	131
 	.byte	5
 	.byte	'CanIf_ControllerModeType',0,5,195,2,3
@@ -20432,7 +20435,7 @@ Can_ConfigDataPtr:	.type	object
 	.byte	'CANIF_GET_OFFLINE_ACTIVE_RX_ONLINE',0,5,21
 	.byte	'CANIF_NO_MODE_PDU_GET_MODE_TYPE_END',0,6,0,5
 	.byte	'CanIf_PduGetModeType',0,5,228,2,3
-	.word	28960
+	.word	29031
 	.byte	20,5,231,2,9,1,21
 	.byte	'CANIF_RxBasicCANMailbox',0,0,21
 	.byte	'CANIF_RxFullCANMailbox',0,1,21
@@ -20440,261 +20443,261 @@ Can_ConfigDataPtr:	.type	object
 	.byte	'CANIF_TxFullCANMailbox',0,3,21
 	.byte	'CANIF_UnusedCANMailbox',0,4,0,5
 	.byte	'CanIf_MailBoxTypeType',0,5,238,2,3
-	.word	29182
+	.word	29253
 	.byte	20,5,241,2,9,1,21
 	.byte	'CanIf_SimpleRxIndicationLayout',0,0,21
 	.byte	'CanIf_AdvancedRxIndicationLayout',0,1,21
 	.byte	'CanIf_NmOsekRxIndicationLayout',0,2,21
 	.byte	'CanIf_CddRxIndicationLayout',0,3,0,5
 	.byte	'CanIf_RxIndicationLayoutType',0,5,247,2,3
-	.word	29347
+	.word	29418
 	.byte	37,1,1,23
 	.word	131
 	.byte	0,4
-	.word	29523
+	.word	29594
 	.byte	5
 	.byte	'CanIf_TxConfirmationFctType',0,5,175,3,9
-	.word	29532
+	.word	29603
 	.byte	6
 	.word	131
 	.byte	4
-	.word	29574
+	.word	29645
 	.byte	37,1,1,23
 	.word	131
 	.byte	23
-	.word	29579
+	.word	29650
 	.byte	0,4
-	.word	29584
+	.word	29655
 	.byte	5
 	.byte	'CanIf_SimpleRxIndicationFctType',0,5,181,3,9
-	.word	29598
-	.byte	17,16,197,1,9,8,10
+	.word	29669
+	.byte	17,17,197,1,9,8,10
 	.byte	'SduDataPtr',0
-	.word	11827
+	.word	11898
 	.byte	4,2,35,0,10
 	.byte	'SduLength',0
 	.word	131
 	.byte	1,2,35,4,0,6
-	.word	29644
+	.word	29715
 	.byte	4
-	.word	29690
+	.word	29761
 	.byte	37,1,1,23
 	.word	131
 	.byte	23
-	.word	29695
+	.word	29766
 	.byte	0,4
-	.word	29700
+	.word	29771
 	.byte	5
 	.byte	'CanIf_AdvancedRxIndicationFctType',0,5,186,3,9
-	.word	29714
+	.word	29785
 	.byte	4
 	.word	131
 	.byte	37,1,1,23
 	.word	131
 	.byte	23
-	.word	29579
+	.word	29650
 	.byte	23
 	.word	204
 	.byte	0,4
-	.word	29767
+	.word	29838
 	.byte	5
 	.byte	'CanIf_NmOsekRxIndicationFctType',0,5,190,3,9
-	.word	29786
+	.word	29857
 	.byte	37,1,1,23
 	.word	131
 	.byte	23
-	.word	29695
+	.word	29766
 	.byte	23
 	.word	204
 	.byte	0,4
-	.word	29832
+	.word	29903
 	.byte	5
 	.byte	'CanIf_CddRxIndicationFctType',0,5,194,3,9
-	.word	29851
+	.word	29922
 	.byte	37,1,1,23
 	.word	131
 	.byte	23
 	.word	4346
 	.byte	0,4
-	.word	29894
+	.word	29965
 	.byte	5
 	.byte	'CanIf_CtrlModeIndicationFctType',0,5,198,3,9
-	.word	29908
+	.word	29979
 	.byte	5
 	.byte	'CanIf_BusOffNotificationFctType',0,5,202,3,9
-	.word	29532
+	.word	29603
 	.byte	16,5,203,4,9,4,10
 	.byte	'eSimpleRxIndicationType',0
-	.word	29603
+	.word	29674
 	.byte	4,2,35,0,10
 	.byte	'eAdvancedRxIndicationType',0
-	.word	29719
+	.word	29790
 	.byte	4,2,35,0,10
 	.byte	'eNmOsekRxIndicationType',0
-	.word	29791
+	.word	29862
 	.byte	4,2,35,0,10
 	.byte	'eCddRxIndicationType',0
-	.word	29856
+	.word	29927
 	.byte	4,2,35,0,0,5
 	.byte	'CanIf_RxIndicationFctType',0,5,209,4,3
-	.word	29995
+	.word	30066
 	.byte	4
-	.word	29584
+	.word	29655
 	.byte	4
-	.word	29700
+	.word	29771
 	.byte	4
-	.word	29767
+	.word	29838
 	.byte	4
-	.word	29832
+	.word	29903
 	.byte	9
 	.byte	'sCanIf_TxQueueBaseType',0,5,222,4,16,1,10
 	.byte	'eSduLength',0
 	.word	131
 	.byte	1,2,35,0,0,5
 	.byte	'CanIf_TxQueueBaseType',0,5,228,4,3
-	.word	30188
+	.word	30259
 	.byte	9
 	.byte	'sCanIf_TxQueueBaseWithDataType',0,5,231,4,16,1,10
 	.byte	'eBaseParams',0
-	.word	30188
+	.word	30259
 	.byte	1,2,35,0,0,5
 	.byte	'CanIf_TxQueueBaseWithDataType',0,5,237,4,3
-	.word	30269
+	.word	30340
 	.byte	9
 	.byte	'sCanIf_TxPrioByCanIdByteQueueType',0,5,242,4,16,2,10
 	.byte	'eQueueParams',0
-	.word	30269
+	.word	30340
 	.byte	1,2,35,0,10
 	.byte	'eQueued',0
 	.word	131
 	.byte	1,2,35,1,0,5
 	.byte	'CanIf_TxPrioByCanIdByteQueueType',0,5,246,4,3
-	.word	30367
+	.word	30438
 	.byte	9
 	.byte	'sCanIf_TxBufferPrioByCanIdBaseType',0,5,128,5,16,1,10
 	.byte	'eQueueCounter',0
 	.word	131
 	.byte	1,2,35,0,0,5
 	.byte	'CanIf_TxBufferPrioByCanIdBaseType',0,5,131,5,3
-	.word	30489
+	.word	30560
 	.byte	5
-	.byte	'CanIf_MappedTxBuffersConfigEndIdxOfCanIfCtrlId2MappedTxBuffersConfigType',0,19,138,9,15
+	.byte	'CanIf_MappedTxBuffersConfigEndIdxOfCanIfCtrlId2MappedTxBuffersConfigType',0,20,138,9,15
 	.word	131
 	.byte	5
-	.byte	'CanIf_MappedTxBuffersConfigStartIdxOfCanIfCtrlId2MappedTxBuffersConfigType',0,19,141,9,15
+	.byte	'CanIf_MappedTxBuffersConfigStartIdxOfCanIfCtrlId2MappedTxBuffersConfigType',0,20,141,9,15
 	.word	131
 	.byte	5
-	.byte	'CanIf_CtrlStatesIdxOfMailBoxConfigType',0,19,150,9,15
+	.byte	'CanIf_CtrlStatesIdxOfMailBoxConfigType',0,20,150,9,15
 	.word	131
 	.byte	5
-	.byte	'CanIf_PduIdFirstOfMailBoxConfigType',0,19,153,9,15
+	.byte	'CanIf_PduIdFirstOfMailBoxConfigType',0,20,153,9,15
 	.word	131
 	.byte	5
-	.byte	'CanIf_PduIdLastOfMailBoxConfigType',0,19,156,9,15
+	.byte	'CanIf_PduIdLastOfMailBoxConfigType',0,20,156,9,15
 	.word	131
 	.byte	5
-	.byte	'CanIf_TxBufferCfgIdxOfMailBoxConfigType',0,19,159,9,15
+	.byte	'CanIf_TxBufferCfgIdxOfMailBoxConfigType',0,20,159,9,15
 	.word	131
 	.byte	5
-	.byte	'CanIf_TxBufferHandlingTypeOfMailBoxConfigType',0,19,165,9,15
+	.byte	'CanIf_TxBufferHandlingTypeOfMailBoxConfigType',0,20,165,9,15
 	.word	131
 	.byte	5
-	.byte	'CanIf_MailBoxConfigIdxOfMappedTxBuffersConfigType',0,19,168,9,15
+	.byte	'CanIf_MailBoxConfigIdxOfMappedTxBuffersConfigType',0,20,168,9,15
 	.word	131
 	.byte	5
-	.byte	'CanIf_RxIndicationFctListIdxOfRxPduConfigType',0,19,171,9,15
+	.byte	'CanIf_RxIndicationFctListIdxOfRxPduConfigType',0,20,171,9,15
 	.word	131
 	.byte	5
-	.byte	'CanIf_RxPduCanIdOfRxPduConfigType',0,19,174,9,15
+	.byte	'CanIf_RxPduCanIdOfRxPduConfigType',0,20,174,9,15
 	.word	131
 	.byte	5
-	.byte	'CanIf_RxPduDlcOfRxPduConfigType',0,19,177,9,15
+	.byte	'CanIf_RxPduDlcOfRxPduConfigType',0,20,177,9,15
 	.word	131
 	.byte	5
-	.byte	'CanIf_RxPduMaskOfRxPduConfigType',0,19,180,9,16
+	.byte	'CanIf_RxPduMaskOfRxPduConfigType',0,20,180,9,16
 	.word	204
 	.byte	5
-	.byte	'CanIf_UpperPduIdOfRxPduConfigType',0,19,183,9,19
+	.byte	'CanIf_UpperPduIdOfRxPduConfigType',0,20,183,9,19
 	.word	131
 	.byte	5
-	.byte	'CanIf_TxBufferPrioByCanIdBaseIdxOfTxBufferPrioByCanIdByteQueueConfigType',0,19,231,9,15
+	.byte	'CanIf_TxBufferPrioByCanIdBaseIdxOfTxBufferPrioByCanIdByteQueueConfigType',0,20,231,9,15
 	.word	131
 	.byte	5
-	.byte	'CanIf_TxBufferPrioByCanIdByteQueueMappedTxPdusEndIdxOfTxBufferPrioByCanIdByteQueueConfigType',0,19,234
+	.byte	'CanIf_TxBufferPrioByCanIdByteQueueMappedTxPdusEndIdxOfTxBufferPrioByCanIdByteQueueConfigType',0,20,234
 	.byte	9,15
 	.word	131
 	.byte	5
-	.byte	'CanIf_TxBufferPrioByCanIdByteQueueMappedTxPdusLengthOfTxBufferPrioByCanIdByteQueueConfigType',0,19,237
+	.byte	'CanIf_TxBufferPrioByCanIdByteQueueMappedTxPdusLengthOfTxBufferPrioByCanIdByteQueueConfigType',0,20,237
 	.byte	9,15
 	.word	131
 	.byte	5
-	.byte	'CanIf_TxBufferPrioByCanIdByteQueueMappedTxPdusStartIdxOfTxBufferPrioByCanIdByteQueueConfigType',0,19
+	.byte	'CanIf_TxBufferPrioByCanIdByteQueueMappedTxPdusStartIdxOfTxBufferPrioByCanIdByteQueueConfigType',0,20
 	.byte	240,9,15
 	.word	131
 	.byte	5
-	.byte	'CanIf_TxPduConfigIdxOfTxBufferPrioByCanIdByteQueueMappedTxPdusType',0,19,243,9,15
+	.byte	'CanIf_TxPduConfigIdxOfTxBufferPrioByCanIdByteQueueMappedTxPdusType',0,20,243,9,15
 	.word	131
 	.byte	5
-	.byte	'CanIf_CanIdOfTxPduConfigType',0,19,246,9,16
+	.byte	'CanIf_CanIdOfTxPduConfigType',0,20,246,9,16
 	.word	204
 	.byte	5
-	.byte	'CanIf_CtrlStatesIdxOfTxPduConfigType',0,19,249,9,15
+	.byte	'CanIf_CtrlStatesIdxOfTxPduConfigType',0,20,249,9,15
 	.word	131
 	.byte	5
-	.byte	'CanIf_IsTxPduTruncationOfTxPduConfigType',0,19,252,9,17
+	.byte	'CanIf_IsTxPduTruncationOfTxPduConfigType',0,20,252,9,17
 	.word	131
 	.byte	5
-	.byte	'CanIf_MailBoxConfigIdxOfTxPduConfigType',0,19,255,9,15
+	.byte	'CanIf_MailBoxConfigIdxOfTxPduConfigType',0,20,255,9,15
 	.word	131
 	.byte	5
-	.byte	'CanIf_TxConfirmationFctListIdxOfTxPduConfigType',0,19,130,10,15
+	.byte	'CanIf_TxConfirmationFctListIdxOfTxPduConfigType',0,20,130,10,15
 	.word	131
 	.byte	5
-	.byte	'CanIf_TxPduLengthOfTxPduConfigType',0,19,133,10,15
+	.byte	'CanIf_TxPduLengthOfTxPduConfigType',0,20,133,10,15
 	.word	131
 	.byte	5
-	.byte	'CanIf_UpperLayerTxPduIdOfTxPduConfigType',0,19,136,10,19
+	.byte	'CanIf_UpperLayerTxPduIdOfTxPduConfigType',0,20,136,10,19
 	.word	131
 	.byte	5
-	.byte	'CanIf_TxQueueIdxOfTxPduQueueIndexType',0,19,139,10,15
+	.byte	'CanIf_TxQueueIdxOfTxPduQueueIndexType',0,20,139,10,15
 	.word	131
 	.byte	5
-	.byte	'CanIf_TxQueueIndex2DataStartStopIdxOfTxPduQueueIndexType',0,19,142,10,15
+	.byte	'CanIf_TxQueueIndex2DataStartStopIdxOfTxPduQueueIndexType',0,20,142,10,15
 	.word	131
 	.byte	5
-	.byte	'CanIf_TxQueueDataType',0,19,151,10,15
+	.byte	'CanIf_TxQueueDataType',0,20,151,10,15
 	.word	131
 	.byte	5
-	.byte	'CanIf_TxQueueDataEndIdxOfTxQueueIndex2DataStartStopType',0,19,154,10,15
+	.byte	'CanIf_TxQueueDataEndIdxOfTxQueueIndex2DataStartStopType',0,20,154,10,15
 	.word	131
 	.byte	5
-	.byte	'CanIf_TxQueueDataLengthOfTxQueueIndex2DataStartStopType',0,19,157,10,15
+	.byte	'CanIf_TxQueueDataLengthOfTxQueueIndex2DataStartStopType',0,20,157,10,15
 	.word	131
 	.byte	5
-	.byte	'CanIf_TxQueueDataStartIdxOfTxQueueIndex2DataStartStopType',0,19,160,10,15
+	.byte	'CanIf_TxQueueDataStartIdxOfTxQueueIndex2DataStartStopType',0,20,160,10,15
 	.word	131
 	.byte	9
-	.byte	'sCanIf_CanIfCtrlId2MappedTxBuffersConfigType',0,19,183,10,16,2,10
+	.byte	'sCanIf_CanIfCtrlId2MappedTxBuffersConfigType',0,20,183,10,16,2,10
 	.byte	'MappedTxBuffersConfigEndIdxOfCanIfCtrlId2MappedTxBuffersConfig',0
 	.word	131
 	.byte	1,2,35,0,10
 	.byte	'MappedTxBuffersConfigStartIdxOfCanIfCtrlId2MappedTxBuffersConfig',0
 	.word	131
 	.byte	1,2,35,1,0,5
-	.byte	'CanIf_CanIfCtrlId2MappedTxBuffersConfigType',0,19,187,10,3
-	.word	32428
+	.byte	'CanIf_CanIfCtrlId2MappedTxBuffersConfigType',0,20,187,10,3
+	.word	32499
 	.byte	9
-	.byte	'sCanIf_CtrlStatesType',0,19,190,10,16,2,10
+	.byte	'sCanIf_CtrlStatesType',0,20,190,10,16,2,10
 	.byte	'CtrlModeOfCtrlStates',0
 	.word	4346
 	.byte	1,2,35,0,10
 	.byte	'PduModeOfCtrlStates',0
-	.word	28960
+	.word	29031
 	.byte	1,2,35,1,0,5
-	.byte	'CanIf_CtrlStatesType',0,19,194,10,3
-	.word	32679
+	.byte	'CanIf_CtrlStatesType',0,20,194,10,3
+	.word	32750
 	.byte	9
-	.byte	'sCanIf_MailBoxConfigType',0,19,200,10,16,6,10
+	.byte	'sCanIf_MailBoxConfigType',0,20,200,10,16,6,10
 	.byte	'CtrlStatesIdxOfMailBoxConfig',0
 	.word	131
 	.byte	1,2,35,0,10
@@ -20711,29 +20714,29 @@ Can_ConfigDataPtr:	.type	object
 	.word	131
 	.byte	1,2,35,4,10
 	.byte	'MailBoxTypeOfMailBoxConfig',0
-	.word	29182
+	.word	29253
 	.byte	1,2,35,5,0,5
-	.byte	'CanIf_MailBoxConfigType',0,19,208,10,3
-	.word	32797
+	.byte	'CanIf_MailBoxConfigType',0,20,208,10,3
+	.word	32868
 	.byte	9
-	.byte	'sCanIf_MappedTxBuffersConfigType',0,19,214,10,16,1,10
+	.byte	'sCanIf_MappedTxBuffersConfigType',0,20,214,10,16,1,10
 	.byte	'MailBoxConfigIdxOfMappedTxBuffersConfig',0
 	.word	131
 	.byte	1,2,35,0,0,5
-	.byte	'CanIf_MappedTxBuffersConfigType',0,19,217,10,3
-	.word	33089
+	.byte	'CanIf_MappedTxBuffersConfigType',0,20,217,10,3
+	.word	33160
 	.byte	9
-	.byte	'sCanIf_RxIndicationFctListType',0,19,220,10,16,8,10
+	.byte	'sCanIf_RxIndicationFctListType',0,20,220,10,16,8,10
 	.byte	'RxIndicationFctOfRxIndicationFctList',0
-	.word	29995
+	.word	30066
 	.byte	4,2,35,0,10
 	.byte	'RxIndicationLayoutOfRxIndicationFctList',0
-	.word	29347
+	.word	29418
 	.byte	1,2,35,4,0,5
-	.byte	'CanIf_RxIndicationFctListType',0,19,224,10,3
-	.word	33219
+	.byte	'CanIf_RxIndicationFctListType',0,20,224,10,3
+	.word	33290
 	.byte	9
-	.byte	'sCanIf_RxPduConfigType',0,19,230,10,16,6,10
+	.byte	'sCanIf_RxPduConfigType',0,20,230,10,16,6,10
 	.byte	'RxPduMaskOfRxPduConfig',0
 	.word	204
 	.byte	2,2,35,0,10
@@ -20749,10 +20752,10 @@ Can_ConfigDataPtr:	.type	object
 	.byte	'RxPduDlcOfRxPduConfig',0
 	.word	131
 	.byte	1,2,35,5,0,5
-	.byte	'CanIf_RxPduConfigType',0,19,237,10,3
-	.word	33391
+	.byte	'CanIf_RxPduConfigType',0,20,237,10,3
+	.word	33462
 	.byte	9
-	.byte	'sCanIf_TxBufferPrioByCanIdByteQueueConfigType',0,19,245,10,16,4,10
+	.byte	'sCanIf_TxBufferPrioByCanIdByteQueueConfigType',0,20,245,10,16,4,10
 	.byte	'TxBufferPrioByCanIdBaseIdxOfTxBufferPrioByCanIdByteQueueConfig',0
 	.word	131
 	.byte	1,2,35,0,10
@@ -20765,17 +20768,17 @@ Can_ConfigDataPtr:	.type	object
 	.byte	'TxBufferPrioByCanIdByteQueueMappedTxPdusStartIdxOfTxBufferPrioByCanIdByteQueueConfig',0
 	.word	131
 	.byte	1,2,35,3,0,5
-	.byte	'CanIf_TxBufferPrioByCanIdByteQueueConfigType',0,19,251,10,3
-	.word	33626
+	.byte	'CanIf_TxBufferPrioByCanIdByteQueueConfigType',0,20,251,10,3
+	.word	33697
 	.byte	9
-	.byte	'sCanIf_TxBufferPrioByCanIdByteQueueMappedTxPdusType',0,19,129,11,16,1,10
+	.byte	'sCanIf_TxBufferPrioByCanIdByteQueueMappedTxPdusType',0,20,129,11,16,1,10
 	.byte	'TxPduConfigIdxOfTxBufferPrioByCanIdByteQueueMappedTxPdus',0
 	.word	131
 	.byte	1,2,35,0,0,5
-	.byte	'CanIf_TxBufferPrioByCanIdByteQueueMappedTxPdusType',0,19,132,11,3
-	.word	34083
+	.byte	'CanIf_TxBufferPrioByCanIdByteQueueMappedTxPdusType',0,20,132,11,3
+	.word	34154
 	.byte	9
-	.byte	'sCanIf_TxPduConfigType',0,19,140,11,16,8,10
+	.byte	'sCanIf_TxPduConfigType',0,20,140,11,16,8,10
 	.byte	'CanIdOfTxPduConfig',0
 	.word	204
 	.byte	2,2,35,0,10
@@ -20797,20 +20800,20 @@ Can_ConfigDataPtr:	.type	object
 	.byte	'TxPduLengthOfTxPduConfig',0
 	.word	131
 	.byte	1,2,35,7,0,5
-	.byte	'CanIf_TxPduConfigType',0,19,149,11,3
-	.word	34268
+	.byte	'CanIf_TxPduConfigType',0,20,149,11,3
+	.word	34339
 	.byte	9
-	.byte	'sCanIf_TxPduQueueIndexType',0,19,155,11,16,2,10
+	.byte	'sCanIf_TxPduQueueIndexType',0,20,155,11,16,2,10
 	.byte	'TxQueueIdxOfTxPduQueueIndex',0
 	.word	131
 	.byte	1,2,35,0,10
 	.byte	'TxQueueIndex2DataStartStopIdxOfTxPduQueueIndex',0
 	.word	131
 	.byte	1,2,35,1,0,5
-	.byte	'CanIf_TxPduQueueIndexType',0,19,159,11,3
-	.word	34593
+	.byte	'CanIf_TxPduQueueIndexType',0,20,159,11,3
+	.word	34664
 	.byte	9
-	.byte	'sCanIf_TxQueueIndex2DataStartStopType',0,19,166,11,16,4,10
+	.byte	'sCanIf_TxQueueIndex2DataStartStopType',0,20,166,11,16,4,10
 	.byte	'TxQueueDataEndIdxOfTxQueueIndex2DataStartStop',0
 	.word	131
 	.byte	1,2,35,0,10
@@ -20820,35 +20823,35 @@ Can_ConfigDataPtr:	.type	object
 	.byte	'TxQueueDataStartIdxOfTxQueueIndex2DataStartStop',0
 	.word	131
 	.byte	1,2,35,2,0,5
-	.byte	'CanIf_TxQueueIndex2DataStartStopType',0,19,171,11,3
-	.word	34755
+	.byte	'CanIf_TxQueueIndex2DataStartStopType',0,20,171,11,3
+	.word	34826
 	.byte	9
-	.byte	'CanIf_CtrlStatesStructSTag',0,19,183,11,16,2,10
+	.byte	'CanIf_CtrlStatesStructSTag',0,20,183,11,16,2,10
 	.byte	'CT_testCANFDdbc_2c920817',0
-	.word	32679
+	.word	32750
 	.byte	2,2,35,0,0,5
-	.byte	'CanIf_CtrlStatesStructSType',0,19,186,11,3
-	.word	35013
+	.byte	'CanIf_CtrlStatesStructSType',0,20,186,11,3
+	.word	35084
 	.byte	9
-	.byte	'CanIf_TxBufferPrioByCanIdBaseStructSTag',0,19,189,11,16,1,10
+	.byte	'CanIf_TxBufferPrioByCanIdBaseStructSTag',0,20,189,11,16,1,10
 	.byte	'CHNL_7a25eeb6',0
-	.word	30489
+	.word	30560
 	.byte	1,2,35,0,0,5
-	.byte	'CanIf_TxBufferPrioByCanIdBaseStructSType',0,19,192,11,3
-	.word	35118
+	.byte	'CanIf_TxBufferPrioByCanIdBaseStructSType',0,20,192,11,3
+	.word	35189
 	.byte	9
-	.byte	'CanIf_TxQueueStructSTag',0,19,195,11,16,6,10
+	.byte	'CanIf_TxQueueStructSTag',0,20,195,11,16,6,10
 	.byte	'TxMessage3_otestCANFDdbc_547b0ac5_Tx',0
-	.word	30367
+	.word	30438
 	.byte	2,2,35,0,10
 	.byte	'TxMessage22_otestCANFDdbc_f66bbf36_Tx',0
-	.word	30367
+	.word	30438
 	.byte	2,2,35,2,10
 	.byte	'TxMessage1_otestCANFDdbc_815f4c47_Tx',0
-	.word	30367
+	.word	30438
 	.byte	2,2,35,4,0,5
-	.byte	'CanIf_TxQueueStructSType',0,19,200,11,3
-	.word	35238
+	.byte	'CanIf_TxQueueStructSType',0,20,200,11,3
+	.word	35309
 	.byte	7,32
 	.word	131
 	.byte	8,31,0,7,8
@@ -20856,32 +20859,32 @@ Can_ConfigDataPtr:	.type	object
 	.byte	8,7,0,7,64
 	.word	131
 	.byte	8,63,0,9
-	.byte	'CanIf_TxQueueDataStructSTag',0,19,203,11,16,104,10
+	.byte	'CanIf_TxQueueDataStructSTag',0,20,203,11,16,104,10
 	.byte	'TxMessage3_otestCANFDdbc_547b0ac5_Tx',0
-	.word	35442
+	.word	35513
 	.byte	32,2,35,0,10
 	.byte	'TxMessage22_otestCANFDdbc_f66bbf36_Tx',0
-	.word	35451
+	.word	35522
 	.byte	8,2,35,32,10
 	.byte	'TxMessage1_otestCANFDdbc_815f4c47_Tx',0
-	.word	35460
+	.word	35531
 	.byte	64,2,35,40,0,5
-	.byte	'CanIf_TxQueueDataStructSType',0,19,208,11,3
-	.word	35469
+	.byte	'CanIf_TxQueueDataStructSType',0,20,208,11,3
+	.word	35540
 	.byte	9
-	.byte	'sCanIf_PCConfigType',0,19,189,12,16,1,10
+	.byte	'sCanIf_PCConfigType',0,20,189,12,16,1,10
 	.byte	'CanIf_PCConfigNeverUsed',0
 	.word	131
 	.byte	1,2,35,0,0,5
-	.byte	'CanIf_PCConfigType',0,19,192,12,3
-	.word	35681
+	.byte	'CanIf_PCConfigType',0,20,192,12,3
+	.word	35752
 	.byte	9
-	.byte	'sDet_PCConfigType',0,20,238,1,16,1,10
+	.byte	'sDet_PCConfigType',0,21,238,1,16,1,10
 	.byte	'Det_PCConfigNeverUsed',0
 	.word	131
 	.byte	1,2,35,0,0,5
-	.byte	'Det_PCConfigType',0,20,241,1,3
-	.word	35769
+	.byte	'Det_PCConfigType',0,21,241,1,3
+	.word	35840
 	.byte	5
 	.byte	'tCanRxInfoStruct',0,3,130,9,3
 	.word	2581
@@ -20897,7 +20900,7 @@ Can_ConfigDataPtr:	.type	object
 	.word	1735
 	.byte	64,2,35,8,0,5
 	.byte	'tCanTxConfInfoStruct',0,3,139,9,3
-	.word	35877
+	.word	35948
 	.byte	5
 	.byte	'tCanInitParaStruct',0,3,185,9,3
 	.word	327
@@ -20927,10 +20930,10 @@ Can_ConfigDataPtr:	.type	object
 	.word	204
 	.byte	2,2,35,24,10
 	.byte	'bfElm',0
-	.word	36088
+	.word	36159
 	.byte	72,2,35,28,0,5
 	.byte	'tCanRxFullParaStruct',0,3,252,9,3
-	.word	36093
+	.word	36164
 	.byte	5
 	.byte	'tCanTxConfirmationParaStruct',0,3,149,10,3
 	.word	1768
@@ -20943,7 +20946,7 @@ Can_ConfigDataPtr:	.type	object
 	.word	131
 	.byte	1,2,35,1,0,5
 	.byte	'tCanTaskParaStruct',0,3,157,10,3
-	.word	36302
+	.word	36373
 .L1267:
 	.byte	6
 	.word	131
@@ -20958,22 +20961,22 @@ Can_ConfigDataPtr:	.type	object
 	.byte	8,15,0
 .L1270:
 	.byte	6
-	.word	36415
+	.word	36486
 	.byte	7,65
 	.word	131
 	.byte	8,64,0
 .L1271:
 	.byte	6
-	.word	36429
+	.word	36500
 	.byte	7,8
 	.word	131
 	.byte	8,7,0
 .L1272:
 	.byte	6
-	.word	36443
+	.word	36514
 .L1273:
 	.byte	6
-	.word	5819
+	.word	5803
 	.byte	0
 	.sdecl	'.debug_abbrev',debug
 	.sect	'.debug_abbrev'
@@ -21017,6 +21020,7 @@ Can_ConfigDataPtr:	.type	object
 	.byte	'CanIf_Cbk.h',0,3,0,0
 	.byte	'CanIf.h',0,3,0,0
 	.byte	'Det.h',0,5,0,0
+	.byte	'SchM_Can.h',0,2,0,0
 	.byte	'Platform_Types.h',0,6,0,0
 	.byte	'Std_Types.h',0,6,0,0
 	.byte	'ComStack_Cfg.h',0,2,0,0
@@ -21801,7 +21805,7 @@ Can_ConfigDataPtr:	.type	object
 	.half	.L1546-.L181
 	.byte	1,5,15,7,9
 	.half	.L180-.L1546
-	.byte	3,3,1,5,33,1,5,7,9
+	.byte	3,3,1,5,33,1,5,42,9
 	.half	.L185-.L180
 	.byte	3,12,1,5,12,9
 	.half	.L1373-.L185
@@ -21957,7 +21961,7 @@ Can_ConfigDataPtr:	.type	object
 	.half	.L801-.L1575
 	.byte	3,179,54,1,5,17,9
 	.half	.L192-.L801
-	.byte	3,4,1,5,7,9
+	.byte	3,4,1,5,41,9
 	.half	.L204-.L192
 	.byte	3,3,1,5,12,9
 	.half	.L178-.L204
@@ -22947,7 +22951,7 @@ Can_ConfigDataPtr:	.type	object
 	.half	.L1721-.L423
 	.byte	1,5,13,7,9
 	.half	.L1722-.L1721
-	.byte	3,2,1,5,27,1,5,5,9
+	.byte	3,2,1,5,27,1,5,40,9
 	.half	.L272-.L1722
 	.byte	3,6,1,5,12,9
 	.half	.L1723-.L272
@@ -23001,7 +23005,7 @@ Can_ConfigDataPtr:	.type	object
 	.half	.L284-.L1735
 	.byte	3,255,61,1,5,17,7,9
 	.half	.L1736-.L284
-	.byte	3,2,1,5,5,9
+	.byte	3,2,1,5,39,9
 	.half	.L275-.L1736
 	.byte	3,10,1,5,3,9
 	.half	.L273-.L275
@@ -24769,9 +24773,9 @@ Can_ConfigDataPtr:	.type	object
 	.half	.L1054-.L105
 	.byte	3,177,16,1,5,90,7,9
 	.half	.L1051-.L1054
-	.byte	1,5,7,9
+	.byte	1,5,42,9
 	.half	.L2042-.L1051
-	.byte	3,3,1,9
+	.byte	3,3,1,5,7,9
 	.half	.L2043-.L2042
 	.byte	3,2,1,5,83,9
 	.half	.L1073-.L2043
@@ -24829,7 +24833,7 @@ Can_ConfigDataPtr:	.type	object
 	.half	.L2055-.L2054
 	.byte	3,1,1,5,7,9
 	.half	.L123-.L2055
-	.byte	3,246,48,1,9
+	.byte	3,246,48,1,5,41,9
 	.half	.L2056-.L123
 	.byte	3,1,1,5,37,9
 	.half	.L2057-.L2056

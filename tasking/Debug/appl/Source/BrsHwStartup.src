@@ -1740,7 +1740,7 @@ __brsStartupEntry_internal_function_end:
 	.byte	25
 	.byte	'kBrsWdtCon0Addresses',0,1,251,1,21
 	.word	922
-	.byte	1,1,26,7,148,1,9,1,27
+	.byte	1,1,26,7,147,1,9,1,27
 	.byte	'Default_Init_Task',0,0,27
 	.byte	'Default_Init_Task_Trusted',0,1,27
 	.byte	'IdleTask_OsCore0',0,2,27
@@ -1749,7 +1749,7 @@ __brsStartupEntry_internal_function_end:
 	.byte	'swc_task',0,5,27
 	.byte	'INVALID_TASK',0,6,27
 	.byte	'OS_TASKID_COUNT',0,6,0,23
-	.byte	'TaskType',0,7,158,1,3
+	.byte	'TaskType',0,7,157,1,3
 	.word	959
 	.byte	23
 	.byte	'Os_Hal_AddressType',0,8,61,16

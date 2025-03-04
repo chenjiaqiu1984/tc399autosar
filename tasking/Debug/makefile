@@ -40,7 +40,7 @@ all : "t399minisystem.elf"
 	@"${PRODDIR}\bin\cctc" -f ".t399minisystem.elf.opt"
 
 ".t399minisystem.elf.opt" : .refresh
-	@argfile ".t399minisystem.elf.opt" -o "t399minisystem.elf" $(OBJ_FILES) $(EXT_LIBRARIES) $(PCP_FILES)  -Ctc39xb --lsl-core=vtc -t -I"D:\Zonal\demo011\tasking" -Wl-o"${PROJ}.hex":IHEX:4 --hex-format=s --no-default-libraries --no-rescan "D:\Zonal\demo011\tasking\vLinkGen_Template.lsl" -Wl-OTXYCL -Wl-mCRFIKLSMNODUQ -Wl--error-limit=42 --user-provided-initialization-code -g --fp-model=3 --c++=14 -Wl--dep-file=".t399minisystem.elf.d" -Wl--make-target="t399minisystem.elf"
+	@argfile ".t399minisystem.elf.opt" -o "t399minisystem.elf" $(OBJ_FILES) $(EXT_LIBRARIES) $(PCP_FILES)  -Ctc39xb --lsl-core=vtc -t -I"D:\Zonal\demo011\tasking" -Wl-o"${PROJ}.hex":IHEX:4 --hex-format=s --no-default-libraries --no-rescan "D:\Zonal\demo011\tasking\appl\Source\vLinkGen_Template.lsl" -Wl-OTXYCL -Wl-mCRFIKLSMNODUQ -Wl--error-limit=42 --user-provided-initialization-code -g --fp-model=3 --c++=14 -Wl--dep-file=".t399minisystem.elf.d" -Wl--make-target="t399minisystem.elf"
 DEPENDENCY_FILES += ".t399minisystem.elf.d"
 -include $(DEPENDENCY_FILES)
 
