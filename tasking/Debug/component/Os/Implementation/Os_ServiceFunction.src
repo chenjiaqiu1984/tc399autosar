@@ -1371,8 +1371,10 @@ $TC162
 ; ..\component\Os\Implementation\Os_ServiceFunction.c	  1356   */
 ; ..\component\Os\Implementation\Os_ServiceFunction.c	  1357  FUNC(void, OS_CODE) Os_ServiceInitInternal
 ; Function Os_ServiceInitInternal
-.L6:
+.L7:
 Os_ServiceInitInternal:	.type	func
+	ld.bu	d15,[a4]8
+.L169:
 
 ; ..\component\Os\Implementation\Os_ServiceFunction.c	  1358  (
 ; ..\component\Os\Implementation\Os_ServiceFunction.c	  1359    P2CONST(Os_ServiceConfigType, AUTOMATIC, OS_CONST) Service
@@ -1380,24 +1382,28 @@ Os_ServiceInitInternal:	.type	func
 ; ..\component\Os\Implementation\Os_ServiceFunction.c	  1361  {
 ; ..\component\Os\Implementation\Os_ServiceFunction.c	  1362    /* #10 If the given service is a non-trusted function: */
 ; ..\component\Os\Implementation\Os_ServiceFunction.c	  1363    if(Os_ServiceIsNtf(Service) != 0u)                                                                                    /* SBSW_OS_FC_PRECONDITION */
+	jne	d15,#1,.L2
+.L170:
+	j	Os_ServiceNtfInit
+.L2:
+
 ; ..\component\Os\Implementation\Os_ServiceFunction.c	  1364    {
 ; ..\component\Os\Implementation\Os_ServiceFunction.c	  1365      /* #20 Initialize the non-trusted function. */
 ; ..\component\Os\Implementation\Os_ServiceFunction.c	  1366      Os_ServiceNtfInit(Os_Service2Ntf(Service));                                                                         /* PRQA S 0310 */ /* MD_Os_Rule11.3_0310 */ /* SBSW_OS_FC_PRECONDITION */ /* SBSW_OS_SF_SERVICENTFINIT_001 */
 ; ..\component\Os\Implementation\Os_ServiceFunction.c	  1367    }
 ; ..\component\Os\Implementation\Os_ServiceFunction.c	  1368  }
 	ret
-.L104:
+.L112:
 	
 __Os_ServiceInitInternal_function_end:
 	.size	Os_ServiceInitInternal,__Os_ServiceInitInternal_function_end-Os_ServiceInitInternal
-.L64:
+.L67:
 	; End of function
 	
-	.sdecl	'.text.OS_CODE',code,cluster('Os_ServiceReturn')
+	.sdecl	'.text.OS_CODE',code,cluster('Os_ServiceNtfInit')
 	.sect	'.text.OS_CODE'
 	.align	2
 	
-	.global	Os_ServiceReturn
 
 ; ..\component\Os\Implementation\Os_ServiceFunction.c	  1369  
 ; ..\component\Os\Implementation\Os_ServiceFunction.c	  1370  /***********************************************************************************************************************
@@ -1410,6 +1416,10 @@ __Os_ServiceInitInternal_function_end:
 ; ..\component\Os\Implementation\Os_ServiceFunction.c	  1377   *
 ; ..\component\Os\Implementation\Os_ServiceFunction.c	  1378   */
 ; ..\component\Os\Implementation\Os_ServiceFunction.c	  1379  OS_LOCAL_INLINE FUNC(void, OS_CODE) Os_ServiceNtfInit
+; Function Os_ServiceNtfInit
+.L9:
+Os_ServiceNtfInit:	.type	func
+
 ; ..\component\Os\Implementation\Os_ServiceFunction.c	  1380  (
 ; ..\component\Os\Implementation\Os_ServiceFunction.c	  1381    P2CONST(Os_ServiceNtfConfigType, AUTOMATIC, OS_CONST) NonTrustedFunction
 ; ..\component\Os\Implementation\Os_ServiceFunction.c	  1382  )
@@ -1421,6 +1431,20 @@ __Os_ServiceInitInternal_function_end:
 ; ..\component\Os\Implementation\Os_ServiceFunction.c	  1388      Os_ServiceStackPoolInit(NonTrustedFunction->StackPool);                                                             /* SBSW_OS_SF_SERVICESTACKPOOLINIT_001 */
 ; ..\component\Os\Implementation\Os_ServiceFunction.c	  1389    }
 ; ..\component\Os\Implementation\Os_ServiceFunction.c	  1390  }
+	ret
+.L115:
+	
+__Os_ServiceNtfInit_function_end:
+	.size	Os_ServiceNtfInit,__Os_ServiceNtfInit_function_end-Os_ServiceNtfInit
+.L72:
+	; End of function
+	
+	.sdecl	'.text.OS_CODE',code,cluster('Os_ServiceReturn')
+	.sect	'.text.OS_CODE'
+	.align	2
+	
+	.global	Os_ServiceReturn
+
 ; ..\component\Os\Implementation\Os_ServiceFunction.c	  1391  
 ; ..\component\Os\Implementation\Os_ServiceFunction.c	  1392  
 ; ..\component\Os\Implementation\Os_ServiceFunction.c	  1393  /***********************************************************************************************************************
@@ -1445,7 +1469,7 @@ __Os_ServiceInitInternal_function_end:
 ; ..\component\Os\Implementation\Os_ServiceFunction.c	  1412   */
 ; ..\component\Os\Implementation\Os_ServiceFunction.c	  1413  OS_FUNC_ATTRIBUTE_DEFINITION(void, OS_CODE, OS_NORETURN, Os_ServiceReturn, (void))
 ; Function Os_ServiceReturn
-.L8:
+.L11:
 Os_ServiceReturn:	.type	func
 
 ; ..\component\Os\Implementation\Os_ServiceFunction.c	  1414  {
@@ -1486,11 +1510,11 @@ Os_ServiceReturn:	.type	func
 ; ..\component\Os\Implementation\Os_ServiceFunction.c	  1449    /* #70 KernelPanic. */
 ; ..\component\Os\Implementation\Os_ServiceFunction.c	  1450    Os_ErrKernelPanic();
 	j	Os_ErrKernelPanic
-.L65:
+.L73:
 	
 __Os_ServiceReturn_function_end:
 	.size	Os_ServiceReturn,__Os_ServiceReturn_function_end-Os_ServiceReturn
-.L29:
+.L32:
 	; End of function
 	
 	.sdecl	'.text.OS_CODE',code,cluster('Os_ServiceTfWrapper')
@@ -1515,7 +1539,7 @@ __Os_ServiceReturn_function_end:
 ; ..\component\Os\Implementation\Os_ServiceFunction.c	  1464   */
 ; ..\component\Os\Implementation\Os_ServiceFunction.c	  1465  OS_FUNC_ATTRIBUTE_DEFINITION(void, OS_CODE, OS_NORETURN,
 ; Function Os_ServiceTfWrapper
-.L10:
+.L13:
 Os_ServiceTfWrapper:	.type	func
 
 ; ..\component\Os\Implementation\Os_ServiceFunction.c	  1466  Os_ServiceTfWrapper,
@@ -1528,11 +1552,11 @@ Os_ServiceTfWrapper:	.type	func
 ; ..\component\Os\Implementation\Os_ServiceFunction.c	  1473    {
 ; ..\component\Os\Implementation\Os_ServiceFunction.c	  1474      Os_ErrKernelPanic();
 	j	Os_ErrKernelPanic
-.L66:
+.L74:
 	
 __Os_ServiceTfWrapper_function_end:
 	.size	Os_ServiceTfWrapper,__Os_ServiceTfWrapper_function_end-Os_ServiceTfWrapper
-.L34:
+.L37:
 	; End of function
 	
 	.sdecl	'.text.OS_CODE',code,cluster('Os_ServiceNtfWrapper')
@@ -1570,7 +1594,7 @@ __Os_ServiceTfWrapper_function_end:
 ; ..\component\Os\Implementation\Os_ServiceFunction.c	  1501   */
 ; ..\component\Os\Implementation\Os_ServiceFunction.c	  1502  OS_FUNC_ATTRIBUTE_DEFINITION(void, OS_CODE, OS_NORETURN,                                                                /* COV_OS_HALPLATFORMTESTEDASMULTICORE */
 ; Function Os_ServiceNtfWrapper
-.L12:
+.L15:
 Os_ServiceNtfWrapper:	.type	func
 
 ; ..\component\Os\Implementation\Os_ServiceFunction.c	  1503  Os_ServiceNtfWrapper,
@@ -1583,11 +1607,11 @@ Os_ServiceNtfWrapper:	.type	func
 ; ..\component\Os\Implementation\Os_ServiceFunction.c	  1510    {
 ; ..\component\Os\Implementation\Os_ServiceFunction.c	  1511      Os_ErrKernelPanic();
 	j	Os_ErrKernelPanic
-.L69:
+.L77:
 	
 __Os_ServiceNtfWrapper_function_end:
 	.size	Os_ServiceNtfWrapper,__Os_ServiceNtfWrapper_function_end-Os_ServiceNtfWrapper
-.L39:
+.L42:
 	; End of function
 	
 	.sdecl	'.text.OS_CODE',code,cluster('Os_ServiceCallForceRelease')
@@ -1627,7 +1651,7 @@ __Os_ServiceNtfWrapper_function_end:
 ; ..\component\Os\Implementation\Os_ServiceFunction.c	  1540   */
 ; ..\component\Os\Implementation\Os_ServiceFunction.c	  1541  FUNC(void, OS_CODE) Os_ServiceCallForceRelease
 ; Function Os_ServiceCallForceRelease
-.L14:
+.L17:
 Os_ServiceCallForceRelease:	.type	func
 
 ; ..\component\Os\Implementation\Os_ServiceFunction.c	  1542  (
@@ -1676,11 +1700,11 @@ Os_ServiceCallForceRelease:	.type	func
 ; ..\component\Os\Implementation\Os_ServiceFunction.c	  1585    }
 ; ..\component\Os\Implementation\Os_ServiceFunction.c	  1586  }                                                                                                                       /* PRQA S 6050 */ /* MD_Os_STCAL */
 	ret
-.L71:
+.L79:
 	
 __Os_ServiceCallForceRelease_function_end:
 	.size	Os_ServiceCallForceRelease,__Os_ServiceCallForceRelease_function_end-Os_ServiceCallForceRelease
-.L44:
+.L47:
 	; End of function
 	
 	.sdecl	'.text.OS_CODE',code,cluster('Os_Api_CallTrustedFunction')
@@ -1702,12 +1726,12 @@ __Os_ServiceCallForceRelease_function_end:
 ; ..\component\Os\Implementation\Os_ServiceFunction.c	  1597   */
 ; ..\component\Os\Implementation\Os_ServiceFunction.c	  1598  FUNC(Os_StatusType, OS_CODE) Os_Api_CallTrustedFunction
 ; Function Os_Api_CallTrustedFunction
-.L16:
+.L19:
 Os_Api_CallTrustedFunction:	.type	func
 
 ; ..\component\Os\Implementation\Os_Hal_Compiler_TaskingInt.h	   609    __asm( "mov.d  %0, a8" :"=d"(ReturnValue)::);      (inlined)
 	mov.d  d15, a8
-.L81:
+.L89:
 
 ; ..\component\Os\Implementation\Os_ServiceFunction.c	  1599  (
 ; ..\component\Os\Implementation\Os_ServiceFunction.c	  1600    TrustedFunctionIndexType FunctionIndex,
@@ -1755,11 +1779,11 @@ Os_Api_CallTrustedFunction:	.type	func
 ; ..\component\Os\Implementation\Os_ServiceFunction.c	  1642  }                                                                                                                       /* PRQA S 6050 */ /* MD_Os_STCAL */
 	mov	d2,#9
 	ret
-.L75:
+.L83:
 	
 __Os_Api_CallTrustedFunction_function_end:
 	.size	Os_Api_CallTrustedFunction,__Os_Api_CallTrustedFunction_function_end-Os_Api_CallTrustedFunction
-.L49:
+.L52:
 	; End of function
 	
 	.sdecl	'.text.OS_CODE',code,cluster('Os_Api_CallNonTrustedFunction')
@@ -1781,12 +1805,12 @@ __Os_Api_CallTrustedFunction_function_end:
 ; ..\component\Os\Implementation\Os_ServiceFunction.c	  1653   */
 ; ..\component\Os\Implementation\Os_ServiceFunction.c	  1654  FUNC(Os_StatusType, OS_CODE) Os_Api_CallNonTrustedFunction
 ; Function Os_Api_CallNonTrustedFunction
-.L18:
+.L21:
 Os_Api_CallNonTrustedFunction:	.type	func
 
 ; ..\component\Os\Implementation\Os_Hal_Compiler_TaskingInt.h	   609    __asm( "mov.d  %0, a8" :"=d"(ReturnValue)::);      (inlined)
 	mov.d  d15, a8
-.L96:
+.L104:
 
 ; ..\component\Os\Implementation\Os_ServiceFunction.c	  1655  (
 ; ..\component\Os\Implementation\Os_ServiceFunction.c	  1656    Os_NonTrustedFunctionIndexType FunctionIndex,
@@ -1835,11 +1859,11 @@ Os_Api_CallNonTrustedFunction:	.type	func
 ; ..\component\Os\Implementation\Os_ServiceFunction.c	  1699  }                                                                                                                       /* PRQA S 6050 */ /* MD_Os_STCAL */
 	mov	d2,#9
 	ret
-.L91:
+.L99:
 	
 __Os_Api_CallNonTrustedFunction_function_end:
 	.size	Os_Api_CallNonTrustedFunction,__Os_Api_CallNonTrustedFunction_function_end-Os_Api_CallNonTrustedFunction
-.L54:
+.L57:
 	; End of function
 	
 	.sdecl	'.text.OS_CODE',code,cluster('Os_Api_CallFastTrustedFunction')
@@ -1861,7 +1885,7 @@ __Os_Api_CallNonTrustedFunction_function_end:
 ; ..\component\Os\Implementation\Os_ServiceFunction.c	  1710   */
 ; ..\component\Os\Implementation\Os_ServiceFunction.c	  1711  FUNC(Os_StatusType, OS_CODE) Os_Api_CallFastTrustedFunction
 ; Function Os_Api_CallFastTrustedFunction
-.L20:
+.L23:
 Os_Api_CallFastTrustedFunction:	.type	func
 
 ; ..\component\Os\Implementation\Os_ServiceFunction.c	  1712  (
@@ -1894,17 +1918,19 @@ Os_Api_CallFastTrustedFunction:	.type	func
 ; ..\component\Os\Implementation\Os_ServiceFunction.c	  1739  }                                                                                                                       /* PRQA S 6050 */ /* MD_Os_STCAL */
 	mov	d2,#9
 	ret
-.L99:
+.L107:
 	
 __Os_Api_CallFastTrustedFunction_function_end:
 	.size	Os_Api_CallFastTrustedFunction,__Os_Api_CallFastTrustedFunction_function_end-Os_Api_CallFastTrustedFunction
-.L59:
+.L62:
 	; End of function
 	
+	.calls	'Os_ServiceInitInternal','Os_ServiceNtfInit'
 	.calls	'Os_ServiceReturn','Os_ErrKernelPanic'
 	.calls	'Os_ServiceTfWrapper','Os_ErrKernelPanic'
 	.calls	'Os_ServiceNtfWrapper','Os_ErrKernelPanic'
 	.calls	'Os_ServiceInitInternal','',0
+	.calls	'Os_ServiceNtfInit','',0
 	.calls	'Os_ServiceReturn','',0
 	.calls	'Os_ServiceTfWrapper','',0
 	.calls	'Os_ServiceNtfWrapper','',0
@@ -1915,35 +1941,35 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.calls	'Os_Api_CallFastTrustedFunction','',0
 	.sdecl	'.debug_info',debug
 	.sect	'.debug_info'
-.L22:
-	.word	108382
+.L25:
+	.word	107185
 	.half	3
-	.word	.L23
+	.word	.L26
 	.byte	4
-.L21:
+.L24:
 	.byte	1
 	.byte	'..\\component\\Os\\Implementation\\Os_ServiceFunction.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
-	.word	.L24
-.L89:
+	.word	.L27
+.L97:
 	.byte	2
 	.byte	'unsigned long int',0,4,7,3
-	.byte	'Os_Hal_Mfa10',0,3,1,190,4,1
+	.byte	'Os_Hal_Mfa10',0,1,1,190,4,1
 	.word	145
 	.byte	1,1,4,0,3
-	.byte	'Os_Hal_Mfa11',0,3,1,206,4,1
+	.byte	'Os_Hal_Mfa11',0,1,1,206,4,1
 	.word	145
 	.byte	1,1,4,0
-.L87:
+.L95:
 	.byte	3
-	.byte	'Os_Hal_Mfa8',0,3,1,222,4,1
+	.byte	'Os_Hal_Mfa8',0,1,1,222,4,1
 	.word	145
 	.byte	1,1
-.L88:
+.L96:
 	.byte	4,0,2
 	.byte	'unsigned int',0,4,7,3
-	.byte	'Os_ErrIsValueLo',0,3,2,202,18,1
+	.byte	'Os_ErrIsValueLo',0,1,2,202,18,1
 	.word	246
 	.byte	1,1,5
 	.byte	'Id',0,2,202,18,1
@@ -1952,18 +1978,18 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	'Compare',0,2,202,18,1
 	.word	145
 	.byte	4,0,3
-	.byte	'Os_ErrExtendedCheck',0,3,2,216,18,1
+	.byte	'Os_ErrExtendedCheck',0,1,2,216,18,1
 	.word	246
 	.byte	1,1,5
 	.byte	'Value',0,2,216,18,1
 	.word	246
 	.byte	4,0,6
-	.byte	'Os_Assert',0,3,2,140,19,1,1,1,5
+	.byte	'Os_Assert',0,1,2,140,19,1,1,1,5
 	.byte	'Condition',0,2,140,19,1
 	.word	246
 	.byte	4,0,2
 	.byte	'unsigned char',0,1,8
-.L74:
+.L82:
 	.byte	7,3,172,4,9,2,8
 	.byte	'OS_STATUS_OK',0,0,8
 	.byte	'OS_STATUS_CALLEVEL',0,2,8
@@ -2052,34 +2078,34 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	'OS_STATUS_STATE_ALREADY_RESTARTING',0,135,20,8
 	.byte	'OS_STATUS_VALUE_IS_TOO_LOW_3',0,136,20,8
 	.byte	'OS_STATUS_VALUE_IS_NOT_BOOLEAN',0,136,22,0,3
-	.byte	'Os_ErrOsStatus2UserStatus',0,3,2,185,19,1
+	.byte	'Os_ErrOsStatus2UserStatus',0,1,2,185,19,1
 	.word	409
 	.byte	1,1,5
 	.byte	'OsStatus',0,2,185,19,1
 	.word	426
 	.byte	4,0,3
-	.byte	'Os_ErrIsPropagationRequired',0,3,2,203,19,1
+	.byte	'Os_ErrIsPropagationRequired',0,1,2,203,19,1
 	.word	246
 	.byte	1,1,5
 	.byte	'OsStatus',0,2,203,19,1
 	.word	426
 	.byte	4,0,6
-	.byte	'Os_Hal_IntEnableGlobal',0,3,4,92,1,1,1,4,0,6
-	.byte	'Os_Hal_IntDisableGlobal',0,3,4,108,1,1,1,4,0,3
-	.byte	'Os_Hal_IntDisableAndReturnGlobalState',0,3,4,125,1
+	.byte	'Os_Hal_IntEnableGlobal',0,1,4,92,1,1,1,4,0,6
+	.byte	'Os_Hal_IntDisableGlobal',0,1,4,108,1,1,1,4,0,3
+	.byte	'Os_Hal_IntDisableAndReturnGlobalState',0,1,4,125,1
 	.word	145
 	.byte	1,1,4,0,9
 	.word	145
 	.byte	10
 	.word	3167
 	.byte	6
-	.byte	'Os_Hal_IntSetGlobalState',0,3,4,148,1,1,1,1,5
+	.byte	'Os_Hal_IntSetGlobalState',0,1,4,148,1,1,1,1,5
 	.byte	'State',0,4,148,1,1
 	.word	3172
 	.byte	4,0,10
 	.word	145
 	.byte	6
-	.byte	'Os_Hal_IntGetLevel',0,3,4,173,1,1,1,1,5
+	.byte	'Os_Hal_IntGetLevel',0,1,4,173,1,1,1,1,5
 	.byte	'Level',0,4,173,1,1
 	.word	3227
 	.byte	4,0,9
@@ -2087,27 +2113,27 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	10
 	.word	3276
 	.byte	6
-	.byte	'Os_Hal_IntSetLevel',0,3,4,194,1,1,1,1,5
+	.byte	'Os_Hal_IntSetLevel',0,1,4,194,1,1,1,1,5
 	.byte	'Level',0,4,194,1,1
 	.word	3281
 	.byte	11,4,4,0,0,10
 	.word	145
 	.byte	6
-	.byte	'Os_Hal_IntGetGlobalEnable',0,3,4,223,1,1,1,1,5
+	.byte	'Os_Hal_IntGetGlobalEnable',0,1,4,223,1,1,1,1,5
 	.byte	'State',0,4,223,1,1
 	.word	3333
 	.byte	4,0,6
-	.byte	'Os_Hal_IntGetCat2LockLevel',0,3,4,242,1,1,1,1,5
+	.byte	'Os_Hal_IntGetCat2LockLevel',0,1,4,242,1,1,1,1,5
 	.byte	'Level',0,4,242,1,1
 	.word	3227
 	.byte	4,0,6
-	.byte	'Os_Hal_IntGetTaskLevel',0,3,4,171,2,1,1,1,5
+	.byte	'Os_Hal_IntGetTaskLevel',0,1,4,171,2,1,1,1,5
 	.byte	'Level',0,4,171,2,1
 	.word	3227
 	.byte	4,0,10
 	.word	145
 	.byte	6
-	.byte	'Os_Hal_IntGetInterruptState',0,3,4,190,2,1,1,1,5
+	.byte	'Os_Hal_IntGetInterruptState',0,1,4,190,2,1,1,1,5
 	.byte	'InterruptState',0,4,190,2,1
 	.word	3489
 	.byte	4,0,12
@@ -2125,19 +2151,19 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	10
 	.word	3645
 	.byte	6
-	.byte	'Os_Hal_IntDisableSource',0,3,4,212,2,1,1,1,5
+	.byte	'Os_Hal_IntDisableSource',0,1,4,212,2,1,1,1,5
 	.byte	'IsrConfig',0,4,212,2,1
 	.word	3650
 	.byte	4,0,6
-	.byte	'Os_Hal_IntEnableSource',0,3,4,246,2,1,1,1,5
+	.byte	'Os_Hal_IntEnableSource',0,1,4,246,2,1,1,1,5
 	.byte	'IsrConfig',0,4,246,2,1
 	.word	3650
 	.byte	4,0,6
-	.byte	'Os_Hal_IntClearPending',0,3,4,162,3,1,1,1,5
+	.byte	'Os_Hal_IntClearPending',0,1,4,162,3,1,1,1,5
 	.byte	'IsrConfig',0,4,162,3,1
 	.word	3650
 	.byte	4,0,3
-	.byte	'Os_Hal_IntIsrLevelIsLe',0,3,4,179,4,1
+	.byte	'Os_Hal_IntIsrLevelIsLe',0,1,4,179,4,1
 	.word	246
 	.byte	1,1,5
 	.byte	'IsrConfig',0,4,179,4,1
@@ -2146,7 +2172,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	'Level',0,4,179,4,1
 	.word	3281
 	.byte	4,0,3
-	.byte	'Os_Hal_IntLevelIsGt',0,3,4,199,4,1
+	.byte	'Os_Hal_IntLevelIsGt',0,1,4,199,4,1
 	.word	246
 	.byte	1,1,5
 	.byte	'LevelX',0,4,199,4,1
@@ -2155,11 +2181,11 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	'LevelY',0,4,199,4,1
 	.word	3281
 	.byte	4,0,6
-	.byte	'Os_Hal_IntInterruptSourceInit',0,3,4,141,5,1,1,1,5
+	.byte	'Os_Hal_IntInterruptSourceInit',0,1,4,141,5,1,1,1,5
 	.byte	'InterruptSource',0,4,141,5,1
 	.word	3650
 	.byte	4,0,6
-	.byte	'Os_Hal_IntGetGlobalState',0,3,4,221,5,1,1,1,5
+	.byte	'Os_Hal_IntGetGlobalState',0,1,4,221,5,1,1,1,5
 	.byte	'State',0,4,221,5,1
 	.word	3333
 	.byte	4,0,9
@@ -2167,15 +2193,15 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	10
 	.word	4064
 	.byte	6
-	.byte	'Os_Hal_InitializeAccessDPRE',0,3,6,109,1,1,1,5
+	.byte	'Os_Hal_InitializeAccessDPRE',0,1,6,109,1,1,1,5
 	.byte	'Value',0,6,109,1
 	.word	4069
 	.byte	4,0,6
-	.byte	'Os_Hal_InitializeAccessDPWE',0,3,6,127,1,1,1,5
+	.byte	'Os_Hal_InitializeAccessDPWE',0,1,6,127,1,1,1,5
 	.byte	'Value',0,6,127,1
 	.word	4069
 	.byte	4,0,6
-	.byte	'Os_Hal_InitializeAccessCPXE',0,3,6,145,1,1,1,1,5
+	.byte	'Os_Hal_InitializeAccessCPXE',0,1,6,145,1,1,1,1,5
 	.byte	'Value',0,6,145,1,1
 	.word	4069
 	.byte	4,0,9
@@ -2185,7 +2211,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	9
 	.word	145
 	.byte	6
-	.byte	'Os_Hal_ReadModifyAccessDPRE',0,3,6,163,1,1,1,1,5
+	.byte	'Os_Hal_ReadModifyAccessDPRE',0,1,6,163,1,1,1,1,5
 	.byte	'ProtectionSet',0,6,163,1,1
 	.word	4229
 	.byte	5
@@ -2201,7 +2227,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	9
 	.word	145
 	.byte	6
-	.byte	'Os_Hal_ReadModifyAccessDPWE',0,3,6,200,1,1,1,1,5
+	.byte	'Os_Hal_ReadModifyAccessDPWE',0,1,6,200,1,1,1,1,5
 	.byte	'ProtectionSet',0,6,200,1,1
 	.word	4334
 	.byte	5
@@ -2217,7 +2243,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	9
 	.word	145
 	.byte	6
-	.byte	'Os_Hal_ReadModifyAccessCPXE',0,3,6,237,1,1,1,1,5
+	.byte	'Os_Hal_ReadModifyAccessCPXE',0,1,6,237,1,1,1,1,5
 	.byte	'ProtectionSet',0,6,237,1,1
 	.word	4439
 	.byte	5
@@ -2255,14 +2281,14 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	10
 	.word	4734
 	.byte	6
-	.byte	'Os_Hal_ContextPreparePRS',0,3,6,145,2,1,1,1,5
+	.byte	'Os_Hal_ContextPreparePRS',0,1,6,145,2,1,1,1,5
 	.byte	'PcxiAddr',0,6,145,2,1
 	.word	4544
 	.byte	5
 	.byte	'CurrentConfig',0,6,145,2,1
 	.word	4739
 	.byte	4,0,3
-	.byte	'Os_Hal_CoreGetId',0,3,6,158,2,1
+	.byte	'Os_Hal_CoreGetId',0,1,6,158,2,1
 	.word	145
 	.byte	1,1,4,0,12
 	.byte	'Os_Hal_ContextType_Tag',0,7,115,8,28,13
@@ -2304,7 +2330,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	12
 	.byte	'Os_LockType_Tag',0,12,82,8,4,13
 	.byte	'Next',0
-	.word	.L107-.L22
+	.word	.L118-.L25
 	.byte	4,2,35,0,0,10
 	.word	5124
 	.byte	7,12,73,9,1,8
@@ -2322,7 +2348,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.word	5165
 	.byte	1,2,35,8,0,9
 	.word	5259
-.L107:
+.L118:
 	.byte	10
 	.word	5345
 	.byte	14
@@ -2573,7 +2599,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	2,2,35,24,0,2
 	.byte	'short int',0,2,5,14
 	.byte	'Os_CoreInterruptedThreadsType',0,19,164,2,57
-	.word	.L108-.L22
+	.word	.L119-.L25
 	.byte	16,40
 	.word	8012
 	.byte	17,9,0,7,3,177,3,9,1,8
@@ -2797,11 +2823,11 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	14
 	.byte	'TickRefType',0,3,210,2,56
 	.word	12628
-.L76:
+.L84:
 	.byte	7,16,129,1,9,1,8
 	.byte	'OS_TRUSTEDFUNCTIONID_COUNT',0,0,0,10
 	.word	11856
-.L78:
+.L86:
 	.byte	14
 	.byte	'TrustedFunctionParameterRefType',0,3,204,1,44
 	.word	12690
@@ -2821,17 +2847,17 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	'OBJECT_COUNTER',0,4,8
 	.byte	'OBJECT_SCHEDULETABLE',0,5,8
 	.byte	'OBJECT_SPINLOCK',0,6,0
-.L92:
+.L100:
 	.byte	7,16,135,1,9,1,8
 	.byte	'OS_NONTRUSTEDFUNCTIONID_COUNT',0,0,0
-.L94:
+.L102:
 	.byte	14
 	.byte	'Os_NonTrustedFunctionParameterRefType',0,3,207,1,44
 	.word	12690
-.L100:
+.L108:
 	.byte	7,16,141,1,9,1,8
 	.byte	'OS_FASTTRUSTEDFUNCTIONID_COUNT',0,0,0
-.L102:
+.L110:
 	.byte	14
 	.byte	'Os_FastTrustedFunctionParameterRefType',0,3,210,1,44
 	.word	12690
@@ -3144,7 +3170,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	'OS_TASKSCHEDULE_PROHIBITED',0,1,0,12
 	.byte	'Os_TaskConfigType_Tag',0,32,143,1,8,80,13
 	.byte	'Thread',0
-	.word	.L109-.L22
+	.word	.L120-.L25
 	.byte	60,2,35,0,13
 	.byte	'HomePriority',0
 	.word	5497
@@ -3243,7 +3269,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	'Os_HookTaskReturn_BeginScheduling',0,2,0,12
 	.byte	'Os_HookConfigType_Tag',0,34,162,1,8,76,13
 	.byte	'Thread',0
-	.word	.L109-.L22
+	.word	.L120-.L25
 	.byte	60,2,35,0,13
 	.byte	'HookTypeFlag',0
 	.word	145
@@ -3344,7 +3370,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.word	17928
 	.byte	14
 	.byte	'Os_AppConfigRefType',0,19,128,3,54
-	.word	.L110-.L22
+	.word	.L121-.L25
 	.byte	9
 	.word	17938
 	.byte	10
@@ -3355,7 +3381,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.word	5259
 	.byte	12,2,35,0,13
 	.byte	'Core',0
-	.word	.L111-.L22
+	.word	.L122-.L25
 	.byte	4,2,35,12,13
 	.byte	'ResourceId',0
 	.word	11904
@@ -3456,11 +3482,11 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	4,2,35,0,0,10
 	.word	18808
 	.byte	9
-	.word	.L112-.L22
+	.word	.L123-.L25
 	.byte	10
 	.word	18863
 	.byte	9
-	.word	.L113-.L22
+	.word	.L124-.L25
 	.byte	10
 	.word	18873
 	.byte	23,1,1,24
@@ -3470,7 +3496,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	14
 	.byte	'Os_JobCallbackType',0,42,94,9
 	.word	18892
-.L113:
+.L124:
 	.byte	12
 	.byte	'Os_JobConfigType_Tag',0,42,98,8,12,13
 	.byte	'Dyn',0
@@ -3509,7 +3535,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	'OS_TIMERTYPE_PERIODIC_TICK',0,39,8
 	.byte	'OS_TIMERTYPE_SOFTWARE',0,195,0,8
 	.byte	'OS_TIMERTYPE_HIGH_RESOLUTION',0,203,0,0
-.L112:
+.L123:
 	.byte	12
 	.byte	'Os_CounterConfigType_Tag',0,40,209,1,8,48,13
 	.byte	'Characteristics',0
@@ -3522,10 +3548,10 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.word	19118
 	.byte	1,2,35,32,13
 	.byte	'Core',0
-	.word	.L111-.L22
+	.word	.L122-.L25
 	.byte	4,2,35,36,13
 	.byte	'OwnerApplication',0
-	.word	.L110-.L22
+	.word	.L121-.L25
 	.byte	4,2,35,40,13
 	.byte	'AccessingApplications',0
 	.word	145
@@ -3604,7 +3630,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.word	145
 	.byte	4,2,35,8,13
 	.byte	'MonitoredThread',0
-	.word	.L108-.L22
+	.word	.L119-.L25
 	.byte	4,2,35,12,0,10
 	.word	19930
 	.byte	12
@@ -3689,10 +3715,10 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.word	21242
 	.byte	32,2,35,4,13
 	.byte	'Sender',0
-	.word	.L108-.L22
+	.word	.L119-.L25
 	.byte	4,2,35,36,13
 	.byte	'SenderApp',0
-	.word	.L110-.L22
+	.word	.L121-.L25
 	.byte	4,2,35,40,13
 	.byte	'Acknowledge',0
 	.word	21271
@@ -3745,7 +3771,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	2,2,35,12,0,12
 	.byte	'Os_IsrConfigType_Tag',0,20,189,1,8,68,13
 	.byte	'Thread',0
-	.word	.L109-.L22
+	.word	.L120-.L25
 	.byte	60,2,35,0,13
 	.byte	'SourceConfig',0
 	.word	6774
@@ -3756,7 +3782,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	'IsEnabledOnInitialization',0
 	.word	409
 	.byte	1,2,35,65,0,9
-	.word	.L114-.L22
+	.word	.L125-.L25
 	.byte	10
 	.word	21906
 	.byte	9
@@ -3819,7 +3845,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.word	22131
 	.byte	16,2,35,0,13
 	.byte	'SendPort',0
-	.word	.L115-.L22
+	.word	.L126-.L25
 	.byte	4,2,35,16,0,9
 	.word	22201
 	.byte	10
@@ -3871,10 +3897,10 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.word	22282
 	.byte	4,2,35,20,13
 	.byte	'SendCore',0
-	.word	.L111-.L22
+	.word	.L122-.L25
 	.byte	4,2,35,24,0,9
 	.word	22550
-.L115:
+.L126:
 	.byte	10
 	.word	22661
 	.byte	16,4
@@ -3970,7 +3996,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.word	23579
 	.byte	14
 	.byte	'Os_BarrierAttendeeRefType',0,52,115,69
-	.word	.L116-.L22
+	.word	.L127-.L25
 	.byte	9
 	.word	23589
 	.byte	10
@@ -3990,7 +4016,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.word	16627
 	.byte	4,2,35,12,0,9
 	.word	23633
-.L116:
+.L127:
 	.byte	10
 	.word	23744
 	.byte	14
@@ -4036,7 +4062,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.word	16627
 	.byte	4,2,35,32,13
 	.byte	'KernelApp',0
-	.word	.L110-.L22
+	.word	.L121-.L25
 	.byte	4,2,35,36,13
 	.byte	'KernelStack',0
 	.word	5119
@@ -4123,7 +4149,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.word	5497
 	.byte	2,3,35,144,1,0,9
 	.word	23979
-.L111:
+.L122:
 	.byte	10
 	.word	24673
 	.byte	14
@@ -4181,7 +4207,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.word	145
 	.byte	4,2,35,24,13
 	.byte	'OwnerApplication',0
-	.word	.L110-.L22
+	.word	.L121-.L25
 	.byte	4,2,35,28,0,9
 	.word	25009
 	.byte	10
@@ -4237,7 +4263,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	12
 	.byte	'Os_SchTExPoConfigType_Tag',0,56,202,1,8,28,13
 	.byte	'Next',0
-	.word	.L117-.L22
+	.word	.L128-.L25
 	.byte	4,2,35,0,13
 	.byte	'Kind',0
 	.word	25492
@@ -4258,7 +4284,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.word	145
 	.byte	4,2,35,24,0,9
 	.word	25827
-.L117:
+.L128:
 	.byte	10
 	.word	25983
 	.byte	12
@@ -4276,16 +4302,16 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.word	145
 	.byte	4,2,35,20,13
 	.byte	'OwnerApplication',0
-	.word	.L110-.L22
+	.word	.L121-.L25
 	.byte	4,2,35,24,13
 	.byte	'ExPoHead',0
 	.word	25988
 	.byte	4,2,35,28,13
 	.byte	'InitialNext',0
-	.word	.L118-.L22
+	.word	.L129-.L25
 	.byte	4,2,35,32,0,9
 	.word	25993
-.L118:
+.L129:
 	.byte	10
 	.word	26168
 	.byte	14
@@ -4394,7 +4420,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	'OS_SERVICE_FASTTRUSTEDFUNCTION',0,2,0,12
 	.byte	'Os_ServiceConfigType_Tag',0,57,209,1,8,12,13
 	.byte	'OwnerApplication',0
-	.word	.L110-.L22
+	.word	.L121-.L25
 	.byte	4,2,35,0,13
 	.byte	'MpAccessRights',0
 	.word	27122
@@ -4403,7 +4429,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.word	27127
 	.byte	1,2,35,8,0,9
 	.word	27227
-.L105:
+.L113:
 	.byte	10
 	.word	27330
 	.byte	14
@@ -4413,7 +4439,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.word	27340
 	.byte	10
 	.word	27372
-.L114:
+.L125:
 	.byte	12
 	.byte	'Os_AppConfigType_Tag',0,18,126,8,96,13
 	.byte	'Dyn',0
@@ -4498,7 +4524,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.word	11563
 	.byte	1,2,35,95,0,9
 	.word	27382
-.L110:
+.L121:
 	.byte	10
 	.word	27973
 	.byte	15,57,126,9,8,13
@@ -4537,7 +4563,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.word	27122
 	.byte	4,2,35,4,13
 	.byte	'PrevServiceCalls',0
-	.word	.L119-.L22
+	.word	.L130-.L25
 	.byte	4,2,35,8,13
 	.byte	'CallerContext',0
 	.word	4851
@@ -4551,7 +4577,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	'Parameters',0
 	.word	28144
 	.byte	8,2,35,48,0
-.L119:
+.L130:
 	.byte	10
 	.word	28263
 	.byte	12
@@ -4637,7 +4663,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	14
 	.byte	'Os_PreThreadHookCbkType',0,59,196,3,9
 	.word	17236
-.L109:
+.L120:
 	.byte	12
 	.byte	'Os_ThreadConfigType_Tag',0,10,141,1,8,60,13
 	.byte	'ContextConfig',0
@@ -4689,7 +4715,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.word	409
 	.byte	1,2,35,57,0,9
 	.word	29466
-.L108:
+.L119:
 	.byte	10
 	.word	29833
 	.byte	12
@@ -4709,7 +4735,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	10
 	.word	29968
 	.byte	6
-	.byte	'Os_Hal_CoreSetThread',0,3,8,130,1,1,1,1,5
+	.byte	'Os_Hal_CoreSetThread',0,1,8,130,1,1,1,1,5
 	.byte	'Core2Thread',0,8,130,1,1
 	.word	29973
 	.byte	5
@@ -4843,24 +4869,24 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.word	30354
 	.byte	10
 	.word	17233
-.L83:
+.L91:
 	.byte	3
-	.byte	'Os_Hal_CoreGetThread',0,3,8,169,1,1
+	.byte	'Os_Hal_CoreGetThread',0,1,8,169,1,1
 	.word	29838
 	.byte	1,1
-.L84:
+.L92:
 	.byte	5
 	.byte	'Core2Thread',0,8,169,1,1
 	.word	29973
-.L86:
+.L94:
 	.byte	11,4,0,0,3
-	.byte	'Os_Hal_CountLeadingZeros',0,3,8,128,2,1
+	.byte	'Os_Hal_CountLeadingZeros',0,1,8,128,2,1
 	.word	409
 	.byte	1,1,5
 	.byte	'BitField',0,8,128,2,1
 	.word	145
 	.byte	4,0,3
-	.byte	'Os_Hal_StackEndGet',0,3,8,141,2,1
+	.byte	'Os_Hal_StackEndGet',0,1,8,141,2,1
 	.word	5039
 	.byte	1,1,5
 	.byte	'LowAddress',0,8,141,2,1
@@ -4873,7 +4899,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	10
 	.word	30558
 	.byte	6
-	.byte	'Os_Hal_SpinInit',0,3,8,216,2,1,1,1,5
+	.byte	'Os_Hal_SpinInit',0,1,8,216,2,1,1,1,5
 	.byte	'Spinlock',0,8,216,2,1
 	.word	30563
 	.byte	4,0,18
@@ -4883,24 +4909,24 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	10
 	.word	30617
 	.byte	3
-	.byte	'Os_Hal_SpinIsLocked',0,3,8,231,2,1
+	.byte	'Os_Hal_SpinIsLocked',0,1,8,231,2,1
 	.word	246
 	.byte	1,1,5
 	.byte	'Spinlock',0,8,231,2,1
 	.word	30622
 	.byte	4,0,3
-	.byte	'Os_Hal_SpinTryLock',0,3,8,245,2,1
+	.byte	'Os_Hal_SpinTryLock',0,1,8,245,2,1
 	.word	145
 	.byte	1,1,5
 	.byte	'Spinlock',0,8,245,2,1
 	.word	30563
 	.byte	4,0,6
-	.byte	'Os_Hal_SpinUnlock',0,3,8,133,3,1,1,1,5
+	.byte	'Os_Hal_SpinUnlock',0,1,8,133,3,1,1,1,5
 	.byte	'Spinlock',0,8,133,3,1
 	.word	30563
 	.byte	4,0,6
-	.byte	'Os_Hal_CoreNop',0,3,8,209,3,1,1,1,4,0,3
-	.byte	'Os_Bit_CountLeadingZeros',0,3,60,123,1
+	.byte	'Os_Hal_CoreNop',0,1,8,209,3,1,1,1,4,0,3
+	.byte	'Os_Bit_CountLeadingZeros',0,1,60,123,1
 	.word	409
 	.byte	1,1,5
 	.byte	'BitField',0,60,123,1
@@ -4910,7 +4936,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	10
 	.word	30859
 	.byte	3
-	.byte	'Os_BitArrayIdxIsValid',0,3,61,79,1
+	.byte	'Os_BitArrayIdxIsValid',0,1,61,79,1
 	.word	5497
 	.byte	1,1,5
 	.byte	'BitArray',0,61,79,1
@@ -4919,64 +4945,64 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	'BitIdx',0,61,79,1
 	.word	5497
 	.byte	4,0,3
-	.byte	'Os_BitArrayIdxGetAllocationIdx',0,3,61,108,1
+	.byte	'Os_BitArrayIdxGetAllocationIdx',0,1,61,108,1
 	.word	5497
 	.byte	1,1,5
 	.byte	'BitArrayIdx',0,61,108,1
 	.word	145
 	.byte	4,0,3
-	.byte	'Os_BitArrayIdxGetFieldIdx',0,3,61,127,1
+	.byte	'Os_BitArrayIdxGetFieldIdx',0,1,61,127,1
 	.word	5497
 	.byte	1,1,5
 	.byte	'BitArrayIdx',0,61,127,1
 	.word	5497
 	.byte	4,0,6
-	.byte	'Os_BitArrayInit',0,3,61,147,1,1,1,1,5
+	.byte	'Os_BitArrayInit',0,1,61,147,1,1,1,1,5
 	.byte	'BitArray',0,61,147,1,1
 	.word	30864
 	.byte	11,4,4,4,0,0,6
-	.byte	'Os_BitArraySetBit',0,3,61,213,1,1,1,1,5
+	.byte	'Os_BitArraySetBit',0,1,61,213,1,1,1,1,5
 	.byte	'BitArray',0,61,213,1,1
 	.word	30864
 	.byte	5
 	.byte	'BitIdx',0,61,213,1,1
 	.word	5497
 	.byte	11,4,4,4,0,0,6
-	.byte	'Os_BitArraySetBitInternal',0,3,61,181,1,1,1,1,5
+	.byte	'Os_BitArraySetBitInternal',0,1,61,181,1,1,1,1,5
 	.byte	'BitArray',0,61,181,1,1
 	.word	30864
 	.byte	5
 	.byte	'BitIdx',0,61,181,1,1
 	.word	5497
 	.byte	11,4,4,4,4,0,0,6
-	.byte	'Os_BitArrayClearBit',0,3,61,242,1,1,1,1,5
+	.byte	'Os_BitArrayClearBit',0,1,61,242,1,1,1,1,5
 	.byte	'BitArray',0,61,242,1,1
 	.word	30864
 	.byte	5
 	.byte	'BitIdx',0,61,242,1,1
 	.word	5497
 	.byte	11,4,4,4,4,0,0,3
-	.byte	'Os_BitArrayCountLeadingZeros',0,3,61,153,2,1
+	.byte	'Os_BitArrayCountLeadingZeros',0,1,61,153,2,1
 	.word	5497
 	.byte	1,1,5
 	.byte	'BitArray',0,61,153,2,1
 	.word	30864
 	.byte	11,4,4,0,0,6
-	.byte	'Os_Hal_ContextInit',0,3,62,96,1,1,1,5
+	.byte	'Os_Hal_ContextInit',0,1,62,96,1,1,1,5
 	.byte	'Config',0,62,96,1
 	.word	4739
 	.byte	5
 	.byte	'Context',0,62,96,1
 	.word	5034
 	.byte	11,4,4,4,4,0,0,6
-	.byte	'Os_Hal_ContextReset',0,3,62,147,1,1,1,1,5
+	.byte	'Os_Hal_ContextReset',0,1,62,147,1,1,1,1,5
 	.byte	'Config',0,62,147,1,1
 	.word	4739
 	.byte	5
 	.byte	'Context',0,62,147,1,1
 	.word	5034
 	.byte	11,4,4,4,4,4,4,0,0,6
-	.byte	'Os_Hal_ContextSetParameter',0,3,62,194,1,1,1,1,5
+	.byte	'Os_Hal_ContextSetParameter',0,1,62,194,1,1,1,1,5
 	.byte	'Context',0,62,194,1,1
 	.word	5034
 	.byte	5
@@ -4994,7 +5020,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	10
 	.word	31679
 	.byte	6
-	.byte	'Os_Hal_ContextSetStack',0,3,62,213,1,1,1,1,5
+	.byte	'Os_Hal_ContextSetStack',0,1,62,213,1,1,1,1,5
 	.byte	'Context',0,62,213,1,1
 	.word	5034
 	.byte	5
@@ -5005,14 +5031,14 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	10
 	.word	31754
 	.byte	6
-	.byte	'Os_Hal_ContextSetInterruptState',0,3,62,250,1,1,1,1,5
+	.byte	'Os_Hal_ContextSetInterruptState',0,1,62,250,1,1,1,1,5
 	.byte	'Context',0,62,250,1,1
 	.word	5034
 	.byte	5
 	.byte	'InterruptState',0,62,250,1,1
 	.word	31759
 	.byte	4,0,6
-	.byte	'Os_Hal_ContextSetUserMsrBits',0,3,62,143,2,1,1,1,5
+	.byte	'Os_Hal_ContextSetUserMsrBits',0,1,62,143,2,1,1,1,5
 	.byte	'Context',0,62,143,2,1
 	.word	5034
 	.byte	4,0,9
@@ -5020,11 +5046,11 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	10
 	.word	31903
 	.byte	6
-	.byte	'Os_Hal_ContextFirstResume',0,3,62,173,2,1,1,1,5
+	.byte	'Os_Hal_ContextFirstResume',0,1,62,173,2,1,1,1,5
 	.byte	'Next',0,62,173,2,1
 	.word	31908
 	.byte	11,4,4,4,0,0,6
-	.byte	'Os_Hal_ContextResetAndResume',0,3,62,220,2,1,1,1,5
+	.byte	'Os_Hal_ContextResetAndResume',0,1,62,220,2,1,1,1,5
 	.byte	'CurrentConfig',0,62,220,2,1
 	.word	4739
 	.byte	5
@@ -5034,35 +5060,35 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	'Next',0,62,220,2,1
 	.word	31908
 	.byte	11,4,4,4,4,4,4,4,0,0,6
-	.byte	'Os_Hal_ContextAbort',0,3,62,145,3,1,1,1,5
+	.byte	'Os_Hal_ContextAbort',0,1,62,145,3,1,1,1,5
 	.byte	'Config',0,62,145,3,1
 	.word	4739
 	.byte	5
 	.byte	'Context',0,62,145,3,1
 	.word	5034
 	.byte	11,4,4,4,4,4,0,0,6
-	.byte	'Os_Hal_ContextReturn',0,3,62,204,3,1,1,1,5
+	.byte	'Os_Hal_ContextReturn',0,1,62,204,3,1,1,1,5
 	.byte	'Current',0,62,204,3,1
 	.word	31908
 	.byte	5
 	.byte	'Next',0,62,204,3,1
 	.word	31908
 	.byte	11,4,4,4,0,0,6
-	.byte	'Os_Hal_ContextIntCleanupCSAs',0,3,62,133,4,1,1,1,5
+	.byte	'Os_Hal_ContextIntCleanupCSAs',0,1,62,133,4,1,1,1,5
 	.byte	'Context',0,62,133,4,1
 	.word	31908
 	.byte	5
 	.byte	'PreviousGlobalIntState',0,62,133,4,1
 	.word	3172
 	.byte	11,4,0,0,6
-	.byte	'Os_Hal_ContextIntPrepareCSAContent',0,3,62,178,4,1,1,1,5
+	.byte	'Os_Hal_ContextIntPrepareCSAContent',0,1,62,178,4,1,1,1,5
 	.byte	'CurrentConfig',0,62,178,4,1
 	.word	4739
 	.byte	5
 	.byte	'Context',0,62,178,4,1
 	.word	5034
 	.byte	11,4,0,0,6
-	.byte	'Os_Hal_ContextIntInitialize',0,3,62,235,4,1,1,1,5
+	.byte	'Os_Hal_ContextIntInitialize',0,1,62,235,4,1,1,1,5
 	.byte	'CurrentConfig',0,62,235,4,1
 	.word	4739
 	.byte	5
@@ -5072,7 +5098,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	'PreviousGlobalIntState',0,62,235,4,1
 	.word	3172
 	.byte	11,4,4,0,0,6
-	.byte	'Os_Hal_ContextIntInitializeReserved',0,3,62,148,5,1,1,1,5
+	.byte	'Os_Hal_ContextIntInitializeReserved',0,1,62,148,5,1,1,1,5
 	.byte	'CurrentConfig',0,62,148,5,1
 	.word	4739
 	.byte	5
@@ -5082,26 +5108,26 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	'PreviousGlobalIntState',0,62,148,5,1
 	.word	3172
 	.byte	11,4,4,0,0,6
-	.byte	'Os_Hal_ContextIntRestore',0,3,62,243,5,1,1,1,5
+	.byte	'Os_Hal_ContextIntRestore',0,1,62,243,5,1,1,1,5
 	.byte	'Context',0,62,243,5,1
 	.word	31908
 	.byte	4,0,14
 	.byte	'Os_ServiceCallListType',0,64,66,59
 	.word	28460
-.L72:
+.L80:
 	.byte	10
 	.word	32666
 	.byte	6
-	.byte	'Os_ServiceCallsInit',0,3,63,134,1,1,1,1,5
+	.byte	'Os_ServiceCallsInit',0,1,63,134,1,1,1,1,5
 	.byte	'ServiceCalls',0,63,134,1,1
 	.word	32697
 	.byte	4,0,10
 	.word	28263
 	.byte	6
-	.byte	'Os_StackOverflowCheck',0,3,65,138,1,1,1,1,11,4,4,4,0,0,10
+	.byte	'Os_StackOverflowCheck',0,1,65,138,1,1,1,1,11,4,4,4,0,0,10
 	.word	7710
 	.byte	6
-	.byte	'Os_IntSuspend',0,3,66,126,1,1,1,5
+	.byte	'Os_IntSuspend',0,1,66,126,1,1,1,5
 	.byte	'State',0,66,126,1
 	.word	32795
 	.byte	11,4,4,0,0,9
@@ -5109,7 +5135,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	10
 	.word	32840
 	.byte	6
-	.byte	'Os_IntResume',0,3,66,166,1,1,1,1,5
+	.byte	'Os_IntResume',0,1,66,166,1,1,1,1,5
 	.byte	'State',0,66,166,1,1
 	.word	32845
 	.byte	11,4,0,0,9
@@ -5117,29 +5143,29 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	10
 	.word	32890
 	.byte	3
-	.byte	'Os_InterruptCheckEnabled',0,3,66,211,1,1
+	.byte	'Os_InterruptCheckEnabled',0,1,66,211,1,1
 	.word	246
 	.byte	1,1,5
 	.byte	'InterruptState',0,66,211,1,1
 	.word	32895
 	.byte	11,4,0,0,6
-	.byte	'Os_InterruptCleanup',0,3,66,231,1,1,1,1,5
+	.byte	'Os_InterruptCleanup',0,1,66,231,1,1,1,1,5
 	.byte	'InterruptState',0,66,231,1,1
 	.word	28616
 	.byte	4,0,6
-	.byte	'Os_InterruptTpLockAllStart',0,3,66,142,3,1,1,1,5
+	.byte	'Os_InterruptTpLockAllStart',0,1,66,142,3,1,1,1,5
 	.byte	'Thread',0,66,142,3,1
 	.word	29838
 	.byte	11,4,4,4,0,0,6
-	.byte	'Os_InterruptTpLockAllStop',0,3,66,167,3,1,1,1,5
+	.byte	'Os_InterruptTpLockAllStop',0,1,66,167,3,1,1,1,5
 	.byte	'Thread',0,66,167,3,1
 	.word	29838
 	.byte	11,4,4,4,0,0,6
-	.byte	'Os_InterruptTpLockOsStart',0,3,66,192,3,1,1,1,5
+	.byte	'Os_InterruptTpLockOsStart',0,1,66,192,3,1,1,1,5
 	.byte	'Thread',0,66,192,3,1
 	.word	29838
 	.byte	11,4,4,4,0,0,6
-	.byte	'Os_InterruptTpLockOsStop',0,3,66,217,3,1,1,1,5
+	.byte	'Os_InterruptTpLockOsStop',0,1,66,217,3,1,1,1,5
 	.byte	'Thread',0,66,217,3,1
 	.word	29838
 	.byte	11,4,4,4,0,0,10
@@ -5147,7 +5173,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	9
 	.word	145
 	.byte	6
-	.byte	'Os_DequeIdxDecrement',0,3,67,91,1,1,1,5
+	.byte	'Os_DequeIdxDecrement',0,1,67,91,1,1,1,5
 	.byte	'Index',0,67,91,1
 	.word	33243
 	.byte	5
@@ -5156,14 +5182,14 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	4,0,9
 	.word	145
 	.byte	6
-	.byte	'Os_DequeIdxIncrement',0,3,67,116,1,1,1,5
+	.byte	'Os_DequeIdxIncrement',0,1,67,116,1,1,1,5
 	.byte	'Index',0,67,116,1
 	.word	33243
 	.byte	5
 	.byte	'Size',0,67,116,1
 	.word	33310
 	.byte	4,0,3
-	.byte	'Os_SchedulerPriorityIsHigherOrEqual',0,3,68,115,1
+	.byte	'Os_SchedulerPriorityIsHigherOrEqual',0,1,68,115,1
 	.word	246
 	.byte	1,1,5
 	.byte	'PrioX',0,68,115,1
@@ -5172,13 +5198,13 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	'PrioY',0,68,115,1
 	.word	5497
 	.byte	4,0,3
-	.byte	'Os_SchedulerGetCurrentTask',0,3,68,143,1,1
+	.byte	'Os_SchedulerGetCurrentTask',0,1,68,143,1,1
 	.word	16627
 	.byte	1,1,5
 	.byte	'Scheduler',0,68,143,1,1
 	.word	17000
 	.byte	4,0,3
-	.byte	'Os_SchedulerTaskSwitchIsNeeded',0,3,68,156,1,1
+	.byte	'Os_SchedulerTaskSwitchIsNeeded',0,1,68,156,1,1
 	.word	246
 	.byte	1,1,5
 	.byte	'Scheduler',0,68,156,1,1
@@ -5186,7 +5212,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	4,0,10
 	.word	5355
 	.byte	6
-	.byte	'Os_LockListInit',0,3,69,90,1,1,1,5
+	.byte	'Os_LockListInit',0,1,69,90,1,1,1,5
 	.byte	'LockList',0,69,90,1
 	.word	33573
 	.byte	4,0,9
@@ -5194,53 +5220,53 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	10
 	.word	33620
 	.byte	3
-	.byte	'Os_LockListNext',0,3,69,168,1,1
+	.byte	'Os_LockListNext',0,1,69,168,1,1
 	.word	5350
 	.byte	1,1,5
 	.byte	'LockList',0,69,168,1,1
 	.word	33625
 	.byte	4,0,3
-	.byte	'Os_LockListNextIterator',0,3,69,180,1,1
+	.byte	'Os_LockListNextIterator',0,1,69,180,1,1
 	.word	33573
 	.byte	1,1,5
 	.byte	'Iterator',0,69,180,1,1
 	.word	33625
 	.byte	4,0,3
-	.byte	'Os_LockListIsEmpty',0,3,69,193,1,1
+	.byte	'Os_LockListIsEmpty',0,1,69,193,1,1
 	.word	246
 	.byte	1,1,5
 	.byte	'LockList',0,69,193,1,1
 	.word	33625
 	.byte	4,0,3
-	.byte	'Os_LockListIsTopRes',0,3,69,213,1,1
+	.byte	'Os_LockListIsTopRes',0,1,69,213,1,1
 	.word	246
 	.byte	1,1,5
 	.byte	'LockList',0,69,213,1,1
 	.word	33625
 	.byte	11,4,4,0,0,3
-	.byte	'Os_LockListIsTopSpinlock',0,3,69,131,2,1
+	.byte	'Os_LockListIsTopSpinlock',0,1,69,131,2,1
 	.word	246
 	.byte	1,1,5
 	.byte	'LockList',0,69,131,2,1
 	.word	33625
 	.byte	11,4,0,0,6
-	.byte	'Os_LockInit',0,3,69,169,2,1,1,1,5
+	.byte	'Os_LockInit',0,1,69,169,2,1,1,1,5
 	.byte	'Lock',0,69,169,2,1
 	.word	5350
 	.byte	4,0,3
-	.byte	'Os_LockIsResource',0,3,69,195,2,1
+	.byte	'Os_LockIsResource',0,1,69,195,2,1
 	.word	246
 	.byte	1,1,5
 	.byte	'Lock',0,69,195,2,1
 	.word	5350
 	.byte	4,0,3
-	.byte	'Os_LockGetAccessingApplications',0,3,69,250,2,1
+	.byte	'Os_LockGetAccessingApplications',0,1,69,250,2,1
 	.word	145
 	.byte	1,1,5
 	.byte	'Lock',0,69,250,2,1
 	.word	5350
 	.byte	4,0,3
-	.byte	'Os_LockGetDyn',0,3,69,237,2,1
+	.byte	'Os_LockGetDyn',0,1,69,237,2,1
 	.word	5160
 	.byte	1,1,5
 	.byte	'Lock',0,69,237,2,1
@@ -5248,7 +5274,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	4,0,10
 	.word	6065
 	.byte	6
-	.byte	'Os_SpinlockListInit',0,3,70,106,1,1,1,5
+	.byte	'Os_SpinlockListInit',0,1,70,106,1,1,1,5
 	.byte	'LockList',0,70,106,1
 	.word	34083
 	.byte	4,0,18
@@ -5272,19 +5298,19 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	2,2,35,16,0,10
 	.word	34139
 	.byte	3
-	.byte	'Os_SpinlockGetDyn',0,3,70,150,1,1
+	.byte	'Os_SpinlockGetDyn',0,1,70,150,1,1
 	.word	34271
 	.byte	1,1,5
 	.byte	'Spinlock',0,70,150,1,1
 	.word	6060
 	.byte	11,4,0,0,3
-	.byte	'Os_SpinlockInternalTryGet',0,3,70,132,2,1
+	.byte	'Os_SpinlockInternalTryGet',0,1,70,132,2,1
 	.word	145
 	.byte	1,1,5
 	.byte	'Spinlock',0,70,132,2,1
 	.word	6060
 	.byte	11,4,4,4,4,0,0,3
-	.byte	'Os_CoreAsrIsCoreLocal',0,3,71,126,1
+	.byte	'Os_CoreAsrIsCoreLocal',0,1,71,126,1
 	.word	246
 	.byte	1,1,5
 	.byte	'Core',0,71,126,1
@@ -5294,34 +5320,34 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	10
 	.word	34441
 	.byte	3
-	.byte	'Os_CoreGetCurrentCore',0,3,71,245,1,1
+	.byte	'Os_CoreGetCurrentCore',0,1,71,245,1,1
 	.word	34446
 	.byte	1,1,11,4,0,0,3
-	.byte	'Os_Core2AsrCore',0,3,71,204,1,1
+	.byte	'Os_Core2AsrCore',0,1,71,204,1,1
 	.word	24678
 	.byte	1,1,5
 	.byte	'Core',0,71,204,1,1
 	.word	34446
 	.byte	11,4,0,0,3
-	.byte	'Os_CoreAsrGetDyn',0,3,71,153,1,1
+	.byte	'Os_CoreAsrGetDyn',0,1,71,153,1,1
 	.word	16159
 	.byte	1,1,5
 	.byte	'Core',0,71,153,1,1
 	.word	24678
 	.byte	4,0,3
-	.byte	'Os_CoreAsrGetTimingProtection',0,3,71,166,1,1
+	.byte	'Os_CoreAsrGetTimingProtection',0,1,71,166,1,1
 	.word	20085
 	.byte	1,1,5
 	.byte	'Core',0,71,166,1,1
 	.word	24678
 	.byte	4,0,3
-	.byte	'Os_CoreIsAsrCore',0,3,71,154,2,1
+	.byte	'Os_CoreIsAsrCore',0,1,71,154,2,1
 	.word	246
 	.byte	1,1,5
 	.byte	'Core',0,71,154,2,1
 	.word	34446
 	.byte	4,0,3
-	.byte	'Os_CoreIsStartedAsAsr',0,3,71,167,2,1
+	.byte	'Os_CoreIsStartedAsAsr',0,1,71,167,2,1
 	.word	246
 	.byte	1,1,5
 	.byte	'Core',0,71,167,2,1
@@ -5347,43 +5373,43 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	10
 	.word	34939
 	.byte	3
-	.byte	'Os_CoreAsrGetAsrStatus',0,3,71,232,2,1
+	.byte	'Os_CoreAsrGetAsrStatus',0,1,71,232,2,1
 	.word	34944
 	.byte	1,1,5
 	.byte	'Core',0,71,232,2,1
 	.word	24678
 	.byte	4,0,3
-	.byte	'Os_CoreOsIsPrestarted',0,3,71,219,2,1
+	.byte	'Os_CoreOsIsPrestarted',0,1,71,219,2,1
 	.word	246
 	.byte	1,1,5
 	.byte	'Core',0,71,219,2,1
 	.word	24678
 	.byte	11,4,0,0,3
-	.byte	'Os_CoreGetIdleTask',0,3,71,246,3,1
+	.byte	'Os_CoreGetIdleTask',0,1,71,246,3,1
 	.word	16627
 	.byte	1,1,5
 	.byte	'Core',0,71,246,3,1
 	.word	24678
 	.byte	4,0,3
-	.byte	'Os_CoreGetKernelApp',0,3,71,131,4,1
+	.byte	'Os_CoreGetKernelApp',0,1,71,131,4,1
 	.word	27978
 	.byte	1,1,5
 	.byte	'Core',0,71,131,4,1
 	.word	24678
 	.byte	4,0,3
-	.byte	'Os_CoreGetScheduler',0,3,71,144,4,1
+	.byte	'Os_CoreGetScheduler',0,1,71,144,4,1
 	.word	17000
 	.byte	1,1,5
 	.byte	'Core',0,71,144,4,1
 	.word	24678
 	.byte	4,0,3
-	.byte	'Os_CoreInterruptedThreadsGetTopIdx',0,3,71,149,5,1
+	.byte	'Os_CoreInterruptedThreadsGetTopIdx',0,1,71,149,5,1
 	.word	7999
 	.byte	1,1,5
 	.byte	'Core',0,71,149,5,1
 	.word	24678
 	.byte	11,4,4,0,0,3
-	.byte	'Os_CoreInterruptedThreadsGet',0,3,71,169,5,1
+	.byte	'Os_CoreInterruptedThreadsGet',0,1,71,169,5,1
 	.word	29838
 	.byte	1,1,5
 	.byte	'Core',0,71,169,5,1
@@ -5392,31 +5418,31 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	'Idx',0,71,169,5,1
 	.word	7999
 	.byte	11,4,0,0,3
-	.byte	'Os_CoreInterruptedThreadsMoveDown',0,3,71,209,5,1
+	.byte	'Os_CoreInterruptedThreadsMoveDown',0,1,71,209,5,1
 	.word	7999
 	.byte	1,1,5
 	.byte	'Iterator',0,71,209,5,1
 	.word	7999
 	.byte	4,0,6
-	.byte	'Os_CoreSetThread',0,3,71,224,5,1,1,1,5
+	.byte	'Os_CoreSetThread',0,1,71,224,5,1,1,1,5
 	.byte	'Thread',0,71,224,5,1
 	.word	29838
 	.byte	11,4,4,4,0,0
-.L80:
+.L88:
 	.byte	3
-	.byte	'Os_CoreGetThread',0,3,71,238,5,1
+	.byte	'Os_CoreGetThread',0,1,71,238,5,1
 	.word	29838
 	.byte	1,1
-.L82:
+.L90:
 	.byte	11,4,4,4,0,0,6
-	.byte	'Os_CoreSetCurrentStack',0,3,71,252,5,1,1,1,5
+	.byte	'Os_CoreSetCurrentStack',0,1,71,252,5,1,1,1,5
 	.byte	'Stack',0,71,252,5,1
 	.word	5119
 	.byte	5
 	.byte	'Core',0,71,252,5,1
 	.word	24678
 	.byte	11,4,0,0,3
-	.byte	'Os_CoreGetCurrentStack',0,3,71,142,6,1
+	.byte	'Os_CoreGetCurrentStack',0,1,71,142,6,1
 	.word	5119
 	.byte	1,1,11,4,4,4,0,0,14
 	.byte	'Os_SpinlockConfigRefType',0,19,152,2,59
@@ -5478,20 +5504,20 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	10
 	.word	36011
 	.byte	3
-	.byte	'Os_SystemGet',0,3,71,160,6,1
+	.byte	'Os_SystemGet',0,1,71,160,6,1
 	.word	36016
 	.byte	1,1,4,0,9
 	.word	5882
 	.byte	10
 	.word	36048
 	.byte	3
-	.byte	'Os_SystemGetCore2Thread',0,3,71,173,6,1
+	.byte	'Os_SystemGetCore2Thread',0,1,71,173,6,1
 	.word	29973
 	.byte	1,1,5
 	.byte	'System',0,71,173,6,1
 	.word	36016
 	.byte	4,0,6
-	.byte	'Os_Hal_ProgramDataRegions',0,3,72,174,2,1,1,1,5
+	.byte	'Os_Hal_ProgramDataRegions',0,1,72,174,2,1,1,1,5
 	.byte	'StartSlot',0,72,174,2,1
 	.word	409
 	.byte	5
@@ -5501,7 +5527,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	'RegionsConfig',0,72,174,2,1
 	.word	18251
 	.byte	4,0,6
-	.byte	'Os_Hal_ProgramCodeRegions',0,3,72,202,2,1,1,1,5
+	.byte	'Os_Hal_ProgramCodeRegions',0,1,72,202,2,1,1,1,5
 	.byte	'StartSlot',0,72,202,2,1
 	.word	409
 	.byte	5
@@ -5516,7 +5542,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	10
 	.word	36298
 	.byte	6
-	.byte	'Os_MpThreadInit',0,3,73,130,1,1,1,1,5
+	.byte	'Os_MpThreadInit',0,1,73,130,1,1,1,1,5
 	.byte	'Config',0,73,130,1,1
 	.word	27122
 	.byte	5
@@ -5527,26 +5553,26 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	10
 	.word	36397
 	.byte	6
-	.byte	'Os_MpSwitch',0,3,73,193,1,1,1,1,5
+	.byte	'Os_MpSwitch',0,1,73,193,1,1,1,1,5
 	.byte	'Current',0,73,193,1,1
 	.word	27122
 	.byte	5
 	.byte	'Next',0,73,193,1,1
 	.word	27122
 	.byte	4,0,6
-	.byte	'Os_MpSwitchTo',0,3,73,230,1,1,1,1,5
+	.byte	'Os_MpSwitchTo',0,1,73,230,1,1,1,1,5
 	.byte	'AccessRights',0,73,230,1,1
 	.word	27122
 	.byte	4,0,6
-	.byte	'Os_TraceThreadInit',0,3,74,139,6,1,1,1,5
+	.byte	'Os_TraceThreadInit',0,1,74,139,6,1,1,1,5
 	.byte	'Thread',0,74,139,6,1
 	.word	7354
 	.byte	4,0,6
-	.byte	'Os_TraceThreadInitAndStart',0,3,74,178,6,1,1,1,5
+	.byte	'Os_TraceThreadInitAndStart',0,1,74,178,6,1,1,1,5
 	.byte	'Task',0,74,178,6,1
 	.word	7354
 	.byte	11,4,0,0,6
-	.byte	'Os_TraceThreadSwitch',0,3,74,229,6,1,1,1,5
+	.byte	'Os_TraceThreadSwitch',0,1,74,229,6,1,1,1,5
 	.byte	'CurrentTaskState',0,74,229,6,1
 	.word	12550
 	.byte	5
@@ -5556,86 +5582,86 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	'Next',0,74,229,6,1
 	.word	7354
 	.byte	11,4,4,0,0,6
-	.byte	'Os_TraceThreadResetAndResume',0,3,74,170,7,1,1,1,5
+	.byte	'Os_TraceThreadResetAndResume',0,1,74,170,7,1,1,1,5
 	.byte	'Current',0,74,170,7,1
 	.word	7354
 	.byte	5
 	.byte	'Next',0,74,170,7,1
 	.word	7354
 	.byte	11,4,4,0,0,6
-	.byte	'Os_TraceThreadCleanupAndResume',0,3,74,228,7,1,1,1,5
+	.byte	'Os_TraceThreadCleanupAndResume',0,1,74,228,7,1,1,1,5
 	.byte	'Current',0,74,228,7,1
 	.word	7354
 	.byte	5
 	.byte	'Next',0,74,228,7,1
 	.word	7354
 	.byte	11,4,4,0,0,6
-	.byte	'Os_TraceSpinlockRequested',0,3,74,183,11,1,1,1,5
+	.byte	'Os_TraceSpinlockRequested',0,1,74,183,11,1,1,1,5
 	.byte	'Spinlock',0,74,183,11,1
 	.word	5877
 	.byte	11,4,0,0,6
-	.byte	'Os_TraceSpinlockTaken',0,3,74,239,11,1,1,1,5
+	.byte	'Os_TraceSpinlockTaken',0,1,74,239,11,1,1,1,5
 	.byte	'Spinlock',0,74,239,11,1
 	.word	5877
 	.byte	11,4,0,0,6
-	.byte	'Os_TraceSpinlockReleased',0,3,74,167,12,1,1,1,5
+	.byte	'Os_TraceSpinlockReleased',0,1,74,167,12,1,1,1,5
 	.byte	'Spinlock',0,74,167,12,1
 	.word	5877
 	.byte	11,4,0,0,6
-	.byte	'Os_TraceInterruptsGlobalDisabled',0,3,74,221,12,1,1,1,11,4,0,0,6
-	.byte	'Os_TraceInterruptsLevelDisabled',0,3,74,128,13,1,1,1,11,4,0,0,6
-	.byte	'Os_TraceInterruptsGlobalEnabled',0,3,74,163,13,1,1,1,11,4,0,0,6
-	.byte	'Os_TraceInterruptsLevelEnabled',0,3,74,198,13,1,1,1,11,4,0,0,3
-	.byte	'Os_ThreadGetSpinlocks',0,3,75,117,1
+	.byte	'Os_TraceInterruptsGlobalDisabled',0,1,74,221,12,1,1,1,11,4,0,0,6
+	.byte	'Os_TraceInterruptsLevelDisabled',0,1,74,128,13,1,1,1,11,4,0,0,6
+	.byte	'Os_TraceInterruptsGlobalEnabled',0,1,74,163,13,1,1,1,11,4,0,0,6
+	.byte	'Os_TraceInterruptsLevelEnabled',0,1,74,198,13,1,1,1,11,4,0,0,3
+	.byte	'Os_ThreadGetSpinlocks',0,1,75,117,1
 	.word	34083
 	.byte	1,1,5
 	.byte	'Thread',0,75,117,1
 	.word	29838
 	.byte	4,0,3
-	.byte	'Os_ThreadGetServiceCalls',0,3,75,131,1,1
+	.byte	'Os_ThreadGetServiceCalls',0,1,75,131,1,1
 	.word	28460
 	.byte	1,1,5
 	.byte	'Thread',0,75,131,1,1
 	.word	29838
 	.byte	4,0,6
-	.byte	'Os_ThreadSetServiceCalls',0,3,75,145,1,1,1,1,5
+	.byte	'Os_ThreadSetServiceCalls',0,1,75,145,1,1,1,1,5
 	.byte	'Thread',0,75,145,1,1
 	.word	29838
 	.byte	5
 	.byte	'ServiceCalls',0,75,145,1,1
 	.word	28460
 	.byte	4,0,3
-	.byte	'Os_ThreadGetTrace',0,3,75,159,1,1
+	.byte	'Os_ThreadGetTrace',0,1,75,159,1,1
 	.word	7354
 	.byte	1,1,5
 	.byte	'Thread',0,75,159,1,1
 	.word	29838
 	.byte	4,0,3
-	.byte	'Os_ThreadGetTpConfig',0,3,75,173,1,1
+	.byte	'Os_ThreadGetTpConfig',0,1,75,173,1,1
 	.word	28757
 	.byte	1,1,5
 	.byte	'Thread',0,75,173,1,1
 	.word	29838
 	.byte	4,0,3
-	.byte	'Os_ThreadGetInterruptApiState',0,3,75,213,1,1
+	.byte	'Os_ThreadGetInterruptApiState',0,1,75,213,1,1
 	.word	28616
 	.byte	1,1,5
 	.byte	'Thread',0,75,213,1,1
 	.word	29838
 	.byte	4,0,3
-	.byte	'Os_ThreadGetCore',0,3,75,227,1,1
+	.byte	'Os_ThreadGetCore',0,1,75,227,1,1
 	.word	24678
 	.byte	1,1,5
 	.byte	'Thread',0,75,227,1,1
 	.word	29838
 	.byte	4,0,3
-	.byte	'Os_ThreadGetCurrentType',0,3,75,241,1,1
+	.byte	'Os_ThreadGetCurrentType',0,1,75,241,1,1
 	.word	5497
 	.byte	1,1,5
 	.byte	'Thread',0,75,241,1,1
 	.word	29838
 	.byte	4,0,3
-	.byte	'Os_ThreadSwitchType',0,3,75,139,2,1
+	.byte	'Os_ThreadSwitchType',0,1,75,139,2,1
 	.word	5497
 	.byte	1,1,5
 	.byte	'Thread',0,75,139,2,1
@@ -5644,19 +5670,19 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	'NextCallContext',0,75,139,2,1
 	.word	5497
 	.byte	4,0,3
-	.byte	'Os_ThreadIsTask',0,3,75,158,2,1
+	.byte	'Os_ThreadIsTask',0,1,75,158,2,1
 	.word	246
 	.byte	1,1,5
 	.byte	'Thread',0,75,158,2,1
 	.word	29838
 	.byte	4,0,3
-	.byte	'Os_ThreadIsIsr',0,3,75,185,2,1
+	.byte	'Os_ThreadIsIsr',0,1,75,185,2,1
 	.word	246
 	.byte	1,1,5
 	.byte	'Thread',0,75,185,2,1
 	.word	29838
 	.byte	4,0,3
-	.byte	'Os_ThreadIsAnyInitialContext',0,3,75,198,2,1
+	.byte	'Os_ThreadIsAnyInitialContext',0,1,75,198,2,1
 	.word	246
 	.byte	1,1,5
 	.byte	'Thread',0,75,198,2,1
@@ -5665,77 +5691,77 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	'Context',0,75,198,2,1
 	.word	5497
 	.byte	4,0,3
-	.byte	'Os_ThreadIsHook',0,3,75,225,2,1
+	.byte	'Os_ThreadIsHook',0,1,75,225,2,1
 	.word	246
 	.byte	1,1,5
 	.byte	'Thread',0,75,225,2,1
 	.word	29838
 	.byte	4,0,3
-	.byte	'Os_ThreadGetOwnerApplication',0,3,75,138,3,1
+	.byte	'Os_ThreadGetOwnerApplication',0,1,75,138,3,1
 	.word	27978
 	.byte	1,1,5
 	.byte	'Thread',0,75,138,3,1
 	.word	29838
 	.byte	4,0,3
-	.byte	'Os_ThreadGetCurrentApplication',0,3,75,152,3,1
+	.byte	'Os_ThreadGetCurrentApplication',0,1,75,152,3,1
 	.word	27978
 	.byte	1,1,5
 	.byte	'Thread',0,75,152,3,1
 	.word	29838
 	.byte	4,0,6
-	.byte	'Os_ThreadSetCurrentApplication',0,3,75,165,3,1,1,1,5
+	.byte	'Os_ThreadSetCurrentApplication',0,1,75,165,3,1,1,1,5
 	.byte	'Thread',0,75,165,3,1
 	.word	29838
 	.byte	5
 	.byte	'App',0,75,165,3,1
 	.word	27978
 	.byte	4,0,3
-	.byte	'Os_ThreadHasResourcesLocked',0,3,75,185,3,1
+	.byte	'Os_ThreadHasResourcesLocked',0,1,75,185,3,1
 	.word	246
 	.byte	1,1,5
 	.byte	'Thread',0,75,185,3,1
 	.word	29838
 	.byte	11,4,4,4,0,0,3
-	.byte	'Os_ThreadHasSpinlockLocked',0,3,75,223,3,1
+	.byte	'Os_ThreadHasSpinlockLocked',0,1,75,223,3,1
 	.word	246
 	.byte	1,1,5
 	.byte	'Thread',0,75,223,3,1
 	.word	29838
 	.byte	11,4,4,4,0,0,6
-	.byte	'Os_ThreadSpinlockForceRelease',0,3,75,167,4,1,1,1,5
+	.byte	'Os_ThreadSpinlockForceRelease',0,1,75,167,4,1,1,1,5
 	.byte	'Thread',0,75,167,4,1
 	.word	29838
 	.byte	4,0,6
-	.byte	'Os_ThreadResourceForceRelease',0,3,75,180,4,1,1,1,5
+	.byte	'Os_ThreadResourceForceRelease',0,1,75,180,4,1,1,1,5
 	.byte	'Thread',0,75,180,4,1
 	.word	29838
 	.byte	4,0,6
-	.byte	'Os_ThreadLocksForceRelease',0,3,75,199,4,1,1,1,5
+	.byte	'Os_ThreadLocksForceRelease',0,1,75,199,4,1,1,1,5
 	.byte	'Thread',0,75,199,4,1
 	.word	29838
 	.byte	11,4,4,4,0,0,6
-	.byte	'Os_ThreadResetAndResume',0,3,75,223,5,1,1,1,5
+	.byte	'Os_ThreadResetAndResume',0,1,75,223,5,1,1,1,5
 	.byte	'Next',0,75,223,5,1
 	.word	29838
 	.byte	5
 	.byte	'CallPreThreadHook',0,75,223,5,1
 	.word	409
 	.byte	11,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,0,0,6
-	.byte	'Os_ThreadStartFirst',0,3,75,172,6,1,1,1,5
+	.byte	'Os_ThreadStartFirst',0,1,75,172,6,1,1,1,5
 	.byte	'Next',0,75,172,6,1
 	.word	29838
 	.byte	5
 	.byte	'CallPreThreadHook',0,75,172,6,1
 	.word	409
 	.byte	11,4,4,4,4,4,4,4,4,4,4,4,4,0,0,6
-	.byte	'Os_ThreadCleanupAndResume',0,3,75,230,6,1,1,1,5
+	.byte	'Os_ThreadCleanupAndResume',0,1,75,230,6,1,1,1,5
 	.byte	'Next',0,75,230,6,1
 	.word	29838
 	.byte	5
 	.byte	'CallPreThreadHook',0,75,230,6,1
 	.word	409
 	.byte	11,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,0,0,6
-	.byte	'Os_ThreadSwitch',0,3,75,133,8,1,1,1,5
+	.byte	'Os_ThreadSwitch',0,1,75,133,8,1,1,1,5
 	.byte	'Current',0,75,133,8,1
 	.word	29838
 	.byte	5
@@ -5745,33 +5771,33 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	'CallPreThreadHook',0,75,133,8,1
 	.word	409
 	.byte	11,4,4,4,4,4,4,4,4,4,4,4,4,4,4,0,0,3
-	.byte	'Os_ThreadGetAccessRights',0,3,75,137,9,1
+	.byte	'Os_ThreadGetAccessRights',0,1,75,137,9,1
 	.word	29423
 	.byte	1,1,5
 	.byte	'Thread',0,75,137,9,1
 	.word	29838
 	.byte	4,0,3
-	.byte	'Os_ThreadGetMpAccessRights',0,3,75,151,9,1
+	.byte	'Os_ThreadGetMpAccessRights',0,1,75,151,9,1
 	.word	27122
 	.byte	1,1,5
 	.byte	'Thread',0,75,151,9,1
 	.word	29838
 	.byte	4,0,6
-	.byte	'Os_ThreadSetMpAccessRights',0,3,75,165,9,1,1,1,5
+	.byte	'Os_ThreadSetMpAccessRights',0,1,75,165,9,1,1,1,5
 	.byte	'Thread',0,75,165,9,1
 	.word	29838
 	.byte	5
 	.byte	'AccessRights',0,75,165,9,1
 	.word	27122
 	.byte	4,0,6
-	.byte	'Os_ThreadSetInterruptState',0,3,75,180,9,1,1,1,5
+	.byte	'Os_ThreadSetInterruptState',0,1,75,180,9,1,1,1,5
 	.byte	'Thread',0,75,180,9,1
 	.word	29838
 	.byte	5
 	.byte	'InterruptState',0,75,180,9,1
 	.word	31759
 	.byte	11,4,0,0,6
-	.byte	'Os_ThreadCallPreThreadHook',0,3,75,199,9,1,1,1,5
+	.byte	'Os_ThreadCallPreThreadHook',0,1,75,199,9,1,1,1,5
 	.byte	'Thread',0,75,199,9,1
 	.word	29838
 	.byte	5
@@ -5783,7 +5809,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	10
 	.word	39108
 	.byte	6
-	.byte	'Os_ThreadCallContextOnStack',0,3,75,230,9,1,1,1,5
+	.byte	'Os_ThreadCallContextOnStack',0,1,75,230,9,1,1,1,5
 	.byte	'Thread',0,75,230,9,1
 	.word	29838
 	.byte	5
@@ -5807,7 +5833,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	11,4,4,4,4,4,4,0,0,10
 	.word	4851
 	.byte	6
-	.byte	'Os_ThreadCallContext',0,3,75,173,10,1,1,1,5
+	.byte	'Os_ThreadCallContext',0,1,75,173,10,1,1,1,5
 	.byte	'Thread',0,75,173,10,1
 	.word	29838
 	.byte	5
@@ -5826,44 +5852,44 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	'CalleeContext',0,75,173,10,1
 	.word	39141
 	.byte	11,4,4,4,4,4,0,0,6
-	.byte	'Os_ThreadInitFpuContext',0,3,75,237,10,1,1,1,5
+	.byte	'Os_ThreadInitFpuContext',0,1,75,237,10,1,1,1,5
 	.byte	'Thread',0,75,237,10,1
 	.word	29838
 	.byte	11,4,0,0,6
-	.byte	'Os_ThreadInitFpu',0,3,75,136,11,1,1,1,5
+	.byte	'Os_ThreadInitFpu',0,1,75,136,11,1,1,1,5
 	.byte	'Thread',0,75,136,11,1
 	.word	29838
 	.byte	11,4,0,0,6
-	.byte	'Os_ThreadStoreFpuContext',0,3,75,163,11,1,1,1,5
+	.byte	'Os_ThreadStoreFpuContext',0,1,75,163,11,1,1,1,5
 	.byte	'Thread',0,75,163,11,1
 	.word	29838
 	.byte	4,0,6
-	.byte	'Os_ThreadRestoreFpuContext',0,3,75,185,11,1,1,1,5
+	.byte	'Os_ThreadRestoreFpuContext',0,1,75,185,11,1,1,1,5
 	.byte	'Thread',0,75,185,11,1
 	.word	29838
 	.byte	4,0,6
-	.byte	'Os_IsrDisableSource',0,3,76,231,1,1,1,1,5
+	.byte	'Os_IsrDisableSource',0,1,76,231,1,1,1,1,5
 	.byte	'Isr',0,76,231,1,1
 	.word	6774
 	.byte	11,4,0,0,3
-	.byte	'Os_IsrGetThread',0,3,76,160,1,1
+	.byte	'Os_IsrGetThread',0,1,76,160,1,1
 	.word	29838
 	.byte	1,1,5
 	.byte	'Isr',0,76,160,1,1
 	.word	23936
 	.byte	4,0,6
-	.byte	'Os_IsrInitialEnable',0,3,76,160,2,1,1,1,5
+	.byte	'Os_IsrInitialEnable',0,1,76,160,2,1,1,1,5
 	.byte	'Isr',0,76,160,2,1
 	.word	23936
 	.byte	5
 	.byte	'ClearPending',0,76,160,2,1
 	.word	409
 	.byte	11,4,4,0,0,6
-	.byte	'Os_IsrEnable',0,3,76,192,2,1,1,1,5
+	.byte	'Os_IsrEnable',0,1,76,192,2,1,1,1,5
 	.byte	'Isr',0,76,192,2,1
 	.word	23936
 	.byte	11,4,0,0,6
-	.byte	'Os_IsrClearPending',0,3,76,220,2,1,1,1,5
+	.byte	'Os_IsrClearPending',0,1,76,220,2,1,1,1,5
 	.byte	'Isr',0,76,220,2,1
 	.word	6774
 	.byte	11,4,0,0,18
@@ -5871,7 +5897,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	10
 	.word	39949
 	.byte	6
-	.byte	'Os_XSigChannelIdxIncrement',0,3,77,90,1,1,1,5
+	.byte	'Os_XSigChannelIdxIncrement',0,1,77,90,1,1,1,5
 	.byte	'Index',0,77,90,1
 	.word	39954
 	.byte	5
@@ -5882,7 +5908,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	10
 	.word	40024
 	.byte	3
-	.byte	'Os_XSigChannelIsResultAvailable',0,3,77,129,2,1
+	.byte	'Os_XSigChannelIsResultAvailable',0,1,77,129,2,1
 	.word	246
 	.byte	1,1,5
 	.byte	'Channel',0,77,129,2,1
@@ -5892,7 +5918,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	10
 	.word	40097
 	.byte	3
-	.byte	'Os_XSigSend',0,3,78,129,1,1
+	.byte	'Os_XSigSend',0,1,78,129,1,1
 	.word	426
 	.byte	1,1,5
 	.byte	'RecvCore',0,78,129,1,1
@@ -5907,7 +5933,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	'Parameters',0,78,129,1,1
 	.word	40102
 	.byte	11,4,0,0,3
-	.byte	'Os_XSigSend_ActivateTaskAsync',0,3,78,191,1,1
+	.byte	'Os_XSigSend_ActivateTaskAsync',0,1,78,191,1,1
 	.word	426
 	.byte	1,1,5
 	.byte	'RecvCore',0,78,191,1,1
@@ -5919,13 +5945,13 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	'TaskID',0,78,191,1,1
 	.word	12384
 	.byte	4,0,3
-	.byte	'Os_TaskGetThread',0,3,79,111,1
+	.byte	'Os_TaskGetThread',0,1,79,111,1
 	.word	29838
 	.byte	1,1,5
 	.byte	'Task',0,79,111,1
 	.word	16627
 	.byte	4,0,3
-	.byte	'Os_TaskThread2Task',0,3,79,125,1
+	.byte	'Os_TaskThread2Task',0,1,79,125,1
 	.word	16627
 	.byte	1,1,5
 	.byte	'Thread',0,79,125,1
@@ -5962,62 +5988,62 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	4,2,35,46,0,10
 	.word	40457
 	.byte	3
-	.byte	'Os_TaskGetDyn',0,3,79,139,1,1
+	.byte	'Os_TaskGetDyn',0,1,79,139,1,1
 	.word	40615
 	.byte	1,1,5
 	.byte	'Task',0,79,139,1,1
 	.word	16627
 	.byte	11,4,0,0,6
-	.byte	'Os_TaskSetState',0,3,79,152,1,1,1,1,5
+	.byte	'Os_TaskSetState',0,1,79,152,1,1,1,1,5
 	.byte	'Task',0,79,152,1,1
 	.word	16627
 	.byte	5
 	.byte	'State',0,79,152,1,1
 	.word	12550
 	.byte	11,4,0,0,3
-	.byte	'Os_TaskGetId',0,3,79,219,1,1
+	.byte	'Os_TaskGetId',0,1,79,219,1,1
 	.word	12384
 	.byte	1,1,5
 	.byte	'Task',0,79,219,1,1
 	.word	16627
 	.byte	4,0,3
-	.byte	'Os_TaskGetScheduler',0,3,79,128,2,1
+	.byte	'Os_TaskGetScheduler',0,1,79,128,2,1
 	.word	17000
 	.byte	1,1,5
 	.byte	'Task',0,79,128,2,1
 	.word	16627
 	.byte	11,4,4,4,0,0,3
-	.byte	'Os_TaskGetCore',0,3,79,154,2,1
+	.byte	'Os_TaskGetCore',0,1,79,154,2,1
 	.word	24678
 	.byte	1,1,5
 	.byte	'Task',0,79,154,2,1
 	.word	16627
 	.byte	11,4,4,0,0,3
-	.byte	'Os_TaskIsCoreLocal',0,3,79,167,2,1
+	.byte	'Os_TaskIsCoreLocal',0,1,79,167,2,1
 	.word	145
 	.byte	1,1,5
 	.byte	'Task',0,79,167,2,1
 	.word	16627
 	.byte	11,4,4,0,0,6
-	.byte	'Os_TaskSwitch',0,3,79,252,2,1,1,1,5
+	.byte	'Os_TaskSwitch',0,1,79,252,2,1,1,1,5
 	.byte	'Scheduler',0,79,252,2,1
 	.word	17000
 	.byte	5
 	.byte	'CallerThread',0,79,252,2,1
 	.word	29838
 	.byte	11,4,4,4,4,4,4,4,4,0,0,6
-	.byte	'Os_TaskResume',0,3,79,161,3,1,1,1,5
+	.byte	'Os_TaskResume',0,1,79,161,3,1,1,1,5
 	.byte	'Scheduler',0,79,161,3,1
 	.word	17000
 	.byte	11,4,4,4,4,4,4,4,0,0,6
-	.byte	'Os_TaskCallPostTaskHook',0,3,79,232,5,1,1,1,11,4,0,0,3
-	.byte	'Os_CounterGetCore',0,3,81,182,1,1
+	.byte	'Os_TaskCallPostTaskHook',0,1,79,232,5,1,1,1,11,4,0,0,3
+	.byte	'Os_CounterGetCore',0,1,81,182,1,1
 	.word	24678
 	.byte	1,1,5
 	.byte	'Counter',0,81,182,1,1
 	.word	18868
 	.byte	4,0,3
-	.byte	'Os_CounterIsFutureValue',0,3,81,200,1,1
+	.byte	'Os_CounterIsFutureValue',0,1,81,200,1,1
 	.word	246
 	.byte	1,1,5
 	.byte	'Counter',0,81,200,1,1
@@ -6029,7 +6055,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	'ReferenceValue',0,81,200,1,1
 	.word	145
 	.byte	11,4,0,0,3
-	.byte	'Os_CounterIsFutureValueInternal',0,3,81,225,1,1
+	.byte	'Os_CounterIsFutureValueInternal',0,1,81,225,1,1
 	.word	246
 	.byte	1,1,5
 	.byte	'MaxCountingValue',0,81,225,1,1
@@ -6044,7 +6070,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	'ReferenceValue',0,81,225,1,1
 	.word	145
 	.byte	11,4,4,0,0,3
-	.byte	'Os_CounterCheckValueLeMaxAllowed',0,3,81,145,2,1
+	.byte	'Os_CounterCheckValueLeMaxAllowed',0,1,81,145,2,1
 	.word	246
 	.byte	1,1,5
 	.byte	'Counter',0,81,145,2,1
@@ -6053,7 +6079,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	'Value',0,81,145,2,1
 	.word	145
 	.byte	11,4,0,0,3
-	.byte	'Os_CounterCheckValueLeReducedMaxAllowed',0,3,81,159,2,1
+	.byte	'Os_CounterCheckValueLeReducedMaxAllowed',0,1,81,159,2,1
 	.word	246
 	.byte	1,1,5
 	.byte	'Counter',0,81,159,2,1
@@ -6065,7 +6091,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	'Value',0,81,159,2,1
 	.word	145
 	.byte	11,4,4,0,0,3
-	.byte	'Os_CounterCheckValueGeMinCycleOrZero',0,3,81,175,2,1
+	.byte	'Os_CounterCheckValueGeMinCycleOrZero',0,1,81,175,2,1
 	.word	246
 	.byte	1,1,5
 	.byte	'Counter',0,81,175,2,1
@@ -6078,42 +6104,42 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	10
 	.word	41631
 	.byte	3
-	.byte	'Os_CounterGetCharacteristics',0,3,81,189,2,1
+	.byte	'Os_CounterGetCharacteristics',0,1,81,189,2,1
 	.word	41636
 	.byte	1,1,5
 	.byte	'Counter',0,81,189,2,1
 	.word	18868
 	.byte	4,0,3
-	.byte	'Os_CounterGetMaxAllowedValue',0,3,81,203,2,1
+	.byte	'Os_CounterGetMaxAllowedValue',0,1,81,203,2,1
 	.word	145
 	.byte	1,1,5
 	.byte	'Counter',0,81,203,2,1
 	.word	18868
 	.byte	4,0,3
-	.byte	'Os_CounterGetMaxCountingValue',0,3,81,217,2,1
+	.byte	'Os_CounterGetMaxCountingValue',0,1,81,217,2,1
 	.word	145
 	.byte	1,1,5
 	.byte	'Counter',0,81,217,2,1
 	.word	18868
 	.byte	4,0,6
-	.byte	'Os_Hal_TimerFrtInit',0,3,82,93,1,1,1,5
+	.byte	'Os_Hal_TimerFrtInit',0,1,82,93,1,1,1,5
 	.byte	'TimerConfig',0,82,93,1
 	.word	19834
 	.byte	4,0,3
-	.byte	'Os_Hal_TimerFrtGetCounterValue',0,3,82,125,1
+	.byte	'Os_Hal_TimerFrtGetCounterValue',0,1,82,125,1
 	.word	145
 	.byte	1,1,5
 	.byte	'TimerConfig',0,82,125,1
 	.word	19834
 	.byte	4,0,6
-	.byte	'Os_Hal_TimerFrtSetCompareValue',0,3,82,139,1,1,1,1,5
+	.byte	'Os_Hal_TimerFrtSetCompareValue',0,1,82,139,1,1,1,1,5
 	.byte	'TimerConfig',0,82,139,1,1
 	.word	19834
 	.byte	5
 	.byte	'ExpirationTime',0,82,139,1,1
 	.word	145
 	.byte	4,0,6
-	.byte	'Os_Hal_TimerFrtTriggerIrq',0,3,82,172,1,1,1,1,5
+	.byte	'Os_Hal_TimerFrtTriggerIrq',0,1,82,172,1,1,1,1,5
 	.byte	'TimerConfig',0,82,172,1,1
 	.word	19834
 	.byte	4,0,12
@@ -6146,7 +6172,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	10
 	.word	42373
 	.byte	6
-	.byte	'Os_Hal_TimerPitInit',0,3,83,92,1,1,1,5
+	.byte	'Os_Hal_TimerPitInit',0,1,83,92,1,1,1,5
 	.byte	'TimerConfig',0,83,92,1
 	.word	42378
 	.byte	4,0,15,39,219,1,9,8,13
@@ -6169,24 +6195,24 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	10
 	.word	42538
 	.byte	6
-	.byte	'Os_TimerSwInit',0,3,85,84,1,1,1,5
+	.byte	'Os_TimerSwInit',0,1,85,84,1,1,1,5
 	.byte	'Timer',0,85,84,1
 	.word	42543
 	.byte	11,4,4,0,0,3
-	.byte	'Os_TimerSwGetValue',0,3,85,220,1,1
+	.byte	'Os_TimerSwGetValue',0,1,85,220,1,1
 	.word	145
 	.byte	1,1,5
 	.byte	'Timer',0,85,220,1,1
 	.word	42543
 	.byte	4,0,6
-	.byte	'Os_TimerSwSetCompareValue',0,3,85,233,1,1,1,1,5
+	.byte	'Os_TimerSwSetCompareValue',0,1,85,233,1,1,1,1,5
 	.byte	'Timer',0,85,233,1,1
 	.word	42543
 	.byte	5
 	.byte	'ExpirationTime',0,85,233,1,1
 	.word	145
 	.byte	4,0,3
-	.byte	'Os_TimerSwUserModulo',0,3,85,252,1,1
+	.byte	'Os_TimerSwUserModulo',0,1,85,252,1,1
 	.word	145
 	.byte	1,1,5
 	.byte	'Timer',0,85,252,1,1
@@ -6195,19 +6221,19 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	'Value',0,85,252,1,1
 	.word	145
 	.byte	11,4,0,0,3
-	.byte	'Os_TimerHrtGetValue',0,3,85,211,4,1
+	.byte	'Os_TimerHrtGetValue',0,1,85,211,4,1
 	.word	145
 	.byte	1,1,5
 	.byte	'Timer',0,85,211,4,1
 	.word	19925
 	.byte	11,4,4,4,4,0,0,3
-	.byte	'Os_TimerHrtGetCounter',0,3,85,205,2,1
+	.byte	'Os_TimerHrtGetCounter',0,1,85,205,2,1
 	.word	18868
 	.byte	1,1,5
 	.byte	'Timer',0,85,205,2,1
 	.word	19925
 	.byte	4,0,3
-	.byte	'Os_TimerHrtComputeHardwareCompareValue',0,3,85,229,2,1
+	.byte	'Os_TimerHrtComputeHardwareCompareValue',0,1,85,229,2,1
 	.word	145
 	.byte	1,1,5
 	.byte	'Timer',0,85,229,2,1
@@ -6216,20 +6242,20 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	'ExpirationTime',0,85,229,2,1
 	.word	145
 	.byte	11,11,4,0,0,0,6
-	.byte	'Os_TimerHrtSetCompareValue',0,3,85,157,3,1,1,1,5
+	.byte	'Os_TimerHrtSetCompareValue',0,1,85,157,3,1,1,1,5
 	.byte	'Timer',0,85,157,3,1
 	.word	19925
 	.byte	5
 	.byte	'ExpirationTime',0,85,157,3,1
 	.word	145
 	.byte	11,4,4,4,4,4,4,0,0,3
-	.byte	'Os_TimerHrtGetCompareValue',0,3,85,247,3,1
+	.byte	'Os_TimerHrtGetCompareValue',0,1,85,247,3,1
 	.word	145
 	.byte	1,1,5
 	.byte	'Timer',0,85,247,3,1
 	.word	19925
 	.byte	4,0,3
-	.byte	'Os_TimerSwAbsCounter2AbsTimerValue',0,3,85,137,5,1
+	.byte	'Os_TimerSwAbsCounter2AbsTimerValue',0,1,85,137,5,1
 	.word	145
 	.byte	1,1,5
 	.byte	'MaxAllowedValue',0,85,137,5,1
@@ -6241,7 +6267,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	'CounterValue',0,85,137,5,1
 	.word	145
 	.byte	4,0,3
-	.byte	'Os_TimerAdd',0,3,85,253,5,1
+	.byte	'Os_TimerAdd',0,1,85,253,5,1
 	.word	145
 	.byte	1,1,5
 	.byte	'MaxAllowedValue',0,85,253,5,1
@@ -6256,7 +6282,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	'Add',0,85,253,5,1
 	.word	145
 	.byte	11,4,4,4,4,0,0,3
-	.byte	'Os_TimerSub',0,3,85,173,6,1
+	.byte	'Os_TimerSub',0,1,85,173,6,1
 	.word	145
 	.byte	1,1,5
 	.byte	'MaxCountingValue',0,85,173,6,1
@@ -6268,26 +6294,26 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	'Sub',0,85,173,6,1
 	.word	145
 	.byte	11,4,4,4,0,0,6
-	.byte	'Os_TimerFrtSetCompareValue',0,3,85,222,6,1,1,1,5
+	.byte	'Os_TimerFrtSetCompareValue',0,1,85,222,6,1,1,1,5
 	.byte	'TimerConfig',0,85,222,6,1
 	.word	19834
 	.byte	5
 	.byte	'CompareValue',0,85,222,6,1
 	.word	145
 	.byte	11,4,4,4,0,0,3
-	.byte	'Os_TimerFrtTickType2TickType',0,3,85,134,7,1
+	.byte	'Os_TimerFrtTickType2TickType',0,1,85,134,7,1
 	.word	145
 	.byte	1,1,5
 	.byte	'Value',0,85,134,7,1
 	.word	145
 	.byte	4,0,3
-	.byte	'Os_TimerTickType2FrtTickType',0,3,85,147,7,1
+	.byte	'Os_TimerTickType2FrtTickType',0,1,85,147,7,1
 	.word	145
 	.byte	1,1,5
 	.byte	'Value',0,85,147,7,1
 	.word	145
 	.byte	4,0,9
-	.word	.L120-.L22
+	.word	.L131-.L25
 	.byte	10
 	.word	43622
 	.byte	12
@@ -6305,7 +6331,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	'OS_TPMONITORINGTYPE_EXECUTION',0,2,8
 	.byte	'OS_TPMONITORINGTYPE_ARRIVAL',0,3,8
 	.byte	'OS_TPMONITORINGTYPE_COUNT',0,4,0
-.L120:
+.L131:
 	.byte	12
 	.byte	'Os_TpBudgetConfigType_Tag',0,38,168,2,8,12,13
 	.byte	'Dyn',0
@@ -6365,7 +6391,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	10
 	.word	44304
 	.byte	3
-	.byte	'Os_TpThread2TpOwnerThread',0,3,86,94,1
+	.byte	'Os_TpThread2TpOwnerThread',0,1,86,94,1
 	.word	44309
 	.byte	1,1,5
 	.byte	'TpThread',0,86,94,1
@@ -6375,24 +6401,24 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	10
 	.word	44372
 	.byte	3
-	.byte	'Os_TpGetCurrentTpOwnerThread',0,3,86,108,1
+	.byte	'Os_TpGetCurrentTpOwnerThread',0,1,86,108,1
 	.word	44309
 	.byte	1,1,5
 	.byte	'Config',0,86,108,1
 	.word	20085
 	.byte	11,4,4,0,0,6
-	.byte	'Os_TpThreadInit',0,3,86,127,1,1,1,5
+	.byte	'Os_TpThreadInit',0,1,86,127,1,1,1,5
 	.byte	'Config',0,86,127,1
 	.word	20085
 	.byte	5
 	.byte	'Current',0,86,127,1
 	.word	28757
 	.byte	11,4,4,0,0,6
-	.byte	'Os_TpThreadKill',0,3,86,157,1,1,1,1,5
+	.byte	'Os_TpThreadKill',0,1,86,157,1,1,1,1,5
 	.byte	'Thread',0,86,157,1,1
 	.word	28757
 	.byte	11,4,4,0,0,6
-	.byte	'Os_TpResume',0,3,86,184,1,1,1,1,5
+	.byte	'Os_TpResume',0,1,86,184,1,1,1,1,5
 	.byte	'Config',0,86,184,1,1
 	.word	20085
 	.byte	5
@@ -6402,7 +6428,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	'RemainingTime',0,86,184,1,1
 	.word	145
 	.byte	11,4,4,0,0,6
-	.byte	'Os_TpSuspend',0,3,86,209,1,1,1,1,5
+	.byte	'Os_TpSuspend',0,1,86,209,1,1,1,1,5
 	.byte	'Config',0,86,209,1,1
 	.word	20085
 	.byte	5
@@ -6415,7 +6441,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	'Deadline',0,86,209,1,1
 	.word	145
 	.byte	11,4,4,4,0,0,3
-	.byte	'Os_TpSub',0,3,86,239,1,1
+	.byte	'Os_TpSub',0,1,86,239,1,1
 	.word	145
 	.byte	1,1,5
 	.byte	'Config',0,86,239,1,1
@@ -6427,7 +6453,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	'Sub',0,86,239,1,1
 	.word	145
 	.byte	11,4,4,4,0,0,3
-	.byte	'Os_TpAdd',0,3,86,139,2,1
+	.byte	'Os_TpAdd',0,1,86,139,2,1
 	.word	145
 	.byte	1,1,5
 	.byte	'Config',0,86,139,2,1
@@ -6439,13 +6465,13 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	'Add',0,86,139,2,1
 	.word	145
 	.byte	11,4,4,4,4,0,0,3
-	.byte	'Os_TpGetArrivalTimeStamp',0,3,86,171,2,1
+	.byte	'Os_TpGetArrivalTimeStamp',0,1,86,171,2,1
 	.word	11709
 	.byte	1,1,5
 	.byte	'Config',0,86,171,2,1
 	.word	20085
 	.byte	11,4,0,0,6
-	.byte	'Os_TpSwitch',0,3,86,207,2,1,1,1,5
+	.byte	'Os_TpSwitch',0,1,86,207,2,1,1,1,5
 	.byte	'Config',0,86,207,2,1
 	.word	20085
 	.byte	5
@@ -6458,7 +6484,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	'NextThread',0,86,207,2,1
 	.word	29838
 	.byte	11,4,4,4,4,4,4,4,4,4,4,4,0,0,6
-	.byte	'Os_TpResetAndResume',0,3,86,157,3,1,1,1,5
+	.byte	'Os_TpResetAndResume',0,1,86,157,3,1,1,1,5
 	.byte	'Config',0,86,157,3,1
 	.word	20085
 	.byte	5
@@ -6471,14 +6497,14 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	'NextThread',0,86,157,3,1
 	.word	29838
 	.byte	11,11,4,0,4,4,4,4,4,4,4,4,0,0,6
-	.byte	'Os_TpResetAfterWait',0,3,86,225,3,1,1,1,5
+	.byte	'Os_TpResetAfterWait',0,1,86,225,3,1,1,1,5
 	.byte	'Config',0,86,225,3,1
 	.word	20085
 	.byte	5
 	.byte	'Current',0,86,225,3,1
 	.word	28757
 	.byte	11,11,4,0,4,4,4,4,4,4,4,0,0,3
-	.byte	'Os_TpCheckInterArrival',0,3,86,153,4,1
+	.byte	'Os_TpCheckInterArrival',0,1,86,153,4,1
 	.word	246
 	.byte	1,1,5
 	.byte	'Config',0,86,153,4,1
@@ -6487,7 +6513,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	'TpThread',0,86,153,4,1
 	.word	28757
 	.byte	11,11,4,0,4,4,4,4,4,0,0,3
-	.byte	'Os_TpGetResourceBudget',0,3,86,128,5,1
+	.byte	'Os_TpGetResourceBudget',0,1,86,128,5,1
 	.word	43627
 	.byte	1,1,5
 	.byte	'Current',0,86,128,5,1
@@ -6496,31 +6522,31 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	'Resource',0,86,128,5,1
 	.word	11904
 	.byte	11,4,4,0,0,6
-	.byte	'Os_TpStartDelay',0,3,86,221,5,1,1,1,5
+	.byte	'Os_TpStartDelay',0,1,86,221,5,1,1,1,5
 	.byte	'Config',0,86,221,5,1
 	.word	20085
 	.byte	11,4,4,4,4,0,0,6
-	.byte	'Os_TpStopDelay',0,3,86,250,5,1,1,1,5
+	.byte	'Os_TpStopDelay',0,1,86,250,5,1,1,1,5
 	.byte	'Config',0,86,250,5,1
 	.word	20085
 	.byte	11,4,4,4,4,0,0,6
-	.byte	'Os_TpStartAllInterrupt',0,3,86,176,6,1,1,1,5
+	.byte	'Os_TpStartAllInterrupt',0,1,86,176,6,1,1,1,5
 	.byte	'Config',0,86,176,6,1
 	.word	20085
 	.byte	11,4,4,4,4,0,0,6
-	.byte	'Os_TpStopAllInterrupt',0,3,86,207,6,1,1,1,5
+	.byte	'Os_TpStopAllInterrupt',0,1,86,207,6,1,1,1,5
 	.byte	'Config',0,86,207,6,1
 	.word	20085
 	.byte	11,4,4,4,4,0,0,6
-	.byte	'Os_TpStartOsInterrupt',0,3,86,239,6,1,1,1,5
+	.byte	'Os_TpStartOsInterrupt',0,1,86,239,6,1,1,1,5
 	.byte	'Config',0,86,239,6,1
 	.word	20085
 	.byte	11,4,4,4,4,0,0,6
-	.byte	'Os_TpStopOsInterrupt',0,3,86,142,7,1,1,1,5
+	.byte	'Os_TpStopOsInterrupt',0,1,86,142,7,1,1,1,5
 	.byte	'Config',0,86,142,7,1
 	.word	20085
 	.byte	11,4,4,4,4,0,0,6
-	.byte	'Os_TpBudgetStart',0,3,86,182,7,1,1,1,5
+	.byte	'Os_TpBudgetStart',0,1,86,182,7,1,1,1,5
 	.byte	'Config',0,86,182,7,1
 	.word	20085
 	.byte	5
@@ -6530,7 +6556,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	'Budget',0,86,182,7,1
 	.word	43627
 	.byte	11,11,4,0,4,4,4,4,4,4,4,0,0,6
-	.byte	'Os_TpBudgetStop',0,3,86,131,8,1,1,1,5
+	.byte	'Os_TpBudgetStop',0,1,86,131,8,1,1,1,5
 	.byte	'Config',0,86,131,8,1
 	.word	20085
 	.byte	5
@@ -6540,37 +6566,37 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	'Budget',0,86,131,8,1
 	.word	43627
 	.byte	11,11,4,0,4,4,4,4,4,4,4,4,0,0,3
-	.byte	'Os_TpIsEnabledByCoreTpConfig',0,3,86,213,8,1
+	.byte	'Os_TpIsEnabledByCoreTpConfig',0,1,86,213,8,1
 	.word	246
 	.byte	1,1,5
 	.byte	'Config',0,86,213,8,1
 	.word	20085
 	.byte	4,0,3
-	.byte	'Os_TpIsEnabledByThreadTpConfig',0,3,86,244,8,1
+	.byte	'Os_TpIsEnabledByThreadTpConfig',0,1,86,244,8,1
 	.word	246
 	.byte	1,1,5
 	.byte	'Config',0,86,244,8,1
 	.word	28757
 	.byte	4,0,3
-	.byte	'Os_JobGetCore',0,3,88,190,2,1
+	.byte	'Os_JobGetCore',0,1,88,190,2,1
 	.word	24678
 	.byte	1,1,5
 	.byte	'Job',0,88,190,2,1
 	.word	19004
 	.byte	11,4,0,0,3
-	.byte	'Os_AppCheckIsAccessible',0,3,89,232,1,1
+	.byte	'Os_AppCheckIsAccessible',0,1,89,232,1,1
 	.word	246
 	.byte	1,1,5
 	.byte	'App',0,89,232,1,1
 	.word	27978
 	.byte	4,0,3
-	.byte	'Os_AppGetCore',0,3,89,144,2,1
+	.byte	'Os_AppGetCore',0,1,89,144,2,1
 	.word	24678
 	.byte	1,1,5
 	.byte	'App',0,89,144,2,1
 	.word	27978
 	.byte	4,0,3
-	.byte	'Os_AppGetId',0,3,89,157,2,1
+	.byte	'Os_AppGetId',0,1,89,157,2,1
 	.word	11563
 	.byte	1,1,5
 	.byte	'App',0,89,157,2,1
@@ -6578,14 +6604,14 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	4,0,10
 	.word	409
 	.byte	6
-	.byte	'Os_FifoIdxIncrement',0,3,90,88,1,1,1,5
+	.byte	'Os_FifoIdxIncrement',0,1,90,88,1,1,1,5
 	.byte	'Index',0,90,88,1
 	.word	46126
 	.byte	5
 	.byte	'Size',0,90,88,1
 	.word	409
 	.byte	11,4,0,0,3
-	.byte	'Os_FifoIsFull',0,3,90,118,1
+	.byte	'Os_FifoIsFull',0,1,90,118,1
 	.word	246
 	.byte	1,1,5
 	.byte	'WriteIdx',0,90,118,1
@@ -6597,7 +6623,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	'Size',0,90,118,1
 	.word	409
 	.byte	11,4,0,0,3
-	.byte	'Os_FifoIsEmpty',0,3,90,142,1,1
+	.byte	'Os_FifoIsEmpty',0,1,90,142,1,1
 	.word	246
 	.byte	1,1,5
 	.byte	'WriteIdx',0,90,142,1,1
@@ -6610,14 +6636,14 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	10
 	.word	46328
 	.byte	6
-	.byte	'Os_FifoEmptyQueue',0,3,90,158,1,1,1,1,5
+	.byte	'Os_FifoEmptyQueue',0,1,90,158,1,1,1,1,5
 	.byte	'WriteIdx',0,90,158,1,1
 	.word	46333
 	.byte	5
 	.byte	'ReadIdx',0,90,158,1,1
 	.word	46126
 	.byte	4,0,3
-	.byte	'Os_FifoIndicesInRange',0,3,90,178,1,1
+	.byte	'Os_FifoIndicesInRange',0,1,90,178,1,1
 	.word	246
 	.byte	1,1,5
 	.byte	'WriteIdx',0,90,178,1,1
@@ -6663,7 +6689,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	10
 	.word	46664
 	.byte	3
-	.byte	'Os_Fifo08IsFull',0,3,91,169,1,1
+	.byte	'Os_Fifo08IsFull',0,1,91,169,1,1
 	.word	246
 	.byte	1,1,5
 	.byte	'Fifo',0,91,169,1,1
@@ -6696,7 +6722,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	10
 	.word	46835
 	.byte	3
-	.byte	'Os_Fifo08IsEmpty',0,3,91,132,2,1
+	.byte	'Os_Fifo08IsEmpty',0,1,91,132,2,1
 	.word	246
 	.byte	1,1,5
 	.byte	'Fifo',0,91,132,2,1
@@ -6736,7 +6762,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	10
 	.word	47070
 	.byte	3
-	.byte	'Os_Fifo16IsFull',0,3,93,169,1,1
+	.byte	'Os_Fifo16IsFull',0,1,93,169,1,1
 	.word	246
 	.byte	1,1,5
 	.byte	'Fifo',0,93,169,1,1
@@ -6769,7 +6795,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	10
 	.word	47241
 	.byte	3
-	.byte	'Os_Fifo16IsEmpty',0,3,93,133,2,1
+	.byte	'Os_Fifo16IsEmpty',0,1,93,133,2,1
 	.word	246
 	.byte	1,1,5
 	.byte	'Fifo',0,93,133,2,1
@@ -6809,7 +6835,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	10
 	.word	47476
 	.byte	3
-	.byte	'Os_Fifo32IsFull',0,3,95,169,1,1
+	.byte	'Os_Fifo32IsFull',0,1,95,169,1,1
 	.word	246
 	.byte	1,1,5
 	.byte	'Fifo',0,95,169,1,1
@@ -6842,7 +6868,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	10
 	.word	47647
 	.byte	3
-	.byte	'Os_Fifo32IsEmpty',0,3,95,131,2,1
+	.byte	'Os_Fifo32IsEmpty',0,1,95,131,2,1
 	.word	246
 	.byte	1,1,5
 	.byte	'Fifo',0,95,131,2,1
@@ -6891,7 +6917,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	10
 	.word	47926
 	.byte	3
-	.byte	'Os_FifoRefIsFull',0,3,97,167,1,1
+	.byte	'Os_FifoRefIsFull',0,1,97,167,1,1
 	.word	246
 	.byte	1,1,5
 	.byte	'Fifo',0,97,167,1,1
@@ -6936,7 +6962,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	10
 	.word	48161
 	.byte	3
-	.byte	'Os_FifoRefIsEmpty',0,3,97,255,1,1
+	.byte	'Os_FifoRefIsEmpty',0,1,97,255,1,1
 	.word	246
 	.byte	1,1,5
 	.byte	'Fifo',0,97,255,1,1
@@ -6944,7 +6970,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	11,4,0,0,10
 	.word	48003
 	.byte	3
-	.byte	'Os_ServiceCheckIsAccessible',0,3,99,139,6,1
+	.byte	'Os_ServiceCheckIsAccessible',0,1,99,139,6,1
 	.word	246
 	.byte	1,1,5
 	.byte	'ServiceFunction',0,99,139,6,1
@@ -6992,7 +7018,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	10
 	.word	48604
 	.byte	3
-	.byte	'Os_ServiceStackPoolCheckIsAllowedToGet',0,3,99,165,6,1
+	.byte	'Os_ServiceStackPoolCheckIsAllowedToGet',0,1,99,165,6,1
 	.word	246
 	.byte	1,1,5
 	.byte	'StackPool',0,99,165,6,1
@@ -7001,13 +7027,13 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	'CurrentApplication',0,99,165,6,1
 	.word	11563
 	.byte	4,0,3
-	.byte	'Os_ServiceIsTf',0,3,99,221,6,1
+	.byte	'Os_ServiceIsTf',0,1,99,221,6,1
 	.word	246
 	.byte	1,1,5
 	.byte	'Service',0,99,221,6,1
 	.word	27335
 	.byte	4,0,3
-	.byte	'Os_ServiceIsNtf',0,3,99,234,6,1
+	.byte	'Os_ServiceIsNtf',0,1,99,234,6,1
 	.word	246
 	.byte	1,1,5
 	.byte	'Service',0,99,234,6,1
@@ -7036,10 +7062,11 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.word	48609
 	.byte	4,2,35,20,0,9
 	.word	48856
+.L116:
 	.byte	10
 	.word	48959
 	.byte	3
-	.byte	'Os_Service2Ntf',0,3,99,133,7,1
+	.byte	'Os_Service2Ntf',0,1,99,133,7,1
 	.word	48964
 	.byte	1,1,5
 	.byte	'Service',0,99,133,7,1
@@ -7070,74 +7097,29 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	10
 	.word	49154
 	.byte	3
-	.byte	'Os_ServiceTfNeedsModeSwitch',0,3,99,162,7,1
+	.byte	'Os_ServiceTfNeedsModeSwitch',0,1,99,162,7,1
 	.word	246
 	.byte	1,1,5
 	.byte	'TrustedFunction',0,99,162,7,1
 	.word	49159
 	.byte	4,0,10
 	.word	49023
-	.byte	6
-	.byte	'Os_ServicePrologue',0,3,99,188,7,37,1,1,5
-	.byte	'ServiceCall',0,99,190,7,55
-	.word	28460
-	.byte	5
-	.byte	'Service',0,99,191,7,54
-	.word	27335
-	.byte	5
-	.byte	'CurrentThread',0,99,192,7,53
-	.word	29838
-	.byte	11,4,4,4,4,4,4,4,0,0,9
-	.word	28263
-.L67:
-	.byte	10
-	.word	49334
-	.byte	6
-	.byte	'Os_ServiceEpilogue',0,3,99,235,7,37,1,1,5
-	.byte	'ServiceCall',0,99,237,7,57
-	.word	49339
-	.byte	5
-	.byte	'CurrentThread',0,99,238,7,53
-	.word	29838
-	.byte	11,4,4,4,4,0,0,3
-	.byte	'Os_ServiceStackPoolGetStack',0,3,99,143,8,89
-	.word	48461
-	.byte	1,1,5
-	.byte	'StackPool',0,99,145,8,63
-	.word	48609
-	.byte	5
-	.byte	'CurrentApplication',0,99,146,8,19
-	.word	11563
-	.byte	11,4,4,4,4,0,0,6
-	.byte	'Os_ServiceStackPoolReleaseStack',0,3,99,190,8,37,1,1,5
-	.byte	'StackPool',0,99,192,8,63
-	.word	48609
-	.byte	5
-	.byte	'Stack',0,99,193,8,60
-	.word	48461
-	.byte	5
-	.byte	'Application',0,99,194,8,19
-	.word	11563
-	.byte	11,4,0,0,6
-	.byte	'Os_ServiceNtfInit',0,3,99,227,10,37,1,1,5
-	.byte	'NonTrustedFunction',0,99,229,10,57
-	.word	48964
-	.byte	4,0,2
+	.byte	2
 	.byte	'int',0,4,5,9
-	.word	49671
+	.word	49236
 	.byte	27
 	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,24
-	.word	49678
+	.word	49243
 	.byte	0,18
 	.word	246
 	.byte	10
 	.word	246
 	.byte	28
 	.byte	'__cmpswapw',0
-	.word	49720
+	.word	49285
 	.byte	1,1,1,1,29
 	.byte	'p',0
-	.word	49725
+	.word	49290
 	.byte	29
 	.byte	'value',0
 	.word	246
@@ -8133,7 +8115,12 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.word	32614
 	.byte	32
 	.word	32647
-	.byte	4,0,30
+	.byte	4,0,9
+	.word	28263
+.L75:
+	.byte	10
+	.word	52161
+	.byte	30
 	.word	32702
 	.byte	32
 	.word	32730
@@ -21067,293 +21054,11 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.word	49164
 	.byte	32
 	.word	49204
-	.byte	4,0,30
-	.word	49236
-	.byte	32
-	.word	49263
-	.byte	32
-	.word	49284
-	.byte	32
-	.word	49301
-	.byte	11,33
-	.word	36407
-	.byte	32
-	.word	36427
-	.byte	32
-	.word	36444
-	.byte	34
-	.word	36458
-	.byte	0,4,33
-	.word	37967
-	.byte	32
-	.word	38010
-	.byte	34
-	.word	38026
-	.byte	0,4,33
-	.word	38817
-	.byte	32
-	.word	38856
-	.byte	34
-	.word	38872
-	.byte	0,4,33
-	.word	37232
-	.byte	32
-	.word	37269
-	.byte	34
-	.word	37285
-	.byte	0,4,33
-	.word	38028
-	.byte	32
-	.word	38067
-	.byte	32
-	.word	38083
-	.byte	34
-	.word	38096
-	.byte	0,4,33
-	.word	38874
-	.byte	32
-	.word	38909
-	.byte	32
-	.word	38925
-	.byte	34
-	.word	38947
-	.byte	0,4,33
-	.word	37287
-	.byte	32
-	.word	37320
-	.byte	32
-	.word	37336
-	.byte	34
-	.word	37358
-	.byte	0,4,0,0,30
-	.word	49344
-	.byte	32
-	.word	49371
-	.byte	32
-	.word	49392
-	.byte	11,33
-	.word	36407
-	.byte	32
-	.word	36427
-	.byte	32
-	.word	36444
-	.byte	34
-	.word	36458
-	.byte	0,4,33
-	.word	38028
-	.byte	32
-	.word	38067
-	.byte	32
-	.word	38083
-	.byte	34
-	.word	38096
-	.byte	0,4,33
-	.word	38874
-	.byte	32
-	.word	38909
-	.byte	32
-	.word	38925
-	.byte	34
-	.word	38947
-	.byte	0,4,33
-	.word	37287
-	.byte	32
-	.word	37320
-	.byte	32
-	.word	37336
-	.byte	34
-	.word	37358
-	.byte	0,4,0,0,30
-	.word	49422
-	.byte	32
-	.word	49462
-	.byte	32
-	.word	49481
-	.byte	11,33
-	.word	370
-	.byte	32
-	.word	388
-	.byte	34
-	.word	407
-	.byte	0,4,33
-	.word	262
-	.byte	32
-	.word	290
-	.byte	32
-	.word	302
-	.byte	34
-	.word	319
-	.byte	0,4,33
-	.word	31317
-	.byte	32
-	.word	31358
-	.byte	35
-	.word	31376
-	.byte	33
-	.word	30801
-	.byte	32
-	.word	30837
-	.byte	35
-	.word	30854
-	.byte	34
-	.word	30855
-	.byte	33
-	.word	30427
-	.byte	32
-	.word	30464
-	.byte	34
-	.word	30482
-	.byte	0,34
-	.word	30856
-	.byte	0,0,34
-	.word	31377
-	.byte	33
-	.word	30801
-	.byte	32
-	.word	30837
-	.byte	35
-	.word	30854
-	.byte	34
-	.word	30855
-	.byte	33
-	.word	30427
-	.byte	32
-	.word	30464
-	.byte	34
-	.word	30482
-	.byte	0,34
-	.word	30856
-	.byte	0,0,34
-	.word	31378
-	.byte	0,0,4,33
-	.word	31248
-	.byte	32
-	.word	31276
-	.byte	32
-	.word	31294
-	.byte	35
-	.word	31310
-	.byte	33
-	.word	370
-	.byte	32
-	.word	388
-	.byte	34
-	.word	407
-	.byte	0,34
-	.word	31311
-	.byte	33
-	.word	30936
-	.byte	32
-	.word	30978
-	.byte	34
-	.word	30998
-	.byte	0,34
-	.word	31312
-	.byte	33
-	.word	31000
-	.byte	32
-	.word	31037
-	.byte	34
-	.word	31057
-	.byte	0,34
-	.word	31313
-	.byte	33
-	.word	30869
-	.byte	32
-	.word	30902
-	.byte	32
-	.word	30919
-	.byte	34
-	.word	30934
-	.byte	0,34
-	.word	31314
-	.byte	0,0,4,0,0,30
-	.word	49516
-	.byte	32
-	.word	49556
-	.byte	32
-	.word	49575
-	.byte	32
-	.word	49590
-	.byte	11,33
-	.word	31107
-	.byte	32
-	.word	31133
-	.byte	32
-	.word	31151
-	.byte	35
-	.word	31167
-	.byte	33
-	.word	370
-	.byte	32
-	.word	388
-	.byte	34
-	.word	407
-	.byte	0,34
-	.word	31168
-	.byte	33
-	.word	30869
-	.byte	32
-	.word	30902
-	.byte	32
-	.word	30919
-	.byte	34
-	.word	30934
-	.byte	0,34
-	.word	31169
-	.byte	33
-	.word	31173
-	.byte	32
-	.word	31207
-	.byte	32
-	.word	31225
-	.byte	35
-	.word	31241
-	.byte	33
-	.word	370
-	.byte	32
-	.word	388
-	.byte	34
-	.word	407
-	.byte	0,34
-	.word	31242
-	.byte	33
-	.word	30936
-	.byte	32
-	.word	30978
-	.byte	34
-	.word	30998
-	.byte	0,34
-	.word	31243
-	.byte	33
-	.word	31000
-	.byte	32
-	.word	31037
-	.byte	34
-	.word	31057
-	.byte	0,34
-	.word	31244
-	.byte	33
-	.word	30869
-	.byte	32
-	.word	30902
-	.byte	32
-	.word	30919
-	.byte	34
-	.word	30934
-	.byte	0,34
-	.word	31245
-	.byte	0,0,34
-	.word	31170
-	.byte	0,0,4,0,0,30
-	.word	49615
-	.byte	32
-	.word	49641
 	.byte	4,0,36,1,10
-	.word	88472
+	.word	87275
 	.byte	14
 	.byte	'__codeptr',0,99,1,1
-	.word	88474
+	.word	87277
 	.byte	14
 	.byte	'boolean',0,100,101,31
 	.word	409
@@ -21369,7 +21074,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	2
 	.byte	'long int',0,4,5,14
 	.byte	'sint32',0,100,107,31
-	.word	88557
+	.word	87360
 	.byte	14
 	.byte	'uint32',0,100,108,31
 	.word	145
@@ -21482,7 +21187,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	'NO_ACCESS',0,0,8
 	.byte	'ACCESS',0,1,0,14
 	.byte	'ObjectAccessType',0,3,239,2,3
-	.word	89494
+	.word	88297
 	.byte	14
 	.byte	'RestartType',0,3,249,2,3
 	.word	11946
@@ -21549,28 +21254,28 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.word	48461
 	.byte	4,2,35,56,0,14
 	.byte	'Os_ServiceNtfCallType',0,64,80,42
-	.word	90062
+	.word	88865
 	.byte	23,1,1,24
 	.word	13025
 	.byte	24
 	.word	12690
 	.byte	0,10
-	.word	90154
+	.word	88957
 	.byte	14
 	.byte	'Os_ServiceFtfCbkType',0,57,191,2,9
-	.word	90168
+	.word	88971
 	.byte	12
 	.byte	'Os_ServiceFtfConfigType_Tag',0,57,199,2,8,16,13
 	.byte	'Base',0
 	.word	27227
 	.byte	12,2,35,0,13
 	.byte	'Callback',0
-	.word	90173
+	.word	88976
 	.byte	4,2,35,12,0,14
 	.byte	'Os_ServiceFtfConfigType',0,64,83,44
-	.word	90203
+	.word	89006
 	.byte	10
-	.word	90154
+	.word	88957
 	.byte	14
 	.byte	'Os_ServiceStackPoolConfigType',0,64,88,50
 	.word	48466
@@ -21796,7 +21501,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.word	409
 	.byte	1,2,35,24,0,14
 	.byte	'Os_IsrType',0,54,57,31
-	.word	92463
+	.word	91266
 	.byte	14
 	.byte	'Os_IsrConfigType',0,54,60,37
 	.word	21793
@@ -21814,7 +21519,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.word	145
 	.byte	4,2,35,0,0,14
 	.byte	'Os_IntLevelType',0,23,92,3
-	.word	92643
+	.word	91446
 	.byte	14
 	.byte	'Os_TpType',0,87,69,30
 	.word	19930
@@ -21875,7 +21580,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.word	5497
 	.byte	2,2,35,4,0,14
 	.byte	'Os_ResourceType',0,114,60,36
-	.word	93146
+	.word	91949
 	.byte	14
 	.byte	'Os_ResourceConfigType',0,114,64,42
 	.word	17977
@@ -21913,23 +21618,23 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	'Os_IocCallbackConfigRefType',0,50,132,3,65
 	.word	17346
 	.byte	9
-	.word	93572
+	.word	92375
 	.byte	10
-	.word	93609
+	.word	92412
 	.byte	12
 	.byte	'Os_IocCallbacksConfigType_Tag',0,50,135,3,8,8,13
 	.byte	'CallbackRefs',0
-	.word	93614
+	.word	92417
 	.byte	4,2,35,0,13
 	.byte	'CallbackCount',0
 	.word	145
 	.byte	4,2,35,4,0,14
 	.byte	'Os_IocCallbacksConfigType',0,51,77,46
-	.word	93619
+	.word	92422
 	.byte	9
 	.word	17272
 	.byte	10
-	.word	93735
+	.word	92538
 	.byte	14
 	.byte	'Os_IocLostCounterType',0,51,81,15
 	.word	409
@@ -21940,37 +21645,37 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	'Os_IocType',0,51,84,31
 	.word	22992
 	.byte	9
-	.word	.L121-.L22
+	.word	.L132-.L25
 	.byte	10
-	.word	93819
+	.word	92622
 	.byte	12
 	.byte	'Os_IocSendConfigType_Tag',0,50,237,3,8,32,13
 	.byte	'Base',0
 	.word	23258
 	.byte	20,2,35,0,13
 	.byte	'Callbacks',0
-	.word	93619
+	.word	92422
 	.byte	8,2,35,20,13
 	.byte	'Receive',0
-	.word	93824
+	.word	92627
 	.byte	4,2,35,28,0,9
-	.word	93829
+	.word	92632
 	.byte	10
-	.word	93911
-.L121:
+	.word	92714
+.L132:
 	.byte	12
 	.byte	'Os_IocReceiveConfigType_Tag',0,50,211,3,8,24,13
 	.byte	'Base',0
 	.word	23258
 	.byte	20,2,35,0,13
 	.byte	'Send',0
-	.word	93916
+	.word	92719
 	.byte	4,2,35,20,0,14
 	.byte	'Os_IocReceiveConfigType',0,51,86,44
-	.word	93921
+	.word	92724
 	.byte	14
 	.byte	'Os_IocSendConfigType',0,51,87,41
-	.word	93829
+	.word	92632
 	.byte	12
 	.byte	'Os_IocSendType_Tag',0,50,224,3,8,2,13
 	.byte	'Base',0
@@ -21980,7 +21685,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.word	409
 	.byte	1,2,35,1,0,14
 	.byte	'Os_IocSendType',0,51,88,35
-	.word	94045
+	.word	92848
 	.byte	12
 	.byte	'Os_IocReceiveType_Tag',0,50,197,3,8,2,13
 	.byte	'Base',0
@@ -21990,7 +21695,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.word	409
 	.byte	1,2,35,1,0,14
 	.byte	'Os_IocReceiveType',0,51,89,38
-	.word	94129
+	.word	92932
 	.byte	12
 	.byte	'Os_IocMultiReceiveConfigType_Tag',0,50,140,4,8,24,13
 	.byte	'Base',0
@@ -22000,152 +21705,152 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.word	5497
 	.byte	2,2,35,20,0,14
 	.byte	'Os_IocMultiReceiveConfigType',0,51,92,49
-	.word	94227
+	.word	93030
 	.byte	12
 	.byte	'Os_Ioc08ReceiveConfigType_Tag',0,50,169,4,8,40,13
 	.byte	'Ioc',0
-	.word	93921
+	.word	92724
 	.byte	24,2,35,0,13
 	.byte	'FifoRead',0
 	.word	46745
 	.byte	16,2,35,24,0,14
 	.byte	'Os_Ioc08ReceiveConfigType',0,51,94,46
-	.word	94347
+	.word	93150
 	.byte	12
 	.byte	'Os_Ioc08SendConfigType_Tag',0,50,209,4,8,48,13
 	.byte	'Ioc',0
-	.word	93829
+	.word	92632
 	.byte	32,2,35,0,13
 	.byte	'FifoWrite',0
 	.word	46574
 	.byte	16,2,35,32,0,14
 	.byte	'Os_Ioc08SendConfigType',0,51,95,43
-	.word	94449
+	.word	93252
 	.byte	9
-	.word	94347
+	.word	93150
 	.byte	10
-	.word	94546
+	.word	93349
 	.byte	12
 	.byte	'Os_Ioc08MultiReceiveConfigType_Tag',0,50,183,4,8,28,13
 	.byte	'Ioc',0
-	.word	94227
+	.word	93030
 	.byte	24,2,35,0,13
 	.byte	'Receivers',0
-	.word	94551
+	.word	93354
 	.byte	4,2,35,24,0,14
 	.byte	'Os_Ioc08MultiReceiveConfigType',0,51,96,51
-	.word	94556
+	.word	93359
 	.byte	12
 	.byte	'Os_Ioc16ReceiveConfigType_Tag',0,50,239,4,8,40,13
 	.byte	'Ioc',0
-	.word	93921
+	.word	92724
 	.byte	24,2,35,0,13
 	.byte	'FifoRead',0
 	.word	47151
 	.byte	16,2,35,24,0,14
 	.byte	'Os_Ioc16ReceiveConfigType',0,51,100,46
-	.word	94669
+	.word	93472
 	.byte	12
 	.byte	'Os_Ioc16SendConfigType_Tag',0,50,151,5,8,48,13
 	.byte	'Ioc',0
-	.word	93829
+	.word	92632
 	.byte	32,2,35,0,13
 	.byte	'FifoWrite',0
 	.word	46980
 	.byte	16,2,35,32,0,14
 	.byte	'Os_Ioc16SendConfigType',0,51,101,43
-	.word	94771
+	.word	93574
 	.byte	9
-	.word	94669
+	.word	93472
 	.byte	10
-	.word	94868
+	.word	93671
 	.byte	12
 	.byte	'Os_Ioc16MultiReceiveConfigType_Tag',0,50,253,4,8,28,13
 	.byte	'Ioc',0
-	.word	94227
+	.word	93030
 	.byte	24,2,35,0,13
 	.byte	'Receivers',0
-	.word	94873
+	.word	93676
 	.byte	4,2,35,24,0,14
 	.byte	'Os_Ioc16MultiReceiveConfigType',0,51,102,51
-	.word	94878
+	.word	93681
 	.byte	12
 	.byte	'Os_Ioc32ReceiveConfigType_Tag',0,50,181,5,8,40,13
 	.byte	'Ioc',0
-	.word	93921
+	.word	92724
 	.byte	24,2,35,0,13
 	.byte	'FifoRead',0
 	.word	47557
 	.byte	16,2,35,24,0,14
 	.byte	'Os_Ioc32ReceiveConfigType',0,51,106,46
-	.word	94991
+	.word	93794
 	.byte	12
 	.byte	'Os_Ioc32SendConfigType_Tag',0,50,221,5,8,48,13
 	.byte	'Ioc',0
-	.word	93829
+	.word	92632
 	.byte	32,2,35,0,13
 	.byte	'FifoWrite',0
 	.word	47386
 	.byte	16,2,35,32,0,14
 	.byte	'Os_Ioc32SendConfigType',0,51,107,43
-	.word	95093
+	.word	93896
 	.byte	9
-	.word	94991
+	.word	93794
 	.byte	10
-	.word	95190
+	.word	93993
 	.byte	12
 	.byte	'Os_Ioc32MultiReceiveConfigType_Tag',0,50,195,5,8,28,13
 	.byte	'Ioc',0
-	.word	94227
+	.word	93030
 	.byte	24,2,35,0,13
 	.byte	'Receivers',0
-	.word	95195
+	.word	93998
 	.byte	4,2,35,24,0,14
 	.byte	'Os_Ioc32MultiReceiveConfigType',0,51,108,51
-	.word	95200
+	.word	94003
 	.byte	12
 	.byte	'Os_IocRefReceiveConfigType_Tag',0,50,251,5,8,44,13
 	.byte	'Ioc',0
-	.word	93921
+	.word	92724
 	.byte	24,2,35,0,13
 	.byte	'FifoRead',0
 	.word	48053
 	.byte	20,2,35,24,0,14
 	.byte	'Os_IocRefReceiveConfigType',0,51,112,47
-	.word	95313
+	.word	94116
 	.byte	12
 	.byte	'Os_IocRefSendConfigType_Tag',0,50,163,6,8,52,13
 	.byte	'Ioc',0
-	.word	93829
+	.word	92632
 	.byte	32,2,35,0,13
 	.byte	'FifoWrite',0
 	.word	47817
 	.byte	20,2,35,32,0,14
 	.byte	'Os_IocRefSendConfigType',0,51,113,44
-	.word	95417
+	.word	94220
 	.byte	9
-	.word	95313
+	.word	94116
 	.byte	10
-	.word	95516
+	.word	94319
 	.byte	12
 	.byte	'Os_IocRefMultiReceiveConfigType_Tag',0,50,137,6,8,28,13
 	.byte	'Ioc',0
-	.word	94227
+	.word	93030
 	.byte	24,2,35,0,13
 	.byte	'Receivers',0
-	.word	95521
+	.word	94324
 	.byte	4,2,35,24,0,14
 	.byte	'Os_IocRefMultiReceiveConfigType',0,51,114,52
-	.word	95526
+	.word	94329
 	.byte	23,1,1,24
 	.word	11867
 	.byte	24
 	.word	12690
 	.byte	0,10
-	.word	95641
+	.word	94444
 	.byte	14
 	.byte	'Os_IocCopyCbk',0,50,183,6,9
-	.word	95655
+	.word	94458
 	.byte	12
 	.byte	'Os_IocReadConfigType_Tag',0,50,213,6,8,28,13
 	.byte	'Ioc',0
@@ -22155,19 +21860,19 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.word	11867
 	.byte	4,2,35,20,13
 	.byte	'CopyCbk',0
-	.word	95660
+	.word	94463
 	.byte	4,2,35,24,0,14
 	.byte	'Os_IocReadConfigType',0,51,119,41
-	.word	95683
+	.word	94486
 	.byte	10
-	.word	95641
+	.word	94444
 	.byte	23,1,1,24
 	.word	12690
 	.byte	0,10
-	.word	95793
+	.word	94596
 	.byte	14
 	.byte	'Os_IocInitCbk',0,50,195,6,9
-	.word	95802
+	.word	94605
 	.byte	12
 	.byte	'Os_IocWriteConfigType_Tag',0,50,239,6,8,40,13
 	.byte	'Ioc',0
@@ -22177,18 +21882,18 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.word	12690
 	.byte	4,2,35,20,13
 	.byte	'Callbacks',0
-	.word	93619
+	.word	92422
 	.byte	8,2,35,24,13
 	.byte	'CopyCbk',0
-	.word	95660
+	.word	94463
 	.byte	4,2,35,32,13
 	.byte	'InitCbk',0
-	.word	95807
+	.word	94610
 	.byte	4,2,35,36,0,14
 	.byte	'Os_IocWriteConfigType',0,51,120,42
-	.word	95830
+	.word	94633
 	.byte	10
-	.word	95793
+	.word	94596
 	.byte	14
 	.byte	'Os_DequeType',0,33,82,2
 	.word	16751
@@ -22389,7 +22094,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	'OsOrtiApiIdGetCoreStartState',0,212,1,8
 	.byte	'OsOrtiApiIdGetExceptionAddress',0,214,1,0,14
 	.byte	'OsOrtiApiIdType',0,15,225,3,3
-	.word	96902
+	.word	95705
 	.byte	14
 	.byte	'Os_TraceThreadTypeType',0,15,236,3,2
 	.word	7184
@@ -22404,13 +22109,13 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.word	409
 	.byte	1,2,35,0,0,14
 	.byte	'Os_HookParameterType',0,34,125,2
-	.word	100236
+	.word	99039
 	.byte	26,34,128,1,9,1,13
 	.byte	'ProtectionReaction',0
 	.word	17479
 	.byte	1,2,35,0,0,14
 	.byte	'Os_HookReturnType',0,34,131,1,2
-	.word	100301
+	.word	99104
 	.byte	14
 	.byte	'Os_EventStateType',0,80,77,3
 	.word	40415
@@ -22451,7 +22156,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.word	25988
 	.byte	4,2,35,4,13
 	.byte	'State',0
-	.word	100632
+	.word	99435
 	.byte	1,2,35,8,13
 	.byte	'Next',0
 	.word	26173
@@ -22460,7 +22165,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.word	26173
 	.byte	4,2,35,16,0,14
 	.byte	'Os_SchTType',0,119,70,32
-	.word	100732
+	.word	99535
 	.byte	14
 	.byte	'Os_SchTExPoActionEventConfigType',0,119,76,53
 	.word	25740
@@ -22485,7 +22190,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.word	42378
 	.byte	4,2,35,52,0,14
 	.byte	'Os_TimerPitConfigType',0,121,62,42
-	.word	101027
+	.word	99830
 	.byte	14
 	.byte	'Os_TimerHrtConfigType',0,121,65,42
 	.word	19839
@@ -22507,7 +22212,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.word	19834
 	.byte	4,2,35,64,0,14
 	.byte	'Os_TimerPfrtConfigType',0,121,68,43
-	.word	101157
+	.word	99960
 	.byte	14
 	.byte	'Os_XSigState_Type',0,47,100,2
 	.word	21271
@@ -22584,7 +22289,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	'OS_ALARMSTATE_CANCELED',0,0,8
 	.byte	'OS_ALARMSTATE_SET',0,1,0,14
 	.byte	'Os_AlarmStateType',0,55,123,2
-	.word	102049
+	.word	100852
 	.byte	14
 	.byte	'Os_AlarmAutostartConfigType',0,55,143,1,2
 	.word	24924
@@ -22599,13 +22304,13 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.word	145
 	.byte	14
 	.byte	'Os_SchTStatusType',0,56,149,1,3
-	.word	100632
+	.word	99435
 	.byte	7,56,153,1,9,1,8
 	.byte	'OS_SCHTSYNCSTATUS_NOT_PROVIDED',0,0,8
 	.byte	'OS_SCHTSYNCSTATUS_SYNC',0,1,8
 	.byte	'OS_SCHTSYNCSTATUS_ASYNC',0,2,0,14
 	.byte	'Os_SchTSyncStatusType',0,56,161,1,3
-	.word	102277
+	.word	101080
 	.byte	14
 	.byte	'Os_SchTExPoKindType',0,56,198,1,2
 	.word	25492
@@ -22625,7 +22330,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	'OS_FIFOWRITERESULT_OK',0,0,8
 	.byte	'OS_FIFOWRITERESULT_BUFFEROVERFLOW',0,1,0,14
 	.byte	'Os_FifoWriteResultType',0,123,80,2
-	.word	102553
+	.word	101356
 	.byte	14
 	.byte	'Os_Fifo08WriteConfigType',0,92,66,45
 	.word	46574
@@ -22807,59 +22512,59 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	'OS_TRAPID_GETEXCEPTIONADDRESS',0,245,0,8
 	.byte	'OS_TRAPID_COUNT',0,246,0,0,14
 	.byte	'Os_TrapIdType',0,124,217,1,3
-	.word	103232
+	.word	102035
 	.byte	9
-	.word	94449
+	.word	93252
 	.byte	10
-	.word	106748
+	.word	105551
 	.byte	10
 	.word	409
 	.byte	9
 	.word	409
 	.byte	10
-	.word	106763
+	.word	105566
 	.byte	9
-	.word	94771
+	.word	93574
 	.byte	10
-	.word	106773
+	.word	105576
 	.byte	10
 	.word	5497
 	.byte	9
 	.word	5497
 	.byte	10
-	.word	106788
+	.word	105591
 	.byte	9
-	.word	95093
+	.word	93896
 	.byte	10
-	.word	106798
+	.word	105601
 	.byte	9
-	.word	95417
+	.word	94220
 	.byte	10
-	.word	106808
+	.word	105611
 	.byte	9
-	.word	95683
+	.word	94486
 	.byte	10
-	.word	106818
+	.word	105621
 	.byte	9
-	.word	95830
+	.word	94633
 	.byte	10
-	.word	106828
+	.word	105631
 	.byte	9
-	.word	94556
+	.word	93359
 	.byte	10
-	.word	106838
+	.word	105641
 	.byte	9
-	.word	94878
+	.word	93681
 	.byte	10
-	.word	106848
+	.word	105651
 	.byte	9
-	.word	95200
+	.word	94003
 	.byte	10
-	.word	106858
+	.word	105661
 	.byte	9
-	.word	95526
+	.word	94329
 	.byte	10
-	.word	106868
+	.word	105671
 	.byte	10
 	.word	15538
 	.byte	26,124,232,1,9,8,13
@@ -22870,40 +22575,40 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.word	6060
 	.byte	4,2,35,0,13
 	.byte	'ParamIoc08SendConfigRefType',0
-	.word	106753
+	.word	105556
 	.byte	4,2,35,0,13
 	.byte	'ParamIoc08ReceiveConfigRefType',0
-	.word	94551
+	.word	93354
 	.byte	4,2,35,0,13
 	.byte	'ParamUint8RefType',0
-	.word	106758
+	.word	105561
 	.byte	4,2,35,0,13
 	.byte	'ParamConstUint8RefType',0
-	.word	106768
+	.word	105571
 	.byte	4,2,35,0,13
 	.byte	'ParamUint8Type',0
 	.word	409
 	.byte	1,2,35,0,13
 	.byte	'ParamIoc16SendConfigRefType',0
-	.word	106778
+	.word	105581
 	.byte	4,2,35,0,13
 	.byte	'ParamIoc16ReceiveConfigRefType',0
-	.word	94873
+	.word	93676
 	.byte	4,2,35,0,13
 	.byte	'ParamUint16RefType',0
-	.word	106783
+	.word	105586
 	.byte	4,2,35,0,13
 	.byte	'ParamConstUint16RefType',0
-	.word	106793
+	.word	105596
 	.byte	4,2,35,0,13
 	.byte	'ParamUint16Type',0
 	.word	5497
 	.byte	2,2,35,0,13
 	.byte	'ParamIoc32SendConfigRefType',0
-	.word	106803
+	.word	105606
 	.byte	4,2,35,0,13
 	.byte	'ParamIoc32ReceiveConfigRefType',0
-	.word	95195
+	.word	93998
 	.byte	4,2,35,0,13
 	.byte	'ParamUint32RefType',0
 	.word	33243
@@ -22915,10 +22620,10 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.word	145
 	.byte	4,2,35,0,13
 	.byte	'ParamIocRefSendConfigRefType',0
-	.word	106813
+	.word	105616
 	.byte	4,2,35,0,13
 	.byte	'ParamIocRefReceiveConfigRefType',0
-	.word	95521
+	.word	94324
 	.byte	4,2,35,0,13
 	.byte	'ParamVoidRefType',0
 	.word	12690
@@ -22927,22 +22632,22 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.word	11867
 	.byte	4,2,35,0,13
 	.byte	'ParamIocReadConfigRefType',0
-	.word	106823
+	.word	105626
 	.byte	4,2,35,0,13
 	.byte	'ParamIocWriteConfigRefType',0
-	.word	106833
+	.word	105636
 	.byte	4,2,35,0,13
 	.byte	'ParamIoc08MultiReceiveConfigRefType',0
-	.word	106843
+	.word	105646
 	.byte	4,2,35,0,13
 	.byte	'ParamIoc16MultiReceiveConfigRefType',0
-	.word	106853
+	.word	105656
 	.byte	4,2,35,0,13
 	.byte	'ParamIoc32MultiReceiveConfigRefType',0
-	.word	106863
+	.word	105666
 	.byte	4,2,35,0,13
 	.byte	'ParamIocRefMultiReceiveConfigRefType',0
-	.word	106873
+	.word	105676
 	.byte	4,2,35,0,13
 	.byte	'ParamOSServiceIdType',0
 	.word	8060
@@ -22951,10 +22656,10 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.word	426
 	.byte	2,2,35,0,13
 	.byte	'ParamOs_ErrorParamsRefType',0
-	.word	106878
+	.word	105681
 	.byte	4,2,35,0,0,14
 	.byte	'Os_TrapParameterType',0,124,136,2,3
-	.word	106883
+	.word	105686
 	.byte	26,124,140,2,9,4,13
 	.byte	'ReturnOs_StatusType',0
 	.word	426
@@ -22984,7 +22689,7 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.word	11563
 	.byte	1,2,35,0,13
 	.byte	'ReturnObjectAccessType',0
-	.word	89494
+	.word	88297
 	.byte	1,2,35,0,13
 	.byte	'ReturnAccessType',0
 	.word	28762
@@ -22999,11 +22704,11 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.word	29838
 	.byte	4,2,35,0,0,14
 	.byte	'Os_TrapReturnType',0,124,156,2,3
-	.word	107947
+	.word	106750
 	.byte	0
 	.sdecl	'.debug_abbrev',debug
 	.sect	'.debug_abbrev'
-.L23:
+.L26:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,46,1,3,8,32,13,58,15,59,15
 	.byte	57,15,73,19,54,15,39,12,0,0,4,11,0,0,0,5,5,0,3,8,58,15,59,15,57,15,73,19,0,0,6,46,1,3,8,32,13,58,15,59
 	.byte	15,57,15,54,15,39,12,0,0,7,4,1,58,15,59,15,57,15,11,15,0,0,8,40,0,3,8,28,13,0,0,9,38,0,73,19,0,0,10,15
@@ -23017,12 +22722,12 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	0,54,15,0,0,0
 	.sdecl	'.debug_line',debug
 	.sect	'.debug_line'
-.L24:
-	.word	.L123-.L122
-.L122:
+.L27:
+	.word	.L134-.L133
+.L133:
 	.half	3
-	.word	.L125-.L124
-.L124:
+	.word	.L136-.L135
+.L135:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
 	.byte	'D:\\Zonal\\demo011\\tasking\\component\\Os\\Implementation',0
 	.byte	'D:\\Zonal\\demo011\\tasking\\appl\\GenData',0
@@ -23151,611 +22856,681 @@ __Os_Api_CallFastTrustedFunction_function_end:
 	.byte	'..\\component\\Os\\Implementation\\Os_Job_Types.h',0,0,0,0
 	.byte	'..\\component\\Os\\Implementation\\Os_FifoInt.h',0,0,0,0
 	.byte	'..\\component\\Os\\Implementation\\Os_TrapInt.h',0,0,0,0,0
-.L125:
-.L123:
+.L136:
+.L134:
 	.sdecl	'.debug_info',debug,cluster('Os_ServiceReturn')
 	.sect	'.debug_info'
-.L25:
+.L28:
 	.word	198
 	.half	3
-	.word	.L26
+	.word	.L29
 	.byte	4,1
 	.byte	'..\\component\\Os\\Implementation\\Os_ServiceFunction.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
-	.word	.L28,.L27
+	.word	.L31,.L30
 	.byte	2
-	.word	.L21
+	.word	.L24
 	.byte	3
 	.byte	'Os_ServiceReturn',0,1,133,11,1,1,1,1
-	.word	.L8,.L65,.L7
+	.word	.L11,.L73,.L10
 	.byte	4
-	.word	.L8,.L65
+	.word	.L11,.L73
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('Os_ServiceReturn')
 	.sect	'.debug_abbrev'
-.L26:
+.L29:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('Os_ServiceReturn')
 	.sect	'.debug_line'
-.L27:
-	.word	.L127-.L126
-.L126:
+.L30:
+	.word	.L138-.L137
+.L137:
 	.half	3
-	.word	.L129-.L128
-.L128:
+	.word	.L140-.L139
+.L139:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'..\\component\\Os\\Implementation\\Os_ServiceFunction.c',0,0,0,0,0
-.L129:
+.L140:
 	.byte	5,20,7,0,5,2
-	.word	.L8
+	.word	.L11
 	.byte	3,169,11,1,5,1,7,9
-	.half	.L29-.L8
+	.half	.L32-.L11
 	.byte	3,1,0,1,1
-.L127:
+.L138:
 	.sdecl	'.debug_ranges',debug,cluster('Os_ServiceReturn')
 	.sect	'.debug_ranges'
-.L28:
-	.word	-1,.L8,0,.L29-.L8,0,0
+.L31:
+	.word	-1,.L11,0,.L32-.L11,0,0
 	.sdecl	'.debug_info',debug,cluster('Os_ServiceTfWrapper')
 	.sect	'.debug_info'
-.L30:
+.L33:
 	.word	226
 	.half	3
-	.word	.L31
+	.word	.L34
 	.byte	4,1
 	.byte	'..\\component\\Os\\Implementation\\Os_ServiceFunction.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
-	.word	.L33,.L32
+	.word	.L36,.L35
 	.byte	2
-	.word	.L21
+	.word	.L24
 	.byte	3
 	.byte	'Os_ServiceTfWrapper',0,1,185,11,1,1,1,1
-	.word	.L10,.L66,.L9
+	.word	.L13,.L74,.L12
 	.byte	4
 	.byte	'ServiceCall',0,1,185,11,1
-	.word	.L67,.L68
+	.word	.L75,.L76
 	.byte	5
-	.word	.L10,.L66
+	.word	.L13,.L74
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('Os_ServiceTfWrapper')
 	.sect	'.debug_abbrev'
-.L31:
+.L34:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('Os_ServiceTfWrapper')
 	.sect	'.debug_line'
-.L32:
-	.word	.L131-.L130
-.L130:
+.L35:
+	.word	.L142-.L141
+.L141:
 	.half	3
-	.word	.L133-.L132
-.L132:
+	.word	.L144-.L143
+.L143:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'..\\component\\Os\\Implementation\\Os_ServiceFunction.c',0,0,0,0,0
-.L133:
+.L144:
 	.byte	5,22,7,0,5,2
-	.word	.L10
+	.word	.L13
 	.byte	3,193,11,1,5,1,7,9
-	.half	.L34-.L10
+	.half	.L37-.L13
 	.byte	3,14,0,1,1
-.L131:
+.L142:
 	.sdecl	'.debug_ranges',debug,cluster('Os_ServiceTfWrapper')
 	.sect	'.debug_ranges'
-.L33:
-	.word	-1,.L10,0,.L34-.L10,0,0
+.L36:
+	.word	-1,.L13,0,.L37-.L13,0,0
 	.sdecl	'.debug_info',debug,cluster('Os_ServiceNtfWrapper')
 	.sect	'.debug_info'
-.L35:
+.L38:
 	.word	227
 	.half	3
-	.word	.L36
+	.word	.L39
 	.byte	4,1
 	.byte	'..\\component\\Os\\Implementation\\Os_ServiceFunction.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
-	.word	.L38,.L37
+	.word	.L41,.L40
 	.byte	2
-	.word	.L21
+	.word	.L24
 	.byte	3
 	.byte	'Os_ServiceNtfWrapper',0,1,222,11,1,1,1,1
-	.word	.L12,.L69,.L11
+	.word	.L15,.L77,.L14
 	.byte	4
 	.byte	'ServiceCall',0,1,222,11,1
-	.word	.L67,.L70
+	.word	.L75,.L78
 	.byte	5
-	.word	.L12,.L69
+	.word	.L15,.L77
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('Os_ServiceNtfWrapper')
 	.sect	'.debug_abbrev'
-.L36:
+.L39:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('Os_ServiceNtfWrapper')
 	.sect	'.debug_line'
-.L37:
-	.word	.L135-.L134
-.L134:
+.L40:
+	.word	.L146-.L145
+.L145:
 	.half	3
-	.word	.L137-.L136
-.L136:
+	.word	.L148-.L147
+.L147:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'..\\component\\Os\\Implementation\\Os_ServiceFunction.c',0,0,0,0,0
-.L137:
+.L148:
 	.byte	5,22,7,0,5,2
-	.word	.L12
+	.word	.L15
 	.byte	3,230,11,1,5,1,7,9
-	.half	.L39-.L12
+	.half	.L42-.L15
 	.byte	3,14,0,1,1
-.L135:
+.L146:
 	.sdecl	'.debug_ranges',debug,cluster('Os_ServiceNtfWrapper')
 	.sect	'.debug_ranges'
-.L38:
-	.word	-1,.L12,0,.L39-.L12,0,0
+.L41:
+	.word	-1,.L15,0,.L42-.L15,0,0
 	.sdecl	'.debug_info',debug,cluster('Os_ServiceCallForceRelease')
 	.sect	'.debug_info'
-.L40:
+.L43:
 	.word	234
 	.half	3
-	.word	.L41
+	.word	.L44
 	.byte	4,1
 	.byte	'..\\component\\Os\\Implementation\\Os_ServiceFunction.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
-	.word	.L43,.L42
+	.word	.L46,.L45
 	.byte	2
-	.word	.L21
+	.word	.L24
 	.byte	3
 	.byte	'Os_ServiceCallForceRelease',0,1,133,12,21,1,1,1
-	.word	.L14,.L71,.L13
+	.word	.L17,.L79,.L16
 	.byte	4
 	.byte	'ServiceCalls',0,1,135,12,59
-	.word	.L72,.L73
+	.word	.L80,.L81
 	.byte	5
-	.word	.L14,.L71
+	.word	.L17,.L79
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('Os_ServiceCallForceRelease')
 	.sect	'.debug_abbrev'
-.L41:
+.L44:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('Os_ServiceCallForceRelease')
 	.sect	'.debug_line'
-.L42:
-	.word	.L139-.L138
-.L138:
+.L45:
+	.word	.L150-.L149
+.L149:
 	.half	3
-	.word	.L141-.L140
-.L140:
+	.word	.L152-.L151
+.L151:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'..\\component\\Os\\Implementation\\Os_ServiceFunction.c',0,0,0,0,0
-.L141:
+.L152:
 	.byte	5,1,7,0,5,2
-	.word	.L14
+	.word	.L17
 	.byte	3,177,12,1,7,9
-	.half	.L44-.L14
+	.half	.L47-.L17
 	.byte	0,1,1
-.L139:
+.L150:
 	.sdecl	'.debug_ranges',debug,cluster('Os_ServiceCallForceRelease')
 	.sect	'.debug_ranges'
-.L43:
-	.word	-1,.L14,0,.L44-.L14,0,0
+.L46:
+	.word	-1,.L17,0,.L47-.L17,0,0
 	.sdecl	'.debug_info',debug,cluster('Os_Api_CallTrustedFunction')
 	.sect	'.debug_info'
-.L45:
+.L48:
 	.word	386
 	.half	3
-	.word	.L46
+	.word	.L49
 	.byte	4,1
 	.byte	'..\\component\\Os\\Implementation\\Os_ServiceFunction.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
-	.word	.L48,.L47
+	.word	.L51,.L50
 	.byte	2
-	.word	.L21
+	.word	.L24
 	.byte	3
 	.byte	'Os_Api_CallTrustedFunction',0,1,190,12,30
-	.word	.L74
+	.word	.L82
 	.byte	1,1,1
-	.word	.L16,.L75,.L15
+	.word	.L19,.L83,.L18
 	.byte	4
 	.byte	'FunctionIndex',0,1,192,12,28
-	.word	.L76,.L77
+	.word	.L84,.L85
 	.byte	4
 	.byte	'FunctionParams',0,1,193,12,35
-	.word	.L78,.L79
+	.word	.L86,.L87
 	.byte	5
-	.word	.L16,.L75
+	.word	.L19,.L83
 	.byte	6
-	.word	.L80,.L16,.L81
+	.word	.L88,.L19,.L89
 	.byte	7
-	.word	.L82,.L16,.L81
+	.word	.L90,.L19,.L89
 	.byte	6
-	.word	.L83,.L16,.L81
+	.word	.L91,.L19,.L89
 	.byte	8
-	.word	.L84,.L85
+	.word	.L92,.L93
 	.byte	7
-	.word	.L86,.L16,.L81
+	.word	.L94,.L19,.L89
 	.byte	6
-	.word	.L87,.L16,.L81
+	.word	.L95,.L19,.L89
 	.byte	7
-	.word	.L88,.L16,.L81
+	.word	.L96,.L19,.L89
 	.byte	9
 	.byte	'ReturnValue',0,2,224,4,10
-	.word	.L89,.L90
+	.word	.L97,.L98
 	.byte	0,0,0,0,0,0,0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('Os_Api_CallTrustedFunction')
 	.sect	'.debug_abbrev'
-.L46:
+.L49:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
 	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
 	.byte	29,1,49,16,17,1,18,1,0,0,7,11,1,49,16,17,1,18,1,0,0,8,5,0,49,16,2,6,0,0,9,52,0,3,8,58,15,59,15,57,15,73
 	.byte	16,2,6,0,0,0
 	.sdecl	'.debug_line',debug,cluster('Os_Api_CallTrustedFunction')
 	.sect	'.debug_line'
-.L47:
-	.word	.L143-.L142
-.L142:
+.L50:
+	.word	.L154-.L153
+.L153:
 	.half	3
-	.word	.L145-.L144
-.L144:
+	.word	.L156-.L155
+.L155:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'..\\component\\Os\\Implementation\\Os_ServiceFunction.c',0,0,0,0
 	.byte	'..\\component\\Os\\Implementation\\Os_Hal_Compiler_TaskingInt.h',0,0,0,0,0
-.L145:
+.L156:
 	.byte	4,2,5,3,7,0,5,2
-	.word	.L16
+	.word	.L19
 	.byte	3,224,4,1,4,1,5,10,9
-	.half	.L81-.L16
+	.half	.L89-.L19
 	.byte	3,136,8,1,5,1,3,1,1,7,9
-	.half	.L49-.L81
+	.half	.L52-.L89
 	.byte	0,1,1
-.L143:
+.L154:
 	.sdecl	'.debug_ranges',debug,cluster('Os_Api_CallTrustedFunction')
 	.sect	'.debug_ranges'
-.L48:
-	.word	-1,.L16,0,.L49-.L16,0,0
+.L51:
+	.word	-1,.L19,0,.L52-.L19,0,0
 	.sdecl	'.debug_info',debug,cluster('Os_Api_CallNonTrustedFunction')
 	.sect	'.debug_info'
-.L50:
+.L53:
 	.word	389
 	.half	3
-	.word	.L51
+	.word	.L54
 	.byte	4,1
 	.byte	'..\\component\\Os\\Implementation\\Os_ServiceFunction.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
-	.word	.L53,.L52
+	.word	.L56,.L55
 	.byte	2
-	.word	.L21
+	.word	.L24
 	.byte	3
 	.byte	'Os_Api_CallNonTrustedFunction',0,1,246,12,30
-	.word	.L74
+	.word	.L82
 	.byte	1,1,1
-	.word	.L18,.L91,.L17
+	.word	.L21,.L99,.L20
 	.byte	4
 	.byte	'FunctionIndex',0,1,248,12,34
-	.word	.L92,.L93
+	.word	.L100,.L101
 	.byte	4
 	.byte	'FunctionParams',0,1,249,12,41
-	.word	.L94,.L95
+	.word	.L102,.L103
 	.byte	5
-	.word	.L18,.L91
+	.word	.L21,.L99
 	.byte	6
-	.word	.L80,.L18,.L96
+	.word	.L88,.L21,.L104
 	.byte	7
-	.word	.L82,.L18,.L96
+	.word	.L90,.L21,.L104
 	.byte	6
-	.word	.L83,.L18,.L96
+	.word	.L91,.L21,.L104
 	.byte	8
-	.word	.L84,.L97
+	.word	.L92,.L105
 	.byte	7
-	.word	.L86,.L18,.L96
+	.word	.L94,.L21,.L104
 	.byte	6
-	.word	.L87,.L18,.L96
+	.word	.L95,.L21,.L104
 	.byte	7
-	.word	.L88,.L18,.L96
+	.word	.L96,.L21,.L104
 	.byte	9
 	.byte	'ReturnValue',0,2,224,4,10
-	.word	.L89,.L98
+	.word	.L97,.L106
 	.byte	0,0,0,0,0,0,0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('Os_Api_CallNonTrustedFunction')
 	.sect	'.debug_abbrev'
-.L51:
+.L54:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
 	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
 	.byte	29,1,49,16,17,1,18,1,0,0,7,11,1,49,16,17,1,18,1,0,0,8,5,0,49,16,2,6,0,0,9,52,0,3,8,58,15,59,15,57,15,73
 	.byte	16,2,6,0,0,0
 	.sdecl	'.debug_line',debug,cluster('Os_Api_CallNonTrustedFunction')
 	.sect	'.debug_line'
-.L52:
-	.word	.L147-.L146
-.L146:
+.L55:
+	.word	.L158-.L157
+.L157:
 	.half	3
-	.word	.L149-.L148
-.L148:
+	.word	.L160-.L159
+.L159:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'..\\component\\Os\\Implementation\\Os_ServiceFunction.c',0,0,0,0
 	.byte	'..\\component\\Os\\Implementation\\Os_Hal_Compiler_TaskingInt.h',0,0,0,0,0
-.L149:
+.L160:
 	.byte	4,2,5,3,7,0,5,2
-	.word	.L18
+	.word	.L21
 	.byte	3,224,4,1,4,1,5,10,9
-	.half	.L96-.L18
+	.half	.L104-.L21
 	.byte	3,193,8,1,5,1,3,1,1,7,9
-	.half	.L54-.L96
+	.half	.L57-.L104
 	.byte	0,1,1
-.L147:
+.L158:
 	.sdecl	'.debug_ranges',debug,cluster('Os_Api_CallNonTrustedFunction')
 	.sect	'.debug_ranges'
-.L53:
-	.word	-1,.L18,0,.L54-.L18,0,0
+.L56:
+	.word	-1,.L21,0,.L57-.L21,0,0
 	.sdecl	'.debug_info',debug,cluster('Os_Api_CallFastTrustedFunction')
 	.sect	'.debug_info'
-.L55:
+.L58:
 	.word	271
 	.half	3
-	.word	.L56
+	.word	.L59
 	.byte	4,1
 	.byte	'..\\component\\Os\\Implementation\\Os_ServiceFunction.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
-	.word	.L58,.L57
+	.word	.L61,.L60
 	.byte	2
-	.word	.L21
+	.word	.L24
 	.byte	3
 	.byte	'Os_Api_CallFastTrustedFunction',0,1,175,13,30
-	.word	.L74
+	.word	.L82
 	.byte	1,1,1
-	.word	.L20,.L99,.L19
+	.word	.L23,.L107,.L22
 	.byte	4
 	.byte	'FunctionIndex',0,1,177,13,35
-	.word	.L100,.L101
+	.word	.L108,.L109
 	.byte	4
 	.byte	'FunctionParams',0,1,178,13,42
-	.word	.L102,.L103
+	.word	.L110,.L111
 	.byte	5
-	.word	.L20,.L99
+	.word	.L23,.L107
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('Os_Api_CallFastTrustedFunction')
 	.sect	'.debug_abbrev'
-.L56:
+.L59:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
 	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('Os_Api_CallFastTrustedFunction')
 	.sect	'.debug_line'
-.L57:
-	.word	.L151-.L150
-.L150:
+.L60:
+	.word	.L162-.L161
+.L161:
 	.half	3
-	.word	.L153-.L152
-.L152:
+	.word	.L164-.L163
+.L163:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'..\\component\\Os\\Implementation\\Os_ServiceFunction.c',0,0,0,0,0
-.L153:
+.L164:
 	.byte	5,10,7,0,5,2
-	.word	.L20
+	.word	.L23
 	.byte	3,201,13,1,5,1,3,1,1,7,9
-	.half	.L59-.L20
+	.half	.L62-.L23
 	.byte	0,1,1
-.L151:
+.L162:
 	.sdecl	'.debug_ranges',debug,cluster('Os_Api_CallFastTrustedFunction')
 	.sect	'.debug_ranges'
-.L58:
-	.word	-1,.L20,0,.L59-.L20,0,0
+.L61:
+	.word	-1,.L23,0,.L62-.L23,0,0
 	.sdecl	'.debug_info',debug,cluster('Os_ServiceInitInternal')
 	.sect	'.debug_info'
-.L60:
+.L63:
 	.word	225
 	.half	3
-	.word	.L61
+	.word	.L64
 	.byte	4,1
 	.byte	'..\\component\\Os\\Implementation\\Os_ServiceFunction.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
-	.word	.L63,.L62
+	.word	.L66,.L65
 	.byte	2
-	.word	.L21
+	.word	.L24
 	.byte	3
 	.byte	'Os_ServiceInitInternal',0,1,205,10,21,1,1,1
-	.word	.L6,.L104,.L5
+	.word	.L7,.L112,.L6
 	.byte	4
 	.byte	'Service',0,1,207,10,54
-	.word	.L105,.L106
+	.word	.L113,.L114
 	.byte	5
-	.word	.L6,.L104
+	.word	.L7,.L112
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('Os_ServiceInitInternal')
 	.sect	'.debug_abbrev'
-.L61:
+.L64:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('Os_ServiceInitInternal')
 	.sect	'.debug_line'
-.L62:
-	.word	.L155-.L154
-.L154:
+.L65:
+	.word	.L166-.L165
+.L165:
 	.half	3
-	.word	.L157-.L156
-.L156:
+	.word	.L168-.L167
+.L167:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'..\\component\\Os\\Implementation\\Os_ServiceFunction.c',0,0,0,0,0
-.L157:
-	.byte	5,1,7,0,5,2
-	.word	.L6
-	.byte	3,215,10,1,7,9
-	.half	.L64-.L6
+.L168:
+	.byte	5,36,7,0,5,2
+	.word	.L7
+	.byte	3,239,6,1,5,3,9
+	.half	.L169-.L7
+	.byte	3,227,3,1,5,10,7,9
+	.half	.L170-.L169
+	.byte	3,185,124,1,5,1,7,9
+	.half	.L2-.L170
+	.byte	3,204,3,1,7,9
+	.half	.L67-.L2
 	.byte	0,1,1
-.L155:
+.L166:
 	.sdecl	'.debug_ranges',debug,cluster('Os_ServiceInitInternal')
 	.sect	'.debug_ranges'
-.L63:
-	.word	-1,.L6,0,.L64-.L6,0,0
+.L66:
+	.word	-1,.L7,0,.L67-.L7,0,0
+	.sdecl	'.debug_info',debug,cluster('Os_ServiceNtfInit')
+	.sect	'.debug_info'
+.L68:
+	.word	230
+	.half	3
+	.word	.L69
+	.byte	4,1
+	.byte	'..\\component\\Os\\Implementation\\Os_ServiceFunction.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
+	.word	.L71,.L70
+	.byte	2
+	.word	.L24
+	.byte	3
+	.byte	'Os_ServiceNtfInit',0,1,227,10,37,1,1
+	.word	.L9,.L115,.L8
+	.byte	4
+	.byte	'NonTrustedFunction',0,1,229,10,57
+	.word	.L116,.L117
+	.byte	5
+	.word	.L9,.L115
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Os_ServiceNtfInit')
+	.sect	'.debug_abbrev'
+.L69:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Os_ServiceNtfInit')
+	.sect	'.debug_line'
+.L70:
+	.word	.L172-.L171
+.L171:
+	.half	3
+	.word	.L174-.L173
+.L173:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\component\\Os\\Implementation\\Os_ServiceFunction.c',0,0,0,0,0
+.L174:
+	.byte	5,1,7,0,5,2
+	.word	.L9
+	.byte	3,237,10,1,7,9
+	.half	.L72-.L9
+	.byte	0,1,1
+.L172:
+	.sdecl	'.debug_ranges',debug,cluster('Os_ServiceNtfInit')
+	.sect	'.debug_ranges'
+.L71:
+	.word	-1,.L9,0,.L72-.L9,0,0
 	.sdecl	'.debug_loc',debug,cluster('Os_Api_CallFastTrustedFunction')
 	.sect	'.debug_loc'
-.L101:
-	.word	-1,.L20,0,.L99-.L20
+.L109:
+	.word	-1,.L23,0,.L107-.L23
 	.half	1
 	.byte	84
 	.word	0,0
-.L103:
-	.word	-1,.L20,0,.L99-.L20
+.L111:
+	.word	-1,.L23,0,.L107-.L23
 	.half	1
 	.byte	100
 	.word	0,0
-.L19:
-	.word	-1,.L20,0,.L99-.L20
+.L22:
+	.word	-1,.L23,0,.L107-.L23
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('Os_Api_CallNonTrustedFunction')
 	.sect	'.debug_loc'
-.L97:
+.L105:
 	.word	0,0
-.L93:
-	.word	-1,.L18,0,.L91-.L18
+.L101:
+	.word	-1,.L21,0,.L99-.L21
 	.half	1
 	.byte	84
 	.word	0,0
-.L95:
-	.word	-1,.L18,0,.L91-.L18
+.L103:
+	.word	-1,.L21,0,.L99-.L21
 	.half	1
 	.byte	100
 	.word	0,0
-.L17:
-	.word	-1,.L18,0,.L91-.L18
+.L20:
+	.word	-1,.L21,0,.L99-.L21
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L98:
-	.word	-1,.L18,.L96-.L18,.L91-.L18
+.L106:
+	.word	-1,.L21,.L104-.L21,.L99-.L21
 	.half	1
 	.byte	95
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('Os_Api_CallTrustedFunction')
 	.sect	'.debug_loc'
-.L85:
+.L93:
 	.word	0,0
-.L77:
-	.word	-1,.L16,0,.L75-.L16
+.L85:
+	.word	-1,.L19,0,.L83-.L19
 	.half	1
 	.byte	84
 	.word	0,0
-.L79:
-	.word	-1,.L16,0,.L75-.L16
+.L87:
+	.word	-1,.L19,0,.L83-.L19
 	.half	1
 	.byte	100
 	.word	0,0
-.L15:
-	.word	-1,.L16,0,.L75-.L16
+.L18:
+	.word	-1,.L19,0,.L83-.L19
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L90:
-	.word	-1,.L16,.L81-.L16,.L75-.L16
+.L98:
+	.word	-1,.L19,.L89-.L19,.L83-.L19
 	.half	1
 	.byte	95
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('Os_ServiceCallForceRelease')
 	.sect	'.debug_loc'
-.L13:
-	.word	-1,.L14,0,.L71-.L14
+.L16:
+	.word	-1,.L17,0,.L79-.L17
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L73:
-	.word	-1,.L14,0,.L71-.L14
+.L81:
+	.word	-1,.L17,0,.L79-.L17
 	.half	1
 	.byte	100
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('Os_ServiceInitInternal')
 	.sect	'.debug_loc'
-.L5:
-	.word	-1,.L6,0,.L104-.L6
+.L6:
+	.word	-1,.L7,0,.L112-.L7
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L106:
-	.word	-1,.L6,0,.L104-.L6
+.L114:
+	.word	-1,.L7,0,.L112-.L7
 	.half	1
 	.byte	100
 	.word	0,0
-	.sdecl	'.debug_loc',debug,cluster('Os_ServiceNtfWrapper')
+	.sdecl	'.debug_loc',debug,cluster('Os_ServiceNtfInit')
 	.sect	'.debug_loc'
-.L11:
-	.word	-1,.L12,0,.L69-.L12
+.L117:
+	.word	-1,.L9,0,.L115-.L9
+	.half	1
+	.byte	100
+	.word	0,0
+.L8:
+	.word	-1,.L9,0,.L115-.L9
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L70:
-	.word	-1,.L12,0,.L69-.L12
+	.sdecl	'.debug_loc',debug,cluster('Os_ServiceNtfWrapper')
+	.sect	'.debug_loc'
+.L14:
+	.word	-1,.L15,0,.L77-.L15
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L78:
+	.word	-1,.L15,0,.L77-.L15
 	.half	1
 	.byte	100
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('Os_ServiceReturn')
 	.sect	'.debug_loc'
-.L7:
-	.word	-1,.L8,0,.L65-.L8
+.L10:
+	.word	-1,.L11,0,.L73-.L11
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('Os_ServiceTfWrapper')
 	.sect	'.debug_loc'
-.L9:
-	.word	-1,.L10,0,.L66-.L10
+.L12:
+	.word	-1,.L13,0,.L74-.L13
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L68:
-	.word	-1,.L10,0,.L66-.L10
+.L76:
+	.word	-1,.L13,0,.L74-.L13
 	.half	1
 	.byte	100
 	.word	0,0
 	.sdecl	'.debug_frame',debug
 	.sect	'.debug_frame'
-.L158:
+.L175:
 	.word	48
 	.word	-1
 	.byte	3,0,2,1,27,12,26,0,8,27,8,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36,8,37,8,38
 	.byte	8,39
 	.sdecl	'.debug_frame',debug,cluster('Os_ServiceInitInternal')
 	.sect	'.debug_frame'
+	.word	12
+	.word	.L175,.L7,.L112-.L7
+	.sdecl	'.debug_frame',debug,cluster('Os_ServiceNtfInit')
+	.sect	'.debug_frame'
 	.word	24
-	.word	.L158,.L6,.L104-.L6
+	.word	.L175,.L9,.L115-.L9
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('Os_ServiceReturn')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L158,.L8,.L65-.L8
+	.word	.L175,.L11,.L73-.L11
 	.sdecl	'.debug_frame',debug,cluster('Os_ServiceTfWrapper')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L158,.L10,.L66-.L10
+	.word	.L175,.L13,.L74-.L13
 	.sdecl	'.debug_frame',debug,cluster('Os_ServiceNtfWrapper')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L158,.L12,.L69-.L12
+	.word	.L175,.L15,.L77-.L15
 	.sdecl	'.debug_frame',debug,cluster('Os_ServiceCallForceRelease')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L158,.L14,.L71-.L14
+	.word	.L175,.L17,.L79-.L17
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('Os_Api_CallTrustedFunction')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L158,.L16,.L75-.L16
+	.word	.L175,.L19,.L83-.L19
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('Os_Api_CallNonTrustedFunction')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L158,.L18,.L91-.L18
+	.word	.L175,.L21,.L99-.L21
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('Os_Api_CallFastTrustedFunction')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L158,.L20,.L99-.L20
+	.word	.L175,.L23,.L107-.L23
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 
 ; ..\component\Os\Implementation\Os_ServiceFunction.c	  1740  

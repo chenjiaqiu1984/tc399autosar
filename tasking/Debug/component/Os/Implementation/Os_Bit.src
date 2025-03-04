@@ -22,17 +22,17 @@ $TC162
 	.word	.L5
 	.byte	2
 	.byte	'unsigned long int',0,4,7,3
-	.byte	'Os_Hal_Mfa10',0,3,1,190,4,1
+	.byte	'Os_Hal_Mfa10',0,1,1,190,4,1
 	.word	133
 	.byte	1,1,4,0,3
-	.byte	'Os_Hal_Mfa11',0,3,1,206,4,1
+	.byte	'Os_Hal_Mfa11',0,1,1,206,4,1
 	.word	133
 	.byte	1,1,4,0,3
-	.byte	'Os_Hal_Mfa8',0,3,1,222,4,1
+	.byte	'Os_Hal_Mfa8',0,1,1,222,4,1
 	.word	133
 	.byte	1,1,4,0,2
 	.byte	'unsigned int',0,4,7,3
-	.byte	'Os_ErrIsValueLo',0,3,2,202,18,1
+	.byte	'Os_ErrIsValueLo',0,1,2,202,18,1
 	.word	234
 	.byte	1,1,5
 	.byte	'Id',0,2,202,18,1
@@ -41,13 +41,13 @@ $TC162
 	.byte	'Compare',0,2,202,18,1
 	.word	133
 	.byte	4,0,3
-	.byte	'Os_ErrExtendedCheck',0,3,2,216,18,1
+	.byte	'Os_ErrExtendedCheck',0,1,2,216,18,1
 	.word	234
 	.byte	1,1,5
 	.byte	'Value',0,2,216,18,1
 	.word	234
 	.byte	4,0,6
-	.byte	'Os_Assert',0,3,2,140,19,1,1,1,5
+	.byte	'Os_Assert',0,1,2,140,19,1,1,1,5
 	.byte	'Condition',0,2,140,19,1
 	.word	234
 	.byte	4,0,2
@@ -139,34 +139,34 @@ $TC162
 	.byte	'OS_STATUS_STATE_ALREADY_RESTARTING',0,135,20,8
 	.byte	'OS_STATUS_VALUE_IS_TOO_LOW_3',0,136,20,8
 	.byte	'OS_STATUS_VALUE_IS_NOT_BOOLEAN',0,136,22,0,3
-	.byte	'Os_ErrOsStatus2UserStatus',0,3,2,185,19,1
+	.byte	'Os_ErrOsStatus2UserStatus',0,1,2,185,19,1
 	.word	397
 	.byte	1,1,5
 	.byte	'OsStatus',0,2,185,19,1
 	.word	414
 	.byte	4,0,3
-	.byte	'Os_ErrIsPropagationRequired',0,3,2,203,19,1
+	.byte	'Os_ErrIsPropagationRequired',0,1,2,203,19,1
 	.word	234
 	.byte	1,1,5
 	.byte	'OsStatus',0,2,203,19,1
 	.word	414
 	.byte	4,0,6
-	.byte	'Os_Hal_IntEnableGlobal',0,3,4,92,1,1,1,4,0,6
-	.byte	'Os_Hal_IntDisableGlobal',0,3,4,108,1,1,1,4,0,3
-	.byte	'Os_Hal_IntDisableAndReturnGlobalState',0,3,4,125,1
+	.byte	'Os_Hal_IntEnableGlobal',0,1,4,92,1,1,1,4,0,6
+	.byte	'Os_Hal_IntDisableGlobal',0,1,4,108,1,1,1,4,0,3
+	.byte	'Os_Hal_IntDisableAndReturnGlobalState',0,1,4,125,1
 	.word	133
 	.byte	1,1,4,0,9
 	.word	133
 	.byte	10
 	.word	3155
 	.byte	6
-	.byte	'Os_Hal_IntSetGlobalState',0,3,4,148,1,1,1,1,5
+	.byte	'Os_Hal_IntSetGlobalState',0,1,4,148,1,1,1,1,5
 	.byte	'State',0,4,148,1,1
 	.word	3160
 	.byte	4,0,10
 	.word	133
 	.byte	6
-	.byte	'Os_Hal_IntGetLevel',0,3,4,173,1,1,1,1,5
+	.byte	'Os_Hal_IntGetLevel',0,1,4,173,1,1,1,1,5
 	.byte	'Level',0,4,173,1,1
 	.word	3215
 	.byte	4,0,9
@@ -174,27 +174,27 @@ $TC162
 	.byte	10
 	.word	3264
 	.byte	6
-	.byte	'Os_Hal_IntSetLevel',0,3,4,194,1,1,1,1,5
+	.byte	'Os_Hal_IntSetLevel',0,1,4,194,1,1,1,1,5
 	.byte	'Level',0,4,194,1,1
 	.word	3269
 	.byte	11,4,4,0,0,10
 	.word	133
 	.byte	6
-	.byte	'Os_Hal_IntGetGlobalEnable',0,3,4,223,1,1,1,1,5
+	.byte	'Os_Hal_IntGetGlobalEnable',0,1,4,223,1,1,1,1,5
 	.byte	'State',0,4,223,1,1
 	.word	3321
 	.byte	4,0,6
-	.byte	'Os_Hal_IntGetCat2LockLevel',0,3,4,242,1,1,1,1,5
+	.byte	'Os_Hal_IntGetCat2LockLevel',0,1,4,242,1,1,1,1,5
 	.byte	'Level',0,4,242,1,1
 	.word	3215
 	.byte	4,0,6
-	.byte	'Os_Hal_IntGetTaskLevel',0,3,4,171,2,1,1,1,5
+	.byte	'Os_Hal_IntGetTaskLevel',0,1,4,171,2,1,1,1,5
 	.byte	'Level',0,4,171,2,1
 	.word	3215
 	.byte	4,0,10
 	.word	133
 	.byte	6
-	.byte	'Os_Hal_IntGetInterruptState',0,3,4,190,2,1,1,1,5
+	.byte	'Os_Hal_IntGetInterruptState',0,1,4,190,2,1,1,1,5
 	.byte	'InterruptState',0,4,190,2,1
 	.word	3477
 	.byte	4,0,12
@@ -212,19 +212,19 @@ $TC162
 	.byte	10
 	.word	3633
 	.byte	6
-	.byte	'Os_Hal_IntDisableSource',0,3,4,212,2,1,1,1,5
+	.byte	'Os_Hal_IntDisableSource',0,1,4,212,2,1,1,1,5
 	.byte	'IsrConfig',0,4,212,2,1
 	.word	3638
 	.byte	4,0,6
-	.byte	'Os_Hal_IntEnableSource',0,3,4,246,2,1,1,1,5
+	.byte	'Os_Hal_IntEnableSource',0,1,4,246,2,1,1,1,5
 	.byte	'IsrConfig',0,4,246,2,1
 	.word	3638
 	.byte	4,0,6
-	.byte	'Os_Hal_IntClearPending',0,3,4,162,3,1,1,1,5
+	.byte	'Os_Hal_IntClearPending',0,1,4,162,3,1,1,1,5
 	.byte	'IsrConfig',0,4,162,3,1
 	.word	3638
 	.byte	4,0,3
-	.byte	'Os_Hal_IntIsrLevelIsLe',0,3,4,179,4,1
+	.byte	'Os_Hal_IntIsrLevelIsLe',0,1,4,179,4,1
 	.word	234
 	.byte	1,1,5
 	.byte	'IsrConfig',0,4,179,4,1
@@ -233,7 +233,7 @@ $TC162
 	.byte	'Level',0,4,179,4,1
 	.word	3269
 	.byte	4,0,3
-	.byte	'Os_Hal_IntLevelIsGt',0,3,4,199,4,1
+	.byte	'Os_Hal_IntLevelIsGt',0,1,4,199,4,1
 	.word	234
 	.byte	1,1,5
 	.byte	'LevelX',0,4,199,4,1
@@ -242,11 +242,11 @@ $TC162
 	.byte	'LevelY',0,4,199,4,1
 	.word	3269
 	.byte	4,0,6
-	.byte	'Os_Hal_IntInterruptSourceInit',0,3,4,141,5,1,1,1,5
+	.byte	'Os_Hal_IntInterruptSourceInit',0,1,4,141,5,1,1,1,5
 	.byte	'InterruptSource',0,4,141,5,1
 	.word	3638
 	.byte	4,0,6
-	.byte	'Os_Hal_IntGetGlobalState',0,3,4,221,5,1,1,1,5
+	.byte	'Os_Hal_IntGetGlobalState',0,1,4,221,5,1,1,1,5
 	.byte	'State',0,4,221,5,1
 	.word	3321
 	.byte	4,0,9
@@ -254,15 +254,15 @@ $TC162
 	.byte	10
 	.word	4052
 	.byte	6
-	.byte	'Os_Hal_InitializeAccessDPRE',0,3,6,109,1,1,1,5
+	.byte	'Os_Hal_InitializeAccessDPRE',0,1,6,109,1,1,1,5
 	.byte	'Value',0,6,109,1
 	.word	4057
 	.byte	4,0,6
-	.byte	'Os_Hal_InitializeAccessDPWE',0,3,6,127,1,1,1,5
+	.byte	'Os_Hal_InitializeAccessDPWE',0,1,6,127,1,1,1,5
 	.byte	'Value',0,6,127,1
 	.word	4057
 	.byte	4,0,6
-	.byte	'Os_Hal_InitializeAccessCPXE',0,3,6,145,1,1,1,1,5
+	.byte	'Os_Hal_InitializeAccessCPXE',0,1,6,145,1,1,1,1,5
 	.byte	'Value',0,6,145,1,1
 	.word	4057
 	.byte	4,0,9
@@ -272,7 +272,7 @@ $TC162
 	.byte	9
 	.word	133
 	.byte	6
-	.byte	'Os_Hal_ReadModifyAccessDPRE',0,3,6,163,1,1,1,1,5
+	.byte	'Os_Hal_ReadModifyAccessDPRE',0,1,6,163,1,1,1,1,5
 	.byte	'ProtectionSet',0,6,163,1,1
 	.word	4217
 	.byte	5
@@ -288,7 +288,7 @@ $TC162
 	.byte	9
 	.word	133
 	.byte	6
-	.byte	'Os_Hal_ReadModifyAccessDPWE',0,3,6,200,1,1,1,1,5
+	.byte	'Os_Hal_ReadModifyAccessDPWE',0,1,6,200,1,1,1,1,5
 	.byte	'ProtectionSet',0,6,200,1,1
 	.word	4322
 	.byte	5
@@ -304,7 +304,7 @@ $TC162
 	.byte	9
 	.word	133
 	.byte	6
-	.byte	'Os_Hal_ReadModifyAccessCPXE',0,3,6,237,1,1,1,1,5
+	.byte	'Os_Hal_ReadModifyAccessCPXE',0,1,6,237,1,1,1,1,5
 	.byte	'ProtectionSet',0,6,237,1,1
 	.word	4427
 	.byte	5
@@ -342,14 +342,14 @@ $TC162
 	.byte	10
 	.word	4722
 	.byte	6
-	.byte	'Os_Hal_ContextPreparePRS',0,3,6,145,2,1,1,1,5
+	.byte	'Os_Hal_ContextPreparePRS',0,1,6,145,2,1,1,1,5
 	.byte	'PcxiAddr',0,6,145,2,1
 	.word	4532
 	.byte	5
 	.byte	'CurrentConfig',0,6,145,2,1
 	.word	4727
 	.byte	4,0,3
-	.byte	'Os_Hal_CoreGetId',0,3,6,158,2,1
+	.byte	'Os_Hal_CoreGetId',0,1,6,158,2,1
 	.word	133
 	.byte	1,1,4,0,12
 	.byte	'Os_Hal_ContextType_Tag',0,7,115,8,28,13
@@ -2786,7 +2786,7 @@ $TC162
 	.byte	10
 	.word	29956
 	.byte	6
-	.byte	'Os_Hal_CoreSetThread',0,3,8,130,1,1,1,1,5
+	.byte	'Os_Hal_CoreSetThread',0,1,8,130,1,1,1,1,5
 	.byte	'Core2Thread',0,8,130,1,1
 	.word	29961
 	.byte	5
@@ -2921,19 +2921,19 @@ $TC162
 	.byte	10
 	.word	17221
 	.byte	3
-	.byte	'Os_Hal_CoreGetThread',0,3,8,169,1,1
+	.byte	'Os_Hal_CoreGetThread',0,1,8,169,1,1
 	.word	29826
 	.byte	1,1,5
 	.byte	'Core2Thread',0,8,169,1,1
 	.word	29961
 	.byte	11,4,0,0,3
-	.byte	'Os_Hal_CountLeadingZeros',0,3,8,128,2,1
+	.byte	'Os_Hal_CountLeadingZeros',0,1,8,128,2,1
 	.word	397
 	.byte	1,1,5
 	.byte	'BitField',0,8,128,2,1
 	.word	133
 	.byte	4,0,3
-	.byte	'Os_Hal_StackEndGet',0,3,8,141,2,1
+	.byte	'Os_Hal_StackEndGet',0,1,8,141,2,1
 	.word	5027
 	.byte	1,1,5
 	.byte	'LowAddress',0,8,141,2,1
@@ -2946,7 +2946,7 @@ $TC162
 	.byte	10
 	.word	30546
 	.byte	6
-	.byte	'Os_Hal_SpinInit',0,3,8,216,2,1,1,1,5
+	.byte	'Os_Hal_SpinInit',0,1,8,216,2,1,1,1,5
 	.byte	'Spinlock',0,8,216,2,1
 	.word	30551
 	.byte	4,0,18
@@ -2956,33 +2956,33 @@ $TC162
 	.byte	10
 	.word	30605
 	.byte	3
-	.byte	'Os_Hal_SpinIsLocked',0,3,8,231,2,1
+	.byte	'Os_Hal_SpinIsLocked',0,1,8,231,2,1
 	.word	234
 	.byte	1,1,5
 	.byte	'Spinlock',0,8,231,2,1
 	.word	30610
 	.byte	4,0,3
-	.byte	'Os_Hal_SpinTryLock',0,3,8,245,2,1
+	.byte	'Os_Hal_SpinTryLock',0,1,8,245,2,1
 	.word	133
 	.byte	1,1,5
 	.byte	'Spinlock',0,8,245,2,1
 	.word	30551
 	.byte	4,0,6
-	.byte	'Os_Hal_SpinUnlock',0,3,8,133,3,1,1,1,5
+	.byte	'Os_Hal_SpinUnlock',0,1,8,133,3,1,1,1,5
 	.byte	'Spinlock',0,8,133,3,1
 	.word	30551
 	.byte	4,0,6
-	.byte	'Os_Hal_CoreNop',0,3,8,209,3,1,1,1,4,0,3
-	.byte	'Os_Bit_CountLeadingZeros',0,3,60,123,1
+	.byte	'Os_Hal_CoreNop',0,1,8,209,3,1,1,1,4,0,3
+	.byte	'Os_Bit_CountLeadingZeros',0,1,60,123,1
 	.word	397
 	.byte	1,1,5
 	.byte	'BitField',0,60,123,1
 	.word	133
 	.byte	11,4,4,0,0,6
-	.byte	'Os_StackOverflowCheck',0,3,61,138,1,1,1,1,11,4,4,4,0,0,10
+	.byte	'Os_StackOverflowCheck',0,1,61,138,1,1,1,1,11,4,4,4,0,0,10
 	.word	7698
 	.byte	6
-	.byte	'Os_IntSuspend',0,3,62,126,1,1,1,5
+	.byte	'Os_IntSuspend',0,1,62,126,1,1,1,5
 	.byte	'State',0,62,126,1
 	.word	30883
 	.byte	11,4,4,0,0,9
@@ -2990,7 +2990,7 @@ $TC162
 	.byte	10
 	.word	30928
 	.byte	6
-	.byte	'Os_IntResume',0,3,62,166,1,1,1,1,5
+	.byte	'Os_IntResume',0,1,62,166,1,1,1,1,5
 	.byte	'State',0,62,166,1,1
 	.word	30933
 	.byte	11,4,0,0,9
@@ -2998,29 +2998,29 @@ $TC162
 	.byte	10
 	.word	30978
 	.byte	3
-	.byte	'Os_InterruptCheckEnabled',0,3,62,211,1,1
+	.byte	'Os_InterruptCheckEnabled',0,1,62,211,1,1
 	.word	234
 	.byte	1,1,5
 	.byte	'InterruptState',0,62,211,1,1
 	.word	30983
 	.byte	11,4,0,0,6
-	.byte	'Os_InterruptCleanup',0,3,62,231,1,1,1,1,5
+	.byte	'Os_InterruptCleanup',0,1,62,231,1,1,1,1,5
 	.byte	'InterruptState',0,62,231,1,1
 	.word	28604
 	.byte	4,0,6
-	.byte	'Os_InterruptTpLockAllStart',0,3,62,142,3,1,1,1,5
+	.byte	'Os_InterruptTpLockAllStart',0,1,62,142,3,1,1,1,5
 	.byte	'Thread',0,62,142,3,1
 	.word	29826
 	.byte	11,4,4,4,0,0,6
-	.byte	'Os_InterruptTpLockAllStop',0,3,62,167,3,1,1,1,5
+	.byte	'Os_InterruptTpLockAllStop',0,1,62,167,3,1,1,1,5
 	.byte	'Thread',0,62,167,3,1
 	.word	29826
 	.byte	11,4,4,4,0,0,6
-	.byte	'Os_InterruptTpLockOsStart',0,3,62,192,3,1,1,1,5
+	.byte	'Os_InterruptTpLockOsStart',0,1,62,192,3,1,1,1,5
 	.byte	'Thread',0,62,192,3,1
 	.word	29826
 	.byte	11,4,4,4,0,0,6
-	.byte	'Os_InterruptTpLockOsStop',0,3,62,217,3,1,1,1,5
+	.byte	'Os_InterruptTpLockOsStop',0,1,62,217,3,1,1,1,5
 	.byte	'Thread',0,62,217,3,1
 	.word	29826
 	.byte	11,4,4,4,0,0,9
@@ -3028,7 +3028,7 @@ $TC162
 	.byte	10
 	.word	31331
 	.byte	3
-	.byte	'Os_BitArrayIdxIsValid',0,3,63,79,1
+	.byte	'Os_BitArrayIdxIsValid',0,1,63,79,1
 	.word	5485
 	.byte	1,1,5
 	.byte	'BitArray',0,63,79,1
@@ -3037,19 +3037,19 @@ $TC162
 	.byte	'BitIdx',0,63,79,1
 	.word	5485
 	.byte	4,0,3
-	.byte	'Os_BitArrayIdxGetAllocationIdx',0,3,63,108,1
+	.byte	'Os_BitArrayIdxGetAllocationIdx',0,1,63,108,1
 	.word	5485
 	.byte	1,1,5
 	.byte	'BitArrayIdx',0,63,108,1
 	.word	133
 	.byte	4,0,3
-	.byte	'Os_BitArrayIdxGetFieldIdx',0,3,63,127,1
+	.byte	'Os_BitArrayIdxGetFieldIdx',0,1,63,127,1
 	.word	5485
 	.byte	1,1,5
 	.byte	'BitArrayIdx',0,63,127,1
 	.word	5485
 	.byte	4,0,6
-	.byte	'Os_BitArraySetBitInternal',0,3,63,181,1,1,1,1,5
+	.byte	'Os_BitArraySetBitInternal',0,1,63,181,1,1,1,1,5
 	.byte	'BitArray',0,63,181,1,1
 	.word	31336
 	.byte	5
@@ -3060,7 +3060,7 @@ $TC162
 	.byte	9
 	.word	133
 	.byte	6
-	.byte	'Os_DequeIdxDecrement',0,3,64,91,1,1,1,5
+	.byte	'Os_DequeIdxDecrement',0,1,64,91,1,1,1,5
 	.byte	'Index',0,64,91,1
 	.word	31606
 	.byte	5
@@ -3069,14 +3069,14 @@ $TC162
 	.byte	4,0,9
 	.word	133
 	.byte	6
-	.byte	'Os_DequeIdxIncrement',0,3,64,116,1,1,1,5
+	.byte	'Os_DequeIdxIncrement',0,1,64,116,1,1,1,5
 	.byte	'Index',0,64,116,1
 	.word	31606
 	.byte	5
 	.byte	'Size',0,64,116,1
 	.word	31673
 	.byte	4,0,3
-	.byte	'Os_SchedulerPriorityIsHigherOrEqual',0,3,65,115,1
+	.byte	'Os_SchedulerPriorityIsHigherOrEqual',0,1,65,115,1
 	.word	234
 	.byte	1,1,5
 	.byte	'PrioX',0,65,115,1
@@ -3085,13 +3085,13 @@ $TC162
 	.byte	'PrioY',0,65,115,1
 	.word	5485
 	.byte	4,0,3
-	.byte	'Os_SchedulerGetCurrentTask',0,3,65,143,1,1
+	.byte	'Os_SchedulerGetCurrentTask',0,1,65,143,1,1
 	.word	16615
 	.byte	1,1,5
 	.byte	'Scheduler',0,65,143,1,1
 	.word	16988
 	.byte	4,0,3
-	.byte	'Os_SchedulerTaskSwitchIsNeeded',0,3,65,156,1,1
+	.byte	'Os_SchedulerTaskSwitchIsNeeded',0,1,65,156,1,1
 	.word	234
 	.byte	1,1,5
 	.byte	'Scheduler',0,65,156,1,1
@@ -3099,7 +3099,7 @@ $TC162
 	.byte	4,0,10
 	.word	5343
 	.byte	6
-	.byte	'Os_LockListInit',0,3,66,90,1,1,1,5
+	.byte	'Os_LockListInit',0,1,66,90,1,1,1,5
 	.byte	'LockList',0,66,90,1
 	.word	31936
 	.byte	4,0,9
@@ -3107,53 +3107,53 @@ $TC162
 	.byte	10
 	.word	31983
 	.byte	3
-	.byte	'Os_LockListNext',0,3,66,168,1,1
+	.byte	'Os_LockListNext',0,1,66,168,1,1
 	.word	5338
 	.byte	1,1,5
 	.byte	'LockList',0,66,168,1,1
 	.word	31988
 	.byte	4,0,3
-	.byte	'Os_LockListNextIterator',0,3,66,180,1,1
+	.byte	'Os_LockListNextIterator',0,1,66,180,1,1
 	.word	31936
 	.byte	1,1,5
 	.byte	'Iterator',0,66,180,1,1
 	.word	31988
 	.byte	4,0,3
-	.byte	'Os_LockListIsEmpty',0,3,66,193,1,1
+	.byte	'Os_LockListIsEmpty',0,1,66,193,1,1
 	.word	234
 	.byte	1,1,5
 	.byte	'LockList',0,66,193,1,1
 	.word	31988
 	.byte	4,0,3
-	.byte	'Os_LockListIsTopRes',0,3,66,213,1,1
+	.byte	'Os_LockListIsTopRes',0,1,66,213,1,1
 	.word	234
 	.byte	1,1,5
 	.byte	'LockList',0,66,213,1,1
 	.word	31988
 	.byte	11,4,4,0,0,3
-	.byte	'Os_LockListIsTopSpinlock',0,3,66,131,2,1
+	.byte	'Os_LockListIsTopSpinlock',0,1,66,131,2,1
 	.word	234
 	.byte	1,1,5
 	.byte	'LockList',0,66,131,2,1
 	.word	31988
 	.byte	11,4,0,0,6
-	.byte	'Os_LockInit',0,3,66,169,2,1,1,1,5
+	.byte	'Os_LockInit',0,1,66,169,2,1,1,1,5
 	.byte	'Lock',0,66,169,2,1
 	.word	5338
 	.byte	4,0,3
-	.byte	'Os_LockIsResource',0,3,66,195,2,1
+	.byte	'Os_LockIsResource',0,1,66,195,2,1
 	.word	234
 	.byte	1,1,5
 	.byte	'Lock',0,66,195,2,1
 	.word	5338
 	.byte	4,0,3
-	.byte	'Os_LockGetAccessingApplications',0,3,66,250,2,1
+	.byte	'Os_LockGetAccessingApplications',0,1,66,250,2,1
 	.word	133
 	.byte	1,1,5
 	.byte	'Lock',0,66,250,2,1
 	.word	5338
 	.byte	4,0,3
-	.byte	'Os_LockGetDyn',0,3,66,237,2,1
+	.byte	'Os_LockGetDyn',0,1,66,237,2,1
 	.word	5148
 	.byte	1,1,5
 	.byte	'Lock',0,66,237,2,1
@@ -3161,7 +3161,7 @@ $TC162
 	.byte	4,0,10
 	.word	6053
 	.byte	6
-	.byte	'Os_SpinlockListInit',0,3,67,106,1,1,1,5
+	.byte	'Os_SpinlockListInit',0,1,67,106,1,1,1,5
 	.byte	'LockList',0,67,106,1
 	.word	32446
 	.byte	4,0,18
@@ -3185,19 +3185,19 @@ $TC162
 	.byte	2,2,35,16,0,10
 	.word	32502
 	.byte	3
-	.byte	'Os_SpinlockGetDyn',0,3,67,150,1,1
+	.byte	'Os_SpinlockGetDyn',0,1,67,150,1,1
 	.word	32634
 	.byte	1,1,5
 	.byte	'Spinlock',0,67,150,1,1
 	.word	6048
 	.byte	11,4,0,0,3
-	.byte	'Os_SpinlockInternalTryGet',0,3,67,132,2,1
+	.byte	'Os_SpinlockInternalTryGet',0,1,67,132,2,1
 	.word	133
 	.byte	1,1,5
 	.byte	'Spinlock',0,67,132,2,1
 	.word	6048
 	.byte	11,4,4,4,4,0,0,3
-	.byte	'Os_CoreAsrIsCoreLocal',0,3,68,126,1
+	.byte	'Os_CoreAsrIsCoreLocal',0,1,68,126,1
 	.word	234
 	.byte	1,1,5
 	.byte	'Core',0,68,126,1
@@ -3207,34 +3207,34 @@ $TC162
 	.byte	10
 	.word	32804
 	.byte	3
-	.byte	'Os_CoreGetCurrentCore',0,3,68,245,1,1
+	.byte	'Os_CoreGetCurrentCore',0,1,68,245,1,1
 	.word	32809
 	.byte	1,1,11,4,0,0,3
-	.byte	'Os_Core2AsrCore',0,3,68,204,1,1
+	.byte	'Os_Core2AsrCore',0,1,68,204,1,1
 	.word	24666
 	.byte	1,1,5
 	.byte	'Core',0,68,204,1,1
 	.word	32809
 	.byte	11,4,0,0,3
-	.byte	'Os_CoreAsrGetDyn',0,3,68,153,1,1
+	.byte	'Os_CoreAsrGetDyn',0,1,68,153,1,1
 	.word	16147
 	.byte	1,1,5
 	.byte	'Core',0,68,153,1,1
 	.word	24666
 	.byte	4,0,3
-	.byte	'Os_CoreAsrGetTimingProtection',0,3,68,166,1,1
+	.byte	'Os_CoreAsrGetTimingProtection',0,1,68,166,1,1
 	.word	20073
 	.byte	1,1,5
 	.byte	'Core',0,68,166,1,1
 	.word	24666
 	.byte	4,0,3
-	.byte	'Os_CoreIsAsrCore',0,3,68,154,2,1
+	.byte	'Os_CoreIsAsrCore',0,1,68,154,2,1
 	.word	234
 	.byte	1,1,5
 	.byte	'Core',0,68,154,2,1
 	.word	32809
 	.byte	4,0,3
-	.byte	'Os_CoreIsStartedAsAsr',0,3,68,167,2,1
+	.byte	'Os_CoreIsStartedAsAsr',0,1,68,167,2,1
 	.word	234
 	.byte	1,1,5
 	.byte	'Core',0,68,167,2,1
@@ -3260,37 +3260,37 @@ $TC162
 	.byte	10
 	.word	33302
 	.byte	3
-	.byte	'Os_CoreAsrGetAsrStatus',0,3,68,232,2,1
+	.byte	'Os_CoreAsrGetAsrStatus',0,1,68,232,2,1
 	.word	33307
 	.byte	1,1,5
 	.byte	'Core',0,68,232,2,1
 	.word	24666
 	.byte	4,0,3
-	.byte	'Os_CoreGetIdleTask',0,3,68,246,3,1
+	.byte	'Os_CoreGetIdleTask',0,1,68,246,3,1
 	.word	16615
 	.byte	1,1,5
 	.byte	'Core',0,68,246,3,1
 	.word	24666
 	.byte	4,0,3
-	.byte	'Os_CoreGetKernelApp',0,3,68,131,4,1
+	.byte	'Os_CoreGetKernelApp',0,1,68,131,4,1
 	.word	27966
 	.byte	1,1,5
 	.byte	'Core',0,68,131,4,1
 	.word	24666
 	.byte	4,0,3
-	.byte	'Os_CoreGetScheduler',0,3,68,144,4,1
+	.byte	'Os_CoreGetScheduler',0,1,68,144,4,1
 	.word	16988
 	.byte	1,1,5
 	.byte	'Core',0,68,144,4,1
 	.word	24666
 	.byte	4,0,3
-	.byte	'Os_CoreInterruptedThreadsGetTopIdx',0,3,68,149,5,1
+	.byte	'Os_CoreInterruptedThreadsGetTopIdx',0,1,68,149,5,1
 	.word	7987
 	.byte	1,1,5
 	.byte	'Core',0,68,149,5,1
 	.word	24666
 	.byte	11,4,4,0,0,3
-	.byte	'Os_CoreInterruptedThreadsGet',0,3,68,169,5,1
+	.byte	'Os_CoreInterruptedThreadsGet',0,1,68,169,5,1
 	.word	29826
 	.byte	1,1,5
 	.byte	'Core',0,68,169,5,1
@@ -3299,27 +3299,27 @@ $TC162
 	.byte	'Idx',0,68,169,5,1
 	.word	7987
 	.byte	11,4,0,0,3
-	.byte	'Os_CoreInterruptedThreadsMoveDown',0,3,68,209,5,1
+	.byte	'Os_CoreInterruptedThreadsMoveDown',0,1,68,209,5,1
 	.word	7987
 	.byte	1,1,5
 	.byte	'Iterator',0,68,209,5,1
 	.word	7987
 	.byte	4,0,6
-	.byte	'Os_CoreSetThread',0,3,68,224,5,1,1,1,5
+	.byte	'Os_CoreSetThread',0,1,68,224,5,1,1,1,5
 	.byte	'Thread',0,68,224,5,1
 	.word	29826
 	.byte	11,4,4,4,0,0,3
-	.byte	'Os_CoreGetThread',0,3,68,238,5,1
+	.byte	'Os_CoreGetThread',0,1,68,238,5,1
 	.word	29826
 	.byte	1,1,11,4,4,4,0,0,6
-	.byte	'Os_CoreSetCurrentStack',0,3,68,252,5,1,1,1,5
+	.byte	'Os_CoreSetCurrentStack',0,1,68,252,5,1,1,1,5
 	.byte	'Stack',0,68,252,5,1
 	.word	5107
 	.byte	5
 	.byte	'Core',0,68,252,5,1
 	.word	24666
 	.byte	11,4,0,0,3
-	.byte	'Os_CoreGetCurrentStack',0,3,68,142,6,1
+	.byte	'Os_CoreGetCurrentStack',0,1,68,142,6,1
 	.word	5107
 	.byte	1,1,11,4,4,4,0,0,14
 	.byte	'Os_SpinlockConfigRefType',0,19,152,2,59
@@ -3381,20 +3381,20 @@ $TC162
 	.byte	10
 	.word	34322
 	.byte	3
-	.byte	'Os_SystemGet',0,3,68,160,6,1
+	.byte	'Os_SystemGet',0,1,68,160,6,1
 	.word	34327
 	.byte	1,1,4,0,9
 	.word	5870
 	.byte	10
 	.word	34359
 	.byte	3
-	.byte	'Os_SystemGetCore2Thread',0,3,68,173,6,1
+	.byte	'Os_SystemGetCore2Thread',0,1,68,173,6,1
 	.word	29961
 	.byte	1,1,5
 	.byte	'System',0,68,173,6,1
 	.word	34327
 	.byte	4,0,6
-	.byte	'Os_Hal_ProgramDataRegions',0,3,69,174,2,1,1,1,5
+	.byte	'Os_Hal_ProgramDataRegions',0,1,69,174,2,1,1,1,5
 	.byte	'StartSlot',0,69,174,2,1
 	.word	397
 	.byte	5
@@ -3404,7 +3404,7 @@ $TC162
 	.byte	'RegionsConfig',0,69,174,2,1
 	.word	18239
 	.byte	4,0,6
-	.byte	'Os_Hal_ProgramCodeRegions',0,3,69,202,2,1,1,1,5
+	.byte	'Os_Hal_ProgramCodeRegions',0,1,69,202,2,1,1,1,5
 	.byte	'StartSlot',0,69,202,2,1
 	.word	397
 	.byte	5
@@ -3414,21 +3414,21 @@ $TC162
 	.byte	'RegionsConfig',0,69,202,2,1
 	.word	18239
 	.byte	4,0,6
-	.byte	'Os_Hal_ContextInit',0,3,70,96,1,1,1,5
+	.byte	'Os_Hal_ContextInit',0,1,70,96,1,1,1,5
 	.byte	'Config',0,70,96,1
 	.word	4727
 	.byte	5
 	.byte	'Context',0,70,96,1
 	.word	5022
 	.byte	11,4,4,4,4,0,0,6
-	.byte	'Os_Hal_ContextReset',0,3,70,147,1,1,1,1,5
+	.byte	'Os_Hal_ContextReset',0,1,70,147,1,1,1,1,5
 	.byte	'Config',0,70,147,1,1
 	.word	4727
 	.byte	5
 	.byte	'Context',0,70,147,1,1
 	.word	5022
 	.byte	11,4,4,4,4,4,4,0,0,6
-	.byte	'Os_Hal_ContextSetParameter',0,3,70,194,1,1,1,1,5
+	.byte	'Os_Hal_ContextSetParameter',0,1,70,194,1,1,1,1,5
 	.byte	'Context',0,70,194,1,1
 	.word	5022
 	.byte	5
@@ -3446,7 +3446,7 @@ $TC162
 	.byte	10
 	.word	34907
 	.byte	6
-	.byte	'Os_Hal_ContextSetStack',0,3,70,213,1,1,1,1,5
+	.byte	'Os_Hal_ContextSetStack',0,1,70,213,1,1,1,1,5
 	.byte	'Context',0,70,213,1,1
 	.word	5022
 	.byte	5
@@ -3457,14 +3457,14 @@ $TC162
 	.byte	10
 	.word	34982
 	.byte	6
-	.byte	'Os_Hal_ContextSetInterruptState',0,3,70,250,1,1,1,1,5
+	.byte	'Os_Hal_ContextSetInterruptState',0,1,70,250,1,1,1,1,5
 	.byte	'Context',0,70,250,1,1
 	.word	5022
 	.byte	5
 	.byte	'InterruptState',0,70,250,1,1
 	.word	34987
 	.byte	4,0,6
-	.byte	'Os_Hal_ContextSetUserMsrBits',0,3,70,143,2,1,1,1,5
+	.byte	'Os_Hal_ContextSetUserMsrBits',0,1,70,143,2,1,1,1,5
 	.byte	'Context',0,70,143,2,1
 	.word	5022
 	.byte	4,0,9
@@ -3472,11 +3472,11 @@ $TC162
 	.byte	10
 	.word	35131
 	.byte	6
-	.byte	'Os_Hal_ContextFirstResume',0,3,70,173,2,1,1,1,5
+	.byte	'Os_Hal_ContextFirstResume',0,1,70,173,2,1,1,1,5
 	.byte	'Next',0,70,173,2,1
 	.word	35136
 	.byte	11,4,4,4,0,0,6
-	.byte	'Os_Hal_ContextResetAndResume',0,3,70,220,2,1,1,1,5
+	.byte	'Os_Hal_ContextResetAndResume',0,1,70,220,2,1,1,1,5
 	.byte	'CurrentConfig',0,70,220,2,1
 	.word	4727
 	.byte	5
@@ -3486,35 +3486,35 @@ $TC162
 	.byte	'Next',0,70,220,2,1
 	.word	35136
 	.byte	11,4,4,4,4,4,4,4,0,0,6
-	.byte	'Os_Hal_ContextAbort',0,3,70,145,3,1,1,1,5
+	.byte	'Os_Hal_ContextAbort',0,1,70,145,3,1,1,1,5
 	.byte	'Config',0,70,145,3,1
 	.word	4727
 	.byte	5
 	.byte	'Context',0,70,145,3,1
 	.word	5022
 	.byte	11,4,4,4,4,4,0,0,6
-	.byte	'Os_Hal_ContextReturn',0,3,70,204,3,1,1,1,5
+	.byte	'Os_Hal_ContextReturn',0,1,70,204,3,1,1,1,5
 	.byte	'Current',0,70,204,3,1
 	.word	35136
 	.byte	5
 	.byte	'Next',0,70,204,3,1
 	.word	35136
 	.byte	11,4,4,4,0,0,6
-	.byte	'Os_Hal_ContextIntCleanupCSAs',0,3,70,133,4,1,1,1,5
+	.byte	'Os_Hal_ContextIntCleanupCSAs',0,1,70,133,4,1,1,1,5
 	.byte	'Context',0,70,133,4,1
 	.word	35136
 	.byte	5
 	.byte	'PreviousGlobalIntState',0,70,133,4,1
 	.word	3160
 	.byte	11,4,0,0,6
-	.byte	'Os_Hal_ContextIntPrepareCSAContent',0,3,70,178,4,1,1,1,5
+	.byte	'Os_Hal_ContextIntPrepareCSAContent',0,1,70,178,4,1,1,1,5
 	.byte	'CurrentConfig',0,70,178,4,1
 	.word	4727
 	.byte	5
 	.byte	'Context',0,70,178,4,1
 	.word	5022
 	.byte	11,4,0,0,6
-	.byte	'Os_Hal_ContextIntInitialize',0,3,70,235,4,1,1,1,5
+	.byte	'Os_Hal_ContextIntInitialize',0,1,70,235,4,1,1,1,5
 	.byte	'CurrentConfig',0,70,235,4,1
 	.word	4727
 	.byte	5
@@ -3524,7 +3524,7 @@ $TC162
 	.byte	'PreviousGlobalIntState',0,70,235,4,1
 	.word	3160
 	.byte	11,4,4,0,0,6
-	.byte	'Os_Hal_ContextIntInitializeReserved',0,3,70,148,5,1,1,1,5
+	.byte	'Os_Hal_ContextIntInitializeReserved',0,1,70,148,5,1,1,1,5
 	.byte	'CurrentConfig',0,70,148,5,1
 	.word	4727
 	.byte	5
@@ -3534,7 +3534,7 @@ $TC162
 	.byte	'PreviousGlobalIntState',0,70,148,5,1
 	.word	3160
 	.byte	11,4,4,0,0,6
-	.byte	'Os_Hal_ContextIntRestore',0,3,70,243,5,1,1,1,5
+	.byte	'Os_Hal_ContextIntRestore',0,1,70,243,5,1,1,1,5
 	.byte	'Context',0,70,243,5,1
 	.word	35136
 	.byte	4,0,14
@@ -3543,7 +3543,7 @@ $TC162
 	.byte	10
 	.word	35894
 	.byte	6
-	.byte	'Os_MpThreadInit',0,3,71,130,1,1,1,1,5
+	.byte	'Os_MpThreadInit',0,1,71,130,1,1,1,1,5
 	.byte	'Config',0,71,130,1,1
 	.word	27110
 	.byte	5
@@ -3554,26 +3554,26 @@ $TC162
 	.byte	10
 	.word	35993
 	.byte	6
-	.byte	'Os_MpSwitch',0,3,71,193,1,1,1,1,5
+	.byte	'Os_MpSwitch',0,1,71,193,1,1,1,1,5
 	.byte	'Current',0,71,193,1,1
 	.word	27110
 	.byte	5
 	.byte	'Next',0,71,193,1,1
 	.word	27110
 	.byte	4,0,6
-	.byte	'Os_MpSwitchTo',0,3,71,230,1,1,1,1,5
+	.byte	'Os_MpSwitchTo',0,1,71,230,1,1,1,1,5
 	.byte	'AccessRights',0,71,230,1,1
 	.word	27110
 	.byte	4,0,6
-	.byte	'Os_TraceThreadInit',0,3,72,139,6,1,1,1,5
+	.byte	'Os_TraceThreadInit',0,1,72,139,6,1,1,1,5
 	.byte	'Thread',0,72,139,6,1
 	.word	7342
 	.byte	4,0,6
-	.byte	'Os_TraceThreadInitAndStart',0,3,72,178,6,1,1,1,5
+	.byte	'Os_TraceThreadInitAndStart',0,1,72,178,6,1,1,1,5
 	.byte	'Task',0,72,178,6,1
 	.word	7342
 	.byte	11,4,0,0,6
-	.byte	'Os_TraceThreadSwitch',0,3,72,229,6,1,1,1,5
+	.byte	'Os_TraceThreadSwitch',0,1,72,229,6,1,1,1,5
 	.byte	'CurrentTaskState',0,72,229,6,1
 	.word	12538
 	.byte	5
@@ -3583,85 +3583,85 @@ $TC162
 	.byte	'Next',0,72,229,6,1
 	.word	7342
 	.byte	11,4,4,0,0,6
-	.byte	'Os_TraceThreadResetAndResume',0,3,72,170,7,1,1,1,5
+	.byte	'Os_TraceThreadResetAndResume',0,1,72,170,7,1,1,1,5
 	.byte	'Current',0,72,170,7,1
 	.word	7342
 	.byte	5
 	.byte	'Next',0,72,170,7,1
 	.word	7342
 	.byte	11,4,4,0,0,6
-	.byte	'Os_TraceThreadCleanupAndResume',0,3,72,228,7,1,1,1,5
+	.byte	'Os_TraceThreadCleanupAndResume',0,1,72,228,7,1,1,1,5
 	.byte	'Current',0,72,228,7,1
 	.word	7342
 	.byte	5
 	.byte	'Next',0,72,228,7,1
 	.word	7342
 	.byte	11,4,4,0,0,6
-	.byte	'Os_TraceSpinlockRequested',0,3,72,183,11,1,1,1,5
+	.byte	'Os_TraceSpinlockRequested',0,1,72,183,11,1,1,1,5
 	.byte	'Spinlock',0,72,183,11,1
 	.word	5865
 	.byte	11,4,0,0,6
-	.byte	'Os_TraceSpinlockTaken',0,3,72,239,11,1,1,1,5
+	.byte	'Os_TraceSpinlockTaken',0,1,72,239,11,1,1,1,5
 	.byte	'Spinlock',0,72,239,11,1
 	.word	5865
 	.byte	11,4,0,0,6
-	.byte	'Os_TraceSpinlockReleased',0,3,72,167,12,1,1,1,5
+	.byte	'Os_TraceSpinlockReleased',0,1,72,167,12,1,1,1,5
 	.byte	'Spinlock',0,72,167,12,1
 	.word	5865
 	.byte	11,4,0,0,6
-	.byte	'Os_TraceInterruptsGlobalDisabled',0,3,72,221,12,1,1,1,11,4,0,0,6
-	.byte	'Os_TraceInterruptsLevelDisabled',0,3,72,128,13,1,1,1,11,4,0,0,6
-	.byte	'Os_TraceInterruptsGlobalEnabled',0,3,72,163,13,1,1,1,11,4,0,0,6
-	.byte	'Os_TraceInterruptsLevelEnabled',0,3,72,198,13,1,1,1,11,4,0,0,3
-	.byte	'Os_ThreadGetSpinlocks',0,3,73,117,1
+	.byte	'Os_TraceInterruptsGlobalDisabled',0,1,72,221,12,1,1,1,11,4,0,0,6
+	.byte	'Os_TraceInterruptsLevelDisabled',0,1,72,128,13,1,1,1,11,4,0,0,6
+	.byte	'Os_TraceInterruptsGlobalEnabled',0,1,72,163,13,1,1,1,11,4,0,0,6
+	.byte	'Os_TraceInterruptsLevelEnabled',0,1,72,198,13,1,1,1,11,4,0,0,3
+	.byte	'Os_ThreadGetSpinlocks',0,1,73,117,1
 	.word	32446
 	.byte	1,1,5
 	.byte	'Thread',0,73,117,1
 	.word	29826
 	.byte	4,0,3
-	.byte	'Os_ThreadGetTrace',0,3,73,159,1,1
+	.byte	'Os_ThreadGetTrace',0,1,73,159,1,1
 	.word	7342
 	.byte	1,1,5
 	.byte	'Thread',0,73,159,1,1
 	.word	29826
 	.byte	4,0,3
-	.byte	'Os_ThreadGetTpConfig',0,3,73,173,1,1
+	.byte	'Os_ThreadGetTpConfig',0,1,73,173,1,1
 	.word	28745
 	.byte	1,1,5
 	.byte	'Thread',0,73,173,1,1
 	.word	29826
 	.byte	4,0,3
-	.byte	'Os_ThreadGetInterruptApiState',0,3,73,213,1,1
+	.byte	'Os_ThreadGetInterruptApiState',0,1,73,213,1,1
 	.word	28604
 	.byte	1,1,5
 	.byte	'Thread',0,73,213,1,1
 	.word	29826
 	.byte	4,0,3
-	.byte	'Os_ThreadGetCore',0,3,73,227,1,1
+	.byte	'Os_ThreadGetCore',0,1,73,227,1,1
 	.word	24666
 	.byte	1,1,5
 	.byte	'Thread',0,73,227,1,1
 	.word	29826
 	.byte	4,0,3
-	.byte	'Os_ThreadGetCurrentType',0,3,73,241,1,1
+	.byte	'Os_ThreadGetCurrentType',0,1,73,241,1,1
 	.word	5485
 	.byte	1,1,5
 	.byte	'Thread',0,73,241,1,1
 	.word	29826
 	.byte	4,0,3
-	.byte	'Os_ThreadIsTask',0,3,73,158,2,1
+	.byte	'Os_ThreadIsTask',0,1,73,158,2,1
 	.word	234
 	.byte	1,1,5
 	.byte	'Thread',0,73,158,2,1
 	.word	29826
 	.byte	4,0,3
-	.byte	'Os_ThreadIsIsr',0,3,73,185,2,1
+	.byte	'Os_ThreadIsIsr',0,1,73,185,2,1
 	.word	234
 	.byte	1,1,5
 	.byte	'Thread',0,73,185,2,1
 	.word	29826
 	.byte	4,0,3
-	.byte	'Os_ThreadIsAnyInitialContext',0,3,73,198,2,1
+	.byte	'Os_ThreadIsAnyInitialContext',0,1,73,198,2,1
 	.word	234
 	.byte	1,1,5
 	.byte	'Thread',0,73,198,2,1
@@ -3670,64 +3670,64 @@ $TC162
 	.byte	'Context',0,73,198,2,1
 	.word	5485
 	.byte	4,0,3
-	.byte	'Os_ThreadIsHook',0,3,73,225,2,1
+	.byte	'Os_ThreadIsHook',0,1,73,225,2,1
 	.word	234
 	.byte	1,1,5
 	.byte	'Thread',0,73,225,2,1
 	.word	29826
 	.byte	4,0,3
-	.byte	'Os_ThreadGetOwnerApplication',0,3,73,138,3,1
+	.byte	'Os_ThreadGetOwnerApplication',0,1,73,138,3,1
 	.word	27966
 	.byte	1,1,5
 	.byte	'Thread',0,73,138,3,1
 	.word	29826
 	.byte	4,0,3
-	.byte	'Os_ThreadHasResourcesLocked',0,3,73,185,3,1
+	.byte	'Os_ThreadHasResourcesLocked',0,1,73,185,3,1
 	.word	234
 	.byte	1,1,5
 	.byte	'Thread',0,73,185,3,1
 	.word	29826
 	.byte	11,4,4,4,0,0,3
-	.byte	'Os_ThreadHasSpinlockLocked',0,3,73,223,3,1
+	.byte	'Os_ThreadHasSpinlockLocked',0,1,73,223,3,1
 	.word	234
 	.byte	1,1,5
 	.byte	'Thread',0,73,223,3,1
 	.word	29826
 	.byte	11,4,4,4,0,0,6
-	.byte	'Os_ThreadSpinlockForceRelease',0,3,73,167,4,1,1,1,5
+	.byte	'Os_ThreadSpinlockForceRelease',0,1,73,167,4,1,1,1,5
 	.byte	'Thread',0,73,167,4,1
 	.word	29826
 	.byte	4,0,6
-	.byte	'Os_ThreadResourceForceRelease',0,3,73,180,4,1,1,1,5
+	.byte	'Os_ThreadResourceForceRelease',0,1,73,180,4,1,1,1,5
 	.byte	'Thread',0,73,180,4,1
 	.word	29826
 	.byte	4,0,6
-	.byte	'Os_ThreadLocksForceRelease',0,3,73,199,4,1,1,1,5
+	.byte	'Os_ThreadLocksForceRelease',0,1,73,199,4,1,1,1,5
 	.byte	'Thread',0,73,199,4,1
 	.word	29826
 	.byte	11,4,4,4,0,0,6
-	.byte	'Os_ThreadResetAndResume',0,3,73,223,5,1,1,1,5
+	.byte	'Os_ThreadResetAndResume',0,1,73,223,5,1,1,1,5
 	.byte	'Next',0,73,223,5,1
 	.word	29826
 	.byte	5
 	.byte	'CallPreThreadHook',0,73,223,5,1
 	.word	397
 	.byte	11,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,0,0,6
-	.byte	'Os_ThreadStartFirst',0,3,73,172,6,1,1,1,5
+	.byte	'Os_ThreadStartFirst',0,1,73,172,6,1,1,1,5
 	.byte	'Next',0,73,172,6,1
 	.word	29826
 	.byte	5
 	.byte	'CallPreThreadHook',0,73,172,6,1
 	.word	397
 	.byte	11,4,4,4,4,4,4,4,4,4,4,4,4,0,0,6
-	.byte	'Os_ThreadCleanupAndResume',0,3,73,230,6,1,1,1,5
+	.byte	'Os_ThreadCleanupAndResume',0,1,73,230,6,1,1,1,5
 	.byte	'Next',0,73,230,6,1
 	.word	29826
 	.byte	5
 	.byte	'CallPreThreadHook',0,73,230,6,1
 	.word	397
 	.byte	11,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,0,0,6
-	.byte	'Os_ThreadSwitch',0,3,73,133,8,1,1,1,5
+	.byte	'Os_ThreadSwitch',0,1,73,133,8,1,1,1,5
 	.byte	'Current',0,73,133,8,1
 	.word	29826
 	.byte	5
@@ -3737,64 +3737,64 @@ $TC162
 	.byte	'CallPreThreadHook',0,73,133,8,1
 	.word	397
 	.byte	11,4,4,4,4,4,4,4,4,4,4,4,4,4,4,0,0,3
-	.byte	'Os_ThreadGetAccessRights',0,3,73,137,9,1
+	.byte	'Os_ThreadGetAccessRights',0,1,73,137,9,1
 	.word	29411
 	.byte	1,1,5
 	.byte	'Thread',0,73,137,9,1
 	.word	29826
 	.byte	4,0,6
-	.byte	'Os_ThreadSetInterruptState',0,3,73,180,9,1,1,1,5
+	.byte	'Os_ThreadSetInterruptState',0,1,73,180,9,1,1,1,5
 	.byte	'Thread',0,73,180,9,1
 	.word	29826
 	.byte	5
 	.byte	'InterruptState',0,73,180,9,1
 	.word	34987
 	.byte	11,4,0,0,6
-	.byte	'Os_ThreadCallPreThreadHook',0,3,73,199,9,1,1,1,5
+	.byte	'Os_ThreadCallPreThreadHook',0,1,73,199,9,1,1,1,5
 	.byte	'Thread',0,73,199,9,1
 	.word	29826
 	.byte	5
 	.byte	'CallPreThreadHook',0,73,199,9,1
 	.word	397
 	.byte	4,0,6
-	.byte	'Os_ThreadInitFpuContext',0,3,73,237,10,1,1,1,5
+	.byte	'Os_ThreadInitFpuContext',0,1,73,237,10,1,1,1,5
 	.byte	'Thread',0,73,237,10,1
 	.word	29826
 	.byte	11,4,0,0,6
-	.byte	'Os_ThreadInitFpu',0,3,73,136,11,1,1,1,5
+	.byte	'Os_ThreadInitFpu',0,1,73,136,11,1,1,1,5
 	.byte	'Thread',0,73,136,11,1
 	.word	29826
 	.byte	11,4,0,0,6
-	.byte	'Os_ThreadStoreFpuContext',0,3,73,163,11,1,1,1,5
+	.byte	'Os_ThreadStoreFpuContext',0,1,73,163,11,1,1,1,5
 	.byte	'Thread',0,73,163,11,1
 	.word	29826
 	.byte	4,0,6
-	.byte	'Os_ThreadRestoreFpuContext',0,3,73,185,11,1,1,1,5
+	.byte	'Os_ThreadRestoreFpuContext',0,1,73,185,11,1,1,1,5
 	.byte	'Thread',0,73,185,11,1
 	.word	29826
 	.byte	4,0,6
-	.byte	'Os_IsrDisableSource',0,3,74,231,1,1,1,1,5
+	.byte	'Os_IsrDisableSource',0,1,74,231,1,1,1,1,5
 	.byte	'Isr',0,74,231,1,1
 	.word	6762
 	.byte	11,4,0,0,3
-	.byte	'Os_IsrGetThread',0,3,74,160,1,1
+	.byte	'Os_IsrGetThread',0,1,74,160,1,1
 	.word	29826
 	.byte	1,1,5
 	.byte	'Isr',0,74,160,1,1
 	.word	23924
 	.byte	4,0,6
-	.byte	'Os_IsrInitialEnable',0,3,74,160,2,1,1,1,5
+	.byte	'Os_IsrInitialEnable',0,1,74,160,2,1,1,1,5
 	.byte	'Isr',0,74,160,2,1
 	.word	23924
 	.byte	5
 	.byte	'ClearPending',0,74,160,2,1
 	.word	397
 	.byte	11,4,4,0,0,6
-	.byte	'Os_IsrEnable',0,3,74,192,2,1,1,1,5
+	.byte	'Os_IsrEnable',0,1,74,192,2,1,1,1,5
 	.byte	'Isr',0,74,192,2,1
 	.word	23924
 	.byte	11,4,0,0,6
-	.byte	'Os_IsrClearPending',0,3,74,220,2,1,1,1,5
+	.byte	'Os_IsrClearPending',0,1,74,220,2,1,1,1,5
 	.byte	'Isr',0,74,220,2,1
 	.word	6762
 	.byte	11,4,0,0,18
@@ -3802,7 +3802,7 @@ $TC162
 	.byte	10
 	.word	38677
 	.byte	6
-	.byte	'Os_XSigChannelIdxIncrement',0,3,75,90,1,1,1,5
+	.byte	'Os_XSigChannelIdxIncrement',0,1,75,90,1,1,1,5
 	.byte	'Index',0,75,90,1
 	.word	38682
 	.byte	5
@@ -3813,7 +3813,7 @@ $TC162
 	.byte	10
 	.word	38752
 	.byte	3
-	.byte	'Os_XSigChannelIsResultAvailable',0,3,75,129,2,1
+	.byte	'Os_XSigChannelIsResultAvailable',0,1,75,129,2,1
 	.word	234
 	.byte	1,1,5
 	.byte	'Channel',0,75,129,2,1
@@ -3823,7 +3823,7 @@ $TC162
 	.byte	10
 	.word	38825
 	.byte	3
-	.byte	'Os_XSigSend',0,3,76,129,1,1
+	.byte	'Os_XSigSend',0,1,76,129,1,1
 	.word	414
 	.byte	1,1,5
 	.byte	'RecvCore',0,76,129,1,1
@@ -3838,7 +3838,7 @@ $TC162
 	.byte	'Parameters',0,76,129,1,1
 	.word	38830
 	.byte	11,4,0,0,3
-	.byte	'Os_XSigSend_ActivateTaskAsync',0,3,76,191,1,1
+	.byte	'Os_XSigSend_ActivateTaskAsync',0,1,76,191,1,1
 	.word	414
 	.byte	1,1,5
 	.byte	'RecvCore',0,76,191,1,1
@@ -3850,13 +3850,13 @@ $TC162
 	.byte	'TaskID',0,76,191,1,1
 	.word	12372
 	.byte	4,0,3
-	.byte	'Os_TaskGetThread',0,3,77,111,1
+	.byte	'Os_TaskGetThread',0,1,77,111,1
 	.word	29826
 	.byte	1,1,5
 	.byte	'Task',0,77,111,1
 	.word	16615
 	.byte	4,0,3
-	.byte	'Os_TaskThread2Task',0,3,77,125,1
+	.byte	'Os_TaskThread2Task',0,1,77,125,1
 	.word	16615
 	.byte	1,1,5
 	.byte	'Thread',0,77,125,1
@@ -3893,62 +3893,62 @@ $TC162
 	.byte	4,2,35,46,0,10
 	.word	39185
 	.byte	3
-	.byte	'Os_TaskGetDyn',0,3,77,139,1,1
+	.byte	'Os_TaskGetDyn',0,1,77,139,1,1
 	.word	39343
 	.byte	1,1,5
 	.byte	'Task',0,77,139,1,1
 	.word	16615
 	.byte	11,4,0,0,6
-	.byte	'Os_TaskSetState',0,3,77,152,1,1,1,1,5
+	.byte	'Os_TaskSetState',0,1,77,152,1,1,1,1,5
 	.byte	'Task',0,77,152,1,1
 	.word	16615
 	.byte	5
 	.byte	'State',0,77,152,1,1
 	.word	12538
 	.byte	11,4,0,0,3
-	.byte	'Os_TaskGetId',0,3,77,219,1,1
+	.byte	'Os_TaskGetId',0,1,77,219,1,1
 	.word	12372
 	.byte	1,1,5
 	.byte	'Task',0,77,219,1,1
 	.word	16615
 	.byte	4,0,3
-	.byte	'Os_TaskGetScheduler',0,3,77,128,2,1
+	.byte	'Os_TaskGetScheduler',0,1,77,128,2,1
 	.word	16988
 	.byte	1,1,5
 	.byte	'Task',0,77,128,2,1
 	.word	16615
 	.byte	11,4,4,4,0,0,3
-	.byte	'Os_TaskGetCore',0,3,77,154,2,1
+	.byte	'Os_TaskGetCore',0,1,77,154,2,1
 	.word	24666
 	.byte	1,1,5
 	.byte	'Task',0,77,154,2,1
 	.word	16615
 	.byte	11,4,4,0,0,3
-	.byte	'Os_TaskIsCoreLocal',0,3,77,167,2,1
+	.byte	'Os_TaskIsCoreLocal',0,1,77,167,2,1
 	.word	133
 	.byte	1,1,5
 	.byte	'Task',0,77,167,2,1
 	.word	16615
 	.byte	11,4,4,0,0,6
-	.byte	'Os_TaskSwitch',0,3,77,252,2,1,1,1,5
+	.byte	'Os_TaskSwitch',0,1,77,252,2,1,1,1,5
 	.byte	'Scheduler',0,77,252,2,1
 	.word	16988
 	.byte	5
 	.byte	'CallerThread',0,77,252,2,1
 	.word	29826
 	.byte	11,4,4,4,4,4,4,4,4,0,0,6
-	.byte	'Os_TaskResume',0,3,77,161,3,1,1,1,5
+	.byte	'Os_TaskResume',0,1,77,161,3,1,1,1,5
 	.byte	'Scheduler',0,77,161,3,1
 	.word	16988
 	.byte	11,4,4,4,4,4,4,4,0,0,6
-	.byte	'Os_TaskCallPostTaskHook',0,3,77,232,5,1,1,1,11,4,0,0,3
-	.byte	'Os_CounterGetCore',0,3,79,182,1,1
+	.byte	'Os_TaskCallPostTaskHook',0,1,77,232,5,1,1,1,11,4,0,0,3
+	.byte	'Os_CounterGetCore',0,1,79,182,1,1
 	.word	24666
 	.byte	1,1,5
 	.byte	'Counter',0,79,182,1,1
 	.word	18856
 	.byte	4,0,3
-	.byte	'Os_CounterIsFutureValue',0,3,79,200,1,1
+	.byte	'Os_CounterIsFutureValue',0,1,79,200,1,1
 	.word	234
 	.byte	1,1,5
 	.byte	'Counter',0,79,200,1,1
@@ -3960,7 +3960,7 @@ $TC162
 	.byte	'ReferenceValue',0,79,200,1,1
 	.word	133
 	.byte	11,4,0,0,3
-	.byte	'Os_CounterIsFutureValueInternal',0,3,79,225,1,1
+	.byte	'Os_CounterIsFutureValueInternal',0,1,79,225,1,1
 	.word	234
 	.byte	1,1,5
 	.byte	'MaxCountingValue',0,79,225,1,1
@@ -3975,7 +3975,7 @@ $TC162
 	.byte	'ReferenceValue',0,79,225,1,1
 	.word	133
 	.byte	11,4,4,0,0,3
-	.byte	'Os_CounterCheckValueLeMaxAllowed',0,3,79,145,2,1
+	.byte	'Os_CounterCheckValueLeMaxAllowed',0,1,79,145,2,1
 	.word	234
 	.byte	1,1,5
 	.byte	'Counter',0,79,145,2,1
@@ -3984,7 +3984,7 @@ $TC162
 	.byte	'Value',0,79,145,2,1
 	.word	133
 	.byte	11,4,0,0,3
-	.byte	'Os_CounterCheckValueLeReducedMaxAllowed',0,3,79,159,2,1
+	.byte	'Os_CounterCheckValueLeReducedMaxAllowed',0,1,79,159,2,1
 	.word	234
 	.byte	1,1,5
 	.byte	'Counter',0,79,159,2,1
@@ -3996,7 +3996,7 @@ $TC162
 	.byte	'Value',0,79,159,2,1
 	.word	133
 	.byte	11,4,4,0,0,3
-	.byte	'Os_CounterCheckValueGeMinCycleOrZero',0,3,79,175,2,1
+	.byte	'Os_CounterCheckValueGeMinCycleOrZero',0,1,79,175,2,1
 	.word	234
 	.byte	1,1,5
 	.byte	'Counter',0,79,175,2,1
@@ -4009,42 +4009,42 @@ $TC162
 	.byte	10
 	.word	40359
 	.byte	3
-	.byte	'Os_CounterGetCharacteristics',0,3,79,189,2,1
+	.byte	'Os_CounterGetCharacteristics',0,1,79,189,2,1
 	.word	40364
 	.byte	1,1,5
 	.byte	'Counter',0,79,189,2,1
 	.word	18856
 	.byte	4,0,3
-	.byte	'Os_CounterGetMaxAllowedValue',0,3,79,203,2,1
+	.byte	'Os_CounterGetMaxAllowedValue',0,1,79,203,2,1
 	.word	133
 	.byte	1,1,5
 	.byte	'Counter',0,79,203,2,1
 	.word	18856
 	.byte	4,0,3
-	.byte	'Os_CounterGetMaxCountingValue',0,3,79,217,2,1
+	.byte	'Os_CounterGetMaxCountingValue',0,1,79,217,2,1
 	.word	133
 	.byte	1,1,5
 	.byte	'Counter',0,79,217,2,1
 	.word	18856
 	.byte	4,0,6
-	.byte	'Os_Hal_TimerFrtInit',0,3,80,93,1,1,1,5
+	.byte	'Os_Hal_TimerFrtInit',0,1,80,93,1,1,1,5
 	.byte	'TimerConfig',0,80,93,1
 	.word	19822
 	.byte	4,0,3
-	.byte	'Os_Hal_TimerFrtGetCounterValue',0,3,80,125,1
+	.byte	'Os_Hal_TimerFrtGetCounterValue',0,1,80,125,1
 	.word	133
 	.byte	1,1,5
 	.byte	'TimerConfig',0,80,125,1
 	.word	19822
 	.byte	4,0,6
-	.byte	'Os_Hal_TimerFrtSetCompareValue',0,3,80,139,1,1,1,1,5
+	.byte	'Os_Hal_TimerFrtSetCompareValue',0,1,80,139,1,1,1,1,5
 	.byte	'TimerConfig',0,80,139,1,1
 	.word	19822
 	.byte	5
 	.byte	'ExpirationTime',0,80,139,1,1
 	.word	133
 	.byte	4,0,6
-	.byte	'Os_Hal_TimerFrtTriggerIrq',0,3,80,172,1,1,1,1,5
+	.byte	'Os_Hal_TimerFrtTriggerIrq',0,1,80,172,1,1,1,1,5
 	.byte	'TimerConfig',0,80,172,1,1
 	.word	19822
 	.byte	4,0,12
@@ -4077,7 +4077,7 @@ $TC162
 	.byte	10
 	.word	41101
 	.byte	6
-	.byte	'Os_Hal_TimerPitInit',0,3,81,92,1,1,1,5
+	.byte	'Os_Hal_TimerPitInit',0,1,81,92,1,1,1,5
 	.byte	'TimerConfig',0,81,92,1
 	.word	41106
 	.byte	4,0,15,39,219,1,9,8,13
@@ -4100,24 +4100,24 @@ $TC162
 	.byte	10
 	.word	41266
 	.byte	6
-	.byte	'Os_TimerSwInit',0,3,83,84,1,1,1,5
+	.byte	'Os_TimerSwInit',0,1,83,84,1,1,1,5
 	.byte	'Timer',0,83,84,1
 	.word	41271
 	.byte	11,4,4,0,0,3
-	.byte	'Os_TimerSwGetValue',0,3,83,220,1,1
+	.byte	'Os_TimerSwGetValue',0,1,83,220,1,1
 	.word	133
 	.byte	1,1,5
 	.byte	'Timer',0,83,220,1,1
 	.word	41271
 	.byte	4,0,6
-	.byte	'Os_TimerSwSetCompareValue',0,3,83,233,1,1,1,1,5
+	.byte	'Os_TimerSwSetCompareValue',0,1,83,233,1,1,1,1,5
 	.byte	'Timer',0,83,233,1,1
 	.word	41271
 	.byte	5
 	.byte	'ExpirationTime',0,83,233,1,1
 	.word	133
 	.byte	4,0,3
-	.byte	'Os_TimerSwUserModulo',0,3,83,252,1,1
+	.byte	'Os_TimerSwUserModulo',0,1,83,252,1,1
 	.word	133
 	.byte	1,1,5
 	.byte	'Timer',0,83,252,1,1
@@ -4126,19 +4126,19 @@ $TC162
 	.byte	'Value',0,83,252,1,1
 	.word	133
 	.byte	11,4,0,0,3
-	.byte	'Os_TimerHrtGetValue',0,3,83,211,4,1
+	.byte	'Os_TimerHrtGetValue',0,1,83,211,4,1
 	.word	133
 	.byte	1,1,5
 	.byte	'Timer',0,83,211,4,1
 	.word	19913
 	.byte	11,4,4,4,4,0,0,3
-	.byte	'Os_TimerHrtGetCounter',0,3,83,205,2,1
+	.byte	'Os_TimerHrtGetCounter',0,1,83,205,2,1
 	.word	18856
 	.byte	1,1,5
 	.byte	'Timer',0,83,205,2,1
 	.word	19913
 	.byte	4,0,3
-	.byte	'Os_TimerHrtComputeHardwareCompareValue',0,3,83,229,2,1
+	.byte	'Os_TimerHrtComputeHardwareCompareValue',0,1,83,229,2,1
 	.word	133
 	.byte	1,1,5
 	.byte	'Timer',0,83,229,2,1
@@ -4147,20 +4147,20 @@ $TC162
 	.byte	'ExpirationTime',0,83,229,2,1
 	.word	133
 	.byte	11,11,4,0,0,0,6
-	.byte	'Os_TimerHrtSetCompareValue',0,3,83,157,3,1,1,1,5
+	.byte	'Os_TimerHrtSetCompareValue',0,1,83,157,3,1,1,1,5
 	.byte	'Timer',0,83,157,3,1
 	.word	19913
 	.byte	5
 	.byte	'ExpirationTime',0,83,157,3,1
 	.word	133
 	.byte	11,4,4,4,4,4,4,0,0,3
-	.byte	'Os_TimerHrtGetCompareValue',0,3,83,247,3,1
+	.byte	'Os_TimerHrtGetCompareValue',0,1,83,247,3,1
 	.word	133
 	.byte	1,1,5
 	.byte	'Timer',0,83,247,3,1
 	.word	19913
 	.byte	4,0,3
-	.byte	'Os_TimerSwAbsCounter2AbsTimerValue',0,3,83,137,5,1
+	.byte	'Os_TimerSwAbsCounter2AbsTimerValue',0,1,83,137,5,1
 	.word	133
 	.byte	1,1,5
 	.byte	'MaxAllowedValue',0,83,137,5,1
@@ -4172,7 +4172,7 @@ $TC162
 	.byte	'CounterValue',0,83,137,5,1
 	.word	133
 	.byte	4,0,3
-	.byte	'Os_TimerAdd',0,3,83,253,5,1
+	.byte	'Os_TimerAdd',0,1,83,253,5,1
 	.word	133
 	.byte	1,1,5
 	.byte	'MaxAllowedValue',0,83,253,5,1
@@ -4187,7 +4187,7 @@ $TC162
 	.byte	'Add',0,83,253,5,1
 	.word	133
 	.byte	11,4,4,4,4,0,0,3
-	.byte	'Os_TimerSub',0,3,83,173,6,1
+	.byte	'Os_TimerSub',0,1,83,173,6,1
 	.word	133
 	.byte	1,1,5
 	.byte	'MaxCountingValue',0,83,173,6,1
@@ -4199,20 +4199,20 @@ $TC162
 	.byte	'Sub',0,83,173,6,1
 	.word	133
 	.byte	11,4,4,4,0,0,6
-	.byte	'Os_TimerFrtSetCompareValue',0,3,83,222,6,1,1,1,5
+	.byte	'Os_TimerFrtSetCompareValue',0,1,83,222,6,1,1,1,5
 	.byte	'TimerConfig',0,83,222,6,1
 	.word	19822
 	.byte	5
 	.byte	'CompareValue',0,83,222,6,1
 	.word	133
 	.byte	11,4,4,4,0,0,3
-	.byte	'Os_TimerFrtTickType2TickType',0,3,83,134,7,1
+	.byte	'Os_TimerFrtTickType2TickType',0,1,83,134,7,1
 	.word	133
 	.byte	1,1,5
 	.byte	'Value',0,83,134,7,1
 	.word	133
 	.byte	4,0,3
-	.byte	'Os_TimerTickType2FrtTickType',0,3,83,147,7,1
+	.byte	'Os_TimerTickType2FrtTickType',0,1,83,147,7,1
 	.word	133
 	.byte	1,1,5
 	.byte	'Value',0,83,147,7,1
@@ -4296,7 +4296,7 @@ $TC162
 	.byte	10
 	.word	43032
 	.byte	3
-	.byte	'Os_TpThread2TpOwnerThread',0,3,84,94,1
+	.byte	'Os_TpThread2TpOwnerThread',0,1,84,94,1
 	.word	43037
 	.byte	1,1,5
 	.byte	'TpThread',0,84,94,1
@@ -4306,24 +4306,24 @@ $TC162
 	.byte	10
 	.word	43100
 	.byte	3
-	.byte	'Os_TpGetCurrentTpOwnerThread',0,3,84,108,1
+	.byte	'Os_TpGetCurrentTpOwnerThread',0,1,84,108,1
 	.word	43037
 	.byte	1,1,5
 	.byte	'Config',0,84,108,1
 	.word	20073
 	.byte	11,4,4,0,0,6
-	.byte	'Os_TpThreadInit',0,3,84,127,1,1,1,5
+	.byte	'Os_TpThreadInit',0,1,84,127,1,1,1,5
 	.byte	'Config',0,84,127,1
 	.word	20073
 	.byte	5
 	.byte	'Current',0,84,127,1
 	.word	28745
 	.byte	11,4,4,0,0,6
-	.byte	'Os_TpThreadKill',0,3,84,157,1,1,1,1,5
+	.byte	'Os_TpThreadKill',0,1,84,157,1,1,1,1,5
 	.byte	'Thread',0,84,157,1,1
 	.word	28745
 	.byte	11,4,4,0,0,6
-	.byte	'Os_TpResume',0,3,84,184,1,1,1,1,5
+	.byte	'Os_TpResume',0,1,84,184,1,1,1,1,5
 	.byte	'Config',0,84,184,1,1
 	.word	20073
 	.byte	5
@@ -4333,7 +4333,7 @@ $TC162
 	.byte	'RemainingTime',0,84,184,1,1
 	.word	133
 	.byte	11,4,4,0,0,6
-	.byte	'Os_TpSuspend',0,3,84,209,1,1,1,1,5
+	.byte	'Os_TpSuspend',0,1,84,209,1,1,1,1,5
 	.byte	'Config',0,84,209,1,1
 	.word	20073
 	.byte	5
@@ -4346,7 +4346,7 @@ $TC162
 	.byte	'Deadline',0,84,209,1,1
 	.word	133
 	.byte	11,4,4,4,0,0,3
-	.byte	'Os_TpSub',0,3,84,239,1,1
+	.byte	'Os_TpSub',0,1,84,239,1,1
 	.word	133
 	.byte	1,1,5
 	.byte	'Config',0,84,239,1,1
@@ -4358,7 +4358,7 @@ $TC162
 	.byte	'Sub',0,84,239,1,1
 	.word	133
 	.byte	11,4,4,4,0,0,3
-	.byte	'Os_TpAdd',0,3,84,139,2,1
+	.byte	'Os_TpAdd',0,1,84,139,2,1
 	.word	133
 	.byte	1,1,5
 	.byte	'Config',0,84,139,2,1
@@ -4370,13 +4370,13 @@ $TC162
 	.byte	'Add',0,84,139,2,1
 	.word	133
 	.byte	11,4,4,4,4,0,0,3
-	.byte	'Os_TpGetArrivalTimeStamp',0,3,84,171,2,1
+	.byte	'Os_TpGetArrivalTimeStamp',0,1,84,171,2,1
 	.word	11697
 	.byte	1,1,5
 	.byte	'Config',0,84,171,2,1
 	.word	20073
 	.byte	11,4,0,0,6
-	.byte	'Os_TpSwitch',0,3,84,207,2,1,1,1,5
+	.byte	'Os_TpSwitch',0,1,84,207,2,1,1,1,5
 	.byte	'Config',0,84,207,2,1
 	.word	20073
 	.byte	5
@@ -4389,7 +4389,7 @@ $TC162
 	.byte	'NextThread',0,84,207,2,1
 	.word	29826
 	.byte	11,4,4,4,4,4,4,4,4,4,4,4,0,0,6
-	.byte	'Os_TpResetAndResume',0,3,84,157,3,1,1,1,5
+	.byte	'Os_TpResetAndResume',0,1,84,157,3,1,1,1,5
 	.byte	'Config',0,84,157,3,1
 	.word	20073
 	.byte	5
@@ -4402,14 +4402,14 @@ $TC162
 	.byte	'NextThread',0,84,157,3,1
 	.word	29826
 	.byte	11,11,4,0,4,4,4,4,4,4,4,4,0,0,6
-	.byte	'Os_TpResetAfterWait',0,3,84,225,3,1,1,1,5
+	.byte	'Os_TpResetAfterWait',0,1,84,225,3,1,1,1,5
 	.byte	'Config',0,84,225,3,1
 	.word	20073
 	.byte	5
 	.byte	'Current',0,84,225,3,1
 	.word	28745
 	.byte	11,11,4,0,4,4,4,4,4,4,4,0,0,3
-	.byte	'Os_TpCheckInterArrival',0,3,84,153,4,1
+	.byte	'Os_TpCheckInterArrival',0,1,84,153,4,1
 	.word	234
 	.byte	1,1,5
 	.byte	'Config',0,84,153,4,1
@@ -4418,7 +4418,7 @@ $TC162
 	.byte	'TpThread',0,84,153,4,1
 	.word	28745
 	.byte	11,11,4,0,4,4,4,4,4,0,0,3
-	.byte	'Os_TpGetResourceBudget',0,3,84,128,5,1
+	.byte	'Os_TpGetResourceBudget',0,1,84,128,5,1
 	.word	42355
 	.byte	1,1,5
 	.byte	'Current',0,84,128,5,1
@@ -4427,23 +4427,23 @@ $TC162
 	.byte	'Resource',0,84,128,5,1
 	.word	11892
 	.byte	11,4,4,0,0,6
-	.byte	'Os_TpStartAllInterrupt',0,3,84,176,6,1,1,1,5
+	.byte	'Os_TpStartAllInterrupt',0,1,84,176,6,1,1,1,5
 	.byte	'Config',0,84,176,6,1
 	.word	20073
 	.byte	11,4,4,4,4,0,0,6
-	.byte	'Os_TpStopAllInterrupt',0,3,84,207,6,1,1,1,5
+	.byte	'Os_TpStopAllInterrupt',0,1,84,207,6,1,1,1,5
 	.byte	'Config',0,84,207,6,1
 	.word	20073
 	.byte	11,4,4,4,4,0,0,6
-	.byte	'Os_TpStartOsInterrupt',0,3,84,239,6,1,1,1,5
+	.byte	'Os_TpStartOsInterrupt',0,1,84,239,6,1,1,1,5
 	.byte	'Config',0,84,239,6,1
 	.word	20073
 	.byte	11,4,4,4,4,0,0,6
-	.byte	'Os_TpStopOsInterrupt',0,3,84,142,7,1,1,1,5
+	.byte	'Os_TpStopOsInterrupt',0,1,84,142,7,1,1,1,5
 	.byte	'Config',0,84,142,7,1
 	.word	20073
 	.byte	11,4,4,4,4,0,0,6
-	.byte	'Os_TpBudgetStart',0,3,84,182,7,1,1,1,5
+	.byte	'Os_TpBudgetStart',0,1,84,182,7,1,1,1,5
 	.byte	'Config',0,84,182,7,1
 	.word	20073
 	.byte	5
@@ -4453,7 +4453,7 @@ $TC162
 	.byte	'Budget',0,84,182,7,1
 	.word	42355
 	.byte	11,11,4,0,4,4,4,4,4,4,4,0,0,6
-	.byte	'Os_TpBudgetStop',0,3,84,131,8,1,1,1,5
+	.byte	'Os_TpBudgetStop',0,1,84,131,8,1,1,1,5
 	.byte	'Config',0,84,131,8,1
 	.word	20073
 	.byte	5
@@ -4463,31 +4463,31 @@ $TC162
 	.byte	'Budget',0,84,131,8,1
 	.word	42355
 	.byte	11,11,4,0,4,4,4,4,4,4,4,4,0,0,3
-	.byte	'Os_TpIsEnabledByCoreTpConfig',0,3,84,213,8,1
+	.byte	'Os_TpIsEnabledByCoreTpConfig',0,1,84,213,8,1
 	.word	234
 	.byte	1,1,5
 	.byte	'Config',0,84,213,8,1
 	.word	20073
 	.byte	4,0,3
-	.byte	'Os_TpIsEnabledByThreadTpConfig',0,3,84,244,8,1
+	.byte	'Os_TpIsEnabledByThreadTpConfig',0,1,84,244,8,1
 	.word	234
 	.byte	1,1,5
 	.byte	'Config',0,84,244,8,1
 	.word	28745
 	.byte	4,0,3
-	.byte	'Os_AppCheckIsAccessible',0,3,86,232,1,1
+	.byte	'Os_AppCheckIsAccessible',0,1,86,232,1,1
 	.word	234
 	.byte	1,1,5
 	.byte	'App',0,86,232,1,1
 	.word	27966
 	.byte	4,0,3
-	.byte	'Os_AppGetCore',0,3,86,144,2,1
+	.byte	'Os_AppGetCore',0,1,86,144,2,1
 	.word	24666
 	.byte	1,1,5
 	.byte	'App',0,86,144,2,1
 	.word	27966
 	.byte	4,0,3
-	.byte	'Os_JobGetCore',0,3,87,190,2,1
+	.byte	'Os_JobGetCore',0,1,87,190,2,1
 	.word	24666
 	.byte	1,1,5
 	.byte	'Job',0,87,190,2,1
@@ -4498,7 +4498,7 @@ $TC162
 	.byte	10
 	.word	44722
 	.byte	6
-	.byte	'Os_ServiceCallsInit',0,3,88,134,1,1,1,1,5
+	.byte	'Os_ServiceCallsInit',0,1,88,134,1,1,1,1,5
 	.byte	'ServiceCalls',0,88,134,1,1
 	.word	44753
 	.byte	4,0,10
@@ -4506,14 +4506,14 @@ $TC162
 	.byte	10
 	.word	397
 	.byte	6
-	.byte	'Os_FifoIdxIncrement',0,3,90,88,1,1,1,5
+	.byte	'Os_FifoIdxIncrement',0,1,90,88,1,1,1,5
 	.byte	'Index',0,90,88,1
 	.word	44815
 	.byte	5
 	.byte	'Size',0,90,88,1
 	.word	397
 	.byte	11,4,0,0,3
-	.byte	'Os_FifoIsFull',0,3,90,118,1
+	.byte	'Os_FifoIsFull',0,1,90,118,1
 	.word	234
 	.byte	1,1,5
 	.byte	'WriteIdx',0,90,118,1
@@ -4525,7 +4525,7 @@ $TC162
 	.byte	'Size',0,90,118,1
 	.word	397
 	.byte	11,4,0,0,3
-	.byte	'Os_FifoIsEmpty',0,3,90,142,1,1
+	.byte	'Os_FifoIsEmpty',0,1,90,142,1,1
 	.word	234
 	.byte	1,1,5
 	.byte	'WriteIdx',0,90,142,1,1
@@ -4538,14 +4538,14 @@ $TC162
 	.byte	10
 	.word	45017
 	.byte	6
-	.byte	'Os_FifoEmptyQueue',0,3,90,158,1,1,1,1,5
+	.byte	'Os_FifoEmptyQueue',0,1,90,158,1,1,1,1,5
 	.byte	'WriteIdx',0,90,158,1,1
 	.word	45022
 	.byte	5
 	.byte	'ReadIdx',0,90,158,1,1
 	.word	44815
 	.byte	4,0,3
-	.byte	'Os_FifoIndicesInRange',0,3,90,178,1,1
+	.byte	'Os_FifoIndicesInRange',0,1,90,178,1,1
 	.word	234
 	.byte	1,1,5
 	.byte	'WriteIdx',0,90,178,1,1
@@ -4591,7 +4591,7 @@ $TC162
 	.byte	10
 	.word	45353
 	.byte	3
-	.byte	'Os_Fifo08IsFull',0,3,91,169,1,1
+	.byte	'Os_Fifo08IsFull',0,1,91,169,1,1
 	.word	234
 	.byte	1,1,5
 	.byte	'Fifo',0,91,169,1,1
@@ -4624,7 +4624,7 @@ $TC162
 	.byte	10
 	.word	45524
 	.byte	3
-	.byte	'Os_Fifo08IsEmpty',0,3,91,132,2,1
+	.byte	'Os_Fifo08IsEmpty',0,1,91,132,2,1
 	.word	234
 	.byte	1,1,5
 	.byte	'Fifo',0,91,132,2,1
@@ -4664,7 +4664,7 @@ $TC162
 	.byte	10
 	.word	45759
 	.byte	3
-	.byte	'Os_Fifo16IsFull',0,3,93,169,1,1
+	.byte	'Os_Fifo16IsFull',0,1,93,169,1,1
 	.word	234
 	.byte	1,1,5
 	.byte	'Fifo',0,93,169,1,1
@@ -4697,7 +4697,7 @@ $TC162
 	.byte	10
 	.word	45930
 	.byte	3
-	.byte	'Os_Fifo16IsEmpty',0,3,93,133,2,1
+	.byte	'Os_Fifo16IsEmpty',0,1,93,133,2,1
 	.word	234
 	.byte	1,1,5
 	.byte	'Fifo',0,93,133,2,1
@@ -4737,7 +4737,7 @@ $TC162
 	.byte	10
 	.word	46165
 	.byte	3
-	.byte	'Os_Fifo32IsFull',0,3,95,169,1,1
+	.byte	'Os_Fifo32IsFull',0,1,95,169,1,1
 	.word	234
 	.byte	1,1,5
 	.byte	'Fifo',0,95,169,1,1
@@ -4770,7 +4770,7 @@ $TC162
 	.byte	10
 	.word	46336
 	.byte	3
-	.byte	'Os_Fifo32IsEmpty',0,3,95,131,2,1
+	.byte	'Os_Fifo32IsEmpty',0,1,95,131,2,1
 	.word	234
 	.byte	1,1,5
 	.byte	'Fifo',0,95,131,2,1
@@ -4819,7 +4819,7 @@ $TC162
 	.byte	10
 	.word	46615
 	.byte	3
-	.byte	'Os_FifoRefIsFull',0,3,97,167,1,1
+	.byte	'Os_FifoRefIsFull',0,1,97,167,1,1
 	.word	234
 	.byte	1,1,5
 	.byte	'Fifo',0,97,167,1,1
@@ -4864,7 +4864,7 @@ $TC162
 	.byte	10
 	.word	46850
 	.byte	3
-	.byte	'Os_FifoRefIsEmpty',0,3,97,255,1,1
+	.byte	'Os_FifoRefIsEmpty',0,1,97,255,1,1
 	.word	234
 	.byte	1,1,5
 	.byte	'Fifo',0,97,255,1,1

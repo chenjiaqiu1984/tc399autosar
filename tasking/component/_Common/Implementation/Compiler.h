@@ -97,7 +97,7 @@
 /* LOCAL_INLINE define for abstraction of the keyword inline in functions with "static" scope.
    Different compilers may require a different sequence of the keywords "static" and "inline" 
    if this is supported at all. */
-#define LOCAL_INLINE    static inline
+#define LOCAL_INLINE    static
 
 /* FUNC macro for the declaration and definition of functions, that ensures correct syntax of function declarations
    rettype     return type of the function

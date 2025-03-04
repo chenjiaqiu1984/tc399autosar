@@ -29,17 +29,17 @@ OsCfg_PeripheralRefs:	.type	object
 	.word	.L5
 	.byte	2
 	.byte	'unsigned long int',0,4,7,3
-	.byte	'Os_Hal_Mfa10',0,3,1,190,4,1
+	.byte	'Os_Hal_Mfa10',0,1,1,190,4,1
 	.word	130
 	.byte	1,1,4,0,3
-	.byte	'Os_Hal_Mfa11',0,3,1,206,4,1
+	.byte	'Os_Hal_Mfa11',0,1,1,206,4,1
 	.word	130
 	.byte	1,1,4,0,3
-	.byte	'Os_Hal_Mfa8',0,3,1,222,4,1
+	.byte	'Os_Hal_Mfa8',0,1,1,222,4,1
 	.word	130
 	.byte	1,1,4,0,2
 	.byte	'unsigned int',0,4,7,3
-	.byte	'Os_ErrIsValueLo',0,3,2,202,18,1
+	.byte	'Os_ErrIsValueLo',0,1,2,202,18,1
 	.word	231
 	.byte	1,1,5
 	.byte	'Id',0,2,202,18,1
@@ -48,13 +48,13 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	'Compare',0,2,202,18,1
 	.word	130
 	.byte	4,0,3
-	.byte	'Os_ErrExtendedCheck',0,3,2,216,18,1
+	.byte	'Os_ErrExtendedCheck',0,1,2,216,18,1
 	.word	231
 	.byte	1,1,5
 	.byte	'Value',0,2,216,18,1
 	.word	231
 	.byte	4,0,6
-	.byte	'Os_Assert',0,3,2,140,19,1,1,1,5
+	.byte	'Os_Assert',0,1,2,140,19,1,1,1,5
 	.byte	'Condition',0,2,140,19,1
 	.word	231
 	.byte	4,0,2
@@ -146,34 +146,34 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	'OS_STATUS_STATE_ALREADY_RESTARTING',0,135,20,8
 	.byte	'OS_STATUS_VALUE_IS_TOO_LOW_3',0,136,20,8
 	.byte	'OS_STATUS_VALUE_IS_NOT_BOOLEAN',0,136,22,0,3
-	.byte	'Os_ErrOsStatus2UserStatus',0,3,2,185,19,1
+	.byte	'Os_ErrOsStatus2UserStatus',0,1,2,185,19,1
 	.word	394
 	.byte	1,1,5
 	.byte	'OsStatus',0,2,185,19,1
 	.word	411
 	.byte	4,0,3
-	.byte	'Os_ErrIsPropagationRequired',0,3,2,203,19,1
+	.byte	'Os_ErrIsPropagationRequired',0,1,2,203,19,1
 	.word	231
 	.byte	1,1,5
 	.byte	'OsStatus',0,2,203,19,1
 	.word	411
 	.byte	4,0,6
-	.byte	'Os_Hal_IntEnableGlobal',0,3,4,92,1,1,1,4,0,6
-	.byte	'Os_Hal_IntDisableGlobal',0,3,4,108,1,1,1,4,0,3
-	.byte	'Os_Hal_IntDisableAndReturnGlobalState',0,3,4,125,1
+	.byte	'Os_Hal_IntEnableGlobal',0,1,4,92,1,1,1,4,0,6
+	.byte	'Os_Hal_IntDisableGlobal',0,1,4,108,1,1,1,4,0,3
+	.byte	'Os_Hal_IntDisableAndReturnGlobalState',0,1,4,125,1
 	.word	130
 	.byte	1,1,4,0,9
 	.word	130
 	.byte	10
 	.word	3152
 	.byte	6
-	.byte	'Os_Hal_IntSetGlobalState',0,3,4,148,1,1,1,1,5
+	.byte	'Os_Hal_IntSetGlobalState',0,1,4,148,1,1,1,1,5
 	.byte	'State',0,4,148,1,1
 	.word	3157
 	.byte	4,0,10
 	.word	130
 	.byte	6
-	.byte	'Os_Hal_IntGetLevel',0,3,4,173,1,1,1,1,5
+	.byte	'Os_Hal_IntGetLevel',0,1,4,173,1,1,1,1,5
 	.byte	'Level',0,4,173,1,1
 	.word	3212
 	.byte	4,0,9
@@ -181,27 +181,27 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	10
 	.word	3261
 	.byte	6
-	.byte	'Os_Hal_IntSetLevel',0,3,4,194,1,1,1,1,5
+	.byte	'Os_Hal_IntSetLevel',0,1,4,194,1,1,1,1,5
 	.byte	'Level',0,4,194,1,1
 	.word	3266
 	.byte	11,4,4,0,0,10
 	.word	130
 	.byte	6
-	.byte	'Os_Hal_IntGetGlobalEnable',0,3,4,223,1,1,1,1,5
+	.byte	'Os_Hal_IntGetGlobalEnable',0,1,4,223,1,1,1,1,5
 	.byte	'State',0,4,223,1,1
 	.word	3318
 	.byte	4,0,6
-	.byte	'Os_Hal_IntGetCat2LockLevel',0,3,4,242,1,1,1,1,5
+	.byte	'Os_Hal_IntGetCat2LockLevel',0,1,4,242,1,1,1,1,5
 	.byte	'Level',0,4,242,1,1
 	.word	3212
 	.byte	4,0,6
-	.byte	'Os_Hal_IntGetTaskLevel',0,3,4,171,2,1,1,1,5
+	.byte	'Os_Hal_IntGetTaskLevel',0,1,4,171,2,1,1,1,5
 	.byte	'Level',0,4,171,2,1
 	.word	3212
 	.byte	4,0,10
 	.word	130
 	.byte	6
-	.byte	'Os_Hal_IntGetInterruptState',0,3,4,190,2,1,1,1,5
+	.byte	'Os_Hal_IntGetInterruptState',0,1,4,190,2,1,1,1,5
 	.byte	'InterruptState',0,4,190,2,1
 	.word	3474
 	.byte	4,0,12
@@ -219,19 +219,19 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	10
 	.word	3630
 	.byte	6
-	.byte	'Os_Hal_IntDisableSource',0,3,4,212,2,1,1,1,5
+	.byte	'Os_Hal_IntDisableSource',0,1,4,212,2,1,1,1,5
 	.byte	'IsrConfig',0,4,212,2,1
 	.word	3635
 	.byte	4,0,6
-	.byte	'Os_Hal_IntEnableSource',0,3,4,246,2,1,1,1,5
+	.byte	'Os_Hal_IntEnableSource',0,1,4,246,2,1,1,1,5
 	.byte	'IsrConfig',0,4,246,2,1
 	.word	3635
 	.byte	4,0,6
-	.byte	'Os_Hal_IntClearPending',0,3,4,162,3,1,1,1,5
+	.byte	'Os_Hal_IntClearPending',0,1,4,162,3,1,1,1,5
 	.byte	'IsrConfig',0,4,162,3,1
 	.word	3635
 	.byte	4,0,3
-	.byte	'Os_Hal_IntIsrLevelIsLe',0,3,4,179,4,1
+	.byte	'Os_Hal_IntIsrLevelIsLe',0,1,4,179,4,1
 	.word	231
 	.byte	1,1,5
 	.byte	'IsrConfig',0,4,179,4,1
@@ -240,7 +240,7 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	'Level',0,4,179,4,1
 	.word	3266
 	.byte	4,0,3
-	.byte	'Os_Hal_IntLevelIsGt',0,3,4,199,4,1
+	.byte	'Os_Hal_IntLevelIsGt',0,1,4,199,4,1
 	.word	231
 	.byte	1,1,5
 	.byte	'LevelX',0,4,199,4,1
@@ -249,11 +249,11 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	'LevelY',0,4,199,4,1
 	.word	3266
 	.byte	4,0,6
-	.byte	'Os_Hal_IntInterruptSourceInit',0,3,4,141,5,1,1,1,5
+	.byte	'Os_Hal_IntInterruptSourceInit',0,1,4,141,5,1,1,1,5
 	.byte	'InterruptSource',0,4,141,5,1
 	.word	3635
 	.byte	4,0,6
-	.byte	'Os_Hal_IntGetGlobalState',0,3,4,221,5,1,1,1,5
+	.byte	'Os_Hal_IntGetGlobalState',0,1,4,221,5,1,1,1,5
 	.byte	'State',0,4,221,5,1
 	.word	3318
 	.byte	4,0,9
@@ -261,15 +261,15 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	10
 	.word	4049
 	.byte	6
-	.byte	'Os_Hal_InitializeAccessDPRE',0,3,6,109,1,1,1,5
+	.byte	'Os_Hal_InitializeAccessDPRE',0,1,6,109,1,1,1,5
 	.byte	'Value',0,6,109,1
 	.word	4054
 	.byte	4,0,6
-	.byte	'Os_Hal_InitializeAccessDPWE',0,3,6,127,1,1,1,5
+	.byte	'Os_Hal_InitializeAccessDPWE',0,1,6,127,1,1,1,5
 	.byte	'Value',0,6,127,1
 	.word	4054
 	.byte	4,0,6
-	.byte	'Os_Hal_InitializeAccessCPXE',0,3,6,145,1,1,1,1,5
+	.byte	'Os_Hal_InitializeAccessCPXE',0,1,6,145,1,1,1,1,5
 	.byte	'Value',0,6,145,1,1
 	.word	4054
 	.byte	4,0,9
@@ -279,7 +279,7 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	9
 	.word	130
 	.byte	6
-	.byte	'Os_Hal_ReadModifyAccessDPRE',0,3,6,163,1,1,1,1,5
+	.byte	'Os_Hal_ReadModifyAccessDPRE',0,1,6,163,1,1,1,1,5
 	.byte	'ProtectionSet',0,6,163,1,1
 	.word	4214
 	.byte	5
@@ -295,7 +295,7 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	9
 	.word	130
 	.byte	6
-	.byte	'Os_Hal_ReadModifyAccessDPWE',0,3,6,200,1,1,1,1,5
+	.byte	'Os_Hal_ReadModifyAccessDPWE',0,1,6,200,1,1,1,1,5
 	.byte	'ProtectionSet',0,6,200,1,1
 	.word	4319
 	.byte	5
@@ -311,7 +311,7 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	9
 	.word	130
 	.byte	6
-	.byte	'Os_Hal_ReadModifyAccessCPXE',0,3,6,237,1,1,1,1,5
+	.byte	'Os_Hal_ReadModifyAccessCPXE',0,1,6,237,1,1,1,1,5
 	.byte	'ProtectionSet',0,6,237,1,1
 	.word	4424
 	.byte	5
@@ -349,14 +349,14 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	10
 	.word	4719
 	.byte	6
-	.byte	'Os_Hal_ContextPreparePRS',0,3,6,145,2,1,1,1,5
+	.byte	'Os_Hal_ContextPreparePRS',0,1,6,145,2,1,1,1,5
 	.byte	'PcxiAddr',0,6,145,2,1
 	.word	4529
 	.byte	5
 	.byte	'CurrentConfig',0,6,145,2,1
 	.word	4724
 	.byte	4,0,3
-	.byte	'Os_Hal_CoreGetId',0,3,6,158,2,1
+	.byte	'Os_Hal_CoreGetId',0,1,6,158,2,1
 	.word	130
 	.byte	1,1,4,0,12
 	.byte	'Os_Hal_ContextType_Tag',0,7,115,8,28,13
@@ -2793,7 +2793,7 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	10
 	.word	29953
 	.byte	6
-	.byte	'Os_Hal_CoreSetThread',0,3,8,130,1,1,1,1,5
+	.byte	'Os_Hal_CoreSetThread',0,1,8,130,1,1,1,1,5
 	.byte	'Core2Thread',0,8,130,1,1
 	.word	29958
 	.byte	5
@@ -2928,19 +2928,19 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	10
 	.word	17218
 	.byte	3
-	.byte	'Os_Hal_CoreGetThread',0,3,8,169,1,1
+	.byte	'Os_Hal_CoreGetThread',0,1,8,169,1,1
 	.word	29823
 	.byte	1,1,5
 	.byte	'Core2Thread',0,8,169,1,1
 	.word	29958
 	.byte	11,4,0,0,3
-	.byte	'Os_Hal_CountLeadingZeros',0,3,8,128,2,1
+	.byte	'Os_Hal_CountLeadingZeros',0,1,8,128,2,1
 	.word	394
 	.byte	1,1,5
 	.byte	'BitField',0,8,128,2,1
 	.word	130
 	.byte	4,0,3
-	.byte	'Os_Hal_StackEndGet',0,3,8,141,2,1
+	.byte	'Os_Hal_StackEndGet',0,1,8,141,2,1
 	.word	5024
 	.byte	1,1,5
 	.byte	'LowAddress',0,8,141,2,1
@@ -2953,7 +2953,7 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	10
 	.word	30543
 	.byte	6
-	.byte	'Os_Hal_SpinInit',0,3,8,216,2,1,1,1,5
+	.byte	'Os_Hal_SpinInit',0,1,8,216,2,1,1,1,5
 	.byte	'Spinlock',0,8,216,2,1
 	.word	30548
 	.byte	4,0,18
@@ -2963,24 +2963,24 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	10
 	.word	30602
 	.byte	3
-	.byte	'Os_Hal_SpinIsLocked',0,3,8,231,2,1
+	.byte	'Os_Hal_SpinIsLocked',0,1,8,231,2,1
 	.word	231
 	.byte	1,1,5
 	.byte	'Spinlock',0,8,231,2,1
 	.word	30607
 	.byte	4,0,3
-	.byte	'Os_Hal_SpinTryLock',0,3,8,245,2,1
+	.byte	'Os_Hal_SpinTryLock',0,1,8,245,2,1
 	.word	130
 	.byte	1,1,5
 	.byte	'Spinlock',0,8,245,2,1
 	.word	30548
 	.byte	4,0,6
-	.byte	'Os_Hal_SpinUnlock',0,3,8,133,3,1,1,1,5
+	.byte	'Os_Hal_SpinUnlock',0,1,8,133,3,1,1,1,5
 	.byte	'Spinlock',0,8,133,3,1
 	.word	30548
 	.byte	4,0,6
-	.byte	'Os_Hal_CoreNop',0,3,8,209,3,1,1,1,4,0,3
-	.byte	'Os_Bit_CountLeadingZeros',0,3,60,123,1
+	.byte	'Os_Hal_CoreNop',0,1,8,209,3,1,1,1,4,0,3
+	.byte	'Os_Bit_CountLeadingZeros',0,1,60,123,1
 	.word	394
 	.byte	1,1,5
 	.byte	'BitField',0,60,123,1
@@ -2990,7 +2990,7 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	10
 	.word	30844
 	.byte	3
-	.byte	'Os_BitArrayIdxIsValid',0,3,61,79,1
+	.byte	'Os_BitArrayIdxIsValid',0,1,61,79,1
 	.word	5482
 	.byte	1,1,5
 	.byte	'BitArray',0,61,79,1
@@ -2999,19 +2999,19 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	'BitIdx',0,61,79,1
 	.word	5482
 	.byte	4,0,3
-	.byte	'Os_BitArrayIdxGetAllocationIdx',0,3,61,108,1
+	.byte	'Os_BitArrayIdxGetAllocationIdx',0,1,61,108,1
 	.word	5482
 	.byte	1,1,5
 	.byte	'BitArrayIdx',0,61,108,1
 	.word	130
 	.byte	4,0,3
-	.byte	'Os_BitArrayIdxGetFieldIdx',0,3,61,127,1
+	.byte	'Os_BitArrayIdxGetFieldIdx',0,1,61,127,1
 	.word	5482
 	.byte	1,1,5
 	.byte	'BitArrayIdx',0,61,127,1
 	.word	5482
 	.byte	4,0,6
-	.byte	'Os_BitArraySetBitInternal',0,3,61,181,1,1,1,1,5
+	.byte	'Os_BitArraySetBitInternal',0,1,61,181,1,1,1,1,5
 	.byte	'BitArray',0,61,181,1,1
 	.word	30849
 	.byte	5
@@ -3022,7 +3022,7 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	9
 	.word	130
 	.byte	6
-	.byte	'Os_DequeIdxDecrement',0,3,62,91,1,1,1,5
+	.byte	'Os_DequeIdxDecrement',0,1,62,91,1,1,1,5
 	.byte	'Index',0,62,91,1
 	.word	31119
 	.byte	5
@@ -3031,14 +3031,14 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	4,0,9
 	.word	130
 	.byte	6
-	.byte	'Os_DequeIdxIncrement',0,3,62,116,1,1,1,5
+	.byte	'Os_DequeIdxIncrement',0,1,62,116,1,1,1,5
 	.byte	'Index',0,62,116,1
 	.word	31119
 	.byte	5
 	.byte	'Size',0,62,116,1
 	.word	31186
 	.byte	4,0,3
-	.byte	'Os_SchedulerPriorityIsHigherOrEqual',0,3,63,115,1
+	.byte	'Os_SchedulerPriorityIsHigherOrEqual',0,1,63,115,1
 	.word	231
 	.byte	1,1,5
 	.byte	'PrioX',0,63,115,1
@@ -3047,13 +3047,13 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	'PrioY',0,63,115,1
 	.word	5482
 	.byte	4,0,3
-	.byte	'Os_SchedulerGetCurrentTask',0,3,63,143,1,1
+	.byte	'Os_SchedulerGetCurrentTask',0,1,63,143,1,1
 	.word	16612
 	.byte	1,1,5
 	.byte	'Scheduler',0,63,143,1,1
 	.word	16985
 	.byte	4,0,3
-	.byte	'Os_SchedulerTaskSwitchIsNeeded',0,3,63,156,1,1
+	.byte	'Os_SchedulerTaskSwitchIsNeeded',0,1,63,156,1,1
 	.word	231
 	.byte	1,1,5
 	.byte	'Scheduler',0,63,156,1,1
@@ -3061,7 +3061,7 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	4,0,10
 	.word	7695
 	.byte	6
-	.byte	'Os_IntSuspend',0,3,64,126,1,1,1,5
+	.byte	'Os_IntSuspend',0,1,64,126,1,1,1,5
 	.byte	'State',0,64,126,1
 	.word	31449
 	.byte	11,4,4,0,0,9
@@ -3069,7 +3069,7 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	10
 	.word	31494
 	.byte	6
-	.byte	'Os_IntResume',0,3,64,166,1,1,1,1,5
+	.byte	'Os_IntResume',0,1,64,166,1,1,1,1,5
 	.byte	'State',0,64,166,1,1
 	.word	31499
 	.byte	11,4,0,0,9
@@ -3077,36 +3077,36 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	10
 	.word	31544
 	.byte	3
-	.byte	'Os_InterruptCheckEnabled',0,3,64,211,1,1
+	.byte	'Os_InterruptCheckEnabled',0,1,64,211,1,1
 	.word	231
 	.byte	1,1,5
 	.byte	'InterruptState',0,64,211,1,1
 	.word	31549
 	.byte	11,4,0,0,6
-	.byte	'Os_InterruptCleanup',0,3,64,231,1,1,1,1,5
+	.byte	'Os_InterruptCleanup',0,1,64,231,1,1,1,1,5
 	.byte	'InterruptState',0,64,231,1,1
 	.word	28601
 	.byte	4,0,6
-	.byte	'Os_InterruptTpLockAllStart',0,3,64,142,3,1,1,1,5
+	.byte	'Os_InterruptTpLockAllStart',0,1,64,142,3,1,1,1,5
 	.byte	'Thread',0,64,142,3,1
 	.word	29823
 	.byte	11,4,4,4,0,0,6
-	.byte	'Os_InterruptTpLockAllStop',0,3,64,167,3,1,1,1,5
+	.byte	'Os_InterruptTpLockAllStop',0,1,64,167,3,1,1,1,5
 	.byte	'Thread',0,64,167,3,1
 	.word	29823
 	.byte	11,4,4,4,0,0,6
-	.byte	'Os_InterruptTpLockOsStart',0,3,64,192,3,1,1,1,5
+	.byte	'Os_InterruptTpLockOsStart',0,1,64,192,3,1,1,1,5
 	.byte	'Thread',0,64,192,3,1
 	.word	29823
 	.byte	11,4,4,4,0,0,6
-	.byte	'Os_InterruptTpLockOsStop',0,3,64,217,3,1,1,1,5
+	.byte	'Os_InterruptTpLockOsStop',0,1,64,217,3,1,1,1,5
 	.byte	'Thread',0,64,217,3,1
 	.word	29823
 	.byte	11,4,4,4,0,0,6
-	.byte	'Os_StackOverflowCheck',0,3,65,138,1,1,1,1,11,4,4,4,0,0,10
+	.byte	'Os_StackOverflowCheck',0,1,65,138,1,1,1,1,11,4,4,4,0,0,10
 	.word	5340
 	.byte	6
-	.byte	'Os_LockListInit',0,3,66,90,1,1,1,5
+	.byte	'Os_LockListInit',0,1,66,90,1,1,1,5
 	.byte	'LockList',0,66,90,1
 	.word	31933
 	.byte	4,0,9
@@ -3114,53 +3114,53 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	10
 	.word	31980
 	.byte	3
-	.byte	'Os_LockListNext',0,3,66,168,1,1
+	.byte	'Os_LockListNext',0,1,66,168,1,1
 	.word	5335
 	.byte	1,1,5
 	.byte	'LockList',0,66,168,1,1
 	.word	31985
 	.byte	4,0,3
-	.byte	'Os_LockListNextIterator',0,3,66,180,1,1
+	.byte	'Os_LockListNextIterator',0,1,66,180,1,1
 	.word	31933
 	.byte	1,1,5
 	.byte	'Iterator',0,66,180,1,1
 	.word	31985
 	.byte	4,0,3
-	.byte	'Os_LockListIsEmpty',0,3,66,193,1,1
+	.byte	'Os_LockListIsEmpty',0,1,66,193,1,1
 	.word	231
 	.byte	1,1,5
 	.byte	'LockList',0,66,193,1,1
 	.word	31985
 	.byte	4,0,3
-	.byte	'Os_LockListIsTopRes',0,3,66,213,1,1
+	.byte	'Os_LockListIsTopRes',0,1,66,213,1,1
 	.word	231
 	.byte	1,1,5
 	.byte	'LockList',0,66,213,1,1
 	.word	31985
 	.byte	11,4,4,0,0,3
-	.byte	'Os_LockListIsTopSpinlock',0,3,66,131,2,1
+	.byte	'Os_LockListIsTopSpinlock',0,1,66,131,2,1
 	.word	231
 	.byte	1,1,5
 	.byte	'LockList',0,66,131,2,1
 	.word	31985
 	.byte	11,4,0,0,6
-	.byte	'Os_LockInit',0,3,66,169,2,1,1,1,5
+	.byte	'Os_LockInit',0,1,66,169,2,1,1,1,5
 	.byte	'Lock',0,66,169,2,1
 	.word	5335
 	.byte	4,0,3
-	.byte	'Os_LockIsResource',0,3,66,195,2,1
+	.byte	'Os_LockIsResource',0,1,66,195,2,1
 	.word	231
 	.byte	1,1,5
 	.byte	'Lock',0,66,195,2,1
 	.word	5335
 	.byte	4,0,3
-	.byte	'Os_LockGetAccessingApplications',0,3,66,250,2,1
+	.byte	'Os_LockGetAccessingApplications',0,1,66,250,2,1
 	.word	130
 	.byte	1,1,5
 	.byte	'Lock',0,66,250,2,1
 	.word	5335
 	.byte	4,0,3
-	.byte	'Os_LockGetDyn',0,3,66,237,2,1
+	.byte	'Os_LockGetDyn',0,1,66,237,2,1
 	.word	5145
 	.byte	1,1,5
 	.byte	'Lock',0,66,237,2,1
@@ -3168,7 +3168,7 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	4,0,10
 	.word	6050
 	.byte	6
-	.byte	'Os_SpinlockListInit',0,3,67,106,1,1,1,5
+	.byte	'Os_SpinlockListInit',0,1,67,106,1,1,1,5
 	.byte	'LockList',0,67,106,1
 	.word	32443
 	.byte	4,0,18
@@ -3192,19 +3192,19 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	2,2,35,16,0,10
 	.word	32499
 	.byte	3
-	.byte	'Os_SpinlockGetDyn',0,3,67,150,1,1
+	.byte	'Os_SpinlockGetDyn',0,1,67,150,1,1
 	.word	32631
 	.byte	1,1,5
 	.byte	'Spinlock',0,67,150,1,1
 	.word	6045
 	.byte	11,4,0,0,3
-	.byte	'Os_SpinlockInternalTryGet',0,3,67,132,2,1
+	.byte	'Os_SpinlockInternalTryGet',0,1,67,132,2,1
 	.word	130
 	.byte	1,1,5
 	.byte	'Spinlock',0,67,132,2,1
 	.word	6045
 	.byte	11,4,4,4,4,0,0,3
-	.byte	'Os_CoreAsrIsCoreLocal',0,3,68,126,1
+	.byte	'Os_CoreAsrIsCoreLocal',0,1,68,126,1
 	.word	231
 	.byte	1,1,5
 	.byte	'Core',0,68,126,1
@@ -3214,34 +3214,34 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	10
 	.word	32801
 	.byte	3
-	.byte	'Os_CoreGetCurrentCore',0,3,68,245,1,1
+	.byte	'Os_CoreGetCurrentCore',0,1,68,245,1,1
 	.word	32806
 	.byte	1,1,11,4,0,0,3
-	.byte	'Os_Core2AsrCore',0,3,68,204,1,1
+	.byte	'Os_Core2AsrCore',0,1,68,204,1,1
 	.word	24663
 	.byte	1,1,5
 	.byte	'Core',0,68,204,1,1
 	.word	32806
 	.byte	11,4,0,0,3
-	.byte	'Os_CoreAsrGetDyn',0,3,68,153,1,1
+	.byte	'Os_CoreAsrGetDyn',0,1,68,153,1,1
 	.word	16144
 	.byte	1,1,5
 	.byte	'Core',0,68,153,1,1
 	.word	24663
 	.byte	4,0,3
-	.byte	'Os_CoreAsrGetTimingProtection',0,3,68,166,1,1
+	.byte	'Os_CoreAsrGetTimingProtection',0,1,68,166,1,1
 	.word	20070
 	.byte	1,1,5
 	.byte	'Core',0,68,166,1,1
 	.word	24663
 	.byte	4,0,3
-	.byte	'Os_CoreIsAsrCore',0,3,68,154,2,1
+	.byte	'Os_CoreIsAsrCore',0,1,68,154,2,1
 	.word	231
 	.byte	1,1,5
 	.byte	'Core',0,68,154,2,1
 	.word	32806
 	.byte	4,0,3
-	.byte	'Os_CoreIsStartedAsAsr',0,3,68,167,2,1
+	.byte	'Os_CoreIsStartedAsAsr',0,1,68,167,2,1
 	.word	231
 	.byte	1,1,5
 	.byte	'Core',0,68,167,2,1
@@ -3267,37 +3267,37 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	10
 	.word	33299
 	.byte	3
-	.byte	'Os_CoreAsrGetAsrStatus',0,3,68,232,2,1
+	.byte	'Os_CoreAsrGetAsrStatus',0,1,68,232,2,1
 	.word	33304
 	.byte	1,1,5
 	.byte	'Core',0,68,232,2,1
 	.word	24663
 	.byte	4,0,3
-	.byte	'Os_CoreGetIdleTask',0,3,68,246,3,1
+	.byte	'Os_CoreGetIdleTask',0,1,68,246,3,1
 	.word	16612
 	.byte	1,1,5
 	.byte	'Core',0,68,246,3,1
 	.word	24663
 	.byte	4,0,3
-	.byte	'Os_CoreGetKernelApp',0,3,68,131,4,1
+	.byte	'Os_CoreGetKernelApp',0,1,68,131,4,1
 	.word	27963
 	.byte	1,1,5
 	.byte	'Core',0,68,131,4,1
 	.word	24663
 	.byte	4,0,3
-	.byte	'Os_CoreGetScheduler',0,3,68,144,4,1
+	.byte	'Os_CoreGetScheduler',0,1,68,144,4,1
 	.word	16985
 	.byte	1,1,5
 	.byte	'Core',0,68,144,4,1
 	.word	24663
 	.byte	4,0,3
-	.byte	'Os_CoreInterruptedThreadsGetTopIdx',0,3,68,149,5,1
+	.byte	'Os_CoreInterruptedThreadsGetTopIdx',0,1,68,149,5,1
 	.word	7984
 	.byte	1,1,5
 	.byte	'Core',0,68,149,5,1
 	.word	24663
 	.byte	11,4,4,0,0,3
-	.byte	'Os_CoreInterruptedThreadsGet',0,3,68,169,5,1
+	.byte	'Os_CoreInterruptedThreadsGet',0,1,68,169,5,1
 	.word	29823
 	.byte	1,1,5
 	.byte	'Core',0,68,169,5,1
@@ -3306,27 +3306,27 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	'Idx',0,68,169,5,1
 	.word	7984
 	.byte	11,4,0,0,3
-	.byte	'Os_CoreInterruptedThreadsMoveDown',0,3,68,209,5,1
+	.byte	'Os_CoreInterruptedThreadsMoveDown',0,1,68,209,5,1
 	.word	7984
 	.byte	1,1,5
 	.byte	'Iterator',0,68,209,5,1
 	.word	7984
 	.byte	4,0,6
-	.byte	'Os_CoreSetThread',0,3,68,224,5,1,1,1,5
+	.byte	'Os_CoreSetThread',0,1,68,224,5,1,1,1,5
 	.byte	'Thread',0,68,224,5,1
 	.word	29823
 	.byte	11,4,4,4,0,0,3
-	.byte	'Os_CoreGetThread',0,3,68,238,5,1
+	.byte	'Os_CoreGetThread',0,1,68,238,5,1
 	.word	29823
 	.byte	1,1,11,4,4,4,0,0,6
-	.byte	'Os_CoreSetCurrentStack',0,3,68,252,5,1,1,1,5
+	.byte	'Os_CoreSetCurrentStack',0,1,68,252,5,1,1,1,5
 	.byte	'Stack',0,68,252,5,1
 	.word	5104
 	.byte	5
 	.byte	'Core',0,68,252,5,1
 	.word	24663
 	.byte	11,4,0,0,3
-	.byte	'Os_CoreGetCurrentStack',0,3,68,142,6,1
+	.byte	'Os_CoreGetCurrentStack',0,1,68,142,6,1
 	.word	5104
 	.byte	1,1,11,4,4,4,0,0,14
 	.byte	'Os_SpinlockConfigRefType',0,19,152,2,59
@@ -3388,32 +3388,32 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	10
 	.word	34319
 	.byte	3
-	.byte	'Os_SystemGet',0,3,68,160,6,1
+	.byte	'Os_SystemGet',0,1,68,160,6,1
 	.word	34324
 	.byte	1,1,4,0,9
 	.word	5867
 	.byte	10
 	.word	34356
 	.byte	3
-	.byte	'Os_SystemGetCore2Thread',0,3,68,173,6,1
+	.byte	'Os_SystemGetCore2Thread',0,1,68,173,6,1
 	.word	29958
 	.byte	1,1,5
 	.byte	'System',0,68,173,6,1
 	.word	34324
 	.byte	4,0,3
-	.byte	'Os_AppCheckIsAccessible',0,3,69,232,1,1
+	.byte	'Os_AppCheckIsAccessible',0,1,69,232,1,1
 	.word	231
 	.byte	1,1,5
 	.byte	'App',0,69,232,1,1
 	.word	27963
 	.byte	4,0,3
-	.byte	'Os_AppGetCore',0,3,69,144,2,1
+	.byte	'Os_AppGetCore',0,1,69,144,2,1
 	.word	24663
 	.byte	1,1,5
 	.byte	'App',0,69,144,2,1
 	.word	27963
 	.byte	4,0,6
-	.byte	'Os_Hal_ProgramDataRegions',0,3,70,174,2,1,1,1,5
+	.byte	'Os_Hal_ProgramDataRegions',0,1,70,174,2,1,1,1,5
 	.byte	'StartSlot',0,70,174,2,1
 	.word	394
 	.byte	5
@@ -3423,7 +3423,7 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	'RegionsConfig',0,70,174,2,1
 	.word	18236
 	.byte	4,0,6
-	.byte	'Os_Hal_ProgramCodeRegions',0,3,70,202,2,1,1,1,5
+	.byte	'Os_Hal_ProgramCodeRegions',0,1,70,202,2,1,1,1,5
 	.byte	'StartSlot',0,70,202,2,1
 	.word	394
 	.byte	5
@@ -3433,21 +3433,21 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	'RegionsConfig',0,70,202,2,1
 	.word	18236
 	.byte	4,0,6
-	.byte	'Os_Hal_ContextInit',0,3,71,96,1,1,1,5
+	.byte	'Os_Hal_ContextInit',0,1,71,96,1,1,1,5
 	.byte	'Config',0,71,96,1
 	.word	4724
 	.byte	5
 	.byte	'Context',0,71,96,1
 	.word	5019
 	.byte	11,4,4,4,4,0,0,6
-	.byte	'Os_Hal_ContextReset',0,3,71,147,1,1,1,1,5
+	.byte	'Os_Hal_ContextReset',0,1,71,147,1,1,1,1,5
 	.byte	'Config',0,71,147,1,1
 	.word	4724
 	.byte	5
 	.byte	'Context',0,71,147,1,1
 	.word	5019
 	.byte	11,4,4,4,4,4,4,0,0,6
-	.byte	'Os_Hal_ContextSetParameter',0,3,71,194,1,1,1,1,5
+	.byte	'Os_Hal_ContextSetParameter',0,1,71,194,1,1,1,1,5
 	.byte	'Context',0,71,194,1,1
 	.word	5019
 	.byte	5
@@ -3465,7 +3465,7 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	10
 	.word	34996
 	.byte	6
-	.byte	'Os_Hal_ContextSetStack',0,3,71,213,1,1,1,1,5
+	.byte	'Os_Hal_ContextSetStack',0,1,71,213,1,1,1,1,5
 	.byte	'Context',0,71,213,1,1
 	.word	5019
 	.byte	5
@@ -3476,14 +3476,14 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	10
 	.word	35071
 	.byte	6
-	.byte	'Os_Hal_ContextSetInterruptState',0,3,71,250,1,1,1,1,5
+	.byte	'Os_Hal_ContextSetInterruptState',0,1,71,250,1,1,1,1,5
 	.byte	'Context',0,71,250,1,1
 	.word	5019
 	.byte	5
 	.byte	'InterruptState',0,71,250,1,1
 	.word	35076
 	.byte	4,0,6
-	.byte	'Os_Hal_ContextSetUserMsrBits',0,3,71,143,2,1,1,1,5
+	.byte	'Os_Hal_ContextSetUserMsrBits',0,1,71,143,2,1,1,1,5
 	.byte	'Context',0,71,143,2,1
 	.word	5019
 	.byte	4,0,9
@@ -3491,11 +3491,11 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	10
 	.word	35220
 	.byte	6
-	.byte	'Os_Hal_ContextFirstResume',0,3,71,173,2,1,1,1,5
+	.byte	'Os_Hal_ContextFirstResume',0,1,71,173,2,1,1,1,5
 	.byte	'Next',0,71,173,2,1
 	.word	35225
 	.byte	11,4,4,4,0,0,6
-	.byte	'Os_Hal_ContextResetAndResume',0,3,71,220,2,1,1,1,5
+	.byte	'Os_Hal_ContextResetAndResume',0,1,71,220,2,1,1,1,5
 	.byte	'CurrentConfig',0,71,220,2,1
 	.word	4724
 	.byte	5
@@ -3505,35 +3505,35 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	'Next',0,71,220,2,1
 	.word	35225
 	.byte	11,4,4,4,4,4,4,4,0,0,6
-	.byte	'Os_Hal_ContextAbort',0,3,71,145,3,1,1,1,5
+	.byte	'Os_Hal_ContextAbort',0,1,71,145,3,1,1,1,5
 	.byte	'Config',0,71,145,3,1
 	.word	4724
 	.byte	5
 	.byte	'Context',0,71,145,3,1
 	.word	5019
 	.byte	11,4,4,4,4,4,0,0,6
-	.byte	'Os_Hal_ContextReturn',0,3,71,204,3,1,1,1,5
+	.byte	'Os_Hal_ContextReturn',0,1,71,204,3,1,1,1,5
 	.byte	'Current',0,71,204,3,1
 	.word	35225
 	.byte	5
 	.byte	'Next',0,71,204,3,1
 	.word	35225
 	.byte	11,4,4,4,0,0,6
-	.byte	'Os_Hal_ContextIntCleanupCSAs',0,3,71,133,4,1,1,1,5
+	.byte	'Os_Hal_ContextIntCleanupCSAs',0,1,71,133,4,1,1,1,5
 	.byte	'Context',0,71,133,4,1
 	.word	35225
 	.byte	5
 	.byte	'PreviousGlobalIntState',0,71,133,4,1
 	.word	3157
 	.byte	11,4,0,0,6
-	.byte	'Os_Hal_ContextIntPrepareCSAContent',0,3,71,178,4,1,1,1,5
+	.byte	'Os_Hal_ContextIntPrepareCSAContent',0,1,71,178,4,1,1,1,5
 	.byte	'CurrentConfig',0,71,178,4,1
 	.word	4724
 	.byte	5
 	.byte	'Context',0,71,178,4,1
 	.word	5019
 	.byte	11,4,0,0,6
-	.byte	'Os_Hal_ContextIntInitialize',0,3,71,235,4,1,1,1,5
+	.byte	'Os_Hal_ContextIntInitialize',0,1,71,235,4,1,1,1,5
 	.byte	'CurrentConfig',0,71,235,4,1
 	.word	4724
 	.byte	5
@@ -3543,7 +3543,7 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	'PreviousGlobalIntState',0,71,235,4,1
 	.word	3157
 	.byte	11,4,4,0,0,6
-	.byte	'Os_Hal_ContextIntInitializeReserved',0,3,71,148,5,1,1,1,5
+	.byte	'Os_Hal_ContextIntInitializeReserved',0,1,71,148,5,1,1,1,5
 	.byte	'CurrentConfig',0,71,148,5,1
 	.word	4724
 	.byte	5
@@ -3553,7 +3553,7 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	'PreviousGlobalIntState',0,71,148,5,1
 	.word	3157
 	.byte	11,4,4,0,0,6
-	.byte	'Os_Hal_ContextIntRestore',0,3,71,243,5,1,1,1,5
+	.byte	'Os_Hal_ContextIntRestore',0,1,71,243,5,1,1,1,5
 	.byte	'Context',0,71,243,5,1
 	.word	35225
 	.byte	4,0,14
@@ -3562,7 +3562,7 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	10
 	.word	35983
 	.byte	6
-	.byte	'Os_MpThreadInit',0,3,72,130,1,1,1,1,5
+	.byte	'Os_MpThreadInit',0,1,72,130,1,1,1,1,5
 	.byte	'Config',0,72,130,1,1
 	.word	27107
 	.byte	5
@@ -3573,26 +3573,26 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	10
 	.word	36082
 	.byte	6
-	.byte	'Os_MpSwitch',0,3,72,193,1,1,1,1,5
+	.byte	'Os_MpSwitch',0,1,72,193,1,1,1,1,5
 	.byte	'Current',0,72,193,1,1
 	.word	27107
 	.byte	5
 	.byte	'Next',0,72,193,1,1
 	.word	27107
 	.byte	4,0,6
-	.byte	'Os_MpSwitchTo',0,3,72,230,1,1,1,1,5
+	.byte	'Os_MpSwitchTo',0,1,72,230,1,1,1,1,5
 	.byte	'AccessRights',0,72,230,1,1
 	.word	27107
 	.byte	4,0,6
-	.byte	'Os_TraceThreadInit',0,3,73,139,6,1,1,1,5
+	.byte	'Os_TraceThreadInit',0,1,73,139,6,1,1,1,5
 	.byte	'Thread',0,73,139,6,1
 	.word	7339
 	.byte	4,0,6
-	.byte	'Os_TraceThreadInitAndStart',0,3,73,178,6,1,1,1,5
+	.byte	'Os_TraceThreadInitAndStart',0,1,73,178,6,1,1,1,5
 	.byte	'Task',0,73,178,6,1
 	.word	7339
 	.byte	11,4,0,0,6
-	.byte	'Os_TraceThreadSwitch',0,3,73,229,6,1,1,1,5
+	.byte	'Os_TraceThreadSwitch',0,1,73,229,6,1,1,1,5
 	.byte	'CurrentTaskState',0,73,229,6,1
 	.word	12535
 	.byte	5
@@ -3602,85 +3602,85 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	'Next',0,73,229,6,1
 	.word	7339
 	.byte	11,4,4,0,0,6
-	.byte	'Os_TraceThreadResetAndResume',0,3,73,170,7,1,1,1,5
+	.byte	'Os_TraceThreadResetAndResume',0,1,73,170,7,1,1,1,5
 	.byte	'Current',0,73,170,7,1
 	.word	7339
 	.byte	5
 	.byte	'Next',0,73,170,7,1
 	.word	7339
 	.byte	11,4,4,0,0,6
-	.byte	'Os_TraceThreadCleanupAndResume',0,3,73,228,7,1,1,1,5
+	.byte	'Os_TraceThreadCleanupAndResume',0,1,73,228,7,1,1,1,5
 	.byte	'Current',0,73,228,7,1
 	.word	7339
 	.byte	5
 	.byte	'Next',0,73,228,7,1
 	.word	7339
 	.byte	11,4,4,0,0,6
-	.byte	'Os_TraceSpinlockRequested',0,3,73,183,11,1,1,1,5
+	.byte	'Os_TraceSpinlockRequested',0,1,73,183,11,1,1,1,5
 	.byte	'Spinlock',0,73,183,11,1
 	.word	5862
 	.byte	11,4,0,0,6
-	.byte	'Os_TraceSpinlockTaken',0,3,73,239,11,1,1,1,5
+	.byte	'Os_TraceSpinlockTaken',0,1,73,239,11,1,1,1,5
 	.byte	'Spinlock',0,73,239,11,1
 	.word	5862
 	.byte	11,4,0,0,6
-	.byte	'Os_TraceSpinlockReleased',0,3,73,167,12,1,1,1,5
+	.byte	'Os_TraceSpinlockReleased',0,1,73,167,12,1,1,1,5
 	.byte	'Spinlock',0,73,167,12,1
 	.word	5862
 	.byte	11,4,0,0,6
-	.byte	'Os_TraceInterruptsGlobalDisabled',0,3,73,221,12,1,1,1,11,4,0,0,6
-	.byte	'Os_TraceInterruptsLevelDisabled',0,3,73,128,13,1,1,1,11,4,0,0,6
-	.byte	'Os_TraceInterruptsGlobalEnabled',0,3,73,163,13,1,1,1,11,4,0,0,6
-	.byte	'Os_TraceInterruptsLevelEnabled',0,3,73,198,13,1,1,1,11,4,0,0,3
-	.byte	'Os_ThreadGetSpinlocks',0,3,74,117,1
+	.byte	'Os_TraceInterruptsGlobalDisabled',0,1,73,221,12,1,1,1,11,4,0,0,6
+	.byte	'Os_TraceInterruptsLevelDisabled',0,1,73,128,13,1,1,1,11,4,0,0,6
+	.byte	'Os_TraceInterruptsGlobalEnabled',0,1,73,163,13,1,1,1,11,4,0,0,6
+	.byte	'Os_TraceInterruptsLevelEnabled',0,1,73,198,13,1,1,1,11,4,0,0,3
+	.byte	'Os_ThreadGetSpinlocks',0,1,74,117,1
 	.word	32443
 	.byte	1,1,5
 	.byte	'Thread',0,74,117,1
 	.word	29823
 	.byte	4,0,3
-	.byte	'Os_ThreadGetTrace',0,3,74,159,1,1
+	.byte	'Os_ThreadGetTrace',0,1,74,159,1,1
 	.word	7339
 	.byte	1,1,5
 	.byte	'Thread',0,74,159,1,1
 	.word	29823
 	.byte	4,0,3
-	.byte	'Os_ThreadGetTpConfig',0,3,74,173,1,1
+	.byte	'Os_ThreadGetTpConfig',0,1,74,173,1,1
 	.word	28742
 	.byte	1,1,5
 	.byte	'Thread',0,74,173,1,1
 	.word	29823
 	.byte	4,0,3
-	.byte	'Os_ThreadGetInterruptApiState',0,3,74,213,1,1
+	.byte	'Os_ThreadGetInterruptApiState',0,1,74,213,1,1
 	.word	28601
 	.byte	1,1,5
 	.byte	'Thread',0,74,213,1,1
 	.word	29823
 	.byte	4,0,3
-	.byte	'Os_ThreadGetCore',0,3,74,227,1,1
+	.byte	'Os_ThreadGetCore',0,1,74,227,1,1
 	.word	24663
 	.byte	1,1,5
 	.byte	'Thread',0,74,227,1,1
 	.word	29823
 	.byte	4,0,3
-	.byte	'Os_ThreadGetCurrentType',0,3,74,241,1,1
+	.byte	'Os_ThreadGetCurrentType',0,1,74,241,1,1
 	.word	5482
 	.byte	1,1,5
 	.byte	'Thread',0,74,241,1,1
 	.word	29823
 	.byte	4,0,3
-	.byte	'Os_ThreadIsTask',0,3,74,158,2,1
+	.byte	'Os_ThreadIsTask',0,1,74,158,2,1
 	.word	231
 	.byte	1,1,5
 	.byte	'Thread',0,74,158,2,1
 	.word	29823
 	.byte	4,0,3
-	.byte	'Os_ThreadIsIsr',0,3,74,185,2,1
+	.byte	'Os_ThreadIsIsr',0,1,74,185,2,1
 	.word	231
 	.byte	1,1,5
 	.byte	'Thread',0,74,185,2,1
 	.word	29823
 	.byte	4,0,3
-	.byte	'Os_ThreadIsAnyInitialContext',0,3,74,198,2,1
+	.byte	'Os_ThreadIsAnyInitialContext',0,1,74,198,2,1
 	.word	231
 	.byte	1,1,5
 	.byte	'Thread',0,74,198,2,1
@@ -3689,64 +3689,64 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	'Context',0,74,198,2,1
 	.word	5482
 	.byte	4,0,3
-	.byte	'Os_ThreadIsHook',0,3,74,225,2,1
+	.byte	'Os_ThreadIsHook',0,1,74,225,2,1
 	.word	231
 	.byte	1,1,5
 	.byte	'Thread',0,74,225,2,1
 	.word	29823
 	.byte	4,0,3
-	.byte	'Os_ThreadGetOwnerApplication',0,3,74,138,3,1
+	.byte	'Os_ThreadGetOwnerApplication',0,1,74,138,3,1
 	.word	27963
 	.byte	1,1,5
 	.byte	'Thread',0,74,138,3,1
 	.word	29823
 	.byte	4,0,3
-	.byte	'Os_ThreadHasResourcesLocked',0,3,74,185,3,1
+	.byte	'Os_ThreadHasResourcesLocked',0,1,74,185,3,1
 	.word	231
 	.byte	1,1,5
 	.byte	'Thread',0,74,185,3,1
 	.word	29823
 	.byte	11,4,4,4,0,0,3
-	.byte	'Os_ThreadHasSpinlockLocked',0,3,74,223,3,1
+	.byte	'Os_ThreadHasSpinlockLocked',0,1,74,223,3,1
 	.word	231
 	.byte	1,1,5
 	.byte	'Thread',0,74,223,3,1
 	.word	29823
 	.byte	11,4,4,4,0,0,6
-	.byte	'Os_ThreadSpinlockForceRelease',0,3,74,167,4,1,1,1,5
+	.byte	'Os_ThreadSpinlockForceRelease',0,1,74,167,4,1,1,1,5
 	.byte	'Thread',0,74,167,4,1
 	.word	29823
 	.byte	4,0,6
-	.byte	'Os_ThreadResourceForceRelease',0,3,74,180,4,1,1,1,5
+	.byte	'Os_ThreadResourceForceRelease',0,1,74,180,4,1,1,1,5
 	.byte	'Thread',0,74,180,4,1
 	.word	29823
 	.byte	4,0,6
-	.byte	'Os_ThreadLocksForceRelease',0,3,74,199,4,1,1,1,5
+	.byte	'Os_ThreadLocksForceRelease',0,1,74,199,4,1,1,1,5
 	.byte	'Thread',0,74,199,4,1
 	.word	29823
 	.byte	11,4,4,4,0,0,6
-	.byte	'Os_ThreadResetAndResume',0,3,74,223,5,1,1,1,5
+	.byte	'Os_ThreadResetAndResume',0,1,74,223,5,1,1,1,5
 	.byte	'Next',0,74,223,5,1
 	.word	29823
 	.byte	5
 	.byte	'CallPreThreadHook',0,74,223,5,1
 	.word	394
 	.byte	11,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,0,0,6
-	.byte	'Os_ThreadStartFirst',0,3,74,172,6,1,1,1,5
+	.byte	'Os_ThreadStartFirst',0,1,74,172,6,1,1,1,5
 	.byte	'Next',0,74,172,6,1
 	.word	29823
 	.byte	5
 	.byte	'CallPreThreadHook',0,74,172,6,1
 	.word	394
 	.byte	11,4,4,4,4,4,4,4,4,4,4,4,4,0,0,6
-	.byte	'Os_ThreadCleanupAndResume',0,3,74,230,6,1,1,1,5
+	.byte	'Os_ThreadCleanupAndResume',0,1,74,230,6,1,1,1,5
 	.byte	'Next',0,74,230,6,1
 	.word	29823
 	.byte	5
 	.byte	'CallPreThreadHook',0,74,230,6,1
 	.word	394
 	.byte	11,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,0,0,6
-	.byte	'Os_ThreadSwitch',0,3,74,133,8,1,1,1,5
+	.byte	'Os_ThreadSwitch',0,1,74,133,8,1,1,1,5
 	.byte	'Current',0,74,133,8,1
 	.word	29823
 	.byte	5
@@ -3756,64 +3756,64 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	'CallPreThreadHook',0,74,133,8,1
 	.word	394
 	.byte	11,4,4,4,4,4,4,4,4,4,4,4,4,4,4,0,0,3
-	.byte	'Os_ThreadGetAccessRights',0,3,74,137,9,1
+	.byte	'Os_ThreadGetAccessRights',0,1,74,137,9,1
 	.word	29408
 	.byte	1,1,5
 	.byte	'Thread',0,74,137,9,1
 	.word	29823
 	.byte	4,0,6
-	.byte	'Os_ThreadSetInterruptState',0,3,74,180,9,1,1,1,5
+	.byte	'Os_ThreadSetInterruptState',0,1,74,180,9,1,1,1,5
 	.byte	'Thread',0,74,180,9,1
 	.word	29823
 	.byte	5
 	.byte	'InterruptState',0,74,180,9,1
 	.word	35076
 	.byte	11,4,0,0,6
-	.byte	'Os_ThreadCallPreThreadHook',0,3,74,199,9,1,1,1,5
+	.byte	'Os_ThreadCallPreThreadHook',0,1,74,199,9,1,1,1,5
 	.byte	'Thread',0,74,199,9,1
 	.word	29823
 	.byte	5
 	.byte	'CallPreThreadHook',0,74,199,9,1
 	.word	394
 	.byte	4,0,6
-	.byte	'Os_ThreadInitFpuContext',0,3,74,237,10,1,1,1,5
+	.byte	'Os_ThreadInitFpuContext',0,1,74,237,10,1,1,1,5
 	.byte	'Thread',0,74,237,10,1
 	.word	29823
 	.byte	11,4,0,0,6
-	.byte	'Os_ThreadInitFpu',0,3,74,136,11,1,1,1,5
+	.byte	'Os_ThreadInitFpu',0,1,74,136,11,1,1,1,5
 	.byte	'Thread',0,74,136,11,1
 	.word	29823
 	.byte	11,4,0,0,6
-	.byte	'Os_ThreadStoreFpuContext',0,3,74,163,11,1,1,1,5
+	.byte	'Os_ThreadStoreFpuContext',0,1,74,163,11,1,1,1,5
 	.byte	'Thread',0,74,163,11,1
 	.word	29823
 	.byte	4,0,6
-	.byte	'Os_ThreadRestoreFpuContext',0,3,74,185,11,1,1,1,5
+	.byte	'Os_ThreadRestoreFpuContext',0,1,74,185,11,1,1,1,5
 	.byte	'Thread',0,74,185,11,1
 	.word	29823
 	.byte	4,0,6
-	.byte	'Os_IsrDisableSource',0,3,75,231,1,1,1,1,5
+	.byte	'Os_IsrDisableSource',0,1,75,231,1,1,1,1,5
 	.byte	'Isr',0,75,231,1,1
 	.word	6759
 	.byte	11,4,0,0,3
-	.byte	'Os_IsrGetThread',0,3,75,160,1,1
+	.byte	'Os_IsrGetThread',0,1,75,160,1,1
 	.word	29823
 	.byte	1,1,5
 	.byte	'Isr',0,75,160,1,1
 	.word	23921
 	.byte	4,0,6
-	.byte	'Os_IsrInitialEnable',0,3,75,160,2,1,1,1,5
+	.byte	'Os_IsrInitialEnable',0,1,75,160,2,1,1,1,5
 	.byte	'Isr',0,75,160,2,1
 	.word	23921
 	.byte	5
 	.byte	'ClearPending',0,75,160,2,1
 	.word	394
 	.byte	11,4,4,0,0,6
-	.byte	'Os_IsrEnable',0,3,75,192,2,1,1,1,5
+	.byte	'Os_IsrEnable',0,1,75,192,2,1,1,1,5
 	.byte	'Isr',0,75,192,2,1
 	.word	23921
 	.byte	11,4,0,0,6
-	.byte	'Os_IsrClearPending',0,3,75,220,2,1,1,1,5
+	.byte	'Os_IsrClearPending',0,1,75,220,2,1,1,1,5
 	.byte	'Isr',0,75,220,2,1
 	.word	6759
 	.byte	11,4,0,0,18
@@ -3821,7 +3821,7 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	10
 	.word	38766
 	.byte	6
-	.byte	'Os_XSigChannelIdxIncrement',0,3,76,90,1,1,1,5
+	.byte	'Os_XSigChannelIdxIncrement',0,1,76,90,1,1,1,5
 	.byte	'Index',0,76,90,1
 	.word	38771
 	.byte	5
@@ -3832,7 +3832,7 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	10
 	.word	38841
 	.byte	3
-	.byte	'Os_XSigChannelIsResultAvailable',0,3,76,129,2,1
+	.byte	'Os_XSigChannelIsResultAvailable',0,1,76,129,2,1
 	.word	231
 	.byte	1,1,5
 	.byte	'Channel',0,76,129,2,1
@@ -3842,7 +3842,7 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	10
 	.word	38914
 	.byte	3
-	.byte	'Os_XSigSend',0,3,77,129,1,1
+	.byte	'Os_XSigSend',0,1,77,129,1,1
 	.word	411
 	.byte	1,1,5
 	.byte	'RecvCore',0,77,129,1,1
@@ -3857,7 +3857,7 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	'Parameters',0,77,129,1,1
 	.word	38919
 	.byte	11,4,0,0,3
-	.byte	'Os_XSigSend_ActivateTaskAsync',0,3,77,191,1,1
+	.byte	'Os_XSigSend_ActivateTaskAsync',0,1,77,191,1,1
 	.word	411
 	.byte	1,1,5
 	.byte	'RecvCore',0,77,191,1,1
@@ -3869,13 +3869,13 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	'TaskID',0,77,191,1,1
 	.word	12369
 	.byte	4,0,3
-	.byte	'Os_TaskGetThread',0,3,78,111,1
+	.byte	'Os_TaskGetThread',0,1,78,111,1
 	.word	29823
 	.byte	1,1,5
 	.byte	'Task',0,78,111,1
 	.word	16612
 	.byte	4,0,3
-	.byte	'Os_TaskThread2Task',0,3,78,125,1
+	.byte	'Os_TaskThread2Task',0,1,78,125,1
 	.word	16612
 	.byte	1,1,5
 	.byte	'Thread',0,78,125,1
@@ -3912,62 +3912,62 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	4,2,35,46,0,10
 	.word	39274
 	.byte	3
-	.byte	'Os_TaskGetDyn',0,3,78,139,1,1
+	.byte	'Os_TaskGetDyn',0,1,78,139,1,1
 	.word	39432
 	.byte	1,1,5
 	.byte	'Task',0,78,139,1,1
 	.word	16612
 	.byte	11,4,0,0,6
-	.byte	'Os_TaskSetState',0,3,78,152,1,1,1,1,5
+	.byte	'Os_TaskSetState',0,1,78,152,1,1,1,1,5
 	.byte	'Task',0,78,152,1,1
 	.word	16612
 	.byte	5
 	.byte	'State',0,78,152,1,1
 	.word	12535
 	.byte	11,4,0,0,3
-	.byte	'Os_TaskGetId',0,3,78,219,1,1
+	.byte	'Os_TaskGetId',0,1,78,219,1,1
 	.word	12369
 	.byte	1,1,5
 	.byte	'Task',0,78,219,1,1
 	.word	16612
 	.byte	4,0,3
-	.byte	'Os_TaskGetScheduler',0,3,78,128,2,1
+	.byte	'Os_TaskGetScheduler',0,1,78,128,2,1
 	.word	16985
 	.byte	1,1,5
 	.byte	'Task',0,78,128,2,1
 	.word	16612
 	.byte	11,4,4,4,0,0,3
-	.byte	'Os_TaskGetCore',0,3,78,154,2,1
+	.byte	'Os_TaskGetCore',0,1,78,154,2,1
 	.word	24663
 	.byte	1,1,5
 	.byte	'Task',0,78,154,2,1
 	.word	16612
 	.byte	11,4,4,0,0,3
-	.byte	'Os_TaskIsCoreLocal',0,3,78,167,2,1
+	.byte	'Os_TaskIsCoreLocal',0,1,78,167,2,1
 	.word	130
 	.byte	1,1,5
 	.byte	'Task',0,78,167,2,1
 	.word	16612
 	.byte	11,4,4,0,0,6
-	.byte	'Os_TaskSwitch',0,3,78,252,2,1,1,1,5
+	.byte	'Os_TaskSwitch',0,1,78,252,2,1,1,1,5
 	.byte	'Scheduler',0,78,252,2,1
 	.word	16985
 	.byte	5
 	.byte	'CallerThread',0,78,252,2,1
 	.word	29823
 	.byte	11,4,4,4,4,4,4,4,4,0,0,6
-	.byte	'Os_TaskResume',0,3,78,161,3,1,1,1,5
+	.byte	'Os_TaskResume',0,1,78,161,3,1,1,1,5
 	.byte	'Scheduler',0,78,161,3,1
 	.word	16985
 	.byte	11,4,4,4,4,4,4,4,0,0,6
-	.byte	'Os_TaskCallPostTaskHook',0,3,78,232,5,1,1,1,11,4,0,0,3
-	.byte	'Os_CounterGetCore',0,3,80,182,1,1
+	.byte	'Os_TaskCallPostTaskHook',0,1,78,232,5,1,1,1,11,4,0,0,3
+	.byte	'Os_CounterGetCore',0,1,80,182,1,1
 	.word	24663
 	.byte	1,1,5
 	.byte	'Counter',0,80,182,1,1
 	.word	18853
 	.byte	4,0,3
-	.byte	'Os_CounterIsFutureValue',0,3,80,200,1,1
+	.byte	'Os_CounterIsFutureValue',0,1,80,200,1,1
 	.word	231
 	.byte	1,1,5
 	.byte	'Counter',0,80,200,1,1
@@ -3979,7 +3979,7 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	'ReferenceValue',0,80,200,1,1
 	.word	130
 	.byte	11,4,0,0,3
-	.byte	'Os_CounterIsFutureValueInternal',0,3,80,225,1,1
+	.byte	'Os_CounterIsFutureValueInternal',0,1,80,225,1,1
 	.word	231
 	.byte	1,1,5
 	.byte	'MaxCountingValue',0,80,225,1,1
@@ -3994,7 +3994,7 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	'ReferenceValue',0,80,225,1,1
 	.word	130
 	.byte	11,4,4,0,0,3
-	.byte	'Os_CounterCheckValueLeMaxAllowed',0,3,80,145,2,1
+	.byte	'Os_CounterCheckValueLeMaxAllowed',0,1,80,145,2,1
 	.word	231
 	.byte	1,1,5
 	.byte	'Counter',0,80,145,2,1
@@ -4003,7 +4003,7 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	'Value',0,80,145,2,1
 	.word	130
 	.byte	11,4,0,0,3
-	.byte	'Os_CounterCheckValueLeReducedMaxAllowed',0,3,80,159,2,1
+	.byte	'Os_CounterCheckValueLeReducedMaxAllowed',0,1,80,159,2,1
 	.word	231
 	.byte	1,1,5
 	.byte	'Counter',0,80,159,2,1
@@ -4015,7 +4015,7 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	'Value',0,80,159,2,1
 	.word	130
 	.byte	11,4,4,0,0,3
-	.byte	'Os_CounterCheckValueGeMinCycleOrZero',0,3,80,175,2,1
+	.byte	'Os_CounterCheckValueGeMinCycleOrZero',0,1,80,175,2,1
 	.word	231
 	.byte	1,1,5
 	.byte	'Counter',0,80,175,2,1
@@ -4028,42 +4028,42 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	10
 	.word	40448
 	.byte	3
-	.byte	'Os_CounterGetCharacteristics',0,3,80,189,2,1
+	.byte	'Os_CounterGetCharacteristics',0,1,80,189,2,1
 	.word	40453
 	.byte	1,1,5
 	.byte	'Counter',0,80,189,2,1
 	.word	18853
 	.byte	4,0,3
-	.byte	'Os_CounterGetMaxAllowedValue',0,3,80,203,2,1
+	.byte	'Os_CounterGetMaxAllowedValue',0,1,80,203,2,1
 	.word	130
 	.byte	1,1,5
 	.byte	'Counter',0,80,203,2,1
 	.word	18853
 	.byte	4,0,3
-	.byte	'Os_CounterGetMaxCountingValue',0,3,80,217,2,1
+	.byte	'Os_CounterGetMaxCountingValue',0,1,80,217,2,1
 	.word	130
 	.byte	1,1,5
 	.byte	'Counter',0,80,217,2,1
 	.word	18853
 	.byte	4,0,6
-	.byte	'Os_Hal_TimerFrtInit',0,3,81,93,1,1,1,5
+	.byte	'Os_Hal_TimerFrtInit',0,1,81,93,1,1,1,5
 	.byte	'TimerConfig',0,81,93,1
 	.word	19819
 	.byte	4,0,3
-	.byte	'Os_Hal_TimerFrtGetCounterValue',0,3,81,125,1
+	.byte	'Os_Hal_TimerFrtGetCounterValue',0,1,81,125,1
 	.word	130
 	.byte	1,1,5
 	.byte	'TimerConfig',0,81,125,1
 	.word	19819
 	.byte	4,0,6
-	.byte	'Os_Hal_TimerFrtSetCompareValue',0,3,81,139,1,1,1,1,5
+	.byte	'Os_Hal_TimerFrtSetCompareValue',0,1,81,139,1,1,1,1,5
 	.byte	'TimerConfig',0,81,139,1,1
 	.word	19819
 	.byte	5
 	.byte	'ExpirationTime',0,81,139,1,1
 	.word	130
 	.byte	4,0,6
-	.byte	'Os_Hal_TimerFrtTriggerIrq',0,3,81,172,1,1,1,1,5
+	.byte	'Os_Hal_TimerFrtTriggerIrq',0,1,81,172,1,1,1,1,5
 	.byte	'TimerConfig',0,81,172,1,1
 	.word	19819
 	.byte	4,0,12
@@ -4096,7 +4096,7 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	10
 	.word	41190
 	.byte	6
-	.byte	'Os_Hal_TimerPitInit',0,3,82,92,1,1,1,5
+	.byte	'Os_Hal_TimerPitInit',0,1,82,92,1,1,1,5
 	.byte	'TimerConfig',0,82,92,1
 	.word	41195
 	.byte	4,0,15,39,219,1,9,8,13
@@ -4119,24 +4119,24 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	10
 	.word	41355
 	.byte	6
-	.byte	'Os_TimerSwInit',0,3,84,84,1,1,1,5
+	.byte	'Os_TimerSwInit',0,1,84,84,1,1,1,5
 	.byte	'Timer',0,84,84,1
 	.word	41360
 	.byte	11,4,4,0,0,3
-	.byte	'Os_TimerSwGetValue',0,3,84,220,1,1
+	.byte	'Os_TimerSwGetValue',0,1,84,220,1,1
 	.word	130
 	.byte	1,1,5
 	.byte	'Timer',0,84,220,1,1
 	.word	41360
 	.byte	4,0,6
-	.byte	'Os_TimerSwSetCompareValue',0,3,84,233,1,1,1,1,5
+	.byte	'Os_TimerSwSetCompareValue',0,1,84,233,1,1,1,1,5
 	.byte	'Timer',0,84,233,1,1
 	.word	41360
 	.byte	5
 	.byte	'ExpirationTime',0,84,233,1,1
 	.word	130
 	.byte	4,0,3
-	.byte	'Os_TimerSwUserModulo',0,3,84,252,1,1
+	.byte	'Os_TimerSwUserModulo',0,1,84,252,1,1
 	.word	130
 	.byte	1,1,5
 	.byte	'Timer',0,84,252,1,1
@@ -4145,19 +4145,19 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	'Value',0,84,252,1,1
 	.word	130
 	.byte	11,4,0,0,3
-	.byte	'Os_TimerHrtGetValue',0,3,84,211,4,1
+	.byte	'Os_TimerHrtGetValue',0,1,84,211,4,1
 	.word	130
 	.byte	1,1,5
 	.byte	'Timer',0,84,211,4,1
 	.word	19910
 	.byte	11,4,4,4,4,0,0,3
-	.byte	'Os_TimerHrtGetCounter',0,3,84,205,2,1
+	.byte	'Os_TimerHrtGetCounter',0,1,84,205,2,1
 	.word	18853
 	.byte	1,1,5
 	.byte	'Timer',0,84,205,2,1
 	.word	19910
 	.byte	4,0,3
-	.byte	'Os_TimerHrtComputeHardwareCompareValue',0,3,84,229,2,1
+	.byte	'Os_TimerHrtComputeHardwareCompareValue',0,1,84,229,2,1
 	.word	130
 	.byte	1,1,5
 	.byte	'Timer',0,84,229,2,1
@@ -4166,20 +4166,20 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	'ExpirationTime',0,84,229,2,1
 	.word	130
 	.byte	11,11,4,0,0,0,6
-	.byte	'Os_TimerHrtSetCompareValue',0,3,84,157,3,1,1,1,5
+	.byte	'Os_TimerHrtSetCompareValue',0,1,84,157,3,1,1,1,5
 	.byte	'Timer',0,84,157,3,1
 	.word	19910
 	.byte	5
 	.byte	'ExpirationTime',0,84,157,3,1
 	.word	130
 	.byte	11,4,4,4,4,4,4,0,0,3
-	.byte	'Os_TimerHrtGetCompareValue',0,3,84,247,3,1
+	.byte	'Os_TimerHrtGetCompareValue',0,1,84,247,3,1
 	.word	130
 	.byte	1,1,5
 	.byte	'Timer',0,84,247,3,1
 	.word	19910
 	.byte	4,0,3
-	.byte	'Os_TimerSwAbsCounter2AbsTimerValue',0,3,84,137,5,1
+	.byte	'Os_TimerSwAbsCounter2AbsTimerValue',0,1,84,137,5,1
 	.word	130
 	.byte	1,1,5
 	.byte	'MaxAllowedValue',0,84,137,5,1
@@ -4191,7 +4191,7 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	'CounterValue',0,84,137,5,1
 	.word	130
 	.byte	4,0,3
-	.byte	'Os_TimerAdd',0,3,84,253,5,1
+	.byte	'Os_TimerAdd',0,1,84,253,5,1
 	.word	130
 	.byte	1,1,5
 	.byte	'MaxAllowedValue',0,84,253,5,1
@@ -4206,7 +4206,7 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	'Add',0,84,253,5,1
 	.word	130
 	.byte	11,4,4,4,4,0,0,3
-	.byte	'Os_TimerSub',0,3,84,173,6,1
+	.byte	'Os_TimerSub',0,1,84,173,6,1
 	.word	130
 	.byte	1,1,5
 	.byte	'MaxCountingValue',0,84,173,6,1
@@ -4218,20 +4218,20 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	'Sub',0,84,173,6,1
 	.word	130
 	.byte	11,4,4,4,0,0,6
-	.byte	'Os_TimerFrtSetCompareValue',0,3,84,222,6,1,1,1,5
+	.byte	'Os_TimerFrtSetCompareValue',0,1,84,222,6,1,1,1,5
 	.byte	'TimerConfig',0,84,222,6,1
 	.word	19819
 	.byte	5
 	.byte	'CompareValue',0,84,222,6,1
 	.word	130
 	.byte	11,4,4,4,0,0,3
-	.byte	'Os_TimerFrtTickType2TickType',0,3,84,134,7,1
+	.byte	'Os_TimerFrtTickType2TickType',0,1,84,134,7,1
 	.word	130
 	.byte	1,1,5
 	.byte	'Value',0,84,134,7,1
 	.word	130
 	.byte	4,0,3
-	.byte	'Os_TimerTickType2FrtTickType',0,3,84,147,7,1
+	.byte	'Os_TimerTickType2FrtTickType',0,1,84,147,7,1
 	.word	130
 	.byte	1,1,5
 	.byte	'Value',0,84,147,7,1
@@ -4315,7 +4315,7 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	10
 	.word	43121
 	.byte	3
-	.byte	'Os_TpThread2TpOwnerThread',0,3,85,94,1
+	.byte	'Os_TpThread2TpOwnerThread',0,1,85,94,1
 	.word	43126
 	.byte	1,1,5
 	.byte	'TpThread',0,85,94,1
@@ -4325,24 +4325,24 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	10
 	.word	43189
 	.byte	3
-	.byte	'Os_TpGetCurrentTpOwnerThread',0,3,85,108,1
+	.byte	'Os_TpGetCurrentTpOwnerThread',0,1,85,108,1
 	.word	43126
 	.byte	1,1,5
 	.byte	'Config',0,85,108,1
 	.word	20070
 	.byte	11,4,4,0,0,6
-	.byte	'Os_TpThreadInit',0,3,85,127,1,1,1,5
+	.byte	'Os_TpThreadInit',0,1,85,127,1,1,1,5
 	.byte	'Config',0,85,127,1
 	.word	20070
 	.byte	5
 	.byte	'Current',0,85,127,1
 	.word	28742
 	.byte	11,4,4,0,0,6
-	.byte	'Os_TpThreadKill',0,3,85,157,1,1,1,1,5
+	.byte	'Os_TpThreadKill',0,1,85,157,1,1,1,1,5
 	.byte	'Thread',0,85,157,1,1
 	.word	28742
 	.byte	11,4,4,0,0,6
-	.byte	'Os_TpResume',0,3,85,184,1,1,1,1,5
+	.byte	'Os_TpResume',0,1,85,184,1,1,1,1,5
 	.byte	'Config',0,85,184,1,1
 	.word	20070
 	.byte	5
@@ -4352,7 +4352,7 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	'RemainingTime',0,85,184,1,1
 	.word	130
 	.byte	11,4,4,0,0,6
-	.byte	'Os_TpSuspend',0,3,85,209,1,1,1,1,5
+	.byte	'Os_TpSuspend',0,1,85,209,1,1,1,1,5
 	.byte	'Config',0,85,209,1,1
 	.word	20070
 	.byte	5
@@ -4365,7 +4365,7 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	'Deadline',0,85,209,1,1
 	.word	130
 	.byte	11,4,4,4,0,0,3
-	.byte	'Os_TpSub',0,3,85,239,1,1
+	.byte	'Os_TpSub',0,1,85,239,1,1
 	.word	130
 	.byte	1,1,5
 	.byte	'Config',0,85,239,1,1
@@ -4377,7 +4377,7 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	'Sub',0,85,239,1,1
 	.word	130
 	.byte	11,4,4,4,0,0,3
-	.byte	'Os_TpAdd',0,3,85,139,2,1
+	.byte	'Os_TpAdd',0,1,85,139,2,1
 	.word	130
 	.byte	1,1,5
 	.byte	'Config',0,85,139,2,1
@@ -4389,13 +4389,13 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	'Add',0,85,139,2,1
 	.word	130
 	.byte	11,4,4,4,4,0,0,3
-	.byte	'Os_TpGetArrivalTimeStamp',0,3,85,171,2,1
+	.byte	'Os_TpGetArrivalTimeStamp',0,1,85,171,2,1
 	.word	11694
 	.byte	1,1,5
 	.byte	'Config',0,85,171,2,1
 	.word	20070
 	.byte	11,4,0,0,6
-	.byte	'Os_TpSwitch',0,3,85,207,2,1,1,1,5
+	.byte	'Os_TpSwitch',0,1,85,207,2,1,1,1,5
 	.byte	'Config',0,85,207,2,1
 	.word	20070
 	.byte	5
@@ -4408,7 +4408,7 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	'NextThread',0,85,207,2,1
 	.word	29823
 	.byte	11,4,4,4,4,4,4,4,4,4,4,4,0,0,6
-	.byte	'Os_TpResetAndResume',0,3,85,157,3,1,1,1,5
+	.byte	'Os_TpResetAndResume',0,1,85,157,3,1,1,1,5
 	.byte	'Config',0,85,157,3,1
 	.word	20070
 	.byte	5
@@ -4421,14 +4421,14 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	'NextThread',0,85,157,3,1
 	.word	29823
 	.byte	11,11,4,0,4,4,4,4,4,4,4,4,0,0,6
-	.byte	'Os_TpResetAfterWait',0,3,85,225,3,1,1,1,5
+	.byte	'Os_TpResetAfterWait',0,1,85,225,3,1,1,1,5
 	.byte	'Config',0,85,225,3,1
 	.word	20070
 	.byte	5
 	.byte	'Current',0,85,225,3,1
 	.word	28742
 	.byte	11,11,4,0,4,4,4,4,4,4,4,0,0,3
-	.byte	'Os_TpCheckInterArrival',0,3,85,153,4,1
+	.byte	'Os_TpCheckInterArrival',0,1,85,153,4,1
 	.word	231
 	.byte	1,1,5
 	.byte	'Config',0,85,153,4,1
@@ -4437,7 +4437,7 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	'TpThread',0,85,153,4,1
 	.word	28742
 	.byte	11,11,4,0,4,4,4,4,4,0,0,3
-	.byte	'Os_TpGetResourceBudget',0,3,85,128,5,1
+	.byte	'Os_TpGetResourceBudget',0,1,85,128,5,1
 	.word	42444
 	.byte	1,1,5
 	.byte	'Current',0,85,128,5,1
@@ -4446,23 +4446,23 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	'Resource',0,85,128,5,1
 	.word	11889
 	.byte	11,4,4,0,0,6
-	.byte	'Os_TpStartAllInterrupt',0,3,85,176,6,1,1,1,5
+	.byte	'Os_TpStartAllInterrupt',0,1,85,176,6,1,1,1,5
 	.byte	'Config',0,85,176,6,1
 	.word	20070
 	.byte	11,4,4,4,4,0,0,6
-	.byte	'Os_TpStopAllInterrupt',0,3,85,207,6,1,1,1,5
+	.byte	'Os_TpStopAllInterrupt',0,1,85,207,6,1,1,1,5
 	.byte	'Config',0,85,207,6,1
 	.word	20070
 	.byte	11,4,4,4,4,0,0,6
-	.byte	'Os_TpStartOsInterrupt',0,3,85,239,6,1,1,1,5
+	.byte	'Os_TpStartOsInterrupt',0,1,85,239,6,1,1,1,5
 	.byte	'Config',0,85,239,6,1
 	.word	20070
 	.byte	11,4,4,4,4,0,0,6
-	.byte	'Os_TpStopOsInterrupt',0,3,85,142,7,1,1,1,5
+	.byte	'Os_TpStopOsInterrupt',0,1,85,142,7,1,1,1,5
 	.byte	'Config',0,85,142,7,1
 	.word	20070
 	.byte	11,4,4,4,4,0,0,6
-	.byte	'Os_TpBudgetStart',0,3,85,182,7,1,1,1,5
+	.byte	'Os_TpBudgetStart',0,1,85,182,7,1,1,1,5
 	.byte	'Config',0,85,182,7,1
 	.word	20070
 	.byte	5
@@ -4472,7 +4472,7 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	'Budget',0,85,182,7,1
 	.word	42444
 	.byte	11,11,4,0,4,4,4,4,4,4,4,0,0,6
-	.byte	'Os_TpBudgetStop',0,3,85,131,8,1,1,1,5
+	.byte	'Os_TpBudgetStop',0,1,85,131,8,1,1,1,5
 	.byte	'Config',0,85,131,8,1
 	.word	20070
 	.byte	5
@@ -4482,19 +4482,19 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	'Budget',0,85,131,8,1
 	.word	42444
 	.byte	11,11,4,0,4,4,4,4,4,4,4,4,0,0,3
-	.byte	'Os_TpIsEnabledByCoreTpConfig',0,3,85,213,8,1
+	.byte	'Os_TpIsEnabledByCoreTpConfig',0,1,85,213,8,1
 	.word	231
 	.byte	1,1,5
 	.byte	'Config',0,85,213,8,1
 	.word	20070
 	.byte	4,0,3
-	.byte	'Os_TpIsEnabledByThreadTpConfig',0,3,85,244,8,1
+	.byte	'Os_TpIsEnabledByThreadTpConfig',0,1,85,244,8,1
 	.word	231
 	.byte	1,1,5
 	.byte	'Config',0,85,244,8,1
 	.word	28742
 	.byte	4,0,3
-	.byte	'Os_JobGetCore',0,3,87,190,2,1
+	.byte	'Os_JobGetCore',0,1,87,190,2,1
 	.word	24663
 	.byte	1,1,5
 	.byte	'Job',0,87,190,2,1
@@ -4505,7 +4505,7 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	10
 	.word	44719
 	.byte	6
-	.byte	'Os_ServiceCallsInit',0,3,88,134,1,1,1,1,5
+	.byte	'Os_ServiceCallsInit',0,1,88,134,1,1,1,1,5
 	.byte	'ServiceCalls',0,88,134,1,1
 	.word	44750
 	.byte	4,0,10
@@ -4513,14 +4513,14 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	10
 	.word	394
 	.byte	6
-	.byte	'Os_FifoIdxIncrement',0,3,90,88,1,1,1,5
+	.byte	'Os_FifoIdxIncrement',0,1,90,88,1,1,1,5
 	.byte	'Index',0,90,88,1
 	.word	44812
 	.byte	5
 	.byte	'Size',0,90,88,1
 	.word	394
 	.byte	11,4,0,0,3
-	.byte	'Os_FifoIsFull',0,3,90,118,1
+	.byte	'Os_FifoIsFull',0,1,90,118,1
 	.word	231
 	.byte	1,1,5
 	.byte	'WriteIdx',0,90,118,1
@@ -4532,7 +4532,7 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	'Size',0,90,118,1
 	.word	394
 	.byte	11,4,0,0,3
-	.byte	'Os_FifoIsEmpty',0,3,90,142,1,1
+	.byte	'Os_FifoIsEmpty',0,1,90,142,1,1
 	.word	231
 	.byte	1,1,5
 	.byte	'WriteIdx',0,90,142,1,1
@@ -4545,14 +4545,14 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	10
 	.word	45014
 	.byte	6
-	.byte	'Os_FifoEmptyQueue',0,3,90,158,1,1,1,1,5
+	.byte	'Os_FifoEmptyQueue',0,1,90,158,1,1,1,1,5
 	.byte	'WriteIdx',0,90,158,1,1
 	.word	45019
 	.byte	5
 	.byte	'ReadIdx',0,90,158,1,1
 	.word	44812
 	.byte	4,0,3
-	.byte	'Os_FifoIndicesInRange',0,3,90,178,1,1
+	.byte	'Os_FifoIndicesInRange',0,1,90,178,1,1
 	.word	231
 	.byte	1,1,5
 	.byte	'WriteIdx',0,90,178,1,1
@@ -4598,7 +4598,7 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	10
 	.word	45350
 	.byte	3
-	.byte	'Os_Fifo08IsFull',0,3,91,169,1,1
+	.byte	'Os_Fifo08IsFull',0,1,91,169,1,1
 	.word	231
 	.byte	1,1,5
 	.byte	'Fifo',0,91,169,1,1
@@ -4631,7 +4631,7 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	10
 	.word	45521
 	.byte	3
-	.byte	'Os_Fifo08IsEmpty',0,3,91,132,2,1
+	.byte	'Os_Fifo08IsEmpty',0,1,91,132,2,1
 	.word	231
 	.byte	1,1,5
 	.byte	'Fifo',0,91,132,2,1
@@ -4671,7 +4671,7 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	10
 	.word	45756
 	.byte	3
-	.byte	'Os_Fifo16IsFull',0,3,93,169,1,1
+	.byte	'Os_Fifo16IsFull',0,1,93,169,1,1
 	.word	231
 	.byte	1,1,5
 	.byte	'Fifo',0,93,169,1,1
@@ -4704,7 +4704,7 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	10
 	.word	45927
 	.byte	3
-	.byte	'Os_Fifo16IsEmpty',0,3,93,133,2,1
+	.byte	'Os_Fifo16IsEmpty',0,1,93,133,2,1
 	.word	231
 	.byte	1,1,5
 	.byte	'Fifo',0,93,133,2,1
@@ -4744,7 +4744,7 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	10
 	.word	46162
 	.byte	3
-	.byte	'Os_Fifo32IsFull',0,3,95,169,1,1
+	.byte	'Os_Fifo32IsFull',0,1,95,169,1,1
 	.word	231
 	.byte	1,1,5
 	.byte	'Fifo',0,95,169,1,1
@@ -4777,7 +4777,7 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	10
 	.word	46333
 	.byte	3
-	.byte	'Os_Fifo32IsEmpty',0,3,95,131,2,1
+	.byte	'Os_Fifo32IsEmpty',0,1,95,131,2,1
 	.word	231
 	.byte	1,1,5
 	.byte	'Fifo',0,95,131,2,1
@@ -4826,7 +4826,7 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	10
 	.word	46612
 	.byte	3
-	.byte	'Os_FifoRefIsFull',0,3,97,167,1,1
+	.byte	'Os_FifoRefIsFull',0,1,97,167,1,1
 	.word	231
 	.byte	1,1,5
 	.byte	'Fifo',0,97,167,1,1
@@ -4871,7 +4871,7 @@ OsCfg_PeripheralRefs:	.type	object
 	.byte	10
 	.word	46847
 	.byte	3
-	.byte	'Os_FifoRefIsEmpty',0,3,97,255,1,1
+	.byte	'Os_FifoRefIsEmpty',0,1,97,255,1,1
 	.word	231
 	.byte	1,1,5
 	.byte	'Fifo',0,97,255,1,1
