@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Application_Cfg.h
- *   Generation Time: 2025-03-01 11:36:41
+ *   Generation Time: 2025-03-03 10:08:10
  *           Project: tc399demo - Version 1.0
  *          Delivery: CBD2100010_D00
  *      Tool Version: DaVinci Configurator (beta) 5.22.45 SP3
@@ -57,10 +57,10 @@
  *********************************************************************************************************************/
 
 /* Number of application objects: OsApplication_OsCore0 */
-# define OS_CFG_NUM_APP_OSAPPLICATION_OSCORE0_ALARMS             (3uL)
-# define OS_CFG_NUM_APP_OSAPPLICATION_OSCORE0_COUNTERS           (0uL)
+# define OS_CFG_NUM_APP_OSAPPLICATION_OSCORE0_ALARMS             (4uL)
+# define OS_CFG_NUM_APP_OSAPPLICATION_OSCORE0_COUNTERS           (1uL)
 # define OS_CFG_NUM_APP_OSAPPLICATION_OSCORE0_HOOKS              (0uL)
-# define OS_CFG_NUM_APP_OSAPPLICATION_OSCORE0_ISRS               (0uL)
+# define OS_CFG_NUM_APP_OSAPPLICATION_OSCORE0_ISRS               (1uL)
 # define OS_CFG_NUM_APP_OSAPPLICATION_OSCORE0_CAT1ISRS           (0uL)
 # define OS_CFG_NUM_APP_OSAPPLICATION_OSCORE0_SCHTS              (0uL)
 # define OS_CFG_NUM_APP_OSAPPLICATION_OSCORE0_TASKS              (3uL)

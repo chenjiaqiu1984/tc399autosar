@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Alarm_Lcfg.h
- *   Generation Time: 2025-03-01 11:36:41
+ *   Generation Time: 2025-03-03 09:41:04
  *           Project: tc399demo - Version 1.0
  *          Delivery: CBD2100010_D00
  *      Tool Version: DaVinci Configurator (beta) 5.22.45 SP3
@@ -87,7 +87,10 @@
 # include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 /*! Alarm configuration data: Rte_Al_TE2_bsw_task_0_10ms */
-extern CONST(Os_AlarmActivateTaskConfigType, OS_CONST) OsCfg_Alarm_Rte_Al_TE2_bsw_task_0_10ms;
+extern CONST(Os_AlarmSetEventConfigType, OS_CONST) OsCfg_Alarm_Rte_Al_TE2_bsw_task_0_10ms;
+
+/*! Alarm configuration data: Rte_Al_TE2_bsw_task_0_20ms */
+extern CONST(Os_AlarmSetEventConfigType, OS_CONST) OsCfg_Alarm_Rte_Al_TE2_bsw_task_0_20ms;
 
 /*! Alarm configuration data: Rte_Al_TE_swc_test_swc_test_10ms */
 extern CONST(Os_AlarmSetEventConfigType, OS_CONST) OsCfg_Alarm_Rte_Al_TE_swc_test_swc_test_10ms;

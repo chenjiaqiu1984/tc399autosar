@@ -1,0 +1,158 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 21092262 SN 73118428"
+	.compiler_invocation	"ctc --dep-file=appl\\GenData\\.Det_Cfg.o.d --fp-model=c,f,l,n,r,S,T,z -D__CPU__=tc39xb -D__CPU_TC39XB__ --core=tc1.6.2 --iso=99 -DBRS_COMP_TASKING -ID:\\Zonal\\demo011\\tasking -ID:\\Zonal\\testdemo\\taskingdemo\\demo001 -ID:\\Zonal\\demo011\\tasking\\component\\PduR -ID:\\Zonal\\demo011\\tasking\\component\\PduR\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\PduR\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\PduR\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\PduR\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\Can -ID:\\Zonal\\demo011\\tasking\\component\\SomeIpXf -ID:\\Zonal\\demo011\\tasking\\component\\SomeIpXf\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\SomeIpXf\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\SomeIpXf\\Generator -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\Can\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\Can\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\Can\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\Can\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\CanIf -ID:\\Zonal\\demo011\\tasking\\component\\CanIf\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\CanIf\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\CanIf\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\CanIf\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\CanSM -ID:\\Zonal\\demo011\\tasking\\component\\CanSM\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\CanSM\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\CanSM\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\CanSM\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\Com -ID:\\Zonal\\demo011\\tasking\\component\\Com\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\Com\\DaVinciCfg_VASE -ID:\\Zonal\\demo011\\tasking\\component\\Com\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\Com\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\Com\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\ComM -ID:\\Zonal\\demo011\\tasking\\component\\ComM\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\ComM\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\ComM\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\ComM\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\Det -ID:\\Zonal\\demo011\\tasking\\component\\Det\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\Det\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\Det\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\Det\\Implementation -ID:\\Zonal\\demo011\\tasking -ID:\\Zonal\\demo011\\tasking\\appl -ID:\\Zonal\\demo011\\tasking\\appl\\GenData -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\Components -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\ContractPhase -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\inc -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\src -ID:\\Zonal\\demo011\\tasking\\appl\\Include -ID:\\Zonal\\demo011\\tasking\\appl\\Source -ID:\\Zonal\\demo011\\tasking\\appl\\Source\\swc_test -ID:\\Zonal\\demo011\\tasking\\component -ID:\\Zonal\\demo011\\tasking\\component\\_Common -ID:\\Zonal\\demo011\\tasking\\component\\_Common\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\BswM -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\EcuM -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\Os -ID:\\Zonal\\demo011\\tasking\\component\\Os\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\Os\\BSWMD\\Os -ID:\\Zonal\\demo011\\tasking\\component\\Os\\BSWMD\\Os\\TC39xQ -ID:\\Zonal\\demo011\\tasking\\component\\Os\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\Os\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\Os\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug -ID:\\Zonal\\demo011\\tasking\\Debug\\appl -ID:\\Zonal\\demo011\\tasking\\Debug\\appl\\GenData -ID:\\Zonal\\demo011\\tasking\\Debug\\appl\\GenData\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\appl\\Source -ID:\\Zonal\\demo011\\tasking\\Debug\\component -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\BswM -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\BswM\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\EcuM -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\EcuM\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\Os -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\Os\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\VStdLib -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\VStdLib\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Dio -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Dio\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Dio\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\McalLib -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\McalLib\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\McalLib\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Mcu -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Mcu\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Mcu\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Port -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Port\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Port\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Platform -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Platform\\AS440 -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Sfr -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Sfr\\TC39xB -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Sfr\\TC39xB\\_Reg -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc\\inc\\AS440 -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal\\Port -ID:\\Zonal\\demo011\\tasking\\mcal\\Port\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\Port\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\Port\\ssc\\src -g2 --make-target=appl\\GenData\\Det_Cfg.o -t2 --language=-gcc,-volatile,+strings,-kanji --default-near-size=0 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o appl\\GenData\\Det_Cfg.src ..\\appl\\GenData\\Det_Cfg.c"
+	.compiler_name		"ctc"
+	;source	'..\\appl\\GenData\\Det_Cfg.c'
+
+	
+$TC162
+	
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L3:
+	.word	442
+	.half	3
+	.word	.L4
+	.byte	4
+.L2:
+	.byte	1
+	.byte	'..\\appl\\GenData\\Det_Cfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
+	.word	.L5
+	.byte	2
+	.byte	'int',0,4,5,3
+	.word	119
+	.byte	4
+	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,5
+	.word	126
+	.byte	0,2
+	.byte	'unsigned int',0,4,7,6
+	.word	168
+	.byte	7
+	.word	168
+	.byte	8
+	.byte	'__cmpswapw',0
+	.word	184
+	.byte	1,1,1,1,9
+	.byte	'p',0
+	.word	189
+	.byte	9
+	.byte	'value',0
+	.word	168
+	.byte	9
+	.byte	'compare',0
+	.word	168
+	.byte	0,10,1,7
+	.word	246
+	.byte	11
+	.byte	'__codeptr',0,1,1,1
+	.word	248
+	.byte	2
+	.byte	'unsigned char',0,1,8,11
+	.byte	'uint8',0,2,104,31
+	.word	271
+	.byte	2
+	.byte	'unsigned short int',0,2,7,11
+	.byte	'uint16',0,2,106,31
+	.word	302
+	.byte	11
+	.byte	'Std_ReturnType',0,3,132,1,15
+	.word	271
+	.byte	12
+	.byte	'sDet_PCConfigType',0,4,238,1,16,1,13
+	.byte	'Det_PCConfigNeverUsed',0
+	.word	271
+	.byte	1,2,35,0,0,11
+	.byte	'Det_PCConfigType',0,4,241,1,3
+	.word	363
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L4:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,38,0,73,19,0,0,4,46,1,3,8,54
+	.byte	15,39,12,63,12,60,12,0,0,5,5,0,73,19,0,0,6,53,0,73,19,0,0,7,15,0,73,19,0,0,8,46,1,3,8,73,19,54,15,39,12
+	.byte	63,12,60,12,0,0,9,5,0,3,8,73,19,0,0,10,21,0,54,15,0,0,11,22,0,3,8,58,15,59,15,57,15,73,19,0,0,12,19,1
+	.byte	3,8,58,15,59,15,57,15,11,15,0,0,13,13,0,3,8,73,19,11,15,56,9,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L5:
+	.word	.L7-.L6
+.L6:
+	.half	3
+	.word	.L9-.L8
+.L8:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'D:\\Zonal\\demo011\\tasking\\component\\_Common\\Implementation',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\appl\\GenData',0,0
+	.byte	'..\\appl\\GenData\\Det_Cfg.c',0,0,0,0
+	.byte	'Platform_Types.h',0,1,0,0
+	.byte	'Std_Types.h',0,1,0,0
+	.byte	'Det_Cfg.h',0,2,0,0,0
+.L9:
+.L7:
+
+; ..\appl\GenData\Det_Cfg.c	     1  /**********************************************************************************************************************
+; ..\appl\GenData\Det_Cfg.c	     2   *  COPYRIGHT
+; ..\appl\GenData\Det_Cfg.c	     3   *  -------------------------------------------------------------------------------------------------------------------
+; ..\appl\GenData\Det_Cfg.c	     4   *  \verbatim
+; ..\appl\GenData\Det_Cfg.c	     5   *
+; ..\appl\GenData\Det_Cfg.c	     6   *                 This software is copyright protected and proprietary to Vector Informatik GmbH.
+; ..\appl\GenData\Det_Cfg.c	     7   *                 Vector Informatik GmbH grants to you only those rights as set out in the license conditions.
+; ..\appl\GenData\Det_Cfg.c	     8   *                 All other rights remain with Vector Informatik GmbH.
+; ..\appl\GenData\Det_Cfg.c	     9   *  \endverbatim
+; ..\appl\GenData\Det_Cfg.c	    10   *  -------------------------------------------------------------------------------------------------------------------
+; ..\appl\GenData\Det_Cfg.c	    11   *  LICENSE
+; ..\appl\GenData\Det_Cfg.c	    12   *  -------------------------------------------------------------------------------------------------------------------
+; ..\appl\GenData\Det_Cfg.c	    13   *            Module: Det
+; ..\appl\GenData\Det_Cfg.c	    14   *           Program: MSR_Vector_SLP4
+; ..\appl\GenData\Det_Cfg.c	    15   *          Customer: Aptiv Electronics (Suzhou) Co., Ltd.
+; ..\appl\GenData\Det_Cfg.c	    16   *       Expiry Date: Not restricted
+; ..\appl\GenData\Det_Cfg.c	    17   *  Ordered Derivat.: TC399XP
+; ..\appl\GenData\Det_Cfg.c	    18   *    License Scope : The usage is restricted to CBD2100010_D00
+; ..\appl\GenData\Det_Cfg.c	    19   *
+; ..\appl\GenData\Det_Cfg.c	    20   *  -------------------------------------------------------------------------------------------------------------------
+; ..\appl\GenData\Det_Cfg.c	    21   *  FILE DESCRIPTION
+; ..\appl\GenData\Det_Cfg.c	    22   *  -------------------------------------------------------------------------------------------------------------------
+; ..\appl\GenData\Det_Cfg.c	    23   *              File: Det_Cfg.c
+; ..\appl\GenData\Det_Cfg.c	    24   *   Generation Time: 2025-03-02 17:01:15
+; ..\appl\GenData\Det_Cfg.c	    25   *           Project: tc399demo - Version 1.0
+; ..\appl\GenData\Det_Cfg.c	    26   *          Delivery: CBD2100010_D00
+; ..\appl\GenData\Det_Cfg.c	    27   *      Tool Version: DaVinci Configurator (beta) 5.22.45 SP3
+; ..\appl\GenData\Det_Cfg.c	    28   *
+; ..\appl\GenData\Det_Cfg.c	    29   *
+; ..\appl\GenData\Det_Cfg.c	    30   *********************************************************************************************************************/
+; ..\appl\GenData\Det_Cfg.c	    31  
+; ..\appl\GenData\Det_Cfg.c	    32  /**********************************************************************************************************************
+; ..\appl\GenData\Det_Cfg.c	    33   ! BETA VERSION                                                                                                       !
+; ..\appl\GenData\Det_Cfg.c	    34   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+; ..\appl\GenData\Det_Cfg.c	    35   ! This version of DaVinci Configurator Pro and/or the related Basic Software Package is BETA software.               !
+; ..\appl\GenData\Det_Cfg.c	    36   ! BETA Software is basically operable, but not sufficiently tested, verified and/or qualified for use in series      !
+; ..\appl\GenData\Det_Cfg.c	    37   ! production and/or in vehicles operating on public or non-public roads.                                             !
+; ..\appl\GenData\Det_Cfg.c	    38   ! In particular, without limitation, BETA Software may cause unpredictable ECU behavior, may not provide all         !
+; ..\appl\GenData\Det_Cfg.c	    39   ! functions necessary for use in series production and/or may not comply with quality requirements which are         !
+; ..\appl\GenData\Det_Cfg.c	    40   ! necessary according to the state of the art. BETA Software must not be used in series production.                  !
+; ..\appl\GenData\Det_Cfg.c	    41   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+; ..\appl\GenData\Det_Cfg.c	    42  **********************************************************************************************************************/
+; ..\appl\GenData\Det_Cfg.c	    43  
+; ..\appl\GenData\Det_Cfg.c	    44  
+; ..\appl\GenData\Det_Cfg.c	    45  
+; ..\appl\GenData\Det_Cfg.c	    46  #define DET_CFG_SOURCE
+; ..\appl\GenData\Det_Cfg.c	    47  
+; ..\appl\GenData\Det_Cfg.c	    48  /**********************************************************************************************************************
+; ..\appl\GenData\Det_Cfg.c	    49   * INCLUDES
+; ..\appl\GenData\Det_Cfg.c	    50   *********************************************************************************************************************/
+; ..\appl\GenData\Det_Cfg.c	    51  #include "Det.h"
+; ..\appl\GenData\Det_Cfg.c	    52  
+; ..\appl\GenData\Det_Cfg.c	    53  
+; ..\appl\GenData\Det_Cfg.c	    54  /**********************************************************************************************************************
+; ..\appl\GenData\Det_Cfg.c	    55   * GLOBAL DATA
+; ..\appl\GenData\Det_Cfg.c	    56   *********************************************************************************************************************/
+; ..\appl\GenData\Det_Cfg.c	    57  /**********************************************************************************************************************
+; ..\appl\GenData\Det_Cfg.c	    58    CONFIGURATION CLASS: PRE_COMPILE
+; ..\appl\GenData\Det_Cfg.c	    59    SECTION: GLOBAL DATA
+; ..\appl\GenData\Det_Cfg.c	    60  **********************************************************************************************************************/
+; ..\appl\GenData\Det_Cfg.c	    61  
+; ..\appl\GenData\Det_Cfg.c	    62  
+
+	; Module end

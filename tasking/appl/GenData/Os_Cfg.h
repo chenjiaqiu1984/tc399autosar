@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Cfg.h
- *   Generation Time: 2025-03-01 11:36:41
+ *   Generation Time: 2025-03-04 13:03:53
  *           Project: tc399demo - Version 1.0
  *          Delivery: CBD2100010_D00
  *      Tool Version: DaVinci Configurator (beta) 5.22.45 SP3
@@ -120,6 +120,8 @@
 # define OS_CFG_EVENT                            (STD_ON)
 
 /* Event masks */
+# define Rte_Ev_Cyclic2_bsw_task_0_10ms     ((EventMaskType)1uLL)
+# define Rte_Ev_Cyclic2_bsw_task_0_20ms     ((EventMaskType)2uLL)
 # define Rte_Ev_Run_swc_test_swc_test_10ms     ((EventMaskType)1uLL)
 # define Rte_Ev_Run_swc_test_swc_test_500ms     ((EventMaskType)2uLL)
 

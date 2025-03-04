@@ -1,5 +1,25 @@
 t399minisystem.elf : .\appl\GenData\BswM_Lcfg.o
 .\appl\GenData\BswM_Lcfg.o :
+t399minisystem.elf : .\appl\GenData\CanIf_Lcfg.o
+.\appl\GenData\CanIf_Lcfg.o :
+t399minisystem.elf : .\appl\GenData\CanIf_PBcfg.o
+.\appl\GenData\CanIf_PBcfg.o :
+t399minisystem.elf : .\appl\GenData\CanSM_Lcfg.o
+.\appl\GenData\CanSM_Lcfg.o :
+t399minisystem.elf : .\appl\GenData\Can_Lcfg.o
+.\appl\GenData\Can_Lcfg.o :
+t399minisystem.elf : .\appl\GenData\Can_PBcfg.o
+.\appl\GenData\Can_PBcfg.o :
+t399minisystem.elf : .\appl\GenData\ComM_Lcfg.o
+.\appl\GenData\ComM_Lcfg.o :
+t399minisystem.elf : .\appl\GenData\ComM_PBcfg.o
+.\appl\GenData\ComM_PBcfg.o :
+t399minisystem.elf : .\appl\GenData\Com_Lcfg.o
+.\appl\GenData\Com_Lcfg.o :
+t399minisystem.elf : .\appl\GenData\Com_PBcfg.o
+.\appl\GenData\Com_PBcfg.o :
+t399minisystem.elf : .\appl\GenData\Det_Cfg.o
+.\appl\GenData\Det_Cfg.o :
 t399minisystem.elf : .\appl\GenData\EcuM_Cfg.o
 .\appl\GenData\EcuM_Cfg.o :
 t399minisystem.elf : .\appl\GenData\EcuM_Init_Cfg.o
@@ -66,8 +86,14 @@ t399minisystem.elf : .\appl\GenData\Os_Trace_Lcfg.o
 .\appl\GenData\Os_Trace_Lcfg.o :
 t399minisystem.elf : .\appl\GenData\Os_XSignal_Lcfg.o
 .\appl\GenData\Os_XSignal_Lcfg.o :
+t399minisystem.elf : .\appl\GenData\PduR_Lcfg.o
+.\appl\GenData\PduR_Lcfg.o :
+t399minisystem.elf : .\appl\GenData\PduR_PBcfg.o
+.\appl\GenData\PduR_PBcfg.o :
 t399minisystem.elf : .\appl\GenData\Rte.o
 .\appl\GenData\Rte.o :
+t399minisystem.elf : .\appl\GenData\SomeIpXf.o
+.\appl\GenData\SomeIpXf.o :
 t399minisystem.elf : .\appl\GenData\src\Dio_Lcfg.o
 .\appl\GenData\src\Dio_Lcfg.o :
 t399minisystem.elf : .\appl\GenData\src\Mcu_17_TimerIp_Cfg.o
@@ -100,6 +126,20 @@ t399minisystem.elf : .\appl\Source\swc_test.o
 .\appl\Source\swc_test.o :
 t399minisystem.elf : .\component\BswM\Implementation\BswM.o
 .\component\BswM\Implementation\BswM.o :
+t399minisystem.elf : .\component\CanIf\Implementation\CanIf.o
+.\component\CanIf\Implementation\CanIf.o :
+t399minisystem.elf : .\component\CanSM\Implementation\CanSM.o
+.\component\CanSM\Implementation\CanSM.o :
+t399minisystem.elf : .\component\Can\Implementation\Can.o
+.\component\Can\Implementation\Can.o :
+t399minisystem.elf : .\component\Can\Implementation\Can_Irq.o
+.\component\Can\Implementation\Can_Irq.o :
+t399minisystem.elf : .\component\ComM\Implementation\ComM.o
+.\component\ComM\Implementation\ComM.o :
+t399minisystem.elf : .\component\Com\Implementation\Com.o
+.\component\Com\Implementation\Com.o :
+t399minisystem.elf : .\component\Det\Implementation\Det.o
+.\component\Det\Implementation\Det.o :
 t399minisystem.elf : .\component\EcuM\Implementation\EcuM.o
 .\component\EcuM\Implementation\EcuM.o :
 t399minisystem.elf : .\component\Os\Implementation\Os_AccessCheck.o
@@ -194,6 +234,26 @@ t399minisystem.elf : .\component\Os\Implementation\Os_Trap.o
 .\component\Os\Implementation\Os_Trap.o :
 t399minisystem.elf : .\component\Os\Implementation\Os_XSignal.o
 .\component\Os\Implementation\Os_XSignal.o :
+t399minisystem.elf : .\component\PduR\Implementation\PduR.o
+.\component\PduR\Implementation\PduR.o :
+t399minisystem.elf : .\component\PduR\Implementation\PduR_Bm.o
+.\component\PduR\Implementation\PduR_Bm.o :
+t399minisystem.elf : .\component\PduR\Implementation\PduR_Fm.o
+.\component\PduR\Implementation\PduR_Fm.o :
+t399minisystem.elf : .\component\PduR\Implementation\PduR_IFQ.o
+.\component\PduR\Implementation\PduR_IFQ.o :
+t399minisystem.elf : .\component\PduR\Implementation\PduR_Lock.o
+.\component\PduR\Implementation\PduR_Lock.o :
+t399minisystem.elf : .\component\PduR\Implementation\PduR_McQ.o
+.\component\PduR\Implementation\PduR_McQ.o :
+t399minisystem.elf : .\component\PduR\Implementation\PduR_RmIf.o
+.\component\PduR\Implementation\PduR_RmIf.o :
+t399minisystem.elf : .\component\PduR\Implementation\PduR_RmTp.o
+.\component\PduR\Implementation\PduR_RmTp.o :
+t399minisystem.elf : .\component\PduR\Implementation\PduR_RmTp_TxInst.o
+.\component\PduR\Implementation\PduR_RmTp_TxInst.o :
+t399minisystem.elf : .\component\PduR\Implementation\PduR_Sm.o
+.\component\PduR\Implementation\PduR_Sm.o :
 t399minisystem.elf : .\component\VStdLib\Implementation\vstdlib.o
 .\component\VStdLib\Implementation\vstdlib.o :
 t399minisystem.elf : .\mcal\Dio\ssc\src\Dio.o

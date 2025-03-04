@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Link_Core0_Stacks.lsl
- *   Generation Time: 2025-03-01 11:36:41
+ *   Generation Time: 2025-03-03 09:41:04
  *           Project: tc399demo - Version 1.0
  *          Delivery: CBD2100010_D00
  *      Tool Version: DaVinci Configurator (beta) 5.22.45 SP3
@@ -85,15 +85,6 @@ group OS_STACK_OSCORE0_KERNEL_VAR_NOINIT_GROUP(ordered, contiguous, fill, align=
 "_OS_STACK_OSCORE0_KERNEL_VAR_NOINIT_END" = "_lc_ge_OS_STACK_OSCORE0_KERNEL_VAR_NOINIT_GROUP" - 1;
 "_OS_STACK_OSCORE0_KERNEL_VAR_NOINIT_LIMIT" = "_lc_ge_OS_STACK_OSCORE0_KERNEL_VAR_NOINIT_GROUP";
 
-/* Stack: OsCore0_Task_Prio29 (1024 Byte) */
-group OS_STACK_OSCORE0_TASK_PRIO29_VAR_NOINIT_GROUP(ordered, contiguous, fill, align=8)
-{
-  select "[.]bss.OS_STACK_OSCORE0_TASK_PRIO29_VAR_NOINIT";
-}
-"_OS_STACK_OSCORE0_TASK_PRIO29_VAR_NOINIT_START" = "_lc_gb_OS_STACK_OSCORE0_TASK_PRIO29_VAR_NOINIT_GROUP";
-"_OS_STACK_OSCORE0_TASK_PRIO29_VAR_NOINIT_END" = "_lc_ge_OS_STACK_OSCORE0_TASK_PRIO29_VAR_NOINIT_GROUP" - 1;
-"_OS_STACK_OSCORE0_TASK_PRIO29_VAR_NOINIT_LIMIT" = "_lc_ge_OS_STACK_OSCORE0_TASK_PRIO29_VAR_NOINIT_GROUP";
-
 /* Stack: OsCore0_Task_Prio4294967295 (1024 Byte) */
 group OS_STACK_OSCORE0_TASK_PRIO4294967295_VAR_NOINIT_GROUP(ordered, contiguous, fill, align=8)
 {
@@ -129,6 +120,15 @@ group OS_STACK_OSCORE0_TASK_PRIO50_VAR_NOINIT_GROUP(ordered, contiguous, fill, a
 "_OS_STACK_OSCORE0_TASK_PRIO50_VAR_NOINIT_START" = "_lc_gb_OS_STACK_OSCORE0_TASK_PRIO50_VAR_NOINIT_GROUP";
 "_OS_STACK_OSCORE0_TASK_PRIO50_VAR_NOINIT_END" = "_lc_ge_OS_STACK_OSCORE0_TASK_PRIO50_VAR_NOINIT_GROUP" - 1;
 "_OS_STACK_OSCORE0_TASK_PRIO50_VAR_NOINIT_LIMIT" = "_lc_ge_OS_STACK_OSCORE0_TASK_PRIO50_VAR_NOINIT_GROUP";
+
+/* Stack: bsw_task (1024 Byte) */
+group OS_STACK_BSW_TASK_VAR_NOINIT_GROUP(ordered, contiguous, fill, align=8)
+{
+  select "[.]bss.OS_STACK_BSW_TASK_VAR_NOINIT";
+}
+"_OS_STACK_BSW_TASK_VAR_NOINIT_START" = "_lc_gb_OS_STACK_BSW_TASK_VAR_NOINIT_GROUP";
+"_OS_STACK_BSW_TASK_VAR_NOINIT_END" = "_lc_ge_OS_STACK_BSW_TASK_VAR_NOINIT_GROUP" - 1;
+"_OS_STACK_BSW_TASK_VAR_NOINIT_LIMIT" = "_lc_ge_OS_STACK_BSW_TASK_VAR_NOINIT_GROUP";
 
 /* Stack: swc_task (1024 Byte) */
 group OS_STACK_SWC_TASK_VAR_NOINIT_GROUP(ordered, contiguous, fill, align=8)

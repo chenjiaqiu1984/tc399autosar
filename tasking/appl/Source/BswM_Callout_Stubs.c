@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: BswM_Callout_Stubs.c
- *   Generation Time: 2025-04-01 10:51:24
+ *   Generation Time: 2025-03-04 13:03:53
  *           Project: tc399demo - Version 1.0
  *          Delivery: CBD2100010_D00
  *      Tool Version: DaVinci Configurator (beta) 5.22.45 SP3
@@ -165,6 +165,32 @@ FUNC(void, BSWM_CODE) BswM_ESH_OnEnterWakeup(void)
  *********************************************************************************************************************/
 
 } /* End of BswM_ESH_OnEnterWakeup */
+
+
+FUNC(void, BSWM_CODE) ESH_ComM_CheckPendingRequests(void)
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           <USERBLOCK ESH_ComM_CheckPendingRequests>          DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>                                       DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+  ComM_StateType CN_testCANFDdbc_9817eee0 = COMM_NO_COM_NO_PENDING_REQUEST;
+  
+  (void)ComM_GetState(ComMConf_ComMChannel_CN_testCANFDdbc_9817eee0, &CN_testCANFDdbc_9817eee0); /* SBSW_BSWM_FCTCALL_LOCALVAR */
+  
+  if(CN_testCANFDdbc_9817eee0 != COMM_NO_COM_NO_PENDING_REQUEST)
+  {
+    BswM_RequestMode(BSWM_GENERIC_ESH_ComMPendingRequests, BSWM_GENERICVALUE_ESH_ComMPendingRequests_ESH_COMM_PENDING_REQUEST);
+  }
+  else
+  {
+    BswM_RequestMode(BSWM_GENERIC_ESH_ComMPendingRequests, BSWM_GENERICVALUE_ESH_ComMPendingRequests_ESH_COMM_NO_REQUEST);
+  }
+  
+} /* End of ESH_ComM_CheckPendingRequests */
 
 
 

@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Alarm_Cfg.h
- *   Generation Time: 2025-03-01 11:36:41
+ *   Generation Time: 2025-03-03 09:41:04
  *           Project: tc399demo - Version 1.0
  *          Delivery: CBD2100010_D00
  *      Tool Version: DaVinci Configurator (beta) 5.22.45 SP3
@@ -60,7 +60,7 @@
 # define OS_CFG_ALARM_CALLBACK_USED                     (STD_OFF)
 
 /*! Defines whether any alarm has an ActivateTask action (STD_ON) or not (STD_OFF) */
-# define OS_CFG_ALARM_ACTIVATETASK_USED                 (STD_ON)
+# define OS_CFG_ALARM_ACTIVATETASK_USED                 (STD_OFF)
 
 /*! Defines whether any alarm has a SetEvent action (STD_ON) or not (STD_OFF) */
 # define OS_CFG_ALARM_SETEVENT_USED                     (STD_ON)

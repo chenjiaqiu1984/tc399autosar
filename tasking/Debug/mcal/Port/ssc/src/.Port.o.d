@@ -22,6 +22,8 @@ mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\Include\Compiler_Cfg.h
 "D:\Zonal\demo011\tasking\appl\Include\Compiler_Cfg.h" :
 mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\Rte_Compiler_Cfg.h"
 "D:\Zonal\demo011\tasking\appl\GenData\Rte_Compiler_Cfg.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\SomeIpXf_Compiler_Cfg.h"
+"D:\Zonal\demo011\tasking\appl\GenData\SomeIpXf_Compiler_Cfg.h" :
 mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\Os_Compiler_Cfg.h"
 "D:\Zonal\demo011\tasking\appl\GenData\Os_Compiler_Cfg.h" :
 mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\component\_Common\Implementation\Compiler.h"
@@ -34,6 +36,8 @@ mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\Include\MemMap.h"
 "D:\Zonal\demo011\tasking\appl\Include\MemMap.h" :
 mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\Rte_MemMap.h"
 "D:\Zonal\demo011\tasking\appl\GenData\Rte_MemMap.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\SomeIpXf_MemMap.h"
+"D:\Zonal\demo011\tasking\appl\GenData\SomeIpXf_MemMap.h" :
 mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\Include\Dem_MemMap.h"
 "D:\Zonal\demo011\tasking\appl\Include\Dem_MemMap.h" :
 mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\WdgIf_MemMap.h"
@@ -58,6 +62,8 @@ mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\Include\MemMap.h"
 "D:\Zonal\demo011\tasking\appl\Include\MemMap.h" :
 mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\Rte_MemMap.h"
 "D:\Zonal\demo011\tasking\appl\GenData\Rte_MemMap.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\SomeIpXf_MemMap.h"
+"D:\Zonal\demo011\tasking\appl\GenData\SomeIpXf_MemMap.h" :
 mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\Include\Dem_MemMap.h"
 "D:\Zonal\demo011\tasking\appl\Include\Dem_MemMap.h" :
 mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\Include\FiM_MemMap.h"
@@ -88,6 +94,8 @@ mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\Include\MemMap.h"
 "D:\Zonal\demo011\tasking\appl\Include\MemMap.h" :
 mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\Rte_MemMap.h"
 "D:\Zonal\demo011\tasking\appl\GenData\Rte_MemMap.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\SomeIpXf_MemMap.h"
+"D:\Zonal\demo011\tasking\appl\GenData\SomeIpXf_MemMap.h" :
 mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\Include\Dem_MemMap.h"
 "D:\Zonal\demo011\tasking\appl\Include\Dem_MemMap.h" :
 mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\Include\FiM_MemMap.h"
@@ -110,6 +118,8 @@ mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\Include\MemMap.h"
 "D:\Zonal\demo011\tasking\appl\Include\MemMap.h" :
 mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\Rte_MemMap.h"
 "D:\Zonal\demo011\tasking\appl\GenData\Rte_MemMap.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\SomeIpXf_MemMap.h"
+"D:\Zonal\demo011\tasking\appl\GenData\SomeIpXf_MemMap.h" :
 mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\Include\Dem_MemMap.h"
 "D:\Zonal\demo011\tasking\appl\Include\Dem_MemMap.h" :
 mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\Include\FiM_MemMap.h"
@@ -134,6 +144,8 @@ mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\Include\MemMap.h"
 "D:\Zonal\demo011\tasking\appl\Include\MemMap.h" :
 mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\Rte_MemMap.h"
 "D:\Zonal\demo011\tasking\appl\GenData\Rte_MemMap.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\SomeIpXf_MemMap.h"
+"D:\Zonal\demo011\tasking\appl\GenData\SomeIpXf_MemMap.h" :
 mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\Include\Dem_MemMap.h"
 "D:\Zonal\demo011\tasking\appl\Include\Dem_MemMap.h" :
 mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\Include\FiM_MemMap.h"
@@ -156,6 +168,8 @@ mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\Include\MemMap.h"
 "D:\Zonal\demo011\tasking\appl\Include\MemMap.h" :
 mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\Rte_MemMap.h"
 "D:\Zonal\demo011\tasking\appl\GenData\Rte_MemMap.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\SomeIpXf_MemMap.h"
+"D:\Zonal\demo011\tasking\appl\GenData\SomeIpXf_MemMap.h" :
 mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\Include\Dem_MemMap.h"
 "D:\Zonal\demo011\tasking\appl\Include\Dem_MemMap.h" :
 mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\Include\FiM_MemMap.h"
@@ -174,12 +188,84 @@ mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_Stac
 "D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_StacksInt.h" :
 mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\mcal\Infra_Prod\Sfr\TC39xB\_Reg\IfxPort_bf.h"
 "D:\Zonal\demo011\tasking\mcal\Infra_Prod\Sfr\TC39xB\_Reg\IfxPort_bf.h" :
-mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\component\Mcal_Tc3xx\Implementation\Port_MemMap.h"
-"D:\Zonal\demo011\tasking\component\Mcal_Tc3xx\Implementation\Port_MemMap.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\component\Det\Implementation\Det.h"
+"D:\Zonal\demo011\tasking\component\Det\Implementation\Det.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\component\_Common\Implementation\Std_Types.h"
+"D:\Zonal\demo011\tasking\component\_Common\Implementation\Std_Types.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\Det_Cfg.h"
+"D:\Zonal\demo011\tasking\appl\GenData\Det_Cfg.h" :
 mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\Include\MemMap.h"
 "D:\Zonal\demo011\tasking\appl\Include\MemMap.h" :
 mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\Rte_MemMap.h"
 "D:\Zonal\demo011\tasking\appl\GenData\Rte_MemMap.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\SomeIpXf_MemMap.h"
+"D:\Zonal\demo011\tasking\appl\GenData\SomeIpXf_MemMap.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\Include\Dem_MemMap.h"
+"D:\Zonal\demo011\tasking\appl\Include\Dem_MemMap.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\Include\FiM_MemMap.h"
+"D:\Zonal\demo011\tasking\appl\Include\FiM_MemMap.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\WdgM_OsMemMap.h"
+"D:\Zonal\demo011\tasking\appl\GenData\WdgM_OsMemMap.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\Include\MemMap_Common.h"
+"D:\Zonal\demo011\tasking\appl\Include\MemMap_Common.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap.h"
+"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_OsCodeInt.h"
+"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_OsCodeInt.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_OsSectionsInt.h"
+"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_OsSectionsInt.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_StacksInt.h"
+"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_StacksInt.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\Include\MemMap.h"
+"D:\Zonal\demo011\tasking\appl\Include\MemMap.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\Rte_MemMap.h"
+"D:\Zonal\demo011\tasking\appl\GenData\Rte_MemMap.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\SomeIpXf_MemMap.h"
+"D:\Zonal\demo011\tasking\appl\GenData\SomeIpXf_MemMap.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\Include\Dem_MemMap.h"
+"D:\Zonal\demo011\tasking\appl\Include\Dem_MemMap.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\Include\FiM_MemMap.h"
+"D:\Zonal\demo011\tasking\appl\Include\FiM_MemMap.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\WdgM_OsMemMap.h"
+"D:\Zonal\demo011\tasking\appl\GenData\WdgM_OsMemMap.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\Include\MemMap_Common.h"
+"D:\Zonal\demo011\tasking\appl\Include\MemMap_Common.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap.h"
+"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_OsCodeInt.h"
+"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_OsCodeInt.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_OsSectionsInt.h"
+"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_OsSectionsInt.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_StacksInt.h"
+"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_StacksInt.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\Include\MemMap.h"
+"D:\Zonal\demo011\tasking\appl\Include\MemMap.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\Rte_MemMap.h"
+"D:\Zonal\demo011\tasking\appl\GenData\Rte_MemMap.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\SomeIpXf_MemMap.h"
+"D:\Zonal\demo011\tasking\appl\GenData\SomeIpXf_MemMap.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\Include\Dem_MemMap.h"
+"D:\Zonal\demo011\tasking\appl\Include\Dem_MemMap.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\Include\FiM_MemMap.h"
+"D:\Zonal\demo011\tasking\appl\Include\FiM_MemMap.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\WdgM_OsMemMap.h"
+"D:\Zonal\demo011\tasking\appl\GenData\WdgM_OsMemMap.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\Include\MemMap_Common.h"
+"D:\Zonal\demo011\tasking\appl\Include\MemMap_Common.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap.h"
+"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_OsCodeInt.h"
+"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_OsCodeInt.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_OsSectionsInt.h"
+"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_OsSectionsInt.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_StacksInt.h"
+"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_StacksInt.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\Include\MemMap.h"
+"D:\Zonal\demo011\tasking\appl\Include\MemMap.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\Rte_MemMap.h"
+"D:\Zonal\demo011\tasking\appl\GenData\Rte_MemMap.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\SomeIpXf_MemMap.h"
+"D:\Zonal\demo011\tasking\appl\GenData\SomeIpXf_MemMap.h" :
 mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\Include\Dem_MemMap.h"
 "D:\Zonal\demo011\tasking\appl\Include\Dem_MemMap.h" :
 mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\Include\FiM_MemMap.h"
@@ -202,6 +288,8 @@ mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\Include\MemMap.h"
 "D:\Zonal\demo011\tasking\appl\Include\MemMap.h" :
 mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\Rte_MemMap.h"
 "D:\Zonal\demo011\tasking\appl\GenData\Rte_MemMap.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\SomeIpXf_MemMap.h"
+"D:\Zonal\demo011\tasking\appl\GenData\SomeIpXf_MemMap.h" :
 mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\Include\Dem_MemMap.h"
 "D:\Zonal\demo011\tasking\appl\Include\Dem_MemMap.h" :
 mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\Include\FiM_MemMap.h"
@@ -224,6 +312,8 @@ mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\Include\MemMap.h"
 "D:\Zonal\demo011\tasking\appl\Include\MemMap.h" :
 mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\Rte_MemMap.h"
 "D:\Zonal\demo011\tasking\appl\GenData\Rte_MemMap.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\SomeIpXf_MemMap.h"
+"D:\Zonal\demo011\tasking\appl\GenData\SomeIpXf_MemMap.h" :
 mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\Include\Dem_MemMap.h"
 "D:\Zonal\demo011\tasking\appl\Include\Dem_MemMap.h" :
 mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\Include\FiM_MemMap.h"
@@ -246,6 +336,8 @@ mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\Include\MemMap.h"
 "D:\Zonal\demo011\tasking\appl\Include\MemMap.h" :
 mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\Rte_MemMap.h"
 "D:\Zonal\demo011\tasking\appl\GenData\Rte_MemMap.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\SomeIpXf_MemMap.h"
+"D:\Zonal\demo011\tasking\appl\GenData\SomeIpXf_MemMap.h" :
 mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\Include\Dem_MemMap.h"
 "D:\Zonal\demo011\tasking\appl\Include\Dem_MemMap.h" :
 mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\Include\FiM_MemMap.h"
@@ -268,6 +360,8 @@ mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\Include\MemMap.h"
 "D:\Zonal\demo011\tasking\appl\Include\MemMap.h" :
 mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\Rte_MemMap.h"
 "D:\Zonal\demo011\tasking\appl\GenData\Rte_MemMap.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\SomeIpXf_MemMap.h"
+"D:\Zonal\demo011\tasking\appl\GenData\SomeIpXf_MemMap.h" :
 mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\Include\Dem_MemMap.h"
 "D:\Zonal\demo011\tasking\appl\Include\Dem_MemMap.h" :
 mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\Include\FiM_MemMap.h"
@@ -290,6 +384,80 @@ mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\Include\MemMap.h"
 "D:\Zonal\demo011\tasking\appl\Include\MemMap.h" :
 mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\Rte_MemMap.h"
 "D:\Zonal\demo011\tasking\appl\GenData\Rte_MemMap.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\SomeIpXf_MemMap.h"
+"D:\Zonal\demo011\tasking\appl\GenData\SomeIpXf_MemMap.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\Include\Dem_MemMap.h"
+"D:\Zonal\demo011\tasking\appl\Include\Dem_MemMap.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\Include\FiM_MemMap.h"
+"D:\Zonal\demo011\tasking\appl\Include\FiM_MemMap.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\WdgM_OsMemMap.h"
+"D:\Zonal\demo011\tasking\appl\GenData\WdgM_OsMemMap.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\Include\MemMap_Common.h"
+"D:\Zonal\demo011\tasking\appl\Include\MemMap_Common.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap.h"
+"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_OsCodeInt.h"
+"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_OsCodeInt.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_OsSectionsInt.h"
+"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_OsSectionsInt.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_StacksInt.h"
+"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_StacksInt.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\component\Mcal_Tc3xx\Implementation\Port_MemMap.h"
+"D:\Zonal\demo011\tasking\component\Mcal_Tc3xx\Implementation\Port_MemMap.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\Include\MemMap.h"
+"D:\Zonal\demo011\tasking\appl\Include\MemMap.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\Rte_MemMap.h"
+"D:\Zonal\demo011\tasking\appl\GenData\Rte_MemMap.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\SomeIpXf_MemMap.h"
+"D:\Zonal\demo011\tasking\appl\GenData\SomeIpXf_MemMap.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\Include\Dem_MemMap.h"
+"D:\Zonal\demo011\tasking\appl\Include\Dem_MemMap.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\Include\FiM_MemMap.h"
+"D:\Zonal\demo011\tasking\appl\Include\FiM_MemMap.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\WdgM_OsMemMap.h"
+"D:\Zonal\demo011\tasking\appl\GenData\WdgM_OsMemMap.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\Include\MemMap_Common.h"
+"D:\Zonal\demo011\tasking\appl\Include\MemMap_Common.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap.h"
+"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_OsCodeInt.h"
+"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_OsCodeInt.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_OsSectionsInt.h"
+"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_OsSectionsInt.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_StacksInt.h"
+"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_StacksInt.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\component\Mcal_Tc3xx\Implementation\Port_MemMap.h"
+"D:\Zonal\demo011\tasking\component\Mcal_Tc3xx\Implementation\Port_MemMap.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\Include\MemMap.h"
+"D:\Zonal\demo011\tasking\appl\Include\MemMap.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\Rte_MemMap.h"
+"D:\Zonal\demo011\tasking\appl\GenData\Rte_MemMap.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\SomeIpXf_MemMap.h"
+"D:\Zonal\demo011\tasking\appl\GenData\SomeIpXf_MemMap.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\Include\Dem_MemMap.h"
+"D:\Zonal\demo011\tasking\appl\Include\Dem_MemMap.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\Include\FiM_MemMap.h"
+"D:\Zonal\demo011\tasking\appl\Include\FiM_MemMap.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\WdgM_OsMemMap.h"
+"D:\Zonal\demo011\tasking\appl\GenData\WdgM_OsMemMap.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\Include\MemMap_Common.h"
+"D:\Zonal\demo011\tasking\appl\Include\MemMap_Common.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap.h"
+"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_OsCodeInt.h"
+"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_OsCodeInt.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_OsSectionsInt.h"
+"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_OsSectionsInt.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_StacksInt.h"
+"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_StacksInt.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\component\Mcal_Tc3xx\Implementation\Port_MemMap.h"
+"D:\Zonal\demo011\tasking\component\Mcal_Tc3xx\Implementation\Port_MemMap.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\Include\MemMap.h"
+"D:\Zonal\demo011\tasking\appl\Include\MemMap.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\Rte_MemMap.h"
+"D:\Zonal\demo011\tasking\appl\GenData\Rte_MemMap.h" :
+mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\GenData\SomeIpXf_MemMap.h"
+"D:\Zonal\demo011\tasking\appl\GenData\SomeIpXf_MemMap.h" :
 mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\Include\Dem_MemMap.h"
 "D:\Zonal\demo011\tasking\appl\Include\Dem_MemMap.h" :
 mcal\Port\ssc\src\Port.o :	"D:\Zonal\demo011\tasking\appl\Include\FiM_MemMap.h"

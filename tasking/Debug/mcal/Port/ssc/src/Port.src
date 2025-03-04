@@ -1,6 +1,6 @@
 	; Module start
 	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 21092262 SN 73118428"
-	.compiler_invocation	"ctc --dep-file=mcal\\Port\\ssc\\src\\.Port.o.d --fp-model=c,f,l,n,r,S,T,z -D__CPU__=tc39xb -D__CPU_TC39XB__ --core=tc1.6.2 --iso=99 -DBRS_COMP_TASKING -ID:\\Zonal\\demo011\\tasking -ID:\\Zonal\\testdemo\\taskingdemo\\demo001 -ID:\\Zonal\\demo011\\tasking -ID:\\Zonal\\demo011\\tasking\\appl -ID:\\Zonal\\demo011\\tasking\\appl\\GenData -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\Components -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\ContractPhase -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\inc -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\src -ID:\\Zonal\\demo011\\tasking\\appl\\Include -ID:\\Zonal\\demo011\\tasking\\appl\\Source -ID:\\Zonal\\demo011\\tasking\\appl\\Source\\swc_test -ID:\\Zonal\\demo011\\tasking\\component -ID:\\Zonal\\demo011\\tasking\\component\\_Common -ID:\\Zonal\\demo011\\tasking\\component\\_Common\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\BswM -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\EcuM -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\Os -ID:\\Zonal\\demo011\\tasking\\component\\Os\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\Os\\BSWMD\\Os -ID:\\Zonal\\demo011\\tasking\\component\\Os\\BSWMD\\Os\\TC39xQ -ID:\\Zonal\\demo011\\tasking\\component\\Os\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\Os\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\Os\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug -ID:\\Zonal\\demo011\\tasking\\Debug\\appl -ID:\\Zonal\\demo011\\tasking\\Debug\\appl\\GenData -ID:\\Zonal\\demo011\\tasking\\Debug\\appl\\GenData\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\appl\\Source -ID:\\Zonal\\demo011\\tasking\\Debug\\component -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\BswM -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\BswM\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\EcuM -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\EcuM\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\Os -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\Os\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\VStdLib -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\VStdLib\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Dio -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Dio\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Dio\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\McalLib -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\McalLib\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\McalLib\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Mcu -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Mcu\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Mcu\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Port -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Port\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Port\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Platform -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Platform\\AS440 -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Sfr -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Sfr\\TC39xB -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Sfr\\TC39xB\\_Reg -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc\\inc\\AS440 -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal\\Port -ID:\\Zonal\\demo011\\tasking\\mcal\\Port\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\Port\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\Port\\ssc\\src -g2 --make-target=mcal\\Port\\ssc\\src\\Port.o -t2 --language=-gcc,-volatile,+strings,-kanji --default-near-size=0 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o mcal\\Port\\ssc\\src\\Port.src ..\\mcal\\Port\\ssc\\src\\Port.c"
+	.compiler_invocation	"ctc --dep-file=mcal\\Port\\ssc\\src\\.Port.o.d --fp-model=c,f,l,n,r,S,T,z -D__CPU__=tc39xb -D__CPU_TC39XB__ --core=tc1.6.2 --iso=99 -DBRS_COMP_TASKING -ID:\\Zonal\\demo011\\tasking -ID:\\Zonal\\testdemo\\taskingdemo\\demo001 -ID:\\Zonal\\demo011\\tasking\\component\\PduR -ID:\\Zonal\\demo011\\tasking\\component\\PduR\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\PduR\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\PduR\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\PduR\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\Can -ID:\\Zonal\\demo011\\tasking\\component\\SomeIpXf -ID:\\Zonal\\demo011\\tasking\\component\\SomeIpXf\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\SomeIpXf\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\SomeIpXf\\Generator -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\Can\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\Can\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\Can\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\Can\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\CanIf -ID:\\Zonal\\demo011\\tasking\\component\\CanIf\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\CanIf\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\CanIf\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\CanIf\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\CanSM -ID:\\Zonal\\demo011\\tasking\\component\\CanSM\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\CanSM\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\CanSM\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\CanSM\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\Com -ID:\\Zonal\\demo011\\tasking\\component\\Com\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\Com\\DaVinciCfg_VASE -ID:\\Zonal\\demo011\\tasking\\component\\Com\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\Com\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\Com\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\ComM -ID:\\Zonal\\demo011\\tasking\\component\\ComM\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\ComM\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\ComM\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\ComM\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\Det -ID:\\Zonal\\demo011\\tasking\\component\\Det\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\Det\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\Det\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\Det\\Implementation -ID:\\Zonal\\demo011\\tasking -ID:\\Zonal\\demo011\\tasking\\appl -ID:\\Zonal\\demo011\\tasking\\appl\\GenData -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\Components -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\ContractPhase -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\inc -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\src -ID:\\Zonal\\demo011\\tasking\\appl\\Include -ID:\\Zonal\\demo011\\tasking\\appl\\Source -ID:\\Zonal\\demo011\\tasking\\appl\\Source\\swc_test -ID:\\Zonal\\demo011\\tasking\\component -ID:\\Zonal\\demo011\\tasking\\component\\_Common -ID:\\Zonal\\demo011\\tasking\\component\\_Common\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\BswM -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\EcuM -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\Os -ID:\\Zonal\\demo011\\tasking\\component\\Os\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\Os\\BSWMD\\Os -ID:\\Zonal\\demo011\\tasking\\component\\Os\\BSWMD\\Os\\TC39xQ -ID:\\Zonal\\demo011\\tasking\\component\\Os\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\Os\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\Os\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug -ID:\\Zonal\\demo011\\tasking\\Debug\\appl -ID:\\Zonal\\demo011\\tasking\\Debug\\appl\\GenData -ID:\\Zonal\\demo011\\tasking\\Debug\\appl\\GenData\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\appl\\Source -ID:\\Zonal\\demo011\\tasking\\Debug\\component -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\BswM -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\BswM\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\EcuM -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\EcuM\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\Os -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\Os\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\VStdLib -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\VStdLib\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Dio -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Dio\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Dio\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\McalLib -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\McalLib\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\McalLib\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Mcu -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Mcu\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Mcu\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Port -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Port\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Port\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Platform -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Platform\\AS440 -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Sfr -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Sfr\\TC39xB -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Sfr\\TC39xB\\_Reg -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc\\inc\\AS440 -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal\\Port -ID:\\Zonal\\demo011\\tasking\\mcal\\Port\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\Port\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\Port\\ssc\\src -g2 --make-target=mcal\\Port\\ssc\\src\\Port.o -t2 --language=-gcc,-volatile,+strings,-kanji --default-near-size=0 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o mcal\\Port\\ssc\\src\\Port.src ..\\mcal\\Port\\ssc\\src\\Port.c"
 	.compiler_name		"ctc"
 	;source	'..\\mcal\\Port\\ssc\\src\\Port.c'
 
@@ -689,8 +689,12 @@ $TC162
 ; ..\mcal\Port\ssc\src\Port.c	   674  
 ; ..\mcal\Port\ssc\src\Port.c	   675  void Port_Init ( const Port_ConfigType * const ConfigPtr )
 ; Function Port_Init
-.L35:
+.L39:
 Port_Init:	.type	func
+	sub.a	a10,#24
+.L179:
+	mov.aa	a12,a4
+.L181:
 
 ; ..\mcal\Port\ssc\src\Port.c	   676  {
 ; ..\mcal\Port\ssc\src\Port.c	   677    #if (PORT_DEV_ERROR_DETECT == STD_ON )||(PORT_SAFETY_ENABLE == STD_ON)
@@ -707,18 +711,32 @@ Port_Init:	.type	func
 ; ..\mcal\Port\ssc\src\Port.c	   688    [/cover] */
 ; ..\mcal\Port\ssc\src\Port.c	   689  
 ; ..\mcal\Port\ssc\src\Port.c	   690    if (ConfigPtr == NULL_PTR)
+	mov	d4,#0
+	jnz.a	a12,.L2
+.L183:
+
 ; ..\mcal\Port\ssc\src\Port.c	   691    {
 ; ..\mcal\Port\ssc\src\Port.c	   692      /* Report PORT_E_INIT_FAILED DET */
 ; ..\mcal\Port\ssc\src\Port.c	   693      /* [cover parentID={BB2CFE1F-730A-4d1f-93E3-A6D90B294464}]
 ; ..\mcal\Port\ssc\src\Port.c	   694      Report error PORT_E_INIT_FAILED
 ; ..\mcal\Port\ssc\src\Port.c	   695      [/cover] */
 ; ..\mcal\Port\ssc\src\Port.c	   696      Port_lReportError(PORT_SID_INIT, PORT_E_INIT_FAILED);
+	mov	d5,#12
+	call	Port_lReportError
+.L180:
+
 ; ..\mcal\Port\ssc\src\Port.c	   697      ErrStatus = (uint8)E_NOT_OK;
+	mov	d4,#1
+.L2:
+
 ; ..\mcal\Port\ssc\src\Port.c	   698    }
 ; ..\mcal\Port\ssc\src\Port.c	   699    /* [cover parentID={F52B69B6-0EF6-43ad-8C12-069D84206D26}]
 ; ..\mcal\Port\ssc\src\Port.c	   700    Have all checks passed?
 ; ..\mcal\Port\ssc\src\Port.c	   701    [/cover] */
 ; ..\mcal\Port\ssc\src\Port.c	   702    if(ErrStatus == (uint8)E_OK)
+	jne	d4,#0,.L3
+.L223:
+
 ; ..\mcal\Port\ssc\src\Port.c	   703    #endif /*(PORT_DEV_ERROR_DETECT == STD_ON)*/
 ; ..\mcal\Port\ssc\src\Port.c	   704    {
 ; ..\mcal\Port\ssc\src\Port.c	   705      /* [cover parentID={3B6B18C3-8A08-4265-B81F-38BF48B7609A}]
@@ -732,9 +750,8 @@ Port_Init:	.type	func
 ; ..\mcal\Port\ssc\src\Port.c	   713      Port_kConfigPtr = ConfigPtr;
 	movh.a	a15,#@his(Port_kConfigPtr)
 	lea	a15,[a15]@los(Port_kConfigPtr)
-.L188:
-	sub.a	a10,#24
-.L60:
+	st.a	[a10]16,a15
+.L75:
 
 ; ..\mcal\Port\ssc\src\Port.c	   714      /* Initialise General Purpose I/O Ports and Peripheral I/O Lines */
 ; ..\mcal\Port\ssc\src\Port.c	   715      /* [cover parentID={C4061DE2-BE40-4247-B2EA-45125A8C94C2}]
@@ -1967,8 +1984,8 @@ Port_Init:	.type	func
 ; ..\mcal\Port\ssc\src\Port.c	  1942    [/cover] */
 ; ..\mcal\Port\ssc\src\Port.c	  1943    ConfigIndex = 0U;
 	mov	d8,#0
-	st.a	[a10]16,a15
-.L82:
+	st.a	[a15],a12
+.L97:
 
 ; ..\mcal\Port\ssc\src\Port.c	  1944    /* Port driver strength is configured in Port PDR0 register */
 ; ..\mcal\Port\ssc\src\Port.c	  1945    /* [cover parentID={905FD984-26E8-4fb2-B472-B5CBCB3293BC}]
@@ -2133,10 +2150,6 @@ Port_Init:	.type	func
 ; ..\mcal\Port\ssc\src\Port.c	  2104    uint32 RetVal;
 ; ..\mcal\Port\ssc\src\Port.c	  2105  
 ; ..\mcal\Port\ssc\src\Port.c	  2106    RetVal = ( ((uint32)(PORT_CONSTANT_0x01) << (Port - (uint32)PORT_NUMBER_32)) &
-	mov	d10,#1
-	st.a	[a15],a4
-.L189:
-
 ; ..\mcal\Port\ssc\src\Port.c	  2107               ((uint32)PORTS_AVAILABLE_32_63)
 ; ..\mcal\Port\ssc\src\Port.c	  2108             );
 ; ..\mcal\Port\ssc\src\Port.c	  2109    return(RetVal);
@@ -2378,57 +2391,59 @@ Port_Init:	.type	func
 ; ..\mcal\Port\ssc\src\Port.c	  2345  
 ; ..\mcal\Port\ssc\src\Port.c	  2346    RetVal = (uint16)(((uint32)(PORT_PDR1_MASK)) &
 ; ..\mcal\Port\ssc\src\Port.c	  2347                      (uint32)(Port_kAvailablePins[(Port)]));
-	mov.u	d13,#64519
+	mov	d10,#1
 	movh.a	a12,#@his(Port_kAvailablePins)
-.L83:
-	mov	d9,d8
+.L182:
+	mov.u	d13,#64519
 	lea	a12,[a12]@los(Port_kAvailablePins)
-.L88:
-	mov	d12,d10
+.L98:
+	mov	d9,d8
 	st.a	[a10],a12
-.L190:
-	mov	d11,#775
+.L103:
+	mov	d12,d10
 
 ; ..\mcal\Port\ssc\src\Port.c	  1948    for (PortNumber = (uint32)0U; PortNumber <= (uint32)PORT_MAX_NUMBER;      (inlined)
 	lea	a13,41
-.L191:
+.L224:
+	mov	d11,#775
+.L225:
 	addih	d13,d13,#51184
-.L89:
+.L104:
 	mov.u	d14,#65280
 
 ; ..\mcal\Port\ssc\src\Port.c	  1949         PortNumber++)      (inlined)
-.L2:
+.L4:
 	mov	d15,#31
-.L192:
+.L226:
 
 ; ..\mcal\Port\ssc\src\Port.c	  2152    RetVal = ((Port > (uint32)PORT_NUMBER_31) ? (Port_lIsPortAvailable63(Port)) :      (inlined)
-	jge.u	d15,d9,.L3
-.L193:
+	jge.u	d15,d9,.L5
+.L227:
 	add	d15,d9,#-32
-.L194:
+.L228:
 	sh	d15,d10,d15
-.L195:
+.L229:
 	and	d15,d11
 
 ; ..\mcal\Port\ssc\src\Port.c	  2152    RetVal = ((Port > (uint32)PORT_NUMBER_31) ? (Port_lIsPortAvailable63(Port)) :      (inlined)
-	j	.L4
-.L3:
+	j	.L6
+.L5:
 	sh	d15,d12,d9
-.L196:
+.L230:
 	and	d15,d13
 
 ; ..\mcal\Port\ssc\src\Port.c	  2152    RetVal = ((Port > (uint32)PORT_NUMBER_31) ? (Port_lIsPortAvailable63(Port)) :      (inlined)
-.L4:
+.L6:
 
 ; ..\mcal\Port\ssc\src\Port.c	  1955      if(Port_lIsPortAvailable(PortNumber) != (uint32)0U)      (inlined)
-	jeq	d15,#0,.L5
-.L90:
+	jeq	d15,#0,.L7
+.L105:
 	sh	d15,d9,#8
 	movh.a	a15,#61444
 	lea	a15,[a15]@los(0xf003a000)
-.L197:
+.L231:
 	addsc.a	a14,a15,d15,#0
-.L92:
+.L107:
 	ld.a	a15,[a10]16
 	sh	d15,d8,#5
 	lea	a4,[a14]64
@@ -2437,15 +2452,15 @@ Port_Init:	.type	func
 	addsc.a	a15,a15,d15,#0
 	ld.w	d4,[a15]20
 	call	Mcal_WritePeripEndInitProtReg
-.L198:
+.L232:
 	ld.hu	d0,[a12]0
-.L199:
+.L233:
 	and	d0,d14
-.L200:
+.L234:
 
 ; ..\mcal\Port\ssc\src\Port.c	  1982        if(Port_lIsPortPdr1Available(PortNumber) != (uint16)0U)      (inlined)
-	jeq	d0,#0,.L6
-.L201:
+	jeq	d0,#0,.L8
+.L235:
 	ld.a	a15,[a10]16
 	lea	a4,[a14]68
 	ld.a	a15,[a15]
@@ -2455,147 +2470,147 @@ Port_Init:	.type	func
 	call	Mcal_WritePeripEndInitProtReg
 
 ; ..\mcal\Port\ssc\src\Port.c	  1982        if(Port_lIsPortPdr1Available(PortNumber) != (uint16)0U)      (inlined)
-.L6:
+.L8:
 	add	d8,#1
 
 ; ..\mcal\Port\ssc\src\Port.c	  1955      if(Port_lIsPortAvailable(PortNumber) != (uint32)0U)      (inlined)
-.L5:
+.L7:
 	add	d9,#1
 	add.a	a12,#2
 
 ; ..\mcal\Port\ssc\src\Port.c	  1948    for (PortNumber = (uint32)0U; PortNumber <= (uint32)PORT_MAX_NUMBER;      (inlined)
-	loop	a13,.L2
-.L77:
+	loop	a13,.L4
+.L92:
 	ld.a	a15,[a10]16
-.L202:
+.L236:
 	mov	d8,#0
-.L96:
-	mov.u	d11,#64519
-.L97:
-	ld.a	a15,[a15]
-.L105:
-	mov	d13,d10
-.L99:
-	mov	d9,#775
-.L100:
-	ld.a	a2,[a15]12
-.L152:
-	ld.a	a12,[a15]8
-.L153:
-	st.a	[a10]12,a2
-.L101:
-	addih	d11,d11,#51184
-.L102:
-	ld.a	a15,[a15]4
-.L154:
-	st.a	[a10]8,a15
-.L155:
-	st.w	[a10]20,d8
-.L110:
-	mov	d12,#31
 .L111:
-	ld.a	a15,[a10]
+	mov.u	d11,#64519
 .L112:
+	ld.a	a15,[a15]
+.L120:
+	mov	d13,d10
+.L114:
+	mov	d9,#775
+.L115:
+	ld.a	a2,[a15]12
+.L184:
+	ld.a	a12,[a15]8
+.L185:
+	st.a	[a10]12,a2
+.L116:
+	addih	d11,d11,#51184
+.L117:
+	ld.a	a15,[a15]4
+.L186:
+	st.a	[a10]8,a15
+.L187:
+	st.w	[a10]20,d8
+.L125:
+	mov	d12,#31
+.L126:
+	ld.a	a15,[a10]
+.L127:
 	mov	d14,#768
 	st.a	[a10]4,a15
-.L113:
+.L128:
 
 ; ..\mcal\Port\ssc\src\Port.c	  1651    for(PortNumber = (uint32)0U; PortNumber <= (uint32)PORT_MAX_NUMBER; PortNumber++)      (inlined)
 	lea	a15,41
 	st.a	[a10],a15
-.L7:
+.L9:
 
 ; ..\mcal\Port\ssc\src\Port.c	  2152    RetVal = ((Port > (uint32)PORT_NUMBER_31) ? (Port_lIsPortAvailable63(Port)) :      (inlined)
 	ld.w	d0,[a10]20
-.L156:
+.L188:
 	mov	d15,#31
-.L203:
+.L237:
 
 ; ..\mcal\Port\ssc\src\Port.c	  2152    RetVal = ((Port > (uint32)PORT_NUMBER_31) ? (Port_lIsPortAvailable63(Port)) :      (inlined)
-	jge.u	d15,d0,.L8
-.L204:
+	jge.u	d15,d0,.L10
+.L238:
 	mov	d15,d0
-.L158:
+.L190:
 	add	d0,d15,#-32
-.L157:
+.L189:
 	mov	d15,#1
-.L159:
+.L191:
 	sh	d15,d15,d0
-.L205:
+.L239:
 	and	d15,d9
 
 ; ..\mcal\Port\ssc\src\Port.c	  2152    RetVal = ((Port > (uint32)PORT_NUMBER_31) ? (Port_lIsPortAvailable63(Port)) :      (inlined)
-	j	.L9
-.L8:
+	j	.L11
+.L10:
 	ld.w	d15,[a10]20
-.L160:
+.L192:
 	sh	d15,d10,d15
-.L161:
+.L193:
 	and	d15,d11
 
 ; ..\mcal\Port\ssc\src\Port.c	  2152    RetVal = ((Port > (uint32)PORT_NUMBER_31) ? (Port_lIsPortAvailable63(Port)) :      (inlined)
-.L9:
+.L11:
 
 ; ..\mcal\Port\ssc\src\Port.c	  1659      if(Port_lIsPortAvailable(PortNumber) != (uint32)0U)      (inlined)
-	jeq	d15,#0,.L10
-.L103:
+	jeq	d15,#0,.L12
+.L118:
 	ld.a	a15,[a10]16
-.L206:
+.L240:
 	sh	d15,d8,#5
 	movh.a	a2,#61444
-.L116:
+.L131:
 	lea	a2,[a2]@los(0xf003a000)
-.L117:
+.L132:
 	ld.a	a15,[a15]
-.L207:
+.L241:
 	ld.a	a15,[a15]
-.L208:
+.L242:
 	addsc.a	a13,a15,d15,#0
-.L119:
+.L134:
 	ld.w	d15,[a10]20
-.L162:
+.L194:
 	sh	d15,d15,#8
-.L163:
+.L195:
 	addsc.a	a14,a2,d15,#0
-.L114:
+.L129:
 
 ; ..\mcal\Port\ssc\src\Port.c	  2273    RetVal = ((Port <= (uint32)PORT_NUMBER_31) ? (Port_lIsPortReadOnly31(Port)) :      (inlined)
 	ld.w	d15,[a10]20
-.L164:
-	jlt.u	d12,d15,.L11
-.L209:
+.L196:
+	jlt.u	d12,d15,.L13
+.L243:
 	mov	d15,#0
 
 ; ..\mcal\Port\ssc\src\Port.c	  2273    RetVal = ((Port <= (uint32)PORT_NUMBER_31) ? (Port_lIsPortReadOnly31(Port)) :      (inlined)
-	j	.L12
-.L11:
+	j	.L14
+.L13:
 	add	d15,d15,#-32
-.L165:
+.L197:
 	sh	d15,d13,d15
-.L210:
+.L244:
 	and	d15,d14
 
 ; ..\mcal\Port\ssc\src\Port.c	  2273    RetVal = ((Port <= (uint32)PORT_NUMBER_31) ? (Port_lIsPortReadOnly31(Port)) :      (inlined)
-.L12:
+.L14:
 
 ; ..\mcal\Port\ssc\src\Port.c	  1699        if(Port_lIsPortReadOnly(PortNumber) == (uint32)0U)      (inlined)
-	jne	d15,#0,.L13
-.L115:
+	jne	d15,#0,.L15
+.L130:
 	ld.w	d15,[a13]16
-.L211:
+.L245:
 	st.w	[a14],d15
 
 ; ..\mcal\Port\ssc\src\Port.c	  1699        if(Port_lIsPortReadOnly(PortNumber) == (uint32)0U)      (inlined)
-.L13:
+.L15:
 	lea	a4,[a14]80
-.L212:
+.L246:
 	ld.w	d4,[a13]28
 	call	Mcal_WritePeripEndInitProtReg
-.L213:
+.L247:
 	ld.w	d15,[a13+]
-.L214:
+.L248:
 	st.w	[a14]16,d15
-.L215:
+.L249:
 
 ; ..\mcal\Port\ssc\src\Port.c	  2348    return(RetVal);
 ; ..\mcal\Port\ssc\src\Port.c	  2349  }
@@ -2635,49 +2650,49 @@ Port_Init:	.type	func
 ; ..\mcal\Port\ssc\src\Port.c	  2383    RetVal = (uint16)( ((uint32)(Pin)) & (uint32)(Port_kAvailablePins[(Port)]) );
 	ld.a	a15,[a10]4
 	ld.hu	d0,[a15]0
-.L216:
+.L250:
 	and	d15,d0,#240
-.L217:
+.L251:
 
 ; ..\mcal\Port\ssc\src\Port.c	  1736        if(Port_lIsPortIocrAvailable(PortNumber, (uint16)PORT_PIN_4_7) != (uint16)0U)      (inlined)
-	jeq	d15,#0,.L14
-.L218:
+	jeq	d15,#0,.L16
+.L252:
 	ld.w	d15,[a13]
-.L219:
+.L253:
 	st.w	[a14]20,d15
 
 ; ..\mcal\Port\ssc\src\Port.c	  1736        if(Port_lIsPortIocrAvailable(PortNumber, (uint16)PORT_PIN_4_7) != (uint16)0U)      (inlined)
-.L14:
+.L16:
 	mov	d15,#3840
 	add.a	a13,#4
-.L220:
+.L254:
 	and	d15,d0
-.L221:
+.L255:
 
 ; ..\mcal\Port\ssc\src\Port.c	  1747        if(Port_lIsPortIocrAvailable(PortNumber, (uint16)PORT_PIN_8_11) != (uint16)0U)      (inlined)
-	jeq	d15,#0,.L15
-.L222:
+	jeq	d15,#0,.L17
+.L256:
 	ld.w	d15,[a13]
-.L223:
+.L257:
 	st.w	[a14]24,d15
 
 ; ..\mcal\Port\ssc\src\Port.c	  1747        if(Port_lIsPortIocrAvailable(PortNumber, (uint16)PORT_PIN_8_11) != (uint16)0U)      (inlined)
-.L15:
+.L17:
 	mov.u	d15,#61440
 	add.a	a13,#4
-.L224:
+.L258:
 	and	d0,d15
-.L225:
+.L259:
 
 ; ..\mcal\Port\ssc\src\Port.c	  1758        if(Port_lIsPortIocrAvailable(PortNumber, (uint16)PORT_PIN_12_15) != (uint16)0U)      (inlined)
-	jeq	d0,#0,.L16
-.L226:
+	jeq	d0,#0,.L18
+.L260:
 	ld.w	d15,[a13]
-.L227:
+.L261:
 	st.w	[a14]28,d15
 
 ; ..\mcal\Port\ssc\src\Port.c	  1758        if(Port_lIsPortIocrAvailable(PortNumber, (uint16)PORT_PIN_12_15) != (uint16)0U)      (inlined)
-.L16:
+.L18:
 
 ; ..\mcal\Port\ssc\src\Port.c	  2384    return(RetVal);
 ; ..\mcal\Port\ssc\src\Port.c	  2385  }
@@ -3096,40 +3111,40 @@ Port_Init:	.type	func
 
 ; ..\mcal\Port\ssc\src\Port.c	  2796    RetVal = ((Port > (uint32)PORT_NUMBER_31) ?      (inlined)
 	ld.w	d15,[a10]20
-.L166:
-	jge.u	d0,d15,.L17
-.L228:
+.L198:
+	jge.u	d0,d15,.L19
+.L262:
 
 ; ..\mcal\Port\ssc\src\Port.c	  2797              (Port_lIsPortLVDSAvailable63(Port)) :
 	mov	d15,#0
 
 ; ..\mcal\Port\ssc\src\Port.c	  2797              (Port_lIsPortLVDSAvailable63(Port)) :      (inlined)
-	j	.L18
-.L17:
+	j	.L20
+.L19:
 	mov	d0,#1
-.L229:
+.L263:
 	sh	d0,d0,d15
-.L230:
+.L264:
 	mov.u	d15,#57344
-.L167:
+.L199:
 	addih	d15,d15,#96
-.L231:
+.L265:
 	and	d15,d0
 
 ; ..\mcal\Port\ssc\src\Port.c	  2797              (Port_lIsPortLVDSAvailable63(Port)) :      (inlined)
-.L18:
+.L20:
 
 ; ..\mcal\Port\ssc\src\Port.c	  1770        if(Port_lIsPortLVDSAvailable(PortNumber) != (uint32)0U)      (inlined)
-	jeq	d15,#0,.L19
-.L121:
+	jeq	d15,#0,.L21
+.L136:
 	lea	a15,[a14]160
-.L168:
+.L200:
 
 ; ..\mcal\Port\ssc\src\Port.c	  1794          for(counter = (uint32)0U; counter < (uint32)PORT_MAX_LPCR_REG ; counter++)      (inlined)
 	mov.a	a13,#6
-.L20:
+.L22:
 	ld.w	d4,[a12]
-.L232:
+.L266:
 
 ; ..\mcal\Port\ssc\src\Port.c	  2798              (Port_lIsPortLVDSAvailable31(Port))
 ; ..\mcal\Port\ssc\src\Port.c	  2799             );
@@ -3281,68 +3296,68 @@ Port_Init:	.type	func
 ; ..\mcal\Port\ssc\src\Port.c	  2945    uint32 RetVal;
 ; ..\mcal\Port\ssc\src\Port.c	  2946    RetVal = ( (PortLPCRvalue >> PIN_AVAILABLE) & (uint32)PORT_LPCR_AVAILABLE );
 	sh	d15,d4,#-16
-.L233:
+.L267:
 
 ; ..\mcal\Port\ssc\src\Port.c	  1799            if(Port_lIsPortPinPairAvailable(*LVDSDataPtr) == (uint32)0U)      (inlined)
-	jne	d15,#0,.L21
-.L234:
+	jne	d15,#0,.L23
+.L268:
 	mov.aa	a4,a15
-.L169:
+.L201:
 	call	Mcal_WritePeripEndInitProtReg
 
 ; ..\mcal\Port\ssc\src\Port.c	  1799            if(Port_lIsPortPinPairAvailable(*LVDSDataPtr) == (uint32)0U)      (inlined)
-.L21:
+.L23:
 	add.a	a15,#4
-.L235:
+.L269:
 	add.a	a12,#4
 
 ; ..\mcal\Port\ssc\src\Port.c	  1794          for(counter = (uint32)0U; counter < (uint32)PORT_MAX_LPCR_REG ; counter++)      (inlined)
-	loop	a13,.L20
+	loop	a13,.L22
 
 ; ..\mcal\Port\ssc\src\Port.c	  1770        if(Port_lIsPortLVDSAvailable(PortNumber) != (uint32)0U)      (inlined)
-.L19:
+.L21:
 	mov	d0,#31
 
 ; ..\mcal\Port\ssc\src\Port.c	  2909    RetVal = ((Port > (uint32)PORT_NUMBER_31) ?      (inlined)
 	ld.w	d15,[a10]20
-.L170:
-	jge.u	d0,d15,.L22
-.L236:
+.L202:
+	jge.u	d0,d15,.L24
+.L270:
 	mov	d0,#1
-.L237:
+.L271:
 	add	d15,d15,#-32
-.L171:
+.L203:
 	sh	d0,d0,d15
-.L238:
+.L272:
 	and	d15,d0,#262
 
 ; ..\mcal\Port\ssc\src\Port.c	  2910              (Port_lIsPortPCSRAvailable63(Port)) :      (inlined)
-	j	.L23
-.L22:
+	j	.L25
+.L24:
 	mov	d0,#1
-.L239:
+.L273:
 	sh	d0,d0,d15
-.L240:
+.L274:
 	mov	d15,#2049
-.L172:
+.L204:
 	and	d15,d0
 
 ; ..\mcal\Port\ssc\src\Port.c	  2910              (Port_lIsPortPCSRAvailable63(Port)) :      (inlined)
-.L23:
+.L25:
 
 ; ..\mcal\Port\ssc\src\Port.c	  1827        if(Port_lIsPortPCSRAvailable(PortNumber) != (uint32)0U)      (inlined)
-	jeq	d15,#0,.L24
-.L126:
+	jeq	d15,#0,.L26
+.L141:
 	ld.a	a15,[a10]12
-.L173:
+.L205:
 	lea	a4,[a14]100
-.L241:
+.L275:
 	ld.w	d4,[a15+]
 	st.a	[a10]12,a15
 	call	Mcal_WriteSafetyEndInitProtReg
 
 ; ..\mcal\Port\ssc\src\Port.c	  1827        if(Port_lIsPortPCSRAvailable(PortNumber) != (uint32)0U)      (inlined)
-.L24:
+.L26:
 
 ; ..\mcal\Port\ssc\src\Port.c	  2947    return(RetVal);
 ; ..\mcal\Port\ssc\src\Port.c	  2948  }
@@ -3436,9 +3451,9 @@ Port_Init:	.type	func
 
 ; ..\mcal\Port\ssc\src\Port.c	  3034    RetVal = ((Port > (uint32)PORT_NUMBER_31) ?      (inlined)
 	ld.w	d15,[a10]20
-.L174:
-	jge.u	d0,d15,.L25
-.L242:
+.L206:
+	jge.u	d0,d15,.L27
+.L276:
 
 ; ..\mcal\Port\ssc\src\Port.c	  3035              (Port_lIsPortPDISCAvailable63(Port)) :
 ; ..\mcal\Port\ssc\src\Port.c	  3036              (Port_lIsPortPDISCAvailable31(Port))
@@ -3509,70 +3524,75 @@ Port_Init:	.type	func
 ; ..\mcal\Port\ssc\src\Port.c	  3101    uint32 RetVal;
 ; ..\mcal\Port\ssc\src\Port.c	  3102    RetVal = (((uint32)(PORT_CONSTANT_0x01) <<
 	mov	d0,#1
-.L243:
+.L277:
 
 ; ..\mcal\Port\ssc\src\Port.c	  3103               (Port - (uint32)PORT_NUMBER_32)) &
 	add	d15,d15,#-32
-.L175:
+.L207:
 	sh	d0,d0,d15
-.L244:
+.L278:
 
 ; ..\mcal\Port\ssc\src\Port.c	  3104              ((uint32)PORTS_PDISC_32_63)
 	mov	d15,#774
-.L245:
+.L279:
 	and	d15,d0
 
 ; ..\mcal\Port\ssc\src\Port.c	  3035              (Port_lIsPortPDISCAvailable63(Port)) :      (inlined)
-	j	.L26
-.L25:
+	j	.L28
+.L27:
 	mov	d0,#1
-.L246:
+.L280:
 	sh	d0,d0,d15
-.L247:
+.L281:
 	and	d15,d0,#7
 
 ; ..\mcal\Port\ssc\src\Port.c	  3035              (Port_lIsPortPDISCAvailable63(Port)) :      (inlined)
-.L26:
+.L28:
 
 ; ..\mcal\Port\ssc\src\Port.c	  1864        if(Port_lIsPortPDISCAvailable(PortNumber) != (uint32)0U)      (inlined)
-	jeq	d15,#0,.L27
-.L131:
+	jeq	d15,#0,.L29
+.L146:
 	ld.a	a15,[a10]8
-.L176:
+.L208:
 	lea	a4,[a14]96
-.L248:
+.L282:
 	ld.w	d4,[a15+]
 	st.a	[a10]8,a15
 	call	Mcal_WritePeripEndInitProtReg
 
 ; ..\mcal\Port\ssc\src\Port.c	  1864        if(Port_lIsPortPDISCAvailable(PortNumber) != (uint32)0U)      (inlined)
-.L27:
+.L29:
 	add	d8,#1
 
 ; ..\mcal\Port\ssc\src\Port.c	  1659      if(Port_lIsPortAvailable(PortNumber) != (uint32)0U)      (inlined)
-.L10:
+.L12:
 	ld.a	a15,[a10]4
 	add.a	a15,#2
 	st.a	[a10]4,a15
 	ld.w	d15,[a10]20
-.L177:
+.L209:
 	add	d15,#1
 	st.w	[a10]20,d15
-.L249:
+.L283:
 
 ; ..\mcal\Port\ssc\src\Port.c	  1651    for(PortNumber = (uint32)0U; PortNumber <= (uint32)PORT_MAX_NUMBER; PortNumber++)      (inlined)
 	ld.a	a15,[a10]
 	add.a	a15,#-1
 	st.a	[a10],a15
 	add.a	a15,#1
-	loop	a15,.L7
-.L61:
+	loop	a15,.L9
+.L76:
+	movh.a	a15,#@his(Port_InitStatus)
+.L284:
+	mov	d15,#1
+	st.b	[a15]@los(Port_InitStatus),d15
+.L3:
 	ret
-.L56:
+.L69:
 	
 __Port_Init_function_end:
 	.size	Port_Init,__Port_Init_function_end-Port_Init
-.L46:
+.L52:
 	; End of function
 	
 	.sdecl	'.text.Port.Port_RefreshPortDirection',code,cluster('Port_RefreshPortDirection')
@@ -3581,98 +3601,703 @@ __Port_Init_function_end:
 	
 	.global	Port_RefreshPortDirection
 ; Function Port_RefreshPortDirection
-.L37:
+.L41:
 Port_RefreshPortDirection:	.type	func
+
+; ..\mcal\Port\ssc\src\Port.c	  3105             );
+; ..\mcal\Port\ssc\src\Port.c	  3106    return(RetVal);
+; ..\mcal\Port\ssc\src\Port.c	  3107  }
+; ..\mcal\Port\ssc\src\Port.c	  3108  
+; ..\mcal\Port\ssc\src\Port.c	  3109  #if(PORT_INIT_CHECK_API==STD_ON)
+; ..\mcal\Port\ssc\src\Port.c	  3110  /*******************************************************************************
+; ..\mcal\Port\ssc\src\Port.c	  3111  ** Traceability      : [cover parentID={7B5DEFB5-5759-49d1-8475-3278D54022D8},**
+; ..\mcal\Port\ssc\src\Port.c	  3112  **                      {696A0D06-6692-44dc-B15B-AF178D0FA750} ]              **
+; ..\mcal\Port\ssc\src\Port.c	  3113  **                     [/cover]                                               **
+; ..\mcal\Port\ssc\src\Port.c	  3114  **                                                                            **
+; ..\mcal\Port\ssc\src\Port.c	  3115  ** Syntax           :Std_ReturnType Port_InitCheck (const Port_ConfigType*    **
+; ..\mcal\Port\ssc\src\Port.c	  3116  **                   const ConfigPtr)                                         **
+; ..\mcal\Port\ssc\src\Port.c	  3117  **                                                                            **
+; ..\mcal\Port\ssc\src\Port.c	  3118  ** Service ID       : 0x05                                                    **
+; ..\mcal\Port\ssc\src\Port.c	  3119  **                                                                            **
+; ..\mcal\Port\ssc\src\Port.c	  3120  ** Sync/Async       : Synchronous                                             **
+; ..\mcal\Port\ssc\src\Port.c	  3121  **                                                                            **
+; ..\mcal\Port\ssc\src\Port.c	  3122  ** Reentrancy       : Non Reentrant                                           **
+; ..\mcal\Port\ssc\src\Port.c	  3123  **                                                                            **
+; ..\mcal\Port\ssc\src\Port.c	  3124  ** Parameters(in)   :ConfigPtr - Pointer to Port configuration                **
+; ..\mcal\Port\ssc\src\Port.c	  3125  **                                                                            **
+; ..\mcal\Port\ssc\src\Port.c	  3126  ** Parameters (out) :                                                         **
+; ..\mcal\Port\ssc\src\Port.c	  3127  **                                                                            **
+; ..\mcal\Port\ssc\src\Port.c	  3128  ** Return value     : E_OK - Operation successfully performed                 **
+; ..\mcal\Port\ssc\src\Port.c	  3129  **                    E_NOT_OK - Operation failed eg. Due to invalid          **
+; ..\mcal\Port\ssc\src\Port.c	  3130  **                      parameters.                                           **
+; ..\mcal\Port\ssc\src\Port.c	  3131  **                                                                            **
+; ..\mcal\Port\ssc\src\Port.c	  3132  ** Description      : This API checks the initialization values after PORT is **
+; ..\mcal\Port\ssc\src\Port.c	  3133  **                    initialized. It should be called after Port_Init to     **
+; ..\mcal\Port\ssc\src\Port.c	  3134  **                    check the initialization values.                        **
+; ..\mcal\Port\ssc\src\Port.c	  3135  *******************************************************************************/
+; ..\mcal\Port\ssc\src\Port.c	  3136  /* [cover parentID={41FC0F28-97F4-4d16-8C00-6F654869397F}][/cover] */
+; ..\mcal\Port\ssc\src\Port.c	  3137  Std_ReturnType Port_InitCheck (const Port_ConfigType* const ConfigPtr)
+; ..\mcal\Port\ssc\src\Port.c	  3138  {
+; ..\mcal\Port\ssc\src\Port.c	  3139    Std_ReturnType ErrorFlag = E_NOT_OK;
+; ..\mcal\Port\ssc\src\Port.c	  3140    /* [cover parentID={3E9E6763-2D6B-4e4b-8565-E2D23E1FE9D0}]
+; ..\mcal\Port\ssc\src\Port.c	  3141    check if port is initialised
+; ..\mcal\Port\ssc\src\Port.c	  3142    [/cover] */
+; ..\mcal\Port\ssc\src\Port.c	  3143    if((Port_InitStatus == PORT_INITIALIZED ) && (ConfigPtr ==Port_kConfigPtr))
+; ..\mcal\Port\ssc\src\Port.c	  3144    {
+; ..\mcal\Port\ssc\src\Port.c	  3145      ErrorFlag = Port_lPDRCheck(ConfigPtr);
+; ..\mcal\Port\ssc\src\Port.c	  3146      /* [cover parentID={29FAFD9A-63A7-4cb3-9DB5-B2833B579E59}]
+; ..\mcal\Port\ssc\src\Port.c	  3147      [/cover] */
+; ..\mcal\Port\ssc\src\Port.c	  3148      if(ErrorFlag == E_OK)
+; ..\mcal\Port\ssc\src\Port.c	  3149      {
+; ..\mcal\Port\ssc\src\Port.c	  3150       ErrorFlag = Port_lIOInitCheck(ConfigPtr);
+; ..\mcal\Port\ssc\src\Port.c	  3151      }
+; ..\mcal\Port\ssc\src\Port.c	  3152    }
+; ..\mcal\Port\ssc\src\Port.c	  3153   return ErrorFlag;
+; ..\mcal\Port\ssc\src\Port.c	  3154  }
+; ..\mcal\Port\ssc\src\Port.c	  3155  /*******************************************************************************
+; ..\mcal\Port\ssc\src\Port.c	  3156  ** Traceability     : [cover parentID={6F886031-4EFD-4741-9C03-763AD16D28FF}] **
+; ..\mcal\Port\ssc\src\Port.c	  3157  **                                                                            **
+; ..\mcal\Port\ssc\src\Port.c	  3158  ** Syntax           :LOCAL_INLINE  Std_ReturnType Port_lPDRCheck              **
+; ..\mcal\Port\ssc\src\Port.c	  3159  **                   (                                                        **
+; ..\mcal\Port\ssc\src\Port.c	  3160  **                   const Port_ConfigType* const ConfigPtr)                  **
+; ..\mcal\Port\ssc\src\Port.c	  3161  **                   )                                                        **
+; ..\mcal\Port\ssc\src\Port.c	  3162  **                                                                            **
+; ..\mcal\Port\ssc\src\Port.c	  3163  **  [/cover]                                                                  **
+; ..\mcal\Port\ssc\src\Port.c	  3164  ** Service ID       : NA                                                      **
+; ..\mcal\Port\ssc\src\Port.c	  3165  **                                                                            **
+; ..\mcal\Port\ssc\src\Port.c	  3166  ** Sync/Async       : Synchronous                                             **
+; ..\mcal\Port\ssc\src\Port.c	  3167  **                                                                            **
+; ..\mcal\Port\ssc\src\Port.c	  3168  ** Reentrancy       : Non Reentrant                                           **
+; ..\mcal\Port\ssc\src\Port.c	  3169  **                                                                            **
+; ..\mcal\Port\ssc\src\Port.c	  3170  ** Parameters(in)   : ConfigPtr - Pointer to Port configuration               **
+; ..\mcal\Port\ssc\src\Port.c	  3171  **                                                                            **
+; ..\mcal\Port\ssc\src\Port.c	  3172  ** Parameters (out) :                                                         **
+; ..\mcal\Port\ssc\src\Port.c	  3173  **                                                                            **
+; ..\mcal\Port\ssc\src\Port.c	  3174  ** Return value     : E_OK - Operation successfully performed                 **
+; ..\mcal\Port\ssc\src\Port.c	  3175  **                    E_NOT_OK - Operation failed                             **
+; ..\mcal\Port\ssc\src\Port.c	  3176  **                                                                            **
+; ..\mcal\Port\ssc\src\Port.c	  3177  **                                                                            **
+; ..\mcal\Port\ssc\src\Port.c	  3178  ** Description      : This API checks the initialization values after PORT is **
+; ..\mcal\Port\ssc\src\Port.c	  3179  **                   initialized. It should be called after Port_Init to check**
+; ..\mcal\Port\ssc\src\Port.c	  3180  **                    the initialization values.                              **
+; ..\mcal\Port\ssc\src\Port.c	  3181  *******************************************************************************/
+; ..\mcal\Port\ssc\src\Port.c	  3182  LOCAL_INLINE Std_ReturnType Port_lPDRCheck(const Port_ConfigType* const ConfigPtr)
+; ..\mcal\Port\ssc\src\Port.c	  3183  {
+; ..\mcal\Port\ssc\src\Port.c	  3184    /* Each Port Number for the hardware unit  */
+; ..\mcal\Port\ssc\src\Port.c	  3185    uint32                  PortNumber;
+; ..\mcal\Port\ssc\src\Port.c	  3186    Ifx_P            const *PortAddressPtr;
+; ..\mcal\Port\ssc\src\Port.c	  3187    uint32                  ConfigIndex;
+; ..\mcal\Port\ssc\src\Port.c	  3188    uint32 SfrVal;
+; ..\mcal\Port\ssc\src\Port.c	  3189    uint32 CfgVal;
+; ..\mcal\Port\ssc\src\Port.c	  3190    volatile uint32 CompareFlag = 0xFFFFFFFFU;
+; ..\mcal\Port\ssc\src\Port.c	  3191    Std_ReturnType ErrorFlag = E_NOT_OK;
+; ..\mcal\Port\ssc\src\Port.c	  3192    /* [cover parentID={53EEC855-043E-4456-B3AB-5302A039AECA}]
+; ..\mcal\Port\ssc\src\Port.c	  3193    Loop Among Available Ports
+; ..\mcal\Port\ssc\src\Port.c	  3194    [/cover] */
+; ..\mcal\Port\ssc\src\Port.c	  3195    ConfigIndex = 0U;
+; ..\mcal\Port\ssc\src\Port.c	  3196    /* [cover parentID={AE95EDF9-336D-4845-A949-BC8507FA06E4}]
+; ..\mcal\Port\ssc\src\Port.c	  3197    Check for available ports_1
+; ..\mcal\Port\ssc\src\Port.c	  3198    [/cover] */
+; ..\mcal\Port\ssc\src\Port.c	  3199    for (PortNumber = (uint32)0U; PortNumber <= (uint32)PORT_MAX_NUMBER; PortNumber++)
+; ..\mcal\Port\ssc\src\Port.c	  3200    {
+; ..\mcal\Port\ssc\src\Port.c	  3201      /* [cover parentID={345D0DE6-F794-4fc6-90CA-21BFC217AE1B}]
+; ..\mcal\Port\ssc\src\Port.c	  3202      If Available Port not equal to zero
+; ..\mcal\Port\ssc\src\Port.c	  3203      [/cover] */
+; ..\mcal\Port\ssc\src\Port.c	  3204      /* [cover parentID={345D0DE6-F794-4fc6-90CA-21BFC217AE1B}]
+; ..\mcal\Port\ssc\src\Port.c	  3205      If Available Port not equal to zero
+; ..\mcal\Port\ssc\src\Port.c	  3206      [/cover] */
+; ..\mcal\Port\ssc\src\Port.c	  3207      if(Port_lIsPortAvailable(PortNumber) != (uint32)0U)
+; ..\mcal\Port\ssc\src\Port.c	  3208      {
+; ..\mcal\Port\ssc\src\Port.c	  3209        /* [cover parentID={3F9B0CF9-4D0A-4577-95A0-37CE3971A60B}]
+; ..\mcal\Port\ssc\src\Port.c	  3210        Get Port Address
+; ..\mcal\Port\ssc\src\Port.c	  3211        [/cover] */
+; ..\mcal\Port\ssc\src\Port.c	  3212        PortAddressPtr = Port_lAdr(PortNumber);
+; ..\mcal\Port\ssc\src\Port.c	  3213  
+; ..\mcal\Port\ssc\src\Port.c	  3214        SfrVal = PortAddressPtr->PDR0.U;
+; ..\mcal\Port\ssc\src\Port.c	  3215        CfgVal = ConfigPtr->PortConfigSetPtr [ConfigIndex].DriverStrength0;
+; ..\mcal\Port\ssc\src\Port.c	  3216        CompareFlag &= ~(SfrVal ^ CfgVal);
+; ..\mcal\Port\ssc\src\Port.c	  3217        /* [cover parentID={04CB7276-80BB-4436-B294-B6CE9444955D}]
+; ..\mcal\Port\ssc\src\Port.c	  3218        Check for Available Ports_2
+; ..\mcal\Port\ssc\src\Port.c	  3219        [/cover] */
+; ..\mcal\Port\ssc\src\Port.c	  3220        /* [cover parentID={EE726271-930A-43ba-A4F7-F2A19EC9064E}]
+; ..\mcal\Port\ssc\src\Port.c	  3221        If Available Port not equal to zero
+; ..\mcal\Port\ssc\src\Port.c	  3222        [/cover] */
+; ..\mcal\Port\ssc\src\Port.c	  3223        if(Port_lIsPortPdr1Available(PortNumber) != (uint16)0U)
+; ..\mcal\Port\ssc\src\Port.c	  3224        {
+; ..\mcal\Port\ssc\src\Port.c	  3225  
+; ..\mcal\Port\ssc\src\Port.c	  3226          SfrVal = PortAddressPtr->PDR1.U;
+; ..\mcal\Port\ssc\src\Port.c	  3227          CfgVal = ConfigPtr->PortConfigSetPtr[ConfigIndex].DriverStrength1;
+; ..\mcal\Port\ssc\src\Port.c	  3228          CompareFlag &= ~(SfrVal ^ CfgVal);
+; ..\mcal\Port\ssc\src\Port.c	  3229        }
+; ..\mcal\Port\ssc\src\Port.c	  3230        ConfigIndex++;
+; ..\mcal\Port\ssc\src\Port.c	  3231      }
+; ..\mcal\Port\ssc\src\Port.c	  3232  
+; ..\mcal\Port\ssc\src\Port.c	  3233    }
+; ..\mcal\Port\ssc\src\Port.c	  3234    /* [cover parentID={EB60E0CA-F98A-4a90-96DC-FC24A2497925}]
+; ..\mcal\Port\ssc\src\Port.c	  3235    Check for Flag
+; ..\mcal\Port\ssc\src\Port.c	  3236    [/cover] */
+; ..\mcal\Port\ssc\src\Port.c	  3237    if (CompareFlag != 0xFFFFFFFFU)
+; ..\mcal\Port\ssc\src\Port.c	  3238    {
+; ..\mcal\Port\ssc\src\Port.c	  3239      ErrorFlag = E_NOT_OK;
+; ..\mcal\Port\ssc\src\Port.c	  3240    }
+; ..\mcal\Port\ssc\src\Port.c	  3241    else
+; ..\mcal\Port\ssc\src\Port.c	  3242    {
+; ..\mcal\Port\ssc\src\Port.c	  3243      ErrorFlag = E_OK;
+; ..\mcal\Port\ssc\src\Port.c	  3244    }
+; ..\mcal\Port\ssc\src\Port.c	  3245    return ErrorFlag;
+; ..\mcal\Port\ssc\src\Port.c	  3246  }
+; ..\mcal\Port\ssc\src\Port.c	  3247  /*******************************************************************************
+; ..\mcal\Port\ssc\src\Port.c	  3248  ** Traceability:[cover parentID={F25C5539-AD55-4f91-A2C2-310F5A87DDFA}]       **
+; ..\mcal\Port\ssc\src\Port.c	  3249  **                                                                            **
+; ..\mcal\Port\ssc\src\Port.c	  3250  ** Syntax           :LOCAL_INLINE Std_ReturnType Port_lIOInitCheck            **
+; ..\mcal\Port\ssc\src\Port.c	  3251  **                   (                                                        **
+; ..\mcal\Port\ssc\src\Port.c	  3252  **                   const Port_ConfigType* const ConfigPtr)                  **
+; ..\mcal\Port\ssc\src\Port.c	  3253  **                   )                                                        **
+; ..\mcal\Port\ssc\src\Port.c	  3254  **                                                                            **
+; ..\mcal\Port\ssc\src\Port.c	  3255  **  [/cover]                                                                  **
+; ..\mcal\Port\ssc\src\Port.c	  3256  ** Service ID       : NA                                                      **
+; ..\mcal\Port\ssc\src\Port.c	  3257  **                                                                            **
+; ..\mcal\Port\ssc\src\Port.c	  3258  ** Sync/Async       : Synchronous                                             **
+; ..\mcal\Port\ssc\src\Port.c	  3259  **                                                                            **
+; ..\mcal\Port\ssc\src\Port.c	  3260  ** Reentrancy       : Non Reentrant                                           **
+; ..\mcal\Port\ssc\src\Port.c	  3261  **                                                                            **
+; ..\mcal\Port\ssc\src\Port.c	  3262  ** Parameters(in)   :ConfigPtr - Pointer to Port configuration                **
+; ..\mcal\Port\ssc\src\Port.c	  3263  **                                                                            **
+; ..\mcal\Port\ssc\src\Port.c	  3264  ** Parameters (out) :                                                         **
+; ..\mcal\Port\ssc\src\Port.c	  3265  **                                                                            **
+; ..\mcal\Port\ssc\src\Port.c	  3266  ** Return value     : E_OK - Operation successfully performed                 **
+; ..\mcal\Port\ssc\src\Port.c	  3267  **                    E_NOT_OK - Operation failed                             **
+; ..\mcal\Port\ssc\src\Port.c	  3268  **                                                                            **
+; ..\mcal\Port\ssc\src\Port.c	  3269  **                                                                            **
+; ..\mcal\Port\ssc\src\Port.c	  3270  ** Description      : This API checks the initialization values after PORT is **
+; ..\mcal\Port\ssc\src\Port.c	  3271  **                   initialized. It should be called after Port_InitCheck to **
+; ..\mcal\Port\ssc\src\Port.c	  3272  **                    check the initialization values.                        **
+; ..\mcal\Port\ssc\src\Port.c	  3273  *******************************************************************************/
+; ..\mcal\Port\ssc\src\Port.c	  3274  
+; ..\mcal\Port\ssc\src\Port.c	  3275  LOCAL_INLINE Std_ReturnType Port_lIOInitCheck(const Port_ConfigType* const ConfigPtr)
+; ..\mcal\Port\ssc\src\Port.c	  3276  {
+; ..\mcal\Port\ssc\src\Port.c	  3277  
+; ..\mcal\Port\ssc\src\Port.c	  3278    const Port_n_ConfigType *ConfigDataPtr;
+; ..\mcal\Port\ssc\src\Port.c	  3279    const uint32            *DataPtr;
+; ..\mcal\Port\ssc\src\Port.c	  3280    Std_ReturnType ErrorFlag = E_NOT_OK;
+; ..\mcal\Port\ssc\src\Port.c	  3281    Ifx_P                   const *PortAddressPtr;
+; ..\mcal\Port\ssc\src\Port.c	  3282    /* Each Port Number for the hardware unit */
+; ..\mcal\Port\ssc\src\Port.c	  3283    uint32                  PortNumber;
+; ..\mcal\Port\ssc\src\Port.c	  3284    uint32                  SfrVal;
+; ..\mcal\Port\ssc\src\Port.c	  3285    uint32                  CfgVal;
+; ..\mcal\Port\ssc\src\Port.c	  3286    const uint32            *Ptr_Config;
+; ..\mcal\Port\ssc\src\Port.c	  3287    const uint32            *PCSRDataPtr;
+; ..\mcal\Port\ssc\src\Port.c	  3288    const uint32            *PDISCDataPtr;
+; ..\mcal\Port\ssc\src\Port.c	  3289    volatile uint32 CompareFlag = 0xFFFFFFFFU;
+; ..\mcal\Port\ssc\src\Port.c	  3290    /* Index to identify the port configuration information
+; ..\mcal\Port\ssc\src\Port.c	  3291    from the configuration array  */
+; ..\mcal\Port\ssc\src\Port.c	  3292    uint32                   ConfigIndex;
+; ..\mcal\Port\ssc\src\Port.c	  3293    #if (PORT_MAX_LPCR_REG !=0U)
+; ..\mcal\Port\ssc\src\Port.c	  3294    volatile const uint32   *LVDSRegPtr;
+; ..\mcal\Port\ssc\src\Port.c	  3295    const uint32            *LVDSDataPtr;
+; ..\mcal\Port\ssc\src\Port.c	  3296    uint32                   counter;
+; ..\mcal\Port\ssc\src\Port.c	  3297    #endif
+; ..\mcal\Port\ssc\src\Port.c	  3298    /* [cover parentID={1A58972A-934B-4579-9BA0-73DE290A3B98}]
+; ..\mcal\Port\ssc\src\Port.c	  3299    Loop among Available Ports
+; ..\mcal\Port\ssc\src\Port.c	  3300    [/cover] */
+; ..\mcal\Port\ssc\src\Port.c	  3301    ConfigIndex = 0U;
+; ..\mcal\Port\ssc\src\Port.c	  3302  
+; ..\mcal\Port\ssc\src\Port.c	  3303    #if (PORT_MAX_LPCR_REG !=0U)
+; ..\mcal\Port\ssc\src\Port.c	  3304    /* MISRA2012_RULE_11_5_JUSTIFICATION: The Port_LVDSConfigTypePtr is a pointer
+; ..\mcal\Port\ssc\src\Port.c	  3305      to structure of type Port_n_LVDSConfigType used to keep configuration data
+; ..\mcal\Port\ssc\src\Port.c	  3306      for each port. The conversion to the required type (const uint32*) is
+; ..\mcal\Port\ssc\src\Port.c	  3307      done as direct assignment to LVDSDataPtr, pointer of type const uint32 is
+; ..\mcal\Port\ssc\src\Port.c	  3308      not possible. The conversion will produce a pointer that is correctly
+; ..\mcal\Port\ssc\src\Port.c	  3309      aligned and hence no side effects foreseen by violating this
+; ..\mcal\Port\ssc\src\Port.c	  3310      MISRA rule.*/
+; ..\mcal\Port\ssc\src\Port.c	  3311      /* MISRA2012_RULE_11_3_JUSTIFICATION: The conversion to (const void*)
+; ..\mcal\Port\ssc\src\Port.c	  3312      is done as it can hold the address of any type, here a structure pointer
+; ..\mcal\Port\ssc\src\Port.c	  3313      and then typecasted to the required (const uint32*) as direct assignment
+; ..\mcal\Port\ssc\src\Port.c	  3314      to LVDSDataPtr, pointer of type const uint32 is not possible. The conversion
+; ..\mcal\Port\ssc\src\Port.c	  3315      will produce a pointer that is correctly aligned and hence no side
+; ..\mcal\Port\ssc\src\Port.c	  3316      effects foreseen by violating this MISRA rule.*/
+; ..\mcal\Port\ssc\src\Port.c	  3317    LVDSDataPtr = (const uint32*)(const void*)(ConfigPtr->Port_LVDSConfigTypePtr);
+; ..\mcal\Port\ssc\src\Port.c	  3318    #endif
+; ..\mcal\Port\ssc\src\Port.c	  3319   /* MISRA2012_RULE_11_5_JUSTIFICATION: The Port_PCSRConfigTypePtr is a pointer
+; ..\mcal\Port\ssc\src\Port.c	  3320      to structure of type Port_PCSRConfigType used to keep configuration data
+; ..\mcal\Port\ssc\src\Port.c	  3321      for each port. The conversion to the required type (const uint32*) is
+; ..\mcal\Port\ssc\src\Port.c	  3322      done as direct assignment to PCSRDataPtr, pointer of type const uint32 is
+; ..\mcal\Port\ssc\src\Port.c	  3323      not possible. The conversion will produce a pointer that is correctly
+; ..\mcal\Port\ssc\src\Port.c	  3324      aligned and hence no side effects foreseen by violating this
+; ..\mcal\Port\ssc\src\Port.c	  3325      MISRA rule.*/
+; ..\mcal\Port\ssc\src\Port.c	  3326      /* MISRA2012_RULE_11_3_JUSTIFICATION: The conversion to (const void*)
+; ..\mcal\Port\ssc\src\Port.c	  3327      is done as it can hold the address of any type, here a structure pointer
+; ..\mcal\Port\ssc\src\Port.c	  3328      and then typecasted to the required (const uint32*) as direct assignment
+; ..\mcal\Port\ssc\src\Port.c	  3329      to PCSRDataPtr, pointer of type const uint32 is not possible. The conversion
+; ..\mcal\Port\ssc\src\Port.c	  3330      will produce a pointer that is correctly aligned and hence no side
+; ..\mcal\Port\ssc\src\Port.c	  3331      effects foreseen by violating this MISRA rule.*/
+; ..\mcal\Port\ssc\src\Port.c	  3332    PCSRDataPtr = (const uint32*)(const void*)  (ConfigPtr->Port_PCSRConfigTypePtr);
+; ..\mcal\Port\ssc\src\Port.c	  3333    /* MISRA2012_RULE_11_5_JUSTIFICATION: The PDiscSet is a pointer used to keep
+; ..\mcal\Port\ssc\src\Port.c	  3334      configuration data for each port. The conversion to the required type
+; ..\mcal\Port\ssc\src\Port.c	  3335      (const uint32*) is done as direct assignment to PDISCDataPtr, pointer of
+; ..\mcal\Port\ssc\src\Port.c	  3336      type const uint32 is not possible. The conversion will produce a pointer
+; ..\mcal\Port\ssc\src\Port.c	  3337      that is correctly aligned and hence no side effects foreseen by violating
+; ..\mcal\Port\ssc\src\Port.c	  3338      this MISRA rule.*/
+; ..\mcal\Port\ssc\src\Port.c	  3339      /* MISRA2012_RULE_11_3_JUSTIFICATION: The conversion to (const void*)
+; ..\mcal\Port\ssc\src\Port.c	  3340      is done as it can hold the address of any type and then typecasted to
+; ..\mcal\Port\ssc\src\Port.c	  3341      the required (const uint32*) as direct assignment to PDISCDataPtr,
+; ..\mcal\Port\ssc\src\Port.c	  3342      pointer of type const uint32 is not possible. The conversion
+; ..\mcal\Port\ssc\src\Port.c	  3343      will produce a pointer that is correctly aligned and hence no side
+; ..\mcal\Port\ssc\src\Port.c	  3344      effects foreseen by violating this MISRA rule.*/
+; ..\mcal\Port\ssc\src\Port.c	  3345    PDISCDataPtr = (const uint32*)(const void*) (ConfigPtr->PDiscSet);
+; ..\mcal\Port\ssc\src\Port.c	  3346    /* [cover parentID={9FDD7385-47AA-4913-9918-E2C345F6402F}]
+; ..\mcal\Port\ssc\src\Port.c	  3347    Check For Available Ports
+; ..\mcal\Port\ssc\src\Port.c	  3348    [/cover] */
+; ..\mcal\Port\ssc\src\Port.c	  3349    for(PortNumber = (uint32)0U; PortNumber <= (uint32)PORT_MAX_NUMBER ; PortNumber++)
+; ..\mcal\Port\ssc\src\Port.c	  3350    {
+; ..\mcal\Port\ssc\src\Port.c	  3351      /* [cover parentID={F70B7330-D368-4523-8648-6EDA997FAB06}]
+; ..\mcal\Port\ssc\src\Port.c	  3352      If Available Port not equal to zero
+; ..\mcal\Port\ssc\src\Port.c	  3353      [/cover] */
+; ..\mcal\Port\ssc\src\Port.c	  3354      if(Port_lIsPortAvailable(PortNumber) != (uint32)0U)
+; ..\mcal\Port\ssc\src\Port.c	  3355      {
+; ..\mcal\Port\ssc\src\Port.c	  3356        /* MISRA2012_RULE_18_4_JUSTIFICATION: Pointer arithmetic is used due to
+; ..\mcal\Port\ssc\src\Port.c	  3357        configuration address calculation for each port and is within allowed range.*/
+; ..\mcal\Port\ssc\src\Port.c	  3358        ConfigDataPtr = (ConfigPtr->PortConfigSetPtr) + ConfigIndex ;
+; ..\mcal\Port\ssc\src\Port.c	  3359        /* MISRA2012_RULE_11_5_JUSTIFICATION: The ConfigDataPtr is a pointer
+; ..\mcal\Port\ssc\src\Port.c	  3360        to structure of type Port_n_ConfigType used to keep configuration data
+; ..\mcal\Port\ssc\src\Port.c	  3361        for each port. The conversion to the required type (const uint32*) is
+; ..\mcal\Port\ssc\src\Port.c	  3362        done as direct assignment to DataPtr, pointer of type const uint32 is
+; ..\mcal\Port\ssc\src\Port.c	  3363        not possible. The conversion will produce a pointer that is correctly
+; ..\mcal\Port\ssc\src\Port.c	  3364        aligned and hence no side effects foreseen by violating this
+; ..\mcal\Port\ssc\src\Port.c	  3365        MISRA rule.*/
+; ..\mcal\Port\ssc\src\Port.c	  3366        /* MISRA2012_RULE_11_3_JUSTIFICATION: The conversion to (const void*)
+; ..\mcal\Port\ssc\src\Port.c	  3367        is done as it can hold the address of any type, here a structure pointer
+; ..\mcal\Port\ssc\src\Port.c	  3368        and then typecasted to the required (const uint32*) as direct assignment
+; ..\mcal\Port\ssc\src\Port.c	  3369        to DataPtr, pointer of type const uint32 is not possible. The conversion
+; ..\mcal\Port\ssc\src\Port.c	  3370        will produce a pointer that is correctly aligned and hence no side
+; ..\mcal\Port\ssc\src\Port.c	  3371        effects foreseen by violating this MISRA rule.*/
+; ..\mcal\Port\ssc\src\Port.c	  3372        DataPtr = (const uint32 *)(const void*)(ConfigDataPtr);
+; ..\mcal\Port\ssc\src\Port.c	  3373        /* [cover parentID={64FE7B89-0357-48b9-94DB-23633F4E37CD}]
+; ..\mcal\Port\ssc\src\Port.c	  3374        Get Port Address
+; ..\mcal\Port\ssc\src\Port.c	  3375        [/cover] */
+; ..\mcal\Port\ssc\src\Port.c	  3376        PortAddressPtr = Port_lAdr(PortNumber);
+; ..\mcal\Port\ssc\src\Port.c	  3377        /* [cover parentID={0852F649-2816-45c5-A612-99950D0C6C76}]
+; ..\mcal\Port\ssc\src\Port.c	  3378        Check for read only ports
+; ..\mcal\Port\ssc\src\Port.c	  3379        [/cover] */
+; ..\mcal\Port\ssc\src\Port.c	  3380        /* [cover parentID={223985C4-2E26-43d6-A501-DD9A64A93DEF}]
+; ..\mcal\Port\ssc\src\Port.c	  3381        If ReadOnly Port not equal to zero
+; ..\mcal\Port\ssc\src\Port.c	  3382        [/cover] */
+; ..\mcal\Port\ssc\src\Port.c	  3383        /* [cover parentID={655A083F-9819-4516-B2A1-F0AA482AA7FC}]
+; ..\mcal\Port\ssc\src\Port.c	  3384        If ReadOnly Port not equal to zero
+; ..\mcal\Port\ssc\src\Port.c	  3385        [/cover] */
+; ..\mcal\Port\ssc\src\Port.c	  3386        #if (PORTS_READONLY_AVAIL != 0U)
+; ..\mcal\Port\ssc\src\Port.c	  3387        if(Port_lIsPortReadOnly(PortNumber) == (uint32)0U)
+; ..\mcal\Port\ssc\src\Port.c	  3388        #endif
+; ..\mcal\Port\ssc\src\Port.c	  3389        {
+; ..\mcal\Port\ssc\src\Port.c	  3390          SfrVal = PortAddressPtr->OUT.U ;
+; ..\mcal\Port\ssc\src\Port.c	  3391          /* MISRA2012_RULE_11_3_JUSTIFICATION: The compiler prevents the
+; ..\mcal\Port\ssc\src\Port.c	  3392          assignment of value of the element PinLevel of structure ConfigPtr
+; ..\mcal\Port\ssc\src\Port.c	  3393          into a uint32 variable as PinLevel element is of type Port_n_PinType
+; ..\mcal\Port\ssc\src\Port.c	  3394          which is a bitfield structure. Port_n_PinType structure is of size
+; ..\mcal\Port\ssc\src\Port.c	  3395          uint32 and hence using a uint32 pointer typecast to derive the value.
+; ..\mcal\Port\ssc\src\Port.c	  3396          The conversion will produce a pointer that is correctly aligned and
+; ..\mcal\Port\ssc\src\Port.c	  3397          hence no side effects foreseen by violating this MISRA rule.*/
+; ..\mcal\Port\ssc\src\Port.c	  3398          /* MISRA2012_RULE_11_8_JUSTIFICATION: The typecasting is performed to
+; ..\mcal\Port\ssc\src\Port.c	  3399          access configuration data for each port. This ConfigPtr which is having
+; ..\mcal\Port\ssc\src\Port.c	  3400          a const qualifier and by typecasting with (uint32*), it discards const
+; ..\mcal\Port\ssc\src\Port.c	  3401          keyword. No side effects foreseen by violating this MISRA rule.*/
+; ..\mcal\Port\ssc\src\Port.c	  3402          /* MISRA2012_RULE_1_3_JUSTIFICATION: The compiler prevents the
+; ..\mcal\Port\ssc\src\Port.c	  3403          assignment of value of the element PinLevel of structure ConfigPtr
+; ..\mcal\Port\ssc\src\Port.c	  3404          into a uint32 variable as PinLevel element is of type Port_n_PinType
+; ..\mcal\Port\ssc\src\Port.c	  3405          which is a bitfield structure. Port_n_PinType structure is of size
+; ..\mcal\Port\ssc\src\Port.c	  3406          uint32 and hence using a uint32 pointer typecast to derive the value.
+; ..\mcal\Port\ssc\src\Port.c	  3407          Thus no issues seen.*/
+; ..\mcal\Port\ssc\src\Port.c	  3408          Ptr_Config = (uint32 *)& (ConfigPtr->PortConfigSetPtr[ConfigIndex].PinLevel);
+; ..\mcal\Port\ssc\src\Port.c	  3409          CfgVal = *(Ptr_Config);
+; ..\mcal\Port\ssc\src\Port.c	  3410          CompareFlag &= ~(SfrVal ^ CfgVal);
+; ..\mcal\Port\ssc\src\Port.c	  3411        }
+; ..\mcal\Port\ssc\src\Port.c	  3412        SfrVal = PortAddressPtr->ESR.U;
+; ..\mcal\Port\ssc\src\Port.c	  3413        /* MISRA2012_RULE_11_3_JUSTIFICATION: The compiler prevents the assignment
+; ..\mcal\Port\ssc\src\Port.c	  3414        of value of the element EmergencyStopConf of structure ConfigPtr into
+; ..\mcal\Port\ssc\src\Port.c	  3415        a uint32 variable as EmergencyStopConf element is of type Port_n_PinType
+; ..\mcal\Port\ssc\src\Port.c	  3416        which is a bitfield structure. Port_n_PinType is of size uint32 and
+; ..\mcal\Port\ssc\src\Port.c	  3417        hence using a uint32 pointer typecast to derive the value. The conversion
+; ..\mcal\Port\ssc\src\Port.c	  3418        will produce a pointer that is correctly aligned and hence no side
+; ..\mcal\Port\ssc\src\Port.c	  3419        effects foreseen by violating this MISRA rule.*/
+; ..\mcal\Port\ssc\src\Port.c	  3420        /* MISRA2012_RULE_11_8_JUSTIFICATION: The typecasting is performed to
+; ..\mcal\Port\ssc\src\Port.c	  3421        access configuration data for each port. This ConfigPtr which is having
+; ..\mcal\Port\ssc\src\Port.c	  3422        a const qualifier and by typecasting with (uint32*), it discards const
+; ..\mcal\Port\ssc\src\Port.c	  3423        keyword. No side effects foreseen by violating this MISRA rule.*/
+; ..\mcal\Port\ssc\src\Port.c	  3424        /* MISRA2012_RULE_1_3_JUSTIFICATION: The compiler prevents the assignment
+; ..\mcal\Port\ssc\src\Port.c	  3425        of value of the element EmergencyStopConf of structure ConfigPtr into
+; ..\mcal\Port\ssc\src\Port.c	  3426        a uint32 variable as EmergencyStopConf element is of type Port_n_PinType
+; ..\mcal\Port\ssc\src\Port.c	  3427        which is a bitfield structure. Port_n_PinType is of size uint32 and
+; ..\mcal\Port\ssc\src\Port.c	  3428        hence using a uint32 pointer typecast to derive the value. Thus no
+; ..\mcal\Port\ssc\src\Port.c	  3429        issues seen.*/
+; ..\mcal\Port\ssc\src\Port.c	  3430        Ptr_Config = (uint32 *)&(ConfigPtr->PortConfigSetPtr[ConfigIndex].EmergencyStopConf);
+; ..\mcal\Port\ssc\src\Port.c	  3431        CfgVal = *(Ptr_Config);
+; ..\mcal\Port\ssc\src\Port.c	  3432  
+; ..\mcal\Port\ssc\src\Port.c	  3433        CompareFlag &= ~(SfrVal ^ CfgVal);
+; ..\mcal\Port\ssc\src\Port.c	  3434        SfrVal = PortAddressPtr->IOCR0.U ;
+; ..\mcal\Port\ssc\src\Port.c	  3435        CfgVal = *(DataPtr);
+; ..\mcal\Port\ssc\src\Port.c	  3436        DataPtr++;
+; ..\mcal\Port\ssc\src\Port.c	  3437        CompareFlag &= ~(SfrVal ^ CfgVal);
+; ..\mcal\Port\ssc\src\Port.c	  3438        /* [cover parentID={2477DBB6-8164-49f6-9398-7EC5D83849F4}]
+; ..\mcal\Port\ssc\src\Port.c	  3439        If fisrt set of IOCR is not equal to zero
+; ..\mcal\Port\ssc\src\Port.c	  3440        [/cover] */
+; ..\mcal\Port\ssc\src\Port.c	  3441        if(Port_lIsPortIocrAvailable(PortNumber, (uint16)PORT_PIN_4_7) != (uint16)0U)
+; ..\mcal\Port\ssc\src\Port.c	  3442        {
+; ..\mcal\Port\ssc\src\Port.c	  3443          SfrVal = PortAddressPtr->IOCR4.U;
+; ..\mcal\Port\ssc\src\Port.c	  3444          CfgVal = *(DataPtr);
+; ..\mcal\Port\ssc\src\Port.c	  3445          CompareFlag &= ~(SfrVal ^ CfgVal);
+; ..\mcal\Port\ssc\src\Port.c	  3446        }
+; ..\mcal\Port\ssc\src\Port.c	  3447        DataPtr++;
+; ..\mcal\Port\ssc\src\Port.c	  3448        /* [cover parentID={BC7CE8C3-8254-4e04-AAC9-02E7A859E2A9}]
+; ..\mcal\Port\ssc\src\Port.c	  3449        If second set of IOCR is not equal to zero
+; ..\mcal\Port\ssc\src\Port.c	  3450        [/cover] */
+; ..\mcal\Port\ssc\src\Port.c	  3451        if(Port_lIsPortIocrAvailable(PortNumber, (uint16)PORT_PIN_8_11) != (uint16)0U)
+; ..\mcal\Port\ssc\src\Port.c	  3452        {
+; ..\mcal\Port\ssc\src\Port.c	  3453          SfrVal = PortAddressPtr->IOCR8.U;
+; ..\mcal\Port\ssc\src\Port.c	  3454          CfgVal = *(DataPtr);
+; ..\mcal\Port\ssc\src\Port.c	  3455          #if(PORT14_PDISC_MASK == PORT_14_DISC_DISABLE)
+; ..\mcal\Port\ssc\src\Port.c	  3456          /* [cover parentID={75D2C28F-7E85-4578-8B67-8AB0E2F4303E}]
+; ..\mcal\Port\ssc\src\Port.c	  3457          Is Port Number 14
+; ..\mcal\Port\ssc\src\Port.c	  3458          [/cover] */
+; ..\mcal\Port\ssc\src\Port.c	  3459          if(PortNumber == 14U)
+; ..\mcal\Port\ssc\src\Port.c	  3460          {
+; ..\mcal\Port\ssc\src\Port.c	  3461            CfgVal &= (~(IFX_P_IOCR8_PC11_MSK << IFX_P_IOCR8_PC11_OFF));
+; ..\mcal\Port\ssc\src\Port.c	  3462            CfgVal |= (PORT_IOCR_PULLUP_ENABLE<<IFX_P_IOCR8_PC11_OFF );
+; ..\mcal\Port\ssc\src\Port.c	  3463          }
+; ..\mcal\Port\ssc\src\Port.c	  3464          #endif
+; ..\mcal\Port\ssc\src\Port.c	  3465          CompareFlag &= ~(SfrVal ^ CfgVal);
+; ..\mcal\Port\ssc\src\Port.c	  3466        }
+; ..\mcal\Port\ssc\src\Port.c	  3467        DataPtr++;
+; ..\mcal\Port\ssc\src\Port.c	  3468        /* [cover parentID={A3AF9558-B526-4d2e-980F-AF369F6A340C}]
+; ..\mcal\Port\ssc\src\Port.c	  3469        If third set of IOCR is not equal to zero
+; ..\mcal\Port\ssc\src\Port.c	  3470        [/cover] */
+; ..\mcal\Port\ssc\src\Port.c	  3471        if(Port_lIsPortIocrAvailable(PortNumber, (uint16)PORT_PIN_12_15) != (uint16)0U)
+; ..\mcal\Port\ssc\src\Port.c	  3472        {
+; ..\mcal\Port\ssc\src\Port.c	  3473          SfrVal = PortAddressPtr->IOCR12.U;
+; ..\mcal\Port\ssc\src\Port.c	  3474          CfgVal = *(DataPtr);
+; ..\mcal\Port\ssc\src\Port.c	  3475          CompareFlag &= ~(SfrVal ^ CfgVal);
+; ..\mcal\Port\ssc\src\Port.c	  3476        }
+; ..\mcal\Port\ssc\src\Port.c	  3477        /* [cover parentID={C84B2C24-2296-4411-94E5-B8806A07E34C}]
+; ..\mcal\Port\ssc\src\Port.c	  3478        Check for Available LVDS
+; ..\mcal\Port\ssc\src\Port.c	  3479        [/cover] */
+; ..\mcal\Port\ssc\src\Port.c	  3480        /* [cover parentID={9DBD42FA-B5D2-49cc-AC36-720BE37AF9A7}]
+; ..\mcal\Port\ssc\src\Port.c	  3481        If LVDS Port not equal to zero
+; ..\mcal\Port\ssc\src\Port.c	  3482        [/cover] */
+; ..\mcal\Port\ssc\src\Port.c	  3483         /* [cover parentID={63C38308-AE40-4d18-94F1-1639DC622C89}]
+; ..\mcal\Port\ssc\src\Port.c	  3484        If LVDS Port not equal to zero
+; ..\mcal\Port\ssc\src\Port.c	  3485        [/cover] */
+; ..\mcal\Port\ssc\src\Port.c	  3486  
+; ..\mcal\Port\ssc\src\Port.c	  3487        #if (PORT_MAX_LPCR_REG != 0U)
+; ..\mcal\Port\ssc\src\Port.c	  3488        if(Port_lIsPortLVDSAvailable(PortNumber) != (uint32)0U)
+; ..\mcal\Port\ssc\src\Port.c	  3489        {
+; ..\mcal\Port\ssc\src\Port.c	  3490          /* MISRA2012_RULE_11_5_JUSTIFICATION: Performed to calculate SFR address
+; ..\mcal\Port\ssc\src\Port.c	  3491          for each port. The conversion to the required type (volatile uint32*)
+; ..\mcal\Port\ssc\src\Port.c	  3492          is done as direct assignment to LVDSRegPtr, pointer of type
+; ..\mcal\Port\ssc\src\Port.c	  3493          volatile uint32 is not possible. The conversion will produce a pointer
+; ..\mcal\Port\ssc\src\Port.c	  3494          that is correctly aligned and hence no side effects foreseen
+; ..\mcal\Port\ssc\src\Port.c	  3495          by violating this MISRA rule.*/
+; ..\mcal\Port\ssc\src\Port.c	  3496          /* MISRA2012_RULE_11_3_JUSTIFICATION: SFR Access. The conversion to
+; ..\mcal\Port\ssc\src\Port.c	  3497          (volatile void*) is done as it can hold the address of any type, here
+; ..\mcal\Port\ssc\src\Port.c	  3498          a structure pointer and then typecasted to the required
+; ..\mcal\Port\ssc\src\Port.c	  3499          (volatile uint32*) as direct assignment to LVDSRegPtr, pointer of
+; ..\mcal\Port\ssc\src\Port.c	  3500          type volatile uint32 is not possible. The conversion will produce a
+; ..\mcal\Port\ssc\src\Port.c	  3501          pointer that is correctly aligned and hence no side effects foreseen
+; ..\mcal\Port\ssc\src\Port.c	  3502          by violating this MISRA rule.*/
+; ..\mcal\Port\ssc\src\Port.c	  3503          /* MISRA2012_RULE_18_4_JUSTIFICATION: Pointer arithmetic is used due to
+; ..\mcal\Port\ssc\src\Port.c	  3504          SFR address calculation and is within allowed range.*/
+; ..\mcal\Port\ssc\src\Port.c	  3505          /* MISRA2012_RULE_11_8_JUSTIFICATION: The typecasting is performed to
+; ..\mcal\Port\ssc\src\Port.c	  3506          update the SFR address for each port. The PortAddressPtr is
+; ..\mcal\Port\ssc\src\Port.c	  3507          having a const qualifier and by typecasting, the input  argument
+; ..\mcal\Port\ssc\src\Port.c	  3508          for the API discards this keyword. No side effects foreseen by
+; ..\mcal\Port\ssc\src\Port.c	  3509          violating this MISRA rule.*/
+; ..\mcal\Port\ssc\src\Port.c	  3510          LVDSRegPtr  = ((volatile uint32*)(volatile void*)PortAddressPtr \ 
+; ..\mcal\Port\ssc\src\Port.c	  3511                         + PORT_LPCR_REG_OFFSET);
+; ..\mcal\Port\ssc\src\Port.c	  3512  
+; ..\mcal\Port\ssc\src\Port.c	  3513          /* [cover parentID={A7E42B70-13DF-4658-ABD5-58F8CA46B1AB}]
+; ..\mcal\Port\ssc\src\Port.c	  3514          Check for LVDS
+; ..\mcal\Port\ssc\src\Port.c	  3515          [/cover] */
+; ..\mcal\Port\ssc\src\Port.c	  3516          for(counter = (uint32)0U; counter < (uint32)PORT_MAX_LPCR_REG ; counter++)
+; ..\mcal\Port\ssc\src\Port.c	  3517          {
+; ..\mcal\Port\ssc\src\Port.c	  3518            /* [cover parentID={9A60ED46-B1E1-4bc0-BD65-9CE89CC35314}]
+; ..\mcal\Port\ssc\src\Port.c	  3519            If LVDS Pin is available
+; ..\mcal\Port\ssc\src\Port.c	  3520            [/cover] */
+; ..\mcal\Port\ssc\src\Port.c	  3521            if(Port_lIsPortPinPairAvailable(*LVDSDataPtr) == (uint32)0U)
+; ..\mcal\Port\ssc\src\Port.c	  3522            {
+; ..\mcal\Port\ssc\src\Port.c	  3523              SfrVal = *(LVDSRegPtr);
+; ..\mcal\Port\ssc\src\Port.c	  3524              CfgVal = *(LVDSDataPtr);
+; ..\mcal\Port\ssc\src\Port.c	  3525              CompareFlag &= ~(SfrVal ^ CfgVal);
+; ..\mcal\Port\ssc\src\Port.c	  3526            }
+; ..\mcal\Port\ssc\src\Port.c	  3527            LVDSRegPtr++;
+; ..\mcal\Port\ssc\src\Port.c	  3528            LVDSDataPtr++;
+; ..\mcal\Port\ssc\src\Port.c	  3529          }
+; ..\mcal\Port\ssc\src\Port.c	  3530        }
+; ..\mcal\Port\ssc\src\Port.c	  3531       #endif
+; ..\mcal\Port\ssc\src\Port.c	  3532  
+; ..\mcal\Port\ssc\src\Port.c	  3533        /* [cover parentID={B488AB94-6D94-42e5-8D80-0C648C39AE82}]
+; ..\mcal\Port\ssc\src\Port.c	  3534        Check for PCSR Ports
+; ..\mcal\Port\ssc\src\Port.c	  3535        [/cover] */
+; ..\mcal\Port\ssc\src\Port.c	  3536        /* [cover parentID={B69735DA-9884-4f43-BD56-5B31DB027120}]
+; ..\mcal\Port\ssc\src\Port.c	  3537        If PCSR Port not equal to zero
+; ..\mcal\Port\ssc\src\Port.c	  3538        [/cover] */
+; ..\mcal\Port\ssc\src\Port.c	  3539        /* [cover parentID={960B09E9-B096-4213-AABD-0CFDEAD31235}]
+; ..\mcal\Port\ssc\src\Port.c	  3540        Check for PDISC Port
+; ..\mcal\Port\ssc\src\Port.c	  3541        [/cover] */
+; ..\mcal\Port\ssc\src\Port.c	  3542        /* [cover parentID={BF88175E-977A-4160-84BC-CA4EF25904B7}]
+; ..\mcal\Port\ssc\src\Port.c	  3543        If PDISC Port not equal to zero
+; ..\mcal\Port\ssc\src\Port.c	  3544        [/cover] */
+; ..\mcal\Port\ssc\src\Port.c	  3545        if(Port_lIsPortPCSRAvailable(PortNumber) != (uint32)0U)
+; ..\mcal\Port\ssc\src\Port.c	  3546        {
+; ..\mcal\Port\ssc\src\Port.c	  3547          SfrVal = (PortAddressPtr->PCSR.U) & PORT_31_PCSR_MASK;
+; ..\mcal\Port\ssc\src\Port.c	  3548          CfgVal = (*(PCSRDataPtr)) & PORT_31_PCSR_MASK;
+; ..\mcal\Port\ssc\src\Port.c	  3549          CompareFlag &= ~(SfrVal ^ CfgVal);
+; ..\mcal\Port\ssc\src\Port.c	  3550          PCSRDataPtr++;
+; ..\mcal\Port\ssc\src\Port.c	  3551        }
+; ..\mcal\Port\ssc\src\Port.c	  3552        if(Port_lIsPortPDISCAvailable(PortNumber) != (uint32)0U)
+; ..\mcal\Port\ssc\src\Port.c	  3553        {
+; ..\mcal\Port\ssc\src\Port.c	  3554         SfrVal = (PortAddressPtr->PDISC.U);
+; ..\mcal\Port\ssc\src\Port.c	  3555         CfgVal = *(PDISCDataPtr);
+; ..\mcal\Port\ssc\src\Port.c	  3556         CompareFlag &= ~(SfrVal ^ CfgVal);
+; ..\mcal\Port\ssc\src\Port.c	  3557         PDISCDataPtr++;
+; ..\mcal\Port\ssc\src\Port.c	  3558        }
+; ..\mcal\Port\ssc\src\Port.c	  3559        ConfigIndex++;
+; ..\mcal\Port\ssc\src\Port.c	  3560      }
+; ..\mcal\Port\ssc\src\Port.c	  3561    }
+; ..\mcal\Port\ssc\src\Port.c	  3562    #if(PORT14_PDISC_MASK == PORT_14_DISC_DISABLE)
+; ..\mcal\Port\ssc\src\Port.c	  3563    CompareFlag &= ~(P14_PDISC.U ^ 0x0U);
+; ..\mcal\Port\ssc\src\Port.c	  3564    #endif
+; ..\mcal\Port\ssc\src\Port.c	  3565    if (CompareFlag != 0xFFFFFFFFU)
+; ..\mcal\Port\ssc\src\Port.c	  3566    {
+; ..\mcal\Port\ssc\src\Port.c	  3567      ErrorFlag = E_NOT_OK;
+; ..\mcal\Port\ssc\src\Port.c	  3568    }
+; ..\mcal\Port\ssc\src\Port.c	  3569    else
+; ..\mcal\Port\ssc\src\Port.c	  3570    {
+; ..\mcal\Port\ssc\src\Port.c	  3571      ErrorFlag = E_OK;
+; ..\mcal\Port\ssc\src\Port.c	  3572    }
+; ..\mcal\Port\ssc\src\Port.c	  3573    return ErrorFlag;
+; ..\mcal\Port\ssc\src\Port.c	  3574  }
+; ..\mcal\Port\ssc\src\Port.c	  3575  #endif
+; ..\mcal\Port\ssc\src\Port.c	  3576  
+; ..\mcal\Port\ssc\src\Port.c	  3577  #if(PORT_SET_PIN_DIRECTION_API == STD_ON)
+; ..\mcal\Port\ssc\src\Port.c	  3578  #if(PORT_SAFETY_ENABLE == STD_ON)
+; ..\mcal\Port\ssc\src\Port.c	  3579  /*******************************************************************************
+; ..\mcal\Port\ssc\src\Port.c	  3580  ** Traceability:[cover parentID={41E32907-EB61-4dd1-8F96-DE39C66B3272}]       **
+; ..\mcal\Port\ssc\src\Port.c	  3581  **                                                                            **
+; ..\mcal\Port\ssc\src\Port.c	  3582  ** Syntax           : LOCAL_INLINE uint8 Port_lDirectionChk                   **
+; ..\mcal\Port\ssc\src\Port.c	  3583  **                    (                                                       **
+; ..\mcal\Port\ssc\src\Port.c	  3584  **                        const Port_PinDirectionType  Dir                    **
+; ..\mcal\Port\ssc\src\Port.c	  3585  **                    )                                                       **
+; ..\mcal\Port\ssc\src\Port.c	  3586  **                                                                            **
+; ..\mcal\Port\ssc\src\Port.c	  3587  ** Description      : This INLINE function:                                   **
+; ..\mcal\Port\ssc\src\Port.c	  3588  **   - Checks for the error in passed direction  parameter.                   **
+; ..\mcal\Port\ssc\src\Port.c	  3589  **                                                                            **
+; ..\mcal\Port\ssc\src\Port.c	  3590  **  [/cover]                                                                  **
+; ..\mcal\Port\ssc\src\Port.c	  3591  ** Service ID:  NA                                                            **
+; ..\mcal\Port\ssc\src\Port.c	  3592  **                                                                            **
+; ..\mcal\Port\ssc\src\Port.c	  3593  ** Sync/Async:  Synchronous                                                   **
+; ..\mcal\Port\ssc\src\Port.c	  3594  **                                                                            **
+; ..\mcal\Port\ssc\src\Port.c	  3595  ** Reentrancy:  Reentrant                                                     **
+; ..\mcal\Port\ssc\src\Port.c	  3596  **                                                                            **
+; ..\mcal\Port\ssc\src\Port.c	  3597  ** Parameters (in)  :  Dir -  Port pin direction to be checked                **
+; ..\mcal\Port\ssc\src\Port.c	  3598  **                                                                            **
+; ..\mcal\Port\ssc\src\Port.c	  3599  **                                                                            **
+; ..\mcal\Port\ssc\src\Port.c	  3600  ** Parameters (out) : none                                                    **
+; ..\mcal\Port\ssc\src\Port.c	  3601  **                                                                            **
+; ..\mcal\Port\ssc\src\Port.c	  3602  ** Return value     : E_OK -   Direction passed is valid                      **
+; ..\mcal\Port\ssc\src\Port.c	  3603  **                   E_NOT_OK- Direction passed is invalid                    **
+; ..\mcal\Port\ssc\src\Port.c	  3604  **                                                                            **
+; ..\mcal\Port\ssc\src\Port.c	  3605  *******************************************************************************/
+; ..\mcal\Port\ssc\src\Port.c	  3606  LOCAL_INLINE uint8 Port_lDirectionChk( const Port_PinDirectionType Dir)
+; ..\mcal\Port\ssc\src\Port.c	  3607  {
+; ..\mcal\Port\ssc\src\Port.c	  3608    uint8 ErrStatus = E_OK;
+; ..\mcal\Port\ssc\src\Port.c	  3609    /* [cover parentID={C7364599-76EB-4f2a-8657-50160A20C08D}]
+; ..\mcal\Port\ssc\src\Port.c	  3610    Check if direction passed is valid
+; ..\mcal\Port\ssc\src\Port.c	  3611    [/cover] */
+; ..\mcal\Port\ssc\src\Port.c	  3612    if((Dir != PORT_PIN_IN) && ( Dir != PORT_PIN_OUT))
+; ..\mcal\Port\ssc\src\Port.c	  3613    {
+; ..\mcal\Port\ssc\src\Port.c	  3614      ErrStatus = E_NOT_OK;
+; ..\mcal\Port\ssc\src\Port.c	  3615      /* [cover parentID={B5D1507C-8BEC-45a2-BF68-4040258BF247}]
+; ..\mcal\Port\ssc\src\Port.c	  3616      Mcal_ReportSafetyError
+; ..\mcal\Port\ssc\src\Port.c	  3617      [/cover] */
+; ..\mcal\Port\ssc\src\Port.c	  3618       Mcal_ReportSafetyError(PORT_MODULE_ID, PORT_INSTANCE_ID,
+; ..\mcal\Port\ssc\src\Port.c	  3619                    PORT_SID_SETPINDIRECTION, PORT_E_PARAM_INVALID_DIRECTION);
+; ..\mcal\Port\ssc\src\Port.c	  3620    }
+; ..\mcal\Port\ssc\src\Port.c	  3621    return(ErrStatus);
+; ..\mcal\Port\ssc\src\Port.c	  3622  }
+; ..\mcal\Port\ssc\src\Port.c	  3623  #endif /*(PORT_SAFETY_ENABLE == STD_ON) */
+; ..\mcal\Port\ssc\src\Port.c	  3624  #endif /* (PORT_SET_PIN_DIRECTION_API == STD_ON) */
+; ..\mcal\Port\ssc\src\Port.c	  3625  #if (PORT_DEV_ERROR_DETECT == STD_ON )||(PORT_SAFETY_ENABLE == STD_ON)
+; ..\mcal\Port\ssc\src\Port.c	  3626  /*******************************************************************************
+; ..\mcal\Port\ssc\src\Port.c	  3627  ** Traceability:[cover parentID={748F1600-0954-4c11-B30F-8CF9746D48E3}]       **
+; ..\mcal\Port\ssc\src\Port.c	  3628  **                                                                            **
+; ..\mcal\Port\ssc\src\Port.c	  3629  ** Syntax           : LOCAL_INLINE uint8 Port_lCheckInitStatus                **
+; ..\mcal\Port\ssc\src\Port.c	  3630  **                    (                                                       **
+; ..\mcal\Port\ssc\src\Port.c	  3631  **                        const uint8 ApiId                                   **
+; ..\mcal\Port\ssc\src\Port.c	  3632  **                    )                                                       **
+; ..\mcal\Port\ssc\src\Port.c	  3633  **                                                                            **
+; ..\mcal\Port\ssc\src\Port.c	  3634  ** Description      : This INLINE function:                                   **
+; ..\mcal\Port\ssc\src\Port.c	  3635  **   - Check if Port is intialised or not .                                   **
+; ..\mcal\Port\ssc\src\Port.c	  3636  **                                                                            **
+; ..\mcal\Port\ssc\src\Port.c	  3637  **  [/cover]                                                                  **
+; ..\mcal\Port\ssc\src\Port.c	  3638  ** Service ID:  NA                                                            **
+; ..\mcal\Port\ssc\src\Port.c	  3639  **                                                                            **
+; ..\mcal\Port\ssc\src\Port.c	  3640  ** Sync/Async:  Synchronous                                                   **
+; ..\mcal\Port\ssc\src\Port.c	  3641  **                                                                            **
+; ..\mcal\Port\ssc\src\Port.c	  3642  ** Reentrancy:  Reentrant                                                     **
+; ..\mcal\Port\ssc\src\Port.c	  3643  **                                                                            **
+; ..\mcal\Port\ssc\src\Port.c	  3644  ** Parameters (in)  :  ApiId - Service ID of the API reporting an error       **
+; ..\mcal\Port\ssc\src\Port.c	  3645  **                                                                            **
+; ..\mcal\Port\ssc\src\Port.c	  3646  **                                                                            **
+; ..\mcal\Port\ssc\src\Port.c	  3647  ** Parameters (out) : none                                                    **
+; ..\mcal\Port\ssc\src\Port.c	  3648  **                                                                            **
+; ..\mcal\Port\ssc\src\Port.c	  3649  ** Return value     : E_OK - Port_InitStatus is intialized                    **
+; ..\mcal\Port\ssc\src\Port.c	  3650  **                    E_NOT_OK- Port_InitStatus is not intialized             **
+; ..\mcal\Port\ssc\src\Port.c	  3651  **                                                                            **
+; ..\mcal\Port\ssc\src\Port.c	  3652  *******************************************************************************/
+; ..\mcal\Port\ssc\src\Port.c	  3653  LOCAL_INLINE uint8 Port_lCheckInitStatus (const uint8 ApiId)
+; ..\mcal\Port\ssc\src\Port.c	  3654  {
+; ..\mcal\Port\ssc\src\Port.c	  3655    uint8 ErrStatus = E_OK;
+; ..\mcal\Port\ssc\src\Port.c	  3656    /* [cover parentID={F78E386B-0771-4b63-B068-BE7F64B21F7C}]
+; ..\mcal\Port\ssc\src\Port.c	  3657    Check for Intialized state of port
+; ..\mcal\Port\ssc\src\Port.c	  3658    [/cover] */
+; ..\mcal\Port\ssc\src\Port.c	  3659    if (Port_InitStatus != PORT_INITIALIZED)
+	movh.a	a15,#@his(Port_InitStatus)
+	ld.bu	d0,[a15]@los(Port_InitStatus)
+.L289:
+	mov	d15,#0
+.L210:
+
+; ..\mcal\Port\ssc\src\Port.c	  3659    if (Port_InitStatus != PORT_INITIALIZED)      (inlined)
+	jeq	d0,#1,.L30
+.L290:
+
+; ..\mcal\Port\ssc\src\Port.c	  3660      {
+; ..\mcal\Port\ssc\src\Port.c	  3661        /* [cover parentID={2A1742C4-C05F-484c-91B8-689596DAD248}]
+; ..\mcal\Port\ssc\src\Port.c	  3662        Report DET PORT_E_UNINIT
+; ..\mcal\Port\ssc\src\Port.c	  3663        [/cover] */
+; ..\mcal\Port\ssc\src\Port.c	  3664        Port_lReportError(ApiId, PORT_E_UNINIT);
+	mov	d4,#2
+.L291:
+	mov	d5,#15
+	call	Port_lReportError
+.L292:
+
+; ..\mcal\Port\ssc\src\Port.c	  3665        ErrStatus = (uint8)E_NOT_OK;
+	mov	d15,#1
+
+; ..\mcal\Port\ssc\src\Port.c	  3659    if (Port_InitStatus != PORT_INITIALIZED)      (inlined)
+.L30:
+	jne	d15,#0,.L31
+.L159:
 	mov	d2,#0
 	movh.a	a15,#@his(Port_kAvailablePins)
-.L143:
-	mov.u	d8,#64519
-	movh.a	a2,#@his(Port_kConfigPtr)
-.L144:
-	mov	d3,d2
-	lea	a15,[a15]@los(Port_kAvailablePins)
-.L147:
-	mov	d4,#31
-	ld.a	a2,[a2]@los(Port_kConfigPtr)
-.L254:
+.L164:
 	mov	d5,#1
+	movh.a	a2,#@his(Port_kConfigPtr)
+.L293:
+	mov.u	d8,#64519
+	lea	a15,[a15]@los(Port_kAvailablePins)
+.L165:
+	mov	d3,d2
+	ld.a	a2,[a2]@los(Port_kConfigPtr)
+.L168:
+	mov	d4,#31
 	lea	a4,41
-.L255:
+.L294:
 	mov	d6,#775
-.L256:
-	mov	d7,#1
-.L257:
+.L295:
+	mov	d7,d5
+.L169:
+	mov	d9,d5
+.L170:
 	addih	d8,d8,#51184
-.L148:
-	mov	d9,#1
-.L28:
+.L32:
 
 ; ..\mcal\Port\ssc\src\Port.c	  2152    RetVal = ((Port > (uint32)PORT_NUMBER_31) ? (Port_lIsPortAvailable63(Port)) :      (inlined)
-	jge.u	d4,d2,.L29
-.L258:
+	jge.u	d4,d2,.L33
+.L296:
 	add	d0,d2,#-32
-.L259:
+.L297:
 	sh	d0,d5,d0
-.L260:
+.L298:
 	and	d0,d6
 
 ; ..\mcal\Port\ssc\src\Port.c	  2152    RetVal = ((Port > (uint32)PORT_NUMBER_31) ? (Port_lIsPortAvailable63(Port)) :      (inlined)
-	j	.L30
-.L29:
+	j	.L34
+.L33:
 	sh	d0,d7,d2
-.L261:
+.L299:
 	and	d0,d8
 
 ; ..\mcal\Port\ssc\src\Port.c	  2152    RetVal = ((Port > (uint32)PORT_NUMBER_31) ? (Port_lIsPortAvailable63(Port)) :      (inlined)
-.L30:
-	jeq	d0,#0,.L31
-.L149:
+.L34:
+	jeq	d0,#0,.L35
+.L171:
 	ld.a	a5,[a2]
-.L262:
+.L300:
 	sh	d15,d3,#5
 	movh.a	a6,#61444
 	lea	a6,[a6]@los(0xf003a000)
-.L263:
+.L301:
 	addsc.a	a5,a5,d15,#0
-.L178:
+.L211:
 	sh	d15,d2,#8
 	mov.a	a7,#15
-.L264:
+.L302:
 	addsc.a	a6,a6,d15,#0
-.L265:
+.L303:
 	mov	d1,#0
-.L179:
+.L212:
 	lea	a6,[a6]16
-.L32:
+.L36:
 	sh	d0,d9,d1
 	ld.hu	d15,[a15]0
-.L266:
+.L304:
 	and	d0,d15
-.L267:
-	jeq	d0,#0,.L33
-.L268:
+.L305:
+	jeq	d0,#0,.L37
+.L306:
 	ld.bu	d15,[a5]
-.L269:
+.L307:
 	st.b	[a6],d15
-.L33:
+.L37:
 	add	d1,#1
 	add.a	a6,#1
-.L270:
+.L308:
 	add.a	a5,#1
-	loop	a7,.L32
-.L271:
+	loop	a7,.L36
+.L309:
 	add	d3,#1
-.L31:
+.L35:
 	add	d2,#1
 	add.a	a15,#2
-	loop	a4,.L28
-.L272:
+	loop	a4,.L32
+.L31:
 	ret
-.L135:
+.L150:
 	
 __Port_RefreshPortDirection_function_end:
 	.size	Port_RefreshPortDirection,__Port_RefreshPortDirection_function_end-Port_RefreshPortDirection
-.L51:
+.L57:
+	; End of function
+	
+	.sdecl	'.text.Port.Port_lReportError',code,cluster('Port_lReportError')
+	.sect	'.text.Port.Port_lReportError'
+	.align	2
+	
+; Function Port_lReportError
+.L43:
+Port_lReportError:	.type	func
+	mov	e6,d5,d4
+.L314:
+	mov	d4,#124
+.L213:
+	mov	d5,#0
+.L214:
+	j	Det_ReportError
+.L172:
+	
+__Port_lReportError_function_end:
+	.size	Port_lReportError,__Port_lReportError_function_end-Port_lReportError
+.L62:
 	; End of function
 	
 	.sdecl	'.rodata.Port.Port_kAvailablePins',data,rom,cluster('Port_kAvailablePins')
@@ -3698,37 +4323,49 @@ Port_kAvailablePins:	.type	object
 Port_kConfigPtr:	.type	object
 	.size	Port_kConfigPtr,4
 	.space	4
+	.sdecl	'.bss.Port.Port_InitStatus',data,cluster('Port_InitStatus')
+	.sect	'.bss.Port.Port_InitStatus'
+Port_InitStatus:	.type	object
+	.size	Port_InitStatus,1
+	.space	1
+	.calls	'Port_Init','Port_lReportError'
 	.calls	'Port_Init','Mcal_WritePeripEndInitProtReg'
 	.calls	'Port_Init','Mcal_WriteSafetyEndInitProtReg'
+	.calls	'Port_RefreshPortDirection','Port_lReportError'
+	.calls	'Port_lReportError','Det_ReportError'
 	.calls	'Port_Init','',24
+	.calls	'Port_RefreshPortDirection','',0
 	.extern	Mcal_WriteSafetyEndInitProtReg
 	.extern	Mcal_WritePeripEndInitProtReg
-	.calls	'Port_RefreshPortDirection','',0
+	.extern	Det_ReportError
+	.calls	'Port_lReportError','',0
 	.sdecl	'.debug_info',debug
 	.sect	'.debug_info'
-.L39:
-	.word	12593
+.L45:
+	.word	12877
 	.half	3
-	.word	.L40
+	.word	.L46
 	.byte	4
-.L38:
+.L44:
 	.byte	1
 	.byte	'..\\mcal\\Port\\ssc\\src\\Port.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
-	.word	.L41
-.L59:
+	.word	.L47
+.L74:
 	.byte	2
 	.byte	'Port_lIOInit',0,3,1,161,12,19,1,1
-.L62:
+.L77:
 	.byte	3,4,4,4,4,4,4,4,4,4,4,4,0,0
-.L76:
+.L91:
 	.byte	2
 	.byte	'Port_lPDRInit',0,3,1,139,15,19,1,1
-.L78:
+.L93:
 	.byte	3,4,4,4,0,0,5
 	.byte	'unsigned int',0,4,7,5
-	.byte	'int',0,4,5,5
+	.byte	'int',0,4,5
+.L72:
+	.byte	5
 	.byte	'unsigned char',0,1,8,5
 	.byte	'unsigned short int',0,2,7,6
 	.byte	'_Ifx_P_OUT_Bits',0,2,147,3,16,4,7
@@ -5045,20 +5682,20 @@ Port_kConfigPtr:	.type	object
 	.word	7168
 	.byte	13
 	.word	7738
-.L67:
+.L82:
 	.byte	5
 	.byte	'unsigned long int',0,4,7,14
 	.word	7748
-.L91:
+.L106:
 	.byte	15
 	.byte	'Port_lAdr',0,3,1,239,15,22
 	.word	7743
 	.byte	1,1
-.L93:
+.L108:
 	.byte	16
 	.byte	'PortNumber',0,1,239,15,45
 	.word	7769
-.L95:
+.L110:
 	.byte	4,0,14
 	.word	7748
 	.byte	15
@@ -5077,16 +5714,16 @@ Port_kConfigPtr:	.type	object
 	.word	7875
 	.byte	4,0,14
 	.word	7748
-.L81:
+.L96:
 	.byte	15
 	.byte	'Port_lIsPortAvailable',0,3,1,218,16,21
 	.word	7748
 	.byte	1,1
-.L84:
+.L99:
 	.byte	16
 	.byte	'Port',0,1,218,16,56
 	.word	7932
-.L86:
+.L101:
 	.byte	3,4,4,0,0,14
 	.word	7748
 	.byte	15
@@ -5097,16 +5734,16 @@ Port_kConfigPtr:	.type	object
 	.word	7990
 	.byte	4,0,14
 	.word	7748
-.L104:
+.L119:
 	.byte	15
 	.byte	'Port_lIsPortReadOnly',0,3,1,211,17,21
 	.word	7748
 	.byte	1,1
-.L106:
+.L121:
 	.byte	16
 	.byte	'Port',0,1,211,17,55
 	.word	8046
-.L108:
+.L123:
 	.byte	3,4,0,0,14
 	.word	7748
 	.byte	14
@@ -5151,16 +5788,16 @@ Port_kConfigPtr:	.type	object
 	.word	8310
 	.byte	4,0,14
 	.word	7748
-.L120:
+.L135:
 	.byte	15
 	.byte	'Port_lIsPortLVDSAvailable',0,3,1,224,21,21
 	.word	7748
 	.byte	1,1
-.L122:
+.L137:
 	.byte	16
 	.byte	'Port',0,1,224,21,60
 	.word	8371
-.L124:
+.L139:
 	.byte	3,4,0,0,14
 	.word	7748
 	.byte	15
@@ -5179,16 +5816,16 @@ Port_kConfigPtr:	.type	object
 	.word	8493
 	.byte	4,0,14
 	.word	7748
-.L125:
+.L140:
 	.byte	15
 	.byte	'Port_lIsPortPCSRAvailable',0,3,1,207,22,21
 	.word	7748
 	.byte	1,1
-.L127:
+.L142:
 	.byte	16
 	.byte	'Port',0,1,207,22,60
 	.word	8554
-.L129:
+.L144:
 	.byte	3,4,4,0,0,14
 	.word	7748
 	.byte	15
@@ -5207,16 +5844,16 @@ Port_kConfigPtr:	.type	object
 	.word	8678
 	.byte	4,0,14
 	.word	7748
-.L130:
+.L145:
 	.byte	15
 	.byte	'Port_lIsPortPDISCAvailable',0,3,1,204,23,21
 	.word	7748
 	.byte	1,1
-.L132:
+.L147:
 	.byte	16
 	.byte	'Port',0,1,204,23,61
 	.word	8740
-.L134:
+.L149:
 	.byte	3,4,4,0,0,14
 	.word	7748
 	.byte	15
@@ -5226,20 +5863,32 @@ Port_kConfigPtr:	.type	object
 	.byte	'PortLPCRvalue',0,1,255,22,63
 	.word	8803
 	.byte	4,0,14
+	.word	207
+.L158:
+	.byte	15
+	.byte	'Port_lCheckInitStatus',0,3,1,197,28,20
+	.word	207
+	.byte	1,1
+.L160:
+	.byte	16
+	.byte	'ApiId',0,1,197,28,55
+	.word	8874
+.L162:
+	.byte	4,0,14
 	.word	200
 	.byte	17
 	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,18
-	.word	8874
+	.word	8930
 	.byte	0,12
 	.word	184
 	.byte	13
 	.word	184
 	.byte	19
 	.byte	'__cmpswapw',0
-	.word	8916
+	.word	8972
 	.byte	1,1,1,1,20
 	.byte	'p',0
-	.word	8921
+	.word	8977
 	.byte	20
 	.byte	'value',0
 	.word	184
@@ -5248,31 +5897,31 @@ Port_kConfigPtr:	.type	object
 	.word	184
 	.byte	0,21
 	.byte	'void',0,12
-	.word	8978
+	.word	9034
 	.byte	13
-	.word	8984
+	.word	9040
 	.byte	14
-	.word	8989
+	.word	9045
 	.byte	14
 	.word	7748
 	.byte	22
 	.byte	'Mcal_WriteSafetyEndInitProtReg',0,3,178,3,13,1,1,1,1,16
 	.byte	'RegAddress',0,3,179,3,24
-	.word	8994
+	.word	9050
 	.byte	16
 	.byte	'DataValue',0,3,179,3,49
-	.word	8999
+	.word	9055
 	.byte	0,14
-	.word	8989
+	.word	9045
 	.byte	14
 	.word	7748
 	.byte	22
 	.byte	'Mcal_WritePeripEndInitProtReg',0,3,165,4,13,1,1,1,1,16
 	.byte	'RegAddress',0,3,166,4,24
-	.word	9084
+	.word	9140
 	.byte	16
 	.byte	'DataValue',0,3,166,4,49
-	.word	9089
+	.word	9145
 	.byte	0,23,4,194,1,9,16,9
 	.byte	'PC0',0
 	.word	207
@@ -5374,10 +6023,10 @@ Port_kConfigPtr:	.type	object
 	.word	224
 	.byte	16,0,2,35,2,0,23,4,131,2,9,32,9
 	.byte	'PinControl',0
-	.word	9173
+	.word	9229
 	.byte	16,2,35,0,9
 	.byte	'PinLevel',0
-	.word	9394
+	.word	9450
 	.byte	4,2,35,16,9
 	.byte	'DriverStrength0',0
 	.word	7748
@@ -5386,17 +6035,17 @@ Port_kConfigPtr:	.type	object
 	.word	7748
 	.byte	4,2,35,24,9
 	.byte	'EmergencyStopConf',0
-	.word	9394
+	.word	9450
 	.byte	4,2,35,28,0,14
-	.word	9651
-.L65:
+	.word	9707
+.L80:
 	.byte	13
-	.word	9773
+	.word	9829
 	.byte	14
 	.word	7748
-.L63:
+.L78:
 	.byte	13
-	.word	9783
+	.word	9839
 	.byte	23,4,161,2,9,28,9
 	.byte	'LPCR0',0
 	.word	7748
@@ -5419,601 +6068,637 @@ Port_kConfigPtr:	.type	object
 	.byte	'LPCR6',0
 	.word	7748
 	.byte	4,2,35,24,0,14
-	.word	9793
+	.word	9849
 	.byte	13
-	.word	9905
+	.word	9961
 	.byte	14
 	.word	7748
 	.byte	13
-	.word	9915
+	.word	9971
 	.byte	23,4,196,2,9,16,9
 	.byte	'PortConfigSetPtr',0
-	.word	9778
+	.word	9834
 	.byte	4,2,35,0,9
 	.byte	'PDiscSet',0
-	.word	9788
+	.word	9844
 	.byte	4,2,35,4,9
 	.byte	'Port_LVDSConfigTypePtr',0
-	.word	9910
+	.word	9966
 	.byte	4,2,35,8,9
 	.byte	'Port_PCSRConfigTypePtr',0
-	.word	9920
+	.word	9976
 	.byte	4,2,35,12,0,14
-	.word	9925
-.L151:
+	.word	9981
+.L178:
 	.byte	13
-	.word	10040
-.L57:
+	.word	10096
+.L70:
 	.byte	14
-	.word	10045
+	.word	10101
 	.byte	12
 	.word	7748
 	.byte	14
-	.word	10055
-.L74:
+	.word	10111
+.L89:
 	.byte	13
-	.word	10060
+	.word	10116
 	.byte	14
 	.word	207
-.L139:
+.L154:
 	.byte	13
-	.word	10070
+	.word	10126
 	.byte	12
 	.word	207
-.L141:
+.L156:
 	.byte	13
-	.word	10080
+	.word	10136
 	.byte	24
-	.word	121
-	.byte	3,25
-	.word	8808
-	.byte	26
-	.word	8849
-	.byte	27
-	.word	8872
-	.byte	0,4,25
-	.word	7774
-	.byte	26
-	.word	7796
-	.byte	27
-	.word	7816
-	.byte	0,4,25
-	.word	8243
-	.byte	26
-	.word	8281
-	.byte	26
-	.word	8295
-	.byte	27
-	.word	8308
-	.byte	0,4,25
-	.word	8243
-	.byte	26
-	.word	8281
-	.byte	26
-	.word	8295
-	.byte	27
-	.word	8308
-	.byte	0,4,25
-	.word	8243
-	.byte	26
-	.word	8281
-	.byte	26
-	.word	8295
-	.byte	27
-	.word	8308
-	.byte	0,4,25
-	.word	8051
-	.byte	26
-	.word	8084
-	.byte	28
-	.word	8098
-	.byte	25
-	.word	7995
-	.byte	26
-	.word	8030
-	.byte	27
-	.word	8044
-	.byte	0,27
-	.word	8099
-	.byte	0,0,4,25
-	.word	8376
-	.byte	26
-	.word	8414
-	.byte	28
-	.word	8428
-	.byte	25
-	.word	8315
-	.byte	26
-	.word	8355
-	.byte	27
-	.word	8369
-	.byte	0,27
-	.word	8429
-	.byte	0,0,4,25
-	.word	7937
-	.byte	26
-	.word	7971
-	.byte	28
-	.word	7985
-	.byte	25
-	.word	7823
-	.byte	26
-	.word	7859
-	.byte	27
-	.word	7873
-	.byte	0,27
-	.word	7986
-	.byte	25
-	.word	7880
-	.byte	26
-	.word	7916
-	.byte	27
-	.word	7930
-	.byte	0,27
-	.word	7987
-	.byte	0,0,4,25
-	.word	8559
-	.byte	26
-	.word	8597
-	.byte	28
-	.word	8611
-	.byte	25
-	.word	8437
-	.byte	26
-	.word	8477
-	.byte	27
-	.word	8491
-	.byte	0,27
-	.word	8612
-	.byte	25
-	.word	8498
-	.byte	26
-	.word	8538
-	.byte	27
-	.word	8552
-	.byte	0,27
-	.word	8613
-	.byte	0,0,4,25
-	.word	8745
-	.byte	26
-	.word	8784
-	.byte	28
-	.word	8798
-	.byte	25
-	.word	8621
-	.byte	26
-	.word	8662
-	.byte	27
-	.word	8676
-	.byte	0,27
-	.word	8799
-	.byte	25
-	.word	8683
-	.byte	26
-	.word	8724
-	.byte	27
-	.word	8738
-	.byte	0,27
-	.word	8800
-	.byte	0,0,4,25
-	.word	156
-	.byte	28
-	.word	178
-	.byte	25
-	.word	7774
-	.byte	26
-	.word	7796
-	.byte	27
-	.word	7816
-	.byte	0,27
-	.word	179
-	.byte	25
-	.word	8179
-	.byte	26
-	.word	8217
-	.byte	27
-	.word	8231
-	.byte	0,27
-	.word	180
-	.byte	25
-	.word	7937
-	.byte	26
-	.word	7971
-	.byte	28
-	.word	7985
-	.byte	25
-	.word	7823
-	.byte	26
-	.word	7859
-	.byte	27
-	.word	7873
-	.byte	0,27
-	.word	7986
-	.byte	25
-	.word	7880
-	.byte	26
-	.word	7916
-	.byte	27
-	.word	7930
-	.byte	0,27
-	.word	7987
-	.byte	0,0,27
-	.word	181
-	.byte	0,0,4,0,0,24
-	.word	156
-	.byte	3,25
-	.word	7774
-	.byte	26
-	.word	7796
-	.byte	27
-	.word	7816
-	.byte	0,4,25
-	.word	8179
-	.byte	26
-	.word	8217
-	.byte	27
-	.word	8231
-	.byte	0,4,25
-	.word	7937
-	.byte	26
-	.word	7971
-	.byte	28
-	.word	7985
-	.byte	25
-	.word	7823
-	.byte	26
-	.word	7859
-	.byte	27
-	.word	7873
-	.byte	0,27
-	.word	7986
-	.byte	25
-	.word	7880
-	.byte	26
-	.word	7916
-	.byte	27
-	.word	7930
-	.byte	0,27
-	.word	7987
-	.byte	0,0,4,0,0,24
-	.word	7774
-	.byte	26
-	.word	7796
-	.byte	4,0,24
-	.word	7823
-	.byte	26
-	.word	7859
-	.byte	4,0,24
-	.word	7880
-	.byte	26
-	.word	7916
-	.byte	4,0,24
-	.word	7937
-	.byte	26
-	.word	7971
-	.byte	3,25
-	.word	7823
-	.byte	26
-	.word	7859
-	.byte	27
-	.word	7873
-	.byte	0,4,25
-	.word	7880
-	.byte	26
-	.word	7916
-	.byte	27
-	.word	7930
-	.byte	0,4,0,0,24
-	.word	7995
-	.byte	26
-	.word	8030
-	.byte	4,0,24
-	.word	8051
-	.byte	26
-	.word	8084
-	.byte	3,25
-	.word	7995
-	.byte	26
-	.word	8030
-	.byte	27
-	.word	8044
-	.byte	0,4,0,0,24
-	.word	8112
-	.byte	26
-	.word	8145
-	.byte	26
-	.word	8159
-	.byte	4,0,24
-	.word	8179
-	.byte	26
-	.word	8217
-	.byte	4,0,24
-	.word	8243
-	.byte	26
-	.word	8281
-	.byte	26
-	.word	8295
-	.byte	4,0,24
-	.word	8315
-	.byte	26
-	.word	8355
-	.byte	4,0,24
-	.word	8376
-	.byte	26
-	.word	8414
-	.byte	3,25
-	.word	8315
-	.byte	26
-	.word	8355
-	.byte	27
-	.word	8369
-	.byte	0,4,0,0,24
-	.word	8437
-	.byte	26
-	.word	8477
-	.byte	4,0,24
-	.word	8498
-	.byte	26
-	.word	8538
-	.byte	4,0,24
-	.word	8559
-	.byte	26
-	.word	8597
-	.byte	3,25
-	.word	8437
-	.byte	26
-	.word	8477
-	.byte	27
-	.word	8491
-	.byte	0,4,25
-	.word	8498
-	.byte	26
-	.word	8538
-	.byte	27
-	.word	8552
-	.byte	0,4,0,0,24
-	.word	8621
-	.byte	26
-	.word	8662
-	.byte	4,0,24
-	.word	8683
-	.byte	26
-	.word	8724
-	.byte	4,0,24
-	.word	8745
-	.byte	26
-	.word	8784
-	.byte	3,25
-	.word	8621
-	.byte	26
-	.word	8662
-	.byte	27
-	.word	8676
-	.byte	0,4,25
-	.word	8683
-	.byte	26
-	.word	8724
-	.byte	27
-	.word	8738
-	.byte	0,4,0,0,24
-	.word	8808
-	.byte	26
-	.word	8849
-	.byte	4,0,29,1,13
-	.word	11044
-	.byte	30
-	.byte	'__codeptr',0,1,1,1
-	.word	11046
-	.byte	30
-	.byte	'Ifx_UReg_8Bit',0,5,79,24
+	.byte	'Det_ReportError',0,5,154,2,32
 	.word	207
-	.byte	30
-	.byte	'Ifx_UReg_32Bit',0,5,81,24
+	.byte	1,1,1,1,16
+	.byte	'ModuleId',0,5,154,2,56
+	.word	224
+	.byte	16
+	.byte	'InstanceId',0,5,154,2,72
+	.word	207
+	.byte	16
+	.byte	'ApiId',0,5,154,2,90
+	.word	207
+	.byte	16
+	.byte	'ErrorId',0,5,154,2,103
+	.word	207
+	.byte	0,25
+	.word	121
+	.byte	3,26
+	.word	8808
+	.byte	27
+	.word	8849
+	.byte	28
+	.word	8872
+	.byte	0,4,26
+	.word	7774
+	.byte	27
+	.word	7796
+	.byte	28
+	.word	7816
+	.byte	0,4,26
+	.word	8243
+	.byte	27
+	.word	8281
+	.byte	27
+	.word	8295
+	.byte	28
+	.word	8308
+	.byte	0,4,26
+	.word	8243
+	.byte	27
+	.word	8281
+	.byte	27
+	.word	8295
+	.byte	28
+	.word	8308
+	.byte	0,4,26
+	.word	8243
+	.byte	27
+	.word	8281
+	.byte	27
+	.word	8295
+	.byte	28
+	.word	8308
+	.byte	0,4,26
+	.word	8051
+	.byte	27
+	.word	8084
+	.byte	29
+	.word	8098
+	.byte	26
+	.word	7995
+	.byte	27
+	.word	8030
+	.byte	28
+	.word	8044
+	.byte	0,28
+	.word	8099
+	.byte	0,0,4,26
+	.word	8376
+	.byte	27
+	.word	8414
+	.byte	29
+	.word	8428
+	.byte	26
+	.word	8315
+	.byte	27
+	.word	8355
+	.byte	28
+	.word	8369
+	.byte	0,28
+	.word	8429
+	.byte	0,0,4,26
+	.word	7937
+	.byte	27
+	.word	7971
+	.byte	29
+	.word	7985
+	.byte	26
+	.word	7823
+	.byte	27
+	.word	7859
+	.byte	28
+	.word	7873
+	.byte	0,28
+	.word	7986
+	.byte	26
+	.word	7880
+	.byte	27
+	.word	7916
+	.byte	28
+	.word	7930
+	.byte	0,28
+	.word	7987
+	.byte	0,0,4,26
+	.word	8559
+	.byte	27
+	.word	8597
+	.byte	29
+	.word	8611
+	.byte	26
+	.word	8437
+	.byte	27
+	.word	8477
+	.byte	28
+	.word	8491
+	.byte	0,28
+	.word	8612
+	.byte	26
+	.word	8498
+	.byte	27
+	.word	8538
+	.byte	28
+	.word	8552
+	.byte	0,28
+	.word	8613
+	.byte	0,0,4,26
+	.word	8745
+	.byte	27
+	.word	8784
+	.byte	29
+	.word	8798
+	.byte	26
+	.word	8621
+	.byte	27
+	.word	8662
+	.byte	28
+	.word	8676
+	.byte	0,28
+	.word	8799
+	.byte	26
+	.word	8683
+	.byte	27
+	.word	8724
+	.byte	28
+	.word	8738
+	.byte	0,28
+	.word	8800
+	.byte	0,0,4,26
+	.word	156
+	.byte	29
+	.word	178
+	.byte	26
+	.word	7774
+	.byte	27
+	.word	7796
+	.byte	28
+	.word	7816
+	.byte	0,28
+	.word	179
+	.byte	26
+	.word	8179
+	.byte	27
+	.word	8217
+	.byte	28
+	.word	8231
+	.byte	0,28
+	.word	180
+	.byte	26
+	.word	7937
+	.byte	27
+	.word	7971
+	.byte	29
+	.word	7985
+	.byte	26
+	.word	7823
+	.byte	27
+	.word	7859
+	.byte	28
+	.word	7873
+	.byte	0,28
+	.word	7986
+	.byte	26
+	.word	7880
+	.byte	27
+	.word	7916
+	.byte	28
+	.word	7930
+	.byte	0,28
+	.word	7987
+	.byte	0,0,28
+	.word	181
+	.byte	0,0,4,0,0,25
+	.word	156
+	.byte	3,26
+	.word	7774
+	.byte	27
+	.word	7796
+	.byte	28
+	.word	7816
+	.byte	0,4,26
+	.word	8179
+	.byte	27
+	.word	8217
+	.byte	28
+	.word	8231
+	.byte	0,4,26
+	.word	7937
+	.byte	27
+	.word	7971
+	.byte	29
+	.word	7985
+	.byte	26
+	.word	7823
+	.byte	27
+	.word	7859
+	.byte	28
+	.word	7873
+	.byte	0,28
+	.word	7986
+	.byte	26
+	.word	7880
+	.byte	27
+	.word	7916
+	.byte	28
+	.word	7930
+	.byte	0,28
+	.word	7987
+	.byte	0,0,4,0,0,25
+	.word	7774
+	.byte	27
+	.word	7796
+	.byte	4,0,25
+	.word	7823
+	.byte	27
+	.word	7859
+	.byte	4,0,25
+	.word	7880
+	.byte	27
+	.word	7916
+	.byte	4,0,25
+	.word	7937
+	.byte	27
+	.word	7971
+	.byte	3,26
+	.word	7823
+	.byte	27
+	.word	7859
+	.byte	28
+	.word	7873
+	.byte	0,4,26
+	.word	7880
+	.byte	27
+	.word	7916
+	.byte	28
+	.word	7930
+	.byte	0,4,0,0,25
+	.word	7995
+	.byte	27
+	.word	8030
+	.byte	4,0,25
+	.word	8051
+	.byte	27
+	.word	8084
+	.byte	3,26
+	.word	7995
+	.byte	27
+	.word	8030
+	.byte	28
+	.word	8044
+	.byte	0,4,0,0,25
+	.word	8112
+	.byte	27
+	.word	8145
+	.byte	27
+	.word	8159
+	.byte	4,0,25
+	.word	8179
+	.byte	27
+	.word	8217
+	.byte	4,0,25
+	.word	8243
+	.byte	27
+	.word	8281
+	.byte	27
+	.word	8295
+	.byte	4,0,25
+	.word	8315
+	.byte	27
+	.word	8355
+	.byte	4,0,25
+	.word	8376
+	.byte	27
+	.word	8414
+	.byte	3,26
+	.word	8315
+	.byte	27
+	.word	8355
+	.byte	28
+	.word	8369
+	.byte	0,4,0,0,25
+	.word	8437
+	.byte	27
+	.word	8477
+	.byte	4,0,25
+	.word	8498
+	.byte	27
+	.word	8538
+	.byte	4,0,25
+	.word	8559
+	.byte	27
+	.word	8597
+	.byte	3,26
+	.word	8437
+	.byte	27
+	.word	8477
+	.byte	28
+	.word	8491
+	.byte	0,4,26
+	.word	8498
+	.byte	27
+	.word	8538
+	.byte	28
+	.word	8552
+	.byte	0,4,0,0,25
+	.word	8621
+	.byte	27
+	.word	8662
+	.byte	4,0,25
+	.word	8683
+	.byte	27
+	.word	8724
+	.byte	4,0,25
+	.word	8745
+	.byte	27
+	.word	8784
+	.byte	3,26
+	.word	8621
+	.byte	27
+	.word	8662
+	.byte	28
+	.word	8676
+	.byte	0,4,26
+	.word	8683
+	.byte	27
+	.word	8724
+	.byte	28
+	.word	8738
+	.byte	0,4,0,0,25
+	.word	8808
+	.byte	27
+	.word	8849
+	.byte	4,0
+.L173:
+	.byte	14
+	.word	207
+.L175:
+	.byte	14
+	.word	207
+	.byte	25
+	.word	8879
+	.byte	27
+	.word	8913
+	.byte	4,0,30,1,13
+	.word	11222
+	.byte	31
+	.byte	'__codeptr',0,1,1,1
+	.word	11224
+	.byte	31
+	.byte	'Ifx_UReg_8Bit',0,6,79,24
+	.word	207
+	.byte	31
+	.byte	'Ifx_UReg_32Bit',0,6,81,24
 	.word	184
-	.byte	30
-	.byte	'Ifx_SReg_32Bit',0,5,84,24
+	.byte	31
+	.byte	'Ifx_SReg_32Bit',0,6,84,24
 	.word	200
-	.byte	30
+	.byte	31
 	.byte	'Ifx_P_ACCEN0_Bits',0,2,104,3
 	.word	6601
-	.byte	30
+	.byte	31
 	.byte	'Ifx_P_ACCEN1_Bits',0,2,110,3
 	.word	6514
-	.byte	30
+	.byte	31
 	.byte	'Ifx_P_ESR_Bits',0,2,132,1,3
 	.word	3082
-	.byte	30
+	.byte	31
 	.byte	'Ifx_P_ID_Bits',0,2,140,1,3
 	.word	1133
-	.byte	30
+	.byte	31
 	.byte	'Ifx_P_IN_Bits',0,2,162,1,3
 	.word	2129
-	.byte	30
+	.byte	31
 	.byte	'Ifx_P_IOCR0_Bits',0,2,175,1,3
 	.word	1262
-	.byte	30
+	.byte	31
 	.byte	'Ifx_P_IOCR12_Bits',0,2,188,1,3
 	.word	1909
-	.byte	30
+	.byte	31
 	.byte	'Ifx_P_IOCR4_Bits',0,2,201,1,3
 	.word	1477
-	.byte	30
+	.byte	31
 	.byte	'Ifx_P_IOCR8_Bits',0,2,214,1,3
 	.word	1692
-	.byte	30
+	.byte	31
 	.byte	'Ifx_P_LPCR_Bits',0,2,233,1,3
 	.word	6176
-	.byte	30
+	.byte	31
 	.byte	'Ifx_P_OMCR_Bits',0,2,255,1,3
 	.word	5828
-	.byte	30
+	.byte	31
 	.byte	'Ifx_P_OMCR0_Bits',0,2,138,2,3
 	.word	4815
-	.byte	30
+	.byte	31
 	.byte	'Ifx_P_OMCR12_Bits',0,2,148,2,3
 	.word	5339
-	.byte	30
+	.byte	31
 	.byte	'Ifx_P_OMCR4_Bits',0,2,159,2,3
 	.word	4989
-	.byte	30
+	.byte	31
 	.byte	'Ifx_P_OMCR8_Bits',0,2,170,2,3
 	.word	5163
-	.byte	30
+	.byte	31
 	.byte	'Ifx_P_OMR_Bits',0,2,207,2,3
 	.word	562
-	.byte	30
+	.byte	31
 	.byte	'Ifx_P_OMSR_Bits',0,2,229,2,3
 	.word	5495
-	.byte	30
+	.byte	31
 	.byte	'Ifx_P_OMSR0_Bits',0,2,239,2,3
 	.word	4152
-	.byte	30
+	.byte	31
 	.byte	'Ifx_P_OMSR12_Bits',0,2,250,2,3
 	.word	4640
-	.byte	30
+	.byte	31
 	.byte	'Ifx_P_OMSR4_Bits',0,2,133,3,3
 	.word	4299
-	.byte	30
+	.byte	31
 	.byte	'Ifx_P_OMSR8_Bits',0,2,144,3,3
 	.word	4468
-	.byte	30
+	.byte	31
 	.byte	'Ifx_P_OUT_Bits',0,2,166,3,3
 	.word	246
-	.byte	30
+	.byte	31
 	.byte	'Ifx_P_PCSR_Bits',0,2,189,3,3
 	.word	3788
-	.byte	30
+	.byte	31
 	.byte	'Ifx_P_PDISC_Bits',0,2,211,3,3
 	.word	3422
-	.byte	30
+	.byte	31
 	.byte	'Ifx_P_PDR0_Bits',0,2,232,3,3
 	.word	2453
-	.byte	30
+	.byte	31
 	.byte	'Ifx_P_PDR1_Bits',0,2,253,3,3
 	.word	2757
-	.byte	30
+	.byte	31
 	.byte	'Ifx_P_ACCEN0',0,2,138,4,3
 	.word	7128
-	.byte	30
+	.byte	31
 	.byte	'Ifx_P_ACCEN1',0,2,146,4,3
 	.word	6561
-	.byte	30
+	.byte	31
 	.byte	'Ifx_P_ESR',0,2,154,4,3
 	.word	3373
-	.byte	30
+	.byte	31
 	.byte	'Ifx_P_ID',0,2,162,4,3
 	.word	1213
-	.byte	30
+	.byte	31
 	.byte	'Ifx_P_IN',0,2,170,4,3
 	.word	2404
-	.byte	30
+	.byte	31
 	.byte	'Ifx_P_IOCR0',0,2,178,4,3
 	.word	1437
-	.byte	30
+	.byte	31
 	.byte	'Ifx_P_IOCR12',0,2,186,4,3
 	.word	2089
-	.byte	30
+	.byte	31
 	.byte	'Ifx_P_IOCR4',0,2,194,4,3
 	.word	1652
-	.byte	30
+	.byte	31
 	.byte	'Ifx_P_IOCR8',0,2,202,4,3
 	.word	1869
-	.byte	30
+	.byte	31
 	.byte	'Ifx_P_LPCR',0,2,210,4,3
 	.word	6456
-	.byte	30
+	.byte	31
 	.byte	'Ifx_P_OMCR',0,2,218,4,3
 	.word	6136
-	.byte	30
+	.byte	31
 	.byte	'Ifx_P_OMCR0',0,2,226,4,3
 	.word	4949
-	.byte	30
+	.byte	31
 	.byte	'Ifx_P_OMCR12',0,2,234,4,3
 	.word	5455
-	.byte	30
+	.byte	31
 	.byte	'Ifx_P_OMCR4',0,2,242,4,3
 	.word	5123
-	.byte	30
+	.byte	31
 	.byte	'Ifx_P_OMCR8',0,2,250,4,3
 	.word	5299
-	.byte	30
+	.byte	31
 	.byte	'Ifx_P_OMR',0,2,130,5,3
 	.word	1093
-	.byte	30
+	.byte	31
 	.byte	'Ifx_P_OMSR',0,2,138,5,3
 	.word	5788
-	.byte	30
+	.byte	31
 	.byte	'Ifx_P_OMSR0',0,2,146,5,3
 	.word	4259
-	.byte	30
+	.byte	31
 	.byte	'Ifx_P_OMSR12',0,2,154,5,3
 	.word	4775
-	.byte	30
+	.byte	31
 	.byte	'Ifx_P_OMSR4',0,2,162,5,3
 	.word	4428
-	.byte	30
+	.byte	31
 	.byte	'Ifx_P_OMSR8',0,2,170,5,3
 	.word	4600
-	.byte	30
+	.byte	31
 	.byte	'Ifx_P_OUT',0,2,178,5,3
 	.word	522
-	.byte	30
+	.byte	31
 	.byte	'Ifx_P_PCSR',0,2,186,5,3
 	.word	4112
-	.byte	30
+	.byte	31
 	.byte	'Ifx_P_PDISC',0,2,194,5,3
 	.word	3748
-	.byte	30
+	.byte	31
 	.byte	'Ifx_P_PDR0',0,2,202,5,3
 	.word	2717
-	.byte	30
+	.byte	31
 	.byte	'Ifx_P_PDR1',0,2,210,5,3
 	.word	3033
 	.byte	12
 	.word	7168
-	.byte	30
+	.byte	31
 	.byte	'Ifx_P',0,2,130,6,3
-	.word	12331
-	.byte	30
-	.byte	'uint8',0,6,104,31
+	.word	12509
+	.byte	31
+	.byte	'uint8',0,7,104,31
 	.word	207
-	.byte	30
-	.byte	'uint16',0,6,106,31
+	.byte	31
+	.byte	'uint16',0,7,106,31
 	.word	224
-	.byte	30
-	.byte	'uint32',0,6,108,31
+	.byte	31
+	.byte	'uint32',0,7,108,31
 	.word	7748
-	.byte	30
-	.byte	'unsigned_int',0,7,75,22
+	.byte	31
+	.byte	'Std_ReturnType',0,8,132,1,15
+	.word	207
+	.byte	31
+	.byte	'unsigned_int',0,9,75,22
 	.word	184
-	.byte	30
+	.byte	31
 	.byte	'Port_n_ControlType',0,4,214,1,3
-	.word	9173
-	.byte	30
+	.word	9229
+	.byte	31
 	.byte	'Port_n_PinType',0,4,239,1,3
-	.word	9394
-	.byte	30
+	.word	9450
+	.byte	31
 	.byte	'Port_n_ConfigType',0,4,155,2,3
-	.word	9651
-	.byte	30
+	.word	9707
+	.byte	31
 	.byte	'Port_n_LVDSConfigType',0,4,185,2,3
-	.word	9793
-	.byte	30
+	.word	9849
+	.byte	31
 	.byte	'Port_n_PCSRConfigType',0,4,189,2,16
 	.word	7748
-	.byte	30
+	.byte	31
 	.byte	'Port_ConfigType',0,4,212,2,3
-	.word	9925
+	.word	9981
+	.byte	6
+	.byte	'sDet_PCConfigType',0,10,238,1,16,1,9
+	.byte	'Det_PCConfigNeverUsed',0
+	.word	207
+	.byte	1,2,35,0,0,31
+	.byte	'Det_PCConfigType',0,10,241,1,3
+	.word	12784
 	.byte	10,84
 	.word	224
 	.byte	11,41,0
-.L150:
+.L177:
 	.byte	14
-	.word	12582
+	.word	12866
 	.byte	0
 	.sdecl	'.debug_abbrev',debug
 	.sect	'.debug_abbrev'
-.L40:
+.L46:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,46,1,3,8,32,13,58,15,59,15,57,15,54,15,39,12,0,0,3,11
 	.byte	1,0,0,4,11,0,0,0,5,36,0,3,8,11,15,62,15,0,0,6,19,1,3,8,58,15,59,15,57,15,11,15,0,0,7,13,0,3,8,11,15,73
 	.byte	19,13,15,12,15,56,9,0,0,8,23,1,58,15,59,15,57,15,11,15,0,0,9,13,0,3,8,73,19,11,15,56,9,0,0,10,1,1,11,15
@@ -6021,825 +6706,988 @@ Port_kConfigPtr:	.type	object
 	.byte	15,59,15,57,15,73,19,54,15,39,12,0,0,16,5,0,3,8,58,15,59,15,57,15,73,19,0,0,17,46,1,3,8,54,15,39,12,63
 	.byte	12,60,12,0,0,18,5,0,73,19,0,0,19,46,1,3,8,73,19,54,15,39,12,63,12,60,12,0,0,20,5,0,3,8,73,19,0,0,21,59
 	.byte	0,3,8,0,0,22,46,1,3,8,58,15,59,15,57,15,54,15,39,12,63,12,60,12,0,0,23,19,1,58,15,59,15,57,15,11,15,0
-	.byte	0,24,46,1,49,19,0,0,25,29,1,49,19,0,0,26,5,0,49,19,0,0,27,11,0,49,19,0,0,28,11,1,49,19,0,0,29,21,0,54
-	.byte	15,0,0,30,22,0,3,8,58,15,59,15,57,15,73,19,0,0,0
+	.byte	0,24,46,1,3,8,58,15,59,15,57,15,73,19,54,15,39,12,63,12,60,12,0,0,25,46,1,49,19,0,0,26,29,1,49,19,0,0
+	.byte	27,5,0,49,19,0,0,28,11,0,49,19,0,0,29,11,1,49,19,0,0,30,21,0,54,15,0,0,31,22,0,3,8,58,15,59,15,57,15,73
+	.byte	19,0,0,0
 	.sdecl	'.debug_line',debug
 	.sect	'.debug_line'
-.L41:
-	.word	.L181-.L180
-.L180:
+.L47:
+	.word	.L216-.L215
+.L215:
 	.half	3
-	.word	.L183-.L182
-.L182:
+	.word	.L218-.L217
+.L217:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
 	.byte	'D:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Sfr\\TC39xB\\_Reg',0
 	.byte	'D:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc\\inc',0
 	.byte	'D:\\Zonal\\demo011\\tasking\\mcal\\Port\\ssc\\inc',0
-	.byte	'D:\\Zonal\\demo011\\tasking\\component\\_Common\\Implementation',0,0
+	.byte	'D:\\Zonal\\demo011\\tasking\\component\\Det\\Implementation',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\component\\_Common\\Implementation',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\appl\\GenData',0,0
 	.byte	'..\\mcal\\Port\\ssc\\src\\Port.c',0,0,0,0
 	.byte	'IfxPort_regdef.h',0,1,0,0
 	.byte	'McalLib.h',0,2,0,0
 	.byte	'Port.h',0,3,0,0
+	.byte	'Det.h',0,4,0,0
 	.byte	'Ifx_TypesReg.h',0,1,0,0
-	.byte	'Platform_Types.h',0,4,0,0
-	.byte	'Mcal_Compiler.h',0,2,0,0,0
-.L183:
-.L181:
+	.byte	'Platform_Types.h',0,5,0,0
+	.byte	'Std_Types.h',0,5,0,0
+	.byte	'Mcal_Compiler.h',0,2,0,0
+	.byte	'Det_Cfg.h',0,6,0,0,0
+.L218:
+.L216:
 	.sdecl	'.debug_info',debug,cluster('Port_Init')
 	.sect	'.debug_info'
-.L42:
-	.word	993
+.L48:
+	.word	1016
 	.half	3
-	.word	.L43
+	.word	.L49
 	.byte	4,1
 	.byte	'..\\mcal\\Port\\ssc\\src\\Port.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
-	.word	.L45,.L44
+	.word	.L51,.L50
 	.byte	2
-	.word	.L38
+	.word	.L44
 	.byte	3
 	.byte	'Port_Init',0,1,163,5,6,1,1,1
-	.word	.L35,.L56,.L34
+	.word	.L39,.L69,.L38
 	.byte	4
 	.byte	'ConfigPtr',0,1,163,5,48
-	.word	.L57,.L58
+	.word	.L70,.L71
 	.byte	5
-	.word	.L35,.L56
+	.word	.L39,.L69
 	.byte	6
-	.word	.L59,.L60,.L61
+	.byte	'ErrStatus',0,1,166,5,38
+	.word	.L72,.L73
 	.byte	7
-	.word	.L62,.L60,.L61
+	.word	.L74,.L75,.L76
 	.byte	8
+	.word	.L77,.L75,.L76
+	.byte	6
 	.byte	'DataPtr',0,1,163,12,28
-	.word	.L63,.L64
-	.byte	8
+	.word	.L78,.L79
+	.byte	6
 	.byte	'ConfigDataPtr',0,1,164,12,28
-	.word	.L65,.L66
-	.byte	8
+	.word	.L80,.L81
+	.byte	6
 	.byte	'PortNumber',0,1,166,12,28
-	.word	.L67,.L68
-	.byte	8
+	.word	.L82,.L83
+	.byte	6
 	.byte	'ConfigIndex',0,1,173,12,28
-	.word	.L67,.L69
-	.byte	8
+	.word	.L82,.L84
+	.byte	6
 	.byte	'PCSRDataPtr',0,1,175,12,28
-	.word	.L63,.L70
-	.byte	8
+	.word	.L78,.L85
+	.byte	6
 	.byte	'PDISCDataPtr',0,1,176,12,28
-	.word	.L63,.L71
-	.byte	8
+	.word	.L78,.L86
+	.byte	6
 	.byte	'counter',0,1,180,12,29
-	.word	.L67,.L72
-	.byte	8
+	.word	.L82,.L87
+	.byte	6
 	.byte	'LVDSDataPtr',0,1,181,12,29
-	.word	.L63,.L73
-	.byte	8
+	.word	.L78,.L88
+	.byte	6
 	.byte	'LVDSRegPtr',0,1,182,12,29
-	.word	.L74,.L75
-	.byte	6
-	.word	.L76,.L60,.L77
+	.word	.L89,.L90
 	.byte	7
-	.word	.L78,.L60,.L77
+	.word	.L91,.L75,.L92
 	.byte	8
-	.byte	'PortNumber',0,1,142,15,27
-	.word	.L67,.L79
-	.byte	8
-	.byte	'ConfigIndex',0,1,145,15,27
-	.word	.L67,.L80
+	.word	.L93,.L75,.L92
 	.byte	6
-	.word	.L81,.L82,.L83
+	.byte	'PortNumber',0,1,142,15,27
+	.word	.L82,.L94
+	.byte	6
+	.byte	'ConfigIndex',0,1,145,15,27
+	.word	.L82,.L95
+	.byte	7
+	.word	.L96,.L97,.L98
 	.byte	9
-	.word	.L84,.L85
+	.word	.L99,.L100
 	.byte	10
-	.word	.L86,.L87
-	.byte	0,6
-	.word	.L81,.L88,.L89
+	.word	.L101,.L102
+	.byte	0,7
+	.word	.L96,.L103,.L104
 	.byte	9
-	.word	.L84,.L85
-	.byte	0,6
-	.word	.L81,.L2,.L90
+	.word	.L99,.L100
+	.byte	0,7
+	.word	.L96,.L4,.L105
 	.byte	9
-	.word	.L84,.L85
-	.byte	0,6
-	.word	.L91,.L90,.L92
+	.word	.L99,.L100
+	.byte	0,7
+	.word	.L106,.L105,.L107
 	.byte	9
-	.word	.L93,.L94
-	.byte	11
-	.word	.L95,.L90,.L92
-	.byte	0,0,0,6
-	.word	.L81,.L96,.L97
-	.byte	9
-	.word	.L84,.L85
-	.byte	10
-	.word	.L86,.L98
-	.byte	0,6
-	.word	.L104,.L105,.L99
-	.byte	9
-	.word	.L106,.L107
-	.byte	10
 	.word	.L108,.L109
-	.byte	0,6
-	.word	.L81,.L99,.L100
+	.byte	11
+	.word	.L110,.L105,.L107
+	.byte	0,0,0,7
+	.word	.L96,.L111,.L112
 	.byte	9
-	.word	.L84,.L85
-	.byte	0,6
-	.word	.L81,.L101,.L102
-	.byte	9
-	.word	.L84,.L85
-	.byte	0,6
-	.word	.L104,.L110,.L111
-	.byte	9
-	.word	.L106,.L107
-	.byte	0,6
-	.word	.L104,.L112,.L113
-	.byte	9
-	.word	.L106,.L107
-	.byte	0,6
-	.word	.L81,.L7,.L103
-	.byte	9
-	.word	.L84,.L85
-	.byte	0,6
-	.word	.L91,.L116,.L117
-	.byte	9
-	.word	.L93,.L94
+	.word	.L99,.L100
 	.byte	10
-	.word	.L95,.L118
-	.byte	0,6
-	.word	.L91,.L119,.L114
+	.word	.L101,.L113
+	.byte	0,7
+	.word	.L119,.L120,.L114
 	.byte	9
-	.word	.L93,.L94
-	.byte	0,6
-	.word	.L104,.L114,.L115
+	.word	.L121,.L122
+	.byte	10
+	.word	.L123,.L124
+	.byte	0,7
+	.word	.L96,.L114,.L115
 	.byte	9
-	.word	.L106,.L107
-	.byte	0,6
-	.word	.L120,.L16,.L121
+	.word	.L99,.L100
+	.byte	0,7
+	.word	.L96,.L116,.L117
 	.byte	9
-	.word	.L122,.L123
+	.word	.L99,.L100
+	.byte	0,7
+	.word	.L119,.L125,.L126
+	.byte	9
+	.word	.L121,.L122
+	.byte	0,7
+	.word	.L119,.L127,.L128
+	.byte	9
+	.word	.L121,.L122
+	.byte	0,7
+	.word	.L96,.L9,.L118
+	.byte	9
+	.word	.L99,.L100
+	.byte	0,7
+	.word	.L106,.L131,.L132
+	.byte	9
+	.word	.L108,.L109
+	.byte	10
+	.word	.L110,.L133
+	.byte	0,7
+	.word	.L106,.L134,.L129
+	.byte	9
+	.word	.L108,.L109
+	.byte	0,7
+	.word	.L119,.L129,.L130
+	.byte	9
+	.word	.L121,.L122
+	.byte	0,7
+	.word	.L135,.L18,.L136
+	.byte	9
+	.word	.L137,.L138
 	.byte	11
-	.word	.L124,.L16,.L121
-	.byte	0,6
-	.word	.L125,.L19,.L126
+	.word	.L139,.L18,.L136
+	.byte	0,7
+	.word	.L140,.L21,.L141
 	.byte	9
-	.word	.L127,.L128
+	.word	.L142,.L143
 	.byte	11
-	.word	.L129,.L19,.L126
-	.byte	0,6
-	.word	.L130,.L24,.L131
+	.word	.L144,.L21,.L141
+	.byte	0,7
+	.word	.L145,.L26,.L146
 	.byte	9
-	.word	.L132,.L133
+	.word	.L147,.L148
 	.byte	11
-	.word	.L134,.L24,.L131
+	.word	.L149,.L26,.L146
 	.byte	0,0,0,0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('Port_Init')
 	.sect	'.debug_abbrev'
-.L43:
+.L49:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
-	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,29,1,49
-	.byte	16,17,1,18,1,0,0,7,11,1,49,16,17,1,18,1,0,0,8,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,9,5,0,49,16,2,6
-	.byte	0,0,10,11,0,49,16,85,6,0,0,11,11,0,49,16,17,1,18,1,0,0,0
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,7,29,1,49,16,17,1,18,1,0,0,8,11,1,49,16,17,1,18,1,0,0,9,5,0,49,16,2
+	.byte	6,0,0,10,11,0,49,16,85,6,0,0,11,11,0,49,16,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('Port_Init')
 	.sect	'.debug_line'
-.L44:
-	.word	.L185-.L184
-.L184:
+.L50:
+	.word	.L220-.L219
+.L219:
 	.half	3
-	.word	.L187-.L186
-.L186:
+	.word	.L222-.L221
+.L221:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'..\\mcal\\Port\\ssc\\src\\Port.c',0,0,0,0,0
-.L187:
-	.byte	5,5,7,0,5,2
-	.word	.L35
-	.byte	3,200,5,1,5,6,9
-	.half	.L188-.L35
-	.byte	3,90,1,5,15,9
-	.half	.L60-.L188
-	.byte	3,244,9,1,5,5,3,178,118,1,5,15,9
-	.half	.L82-.L60
-	.byte	3,241,10,1,5,21,3,143,117,1,5,15,9
-	.half	.L189-.L82
-	.byte	3,206,10,1,5,30,3,148,2,1,5,19,9
-	.half	.L83-.L189
+.L222:
+	.byte	5,6,7,0,5,2
+	.word	.L39
+	.byte	3,162,5,1,5,48,9
+	.half	.L181-.L39
+	.byte	3,3,1,5,3,3,12,1,5,38,7,9
+	.half	.L183-.L181
+	.byte	3,6,1,5,15,9
+	.half	.L180-.L183
+	.byte	3,1,1,5,3,9
+	.half	.L2-.L180
+	.byte	3,5,1,5,5,7,9
+	.half	.L223-.L2
+	.byte	3,11,1,5,15,9
+	.half	.L75-.L223
+	.byte	3,206,9,1,5,21,3,178,118,1,5,15,9
+	.half	.L97-.L75
+	.byte	3,241,10,1,5,30,3,241,1,1,5,15,9
+	.half	.L182-.L97
+	.byte	3,236,125,1,5,30,3,148,2,1,5,19,9
+	.half	.L98-.L182
 	.byte	3,241,124,1,5,30,3,143,3,1,5,15,9
-	.half	.L88-.L83
-	.byte	3,235,125,1,5,30,3,149,2,1,5,15,9
-	.half	.L190-.L88
-	.byte	3,144,126,1,5,70,3,225,126,1,5,15,9
-	.half	.L191-.L190
-	.byte	3,251,0,1,5,22,9
-	.half	.L89-.L191
-	.byte	3,147,2,1,5,21,9
-	.half	.L2-.L89
-	.byte	3,190,126,1,5,13,9
-	.half	.L192-.L2
-	.byte	1,5,53,7,9
-	.half	.L193-.L192
-	.byte	3,82,1,5,44,9
-	.half	.L194-.L193
-	.byte	1,5,80,9
-	.half	.L195-.L194
-	.byte	1,5,79,3,46,1,5,44,9
-	.half	.L3-.L195
-	.byte	3,174,127,1,5,55,9
-	.half	.L196-.L3
-	.byte	1,5,5,9
-	.half	.L4-.L196
-	.byte	3,141,127,1,5,29,7,9
-	.half	.L90-.L4
-	.byte	3,209,0,1,5,16,1,5,27,9
-	.half	.L197-.L90
-	.byte	1,5,7,9
-	.half	.L92-.L197
-	.byte	3,64,1,5,49,9
-	.half	.L198-.L92
-	.byte	3,247,2,1,5,21,9
-	.half	.L199-.L198
-	.byte	1,5,7,9
-	.half	.L200-.L199
-	.byte	3,147,125,1,5,9,7,9
-	.half	.L201-.L200
-	.byte	3,14,1,5,18,9
-	.half	.L6-.L201
-	.byte	3,4,1,9
-	.half	.L5-.L6
-	.byte	3,77,1,5,70,3,127,1,5,18,7,9
-	.half	.L77-.L5
-	.byte	3,179,125,1,5,15,9
-	.half	.L202-.L77
-	.byte	3,111,1,9
-	.half	.L96-.L202
-	.byte	3,217,3,1,5,18,9
-	.half	.L97-.L96
-	.byte	3,184,124,1,5,15,9
-	.half	.L105-.L97
-	.byte	3,228,4,1,9
-	.half	.L99-.L105
-	.byte	3,136,127,1,5,33,9
-	.half	.L100-.L99
-	.byte	3,165,124,1,9
-	.half	.L152-.L100
-	.byte	3,111,1,9
-	.half	.L153-.L152
-	.byte	3,17,1,5,15,9
-	.half	.L101-.L153
-	.byte	3,183,3,1,5,62,9
-	.half	.L102-.L101
-	.byte	3,215,124,1,5,18,9
-	.half	.L155-.L102
-	.byte	3,5,1,5,22,9
-	.half	.L110-.L155
-	.byte	3,238,4,1,5,83,9
-	.half	.L111-.L110
-	.byte	3,146,123,1,5,15,9
-	.half	.L112-.L111
-	.byte	3,193,4,1,5,83,3,191,123,1,5,69,9
-	.half	.L113-.L112
-	.byte	1,5,13,9
-	.half	.L7-.L113
-	.byte	3,245,3,1,5,21,9
-	.half	.L156-.L7
-	.byte	1,5,13,9
-	.half	.L203-.L156
-	.byte	1,5,53,7,9
-	.half	.L204-.L203
-	.byte	3,82,1,5,15,9
-	.half	.L157-.L204
-	.byte	1,5,44,9
-	.half	.L159-.L157
-	.byte	1,5,80,9
-	.half	.L205-.L159
-	.byte	1,5,79,3,46,1,5,44,9
-	.half	.L8-.L205
-	.byte	3,174,127,1,5,55,9
-	.half	.L161-.L8
-	.byte	1,5,5,9
-	.half	.L9-.L161
-	.byte	3,229,124,1,5,24,7,9
-	.half	.L103-.L9
-	.byte	3,4,1,5,61,9
-	.half	.L206-.L103
-	.byte	1,5,16,3,245,2,1,5,24,9
-	.half	.L117-.L206
-	.byte	3,139,125,1,5,39,9
-	.half	.L207-.L117
-	.byte	1,5,59,9
-	.half	.L208-.L207
-	.byte	1,5,29,9
-	.half	.L119-.L208
-	.byte	3,245,2,1,5,27,9
-	.half	.L163-.L119
-	.byte	1,5,13,9
-	.half	.L114-.L163
-	.byte	3,237,1,1,5,46,9
-	.half	.L209-.L114
-	.byte	1,5,79,1,5,53,9
-	.half	.L11-.L209
-	.byte	3,82,1,5,44,9
-	.half	.L165-.L11
-	.byte	1,5,80,9
-	.half	.L210-.L165
-	.byte	1,5,7,9
-	.half	.L12-.L210
-	.byte	3,240,123,1,5,22,7,9
-	.half	.L115-.L12
-	.byte	3,5,1,5,31,9
-	.half	.L211-.L115
-	.byte	3,1,1,5,7,9
-	.half	.L13-.L211
-	.byte	3,18,1,5,23,9
-	.half	.L212-.L13
-	.byte	3,118,1,5,34,9
-	.half	.L213-.L212
-	.byte	3,15,1,5,32,9
-	.half	.L214-.L213
-	.byte	1,5,68,9
-	.half	.L215-.L214
-	.byte	3,143,5,1,5,40,9
-	.half	.L216-.L215
-	.byte	1,5,7,9
-	.half	.L217-.L216
-	.byte	3,249,122,1,5,36,7,9
-	.half	.L218-.L217
-	.byte	3,5,1,5,34,9
-	.half	.L219-.L218
-	.byte	1,5,23,9
-	.half	.L14-.L219
-	.byte	3,130,5,1,5,14,3,128,123,1,5,40,9
-	.half	.L220-.L14
-	.byte	3,128,5,1,5,7,9
-	.half	.L221-.L220
-	.byte	3,132,123,1,5,36,7,9
-	.half	.L222-.L221
-	.byte	3,5,1,5,34,9
-	.half	.L223-.L222
-	.byte	1,5,23,9
-	.half	.L15-.L223
-	.byte	3,247,4,1,5,14,3,139,123,1,5,40,9
-	.half	.L224-.L15
-	.byte	3,245,4,1,5,7,9
+	.half	.L103-.L98
+	.byte	3,235,125,1,5,70,3,134,127,1,5,15,9
+	.half	.L224-.L103
+	.byte	3,159,1,1,9
 	.half	.L225-.L224
-	.byte	3,143,123,1,5,36,7,9
-	.half	.L226-.L225
-	.byte	3,2,1,5,34,9
+	.byte	3,92,1,5,22,9
+	.half	.L104-.L225
+	.byte	3,147,2,1,5,21,9
+	.half	.L4-.L104
+	.byte	3,190,126,1,5,13,9
+	.half	.L226-.L4
+	.byte	1,5,53,7,9
 	.half	.L227-.L226
-	.byte	1,5,21,9
-	.half	.L16-.L227
-	.byte	3,140,8,1,5,13,1,5,45,9
-	.half	.L228-.L16
-	.byte	1,5,49,3,1,1,5,15,9
-	.half	.L17-.L228
-	.byte	3,179,127,1,5,44,9
-	.half	.L229-.L17
-	.byte	1,5,15,9
-	.half	.L230-.L229
-	.byte	3,1,1,5,55,9
-	.half	.L231-.L230
-	.byte	3,127,1,5,7,9
-	.half	.L18-.L231
-	.byte	3,202,120,1,5,73,7,9
-	.half	.L121-.L18
-	.byte	3,17,1,5,71,9
-	.half	.L168-.L121
-	.byte	3,7,1,5,43,9
-	.half	.L20-.L168
-	.byte	3,5,1,5,29,9
-	.half	.L232-.L20
-	.byte	3,251,8,1,5,11,9
-	.half	.L233-.L232
-	.byte	3,133,119,1,5,13,7,9
-	.half	.L234-.L233
-	.byte	3,11,1,5,21,9
-	.half	.L21-.L234
-	.byte	3,3,1,5,22,9
-	.half	.L235-.L21
-	.byte	3,1,1,5,71,3,108,1,5,21,7,9
-	.half	.L19-.L235
-	.byte	3,219,8,1,5,13,1,5,14,9
-	.half	.L236-.L19
-	.byte	3,83,1,5,20,9
-	.half	.L237-.L236
-	.byte	3,1,1,5,43,9
-	.half	.L171-.L237
-	.byte	3,127,1,5,47,9
-	.half	.L238-.L171
-	.byte	3,1,1,5,49,3,45,1,5,14,9
-	.half	.L22-.L238
-	.byte	3,177,127,1,5,43,9
-	.half	.L239-.L22
-	.byte	1,5,14,9
-	.half	.L240-.L239
-	.byte	3,1,1,5,54,9
-	.half	.L172-.L240
-	.byte	3,127,1,5,7,9
-	.half	.L23-.L172
-	.byte	3,148,120,1,5,9,7,9
-	.half	.L126-.L23
-	.byte	3,31,1,5,72,9
-	.half	.L173-.L126
-	.byte	3,114,1,5,9,9
-	.half	.L241-.L173
-	.byte	3,14,1,5,21,9
-	.half	.L24-.L241
-	.byte	3,152,9,1,5,13,1,5,14,9
-	.half	.L242-.L24
-	.byte	3,196,0,1,5,20,9
-	.half	.L243-.L242
-	.byte	3,1,1,5,43,9
-	.half	.L175-.L243
-	.byte	3,127,1,5,14,9
-	.half	.L244-.L175
-	.byte	3,2,1,5,47,9
-	.half	.L245-.L244
-	.byte	3,127,1,5,50,3,188,127,1,5,15,9
-	.half	.L25-.L245
-	.byte	3,34,1,5,44,9
-	.half	.L246-.L25
-	.byte	1,5,55,9
-	.half	.L247-.L246
+	.byte	3,82,1,5,44,9
+	.half	.L228-.L227
+	.byte	1,5,80,9
+	.half	.L229-.L228
+	.byte	1,5,79,3,46,1,5,44,9
+	.half	.L5-.L229
+	.byte	3,174,127,1,5,55,9
+	.half	.L230-.L5
+	.byte	1,5,5,9
+	.half	.L6-.L230
+	.byte	3,141,127,1,5,29,7,9
+	.half	.L105-.L6
+	.byte	3,209,0,1,5,16,1,5,27,9
+	.half	.L231-.L105
 	.byte	1,5,7,9
-	.half	.L26-.L247
-	.byte	3,203,118,1,5,9,7,9
-	.half	.L131-.L26
-	.byte	3,31,1,5,73,9
-	.half	.L176-.L131
-	.byte	3,114,1,5,9,9
-	.half	.L248-.L176
+	.half	.L107-.L231
+	.byte	3,64,1,5,49,9
+	.half	.L232-.L107
+	.byte	3,247,2,1,5,21,9
+	.half	.L233-.L232
+	.byte	1,5,7,9
+	.half	.L234-.L233
+	.byte	3,147,125,1,5,9,7,9
+	.half	.L235-.L234
 	.byte	3,14,1,5,18,9
-	.half	.L27-.L248
+	.half	.L8-.L235
+	.byte	3,4,1,9
+	.half	.L7-.L8
+	.byte	3,77,1,5,70,3,127,1,5,18,7,9
+	.half	.L92-.L7
+	.byte	3,179,125,1,5,15,9
+	.half	.L236-.L92
+	.byte	3,111,1,9
+	.half	.L111-.L236
+	.byte	3,217,3,1,5,18,9
+	.half	.L112-.L111
+	.byte	3,184,124,1,5,15,9
+	.half	.L120-.L112
+	.byte	3,228,4,1,9
+	.half	.L114-.L120
+	.byte	3,136,127,1,5,33,9
+	.half	.L115-.L114
+	.byte	3,165,124,1,9
+	.half	.L184-.L115
+	.byte	3,111,1,9
+	.half	.L185-.L184
+	.byte	3,17,1,5,15,9
+	.half	.L116-.L185
+	.byte	3,183,3,1,5,62,9
+	.half	.L117-.L116
+	.byte	3,215,124,1,5,18,9
+	.half	.L187-.L117
+	.byte	3,5,1,5,22,9
+	.half	.L125-.L187
+	.byte	3,238,4,1,5,83,9
+	.half	.L126-.L125
+	.byte	3,146,123,1,5,15,9
+	.half	.L127-.L126
+	.byte	3,193,4,1,5,83,3,191,123,1,5,69,9
+	.half	.L128-.L127
+	.byte	1,5,13,9
+	.half	.L9-.L128
+	.byte	3,245,3,1,5,21,9
+	.half	.L188-.L9
+	.byte	1,5,13,9
+	.half	.L237-.L188
+	.byte	1,5,53,7,9
+	.half	.L238-.L237
+	.byte	3,82,1,5,15,9
+	.half	.L189-.L238
+	.byte	1,5,44,9
+	.half	.L191-.L189
+	.byte	1,5,80,9
+	.half	.L239-.L191
+	.byte	1,5,79,3,46,1,5,44,9
+	.half	.L10-.L239
+	.byte	3,174,127,1,5,55,9
+	.half	.L193-.L10
+	.byte	1,5,5,9
+	.half	.L11-.L193
+	.byte	3,229,124,1,5,24,7,9
+	.half	.L118-.L11
+	.byte	3,4,1,5,61,9
+	.half	.L240-.L118
+	.byte	1,5,16,3,245,2,1,5,24,9
+	.half	.L132-.L240
+	.byte	3,139,125,1,5,39,9
+	.half	.L241-.L132
+	.byte	1,5,59,9
+	.half	.L242-.L241
+	.byte	1,5,29,9
+	.half	.L134-.L242
+	.byte	3,245,2,1,5,27,9
+	.half	.L195-.L134
+	.byte	1,5,13,9
+	.half	.L129-.L195
+	.byte	3,237,1,1,5,46,9
+	.half	.L243-.L129
+	.byte	1,5,79,1,5,53,9
+	.half	.L13-.L243
+	.byte	3,82,1,5,44,9
+	.half	.L197-.L13
+	.byte	1,5,80,9
+	.half	.L244-.L197
+	.byte	1,5,7,9
+	.half	.L14-.L244
+	.byte	3,240,123,1,5,22,7,9
+	.half	.L130-.L14
+	.byte	3,5,1,5,31,9
+	.half	.L245-.L130
+	.byte	3,1,1,5,7,9
+	.half	.L15-.L245
+	.byte	3,18,1,5,23,9
+	.half	.L246-.L15
+	.byte	3,118,1,5,34,9
+	.half	.L247-.L246
+	.byte	3,15,1,5,32,9
+	.half	.L248-.L247
+	.byte	1,5,68,9
+	.half	.L249-.L248
+	.byte	3,143,5,1,5,40,9
+	.half	.L250-.L249
+	.byte	1,5,7,9
+	.half	.L251-.L250
+	.byte	3,249,122,1,5,36,7,9
+	.half	.L252-.L251
+	.byte	3,5,1,5,34,9
+	.half	.L253-.L252
+	.byte	1,5,23,9
+	.half	.L16-.L253
+	.byte	3,130,5,1,5,14,3,128,123,1,5,40,9
+	.half	.L254-.L16
+	.byte	3,128,5,1,5,7,9
+	.half	.L255-.L254
+	.byte	3,132,123,1,5,36,7,9
+	.half	.L256-.L255
+	.byte	3,5,1,5,34,9
+	.half	.L257-.L256
+	.byte	1,5,23,9
+	.half	.L17-.L257
+	.byte	3,247,4,1,5,14,3,139,123,1,5,40,9
+	.half	.L258-.L17
+	.byte	3,245,4,1,5,7,9
+	.half	.L259-.L258
+	.byte	3,143,123,1,5,36,7,9
+	.half	.L260-.L259
+	.byte	3,2,1,5,34,9
+	.half	.L261-.L260
+	.byte	1,5,21,9
+	.half	.L18-.L261
+	.byte	3,140,8,1,5,13,1,5,45,9
+	.half	.L262-.L18
+	.byte	1,5,49,3,1,1,5,15,9
+	.half	.L19-.L262
+	.byte	3,179,127,1,5,44,9
+	.half	.L263-.L19
+	.byte	1,5,15,9
+	.half	.L264-.L263
+	.byte	3,1,1,5,55,9
+	.half	.L265-.L264
+	.byte	3,127,1,5,7,9
+	.half	.L20-.L265
+	.byte	3,202,120,1,5,73,7,9
+	.half	.L136-.L20
+	.byte	3,17,1,5,71,9
+	.half	.L200-.L136
+	.byte	3,7,1,5,43,9
+	.half	.L22-.L200
+	.byte	3,5,1,5,29,9
+	.half	.L266-.L22
+	.byte	3,251,8,1,5,11,9
+	.half	.L267-.L266
+	.byte	3,133,119,1,5,13,7,9
+	.half	.L268-.L267
+	.byte	3,11,1,5,21,9
+	.half	.L23-.L268
+	.byte	3,3,1,5,22,9
+	.half	.L269-.L23
+	.byte	3,1,1,5,71,3,108,1,5,21,7,9
+	.half	.L21-.L269
+	.byte	3,219,8,1,5,13,1,5,14,9
+	.half	.L270-.L21
+	.byte	3,83,1,5,20,9
+	.half	.L271-.L270
+	.byte	3,1,1,5,43,9
+	.half	.L203-.L271
+	.byte	3,127,1,5,47,9
+	.half	.L272-.L203
+	.byte	3,1,1,5,49,3,45,1,5,14,9
+	.half	.L24-.L272
+	.byte	3,177,127,1,5,43,9
+	.half	.L273-.L24
+	.byte	1,5,14,9
+	.half	.L274-.L273
+	.byte	3,1,1,5,54,9
+	.half	.L204-.L274
+	.byte	3,127,1,5,7,9
+	.half	.L25-.L204
+	.byte	3,148,120,1,5,9,7,9
+	.half	.L141-.L25
+	.byte	3,31,1,5,72,9
+	.half	.L205-.L141
+	.byte	3,114,1,5,9,9
+	.half	.L275-.L205
+	.byte	3,14,1,5,21,9
+	.half	.L26-.L275
+	.byte	3,152,9,1,5,13,1,5,14,9
+	.half	.L276-.L26
+	.byte	3,196,0,1,5,20,9
+	.half	.L277-.L276
+	.byte	3,1,1,5,43,9
+	.half	.L207-.L277
+	.byte	3,127,1,5,14,9
+	.half	.L278-.L207
+	.byte	3,2,1,5,47,9
+	.half	.L279-.L278
+	.byte	3,127,1,5,50,3,188,127,1,5,15,9
+	.half	.L27-.L279
+	.byte	3,34,1,5,44,9
+	.half	.L280-.L27
+	.byte	1,5,55,9
+	.half	.L281-.L280
+	.byte	1,5,7,9
+	.half	.L28-.L281
+	.byte	3,203,118,1,5,9,7,9
+	.half	.L146-.L28
+	.byte	3,31,1,5,73,9
+	.half	.L208-.L146
+	.byte	3,114,1,5,9,9
+	.half	.L282-.L208
+	.byte	3,14,1,5,18,9
+	.half	.L29-.L282
 	.byte	3,4,1,5,81,9
-	.half	.L10-.L27
+	.half	.L12-.L29
 	.byte	3,136,126,1,5,69,9
-	.half	.L249-.L10
-	.byte	1,5,1,9
-	.half	.L61-.L249
-	.byte	3,230,120,1,7,9
-	.half	.L46-.L61
+	.half	.L283-.L12
+	.byte	1,5,5,9
+	.half	.L76-.L283
+	.byte	3,227,120,1,5,23,9
+	.half	.L284-.L76
+	.byte	1,5,21,1,5,1,9
+	.half	.L3-.L284
+	.byte	3,3,1,7,9
+	.half	.L52-.L3
 	.byte	0,1,1
-.L185:
+.L220:
 	.sdecl	'.debug_ranges',debug,cluster('Port_Init')
 	.sect	'.debug_ranges'
-.L45:
-	.word	-1,.L35,0,.L46-.L35,0,0
-.L87:
-	.word	-1,.L35,.L82-.L35,.L83-.L35,.L88-.L35,.L89-.L35,.L2-.L35,.L90-.L35,0,0
-.L98:
-	.word	-1,.L35,.L96-.L35,.L97-.L35,.L99-.L35,.L100-.L35,.L101-.L35,.L102-.L35,.L7-.L35,.L103-.L35,0,0
-.L109:
-	.word	-1,.L35,.L105-.L35,.L99-.L35,.L110-.L35,.L111-.L35,.L112-.L35,.L113-.L35,.L114-.L35,.L115-.L35,0,0
-.L118:
-	.word	-1,.L35,.L116-.L35,.L117-.L35,.L119-.L35,.L114-.L35,0,0
+.L51:
+	.word	-1,.L39,0,.L52-.L39,0,0
+.L102:
+	.word	-1,.L39,.L97-.L39,.L98-.L39,.L103-.L39,.L104-.L39,.L4-.L39,.L105-.L39,0,0
+.L113:
+	.word	-1,.L39,.L111-.L39,.L112-.L39,.L114-.L39,.L115-.L39,.L116-.L39,.L117-.L39,.L9-.L39,.L118-.L39,0,0
+.L124:
+	.word	-1,.L39,.L120-.L39,.L114-.L39,.L125-.L39,.L126-.L39,.L127-.L39,.L128-.L39,.L129-.L39,.L130-.L39,0,0
+.L133:
+	.word	-1,.L39,.L131-.L39,.L132-.L39,.L134-.L39,.L129-.L39,0,0
 	.sdecl	'.debug_info',debug,cluster('Port_RefreshPortDirection')
 	.sect	'.debug_info'
-.L47:
-	.word	381
+.L53:
+	.word	441
 	.half	3
-	.word	.L48
+	.word	.L54
 	.byte	4,1
 	.byte	'..\\mcal\\Port\\ssc\\src\\Port.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
-	.word	.L50,.L49
+	.word	.L56,.L55
 	.byte	2
-	.word	.L38
+	.word	.L44
 	.byte	3
 	.byte	'Port_RefreshPortDirection',0,1,226,7,6,1,1,1
-	.word	.L37,.L135,.L36
+	.word	.L41,.L150,.L40
 	.byte	4
-	.word	.L37,.L135
+	.word	.L41,.L150
 	.byte	5
 	.byte	'LoopCtr',0,1,228,7,25
-	.word	.L67,.L136
+	.word	.L82,.L151
 	.byte	5
 	.byte	'PortNumber',0,1,230,7,25
-	.word	.L67,.L137
+	.word	.L82,.L152
 	.byte	5
 	.byte	'ConfigIndex',0,1,231,7,25
-	.word	.L67,.L138
+	.word	.L82,.L153
 	.byte	5
 	.byte	'IocrDataPtr',0,1,238,7,26
-	.word	.L139,.L140
+	.word	.L154,.L155
 	.byte	5
 	.byte	'IocrRegPtr',0,1,239,7,26
-	.word	.L141,.L142
+	.word	.L156,.L157
 	.byte	6
-	.word	.L81,.L143,.L144
+	.word	.L158,.L41,.L159
 	.byte	7
-	.word	.L84,.L145
+	.word	.L160,.L161
 	.byte	8
-	.word	.L86,.L146
-	.byte	0,6
-	.word	.L81,.L147,.L148
+	.word	.L162,.L41,.L159
+	.byte	5
+	.byte	'ErrStatus',0,1,199,28,9
+	.word	.L72,.L163
+	.byte	0,0,6
+	.word	.L96,.L164,.L165
 	.byte	7
-	.word	.L84,.L145
+	.word	.L99,.L166
+	.byte	9
+	.word	.L101,.L167
 	.byte	0,6
-	.word	.L81,.L28,.L149
+	.word	.L96,.L168,.L169
 	.byte	7
-	.word	.L84,.L145
+	.word	.L99,.L166
+	.byte	0,6
+	.word	.L96,.L170,.L171
+	.byte	7
+	.word	.L99,.L166
 	.byte	0,0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('Port_RefreshPortDirection')
 	.sect	'.debug_abbrev'
-.L48:
+.L54:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,6,29,1
-	.byte	49,16,17,1,18,1,0,0,7,5,0,49,16,2,6,0,0,8,11,0,49,16,85,6,0,0,0
+	.byte	49,16,17,1,18,1,0,0,7,5,0,49,16,2,6,0,0,8,11,1,49,16,17,1,18,1,0,0,9,11,0,49,16,85,6,0,0,0
 	.sdecl	'.debug_line',debug,cluster('Port_RefreshPortDirection')
 	.sect	'.debug_line'
-.L49:
-	.word	.L251-.L250
-.L250:
+.L55:
+	.word	.L286-.L285
+.L285:
 	.half	3
-	.word	.L253-.L252
-.L252:
+	.word	.L288-.L287
+.L287:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'..\\mcal\\Port\\ssc\\src\\Port.c',0,0,0,0,0
-.L253:
-	.byte	5,16,7,0,5,2
-	.word	.L37
-	.byte	3,131,8,1,5,30,3,130,10,1,5,15,9
-	.half	.L143-.L37
-	.byte	3,145,126,1,5,21,3,146,120,1,5,17,9
-	.half	.L144-.L143
-	.byte	3,92,1,5,30,3,129,10,1,5,21,9
-	.half	.L147-.L144
-	.byte	3,226,126,1,3,193,119,1,5,15,9
-	.half	.L254-.L147
-	.byte	3,145,8,1,5,52,3,245,120,1,5,15,9
-	.half	.L255-.L254
+.L288:
+	.byte	5,7,7,0,5,2
+	.word	.L41
+	.byte	3,202,28,1,5,19,9
+	.half	.L289-.L41
+	.byte	3,124,1,5,3,9
+	.half	.L210-.L289
+	.byte	3,4,1,5,25,7,9
+	.half	.L290-.L210
+	.byte	3,5,1,5,32,9
+	.half	.L291-.L290
+	.byte	1,5,17,9
+	.half	.L292-.L291
+	.byte	3,1,1,5,3,9
+	.half	.L30-.L292
+	.byte	3,175,107,1,5,16,7,9
+	.half	.L159-.L30
+	.byte	3,4,1,5,30,3,130,10,1,5,15,9
+	.half	.L164-.L159
+	.byte	3,180,126,1,5,21,3,239,119,1,5,15,9
+	.half	.L293-.L164
+	.byte	3,238,7,1,5,30,3,239,1,1,5,17,9
+	.half	.L165-.L293
+	.byte	3,255,117,1,5,21,3,36,1,9
+	.half	.L168-.L165
+	.byte	3,191,8,1,5,52,3,199,120,1,5,15,9
+	.half	.L294-.L168
 	.byte	3,140,7,1,9
-	.half	.L256-.L255
-	.byte	3,91,1,9
-	.half	.L257-.L256
-	.byte	3,1,1,5,22,9
-	.half	.L148-.L257
-	.byte	3,238,1,1,5,13,9
-	.half	.L28-.L148
-	.byte	3,227,126,1,5,53,7,9
-	.half	.L258-.L28
+	.half	.L295-.L294
+	.byte	3,91,1,5,22,9
+	.half	.L169-.L295
+	.byte	3,239,1,1,5,15,9
+	.half	.L170-.L169
+	.byte	3,146,126,1,5,13,9
+	.half	.L32-.L170
+	.byte	3,209,0,1,5,53,7,9
+	.half	.L296-.L32
 	.byte	3,82,1,5,44,9
-	.half	.L259-.L258
+	.half	.L297-.L296
 	.byte	1,5,80,9
-	.half	.L260-.L259
+	.half	.L298-.L297
 	.byte	1,5,79,3,46,1,5,44,9
-	.half	.L29-.L260
+	.half	.L33-.L298
 	.byte	3,174,127,1,5,55,9
-	.half	.L261-.L29
+	.half	.L299-.L33
 	.byte	1,5,7,9
-	.half	.L30-.L261
+	.half	.L34-.L299
 	.byte	3,252,119,1,5,36,7,9
-	.half	.L149-.L30
+	.half	.L171-.L34
 	.byte	3,23,1,5,58,9
-	.half	.L262-.L149
+	.half	.L300-.L171
 	.byte	1,5,16,3,203,7,1,5,56,9
-	.half	.L263-.L262
+	.half	.L301-.L300
 	.byte	3,181,120,1,5,29,9
-	.half	.L178-.L263
+	.half	.L211-.L301
 	.byte	3,203,7,1,5,58,3,183,121,1,5,27,9
-	.half	.L264-.L178
+	.half	.L302-.L211
 	.byte	3,201,6,1,5,17,9
-	.half	.L265-.L264
+	.half	.L303-.L302
 	.byte	3,136,121,1,5,73,9
-	.half	.L179-.L265
+	.half	.L212-.L303
 	.byte	3,103,1,5,49,9
-	.half	.L32-.L179
+	.half	.L36-.L212
 	.byte	3,162,9,1,3,1,1,5,59,9
-	.half	.L266-.L32
+	.half	.L304-.L36
 	.byte	3,127,1,5,11,9
-	.half	.L267-.L266
+	.half	.L305-.L304
 	.byte	3,253,118,1,5,29,7,9
-	.half	.L268-.L267
+	.half	.L306-.L305
 	.byte	3,20,1,5,27,9
-	.half	.L269-.L268
+	.half	.L307-.L306
 	.byte	1,5,18,9
-	.half	.L33-.L269
+	.half	.L37-.L307
 	.byte	3,20,1,5,21,3,113,1,5,22,9
-	.half	.L270-.L33
+	.half	.L308-.L37
 	.byte	3,2,1,5,58,3,14,1,5,20,7,9
-	.half	.L271-.L270
+	.half	.L309-.L308
 	.byte	3,1,1,5,17,9
-	.half	.L31-.L271
+	.half	.L35-.L309
 	.byte	3,2,1,5,52,3,1,1,5,1,7,9
-	.half	.L272-.L31
+	.half	.L31-.L35
 	.byte	3,2,1,7,9
-	.half	.L51-.L272
+	.half	.L57-.L31
 	.byte	0,1,1
-.L251:
+.L286:
 	.sdecl	'.debug_ranges',debug,cluster('Port_RefreshPortDirection')
 	.sect	'.debug_ranges'
-.L50:
-	.word	-1,.L37,0,.L51-.L37,0,0
-.L146:
-	.word	-1,.L37,.L143-.L37,.L144-.L37,.L147-.L37,.L148-.L37,.L28-.L37,.L149-.L37,0,0
+.L56:
+	.word	-1,.L41,0,.L57-.L41,0,0
+.L167:
+	.word	-1,.L41,.L164-.L41,.L165-.L41,.L168-.L41,.L169-.L41,.L170-.L41,.L171-.L41,0,0
+	.sdecl	'.debug_info',debug,cluster('Port_lReportError')
+	.sect	'.debug_info'
+.L58:
+	.word	214
+	.half	3
+	.word	.L59
+	.byte	4,1
+	.byte	'..\\mcal\\Port\\ssc\\src\\Port.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
+	.word	.L61,.L60
+	.byte	2
+	.word	.L44
+	.byte	3
+	.byte	'Port_lReportError',0,1,156,23,13,1,1
+	.word	.L43,.L172,.L42
+	.byte	4
+	.byte	'ApiId',0,1,156,23,43
+	.word	.L173,.L174
+	.byte	4
+	.byte	'ErrorId',0,1,156,23,62
+	.word	.L175,.L176
+	.byte	5
+	.word	.L43,.L172
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Port_lReportError')
+	.sect	'.debug_abbrev'
+.L59:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Port_lReportError')
+	.sect	'.debug_line'
+.L60:
+	.word	.L311-.L310
+.L310:
+	.half	3
+	.word	.L313-.L312
+.L312:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\mcal\\Port\\ssc\\src\\Port.c',0,0,0,0,0
+.L313:
+	.byte	5,13,7,0,5,2
+	.word	.L43
+	.byte	3,155,23,1,5,25,9
+	.half	.L314-.L43
+	.byte	3,9,1,5,49,9
+	.half	.L213-.L314
+	.byte	1,5,26,9
+	.half	.L214-.L213
+	.byte	3,1,1,5,1,7,9
+	.half	.L62-.L214
+	.byte	3,11,0,1,1
+.L311:
+	.sdecl	'.debug_ranges',debug,cluster('Port_lReportError')
+	.sect	'.debug_ranges'
+.L61:
+	.word	-1,.L43,0,.L62-.L43,0,0
 	.sdecl	'.debug_info',debug,cluster('Port_kAvailablePins')
 	.sect	'.debug_info'
-.L52:
+.L63:
 	.word	154
 	.half	3
-	.word	.L53
+	.word	.L64
 	.byte	4,1
 	.byte	'..\\mcal\\Port\\ssc\\src\\Port.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1,2
-	.word	.L38
+	.word	.L44
 	.byte	3
 	.byte	'Port_kAvailablePins',0,1,231,2,21
-	.word	.L150
+	.word	.L177
 	.byte	5,3
 	.word	Port_kAvailablePins
 	.byte	0
 	.sdecl	'.debug_abbrev',debug,cluster('Port_kAvailablePins')
 	.sect	'.debug_abbrev'
-.L53:
+.L64:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
 	.sdecl	'.debug_info',debug,cluster('Port_kConfigPtr')
 	.sect	'.debug_info'
-.L54:
+.L65:
 	.word	150
 	.half	3
-	.word	.L55
+	.word	.L66
 	.byte	4,1
 	.byte	'..\\mcal\\Port\\ssc\\src\\Port.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1,2
-	.word	.L38
+	.word	.L44
 	.byte	3
 	.byte	'Port_kConfigPtr',0,1,172,3,33
-	.word	.L151
+	.word	.L178
 	.byte	5,3
 	.word	Port_kConfigPtr
 	.byte	0
 	.sdecl	'.debug_abbrev',debug,cluster('Port_kConfigPtr')
 	.sect	'.debug_abbrev'
-.L55:
+.L66:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
+	.sdecl	'.debug_info',debug,cluster('Port_InitStatus')
+	.sect	'.debug_info'
+.L67:
+	.word	150
+	.half	3
+	.word	.L68
+	.byte	4,1
+	.byte	'..\\mcal\\Port\\ssc\\src\\Port.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1,2
+	.word	.L44
+	.byte	3
+	.byte	'Port_InitStatus',0,1,206,3,14
+	.word	.L72
+	.byte	5,3
+	.word	Port_InitStatus
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('Port_InitStatus')
+	.sect	'.debug_abbrev'
+.L68:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
 	.sdecl	'.debug_loc',debug,cluster('Port_Init')
 	.sect	'.debug_loc'
-.L66:
-	.word	-1,.L35,.L119-.L35,.L20-.L35
+.L81:
+	.word	-1,.L39,.L134-.L39,.L22-.L39
 	.half	1
 	.byte	109
 	.word	0,0
-.L69:
-	.word	-1,.L35,.L96-.L35,.L56-.L35
+.L84:
+	.word	-1,.L39,.L111-.L39,.L3-.L39
 	.half	1
 	.byte	88
 	.word	0,0
-.L80:
-	.word	-1,.L35,.L82-.L35,.L96-.L35
+.L95:
+	.word	-1,.L39,.L97-.L39,.L111-.L39
 	.half	1
 	.byte	88
 	.word	0,0
-.L58:
-	.word	-1,.L35,0,.L2-.L35
+.L71:
+	.word	-1,.L39,0,.L180-.L39
 	.half	1
 	.byte	100
-	.word	0,0
-.L64:
-	.word	0,0
-.L73:
-	.word	-1,.L35,.L153-.L35,.L56-.L35
+	.word	.L181-.L39,.L182-.L39
 	.half	1
 	.byte	108
 	.word	0,0
-.L75:
-	.word	-1,.L35,.L168-.L35,.L19-.L35
+.L79:
+	.word	0,0
+.L73:
+	.word	-1,.L39,.L183-.L39,.L180-.L39
+	.half	1
+	.byte	84
+	.word	.L2-.L39,.L4-.L39
+	.half	1
+	.byte	84
+	.word	0,0
+.L88:
+	.word	-1,.L39,.L185-.L39,.L3-.L39
+	.half	1
+	.byte	108
+	.word	0,0
+.L90:
+	.word	-1,.L39,.L200-.L39,.L21-.L39
 	.half	1
 	.byte	111
-	.word	.L169-.L35,.L21-.L35
+	.word	.L201-.L39,.L23-.L39
 	.half	1
 	.byte	100
 	.word	0,0
-.L70:
-	.word	-1,.L35,.L152-.L35,.L7-.L35
+.L85:
+	.word	-1,.L39,.L184-.L39,.L9-.L39
 	.half	1
 	.byte	98
-	.word	.L101-.L35,.L56-.L35
+	.word	.L116-.L39,.L3-.L39
 	.half	2
 	.byte	145,116
-	.word	.L173-.L35,.L24-.L35
+	.word	.L205-.L39,.L26-.L39
 	.half	1
 	.byte	111
 	.word	0,0
-.L71:
-	.word	-1,.L35,.L154-.L35,.L112-.L35
+.L86:
+	.word	-1,.L39,.L186-.L39,.L127-.L39
 	.half	1
 	.byte	111
-	.word	.L155-.L35,.L56-.L35
+	.word	.L187-.L39,.L3-.L39
 	.half	2
 	.byte	145,112
-	.word	.L176-.L35,.L27-.L35
+	.word	.L208-.L39,.L29-.L39
 	.half	1
 	.byte	111
 	.word	0,0
-.L85:
+.L100:
 	.word	0,0
-.L107:
+.L122:
 	.word	0,0
-.L123:
+.L138:
 	.word	0,0
-.L128:
+.L143:
 	.word	0,0
-.L133:
+.L148:
 	.word	0,0
-.L68:
-	.word	-1,.L35,.L110-.L35,.L56-.L35
+.L83:
+	.word	-1,.L39,.L125-.L39,.L3-.L39
 	.half	2
 	.byte	145,124
-	.word	.L156-.L35,.L157-.L35
+	.word	.L188-.L39,.L189-.L39
 	.half	5
 	.byte	144,32,157,32,0
-	.word	.L158-.L35,.L159-.L35
+	.word	.L190-.L39,.L191-.L39
 	.half	1
 	.byte	95
-	.word	.L8-.L35,.L160-.L35
+	.word	.L10-.L39,.L192-.L39
 	.half	5
 	.byte	144,32,157,32,0
-	.word	.L160-.L35,.L161-.L35
+	.word	.L192-.L39,.L193-.L39
 	.half	1
 	.byte	95
-	.word	.L162-.L35,.L163-.L35
+	.word	.L194-.L39,.L195-.L39
 	.half	1
 	.byte	95
-	.word	.L164-.L35,.L165-.L35
+	.word	.L196-.L39,.L197-.L39
 	.half	1
 	.byte	95
-	.word	.L166-.L35,.L167-.L35
+	.word	.L198-.L39,.L199-.L39
 	.half	1
 	.byte	95
-	.word	.L170-.L35,.L171-.L35
+	.word	.L202-.L39,.L203-.L39
 	.half	1
 	.byte	95
-	.word	.L22-.L35,.L172-.L35
+	.word	.L24-.L39,.L204-.L39
 	.half	1
 	.byte	95
-	.word	.L174-.L35,.L175-.L35
+	.word	.L206-.L39,.L207-.L39
 	.half	1
 	.byte	95
-	.word	.L25-.L35,.L26-.L35
+	.word	.L27-.L39,.L28-.L39
 	.half	1
 	.byte	95
-	.word	.L177-.L35,.L56-.L35
+	.word	.L209-.L39,.L3-.L39
 	.half	1
 	.byte	95
 	.word	0,0
-.L79:
-	.word	-1,.L35,.L88-.L35,.L100-.L35
+.L94:
+	.word	-1,.L39,.L103-.L39,.L115-.L39
 	.half	1
 	.byte	89
 	.word	0,0
-.L94:
+.L109:
 	.word	0,0
-.L34:
-	.word	-1,.L35,0,.L60-.L35
+.L38:
+	.word	-1,.L39,0,.L179-.L39
 	.half	2
 	.byte	138,0
-	.word	.L60-.L35,.L56-.L35
+	.word	.L179-.L39,.L69-.L39
 	.half	2
 	.byte	138,24
-	.word	.L56-.L35,.L56-.L35
+	.word	.L69-.L39,.L69-.L39
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L72:
+.L87:
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('Port_RefreshPortDirection')
 	.sect	'.debug_loc'
-.L138:
-	.word	-1,.L37,.L147-.L37,.L135-.L37
+.L161:
+	.word	0,0
+.L153:
+	.word	-1,.L41,.L168-.L41,.L31-.L41
 	.half	1
 	.byte	83
 	.word	0,0
-.L140:
-	.word	-1,.L37,.L178-.L37,.L31-.L37
+.L163:
+	.word	-1,.L41,.L210-.L41,.L32-.L41
+	.half	1
+	.byte	95
+	.word	0,0
+.L155:
+	.word	-1,.L41,.L211-.L41,.L35-.L41
 	.half	1
 	.byte	101
 	.word	0,0
-.L142:
-	.word	-1,.L37,.L32-.L37,.L31-.L37
+.L157:
+	.word	-1,.L41,.L36-.L41,.L35-.L41
 	.half	1
 	.byte	102
 	.word	0,0
-.L136:
-	.word	-1,.L37,.L179-.L37,.L31-.L37
+.L151:
+	.word	-1,.L41,.L212-.L41,.L35-.L41
 	.half	1
 	.byte	81
 	.word	0,0
-.L145:
+.L166:
 	.word	0,0
-.L137:
-	.word	-1,.L37,.L143-.L37,.L135-.L37
+.L152:
+	.word	-1,.L41,.L164-.L41,.L31-.L41
 	.half	1
 	.byte	82
 	.word	0,0
-.L36:
-	.word	-1,.L37,0,.L135-.L37
+.L40:
+	.word	-1,.L41,0,.L150-.L41
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Port_lReportError')
+	.sect	'.debug_loc'
+.L174:
+	.word	-1,.L43,0,.L213-.L43
+	.half	1
+	.byte	84
+	.word	.L214-.L43,.L172-.L43
+	.half	1
+	.byte	86
+	.word	0,0
+.L176:
+	.word	-1,.L43,0,.L214-.L43
+	.half	1
+	.byte	85
+	.word	.L214-.L43,.L172-.L43
+	.half	1
+	.byte	87
+	.word	0,0
+.L42:
+	.word	-1,.L43,0,.L172-.L43
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_frame',debug
 	.sect	'.debug_frame'
-.L273:
+.L315:
 	.word	48
 	.word	-1
 	.byte	3,0,2,1,27,12,26,0,8,27,8,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36,8,37,8,38
@@ -6847,579 +7695,21 @@ Port_kConfigPtr:	.type	object
 	.sdecl	'.debug_frame',debug,cluster('Port_Init')
 	.sect	'.debug_frame'
 	.word	36
-	.word	.L273,.L35,.L56-.L35
+	.word	.L315,.L39,.L69-.L39
 	.byte	4
-	.word	(.L60-.L35)/2
+	.word	(.L179-.L39)/2
 	.byte	19,24,22,26,3,19,138,24,4
-	.word	(.L56-.L60)/2
+	.word	(.L69-.L179)/2
 	.byte	19,0,8,26,0,0
 	.sdecl	'.debug_frame',debug,cluster('Port_RefreshPortDirection')
 	.sect	'.debug_frame'
-	.word	16
-	.word	.L273,.L37,.L135-.L37
-	.byte	8,19,0,0
+	.word	12
+	.word	.L315,.L41,.L150-.L41
+	.sdecl	'.debug_frame',debug,cluster('Port_lReportError')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L315,.L43,.L172-.L43
 
-; ..\mcal\Port\ssc\src\Port.c	  3105             );
-; ..\mcal\Port\ssc\src\Port.c	  3106    return(RetVal);
-; ..\mcal\Port\ssc\src\Port.c	  3107  }
-; ..\mcal\Port\ssc\src\Port.c	  3108  
-; ..\mcal\Port\ssc\src\Port.c	  3109  #if(PORT_INIT_CHECK_API==STD_ON)
-; ..\mcal\Port\ssc\src\Port.c	  3110  /*******************************************************************************
-; ..\mcal\Port\ssc\src\Port.c	  3111  ** Traceability      : [cover parentID={7B5DEFB5-5759-49d1-8475-3278D54022D8},**
-; ..\mcal\Port\ssc\src\Port.c	  3112  **                      {696A0D06-6692-44dc-B15B-AF178D0FA750} ]              **
-; ..\mcal\Port\ssc\src\Port.c	  3113  **                     [/cover]                                               **
-; ..\mcal\Port\ssc\src\Port.c	  3114  **                                                                            **
-; ..\mcal\Port\ssc\src\Port.c	  3115  ** Syntax           :Std_ReturnType Port_InitCheck (const Port_ConfigType*    **
-; ..\mcal\Port\ssc\src\Port.c	  3116  **                   const ConfigPtr)                                         **
-; ..\mcal\Port\ssc\src\Port.c	  3117  **                                                                            **
-; ..\mcal\Port\ssc\src\Port.c	  3118  ** Service ID       : 0x05                                                    **
-; ..\mcal\Port\ssc\src\Port.c	  3119  **                                                                            **
-; ..\mcal\Port\ssc\src\Port.c	  3120  ** Sync/Async       : Synchronous                                             **
-; ..\mcal\Port\ssc\src\Port.c	  3121  **                                                                            **
-; ..\mcal\Port\ssc\src\Port.c	  3122  ** Reentrancy       : Non Reentrant                                           **
-; ..\mcal\Port\ssc\src\Port.c	  3123  **                                                                            **
-; ..\mcal\Port\ssc\src\Port.c	  3124  ** Parameters(in)   :ConfigPtr - Pointer to Port configuration                **
-; ..\mcal\Port\ssc\src\Port.c	  3125  **                                                                            **
-; ..\mcal\Port\ssc\src\Port.c	  3126  ** Parameters (out) :                                                         **
-; ..\mcal\Port\ssc\src\Port.c	  3127  **                                                                            **
-; ..\mcal\Port\ssc\src\Port.c	  3128  ** Return value     : E_OK - Operation successfully performed                 **
-; ..\mcal\Port\ssc\src\Port.c	  3129  **                    E_NOT_OK - Operation failed eg. Due to invalid          **
-; ..\mcal\Port\ssc\src\Port.c	  3130  **                      parameters.                                           **
-; ..\mcal\Port\ssc\src\Port.c	  3131  **                                                                            **
-; ..\mcal\Port\ssc\src\Port.c	  3132  ** Description      : This API checks the initialization values after PORT is **
-; ..\mcal\Port\ssc\src\Port.c	  3133  **                    initialized. It should be called after Port_Init to     **
-; ..\mcal\Port\ssc\src\Port.c	  3134  **                    check the initialization values.                        **
-; ..\mcal\Port\ssc\src\Port.c	  3135  *******************************************************************************/
-; ..\mcal\Port\ssc\src\Port.c	  3136  /* [cover parentID={41FC0F28-97F4-4d16-8C00-6F654869397F}][/cover] */
-; ..\mcal\Port\ssc\src\Port.c	  3137  Std_ReturnType Port_InitCheck (const Port_ConfigType* const ConfigPtr)
-; ..\mcal\Port\ssc\src\Port.c	  3138  {
-; ..\mcal\Port\ssc\src\Port.c	  3139    Std_ReturnType ErrorFlag = E_NOT_OK;
-; ..\mcal\Port\ssc\src\Port.c	  3140    /* [cover parentID={3E9E6763-2D6B-4e4b-8565-E2D23E1FE9D0}]
-; ..\mcal\Port\ssc\src\Port.c	  3141    check if port is initialised
-; ..\mcal\Port\ssc\src\Port.c	  3142    [/cover] */
-; ..\mcal\Port\ssc\src\Port.c	  3143    if((Port_InitStatus == PORT_INITIALIZED ) && (ConfigPtr ==Port_kConfigPtr))
-; ..\mcal\Port\ssc\src\Port.c	  3144    {
-; ..\mcal\Port\ssc\src\Port.c	  3145      ErrorFlag = Port_lPDRCheck(ConfigPtr);
-; ..\mcal\Port\ssc\src\Port.c	  3146      /* [cover parentID={29FAFD9A-63A7-4cb3-9DB5-B2833B579E59}]
-; ..\mcal\Port\ssc\src\Port.c	  3147      [/cover] */
-; ..\mcal\Port\ssc\src\Port.c	  3148      if(ErrorFlag == E_OK)
-; ..\mcal\Port\ssc\src\Port.c	  3149      {
-; ..\mcal\Port\ssc\src\Port.c	  3150       ErrorFlag = Port_lIOInitCheck(ConfigPtr);
-; ..\mcal\Port\ssc\src\Port.c	  3151      }
-; ..\mcal\Port\ssc\src\Port.c	  3152    }
-; ..\mcal\Port\ssc\src\Port.c	  3153   return ErrorFlag;
-; ..\mcal\Port\ssc\src\Port.c	  3154  }
-; ..\mcal\Port\ssc\src\Port.c	  3155  /*******************************************************************************
-; ..\mcal\Port\ssc\src\Port.c	  3156  ** Traceability     : [cover parentID={6F886031-4EFD-4741-9C03-763AD16D28FF}] **
-; ..\mcal\Port\ssc\src\Port.c	  3157  **                                                                            **
-; ..\mcal\Port\ssc\src\Port.c	  3158  ** Syntax           :LOCAL_INLINE  Std_ReturnType Port_lPDRCheck              **
-; ..\mcal\Port\ssc\src\Port.c	  3159  **                   (                                                        **
-; ..\mcal\Port\ssc\src\Port.c	  3160  **                   const Port_ConfigType* const ConfigPtr)                  **
-; ..\mcal\Port\ssc\src\Port.c	  3161  **                   )                                                        **
-; ..\mcal\Port\ssc\src\Port.c	  3162  **                                                                            **
-; ..\mcal\Port\ssc\src\Port.c	  3163  **  [/cover]                                                                  **
-; ..\mcal\Port\ssc\src\Port.c	  3164  ** Service ID       : NA                                                      **
-; ..\mcal\Port\ssc\src\Port.c	  3165  **                                                                            **
-; ..\mcal\Port\ssc\src\Port.c	  3166  ** Sync/Async       : Synchronous                                             **
-; ..\mcal\Port\ssc\src\Port.c	  3167  **                                                                            **
-; ..\mcal\Port\ssc\src\Port.c	  3168  ** Reentrancy       : Non Reentrant                                           **
-; ..\mcal\Port\ssc\src\Port.c	  3169  **                                                                            **
-; ..\mcal\Port\ssc\src\Port.c	  3170  ** Parameters(in)   : ConfigPtr - Pointer to Port configuration               **
-; ..\mcal\Port\ssc\src\Port.c	  3171  **                                                                            **
-; ..\mcal\Port\ssc\src\Port.c	  3172  ** Parameters (out) :                                                         **
-; ..\mcal\Port\ssc\src\Port.c	  3173  **                                                                            **
-; ..\mcal\Port\ssc\src\Port.c	  3174  ** Return value     : E_OK - Operation successfully performed                 **
-; ..\mcal\Port\ssc\src\Port.c	  3175  **                    E_NOT_OK - Operation failed                             **
-; ..\mcal\Port\ssc\src\Port.c	  3176  **                                                                            **
-; ..\mcal\Port\ssc\src\Port.c	  3177  **                                                                            **
-; ..\mcal\Port\ssc\src\Port.c	  3178  ** Description      : This API checks the initialization values after PORT is **
-; ..\mcal\Port\ssc\src\Port.c	  3179  **                   initialized. It should be called after Port_Init to check**
-; ..\mcal\Port\ssc\src\Port.c	  3180  **                    the initialization values.                              **
-; ..\mcal\Port\ssc\src\Port.c	  3181  *******************************************************************************/
-; ..\mcal\Port\ssc\src\Port.c	  3182  LOCAL_INLINE Std_ReturnType Port_lPDRCheck(const Port_ConfigType* const ConfigPtr)
-; ..\mcal\Port\ssc\src\Port.c	  3183  {
-; ..\mcal\Port\ssc\src\Port.c	  3184    /* Each Port Number for the hardware unit  */
-; ..\mcal\Port\ssc\src\Port.c	  3185    uint32                  PortNumber;
-; ..\mcal\Port\ssc\src\Port.c	  3186    Ifx_P            const *PortAddressPtr;
-; ..\mcal\Port\ssc\src\Port.c	  3187    uint32                  ConfigIndex;
-; ..\mcal\Port\ssc\src\Port.c	  3188    uint32 SfrVal;
-; ..\mcal\Port\ssc\src\Port.c	  3189    uint32 CfgVal;
-; ..\mcal\Port\ssc\src\Port.c	  3190    volatile uint32 CompareFlag = 0xFFFFFFFFU;
-; ..\mcal\Port\ssc\src\Port.c	  3191    Std_ReturnType ErrorFlag = E_NOT_OK;
-; ..\mcal\Port\ssc\src\Port.c	  3192    /* [cover parentID={53EEC855-043E-4456-B3AB-5302A039AECA}]
-; ..\mcal\Port\ssc\src\Port.c	  3193    Loop Among Available Ports
-; ..\mcal\Port\ssc\src\Port.c	  3194    [/cover] */
-; ..\mcal\Port\ssc\src\Port.c	  3195    ConfigIndex = 0U;
-; ..\mcal\Port\ssc\src\Port.c	  3196    /* [cover parentID={AE95EDF9-336D-4845-A949-BC8507FA06E4}]
-; ..\mcal\Port\ssc\src\Port.c	  3197    Check for available ports_1
-; ..\mcal\Port\ssc\src\Port.c	  3198    [/cover] */
-; ..\mcal\Port\ssc\src\Port.c	  3199    for (PortNumber = (uint32)0U; PortNumber <= (uint32)PORT_MAX_NUMBER; PortNumber++)
-; ..\mcal\Port\ssc\src\Port.c	  3200    {
-; ..\mcal\Port\ssc\src\Port.c	  3201      /* [cover parentID={345D0DE6-F794-4fc6-90CA-21BFC217AE1B}]
-; ..\mcal\Port\ssc\src\Port.c	  3202      If Available Port not equal to zero
-; ..\mcal\Port\ssc\src\Port.c	  3203      [/cover] */
-; ..\mcal\Port\ssc\src\Port.c	  3204      /* [cover parentID={345D0DE6-F794-4fc6-90CA-21BFC217AE1B}]
-; ..\mcal\Port\ssc\src\Port.c	  3205      If Available Port not equal to zero
-; ..\mcal\Port\ssc\src\Port.c	  3206      [/cover] */
-; ..\mcal\Port\ssc\src\Port.c	  3207      if(Port_lIsPortAvailable(PortNumber) != (uint32)0U)
-; ..\mcal\Port\ssc\src\Port.c	  3208      {
-; ..\mcal\Port\ssc\src\Port.c	  3209        /* [cover parentID={3F9B0CF9-4D0A-4577-95A0-37CE3971A60B}]
-; ..\mcal\Port\ssc\src\Port.c	  3210        Get Port Address
-; ..\mcal\Port\ssc\src\Port.c	  3211        [/cover] */
-; ..\mcal\Port\ssc\src\Port.c	  3212        PortAddressPtr = Port_lAdr(PortNumber);
-; ..\mcal\Port\ssc\src\Port.c	  3213  
-; ..\mcal\Port\ssc\src\Port.c	  3214        SfrVal = PortAddressPtr->PDR0.U;
-; ..\mcal\Port\ssc\src\Port.c	  3215        CfgVal = ConfigPtr->PortConfigSetPtr [ConfigIndex].DriverStrength0;
-; ..\mcal\Port\ssc\src\Port.c	  3216        CompareFlag &= ~(SfrVal ^ CfgVal);
-; ..\mcal\Port\ssc\src\Port.c	  3217        /* [cover parentID={04CB7276-80BB-4436-B294-B6CE9444955D}]
-; ..\mcal\Port\ssc\src\Port.c	  3218        Check for Available Ports_2
-; ..\mcal\Port\ssc\src\Port.c	  3219        [/cover] */
-; ..\mcal\Port\ssc\src\Port.c	  3220        /* [cover parentID={EE726271-930A-43ba-A4F7-F2A19EC9064E}]
-; ..\mcal\Port\ssc\src\Port.c	  3221        If Available Port not equal to zero
-; ..\mcal\Port\ssc\src\Port.c	  3222        [/cover] */
-; ..\mcal\Port\ssc\src\Port.c	  3223        if(Port_lIsPortPdr1Available(PortNumber) != (uint16)0U)
-; ..\mcal\Port\ssc\src\Port.c	  3224        {
-; ..\mcal\Port\ssc\src\Port.c	  3225  
-; ..\mcal\Port\ssc\src\Port.c	  3226          SfrVal = PortAddressPtr->PDR1.U;
-; ..\mcal\Port\ssc\src\Port.c	  3227          CfgVal = ConfigPtr->PortConfigSetPtr[ConfigIndex].DriverStrength1;
-; ..\mcal\Port\ssc\src\Port.c	  3228          CompareFlag &= ~(SfrVal ^ CfgVal);
-; ..\mcal\Port\ssc\src\Port.c	  3229        }
-; ..\mcal\Port\ssc\src\Port.c	  3230        ConfigIndex++;
-; ..\mcal\Port\ssc\src\Port.c	  3231      }
-; ..\mcal\Port\ssc\src\Port.c	  3232  
-; ..\mcal\Port\ssc\src\Port.c	  3233    }
-; ..\mcal\Port\ssc\src\Port.c	  3234    /* [cover parentID={EB60E0CA-F98A-4a90-96DC-FC24A2497925}]
-; ..\mcal\Port\ssc\src\Port.c	  3235    Check for Flag
-; ..\mcal\Port\ssc\src\Port.c	  3236    [/cover] */
-; ..\mcal\Port\ssc\src\Port.c	  3237    if (CompareFlag != 0xFFFFFFFFU)
-; ..\mcal\Port\ssc\src\Port.c	  3238    {
-; ..\mcal\Port\ssc\src\Port.c	  3239      ErrorFlag = E_NOT_OK;
-; ..\mcal\Port\ssc\src\Port.c	  3240    }
-; ..\mcal\Port\ssc\src\Port.c	  3241    else
-; ..\mcal\Port\ssc\src\Port.c	  3242    {
-; ..\mcal\Port\ssc\src\Port.c	  3243      ErrorFlag = E_OK;
-; ..\mcal\Port\ssc\src\Port.c	  3244    }
-; ..\mcal\Port\ssc\src\Port.c	  3245    return ErrorFlag;
-; ..\mcal\Port\ssc\src\Port.c	  3246  }
-; ..\mcal\Port\ssc\src\Port.c	  3247  /*******************************************************************************
-; ..\mcal\Port\ssc\src\Port.c	  3248  ** Traceability:[cover parentID={F25C5539-AD55-4f91-A2C2-310F5A87DDFA}]       **
-; ..\mcal\Port\ssc\src\Port.c	  3249  **                                                                            **
-; ..\mcal\Port\ssc\src\Port.c	  3250  ** Syntax           :LOCAL_INLINE Std_ReturnType Port_lIOInitCheck            **
-; ..\mcal\Port\ssc\src\Port.c	  3251  **                   (                                                        **
-; ..\mcal\Port\ssc\src\Port.c	  3252  **                   const Port_ConfigType* const ConfigPtr)                  **
-; ..\mcal\Port\ssc\src\Port.c	  3253  **                   )                                                        **
-; ..\mcal\Port\ssc\src\Port.c	  3254  **                                                                            **
-; ..\mcal\Port\ssc\src\Port.c	  3255  **  [/cover]                                                                  **
-; ..\mcal\Port\ssc\src\Port.c	  3256  ** Service ID       : NA                                                      **
-; ..\mcal\Port\ssc\src\Port.c	  3257  **                                                                            **
-; ..\mcal\Port\ssc\src\Port.c	  3258  ** Sync/Async       : Synchronous                                             **
-; ..\mcal\Port\ssc\src\Port.c	  3259  **                                                                            **
-; ..\mcal\Port\ssc\src\Port.c	  3260  ** Reentrancy       : Non Reentrant                                           **
-; ..\mcal\Port\ssc\src\Port.c	  3261  **                                                                            **
-; ..\mcal\Port\ssc\src\Port.c	  3262  ** Parameters(in)   :ConfigPtr - Pointer to Port configuration                **
-; ..\mcal\Port\ssc\src\Port.c	  3263  **                                                                            **
-; ..\mcal\Port\ssc\src\Port.c	  3264  ** Parameters (out) :                                                         **
-; ..\mcal\Port\ssc\src\Port.c	  3265  **                                                                            **
-; ..\mcal\Port\ssc\src\Port.c	  3266  ** Return value     : E_OK - Operation successfully performed                 **
-; ..\mcal\Port\ssc\src\Port.c	  3267  **                    E_NOT_OK - Operation failed                             **
-; ..\mcal\Port\ssc\src\Port.c	  3268  **                                                                            **
-; ..\mcal\Port\ssc\src\Port.c	  3269  **                                                                            **
-; ..\mcal\Port\ssc\src\Port.c	  3270  ** Description      : This API checks the initialization values after PORT is **
-; ..\mcal\Port\ssc\src\Port.c	  3271  **                   initialized. It should be called after Port_InitCheck to **
-; ..\mcal\Port\ssc\src\Port.c	  3272  **                    check the initialization values.                        **
-; ..\mcal\Port\ssc\src\Port.c	  3273  *******************************************************************************/
-; ..\mcal\Port\ssc\src\Port.c	  3274  
-; ..\mcal\Port\ssc\src\Port.c	  3275  LOCAL_INLINE Std_ReturnType Port_lIOInitCheck(const Port_ConfigType* const ConfigPtr)
-; ..\mcal\Port\ssc\src\Port.c	  3276  {
-; ..\mcal\Port\ssc\src\Port.c	  3277  
-; ..\mcal\Port\ssc\src\Port.c	  3278    const Port_n_ConfigType *ConfigDataPtr;
-; ..\mcal\Port\ssc\src\Port.c	  3279    const uint32            *DataPtr;
-; ..\mcal\Port\ssc\src\Port.c	  3280    Std_ReturnType ErrorFlag = E_NOT_OK;
-; ..\mcal\Port\ssc\src\Port.c	  3281    Ifx_P                   const *PortAddressPtr;
-; ..\mcal\Port\ssc\src\Port.c	  3282    /* Each Port Number for the hardware unit */
-; ..\mcal\Port\ssc\src\Port.c	  3283    uint32                  PortNumber;
-; ..\mcal\Port\ssc\src\Port.c	  3284    uint32                  SfrVal;
-; ..\mcal\Port\ssc\src\Port.c	  3285    uint32                  CfgVal;
-; ..\mcal\Port\ssc\src\Port.c	  3286    const uint32            *Ptr_Config;
-; ..\mcal\Port\ssc\src\Port.c	  3287    const uint32            *PCSRDataPtr;
-; ..\mcal\Port\ssc\src\Port.c	  3288    const uint32            *PDISCDataPtr;
-; ..\mcal\Port\ssc\src\Port.c	  3289    volatile uint32 CompareFlag = 0xFFFFFFFFU;
-; ..\mcal\Port\ssc\src\Port.c	  3290    /* Index to identify the port configuration information
-; ..\mcal\Port\ssc\src\Port.c	  3291    from the configuration array  */
-; ..\mcal\Port\ssc\src\Port.c	  3292    uint32                   ConfigIndex;
-; ..\mcal\Port\ssc\src\Port.c	  3293    #if (PORT_MAX_LPCR_REG !=0U)
-; ..\mcal\Port\ssc\src\Port.c	  3294    volatile const uint32   *LVDSRegPtr;
-; ..\mcal\Port\ssc\src\Port.c	  3295    const uint32            *LVDSDataPtr;
-; ..\mcal\Port\ssc\src\Port.c	  3296    uint32                   counter;
-; ..\mcal\Port\ssc\src\Port.c	  3297    #endif
-; ..\mcal\Port\ssc\src\Port.c	  3298    /* [cover parentID={1A58972A-934B-4579-9BA0-73DE290A3B98}]
-; ..\mcal\Port\ssc\src\Port.c	  3299    Loop among Available Ports
-; ..\mcal\Port\ssc\src\Port.c	  3300    [/cover] */
-; ..\mcal\Port\ssc\src\Port.c	  3301    ConfigIndex = 0U;
-; ..\mcal\Port\ssc\src\Port.c	  3302  
-; ..\mcal\Port\ssc\src\Port.c	  3303    #if (PORT_MAX_LPCR_REG !=0U)
-; ..\mcal\Port\ssc\src\Port.c	  3304    /* MISRA2012_RULE_11_5_JUSTIFICATION: The Port_LVDSConfigTypePtr is a pointer
-; ..\mcal\Port\ssc\src\Port.c	  3305      to structure of type Port_n_LVDSConfigType used to keep configuration data
-; ..\mcal\Port\ssc\src\Port.c	  3306      for each port. The conversion to the required type (const uint32*) is
-; ..\mcal\Port\ssc\src\Port.c	  3307      done as direct assignment to LVDSDataPtr, pointer of type const uint32 is
-; ..\mcal\Port\ssc\src\Port.c	  3308      not possible. The conversion will produce a pointer that is correctly
-; ..\mcal\Port\ssc\src\Port.c	  3309      aligned and hence no side effects foreseen by violating this
-; ..\mcal\Port\ssc\src\Port.c	  3310      MISRA rule.*/
-; ..\mcal\Port\ssc\src\Port.c	  3311      /* MISRA2012_RULE_11_3_JUSTIFICATION: The conversion to (const void*)
-; ..\mcal\Port\ssc\src\Port.c	  3312      is done as it can hold the address of any type, here a structure pointer
-; ..\mcal\Port\ssc\src\Port.c	  3313      and then typecasted to the required (const uint32*) as direct assignment
-; ..\mcal\Port\ssc\src\Port.c	  3314      to LVDSDataPtr, pointer of type const uint32 is not possible. The conversion
-; ..\mcal\Port\ssc\src\Port.c	  3315      will produce a pointer that is correctly aligned and hence no side
-; ..\mcal\Port\ssc\src\Port.c	  3316      effects foreseen by violating this MISRA rule.*/
-; ..\mcal\Port\ssc\src\Port.c	  3317    LVDSDataPtr = (const uint32*)(const void*)(ConfigPtr->Port_LVDSConfigTypePtr);
-; ..\mcal\Port\ssc\src\Port.c	  3318    #endif
-; ..\mcal\Port\ssc\src\Port.c	  3319   /* MISRA2012_RULE_11_5_JUSTIFICATION: The Port_PCSRConfigTypePtr is a pointer
-; ..\mcal\Port\ssc\src\Port.c	  3320      to structure of type Port_PCSRConfigType used to keep configuration data
-; ..\mcal\Port\ssc\src\Port.c	  3321      for each port. The conversion to the required type (const uint32*) is
-; ..\mcal\Port\ssc\src\Port.c	  3322      done as direct assignment to PCSRDataPtr, pointer of type const uint32 is
-; ..\mcal\Port\ssc\src\Port.c	  3323      not possible. The conversion will produce a pointer that is correctly
-; ..\mcal\Port\ssc\src\Port.c	  3324      aligned and hence no side effects foreseen by violating this
-; ..\mcal\Port\ssc\src\Port.c	  3325      MISRA rule.*/
-; ..\mcal\Port\ssc\src\Port.c	  3326      /* MISRA2012_RULE_11_3_JUSTIFICATION: The conversion to (const void*)
-; ..\mcal\Port\ssc\src\Port.c	  3327      is done as it can hold the address of any type, here a structure pointer
-; ..\mcal\Port\ssc\src\Port.c	  3328      and then typecasted to the required (const uint32*) as direct assignment
-; ..\mcal\Port\ssc\src\Port.c	  3329      to PCSRDataPtr, pointer of type const uint32 is not possible. The conversion
-; ..\mcal\Port\ssc\src\Port.c	  3330      will produce a pointer that is correctly aligned and hence no side
-; ..\mcal\Port\ssc\src\Port.c	  3331      effects foreseen by violating this MISRA rule.*/
-; ..\mcal\Port\ssc\src\Port.c	  3332    PCSRDataPtr = (const uint32*)(const void*)  (ConfigPtr->Port_PCSRConfigTypePtr);
-; ..\mcal\Port\ssc\src\Port.c	  3333    /* MISRA2012_RULE_11_5_JUSTIFICATION: The PDiscSet is a pointer used to keep
-; ..\mcal\Port\ssc\src\Port.c	  3334      configuration data for each port. The conversion to the required type
-; ..\mcal\Port\ssc\src\Port.c	  3335      (const uint32*) is done as direct assignment to PDISCDataPtr, pointer of
-; ..\mcal\Port\ssc\src\Port.c	  3336      type const uint32 is not possible. The conversion will produce a pointer
-; ..\mcal\Port\ssc\src\Port.c	  3337      that is correctly aligned and hence no side effects foreseen by violating
-; ..\mcal\Port\ssc\src\Port.c	  3338      this MISRA rule.*/
-; ..\mcal\Port\ssc\src\Port.c	  3339      /* MISRA2012_RULE_11_3_JUSTIFICATION: The conversion to (const void*)
-; ..\mcal\Port\ssc\src\Port.c	  3340      is done as it can hold the address of any type and then typecasted to
-; ..\mcal\Port\ssc\src\Port.c	  3341      the required (const uint32*) as direct assignment to PDISCDataPtr,
-; ..\mcal\Port\ssc\src\Port.c	  3342      pointer of type const uint32 is not possible. The conversion
-; ..\mcal\Port\ssc\src\Port.c	  3343      will produce a pointer that is correctly aligned and hence no side
-; ..\mcal\Port\ssc\src\Port.c	  3344      effects foreseen by violating this MISRA rule.*/
-; ..\mcal\Port\ssc\src\Port.c	  3345    PDISCDataPtr = (const uint32*)(const void*) (ConfigPtr->PDiscSet);
-; ..\mcal\Port\ssc\src\Port.c	  3346    /* [cover parentID={9FDD7385-47AA-4913-9918-E2C345F6402F}]
-; ..\mcal\Port\ssc\src\Port.c	  3347    Check For Available Ports
-; ..\mcal\Port\ssc\src\Port.c	  3348    [/cover] */
-; ..\mcal\Port\ssc\src\Port.c	  3349    for(PortNumber = (uint32)0U; PortNumber <= (uint32)PORT_MAX_NUMBER ; PortNumber++)
-; ..\mcal\Port\ssc\src\Port.c	  3350    {
-; ..\mcal\Port\ssc\src\Port.c	  3351      /* [cover parentID={F70B7330-D368-4523-8648-6EDA997FAB06}]
-; ..\mcal\Port\ssc\src\Port.c	  3352      If Available Port not equal to zero
-; ..\mcal\Port\ssc\src\Port.c	  3353      [/cover] */
-; ..\mcal\Port\ssc\src\Port.c	  3354      if(Port_lIsPortAvailable(PortNumber) != (uint32)0U)
-; ..\mcal\Port\ssc\src\Port.c	  3355      {
-; ..\mcal\Port\ssc\src\Port.c	  3356        /* MISRA2012_RULE_18_4_JUSTIFICATION: Pointer arithmetic is used due to
-; ..\mcal\Port\ssc\src\Port.c	  3357        configuration address calculation for each port and is within allowed range.*/
-; ..\mcal\Port\ssc\src\Port.c	  3358        ConfigDataPtr = (ConfigPtr->PortConfigSetPtr) + ConfigIndex ;
-; ..\mcal\Port\ssc\src\Port.c	  3359        /* MISRA2012_RULE_11_5_JUSTIFICATION: The ConfigDataPtr is a pointer
-; ..\mcal\Port\ssc\src\Port.c	  3360        to structure of type Port_n_ConfigType used to keep configuration data
-; ..\mcal\Port\ssc\src\Port.c	  3361        for each port. The conversion to the required type (const uint32*) is
-; ..\mcal\Port\ssc\src\Port.c	  3362        done as direct assignment to DataPtr, pointer of type const uint32 is
-; ..\mcal\Port\ssc\src\Port.c	  3363        not possible. The conversion will produce a pointer that is correctly
-; ..\mcal\Port\ssc\src\Port.c	  3364        aligned and hence no side effects foreseen by violating this
-; ..\mcal\Port\ssc\src\Port.c	  3365        MISRA rule.*/
-; ..\mcal\Port\ssc\src\Port.c	  3366        /* MISRA2012_RULE_11_3_JUSTIFICATION: The conversion to (const void*)
-; ..\mcal\Port\ssc\src\Port.c	  3367        is done as it can hold the address of any type, here a structure pointer
-; ..\mcal\Port\ssc\src\Port.c	  3368        and then typecasted to the required (const uint32*) as direct assignment
-; ..\mcal\Port\ssc\src\Port.c	  3369        to DataPtr, pointer of type const uint32 is not possible. The conversion
-; ..\mcal\Port\ssc\src\Port.c	  3370        will produce a pointer that is correctly aligned and hence no side
-; ..\mcal\Port\ssc\src\Port.c	  3371        effects foreseen by violating this MISRA rule.*/
-; ..\mcal\Port\ssc\src\Port.c	  3372        DataPtr = (const uint32 *)(const void*)(ConfigDataPtr);
-; ..\mcal\Port\ssc\src\Port.c	  3373        /* [cover parentID={64FE7B89-0357-48b9-94DB-23633F4E37CD}]
-; ..\mcal\Port\ssc\src\Port.c	  3374        Get Port Address
-; ..\mcal\Port\ssc\src\Port.c	  3375        [/cover] */
-; ..\mcal\Port\ssc\src\Port.c	  3376        PortAddressPtr = Port_lAdr(PortNumber);
-; ..\mcal\Port\ssc\src\Port.c	  3377        /* [cover parentID={0852F649-2816-45c5-A612-99950D0C6C76}]
-; ..\mcal\Port\ssc\src\Port.c	  3378        Check for read only ports
-; ..\mcal\Port\ssc\src\Port.c	  3379        [/cover] */
-; ..\mcal\Port\ssc\src\Port.c	  3380        /* [cover parentID={223985C4-2E26-43d6-A501-DD9A64A93DEF}]
-; ..\mcal\Port\ssc\src\Port.c	  3381        If ReadOnly Port not equal to zero
-; ..\mcal\Port\ssc\src\Port.c	  3382        [/cover] */
-; ..\mcal\Port\ssc\src\Port.c	  3383        /* [cover parentID={655A083F-9819-4516-B2A1-F0AA482AA7FC}]
-; ..\mcal\Port\ssc\src\Port.c	  3384        If ReadOnly Port not equal to zero
-; ..\mcal\Port\ssc\src\Port.c	  3385        [/cover] */
-; ..\mcal\Port\ssc\src\Port.c	  3386        #if (PORTS_READONLY_AVAIL != 0U)
-; ..\mcal\Port\ssc\src\Port.c	  3387        if(Port_lIsPortReadOnly(PortNumber) == (uint32)0U)
-; ..\mcal\Port\ssc\src\Port.c	  3388        #endif
-; ..\mcal\Port\ssc\src\Port.c	  3389        {
-; ..\mcal\Port\ssc\src\Port.c	  3390          SfrVal = PortAddressPtr->OUT.U ;
-; ..\mcal\Port\ssc\src\Port.c	  3391          /* MISRA2012_RULE_11_3_JUSTIFICATION: The compiler prevents the
-; ..\mcal\Port\ssc\src\Port.c	  3392          assignment of value of the element PinLevel of structure ConfigPtr
-; ..\mcal\Port\ssc\src\Port.c	  3393          into a uint32 variable as PinLevel element is of type Port_n_PinType
-; ..\mcal\Port\ssc\src\Port.c	  3394          which is a bitfield structure. Port_n_PinType structure is of size
-; ..\mcal\Port\ssc\src\Port.c	  3395          uint32 and hence using a uint32 pointer typecast to derive the value.
-; ..\mcal\Port\ssc\src\Port.c	  3396          The conversion will produce a pointer that is correctly aligned and
-; ..\mcal\Port\ssc\src\Port.c	  3397          hence no side effects foreseen by violating this MISRA rule.*/
-; ..\mcal\Port\ssc\src\Port.c	  3398          /* MISRA2012_RULE_11_8_JUSTIFICATION: The typecasting is performed to
-; ..\mcal\Port\ssc\src\Port.c	  3399          access configuration data for each port. This ConfigPtr which is having
-; ..\mcal\Port\ssc\src\Port.c	  3400          a const qualifier and by typecasting with (uint32*), it discards const
-; ..\mcal\Port\ssc\src\Port.c	  3401          keyword. No side effects foreseen by violating this MISRA rule.*/
-; ..\mcal\Port\ssc\src\Port.c	  3402          /* MISRA2012_RULE_1_3_JUSTIFICATION: The compiler prevents the
-; ..\mcal\Port\ssc\src\Port.c	  3403          assignment of value of the element PinLevel of structure ConfigPtr
-; ..\mcal\Port\ssc\src\Port.c	  3404          into a uint32 variable as PinLevel element is of type Port_n_PinType
-; ..\mcal\Port\ssc\src\Port.c	  3405          which is a bitfield structure. Port_n_PinType structure is of size
-; ..\mcal\Port\ssc\src\Port.c	  3406          uint32 and hence using a uint32 pointer typecast to derive the value.
-; ..\mcal\Port\ssc\src\Port.c	  3407          Thus no issues seen.*/
-; ..\mcal\Port\ssc\src\Port.c	  3408          Ptr_Config = (uint32 *)& (ConfigPtr->PortConfigSetPtr[ConfigIndex].PinLevel);
-; ..\mcal\Port\ssc\src\Port.c	  3409          CfgVal = *(Ptr_Config);
-; ..\mcal\Port\ssc\src\Port.c	  3410          CompareFlag &= ~(SfrVal ^ CfgVal);
-; ..\mcal\Port\ssc\src\Port.c	  3411        }
-; ..\mcal\Port\ssc\src\Port.c	  3412        SfrVal = PortAddressPtr->ESR.U;
-; ..\mcal\Port\ssc\src\Port.c	  3413        /* MISRA2012_RULE_11_3_JUSTIFICATION: The compiler prevents the assignment
-; ..\mcal\Port\ssc\src\Port.c	  3414        of value of the element EmergencyStopConf of structure ConfigPtr into
-; ..\mcal\Port\ssc\src\Port.c	  3415        a uint32 variable as EmergencyStopConf element is of type Port_n_PinType
-; ..\mcal\Port\ssc\src\Port.c	  3416        which is a bitfield structure. Port_n_PinType is of size uint32 and
-; ..\mcal\Port\ssc\src\Port.c	  3417        hence using a uint32 pointer typecast to derive the value. The conversion
-; ..\mcal\Port\ssc\src\Port.c	  3418        will produce a pointer that is correctly aligned and hence no side
-; ..\mcal\Port\ssc\src\Port.c	  3419        effects foreseen by violating this MISRA rule.*/
-; ..\mcal\Port\ssc\src\Port.c	  3420        /* MISRA2012_RULE_11_8_JUSTIFICATION: The typecasting is performed to
-; ..\mcal\Port\ssc\src\Port.c	  3421        access configuration data for each port. This ConfigPtr which is having
-; ..\mcal\Port\ssc\src\Port.c	  3422        a const qualifier and by typecasting with (uint32*), it discards const
-; ..\mcal\Port\ssc\src\Port.c	  3423        keyword. No side effects foreseen by violating this MISRA rule.*/
-; ..\mcal\Port\ssc\src\Port.c	  3424        /* MISRA2012_RULE_1_3_JUSTIFICATION: The compiler prevents the assignment
-; ..\mcal\Port\ssc\src\Port.c	  3425        of value of the element EmergencyStopConf of structure ConfigPtr into
-; ..\mcal\Port\ssc\src\Port.c	  3426        a uint32 variable as EmergencyStopConf element is of type Port_n_PinType
-; ..\mcal\Port\ssc\src\Port.c	  3427        which is a bitfield structure. Port_n_PinType is of size uint32 and
-; ..\mcal\Port\ssc\src\Port.c	  3428        hence using a uint32 pointer typecast to derive the value. Thus no
-; ..\mcal\Port\ssc\src\Port.c	  3429        issues seen.*/
-; ..\mcal\Port\ssc\src\Port.c	  3430        Ptr_Config = (uint32 *)&(ConfigPtr->PortConfigSetPtr[ConfigIndex].EmergencyStopConf);
-; ..\mcal\Port\ssc\src\Port.c	  3431        CfgVal = *(Ptr_Config);
-; ..\mcal\Port\ssc\src\Port.c	  3432  
-; ..\mcal\Port\ssc\src\Port.c	  3433        CompareFlag &= ~(SfrVal ^ CfgVal);
-; ..\mcal\Port\ssc\src\Port.c	  3434        SfrVal = PortAddressPtr->IOCR0.U ;
-; ..\mcal\Port\ssc\src\Port.c	  3435        CfgVal = *(DataPtr);
-; ..\mcal\Port\ssc\src\Port.c	  3436        DataPtr++;
-; ..\mcal\Port\ssc\src\Port.c	  3437        CompareFlag &= ~(SfrVal ^ CfgVal);
-; ..\mcal\Port\ssc\src\Port.c	  3438        /* [cover parentID={2477DBB6-8164-49f6-9398-7EC5D83849F4}]
-; ..\mcal\Port\ssc\src\Port.c	  3439        If fisrt set of IOCR is not equal to zero
-; ..\mcal\Port\ssc\src\Port.c	  3440        [/cover] */
-; ..\mcal\Port\ssc\src\Port.c	  3441        if(Port_lIsPortIocrAvailable(PortNumber, (uint16)PORT_PIN_4_7) != (uint16)0U)
-; ..\mcal\Port\ssc\src\Port.c	  3442        {
-; ..\mcal\Port\ssc\src\Port.c	  3443          SfrVal = PortAddressPtr->IOCR4.U;
-; ..\mcal\Port\ssc\src\Port.c	  3444          CfgVal = *(DataPtr);
-; ..\mcal\Port\ssc\src\Port.c	  3445          CompareFlag &= ~(SfrVal ^ CfgVal);
-; ..\mcal\Port\ssc\src\Port.c	  3446        }
-; ..\mcal\Port\ssc\src\Port.c	  3447        DataPtr++;
-; ..\mcal\Port\ssc\src\Port.c	  3448        /* [cover parentID={BC7CE8C3-8254-4e04-AAC9-02E7A859E2A9}]
-; ..\mcal\Port\ssc\src\Port.c	  3449        If second set of IOCR is not equal to zero
-; ..\mcal\Port\ssc\src\Port.c	  3450        [/cover] */
-; ..\mcal\Port\ssc\src\Port.c	  3451        if(Port_lIsPortIocrAvailable(PortNumber, (uint16)PORT_PIN_8_11) != (uint16)0U)
-; ..\mcal\Port\ssc\src\Port.c	  3452        {
-; ..\mcal\Port\ssc\src\Port.c	  3453          SfrVal = PortAddressPtr->IOCR8.U;
-; ..\mcal\Port\ssc\src\Port.c	  3454          CfgVal = *(DataPtr);
-; ..\mcal\Port\ssc\src\Port.c	  3455          #if(PORT14_PDISC_MASK == PORT_14_DISC_DISABLE)
-; ..\mcal\Port\ssc\src\Port.c	  3456          /* [cover parentID={75D2C28F-7E85-4578-8B67-8AB0E2F4303E}]
-; ..\mcal\Port\ssc\src\Port.c	  3457          Is Port Number 14
-; ..\mcal\Port\ssc\src\Port.c	  3458          [/cover] */
-; ..\mcal\Port\ssc\src\Port.c	  3459          if(PortNumber == 14U)
-; ..\mcal\Port\ssc\src\Port.c	  3460          {
-; ..\mcal\Port\ssc\src\Port.c	  3461            CfgVal &= (~(IFX_P_IOCR8_PC11_MSK << IFX_P_IOCR8_PC11_OFF));
-; ..\mcal\Port\ssc\src\Port.c	  3462            CfgVal |= (PORT_IOCR_PULLUP_ENABLE<<IFX_P_IOCR8_PC11_OFF );
-; ..\mcal\Port\ssc\src\Port.c	  3463          }
-; ..\mcal\Port\ssc\src\Port.c	  3464          #endif
-; ..\mcal\Port\ssc\src\Port.c	  3465          CompareFlag &= ~(SfrVal ^ CfgVal);
-; ..\mcal\Port\ssc\src\Port.c	  3466        }
-; ..\mcal\Port\ssc\src\Port.c	  3467        DataPtr++;
-; ..\mcal\Port\ssc\src\Port.c	  3468        /* [cover parentID={A3AF9558-B526-4d2e-980F-AF369F6A340C}]
-; ..\mcal\Port\ssc\src\Port.c	  3469        If third set of IOCR is not equal to zero
-; ..\mcal\Port\ssc\src\Port.c	  3470        [/cover] */
-; ..\mcal\Port\ssc\src\Port.c	  3471        if(Port_lIsPortIocrAvailable(PortNumber, (uint16)PORT_PIN_12_15) != (uint16)0U)
-; ..\mcal\Port\ssc\src\Port.c	  3472        {
-; ..\mcal\Port\ssc\src\Port.c	  3473          SfrVal = PortAddressPtr->IOCR12.U;
-; ..\mcal\Port\ssc\src\Port.c	  3474          CfgVal = *(DataPtr);
-; ..\mcal\Port\ssc\src\Port.c	  3475          CompareFlag &= ~(SfrVal ^ CfgVal);
-; ..\mcal\Port\ssc\src\Port.c	  3476        }
-; ..\mcal\Port\ssc\src\Port.c	  3477        /* [cover parentID={C84B2C24-2296-4411-94E5-B8806A07E34C}]
-; ..\mcal\Port\ssc\src\Port.c	  3478        Check for Available LVDS
-; ..\mcal\Port\ssc\src\Port.c	  3479        [/cover] */
-; ..\mcal\Port\ssc\src\Port.c	  3480        /* [cover parentID={9DBD42FA-B5D2-49cc-AC36-720BE37AF9A7}]
-; ..\mcal\Port\ssc\src\Port.c	  3481        If LVDS Port not equal to zero
-; ..\mcal\Port\ssc\src\Port.c	  3482        [/cover] */
-; ..\mcal\Port\ssc\src\Port.c	  3483         /* [cover parentID={63C38308-AE40-4d18-94F1-1639DC622C89}]
-; ..\mcal\Port\ssc\src\Port.c	  3484        If LVDS Port not equal to zero
-; ..\mcal\Port\ssc\src\Port.c	  3485        [/cover] */
-; ..\mcal\Port\ssc\src\Port.c	  3486  
-; ..\mcal\Port\ssc\src\Port.c	  3487        #if (PORT_MAX_LPCR_REG != 0U)
-; ..\mcal\Port\ssc\src\Port.c	  3488        if(Port_lIsPortLVDSAvailable(PortNumber) != (uint32)0U)
-; ..\mcal\Port\ssc\src\Port.c	  3489        {
-; ..\mcal\Port\ssc\src\Port.c	  3490          /* MISRA2012_RULE_11_5_JUSTIFICATION: Performed to calculate SFR address
-; ..\mcal\Port\ssc\src\Port.c	  3491          for each port. The conversion to the required type (volatile uint32*)
-; ..\mcal\Port\ssc\src\Port.c	  3492          is done as direct assignment to LVDSRegPtr, pointer of type
-; ..\mcal\Port\ssc\src\Port.c	  3493          volatile uint32 is not possible. The conversion will produce a pointer
-; ..\mcal\Port\ssc\src\Port.c	  3494          that is correctly aligned and hence no side effects foreseen
-; ..\mcal\Port\ssc\src\Port.c	  3495          by violating this MISRA rule.*/
-; ..\mcal\Port\ssc\src\Port.c	  3496          /* MISRA2012_RULE_11_3_JUSTIFICATION: SFR Access. The conversion to
-; ..\mcal\Port\ssc\src\Port.c	  3497          (volatile void*) is done as it can hold the address of any type, here
-; ..\mcal\Port\ssc\src\Port.c	  3498          a structure pointer and then typecasted to the required
-; ..\mcal\Port\ssc\src\Port.c	  3499          (volatile uint32*) as direct assignment to LVDSRegPtr, pointer of
-; ..\mcal\Port\ssc\src\Port.c	  3500          type volatile uint32 is not possible. The conversion will produce a
-; ..\mcal\Port\ssc\src\Port.c	  3501          pointer that is correctly aligned and hence no side effects foreseen
-; ..\mcal\Port\ssc\src\Port.c	  3502          by violating this MISRA rule.*/
-; ..\mcal\Port\ssc\src\Port.c	  3503          /* MISRA2012_RULE_18_4_JUSTIFICATION: Pointer arithmetic is used due to
-; ..\mcal\Port\ssc\src\Port.c	  3504          SFR address calculation and is within allowed range.*/
-; ..\mcal\Port\ssc\src\Port.c	  3505          /* MISRA2012_RULE_11_8_JUSTIFICATION: The typecasting is performed to
-; ..\mcal\Port\ssc\src\Port.c	  3506          update the SFR address for each port. The PortAddressPtr is
-; ..\mcal\Port\ssc\src\Port.c	  3507          having a const qualifier and by typecasting, the input  argument
-; ..\mcal\Port\ssc\src\Port.c	  3508          for the API discards this keyword. No side effects foreseen by
-; ..\mcal\Port\ssc\src\Port.c	  3509          violating this MISRA rule.*/
-; ..\mcal\Port\ssc\src\Port.c	  3510          LVDSRegPtr  = ((volatile uint32*)(volatile void*)PortAddressPtr \ 
-; ..\mcal\Port\ssc\src\Port.c	  3511                         + PORT_LPCR_REG_OFFSET);
-; ..\mcal\Port\ssc\src\Port.c	  3512  
-; ..\mcal\Port\ssc\src\Port.c	  3513          /* [cover parentID={A7E42B70-13DF-4658-ABD5-58F8CA46B1AB}]
-; ..\mcal\Port\ssc\src\Port.c	  3514          Check for LVDS
-; ..\mcal\Port\ssc\src\Port.c	  3515          [/cover] */
-; ..\mcal\Port\ssc\src\Port.c	  3516          for(counter = (uint32)0U; counter < (uint32)PORT_MAX_LPCR_REG ; counter++)
-; ..\mcal\Port\ssc\src\Port.c	  3517          {
-; ..\mcal\Port\ssc\src\Port.c	  3518            /* [cover parentID={9A60ED46-B1E1-4bc0-BD65-9CE89CC35314}]
-; ..\mcal\Port\ssc\src\Port.c	  3519            If LVDS Pin is available
-; ..\mcal\Port\ssc\src\Port.c	  3520            [/cover] */
-; ..\mcal\Port\ssc\src\Port.c	  3521            if(Port_lIsPortPinPairAvailable(*LVDSDataPtr) == (uint32)0U)
-; ..\mcal\Port\ssc\src\Port.c	  3522            {
-; ..\mcal\Port\ssc\src\Port.c	  3523              SfrVal = *(LVDSRegPtr);
-; ..\mcal\Port\ssc\src\Port.c	  3524              CfgVal = *(LVDSDataPtr);
-; ..\mcal\Port\ssc\src\Port.c	  3525              CompareFlag &= ~(SfrVal ^ CfgVal);
-; ..\mcal\Port\ssc\src\Port.c	  3526            }
-; ..\mcal\Port\ssc\src\Port.c	  3527            LVDSRegPtr++;
-; ..\mcal\Port\ssc\src\Port.c	  3528            LVDSDataPtr++;
-; ..\mcal\Port\ssc\src\Port.c	  3529          }
-; ..\mcal\Port\ssc\src\Port.c	  3530        }
-; ..\mcal\Port\ssc\src\Port.c	  3531       #endif
-; ..\mcal\Port\ssc\src\Port.c	  3532  
-; ..\mcal\Port\ssc\src\Port.c	  3533        /* [cover parentID={B488AB94-6D94-42e5-8D80-0C648C39AE82}]
-; ..\mcal\Port\ssc\src\Port.c	  3534        Check for PCSR Ports
-; ..\mcal\Port\ssc\src\Port.c	  3535        [/cover] */
-; ..\mcal\Port\ssc\src\Port.c	  3536        /* [cover parentID={B69735DA-9884-4f43-BD56-5B31DB027120}]
-; ..\mcal\Port\ssc\src\Port.c	  3537        If PCSR Port not equal to zero
-; ..\mcal\Port\ssc\src\Port.c	  3538        [/cover] */
-; ..\mcal\Port\ssc\src\Port.c	  3539        /* [cover parentID={960B09E9-B096-4213-AABD-0CFDEAD31235}]
-; ..\mcal\Port\ssc\src\Port.c	  3540        Check for PDISC Port
-; ..\mcal\Port\ssc\src\Port.c	  3541        [/cover] */
-; ..\mcal\Port\ssc\src\Port.c	  3542        /* [cover parentID={BF88175E-977A-4160-84BC-CA4EF25904B7}]
-; ..\mcal\Port\ssc\src\Port.c	  3543        If PDISC Port not equal to zero
-; ..\mcal\Port\ssc\src\Port.c	  3544        [/cover] */
-; ..\mcal\Port\ssc\src\Port.c	  3545        if(Port_lIsPortPCSRAvailable(PortNumber) != (uint32)0U)
-; ..\mcal\Port\ssc\src\Port.c	  3546        {
-; ..\mcal\Port\ssc\src\Port.c	  3547          SfrVal = (PortAddressPtr->PCSR.U) & PORT_31_PCSR_MASK;
-; ..\mcal\Port\ssc\src\Port.c	  3548          CfgVal = (*(PCSRDataPtr)) & PORT_31_PCSR_MASK;
-; ..\mcal\Port\ssc\src\Port.c	  3549          CompareFlag &= ~(SfrVal ^ CfgVal);
-; ..\mcal\Port\ssc\src\Port.c	  3550          PCSRDataPtr++;
-; ..\mcal\Port\ssc\src\Port.c	  3551        }
-; ..\mcal\Port\ssc\src\Port.c	  3552        if(Port_lIsPortPDISCAvailable(PortNumber) != (uint32)0U)
-; ..\mcal\Port\ssc\src\Port.c	  3553        {
-; ..\mcal\Port\ssc\src\Port.c	  3554         SfrVal = (PortAddressPtr->PDISC.U);
-; ..\mcal\Port\ssc\src\Port.c	  3555         CfgVal = *(PDISCDataPtr);
-; ..\mcal\Port\ssc\src\Port.c	  3556         CompareFlag &= ~(SfrVal ^ CfgVal);
-; ..\mcal\Port\ssc\src\Port.c	  3557         PDISCDataPtr++;
-; ..\mcal\Port\ssc\src\Port.c	  3558        }
-; ..\mcal\Port\ssc\src\Port.c	  3559        ConfigIndex++;
-; ..\mcal\Port\ssc\src\Port.c	  3560      }
-; ..\mcal\Port\ssc\src\Port.c	  3561    }
-; ..\mcal\Port\ssc\src\Port.c	  3562    #if(PORT14_PDISC_MASK == PORT_14_DISC_DISABLE)
-; ..\mcal\Port\ssc\src\Port.c	  3563    CompareFlag &= ~(P14_PDISC.U ^ 0x0U);
-; ..\mcal\Port\ssc\src\Port.c	  3564    #endif
-; ..\mcal\Port\ssc\src\Port.c	  3565    if (CompareFlag != 0xFFFFFFFFU)
-; ..\mcal\Port\ssc\src\Port.c	  3566    {
-; ..\mcal\Port\ssc\src\Port.c	  3567      ErrorFlag = E_NOT_OK;
-; ..\mcal\Port\ssc\src\Port.c	  3568    }
-; ..\mcal\Port\ssc\src\Port.c	  3569    else
-; ..\mcal\Port\ssc\src\Port.c	  3570    {
-; ..\mcal\Port\ssc\src\Port.c	  3571      ErrorFlag = E_OK;
-; ..\mcal\Port\ssc\src\Port.c	  3572    }
-; ..\mcal\Port\ssc\src\Port.c	  3573    return ErrorFlag;
-; ..\mcal\Port\ssc\src\Port.c	  3574  }
-; ..\mcal\Port\ssc\src\Port.c	  3575  #endif
-; ..\mcal\Port\ssc\src\Port.c	  3576  
-; ..\mcal\Port\ssc\src\Port.c	  3577  #if(PORT_SET_PIN_DIRECTION_API == STD_ON)
-; ..\mcal\Port\ssc\src\Port.c	  3578  #if(PORT_SAFETY_ENABLE == STD_ON)
-; ..\mcal\Port\ssc\src\Port.c	  3579  /*******************************************************************************
-; ..\mcal\Port\ssc\src\Port.c	  3580  ** Traceability:[cover parentID={41E32907-EB61-4dd1-8F96-DE39C66B3272}]       **
-; ..\mcal\Port\ssc\src\Port.c	  3581  **                                                                            **
-; ..\mcal\Port\ssc\src\Port.c	  3582  ** Syntax           : LOCAL_INLINE uint8 Port_lDirectionChk                   **
-; ..\mcal\Port\ssc\src\Port.c	  3583  **                    (                                                       **
-; ..\mcal\Port\ssc\src\Port.c	  3584  **                        const Port_PinDirectionType  Dir                    **
-; ..\mcal\Port\ssc\src\Port.c	  3585  **                    )                                                       **
-; ..\mcal\Port\ssc\src\Port.c	  3586  **                                                                            **
-; ..\mcal\Port\ssc\src\Port.c	  3587  ** Description      : This INLINE function:                                   **
-; ..\mcal\Port\ssc\src\Port.c	  3588  **   - Checks for the error in passed direction  parameter.                   **
-; ..\mcal\Port\ssc\src\Port.c	  3589  **                                                                            **
-; ..\mcal\Port\ssc\src\Port.c	  3590  **  [/cover]                                                                  **
-; ..\mcal\Port\ssc\src\Port.c	  3591  ** Service ID:  NA                                                            **
-; ..\mcal\Port\ssc\src\Port.c	  3592  **                                                                            **
-; ..\mcal\Port\ssc\src\Port.c	  3593  ** Sync/Async:  Synchronous                                                   **
-; ..\mcal\Port\ssc\src\Port.c	  3594  **                                                                            **
-; ..\mcal\Port\ssc\src\Port.c	  3595  ** Reentrancy:  Reentrant                                                     **
-; ..\mcal\Port\ssc\src\Port.c	  3596  **                                                                            **
-; ..\mcal\Port\ssc\src\Port.c	  3597  ** Parameters (in)  :  Dir -  Port pin direction to be checked                **
-; ..\mcal\Port\ssc\src\Port.c	  3598  **                                                                            **
-; ..\mcal\Port\ssc\src\Port.c	  3599  **                                                                            **
-; ..\mcal\Port\ssc\src\Port.c	  3600  ** Parameters (out) : none                                                    **
-; ..\mcal\Port\ssc\src\Port.c	  3601  **                                                                            **
-; ..\mcal\Port\ssc\src\Port.c	  3602  ** Return value     : E_OK -   Direction passed is valid                      **
-; ..\mcal\Port\ssc\src\Port.c	  3603  **                   E_NOT_OK- Direction passed is invalid                    **
-; ..\mcal\Port\ssc\src\Port.c	  3604  **                                                                            **
-; ..\mcal\Port\ssc\src\Port.c	  3605  *******************************************************************************/
-; ..\mcal\Port\ssc\src\Port.c	  3606  LOCAL_INLINE uint8 Port_lDirectionChk( const Port_PinDirectionType Dir)
-; ..\mcal\Port\ssc\src\Port.c	  3607  {
-; ..\mcal\Port\ssc\src\Port.c	  3608    uint8 ErrStatus = E_OK;
-; ..\mcal\Port\ssc\src\Port.c	  3609    /* [cover parentID={C7364599-76EB-4f2a-8657-50160A20C08D}]
-; ..\mcal\Port\ssc\src\Port.c	  3610    Check if direction passed is valid
-; ..\mcal\Port\ssc\src\Port.c	  3611    [/cover] */
-; ..\mcal\Port\ssc\src\Port.c	  3612    if((Dir != PORT_PIN_IN) && ( Dir != PORT_PIN_OUT))
-; ..\mcal\Port\ssc\src\Port.c	  3613    {
-; ..\mcal\Port\ssc\src\Port.c	  3614      ErrStatus = E_NOT_OK;
-; ..\mcal\Port\ssc\src\Port.c	  3615      /* [cover parentID={B5D1507C-8BEC-45a2-BF68-4040258BF247}]
-; ..\mcal\Port\ssc\src\Port.c	  3616      Mcal_ReportSafetyError
-; ..\mcal\Port\ssc\src\Port.c	  3617      [/cover] */
-; ..\mcal\Port\ssc\src\Port.c	  3618       Mcal_ReportSafetyError(PORT_MODULE_ID, PORT_INSTANCE_ID,
-; ..\mcal\Port\ssc\src\Port.c	  3619                    PORT_SID_SETPINDIRECTION, PORT_E_PARAM_INVALID_DIRECTION);
-; ..\mcal\Port\ssc\src\Port.c	  3620    }
-; ..\mcal\Port\ssc\src\Port.c	  3621    return(ErrStatus);
-; ..\mcal\Port\ssc\src\Port.c	  3622  }
-; ..\mcal\Port\ssc\src\Port.c	  3623  #endif /*(PORT_SAFETY_ENABLE == STD_ON) */
-; ..\mcal\Port\ssc\src\Port.c	  3624  #endif /* (PORT_SET_PIN_DIRECTION_API == STD_ON) */
-; ..\mcal\Port\ssc\src\Port.c	  3625  #if (PORT_DEV_ERROR_DETECT == STD_ON )||(PORT_SAFETY_ENABLE == STD_ON)
-; ..\mcal\Port\ssc\src\Port.c	  3626  /*******************************************************************************
-; ..\mcal\Port\ssc\src\Port.c	  3627  ** Traceability:[cover parentID={748F1600-0954-4c11-B30F-8CF9746D48E3}]       **
-; ..\mcal\Port\ssc\src\Port.c	  3628  **                                                                            **
-; ..\mcal\Port\ssc\src\Port.c	  3629  ** Syntax           : LOCAL_INLINE uint8 Port_lCheckInitStatus                **
-; ..\mcal\Port\ssc\src\Port.c	  3630  **                    (                                                       **
-; ..\mcal\Port\ssc\src\Port.c	  3631  **                        const uint8 ApiId                                   **
-; ..\mcal\Port\ssc\src\Port.c	  3632  **                    )                                                       **
-; ..\mcal\Port\ssc\src\Port.c	  3633  **                                                                            **
-; ..\mcal\Port\ssc\src\Port.c	  3634  ** Description      : This INLINE function:                                   **
-; ..\mcal\Port\ssc\src\Port.c	  3635  **   - Check if Port is intialised or not .                                   **
-; ..\mcal\Port\ssc\src\Port.c	  3636  **                                                                            **
-; ..\mcal\Port\ssc\src\Port.c	  3637  **  [/cover]                                                                  **
-; ..\mcal\Port\ssc\src\Port.c	  3638  ** Service ID:  NA                                                            **
-; ..\mcal\Port\ssc\src\Port.c	  3639  **                                                                            **
-; ..\mcal\Port\ssc\src\Port.c	  3640  ** Sync/Async:  Synchronous                                                   **
-; ..\mcal\Port\ssc\src\Port.c	  3641  **                                                                            **
-; ..\mcal\Port\ssc\src\Port.c	  3642  ** Reentrancy:  Reentrant                                                     **
-; ..\mcal\Port\ssc\src\Port.c	  3643  **                                                                            **
-; ..\mcal\Port\ssc\src\Port.c	  3644  ** Parameters (in)  :  ApiId - Service ID of the API reporting an error       **
-; ..\mcal\Port\ssc\src\Port.c	  3645  **                                                                            **
-; ..\mcal\Port\ssc\src\Port.c	  3646  **                                                                            **
-; ..\mcal\Port\ssc\src\Port.c	  3647  ** Parameters (out) : none                                                    **
-; ..\mcal\Port\ssc\src\Port.c	  3648  **                                                                            **
-; ..\mcal\Port\ssc\src\Port.c	  3649  ** Return value     : E_OK - Port_InitStatus is intialized                    **
-; ..\mcal\Port\ssc\src\Port.c	  3650  **                    E_NOT_OK- Port_InitStatus is not intialized             **
-; ..\mcal\Port\ssc\src\Port.c	  3651  **                                                                            **
-; ..\mcal\Port\ssc\src\Port.c	  3652  *******************************************************************************/
-; ..\mcal\Port\ssc\src\Port.c	  3653  LOCAL_INLINE uint8 Port_lCheckInitStatus (const uint8 ApiId)
-; ..\mcal\Port\ssc\src\Port.c	  3654  {
-; ..\mcal\Port\ssc\src\Port.c	  3655    uint8 ErrStatus = E_OK;
-; ..\mcal\Port\ssc\src\Port.c	  3656    /* [cover parentID={F78E386B-0771-4b63-B068-BE7F64B21F7C}]
-; ..\mcal\Port\ssc\src\Port.c	  3657    Check for Intialized state of port
-; ..\mcal\Port\ssc\src\Port.c	  3658    [/cover] */
-; ..\mcal\Port\ssc\src\Port.c	  3659    if (Port_InitStatus != PORT_INITIALIZED)
-; ..\mcal\Port\ssc\src\Port.c	  3660      {
-; ..\mcal\Port\ssc\src\Port.c	  3661        /* [cover parentID={2A1742C4-C05F-484c-91B8-689596DAD248}]
-; ..\mcal\Port\ssc\src\Port.c	  3662        Report DET PORT_E_UNINIT
-; ..\mcal\Port\ssc\src\Port.c	  3663        [/cover] */
-; ..\mcal\Port\ssc\src\Port.c	  3664        Port_lReportError(ApiId, PORT_E_UNINIT);
-; ..\mcal\Port\ssc\src\Port.c	  3665        ErrStatus = (uint8)E_NOT_OK;
 ; ..\mcal\Port\ssc\src\Port.c	  3666      }
 ; ..\mcal\Port\ssc\src\Port.c	  3667    return (ErrStatus);
 ; ..\mcal\Port\ssc\src\Port.c	  3668  }

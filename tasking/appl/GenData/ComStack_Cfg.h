@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: ComStack_Cfg.h
- *   Generation Time: 2025-04-01 10:51:24
+ *   Generation Time: 2025-03-02 17:01:14
  *           Project: tc399demo - Version 1.0
  *          Delivery: CBD2100010_D00
  *      Tool Version: DaVinci Configurator (beta) 5.22.45 SP3
@@ -60,6 +60,9 @@
 /**********************************************************************************************************************
  *  GLOBAL DATA TYPES AND STRUCTURES
  *********************************************************************************************************************/
+typedef uint8 PduIdType;   /**< /ActiveEcuC/EcuC/EcucPduCollection[0:PduIdTypeEnum] */
+
+typedef uint8 PduLengthType;   /**< /ActiveEcuC/EcuC/EcucPduCollection[0:PduLengthTypeEnum] */
 
 /**********************************************************************************************************************
  *  GLOBAL DATA PROTOTYPES

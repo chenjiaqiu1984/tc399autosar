@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Hal_Interrupt_Lcfg.c
- *   Generation Time: 2025-03-01 11:36:41
+ *   Generation Time: 2025-03-03 10:08:10
  *           Project: tc399demo - Version 1.0
  *          Delivery: CBD2100010_D00
  *      Tool Version: DaVinci Configurator (beta) 5.22.45 SP3
@@ -91,10 +91,23 @@
 #define OS_START_SEC_CORE0_CONST_UNSPECIFIED
 #include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
+/*! HAL ISR configuration data: CanIsr_0 */
+CONST(Os_Hal_IntIsrConfigType, OS_CONST) OsCfg_Hal_IntIsr_CanIsr_0 =
+{
+  /* .Level          = */ 50,
+  /* .Source         = */ 0x5b0uL,
+  /* .CoreAssignment = */ 0
+};
+
+CONST(Os_Hal_IntIsrMapConfigType, OS_CONST) OsCfg_Hal_IntIsrMap_CanIsr_0 =
+{
+  /* .Dummy         = */ (uint32)0
+};
+
 /*! HAL ISR configuration data: CounterIsr_SystemTimer */
 CONST(Os_Hal_IntIsrConfigType, OS_CONST) OsCfg_Hal_IntIsr_CounterIsr_SystemTimer =
 {
-  /* .Level          = */ 1,
+  /* .Level          = */ 20,
   /* .Source         = */ 0x300uL,
   /* .CoreAssignment = */ 0
 };

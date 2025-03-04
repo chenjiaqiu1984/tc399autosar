@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Compiler_Cfg.h
- *   Generation Time: 2025-04-01 10:51:24
+ *   Generation Time: 2025-03-03 10:08:10
  *           Project: tc399demo - Version 1.0
  *          Delivery: CBD2100010_D00
  *      Tool Version: DaVinci Configurator (beta) 5.22.45 SP3
@@ -48,6 +48,7 @@
  *  OS USER CALLOUT CODE SECTIONS
  *********************************************************************************************************************/
 
+# define OS_CANISR_0_CODE
 # define OS_DEFAULT_INIT_TASK_CODE
 # define OS_DEFAULT_INIT_TASK_TRUSTED_CODE
 # define OS_BSW_TASK_CODE

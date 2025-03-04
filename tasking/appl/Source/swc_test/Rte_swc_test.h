@@ -13,7 +13,7 @@
  *             File:  Rte_swc_test.h
  *           Config:  D:/Zonal/demo011/davinci/tc399demo.dpa
  *        SW-C Type:  swc_test
- *  Generation Time:  2025-03-01 11:38:18
+ *  Generation Time:  2025-03-03 12:49:59
  *
  *        Generator:  MICROSAR RTE Generator Version 4.23.0
  *                    RTE Core Version 1.23.0
@@ -75,6 +75,7 @@ typedef P2CONST(struct Rte_CDS_swc_test, TYPEDEF, RTE_CONST) Rte_Instance; /* PR
  * API prototypes
  *********************************************************************************************************************/
 FUNC(Std_ReturnType, RTE_CODE) Rte_Write_swc_test_Request_ESH_PostRunRequest_0_requestedMode(BswM_ESH_RunRequest data); /* PRQA S 0786, 3449, 0624 */ /* MD_Rte_0786, MD_Rte_3449, MD_Rte_0624 */
+FUNC(Std_ReturnType, RTE_CODE) Rte_Call_swc_test_UR_CN_testCANFDdbc_76c2c5ca_RequestComMode(ComM_ModeType ComMode); /* PRQA S 0786, 3449, 0624 */ /* MD_Rte_0786, MD_Rte_3449, MD_Rte_0624 */
 
 # define RTE_STOP_SEC_CODE
 # include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
@@ -85,6 +86,12 @@ FUNC(Std_ReturnType, RTE_CODE) Rte_Write_swc_test_Request_ESH_PostRunRequest_0_r
  * Rte_Write_<p>_<d> (explicit S/R communication with isQueued = false)
  *********************************************************************************************************************/
 # define Rte_Write_Request_ESH_PostRunRequest_0_requestedMode Rte_Write_swc_test_Request_ESH_PostRunRequest_0_requestedMode
+
+
+/**********************************************************************************************************************
+ * Rte_Call_<p>_<o> (C/S invocation)
+ *********************************************************************************************************************/
+# define Rte_Call_UR_CN_testCANFDdbc_76c2c5ca_RequestComMode Rte_Call_swc_test_UR_CN_testCANFDdbc_76c2c5ca_RequestComMode
 
 
 
@@ -137,6 +144,14 @@ FUNC(void, swc_test_CODE) swc_test_500ms(void);
  *   -----------------
  *   Std_ReturnType Rte_Write_Request_ESH_PostRunRequest_0_requestedMode(BswM_ESH_RunRequest data)
  *
+ * Service Calls:
+ * ==============
+ *   Service Invocation:
+ *   -------------------
+ *   Std_ReturnType Rte_Call_UR_CN_testCANFDdbc_76c2c5ca_RequestComMode(ComM_ModeType ComMode)
+ *     Synchronous Service Invocation. Timeout: None
+ *     Returned Application Errors: RTE_E_ComM_UserRequest_E_MODE_LIMITATION, RTE_E_ComM_UserRequest_E_NOT_OK
+ *
  *********************************************************************************************************************/
 
 # define RTE_RUNNABLE_swc_test_Init swc_test_Init
@@ -144,6 +159,15 @@ FUNC(void, swc_test_CODE) swc_test_Init(void);
 
 # define swc_test_STOP_SEC_CODE
 # include "swc_test_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
+/**********************************************************************************************************************
+ * Application errors
+ *********************************************************************************************************************/
+
+# define RTE_E_ComM_UserRequest_E_MODE_LIMITATION (2U)
+
+# define RTE_E_ComM_UserRequest_E_NOT_OK (1U)
 
 # ifdef __cplusplus
 } /* extern "C" */

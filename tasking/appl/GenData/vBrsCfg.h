@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: .\vBrsCfg.h
- *   Generation Time: 2025-03-01 16:46:06
+ *   Generation Time: 2025-03-03 11:50:11
  *           Project: tc399demo - Version 1.0
  *          Delivery: CBD2100010_D00
  *      Tool Version: DaVinci Configurator (beta) 5.22.45 SP3
@@ -99,6 +99,21 @@
 /* Peripheral Clock (MHz) */
 #define BRS_PERIPH_CLOCK 100
 
+/* CAN Clock (MHz) */
+#define BRS_CAN_CLOCK 100
+
+
+/*******************************************************************************
+ BRS software modules
+*******************************************************************************/
+#define BRS_ENABLE_WATCHDOG
+#define BRS_ENABLE_PLLCLOCKS
+
+/*******************************************************************************
+ BRS communication interface configuration
+*******************************************************************************/
+#define BRS_ENABLE_CAN_SUPPORT
+
 
 /*******************************************************************************
  Tested Derivative: Infineon Aurix 2G TC39x Family
@@ -152,6 +167,13 @@
 #define BRS_INIT_PATTERN_HARDRESET_BLOCKS (0x0UL)
 #define BRS_INIT_PATTERN_AREAS (0x0UL)
 #define BRS_INIT_PATTERN_HARDRESET_AREAS (0x0UL)
+
+/*******************************************************************************
+ DrvCan Handling
+*******************************************************************************/
+#define BRS_DRVCAN_HEADER_FILENAME "Can.h"
+#define BRS_DRVCAN_EXCLUSIVE_AREA_INFIX(a, b) void SchM_##a##_Can_CAN_##b(void)
+#define BRS_DRVCAN_ControllerInterrupts_INFIX(a) Can_##a##ControllerInterrupts
 
 #endif /*_VBRSCFG_H_*/
 

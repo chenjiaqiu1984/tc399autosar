@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Types_Lcfg.h
- *   Generation Time: 2025-03-01 11:36:41
+ *   Generation Time: 2025-03-03 10:08:10
  *           Project: tc399demo - Version 1.0
  *          Delivery: CBD2100010_D00
  *      Tool Version: DaVinci Configurator (beta) 5.22.45 SP3
@@ -80,14 +80,17 @@
 #define swc_task swc_task
 
 /* Category 2 ISR identifiers. */
+#define CanIsr_0 CanIsr_0
 #define CounterIsr_SystemTimer CounterIsr_SystemTimer
 
 /* Alarm identifiers. */
 #define Rte_Al_TE2_bsw_task_0_10ms Rte_Al_TE2_bsw_task_0_10ms
+#define Rte_Al_TE2_bsw_task_0_20ms Rte_Al_TE2_bsw_task_0_20ms
 #define Rte_Al_TE_swc_test_swc_test_10ms Rte_Al_TE_swc_test_swc_test_10ms
 #define Rte_Al_TE_swc_test_swc_test_500ms Rte_Al_TE_swc_test_swc_test_500ms
 
 /* Counter identifiers. */
+#define OsCounterCAN0 OsCounterCAN0
 #define SystemTimer SystemTimer
 
 /* ScheduleTable identifiers. */
@@ -157,8 +160,9 @@ typedef enum
 /*! Category 2 ISR identifiers. */
 typedef enum
 {
-  CounterIsr_SystemTimer = 0,   /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  OS_ISRID_COUNT = 1,
+  CanIsr_0 = 0,   /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  CounterIsr_SystemTimer = 1,   /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  OS_ISRID_COUNT = 2,
   INVALID_ISR = OS_ISRID_COUNT
 } ISRType;
 
@@ -166,16 +170,18 @@ typedef enum
 typedef enum
 {
   Rte_Al_TE2_bsw_task_0_10ms = 0,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  Rte_Al_TE_swc_test_swc_test_10ms = 1,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  Rte_Al_TE_swc_test_swc_test_500ms = 2,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  OS_ALARMID_COUNT = 3
+  Rte_Al_TE2_bsw_task_0_20ms = 1,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  Rte_Al_TE_swc_test_swc_test_10ms = 2,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  Rte_Al_TE_swc_test_swc_test_500ms = 3,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  OS_ALARMID_COUNT = 4
 } AlarmType;
 
 /*! Counter identifiers. */
 typedef enum
 {
-  SystemTimer = 0,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  OS_COUNTERID_COUNT = 1
+  OsCounterCAN0 = 0,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  SystemTimer = 1,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  OS_COUNTERID_COUNT = 2
 } CounterType;
 
 /*! ScheduleTable identifiers. */

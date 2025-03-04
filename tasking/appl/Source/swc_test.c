@@ -16,7 +16,7 @@
  *             File:  swc_test.c
  *           Config:  D:/Zonal/demo011/davinci/tc399demo.dpa
  *        SW-C Type:  swc_test
- *  Generation Time:  2025-03-01 11:38:18
+ *  Generation Time:  2025-03-03 12:49:59
  *
  *        Generator:  MICROSAR RTE Generator Version 4.23.0
  *                    RTE Core Version 1.23.0
@@ -52,16 +52,23 @@
  *      
  *      For example: 1, 0, 126, +10.
  *
+ * ComM_ModeType
+ *   uint8 represents integers with a minimum value of 0 and a maximum value of 255.
+ *      The order-relation on uint8 is: x < y if y - x is positive.
+ *      uint8 has a lexical representation consisting of a finite-length sequence 
+ *      of decimal digits (#x30-#x39).
+ *      
+ *      For example: 1, 0, 126, +10.
+ *
  *********************************************************************************************************************/
 
 #include "Rte_swc_test.h"
-#include "Dio.h"
 
 
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << Start of include and declaration area >>        DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
-
+#include "Dio.h"
 
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << End of include and declaration area >>          DO NOT CHANGE THIS COMMENT!
@@ -83,6 +90,10 @@
  * BswM_ESH_RunRequest: Enumeration of integer in interval [0...255] with enumerators
  *   RELEASED (0U)
  *   REQUESTED (1U)
+ * ComM_ModeType: Enumeration of integer in interval [0...3] with enumerators
+ *   COMM_NO_COMMUNICATION (0U)
+ *   COMM_SILENT_COMMUNICATION (1U)
+ *   COMM_FULL_COMMUNICATION (2U)
  *
  *********************************************************************************************************************/
 
@@ -172,6 +183,14 @@ FUNC(void, swc_test_CODE) swc_test_500ms(void) /* PRQA S 0624, 3206 */ /* MD_Rte
  *   -----------------
  *   Std_ReturnType Rte_Write_Request_ESH_PostRunRequest_0_requestedMode(BswM_ESH_RunRequest data)
  *
+ * Service Calls:
+ * ==============
+ *   Service Invocation:
+ *   -------------------
+ *   Std_ReturnType Rte_Call_UR_CN_testCANFDdbc_76c2c5ca_RequestComMode(ComM_ModeType ComMode)
+ *     Synchronous Service Invocation. Timeout: None
+ *     Returned Application Errors: RTE_E_ComM_UserRequest_E_MODE_LIMITATION, RTE_E_ComM_UserRequest_E_NOT_OK
+ *
  *********************************************************************************************************************/
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
@@ -190,6 +209,8 @@ FUNC(void, swc_test_CODE) swc_test_Init(void) /* PRQA S 0624, 3206 */ /* MD_Rte_
  * Symbol: swc_test_Init
  *********************************************************************************************************************/
 Rte_Write_Request_ESH_PostRunRequest_0_requestedMode(REQUESTED);
+
+Rte_Call_UR_CN_testCANFDdbc_76c2c5ca_RequestComMode(COMM_FULL_COMMUNICATION);
 
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!

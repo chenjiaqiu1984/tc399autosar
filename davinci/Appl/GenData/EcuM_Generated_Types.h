@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: EcuM_Generated_Types.h
- *   Generation Time: 2025-04-01 10:51:24
+ *   Generation Time: 2025-03-02 17:01:15
  *           Project: tc399demo - Version 1.0
  *          Delivery: CBD2100010_D00
  *      Tool Version: DaVinci Configurator (beta) 5.22.45 SP3
@@ -65,16 +65,18 @@
 #define EcuMConf_EcuMWakeupSource_ECUM_WKSOURCE_INTERNAL_RESET (2uL) 
 #define EcuMConf_EcuMWakeupSource_ECUM_WKSOURCE_INTERNAL_WDG   (3uL) 
 #define EcuMConf_EcuMWakeupSource_ECUM_WKSOURCE_EXTERNAL_WDG   (4uL) 
+#define EcuMConf_EcuMWakeupSource_CN_testCANFDdbc_9817eee0     (5uL) 
 
  
 /* ------------------------------------- Range of EcuM_WakeupSourceType -------------------------------------------- */
-#define ECUM_WKSOURCE_NONE           (EcuM_WakeupSourceType)(0x00000000uL) 
-#define ECUM_WKSOURCE_ALL_SOURCES    (EcuM_WakeupSourceType)(~((EcuM_WakeupSourceType)0x00UL)) 
-#define ECUM_WKSOURCE_POWER          (EcuM_WakeupSourceType)(1uL) 
-#define ECUM_WKSOURCE_RESET          (EcuM_WakeupSourceType)(2uL) 
-#define ECUM_WKSOURCE_INTERNAL_RESET (EcuM_WakeupSourceType)(4uL) 
-#define ECUM_WKSOURCE_INTERNAL_WDG   (EcuM_WakeupSourceType)(8uL) 
-#define ECUM_WKSOURCE_EXTERNAL_WDG   (EcuM_WakeupSourceType)(16uL) 
+#define ECUM_WKSOURCE_NONE                     (EcuM_WakeupSourceType)(0x00000000uL) 
+#define ECUM_WKSOURCE_ALL_SOURCES              (EcuM_WakeupSourceType)(~((EcuM_WakeupSourceType)0x00UL)) 
+#define ECUM_WKSOURCE_POWER                    (EcuM_WakeupSourceType)(1uL) 
+#define ECUM_WKSOURCE_RESET                    (EcuM_WakeupSourceType)(2uL) 
+#define ECUM_WKSOURCE_INTERNAL_RESET           (EcuM_WakeupSourceType)(4uL) 
+#define ECUM_WKSOURCE_INTERNAL_WDG             (EcuM_WakeupSourceType)(8uL) 
+#define ECUM_WKSOURCE_EXTERNAL_WDG             (EcuM_WakeupSourceType)(16uL) 
+#define ECUM_WKSOURCE_CN_testCANFDdbc_9817eee0 (EcuM_WakeupSourceType)(32uL) 
 
 
 

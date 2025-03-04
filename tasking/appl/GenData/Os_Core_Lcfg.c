@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Core_Lcfg.c
- *   Generation Time: 2025-03-01 11:36:41
+ *   Generation Time: 2025-03-03 10:08:10
  *           Project: tc399demo - Version 1.0
  *          Delivery: CBD2100010_D00
  *      Tool Version: DaVinci Configurator (beta) 5.22.45 SP3
@@ -188,11 +188,11 @@ OS_LOCAL CONST(Os_StackConfigRefType, OS_CONST) OsCfg_Core_OsCore0_StackRefs[OS_
   (Os_StackConfigRefType) &OsCfg_Stack_OsCore0_Init,
   (Os_StackConfigRefType) &OsCfg_Stack_OsCore0_Isr_Core,
   (Os_StackConfigRefType) &OsCfg_Stack_OsCore0_Kernel,
-  (Os_StackConfigRefType) &OsCfg_Stack_OsCore0_Task_Prio29,
   (Os_StackConfigRefType) &OsCfg_Stack_OsCore0_Task_Prio4294967295,
   (Os_StackConfigRefType) &OsCfg_Stack_OsCore0_Task_Prio48,
   (Os_StackConfigRefType) &OsCfg_Stack_OsCore0_Task_Prio49,
   (Os_StackConfigRefType) &OsCfg_Stack_OsCore0_Task_Prio50,
+  (Os_StackConfigRefType) &OsCfg_Stack_bsw_task,
   (Os_StackConfigRefType) &OsCfg_Stack_swc_task,
   NULL_PTR
 };
@@ -200,6 +200,7 @@ OS_LOCAL CONST(Os_StackConfigRefType, OS_CONST) OsCfg_Core_OsCore0_StackRefs[OS_
 /*! Object reference table for core ISRs: OsCore0 */
 OS_LOCAL CONST(Os_IsrConfigRefType, OS_CONST) OsCfg_Core_OsCore0_IsrRefs[OS_CFG_NUM_CORE_OSCORE0_ISRS + 1u] =
 {
+  OS_ISR_CASTCONFIG_ISR_2_ISR(OsCfg_Isr_CanIsr_0), 
   OS_TIMER_CASTCONFIG_TIMERISR_2_ISR(OsCfg_Isr_CounterIsr_SystemTimer), 
   NULL_PTR
 };

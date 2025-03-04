@@ -13,7 +13,7 @@
  *             File:  Rte_Type.h
  *           Config:  D:/Zonal/demo011/davinci/tc399demo.dpa
  *        SW-C Type:  swc_test
- *  Generation Time:  2025-03-01 14:18:49
+ *  Generation Time:  2025-03-03 12:49:59
  *
  *        Generator:  MICROSAR RTE Generator Version 4.23.0
  *                    RTE Core Version 1.23.0
@@ -37,6 +37,9 @@
 # define Rte_TypeDef_BswM_ESH_RunRequest
 typedef uint8 BswM_ESH_RunRequest;
 
+# define Rte_TypeDef_ComM_ModeType
+typedef uint8 ComM_ModeType;
+
 
 # ifndef RTE_SUPPRESS_UNUSED_DATATYPES
 /**********************************************************************************************************************
@@ -48,6 +51,12 @@ typedef void * dtRef_VOID;
 
 #  define Rte_TypeDef_dtRef_const_VOID
 typedef const void * dtRef_const_VOID;
+
+#  define Rte_TypeDef_ComM_InhibitionStatusType
+typedef uint8 ComM_InhibitionStatusType;
+
+#  define Rte_TypeDef_ComM_UserHandleType
+typedef uint16 ComM_UserHandleType;
 
 #  define Rte_TypeDef_EcuM_TimeType
 typedef uint32 EcuM_TimeType;

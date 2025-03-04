@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: BswM_Callout_Stubs.c
- *   Generation Time: 2025-04-01 10:51:24
+ *   Generation Time: 2025-03-03 11:53:51
  *           Project: tc399demo - Version 1.0
  *          Delivery: CBD2100010_D00
  *      Tool Version: DaVinci Configurator (beta) 5.22.45 SP3
@@ -173,6 +173,15 @@ FUNC(void, BSWM_CODE) BswM_ESH_OnEnterWakeup(void)
 #include "BswM_vMemMap.h"  /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 #if 0
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           <USERBLOCK ESH_ComM_CheckPendingRequests>          DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>                                       DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
 #endif
 
 

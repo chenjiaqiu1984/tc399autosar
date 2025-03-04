@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Stack_Cfg.h
- *   Generation Time: 2025-03-01 11:36:41
+ *   Generation Time: 2025-03-03 09:41:04
  *           Project: tc399demo - Version 1.0
  *          Delivery: CBD2100010_D00
  *      Tool Version: DaVinci Configurator (beta) 5.22.45 SP3
@@ -66,11 +66,11 @@
 # define OS_CFG_SIZE_OSCORE0_INIT_STACK     (1024uL)
 # define OS_CFG_SIZE_OSCORE0_ISR_CORE_STACK     (1024uL)
 # define OS_CFG_SIZE_OSCORE0_KERNEL_STACK     (1024uL)
-# define OS_CFG_SIZE_OSCORE0_TASK_PRIO29_STACK     (1024uL)
 # define OS_CFG_SIZE_OSCORE0_TASK_PRIO4294967295_STACK     (1024uL)
 # define OS_CFG_SIZE_OSCORE0_TASK_PRIO48_STACK     (1024uL)
 # define OS_CFG_SIZE_OSCORE0_TASK_PRIO49_STACK     (1024uL)
 # define OS_CFG_SIZE_OSCORE0_TASK_PRIO50_STACK     (1024uL)
+# define OS_CFG_SIZE_BSW_TASK_STACK     (1024uL)
 # define OS_CFG_SIZE_SWC_TASK_STACK     (1024uL)
 
 

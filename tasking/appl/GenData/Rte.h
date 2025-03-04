@@ -41,6 +41,8 @@
 
 # include "Rte_UserTypes.h"
 
+# include "Det.h"
+
 # if !defined (TYPEDEF) && defined (AUTOMATIC)
 #  define TYPEDEF AUTOMATIC
 # endif

@@ -1,6 +1,6 @@
 	; Module start
 	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 21092262 SN 73118428"
-	.compiler_invocation	"ctc --dep-file=appl\\GenData\\.EcuM_Cfg.o.d --fp-model=c,f,l,n,r,S,T,z -D__CPU__=tc39xb -D__CPU_TC39XB__ --core=tc1.6.2 --iso=99 -DBRS_COMP_TASKING -ID:\\Zonal\\demo011\\tasking -ID:\\Zonal\\testdemo\\taskingdemo\\demo001 -ID:\\Zonal\\demo011\\tasking -ID:\\Zonal\\demo011\\tasking\\appl -ID:\\Zonal\\demo011\\tasking\\appl\\GenData -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\Components -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\ContractPhase -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\inc -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\src -ID:\\Zonal\\demo011\\tasking\\appl\\Include -ID:\\Zonal\\demo011\\tasking\\appl\\Source -ID:\\Zonal\\demo011\\tasking\\appl\\Source\\swc_test -ID:\\Zonal\\demo011\\tasking\\component -ID:\\Zonal\\demo011\\tasking\\component\\_Common -ID:\\Zonal\\demo011\\tasking\\component\\_Common\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\BswM -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\EcuM -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\Os -ID:\\Zonal\\demo011\\tasking\\component\\Os\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\Os\\BSWMD\\Os -ID:\\Zonal\\demo011\\tasking\\component\\Os\\BSWMD\\Os\\TC39xQ -ID:\\Zonal\\demo011\\tasking\\component\\Os\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\Os\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\Os\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug -ID:\\Zonal\\demo011\\tasking\\Debug\\appl -ID:\\Zonal\\demo011\\tasking\\Debug\\appl\\GenData -ID:\\Zonal\\demo011\\tasking\\Debug\\appl\\GenData\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\appl\\Source -ID:\\Zonal\\demo011\\tasking\\Debug\\component -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\BswM -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\BswM\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\EcuM -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\EcuM\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\Os -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\Os\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\VStdLib -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\VStdLib\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Dio -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Dio\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Dio\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\McalLib -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\McalLib\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\McalLib\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Mcu -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Mcu\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Mcu\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Port -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Port\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Port\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Platform -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Platform\\AS440 -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Sfr -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Sfr\\TC39xB -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Sfr\\TC39xB\\_Reg -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc\\inc\\AS440 -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal\\Port -ID:\\Zonal\\demo011\\tasking\\mcal\\Port\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\Port\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\Port\\ssc\\src -g2 --make-target=appl\\GenData\\EcuM_Cfg.o -t2 --language=-gcc,-volatile,+strings,-kanji --default-near-size=0 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o appl\\GenData\\EcuM_Cfg.src ..\\appl\\GenData\\EcuM_Cfg.c"
+	.compiler_invocation	"ctc --dep-file=appl\\GenData\\.EcuM_Cfg.o.d --fp-model=c,f,l,n,r,S,T,z -D__CPU__=tc39xb -D__CPU_TC39XB__ --core=tc1.6.2 --iso=99 -DBRS_COMP_TASKING -ID:\\Zonal\\demo011\\tasking -ID:\\Zonal\\testdemo\\taskingdemo\\demo001 -ID:\\Zonal\\demo011\\tasking\\component\\PduR -ID:\\Zonal\\demo011\\tasking\\component\\PduR\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\PduR\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\PduR\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\PduR\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\Can -ID:\\Zonal\\demo011\\tasking\\component\\SomeIpXf -ID:\\Zonal\\demo011\\tasking\\component\\SomeIpXf\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\SomeIpXf\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\SomeIpXf\\Generator -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\Can\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\Can\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\Can\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\Can\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\CanIf -ID:\\Zonal\\demo011\\tasking\\component\\CanIf\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\CanIf\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\CanIf\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\CanIf\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\CanSM -ID:\\Zonal\\demo011\\tasking\\component\\CanSM\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\CanSM\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\CanSM\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\CanSM\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\Com -ID:\\Zonal\\demo011\\tasking\\component\\Com\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\Com\\DaVinciCfg_VASE -ID:\\Zonal\\demo011\\tasking\\component\\Com\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\Com\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\Com\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\ComM -ID:\\Zonal\\demo011\\tasking\\component\\ComM\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\ComM\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\ComM\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\ComM\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\Det -ID:\\Zonal\\demo011\\tasking\\component\\Det\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\Det\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\Det\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\Det\\Implementation -ID:\\Zonal\\demo011\\tasking -ID:\\Zonal\\demo011\\tasking\\appl -ID:\\Zonal\\demo011\\tasking\\appl\\GenData -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\Components -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\ContractPhase -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\inc -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\src -ID:\\Zonal\\demo011\\tasking\\appl\\Include -ID:\\Zonal\\demo011\\tasking\\appl\\Source -ID:\\Zonal\\demo011\\tasking\\appl\\Source\\swc_test -ID:\\Zonal\\demo011\\tasking\\component -ID:\\Zonal\\demo011\\tasking\\component\\_Common -ID:\\Zonal\\demo011\\tasking\\component\\_Common\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\BswM -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\EcuM -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\Os -ID:\\Zonal\\demo011\\tasking\\component\\Os\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\Os\\BSWMD\\Os -ID:\\Zonal\\demo011\\tasking\\component\\Os\\BSWMD\\Os\\TC39xQ -ID:\\Zonal\\demo011\\tasking\\component\\Os\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\Os\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\Os\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug -ID:\\Zonal\\demo011\\tasking\\Debug\\appl -ID:\\Zonal\\demo011\\tasking\\Debug\\appl\\GenData -ID:\\Zonal\\demo011\\tasking\\Debug\\appl\\GenData\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\appl\\Source -ID:\\Zonal\\demo011\\tasking\\Debug\\component -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\BswM -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\BswM\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\EcuM -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\EcuM\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\Os -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\Os\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\VStdLib -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\VStdLib\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Dio -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Dio\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Dio\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\McalLib -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\McalLib\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\McalLib\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Mcu -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Mcu\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Mcu\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Port -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Port\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Port\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Platform -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Platform\\AS440 -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Sfr -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Sfr\\TC39xB -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Sfr\\TC39xB\\_Reg -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc\\inc\\AS440 -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal\\Port -ID:\\Zonal\\demo011\\tasking\\mcal\\Port\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\Port\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\Port\\ssc\\src -g2 --make-target=appl\\GenData\\EcuM_Cfg.o -t2 --language=-gcc,-volatile,+strings,-kanji --default-near-size=0 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o appl\\GenData\\EcuM_Cfg.src ..\\appl\\GenData\\EcuM_Cfg.c"
 	.compiler_name		"ctc"
 	;source	'..\\appl\\GenData\\EcuM_Cfg.c'
 
@@ -14,6 +14,14 @@ $TC162
 EcuM_DriverInitOne:	.type	object
 	.size	EcuM_DriverInitOne,4
 	.word	EcuM_AL_DriverInitOne
+	.sdecl	'.rodata.EcuM_Cfg.EcuM_WakeupSourceList',data,rom,cluster('EcuM_WakeupSourceList')
+	.sect	'.rodata.EcuM_Cfg.EcuM_WakeupSourceList'
+	.global	EcuM_WakeupSourceList
+EcuM_WakeupSourceList:	.type	object
+	.size	EcuM_WakeupSourceList,6
+	.byte	255,255,255,255
+	.byte	255
+	.space	1
 	.sdecl	'.bss.EcuM_Cfg.EcuM_ModuleState',data,cluster('EcuM_ModuleState')
 	.sect	'.bss.EcuM_Cfg.EcuM_ModuleState'
 	.global	EcuM_ModuleState
@@ -26,7 +34,7 @@ EcuM_ModuleState:	.type	object
 	.sdecl	'.debug_info',debug
 	.sect	'.debug_info'
 .L3:
-	.word	11120
+	.word	12058
 	.half	3
 	.word	.L4
 	.byte	4
@@ -60,13 +68,13 @@ EcuM_ModuleState:	.type	object
 	.byte	'compare',0
 	.word	169
 	.byte	0,10
-	.byte	'EcuM_AL_DriverInitOne',0,1,240,5,30,1,1,1,1,11
+	.byte	'EcuM_AL_DriverInitOne',0,1,142,6,30,1,1,1,1,11
 	.byte	'__INDIRECT__',0,2,1,1,1,1,1,12,1,7
 	.word	298
 	.byte	13
 	.byte	'__codeptr',0,2,1,1
 	.word	300
-.L11:
+.L14:
 	.byte	2
 	.byte	'unsigned char',0,1,8,13
 	.byte	'boolean',0,3,101,31
@@ -97,394 +105,434 @@ EcuM_ModuleState:	.type	object
 	.byte	'StatusType',0,4,127,23
 	.word	323
 	.byte	13
-	.byte	'EcuM_ModeType',0,5,55,15
+	.byte	'Std_ReturnType',0,4,132,1,15
 	.word	323
 	.byte	13
-	.byte	'EcuM_StateType',0,5,61,15
+	.byte	'PduLengthType',0,5,65,15
 	.word	323
-	.byte	14,1,1,7
-	.word	595
-	.byte	13
-	.byte	'EcuM_DriverFuncType',0,6,194,2,9
-	.word	598
-	.byte	13
-	.byte	'EcuM_DefaultAppModeType',0,6,227,2,16
-	.word	434
-	.byte	13
-	.byte	'EcuM_NormalMcuModeType',0,6,245,2,16
-	.word	434
-	.byte	15
-	.byte	'sEcuM_DriverInitOneType',0,6,136,3,16,4,16
-	.byte	'FunctionOfDriverInitOne',0
-	.word	603
-	.byte	4,2,35,0,0,13
-	.byte	'EcuM_DriverInitOneType',0,6,139,3,3
-	.word	697
 	.byte	7
-	.word	595
-	.byte	15
-	.byte	'sEcuM_PCConfigType',0,6,175,3,16,1,16
+	.word	323
+	.byte	13
+	.byte	'SduDataPtrType',0,6,196,1,54
+	.word	596
+	.byte	14,6,219,1,9,1,15
+	.byte	'TP_DATACONF',0,0,15
+	.byte	'TP_DATARETRY',0,1,15
+	.byte	'TP_CONFPENDING',0,2,0,13
+	.byte	'TpDataStateType',0,6,226,1,3
+	.word	625
+	.byte	16
+	.byte	'sDet_PCConfigType',0,7,238,1,16,1,17
+	.byte	'Det_PCConfigNeverUsed',0
+	.word	323
+	.byte	1,2,35,0,0,13
+	.byte	'Det_PCConfigType',0,7,241,1,3
+	.word	703
+	.byte	13
+	.byte	'ComM_InhibitionStatusType',0,8,37,15
+	.word	323
+	.byte	13
+	.byte	'ComM_ModeType',0,8,58,15
+	.word	323
+	.byte	13
+	.byte	'EcuM_ModeType',0,8,64,15
+	.word	323
+	.byte	13
+	.byte	'EcuM_StateType',0,8,70,15
+	.word	323
+	.byte	18,1,1,7
+	.word	886
+	.byte	13
+	.byte	'EcuM_DriverFuncType',0,9,201,2,9
+	.word	889
+	.byte	13
+	.byte	'EcuM_DefaultAppModeType',0,9,237,2,16
+	.word	434
+	.byte	13
+	.byte	'EcuM_NormalMcuModeType',0,9,255,2,16
+	.word	434
+	.byte	13
+	.byte	'EcuM_ChannelOfWakeupSourceListType',0,9,136,3,15
+	.word	323
+	.byte	16
+	.byte	'sEcuM_DriverInitOneType',0,9,152,3,16,4,17
+	.byte	'FunctionOfDriverInitOne',0
+	.word	894
+	.byte	4,2,35,0,0,13
+	.byte	'EcuM_DriverInitOneType',0,9,155,3,3
+	.word	1032
+	.byte	7
+	.word	886
+	.byte	16
+	.byte	'sEcuM_WakeupSourceListType',0,9,158,3,16,1,17
+	.byte	'ChannelOfWakeupSourceList',0
+	.word	323
+	.byte	1,2,35,0,0,13
+	.byte	'EcuM_WakeupSourceListType',0,9,161,3,3
+	.word	1133
+	.byte	16
+	.byte	'sEcuM_PCConfigType',0,9,200,3,16,1,17
 	.byte	'EcuM_PCConfigNeverUsed',0
 	.word	323
 	.byte	1,2,35,0,0,13
-	.byte	'EcuM_PCConfigType',0,6,178,3,3
-	.word	798
-	.byte	17,7,145,1,9,1,18
-	.byte	'Default_Init_Task',0,0,18
-	.byte	'Default_Init_Task_Trusted',0,1,18
-	.byte	'IdleTask_OsCore0',0,2,18
-	.byte	'bsw_task',0,3,18
-	.byte	'swc_init',0,4,18
-	.byte	'swc_task',0,5,18
-	.byte	'INVALID_TASK',0,6,18
+	.byte	'EcuM_PCConfigType',0,9,203,3,3
+	.word	1237
+	.byte	14,10,148,1,9,1,15
+	.byte	'Default_Init_Task',0,0,15
+	.byte	'Default_Init_Task_Trusted',0,1,15
+	.byte	'IdleTask_OsCore0',0,2,15
+	.byte	'bsw_task',0,3,15
+	.byte	'swc_init',0,4,15
+	.byte	'swc_task',0,5,15
+	.byte	'INVALID_TASK',0,6,15
 	.byte	'OS_TASKID_COUNT',0,6,0,13
-	.byte	'TaskType',0,7,155,1,3
-	.word	883
+	.byte	'TaskType',0,10,158,1,3
+	.word	1322
 	.byte	13
-	.byte	'Os_Hal_AddressType',0,8,61,16
+	.byte	'Os_Hal_AddressType',0,11,61,16
 	.word	434
 	.byte	19,64
 	.word	434
-	.byte	20,15,0,15
-	.byte	'Os_ExceptionContextType_Tag',0,9,71,8,160,1,16
+	.byte	20,15,0,16
+	.byte	'Os_ExceptionContextType_Tag',0,12,71,8,160,1,17
 	.byte	'AddressRegisters',0
-	.word	1068
-	.byte	64,2,35,0,16
+	.word	1507
+	.byte	64,2,35,0,17
 	.byte	'DataRegisters',0
-	.word	1068
-	.byte	64,2,35,64,16
+	.word	1507
+	.byte	64,2,35,64,17
 	.byte	'Ra',0
 	.word	434
-	.byte	4,3,35,128,1,16
+	.byte	4,3,35,128,1,17
 	.byte	'Psw',0
 	.word	434
-	.byte	4,3,35,132,1,16
+	.byte	4,3,35,132,1,17
 	.byte	'ExceptionSource',0
 	.word	434
-	.byte	4,3,35,136,1,16
+	.byte	4,3,35,136,1,17
 	.byte	'Pcpn',0
 	.word	434
-	.byte	4,3,35,140,1,16
+	.byte	4,3,35,140,1,17
 	.byte	'Pie',0
 	.word	434
-	.byte	4,3,35,144,1,16
+	.byte	4,3,35,144,1,17
 	.byte	'MpuRegionForStackLow',0
 	.word	434
-	.byte	4,3,35,148,1,16
+	.byte	4,3,35,148,1,17
 	.byte	'MpuRegionForStackUpper',0
 	.word	434
-	.byte	4,3,35,152,1,16
+	.byte	4,3,35,152,1,17
 	.byte	'RawPCXI',0
 	.word	434
 	.byte	4,3,35,156,1,0,13
-	.byte	'Os_ExceptionContextType',0,8,66,44
-	.word	1077
+	.byte	'Os_ExceptionContextType',0,11,66,44
+	.word	1516
 	.byte	13
-	.byte	'Os_InterruptSourceIdType',0,10,238,1,16
+	.byte	'Os_InterruptSourceIdType',0,13,238,1,16
 	.word	434
 	.byte	13
-	.byte	'Os_ExceptionSourceIdType',0,10,246,1,16
+	.byte	'Os_ExceptionSourceIdType',0,13,246,1,16
 	.word	434
-	.byte	17,10,161,2,9,1,18
-	.byte	'RUNNING',0,0,18
-	.byte	'READY',0,1,18
-	.byte	'WAITING',0,2,18
+	.byte	14,13,161,2,9,1,15
+	.byte	'RUNNING',0,0,15
+	.byte	'READY',0,1,15
+	.byte	'WAITING',0,2,15
 	.byte	'SUSPENDED',0,3,0,13
-	.byte	'TaskStateType',0,10,175,2,3
-	.word	1425
+	.byte	'TaskStateType',0,13,175,2,3
+	.word	1864
 	.byte	13
-	.byte	'EventMaskType',0,10,182,2,16
+	.byte	'EventMaskType',0,13,182,2,16
 	.word	490
 	.byte	13
-	.byte	'Os_TickType',0,10,200,2,19
+	.byte	'Os_TickType',0,13,200,2,19
 	.word	434
 	.byte	13
-	.byte	'TickType',0,10,206,2,21
+	.byte	'TickType',0,13,206,2,21
 	.word	434
-	.byte	21,10,220,2,9,12,16
+	.byte	21,13,220,2,9,12,17
 	.byte	'maxallowedvalue',0
 	.word	434
-	.byte	4,2,35,0,16
+	.byte	4,2,35,0,17
 	.byte	'ticksperbase',0
 	.word	434
-	.byte	4,2,35,4,16
+	.byte	4,2,35,4,17
 	.byte	'mincycle',0
 	.word	434
 	.byte	4,2,35,8,0,13
-	.byte	'AlarmBaseType',0,10,228,2,2
-	.word	1557
-	.byte	17,10,128,3,9,1,18
-	.byte	'APPLICATION_TERMINATED',0,0,18
-	.byte	'APPLICATION_RESTARTING',0,1,18
+	.byte	'AlarmBaseType',0,13,228,2,2
+	.word	1996
+	.byte	14,13,128,3,9,1,15
+	.byte	'APPLICATION_TERMINATED',0,0,15
+	.byte	'APPLICATION_RESTARTING',0,1,15
 	.byte	'APPLICATION_ACCESSIBLE',0,2,0,13
-	.byte	'ApplicationStateType',0,10,133,3,3
-	.word	1652
-	.byte	17,10,177,3,9,1,18
-	.byte	'OSServiceId_GetApplicationID',0,0,18
-	.byte	'OSServiceId_GetISRID',0,1,18
-	.byte	'OSServiceId_CallTrustedFunction',0,2,18
-	.byte	'OSServiceId_CheckISRMemoryAccess',0,3,18
-	.byte	'OSServiceId_CheckTaskMemoryAccess',0,4,18
-	.byte	'OSServiceId_CheckObjectAccess',0,5,18
-	.byte	'OSServiceId_CheckObjectOwnership',0,6,18
-	.byte	'OSServiceId_StartScheduleTableRel',0,7,18
-	.byte	'OSServiceId_StartScheduleTableAbs',0,8,18
-	.byte	'OSServiceId_StopScheduleTable',0,9,18
-	.byte	'OSServiceId_NextScheduleTable',0,10,18
-	.byte	'OSServiceId_StartScheduleTableSynchron',0,11,18
-	.byte	'OSServiceId_SyncScheduleTable',0,12,18
-	.byte	'OSServiceId_SetScheduleTableAsync',0,13,18
-	.byte	'OSServiceId_GetScheduleTableStatus',0,14,18
-	.byte	'OSServiceId_IncrementCounter',0,15,18
-	.byte	'OSServiceId_GetCounterValue',0,16,18
-	.byte	'OSServiceId_GetElapsedValue',0,17,18
-	.byte	'OSServiceId_TerminateApplication',0,18,18
-	.byte	'OSServiceId_AllowAccess',0,19,18
-	.byte	'OSServiceId_GetApplicationState',0,20,18
-	.byte	'OSServiceId_GetNumberOfActivatedCores',0,21,18
-	.byte	'OSServiceId_GetCoreID',0,22,18
-	.byte	'OSServiceId_StartCore',0,23,18
-	.byte	'OSServiceId_StartNonAutosarCore',0,24,18
-	.byte	'OSServiceId_GetSpinlock',0,25,18
-	.byte	'OSServiceId_ReleaseSpinlock',0,26,18
-	.byte	'OSServiceId_TryToGetSpinlock',0,27,18
-	.byte	'OSServiceId_ShutdownAllCores',0,28,18
-	.byte	'OSServiceId_ControlIdle',0,29,18
-	.byte	'OSServiceId_IocSend',0,30,18
-	.byte	'OSServiceId_IocWrite',0,31,18
-	.byte	'OSServiceId_IocSendGroup',0,32,18
-	.byte	'OSServiceId_IocWriteGroup',0,33,18
-	.byte	'OSServiceId_IocReceive',0,34,18
-	.byte	'OSServiceId_IocRead',0,35,18
-	.byte	'OSServiceId_IocReceiveGroup',0,36,18
-	.byte	'OSServiceId_IocReadGroup',0,37,18
-	.byte	'OSServiceId_IocEmptyQueue',0,38,18
-	.byte	'OSServiceId_GetCurrentApplicationID',0,39,18
-	.byte	'OSServiceId_GetExceptionContext',0,160,1,18
-	.byte	'OSServiceId_SetExceptionContext',0,161,1,18
-	.byte	'OSServiceId_CallNonTrustedFunction',0,162,1,18
-	.byte	'OSServiceId_AppKill',0,163,1,18
-	.byte	'OSServiceId_AlarmActionSetEvent',0,164,1,18
-	.byte	'OSServiceId_AlarmActionActivateTask',0,165,1,18
-	.byte	'OSServiceId_AlarmActionIncrementCounter',0,166,1,18
-	.byte	'OSServiceId_AlarmActionCallback',0,167,1,18
-	.byte	'OSServiceId_TimerIsr',0,168,1,18
-	.byte	'OSServiceId_IsrWrapper',0,169,1,18
-	.byte	'OSServiceId_GetTaskStackUsage',0,170,1,18
-	.byte	'OSServiceId_GetISRStackUsage',0,171,1,18
-	.byte	'OSServiceId_GetKernelStackUsage',0,172,1,18
-	.byte	'OSServiceId_GetStartupHookStackUsage',0,173,1,18
-	.byte	'OSServiceId_GetErrorHookStackUsage',0,174,1,18
-	.byte	'OSServiceId_GetShutdownHookStackUsage',0,175,1,18
-	.byte	'OSServiceId_GetProtectionHookStackUsage',0,176,1,18
-	.byte	'OSServiceId_GetSemaphore',0,177,1,18
-	.byte	'OSServiceId_ReleaseSemaphore',0,178,1,18
-	.byte	'OSServiceId_ScheduleTableActivateTask',0,179,1,18
-	.byte	'OSServiceId_ScheduleTableSetEvent',0,180,1,18
-	.byte	'OSServiceId_DisableInterruptSource',0,181,1,18
-	.byte	'OSServiceId_EnableInterruptSource',0,182,1,18
-	.byte	'OSServiceId_ClearPendingInterrupt',0,183,1,18
-	.byte	'OSServiceId_GetUnhandledIrq',0,184,1,18
-	.byte	'OSServiceId_GetUnhandledExc',0,185,1,18
-	.byte	'OSServiceId_HookCallCallback',0,186,1,18
-	.byte	'OSServiceId_IsInterruptSourceEnabled',0,187,1,18
-	.byte	'OSServiceId_IsInterruptPending',0,188,1,18
-	.byte	'OSServiceId_CallFastTrustedFunction',0,189,1,18
-	.byte	'OSServiceId_BarrierSynchronize',0,190,1,18
-	.byte	'OSServiceId_InitialEnableInterruptSources',0,191,1,18
-	.byte	'OSServiceId_GetCoreStartState',0,192,1,18
-	.byte	'OSServiceId_StartOS',0,208,1,18
-	.byte	'OSServiceId_GetActiveApplicationMode',0,210,1,18
-	.byte	'OSServiceId_DisableAllInterrupts',0,211,1,18
-	.byte	'OSServiceId_EnableAllInterrupts',0,212,1,18
-	.byte	'OSServiceId_SuspendAllInterrupts',0,213,1,18
-	.byte	'OSServiceId_ResumeAllInterrupts',0,214,1,18
-	.byte	'OSServiceId_SuspendOSInterrupts',0,215,1,18
-	.byte	'OSServiceId_ResumeOSInterrupts',0,216,1,18
-	.byte	'OSServiceId_ActivateTask',0,217,1,18
-	.byte	'OSServiceId_TerminateTask',0,218,1,18
-	.byte	'OSServiceId_ChainTask',0,219,1,18
-	.byte	'OSServiceId_GetTaskID',0,220,1,18
-	.byte	'OSServiceId_GetTaskState',0,221,1,18
-	.byte	'OSServiceId_Schedule',0,222,1,18
-	.byte	'OSServiceId_SetEvent',0,223,1,18
-	.byte	'OSServiceId_ClearEvent',0,224,1,18
-	.byte	'OSServiceId_GetEvent',0,225,1,18
-	.byte	'OSServiceId_WaitEvent',0,226,1,18
-	.byte	'OSServiceId_GetAlarmBase',0,227,1,18
-	.byte	'OSServiceId_GetAlarm',0,228,1,18
-	.byte	'OSServiceId_SetRelAlarm',0,229,1,18
-	.byte	'OSServiceId_SetAbsAlarm',0,230,1,18
-	.byte	'OSServiceId_CancelAlarm',0,231,1,18
-	.byte	'OSServiceId_GetResource',0,232,1,18
-	.byte	'OSServiceId_ReleaseResource',0,233,1,18
+	.byte	'ApplicationStateType',0,13,133,3,3
+	.word	2091
+	.byte	14,13,177,3,9,1,15
+	.byte	'OSServiceId_GetApplicationID',0,0,15
+	.byte	'OSServiceId_GetISRID',0,1,15
+	.byte	'OSServiceId_CallTrustedFunction',0,2,15
+	.byte	'OSServiceId_CheckISRMemoryAccess',0,3,15
+	.byte	'OSServiceId_CheckTaskMemoryAccess',0,4,15
+	.byte	'OSServiceId_CheckObjectAccess',0,5,15
+	.byte	'OSServiceId_CheckObjectOwnership',0,6,15
+	.byte	'OSServiceId_StartScheduleTableRel',0,7,15
+	.byte	'OSServiceId_StartScheduleTableAbs',0,8,15
+	.byte	'OSServiceId_StopScheduleTable',0,9,15
+	.byte	'OSServiceId_NextScheduleTable',0,10,15
+	.byte	'OSServiceId_StartScheduleTableSynchron',0,11,15
+	.byte	'OSServiceId_SyncScheduleTable',0,12,15
+	.byte	'OSServiceId_SetScheduleTableAsync',0,13,15
+	.byte	'OSServiceId_GetScheduleTableStatus',0,14,15
+	.byte	'OSServiceId_IncrementCounter',0,15,15
+	.byte	'OSServiceId_GetCounterValue',0,16,15
+	.byte	'OSServiceId_GetElapsedValue',0,17,15
+	.byte	'OSServiceId_TerminateApplication',0,18,15
+	.byte	'OSServiceId_AllowAccess',0,19,15
+	.byte	'OSServiceId_GetApplicationState',0,20,15
+	.byte	'OSServiceId_GetNumberOfActivatedCores',0,21,15
+	.byte	'OSServiceId_GetCoreID',0,22,15
+	.byte	'OSServiceId_StartCore',0,23,15
+	.byte	'OSServiceId_StartNonAutosarCore',0,24,15
+	.byte	'OSServiceId_GetSpinlock',0,25,15
+	.byte	'OSServiceId_ReleaseSpinlock',0,26,15
+	.byte	'OSServiceId_TryToGetSpinlock',0,27,15
+	.byte	'OSServiceId_ShutdownAllCores',0,28,15
+	.byte	'OSServiceId_ControlIdle',0,29,15
+	.byte	'OSServiceId_IocSend',0,30,15
+	.byte	'OSServiceId_IocWrite',0,31,15
+	.byte	'OSServiceId_IocSendGroup',0,32,15
+	.byte	'OSServiceId_IocWriteGroup',0,33,15
+	.byte	'OSServiceId_IocReceive',0,34,15
+	.byte	'OSServiceId_IocRead',0,35,15
+	.byte	'OSServiceId_IocReceiveGroup',0,36,15
+	.byte	'OSServiceId_IocReadGroup',0,37,15
+	.byte	'OSServiceId_IocEmptyQueue',0,38,15
+	.byte	'OSServiceId_GetCurrentApplicationID',0,39,15
+	.byte	'OSServiceId_GetExceptionContext',0,160,1,15
+	.byte	'OSServiceId_SetExceptionContext',0,161,1,15
+	.byte	'OSServiceId_CallNonTrustedFunction',0,162,1,15
+	.byte	'OSServiceId_AppKill',0,163,1,15
+	.byte	'OSServiceId_AlarmActionSetEvent',0,164,1,15
+	.byte	'OSServiceId_AlarmActionActivateTask',0,165,1,15
+	.byte	'OSServiceId_AlarmActionIncrementCounter',0,166,1,15
+	.byte	'OSServiceId_AlarmActionCallback',0,167,1,15
+	.byte	'OSServiceId_TimerIsr',0,168,1,15
+	.byte	'OSServiceId_IsrWrapper',0,169,1,15
+	.byte	'OSServiceId_GetTaskStackUsage',0,170,1,15
+	.byte	'OSServiceId_GetISRStackUsage',0,171,1,15
+	.byte	'OSServiceId_GetKernelStackUsage',0,172,1,15
+	.byte	'OSServiceId_GetStartupHookStackUsage',0,173,1,15
+	.byte	'OSServiceId_GetErrorHookStackUsage',0,174,1,15
+	.byte	'OSServiceId_GetShutdownHookStackUsage',0,175,1,15
+	.byte	'OSServiceId_GetProtectionHookStackUsage',0,176,1,15
+	.byte	'OSServiceId_GetSemaphore',0,177,1,15
+	.byte	'OSServiceId_ReleaseSemaphore',0,178,1,15
+	.byte	'OSServiceId_ScheduleTableActivateTask',0,179,1,15
+	.byte	'OSServiceId_ScheduleTableSetEvent',0,180,1,15
+	.byte	'OSServiceId_DisableInterruptSource',0,181,1,15
+	.byte	'OSServiceId_EnableInterruptSource',0,182,1,15
+	.byte	'OSServiceId_ClearPendingInterrupt',0,183,1,15
+	.byte	'OSServiceId_GetUnhandledIrq',0,184,1,15
+	.byte	'OSServiceId_GetUnhandledExc',0,185,1,15
+	.byte	'OSServiceId_HookCallCallback',0,186,1,15
+	.byte	'OSServiceId_IsInterruptSourceEnabled',0,187,1,15
+	.byte	'OSServiceId_IsInterruptPending',0,188,1,15
+	.byte	'OSServiceId_CallFastTrustedFunction',0,189,1,15
+	.byte	'OSServiceId_BarrierSynchronize',0,190,1,15
+	.byte	'OSServiceId_InitialEnableInterruptSources',0,191,1,15
+	.byte	'OSServiceId_GetCoreStartState',0,192,1,15
+	.byte	'OSServiceId_StartOS',0,208,1,15
+	.byte	'OSServiceId_GetActiveApplicationMode',0,210,1,15
+	.byte	'OSServiceId_DisableAllInterrupts',0,211,1,15
+	.byte	'OSServiceId_EnableAllInterrupts',0,212,1,15
+	.byte	'OSServiceId_SuspendAllInterrupts',0,213,1,15
+	.byte	'OSServiceId_ResumeAllInterrupts',0,214,1,15
+	.byte	'OSServiceId_SuspendOSInterrupts',0,215,1,15
+	.byte	'OSServiceId_ResumeOSInterrupts',0,216,1,15
+	.byte	'OSServiceId_ActivateTask',0,217,1,15
+	.byte	'OSServiceId_TerminateTask',0,218,1,15
+	.byte	'OSServiceId_ChainTask',0,219,1,15
+	.byte	'OSServiceId_GetTaskID',0,220,1,15
+	.byte	'OSServiceId_GetTaskState',0,221,1,15
+	.byte	'OSServiceId_Schedule',0,222,1,15
+	.byte	'OSServiceId_SetEvent',0,223,1,15
+	.byte	'OSServiceId_ClearEvent',0,224,1,15
+	.byte	'OSServiceId_GetEvent',0,225,1,15
+	.byte	'OSServiceId_WaitEvent',0,226,1,15
+	.byte	'OSServiceId_GetAlarmBase',0,227,1,15
+	.byte	'OSServiceId_GetAlarm',0,228,1,15
+	.byte	'OSServiceId_SetRelAlarm',0,229,1,15
+	.byte	'OSServiceId_SetAbsAlarm',0,230,1,15
+	.byte	'OSServiceId_CancelAlarm',0,231,1,15
+	.byte	'OSServiceId_GetResource',0,232,1,15
+	.byte	'OSServiceId_ReleaseResource',0,233,1,15
 	.byte	'OSSERVICEID_COUNT',0,255,1,0,13
-	.byte	'OSServiceIdType',0,10,156,4,3
-	.word	1764
-	.byte	17,10,172,4,9,2,18
-	.byte	'OS_STATUS_OK',0,0,18
-	.byte	'OS_STATUS_CALLEVEL',0,2,18
-	.byte	'OS_STATUS_LIMIT',0,4,18
-	.byte	'OS_STATUS_RESOURCE',0,6,18
-	.byte	'OS_STATUS_SERVICEID',0,9,18
-	.byte	'OS_STATUS_ILLEGAL_ADDRESS',0,10,18
-	.byte	'OS_STATUS_MISSINGEND',0,11,18
-	.byte	'OS_STATUS_DISABLEDINT',0,12,18
-	.byte	'OS_STATUS_STACKFAULT',0,13,18
-	.byte	'OS_STATUS_PROTECTION_MEMORY',0,14,18
-	.byte	'OS_STATUS_PROTECTION_TIME',0,15,18
-	.byte	'OS_STATUS_PROTECTION_ARRIVAL',0,16,18
-	.byte	'OS_STATUS_PROTECTION_LOCKED',0,17,18
-	.byte	'OS_STATUS_PROTECTION_EXCEPTION',0,18,18
-	.byte	'OS_STATUS_INTERFERENCE_DEADLOCK',0,19,18
-	.byte	'OS_STATUS_NESTING_DEADLOCK',0,20,18
-	.byte	'OS_STATUS_SPINLOCK',0,21,18
-	.byte	'OS_STATUS_CORE',0,22,18
-	.byte	'OS_STATUS_OVERFLOW',0,245,1,18
-	.byte	'OS_STATUS_KILL_KERNEL_OBJ',0,246,1,18
-	.byte	'OS_STATUS_NO_RESTARTTASK',0,247,1,18
-	.byte	'OS_STATUS_CALL_NOT_ALLOWED',0,248,1,18
-	.byte	'OS_STATUS_FUNCTION_UNAVAILABLE',0,249,1,18
-	.byte	'OS_STATUS_PROTECTION_SYSCALL',0,250,1,18
-	.byte	'OS_STATUS_PROTECTION_IRQ',0,251,1,18
-	.byte	'OS_STATUS_API_ERROR',0,252,1,18
-	.byte	'OS_STATUS_ASSERTION',0,253,1,18
-	.byte	'OS_STATUS_OVERLOAD',0,254,1,18
-	.byte	'OS_STATUS_ACCESSRIGHTS_1',0,129,2,18
-	.byte	'OS_STATUS_CALLEVEL_SHARED_STACK',0,130,2,18
-	.byte	'OS_STATUS_ID_1',0,131,2,18
-	.byte	'OS_STATUS_UNLOCKED',0,133,2,18
-	.byte	'OS_STATUS_STATE_1',0,135,2,18
-	.byte	'OS_STATUS_VALUE_IS_ZERO_1',0,136,2,18
-	.byte	'OS_STATUS_CORE_CROSS_DATA',0,150,2,18
-	.byte	'OS_STATUS_PARAM_POINTER_1',0,151,2,18
-	.byte	'OS_STATUS_STACKUSAGE_DISABLED_BY_CONFIG',0,241,3,18
-	.byte	'OS_STATUS_NO_BARRIER_PARTICIPANT',0,242,3,18
-	.byte	'OS_STATUS_UNIMPLEMENTED_CLEARPENDING',0,243,3,18
-	.byte	'OS_STATUS_NO_NTFSTACK_POOL_EMPTY',0,244,3,18
-	.byte	'OS_STATUS_ACCESSRIGHTS_2',0,129,4,18
-	.byte	'OS_STATUS_CALLEVEL_CROSS_CORE_SYNC',0,130,4,18
-	.byte	'OS_STATUS_ID_2',0,131,4,18
-	.byte	'OS_STATUS_NOFUNC_1',0,133,4,18
-	.byte	'OS_STATUS_STATE_2',0,135,4,18
-	.byte	'OS_STATUS_VALUE_IS_ZERO_2',0,136,4,18
-	.byte	'OS_STATUS_PARAM_POINTER_2',0,151,4,18
-	.byte	'OS_STATUS_EVENT_DISABLED_BY_CONFIG',0,241,5,18
-	.byte	'OS_STATUS_UNIMPLEMENTED_EXCEPTIONCONTEXT',0,243,5,18
-	.byte	'OS_STATUS_NO_NTFSTACK_APPLIMIT_EXCEEDED',0,244,5,18
-	.byte	'OS_STATUS_NOTACCESSIBLE_1',0,129,6,18
-	.byte	'OS_STATUS_ID_TYPE_1',0,131,6,18
-	.byte	'OS_STATUS_NOFUNC_2',0,133,6,18
-	.byte	'OS_STATUS_STATE_STOPPED',0,135,6,18
-	.byte	'OS_STATUS_VALUE_IS_TOO_HIGH_1',0,136,6,18
-	.byte	'OS_STATUS_PARAM_POINTER_3',0,151,6,18
-	.byte	'OS_STATUS_NOTACCESSIBLE_2',0,129,8,18
-	.byte	'OS_STATUS_ID_DIFFERENT_COUNTER',0,131,8,18
-	.byte	'OS_STATUS_SPINLOCK_ORDER',0,133,8,18
-	.byte	'OS_STATUS_STATE_RUNNING',0,135,8,18
-	.byte	'OS_STATUS_VALUE_IS_TOO_HIGH_2',0,136,8,18
-	.byte	'OS_STATUS_NOEXTENDEDTASK_1',0,129,10,18
-	.byte	'OS_STATUS_ID_DIFFERENT_SYNC',0,131,10,18
-	.byte	'OS_STATUS_STOPPED_1',0,133,10,18
-	.byte	'OS_STATUS_STATE_NEXTED',0,135,10,18
-	.byte	'OS_STATUS_VALUE_IS_TOO_HIGH_3',0,136,10,18
-	.byte	'OS_STATUS_NOEXTENDEDTASK_2',0,129,12,18
-	.byte	'OS_STATUS_HOOK_NOT_AVAILABLE',0,131,12,18
-	.byte	'OS_STATUS_NOT_STOPPED_2',0,133,12,18
-	.byte	'OS_STATUS_STATE_WAITING',0,135,12,18
-	.byte	'OS_STATUS_VALUE_IS_OUT_OF_BOUNDS_1',0,136,12,18
-	.byte	'OS_STATUS_NOEXTENDEDTASK_CALLER',0,129,14,18
-	.byte	'OS_STATUS_NEXTED_1',0,133,14,18
-	.byte	'OS_STATUS_STATE_NO_RESTART',0,135,14,18
-	.byte	'OS_STATUS_VALUE_IS_OUT_OF_BOUNDS_2',0,136,14,18
-	.byte	'OS_STATUS_LOCKED',0,129,16,18
-	.byte	'OS_STATUS_KILLING_IS_DISABLED',0,133,16,18
-	.byte	'OS_STATUS_STATE_ALREADY_TERMINATED',0,135,16,18
-	.byte	'OS_STATUS_VALUE_IS_TOO_LOW_1',0,136,16,18
-	.byte	'OS_STATUS_PRIORITY',0,129,18,18
-	.byte	'OS_STATUS_ORDER',0,133,18,18
-	.byte	'OS_STATUS_STATE_RESTARTING_NO_MEMBER',0,135,18,18
-	.byte	'OS_STATUS_VALUE_IS_TOO_LOW_2',0,136,18,18
-	.byte	'OS_STATUS_NOT_THE_OWNER_1',0,129,20,18
-	.byte	'OS_STATUS_STATE_ALREADY_RESTARTING',0,135,20,18
-	.byte	'OS_STATUS_VALUE_IS_TOO_LOW_3',0,136,20,18
+	.byte	'OSServiceIdType',0,13,156,4,3
+	.word	2203
+	.byte	14,13,172,4,9,2,15
+	.byte	'OS_STATUS_OK',0,0,15
+	.byte	'OS_STATUS_CALLEVEL',0,2,15
+	.byte	'OS_STATUS_LIMIT',0,4,15
+	.byte	'OS_STATUS_RESOURCE',0,6,15
+	.byte	'OS_STATUS_SERVICEID',0,9,15
+	.byte	'OS_STATUS_ILLEGAL_ADDRESS',0,10,15
+	.byte	'OS_STATUS_MISSINGEND',0,11,15
+	.byte	'OS_STATUS_DISABLEDINT',0,12,15
+	.byte	'OS_STATUS_STACKFAULT',0,13,15
+	.byte	'OS_STATUS_PROTECTION_MEMORY',0,14,15
+	.byte	'OS_STATUS_PROTECTION_TIME',0,15,15
+	.byte	'OS_STATUS_PROTECTION_ARRIVAL',0,16,15
+	.byte	'OS_STATUS_PROTECTION_LOCKED',0,17,15
+	.byte	'OS_STATUS_PROTECTION_EXCEPTION',0,18,15
+	.byte	'OS_STATUS_INTERFERENCE_DEADLOCK',0,19,15
+	.byte	'OS_STATUS_NESTING_DEADLOCK',0,20,15
+	.byte	'OS_STATUS_SPINLOCK',0,21,15
+	.byte	'OS_STATUS_CORE',0,22,15
+	.byte	'OS_STATUS_OVERFLOW',0,245,1,15
+	.byte	'OS_STATUS_KILL_KERNEL_OBJ',0,246,1,15
+	.byte	'OS_STATUS_NO_RESTARTTASK',0,247,1,15
+	.byte	'OS_STATUS_CALL_NOT_ALLOWED',0,248,1,15
+	.byte	'OS_STATUS_FUNCTION_UNAVAILABLE',0,249,1,15
+	.byte	'OS_STATUS_PROTECTION_SYSCALL',0,250,1,15
+	.byte	'OS_STATUS_PROTECTION_IRQ',0,251,1,15
+	.byte	'OS_STATUS_API_ERROR',0,252,1,15
+	.byte	'OS_STATUS_ASSERTION',0,253,1,15
+	.byte	'OS_STATUS_OVERLOAD',0,254,1,15
+	.byte	'OS_STATUS_ACCESSRIGHTS_1',0,129,2,15
+	.byte	'OS_STATUS_CALLEVEL_SHARED_STACK',0,130,2,15
+	.byte	'OS_STATUS_ID_1',0,131,2,15
+	.byte	'OS_STATUS_UNLOCKED',0,133,2,15
+	.byte	'OS_STATUS_STATE_1',0,135,2,15
+	.byte	'OS_STATUS_VALUE_IS_ZERO_1',0,136,2,15
+	.byte	'OS_STATUS_CORE_CROSS_DATA',0,150,2,15
+	.byte	'OS_STATUS_PARAM_POINTER_1',0,151,2,15
+	.byte	'OS_STATUS_STACKUSAGE_DISABLED_BY_CONFIG',0,241,3,15
+	.byte	'OS_STATUS_NO_BARRIER_PARTICIPANT',0,242,3,15
+	.byte	'OS_STATUS_UNIMPLEMENTED_CLEARPENDING',0,243,3,15
+	.byte	'OS_STATUS_NO_NTFSTACK_POOL_EMPTY',0,244,3,15
+	.byte	'OS_STATUS_ACCESSRIGHTS_2',0,129,4,15
+	.byte	'OS_STATUS_CALLEVEL_CROSS_CORE_SYNC',0,130,4,15
+	.byte	'OS_STATUS_ID_2',0,131,4,15
+	.byte	'OS_STATUS_NOFUNC_1',0,133,4,15
+	.byte	'OS_STATUS_STATE_2',0,135,4,15
+	.byte	'OS_STATUS_VALUE_IS_ZERO_2',0,136,4,15
+	.byte	'OS_STATUS_PARAM_POINTER_2',0,151,4,15
+	.byte	'OS_STATUS_EVENT_DISABLED_BY_CONFIG',0,241,5,15
+	.byte	'OS_STATUS_UNIMPLEMENTED_EXCEPTIONCONTEXT',0,243,5,15
+	.byte	'OS_STATUS_NO_NTFSTACK_APPLIMIT_EXCEEDED',0,244,5,15
+	.byte	'OS_STATUS_NOTACCESSIBLE_1',0,129,6,15
+	.byte	'OS_STATUS_ID_TYPE_1',0,131,6,15
+	.byte	'OS_STATUS_NOFUNC_2',0,133,6,15
+	.byte	'OS_STATUS_STATE_STOPPED',0,135,6,15
+	.byte	'OS_STATUS_VALUE_IS_TOO_HIGH_1',0,136,6,15
+	.byte	'OS_STATUS_PARAM_POINTER_3',0,151,6,15
+	.byte	'OS_STATUS_NOTACCESSIBLE_2',0,129,8,15
+	.byte	'OS_STATUS_ID_DIFFERENT_COUNTER',0,131,8,15
+	.byte	'OS_STATUS_SPINLOCK_ORDER',0,133,8,15
+	.byte	'OS_STATUS_STATE_RUNNING',0,135,8,15
+	.byte	'OS_STATUS_VALUE_IS_TOO_HIGH_2',0,136,8,15
+	.byte	'OS_STATUS_NOEXTENDEDTASK_1',0,129,10,15
+	.byte	'OS_STATUS_ID_DIFFERENT_SYNC',0,131,10,15
+	.byte	'OS_STATUS_STOPPED_1',0,133,10,15
+	.byte	'OS_STATUS_STATE_NEXTED',0,135,10,15
+	.byte	'OS_STATUS_VALUE_IS_TOO_HIGH_3',0,136,10,15
+	.byte	'OS_STATUS_NOEXTENDEDTASK_2',0,129,12,15
+	.byte	'OS_STATUS_HOOK_NOT_AVAILABLE',0,131,12,15
+	.byte	'OS_STATUS_NOT_STOPPED_2',0,133,12,15
+	.byte	'OS_STATUS_STATE_WAITING',0,135,12,15
+	.byte	'OS_STATUS_VALUE_IS_OUT_OF_BOUNDS_1',0,136,12,15
+	.byte	'OS_STATUS_NOEXTENDEDTASK_CALLER',0,129,14,15
+	.byte	'OS_STATUS_NEXTED_1',0,133,14,15
+	.byte	'OS_STATUS_STATE_NO_RESTART',0,135,14,15
+	.byte	'OS_STATUS_VALUE_IS_OUT_OF_BOUNDS_2',0,136,14,15
+	.byte	'OS_STATUS_LOCKED',0,129,16,15
+	.byte	'OS_STATUS_KILLING_IS_DISABLED',0,133,16,15
+	.byte	'OS_STATUS_STATE_ALREADY_TERMINATED',0,135,16,15
+	.byte	'OS_STATUS_VALUE_IS_TOO_LOW_1',0,136,16,15
+	.byte	'OS_STATUS_PRIORITY',0,129,18,15
+	.byte	'OS_STATUS_ORDER',0,133,18,15
+	.byte	'OS_STATUS_STATE_RESTARTING_NO_MEMBER',0,135,18,15
+	.byte	'OS_STATUS_VALUE_IS_TOO_LOW_2',0,136,18,15
+	.byte	'OS_STATUS_NOT_THE_OWNER_1',0,129,20,15
+	.byte	'OS_STATUS_STATE_ALREADY_RESTARTING',0,135,20,15
+	.byte	'OS_STATUS_VALUE_IS_TOO_LOW_3',0,136,20,15
 	.byte	'OS_STATUS_VALUE_IS_NOT_BOOLEAN',0,136,22,0,13
-	.byte	'Os_StatusType',0,10,232,5,3
-	.word	4934
-	.byte	21,10,133,6,9,4,16
+	.byte	'Os_StatusType',0,13,232,5,3
+	.word	5373
+	.byte	21,13,133,6,9,4,17
 	.byte	'Service',0
-	.word	1764
-	.byte	1,2,35,0,16
+	.word	2203
+	.byte	1,2,35,0,17
 	.byte	'Error',0
 	.word	323
-	.byte	1,2,35,1,16
+	.byte	1,2,35,1,17
 	.byte	'DetailedError',0
-	.word	4934
+	.word	5373
 	.byte	2,2,35,2,0,13
-	.byte	'Os_ErrorInformationType',0,10,143,6,3
-	.word	7464
-	.byte	17,10,175,6,9,1,18
-	.byte	'SCHEDULETABLE_STOPPED',0,0,18
-	.byte	'SCHEDULETABLE_NEXT',0,1,18
-	.byte	'SCHEDULETABLE_WAITING',0,2,18
-	.byte	'SCHEDULETABLE_RUNNING',0,3,18
+	.byte	'Os_ErrorInformationType',0,13,143,6,3
+	.word	7903
+	.byte	14,13,175,6,9,1,15
+	.byte	'SCHEDULETABLE_STOPPED',0,0,15
+	.byte	'SCHEDULETABLE_NEXT',0,1,15
+	.byte	'SCHEDULETABLE_WAITING',0,2,15
+	.byte	'SCHEDULETABLE_RUNNING',0,3,15
 	.byte	'SCHEDULETABLE_RUNNING_AND_SYNCHRONOUS',0,4,0,13
-	.byte	'ScheduleTableStatusType',0,10,192,6,3
-	.word	7559
+	.byte	'ScheduleTableStatusType',0,13,192,6,3
+	.word	7998
 	.byte	13
-	.byte	'Os_AccessCheckAddress',0,10,199,6,29
+	.byte	'Os_AccessCheckAddress',0,13,199,6,29
 	.word	434
-	.byte	17,10,211,6,9,1,18
-	.byte	'OS_MEM_ACCESS_TYPE_NON',0,0,18
-	.byte	'OS_MEM_ACCESS_TYPE_R',0,1,18
-	.byte	'OS_MEM_ACCESS_TYPE_READ',0,1,18
-	.byte	'OS_MEM_ACCESS_TYPE_W',0,2,18
-	.byte	'OS_MEM_ACCESS_TYPE_WRITE',0,2,18
-	.byte	'OS_MEM_ACCESS_TYPE_RW',0,3,18
-	.byte	'OS_MEM_ACCESS_TYPE_EXECUTE',0,4,18
-	.byte	'OS_MEM_ACCESS_TYPE_X',0,4,18
-	.byte	'OS_MEM_ACCESS_TYPE_RX',0,5,18
-	.byte	'OS_MEM_ACCESS_TYPE_WX',0,6,18
-	.byte	'OS_MEM_ACCESS_TYPE_RWX',0,7,18
-	.byte	'OS_MEM_ACCESS_TYPE_S',0,8,18
-	.byte	'OS_MEM_ACCESS_TYPE_STACK',0,8,18
-	.byte	'OS_MEM_ACCESS_TYPE_RS',0,9,18
-	.byte	'OS_MEM_ACCESS_TYPE_WS',0,10,18
-	.byte	'OS_MEM_ACCESS_TYPE_RWS',0,11,18
-	.byte	'OS_MEM_ACCESS_TYPE_XS',0,12,18
-	.byte	'OS_MEM_ACCESS_TYPE_RXS',0,13,18
-	.byte	'OS_MEM_ACCESS_TYPE_WXS',0,14,18
+	.byte	14,13,211,6,9,1,15
+	.byte	'OS_MEM_ACCESS_TYPE_NON',0,0,15
+	.byte	'OS_MEM_ACCESS_TYPE_R',0,1,15
+	.byte	'OS_MEM_ACCESS_TYPE_READ',0,1,15
+	.byte	'OS_MEM_ACCESS_TYPE_W',0,2,15
+	.byte	'OS_MEM_ACCESS_TYPE_WRITE',0,2,15
+	.byte	'OS_MEM_ACCESS_TYPE_RW',0,3,15
+	.byte	'OS_MEM_ACCESS_TYPE_EXECUTE',0,4,15
+	.byte	'OS_MEM_ACCESS_TYPE_X',0,4,15
+	.byte	'OS_MEM_ACCESS_TYPE_RX',0,5,15
+	.byte	'OS_MEM_ACCESS_TYPE_WX',0,6,15
+	.byte	'OS_MEM_ACCESS_TYPE_RWX',0,7,15
+	.byte	'OS_MEM_ACCESS_TYPE_S',0,8,15
+	.byte	'OS_MEM_ACCESS_TYPE_STACK',0,8,15
+	.byte	'OS_MEM_ACCESS_TYPE_RS',0,9,15
+	.byte	'OS_MEM_ACCESS_TYPE_WS',0,10,15
+	.byte	'OS_MEM_ACCESS_TYPE_RWS',0,11,15
+	.byte	'OS_MEM_ACCESS_TYPE_XS',0,12,15
+	.byte	'OS_MEM_ACCESS_TYPE_RXS',0,13,15
+	.byte	'OS_MEM_ACCESS_TYPE_WXS',0,14,15
 	.byte	'OS_MEM_ACCESS_TYPE_RWXS',0,15,0,13
-	.byte	'Os_MemAccessType',0,10,233,6,3
-	.word	7763
+	.byte	'Os_MemAccessType',0,13,233,6,3
+	.word	8202
 	.byte	13
-	.byte	'unsigned_int',0,11,75,22
+	.byte	'unsigned_int',0,14,75,22
 	.word	169
 	.byte	13
-	.byte	'Mcu_ExternalClockConfigType',0,12,212,1,18
+	.byte	'Mcu_ExternalClockConfigType',0,15,212,1,18
 	.word	434
 	.byte	13
-	.byte	'Mcu_ClockType',0,12,217,1,18
+	.byte	'Mcu_ClockType',0,15,217,1,18
 	.word	434
 	.byte	13
-	.byte	'Mcu_RamSectionType',0,12,222,1,18
+	.byte	'Mcu_RamSectionType',0,15,222,1,18
 	.word	434
 	.byte	22
 	.byte	'void',0,7
-	.word	8401
+	.word	8840
 	.byte	13
-	.byte	'Mcu_RamBaseAdrType',0,12,233,1,18
-	.word	8407
+	.byte	'Mcu_RamBaseAdrType',0,15,233,1,18
+	.word	8846
 	.byte	13
-	.byte	'Mcu_RamSizeType',0,12,237,1,18
+	.byte	'Mcu_RamSizeType',0,15,237,1,18
 	.word	434
 	.byte	13
-	.byte	'Mcu_RamWriteSizeType',0,12,241,1,18
+	.byte	'Mcu_RamWriteSizeType',0,15,241,1,18
 	.word	434
 	.byte	13
-	.byte	'Mcu_RamPrstDatType',0,12,245,1,19
+	.byte	'Mcu_RamPrstDatType',0,15,245,1,19
 	.word	490
-	.byte	21,12,226,2,9,4,23
+	.byte	21,15,226,2,9,4,23
 	.byte	'Insel',0,1
 	.word	323
 	.byte	2,6,2,35,0,23
@@ -503,9 +551,9 @@ EcuM_ModuleState:	.type	object
 	.byte	'ModulationAmplitude',0,2
 	.word	370
 	.byte	16,0,2,35,2,0,13
-	.byte	'Mcu_SystemPllConfigType',0,12,235,2,3
-	.word	8523
-	.byte	21,12,243,2,9,4,23
+	.byte	'Mcu_SystemPllConfigType',0,15,235,2,3
+	.word	8962
+	.byte	21,15,243,2,9,4,23
 	.byte	'PerPllNDiv',0,1
 	.word	323
 	.byte	7,1,2,35,0,23
@@ -524,92 +572,92 @@ EcuM_ModuleState:	.type	object
 	.byte	'Reserved',0,2
 	.word	370
 	.byte	15,0,2,35,2,0,13
-	.byte	'Mcu_PeripheralPllConfigType',0,12,251,2,3
-	.word	8697
+	.byte	'Mcu_PeripheralPllConfigType',0,15,251,2,3
+	.word	9136
 	.byte	19,24
 	.word	434
-	.byte	20,5,0,21,12,131,3,9,40,16
+	.byte	20,5,0,21,15,131,3,9,40,17
 	.byte	'Ccucon0',0
 	.word	434
-	.byte	4,2,35,0,16
+	.byte	4,2,35,0,17
 	.byte	'Ccucon1',0
 	.word	434
-	.byte	4,2,35,4,16
+	.byte	4,2,35,4,17
 	.byte	'Ccucon2',0
 	.word	434
-	.byte	4,2,35,8,16
+	.byte	4,2,35,8,17
 	.byte	'Ccucon5',0
 	.word	434
-	.byte	4,2,35,12,16
+	.byte	4,2,35,12,17
 	.byte	'CcuconCpu',0
-	.word	8874
+	.word	9313
 	.byte	24,2,35,16,0,13
-	.byte	'Mcu_PllDistributionConfigType',0,12,143,3,3
-	.word	8883
+	.byte	'Mcu_PllDistributionConfigType',0,15,143,3,3
+	.word	9322
 	.byte	3
-	.word	8883
+	.word	9322
 	.byte	7
-	.word	9016
-	.byte	21,12,151,3,9,44,16
+	.word	9455
+	.byte	21,15,151,3,9,44,17
 	.byte	'SystemPllCfg',0
-	.word	8523
-	.byte	4,2,35,0,16
+	.word	8962
+	.byte	4,2,35,0,17
 	.byte	'PeripheralPllCfg',0
-	.word	8697
-	.byte	4,2,35,4,16
+	.word	9136
+	.byte	4,2,35,4,17
 	.byte	'SysPllK2DivStepUpChangeDelay',0
 	.word	434
-	.byte	4,2,35,8,16
+	.byte	4,2,35,8,17
 	.byte	'SysPllK2DivStepDownChangeDelay',0
 	.word	434
-	.byte	4,2,35,12,16
+	.byte	4,2,35,12,17
 	.byte	'PeripheralPllK2StepUpChangeDelay',0
 	.word	434
-	.byte	4,2,35,16,16
+	.byte	4,2,35,16,17
 	.byte	'PeripheralPllK2StepDownChangeDelay',0
 	.word	434
-	.byte	4,2,35,20,16
+	.byte	4,2,35,20,17
 	.byte	'PeripheralPllK3StepUpChangeDelay',0
 	.word	434
-	.byte	4,2,35,24,16
+	.byte	4,2,35,24,17
 	.byte	'PeripheralPllK3StepDownChangeDelay',0
 	.word	434
-	.byte	4,2,35,28,16
+	.byte	4,2,35,28,17
 	.byte	'PllDistributionCfgPtr',0
-	.word	9021
-	.byte	4,2,35,32,16
+	.word	9460
+	.byte	4,2,35,32,17
 	.byte	'ExternalClockCfg',0
 	.word	434
-	.byte	4,2,35,36,16
+	.byte	4,2,35,36,17
 	.byte	'BackupFreqKDiv',0
 	.word	370
-	.byte	2,2,35,40,16
+	.byte	2,2,35,40,17
 	.byte	'ConvCtrlBlockConf',0
 	.word	323
 	.byte	1,2,35,42,0,13
-	.byte	'Mcu_ClockConfigType',0,12,177,3,3
-	.word	9026
-	.byte	21,12,184,3,9,28,16
+	.byte	'Mcu_ClockConfigType',0,15,177,3,3
+	.word	9465
+	.byte	21,15,184,3,9,28,17
 	.byte	'RamBaseAdrPtr',0
-	.word	8412
-	.byte	4,2,35,0,16
+	.word	8851
+	.byte	4,2,35,0,17
 	.byte	'RamSize',0
 	.word	434
-	.byte	4,2,35,4,16
+	.byte	4,2,35,4,17
 	.byte	'RamPrstData',0
 	.word	490
-	.byte	8,2,35,8,16
+	.byte	8,2,35,8,17
 	.byte	'RamData',0
 	.word	490
-	.byte	8,2,35,16,16
+	.byte	8,2,35,16,17
 	.byte	'RamWriteSize',0
 	.word	434
 	.byte	4,2,35,24,0,13
-	.byte	'Mcu_RamConfigType',0,12,193,3,3
-	.word	9468
+	.byte	'Mcu_RamConfigType',0,15,193,3,3
+	.word	9907
 	.byte	7
-	.word	8401
-	.byte	21,12,201,3,9,4,23
+	.word	8840
+	.byte	21,15,201,3,9,4,23
 	.byte	'McuMode',0,1
 	.word	323
 	.byte	3,5,2,35,0,23
@@ -619,183 +667,230 @@ EcuM_ModuleState:	.type	object
 	.byte	'Reserved',0,4
 	.word	169
 	.byte	28,0,2,35,0,0,13
-	.byte	'Mcu_ModeEvrcCtrlType',0,12,206,3,3
-	.word	9607
-	.byte	21,12,223,3,9,28,16
+	.byte	'Mcu_ModeEvrcCtrlType',0,15,206,3,3
+	.word	10046
+	.byte	21,15,223,3,9,28,17
 	.byte	'MaxModeEvrcCtrl',0
-	.word	9607
-	.byte	4,2,35,0,16
+	.word	10046
+	.byte	4,2,35,0,17
 	.byte	'Pmswcr0',0
 	.word	434
-	.byte	4,2,35,4,16
+	.byte	4,2,35,4,17
 	.byte	'Pmswcr3',0
 	.word	434
-	.byte	4,2,35,8,16
+	.byte	4,2,35,8,17
 	.byte	'Pmswcr4',0
 	.word	434
-	.byte	4,2,35,12,16
+	.byte	4,2,35,12,17
 	.byte	'Pmswcr5',0
 	.word	434
-	.byte	4,2,35,16,16
+	.byte	4,2,35,16,17
 	.byte	'Evruvmon',0
 	.word	434
-	.byte	4,2,35,20,16
+	.byte	4,2,35,20,17
 	.byte	'EvrmonCtrl',0
 	.word	434
 	.byte	4,2,35,24,0,13
-	.byte	'Mcu_LowPowerModeType',0,12,242,3,3
-	.word	9711
-	.byte	21,12,250,3,9,8,16
+	.byte	'Mcu_LowPowerModeType',0,15,242,3,3
+	.word	10150
+	.byte	21,15,250,3,9,8,17
 	.byte	'GtmCmuExtClockNum',0
 	.word	434
-	.byte	4,2,35,0,16
+	.byte	4,2,35,0,17
 	.byte	'GtmCmuExtClockDen',0
 	.word	434
 	.byte	4,2,35,4,0,13
-	.byte	'Mcu_GtmExtClkType',0,12,128,4,3
-	.word	9879
+	.byte	'Mcu_GtmExtClkType',0,15,128,4,3
+	.word	10318
 	.byte	19,32
 	.word	434
 	.byte	20,7,0,19,24
-	.word	9879
-	.byte	20,2,0,21,12,135,4,9,76,16
+	.word	10318
+	.byte	20,2,0,21,15,135,4,9,76,17
 	.byte	'GtmCmuClockEnable',0
 	.word	434
-	.byte	4,2,35,0,16
+	.byte	4,2,35,0,17
 	.byte	'GtmCmuGlobalNumerator',0
 	.word	434
-	.byte	4,2,35,4,16
+	.byte	4,2,35,4,17
 	.byte	'GtmCmuGlobalDenominator',0
 	.word	434
-	.byte	4,2,35,8,16
+	.byte	4,2,35,8,17
 	.byte	'GtmCmuConfClkCtrl',0
-	.word	9967
-	.byte	32,2,35,12,16
+	.word	10406
+	.byte	32,2,35,12,17
 	.byte	'GtmCmuFixedClkCtrl',0
 	.word	434
-	.byte	4,2,35,44,16
+	.byte	4,2,35,44,17
 	.byte	'GtmCmuClsInDiv',0
 	.word	434
-	.byte	4,2,35,48,16
+	.byte	4,2,35,48,17
 	.byte	'GtmEclkCtrl',0
-	.word	9976
+	.word	10415
 	.byte	24,2,35,52,0,13
-	.byte	'Mcu_GtmClockSettingType',0,12,151,4,3
-	.word	9985
-	.byte	21,12,158,4,9,12,16
+	.byte	'Mcu_GtmClockSettingType',0,15,151,4,3
+	.word	10424
+	.byte	21,15,158,4,9,12,17
 	.byte	'GtmCcmCfg',0
 	.word	434
-	.byte	4,2,35,0,16
+	.byte	4,2,35,0,17
 	.byte	'GtmCcmConfClockCfg',0
 	.word	434
-	.byte	4,2,35,4,16
+	.byte	4,2,35,4,17
 	.byte	'GtmCcmFixedClockCfg',0
 	.word	434
 	.byte	4,2,35,8,0,13
-	.byte	'Mcu_GtmClusterConfigType',0,12,166,4,3
-	.word	10216
-	.byte	21,12,173,4,9,8,16
+	.byte	'Mcu_GtmClusterConfigType',0,15,166,4,3
+	.word	10655
+	.byte	21,15,173,4,9,8,17
 	.byte	'TomTgcIntTrigRstCn0',0
 	.word	434
-	.byte	4,2,35,0,16
+	.byte	4,2,35,0,17
 	.byte	'TomTgcActTb',0
 	.word	434
 	.byte	4,2,35,4,0,13
-	.byte	'Mcu_GtmTomConfigType',0,12,188,4,3
-	.word	10333
-	.byte	21,12,195,4,9,8,16
+	.byte	'Mcu_GtmTomConfigType',0,15,188,4,3
+	.word	10772
+	.byte	21,15,195,4,9,8,17
 	.byte	'AtomAgcIntTrigRstCn0',0
 	.word	434
-	.byte	4,2,35,0,16
+	.byte	4,2,35,0,17
 	.byte	'AtomAgcActTb',0
 	.word	434
 	.byte	4,2,35,4,0,13
-	.byte	'Mcu_GtmAtomConfigType',0,12,210,4,3
-	.word	10420
-	.byte	21,12,217,4,9,8,16
+	.byte	'Mcu_GtmAtomConfigType',0,15,210,4,3
+	.word	10859
+	.byte	21,15,217,4,9,8,17
 	.byte	'GtmAdcTrigOut0',0
 	.word	434
-	.byte	4,2,35,0,16
+	.byte	4,2,35,0,17
 	.byte	'GtmAdcTrigOut1',0
 	.word	434
 	.byte	4,2,35,4,0,13
-	.byte	'Mcu_GtmAdcTrigType',0,12,221,4,3
-	.word	10510
-	.byte	21,12,225,4,9,8,16
+	.byte	'Mcu_GtmAdcTrigType',0,15,221,4,3
+	.word	10949
+	.byte	21,15,225,4,9,8,17
 	.byte	'GtmDsadcTrigOut0',0
 	.word	434
-	.byte	4,2,35,0,16
+	.byte	4,2,35,0,17
 	.byte	'GtmDsadcTrigOut1',0
 	.word	434
 	.byte	4,2,35,4,0,13
-	.byte	'Mcu_GtmDsadcTrigType',0,12,229,4,3
-	.word	10593
+	.byte	'Mcu_GtmDsadcTrigType',0,15,229,4,3
+	.word	11032
 	.byte	3
-	.word	9985
+	.word	10424
 	.byte	7
-	.word	10682
+	.word	11121
 	.byte	3
-	.word	10216
+	.word	10655
 	.byte	7
-	.word	10692
+	.word	11131
 	.byte	19,96
-	.word	10333
+	.word	10772
 	.byte	20,11,0,19,96
-	.word	10420
+	.word	10859
 	.byte	20,11,0,19,40
-	.word	10510
+	.word	10949
 	.byte	20,4,0,19,32
-	.word	10593
+	.word	11032
 	.byte	20,3,0,19,136,1
 	.word	434
-	.byte	20,33,0,21,12,237,4,9,204,4,16
+	.byte	20,33,0,21,15,237,4,9,204,4,17
 	.byte	'GtmClockCfgPtr',0
-	.word	10687
-	.byte	4,2,35,0,16
+	.word	11126
+	.byte	4,2,35,0,17
 	.byte	'GtmClusterCfgPtr',0
-	.word	10697
-	.byte	4,2,35,4,16
+	.word	11136
+	.byte	4,2,35,4,17
 	.byte	'GtmTomCfg',0
-	.word	10702
-	.byte	96,2,35,8,16
+	.word	11141
+	.byte	96,2,35,8,17
 	.byte	'GtmAtomCfg',0
-	.word	10711
-	.byte	96,2,35,104,16
+	.word	11150
+	.byte	96,2,35,104,17
 	.byte	'GtmAdcTrigCfg',0
-	.word	10720
-	.byte	40,3,35,200,1,16
+	.word	11159
+	.byte	40,3,35,200,1,17
 	.byte	'GtmDsadcTrigCfg',0
-	.word	10729
-	.byte	32,3,35,240,1,16
+	.word	11168
+	.byte	32,3,35,240,1,17
 	.byte	'GtmToutSelCfg',0
-	.word	10738
-	.byte	136,1,3,35,144,2,16
+	.word	11177
+	.byte	136,1,3,35,144,2,17
 	.byte	'GtmToutSelCfgMsk',0
-	.word	10738
-	.byte	136,1,3,35,152,3,16
+	.word	11177
+	.byte	136,1,3,35,152,3,17
 	.byte	'GtmTimInSelCfg',0
-	.word	9967
-	.byte	32,3,35,160,4,16
+	.word	10406
+	.byte	32,3,35,160,4,17
 	.byte	'GtmTbuCfg',0
 	.word	434
-	.byte	4,3,35,192,4,16
+	.byte	4,3,35,192,4,17
 	.byte	'GtmTomModuleUsage',0
 	.word	370
-	.byte	2,3,35,196,4,16
+	.byte	2,3,35,196,4,17
 	.byte	'GtmAtomModuleUsage',0
 	.word	370
-	.byte	2,3,35,198,4,16
+	.byte	2,3,35,198,4,17
 	.byte	'IsGtmSleepModeEnabled',0
 	.word	323
 	.byte	1,3,35,200,4,0,13
-	.byte	'Mcu_GtmConfigType',0,12,137,5,3
-	.word	10748
+	.byte	'Mcu_GtmConfigType',0,15,137,5,3
+	.word	11187
 	.byte	19,4
-	.word	697
+	.word	1032
 	.byte	20,0,0
-.L10:
+.L12:
 	.byte	3
-	.word	11109
+	.word	11548
+	.byte	19,6
+	.word	1133
+	.byte	20,5,0
+.L13:
+	.byte	3
+	.word	11562
+	.byte	13
+	.byte	'ComM_PncUserOfUserType',0,16,136,4,17
+	.word	323
+	.byte	13
+	.byte	'ComM_UserReqFullComType',0,16,160,4,15
+	.word	323
+	.byte	16
+	.byte	'sComM_ChannelType',0,16,176,4,16,1,17
+	.byte	'ComM_ChannelNeverUsed',0
+	.word	323
+	.byte	1,2,35,0,0,13
+	.byte	'ComM_ChannelType',0,16,179,4,3
+	.word	11641
+	.byte	16
+	.byte	'sComM_ChannelPbType',0,16,182,4,16,1,17
+	.byte	'ComM_ChannelPbNeverUsed',0
+	.word	323
+	.byte	1,2,35,0,0,13
+	.byte	'ComM_ChannelPbType',0,16,185,4,3
+	.word	11723
+	.byte	16
+	.byte	'sComM_UserType',0,16,188,4,16,1,17
+	.byte	'PncUserOfUser',0
+	.word	323
+	.byte	1,2,35,0,0,13
+	.byte	'ComM_UserType',0,16,191,4,3
+	.word	11811
+	.byte	16
+	.byte	'sComM_UserByteMaskType',0,16,194,4,16,1,17
+	.byte	'ComM_UserByteMaskNeverUsed',0
+	.word	323
+	.byte	1,2,35,0,0,13
+	.byte	'ComM_UserByteMaskType',0,16,197,4,3
+	.word	11879
+	.byte	16
+	.byte	'sComM_PCConfigType',0,16,233,4,16,1,17
+	.byte	'ComM_PCConfigNeverUsed',0
+	.word	323
+	.byte	1,2,35,0,0,13
+	.byte	'ComM_PCConfigType',0,16,236,4,3
+	.word	11976
 	.byte	0
 	.sdecl	'.debug_abbrev',debug
 	.sect	'.debug_abbrev'
@@ -804,17 +899,17 @@ EcuM_ModuleState:	.type	object
 	.byte	15,39,12,63,12,60,12,0,0,5,5,0,73,19,0,0,6,53,0,73,19,0,0,7,15,0,73,19,0,0,8,46,1,3,8,73,19,54,15,39,12
 	.byte	63,12,60,12,0,0,9,5,0,3,8,73,19,0,0,10,46,0,3,8,58,15,59,15,57,15,54,15,39,12,63,12,60,12,0,0,11,46,0
 	.byte	3,8,58,15,59,15,57,15,54,15,63,12,60,12,0,0,12,21,0,54,15,0,0,13,22,0,3,8,58,15,59,15,57,15,73,19,0,0
-	.byte	14,21,0,54,15,39,12,0,0,15,19,1,3,8,58,15,59,15,57,15,11,15,0,0,16,13,0,3,8,73,19,11,15,56,9,0,0,17,4
-	.byte	1,58,15,59,15,57,15,11,15,0,0,18,40,0,3,8,28,13,0,0,19,1,1,11,15,73,19,0,0,20,33,0,47,15,0,0,21,19,1,58
+	.byte	14,4,1,58,15,59,15,57,15,11,15,0,0,15,40,0,3,8,28,13,0,0,16,19,1,3,8,58,15,59,15,57,15,11,15,0,0,17,13
+	.byte	0,3,8,73,19,11,15,56,9,0,0,18,21,0,54,15,39,12,0,0,19,1,1,11,15,73,19,0,0,20,33,0,47,15,0,0,21,19,1,58
 	.byte	15,59,15,57,15,11,15,0,0,22,59,0,3,8,0,0,23,13,0,3,8,11,15,73,19,13,15,12,15,56,9,0,0,0
 	.sdecl	'.debug_line',debug
 	.sect	'.debug_line'
 .L5:
-	.word	.L13-.L12
-.L12:
+	.word	.L16-.L15
+.L15:
 	.half	3
-	.word	.L15-.L14
-.L14:
+	.word	.L18-.L17
+.L17:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
 	.byte	'D:\\Zonal\\demo011\\tasking\\component\\_Common\\Implementation',0
 	.byte	'D:\\Zonal\\demo011\\tasking\\appl\\GenData',0
@@ -825,6 +920,9 @@ EcuM_ModuleState:	.type	object
 	.byte	'..\\appl\\GenData\\EcuM_Cfg.c',0,0,0,0
 	.byte	'Platform_Types.h',0,1,0,0
 	.byte	'Std_Types.h',0,1,0,0
+	.byte	'ComStack_Cfg.h',0,2,0,0
+	.byte	'ComStack_Types.h',0,1,0,0
+	.byte	'Det_Cfg.h',0,2,0,0
 	.byte	'Rte_Type.h',0,2,0,0
 	.byte	'EcuM_Cfg.h',0,2,0,0
 	.byte	'Os_Types_Lcfg.h',0,2,0,0
@@ -832,9 +930,10 @@ EcuM_ModuleState:	.type	object
 	.byte	'Os_Hal_OsInt.h',0,3,0,0
 	.byte	'Os_Types.h',0,3,0,0
 	.byte	'Mcal_Compiler.h',0,4,0,0
-	.byte	'Mcu.h',0,5,0,0,0
-.L15:
-.L13:
+	.byte	'Mcu.h',0,5,0,0
+	.byte	'ComM_Cfg.h',0,2,0,0,0
+.L18:
+.L16:
 	.sdecl	'.debug_info',debug,cluster('EcuM_DriverInitOne')
 	.sect	'.debug_info'
 .L6:
@@ -848,7 +947,7 @@ EcuM_ModuleState:	.type	object
 	.word	.L2
 	.byte	3
 	.byte	'EcuM_DriverInitOne',0,2,108,43
-	.word	.L10
+	.word	.L12
 	.byte	1,5,3
 	.word	EcuM_DriverInitOne
 	.byte	0
@@ -857,10 +956,10 @@ EcuM_ModuleState:	.type	object
 .L7:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('EcuM_ModuleState')
+	.sdecl	'.debug_info',debug,cluster('EcuM_WakeupSourceList')
 	.sect	'.debug_info'
 .L8:
-	.word	150
+	.word	156
 	.half	3
 	.word	.L9
 	.byte	4,1
@@ -869,14 +968,36 @@ EcuM_ModuleState:	.type	object
 	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1,2
 	.word	.L2
 	.byte	3
-	.byte	'EcuM_ModuleState',0,2,124,38
+	.byte	'EcuM_WakeupSourceList',0,2,131,1,46
+	.word	.L13
+	.byte	1,5,3
+	.word	EcuM_WakeupSourceList
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('EcuM_WakeupSourceList')
+	.sect	'.debug_abbrev'
+.L9:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('EcuM_ModuleState')
+	.sect	'.debug_info'
+.L10:
+	.word	151
+	.half	3
 	.word	.L11
+	.byte	4,1
+	.byte	'..\\appl\\GenData\\EcuM_Cfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1,2
+	.word	.L2
+	.byte	3
+	.byte	'EcuM_ModuleState',0,2,152,1,38
+	.word	.L14
 	.byte	1,5,3
 	.word	EcuM_ModuleState
 	.byte	0
 	.sdecl	'.debug_abbrev',debug,cluster('EcuM_ModuleState')
 	.sect	'.debug_abbrev'
-.L9:
+.L11:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
 
@@ -903,7 +1024,7 @@ EcuM_ModuleState:	.type	object
 ; ..\appl\GenData\EcuM_Cfg.c	    21   *  FILE DESCRIPTION
 ; ..\appl\GenData\EcuM_Cfg.c	    22   *  -------------------------------------------------------------------------------------------------------------------
 ; ..\appl\GenData\EcuM_Cfg.c	    23   *              File: EcuM_Cfg.c
-; ..\appl\GenData\EcuM_Cfg.c	    24   *   Generation Time: 2025-04-01 10:51:24
+; ..\appl\GenData\EcuM_Cfg.c	    24   *   Generation Time: 2025-03-02 17:01:14
 ; ..\appl\GenData\EcuM_Cfg.c	    25   *           Project: tc399demo - Version 1.0
 ; ..\appl\GenData\EcuM_Cfg.c	    26   *          Delivery: CBD2100010_D00
 ; ..\appl\GenData\EcuM_Cfg.c	    27   *      Tool Version: DaVinci Configurator (beta) 5.22.45 SP3
@@ -997,27 +1118,55 @@ EcuM_ModuleState:	.type	object
 ; ..\appl\GenData\EcuM_Cfg.c	   115  /*lint -restore */
 ; ..\appl\GenData\EcuM_Cfg.c	   116  
 ; ..\appl\GenData\EcuM_Cfg.c	   117  /**********************************************************************************************************************
-; ..\appl\GenData\EcuM_Cfg.c	   118    EcuM_ModuleState
+; ..\appl\GenData\EcuM_Cfg.c	   118    EcuM_WakeupSourceList
 ; ..\appl\GenData\EcuM_Cfg.c	   119  **********************************************************************************************************************/
-; ..\appl\GenData\EcuM_Cfg.c	   120  #define ECUM_START_SEC_VAR_NOINIT_UNSPECIFIED
-; ..\appl\GenData\EcuM_Cfg.c	   121  /*lint -save -esym(961, 19.1) */
-; ..\appl\GenData\EcuM_Cfg.c	   122  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
-; ..\appl\GenData\EcuM_Cfg.c	   123  /*lint -restore */
-; ..\appl\GenData\EcuM_Cfg.c	   124  VAR(EcuM_StateType, ECUM_VAR_NOINIT) EcuM_ModuleState;  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
-; ..\appl\GenData\EcuM_Cfg.c	   125  #define ECUM_STOP_SEC_VAR_NOINIT_UNSPECIFIED
-; ..\appl\GenData\EcuM_Cfg.c	   126  /*lint -save -esym(961, 19.1) */
-; ..\appl\GenData\EcuM_Cfg.c	   127  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
-; ..\appl\GenData\EcuM_Cfg.c	   128  /*lint -restore */
-; ..\appl\GenData\EcuM_Cfg.c	   129  
-; ..\appl\GenData\EcuM_Cfg.c	   130  
-; ..\appl\GenData\EcuM_Cfg.c	   131  
-; ..\appl\GenData\EcuM_Cfg.c	   132  /**********************************************************************************************************************
-; ..\appl\GenData\EcuM_Cfg.c	   133    CONFIGURATION CLASS: PRE_COMPILE
-; ..\appl\GenData\EcuM_Cfg.c	   134    SECTION: GLOBAL FUNCTIONS
-; ..\appl\GenData\EcuM_Cfg.c	   135  **********************************************************************************************************************/
-; ..\appl\GenData\EcuM_Cfg.c	   136  
-; ..\appl\GenData\EcuM_Cfg.c	   137  
-; ..\appl\GenData\EcuM_Cfg.c	   138  
-; ..\appl\GenData\EcuM_Cfg.c	   139  
+; ..\appl\GenData\EcuM_Cfg.c	   120  /** 
+; ..\appl\GenData\EcuM_Cfg.c	   121    \var    EcuM_WakeupSourceList
+; ..\appl\GenData\EcuM_Cfg.c	   122    \brief  Contains all parameters configured for Wakeup Sources
+; ..\appl\GenData\EcuM_Cfg.c	   123    \details
+; ..\appl\GenData\EcuM_Cfg.c	   124    Element    Description
+; ..\appl\GenData\EcuM_Cfg.c	   125    Channel    Mapped ComM channel number - 255 if no ComM channel is assigned.
+; ..\appl\GenData\EcuM_Cfg.c	   126  */ 
+; ..\appl\GenData\EcuM_Cfg.c	   127  #define ECUM_START_SEC_CONST_UNSPECIFIED
+; ..\appl\GenData\EcuM_Cfg.c	   128  /*lint -save -esym(961, 19.1) */
+; ..\appl\GenData\EcuM_Cfg.c	   129  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\appl\GenData\EcuM_Cfg.c	   130  /*lint -restore */
+; ..\appl\GenData\EcuM_Cfg.c	   131  CONST(EcuM_WakeupSourceListType, ECUM_CONST) EcuM_WakeupSourceList[6] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\appl\GenData\EcuM_Cfg.c	   132      /* Index    Channel                                              Comment                                    Referable Keys */
+; ..\appl\GenData\EcuM_Cfg.c	   133    { /*     0 */ 255                                           },  /* [ECUM_WKSOURCE_POWER]          */  /* [/ActiveEcuC/EcuM/EcuMConfiguration/EcuMCommonConfiguration/ECUM_WKSOURCE_POWER, ECUM_WKSOURCE_POWER] */
+; ..\appl\GenData\EcuM_Cfg.c	   134    { /*     1 */ 255                                           },  /* [ECUM_WKSOURCE_RESET]          */  /* [/ActiveEcuC/EcuM/EcuMConfiguration/EcuMCommonConfiguration/ECUM_WKSOURCE_RESET, ECUM_WKSOURCE_RESET] */
+; ..\appl\GenData\EcuM_Cfg.c	   135    { /*     2 */ 255                                           },  /* [ECUM_WKSOURCE_INTERNAL_RESET] */  /* [/ActiveEcuC/EcuM/EcuMConfiguration/EcuMCommonConfiguration/ECUM_WKSOURCE_INTERNAL_RESET, ECUM_WKSOURCE_INTERNAL_RESET] */
+; ..\appl\GenData\EcuM_Cfg.c	   136    { /*     3 */ 255                                           },  /* [ECUM_WKSOURCE_INTERNAL_WDG]   */  /* [/ActiveEcuC/EcuM/EcuMConfiguration/EcuMCommonConfiguration/ECUM_WKSOURCE_INTERNAL_WDG, ECUM_WKSOURCE_INTERNAL_WDG] */
+; ..\appl\GenData\EcuM_Cfg.c	   137    { /*     4 */ 255                                           },  /* [ECUM_WKSOURCE_EXTERNAL_WDG]   */  /* [/ActiveEcuC/EcuM/EcuMConfiguration/EcuMCommonConfiguration/ECUM_WKSOURCE_EXTERNAL_WDG, ECUM_WKSOURCE_EXTERNAL_WDG] */
+; ..\appl\GenData\EcuM_Cfg.c	   138    { /*     5 */ ComMConf_ComMChannel_CN_testCANFDdbc_9817eee0 }   /* [CN_testCANFDdbc_9817eee0]     */  /* [/ActiveEcuC/EcuM/EcuMConfiguration/EcuMCommonConfiguration/CN_testCANFDdbc_9817eee0, CN_testCANFDdbc_9817eee0] */
+; ..\appl\GenData\EcuM_Cfg.c	   139  };
+; ..\appl\GenData\EcuM_Cfg.c	   140  #define ECUM_STOP_SEC_CONST_UNSPECIFIED
+; ..\appl\GenData\EcuM_Cfg.c	   141  /*lint -save -esym(961, 19.1) */
+; ..\appl\GenData\EcuM_Cfg.c	   142  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\appl\GenData\EcuM_Cfg.c	   143  /*lint -restore */
+; ..\appl\GenData\EcuM_Cfg.c	   144  
+; ..\appl\GenData\EcuM_Cfg.c	   145  /**********************************************************************************************************************
+; ..\appl\GenData\EcuM_Cfg.c	   146    EcuM_ModuleState
+; ..\appl\GenData\EcuM_Cfg.c	   147  **********************************************************************************************************************/
+; ..\appl\GenData\EcuM_Cfg.c	   148  #define ECUM_START_SEC_VAR_NOINIT_UNSPECIFIED
+; ..\appl\GenData\EcuM_Cfg.c	   149  /*lint -save -esym(961, 19.1) */
+; ..\appl\GenData\EcuM_Cfg.c	   150  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\appl\GenData\EcuM_Cfg.c	   151  /*lint -restore */
+; ..\appl\GenData\EcuM_Cfg.c	   152  VAR(EcuM_StateType, ECUM_VAR_NOINIT) EcuM_ModuleState;  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\appl\GenData\EcuM_Cfg.c	   153  #define ECUM_STOP_SEC_VAR_NOINIT_UNSPECIFIED
+; ..\appl\GenData\EcuM_Cfg.c	   154  /*lint -save -esym(961, 19.1) */
+; ..\appl\GenData\EcuM_Cfg.c	   155  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\appl\GenData\EcuM_Cfg.c	   156  /*lint -restore */
+; ..\appl\GenData\EcuM_Cfg.c	   157  
+; ..\appl\GenData\EcuM_Cfg.c	   158  
+; ..\appl\GenData\EcuM_Cfg.c	   159  
+; ..\appl\GenData\EcuM_Cfg.c	   160  /**********************************************************************************************************************
+; ..\appl\GenData\EcuM_Cfg.c	   161    CONFIGURATION CLASS: PRE_COMPILE
+; ..\appl\GenData\EcuM_Cfg.c	   162    SECTION: GLOBAL FUNCTIONS
+; ..\appl\GenData\EcuM_Cfg.c	   163  **********************************************************************************************************************/
+; ..\appl\GenData\EcuM_Cfg.c	   164  
+; ..\appl\GenData\EcuM_Cfg.c	   165  
+; ..\appl\GenData\EcuM_Cfg.c	   166  
+; ..\appl\GenData\EcuM_Cfg.c	   167  
 
 	; Module end

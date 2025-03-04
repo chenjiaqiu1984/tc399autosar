@@ -70,6 +70,18 @@ extern VAR(BswM_ESH_RunRequest, RTE_VAR_NOINIT) Rte_swc_test_Request_ESH_PostRun
 #  define Rte_Write_swc_test_Request_ESH_PostRunRequest_0_requestedMode(data) (Rte_swc_test_Request_ESH_PostRunRequest_0_requestedMode = (data), ((Std_ReturnType)RTE_E_OK)) /* PRQA S 3453 */ /* MD_MSR_FctLikeMacro */
 
 
+/**********************************************************************************************************************
+ * Rte_Call_<p>_<o> (unmapped) for synchronous C/S communication
+ *********************************************************************************************************************/
+#  define RTE_START_SEC_COMM_APPL_CODE
+#  include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+FUNC(Std_ReturnType, RTE_COMM_APPL_CODE) ComM_RequestComMode(ComM_UserHandleType parg0, ComM_ModeType ComMode); /* PRQA S 0786, 3449, 0624 */ /* MD_Rte_0786, MD_Rte_3449, MD_Rte_0624 */
+#  define RTE_STOP_SEC_COMM_APPL_CODE
+#  include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+#  define Rte_Call_UR_CN_testCANFDdbc_76c2c5ca_RequestComMode(arg1) (ComM_RequestComMode((ComM_UserHandleType)0, arg1)) /* PRQA S 3453 */ /* MD_MSR_FctLikeMacro */
+
+
 # endif /* !defined(RTE_CORE) */
 
 
@@ -93,6 +105,17 @@ FUNC(void, swc_test_CODE) swc_test_Init(void); /* PRQA S 3451, 0786, 3449 */ /* 
 # define swc_test_STOP_SEC_CODE
 # include "swc_test_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
+
+# ifndef RTE_CORE
+/**********************************************************************************************************************
+ * Application errors
+ *********************************************************************************************************************/
+
+#  define RTE_E_ComM_UserRequest_E_MODE_LIMITATION (2U)
+
+#  define RTE_E_ComM_UserRequest_E_NOT_OK (1U)
+# endif /* !defined(RTE_CORE) */
+
 # ifdef __cplusplus
 } /* extern "C" */
 # endif /* __cplusplus */
@@ -104,6 +127,12 @@ FUNC(void, swc_test_CODE) swc_test_Init(void); /* PRQA S 3451, 0786, 3449 */ /* 
  *********************************************************************************************************************/
 
 /* module specific MISRA deviations:
+   MD_Rte_0624:  MISRA rule: Rule8.3
+     Reason:     This MISRA violation is a consequence from the RTE requirements [SWS_Rte_01007] [SWS_Rte_01150].
+                 The typedefs are never used in the same context.
+     Risk:       No functional risk. Only a cast to uint8* is performed.
+     Prevention: Not required.
+
    MD_Rte_0786:  MISRA rule: Rule5.5
      Reason:     Same macro and idintifier names in first 63 characters are required to meet AUTOSAR spec.
      Risk:       No functional risk.

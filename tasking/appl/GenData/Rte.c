@@ -33,15 +33,25 @@
 #include "Rte_Main.h"
 
 #include "Rte_BswM.h"
+#include "Rte_ComM.h"
+#include "Rte_Det.h"
 #include "Rte_EcuM.h"
 #include "Rte_Os_OsCore0_swc.h"
 #include "Rte_swc_test.h"
 #include "SchM_BswM.h"
+#include "SchM_Can.h"
+#include "SchM_CanIf.h"
+#include "SchM_CanSM.h"
+#include "SchM_Com.h"
+#include "SchM_ComM.h"
+#include "SchM_Det.h"
 #include "SchM_Dio.h"
 #include "SchM_EcuM.h"
 #include "SchM_McalLib.h"
 #include "SchM_Mcu.h"
+#include "SchM_PduR.h"
 #include "SchM_Port.h"
+#include "SchM_SomeIpXf.h"
 
 #include "Rte_Hook.h"
 
@@ -82,19 +92,6 @@
 #else
 # define Rte_EnableOSInterrupts() ResumeOSInterrupts()   /* AUTOSAR OS */
 #endif
-
-/**********************************************************************************************************************
- * Rte Init State Variable
- *********************************************************************************************************************/
-
-#define RTE_START_SEC_VAR_ZERO_INIT_8BIT
-#include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
-
-volatile VAR(uint8, RTE_VAR_ZERO_INIT) Rte_InitState = RTE_STATE_UNINIT; /* PRQA S 3408 */ /* MD_Rte_3408 */
-volatile VAR(uint8, RTE_VAR_ZERO_INIT) Rte_StartTiming_InitState = RTE_STATE_UNINIT; /* PRQA S 0850, 3408, 1514 */ /* MD_MSR_MacroArgumentEmpty, MD_Rte_3408, MD_Rte_1514 */
-
-#define RTE_STOP_SEC_VAR_ZERO_INIT_8BIT
-#include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 
 /**********************************************************************************************************************
@@ -192,6 +189,7 @@ VAR(BswM_ESH_Mode, RTE_VAR_NOINIT) Rte_ModeMachine_BswM_Switch_ESH_ModeSwitch_Bs
 
 #define RTE_CONST_MSEC_SystemTimer_0 (0UL)
 #define RTE_CONST_MSEC_SystemTimer_10 (10UL)
+#define RTE_CONST_MSEC_SystemTimer_20 (20UL)
 #define RTE_CONST_MSEC_SystemTimer_500 (500UL)
 
 
@@ -211,10 +209,13 @@ VAR(BswM_ESH_Mode, RTE_VAR_NOINIT) Rte_ModeMachine_BswM_Switch_ESH_ModeSwitch_Bs
 
 FUNC(void, RTE_CODE) SchM_Init(void)
 {
+  /* activate the tasks */
+  (void)ActivateTask(bsw_task); /* PRQA S 3417 */ /* MD_Rte_Os */
+
   /* activate the alarms used for TimingEvents */
   (void)SetRelAlarm(Rte_Al_TE2_bsw_task_0_10ms, RTE_MSEC_SystemTimer(0) + (TickType)1, RTE_MSEC_SystemTimer(10)); /* PRQA S 3417 */ /* MD_Rte_Os */
+  (void)SetRelAlarm(Rte_Al_TE2_bsw_task_0_20ms, RTE_MSEC_SystemTimer(0) + (TickType)1, RTE_MSEC_SystemTimer(20)); /* PRQA S 3417 */ /* MD_Rte_Os */
 
-  Rte_InitState = RTE_STATE_SCHM_INIT;
 }
 
 FUNC(Std_ReturnType, RTE_CODE) Rte_Start(void)
@@ -234,20 +235,14 @@ FUNC(Std_ReturnType, RTE_CODE) Rte_Start(void)
   (void)SetRelAlarm(Rte_Al_TE_swc_test_swc_test_10ms, RTE_MSEC_SystemTimer(0) + (TickType)1, RTE_MSEC_SystemTimer(10)); /* PRQA S 3417, 1840 */ /* MD_Rte_Os, MD_Rte_Os */
   (void)SetRelAlarm(Rte_Al_TE_swc_test_swc_test_500ms, RTE_MSEC_SystemTimer(0) + (TickType)1, RTE_MSEC_SystemTimer(500)); /* PRQA S 3417, 1840 */ /* MD_Rte_Os, MD_Rte_Os */
 
-  Rte_StartTiming_InitState = RTE_STATE_INIT;
-  Rte_InitState = RTE_STATE_INIT;
-
   return RTE_E_OK;
 } /* PRQA S 6050 */ /* MD_MSR_STCAL */
 
 FUNC(Std_ReturnType, RTE_CODE) Rte_Stop(void)
 {
-  Rte_StartTiming_InitState = RTE_STATE_UNINIT;
   /* deactivate alarms */
   (void)CancelAlarm(Rte_Al_TE_swc_test_swc_test_10ms); /* PRQA S 3417 */ /* MD_Rte_Os */
   (void)CancelAlarm(Rte_Al_TE_swc_test_swc_test_500ms); /* PRQA S 3417 */ /* MD_Rte_Os */
-
-  Rte_InitState = RTE_STATE_SCHM_INIT;
 
   return RTE_E_OK;
 }
@@ -256,15 +251,12 @@ FUNC(void, RTE_CODE) SchM_Deinit(void)
 {
   /* deactivate alarms */
   (void)CancelAlarm(Rte_Al_TE2_bsw_task_0_10ms); /* PRQA S 3417 */ /* MD_Rte_Os */
+  (void)CancelAlarm(Rte_Al_TE2_bsw_task_0_20ms); /* PRQA S 3417 */ /* MD_Rte_Os */
 
-  Rte_InitState = RTE_STATE_UNINIT;
 }
 
 FUNC(void, RTE_CODE) Rte_InitMemory(void)
 {
-  Rte_InitState = RTE_STATE_UNINIT;
-  Rte_StartTiming_InitState = RTE_STATE_UNINIT;
-
 }
 
 
@@ -351,11 +343,13 @@ FUNC(Std_ReturnType, RTE_CODE) Rte_Switch_BswM_Switch_ESH_ModeSwitch_BswM_MDGP_E
   if (internalIndexNextMode >= 5U)
   {
     ResumeOSInterrupts();
+    Rte_CallDetReportError(RTE_SWITCH_SERVICE_ID, RTE_E_DET_MODEARGUMENT);
     ret = RTE_E_LIMIT;
   }
   else if (internalIndexCurrentMode >= 5U)
   {
     ResumeOSInterrupts();
+    Rte_CallDetReportError(RTE_SWITCH_SERVICE_ID, RTE_E_DET_MODESTATE);
     ret = RTE_E_LIMIT;
   }
   else
@@ -388,18 +382,53 @@ FUNC(BswM_ESH_Mode, RTE_CODE) Rte_Mode_BswM_Notification_ESH_ModeNotification_Bs
  * Task:     bsw_task
  * Priority: 29
  * Schedule: FULL
- * Alarm:    Cycle Time 0.01 s Alarm Offset 0 s
  *********************************************************************************************************************/
 TASK(bsw_task) /* PRQA S 3408, 1503 */ /* MD_Rte_3408, MD_MSR_Unreachable */
 {
+  EventMaskType ev;
 
-  /* call runnable */
-  BswM_MainFunction(); /* PRQA S 2987 */ /* MD_Rte_2987 */
+  for(;;)
+  {
+    (void)WaitEvent(Rte_Ev_Cyclic2_bsw_task_0_10ms | Rte_Ev_Cyclic2_bsw_task_0_20ms); /* PRQA S 3417 */ /* MD_Rte_Os */
+    (void)GetEvent(bsw_task, &ev); /* PRQA S 3417 */ /* MD_Rte_Os */
+    (void)ClearEvent(ev & (Rte_Ev_Cyclic2_bsw_task_0_10ms | Rte_Ev_Cyclic2_bsw_task_0_20ms)); /* PRQA S 3417 */ /* MD_Rte_Os */
 
-  /* call runnable */
-  EcuM_MainFunction(); /* PRQA S 2987 */ /* MD_Rte_2987 */
+    if ((ev & Rte_Ev_Cyclic2_bsw_task_0_10ms) != (EventMaskType)0)
+    {
+      /* call runnable */
+      BswM_MainFunction(); /* PRQA S 2987 */ /* MD_Rte_2987 */
 
-  (void)TerminateTask(); /* PRQA S 3417 */ /* MD_Rte_Os */
+      /* call runnable */
+      EcuM_MainFunction(); /* PRQA S 2987 */ /* MD_Rte_2987 */
+    }
+
+    if ((ev & Rte_Ev_Cyclic2_bsw_task_0_20ms) != (EventMaskType)0)
+    {
+      /* call runnable */
+      ComM_MainFunction_0(); /* PRQA S 2987 */ /* MD_Rte_2987 */
+    }
+
+    if ((ev & Rte_Ev_Cyclic2_bsw_task_0_10ms) != (EventMaskType)0)
+    {
+      /* call schedulable entity */
+      CanSM_MainFunction();
+
+      /* call schedulable entity */
+      Can_MainFunction_BusOff();
+
+      /* call schedulable entity */
+      Can_MainFunction_Mode();
+
+      /* call schedulable entity */
+      Can_MainFunction_Wakeup();
+
+      /* call schedulable entity */
+      Com_MainFunctionRx();
+
+      /* call schedulable entity */
+      Com_MainFunctionTx();
+    }
+  }
 } /* PRQA S 6010, 6030, 6050, 6080 */ /* MD_MSR_STPTH, MD_MSR_STCYC, MD_MSR_STCAL, MD_MSR_STMIF */
 
 /**********************************************************************************************************************

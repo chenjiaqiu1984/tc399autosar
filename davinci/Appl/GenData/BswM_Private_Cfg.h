@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: BswM_Private_Cfg.h
- *   Generation Time: 2025-04-01 10:51:24
+ *   Generation Time: 2025-03-03 12:44:08
  *           Project: tc399demo - Version 1.0
  *          Delivery: CBD2100010_D00
  *      Tool Version: DaVinci Configurator (beta) 5.22.45 SP3
@@ -53,6 +53,12 @@
 #include "Rte_BswM.h" 
 #include "EcuM.h" 
 #include "Rte_Main.h" 
+#include "Can.h" 
+#include "CanIf.h" 
+#include "Com.h" 
+#include "PduR.h" 
+#include "CanSM_EcuM.h" 
+#include "ComM.h" 
 
 
 

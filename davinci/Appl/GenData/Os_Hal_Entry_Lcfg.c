@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Hal_Entry_Lcfg.c
- *   Generation Time: 2025-04-01 10:51:24
+ *   Generation Time: 2025-03-03 10:08:10
  *           Project: tc399demo - Version 1.0
  *          Delivery: CBD2100010_D00
  *      Tool Version: DaVinci Configurator (beta) 5.22.45 SP3
@@ -125,7 +125,7 @@ Os_Hal_UnhandledTrapEntry(0, 7)
 
 Os_Hal_InterruptSectionDeclaration(0)
 Os_Hal_UnhandledInterruptEntry(0, 0)
-Os_Hal_Cat2InterruptEntry(0, 1, OS_CFG_HAL_ISR2_DISABLE_LEVEL, OsCfg_Isr_CounterIsr_SystemTimer)
+Os_Hal_UnhandledInterruptEntry(0, 1)
 Os_Hal_UnhandledInterruptEntry(0, 2)
 Os_Hal_UnhandledInterruptEntry(0, 3)
 Os_Hal_UnhandledInterruptEntry(0, 4)
@@ -144,7 +144,7 @@ Os_Hal_UnhandledInterruptEntry(0, 16)
 Os_Hal_UnhandledInterruptEntry(0, 17)
 Os_Hal_UnhandledInterruptEntry(0, 18)
 Os_Hal_UnhandledInterruptEntry(0, 19)
-Os_Hal_UnhandledInterruptEntry(0, 20)
+Os_Hal_Cat2InterruptEntry(0, 20, OS_CFG_HAL_ISR2_DISABLE_LEVEL, OsCfg_Isr_CounterIsr_SystemTimer)
 Os_Hal_UnhandledInterruptEntry(0, 21)
 Os_Hal_UnhandledInterruptEntry(0, 22)
 Os_Hal_UnhandledInterruptEntry(0, 23)
@@ -174,7 +174,7 @@ Os_Hal_UnhandledInterruptEntry(0, 46)
 Os_Hal_UnhandledInterruptEntry(0, 47)
 Os_Hal_UnhandledInterruptEntry(0, 48)
 Os_Hal_UnhandledInterruptEntry(0, 49)
-Os_Hal_UnhandledInterruptEntry(0, 50)
+Os_Hal_Cat2InterruptEntry(0, 50, OS_CFG_HAL_ISR2_DISABLE_LEVEL, OsCfg_Isr_CanIsr_0)
 Os_Hal_UnhandledInterruptEntry(0, 51)
 Os_Hal_UnhandledInterruptEntry(0, 52)
 Os_Hal_UnhandledInterruptEntry(0, 53)

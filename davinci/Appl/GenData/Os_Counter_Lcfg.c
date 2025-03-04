@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Counter_Lcfg.c
- *   Generation Time: 2025-03-01 16:46:06
+ *   Generation Time: 2025-03-03 09:41:04
  *           Project: tc399demo - Version 1.0
  *          Delivery: CBD2100010_D00
  *      Tool Version: DaVinci Configurator (beta) 5.22.45 SP3
@@ -89,6 +89,12 @@
 #define OS_START_SEC_CORE0_VAR_NOINIT_UNSPECIFIED
 #include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
+/*! Dynamic counter data: OsCounterCAN0 */
+OS_LOCAL VAR(Os_TimerSwType, OS_VAR_NOINIT) OsCfg_Counter_OsCounterCAN0_Dyn;
+OS_LOCAL VAR(Os_PriorityQueueType, OS_VAR_NOINIT) OsCfg_Counter_OsCounterCAN0_JobQueue_Dyn;
+OS_LOCAL VAR(Os_PriorityQueueNodeType, OS_VAR_NOINIT)
+  OsCfg_Counter_OsCounterCAN0_JobQueueNodes_Dyn[OS_CFG_NUM_COUNTER_OSCOUNTERCAN0_JOBS + 1u];
+
 /*! Dynamic counter data: SystemTimer */
 OS_LOCAL VAR(Os_TimerPfrtType, OS_VAR_NOINIT) OsCfg_Counter_SystemTimer_Dyn;
 OS_LOCAL VAR(Os_PriorityQueueType, OS_VAR_NOINIT) OsCfg_Counter_SystemTimer_JobQueue_Dyn;
@@ -109,6 +115,34 @@ OS_LOCAL VAR(Os_PriorityQueueNodeType, OS_VAR_NOINIT)
 
 #define OS_START_SEC_CORE0_CONST_UNSPECIFIED
 #include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
+/*! Counter configuration data: OsCounterCAN0 */
+CONST(Os_TimerSwConfigType, OS_CONST) OsCfg_Counter_OsCounterCAN0 =
+{
+  /* .Counter = */
+  {
+    /* .Characteristics       = */
+    {
+      /* .MaxAllowedValue      = */ OSMAXALLOWEDVALUE_OsCounterCAN0,
+      /* .MaxCountingValue     = */ OS_TIMERSW_GETMAXCOUNTINGVALUE(OSMAXALLOWEDVALUE_OsCounterCAN0),
+      /* .MaxDifferentialValue = */ OS_TIMERSW_GETMAXDIFFERENTIALVALUE(OSMAXALLOWEDVALUE_OsCounterCAN0),
+      /* .MinCycle             = */ OSMINCYCLE_OsCounterCAN0,
+      /* .TicksPerBase         = */ OSTICKSPERBASE_OsCounterCAN0
+    },
+    /* .JobQueue              = */
+    {
+      /* .Queue     = */ OsCfg_Counter_OsCounterCAN0_JobQueueNodes_Dyn,
+      /* .Dyn       = */ &OsCfg_Counter_OsCounterCAN0_JobQueue_Dyn,
+      /* .QueueSize = */ (Os_PriorityQueueNodeIdxType)OS_CFG_NUM_COUNTER_OSCOUNTERCAN0_JOBS
+    },
+    /* .DriverType            = */ OS_TIMERTYPE_SOFTWARE,
+    /* .Core                  = */ &OsCfg_Core_OsCore0,
+    /* .OwnerApplication      = */ &OsCfg_App_OsApplication_OsCore0,
+    /* .AccessingApplications = */ (OS_APPID2MASK(OsApplication_OsCore0) | OS_APPID2MASK(SystemApplication_OsCore0))  /* PRQA S 0410 */ /* MD_MSR_Dir1.1 */
+  },
+  /* .Dyn     = */ &OsCfg_Counter_OsCounterCAN0_Dyn
+};
 
 
 /*! Counter configuration data: SystemTimer */
@@ -155,6 +189,7 @@ CONST(Os_TimerPfrtConfigType, OS_CONST) OsCfg_Counter_SystemTimer =
 /*! Object reference table for counters. */
 CONSTP2CONST(Os_CounterConfigType, OS_CONST, OS_CONST) OsCfg_CounterRefs[OS_COUNTERID_COUNT + 1u] =            /* PRQA S 4521 */ /* MD_Os_Rule10.1_4521 */
 {
+  OS_COUNTER_CASTCONFIG_TIMERSW_2_COUNTER(OsCfg_Counter_OsCounterCAN0),
   OS_COUNTER_CASTCONFIG_TIMERPFRT_2_COUNTER(OsCfg_Counter_SystemTimer),
   NULL_PTR
 };

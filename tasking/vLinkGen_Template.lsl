@@ -593,127 +593,6 @@ section_layout mpe:vtc:linear
     "_OS_DATA_CORE0_VAR_ALL_LIMIT" = "_OS_DATA_CORE0_VAR_ZERO_INIT_bss_LIMIT";
   }
 
-  group OS_DATA_CORE1_VAR_ROM_GROUP (ordered, contiguous, run_addr = mem:mpe:RegionBlock_PFlash0_Cached_2)
-  {
-    group OS_DATA_CORE1_VAR_FAST_INIT_ROM (ordered, contiguous, fill, align = 16)
-    {
-      reserved "OS_DATA_CORE1_VAR_FAST_INIT_ROM" (size = 0);
-    }
-    "_OS_DATA_CORE1_VAR_FAST_INIT_ROM_START" = "_lc_gb_OS_DATA_CORE1_VAR_FAST_INIT_ROM";
-    "_OS_DATA_CORE1_VAR_FAST_INIT_ROM_LIMIT" = "_lc_ge_OS_DATA_CORE1_VAR_FAST_INIT_ROM";
-
-    group OS_DATA_CORE1_VAR_INIT_ROM (ordered, contiguous, fill, align = 16)
-    {
-      reserved "OS_DATA_CORE1_VAR_INIT_ROM" (size = 0);
-    }
-    "_OS_DATA_CORE1_VAR_INIT_ROM_START" = "_lc_gb_OS_DATA_CORE1_VAR_INIT_ROM";
-    "_OS_DATA_CORE1_VAR_INIT_ROM_LIMIT" = "_lc_ge_OS_DATA_CORE1_VAR_INIT_ROM";
-
-  }
-
-  group OS_DATA_CORE1_VAR_GROUP (ordered, contiguous, run_addr = mem:mpe:RegionBlock_0_DSPR_Core1)
-  {
-    group OS_DATA_CORE1_VAR_FAST_INIT (ordered, contiguous, fill, align = 16)
-    {
-      reserved "OS_DATA_CORE1_VAR_FAST_INIT" (size = 0);
-    }
-    group OS_DATA_CORE1_VAR_FAST_INIT_PAD (align = 4)
-    {
-      reserved "OS_DATA_CORE1_VAR_FAST_INIT_PAD" (size = 16);
-    }
-    "_OS_DATA_CORE1_VAR_FAST_INIT_START" = "_lc_gb_OS_DATA_CORE1_VAR_FAST_INIT";
-    "_OS_DATA_CORE1_VAR_FAST_INIT_END" = ("_lc_gb_OS_DATA_CORE1_VAR_FAST_INIT_PAD" == 0) ? 0 : "_lc_gb_OS_DATA_CORE1_VAR_FAST_INIT_PAD" - 1;
-    "_OS_DATA_CORE1_VAR_FAST_INIT_LIMIT" = "_lc_gb_OS_DATA_CORE1_VAR_FAST_INIT_PAD";
-
-    group OS_DATA_CORE1_VAR_FAST_NOINIT (ordered, contiguous, fill, align = 16)
-    {
-      reserved "OS_DATA_CORE1_VAR_FAST_NOINIT" (size = 0);
-    }
-    group OS_DATA_CORE1_VAR_FAST_NOINIT_PAD (align = 1)
-    {
-      reserved "OS_DATA_CORE1_VAR_FAST_NOINIT_PAD" (size = 16);
-    }
-    "_OS_DATA_CORE1_VAR_FAST_NOINIT_START" = "_lc_gb_OS_DATA_CORE1_VAR_FAST_NOINIT";
-    "_OS_DATA_CORE1_VAR_FAST_NOINIT_END" = ("_lc_gb_OS_DATA_CORE1_VAR_FAST_NOINIT_PAD" == 0) ? 0 : "_lc_gb_OS_DATA_CORE1_VAR_FAST_NOINIT_PAD" - 1;
-    "_OS_DATA_CORE1_VAR_FAST_NOINIT_LIMIT" = "_lc_gb_OS_DATA_CORE1_VAR_FAST_NOINIT_PAD";
-
-    group OS_DATA_CORE1_VAR_FAST_ZERO_INIT (ordered, contiguous, fill, align = 16)
-    {
-      reserved "OS_DATA_CORE1_VAR_FAST_ZERO_INIT" (size = 0);
-    }
-    group OS_DATA_CORE1_VAR_FAST_ZERO_INIT_PAD (align = 4)
-    {
-      reserved "OS_DATA_CORE1_VAR_FAST_ZERO_INIT_PAD" (size = 16);
-    }
-    "_OS_DATA_CORE1_VAR_FAST_ZERO_INIT_START" = "_lc_gb_OS_DATA_CORE1_VAR_FAST_ZERO_INIT";
-    "_OS_DATA_CORE1_VAR_FAST_ZERO_INIT_END" = ("_lc_gb_OS_DATA_CORE1_VAR_FAST_ZERO_INIT_PAD" == 0) ? 0 : "_lc_gb_OS_DATA_CORE1_VAR_FAST_ZERO_INIT_PAD" - 1;
-    "_OS_DATA_CORE1_VAR_FAST_ZERO_INIT_LIMIT" = "_lc_gb_OS_DATA_CORE1_VAR_FAST_ZERO_INIT_PAD";
-
-    group OS_DATA_CORE1_VAR_FAST_ZERO_INIT_bss (ordered, contiguous, fill, align = 16)
-    {
-      reserved "OS_DATA_CORE1_VAR_FAST_ZERO_INIT_bss" (size = 0);
-    }
-    group OS_DATA_CORE1_VAR_FAST_ZERO_INIT_bss_PAD (align = 4)
-    {
-      reserved "OS_DATA_CORE1_VAR_FAST_ZERO_INIT_bss_PAD" (size = 16);
-    }
-    "_OS_DATA_CORE1_VAR_FAST_ZERO_INIT_bss_START" = "_lc_gb_OS_DATA_CORE1_VAR_FAST_ZERO_INIT_bss";
-    "_OS_DATA_CORE1_VAR_FAST_ZERO_INIT_bss_END" = ("_lc_gb_OS_DATA_CORE1_VAR_FAST_ZERO_INIT_bss_PAD" == 0) ? 0 : "_lc_gb_OS_DATA_CORE1_VAR_FAST_ZERO_INIT_bss_PAD" - 1;
-    "_OS_DATA_CORE1_VAR_FAST_ZERO_INIT_bss_LIMIT" = "_lc_gb_OS_DATA_CORE1_VAR_FAST_ZERO_INIT_bss_PAD";
-
-    group OS_DATA_CORE1_VAR_INIT (ordered, contiguous, fill, align = 16)
-    {
-      reserved "OS_DATA_CORE1_VAR_INIT" (size = 0);
-    }
-    group OS_DATA_CORE1_VAR_INIT_PAD (align = 4)
-    {
-      reserved "OS_DATA_CORE1_VAR_INIT_PAD" (size = 16);
-    }
-    "_OS_DATA_CORE1_VAR_INIT_START" = "_lc_gb_OS_DATA_CORE1_VAR_INIT";
-    "_OS_DATA_CORE1_VAR_INIT_END" = ("_lc_gb_OS_DATA_CORE1_VAR_INIT_PAD" == 0) ? 0 : "_lc_gb_OS_DATA_CORE1_VAR_INIT_PAD" - 1;
-    "_OS_DATA_CORE1_VAR_INIT_LIMIT" = "_lc_gb_OS_DATA_CORE1_VAR_INIT_PAD";
-
-    group OS_DATA_CORE1_VAR_NOINIT (ordered, contiguous, fill, align = 16)
-    {
-      reserved "OS_DATA_CORE1_VAR_NOINIT" (size = 0);
-    }
-    group OS_DATA_CORE1_VAR_NOINIT_PAD (align = 1)
-    {
-      reserved "OS_DATA_CORE1_VAR_NOINIT_PAD" (size = 16);
-    }
-    "_OS_DATA_CORE1_VAR_NOINIT_START" = "_lc_gb_OS_DATA_CORE1_VAR_NOINIT";
-    "_OS_DATA_CORE1_VAR_NOINIT_END" = ("_lc_gb_OS_DATA_CORE1_VAR_NOINIT_PAD" == 0) ? 0 : "_lc_gb_OS_DATA_CORE1_VAR_NOINIT_PAD" - 1;
-    "_OS_DATA_CORE1_VAR_NOINIT_LIMIT" = "_lc_gb_OS_DATA_CORE1_VAR_NOINIT_PAD";
-
-    group OS_DATA_CORE1_VAR_ZERO_INIT (ordered, contiguous, fill, align = 16)
-    {
-      reserved "OS_DATA_CORE1_VAR_ZERO_INIT" (size = 0);
-    }
-    group OS_DATA_CORE1_VAR_ZERO_INIT_PAD (align = 4)
-    {
-      reserved "OS_DATA_CORE1_VAR_ZERO_INIT_PAD" (size = 16);
-    }
-    "_OS_DATA_CORE1_VAR_ZERO_INIT_START" = "_lc_gb_OS_DATA_CORE1_VAR_ZERO_INIT";
-    "_OS_DATA_CORE1_VAR_ZERO_INIT_END" = ("_lc_gb_OS_DATA_CORE1_VAR_ZERO_INIT_PAD" == 0) ? 0 : "_lc_gb_OS_DATA_CORE1_VAR_ZERO_INIT_PAD" - 1;
-    "_OS_DATA_CORE1_VAR_ZERO_INIT_LIMIT" = "_lc_gb_OS_DATA_CORE1_VAR_ZERO_INIT_PAD";
-
-    group OS_DATA_CORE1_VAR_ZERO_INIT_bss (ordered, contiguous, fill, align = 16)
-    {
-      reserved "OS_DATA_CORE1_VAR_ZERO_INIT_bss" (size = 0);
-    }
-    group OS_DATA_CORE1_VAR_ZERO_INIT_bss_PAD (align = 4)
-    {
-      reserved "OS_DATA_CORE1_VAR_ZERO_INIT_bss_PAD" (size = 16);
-    }
-    "_OS_DATA_CORE1_VAR_ZERO_INIT_bss_START" = "_lc_gb_OS_DATA_CORE1_VAR_ZERO_INIT_bss";
-    "_OS_DATA_CORE1_VAR_ZERO_INIT_bss_END" = ("_lc_gb_OS_DATA_CORE1_VAR_ZERO_INIT_bss_PAD" == 0) ? 0 : "_lc_gb_OS_DATA_CORE1_VAR_ZERO_INIT_bss_PAD" - 1;
-    "_OS_DATA_CORE1_VAR_ZERO_INIT_bss_LIMIT" = "_lc_gb_OS_DATA_CORE1_VAR_ZERO_INIT_bss_PAD";
-
-    "_OS_DATA_CORE1_VAR_ALL_START" = "_OS_DATA_CORE1_VAR_FAST_INIT_START";
-    "_OS_DATA_CORE1_VAR_ALL_END" = "_OS_DATA_CORE1_VAR_ZERO_INIT_bss_END";
-    "_OS_DATA_CORE1_VAR_ALL_LIMIT" = "_OS_DATA_CORE1_VAR_ZERO_INIT_bss_LIMIT";
-  }
-
   group OS_DATA_SHARED_VAR_ROM_GROUP (ordered, contiguous, run_addr = mem:mpe:RegionBlock_PFlash0_Cached_2)
   {
     group OS_DATA_SHARED_VAR_FAST_INIT_ROM (ordered, contiguous, fill, align = 16)
@@ -859,44 +738,6 @@ section_layout mpe:vtc:linear
     "_OS_EXCVEC_CORE0_CONST_ALL_START" = "_OS_EXCVEC_CORE0_CONST_START";
     "_OS_EXCVEC_CORE0_CONST_ALL_END" = "_OS_EXCVEC_CORE0_CONST_END";
     "_OS_EXCVEC_CORE0_CONST_ALL_LIMIT" = "_OS_EXCVEC_CORE0_CONST_LIMIT";
-  }
-
-  group OS_EXCVEC_CORE1_CODE_GROUP (ordered, contiguous, run_addr = mem:mpe:RegionBlock_PFlash0_Cached_2)
-  {
-    group OS_EXCVEC_CORE1_CODE (ordered, contiguous, fill, align = 256)
-    {
-      reserved "OS_EXCVEC_CORE1_CODE" (size = 0);
-    }
-    group OS_EXCVEC_CORE1_CODE_PAD (align = 8)
-    {
-      reserved "OS_EXCVEC_CORE1_CODE_PAD" (size = 16);
-    }
-    "_OS_EXCVEC_CORE1_CODE_START" = "_lc_gb_OS_EXCVEC_CORE1_CODE";
-    "_OS_EXCVEC_CORE1_CODE_END" = ("_lc_gb_OS_EXCVEC_CORE1_CODE_PAD" == 0) ? 0 : "_lc_gb_OS_EXCVEC_CORE1_CODE_PAD" - 1;
-    "_OS_EXCVEC_CORE1_CODE_LIMIT" = "_lc_gb_OS_EXCVEC_CORE1_CODE_PAD";
-
-    "_OS_EXCVEC_CORE1_CODE_ALL_START" = "_OS_EXCVEC_CORE1_CODE_START";
-    "_OS_EXCVEC_CORE1_CODE_ALL_END" = "_OS_EXCVEC_CORE1_CODE_END";
-    "_OS_EXCVEC_CORE1_CODE_ALL_LIMIT" = "_OS_EXCVEC_CORE1_CODE_LIMIT";
-  }
-
-  group OS_EXCVEC_CORE1_CONST_GROUP (ordered, contiguous, run_addr = mem:mpe:RegionBlock_PFlash0_Cached_2)
-  {
-    group OS_EXCVEC_CORE1_CONST (ordered, contiguous, fill, align = 256)
-    {
-      reserved "OS_EXCVEC_CORE1_CONST" (size = 0);
-    }
-    group OS_EXCVEC_CORE1_CONST_PAD (align = 8)
-    {
-      reserved "OS_EXCVEC_CORE1_CONST_PAD" (size = 16);
-    }
-    "_OS_EXCVEC_CORE1_CONST_START" = "_lc_gb_OS_EXCVEC_CORE1_CONST";
-    "_OS_EXCVEC_CORE1_CONST_END" = ("_lc_gb_OS_EXCVEC_CORE1_CONST_PAD" == 0) ? 0 : "_lc_gb_OS_EXCVEC_CORE1_CONST_PAD" - 1;
-    "_OS_EXCVEC_CORE1_CONST_LIMIT" = "_lc_gb_OS_EXCVEC_CORE1_CONST_PAD";
-
-    "_OS_EXCVEC_CORE1_CONST_ALL_START" = "_OS_EXCVEC_CORE1_CONST_START";
-    "_OS_EXCVEC_CORE1_CONST_ALL_END" = "_OS_EXCVEC_CORE1_CONST_END";
-    "_OS_EXCVEC_CORE1_CONST_ALL_LIMIT" = "_OS_EXCVEC_CORE1_CONST_LIMIT";
   }
 
   group OS_GLOBALSHARED_CONST_GROUP (ordered, contiguous, run_addr = mem:mpe:RegionBlock_PFlash0_Cached_2)
@@ -1177,44 +1018,6 @@ section_layout mpe:vtc:linear
     "_OS_INTVEC_CORE0_CONST_ALL_LIMIT" = "_OS_INTVEC_CORE0_CONST_LIMIT";
   }
 
-  group OS_INTVEC_CORE1_CODE_GROUP (ordered, contiguous, run_addr = mem:mpe:RegionBlock_PFlash0_Cached_2)
-  {
-    group OS_INTVEC_CORE1_CODE (ordered, contiguous, fill, align = 8192)
-    {
-      reserved "OS_INTVEC_CORE1_CODE" (size = 0);
-    }
-    group OS_INTVEC_CORE1_CODE_PAD (align = 8)
-    {
-      reserved "OS_INTVEC_CORE1_CODE_PAD" (size = 16);
-    }
-    "_OS_INTVEC_CORE1_CODE_START" = "_lc_gb_OS_INTVEC_CORE1_CODE";
-    "_OS_INTVEC_CORE1_CODE_END" = ("_lc_gb_OS_INTVEC_CORE1_CODE_PAD" == 0) ? 0 : "_lc_gb_OS_INTVEC_CORE1_CODE_PAD" - 1;
-    "_OS_INTVEC_CORE1_CODE_LIMIT" = "_lc_gb_OS_INTVEC_CORE1_CODE_PAD";
-
-    "_OS_INTVEC_CORE1_CODE_ALL_START" = "_OS_INTVEC_CORE1_CODE_START";
-    "_OS_INTVEC_CORE1_CODE_ALL_END" = "_OS_INTVEC_CORE1_CODE_END";
-    "_OS_INTVEC_CORE1_CODE_ALL_LIMIT" = "_OS_INTVEC_CORE1_CODE_LIMIT";
-  }
-
-  group OS_INTVEC_CORE1_CONST_GROUP (ordered, contiguous, run_addr = mem:mpe:RegionBlock_PFlash0_Cached_2)
-  {
-    group OS_INTVEC_CORE1_CONST (ordered, contiguous, fill, align = 8192)
-    {
-      reserved "OS_INTVEC_CORE1_CONST" (size = 0);
-    }
-    group OS_INTVEC_CORE1_CONST_PAD (align = 8)
-    {
-      reserved "OS_INTVEC_CORE1_CONST_PAD" (size = 16);
-    }
-    "_OS_INTVEC_CORE1_CONST_START" = "_lc_gb_OS_INTVEC_CORE1_CONST";
-    "_OS_INTVEC_CORE1_CONST_END" = ("_lc_gb_OS_INTVEC_CORE1_CONST_PAD" == 0) ? 0 : "_lc_gb_OS_INTVEC_CORE1_CONST_PAD" - 1;
-    "_OS_INTVEC_CORE1_CONST_LIMIT" = "_lc_gb_OS_INTVEC_CORE1_CONST_PAD";
-
-    "_OS_INTVEC_CORE1_CONST_ALL_START" = "_OS_INTVEC_CORE1_CONST_START";
-    "_OS_INTVEC_CORE1_CONST_ALL_END" = "_OS_INTVEC_CORE1_CONST_END";
-    "_OS_INTVEC_CORE1_CONST_ALL_LIMIT" = "_OS_INTVEC_CORE1_CONST_LIMIT";
-  }
-
   group OS_OsApplication_OsCore0_VAR_ROM_GROUP (ordered, contiguous, run_addr = mem:mpe:RegionBlock_PFlash0_Cached_2)
   {
     group OS_OsApplication_OsCore0_VAR_FAST_INIT_ROM (ordered, contiguous, fill, align = 16)
@@ -1247,7 +1050,7 @@ section_layout mpe:vtc:linear
 
   }
 
-  group OS_OsApplication_OsCore0_VAR_GROUP (ordered, contiguous, run_addr = mem:mpe:RegionBlock_0_PSPR_Core0)
+  group OS_OsApplication_OsCore0_VAR_GROUP (ordered, contiguous, run_addr = mem:mpe:RegionBlock_0_DSPR_Core0)
   {
     group OS_OsApplication_OsCore0_VAR_FAST_INIT (ordered, contiguous, fill, align = 16)
     {
@@ -1382,142 +1185,22 @@ section_layout mpe:vtc:linear
     "_OS_OsApplication_OsCore0_VAR_ALL_LIMIT" = "_OS_OsApplication_OsCore0_VAR_ZERO_INIT_bss_LIMIT";
   }
 
-  group OS_OsApplication_OsCore1_VAR_ROM_GROUP (ordered, contiguous, run_addr = mem:mpe:RegionBlock_PFlash0_Cached_2)
-  {
-    group OS_OsApplication_OsCore1_VAR_FAST_INIT_ROM (ordered, contiguous, fill, align = 16)
-    {
-      reserved "OS_OsApplication_OsCore1_VAR_FAST_INIT_ROM" (size = 0);
-    }
-    "_OS_OsApplication_OsCore1_VAR_FAST_INIT_ROM_START" = "_lc_gb_OS_OsApplication_OsCore1_VAR_FAST_INIT_ROM";
-    "_OS_OsApplication_OsCore1_VAR_FAST_INIT_ROM_LIMIT" = "_lc_ge_OS_OsApplication_OsCore1_VAR_FAST_INIT_ROM";
-
-    group OS_OsApplication_OsCore1_VAR_INIT_ROM (ordered, contiguous, fill, align = 16)
-    {
-      reserved "OS_OsApplication_OsCore1_VAR_INIT_ROM" (size = 0);
-    }
-    "_OS_OsApplication_OsCore1_VAR_INIT_ROM_START" = "_lc_gb_OS_OsApplication_OsCore1_VAR_INIT_ROM";
-    "_OS_OsApplication_OsCore1_VAR_INIT_ROM_LIMIT" = "_lc_ge_OS_OsApplication_OsCore1_VAR_INIT_ROM";
-
-  }
-
-  group OS_OsApplication_OsCore1_VAR_GROUP (ordered, contiguous, run_addr = mem:mpe:RegionBlock_0_PSPR_Core1)
-  {
-    group OS_OsApplication_OsCore1_VAR_FAST_INIT (ordered, contiguous, fill, align = 16)
-    {
-      reserved "OS_OsApplication_OsCore1_VAR_FAST_INIT" (size = 0);
-    }
-    group OS_OsApplication_OsCore1_VAR_FAST_INIT_PAD (align = 4)
-    {
-      reserved "OS_OsApplication_OsCore1_VAR_FAST_INIT_PAD" (size = 16);
-    }
-    "_OS_OsApplication_OsCore1_VAR_FAST_INIT_START" = "_lc_gb_OS_OsApplication_OsCore1_VAR_FAST_INIT";
-    "_OS_OsApplication_OsCore1_VAR_FAST_INIT_END" = ("_lc_gb_OS_OsApplication_OsCore1_VAR_FAST_INIT_PAD" == 0) ? 0 : "_lc_gb_OS_OsApplication_OsCore1_VAR_FAST_INIT_PAD" - 1;
-    "_OS_OsApplication_OsCore1_VAR_FAST_INIT_LIMIT" = "_lc_gb_OS_OsApplication_OsCore1_VAR_FAST_INIT_PAD";
-
-    group OS_OsApplication_OsCore1_VAR_FAST_NOINIT (ordered, contiguous, fill, align = 16)
-    {
-      reserved "OS_OsApplication_OsCore1_VAR_FAST_NOINIT" (size = 0);
-    }
-    group OS_OsApplication_OsCore1_VAR_FAST_NOINIT_PAD (align = 1)
-    {
-      reserved "OS_OsApplication_OsCore1_VAR_FAST_NOINIT_PAD" (size = 16);
-    }
-    "_OS_OsApplication_OsCore1_VAR_FAST_NOINIT_START" = "_lc_gb_OS_OsApplication_OsCore1_VAR_FAST_NOINIT";
-    "_OS_OsApplication_OsCore1_VAR_FAST_NOINIT_END" = ("_lc_gb_OS_OsApplication_OsCore1_VAR_FAST_NOINIT_PAD" == 0) ? 0 : "_lc_gb_OS_OsApplication_OsCore1_VAR_FAST_NOINIT_PAD" - 1;
-    "_OS_OsApplication_OsCore1_VAR_FAST_NOINIT_LIMIT" = "_lc_gb_OS_OsApplication_OsCore1_VAR_FAST_NOINIT_PAD";
-
-    group OS_OsApplication_OsCore1_VAR_FAST_ZERO_INIT (ordered, contiguous, fill, align = 16)
-    {
-      reserved "OS_OsApplication_OsCore1_VAR_FAST_ZERO_INIT" (size = 0);
-    }
-    group OS_OsApplication_OsCore1_VAR_FAST_ZERO_INIT_PAD (align = 4)
-    {
-      reserved "OS_OsApplication_OsCore1_VAR_FAST_ZERO_INIT_PAD" (size = 16);
-    }
-    "_OS_OsApplication_OsCore1_VAR_FAST_ZERO_INIT_START" = "_lc_gb_OS_OsApplication_OsCore1_VAR_FAST_ZERO_INIT";
-    "_OS_OsApplication_OsCore1_VAR_FAST_ZERO_INIT_END" = ("_lc_gb_OS_OsApplication_OsCore1_VAR_FAST_ZERO_INIT_PAD" == 0) ? 0 : "_lc_gb_OS_OsApplication_OsCore1_VAR_FAST_ZERO_INIT_PAD" - 1;
-    "_OS_OsApplication_OsCore1_VAR_FAST_ZERO_INIT_LIMIT" = "_lc_gb_OS_OsApplication_OsCore1_VAR_FAST_ZERO_INIT_PAD";
-
-    group OS_OsApplication_OsCore1_VAR_FAST_ZERO_INIT_bss (ordered, contiguous, fill, align = 16)
-    {
-      reserved "OS_OsApplication_OsCore1_VAR_FAST_ZERO_INIT_bss" (size = 0);
-    }
-    group OS_OsApplication_OsCore1_VAR_FAST_ZERO_INIT_bss_PAD (align = 4)
-    {
-      reserved "OS_OsApplication_OsCore1_VAR_FAST_ZERO_INIT_bss_PAD" (size = 16);
-    }
-    "_OS_OsApplication_OsCore1_VAR_FAST_ZERO_INIT_bss_START" = "_lc_gb_OS_OsApplication_OsCore1_VAR_FAST_ZERO_INIT_bss";
-    "_OS_OsApplication_OsCore1_VAR_FAST_ZERO_INIT_bss_END" = ("_lc_gb_OS_OsApplication_OsCore1_VAR_FAST_ZERO_INIT_bss_PAD" == 0) ? 0 : "_lc_gb_OS_OsApplication_OsCore1_VAR_FAST_ZERO_INIT_bss_PAD" - 1;
-    "_OS_OsApplication_OsCore1_VAR_FAST_ZERO_INIT_bss_LIMIT" = "_lc_gb_OS_OsApplication_OsCore1_VAR_FAST_ZERO_INIT_bss_PAD";
-
-    group OS_OsApplication_OsCore1_VAR_INIT (ordered, contiguous, fill, align = 16)
-    {
-      reserved "OS_OsApplication_OsCore1_VAR_INIT" (size = 0);
-    }
-    group OS_OsApplication_OsCore1_VAR_INIT_PAD (align = 4)
-    {
-      reserved "OS_OsApplication_OsCore1_VAR_INIT_PAD" (size = 16);
-    }
-    "_OS_OsApplication_OsCore1_VAR_INIT_START" = "_lc_gb_OS_OsApplication_OsCore1_VAR_INIT";
-    "_OS_OsApplication_OsCore1_VAR_INIT_END" = ("_lc_gb_OS_OsApplication_OsCore1_VAR_INIT_PAD" == 0) ? 0 : "_lc_gb_OS_OsApplication_OsCore1_VAR_INIT_PAD" - 1;
-    "_OS_OsApplication_OsCore1_VAR_INIT_LIMIT" = "_lc_gb_OS_OsApplication_OsCore1_VAR_INIT_PAD";
-
-    group OS_OsApplication_OsCore1_VAR_NOINIT (ordered, contiguous, fill, align = 16)
-    {
-      reserved "OS_OsApplication_OsCore1_VAR_NOINIT" (size = 0);
-    }
-    group OS_OsApplication_OsCore1_VAR_NOINIT_PAD (align = 1)
-    {
-      reserved "OS_OsApplication_OsCore1_VAR_NOINIT_PAD" (size = 16);
-    }
-    "_OS_OsApplication_OsCore1_VAR_NOINIT_START" = "_lc_gb_OS_OsApplication_OsCore1_VAR_NOINIT";
-    "_OS_OsApplication_OsCore1_VAR_NOINIT_END" = ("_lc_gb_OS_OsApplication_OsCore1_VAR_NOINIT_PAD" == 0) ? 0 : "_lc_gb_OS_OsApplication_OsCore1_VAR_NOINIT_PAD" - 1;
-    "_OS_OsApplication_OsCore1_VAR_NOINIT_LIMIT" = "_lc_gb_OS_OsApplication_OsCore1_VAR_NOINIT_PAD";
-
-    group OS_OsApplication_OsCore1_VAR_ZERO_INIT (ordered, contiguous, fill, align = 16)
-    {
-      reserved "OS_OsApplication_OsCore1_VAR_ZERO_INIT" (size = 0);
-    }
-    group OS_OsApplication_OsCore1_VAR_ZERO_INIT_PAD (align = 4)
-    {
-      reserved "OS_OsApplication_OsCore1_VAR_ZERO_INIT_PAD" (size = 16);
-    }
-    "_OS_OsApplication_OsCore1_VAR_ZERO_INIT_START" = "_lc_gb_OS_OsApplication_OsCore1_VAR_ZERO_INIT";
-    "_OS_OsApplication_OsCore1_VAR_ZERO_INIT_END" = ("_lc_gb_OS_OsApplication_OsCore1_VAR_ZERO_INIT_PAD" == 0) ? 0 : "_lc_gb_OS_OsApplication_OsCore1_VAR_ZERO_INIT_PAD" - 1;
-    "_OS_OsApplication_OsCore1_VAR_ZERO_INIT_LIMIT" = "_lc_gb_OS_OsApplication_OsCore1_VAR_ZERO_INIT_PAD";
-
-    group OS_OsApplication_OsCore1_VAR_ZERO_INIT_bss (ordered, contiguous, fill, align = 16)
-    {
-      reserved "OS_OsApplication_OsCore1_VAR_ZERO_INIT_bss" (size = 0);
-    }
-    group OS_OsApplication_OsCore1_VAR_ZERO_INIT_bss_PAD (align = 4)
-    {
-      reserved "OS_OsApplication_OsCore1_VAR_ZERO_INIT_bss_PAD" (size = 16);
-    }
-    "_OS_OsApplication_OsCore1_VAR_ZERO_INIT_bss_START" = "_lc_gb_OS_OsApplication_OsCore1_VAR_ZERO_INIT_bss";
-    "_OS_OsApplication_OsCore1_VAR_ZERO_INIT_bss_END" = ("_lc_gb_OS_OsApplication_OsCore1_VAR_ZERO_INIT_bss_PAD" == 0) ? 0 : "_lc_gb_OS_OsApplication_OsCore1_VAR_ZERO_INIT_bss_PAD" - 1;
-    "_OS_OsApplication_OsCore1_VAR_ZERO_INIT_bss_LIMIT" = "_lc_gb_OS_OsApplication_OsCore1_VAR_ZERO_INIT_bss_PAD";
-
-    "_OS_OsApplication_OsCore1_VAR_ALL_START" = "_OS_OsApplication_OsCore1_VAR_FAST_INIT_START";
-    "_OS_OsApplication_OsCore1_VAR_ALL_END" = "_OS_OsApplication_OsCore1_VAR_ZERO_INIT_bss_END";
-    "_OS_OsApplication_OsCore1_VAR_ALL_LIMIT" = "_OS_OsApplication_OsCore1_VAR_ZERO_INIT_bss_LIMIT";
-  }
-
   group OS_STACKS_CORE0_VAR_GROUP (ordered, contiguous, run_addr = mem:mpe:RegionBlock_0_DSPR_Core0)
   {
     group OS_STACKS_CORE0_VAR_NOINIT (ordered, contiguous, fill, align = 16)
     {
       section "OS_STACKS_CORE0_VAR_NOINIT_SEC" (blocksize = 2, attributes = rw)
       {
-        select "[.]bss.OS_STACK_BSW_TASK_CORE0_VAR_NOINIT";
+        select "[.]bss.OS_STACK_BSW_TASK_VAR_NOINIT";
         select "[.]bss.OS_STACK_OSCORE0_ERROR_VAR_NOINIT";
         select "[.]bss.OS_STACK_OSCORE0_INIT_VAR_NOINIT";
         select "[.]bss.OS_STACK_OSCORE0_ISR_CORE_VAR_NOINIT";
         select "[.]bss.OS_STACK_OSCORE0_KERNEL_VAR_NOINIT";
-        select "[.]bss.OS_STACK_OSCORE0_TASK_PRIO30_VAR_NOINIT";
         select "[.]bss.OS_STACK_OSCORE0_TASK_PRIO4294967295_VAR_NOINIT";
+        select "[.]bss.OS_STACK_OSCORE0_TASK_PRIO48_VAR_NOINIT";
         select "[.]bss.OS_STACK_OSCORE0_TASK_PRIO49_VAR_NOINIT";
         select "[.]bss.OS_STACK_OSCORE0_TASK_PRIO50_VAR_NOINIT";
+        select "[.]bss.OS_STACK_SWC_TASK_VAR_NOINIT";
       }
     }
     group OS_STACKS_CORE0_VAR_NOINIT_PAD (align = 1)
@@ -1533,36 +1216,18 @@ section_layout mpe:vtc:linear
     "_OS_STACKS_CORE0_VAR_ALL_LIMIT" = "_OS_STACKS_CORE0_VAR_NOINIT_LIMIT";
   }
 
-  group OS_STACKS_CORE1_VAR_GROUP (ordered, contiguous, run_addr = mem:mpe:RegionBlock_0_DSPR_Core1)
-  {
-    group OS_STACKS_CORE1_VAR_NOINIT (ordered, contiguous, fill, align = 16)
-    {
-      reserved "OS_STACKS_CORE1_VAR_NOINIT" (size = 0);
-    }
-    group OS_STACKS_CORE1_VAR_NOINIT_PAD (align = 1)
-    {
-      reserved "OS_STACKS_CORE1_VAR_NOINIT_PAD" (size = 16);
-    }
-    "_OS_STACKS_CORE1_VAR_NOINIT_START" = "_lc_gb_OS_STACKS_CORE1_VAR_NOINIT";
-    "_OS_STACKS_CORE1_VAR_NOINIT_END" = ("_lc_gb_OS_STACKS_CORE1_VAR_NOINIT_PAD" == 0) ? 0 : "_lc_gb_OS_STACKS_CORE1_VAR_NOINIT_PAD" - 1;
-    "_OS_STACKS_CORE1_VAR_NOINIT_LIMIT" = "_lc_gb_OS_STACKS_CORE1_VAR_NOINIT_PAD";
-
-    "_OS_STACKS_CORE1_VAR_ALL_START" = "_OS_STACKS_CORE1_VAR_NOINIT_START";
-    "_OS_STACKS_CORE1_VAR_ALL_END" = "_OS_STACKS_CORE1_VAR_NOINIT_END";
-    "_OS_STACKS_CORE1_VAR_ALL_LIMIT" = "_OS_STACKS_CORE1_VAR_NOINIT_LIMIT";
-  }
-
   group OS_USER_CODE_GROUP (ordered, contiguous, run_addr = mem:mpe:RegionBlock_PFlash0_Cached_2)
   {
     group OS_USER_CODE (ordered, contiguous, fill)
     {
       section "OS_USER_CODE_SEC" (fill, blocksize = 2, attributes = rx)
       {
-        select "[.]text.OS_BSW_Task_Core0_CODE";
+        select "[.]text.OS_bsw_task_CODE";
+        select "[.]text.OS_CanIsr_0_CODE";
         select "[.]text.OS_Default_Init_Task_CODE";
         select "[.]text.OS_Default_Init_Task_Trusted_CODE";
         select "[.]text.OS_ERRORHOOK_CODE";
-        select "[.]text.OS_swc_initTask_CODE";
+        select "[.]text.OS_swc_init_CODE";
         select "[.]text.OS_swc_task_CODE";
       }
     }

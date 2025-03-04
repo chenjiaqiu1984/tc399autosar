@@ -3,6 +3,16 @@
 
 "D:\\tasking\\ctc\\bin\\amk" -j8 all -a 
 Compiling BswM_Lcfg.c
+Compiling Can_Lcfg.c
+Compiling Can_PBcfg.c
+Compiling CanIf_Lcfg.c
+Compiling CanIf_PBcfg.c
+Compiling CanSM_Lcfg.c
+Compiling Com_Lcfg.c
+Compiling Com_PBcfg.c
+Compiling ComM_Lcfg.c
+Compiling ComM_PBcfg.c
+Compiling Det_Cfg.c
 Compiling EcuM_Cfg.c
 Compiling EcuM_Init_Cfg.c
 Compiling EcuM_Init_PBcfg.c
@@ -36,7 +46,10 @@ Compiling Os_Task_Lcfg.c
 Compiling Os_TimingProtection_Lcfg.c
 Compiling Os_Trace_Lcfg.c
 Compiling Os_XSignal_Lcfg.c
+Compiling PduR_Lcfg.c
+Compiling PduR_PBcfg.c
 Compiling Rte.c
+Compiling SomeIpXf.c
 Compiling vLinkGen_Lcfg.c
 Compiling Dio_Lcfg.c
 Compiling Mcu_17_TimerIp_Cfg.c
@@ -50,68 +63,83 @@ Compiling BrsMainStartup.c
 Compiling BswInit.c
 Compiling BswM_Callout_Stubs.c
 Compiling EcuM_Callout_Stubs.c
-ctc W557: ["..\appl\Source\BrsHw.c" 1745/11] possible infinite loop
-0 errors, 1 warnings
-Compiling Os_Callout_Stubs.c
 ctc W557: ["..\appl\Source\BrsHwStartup.c" 458/11] possible infinite loop
 ctc W557: ["..\appl\Source\BrsHwStartup.c" 464/11] possible infinite loop
 0 errors, 2 warnings
-Compiling swc_test.c
+Compiling Os_Callout_Stubs.c
 ctc W536: ["D:\Zonal\demo011\tasking\appl\Include\BrsHw.h" 281/1] unused static function "BrsHwUnlockInitInline"
 ctc W536: ["D:\Zonal\demo011\tasking\appl\Include\BrsHw.h" 317/1] unused static function "BrsHwLockInitInline"
 0 errors, 2 warnings
+Compiling swc_test.c
+ctc W557: ["..\appl\Source\BrsHw.c" 1745/11] possible infinite loop
+0 errors, 1 warnings
 Compiling BswM.c
 ctc W536: ["D:\Zonal\demo011\tasking\appl\Include\BrsHw.h" 281/1] unused static function "BrsHwUnlockInitInline"
 ctc W536: ["D:\Zonal\demo011\tasking\appl\Include\BrsHw.h" 317/1] unused static function "BrsHwLockInitInline"
 0 errors, 2 warnings
-Compiling EcuM.c
+Compiling Can.c
+Compiling Can_Irq.c
 ctc W536: ["D:\Zonal\demo011\tasking\appl\Include\BrsHw.h" 281/1] unused static function "BrsHwUnlockInitInline"
 ctc W536: ["D:\Zonal\demo011\tasking\appl\Include\BrsHw.h" 317/1] unused static function "BrsHwLockInitInline"
 0 errors, 2 warnings
+Compiling CanIf.c
+ctc W500: ["..\appl\Source\swc_test.c" 211/64] expression without effect
+0 errors, 1 warnings
+Compiling CanSM.c
+Compiling Com.c
+Compiling ComM.c
+Compiling Det.c
+ctc W557: ["..\appl\Source\EcuM_Callout_Stubs.c" 133/12] possible infinite loop
+ctc W557: ["..\appl\Source\EcuM_Callout_Stubs.c" 655/12] possible infinite loop
+0 errors, 2 warnings
+Compiling EcuM.c
+ctc W588: ["..\component\Com\Implementation\Com.c" 13063/32] dead assignment to "doNotificationProcessing" eliminated
+ctc W549: ["..\component\Com\Implementation\Com.c" 9789/5] condition is always true
+ctc W549: ["..\component\Com\Implementation\Com.c" 10646/11] condition is always true
+ctc W549: ["..\component\Com\Implementation\Com.c" 15413/14] condition is always true
+ctc W549: ["..\component\Com\Implementation\Com.c" 15478/14] condition is always true
+ctc W549: ["..\component\Com\Implementation\Com.c" 15543/14] condition is always true
+ctc W549: ["..\component\Com\Implementation\Com.c" 15608/14] condition is always true
+ctc W549: ["..\component\Com\Implementation\Com.c" 16805/14] condition is always true
+ctc W549: ["..\component\Com\Implementation\Com.c" 17019/14] condition is always true
+ctc W549: ["..\component\Com\Implementation\Com.c" 17093/14] condition is always true
+ctc W549: ["..\component\Com\Implementation\Com.c" 17944/14] condition is always true
+0 errors, 11 warnings
 Compiling Os_AccessCheck.c
+ctc W549: ["..\component\CanIf\Implementation\CanIf.c" 1608/15] condition is always false
+ctc W549: ["..\component\CanIf\Implementation\CanIf.c" 1696/15] condition is always false
+ctc W549: ["..\component\CanIf\Implementation\CanIf.c" 2132/15] condition is always false
+0 errors, 3 warnings
 Compiling Os_Alarm.c
+ctc W537: ["..\component\ComM\Implementation\ComM.c" 4084/9] unused variable "errorId"
+ctc W549: ["..\component\ComM\Implementation\ComM.c" 3980/21] condition is always false
+ctc W549: ["..\component\ComM\Implementation\ComM.c" 3127/3] condition is always true
+ctc W549: ["..\component\ComM\Implementation\ComM.c" 3996/29] condition is always false
+0 errors, 4 warnings
 Compiling Os_Application.c
-ctc W500: ["..\appl\Source\swc_test.c" 192/64] expression without effect
+ctc W537: ["..\component\CanSM\Implementation\CanSM.c" 2389/9] unused variable "CanSM_DetErrorId"
 0 errors, 1 warnings
 Compiling Os_Barrier.c
+ctc W588: ["..\component\Can\Implementation\Can.c" 2113/14] dead assignment to "llretval" eliminated
+ctc W588: ["..\component\Can\Implementation\Can.c" 5367/10] dead assignment to "tmpECR" eliminated
+ctc W588: ["..\component\Can\Implementation\Can.c" 7202/21] dead assignment to "transitionRequest" eliminated
+ctc W588: ["..\component\Can\Implementation\Can.c" 9555/23] dead assignment to "canIsRxTaskLocked" eliminated
+0 errors, 4 warnings
 Compiling Os_Bit.c
-ctc W557: ["..\appl\Source\EcuM_Callout_Stubs.c" 125/12] possible infinite loop
-ctc W557: ["..\appl\Source\EcuM_Callout_Stubs.c" 638/12] possible infinite loop
-0 errors, 2 warnings
+ctc W536: ["..\component\Det\Implementation\Det.c" 389/32] unused static function "Det_EndlessLoop"
+0 errors, 1 warnings
 Compiling Os_BitArray.c
 ctc W537: ["..\component\BswM\Implementation\BswM.c" 1203/9] unused variable "errorId"
-ctc W537: ["..\component\BswM\Implementation\BswM.c" 1283/9] unused variable "errorId"
 ctc W537: ["..\component\BswM\Implementation\BswM.c" 1681/55] unused variable "partitionIdx"
-ctc W537: ["..\component\BswM\Implementation\BswM.c" 3017/9] unused variable "errorId"
+ctc W537: ["..\component\BswM\Implementation\BswM.c" 1904/55] unused variable "partitionIdx"
+ctc W537: ["..\component\BswM\Implementation\BswM.c" 2264/55] unused variable "partitionIdx"
 ctc W537: ["..\component\BswM\Implementation\BswM.c" 3021/55] unused variable "partitionIdx"
-ctc W537: ["..\component\BswM\Implementation\BswM.c" 3112/9] unused variable "errorId"
 ctc W537: ["..\component\BswM\Implementation\BswM.c" 3116/55] unused variable "partitionIdx"
-ctc W537: ["..\component\BswM\Implementation\BswM.c" 3184/9] unused variable "errorId"
 ctc W537: ["..\component\BswM\Implementation\BswM.c" 3188/55] unused variable "partitionIdx"
-ctc W537: ["..\component\BswM\Implementation\BswM.c" 4379/9] unused variable "errorId"
-ctc W588: ["..\component\BswM\Implementation\BswM.c" 1794/17] dead assignment to "errorId" eliminated
-0 errors, 11 warnings
+0 errors, 7 warnings
 Compiling Os_Core.c
 ctc W537: ["..\component\EcuM\Implementation\EcuM.c" 3148/9] unused variable "errorId"
-ctc W537: ["..\component\EcuM\Implementation\EcuM.c" 3794/9] unused variable "errorId"
-ctc W537: ["..\component\EcuM\Implementation\EcuM.c" 3847/9] unused variable "errorId"
-ctc W537: ["..\component\EcuM\Implementation\EcuM.c" 3904/9] unused variable "errorId"
-ctc W537: ["..\component\EcuM\Implementation\EcuM.c" 3959/9] unused variable "errorId"
-ctc W537: ["..\component\EcuM\Implementation\EcuM.c" 4010/9] unused variable "errorId"
-ctc W537: ["..\component\EcuM\Implementation\EcuM.c" 4333/9] unused variable "errorId"
-ctc W537: ["..\component\EcuM\Implementation\EcuM.c" 4470/11] unused variable "errorId"
-ctc W537: ["..\component\EcuM\Implementation\EcuM.c" 5095/9] unused variable "errorId"
-ctc W588: ["..\component\EcuM\Implementation\EcuM.c" 3443/17] dead assignment to "errorId" eliminated
-ctc W588: ["..\component\EcuM\Implementation\EcuM.c" 3515/13] dead assignment to "errorId" eliminated
-ctc W588: ["..\component\EcuM\Implementation\EcuM.c" 3581/13] dead assignment to "errorId" eliminated
-ctc W588: ["..\component\EcuM\Implementation\EcuM.c" 3634/13] dead assignment to "errorId" eliminated
-ctc W588: ["..\component\EcuM\Implementation\EcuM.c" 3697/13] dead assignment to "errorId" eliminated
-ctc W588: ["..\component\EcuM\Implementation\EcuM.c" 3757/13] dead assignment to "errorId" eliminated
-ctc W588: ["..\component\EcuM\Implementation\EcuM.c" 3750/13] dead assignment to "errorId" eliminated
-ctc W588: ["..\component\EcuM\Implementation\EcuM.c" 4401/15] dead assignment to "errorId" eliminated
-ctc W588: ["..\component\EcuM\Implementation\EcuM.c" 4625/13] dead assignment to "errorId" eliminated
-ctc W588: ["..\component\EcuM\Implementation\EcuM.c" 4744/13] dead assignment to "errorId" eliminated
-0 errors, 19 warnings
+0 errors, 1 warnings
 Compiling Os_Counter.c
 Compiling Os_Deque.c
 Compiling Os_Error.c
@@ -125,10 +153,10 @@ ctc W549: ["..\component\Os\Implementation\Os_Core.c" 1218/28] condition is alwa
 0 errors, 3 warnings
 Compiling Os_Fifo32.c
 Compiling Os_FifoRef.c
+Compiling Os_Hal_Compiler_Diab.c
 ctc W549: ["..\component\Os\Implementation\Os_Timer.h" 777/36] condition is always true
 ctc W549: ["..\component\Os\Implementation\Os_Timer.h" 777/36] condition is always true
 0 errors, 2 warnings
-Compiling Os_Hal_Compiler_Diab.c
 Compiling Os_Hal_Compiler_Greenhills.c
 Compiling Os_Hal_Compiler_HighTec.c
 Compiling Os_Hal_Compiler_Tasking.c
@@ -163,22 +191,32 @@ Compiling Os_TimingProtection.c
 Compiling Os_Trace.c
 Compiling Os_Trap.c
 Compiling Os_XSignal.c
-Compiling vstdlib.c
-ctc W588: ["..\component\VStdLib\Implementation\vstdlib.c" 1475/13] dead assignment to "errorId" eliminated
-0 errors, 1 warnings
-Compiling Dio.c
-Compiling McalLib.c
-Compiling Mcu.c
-Compiling Mcu_17_TimerIp.c
-Compiling Port.c
-ctc W549: ["..\component\Os\Implementation\Os_XSignal.c" 926/55] condition is always false
-0 errors, 1 warnings
+Compiling PduR.c
+Compiling PduR_Bm.c
+Compiling PduR_Fm.c
+Compiling PduR_IFQ.c
+Compiling PduR_Lock.c
 ctc W544: ["..\component\Os\Implementation\Os_Task.c" 1220/22] unreachable code
 ctc W588: ["..\component\Os\Implementation\Os_Task.c" 569/10] dead assignment to "status" eliminated
 0 errors, 2 warnings
+Compiling PduR_McQ.c
+ctc W549: ["..\component\Os\Implementation\Os_XSignal.c" 926/55] condition is always false
+0 errors, 1 warnings
+Compiling PduR_RmIf.c
+Compiling PduR_RmTp.c
+Compiling PduR_RmTp_TxInst.c
+Compiling PduR_Sm.c
+Compiling vstdlib.c
+Compiling Dio.c
+Compiling McalLib.c
+Compiling Mcu.c
+ctc W588: ["..\component\VStdLib\Implementation\vstdlib.c" 1475/13] dead assignment to "errorId" eliminated
+0 errors, 1 warnings
+Compiling Mcu_17_TimerIp.c
+Compiling Port.c
 Linking to t399minisystem.elf
 
-Time consumed: 26714 ms
+Time consumed: 48408 ms
 **** End of build ****
 
 Tool info: 

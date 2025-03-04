@@ -1,0 +1,35 @@
+2025-03-02 - 16:04:23
+Workflow 'Input File Pre-Processing' started.
+ 16:04:23 - Action 'Converting legacy file(s) to AUTOSAR files' started.
+ 16:04:23 - Action 'Converting legacy file(s) to AUTOSAR files' started.
+              Convert legacy file(s) to System Description.
+              Used executable: D:\Zonal\CBD2100010TC399XP\Misc\LegacyDb2SystemDescrConverter\Application\LegacyDb2SystemDescrConverter.exe.
+              Arguments: D:\Zonal\demo011\testCANFDdbc.dbc -o "C:\Users\Administrator\AppData\Local\Temp\DaVinci\Cfg-1307415\LegacyConverterResults\1740902663137-0\ConvertedLegacy" -e -v 19.
+              
+              Vector Legacy Database Converter.
+              Version: 1.8.56.1.
+              Copyright (c) 2018 Vector Informatik GmbH.
+              
+              [info] SIP License found as D:\Zonal\CBD2100010TC399XP\DaVinciConfigurator\ComponentLicense_DaVinciConfigurator.lic.
+              [info] Command line: D:\Zonal\CBD2100010TC399XP\Misc\LegacyDb2SystemDescrConverter\Application\LegacyDb2SystemDescrConverter.exe D:\Zonal\demo011\testCANFDdbc.dbc -o "C:\Users\Administrator\AppData\Local\Temp\DaVinci\Cfg-1307415\LegacyConverterResults\1740902663137-0\ConvertedLegacy" -e -v 19.
+              [info] Converting DBC file D:\Zonal\demo011\testCANFDdbc.dbc.
+              [warning] DBC attribute Manufacturer not defined.
+                    ==> Use Manufacturer='Vector' as attribute value.
+              [info] Writing System Description...
+              [info] Writing 2 ECU Extracts...
+              
+              C:\Users\Administrator\AppData\Local\Temp\DaVinci\Cfg-1307415\LegacyConverterResults\1740902663137-0\ConvertedLegacy.arxml.
+              C:\Users\Administrator\AppData\Local\Temp\DaVinci\Cfg-1307415\LegacyConverterResults\1740902663137-0\ConvertedLegacy_testEcu.arxml.
+              C:\Users\Administrator\AppData\Local\Temp\DaVinci\Cfg-1307415\LegacyConverterResults\1740902663137-0\ConvertedLegacy_testNode.arxml.
+              Elapsed time: 0.793 seconds.
+              0 Errors.
+              1 Warnings.
+              [Warning] Legacy Converter finished with errors/warnings.
+ 16:04:24 - Action 'Converting legacy file(s) to AUTOSAR files' successfully finished with warnings.
+                 [Warning] Legacy Converter finished with errors/warnings.
+ 16:04:24 - Action 'Converting legacy file(s) to AUTOSAR files' successfully finished with warnings.
+                 [Warning] Legacy Converter finished with errors/warnings.
+ 16:04:24 - Action 'Load arxml file after preprocessing' started.
+ 16:04:24 - Action 'Load arxml file after preprocessing' successfully finished.
+              Checking if the file preprocessing result is a valid ECU extract...
+16:04:25 - Workflow 'Input File Pre-Processing' finished.

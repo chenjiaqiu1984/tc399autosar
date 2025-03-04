@@ -12,6 +12,8 @@ appl\GenData\vLinkGen_Lcfg.o :	"D:\Zonal\demo011\tasking\appl\Include\Compiler_C
 "D:\Zonal\demo011\tasking\appl\Include\Compiler_Cfg.h" :
 appl\GenData\vLinkGen_Lcfg.o :	"D:\Zonal\demo011\tasking\appl\GenData\Rte_Compiler_Cfg.h"
 "D:\Zonal\demo011\tasking\appl\GenData\Rte_Compiler_Cfg.h" :
+appl\GenData\vLinkGen_Lcfg.o :	"D:\Zonal\demo011\tasking\appl\GenData\SomeIpXf_Compiler_Cfg.h"
+"D:\Zonal\demo011\tasking\appl\GenData\SomeIpXf_Compiler_Cfg.h" :
 appl\GenData\vLinkGen_Lcfg.o :	"D:\Zonal\demo011\tasking\appl\GenData\Os_Compiler_Cfg.h"
 "D:\Zonal\demo011\tasking\appl\GenData\Os_Compiler_Cfg.h" :
 appl\GenData\vLinkGen_Lcfg.o :	..\appl\GenData\vLinkGen_Cfg.h

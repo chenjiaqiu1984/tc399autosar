@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: BswM_Cfg.h
- *   Generation Time: 2025-03-01 11:38:36
+ *   Generation Time: 2025-03-03 12:49:02
  *           Project: tc399demo - Version 1.0
  *          Delivery: CBD2100010_D00
  *      Tool Version: DaVinci Configurator (beta) 5.22.45 SP3
@@ -49,6 +49,9 @@
     &&&~ INCLUDE
  ----------------------------------------------------------------------------- */
 #include "Std_Types.h"
+#include "ComStack_Types.h" 
+#include "BswM_ComM.h"
+#include "BswM_CanSM.h"
 #include "BswM_EcuM.h"
 #include "Rte_BswM_Type.h"
 
@@ -61,10 +64,10 @@
     &&&~ GENERAL DEFINES
  ----------------------------------------------------------------------------- */
 #ifndef BSWM_DEV_ERROR_DETECT
-#define BSWM_DEV_ERROR_DETECT STD_OFF
+#define BSWM_DEV_ERROR_DETECT STD_ON
 #endif
 #ifndef BSWM_DEV_ERROR_REPORT
-#define BSWM_DEV_ERROR_REPORT STD_OFF
+#define BSWM_DEV_ERROR_REPORT STD_ON
 #endif
 #ifndef BSWM_USE_DUMMY_STATEMENT
 #define BSWM_USE_DUMMY_STATEMENT STD_OFF /* /MICROSAR/vSet/vSetGeneral/vSetDummyStatementKind */
@@ -122,7 +125,7 @@
 /* START of Checksum include for - SysService_Asr4BswMCfg5PrecompileCRC */
 
 #define BSWM_MODE_CHECK                      STD_ON
-#define BSWM_ENABLE_CANSM                    STD_OFF
+#define BSWM_ENABLE_CANSM                    STD_ON
 #define BSWM_ENABLE_FRSM                     STD_OFF
 #define BSWM_ENABLE_LINSM                    STD_OFF
 #define BSWM_ENABLE_ETHIF                    STD_OFF
@@ -131,7 +134,7 @@
 #define BSWM_ENABLE_DCM                      STD_OFF
 #define BSWM_ENABLE_NVM                      STD_OFF
 #define BSWM_ENABLE_ECUM                     STD_ON
-#define BSWM_ENABLE_COMM                     STD_OFF
+#define BSWM_ENABLE_COMM                     STD_ON
 #define BSWM_ENABLE_J1939DCM                 STD_OFF
 #define BSWM_ENABLE_J1939NM                  STD_OFF
 #define BSWM_ENABLE_SD                       STD_OFF
@@ -142,8 +145,8 @@
 #define BSWM_VERSION_INFO_API                STD_OFF
 #define BSWM_COMM_PNC_SUPPORT                STD_OFF
 #define BSWM_COMM_INITIATE_RESET             STD_OFF
-#define BSWM_CHANNEL_COUNT                   0u
-#define BSWM_WAKEUP_SOURCE_COUNT             5u
+#define BSWM_CHANNEL_COUNT                   1u
+#define BSWM_WAKEUP_SOURCE_COUNT             6u
 #define BSWM_IPDU_GROUP_CONTROL              STD_OFF
 #define BSWM_ECUM_MODE_HANDLING              STD_OFF
 #define BSWM_MULTIPARTITION                  STD_OFF

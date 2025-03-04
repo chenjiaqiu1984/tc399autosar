@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Hal_Cfg.h
- *   Generation Time: 2025-03-01 16:46:06
+ *   Generation Time: 2025-03-03 10:08:10
  *           Project: tc399demo - Version 1.0
  *          Delivery: CBD2100010_D00
  *      Tool Version: DaVinci Configurator (beta) 5.22.45 SP3
@@ -62,8 +62,10 @@
 # define OS_CFG_HAL_MINOR_VERSION                (29u)
 
 /* ISR core and level definitions */
+# define OS_ISR_CANISR_0_CORE      (0)
+# define OS_ISR_CANISR_0_LEVEL     (50)
 # define OS_ISR_COUNTERISR_SYSTEMTIMER_CORE      (0)
-# define OS_ISR_COUNTERISR_SYSTEMTIMER_LEVEL     (1)
+# define OS_ISR_COUNTERISR_SYSTEMTIMER_LEVEL     (20)
 
 /* Hardware counter timing macros */
 

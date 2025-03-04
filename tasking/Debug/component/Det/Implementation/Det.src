@@ -1,0 +1,1885 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 21092262 SN 73118428"
+	.compiler_invocation	"ctc --dep-file=component\\Det\\Implementation\\.Det.o.d --fp-model=c,f,l,n,r,S,T,z -D__CPU__=tc39xb -D__CPU_TC39XB__ --core=tc1.6.2 --iso=99 -DBRS_COMP_TASKING -ID:\\Zonal\\demo011\\tasking -ID:\\Zonal\\testdemo\\taskingdemo\\demo001 -ID:\\Zonal\\demo011\\tasking\\component\\PduR -ID:\\Zonal\\demo011\\tasking\\component\\PduR\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\PduR\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\PduR\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\PduR\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\Can -ID:\\Zonal\\demo011\\tasking\\component\\SomeIpXf -ID:\\Zonal\\demo011\\tasking\\component\\SomeIpXf\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\SomeIpXf\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\SomeIpXf\\Generator -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\Can\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\Can\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\Can\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\Can\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\CanIf -ID:\\Zonal\\demo011\\tasking\\component\\CanIf\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\CanIf\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\CanIf\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\CanIf\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\CanSM -ID:\\Zonal\\demo011\\tasking\\component\\CanSM\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\CanSM\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\CanSM\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\CanSM\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\Com -ID:\\Zonal\\demo011\\tasking\\component\\Com\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\Com\\DaVinciCfg_VASE -ID:\\Zonal\\demo011\\tasking\\component\\Com\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\Com\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\Com\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\ComM -ID:\\Zonal\\demo011\\tasking\\component\\ComM\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\ComM\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\ComM\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\ComM\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\Det -ID:\\Zonal\\demo011\\tasking\\component\\Det\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\Det\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\Det\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\Det\\Implementation -ID:\\Zonal\\demo011\\tasking -ID:\\Zonal\\demo011\\tasking\\appl -ID:\\Zonal\\demo011\\tasking\\appl\\GenData -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\Components -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\ContractPhase -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\inc -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\src -ID:\\Zonal\\demo011\\tasking\\appl\\Include -ID:\\Zonal\\demo011\\tasking\\appl\\Source -ID:\\Zonal\\demo011\\tasking\\appl\\Source\\swc_test -ID:\\Zonal\\demo011\\tasking\\component -ID:\\Zonal\\demo011\\tasking\\component\\_Common -ID:\\Zonal\\demo011\\tasking\\component\\_Common\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\BswM -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\EcuM -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\Os -ID:\\Zonal\\demo011\\tasking\\component\\Os\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\Os\\BSWMD\\Os -ID:\\Zonal\\demo011\\tasking\\component\\Os\\BSWMD\\Os\\TC39xQ -ID:\\Zonal\\demo011\\tasking\\component\\Os\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\Os\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\Os\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug -ID:\\Zonal\\demo011\\tasking\\Debug\\appl -ID:\\Zonal\\demo011\\tasking\\Debug\\appl\\GenData -ID:\\Zonal\\demo011\\tasking\\Debug\\appl\\GenData\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\appl\\Source -ID:\\Zonal\\demo011\\tasking\\Debug\\component -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\BswM -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\BswM\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\EcuM -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\EcuM\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\Os -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\Os\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\VStdLib -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\VStdLib\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Dio -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Dio\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Dio\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\McalLib -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\McalLib\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\McalLib\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Mcu -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Mcu\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Mcu\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Port -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Port\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Port\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Platform -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Platform\\AS440 -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Sfr -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Sfr\\TC39xB -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Sfr\\TC39xB\\_Reg -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc\\inc\\AS440 -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal\\Port -ID:\\Zonal\\demo011\\tasking\\mcal\\Port\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\Port\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\Port\\ssc\\src -g2 --make-target=component\\Det\\Implementation\\Det.o -t2 --language=-gcc,-volatile,+strings,-kanji --default-near-size=0 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o component\\Det\\Implementation\\Det.src ..\\component\\Det\\Implementation\\Det.c"
+	.compiler_name		"ctc"
+	;source	'..\\component\\Det\\Implementation\\Det.c'
+
+	
+$TC162
+	
+	.sdecl	'.text.Det.Det_Init',code,cluster('Det_Init')
+	.sect	'.text.Det.Det_Init'
+	.align	2
+	
+	.global	Det_Init
+
+; ..\component\Det\Implementation\Det.c	     1  /**********************************************************************************************************************
+; ..\component\Det\Implementation\Det.c	     2   *  COPYRIGHT
+; ..\component\Det\Implementation\Det.c	     3   *  -------------------------------------------------------------------------------------------------------------------
+; ..\component\Det\Implementation\Det.c	     4   *  \verbatim
+; ..\component\Det\Implementation\Det.c	     5   *  Copyright (c) 2020 by Vector Informatik GmbH.                                                  All rights reserved.
+; ..\component\Det\Implementation\Det.c	     6   *
+; ..\component\Det\Implementation\Det.c	     7   *                This software is copyright protected and proprietary to Vector Informatik GmbH.
+; ..\component\Det\Implementation\Det.c	     8   *                Vector Informatik GmbH grants to you only those rights as set out in the license conditions.
+; ..\component\Det\Implementation\Det.c	     9   *                All other rights remain with Vector Informatik GmbH.
+; ..\component\Det\Implementation\Det.c	    10   *  \endverbatim
+; ..\component\Det\Implementation\Det.c	    11   *  -------------------------------------------------------------------------------------------------------------------
+; ..\component\Det\Implementation\Det.c	    12   *  FILE DESCRIPTION
+; ..\component\Det\Implementation\Det.c	    13   *  -----------------------------------------------------------------------------------------------------------------*/
+; ..\component\Det\Implementation\Det.c	    14  /**        \file  Det.c
+; ..\component\Det\Implementation\Det.c	    15   *        \brief  Default Error Tracer source file
+; ..\component\Det\Implementation\Det.c	    16   *
+; ..\component\Det\Implementation\Det.c	    17   *      \details  Contains the implementation of static and API functions.
+; ..\component\Det\Implementation\Det.c	    18   *
+; ..\component\Det\Implementation\Det.c	    19   *********************************************************************************************************************/
+; ..\component\Det\Implementation\Det.c	    20  
+; ..\component\Det\Implementation\Det.c	    21  /**********************************************************************************************************************
+; ..\component\Det\Implementation\Det.c	    22   *  REVISION HISTORY
+; ..\component\Det\Implementation\Det.c	    23   *  -------------------------------------------------------------------------------------------------------------------
+; ..\component\Det\Implementation\Det.c	    24   *  Refer to the module's header file.
+; ..\component\Det\Implementation\Det.c	    25   * 
+; ..\component\Det\Implementation\Det.c	    26   *  FILE VERSION
+; ..\component\Det\Implementation\Det.c	    27   *  -------------------------------------------------------------------------------------------------------------------
+; ..\component\Det\Implementation\Det.c	    28   *  Refer to the VERSION CHECK below.
+; ..\component\Det\Implementation\Det.c	    29   *********************************************************************************************************************/
+; ..\component\Det\Implementation\Det.c	    30  
+; ..\component\Det\Implementation\Det.c	    31  #define DET_SOURCE
+; ..\component\Det\Implementation\Det.c	    32  
+; ..\component\Det\Implementation\Det.c	    33  /**********************************************************************************************************************
+; ..\component\Det\Implementation\Det.c	    34   *  INCLUDES
+; ..\component\Det\Implementation\Det.c	    35   *********************************************************************************************************************/
+; ..\component\Det\Implementation\Det.c	    36  
+; ..\component\Det\Implementation\Det.c	    37  #include "Det.h"
+; ..\component\Det\Implementation\Det.c	    38  
+; ..\component\Det\Implementation\Det.c	    39  #include "Compiler.h"
+; ..\component\Det\Implementation\Det.c	    40  #if defined (_MICROSOFT_C_CANOE_) || defined (_MICROSOFT_C_VTT_) /* COV_DET_CANOE_VTT */
+; ..\component\Det\Implementation\Det.c	    41  # define DET_COMP_ANSI_CANOE
+; ..\component\Det\Implementation\Det.c	    42  #endif
+; ..\component\Det\Implementation\Det.c	    43  
+; ..\component\Det\Implementation\Det.c	    44  #if defined (DET_COMP_ANSI_CANOE)
+; ..\component\Det\Implementation\Det.c	    45  # include <stdio.h> /* PRQA S 5124 */  /* MD_DET_5124 */ /* simulation environment, no production code */
+; ..\component\Det\Implementation\Det.c	    46  # include "Os.h"
+; ..\component\Det\Implementation\Det.c	    47  # include "CANoeApi.h"
+; ..\component\Det\Implementation\Det.c	    48  # if (CANOEAPI_VERSION >= 239) /* COV_DET_CANOE_VTT */
+; ..\component\Det\Implementation\Det.c	    49  #  include "CANoeEmuProcessor.h"
+; ..\component\Det\Implementation\Det.c	    50  # endif
+; ..\component\Det\Implementation\Det.c	    51  # if (_MSC_VER >= 1400) /* COV_DET_CANOE_VTT */
+; ..\component\Det\Implementation\Det.c	    52  #  include <string.h>
+; ..\component\Det\Implementation\Det.c	    53  #  include <time.h> /* PRQA S 5127 */  /* MD_DET_5127 */ /* simulation environment, no production code */
+; ..\component\Det\Implementation\Det.c	    54  # endif
+; ..\component\Det\Implementation\Det.c	    55  #endif /* DET_COMP_ANSI_CANOE */
+; ..\component\Det\Implementation\Det.c	    56  
+; ..\component\Det\Implementation\Det.c	    57  #if (DET_DEBUG_ENABLED == STD_ON)
+; ..\component\Det\Implementation\Det.c	    58  # include "SchM_Det.h"
+; ..\component\Det\Implementation\Det.c	    59  #endif
+; ..\component\Det\Implementation\Det.c	    60  
+; ..\component\Det\Implementation\Det.c	    61  #if (DET_FORWARD_TO_DLT == STD_ON)
+; ..\component\Det\Implementation\Det.c	    62  # include "Dlt.h"
+; ..\component\Det\Implementation\Det.c	    63  #endif
+; ..\component\Det\Implementation\Det.c	    64  
+; ..\component\Det\Implementation\Det.c	    65  /**********************************************************************************************************************
+; ..\component\Det\Implementation\Det.c	    66   *  VERSION CHECK
+; ..\component\Det\Implementation\Det.c	    67   *********************************************************************************************************************/
+; ..\component\Det\Implementation\Det.c	    68  
+; ..\component\Det\Implementation\Det.c	    69  /**
+; ..\component\Det\Implementation\Det.c	    70   * Version check for source and header file consistency
+; ..\component\Det\Implementation\Det.c	    71   */
+; ..\component\Det\Implementation\Det.c	    72  #if (DET_SW_MAJOR_VERSION != 12)
+; ..\component\Det\Implementation\Det.c	    73  # error "Source and Header file are inconsistent!"
+; ..\component\Det\Implementation\Det.c	    74  #endif
+; ..\component\Det\Implementation\Det.c	    75  
+; ..\component\Det\Implementation\Det.c	    76  #if (DET_SW_MINOR_VERSION != 0)
+; ..\component\Det\Implementation\Det.c	    77  # error "Source and Header file are inconsistent!"
+; ..\component\Det\Implementation\Det.c	    78  #endif
+; ..\component\Det\Implementation\Det.c	    79  
+; ..\component\Det\Implementation\Det.c	    80  #if (DET_SW_PATCH_VERSION != 0)
+; ..\component\Det\Implementation\Det.c	    81  # error "Source and Header file are inconsistent!"
+; ..\component\Det\Implementation\Det.c	    82  #endif
+; ..\component\Det\Implementation\Det.c	    83  
+; ..\component\Det\Implementation\Det.c	    84  /**********************************************************************************************************************
+; ..\component\Det\Implementation\Det.c	    85   *  LOCAL CONSTANT MACROS
+; ..\component\Det\Implementation\Det.c	    86   **********************************************************************************************************************/
+; ..\component\Det\Implementation\Det.c	    87  
+; ..\component\Det\Implementation\Det.c	    88  
+; ..\component\Det\Implementation\Det.c	    89  /********************** compiler abstraction *******************************/
+; ..\component\Det\Implementation\Det.c	    90  #if !defined (DET_LOCAL) /* COV_DET_COMPATIBILITY */
+; ..\component\Det\Implementation\Det.c	    91  # define DET_LOCAL  static   /* standard AutoSar 4.x define */
+; ..\component\Det\Implementation\Det.c	    92  #endif
+; ..\component\Det\Implementation\Det.c	    93  
+; ..\component\Det\Implementation\Det.c	    94  #if !defined (DET_LOCAL_INLINE) /* COV_DET_COMPATIBILITY */
+; ..\component\Det\Implementation\Det.c	    95  # if defined (LOCAL_INLINE) /* COV_DET_COMPATIBILITY */
+; ..\component\Det\Implementation\Det.c	    96  #  define DET_LOCAL_INLINE  LOCAL_INLINE
+; ..\component\Det\Implementation\Det.c	    97  # else
+; ..\component\Det\Implementation\Det.c	    98  #  define DET_LOCAL_INLINE  DET_LOCAL
+; ..\component\Det\Implementation\Det.c	    99  # endif
+; ..\component\Det\Implementation\Det.c	   100  #endif
+; ..\component\Det\Implementation\Det.c	   101  
+; ..\component\Det\Implementation\Det.c	   102  #if (DET_ENABLED == STD_ON)
+; ..\component\Det\Implementation\Det.c	   103  
+; ..\component\Det\Implementation\Det.c	   104  /**********************************************************************************************************************
+; ..\component\Det\Implementation\Det.c	   105   *  LOCAL FUNCTION MACROS
+; ..\component\Det\Implementation\Det.c	   106   **********************************************************************************************************************/
+; ..\component\Det\Implementation\Det.c	   107  
+; ..\component\Det\Implementation\Det.c	   108  /* critical section macros \trace DSGN-Det22791 */
+; ..\component\Det\Implementation\Det.c	   109  # define Det_EnterCritical() SchM_Enter_Det_DET_EXCLUSIVE_AREA_0()
+; ..\component\Det\Implementation\Det.c	   110  # define Det_LeaveCritical() SchM_Exit_Det_DET_EXCLUSIVE_AREA_0()
+; ..\component\Det\Implementation\Det.c	   111  
+; ..\component\Det\Implementation\Det.c	   112  /**********************************************************************************************************************
+; ..\component\Det\Implementation\Det.c	   113   *  LOCAL DATA PROTOTYPES
+; ..\component\Det\Implementation\Det.c	   114   **********************************************************************************************************************/
+; ..\component\Det\Implementation\Det.c	   115  
+; ..\component\Det\Implementation\Det.c	   116  # define DET_START_SEC_VAR_INIT_UNSPECIFIED
+; ..\component\Det\Implementation\Det.c	   117  # include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */
+; ..\component\Det\Implementation\Det.c	   118  
+; ..\component\Det\Implementation\Det.c	   119  DET_LOCAL volatile VAR(boolean, DET_VAR) detModuleInit = FALSE;
+; ..\component\Det\Implementation\Det.c	   120  
+; ..\component\Det\Implementation\Det.c	   121  # define DET_STOP_SEC_VAR_INIT_UNSPECIFIED
+; ..\component\Det\Implementation\Det.c	   122  # include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */
+; ..\component\Det\Implementation\Det.c	   123  
+; ..\component\Det\Implementation\Det.c	   124  # define DET_START_SEC_VAR_NOINIT_8BIT
+; ..\component\Det\Implementation\Det.c	   125  # include "MemMap.h" /* PRQA S 5087 */  /* MD_MSR_19.1 */
+; ..\component\Det\Implementation\Det.c	   126  
+; ..\component\Det\Implementation\Det.c	   127  # if (DET_REPORT_ERROR_RECURSIONLIMIT > 0)
+; ..\component\Det\Implementation\Det.c	   128  DET_LOCAL volatile VAR(uint8, DET_VAR) detRecursionCounterReportError;                /* recursion limit counter \trace DSGN-Det22792 */
+; ..\component\Det\Implementation\Det.c	   129  # endif
+; ..\component\Det\Implementation\Det.c	   130  
+; ..\component\Det\Implementation\Det.c	   131  # if (DET_REPORT_RUNTIMEERROR_RECURSIONLIMIT > 0)
+; ..\component\Det\Implementation\Det.c	   132  DET_LOCAL volatile VAR(uint8, DET_VAR) detRecursionCounterReportRuntimeError;         /* recursion limit counter \trace DSGN-Det22792 */
+; ..\component\Det\Implementation\Det.c	   133  # endif
+; ..\component\Det\Implementation\Det.c	   134  
+; ..\component\Det\Implementation\Det.c	   135  # if (DET_REPORT_TRANSIENTFAULT_RECURSIONLIMIT > 0)
+; ..\component\Det\Implementation\Det.c	   136  DET_LOCAL volatile VAR(uint8, DET_VAR) detRecursionCounterReportTransientFault;       /* recursion limit counter \trace DSGN-Det22792 */
+; ..\component\Det\Implementation\Det.c	   137  # endif
+; ..\component\Det\Implementation\Det.c	   138  
+; ..\component\Det\Implementation\Det.c	   139  # define DET_STOP_SEC_VAR_NOINIT_8BIT
+; ..\component\Det\Implementation\Det.c	   140  # include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */
+; ..\component\Det\Implementation\Det.c	   141  
+; ..\component\Det\Implementation\Det.c	   142  /**********************************************************************************************************************
+; ..\component\Det\Implementation\Det.c	   143   *  GLOBAL DATA
+; ..\component\Det\Implementation\Det.c	   144   **********************************************************************************************************************/
+; ..\component\Det\Implementation\Det.c	   145  
+; ..\component\Det\Implementation\Det.c	   146  # define DET_START_SEC_VAR_NOINIT_UNSPECIFIED
+; ..\component\Det\Implementation\Det.c	   147  # include "MemMap.h" /* PRQA S 5087 */  /* MD_MSR_19.1 */
+; ..\component\Det\Implementation\Det.c	   148   
+; ..\component\Det\Implementation\Det.c	   149  # if (DET_DEBUG_ENABLED == STD_ON)
+; ..\component\Det\Implementation\Det.c	   150  
+; ..\component\Det\Implementation\Det.c	   151  /* global variables, should be put in a watch window */
+; ..\component\Det\Implementation\Det.c	   152  #  if (DET_GLOBALFILTERSIZE > 0)
+; ..\component\Det\Implementation\Det.c	   153  volatile VAR(DetInfoType, DET_VAR) detGlobalFilter[DET_GLOBALFILTERSIZE]; /* ##### use this variable to configure global filters */ /* PRQA S 1504 */ /* MD_DET_1504 */
+; ..\component\Det\Implementation\Det.c	   154  #  endif
+; ..\component\Det\Implementation\Det.c	   155  #  if (DET_BREAKFILTERSIZE > 0)
+; ..\component\Det\Implementation\Det.c	   156  volatile VAR(DetInfoType, DET_VAR) detBreakFilter[DET_BREAKFILTERSIZE];   /* ##### use this variable to configure break filters */ /* PRQA S 1504 */ /* MD_DET_1504 */
+; ..\component\Det\Implementation\Det.c	   157  #  endif
+; ..\component\Det\Implementation\Det.c	   158  #  if (DET_DLTFILTERSIZE > 0)
+; ..\component\Det\Implementation\Det.c	   159  volatile VAR(DetInfoType, DET_VAR) detDltFilter[DET_DLTFILTERSIZE];     /* ##### use this variable to configure dlt filters */ /* PRQA S 1504 */ /* MD_DET_1504 */
+; ..\component\Det\Implementation\Det.c	   160  #  endif
+; ..\component\Det\Implementation\Det.c	   161  #  if (DET_LOGBUFFERSIZE > 0)
+; ..\component\Det\Implementation\Det.c	   162  volatile VAR(DetInfoType, DET_VAR) detLogBuffer[DET_LOGBUFFERSIZE];       /* ##### use this variable to view log buffer */ /* PRQA S 1504 */ /* MD_DET_1504 */
+; ..\component\Det\Implementation\Det.c	   163  #  endif
+; ..\component\Det\Implementation\Det.c	   164  volatile VAR(DetStatusType, DET_VAR) detStatus;                           /* ##### use this variable to configure DET debug operation */ /* PRQA S 1504 */ /* MD_DET_1504 */
+; ..\component\Det\Implementation\Det.c	   165  
+; ..\component\Det\Implementation\Det.c	   166  # endif /* DET_DEBUG_ENABLED */
+; ..\component\Det\Implementation\Det.c	   167  
+; ..\component\Det\Implementation\Det.c	   168  # define DET_STOP_SEC_VAR_NOINIT_UNSPECIFIED
+; ..\component\Det\Implementation\Det.c	   169  # include "MemMap.h" /* PRQA S 5087 */  /* MD_MSR_19.1 */
+; ..\component\Det\Implementation\Det.c	   170  
+; ..\component\Det\Implementation\Det.c	   171  /**********************************************************************************************************************
+; ..\component\Det\Implementation\Det.c	   172   *  LOCAL FUNCTION PROTOTYPES
+; ..\component\Det\Implementation\Det.c	   173   **********************************************************************************************************************/
+; ..\component\Det\Implementation\Det.c	   174  
+; ..\component\Det\Implementation\Det.c	   175  # define DET_START_SEC_CODE
+; ..\component\Det\Implementation\Det.c	   176  # include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */
+; ..\component\Det\Implementation\Det.c	   177  
+; ..\component\Det\Implementation\Det.c	   178  # if (DET_DEBUG_ENABLED == STD_ON)
+; ..\component\Det\Implementation\Det.c	   179  /***********************************************************************************************************************
+; ..\component\Det\Implementation\Det.c	   180   *  Det_CheckFilterMatch()
+; ..\component\Det\Implementation\Det.c	   181   **********************************************************************************************************************/
+; ..\component\Det\Implementation\Det.c	   182  /*! \brief      Check if a DET error matches filter conditions
+; ..\component\Det\Implementation\Det.c	   183   *  \details    A filter match is detected if all structure members of at least one filter and detInfo are identical 
+; ..\component\Det\Implementation\Det.c	   184   *              or the non-identical ones are don't care (0xFF).
+; ..\component\Det\Implementation\Det.c	   185   *  \param[in]  filter      pointer to an array of filters
+; ..\component\Det\Implementation\Det.c	   186   *  \param[in]  size        number of filters
+; ..\component\Det\Implementation\Det.c	   187   *  \param[in]  active      flag to indicate if filter is active
+; ..\component\Det\Implementation\Det.c	   188   *  \param[in]  detInfo     pointer to structure holding DET error for filtering
+; ..\component\Det\Implementation\Det.c	   189   *  \return     FALSE: no filter match, TRUE: filter match
+; ..\component\Det\Implementation\Det.c	   190   *  \pre        -
+; ..\component\Det\Implementation\Det.c	   191   *  \context    TASK|ISR2
+; ..\component\Det\Implementation\Det.c	   192   *  \reentrant  TRUE
+; ..\component\Det\Implementation\Det.c	   193   *  \synchronous TRUE
+; ..\component\Det\Implementation\Det.c	   194   *  \trace      DSGN-Det22783, DSGN-Det22785
+; ..\component\Det\Implementation\Det.c	   195   **********************************************************************************************************************/
+; ..\component\Det\Implementation\Det.c	   196  #  if (DET_GLOBALFILTERSIZE > 0) || (DET_BREAKFILTERSIZE > 0)
+; ..\component\Det\Implementation\Det.c	   197  DET_LOCAL_INLINE FUNC(boolean, DET_CODE) Det_CheckFilterMatch( volatile P2CONST( DetInfoType, AUTOMATIC, DET_VAR ) filter, uint8 size, boolean active, P2CONST( DetInfoType, AUTOMATIC, DET_VAR ) detInfo );
+; ..\component\Det\Implementation\Det.c	   198  #  endif
+; ..\component\Det\Implementation\Det.c	   199  
+; ..\component\Det\Implementation\Det.c	   200  /***********************************************************************************************************************
+; ..\component\Det\Implementation\Det.c	   201   *  Det_LogError()
+; ..\component\Det\Implementation\Det.c	   202   **********************************************************************************************************************/
+; ..\component\Det\Implementation\Det.c	   203  /*! \brief      Store a DET error in the log buffer
+; ..\component\Det\Implementation\Det.c	   204   *  \details    It is further detected if an overrun occurs and if a forced break handler call is required. 
+; ..\component\Det\Implementation\Det.c	   205   *  \param[in]  active    flag to indicate if logging is active
+; ..\component\Det\Implementation\Det.c	   206   *  \param[in]  detInfo   pointer to structure holding DET error for filtering
+; ..\component\Det\Implementation\Det.c	   207   *  \return     FALSE: do not force break handler call, TRUE: force break handler call
+; ..\component\Det\Implementation\Det.c	   208   *  \pre        -
+; ..\component\Det\Implementation\Det.c	   209   *  \context    TASK|ISR2
+; ..\component\Det\Implementation\Det.c	   210   *  \reentrant  TRUE
+; ..\component\Det\Implementation\Det.c	   211   *  \synchronous TRUE
+; ..\component\Det\Implementation\Det.c	   212   *  \trace      DSGN-Det22792, DSGN-Det22784
+; ..\component\Det\Implementation\Det.c	   213   **********************************************************************************************************************/
+; ..\component\Det\Implementation\Det.c	   214  #  if (DET_LOGBUFFERSIZE > 0)
+; ..\component\Det\Implementation\Det.c	   215  DET_LOCAL_INLINE FUNC(boolean, DET_CODE) Det_LogError( boolean active, P2CONST( DetInfoType, AUTOMATIC, DET_VAR ) detInfo );
+; ..\component\Det\Implementation\Det.c	   216  #  endif
+; ..\component\Det\Implementation\Det.c	   217  
+; ..\component\Det\Implementation\Det.c	   218  # endif /* DET_DEBUG_ENABLED */
+; ..\component\Det\Implementation\Det.c	   219  
+; ..\component\Det\Implementation\Det.c	   220  /***********************************************************************************************************************
+; ..\component\Det\Implementation\Det.c	   221   *  Det_CanoeOutput()
+; ..\component\Det\Implementation\Det.c	   222   **********************************************************************************************************************/
+; ..\component\Det\Implementation\Det.c	   223  /*! \brief      Output DET error information in CANoe
+; ..\component\Det\Implementation\Det.c	   224   *  \details    Its behavior depends on the version of the simulation environment. 
+; ..\component\Det\Implementation\Det.c	   225   *  \param[in]  ModuleId      Module ID of calling module
+; ..\component\Det\Implementation\Det.c	   226   *  \param[in]  InstanceId    The identifier of the index based instance of a module
+; ..\component\Det\Implementation\Det.c	   227   *  \param[in]  ApiId         ID of API service in which error is detected
+; ..\component\Det\Implementation\Det.c	   228   *  \param[in]  ErrorId       ID of detected development error
+; ..\component\Det\Implementation\Det.c	   229   *  \pre        -
+; ..\component\Det\Implementation\Det.c	   230   *  \context    TASK|ISR2
+; ..\component\Det\Implementation\Det.c	   231   *  \reentrant  TRUE
+; ..\component\Det\Implementation\Det.c	   232   *  \synchronous TRUE
+; ..\component\Det\Implementation\Det.c	   233   **********************************************************************************************************************/
+; ..\component\Det\Implementation\Det.c	   234  # if defined (DET_COMP_ANSI_CANOE)
+; ..\component\Det\Implementation\Det.c	   235  DET_LOCAL_INLINE FUNC(void, DET_CODE) Det_CanoeOutput( uint16 ModuleId, uint8 InstanceId, uint8 ApiId, uint8 ErrorId );
+; ..\component\Det\Implementation\Det.c	   236  # endif
+; ..\component\Det\Implementation\Det.c	   237  
+; ..\component\Det\Implementation\Det.c	   238  /***********************************************************************************************************************
+; ..\component\Det\Implementation\Det.c	   239   *  Det_EndlessLoop()
+; ..\component\Det\Implementation\Det.c	   240   **********************************************************************************************************************/
+; ..\component\Det\Implementation\Det.c	   241  /*! \brief      Enter endless loop
+; ..\component\Det\Implementation\Det.c	   242   *  \details    Used to stop further processing. 
+; ..\component\Det\Implementation\Det.c	   243   *  \pre        -
+; ..\component\Det\Implementation\Det.c	   244   *  \context    TASK|ISR2
+; ..\component\Det\Implementation\Det.c	   245   *  \reentrant  TRUE
+; ..\component\Det\Implementation\Det.c	   246   *  \synchronous TRUE
+; ..\component\Det\Implementation\Det.c	   247   **********************************************************************************************************************/
+; ..\component\Det\Implementation\Det.c	   248  DET_LOCAL FUNC(void, DET_CODE) Det_EndlessLoop( void );
+; ..\component\Det\Implementation\Det.c	   249  
+; ..\component\Det\Implementation\Det.c	   250  /**********************************************************************************************************************
+; ..\component\Det\Implementation\Det.c	   251   *  LOCAL FUNCTIONS
+; ..\component\Det\Implementation\Det.c	   252   **********************************************************************************************************************/
+; ..\component\Det\Implementation\Det.c	   253  
+; ..\component\Det\Implementation\Det.c	   254  # if (DET_DEBUG_ENABLED == STD_ON)
+; ..\component\Det\Implementation\Det.c	   255  /***********************************************************************************************************************
+; ..\component\Det\Implementation\Det.c	   256   *  Det_CheckFilterMatch()
+; ..\component\Det\Implementation\Det.c	   257   **********************************************************************************************************************/
+; ..\component\Det\Implementation\Det.c	   258  /*! 
+; ..\component\Det\Implementation\Det.c	   259   *  Internal comment removed.
+; ..\component\Det\Implementation\Det.c	   260   *
+; ..\component\Det\Implementation\Det.c	   261   *
+; ..\component\Det\Implementation\Det.c	   262   *
+; ..\component\Det\Implementation\Det.c	   263   *
+; ..\component\Det\Implementation\Det.c	   264   **********************************************************************************************************************/
+; ..\component\Det\Implementation\Det.c	   265  #  if (DET_GLOBALFILTERSIZE > 0) || (DET_BREAKFILTERSIZE > 0)
+; ..\component\Det\Implementation\Det.c	   266  DET_LOCAL_INLINE FUNC(boolean, DET_CODE) Det_CheckFilterMatch( volatile P2CONST( DetInfoType, AUTOMATIC, DET_VAR ) filter, uint8 size, boolean active, P2CONST( DetInfoType, AUTOMATIC, DET_VAR ) detInfo )
+; ..\component\Det\Implementation\Det.c	   267  {
+; ..\component\Det\Implementation\Det.c	   268    VAR(uint8_least, AUTOMATIC) i;
+; ..\component\Det\Implementation\Det.c	   269    VAR (boolean, AUTOMATIC) retval = FALSE; /* no filter match */
+; ..\component\Det\Implementation\Det.c	   270    /* #10 if filter is active */
+; ..\component\Det\Implementation\Det.c	   271    if(active == TRUE)
+; ..\component\Det\Implementation\Det.c	   272    {
+; ..\component\Det\Implementation\Det.c	   273      /* #20 linear search over all filters */
+; ..\component\Det\Implementation\Det.c	   274      for(i = 0; i < size; i++)
+; ..\component\Det\Implementation\Det.c	   275      {
+; ..\component\Det\Implementation\Det.c	   276        /* #30 compare each structure member if it is identical or if filter is set to don't care */
+; ..\component\Det\Implementation\Det.c	   277        if(
+; ..\component\Det\Implementation\Det.c	   278          ((filter[i].mModuleId == detInfo->mModuleId) || (filter[i].mModuleId == DET_DONTCARE_16)) &&
+; ..\component\Det\Implementation\Det.c	   279          ((filter[i].mInstanceId == detInfo->mInstanceId) || (filter[i].mInstanceId == DET_DONTCARE_8)) &&
+; ..\component\Det\Implementation\Det.c	   280          ((filter[i].mApiId == detInfo->mApiId) || (filter[i].mApiId == DET_DONTCARE_8)) &&
+; ..\component\Det\Implementation\Det.c	   281          ((filter[i].mErrorId == detInfo->mErrorId) || (filter[i].mErrorId == DET_DONTCARE_8))
+; ..\component\Det\Implementation\Det.c	   282          )
+; ..\component\Det\Implementation\Det.c	   283        {
+; ..\component\Det\Implementation\Det.c	   284          retval = TRUE;
+; ..\component\Det\Implementation\Det.c	   285          break;
+; ..\component\Det\Implementation\Det.c	   286        }
+; ..\component\Det\Implementation\Det.c	   287      }
+; ..\component\Det\Implementation\Det.c	   288    }
+; ..\component\Det\Implementation\Det.c	   289    return retval;
+; ..\component\Det\Implementation\Det.c	   290  }
+; ..\component\Det\Implementation\Det.c	   291  #  endif
+; ..\component\Det\Implementation\Det.c	   292  
+; ..\component\Det\Implementation\Det.c	   293  /***********************************************************************************************************************
+; ..\component\Det\Implementation\Det.c	   294   *  Det_LogError()
+; ..\component\Det\Implementation\Det.c	   295   **********************************************************************************************************************/
+; ..\component\Det\Implementation\Det.c	   296  /*! 
+; ..\component\Det\Implementation\Det.c	   297   *  Internal comment removed.
+; ..\component\Det\Implementation\Det.c	   298   *
+; ..\component\Det\Implementation\Det.c	   299   *
+; ..\component\Det\Implementation\Det.c	   300   *
+; ..\component\Det\Implementation\Det.c	   301   *
+; ..\component\Det\Implementation\Det.c	   302   *
+; ..\component\Det\Implementation\Det.c	   303   *
+; ..\component\Det\Implementation\Det.c	   304   **********************************************************************************************************************/
+; ..\component\Det\Implementation\Det.c	   305  #  if (DET_LOGBUFFERSIZE > 0)
+; ..\component\Det\Implementation\Det.c	   306  DET_LOCAL_INLINE FUNC(boolean, DET_CODE) Det_LogError( boolean active, P2CONST( DetInfoType, AUTOMATIC, DET_VAR ) detInfo )
+; ..\component\Det\Implementation\Det.c	   307  {
+; ..\component\Det\Implementation\Det.c	   308    VAR (boolean, AUTOMATIC) forceBreakHandler = FALSE; /* do not force break handler call */
+; ..\component\Det\Implementation\Det.c	   309  
+; ..\component\Det\Implementation\Det.c	   310    /* #10 if logging is active */
+; ..\component\Det\Implementation\Det.c	   311    if(active == TRUE)
+; ..\component\Det\Implementation\Det.c	   312    {
+; ..\component\Det\Implementation\Det.c	   313        Det_EnterCritical(); /* PRQA S 3109 */ /* MD_MSR_14.3 */
+; ..\component\Det\Implementation\Det.c	   314        detStatus.logIndex++; /* PRQA S 3387 */ /* MD_DET_3387 */
+; ..\component\Det\Implementation\Det.c	   315        /* #20 if overrun of circular buffer occurs */
+; ..\component\Det\Implementation\Det.c	   316        if(detStatus.logIndex >= DET_LOGBUFFERSIZE)
+; ..\component\Det\Implementation\Det.c	   317        {
+; ..\component\Det\Implementation\Det.c	   318          detStatus.logIndex = 0;
+; ..\component\Det\Implementation\Det.c	   319          /* #30 if break on overrun is active set return value to force break handler call */
+; ..\component\Det\Implementation\Det.c	   320          if(detStatus.breakOnLogOverrun == TRUE)
+; ..\component\Det\Implementation\Det.c	   321          {
+; ..\component\Det\Implementation\Det.c	   322            forceBreakHandler = TRUE;
+; ..\component\Det\Implementation\Det.c	   323          }
+; ..\component\Det\Implementation\Det.c	   324        }
+; ..\component\Det\Implementation\Det.c	   325        /* #40 store DET error in log buffer */
+; ..\component\Det\Implementation\Det.c	   326        detLogBuffer[detStatus.logIndex].mModuleId = detInfo->mModuleId;       /* SBSW_DET_1 */
+; ..\component\Det\Implementation\Det.c	   327        detLogBuffer[detStatus.logIndex].mInstanceId = detInfo->mInstanceId;   /* SBSW_DET_1 */
+; ..\component\Det\Implementation\Det.c	   328        detLogBuffer[detStatus.logIndex].mApiId = detInfo->mApiId;             /* SBSW_DET_1 */
+; ..\component\Det\Implementation\Det.c	   329        detLogBuffer[detStatus.logIndex].mErrorId = detInfo->mErrorId;         /* SBSW_DET_1 */
+; ..\component\Det\Implementation\Det.c	   330        Det_LeaveCritical(); /* PRQA S 3109 */ /* MD_MSR_14.3 */
+; ..\component\Det\Implementation\Det.c	   331    }
+; ..\component\Det\Implementation\Det.c	   332    return forceBreakHandler;
+; ..\component\Det\Implementation\Det.c	   333  }
+; ..\component\Det\Implementation\Det.c	   334  #  endif
+; ..\component\Det\Implementation\Det.c	   335  
+; ..\component\Det\Implementation\Det.c	   336  # endif /* DET_DEBUG_ENABLED */
+; ..\component\Det\Implementation\Det.c	   337  
+; ..\component\Det\Implementation\Det.c	   338  /***********************************************************************************************************************
+; ..\component\Det\Implementation\Det.c	   339   *  Det_CanoeOutput()
+; ..\component\Det\Implementation\Det.c	   340   **********************************************************************************************************************/
+; ..\component\Det\Implementation\Det.c	   341  /*! 
+; ..\component\Det\Implementation\Det.c	   342   *  Internal comment removed.
+; ..\component\Det\Implementation\Det.c	   343   *
+; ..\component\Det\Implementation\Det.c	   344   *
+; ..\component\Det\Implementation\Det.c	   345   *
+; ..\component\Det\Implementation\Det.c	   346   *
+; ..\component\Det\Implementation\Det.c	   347   **********************************************************************************************************************/
+; ..\component\Det\Implementation\Det.c	   348  # if defined (DET_COMP_ANSI_CANOE)
+; ..\component\Det\Implementation\Det.c	   349  DET_LOCAL_INLINE FUNC(void, DET_CODE) Det_CanoeOutput( uint16 ModuleId, uint8 InstanceId, uint8 ApiId, uint8 ErrorId )
+; ..\component\Det\Implementation\Det.c	   350  {
+; ..\component\Det\Implementation\Det.c	   351  #  if defined (_MICROSOFT_C_VTT_) /* COV_DET_CANOE_VTT */
+; ..\component\Det\Implementation\Det.c	   352    /* #10 if VIP is configured forward error to CANoe API */
+; ..\component\Det\Implementation\Det.c	   353    (void) CANoeAPI_DetReportError(ModuleId, InstanceId, ApiId, ErrorId);
+; ..\component\Det\Implementation\Det.c	   354  #  else
+; ..\component\Det\Implementation\Det.c	   355    /* #20 else format error string and output it in the CANoe write window */
+; ..\component\Det\Implementation\Det.c	   356    {
+; ..\component\Det\Implementation\Det.c	   357      char str[255]; /* PRQA S 5013 */ /* MD_DET_5013 */
+; ..\component\Det\Implementation\Det.c	   358  
+; ..\component\Det\Implementation\Det.c	   359  #   if (_MSC_VER >= 1400) /* COV_DET_CANOE_VTT */
+; ..\component\Det\Implementation\Det.c	   360      time_t timeVal;
+; ..\component\Det\Implementation\Det.c	   361      struct tm timeS;
+; ..\component\Det\Implementation\Det.c	   362  
+; ..\component\Det\Implementation\Det.c	   363      (void) time(&timeVal); /* PRQA S 5127 */  /* MD_DET_5127 */ /* simulation environment, no production code */ /* SBSW_DET_3 */
+; ..\component\Det\Implementation\Det.c	   364      (void) localtime_s(&timeS, &timeVal); /* PRQA S 5127 */  /* MD_DET_5127 */ /* simulation environment, no production code */ /* SBSW_DET_3 */
+; ..\component\Det\Implementation\Det.c	   365  
+; ..\component\Det\Implementation\Det.c	   366      (void) strftime(str, sizeof(str), "%H:%M:%S", &timeS); /* PRQA S 5127 */  /* MD_DET_5127 */ /* simulation environment, no production code */ /* SBSW_DET_3 */
+; ..\component\Det\Implementation\Det.c	   367  
+; ..\component\Det\Implementation\Det.c	   368      (void) sprintf_s(str + strlen(str), sizeof(str) - strlen(str),  /* PRQA S 0488 */  /* MD_DET_0488 */ /* simulation environment, no production code */ /* SBSW_DET_3 */
+; ..\component\Det\Implementation\Det.c	   369         " DET Error: ModuleId 0x%x, InstanceId 0x%x, ApiId 0x%x, ErrorId 0x%x", ModuleId, InstanceId, ApiId, ErrorId); 
+; ..\component\Det\Implementation\Det.c	   370  #   else
+; ..\component\Det\Implementation\Det.c	   371      (void) sprintf(str, "DET Error: ModuleId 0x%x, InstanceId 0x%x, ApiId 0x%x, ErrorId 0x%x",  /* SBSW_DET_3 */
+; ..\component\Det\Implementation\Det.c	   372         ModuleId, InstanceId, ApiId, ErrorId);
+; ..\component\Det\Implementation\Det.c	   373  #   endif
+; ..\component\Det\Implementation\Det.c	   374      CANoeAPI_WriteString((const char *)str);  /* PRQA S 5013 */ /* MD_DET_5013 */ /* SBSW_DET_3 */
+; ..\component\Det\Implementation\Det.c	   375    }
+; ..\component\Det\Implementation\Det.c	   376  #  endif
+; ..\component\Det\Implementation\Det.c	   377  }
+; ..\component\Det\Implementation\Det.c	   378  # endif
+; ..\component\Det\Implementation\Det.c	   379  
+; ..\component\Det\Implementation\Det.c	   380  /***********************************************************************************************************************
+; ..\component\Det\Implementation\Det.c	   381   *  Det_EndlessLoop()
+; ..\component\Det\Implementation\Det.c	   382   **********************************************************************************************************************/
+; ..\component\Det\Implementation\Det.c	   383  /*! 
+; ..\component\Det\Implementation\Det.c	   384   *  Internal comment removed.
+; ..\component\Det\Implementation\Det.c	   385   *
+; ..\component\Det\Implementation\Det.c	   386   *
+; ..\component\Det\Implementation\Det.c	   387   *
+; ..\component\Det\Implementation\Det.c	   388   **********************************************************************************************************************/
+; ..\component\Det\Implementation\Det.c	   389  DET_LOCAL FUNC(void, DET_CODE) Det_EndlessLoop( void )
+; ..\component\Det\Implementation\Det.c	   390  {
+; ..\component\Det\Implementation\Det.c	   391  # if (DET_DEBUG_ENABLED == STD_ON)
+; ..\component\Det\Implementation\Det.c	   392  #  if ! defined (DET_REGRESSION_TEST) /* COV_TEST_CODE */
+; ..\component\Det\Implementation\Det.c	   393    while(detStatus.unlockBreak == FALSE) /* set this variable to TRUE=1 to unlock breakpoint */
+; ..\component\Det\Implementation\Det.c	   394  #  endif
+; ..\component\Det\Implementation\Det.c	   395  # else
+; ..\component\Det\Implementation\Det.c	   396  #  if ! defined (DET_REGRESSION_TEST) /* COV_TEST_CODE */
+; ..\component\Det\Implementation\Det.c	   397    while(1) 
+; ..\component\Det\Implementation\Det.c	   398  #  endif
+; ..\component\Det\Implementation\Det.c	   399  # endif
+; ..\component\Det\Implementation\Det.c	   400    {
+; ..\component\Det\Implementation\Det.c	   401      ; /* ##### typical place for a breakpoint if extended debugging support is enabled */
+; ..\component\Det\Implementation\Det.c	   402  # if defined (DET_COMP_ANSI_CANOE)
+; ..\component\Det\Implementation\Det.c	   403  #  if (CANOEAPI_VERSION < 200) /* COV_DET_CANOE_VTT */
+; ..\component\Det\Implementation\Det.c	   404      break;
+; ..\component\Det\Implementation\Det.c	   405  #  elif (CANOEAPI_VERSION < 239) /* COV_DET_CANOE_VTT */
+; ..\component\Det\Implementation\Det.c	   406      CANoeAPI_ConsumeTicks(1000);
+; ..\component\Det\Implementation\Det.c	   407  #  else
+; ..\component\Det\Implementation\Det.c	   408  #   if (DET_DEBUG_ENABLED == STD_ON)
+; ..\component\Det\Implementation\Det.c	   409      {
+; ..\component\Det\Implementation\Det.c	   410        sint64 nanoseconds = 100000000ll; /* 100ms */
+; ..\component\Det\Implementation\Det.c	   411        CANoeAPI_ConsumeTime(nanoseconds);
+; ..\component\Det\Implementation\Det.c	   412      }
+; ..\component\Det\Implementation\Det.c	   413  #   else
+; ..\component\Det\Implementation\Det.c	   414      CANoeEmuProcessor_EndlessLoop();
+; ..\component\Det\Implementation\Det.c	   415  #   endif
+; ..\component\Det\Implementation\Det.c	   416  #  endif
+; ..\component\Det\Implementation\Det.c	   417  # endif
+; ..\component\Det\Implementation\Det.c	   418    }
+; ..\component\Det\Implementation\Det.c	   419  # if (DET_DEBUG_ENABLED == STD_ON)
+; ..\component\Det\Implementation\Det.c	   420  #  if ! defined (DET_REGRESSION_TEST) /* COV_TEST_CODE */
+; ..\component\Det\Implementation\Det.c	   421    detStatus.unlockBreak = FALSE; /* PRQA S 2880 */ /* MD_DET_2880 */
+; ..\component\Det\Implementation\Det.c	   422  #  else
+; ..\component\Det\Implementation\Det.c	   423    detStatus.unlockBreak = TRUE; /* PRQA S 2880 */ /* MD_DET_2880 */
+; ..\component\Det\Implementation\Det.c	   424  #  endif
+; ..\component\Det\Implementation\Det.c	   425  # endif
+; ..\component\Det\Implementation\Det.c	   426  }
+; ..\component\Det\Implementation\Det.c	   427  
+; ..\component\Det\Implementation\Det.c	   428  
+; ..\component\Det\Implementation\Det.c	   429  /**********************************************************************************************************************
+; ..\component\Det\Implementation\Det.c	   430   *  GLOBAL FUNCTIONS
+; ..\component\Det\Implementation\Det.c	   431   **********************************************************************************************************************/
+; ..\component\Det\Implementation\Det.c	   432  
+; ..\component\Det\Implementation\Det.c	   433  /**********************************************************************************************************************
+; ..\component\Det\Implementation\Det.c	   434   *  Det_Init()
+; ..\component\Det\Implementation\Det.c	   435   **********************************************************************************************************************/
+; ..\component\Det\Implementation\Det.c	   436  /*! 
+; ..\component\Det\Implementation\Det.c	   437   *  Internal comment removed.
+; ..\component\Det\Implementation\Det.c	   438   *
+; ..\component\Det\Implementation\Det.c	   439   *
+; ..\component\Det\Implementation\Det.c	   440   **********************************************************************************************************************/
+; ..\component\Det\Implementation\Det.c	   441  FUNC(void, DET_CODE) Det_Init( CONSTP2CONST( Det_ConfigType, AUTOMATIC, DET_CONST ) ConfigPtr ) /* PRQA S 1505 */ /* MD_DET_1505 */
+; Function Det_Init
+.L6:
+Det_Init:	.type	func
+
+; ..\component\Det\Implementation\Det.c	   442  {
+; ..\component\Det\Implementation\Det.c	   443  # if (DET_DEBUG_ENABLED == STD_ON)
+; ..\component\Det\Implementation\Det.c	   444  #  if (DET_GLOBALFILTERSIZE > 0) || (DET_BREAKFILTERSIZE > 0) || (DET_LOGBUFFERSIZE > 0)
+; ..\component\Det\Implementation\Det.c	   445    VAR(uint8_least, AUTOMATIC) i;
+; ..\component\Det\Implementation\Det.c	   446  #  endif
+; ..\component\Det\Implementation\Det.c	   447    detStatus.globalFilterActive = FALSE;
+; ..\component\Det\Implementation\Det.c	   448    detStatus.logActive = FALSE;
+; ..\component\Det\Implementation\Det.c	   449    detStatus.logIndex = 0;
+; ..\component\Det\Implementation\Det.c	   450    detStatus.breakOnLogOverrun = FALSE;
+; ..\component\Det\Implementation\Det.c	   451    detStatus.breakFilterActive = FALSE;
+; ..\component\Det\Implementation\Det.c	   452    detStatus.unlockBreak = FALSE;
+; ..\component\Det\Implementation\Det.c	   453  #  if (DET_GLOBALFILTERSIZE > 0)
+; ..\component\Det\Implementation\Det.c	   454    for(i = 0; i < DET_GLOBALFILTERSIZE; i++)
+; ..\component\Det\Implementation\Det.c	   455    {
+; ..\component\Det\Implementation\Det.c	   456      detGlobalFilter[i].mModuleId = 0;   /* SBSW_DET_2 */
+; ..\component\Det\Implementation\Det.c	   457      detGlobalFilter[i].mInstanceId = 0; /* SBSW_DET_2 */
+; ..\component\Det\Implementation\Det.c	   458      detGlobalFilter[i].mApiId = 0;      /* SBSW_DET_2 */
+; ..\component\Det\Implementation\Det.c	   459      detGlobalFilter[i].mErrorId = 0;    /* SBSW_DET_2 */
+; ..\component\Det\Implementation\Det.c	   460    }
+; ..\component\Det\Implementation\Det.c	   461  #  endif
+; ..\component\Det\Implementation\Det.c	   462  #  if (DET_BREAKFILTERSIZE > 0)
+; ..\component\Det\Implementation\Det.c	   463    for(i = 0; i < DET_BREAKFILTERSIZE; i++)
+; ..\component\Det\Implementation\Det.c	   464    {
+; ..\component\Det\Implementation\Det.c	   465      detBreakFilter[i].mModuleId = 0;    /* SBSW_DET_2 */
+; ..\component\Det\Implementation\Det.c	   466      detBreakFilter[i].mInstanceId = 0;  /* SBSW_DET_2 */
+; ..\component\Det\Implementation\Det.c	   467      detBreakFilter[i].mApiId = 0;       /* SBSW_DET_2 */
+; ..\component\Det\Implementation\Det.c	   468      detBreakFilter[i].mErrorId = 0;     /* SBSW_DET_2 */
+; ..\component\Det\Implementation\Det.c	   469    }
+; ..\component\Det\Implementation\Det.c	   470  #  endif
+; ..\component\Det\Implementation\Det.c	   471  #  if (DET_DLTFILTERSIZE > 0)
+; ..\component\Det\Implementation\Det.c	   472    for(i = 0; i < DET_DLTFILTERSIZE; i++)
+; ..\component\Det\Implementation\Det.c	   473    {
+; ..\component\Det\Implementation\Det.c	   474      detDltFilter[i].mModuleId = 0;      /* SBSW_DET_2 */
+; ..\component\Det\Implementation\Det.c	   475      detDltFilter[i].mInstanceId = 0;    /* SBSW_DET_2 */
+; ..\component\Det\Implementation\Det.c	   476      detDltFilter[i].mApiId = 0;         /* SBSW_DET_2 */
+; ..\component\Det\Implementation\Det.c	   477      detDltFilter[i].mErrorId = 0;       /* SBSW_DET_2 */
+; ..\component\Det\Implementation\Det.c	   478    }
+; ..\component\Det\Implementation\Det.c	   479  #  endif
+; ..\component\Det\Implementation\Det.c	   480  #  if (DET_LOGBUFFERSIZE > 0)
+; ..\component\Det\Implementation\Det.c	   481    for(i = 0; i < DET_LOGBUFFERSIZE; i++)
+; ..\component\Det\Implementation\Det.c	   482    {
+; ..\component\Det\Implementation\Det.c	   483      detLogBuffer[i].mModuleId = 0;      /* SBSW_DET_2 */
+; ..\component\Det\Implementation\Det.c	   484      detLogBuffer[i].mInstanceId = 0;    /* SBSW_DET_2 */
+; ..\component\Det\Implementation\Det.c	   485      detLogBuffer[i].mApiId = 0;         /* SBSW_DET_2 */
+; ..\component\Det\Implementation\Det.c	   486      detLogBuffer[i].mErrorId = 0;       /* SBSW_DET_2 */
+; ..\component\Det\Implementation\Det.c	   487    }
+; ..\component\Det\Implementation\Det.c	   488  #  endif
+; ..\component\Det\Implementation\Det.c	   489  # endif
+; ..\component\Det\Implementation\Det.c	   490  
+; ..\component\Det\Implementation\Det.c	   491  # if (DET_REPORT_ERROR_RECURSIONLIMIT > 0)
+; ..\component\Det\Implementation\Det.c	   492    detRecursionCounterReportError = 0;                /* reset recursion limit counter */
+; ..\component\Det\Implementation\Det.c	   493  # endif
+; ..\component\Det\Implementation\Det.c	   494  
+; ..\component\Det\Implementation\Det.c	   495  # if (DET_REPORT_RUNTIMEERROR_RECURSIONLIMIT > 0)
+; ..\component\Det\Implementation\Det.c	   496    detRecursionCounterReportRuntimeError = 0;         /* reset recursion limit counter */
+; ..\component\Det\Implementation\Det.c	   497  # endif
+; ..\component\Det\Implementation\Det.c	   498  
+; ..\component\Det\Implementation\Det.c	   499  # if (DET_REPORT_TRANSIENTFAULT_RECURSIONLIMIT > 0)
+; ..\component\Det\Implementation\Det.c	   500    detRecursionCounterReportTransientFault = 0;       /* reset recursion limit counter */
+; ..\component\Det\Implementation\Det.c	   501  # endif
+; ..\component\Det\Implementation\Det.c	   502  
+; ..\component\Det\Implementation\Det.c	   503    DET_DUMMY_STATEMENT_CONST(ConfigPtr);  /* is never used */ /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /*lint -e{438} */
+; ..\component\Det\Implementation\Det.c	   504  
+; ..\component\Det\Implementation\Det.c	   505    detModuleInit = TRUE;
+	movh.a	a15,#@his(detModuleInit)
+.L95:
+	mov	d15,#1
+	st.b	[a15]@los(detModuleInit),d15
+.L96:
+
+; ..\component\Det\Implementation\Det.c	   506  }
+	ret
+.L60:
+	
+__Det_Init_function_end:
+	.size	Det_Init,__Det_Init_function_end-Det_Init
+.L27:
+	; End of function
+	
+	.sdecl	'.text.Det.Det_Start',code,cluster('Det_Start')
+	.sect	'.text.Det.Det_Start'
+	.align	2
+	
+	.global	Det_Start
+
+; ..\component\Det\Implementation\Det.c	   507  
+; ..\component\Det\Implementation\Det.c	   508  /***********************************************************************************************************************
+; ..\component\Det\Implementation\Det.c	   509   *  Det_Start()
+; ..\component\Det\Implementation\Det.c	   510   **********************************************************************************************************************/
+; ..\component\Det\Implementation\Det.c	   511  /*! 
+; ..\component\Det\Implementation\Det.c	   512   *  Internal comment removed.
+; ..\component\Det\Implementation\Det.c	   513   *
+; ..\component\Det\Implementation\Det.c	   514   *
+; ..\component\Det\Implementation\Det.c	   515   **********************************************************************************************************************/
+; ..\component\Det\Implementation\Det.c	   516  FUNC(void, DET_CODE) Det_Start( void ) /* PRQA S 1505 */ /* MD_DET_1505 */
+; Function Det_Start
+.L8:
+Det_Start:	.type	func
+
+; ..\component\Det\Implementation\Det.c	   517  {
+; ..\component\Det\Implementation\Det.c	   518  }
+	ret
+.L63:
+	
+__Det_Start_function_end:
+	.size	Det_Start,__Det_Start_function_end-Det_Start
+.L32:
+	; End of function
+	
+	.sdecl	'.text.Det.Det_InitMemory',code,cluster('Det_InitMemory')
+	.sect	'.text.Det.Det_InitMemory'
+	.align	2
+	
+	.global	Det_InitMemory
+
+; ..\component\Det\Implementation\Det.c	   519  
+; ..\component\Det\Implementation\Det.c	   520  /***********************************************************************************************************************
+; ..\component\Det\Implementation\Det.c	   521   *  Det_InitMemory()
+; ..\component\Det\Implementation\Det.c	   522   **********************************************************************************************************************/
+; ..\component\Det\Implementation\Det.c	   523  /*! 
+; ..\component\Det\Implementation\Det.c	   524   *  Internal comment removed.
+; ..\component\Det\Implementation\Det.c	   525   *
+; ..\component\Det\Implementation\Det.c	   526   *
+; ..\component\Det\Implementation\Det.c	   527   **********************************************************************************************************************/
+; ..\component\Det\Implementation\Det.c	   528  FUNC(void, DET_CODE) Det_InitMemory(void) /* PRQA S 1505 */ /* MD_DET_1505 */
+; Function Det_InitMemory
+.L10:
+Det_InitMemory:	.type	func
+
+; ..\component\Det\Implementation\Det.c	   529  {
+; ..\component\Det\Implementation\Det.c	   530    detModuleInit = FALSE;
+	movh.a	a15,#@his(detModuleInit)
+.L105:
+	mov	d15,#0
+	st.b	[a15]@los(detModuleInit),d15
+.L106:
+
+; ..\component\Det\Implementation\Det.c	   531  }
+	ret
+.L64:
+	
+__Det_InitMemory_function_end:
+	.size	Det_InitMemory,__Det_InitMemory_function_end-Det_InitMemory
+.L37:
+	; End of function
+	
+	.sdecl	'.text.Det.Det_ReportError',code,cluster('Det_ReportError')
+	.sect	'.text.Det.Det_ReportError'
+	.align	2
+	
+	.global	Det_ReportError
+
+; ..\component\Det\Implementation\Det.c	   532  
+; ..\component\Det\Implementation\Det.c	   533  /***********************************************************************************************************************
+; ..\component\Det\Implementation\Det.c	   534   *  Det_ReportError()
+; ..\component\Det\Implementation\Det.c	   535   **********************************************************************************************************************/
+; ..\component\Det\Implementation\Det.c	   536  /*! 
+; ..\component\Det\Implementation\Det.c	   537   *  Internal comment removed.
+; ..\component\Det\Implementation\Det.c	   538   *
+; ..\component\Det\Implementation\Det.c	   539   *
+; ..\component\Det\Implementation\Det.c	   540   *
+; ..\component\Det\Implementation\Det.c	   541   *
+; ..\component\Det\Implementation\Det.c	   542   *
+; ..\component\Det\Implementation\Det.c	   543   *
+; ..\component\Det\Implementation\Det.c	   544   *
+; ..\component\Det\Implementation\Det.c	   545   *
+; ..\component\Det\Implementation\Det.c	   546   *
+; ..\component\Det\Implementation\Det.c	   547   *
+; ..\component\Det\Implementation\Det.c	   548   *
+; ..\component\Det\Implementation\Det.c	   549   *
+; ..\component\Det\Implementation\Det.c	   550   **********************************************************************************************************************/
+; ..\component\Det\Implementation\Det.c	   551  FUNC(Std_ReturnType, DET_CODE) Det_ReportError( uint16 ModuleId, uint8 InstanceId, uint8 ApiId, uint8 ErrorId ) /* PRQA S 1505 */ /* MD_DET_1505 */ /*lint -e{438} */
+; Function Det_ReportError
+.L12:
+Det_ReportError:	.type	func
+
+; ..\component\Det\Implementation\Det.c	   552  {
+; ..\component\Det\Implementation\Det.c	   553  # if (DET_ERROR_HOOK_ENABLED == STD_ON )
+; ..\component\Det\Implementation\Det.c	   554    VAR(Std_ReturnType, AUTOMATIC) calloutReturn = E_OK; /* PRQA S 2981 */ /* MD_DET_2981 */
+; ..\component\Det\Implementation\Det.c	   555    VAR(uint8_least, AUTOMATIC) index;
+; ..\component\Det\Implementation\Det.c	   556  # endif
+; ..\component\Det\Implementation\Det.c	   557  # if (DET_DEBUG_ENABLED == STD_ON)
+; ..\component\Det\Implementation\Det.c	   558  #  if (DET_LOGBUFFERSIZE > 0)
+; ..\component\Det\Implementation\Det.c	   559    VAR(boolean, AUTOMATIC) forceBreakHandler;
+; ..\component\Det\Implementation\Det.c	   560  #  endif
+; ..\component\Det\Implementation\Det.c	   561  #  if (DET_GLOBALFILTERSIZE > 0) || (DET_BREAKFILTERSIZE > 0) || (DET_LOGBUFFERSIZE > 0) || ((DET_FORWARD_TO_DLT == STD_ON) && (DET_DLTFILTERSIZE > 0))
+; ..\component\Det\Implementation\Det.c	   562    VAR(DetInfoType, AUTOMATIC) detInfo;
+; ..\component\Det\Implementation\Det.c	   563    detInfo.mModuleId = ModuleId;
+; ..\component\Det\Implementation\Det.c	   564    detInfo.mInstanceId = InstanceId;
+; ..\component\Det\Implementation\Det.c	   565    detInfo.mApiId = ApiId;
+; ..\component\Det\Implementation\Det.c	   566    detInfo.mErrorId = ErrorId;
+; ..\component\Det\Implementation\Det.c	   567  #  endif
+; ..\component\Det\Implementation\Det.c	   568  # endif
+; ..\component\Det\Implementation\Det.c	   569  
+; ..\component\Det\Implementation\Det.c	   570  # if defined (DET_COMP_ANSI_CANOE)
+; ..\component\Det\Implementation\Det.c	   571    /* #10 forward DET error to CANoe if configured */
+; ..\component\Det\Implementation\Det.c	   572    Det_CanoeOutput(ModuleId, InstanceId, ApiId, ErrorId);
+; ..\component\Det\Implementation\Det.c	   573  # else
+; ..\component\Det\Implementation\Det.c	   574  #  if (DET_FORWARD_TO_DLT == STD_OFF) && (DET_ERROR_HOOK_ENABLED == STD_OFF ) && ((DET_DEBUG_ENABLED == STD_OFF) || \ 
+; ..\component\Det\Implementation\Det.c	   575      ((DET_DEBUG_ENABLED == STD_ON) && (DET_GLOBALFILTERSIZE==0) && (DET_LOGBUFFERSIZE==0) && (DET_BREAKFILTERSIZE==0)))
+; ..\component\Det\Implementation\Det.c	   576    DET_DUMMY_STATEMENT(ModuleId); /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /*lint -e{438} */
+; ..\component\Det\Implementation\Det.c	   577    DET_DUMMY_STATEMENT(InstanceId); /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /*lint -e{438} */
+; ..\component\Det\Implementation\Det.c	   578    DET_DUMMY_STATEMENT(ApiId); /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /*lint -e{438} */
+; ..\component\Det\Implementation\Det.c	   579    DET_DUMMY_STATEMENT(ErrorId); /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /*lint -e{438} */
+; ..\component\Det\Implementation\Det.c	   580  #  endif
+; ..\component\Det\Implementation\Det.c	   581  # endif
+; ..\component\Det\Implementation\Det.c	   582  
+; ..\component\Det\Implementation\Det.c	   583    /* #40 if DET is initialized: */
+; ..\component\Det\Implementation\Det.c	   584    if(detModuleInit == TRUE) /* in case of call to uninitialized DET return */
+	fcall	.cocofun_1
+.L84:
+
+; ..\component\Det\Implementation\Det.c	   585    {
+; ..\component\Det\Implementation\Det.c	   586      /* #45 increment nesting counter for recursion detection */
+; ..\component\Det\Implementation\Det.c	   587  # if (DET_REPORT_ERROR_RECURSIONLIMIT > 0)
+; ..\component\Det\Implementation\Det.c	   588      Det_EnterCritical(); /* PRQA S 3109 */ /* MD_MSR_14.3 */
+; ..\component\Det\Implementation\Det.c	   589      detRecursionCounterReportError++; /* PRQA S 3387 */ /* MD_DET_3387 */
+; ..\component\Det\Implementation\Det.c	   590      Det_LeaveCritical(); /* PRQA S 3109 */ /* MD_MSR_14.3 */
+; ..\component\Det\Implementation\Det.c	   591      if(detRecursionCounterReportError > DET_REPORT_ERROR_RECURSIONLIMIT)
+; ..\component\Det\Implementation\Det.c	   592      {
+; ..\component\Det\Implementation\Det.c	   593        Det_EndlessLoop();
+; ..\component\Det\Implementation\Det.c	   594      }
+; ..\component\Det\Implementation\Det.c	   595      else
+; ..\component\Det\Implementation\Det.c	   596  #endif
+; ..\component\Det\Implementation\Det.c	   597      {
+; ..\component\Det\Implementation\Det.c	   598        /* #50 call error hooks (if configured) */
+; ..\component\Det\Implementation\Det.c	   599  # if (DET_ERROR_HOOK_ENABLED == STD_ON )
+; ..\component\Det\Implementation\Det.c	   600        for(index = 0; index < Det_GetSizeOfErrorHookTable(); index++)
+; ..\component\Det\Implementation\Det.c	   601        {
+; ..\component\Det\Implementation\Det.c	   602          calloutReturn = Det_GetErrorHookTable(index)(ModuleId, InstanceId, ApiId, ErrorId); /* SBSW_DET_4 */
+; ..\component\Det\Implementation\Det.c	   603        }
+; ..\component\Det\Implementation\Det.c	   604  # endif
+; ..\component\Det\Implementation\Det.c	   605  
+; ..\component\Det\Implementation\Det.c	   606  # if (DET_FORWARD_TO_DLT == STD_ON)
+; ..\component\Det\Implementation\Det.c	   607        /* #60 forward DET error to DLT module (if configured) unless filtered out by a DLT filter */
+; ..\component\Det\Implementation\Det.c	   608  #  if (DET_DEBUG_ENABLED == STD_ON) && (DET_DLTFILTERSIZE > 0)
+; ..\component\Det\Implementation\Det.c	   609        if(Det_CheckFilterMatch(detDltFilter, DET_DLTFILTERSIZE, detStatus.dltFilterActive, &detInfo) == FALSE) /* SBSW_DET_6 */
+; ..\component\Det\Implementation\Det.c	   610  #  endif
+; ..\component\Det\Implementation\Det.c	   611        {
+; ..\component\Det\Implementation\Det.c	   612          Dlt_DetForwardErrorTrace(ModuleId, InstanceId, ApiId, ErrorId);
+; ..\component\Det\Implementation\Det.c	   613        }
+; ..\component\Det\Implementation\Det.c	   614  # endif
+; ..\component\Det\Implementation\Det.c	   615  
+; ..\component\Det\Implementation\Det.c	   616  
+; ..\component\Det\Implementation\Det.c	   617  # if (DET_ERROR_HOOK_ENABLED == STD_ON )
+; ..\component\Det\Implementation\Det.c	   618        /* if last error hook (if configured) returned E_OK: */
+; ..\component\Det\Implementation\Det.c	   619        if(calloutReturn == E_OK)
+; ..\component\Det\Implementation\Det.c	   620  # endif
+; ..\component\Det\Implementation\Det.c	   621        {
+; ..\component\Det\Implementation\Det.c	   622  
+; ..\component\Det\Implementation\Det.c	   623  # if (DET_DEBUG_ENABLED == STD_ON)
+; ..\component\Det\Implementation\Det.c	   624          /* #70 check for global filter match (if configured), in case of no match continue */
+; ..\component\Det\Implementation\Det.c	   625  #  if (DET_GLOBALFILTERSIZE > 0)
+; ..\component\Det\Implementation\Det.c	   626          if(Det_CheckFilterMatch(detGlobalFilter, DET_GLOBALFILTERSIZE, detStatus.globalFilterActive, &detInfo) == FALSE) /* SBSW_DET_6 */
+; ..\component\Det\Implementation\Det.c	   627  #  endif
+; ..\component\Det\Implementation\Det.c	   628          {
+; ..\component\Det\Implementation\Det.c	   629  #  if (DET_LOGBUFFERSIZE > 0)
+; ..\component\Det\Implementation\Det.c	   630            /* #80 store DET error in log buffer (if configured) */
+; ..\component\Det\Implementation\Det.c	   631            forceBreakHandler = Det_LogError(detStatus.logActive, &detInfo); /* SBSW_DET_6 */
+; ..\component\Det\Implementation\Det.c	   632  #  endif
+; ..\component\Det\Implementation\Det.c	   633            /* #90 check for break filter match or forced break handler call (if configured), in case of no match continue */
+; ..\component\Det\Implementation\Det.c	   634  #  if (DET_BREAKFILTERSIZE > 0)
+; ..\component\Det\Implementation\Det.c	   635            if((Det_CheckFilterMatch(detBreakFilter, DET_BREAKFILTERSIZE, detStatus.breakFilterActive, &detInfo) == FALSE) /* SBSW_DET_6 */
+; ..\component\Det\Implementation\Det.c	   636  #   if (DET_LOGBUFFERSIZE > 0)
+; ..\component\Det\Implementation\Det.c	   637                 || (forceBreakHandler == TRUE)
+; ..\component\Det\Implementation\Det.c	   638  #   endif
+; ..\component\Det\Implementation\Det.c	   639                 )
+; ..\component\Det\Implementation\Det.c	   640  #  endif
+; ..\component\Det\Implementation\Det.c	   641            {
+; ..\component\Det\Implementation\Det.c	   642              /* #100 enter endless loop - in variant with debug support loop can be left by setting a flag */
+; ..\component\Det\Implementation\Det.c	   643              Det_EndlessLoop();
+; ..\component\Det\Implementation\Det.c	   644            }
+; ..\component\Det\Implementation\Det.c	   645          }
+; ..\component\Det\Implementation\Det.c	   646  # else /* DET_DEBUG_ENABLED */
+; ..\component\Det\Implementation\Det.c	   647          /* in variant without debug support it is not possible to leave the endless loop on a real target */
+; ..\component\Det\Implementation\Det.c	   648         /* Det_EndlessLoop();*/ /*lint !e522 */
+; ..\component\Det\Implementation\Det.c	   649  # endif /* DET_DEBUG_ENABLED */
+; ..\component\Det\Implementation\Det.c	   650  
+; ..\component\Det\Implementation\Det.c	   651        }
+; ..\component\Det\Implementation\Det.c	   652      }
+; ..\component\Det\Implementation\Det.c	   653      /* #110 decrement nesting counter for recursion detection */
+; ..\component\Det\Implementation\Det.c	   654  # if (DET_REPORT_ERROR_RECURSIONLIMIT > 0)
+; ..\component\Det\Implementation\Det.c	   655      Det_EnterCritical(); /* PRQA S 3109 */ /* MD_MSR_14.3 */
+; ..\component\Det\Implementation\Det.c	   656      detRecursionCounterReportError--; /* PRQA S 3387 */ /* MD_DET_3387 */
+; ..\component\Det\Implementation\Det.c	   657      Det_LeaveCritical(); /* PRQA S 3109 */ /* MD_MSR_14.3 */
+; ..\component\Det\Implementation\Det.c	   658  #endif
+; ..\component\Det\Implementation\Det.c	   659    }
+; ..\component\Det\Implementation\Det.c	   660  
+; ..\component\Det\Implementation\Det.c	   661    return E_OK;
+; ..\component\Det\Implementation\Det.c	   662  } /* Det_ReportError */ /* PRQA S 6050, 6080 */ /* MD_MSR_STCAL, MD_MSR_STMIF */
+	ret
+.L66:
+	
+__Det_ReportError_function_end:
+	.size	Det_ReportError,__Det_ReportError_function_end-Det_ReportError
+.L42:
+	; End of function
+	
+	.sdecl	'.text.Det..cocofun_1',code,cluster('.cocofun_1')
+	.sect	'.text.Det..cocofun_1'
+	.align	2
+; Function .cocofun_1
+.L14:
+.cocofun_1:	.type	func
+; Function body .cocofun_1, coco_iter:0
+	movh.a	a15,#@his(detModuleInit)
+	ld.bu	d15,[a15]@los(detModuleInit)
+.L123:
+	mov	d2,#0
+.L124:
+	fret
+.L57:
+	; End of function
+	.sdecl	'.text.Det.Det_ReportRuntimeError',code,cluster('Det_ReportRuntimeError')
+	.sect	'.text.Det.Det_ReportRuntimeError'
+	.align	2
+	
+	.global	Det_ReportRuntimeError
+
+; ..\component\Det\Implementation\Det.c	   663  
+; ..\component\Det\Implementation\Det.c	   664  
+; ..\component\Det\Implementation\Det.c	   665  /***********************************************************************************************************************
+; ..\component\Det\Implementation\Det.c	   666   *  Det_ReportRuntimeError()
+; ..\component\Det\Implementation\Det.c	   667   **********************************************************************************************************************/
+; ..\component\Det\Implementation\Det.c	   668  /*! 
+; ..\component\Det\Implementation\Det.c	   669   *  Internal comment removed.
+; ..\component\Det\Implementation\Det.c	   670   *
+; ..\component\Det\Implementation\Det.c	   671   *
+; ..\component\Det\Implementation\Det.c	   672   *
+; ..\component\Det\Implementation\Det.c	   673   *
+; ..\component\Det\Implementation\Det.c	   674   *
+; ..\component\Det\Implementation\Det.c	   675   *
+; ..\component\Det\Implementation\Det.c	   676   *
+; ..\component\Det\Implementation\Det.c	   677   *
+; ..\component\Det\Implementation\Det.c	   678   *
+; ..\component\Det\Implementation\Det.c	   679   **********************************************************************************************************************/
+; ..\component\Det\Implementation\Det.c	   680  FUNC(Std_ReturnType, DET_CODE) Det_ReportRuntimeError( uint16 ModuleId, uint8 InstanceId, uint8 ApiId, uint8 ErrorId ) /* PRQA S 1505 */ /* MD_DET_1505 */ /*lint -e{438} */
+; Function Det_ReportRuntimeError
+.L16:
+Det_ReportRuntimeError:	.type	func
+
+; ..\component\Det\Implementation\Det.c	   681  {
+; ..\component\Det\Implementation\Det.c	   682  # if (DET_RUNTIME_ERROR_CALLOUT_ENABLED == STD_ON)
+; ..\component\Det\Implementation\Det.c	   683    VAR(Std_ReturnType, AUTOMATIC) calloutReturn = E_OK;  /* PRQA S 2981 */ /* MD_DET_2981 */
+; ..\component\Det\Implementation\Det.c	   684    VAR(uint8_least, AUTOMATIC) index;
+; ..\component\Det\Implementation\Det.c	   685  # endif
+; ..\component\Det\Implementation\Det.c	   686  # if (DET_DEBUG_ENABLED == STD_ON)
+; ..\component\Det\Implementation\Det.c	   687  #  if (DET_LOGBUFFERSIZE > 0) || ((DET_FORWARD_TO_DLT == STD_ON) && (DET_DLTFILTERSIZE > 0))
+; ..\component\Det\Implementation\Det.c	   688    VAR(DetInfoType, AUTOMATIC) detInfo;
+; ..\component\Det\Implementation\Det.c	   689    detInfo.mModuleId = ModuleId;
+; ..\component\Det\Implementation\Det.c	   690    detInfo.mInstanceId = InstanceId;
+; ..\component\Det\Implementation\Det.c	   691    detInfo.mApiId = ApiId;
+; ..\component\Det\Implementation\Det.c	   692    detInfo.mErrorId = ErrorId;
+; ..\component\Det\Implementation\Det.c	   693  #  endif
+; ..\component\Det\Implementation\Det.c	   694  # endif
+; ..\component\Det\Implementation\Det.c	   695  
+; ..\component\Det\Implementation\Det.c	   696  # if defined (DET_COMP_ANSI_CANOE)
+; ..\component\Det\Implementation\Det.c	   697    /* #10 forward DET error to CANoe if configured */
+; ..\component\Det\Implementation\Det.c	   698    Det_CanoeOutput(ModuleId, InstanceId, ApiId, ErrorId);
+; ..\component\Det\Implementation\Det.c	   699  # else
+; ..\component\Det\Implementation\Det.c	   700  #  if (DET_FORWARD_TO_DLT == STD_OFF) && (DET_RUNTIME_ERROR_CALLOUT_ENABLED == STD_OFF ) && ((DET_DEBUG_ENABLED == STD_OFF) || \ 
+; ..\component\Det\Implementation\Det.c	   701      ((DET_DEBUG_ENABLED == STD_ON) && (DET_LOGBUFFERSIZE==0) ))
+; ..\component\Det\Implementation\Det.c	   702    DET_DUMMY_STATEMENT(ModuleId); /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /*lint -e{438} */
+; ..\component\Det\Implementation\Det.c	   703    DET_DUMMY_STATEMENT(InstanceId); /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /*lint -e{438} */
+; ..\component\Det\Implementation\Det.c	   704    DET_DUMMY_STATEMENT(ApiId); /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /*lint -e{438} */
+; ..\component\Det\Implementation\Det.c	   705    DET_DUMMY_STATEMENT(ErrorId); /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /*lint -e{438} */
+; ..\component\Det\Implementation\Det.c	   706  #  endif
+; ..\component\Det\Implementation\Det.c	   707  # endif
+; ..\component\Det\Implementation\Det.c	   708  
+; ..\component\Det\Implementation\Det.c	   709    /* #40 if DET is initialized: */
+; ..\component\Det\Implementation\Det.c	   710    if(detModuleInit == TRUE) /* in case of call to uninitialized DET return */
+	fcall	.cocofun_1
+.L85:
+
+; ..\component\Det\Implementation\Det.c	   711    {
+; ..\component\Det\Implementation\Det.c	   712      /* #45 increment nesting counter for recursion detection */
+; ..\component\Det\Implementation\Det.c	   713  # if (DET_REPORT_RUNTIMEERROR_RECURSIONLIMIT > 0)
+; ..\component\Det\Implementation\Det.c	   714      Det_EnterCritical(); /* PRQA S 3109 */ /* MD_MSR_14.3 */
+; ..\component\Det\Implementation\Det.c	   715      detRecursionCounterReportRuntimeError++; /* PRQA S 3387 */ /* MD_DET_3387 */
+; ..\component\Det\Implementation\Det.c	   716      Det_LeaveCritical(); /* PRQA S 3109 */ /* MD_MSR_14.3 */
+; ..\component\Det\Implementation\Det.c	   717      if(detRecursionCounterReportRuntimeError > DET_REPORT_RUNTIMEERROR_RECURSIONLIMIT)
+; ..\component\Det\Implementation\Det.c	   718      {
+; ..\component\Det\Implementation\Det.c	   719        Det_EndlessLoop();
+; ..\component\Det\Implementation\Det.c	   720      }
+; ..\component\Det\Implementation\Det.c	   721      else
+; ..\component\Det\Implementation\Det.c	   722  # endif
+; ..\component\Det\Implementation\Det.c	   723      {
+; ..\component\Det\Implementation\Det.c	   724        /* #50 call runtime error callouts (if configured) */
+; ..\component\Det\Implementation\Det.c	   725  # if (DET_RUNTIME_ERROR_CALLOUT_ENABLED == STD_ON)
+; ..\component\Det\Implementation\Det.c	   726        for(index = 0; index < Det_GetSizeOfRuntimeErrorCalloutTable(); index++)
+; ..\component\Det\Implementation\Det.c	   727        {
+; ..\component\Det\Implementation\Det.c	   728          calloutReturn = Det_GetRuntimeErrorCalloutTable(index)(ModuleId, InstanceId, ApiId, ErrorId); /* SBSW_DET_4 */
+; ..\component\Det\Implementation\Det.c	   729        }
+; ..\component\Det\Implementation\Det.c	   730  # endif
+; ..\component\Det\Implementation\Det.c	   731  
+; ..\component\Det\Implementation\Det.c	   732  # if (DET_FORWARD_TO_DLT == STD_ON)
+; ..\component\Det\Implementation\Det.c	   733        /* #60 forward DET error to DLT module (if configured) unless filtered out by a DLT filter */
+; ..\component\Det\Implementation\Det.c	   734  #  if (DET_DEBUG_ENABLED == STD_ON) && (DET_DLTFILTERSIZE > 0)
+; ..\component\Det\Implementation\Det.c	   735        if(Det_CheckFilterMatch(detDltFilter, DET_DLTFILTERSIZE, detStatus.dltFilterActive, &detInfo) == FALSE) /* SBSW_DET_6 */
+; ..\component\Det\Implementation\Det.c	   736  #  endif
+; ..\component\Det\Implementation\Det.c	   737        {
+; ..\component\Det\Implementation\Det.c	   738          Dlt_DetForwardErrorTrace(ModuleId, InstanceId, ApiId, ErrorId);
+; ..\component\Det\Implementation\Det.c	   739        }
+; ..\component\Det\Implementation\Det.c	   740  # endif
+; ..\component\Det\Implementation\Det.c	   741  
+; ..\component\Det\Implementation\Det.c	   742  # if (DET_RUNTIME_ERROR_CALLOUT_ENABLED == STD_ON )
+; ..\component\Det\Implementation\Det.c	   743        /* #65 if last runtime error callout (if configured) returned E_OK: */
+; ..\component\Det\Implementation\Det.c	   744        if(calloutReturn == E_OK)
+; ..\component\Det\Implementation\Det.c	   745  # endif
+; ..\component\Det\Implementation\Det.c	   746        {
+; ..\component\Det\Implementation\Det.c	   747  # if (DET_DEBUG_ENABLED == STD_ON)
+; ..\component\Det\Implementation\Det.c	   748  #  if (DET_LOGBUFFERSIZE > 0)
+; ..\component\Det\Implementation\Det.c	   749          /* #80 store DET error in log buffer (if configured) */
+; ..\component\Det\Implementation\Det.c	   750          (void) Det_LogError(detStatus.logActive, &detInfo); /* SBSW_DET_6 */
+; ..\component\Det\Implementation\Det.c	   751  #  endif
+; ..\component\Det\Implementation\Det.c	   752  # endif
+; ..\component\Det\Implementation\Det.c	   753        }
+; ..\component\Det\Implementation\Det.c	   754      }
+; ..\component\Det\Implementation\Det.c	   755      /* #110 decrement nesting counter for recursion detection */
+; ..\component\Det\Implementation\Det.c	   756  # if (DET_REPORT_RUNTIMEERROR_RECURSIONLIMIT > 0)
+; ..\component\Det\Implementation\Det.c	   757      Det_EnterCritical(); /* PRQA S 3109 */ /* MD_MSR_14.3 */
+; ..\component\Det\Implementation\Det.c	   758      detRecursionCounterReportRuntimeError--; /* PRQA S 3387 */ /* MD_DET_3387 */
+; ..\component\Det\Implementation\Det.c	   759      Det_LeaveCritical(); /* PRQA S 3109 */ /* MD_MSR_14.3 */
+; ..\component\Det\Implementation\Det.c	   760  #endif
+; ..\component\Det\Implementation\Det.c	   761    }
+; ..\component\Det\Implementation\Det.c	   762  
+; ..\component\Det\Implementation\Det.c	   763    return E_OK;
+; ..\component\Det\Implementation\Det.c	   764  } /* Det_ReportRuntimeError */ /* PRQA S 6050, 6080 */ /* MD_MSR_STCAL, MD_MSR_STMIF */
+	ret
+.L73:
+	
+__Det_ReportRuntimeError_function_end:
+	.size	Det_ReportRuntimeError,__Det_ReportRuntimeError_function_end-Det_ReportRuntimeError
+.L47:
+	; End of function
+	
+	.sdecl	'.text.Det.Det_ReportTransientFault',code,cluster('Det_ReportTransientFault')
+	.sect	'.text.Det.Det_ReportTransientFault'
+	.align	2
+	
+	.global	Det_ReportTransientFault
+
+; ..\component\Det\Implementation\Det.c	   765  
+; ..\component\Det\Implementation\Det.c	   766  
+; ..\component\Det\Implementation\Det.c	   767  /***********************************************************************************************************************
+; ..\component\Det\Implementation\Det.c	   768   *  Det_ReportTransientFault()
+; ..\component\Det\Implementation\Det.c	   769   **********************************************************************************************************************/
+; ..\component\Det\Implementation\Det.c	   770  /*! 
+; ..\component\Det\Implementation\Det.c	   771   *  Internal comment removed.
+; ..\component\Det\Implementation\Det.c	   772   *
+; ..\component\Det\Implementation\Det.c	   773   *
+; ..\component\Det\Implementation\Det.c	   774   *
+; ..\component\Det\Implementation\Det.c	   775   *
+; ..\component\Det\Implementation\Det.c	   776   *
+; ..\component\Det\Implementation\Det.c	   777   *
+; ..\component\Det\Implementation\Det.c	   778   *
+; ..\component\Det\Implementation\Det.c	   779   *
+; ..\component\Det\Implementation\Det.c	   780   *
+; ..\component\Det\Implementation\Det.c	   781   **********************************************************************************************************************/
+; ..\component\Det\Implementation\Det.c	   782  FUNC(Std_ReturnType, DET_CODE) Det_ReportTransientFault( uint16 ModuleId, uint8 InstanceId, uint8 ApiId, uint8 ErrorId ) /* PRQA S 1505 */ /* MD_DET_1505 */ /*lint -e{438} */
+; Function Det_ReportTransientFault
+.L18:
+Det_ReportTransientFault:	.type	func
+
+; ..\component\Det\Implementation\Det.c	   783  {
+; ..\component\Det\Implementation\Det.c	   784  # if (DET_TRANSIENT_FAULT_CALLOUT_ENABLED == STD_ON)
+; ..\component\Det\Implementation\Det.c	   785    VAR(Std_ReturnType, AUTOMATIC) calloutReturn = E_OK;  /* PRQA S 2981 */ /* MD_DET_2981 */
+; ..\component\Det\Implementation\Det.c	   786    VAR(uint8_least, AUTOMATIC) index;
+; ..\component\Det\Implementation\Det.c	   787  # endif
+; ..\component\Det\Implementation\Det.c	   788  # if (DET_DEBUG_ENABLED == STD_ON)
+; ..\component\Det\Implementation\Det.c	   789  #  if (DET_LOGBUFFERSIZE > 0) || ((DET_FORWARD_TO_DLT == STD_ON) && (DET_DLTFILTERSIZE > 0))
+; ..\component\Det\Implementation\Det.c	   790    VAR(DetInfoType, AUTOMATIC) detInfo;
+; ..\component\Det\Implementation\Det.c	   791    detInfo.mModuleId = ModuleId;
+; ..\component\Det\Implementation\Det.c	   792    detInfo.mInstanceId = InstanceId;
+; ..\component\Det\Implementation\Det.c	   793    detInfo.mApiId = ApiId;
+; ..\component\Det\Implementation\Det.c	   794    detInfo.mErrorId = ErrorId;
+; ..\component\Det\Implementation\Det.c	   795  #  endif
+; ..\component\Det\Implementation\Det.c	   796  # endif
+; ..\component\Det\Implementation\Det.c	   797  
+; ..\component\Det\Implementation\Det.c	   798  # if defined (DET_COMP_ANSI_CANOE)
+; ..\component\Det\Implementation\Det.c	   799    /* #10 forward DET error to CANoe if configured */
+; ..\component\Det\Implementation\Det.c	   800    Det_CanoeOutput(ModuleId, InstanceId, ApiId, ErrorId);
+; ..\component\Det\Implementation\Det.c	   801  # else
+; ..\component\Det\Implementation\Det.c	   802  #  if (DET_FORWARD_TO_DLT == STD_OFF) && (DET_TRANSIENT_FAULT_CALLOUT_ENABLED == STD_OFF ) && ((DET_DEBUG_ENABLED == STD_OFF) || \ 
+; ..\component\Det\Implementation\Det.c	   803      ((DET_DEBUG_ENABLED == STD_ON) && (DET_LOGBUFFERSIZE==0) ))
+; ..\component\Det\Implementation\Det.c	   804    DET_DUMMY_STATEMENT(ModuleId); /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /*lint -e{438} */
+; ..\component\Det\Implementation\Det.c	   805    DET_DUMMY_STATEMENT(InstanceId); /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /*lint -e{438} */
+; ..\component\Det\Implementation\Det.c	   806    DET_DUMMY_STATEMENT(ApiId); /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /*lint -e{438} */
+; ..\component\Det\Implementation\Det.c	   807    DET_DUMMY_STATEMENT(ErrorId); /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /*lint -e{438} */
+; ..\component\Det\Implementation\Det.c	   808  #  endif
+; ..\component\Det\Implementation\Det.c	   809  # endif
+; ..\component\Det\Implementation\Det.c	   810  
+; ..\component\Det\Implementation\Det.c	   811    /* #40 if DET is initialized: */
+; ..\component\Det\Implementation\Det.c	   812    if(detModuleInit == TRUE) /* in case of call to uninitialized DET return */
+	fcall	.cocofun_1
+.L86:
+
+; ..\component\Det\Implementation\Det.c	   813    {
+; ..\component\Det\Implementation\Det.c	   814      /* #45 increment nesting counter for recursion detection */
+; ..\component\Det\Implementation\Det.c	   815  # if (DET_REPORT_TRANSIENTFAULT_RECURSIONLIMIT > 0)
+; ..\component\Det\Implementation\Det.c	   816      Det_EnterCritical(); /* PRQA S 3109 */ /* MD_MSR_14.3 */
+; ..\component\Det\Implementation\Det.c	   817      detRecursionCounterReportTransientFault++; /* PRQA S 3387 */ /* MD_DET_3387 */
+; ..\component\Det\Implementation\Det.c	   818      Det_LeaveCritical(); /* PRQA S 3109 */ /* MD_MSR_14.3 */
+; ..\component\Det\Implementation\Det.c	   819      if(detRecursionCounterReportTransientFault > DET_REPORT_TRANSIENTFAULT_RECURSIONLIMIT)
+; ..\component\Det\Implementation\Det.c	   820      {
+; ..\component\Det\Implementation\Det.c	   821        Det_EndlessLoop();
+; ..\component\Det\Implementation\Det.c	   822      }
+; ..\component\Det\Implementation\Det.c	   823      else
+; ..\component\Det\Implementation\Det.c	   824  # endif
+; ..\component\Det\Implementation\Det.c	   825      {
+; ..\component\Det\Implementation\Det.c	   826        /* call transient fault callouts (if configured) */
+; ..\component\Det\Implementation\Det.c	   827  # if (DET_TRANSIENT_FAULT_CALLOUT_ENABLED == STD_ON)
+; ..\component\Det\Implementation\Det.c	   828        for(index = 0; index < Det_GetSizeOfTransientFaultCalloutTable(); index++)
+; ..\component\Det\Implementation\Det.c	   829        {
+; ..\component\Det\Implementation\Det.c	   830          calloutReturn |= Det_GetTransientFaultCalloutTable(index)(ModuleId, InstanceId, ApiId, ErrorId); /* SBSW_DET_4 */
+; ..\component\Det\Implementation\Det.c	   831        }
+; ..\component\Det\Implementation\Det.c	   832  # endif
+; ..\component\Det\Implementation\Det.c	   833  
+; ..\component\Det\Implementation\Det.c	   834  # if (DET_FORWARD_TO_DLT == STD_ON)
+; ..\component\Det\Implementation\Det.c	   835        /* #60 forward DET error to DLT module (if configured) unless filtered out by a DLT filter */
+; ..\component\Det\Implementation\Det.c	   836  #  if (DET_DEBUG_ENABLED == STD_ON) && (DET_DLTFILTERSIZE > 0)
+; ..\component\Det\Implementation\Det.c	   837        if(Det_CheckFilterMatch(detDltFilter, DET_DLTFILTERSIZE, detStatus.dltFilterActive, &detInfo) == FALSE) /* SBSW_DET_6 */
+; ..\component\Det\Implementation\Det.c	   838  #  endif
+; ..\component\Det\Implementation\Det.c	   839        {
+; ..\component\Det\Implementation\Det.c	   840          Dlt_DetForwardErrorTrace(ModuleId, InstanceId, ApiId, ErrorId);
+; ..\component\Det\Implementation\Det.c	   841        }
+; ..\component\Det\Implementation\Det.c	   842  # endif
+; ..\component\Det\Implementation\Det.c	   843  
+; ..\component\Det\Implementation\Det.c	   844  # if (DET_DEBUG_ENABLED == STD_ON)
+; ..\component\Det\Implementation\Det.c	   845  #  if (DET_LOGBUFFERSIZE > 0)
+; ..\component\Det\Implementation\Det.c	   846        /* #80 store DET error in log buffer (if configured) */
+; ..\component\Det\Implementation\Det.c	   847        (void) Det_LogError(detStatus.logActive, &detInfo); /* SBSW_DET_6 */
+; ..\component\Det\Implementation\Det.c	   848  #  endif
+; ..\component\Det\Implementation\Det.c	   849  # endif
+; ..\component\Det\Implementation\Det.c	   850      }
+; ..\component\Det\Implementation\Det.c	   851      /* #110 decrement nesting counter for recursion detection */
+; ..\component\Det\Implementation\Det.c	   852  # if (DET_REPORT_TRANSIENTFAULT_RECURSIONLIMIT > 0)
+; ..\component\Det\Implementation\Det.c	   853      Det_EnterCritical(); /* PRQA S 3109 */ /* MD_MSR_14.3 */
+; ..\component\Det\Implementation\Det.c	   854      detRecursionCounterReportTransientFault--; /* PRQA S 3387 */ /* MD_DET_3387 */
+; ..\component\Det\Implementation\Det.c	   855      Det_LeaveCritical(); /* PRQA S 3109 */ /* MD_MSR_14.3 */
+; ..\component\Det\Implementation\Det.c	   856  #endif
+; ..\component\Det\Implementation\Det.c	   857    }
+; ..\component\Det\Implementation\Det.c	   858  
+; ..\component\Det\Implementation\Det.c	   859  # if (DET_TRANSIENT_FAULT_CALLOUT_ENABLED == STD_ON)
+; ..\component\Det\Implementation\Det.c	   860    /* #120 use return value of last transient fault callout (if configured) */
+; ..\component\Det\Implementation\Det.c	   861    return calloutReturn;
+; ..\component\Det\Implementation\Det.c	   862  # else
+; ..\component\Det\Implementation\Det.c	   863    return E_OK;
+; ..\component\Det\Implementation\Det.c	   864  # endif
+; ..\component\Det\Implementation\Det.c	   865  } /* Det_ReportTransientFault */ /* PRQA S 6050, 6080 */ /* MD_MSR_STCAL, MD_MSR_STMIF */
+	ret
+.L78:
+	
+__Det_ReportTransientFault_function_end:
+	.size	Det_ReportTransientFault,__Det_ReportTransientFault_function_end-Det_ReportTransientFault
+.L52:
+	; End of function
+	
+	.sdecl	'.data.Det.detModuleInit',data,cluster('detModuleInit')
+	.sect	'.data.Det.detModuleInit'
+detModuleInit:	.type	object
+	.size	detModuleInit,1
+	.space	1
+	.calls	'Det_ReportError','.cocofun_1'
+	.calls	'Det_ReportRuntimeError','.cocofun_1'
+	.calls	'Det_ReportTransientFault','.cocofun_1'
+	.calls	'Det_Init','',0
+	.calls	'Det_Start','',0
+	.calls	'Det_InitMemory','',0
+	.calls	'Det_ReportError','',0
+	.calls	'.cocofun_1','',0
+	.calls	'Det_ReportRuntimeError','',0
+	.calls	'Det_ReportTransientFault','',0
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L20:
+	.word	514
+	.half	3
+	.word	.L21
+	.byte	4
+.L19:
+	.byte	1
+	.byte	'..\\component\\Det\\Implementation\\Det.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
+	.word	.L22
+	.byte	2
+	.byte	'int',0,4,5,3
+	.word	131
+	.byte	4
+	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,5
+	.word	138
+	.byte	0,2
+	.byte	'unsigned int',0,4,7,6
+	.word	180
+	.byte	7
+	.word	180
+	.byte	8
+	.byte	'__cmpswapw',0
+	.word	196
+	.byte	1,1,1,1,9
+	.byte	'p',0
+	.word	201
+	.byte	9
+	.byte	'value',0
+	.word	180
+	.byte	9
+	.byte	'compare',0
+	.word	180
+	.byte	0
+.L65:
+	.byte	2
+	.byte	'unsigned char',0,1,8,10
+	.byte	'sDet_PCConfigType',0,1,238,1,16,1,11
+	.byte	'Det_PCConfigNeverUsed',0
+	.word	258
+	.byte	1,2,35,0,0,3
+	.word	275
+	.byte	7
+	.word	331
+.L61:
+	.byte	3
+	.word	336
+.L67:
+	.byte	2
+	.byte	'unsigned short int',0,2,7,12,1,7
+	.word	368
+	.byte	13
+	.byte	'__codeptr',0,2,1,1
+	.word	370
+	.byte	13
+	.byte	'boolean',0,3,101,31
+	.word	258
+	.byte	13
+	.byte	'uint8',0,3,104,31
+	.word	258
+	.byte	13
+	.byte	'uint16',0,3,106,31
+	.word	346
+	.byte	13
+	.byte	'Std_ReturnType',0,4,132,1,15
+	.word	258
+	.byte	13
+	.byte	'Det_PCConfigType',0,1,241,1,3
+	.word	275
+	.byte	13
+	.byte	'Det_ConfigType',0,1,243,1,26
+	.word	275
+.L83:
+	.byte	6
+	.word	258
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L21:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,38,0,73,19,0,0,4,46,1,3,8,54
+	.byte	15,39,12,63,12,60,12,0,0,5,5,0,73,19,0,0,6,53,0,73,19,0,0,7,15,0,73,19,0,0,8,46,1,3,8,73,19,54,15,39,12
+	.byte	63,12,60,12,0,0,9,5,0,3,8,73,19,0,0,10,19,1,3,8,58,15,59,15,57,15,11,15,0,0,11,13,0,3,8,73,19,11,15,56
+	.byte	9,0,0,12,21,0,54,15,0,0,13,22,0,3,8,58,15,59,15,57,15,73,19,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L22:
+	.word	.L88-.L87
+.L87:
+	.half	3
+	.word	.L90-.L89
+.L89:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'D:\\Zonal\\demo011\\tasking\\appl\\GenData',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\component\\_Common\\Implementation',0,0
+	.byte	'Det_Cfg.h',0,1,0,0
+	.byte	'..\\component\\Det\\Implementation\\Det.c',0,0,0,0
+	.byte	'Platform_Types.h',0,2,0,0
+	.byte	'Std_Types.h',0,2,0,0,0
+.L90:
+.L88:
+	.sdecl	'.debug_info',debug,cluster('Det_Init')
+	.sect	'.debug_info'
+.L23:
+	.word	199
+	.half	3
+	.word	.L24
+	.byte	4,1
+	.byte	'..\\component\\Det\\Implementation\\Det.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
+	.word	.L26,.L25
+	.byte	2
+	.word	.L19
+	.byte	3
+	.byte	'Det_Init',0,1,185,3,22,1,1,1
+	.word	.L6,.L60,.L5
+	.byte	4
+	.byte	'ConfigPtr',0,1,185,3,85
+	.word	.L61,.L62
+	.byte	5
+	.word	.L6,.L60
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Det_Init')
+	.sect	'.debug_abbrev'
+.L24:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Det_Init')
+	.sect	'.debug_line'
+.L25:
+	.word	.L92-.L91
+.L91:
+	.half	3
+	.word	.L94-.L93
+.L93:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\component\\Det\\Implementation\\Det.c',0,0,0,0,0
+.L94:
+	.byte	5,3,7,0,5,2
+	.word	.L6
+	.byte	3,248,3,1,5,19,9
+	.half	.L95-.L6
+	.byte	1,5,17,1,5,1,9
+	.half	.L96-.L95
+	.byte	3,1,1,7,9
+	.half	.L27-.L96
+	.byte	0,1,1
+.L92:
+	.sdecl	'.debug_ranges',debug,cluster('Det_Init')
+	.sect	'.debug_ranges'
+.L26:
+	.word	-1,.L6,0,.L27-.L6,0,0
+	.sdecl	'.debug_info',debug,cluster('Det_Start')
+	.sect	'.debug_info'
+.L28:
+	.word	177
+	.half	3
+	.word	.L29
+	.byte	4,1
+	.byte	'..\\component\\Det\\Implementation\\Det.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
+	.word	.L31,.L30
+	.byte	2
+	.word	.L19
+	.byte	3
+	.byte	'Det_Start',0,1,132,4,22,1,1,1
+	.word	.L8,.L63,.L7
+	.byte	4
+	.word	.L8,.L63
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Det_Start')
+	.sect	'.debug_abbrev'
+.L29:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Det_Start')
+	.sect	'.debug_line'
+.L30:
+	.word	.L98-.L97
+.L97:
+	.half	3
+	.word	.L100-.L99
+.L99:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\component\\Det\\Implementation\\Det.c',0,0,0,0,0
+.L100:
+	.byte	5,1,7,0,5,2
+	.word	.L8
+	.byte	3,133,4,1,7,9
+	.half	.L32-.L8
+	.byte	0,1,1
+.L98:
+	.sdecl	'.debug_ranges',debug,cluster('Det_Start')
+	.sect	'.debug_ranges'
+.L31:
+	.word	-1,.L8,0,.L32-.L8,0,0
+	.sdecl	'.debug_info',debug,cluster('Det_InitMemory')
+	.sect	'.debug_info'
+.L33:
+	.word	182
+	.half	3
+	.word	.L34
+	.byte	4,1
+	.byte	'..\\component\\Det\\Implementation\\Det.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
+	.word	.L36,.L35
+	.byte	2
+	.word	.L19
+	.byte	3
+	.byte	'Det_InitMemory',0,1,144,4,22,1,1,1
+	.word	.L10,.L64,.L9
+	.byte	4
+	.word	.L10,.L64
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Det_InitMemory')
+	.sect	'.debug_abbrev'
+.L34:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Det_InitMemory')
+	.sect	'.debug_line'
+.L35:
+	.word	.L102-.L101
+.L101:
+	.half	3
+	.word	.L104-.L103
+.L103:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\component\\Det\\Implementation\\Det.c',0,0,0,0,0
+.L104:
+	.byte	5,3,7,0,5,2
+	.word	.L10
+	.byte	3,145,4,1,5,19,9
+	.half	.L105-.L10
+	.byte	1,5,17,1,5,1,9
+	.half	.L106-.L105
+	.byte	3,1,1,7,9
+	.half	.L37-.L106
+	.byte	0,1,1
+.L102:
+	.sdecl	'.debug_ranges',debug,cluster('Det_InitMemory')
+	.sect	'.debug_ranges'
+.L36:
+	.word	-1,.L10,0,.L37-.L10,0,0
+	.sdecl	'.debug_info',debug,cluster('Det_ReportError')
+	.sect	'.debug_info'
+.L38:
+	.word	269
+	.half	3
+	.word	.L39
+	.byte	4,1
+	.byte	'..\\component\\Det\\Implementation\\Det.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
+	.word	.L41,.L40
+	.byte	2
+	.word	.L19
+	.byte	3
+	.byte	'Det_ReportError',0,1,167,4,32
+	.word	.L65
+	.byte	1,1,1
+	.word	.L12,.L66,.L11
+	.byte	4
+	.byte	'ModuleId',0,1,167,4,56
+	.word	.L67,.L68
+	.byte	4
+	.byte	'InstanceId',0,1,167,4,72
+	.word	.L65,.L69
+	.byte	4
+	.byte	'ApiId',0,1,167,4,90
+	.word	.L65,.L70
+	.byte	4
+	.byte	'ErrorId',0,1,167,4,103
+	.word	.L65,.L71
+	.byte	5
+	.word	.L72
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Det_ReportError')
+	.sect	'.debug_abbrev'
+.L39:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,85,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Det_ReportError')
+	.sect	'.debug_line'
+.L40:
+	.word	.L108-.L107
+.L107:
+	.half	3
+	.word	.L110-.L109
+.L109:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\component\\Det\\Implementation\\Det.c',0,0,0,0,0
+.L110:
+	.byte	5,6,7,0,5,2
+	.word	.L12
+	.byte	3,199,4,1,5,1,9
+	.half	.L84-.L12
+	.byte	3,206,0,1,7,9
+	.half	.L42-.L84
+	.byte	0,1,1
+.L108:
+	.sdecl	'.debug_ranges',debug,cluster('Det_ReportError')
+	.sect	'.debug_ranges'
+.L41:
+	.word	-1,.L12,0,.L42-.L12,0,0
+.L72:
+	.word	-1,.L12,0,.L66-.L12,-1,.L14,0,.L57-.L14,0,0
+	.sdecl	'.debug_info',debug,cluster('Det_ReportRuntimeError')
+	.sect	'.debug_info'
+.L43:
+	.word	280
+	.half	3
+	.word	.L44
+	.byte	4,1
+	.byte	'..\\component\\Det\\Implementation\\Det.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
+	.word	.L46,.L45
+	.byte	2
+	.word	.L19
+	.byte	3
+	.byte	'Det_ReportRuntimeError',0,1,168,5,32
+	.word	.L65
+	.byte	1,1,1
+	.word	.L16,.L73,.L15
+	.byte	4
+	.byte	'ModuleId',0,1,168,5,63
+	.word	.L67,.L74
+	.byte	4
+	.byte	'InstanceId',0,1,168,5,79
+	.word	.L65,.L75
+	.byte	4
+	.byte	'ApiId',0,1,168,5,97
+	.word	.L65,.L76
+	.byte	4
+	.byte	'ErrorId',0,1,168,5,110
+	.word	.L65,.L77
+	.byte	5
+	.word	.L16,.L73
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Det_ReportRuntimeError')
+	.sect	'.debug_abbrev'
+.L44:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Det_ReportRuntimeError')
+	.sect	'.debug_line'
+.L45:
+	.word	.L112-.L111
+.L111:
+	.half	3
+	.word	.L114-.L113
+.L113:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\component\\Det\\Implementation\\Det.c',0,0,0,0,0
+.L114:
+	.byte	5,6,7,0,5,2
+	.word	.L16
+	.byte	3,197,5,1,5,1,9
+	.half	.L85-.L16
+	.byte	3,54,1,7,9
+	.half	.L47-.L85
+	.byte	0,1,1
+.L112:
+	.sdecl	'.debug_ranges',debug,cluster('Det_ReportRuntimeError')
+	.sect	'.debug_ranges'
+.L46:
+	.word	-1,.L16,0,.L47-.L16,0,0
+	.sdecl	'.debug_info',debug,cluster('Det_ReportTransientFault')
+	.sect	'.debug_info'
+.L48:
+	.word	282
+	.half	3
+	.word	.L49
+	.byte	4,1
+	.byte	'..\\component\\Det\\Implementation\\Det.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
+	.word	.L51,.L50
+	.byte	2
+	.word	.L19
+	.byte	3
+	.byte	'Det_ReportTransientFault',0,1,142,6,32
+	.word	.L65
+	.byte	1,1,1
+	.word	.L18,.L78,.L17
+	.byte	4
+	.byte	'ModuleId',0,1,142,6,65
+	.word	.L67,.L79
+	.byte	4
+	.byte	'InstanceId',0,1,142,6,81
+	.word	.L65,.L80
+	.byte	4
+	.byte	'ApiId',0,1,142,6,99
+	.word	.L65,.L81
+	.byte	4
+	.byte	'ErrorId',0,1,142,6,112
+	.word	.L65,.L82
+	.byte	5
+	.word	.L18,.L78
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Det_ReportTransientFault')
+	.sect	'.debug_abbrev'
+.L49:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Det_ReportTransientFault')
+	.sect	'.debug_line'
+.L50:
+	.word	.L116-.L115
+.L115:
+	.half	3
+	.word	.L118-.L117
+.L117:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\component\\Det\\Implementation\\Det.c',0,0,0,0,0
+.L118:
+	.byte	5,6,7,0,5,2
+	.word	.L18
+	.byte	3,171,6,1,5,1,9
+	.half	.L86-.L18
+	.byte	3,53,1,7,9
+	.half	.L52-.L86
+	.byte	0,1,1
+.L116:
+	.sdecl	'.debug_ranges',debug,cluster('Det_ReportTransientFault')
+	.sect	'.debug_ranges'
+.L51:
+	.word	-1,.L18,0,.L52-.L18,0,0
+	.sdecl	'.debug_info',debug,cluster('.cocofun_1')
+	.sect	'.debug_info'
+.L53:
+	.word	166
+	.half	3
+	.word	.L54
+	.byte	4,1
+	.byte	'..\\component\\Det\\Implementation\\Det.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
+	.word	.L56,.L55
+	.byte	2
+	.word	.L19
+	.byte	3
+	.byte	'.cocofun_1',0,1,167,4,32,1
+	.word	.L14,.L57,.L13
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('.cocofun_1')
+	.sect	'.debug_abbrev'
+.L54:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,0,3,8,58,15,59,15,57,15,54,15
+	.byte	17,1,18,1,64,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('.cocofun_1')
+	.sect	'.debug_line'
+.L55:
+	.word	.L120-.L119
+.L119:
+	.half	3
+	.word	.L122-.L121
+.L121:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\component\\Det\\Implementation\\Det.c',0,0,0,0,0
+.L122:
+	.byte	5,6,7,0,5,2
+	.word	.L14
+	.byte	3,199,4,1,5,10,9
+	.half	.L123-.L14
+	.byte	3,205,0,1,9
+	.half	.L57-.L123
+	.byte	0,1,1,5,6,0,5,2
+	.word	.L14
+	.byte	3,197,5,1,5,10,9
+	.half	.L123-.L14
+	.byte	3,53,1,9
+	.half	.L124-.L123
+	.byte	3,154,127,1,7,9
+	.half	.L57-.L124
+	.byte	0,1,1,5,6,0,5,2
+	.word	.L14
+	.byte	3,171,6,1,5,10,9
+	.half	.L123-.L14
+	.byte	3,51,1,9
+	.half	.L124-.L123
+	.byte	3,182,126,1,7,9
+	.half	.L57-.L124
+	.byte	0,1,1
+.L120:
+	.sdecl	'.debug_ranges',debug,cluster('.cocofun_1')
+	.sect	'.debug_ranges'
+.L56:
+	.word	-1,.L14,0,.L57-.L14,0,0
+	.sdecl	'.debug_info',debug,cluster('detModuleInit')
+	.sect	'.debug_info'
+.L58:
+	.word	157
+	.half	3
+	.word	.L59
+	.byte	4,1
+	.byte	'..\\component\\Det\\Implementation\\Det.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1,2
+	.word	.L19
+	.byte	3
+	.byte	'detModuleInit',0,2,119,42
+	.word	.L83
+	.byte	5,3
+	.word	detModuleInit
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('detModuleInit')
+	.sect	'.debug_abbrev'
+.L59:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
+	.sdecl	'.debug_loc',debug,cluster('.cocofun_1')
+	.sect	'.debug_loc'
+.L13:
+	.word	-1,.L14,0,.L57-.L14
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Det_Init')
+	.sect	'.debug_loc'
+.L62:
+	.word	-1,.L6,0,.L60-.L6
+	.half	1
+	.byte	100
+	.word	0,0
+.L5:
+	.word	-1,.L6,0,.L60-.L6
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Det_InitMemory')
+	.sect	'.debug_loc'
+.L9:
+	.word	-1,.L10,0,.L64-.L10
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Det_ReportError')
+	.sect	'.debug_loc'
+.L70:
+	.word	-1,.L12,.L14-.L12,.L57-.L12
+	.half	1
+	.byte	86
+	.word	.L84-.L12,.L66-.L12
+	.half	1
+	.byte	86
+	.word	0,0
+.L11:
+	.word	-1,.L12,0,.L66-.L12
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L71:
+	.word	-1,.L12,.L14-.L12,.L57-.L12
+	.half	1
+	.byte	87
+	.word	.L84-.L12,.L66-.L12
+	.half	1
+	.byte	87
+	.word	0,0
+.L69:
+	.word	-1,.L12,.L14-.L12,.L57-.L12
+	.half	1
+	.byte	85
+	.word	.L84-.L12,.L66-.L12
+	.half	1
+	.byte	85
+	.word	0,0
+.L68:
+	.word	-1,.L12,.L14-.L12,.L57-.L12
+	.half	1
+	.byte	84
+	.word	.L84-.L12,.L66-.L12
+	.half	1
+	.byte	84
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Det_ReportRuntimeError')
+	.sect	'.debug_loc'
+.L76:
+	.word	-1,.L16,.L14-.L16,.L57-.L16
+	.half	1
+	.byte	86
+	.word	.L85-.L16,.L73-.L16
+	.half	1
+	.byte	86
+	.word	0,0
+.L15:
+	.word	-1,.L16,0,.L73-.L16
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L77:
+	.word	-1,.L16,.L14-.L16,.L57-.L16
+	.half	1
+	.byte	87
+	.word	.L85-.L16,.L73-.L16
+	.half	1
+	.byte	87
+	.word	0,0
+.L75:
+	.word	-1,.L16,.L14-.L16,.L57-.L16
+	.half	1
+	.byte	85
+	.word	.L85-.L16,.L73-.L16
+	.half	1
+	.byte	85
+	.word	0,0
+.L74:
+	.word	-1,.L16,.L14-.L16,.L57-.L16
+	.half	1
+	.byte	84
+	.word	.L85-.L16,.L73-.L16
+	.half	1
+	.byte	84
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Det_ReportTransientFault')
+	.sect	'.debug_loc'
+.L81:
+	.word	-1,.L18,.L14-.L18,.L57-.L18
+	.half	1
+	.byte	86
+	.word	.L86-.L18,.L78-.L18
+	.half	1
+	.byte	86
+	.word	0,0
+.L17:
+	.word	-1,.L18,0,.L78-.L18
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L82:
+	.word	-1,.L18,.L14-.L18,.L57-.L18
+	.half	1
+	.byte	87
+	.word	.L86-.L18,.L78-.L18
+	.half	1
+	.byte	87
+	.word	0,0
+.L80:
+	.word	-1,.L18,.L14-.L18,.L57-.L18
+	.half	1
+	.byte	85
+	.word	.L86-.L18,.L78-.L18
+	.half	1
+	.byte	85
+	.word	0,0
+.L79:
+	.word	-1,.L18,.L14-.L18,.L57-.L18
+	.half	1
+	.byte	84
+	.word	.L86-.L18,.L78-.L18
+	.half	1
+	.byte	84
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Det_Start')
+	.sect	'.debug_loc'
+.L7:
+	.word	-1,.L8,0,.L63-.L8
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L125:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,27,8,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('Det_Init')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L125,.L6,.L60-.L6
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('Det_Start')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L125,.L8,.L63-.L8
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('Det_InitMemory')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L125,.L10,.L64-.L10
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('Det_ReportError')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L125,.L12,.L66-.L12
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('Det_ReportRuntimeError')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L125,.L16,.L73-.L16
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('Det_ReportTransientFault')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L125,.L18,.L78-.L18
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L126:
+	.word	52
+	.word	-1
+	.byte	3,0,2,1,40,12,26,0,9,40,27,155,0,7,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36
+	.byte	8,37,8,38,8,39,0
+	.sdecl	'.debug_frame',debug,cluster('.cocofun_1')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L126,.L14,.L57-.L14
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+
+; ..\component\Det\Implementation\Det.c	   866  
+; ..\component\Det\Implementation\Det.c	   867  
+; ..\component\Det\Implementation\Det.c	   868  # if (DET_VERSION_INFO_API == STD_ON)
+; ..\component\Det\Implementation\Det.c	   869  /***********************************************************************************************************************
+; ..\component\Det\Implementation\Det.c	   870   *  Det_GetVersionInfo()
+; ..\component\Det\Implementation\Det.c	   871   **********************************************************************************************************************/
+; ..\component\Det\Implementation\Det.c	   872  /*! 
+; ..\component\Det\Implementation\Det.c	   873   *  Internal comment removed.
+; ..\component\Det\Implementation\Det.c	   874   *
+; ..\component\Det\Implementation\Det.c	   875   *
+; ..\component\Det\Implementation\Det.c	   876   *
+; ..\component\Det\Implementation\Det.c	   877   **********************************************************************************************************************/
+; ..\component\Det\Implementation\Det.c	   878  FUNC(void, DET_CODE) Det_GetVersionInfo( P2VAR( Std_VersionInfoType, AUTOMATIC, DET_APPL_DATA ) versioninfo ) /* PRQA S 1505 */ /* MD_DET_1505 */
+; ..\component\Det\Implementation\Det.c	   879  {
+; ..\component\Det\Implementation\Det.c	   880    /* #10 if versioninfo is no NULL pointer */
+; ..\component\Det\Implementation\Det.c	   881    if(versioninfo != NULL_PTR)
+; ..\component\Det\Implementation\Det.c	   882    {
+; ..\component\Det\Implementation\Det.c	   883      /* #20 fill versions from defines into versioninfo structure */
+; ..\component\Det\Implementation\Det.c	   884      versioninfo->vendorID           = DET_VENDOR_ID;          /* SBSW_DET_7 */
+; ..\component\Det\Implementation\Det.c	   885      versioninfo->moduleID           = DET_MODULE_ID;          /* SBSW_DET_7 */
+; ..\component\Det\Implementation\Det.c	   886      versioninfo->sw_major_version   = DET_SW_MAJOR_VERSION;   /* SBSW_DET_7 */
+; ..\component\Det\Implementation\Det.c	   887      versioninfo->sw_minor_version   = DET_SW_MINOR_VERSION;   /* SBSW_DET_7 */
+; ..\component\Det\Implementation\Det.c	   888      versioninfo->sw_patch_version   = DET_SW_PATCH_VERSION;   /* SBSW_DET_7 */
+; ..\component\Det\Implementation\Det.c	   889    }
+; ..\component\Det\Implementation\Det.c	   890    else
+; ..\component\Det\Implementation\Det.c	   891    {
+; ..\component\Det\Implementation\Det.c	   892      (void) Det_ReportError(DET_MODULE_ID, DET_INSTANCE_ID, DET_SID_GETVERSIONINFO, DET_E_PARAM_POINTER);
+; ..\component\Det\Implementation\Det.c	   893    }
+; ..\component\Det\Implementation\Det.c	   894  }
+; ..\component\Det\Implementation\Det.c	   895  # endif
+; ..\component\Det\Implementation\Det.c	   896  
+; ..\component\Det\Implementation\Det.c	   897  # define DET_STOP_SEC_CODE
+; ..\component\Det\Implementation\Det.c	   898  # include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */
+; ..\component\Det\Implementation\Det.c	   899  
+; ..\component\Det\Implementation\Det.c	   900  #endif /* DET_ENABLED */
+; ..\component\Det\Implementation\Det.c	   901  
+; ..\component\Det\Implementation\Det.c	   902  /* module specific MISRA deviations:
+; ..\component\Det\Implementation\Det.c	   903     MD_DET_5013:  MISRA2012 rule 4.6
+; ..\component\Det\Implementation\Det.c	   904       Reason:     Usage of "char" data type is necessary if error messages are output in the CANoe write window because the CANoe API requires this. 
+; ..\component\Det\Implementation\Det.c	   905       Risk:       Potentially unknown size and signedness of data type.
+; ..\component\Det\Implementation\Det.c	   906       Prevention: The affected code part is only active in a PC simulation environment and does not run on an embedded target. Therefore this deviation is not critical. No change planned.
+; ..\component\Det\Implementation\Det.c	   907     MD_DET_1504:  MISRA2012 rule 8.7
+; ..\component\Det\Implementation\Det.c	   908       Reason:     The global variables could be used by the application for testing and debugging purposes, therefore they have been made global. The MISRA test configuration does not reference these variables.
+; ..\component\Det\Implementation\Det.c	   909       Risk:       These variables could be used by the application for unrelated purposes.
+; ..\component\Det\Implementation\Det.c	   910       Prevention: This deviation is not critical, no change planned.
+; ..\component\Det\Implementation\Det.c	   911     MD_DET_2880:  MISRA2012 rule 2.1
+; ..\component\Det\Implementation\Det.c	   912       Reason:     No violation - tool issue in QAC (it is not detected that loop can be left due to intended debug concept via manipulation of control variable).
+; ..\component\Det\Implementation\Det.c	   913       Risk:       None.
+; ..\component\Det\Implementation\Det.c	   914       Prevention: No change planned.
+; ..\component\Det\Implementation\Det.c	   915     MD_DET_0488:  MISRA2012 rule 18.4
+; ..\component\Det\Implementation\Det.c	   916       Reason:     Pointer arithmetic is only used in the CANoe simulation environment for debug purposes, not included in production code.
+; ..\component\Det\Implementation\Det.c	   917       Risk:       None.
+; ..\component\Det\Implementation\Det.c	   918       Prevention: No change planned.
+; ..\component\Det\Implementation\Det.c	   919     MD_DET_5124:  MISRA2012 rule 21.6
+; ..\component\Det\Implementation\Det.c	   920       Reason:     Standard library functionality is only used in the CANoe simulation environment for debug purposes, not included in production code.
+; ..\component\Det\Implementation\Det.c	   921       Risk:       None.
+; ..\component\Det\Implementation\Det.c	   922       Prevention: No change planned.
+; ..\component\Det\Implementation\Det.c	   923     MD_DET_5127:  MISRA2012 rule 21.10
+; ..\component\Det\Implementation\Det.c	   924       Reason:     Standard library functionality is only used in the CANoe simulation environment for debug purposes, not included in production code.
+; ..\component\Det\Implementation\Det.c	   925       Risk:       None.
+; ..\component\Det\Implementation\Det.c	   926       Prevention: No change planned.
+; ..\component\Det\Implementation\Det.c	   927     MD_DET_2981:  MISRA2012 rule 2.2
+; ..\component\Det\Implementation\Det.c	   928       Reason:     Default initialization is required by SafeBSW API pattern.
+; ..\component\Det\Implementation\Det.c	   929       Risk:       None.
+; ..\component\Det\Implementation\Det.c	   930       Prevention: No change planned.
+; ..\component\Det\Implementation\Det.c	   931     MD_DET_1505:  MISRA2012 rule 8.7
+; ..\component\Det\Implementation\Det.c	   932       Reason:     MISRA analysis is performed without other modules using the API.
+; ..\component\Det\Implementation\Det.c	   933       Risk:       None.
+; ..\component\Det\Implementation\Det.c	   934       Prevention: No change planned.
+; ..\component\Det\Implementation\Det.c	   935     MD_DET_3387:  MISRA2012 rule 13.3
+; ..\component\Det\Implementation\Det.c	   936       Reason:     The ++ of -- operator is used on a volatile variable.
+; ..\component\Det\Implementation\Det.c	   937       Risk:       None because the volatile variable access is protected by a critical section.
+; ..\component\Det\Implementation\Det.c	   938       Prevention: No change planned.
+; ..\component\Det\Implementation\Det.c	   939  */
+; ..\component\Det\Implementation\Det.c	   940  
+; ..\component\Det\Implementation\Det.c	   941  /* SBSW_JUSTIFICATION_BEGIN
+; ..\component\Det\Implementation\Det.c	   942     \ID SBSW_DET_1    
+; ..\component\Det\Implementation\Det.c	   943       \DESCRIPTION Array Write Access (P6 - Wrong Initialization and Usage of a Pointer due to Wrong Index)
+; ..\component\Det\Implementation\Det.c	   944        Update of log buffer in Det_LogError. Due to the code structure the calculated array index cannot exceed the array size. 
+; ..\component\Det\Implementation\Det.c	   945        Therefore this is not critical and no out of bounds array access can occur. The index is unconditionally reset to zero if is equal or greater than DET_LOGBUFFERSIZE.
+; ..\component\Det\Implementation\Det.c	   946       \COUNTERMEASURE \N The code structure already ensures that the index cannot exceed the size of the array.
+; ..\component\Det\Implementation\Det.c	   947     \ID SBSW_DET_2    
+; ..\component\Det\Implementation\Det.c	   948       \DESCRIPTION Array Write Access (P6 - Wrong Initialization and Usage of a Pointer due to Wrong Index)
+; ..\component\Det\Implementation\Det.c	   949        Initialization of global array in Det_Init. Both the array size and the loop is is controlled by generated #defines DET_*SIZE. 
+; ..\component\Det\Implementation\Det.c	   950        Therefore this is not critical and no out of bounds array access can occur.
+; ..\component\Det\Implementation\Det.c	   951       \COUNTERMEASURE \N The code structure already ensures that the index cannot exceed the size of the array.
+; ..\component\Det\Implementation\Det.c	   952     \ID SBSW_DET_3    
+; ..\component\Det\Implementation\Det.c	   953       \DESCRIPTION Function Call
+; ..\component\Det\Implementation\Det.c	   954        Calls to CANoe API or C stdlib with pointer parameters. 
+; ..\component\Det\Implementation\Det.c	   955        This code is only active in case of the CANoe emulation or vtt environment which is not used production code.
+; ..\component\Det\Implementation\Det.c	   956       \COUNTERMEASURE \N This code part is not active for embedded production targets.
+; ..\component\Det\Implementation\Det.c	   957     \ID SBSW_DET_4    
+; ..\component\Det\Implementation\Det.c	   958       \DESCRIPTION Function Pointer Call
+; ..\component\Det\Implementation\Det.c	   959        Iteration over generated function pointer tables using identifiers generated by the ComStackLib. 
+; ..\component\Det\Implementation\Det.c	   960       \COUNTERMEASURE \N Qualified use-case CSL01 of ComStackLib assures correct dimension of arrays and consistency of corresponding size definitions.
+; ..\component\Det\Implementation\Det.c	   961        The validity of the callout function names is covered by SMI-5.
+; ..\component\Det\Implementation\Det.c	   962     \ID SBSW_DET_6    
+; ..\component\Det\Implementation\Det.c	   963       \DESCRIPTION Function Call
+; ..\component\Det\Implementation\Det.c	   964        call of internal functions Det_CheckFilterMatch and Det_LogError (both functions cannot be called by the application or other modules)
+; ..\component\Det\Implementation\Det.c	   965        There could be a Null pointer dereferencing if these functions are called with invalid pointer parameters.
+; ..\component\Det\Implementation\Det.c	   966        However, at the three places in Det_ReportError where these functions are called the calls always uses valid pointers.
+; ..\component\Det\Implementation\Det.c	   967        So there is no need for an additional Null pointer check in these functions.
+; ..\component\Det\Implementation\Det.c	   968       \COUNTERMEASURE \N The code structure already ensures that the functions are always called with valid pointers.
+; ..\component\Det\Implementation\Det.c	   969     \ID SBSW_DET_7    
+; ..\component\Det\Implementation\Det.c	   970       \DESCRIPTION Pointer Write Access (P1 - Wrong Pointer Parameter)
+; ..\component\Det\Implementation\Det.c	   971        The function Det_GetVersionInfo writes to the object referenced by parameter versioninfo. The structure is provided by application code and passed to the DET. 
+; ..\component\Det\Implementation\Det.c	   972        The fault pattern P9 is already prevented by a NULL pointer check.
+; ..\component\Det\Implementation\Det.c	   973       \COUNTERMEASURE \N The caller ensures that the pointers passed to the parameter versioninfo is valid.
+; ..\component\Det\Implementation\Det.c	   974     \ID SBSW_DET_8    
+; ..\component\Det\Implementation\Det.c	   975       \DESCRIPTION Usage of debug features (generic aspect, not traceable to a specific ReviewHelper finding)
+; ..\component\Det\Implementation\Det.c	   976       \COUNTERMEASURE \S The DET should not be in production code. 
+; ..\component\Det\Implementation\Det.c	   977        If it is used the extended debug features should be switched off because they are only relevant if a debugger is attached. 
+; ..\component\Det\Implementation\Det.c	   978        All of the above listed array write accesses occur only if extended debug features are enabled. SMI-60
+; ..\component\Det\Implementation\Det.c	   979     \ID SBSW_DET_9    
+; ..\component\Det\Implementation\Det.c	   980       \DESCRIPTION Argument for completeness of analyzed code (generic aspect, not traceable to a specific ReviewHelper finding)
+; ..\component\Det\Implementation\Det.c	   981       \COUNTERMEASURE \N If all features of the DET are activated the whole code of the DET is active, there are no mutual exclusive code parts except for the AUTOSAR version which is fixed to 4.
+; ..\component\Det\Implementation\Det.c	   982        The additional debug code in case of C_COMP_ANSI_CANOE has not been considered because it is a simulation environment only and therefore this code will never run on an ECU.
+; ..\component\Det\Implementation\Det.c	   983  SBSW_JUSTIFICATION_END */
+; ..\component\Det\Implementation\Det.c	   984  
+; ..\component\Det\Implementation\Det.c	   985  /* START_COVERAGE_JUSTIFICATION
+; ..\component\Det\Implementation\Det.c	   986  \ID COV_DET_COMPATIBILITY
+; ..\component\Det\Implementation\Det.c	   987     \ACCEPT TX
+; ..\component\Det\Implementation\Det.c	   988     \ACCEPT XF
+; ..\component\Det\Implementation\Det.c	   989     \REASON [COV_MSR_COMPATIBILITY]
+; ..\component\Det\Implementation\Det.c	   990  \ID COV_DET_CANOE_VTT
+; ..\component\Det\Implementation\Det.c	   991    \ACCEPT TF xf tf
+; ..\component\Det\Implementation\Det.c	   992    \ACCEPT TX
+; ..\component\Det\Implementation\Det.c	   993    \ACCEPT XF
+; ..\component\Det\Implementation\Det.c	   994    \ACCEPT XX
+; ..\component\Det\Implementation\Det.c	   995    \REASON Code which is only relevant for the CANoeEmu and VTT simulation environments which are not used by the test suite.
+; ..\component\Det\Implementation\Det.c	   996  \ID COV_TEST_CODE
+; ..\component\Det\Implementation\Det.c	   997    \ACCEPT TX
+; ..\component\Det\Implementation\Det.c	   998    \REASON Code is only deactivated during regression test to prevent endless loop.
+; ..\component\Det\Implementation\Det.c	   999  END_COVERAGE_JUSTIFICATION */
+
+	; Module end

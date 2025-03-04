@@ -1,0 +1,99 @@
+2025-03-02 - 16:56:15
+Workflow 'Update workflow.' started.
+              Using DaVinci Configurator (beta) 5.22.45 SP3 (x86_64).
+ 16:56:15 - Action 'Validate workflow environment' started.
+ 16:56:15 - Action 'Validate dpa file' started.
+ 16:56:15 - Action 'Validate dpa file' successfully finished.
+ 16:56:15 - Action 'SLP conformance check' started.
+ 16:56:15 - Action 'SLP conformance check' successfully finished.
+ 16:56:15 - Action 'Validate workflow environment' successfully finished.
+ 16:56:16 - Action 'Create copy of the Project' started.
+              Copy project 'D:\Zonal\demo011\davinci' to 'C:\Users\Administrator\AppData\Local\Temp\DaVinci\Cfg-1307415\Workflow\1740905776105-0'...
+              Adjusting DPA file of copied project...
+ 16:56:16 - Action 'Create copy of the Project' successfully finished.
+ 16:56:16 - Action 'Close Project' started.
+ 16:56:16 - Action 'Close Project' successfully finished.
+ 16:56:21 - Action 'Prepare DaVinci Developer update data' started.
+ 16:56:21 - Action 'Prepare DaVinci Developer update data' successfully finished.
+ 16:56:21 - Action 'Prepare System Extract' started.
+ 16:56:21 - Action 'Preprocessing System Extract' started.
+ 16:56:21 - Action 'Preprocessing System Extract' successfully finished.
+ 16:56:21 - Action 'Create OEM Communication Extract' started.
+ 16:56:21 - Action 'Create OEM Communication Extract' successfully finished.
+ 16:56:21 - Action 'Prepare System Extract' successfully finished.
+ 16:56:21 - Action 'Updating the project' started.
+ 16:56:24 - Action 'Create ECU configuration' started.
+              [Warning] COM52013: No transmission mode declared for the ISignalIPdu.
+                          Extract Path: /PDU/TxMessage1_otestCANFDdbc
+                          Ecuc    Path: /Com/ComConfig/TxMessage1_otestCANFDdbc_628f4298_Tx/ComTxIPdu.
+              [Warning] COM52013: No transmission mode declared for the ISignalIPdu.
+                          Extract Path: /PDU/TxMessage22_otestCANFDdbc
+                          Ecuc    Path: /Com/ComConfig/TxMessage22_otestCANFDdbc_71c7c8a6_Tx/ComTxIPdu.
+              [Warning] COM52013: No transmission mode declared for the ISignalIPdu.
+                          Extract Path: /PDU/TxMessage3_otestCANFDdbc
+                          Ecuc    Path: /Com/ComConfig/TxMessage3_otestCANFDdbc_ca09f309_Tx/ComTxIPdu.
+ 16:56:30 - Action 'Create ECU configuration' successfully finished with warnings.
+                 [Warning] COM52013: No transmission mode declared for the ISignalIPdu.
+                     Extract Path: /PDU/TxMessage1_otestCANFDdbc
+                     Ecuc    Path: /Com/ComConfig/TxMessage1_otestCANFDdbc_628f4298_Tx/ComTxIPdu
+                 [Warning] COM52013: No transmission mode declared for the ISignalIPdu.
+                     Extract Path: /PDU/TxMessage22_otestCANFDdbc
+                     Ecuc    Path: /Com/ComConfig/TxMessage22_otestCANFDdbc_71c7c8a6_Tx/ComTxIPdu
+                 [Warning] COM52013: No transmission mode declared for the ISignalIPdu.
+                     Extract Path: /PDU/TxMessage3_otestCANFDdbc
+                     Ecuc    Path: /Com/ComConfig/TxMessage3_otestCANFDdbc_ca09f309_Tx/ComTxIPdu.
+ 16:56:31 - Action 'Update ECU configuration' started.
+              No Package path available for module configuration: /ActiveEcuC/Com. Default /ActiveEcuC is used instead.
+              No Package path available for module configuration: /ActiveEcuC/Mcu. Default /ActiveEcuC is used instead.
+              No Package path available for module configuration: /ActiveEcuC/PduR. Default /ActiveEcuC is used instead.
+              No Package path available for module configuration: /ActiveEcuC/CanSM. Default /ActiveEcuC is used instead.
+              No Package path available for module configuration: /ActiveEcuC/Can. Default /ActiveEcuC is used instead.
+              No Package path available for module configuration: /ActiveEcuC/CanIf. Default /ActiveEcuC is used instead.
+              No Package path available for module configuration: /ActiveEcuC/Det. Default /ActiveEcuC is used instead.
+              No Package path available for module configuration: /ActiveEcuC/ComM. Default /ActiveEcuC is used instead.
+              No Package path available for module configuration: /ActiveEcuC/SomeIpXf. Default /ActiveEcuC is used instead.
+ 16:56:40 - Action 'Update ECU configuration' successfully finished.
+ 16:56:40 - Action 'Updating the project' finished.
+ 16:56:40 - Action 'Generate update report' started.
+ 16:56:52 - Action 'Generate update report' successfully finished.
+ 16:56:52 - Action 'Execute Solving Actions' started.
+              Executing all Preferred-Solving-Actions...
+              All Preferred-Solving-Actions done.
+              Executing update specific Preferred-Solving-Actions...
+              Update specific Preferred-Solving-Actions done.
+ 16:56:58 - Action 'Execute Solving Actions' successfully finished.
+ 16:56:58 - Action 'Update DaVinci Developer Workspace' started.
+              02 Mar 2025 16:57:01 - Opening workspace 'C:\Users\Administrator\AppData\Local\Temp\DaVinci\Cfg-1307415\Workflow\1740905776105-0\Config\Developer\tc399demo.dcf'...
+              02 Mar 2025 16:57:03 - Loading file PlatformTypes_AR4.arxml (C:\Users\Administrator\AppData\Local\Temp\DaVinci\Cfg-1307415\Workflow\1740905776105-0\Config\AUTOSAR\PlatformTypes_AR4.arxml).
+              02 Mar 2025 16:57:03 - Loading file BswM_swc.arxml (C:\Users\Administrator\AppData\Local\Temp\DaVinci\Cfg-1307415\Workflow\1740905776105-0\Config\ServiceComponents\BswM_swc.arxml).
+              02 Mar 2025 16:57:03 - Loading file ComM_swc.arxml (C:\Users\Administrator\AppData\Local\Temp\DaVinci\Cfg-1307415\Workflow\1740905776105-0\Config\ServiceComponents\ComM_swc.arxml).
+              02 Mar 2025 16:57:03 - Loading file Det_swc.arxml (C:\Users\Administrator\AppData\Local\Temp\DaVinci\Cfg-1307415\Workflow\1740905776105-0\Config\ServiceComponents\Det_swc.arxml).
+              02 Mar 2025 16:57:03 - Loading file EcuM_swc.arxml (C:\Users\Administrator\AppData\Local\Temp\DaVinci\Cfg-1307415\Workflow\1740905776105-0\Config\ServiceComponents\EcuM_swc.arxml).
+              02 Mar 2025 16:57:03 - Loading file Os_swc.arxml (C:\Users\Administrator\AppData\Local\Temp\DaVinci\Cfg-1307415\Workflow\1740905776105-0\Config\ServiceComponents\Os_swc.arxml).
+              02 Mar 2025 16:57:03 - Loading file DataTypes.arxml (C:\Users\Administrator\AppData\Local\Temp\DaVinci\Cfg-1307415\Workflow\1740905776105-0\Config\Developer\DataTypes.arxml).
+              02 Mar 2025 16:57:03 - Loading file Packages.arxml (C:\Users\Administrator\AppData\Local\Temp\DaVinci\Cfg-1307415\Workflow\1740905776105-0\Config\Developer\Packages.arxml).
+              02 Mar 2025 16:57:03 - Loading file PortInterfaces.arxml (C:\Users\Administrator\AppData\Local\Temp\DaVinci\Cfg-1307415\Workflow\1740905776105-0\Config\Developer\PortInterfaces.arxml).
+              02 Mar 2025 16:57:03 - Loading file swc_test.arxml (C:\Users\Administrator\AppData\Local\Temp\DaVinci\Cfg-1307415\Workflow\1740905776105-0\Config\Developer\swc_test.arxml).
+              02 Mar 2025 16:57:03 - Loading file tc399demo.arxml (C:\Users\Administrator\AppData\Local\Temp\DaVinci\Cfg-1307415\Workflow\1740905776105-0\Config\Developer\tc399demo.arxml).
+              02 Mar 2025 16:57:04 - Opened workspace 'C:\Users\Administrator\AppData\Local\Temp\DaVinci\Cfg-1307415\Workflow\1740905776105-0\Config\Developer\tc399demo.dcf' successfully.
+              02 Mar 2025 16:57:05 - Start import.
+              02 Mar 2025 16:57:05 - Importing file (C:\Users\Administrator\AppData\Local\Temp\DaVinci\Cfg-1307415\Workflow\1740905776105-0\Config\System\SystemExtract.arxml).
+              02 Mar 2025 16:57:05 - Merging imported data.
+              02 Mar 2025 16:57:06 - Finished import.
+              02 Mar 2025 16:57:06 - Saving workspace 'C:\Users\Administrator\AppData\Local\Temp\DaVinci\Cfg-1307415\Workflow\1740905776105-0\Config\Developer\tc399demo.dcf'...
+              02 Mar 2025 16:57:06 - Saving file tc399demo.dvg (C:\Users\Administrator\AppData\Local\Temp\DaVinci\Cfg-1307415\Workflow\1740905776105-0\Config\Developer\tc399demo.dvg).
+              02 Mar 2025 16:57:06 - Saving file DataTypes.arxml (C:\Users\Administrator\AppData\Local\Temp\DaVinci\Cfg-1307415\Workflow\1740905776105-0\Config\Developer\DataTypes.arxml).
+              02 Mar 2025 16:57:06 - Saving file Packages.arxml (C:\Users\Administrator\AppData\Local\Temp\DaVinci\Cfg-1307415\Workflow\1740905776105-0\Config\Developer\Packages.arxml).
+              02 Mar 2025 16:57:06 - Saving file tc399demo.arxml (C:\Users\Administrator\AppData\Local\Temp\DaVinci\Cfg-1307415\Workflow\1740905776105-0\Config\Developer\tc399demo.arxml).
+              02 Mar 2025 16:57:06 - Saved workspace 'C:\Users\Administrator\AppData\Local\Temp\DaVinci\Cfg-1307415\Workflow\1740905776105-0\Config\Developer\tc399demo.dcf' successfully.
+              02 Mar 2025 16:57:06 - Closing workspace 'C:\Users\Administrator\AppData\Local\Temp\DaVinci\Cfg-1307415\Workflow\1740905776105-0\Config\Developer\tc399demo.dcf'...
+              02 Mar 2025 16:57:07 - Closed workspace 'C:\Users\Administrator\AppData\Local\Temp\DaVinci\Cfg-1307415\Workflow\1740905776105-0\Config\Developer\tc399demo.dcf' successfully.
+              OK.
+ 16:57:08 - Action 'Update DaVinci Developer Workspace' successfully finished.
+ 16:57:08 - Action 'Update RTE configuration' started.
+ 16:57:09 - Action 'Update RTE configuration' successfully finished.
+ 16:57:09 - Action 'Align differences after successful update' started.
+ 16:57:09 - Action 'Align differences after successful update' successfully finished.
+ 16:57:09 - Action 'Clean up update data' started.
+ 16:57:09 - Action 'Clean up update data' successfully finished.
+16:57:16 - Workflow 'Update workflow.' finished.

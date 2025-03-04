@@ -17,7 +17,7 @@
 **                                                                            **
 **  VERSION   : 23.0.0                                                        **
 **                                                                            **
-**  DATE, TIME: 2025-03-01, 16:46:04          !!!IGNORE-LINE!!!               **
+**  DATE, TIME: 2025-03-03, 12:48:58          !!!IGNORE-LINE!!!               **
 **                                                                            **
 **  GENERATOR : Build b191017-0938            !!!IGNORE-LINE!!!               **
 **                                                                            **
@@ -285,6 +285,15 @@
                   </BSW-MODULE-ENTRY-REF-CONDITIONAL>
                   <BSW-MODULE-ENTRY-REF-CONDITIONAL>
                     <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AURIX2G_McalLib/BswModuleEntrys/Mcal_ReleaseSpinlock</BSW-MODULE-ENTRY-REF>
+                  </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                </REQUIRED-ENTRYS>
+              </BSW-MODULE-DEPENDENCY>
+              <BSW-MODULE-DEPENDENCY>
+                <SHORT-NAME>DetDependency</SHORT-NAME>
+                <TARGET-MODULE-ID>15</TARGET-MODULE-ID>
+                <REQUIRED-ENTRYS>
+                  <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                    <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_Det/BswModuleEntrys/Det_ReportError</BSW-MODULE-ENTRY-REF>
                   </BSW-MODULE-ENTRY-REF-CONDITIONAL>
                 </REQUIRED-ENTRYS>
               </BSW-MODULE-DEPENDENCY>

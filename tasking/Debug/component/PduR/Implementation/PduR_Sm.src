@@ -1,0 +1,2614 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 21092262 SN 73118428"
+	.compiler_invocation	"ctc --dep-file=component\\PduR\\Implementation\\.PduR_Sm.o.d --fp-model=c,f,l,n,r,S,T,z -D__CPU__=tc39xb -D__CPU_TC39XB__ --core=tc1.6.2 --iso=99 -DBRS_COMP_TASKING -ID:\\Zonal\\demo011\\tasking -ID:\\Zonal\\testdemo\\taskingdemo\\demo001 -ID:\\Zonal\\demo011\\tasking\\component\\PduR -ID:\\Zonal\\demo011\\tasking\\component\\PduR\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\PduR\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\PduR\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\PduR\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\Can -ID:\\Zonal\\demo011\\tasking\\component\\SomeIpXf -ID:\\Zonal\\demo011\\tasking\\component\\SomeIpXf\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\SomeIpXf\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\SomeIpXf\\Generator -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\Can\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\Can\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\Can\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\Can\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\CanIf -ID:\\Zonal\\demo011\\tasking\\component\\CanIf\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\CanIf\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\CanIf\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\CanIf\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\CanSM -ID:\\Zonal\\demo011\\tasking\\component\\CanSM\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\CanSM\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\CanSM\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\CanSM\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\Com -ID:\\Zonal\\demo011\\tasking\\component\\Com\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\Com\\DaVinciCfg_VASE -ID:\\Zonal\\demo011\\tasking\\component\\Com\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\Com\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\Com\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\ComM -ID:\\Zonal\\demo011\\tasking\\component\\ComM\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\ComM\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\ComM\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\ComM\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\Det -ID:\\Zonal\\demo011\\tasking\\component\\Det\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\Det\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\Det\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\Det\\Implementation -ID:\\Zonal\\demo011\\tasking -ID:\\Zonal\\demo011\\tasking\\appl -ID:\\Zonal\\demo011\\tasking\\appl\\GenData -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\Components -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\ContractPhase -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\inc -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\src -ID:\\Zonal\\demo011\\tasking\\appl\\Include -ID:\\Zonal\\demo011\\tasking\\appl\\Source -ID:\\Zonal\\demo011\\tasking\\appl\\Source\\swc_test -ID:\\Zonal\\demo011\\tasking\\component -ID:\\Zonal\\demo011\\tasking\\component\\_Common -ID:\\Zonal\\demo011\\tasking\\component\\_Common\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\BswM -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\EcuM -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\Os -ID:\\Zonal\\demo011\\tasking\\component\\Os\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\Os\\BSWMD\\Os -ID:\\Zonal\\demo011\\tasking\\component\\Os\\BSWMD\\Os\\TC39xQ -ID:\\Zonal\\demo011\\tasking\\component\\Os\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\Os\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\Os\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug -ID:\\Zonal\\demo011\\tasking\\Debug\\appl -ID:\\Zonal\\demo011\\tasking\\Debug\\appl\\GenData -ID:\\Zonal\\demo011\\tasking\\Debug\\appl\\GenData\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\appl\\Source -ID:\\Zonal\\demo011\\tasking\\Debug\\component -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\BswM -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\BswM\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\EcuM -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\EcuM\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\Os -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\Os\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\VStdLib -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\VStdLib\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Dio -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Dio\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Dio\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\McalLib -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\McalLib\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\McalLib\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Mcu -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Mcu\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Mcu\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Port -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Port\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Port\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Platform -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Platform\\AS440 -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Sfr -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Sfr\\TC39xB -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Sfr\\TC39xB\\_Reg -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc\\inc\\AS440 -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal\\Port -ID:\\Zonal\\demo011\\tasking\\mcal\\Port\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\Port\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\Port\\ssc\\src -g2 --make-target=component\\PduR\\Implementation\\PduR_Sm.o -t2 --language=-gcc,-volatile,+strings,-kanji --default-near-size=0 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o component\\PduR\\Implementation\\PduR_Sm.src ..\\component\\PduR\\Implementation\\PduR_Sm.c"
+	.compiler_name		"ctc"
+	;source	'..\\component\\PduR\\Implementation\\PduR_Sm.c'
+
+	
+$TC162
+	
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L3:
+	.word	28223
+	.half	3
+	.word	.L4
+	.byte	4
+.L2:
+	.byte	1
+	.byte	'..\\component\\PduR\\Implementation\\PduR_Sm.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
+	.word	.L5
+	.byte	2
+	.byte	'int',0,4,5,3
+	.word	136
+	.byte	4
+	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,5
+	.word	143
+	.byte	0,2
+	.byte	'unsigned int',0,4,7,6
+	.word	185
+	.byte	7
+	.word	185
+	.byte	8
+	.byte	'__cmpswapw',0
+	.word	201
+	.byte	1,1,1,1,9
+	.byte	'p',0
+	.word	206
+	.byte	9
+	.byte	'value',0
+	.word	185
+	.byte	9
+	.byte	'compare',0
+	.word	185
+	.byte	0,10,1,7
+	.word	263
+	.byte	11
+	.byte	'__codeptr',0,1,1,1
+	.word	265
+	.byte	2
+	.byte	'unsigned char',0,1,8,11
+	.byte	'boolean',0,2,101,31
+	.word	288
+	.byte	11
+	.byte	'uint8',0,2,104,31
+	.word	288
+	.byte	2
+	.byte	'short int',0,2,5,11
+	.byte	'sint16',0,2,105,31
+	.word	335
+	.byte	2
+	.byte	'unsigned short int',0,2,7,11
+	.byte	'uint16',0,2,106,31
+	.word	363
+	.byte	2
+	.byte	'long int',0,4,5,11
+	.byte	'sint32',0,2,107,31
+	.word	400
+	.byte	2
+	.byte	'unsigned long int',0,4,7,11
+	.byte	'uint32',0,2,108,31
+	.word	427
+	.byte	11
+	.byte	'uint8_least',0,2,111,31
+	.word	288
+	.byte	11
+	.byte	'uint32_least',0,2,115,31
+	.word	427
+	.byte	2
+	.byte	'unsigned long long int',0,8,7,11
+	.byte	'uint64',0,2,121,30
+	.word	504
+	.byte	11
+	.byte	'StatusType',0,3,127,23
+	.word	288
+	.byte	11
+	.byte	'Std_ReturnType',0,3,132,1,15
+	.word	288
+	.byte	12,3,134,1,9,8,13
+	.byte	'vendorID',0
+	.word	363
+	.byte	2,2,35,0,13
+	.byte	'moduleID',0
+	.word	363
+	.byte	2,2,35,2,13
+	.byte	'sw_major_version',0
+	.word	288
+	.byte	1,2,35,4,13
+	.byte	'sw_minor_version',0
+	.word	288
+	.byte	1,2,35,5,13
+	.byte	'sw_patch_version',0
+	.word	288
+	.byte	1,2,35,6,0,11
+	.byte	'Std_VersionInfoType',0,3,141,1,3
+	.word	588
+	.byte	11
+	.byte	'PduIdType',0,4,63,15
+	.word	288
+	.byte	11
+	.byte	'PduLengthType',0,4,65,15
+	.word	288
+	.byte	7
+	.word	288
+	.byte	11
+	.byte	'SduDataPtrType',0,5,196,1,54
+	.word	778
+	.byte	12,5,197,1,9,8,13
+	.byte	'SduDataPtr',0
+	.word	783
+	.byte	4,2,35,0,13
+	.byte	'SduLength',0
+	.word	288
+	.byte	1,2,35,4,0,11
+	.byte	'PduInfoType',0,5,201,1,3
+	.word	807
+	.byte	7
+	.word	288
+	.byte	14,5,203,1,9,1,15
+	.byte	'BUFREQ_OK',0,0,15
+	.byte	'BUFREQ_E_NOT_OK',0,1,15
+	.byte	'BUFREQ_E_BUSY',0,2,15
+	.byte	'BUFREQ_E_OVFL',0,3,0,11
+	.byte	'BufReq_ReturnType',0,5,209,1,3
+	.word	879
+	.byte	14,5,219,1,9,1,15
+	.byte	'TP_DATACONF',0,0,15
+	.byte	'TP_DATARETRY',0,1,15
+	.byte	'TP_CONFPENDING',0,2,0,11
+	.byte	'TpDataStateType',0,5,226,1,3
+	.word	975
+	.byte	16
+	.byte	'sDet_PCConfigType',0,6,238,1,16,1,13
+	.byte	'Det_PCConfigNeverUsed',0
+	.word	288
+	.byte	1,2,35,0,0,11
+	.byte	'Det_PCConfigType',0,6,241,1,3
+	.word	1053
+	.byte	14,7,148,1,9,1,15
+	.byte	'Default_Init_Task',0,0,15
+	.byte	'Default_Init_Task_Trusted',0,1,15
+	.byte	'IdleTask_OsCore0',0,2,15
+	.byte	'bsw_task',0,3,15
+	.byte	'swc_init',0,4,15
+	.byte	'swc_task',0,5,15
+	.byte	'INVALID_TASK',0,6,15
+	.byte	'OS_TASKID_COUNT',0,6,0,11
+	.byte	'TaskType',0,7,158,1,3
+	.word	1135
+	.byte	11
+	.byte	'Os_Hal_AddressType',0,8,61,16
+	.word	427
+	.byte	17,64
+	.word	427
+	.byte	18,15,0,16
+	.byte	'Os_ExceptionContextType_Tag',0,9,71,8,160,1,13
+	.byte	'AddressRegisters',0
+	.word	1320
+	.byte	64,2,35,0,13
+	.byte	'DataRegisters',0
+	.word	1320
+	.byte	64,2,35,64,13
+	.byte	'Ra',0
+	.word	427
+	.byte	4,3,35,128,1,13
+	.byte	'Psw',0
+	.word	427
+	.byte	4,3,35,132,1,13
+	.byte	'ExceptionSource',0
+	.word	427
+	.byte	4,3,35,136,1,13
+	.byte	'Pcpn',0
+	.word	427
+	.byte	4,3,35,140,1,13
+	.byte	'Pie',0
+	.word	427
+	.byte	4,3,35,144,1,13
+	.byte	'MpuRegionForStackLow',0
+	.word	427
+	.byte	4,3,35,148,1,13
+	.byte	'MpuRegionForStackUpper',0
+	.word	427
+	.byte	4,3,35,152,1,13
+	.byte	'RawPCXI',0
+	.word	427
+	.byte	4,3,35,156,1,0,11
+	.byte	'Os_ExceptionContextType',0,8,66,44
+	.word	1329
+	.byte	11
+	.byte	'Os_InterruptSourceIdType',0,10,238,1,16
+	.word	427
+	.byte	11
+	.byte	'Os_ExceptionSourceIdType',0,10,246,1,16
+	.word	427
+	.byte	14,10,161,2,9,1,15
+	.byte	'RUNNING',0,0,15
+	.byte	'READY',0,1,15
+	.byte	'WAITING',0,2,15
+	.byte	'SUSPENDED',0,3,0,11
+	.byte	'TaskStateType',0,10,175,2,3
+	.word	1677
+	.byte	11
+	.byte	'EventMaskType',0,10,182,2,16
+	.word	504
+	.byte	11
+	.byte	'Os_TickType',0,10,200,2,19
+	.word	427
+	.byte	11
+	.byte	'TickType',0,10,206,2,21
+	.word	427
+	.byte	12,10,220,2,9,12,13
+	.byte	'maxallowedvalue',0
+	.word	427
+	.byte	4,2,35,0,13
+	.byte	'ticksperbase',0
+	.word	427
+	.byte	4,2,35,4,13
+	.byte	'mincycle',0
+	.word	427
+	.byte	4,2,35,8,0,11
+	.byte	'AlarmBaseType',0,10,228,2,2
+	.word	1809
+	.byte	14,10,128,3,9,1,15
+	.byte	'APPLICATION_TERMINATED',0,0,15
+	.byte	'APPLICATION_RESTARTING',0,1,15
+	.byte	'APPLICATION_ACCESSIBLE',0,2,0,11
+	.byte	'ApplicationStateType',0,10,133,3,3
+	.word	1904
+	.byte	14,10,177,3,9,1,15
+	.byte	'OSServiceId_GetApplicationID',0,0,15
+	.byte	'OSServiceId_GetISRID',0,1,15
+	.byte	'OSServiceId_CallTrustedFunction',0,2,15
+	.byte	'OSServiceId_CheckISRMemoryAccess',0,3,15
+	.byte	'OSServiceId_CheckTaskMemoryAccess',0,4,15
+	.byte	'OSServiceId_CheckObjectAccess',0,5,15
+	.byte	'OSServiceId_CheckObjectOwnership',0,6,15
+	.byte	'OSServiceId_StartScheduleTableRel',0,7,15
+	.byte	'OSServiceId_StartScheduleTableAbs',0,8,15
+	.byte	'OSServiceId_StopScheduleTable',0,9,15
+	.byte	'OSServiceId_NextScheduleTable',0,10,15
+	.byte	'OSServiceId_StartScheduleTableSynchron',0,11,15
+	.byte	'OSServiceId_SyncScheduleTable',0,12,15
+	.byte	'OSServiceId_SetScheduleTableAsync',0,13,15
+	.byte	'OSServiceId_GetScheduleTableStatus',0,14,15
+	.byte	'OSServiceId_IncrementCounter',0,15,15
+	.byte	'OSServiceId_GetCounterValue',0,16,15
+	.byte	'OSServiceId_GetElapsedValue',0,17,15
+	.byte	'OSServiceId_TerminateApplication',0,18,15
+	.byte	'OSServiceId_AllowAccess',0,19,15
+	.byte	'OSServiceId_GetApplicationState',0,20,15
+	.byte	'OSServiceId_GetNumberOfActivatedCores',0,21,15
+	.byte	'OSServiceId_GetCoreID',0,22,15
+	.byte	'OSServiceId_StartCore',0,23,15
+	.byte	'OSServiceId_StartNonAutosarCore',0,24,15
+	.byte	'OSServiceId_GetSpinlock',0,25,15
+	.byte	'OSServiceId_ReleaseSpinlock',0,26,15
+	.byte	'OSServiceId_TryToGetSpinlock',0,27,15
+	.byte	'OSServiceId_ShutdownAllCores',0,28,15
+	.byte	'OSServiceId_ControlIdle',0,29,15
+	.byte	'OSServiceId_IocSend',0,30,15
+	.byte	'OSServiceId_IocWrite',0,31,15
+	.byte	'OSServiceId_IocSendGroup',0,32,15
+	.byte	'OSServiceId_IocWriteGroup',0,33,15
+	.byte	'OSServiceId_IocReceive',0,34,15
+	.byte	'OSServiceId_IocRead',0,35,15
+	.byte	'OSServiceId_IocReceiveGroup',0,36,15
+	.byte	'OSServiceId_IocReadGroup',0,37,15
+	.byte	'OSServiceId_IocEmptyQueue',0,38,15
+	.byte	'OSServiceId_GetCurrentApplicationID',0,39,15
+	.byte	'OSServiceId_GetExceptionContext',0,160,1,15
+	.byte	'OSServiceId_SetExceptionContext',0,161,1,15
+	.byte	'OSServiceId_CallNonTrustedFunction',0,162,1,15
+	.byte	'OSServiceId_AppKill',0,163,1,15
+	.byte	'OSServiceId_AlarmActionSetEvent',0,164,1,15
+	.byte	'OSServiceId_AlarmActionActivateTask',0,165,1,15
+	.byte	'OSServiceId_AlarmActionIncrementCounter',0,166,1,15
+	.byte	'OSServiceId_AlarmActionCallback',0,167,1,15
+	.byte	'OSServiceId_TimerIsr',0,168,1,15
+	.byte	'OSServiceId_IsrWrapper',0,169,1,15
+	.byte	'OSServiceId_GetTaskStackUsage',0,170,1,15
+	.byte	'OSServiceId_GetISRStackUsage',0,171,1,15
+	.byte	'OSServiceId_GetKernelStackUsage',0,172,1,15
+	.byte	'OSServiceId_GetStartupHookStackUsage',0,173,1,15
+	.byte	'OSServiceId_GetErrorHookStackUsage',0,174,1,15
+	.byte	'OSServiceId_GetShutdownHookStackUsage',0,175,1,15
+	.byte	'OSServiceId_GetProtectionHookStackUsage',0,176,1,15
+	.byte	'OSServiceId_GetSemaphore',0,177,1,15
+	.byte	'OSServiceId_ReleaseSemaphore',0,178,1,15
+	.byte	'OSServiceId_ScheduleTableActivateTask',0,179,1,15
+	.byte	'OSServiceId_ScheduleTableSetEvent',0,180,1,15
+	.byte	'OSServiceId_DisableInterruptSource',0,181,1,15
+	.byte	'OSServiceId_EnableInterruptSource',0,182,1,15
+	.byte	'OSServiceId_ClearPendingInterrupt',0,183,1,15
+	.byte	'OSServiceId_GetUnhandledIrq',0,184,1,15
+	.byte	'OSServiceId_GetUnhandledExc',0,185,1,15
+	.byte	'OSServiceId_HookCallCallback',0,186,1,15
+	.byte	'OSServiceId_IsInterruptSourceEnabled',0,187,1,15
+	.byte	'OSServiceId_IsInterruptPending',0,188,1,15
+	.byte	'OSServiceId_CallFastTrustedFunction',0,189,1,15
+	.byte	'OSServiceId_BarrierSynchronize',0,190,1,15
+	.byte	'OSServiceId_InitialEnableInterruptSources',0,191,1,15
+	.byte	'OSServiceId_GetCoreStartState',0,192,1,15
+	.byte	'OSServiceId_StartOS',0,208,1,15
+	.byte	'OSServiceId_GetActiveApplicationMode',0,210,1,15
+	.byte	'OSServiceId_DisableAllInterrupts',0,211,1,15
+	.byte	'OSServiceId_EnableAllInterrupts',0,212,1,15
+	.byte	'OSServiceId_SuspendAllInterrupts',0,213,1,15
+	.byte	'OSServiceId_ResumeAllInterrupts',0,214,1,15
+	.byte	'OSServiceId_SuspendOSInterrupts',0,215,1,15
+	.byte	'OSServiceId_ResumeOSInterrupts',0,216,1,15
+	.byte	'OSServiceId_ActivateTask',0,217,1,15
+	.byte	'OSServiceId_TerminateTask',0,218,1,15
+	.byte	'OSServiceId_ChainTask',0,219,1,15
+	.byte	'OSServiceId_GetTaskID',0,220,1,15
+	.byte	'OSServiceId_GetTaskState',0,221,1,15
+	.byte	'OSServiceId_Schedule',0,222,1,15
+	.byte	'OSServiceId_SetEvent',0,223,1,15
+	.byte	'OSServiceId_ClearEvent',0,224,1,15
+	.byte	'OSServiceId_GetEvent',0,225,1,15
+	.byte	'OSServiceId_WaitEvent',0,226,1,15
+	.byte	'OSServiceId_GetAlarmBase',0,227,1,15
+	.byte	'OSServiceId_GetAlarm',0,228,1,15
+	.byte	'OSServiceId_SetRelAlarm',0,229,1,15
+	.byte	'OSServiceId_SetAbsAlarm',0,230,1,15
+	.byte	'OSServiceId_CancelAlarm',0,231,1,15
+	.byte	'OSServiceId_GetResource',0,232,1,15
+	.byte	'OSServiceId_ReleaseResource',0,233,1,15
+	.byte	'OSSERVICEID_COUNT',0,255,1,0,11
+	.byte	'OSServiceIdType',0,10,156,4,3
+	.word	2016
+	.byte	14,10,172,4,9,2,15
+	.byte	'OS_STATUS_OK',0,0,15
+	.byte	'OS_STATUS_CALLEVEL',0,2,15
+	.byte	'OS_STATUS_LIMIT',0,4,15
+	.byte	'OS_STATUS_RESOURCE',0,6,15
+	.byte	'OS_STATUS_SERVICEID',0,9,15
+	.byte	'OS_STATUS_ILLEGAL_ADDRESS',0,10,15
+	.byte	'OS_STATUS_MISSINGEND',0,11,15
+	.byte	'OS_STATUS_DISABLEDINT',0,12,15
+	.byte	'OS_STATUS_STACKFAULT',0,13,15
+	.byte	'OS_STATUS_PROTECTION_MEMORY',0,14,15
+	.byte	'OS_STATUS_PROTECTION_TIME',0,15,15
+	.byte	'OS_STATUS_PROTECTION_ARRIVAL',0,16,15
+	.byte	'OS_STATUS_PROTECTION_LOCKED',0,17,15
+	.byte	'OS_STATUS_PROTECTION_EXCEPTION',0,18,15
+	.byte	'OS_STATUS_INTERFERENCE_DEADLOCK',0,19,15
+	.byte	'OS_STATUS_NESTING_DEADLOCK',0,20,15
+	.byte	'OS_STATUS_SPINLOCK',0,21,15
+	.byte	'OS_STATUS_CORE',0,22,15
+	.byte	'OS_STATUS_OVERFLOW',0,245,1,15
+	.byte	'OS_STATUS_KILL_KERNEL_OBJ',0,246,1,15
+	.byte	'OS_STATUS_NO_RESTARTTASK',0,247,1,15
+	.byte	'OS_STATUS_CALL_NOT_ALLOWED',0,248,1,15
+	.byte	'OS_STATUS_FUNCTION_UNAVAILABLE',0,249,1,15
+	.byte	'OS_STATUS_PROTECTION_SYSCALL',0,250,1,15
+	.byte	'OS_STATUS_PROTECTION_IRQ',0,251,1,15
+	.byte	'OS_STATUS_API_ERROR',0,252,1,15
+	.byte	'OS_STATUS_ASSERTION',0,253,1,15
+	.byte	'OS_STATUS_OVERLOAD',0,254,1,15
+	.byte	'OS_STATUS_ACCESSRIGHTS_1',0,129,2,15
+	.byte	'OS_STATUS_CALLEVEL_SHARED_STACK',0,130,2,15
+	.byte	'OS_STATUS_ID_1',0,131,2,15
+	.byte	'OS_STATUS_UNLOCKED',0,133,2,15
+	.byte	'OS_STATUS_STATE_1',0,135,2,15
+	.byte	'OS_STATUS_VALUE_IS_ZERO_1',0,136,2,15
+	.byte	'OS_STATUS_CORE_CROSS_DATA',0,150,2,15
+	.byte	'OS_STATUS_PARAM_POINTER_1',0,151,2,15
+	.byte	'OS_STATUS_STACKUSAGE_DISABLED_BY_CONFIG',0,241,3,15
+	.byte	'OS_STATUS_NO_BARRIER_PARTICIPANT',0,242,3,15
+	.byte	'OS_STATUS_UNIMPLEMENTED_CLEARPENDING',0,243,3,15
+	.byte	'OS_STATUS_NO_NTFSTACK_POOL_EMPTY',0,244,3,15
+	.byte	'OS_STATUS_ACCESSRIGHTS_2',0,129,4,15
+	.byte	'OS_STATUS_CALLEVEL_CROSS_CORE_SYNC',0,130,4,15
+	.byte	'OS_STATUS_ID_2',0,131,4,15
+	.byte	'OS_STATUS_NOFUNC_1',0,133,4,15
+	.byte	'OS_STATUS_STATE_2',0,135,4,15
+	.byte	'OS_STATUS_VALUE_IS_ZERO_2',0,136,4,15
+	.byte	'OS_STATUS_PARAM_POINTER_2',0,151,4,15
+	.byte	'OS_STATUS_EVENT_DISABLED_BY_CONFIG',0,241,5,15
+	.byte	'OS_STATUS_UNIMPLEMENTED_EXCEPTIONCONTEXT',0,243,5,15
+	.byte	'OS_STATUS_NO_NTFSTACK_APPLIMIT_EXCEEDED',0,244,5,15
+	.byte	'OS_STATUS_NOTACCESSIBLE_1',0,129,6,15
+	.byte	'OS_STATUS_ID_TYPE_1',0,131,6,15
+	.byte	'OS_STATUS_NOFUNC_2',0,133,6,15
+	.byte	'OS_STATUS_STATE_STOPPED',0,135,6,15
+	.byte	'OS_STATUS_VALUE_IS_TOO_HIGH_1',0,136,6,15
+	.byte	'OS_STATUS_PARAM_POINTER_3',0,151,6,15
+	.byte	'OS_STATUS_NOTACCESSIBLE_2',0,129,8,15
+	.byte	'OS_STATUS_ID_DIFFERENT_COUNTER',0,131,8,15
+	.byte	'OS_STATUS_SPINLOCK_ORDER',0,133,8,15
+	.byte	'OS_STATUS_STATE_RUNNING',0,135,8,15
+	.byte	'OS_STATUS_VALUE_IS_TOO_HIGH_2',0,136,8,15
+	.byte	'OS_STATUS_NOEXTENDEDTASK_1',0,129,10,15
+	.byte	'OS_STATUS_ID_DIFFERENT_SYNC',0,131,10,15
+	.byte	'OS_STATUS_STOPPED_1',0,133,10,15
+	.byte	'OS_STATUS_STATE_NEXTED',0,135,10,15
+	.byte	'OS_STATUS_VALUE_IS_TOO_HIGH_3',0,136,10,15
+	.byte	'OS_STATUS_NOEXTENDEDTASK_2',0,129,12,15
+	.byte	'OS_STATUS_HOOK_NOT_AVAILABLE',0,131,12,15
+	.byte	'OS_STATUS_NOT_STOPPED_2',0,133,12,15
+	.byte	'OS_STATUS_STATE_WAITING',0,135,12,15
+	.byte	'OS_STATUS_VALUE_IS_OUT_OF_BOUNDS_1',0,136,12,15
+	.byte	'OS_STATUS_NOEXTENDEDTASK_CALLER',0,129,14,15
+	.byte	'OS_STATUS_NEXTED_1',0,133,14,15
+	.byte	'OS_STATUS_STATE_NO_RESTART',0,135,14,15
+	.byte	'OS_STATUS_VALUE_IS_OUT_OF_BOUNDS_2',0,136,14,15
+	.byte	'OS_STATUS_LOCKED',0,129,16,15
+	.byte	'OS_STATUS_KILLING_IS_DISABLED',0,133,16,15
+	.byte	'OS_STATUS_STATE_ALREADY_TERMINATED',0,135,16,15
+	.byte	'OS_STATUS_VALUE_IS_TOO_LOW_1',0,136,16,15
+	.byte	'OS_STATUS_PRIORITY',0,129,18,15
+	.byte	'OS_STATUS_ORDER',0,133,18,15
+	.byte	'OS_STATUS_STATE_RESTARTING_NO_MEMBER',0,135,18,15
+	.byte	'OS_STATUS_VALUE_IS_TOO_LOW_2',0,136,18,15
+	.byte	'OS_STATUS_NOT_THE_OWNER_1',0,129,20,15
+	.byte	'OS_STATUS_STATE_ALREADY_RESTARTING',0,135,20,15
+	.byte	'OS_STATUS_VALUE_IS_TOO_LOW_3',0,136,20,15
+	.byte	'OS_STATUS_VALUE_IS_NOT_BOOLEAN',0,136,22,0,11
+	.byte	'Os_StatusType',0,10,232,5,3
+	.word	5186
+	.byte	12,10,133,6,9,4,13
+	.byte	'Service',0
+	.word	2016
+	.byte	1,2,35,0,13
+	.byte	'Error',0
+	.word	288
+	.byte	1,2,35,1,13
+	.byte	'DetailedError',0
+	.word	5186
+	.byte	2,2,35,2,0,11
+	.byte	'Os_ErrorInformationType',0,10,143,6,3
+	.word	7716
+	.byte	14,10,175,6,9,1,15
+	.byte	'SCHEDULETABLE_STOPPED',0,0,15
+	.byte	'SCHEDULETABLE_NEXT',0,1,15
+	.byte	'SCHEDULETABLE_WAITING',0,2,15
+	.byte	'SCHEDULETABLE_RUNNING',0,3,15
+	.byte	'SCHEDULETABLE_RUNNING_AND_SYNCHRONOUS',0,4,0,11
+	.byte	'ScheduleTableStatusType',0,10,192,6,3
+	.word	7811
+	.byte	11
+	.byte	'Os_AccessCheckAddress',0,10,199,6,29
+	.word	427
+	.byte	14,10,211,6,9,1,15
+	.byte	'OS_MEM_ACCESS_TYPE_NON',0,0,15
+	.byte	'OS_MEM_ACCESS_TYPE_R',0,1,15
+	.byte	'OS_MEM_ACCESS_TYPE_READ',0,1,15
+	.byte	'OS_MEM_ACCESS_TYPE_W',0,2,15
+	.byte	'OS_MEM_ACCESS_TYPE_WRITE',0,2,15
+	.byte	'OS_MEM_ACCESS_TYPE_RW',0,3,15
+	.byte	'OS_MEM_ACCESS_TYPE_EXECUTE',0,4,15
+	.byte	'OS_MEM_ACCESS_TYPE_X',0,4,15
+	.byte	'OS_MEM_ACCESS_TYPE_RX',0,5,15
+	.byte	'OS_MEM_ACCESS_TYPE_WX',0,6,15
+	.byte	'OS_MEM_ACCESS_TYPE_RWX',0,7,15
+	.byte	'OS_MEM_ACCESS_TYPE_S',0,8,15
+	.byte	'OS_MEM_ACCESS_TYPE_STACK',0,8,15
+	.byte	'OS_MEM_ACCESS_TYPE_RS',0,9,15
+	.byte	'OS_MEM_ACCESS_TYPE_WS',0,10,15
+	.byte	'OS_MEM_ACCESS_TYPE_RWS',0,11,15
+	.byte	'OS_MEM_ACCESS_TYPE_XS',0,12,15
+	.byte	'OS_MEM_ACCESS_TYPE_RXS',0,13,15
+	.byte	'OS_MEM_ACCESS_TYPE_WXS',0,14,15
+	.byte	'OS_MEM_ACCESS_TYPE_RWXS',0,15,0,11
+	.byte	'Os_MemAccessType',0,10,233,6,3
+	.word	8015
+	.byte	11
+	.byte	'Can_IdType',0,11,52,30
+	.word	363
+	.byte	11
+	.byte	'Can_HwHandleType',0,11,55,29
+	.word	288
+	.byte	11
+	.byte	'Can_SduPtrType',0,11,58,45
+	.word	778
+	.byte	16
+	.byte	'Can_PduTypeTag',0,11,61,16,12,13
+	.byte	'id',0
+	.word	363
+	.byte	2,2,35,0,13
+	.byte	'length',0
+	.word	288
+	.byte	1,2,35,2,13
+	.byte	'sdu',0
+	.word	8588
+	.byte	4,2,35,4,13
+	.byte	'swPduHandle',0
+	.word	288
+	.byte	1,2,35,8,0,11
+	.byte	'Can_PduType',0,11,67,3
+	.word	8611
+	.byte	7
+	.word	288
+	.byte	14,11,77,9,1,15
+	.byte	'CAN_CS_UNINIT',0,0,15
+	.byte	'CAN_CS_STARTED',0,1,15
+	.byte	'CAN_CS_STOPPED',0,2,15
+	.byte	'CAN_CS_SLEEP',0,3,0,11
+	.byte	'Can_ControllerStateType',0,11,82,3
+	.word	8719
+	.byte	14,11,84,9,1,15
+	.byte	'CAN_ERRORSTATE_ACTIVE',0,0,15
+	.byte	'CAN_ERRORSTATE_PASSIVE',0,1,15
+	.byte	'CAN_ERRORSTATE_BUSOFF',0,2,0,11
+	.byte	'Can_ErrorStateType',0,11,88,3
+	.word	8822
+	.byte	11
+	.byte	'tCanLLCanIntOld',0,12,161,3,37
+	.word	427
+	.byte	11
+	.byte	'Can_OsIsrType',0,12,167,3,15
+	.word	288
+	.byte	11
+	.byte	'Can_ExternalTickType',0,12,180,3,16
+	.word	427
+	.byte	17,32
+	.word	427
+	.byte	18,7,0,11
+	.byte	'Can_LoopTimeout_dim_type',0,12,183,3,44
+	.word	9006
+	.byte	11
+	.byte	'Can_ControllerConfigIterType',0,12,192,13,21
+	.word	288
+	.byte	11
+	.byte	'Can_PduOfActiveSendObjectType',0,12,148,14,19
+	.word	288
+	.byte	11
+	.byte	'Can_StateOfActiveSendObjectType',0,12,151,14,16
+	.word	363
+	.byte	11
+	.byte	'Can_BTPType',0,12,154,14,16
+	.word	427
+	.byte	11
+	.byte	'Can_RXBCOfBufferConfigType',0,12,160,14,15
+	.word	288
+	.byte	11
+	.byte	'Can_RXF0COfBufferConfigType',0,12,163,14,16
+	.word	427
+	.byte	11
+	.byte	'Can_RXF1COfBufferConfigType',0,12,166,14,15
+	.word	288
+	.byte	11
+	.byte	'Can_TXBCOfBufferConfigType',0,12,169,14,16
+	.word	427
+	.byte	11
+	.byte	'Can_TXEFCOfBufferConfigType',0,12,172,14,15
+	.word	288
+	.byte	11
+	.byte	'Can_CanIfChannelIdType',0,12,190,14,15
+	.word	288
+	.byte	11
+	.byte	'Can_CanSubSystemBaseAdrType',0,12,193,14,16
+	.word	427
+	.byte	11
+	.byte	'Can_BasisAdrOfControllerConfigType',0,12,196,14,16
+	.word	427
+	.byte	11
+	.byte	'Can_CanControllerDefaultBaudrateIdxOfControllerConfigType',0,12,199,14,15
+	.word	288
+	.byte	11
+	.byte	'Can_CanControllerDefaultBaudrateOfControllerConfigType',0,12,202,14,16
+	.word	363
+	.byte	11
+	.byte	'Can_IsTTCanOfControllerConfigType',0,12,205,14,17
+	.word	288
+	.byte	11
+	.byte	'Can_MailboxRxBasicEndIdxOfControllerConfigType',0,12,208,14,15
+	.word	288
+	.byte	11
+	.byte	'Can_MailboxRxBasicLengthOfControllerConfigType',0,12,211,14,15
+	.word	288
+	.byte	11
+	.byte	'Can_MailboxRxBasicStartIdxOfControllerConfigType',0,12,214,14,15
+	.word	288
+	.byte	11
+	.byte	'Can_MailboxTxBasicEndIdxOfControllerConfigType',0,12,220,14,15
+	.word	288
+	.byte	11
+	.byte	'Can_MailboxTxBasicLengthOfControllerConfigType',0,12,223,14,15
+	.word	288
+	.byte	11
+	.byte	'Can_MailboxTxBasicStartIdxOfControllerConfigType',0,12,226,14,15
+	.word	288
+	.byte	11
+	.byte	'Can_RxBasicHwStartOfControllerConfigType',0,12,232,14,15
+	.word	288
+	.byte	11
+	.byte	'Can_RxBasicHwStopOfControllerConfigType',0,12,235,14,15
+	.word	288
+	.byte	11
+	.byte	'Can_RxFullHwStartOfControllerConfigType',0,12,238,14,15
+	.word	288
+	.byte	11
+	.byte	'Can_RxFullHwStopOfControllerConfigType',0,12,241,14,15
+	.word	288
+	.byte	11
+	.byte	'Can_RxSelectionOfControllerConfigType',0,12,244,14,15
+	.word	288
+	.byte	11
+	.byte	'Can_TxBasicHwStartOfControllerConfigType',0,12,247,14,15
+	.word	288
+	.byte	11
+	.byte	'Can_TxBasicHwStopOfControllerConfigType',0,12,250,14,15
+	.word	288
+	.byte	11
+	.byte	'Can_TxFullHwStartOfControllerConfigType',0,12,253,14,15
+	.word	288
+	.byte	11
+	.byte	'Can_TxFullHwStopOfControllerConfigType',0,12,128,15,15
+	.word	288
+	.byte	11
+	.byte	'Can_UnusedHwStartOfControllerConfigType',0,12,131,15,15
+	.word	288
+	.byte	11
+	.byte	'Can_UnusedHwStopOfControllerConfigType',0,12,134,15,15
+	.word	288
+	.byte	11
+	.byte	'Can_BusOffNotificationOfControllerDataType',0,12,137,15,15
+	.word	288
+	.byte	11
+	.byte	'Can_BusOffTransitionRequestOfControllerDataType',0,12,140,15,15
+	.word	288
+	.byte	11
+	.byte	'Can_CanInterruptCounterOfControllerDataType',0,12,143,15,15
+	.word	288
+	.byte	11
+	.byte	'Can_IntEnableOfControllerDataType',0,12,146,15,16
+	.word	427
+	.byte	11
+	.byte	'Can_IsBusOffOfControllerDataType',0,12,149,15,17
+	.word	288
+	.byte	11
+	.byte	'Can_LastInitObjectOfControllerDataType',0,12,152,15,15
+	.word	288
+	.byte	11
+	.byte	'Can_LastStateOfControllerDataType',0,12,155,15,15
+	.word	288
+	.byte	11
+	.byte	'Can_LogStatusOfControllerDataType',0,12,158,15,15
+	.word	288
+	.byte	11
+	.byte	'Can_ModeTransitionRequestOfControllerDataType',0,12,161,15,15
+	.word	288
+	.byte	11
+	.byte	'Can_NonFdObjectsPendingFlagOfControllerDataType',0,12,164,15,16
+	.word	427
+	.byte	11
+	.byte	'Can_PrevModeOfControllerDataType',0,12,167,15,15
+	.word	288
+	.byte	11
+	.byte	'Can_RamCheckTransitionRequestOfControllerDataType',0,12,170,15,15
+	.word	288
+	.byte	11
+	.byte	'Can_TXBCROfControllerDataType',0,12,173,15,16
+	.word	427
+	.byte	11
+	.byte	'Can_TXBRPOfControllerDataType',0,12,176,15,16
+	.word	427
+	.byte	11
+	.byte	'Can_FBTPType',0,12,179,15,16
+	.word	427
+	.byte	11
+	.byte	'Can_GFCType',0,12,182,15,15
+	.word	288
+	.byte	11
+	.byte	'Can_INT_PriorityType',0,12,185,15,15
+	.word	288
+	.byte	11
+	.byte	'Can_INT_RoutingGroupType',0,12,188,15,15
+	.word	288
+	.byte	11
+	.byte	'Can_InitObjectBaudrateType',0,12,191,15,16
+	.word	363
+	.byte	11
+	.byte	'Can_InitObjectFdBrsConfigType',0,12,194,15,15
+	.word	288
+	.byte	11
+	.byte	'Can_InitObjectStartIndexType',0,12,197,15,15
+	.word	288
+	.byte	11
+	.byte	'Can_ActiveSendObjectOfMailboxType',0,12,200,15,15
+	.word	288
+	.byte	11
+	.byte	'Can_ControllerConfigIdxOfMailboxType',0,12,203,15,15
+	.word	288
+	.byte	11
+	.byte	'Can_FdPaddingOfMailboxType',0,12,206,15,15
+	.word	288
+	.byte	11
+	.byte	'Can_HwHandleOfMailboxType',0,12,209,15,15
+	.word	288
+	.byte	11
+	.byte	'Can_IDValueOfMailboxType',0,12,212,15,15
+	.word	288
+	.byte	11
+	.byte	'Can_MailboxSizeOfMailboxType',0,12,215,15,15
+	.word	288
+	.byte	11
+	.byte	'Can_MailboxTypeOfMailboxType',0,12,218,15,15
+	.word	288
+	.byte	11
+	.byte	'Can_MaxDataLenOfMailboxType',0,12,221,15,15
+	.word	288
+	.byte	11
+	.byte	'Can_MemorySectionsIndexOfMailboxType',0,12,224,15,15
+	.word	288
+	.byte	11
+	.byte	'Can_MemorySectionStartOfMemorySectionInfoType',0,12,227,15,15
+	.word	288
+	.byte	11
+	.byte	'Can_HwHandleOfMemorySectionObjectsType',0,12,230,15,15
+	.word	288
+	.byte	11
+	.byte	'Can_MailboxElementOfMemorySectionObjectsType',0,12,233,15,15
+	.word	288
+	.byte	11
+	.byte	'Can_MailboxHandleOfMemorySectionObjectsType',0,12,236,15,15
+	.word	288
+	.byte	11
+	.byte	'Can_FLSSAOfSIDFCType',0,12,242,15,15
+	.word	288
+	.byte	11
+	.byte	'Can_LSSOfSIDFCType',0,12,245,15,15
+	.word	288
+	.byte	11
+	.byte	'Can_SIDFEEndIdxOfSIDFCType',0,12,248,15,15
+	.word	288
+	.byte	11
+	.byte	'Can_SIDFEStartIdxOfSIDFCType',0,12,251,15,15
+	.word	288
+	.byte	11
+	.byte	'Can_SIDFEType',0,12,129,16,16
+	.word	427
+	.byte	11
+	.byte	'Can_SRN_AddressType',0,12,132,16,16
+	.word	427
+	.byte	11
+	.byte	'Can_RXBAOfShmAdrType',0,12,135,16,16
+	.word	427
+	.byte	11
+	.byte	'Can_RXF0AOfShmAdrType',0,12,138,16,16
+	.word	427
+	.byte	11
+	.byte	'Can_RXF1AOfShmAdrType',0,12,141,16,16
+	.word	427
+	.byte	11
+	.byte	'Can_SIDFAOfShmAdrType',0,12,144,16,16
+	.word	427
+	.byte	11
+	.byte	'Can_StartAdrOfShmAdrType',0,12,147,16,16
+	.word	427
+	.byte	11
+	.byte	'Can_StopAdrOfShmAdrType',0,12,150,16,16
+	.word	427
+	.byte	11
+	.byte	'Can_TXBAOfShmAdrType',0,12,153,16,16
+	.word	427
+	.byte	11
+	.byte	'Can_TXEFAOfShmAdrType',0,12,156,16,16
+	.word	427
+	.byte	11
+	.byte	'Can_XIDFAOfShmAdrType',0,12,159,16,16
+	.word	427
+	.byte	11
+	.byte	'Can_F0DSOfShmElementSizeType',0,12,162,16,15
+	.word	288
+	.byte	11
+	.byte	'Can_F1DSOfShmElementSizeType',0,12,165,16,15
+	.word	288
+	.byte	11
+	.byte	'Can_RBDSOfShmElementSizeType',0,12,168,16,15
+	.word	288
+	.byte	11
+	.byte	'Can_TBDSOfShmElementSizeType',0,12,171,16,15
+	.word	288
+	.byte	11
+	.byte	'Can_TEFBDSOfShmElementSizeType',0,12,174,16,15
+	.word	288
+	.byte	11
+	.byte	'Can_TDCRType',0,12,130,17,15
+	.word	288
+	.byte	11
+	.byte	'Can_XIDAMType',0,12,133,17,16
+	.word	427
+	.byte	11
+	.byte	'Can_FLESAOfXIDFCType',0,12,136,17,15
+	.word	288
+	.byte	11
+	.byte	'Can_LSEOfXIDFCType',0,12,139,17,15
+	.word	288
+	.byte	11
+	.byte	'Can_EIDFE_0OfXIDFEType',0,12,142,17,15
+	.word	288
+	.byte	11
+	.byte	'Can_EIDFE_1OfXIDFEType',0,12,145,17,15
+	.word	288
+	.byte	16
+	.byte	'sCan_ActiveSendObjectType',0,12,161,17,16,4,13
+	.byte	'StateOfActiveSendObject',0
+	.word	363
+	.byte	2,2,35,0,13
+	.byte	'PduOfActiveSendObject',0
+	.word	288
+	.byte	1,2,35,2,0,11
+	.byte	'Can_ActiveSendObjectType',0,12,165,17,3
+	.word	12814
+	.byte	16
+	.byte	'sCan_BufferConfigType',0,12,168,17,16,12,13
+	.byte	'RXF0COfBufferConfig',0
+	.word	427
+	.byte	4,2,35,0,13
+	.byte	'TXBCOfBufferConfig',0
+	.word	427
+	.byte	4,2,35,4,13
+	.byte	'RXBCOfBufferConfig',0
+	.word	288
+	.byte	1,2,35,8,13
+	.byte	'RXF1COfBufferConfig',0
+	.word	288
+	.byte	1,2,35,9,13
+	.byte	'TXEFCOfBufferConfig',0
+	.word	288
+	.byte	1,2,35,10,0,11
+	.byte	'Can_BufferConfigType',0,12,175,17,3
+	.word	12945
+	.byte	16
+	.byte	'sCan_ControllerConfigType',0,12,178,17,16,28,13
+	.byte	'BasisAdrOfControllerConfig',0
+	.word	427
+	.byte	4,2,35,0,13
+	.byte	'CanControllerDefaultBaudrateOfControllerConfig',0
+	.word	363
+	.byte	2,2,35,4,13
+	.byte	'IsTTCanOfControllerConfig',0
+	.word	288
+	.byte	1,2,35,6,13
+	.byte	'CanControllerDefaultBaudrateIdxOfControllerConfig',0
+	.word	288
+	.byte	1,2,35,7,13
+	.byte	'MailboxRxBasicEndIdxOfControllerConfig',0
+	.word	288
+	.byte	1,2,35,8,13
+	.byte	'MailboxRxBasicLengthOfControllerConfig',0
+	.word	288
+	.byte	1,2,35,9,13
+	.byte	'MailboxRxBasicStartIdxOfControllerConfig',0
+	.word	288
+	.byte	1,2,35,10,13
+	.byte	'MailboxTxBasicEndIdxOfControllerConfig',0
+	.word	288
+	.byte	1,2,35,11,13
+	.byte	'MailboxTxBasicLengthOfControllerConfig',0
+	.word	288
+	.byte	1,2,35,12,13
+	.byte	'MailboxTxBasicStartIdxOfControllerConfig',0
+	.word	288
+	.byte	1,2,35,13,13
+	.byte	'RxBasicHwStartOfControllerConfig',0
+	.word	288
+	.byte	1,2,35,14,13
+	.byte	'RxBasicHwStopOfControllerConfig',0
+	.word	288
+	.byte	1,2,35,15,13
+	.byte	'RxFullHwStartOfControllerConfig',0
+	.word	288
+	.byte	1,2,35,16,13
+	.byte	'RxFullHwStopOfControllerConfig',0
+	.word	288
+	.byte	1,2,35,17,13
+	.byte	'RxSelectionOfControllerConfig',0
+	.word	288
+	.byte	1,2,35,18,13
+	.byte	'TxBasicHwStartOfControllerConfig',0
+	.word	288
+	.byte	1,2,35,19,13
+	.byte	'TxBasicHwStopOfControllerConfig',0
+	.word	288
+	.byte	1,2,35,20,13
+	.byte	'TxFullHwStartOfControllerConfig',0
+	.word	288
+	.byte	1,2,35,21,13
+	.byte	'TxFullHwStopOfControllerConfig',0
+	.word	288
+	.byte	1,2,35,22,13
+	.byte	'UnusedHwStartOfControllerConfig',0
+	.word	288
+	.byte	1,2,35,23,13
+	.byte	'UnusedHwStopOfControllerConfig',0
+	.word	288
+	.byte	1,2,35,24,0,11
+	.byte	'Can_ControllerConfigType',0,12,201,17,3
+	.word	13147
+	.byte	16
+	.byte	'sCan_ControllerDataType',0,12,204,17,16,64,13
+	.byte	'IntEnableOfControllerData',0
+	.word	427
+	.byte	4,2,35,0,13
+	.byte	'NonFdObjectsPendingFlagOfControllerData',0
+	.word	427
+	.byte	4,2,35,4,13
+	.byte	'TXBCROfControllerData',0
+	.word	427
+	.byte	4,2,35,8,13
+	.byte	'TXBRPOfControllerData',0
+	.word	427
+	.byte	4,2,35,12,13
+	.byte	'BusOffNotificationOfControllerData',0
+	.word	288
+	.byte	1,2,35,16,13
+	.byte	'BusOffTransitionRequestOfControllerData',0
+	.word	288
+	.byte	1,2,35,17,13
+	.byte	'CanInterruptCounterOfControllerData',0
+	.word	288
+	.byte	1,2,35,18,13
+	.byte	'IsBusOffOfControllerData',0
+	.word	288
+	.byte	1,2,35,19,13
+	.byte	'LastInitObjectOfControllerData',0
+	.word	288
+	.byte	1,2,35,20,13
+	.byte	'LastStateOfControllerData',0
+	.word	288
+	.byte	1,2,35,21,13
+	.byte	'LogStatusOfControllerData',0
+	.word	288
+	.byte	1,2,35,22,13
+	.byte	'ModeTransitionRequestOfControllerData',0
+	.word	288
+	.byte	1,2,35,23,13
+	.byte	'PrevModeOfControllerData',0
+	.word	288
+	.byte	1,2,35,24,13
+	.byte	'RamCheckTransitionRequestOfControllerData',0
+	.word	288
+	.byte	1,2,35,25,13
+	.byte	'CanInterruptOldStatusOfControllerData',0
+	.word	427
+	.byte	4,2,35,26,13
+	.byte	'LoopTimeoutOfControllerData',0
+	.word	9015
+	.byte	32,2,35,30,0,11
+	.byte	'Can_ControllerDataType',0,12,222,17,3
+	.word	14140
+	.byte	17,32
+	.word	427
+	.byte	18,7,0,16
+	.byte	'sCan_MailboxType',0,12,225,17,16,12,13
+	.byte	'ActiveSendObjectOfMailbox',0
+	.word	288
+	.byte	1,2,35,0,13
+	.byte	'ControllerConfigIdxOfMailbox',0
+	.word	288
+	.byte	1,2,35,1,13
+	.byte	'FdPaddingOfMailbox',0
+	.word	288
+	.byte	1,2,35,2,13
+	.byte	'HwHandleOfMailbox',0
+	.word	288
+	.byte	1,2,35,3,13
+	.byte	'IDValueOfMailbox',0
+	.word	288
+	.byte	1,2,35,4,13
+	.byte	'MailboxSizeOfMailbox',0
+	.word	288
+	.byte	1,2,35,5,13
+	.byte	'MailboxTypeOfMailbox',0
+	.word	288
+	.byte	1,2,35,6,13
+	.byte	'MaxDataLenOfMailbox',0
+	.word	288
+	.byte	1,2,35,7,13
+	.byte	'MemorySectionsIndexOfMailbox',0
+	.word	288
+	.byte	1,2,35,8,0,11
+	.byte	'Can_MailboxType',0,12,236,17,3
+	.word	14856
+	.byte	16
+	.byte	'sCan_MemorySectionInfoType',0,12,239,17,16,1,13
+	.byte	'MemorySectionStartOfMemorySectionInfo',0
+	.word	288
+	.byte	1,2,35,0,0,11
+	.byte	'Can_MemorySectionInfoType',0,12,242,17,3
+	.word	15186
+	.byte	16
+	.byte	'sCan_MemorySectionObjectsType',0,12,245,17,16,4,13
+	.byte	'HwHandleOfMemorySectionObjects',0
+	.word	288
+	.byte	1,2,35,0,13
+	.byte	'MailboxElementOfMemorySectionObjects',0
+	.word	288
+	.byte	1,2,35,1,13
+	.byte	'MailboxHandleOfMemorySectionObjects',0
+	.word	288
+	.byte	1,2,35,2,0,11
+	.byte	'Can_MemorySectionObjectsType',0,12,250,17,3
+	.word	15302
+	.byte	16
+	.byte	'sCan_SIDFCType',0,12,253,17,16,4,13
+	.byte	'FLSSAOfSIDFC',0
+	.word	288
+	.byte	1,2,35,0,13
+	.byte	'LSSOfSIDFC',0
+	.word	288
+	.byte	1,2,35,1,13
+	.byte	'SIDFEEndIdxOfSIDFC',0
+	.word	288
+	.byte	1,2,35,2,13
+	.byte	'SIDFEStartIdxOfSIDFC',0
+	.word	288
+	.byte	1,2,35,3,0,11
+	.byte	'Can_SIDFCType',0,12,131,18,3
+	.word	15508
+	.byte	16
+	.byte	'sCan_ShmAdrType',0,12,134,18,16,36,13
+	.byte	'RXBAOfShmAdr',0
+	.word	427
+	.byte	4,2,35,0,13
+	.byte	'RXF0AOfShmAdr',0
+	.word	427
+	.byte	4,2,35,4,13
+	.byte	'RXF1AOfShmAdr',0
+	.word	427
+	.byte	4,2,35,8,13
+	.byte	'SIDFAOfShmAdr',0
+	.word	427
+	.byte	4,2,35,12,13
+	.byte	'StartAdrOfShmAdr',0
+	.word	427
+	.byte	4,2,35,16,13
+	.byte	'StopAdrOfShmAdr',0
+	.word	427
+	.byte	4,2,35,20,13
+	.byte	'TXBAOfShmAdr',0
+	.word	427
+	.byte	4,2,35,24,13
+	.byte	'TXEFAOfShmAdr',0
+	.word	427
+	.byte	4,2,35,28,13
+	.byte	'XIDFAOfShmAdr',0
+	.word	427
+	.byte	4,2,35,32,0,11
+	.byte	'Can_ShmAdrType',0,12,145,18,3
+	.word	15653
+	.byte	16
+	.byte	'sCan_ShmElementSizeType',0,12,148,18,16,6,13
+	.byte	'F0DSOfShmElementSize',0
+	.word	288
+	.byte	1,2,35,0,13
+	.byte	'F1DSOfShmElementSize',0
+	.word	288
+	.byte	1,2,35,1,13
+	.byte	'RBDSOfShmElementSize',0
+	.word	288
+	.byte	1,2,35,2,13
+	.byte	'TBDSOfShmElementSize',0
+	.word	288
+	.byte	1,2,35,3,13
+	.byte	'TEFBDSOfShmElementSize',0
+	.word	288
+	.byte	1,2,35,4,0,11
+	.byte	'Can_ShmElementSizeType',0,12,155,18,3
+	.word	15910
+	.byte	16
+	.byte	'sCan_XIDFCType',0,12,158,18,16,2,13
+	.byte	'FLESAOfXIDFC',0
+	.word	288
+	.byte	1,2,35,0,13
+	.byte	'LSEOfXIDFC',0
+	.word	288
+	.byte	1,2,35,1,0,11
+	.byte	'Can_XIDFCType',0,12,162,18,3
+	.word	16125
+	.byte	16
+	.byte	'sCan_XIDFEType',0,12,165,18,16,2,13
+	.byte	'EIDFE_0OfXIDFE',0
+	.word	288
+	.byte	1,2,35,0,13
+	.byte	'EIDFE_1OfXIDFE',0
+	.word	288
+	.byte	1,2,35,1,0,11
+	.byte	'Can_XIDFEType',0,12,169,18,3
+	.word	16212
+	.byte	16
+	.byte	'sCan_PCConfigType',0,12,143,19,16,1,13
+	.byte	'Can_PCConfigNeverUsed',0
+	.word	288
+	.byte	1,2,35,0,0,11
+	.byte	'Can_PCConfigType',0,12,146,19,3
+	.word	16305
+	.byte	11
+	.byte	'Can_ConfigType',0,12,148,19,26
+	.word	16305
+	.byte	6
+	.word	427
+	.byte	6
+	.word	427
+	.byte	6
+	.word	1320
+	.byte	16
+	.byte	'tElmTypeTag',0,13,145,9,25,72,13
+	.byte	'E0',0
+	.word	16411
+	.byte	4,2,35,0,13
+	.byte	'E1',0
+	.word	16416
+	.byte	4,2,35,4,13
+	.byte	'data',0
+	.word	16421
+	.byte	64,2,35,8,0,6
+	.word	16426
+	.byte	11
+	.byte	'tElmType',0,13,162,9,3
+	.word	16483
+	.byte	6
+	.word	427
+	.byte	6
+	.word	288
+	.byte	6
+	.word	288
+	.byte	6
+	.word	288
+	.byte	12,13,224,9,5,4,19
+	.byte	'ID',0,4
+	.word	16506
+	.byte	29,3,2,35,0,19
+	.byte	'RTR',0,1
+	.word	16511
+	.byte	1,2,2,35,3,19
+	.byte	'XTD',0,1
+	.word	16516
+	.byte	1,1,2,35,3,19
+	.byte	'ESI',0,1
+	.word	16521
+	.byte	1,0,2,35,3,0,6
+	.word	427
+	.byte	20,13,222,9,3,4,13
+	.byte	'b0',0
+	.word	16526
+	.byte	4,2,35,0,13
+	.byte	'B0',0
+	.word	16592
+	.byte	4,2,35,0,0,6
+	.word	363
+	.byte	6
+	.word	288
+	.byte	6
+	.word	288
+	.byte	6
+	.word	288
+	.byte	6
+	.word	288
+	.byte	6
+	.word	288
+	.byte	6
+	.word	288
+	.byte	12,13,235,9,5,4,19
+	.byte	'RXTS',0,2
+	.word	16628
+	.byte	16,0,2,35,0,19
+	.byte	'DLC',0,1
+	.word	16633
+	.byte	4,4,2,35,2,19
+	.byte	'BRS',0,1
+	.word	16638
+	.byte	1,3,2,35,2,19
+	.byte	'FDF',0,1
+	.word	16643
+	.byte	1,2,2,35,2,19
+	.byte	'r0',0,1
+	.word	16648
+	.byte	2,0,2,35,2,19
+	.byte	'FIDX',0,1
+	.word	16653
+	.byte	7,1,2,35,3,19
+	.byte	'ANMF',0,1
+	.word	16658
+	.byte	1,0,2,35,3,0,6
+	.word	363
+	.byte	6
+	.word	288
+	.byte	6
+	.word	288
+	.byte	6
+	.word	288
+	.byte	6
+	.word	288
+	.byte	6
+	.word	288
+	.byte	6
+	.word	288
+	.byte	12,13,245,9,5,4,19
+	.byte	'r1',0,2
+	.word	16777
+	.byte	16,0,2,35,0,19
+	.byte	'DLC',0,1
+	.word	16782
+	.byte	4,4,2,35,2,19
+	.byte	'BRS',0,1
+	.word	16787
+	.byte	1,3,2,35,2,19
+	.byte	'FDF',0,1
+	.word	16792
+	.byte	1,2,2,35,2,19
+	.byte	'r0',0,1
+	.word	16797
+	.byte	1,1,2,35,2,19
+	.byte	'EFC',0,1
+	.word	16802
+	.byte	1,0,2,35,2,19
+	.byte	'MM',0,1
+	.word	16807
+	.byte	8,0,2,35,3,0,20,13,233,9,3,4,13
+	.byte	'rb1',0
+	.word	16663
+	.byte	4,2,35,0,13
+	.byte	'tb1',0
+	.word	16812
+	.byte	4,2,35,0,13
+	.byte	'B1',0
+	.word	427
+	.byte	4,2,35,0,0,6
+	.word	1320
+	.byte	16
+	.byte	'tCanChipMsgPtrTag',0,13,220,9,25,72,13
+	.byte	'uB0',0
+	.word	16597
+	.byte	4,2,35,0,13
+	.byte	'uB1',0
+	.word	16921
+	.byte	4,2,35,4,13
+	.byte	'data',0
+	.word	16966
+	.byte	64,2,35,8,0,6
+	.word	16971
+	.byte	11
+	.byte	'tCanChipMsgPtr',0,13,134,10,3
+	.word	17036
+	.byte	12,13,141,10,3,4,19
+	.byte	'FnFL',0,1
+	.word	288
+	.byte	7,1,2,35,0,19
+	.byte	'r2',0,1
+	.word	288
+	.byte	1,0,2,35,0,19
+	.byte	'FnGI',0,1
+	.word	288
+	.byte	6,2,2,35,1,19
+	.byte	'r1',0,4
+	.word	427
+	.byte	10,8,2,35,0,19
+	.byte	'FnF',0,1
+	.word	288
+	.byte	1,7,2,35,3,19
+	.byte	'RFnL',0,1
+	.word	288
+	.byte	1,6,2,35,3,19
+	.byte	'r0',0,1
+	.word	288
+	.byte	6,0,2,35,3,0,21
+	.byte	'tRXFnSTag',0,13,138,10,15,4,13
+	.byte	'R',0
+	.word	427
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	17065
+	.byte	4,2,35,0,0,11
+	.byte	'tRXFnS',0,13,151,10,3
+	.word	17177
+	.byte	12,13,156,10,3,4,22,1
+	.word	288
+	.byte	2,6,2,35,0,19
+	.byte	'FOSA',0,2
+	.word	363
+	.byte	14,0,2,35,0,19
+	.byte	'F0S',0,1
+	.word	288
+	.byte	7,1,2,35,2,22,1
+	.word	288
+	.byte	1,0,2,35,2,19
+	.byte	'F0WM',0,1
+	.word	288
+	.byte	7,1,2,35,3,22,1
+	.word	288
+	.byte	1,0,2,35,3,0,21
+	.byte	'tRXFnCTag',0,13,153,10,15,4,13
+	.byte	'R',0
+	.word	427
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	17232
+	.byte	4,2,35,0,0,11
+	.byte	'tRXFnC',0,13,165,10,3
+	.word	17319
+	.byte	12,13,171,10,3,4,19
+	.byte	'F0DS',0,1
+	.word	288
+	.byte	3,5,2,35,0,22,1
+	.word	288
+	.byte	1,4,2,35,0,19
+	.byte	'F1DS',0,1
+	.word	288
+	.byte	3,1,2,35,0,22,1
+	.word	288
+	.byte	1,0,2,35,0,19
+	.byte	'RBDS',0,1
+	.word	288
+	.byte	3,5,2,35,1,22,4
+	.word	427
+	.byte	21,0,2,35,0,0,21
+	.byte	'tRXESCTag',0,13,168,10,15,4,13
+	.byte	'R',0
+	.word	427
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	17374
+	.byte	4,2,35,0,0,11
+	.byte	'tRXESC',0,13,180,10,3
+	.word	17462
+	.byte	12,13,185,10,3,4,19
+	.byte	'TFFL',0,1
+	.word	288
+	.byte	6,2,2,35,0,22,1
+	.word	288
+	.byte	2,0,2,35,0,19
+	.byte	'TFGI',0,1
+	.word	288
+	.byte	5,3,2,35,1,22,1
+	.word	288
+	.byte	3,0,2,35,1,19
+	.byte	'TFQPI',0,1
+	.word	288
+	.byte	5,3,2,35,2,19
+	.byte	'TFQF',0,1
+	.word	288
+	.byte	1,2,2,35,2,22,2
+	.word	363
+	.byte	10,0,2,35,2,0,21
+	.byte	'tTXFQSTag',0,13,182,10,15,4,13
+	.byte	'R',0
+	.word	427
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	17517
+	.byte	4,2,35,0,0,11
+	.byte	'tTXFQS',0,13,195,10,3
+	.word	17622
+	.byte	12,13,200,10,3,4,19
+	.byte	'EFFL',0,1
+	.word	288
+	.byte	6,2,2,35,0,19
+	.byte	'r1',0,1
+	.word	288
+	.byte	2,0,2,35,0,19
+	.byte	'EFGI',0,1
+	.word	288
+	.byte	5,3,2,35,1,22,4
+	.word	427
+	.byte	11,8,2,35,0,19
+	.byte	'EFF',0,1
+	.word	288
+	.byte	1,7,2,35,3,19
+	.byte	'TEFL',0,1
+	.word	288
+	.byte	1,6,2,35,3,19
+	.byte	'r0',0,1
+	.word	288
+	.byte	6,0,2,35,3,0,21
+	.byte	'tTXEFSTag',0,13,197,10,15,4,13
+	.byte	'R',0
+	.word	427
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	17677
+	.byte	4,2,35,0,0,11
+	.byte	'tTXEFS',0,13,210,10,3
+	.word	17786
+	.byte	11
+	.byte	'CanIf_TxBufferSizeType',0,14,184,1,15
+	.word	288
+	.byte	14,15,189,2,9,1,15
+	.byte	'CANIF_CS_UNINIT',0,0,15
+	.byte	'CANIF_CS_STOPPED',0,1,15
+	.byte	'CANIF_CS_STARTED',0,2,15
+	.byte	'CANIF_CS_SLEEP',0,3,0,11
+	.byte	'CanIf_ControllerModeType',0,15,195,2,3
+	.word	17873
+	.byte	14,15,215,2,9,1,15
+	.byte	'CANIF_GET_OFFLINE',0,0,15
+	.byte	'CANIF_GET_RX_ONLINE',0,1,15
+	.byte	'CANIF_GET_TX_ONLINE',0,2,15
+	.byte	'CANIF_GET_ONLINE',0,3,15
+	.byte	'CANIF_GET_OFFLINE_ACTIVE',0,4,15
+	.byte	'CANIF_GET_OFFLINE_ACTIVE_RX_ONLINE',0,5,15
+	.byte	'CANIF_NO_MODE_PDU_GET_MODE_TYPE_END',0,6,0,11
+	.byte	'CanIf_PduGetModeType',0,15,228,2,3
+	.word	17987
+	.byte	14,15,231,2,9,1,15
+	.byte	'CANIF_RxBasicCANMailbox',0,0,15
+	.byte	'CANIF_RxFullCANMailbox',0,1,15
+	.byte	'CANIF_TxBasicCANMailbox',0,2,15
+	.byte	'CANIF_TxFullCANMailbox',0,3,15
+	.byte	'CANIF_UnusedCANMailbox',0,4,0,11
+	.byte	'CanIf_MailBoxTypeType',0,15,238,2,3
+	.word	18209
+	.byte	14,15,241,2,9,1,15
+	.byte	'CanIf_SimpleRxIndicationLayout',0,0,15
+	.byte	'CanIf_AdvancedRxIndicationLayout',0,1,15
+	.byte	'CanIf_NmOsekRxIndicationLayout',0,2,15
+	.byte	'CanIf_CddRxIndicationLayout',0,3,0,11
+	.byte	'CanIf_RxIndicationLayoutType',0,15,247,2,3
+	.word	18374
+	.byte	23,1,1,5
+	.word	288
+	.byte	0,7
+	.word	18550
+	.byte	11
+	.byte	'CanIf_TxConfirmationFctType',0,15,175,3,9
+	.word	18559
+	.byte	3
+	.word	288
+	.byte	7
+	.word	18601
+	.byte	23,1,1,5
+	.word	288
+	.byte	5
+	.word	18606
+	.byte	0,7
+	.word	18611
+	.byte	11
+	.byte	'CanIf_SimpleRxIndicationFctType',0,15,181,3,9
+	.word	18625
+	.byte	3
+	.word	807
+	.byte	7
+	.word	18671
+	.byte	23,1,1,5
+	.word	288
+	.byte	5
+	.word	18676
+	.byte	0,7
+	.word	18681
+	.byte	11
+	.byte	'CanIf_AdvancedRxIndicationFctType',0,15,186,3,9
+	.word	18695
+	.byte	23,1,1,5
+	.word	288
+	.byte	5
+	.word	18606
+	.byte	5
+	.word	363
+	.byte	0,7
+	.word	18743
+	.byte	11
+	.byte	'CanIf_NmOsekRxIndicationFctType',0,15,190,3,9
+	.word	18762
+	.byte	23,1,1,5
+	.word	288
+	.byte	5
+	.word	18676
+	.byte	5
+	.word	363
+	.byte	0,7
+	.word	18808
+	.byte	11
+	.byte	'CanIf_CddRxIndicationFctType',0,15,194,3,9
+	.word	18827
+	.byte	23,1,1,5
+	.word	288
+	.byte	5
+	.word	17873
+	.byte	0,7
+	.word	18870
+	.byte	11
+	.byte	'CanIf_CtrlModeIndicationFctType',0,15,198,3,9
+	.word	18884
+	.byte	11
+	.byte	'CanIf_BusOffNotificationFctType',0,15,202,3,9
+	.word	18559
+	.byte	20,15,203,4,9,4,13
+	.byte	'eSimpleRxIndicationType',0
+	.word	18630
+	.byte	4,2,35,0,13
+	.byte	'eAdvancedRxIndicationType',0
+	.word	18700
+	.byte	4,2,35,0,13
+	.byte	'eNmOsekRxIndicationType',0
+	.word	18767
+	.byte	4,2,35,0,13
+	.byte	'eCddRxIndicationType',0
+	.word	18832
+	.byte	4,2,35,0,0,11
+	.byte	'CanIf_RxIndicationFctType',0,15,209,4,3
+	.word	18971
+	.byte	7
+	.word	18611
+	.byte	7
+	.word	18681
+	.byte	7
+	.word	18743
+	.byte	7
+	.word	18808
+	.byte	16
+	.byte	'sCanIf_TxQueueBaseType',0,15,222,4,16,1,13
+	.byte	'eSduLength',0
+	.word	288
+	.byte	1,2,35,0,0,11
+	.byte	'CanIf_TxQueueBaseType',0,15,228,4,3
+	.word	19164
+	.byte	16
+	.byte	'sCanIf_TxQueueBaseWithDataType',0,15,231,4,16,1,13
+	.byte	'eBaseParams',0
+	.word	19164
+	.byte	1,2,35,0,0,11
+	.byte	'CanIf_TxQueueBaseWithDataType',0,15,237,4,3
+	.word	19245
+	.byte	16
+	.byte	'sCanIf_TxPrioByCanIdByteQueueType',0,15,242,4,16,2,13
+	.byte	'eQueueParams',0
+	.word	19245
+	.byte	1,2,35,0,13
+	.byte	'eQueued',0
+	.word	288
+	.byte	1,2,35,1,0,11
+	.byte	'CanIf_TxPrioByCanIdByteQueueType',0,15,246,4,3
+	.word	19343
+	.byte	16
+	.byte	'sCanIf_TxBufferPrioByCanIdBaseType',0,15,128,5,16,1,13
+	.byte	'eQueueCounter',0
+	.word	288
+	.byte	1,2,35,0,0,11
+	.byte	'CanIf_TxBufferPrioByCanIdBaseType',0,15,131,5,3
+	.word	19465
+	.byte	11
+	.byte	'CanIf_MappedTxBuffersConfigEndIdxOfCanIfCtrlId2MappedTxBuffersConfigType',0,14,138,9,15
+	.word	288
+	.byte	11
+	.byte	'CanIf_MappedTxBuffersConfigStartIdxOfCanIfCtrlId2MappedTxBuffersConfigType',0,14,141,9,15
+	.word	288
+	.byte	11
+	.byte	'CanIf_CtrlStatesIdxOfMailBoxConfigType',0,14,150,9,15
+	.word	288
+	.byte	11
+	.byte	'CanIf_PduIdFirstOfMailBoxConfigType',0,14,153,9,15
+	.word	288
+	.byte	11
+	.byte	'CanIf_PduIdLastOfMailBoxConfigType',0,14,156,9,15
+	.word	288
+	.byte	11
+	.byte	'CanIf_TxBufferCfgIdxOfMailBoxConfigType',0,14,159,9,15
+	.word	288
+	.byte	11
+	.byte	'CanIf_TxBufferHandlingTypeOfMailBoxConfigType',0,14,165,9,15
+	.word	288
+	.byte	11
+	.byte	'CanIf_MailBoxConfigIdxOfMappedTxBuffersConfigType',0,14,168,9,15
+	.word	288
+	.byte	11
+	.byte	'CanIf_RxIndicationFctListIdxOfRxPduConfigType',0,14,171,9,15
+	.word	288
+	.byte	11
+	.byte	'CanIf_RxPduCanIdOfRxPduConfigType',0,14,174,9,15
+	.word	288
+	.byte	11
+	.byte	'CanIf_RxPduDlcOfRxPduConfigType',0,14,177,9,15
+	.word	288
+	.byte	11
+	.byte	'CanIf_RxPduMaskOfRxPduConfigType',0,14,180,9,16
+	.word	363
+	.byte	11
+	.byte	'CanIf_UpperPduIdOfRxPduConfigType',0,14,183,9,19
+	.word	288
+	.byte	11
+	.byte	'CanIf_TxBufferPrioByCanIdBaseIdxOfTxBufferPrioByCanIdByteQueueConfigType',0,14,231,9,15
+	.word	288
+	.byte	11
+	.byte	'CanIf_TxBufferPrioByCanIdByteQueueMappedTxPdusEndIdxOfTxBufferPrioByCanIdByteQueueConfigType',0,14,234
+	.byte	9,15
+	.word	288
+	.byte	11
+	.byte	'CanIf_TxBufferPrioByCanIdByteQueueMappedTxPdusLengthOfTxBufferPrioByCanIdByteQueueConfigType',0,14,237
+	.byte	9,15
+	.word	288
+	.byte	11
+	.byte	'CanIf_TxBufferPrioByCanIdByteQueueMappedTxPdusStartIdxOfTxBufferPrioByCanIdByteQueueConfigType',0,14
+	.byte	240,9,15
+	.word	288
+	.byte	11
+	.byte	'CanIf_TxPduConfigIdxOfTxBufferPrioByCanIdByteQueueMappedTxPdusType',0,14,243,9,15
+	.word	288
+	.byte	11
+	.byte	'CanIf_CanIdOfTxPduConfigType',0,14,246,9,16
+	.word	363
+	.byte	11
+	.byte	'CanIf_CtrlStatesIdxOfTxPduConfigType',0,14,249,9,15
+	.word	288
+	.byte	11
+	.byte	'CanIf_IsTxPduTruncationOfTxPduConfigType',0,14,252,9,17
+	.word	288
+	.byte	11
+	.byte	'CanIf_MailBoxConfigIdxOfTxPduConfigType',0,14,255,9,15
+	.word	288
+	.byte	11
+	.byte	'CanIf_TxConfirmationFctListIdxOfTxPduConfigType',0,14,130,10,15
+	.word	288
+	.byte	11
+	.byte	'CanIf_TxPduLengthOfTxPduConfigType',0,14,133,10,15
+	.word	288
+	.byte	11
+	.byte	'CanIf_UpperLayerTxPduIdOfTxPduConfigType',0,14,136,10,19
+	.word	288
+	.byte	11
+	.byte	'CanIf_TxQueueIdxOfTxPduQueueIndexType',0,14,139,10,15
+	.word	288
+	.byte	11
+	.byte	'CanIf_TxQueueIndex2DataStartStopIdxOfTxPduQueueIndexType',0,14,142,10,15
+	.word	288
+	.byte	11
+	.byte	'CanIf_TxQueueDataType',0,14,151,10,15
+	.word	288
+	.byte	11
+	.byte	'CanIf_TxQueueDataEndIdxOfTxQueueIndex2DataStartStopType',0,14,154,10,15
+	.word	288
+	.byte	11
+	.byte	'CanIf_TxQueueDataLengthOfTxQueueIndex2DataStartStopType',0,14,157,10,15
+	.word	288
+	.byte	11
+	.byte	'CanIf_TxQueueDataStartIdxOfTxQueueIndex2DataStartStopType',0,14,160,10,15
+	.word	288
+	.byte	16
+	.byte	'sCanIf_CanIfCtrlId2MappedTxBuffersConfigType',0,14,183,10,16,2,13
+	.byte	'MappedTxBuffersConfigEndIdxOfCanIfCtrlId2MappedTxBuffersConfig',0
+	.word	288
+	.byte	1,2,35,0,13
+	.byte	'MappedTxBuffersConfigStartIdxOfCanIfCtrlId2MappedTxBuffersConfig',0
+	.word	288
+	.byte	1,2,35,1,0,11
+	.byte	'CanIf_CanIfCtrlId2MappedTxBuffersConfigType',0,14,187,10,3
+	.word	21404
+	.byte	16
+	.byte	'sCanIf_CtrlStatesType',0,14,190,10,16,2,13
+	.byte	'CtrlModeOfCtrlStates',0
+	.word	17873
+	.byte	1,2,35,0,13
+	.byte	'PduModeOfCtrlStates',0
+	.word	17987
+	.byte	1,2,35,1,0,11
+	.byte	'CanIf_CtrlStatesType',0,14,194,10,3
+	.word	21655
+	.byte	16
+	.byte	'sCanIf_MailBoxConfigType',0,14,200,10,16,6,13
+	.byte	'CtrlStatesIdxOfMailBoxConfig',0
+	.word	288
+	.byte	1,2,35,0,13
+	.byte	'PduIdFirstOfMailBoxConfig',0
+	.word	288
+	.byte	1,2,35,1,13
+	.byte	'PduIdLastOfMailBoxConfig',0
+	.word	288
+	.byte	1,2,35,2,13
+	.byte	'TxBufferCfgIdxOfMailBoxConfig',0
+	.word	288
+	.byte	1,2,35,3,13
+	.byte	'TxBufferHandlingTypeOfMailBoxConfig',0
+	.word	288
+	.byte	1,2,35,4,13
+	.byte	'MailBoxTypeOfMailBoxConfig',0
+	.word	18209
+	.byte	1,2,35,5,0,11
+	.byte	'CanIf_MailBoxConfigType',0,14,208,10,3
+	.word	21773
+	.byte	16
+	.byte	'sCanIf_MappedTxBuffersConfigType',0,14,214,10,16,1,13
+	.byte	'MailBoxConfigIdxOfMappedTxBuffersConfig',0
+	.word	288
+	.byte	1,2,35,0,0,11
+	.byte	'CanIf_MappedTxBuffersConfigType',0,14,217,10,3
+	.word	22065
+	.byte	16
+	.byte	'sCanIf_RxIndicationFctListType',0,14,220,10,16,8,13
+	.byte	'RxIndicationFctOfRxIndicationFctList',0
+	.word	18971
+	.byte	4,2,35,0,13
+	.byte	'RxIndicationLayoutOfRxIndicationFctList',0
+	.word	18374
+	.byte	1,2,35,4,0,11
+	.byte	'CanIf_RxIndicationFctListType',0,14,224,10,3
+	.word	22195
+	.byte	16
+	.byte	'sCanIf_RxPduConfigType',0,14,230,10,16,6,13
+	.byte	'RxPduMaskOfRxPduConfig',0
+	.word	363
+	.byte	2,2,35,0,13
+	.byte	'UpperPduIdOfRxPduConfig',0
+	.word	288
+	.byte	1,2,35,2,13
+	.byte	'RxIndicationFctListIdxOfRxPduConfig',0
+	.word	288
+	.byte	1,2,35,3,13
+	.byte	'RxPduCanIdOfRxPduConfig',0
+	.word	288
+	.byte	1,2,35,4,13
+	.byte	'RxPduDlcOfRxPduConfig',0
+	.word	288
+	.byte	1,2,35,5,0,11
+	.byte	'CanIf_RxPduConfigType',0,14,237,10,3
+	.word	22367
+	.byte	16
+	.byte	'sCanIf_TxBufferPrioByCanIdByteQueueConfigType',0,14,245,10,16,4,13
+	.byte	'TxBufferPrioByCanIdBaseIdxOfTxBufferPrioByCanIdByteQueueConfig',0
+	.word	288
+	.byte	1,2,35,0,13
+	.byte	'TxBufferPrioByCanIdByteQueueMappedTxPdusEndIdxOfTxBufferPrioByCanIdByteQueueConfig',0
+	.word	288
+	.byte	1,2,35,1,13
+	.byte	'TxBufferPrioByCanIdByteQueueMappedTxPdusLengthOfTxBufferPrioByCanIdByteQueueConfig',0
+	.word	288
+	.byte	1,2,35,2,13
+	.byte	'TxBufferPrioByCanIdByteQueueMappedTxPdusStartIdxOfTxBufferPrioByCanIdByteQueueConfig',0
+	.word	288
+	.byte	1,2,35,3,0,11
+	.byte	'CanIf_TxBufferPrioByCanIdByteQueueConfigType',0,14,251,10,3
+	.word	22602
+	.byte	16
+	.byte	'sCanIf_TxBufferPrioByCanIdByteQueueMappedTxPdusType',0,14,129,11,16,1,13
+	.byte	'TxPduConfigIdxOfTxBufferPrioByCanIdByteQueueMappedTxPdus',0
+	.word	288
+	.byte	1,2,35,0,0,11
+	.byte	'CanIf_TxBufferPrioByCanIdByteQueueMappedTxPdusType',0,14,132,11,3
+	.word	23059
+	.byte	16
+	.byte	'sCanIf_TxPduConfigType',0,14,140,11,16,8,13
+	.byte	'CanIdOfTxPduConfig',0
+	.word	363
+	.byte	2,2,35,0,13
+	.byte	'UpperLayerTxPduIdOfTxPduConfig',0
+	.word	288
+	.byte	1,2,35,2,13
+	.byte	'IsTxPduTruncationOfTxPduConfig',0
+	.word	288
+	.byte	1,2,35,3,13
+	.byte	'CtrlStatesIdxOfTxPduConfig',0
+	.word	288
+	.byte	1,2,35,4,13
+	.byte	'MailBoxConfigIdxOfTxPduConfig',0
+	.word	288
+	.byte	1,2,35,5,13
+	.byte	'TxConfirmationFctListIdxOfTxPduConfig',0
+	.word	288
+	.byte	1,2,35,6,13
+	.byte	'TxPduLengthOfTxPduConfig',0
+	.word	288
+	.byte	1,2,35,7,0,11
+	.byte	'CanIf_TxPduConfigType',0,14,149,11,3
+	.word	23244
+	.byte	16
+	.byte	'sCanIf_TxPduQueueIndexType',0,14,155,11,16,2,13
+	.byte	'TxQueueIdxOfTxPduQueueIndex',0
+	.word	288
+	.byte	1,2,35,0,13
+	.byte	'TxQueueIndex2DataStartStopIdxOfTxPduQueueIndex',0
+	.word	288
+	.byte	1,2,35,1,0,11
+	.byte	'CanIf_TxPduQueueIndexType',0,14,159,11,3
+	.word	23569
+	.byte	16
+	.byte	'sCanIf_TxQueueIndex2DataStartStopType',0,14,166,11,16,4,13
+	.byte	'TxQueueDataEndIdxOfTxQueueIndex2DataStartStop',0
+	.word	288
+	.byte	1,2,35,0,13
+	.byte	'TxQueueDataLengthOfTxQueueIndex2DataStartStop',0
+	.word	288
+	.byte	1,2,35,1,13
+	.byte	'TxQueueDataStartIdxOfTxQueueIndex2DataStartStop',0
+	.word	288
+	.byte	1,2,35,2,0,11
+	.byte	'CanIf_TxQueueIndex2DataStartStopType',0,14,171,11,3
+	.word	23731
+	.byte	16
+	.byte	'CanIf_CtrlStatesStructSTag',0,14,183,11,16,2,13
+	.byte	'CT_testCANFDdbc_2c920817',0
+	.word	21655
+	.byte	2,2,35,0,0,11
+	.byte	'CanIf_CtrlStatesStructSType',0,14,186,11,3
+	.word	23989
+	.byte	16
+	.byte	'CanIf_TxBufferPrioByCanIdBaseStructSTag',0,14,189,11,16,1,13
+	.byte	'CHNL_7a25eeb6',0
+	.word	19465
+	.byte	1,2,35,0,0,11
+	.byte	'CanIf_TxBufferPrioByCanIdBaseStructSType',0,14,192,11,3
+	.word	24094
+	.byte	16
+	.byte	'CanIf_TxQueueStructSTag',0,14,195,11,16,6,13
+	.byte	'TxMessage3_otestCANFDdbc_547b0ac5_Tx',0
+	.word	19343
+	.byte	2,2,35,0,13
+	.byte	'TxMessage22_otestCANFDdbc_f66bbf36_Tx',0
+	.word	19343
+	.byte	2,2,35,2,13
+	.byte	'TxMessage1_otestCANFDdbc_815f4c47_Tx',0
+	.word	19343
+	.byte	2,2,35,4,0,11
+	.byte	'CanIf_TxQueueStructSType',0,14,200,11,3
+	.word	24214
+	.byte	17,32
+	.word	288
+	.byte	18,31,0,17,8
+	.word	288
+	.byte	18,7,0,17,64
+	.word	288
+	.byte	18,63,0,16
+	.byte	'CanIf_TxQueueDataStructSTag',0,14,203,11,16,104,13
+	.byte	'TxMessage3_otestCANFDdbc_547b0ac5_Tx',0
+	.word	24418
+	.byte	32,2,35,0,13
+	.byte	'TxMessage22_otestCANFDdbc_f66bbf36_Tx',0
+	.word	24427
+	.byte	8,2,35,32,13
+	.byte	'TxMessage1_otestCANFDdbc_815f4c47_Tx',0
+	.word	24436
+	.byte	64,2,35,40,0,11
+	.byte	'CanIf_TxQueueDataStructSType',0,14,208,11,3
+	.word	24445
+	.byte	16
+	.byte	'sCanIf_PCConfigType',0,14,189,12,16,1,13
+	.byte	'CanIf_PCConfigNeverUsed',0
+	.word	288
+	.byte	1,2,35,0,0,11
+	.byte	'CanIf_PCConfigType',0,14,192,12,3
+	.word	24657
+	.byte	24,1,1,7
+	.word	24745
+	.byte	11
+	.byte	'PduR_LockFunctionType',0,16,218,8,9
+	.word	24748
+	.byte	25
+	.word	288
+	.byte	1,1,5
+	.word	288
+	.byte	5
+	.word	18676
+	.byte	0,7
+	.word	24784
+	.byte	11
+	.byte	'PduR_TransmitFctPtrType',0,16,222,8,9
+	.word	24802
+	.byte	11
+	.byte	'PduR_IfRxIndicationType',0,16,224,8,9
+	.word	18695
+	.byte	11
+	.byte	'PduR_IfTxConfirmationFctPtrType',0,16,225,8,9
+	.word	18559
+	.byte	11
+	.byte	'PduR_hasIfRoutingOfGeneralPropertiesRomType',0,16,207,9,17
+	.word	288
+	.byte	11
+	.byte	'PduR_InitializedType',0,16,210,9,17
+	.word	288
+	.byte	11
+	.byte	'PduR_DestApplicationManagerRomIdxOfMmRomType',0,16,219,9,15
+	.word	288
+	.byte	11
+	.byte	'PduR_MaskedBitsOfMmRomType',0,16,225,9,15
+	.word	288
+	.byte	11
+	.byte	'PduR_RmGDestRomStartIdxOfMmRomType',0,16,231,9,15
+	.word	288
+	.byte	11
+	.byte	'PduR_MmRomIndType',0,16,240,9,15
+	.word	288
+	.byte	11
+	.byte	'PduR_PartitionSNVOfPartitionIdentifiersType',0,16,246,9,16
+	.word	427
+	.byte	11
+	.byte	'PduR_PduLengthHandlingStrategyOfRmDestRomType',0,16,252,9,15
+	.word	288
+	.byte	11
+	.byte	'PduR_RmGDestRomIdxOfRmDestRomType',0,16,255,9,15
+	.word	288
+	.byte	11
+	.byte	'PduR_RmSrcRomIdxOfRmDestRomType',0,16,130,10,15
+	.word	288
+	.byte	11
+	.byte	'PduR_RoutingTypeOfRmDestRomType',0,16,133,10,15
+	.word	288
+	.byte	11
+	.byte	'PduR_DestHndOfRmGDestRomType',0,16,136,10,15
+	.word	288
+	.byte	11
+	.byte	'PduR_DirectionOfRmGDestRomType',0,16,139,10,15
+	.word	288
+	.byte	11
+	.byte	'PduR_MaxPduLengthOfRmGDestRomType',0,16,145,10,15
+	.word	288
+	.byte	11
+	.byte	'PduR_MmRomIdxOfRmGDestRomType',0,16,148,10,15
+	.word	288
+	.byte	11
+	.byte	'PduR_PartitionIndexOfCslOfRmGDestRomType',0,16,151,10,15
+	.word	288
+	.byte	11
+	.byte	'PduR_RmDestRomIdxOfRmGDestRomType',0,16,157,10,15
+	.word	288
+	.byte	11
+	.byte	'PduR_MmRomIdxOfRmSrcRomType',0,16,166,10,15
+	.word	288
+	.byte	11
+	.byte	'PduR_PartitionIndexOfCslOfRmSrcRomType',0,16,169,10,15
+	.word	288
+	.byte	11
+	.byte	'PduR_RmDestRomStartIdxOfRmSrcRomType',0,16,178,10,15
+	.word	288
+	.byte	11
+	.byte	'PduR_SrcHndOfRmSrcRomType',0,16,181,10,15
+	.word	288
+	.byte	11
+	.byte	'PduR_RmTransmitFctPtrIdxOfTx2LoType',0,16,250,10,15
+	.word	288
+	.byte	11
+	.byte	'PduR_PartitionIndexOfCslOfTxIf2UpType',0,16,253,10,15
+	.word	288
+	.byte	11
+	.byte	'PduR_RmGDestRomIdxOfTxIf2UpType',0,16,128,11,15
+	.word	288
+	.byte	11
+	.byte	'PduR_TxConfirmationUsedOfTxIf2UpType',0,16,131,11,17
+	.word	288
+	.byte	11
+	.byte	'PduR_RmTransmitFctPtrType',0,16,144,11,9
+	.word	24802
+	.byte	16
+	.byte	'sPduR_DestApplicationManagerRomType',0,16,182,11,16,1,13
+	.byte	'PduR_DestApplicationManagerRomNeverUsed',0
+	.word	288
+	.byte	1,2,35,0,0,11
+	.byte	'PduR_DestApplicationManagerRomType',0,16,185,11,3
+	.word	26024
+	.byte	16
+	.byte	'sPduR_ExclusiveAreaRomType',0,16,188,11,16,8,13
+	.byte	'LockOfExclusiveAreaRom',0
+	.word	24753
+	.byte	4,2,35,0,13
+	.byte	'UnlockOfExclusiveAreaRom',0
+	.word	24753
+	.byte	4,2,35,4,0,11
+	.byte	'PduR_ExclusiveAreaRomType',0,16,192,11,3
+	.word	26160
+	.byte	7
+	.word	24745
+	.byte	16
+	.byte	'sPduR_GeneralPropertiesRomType',0,16,195,11,16,1,13
+	.byte	'hasIfRoutingOfGeneralPropertiesRom',0
+	.word	288
+	.byte	1,2,35,0,0,11
+	.byte	'PduR_GeneralPropertiesRomType',0,16,198,11,3
+	.word	26300
+	.byte	16
+	.byte	'sPduR_LockRomType',0,16,201,11,16,1,13
+	.byte	'PduR_LockRomNeverUsed',0
+	.word	288
+	.byte	1,2,35,0,0,11
+	.byte	'PduR_LockRomType',0,16,204,11,3
+	.word	26421
+	.byte	16
+	.byte	'sPduR_MmRomType',0,16,207,11,16,16,13
+	.byte	'DestApplicationManagerRomIdxOfMmRom',0
+	.word	288
+	.byte	1,2,35,0,13
+	.byte	'MaskedBitsOfMmRom',0
+	.word	288
+	.byte	1,2,35,1,13
+	.byte	'RmGDestRomStartIdxOfMmRom',0
+	.word	288
+	.byte	1,2,35,2,13
+	.byte	'UpIfRxIndicationFctPtrOfMmRom',0
+	.word	24840
+	.byte	4,2,35,4,13
+	.byte	'UpIfTxConfirmationFctPtrOfMmRom',0
+	.word	24873
+	.byte	4,2,35,8,13
+	.byte	'LoIfTransmitFctPtrOfMmRom',0
+	.word	24807
+	.byte	4,2,35,12,0,11
+	.byte	'PduR_MmRomType',0,16,215,11,3
+	.word	26503
+	.byte	7
+	.word	18681
+	.byte	7
+	.word	18550
+	.byte	7
+	.word	24784
+	.byte	16
+	.byte	'sPduR_PartitionIdentifiersType',0,16,218,11,16,4,13
+	.byte	'PartitionSNVOfPartitionIdentifiers',0
+	.word	427
+	.byte	4,2,35,0,0,11
+	.byte	'PduR_PartitionIdentifiersType',0,16,221,11,3
+	.word	26787
+	.byte	16
+	.byte	'sPduR_RmDestRomType',0,16,224,11,16,4,13
+	.byte	'PduLengthHandlingStrategyOfRmDestRom',0
+	.word	288
+	.byte	1,2,35,0,13
+	.byte	'RmGDestRomIdxOfRmDestRom',0
+	.word	288
+	.byte	1,2,35,1,13
+	.byte	'RmSrcRomIdxOfRmDestRom',0
+	.word	288
+	.byte	1,2,35,2,13
+	.byte	'RoutingTypeOfRmDestRom',0
+	.word	288
+	.byte	1,2,35,3,0,11
+	.byte	'PduR_RmDestRomType',0,16,230,11,3
+	.word	26908
+	.byte	16
+	.byte	'sPduR_RmGDestRomType',0,16,233,11,16,6,13
+	.byte	'DestHndOfRmGDestRom',0
+	.word	288
+	.byte	1,2,35,0,13
+	.byte	'DirectionOfRmGDestRom',0
+	.word	288
+	.byte	1,2,35,1,13
+	.byte	'MaxPduLengthOfRmGDestRom',0
+	.word	288
+	.byte	1,2,35,2,13
+	.byte	'MmRomIdxOfRmGDestRom',0
+	.word	288
+	.byte	1,2,35,3,13
+	.byte	'PartitionIndexOfCslOfRmGDestRom',0
+	.word	288
+	.byte	1,2,35,4,13
+	.byte	'RmDestRomIdxOfRmGDestRom',0
+	.word	288
+	.byte	1,2,35,5,0,11
+	.byte	'PduR_RmGDestRomType',0,16,241,11,3
+	.word	27107
+	.byte	16
+	.byte	'sPduR_RmSrcRomType',0,16,244,11,16,4,13
+	.byte	'MmRomIdxOfRmSrcRom',0
+	.word	288
+	.byte	1,2,35,0,13
+	.byte	'PartitionIndexOfCslOfRmSrcRom',0
+	.word	288
+	.byte	1,2,35,1,13
+	.byte	'RmDestRomStartIdxOfRmSrcRom',0
+	.word	288
+	.byte	1,2,35,2,13
+	.byte	'SrcHndOfRmSrcRom',0
+	.word	288
+	.byte	1,2,35,3,0,11
+	.byte	'PduR_RmSrcRomType',0,16,250,11,3
+	.word	27363
+	.byte	16
+	.byte	'sPduR_RxIf2DestType',0,16,253,11,16,1,13
+	.byte	'PduR_RxIf2DestNeverUsed',0
+	.word	288
+	.byte	1,2,35,0,0,11
+	.byte	'PduR_RxIf2DestType',0,16,128,12,3
+	.word	27546
+	.byte	16
+	.byte	'sPduR_SrcApplicationRomType',0,16,131,12,16,1,13
+	.byte	'PduR_SrcApplicationRomNeverUsed',0
+	.word	288
+	.byte	1,2,35,0,0,11
+	.byte	'PduR_SrcApplicationRomType',0,16,134,12,3
+	.word	27634
+	.byte	16
+	.byte	'sPduR_Tx2LoType',0,16,137,12,16,1,13
+	.byte	'RmTransmitFctPtrIdxOfTx2Lo',0
+	.word	288
+	.byte	1,2,35,0,0,11
+	.byte	'PduR_Tx2LoType',0,16,140,12,3
+	.word	27746
+	.byte	16
+	.byte	'sPduR_TxIf2UpType',0,16,143,12,16,4,13
+	.byte	'TxConfirmationUsedOfTxIf2Up',0
+	.word	288
+	.byte	1,2,35,0,13
+	.byte	'PartitionIndexOfCslOfTxIf2Up',0
+	.word	288
+	.byte	1,2,35,1,13
+	.byte	'RmGDestRomIdxOfTxIf2Up',0
+	.word	288
+	.byte	1,2,35,2,0,11
+	.byte	'PduR_TxIf2UpType',0,16,148,12,3
+	.word	27829
+	.byte	7
+	.word	288
+	.byte	11
+	.byte	'PduR_InitializedPtrType',0,16,169,12,66
+	.word	27987
+	.byte	16
+	.byte	'sPduR_PCPartitionConfigType',0,16,217,12,16,4,13
+	.byte	'InitializedOfPCPartitionConfig',0
+	.word	27992
+	.byte	4,2,35,0,0,11
+	.byte	'PduR_PCPartitionConfigType',0,16,220,12,3
+	.word	28025
+	.byte	7
+	.word	288
+	.byte	16
+	.byte	'sPduR_PCConfigType',0,16,235,12,16,1,13
+	.byte	'PduR_PCConfigNeverUsed',0
+	.word	288
+	.byte	1,2,35,0,0,11
+	.byte	'PduR_PCConfigType',0,16,238,12,3
+	.word	28141
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L4:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,38,0,73,19,0,0,4,46,1,3,8,54
+	.byte	15,39,12,63,12,60,12,0,0,5,5,0,73,19,0,0,6,53,0,73,19,0,0,7,15,0,73,19,0,0,8,46,1,3,8,73,19,54,15,39,12
+	.byte	63,12,60,12,0,0,9,5,0,3,8,73,19,0,0,10,21,0,54,15,0,0,11,22,0,3,8,58,15,59,15,57,15,73,19,0,0,12,19,1
+	.byte	58,15,59,15,57,15,11,15,0,0,13,13,0,3,8,73,19,11,15,56,9,0,0,14,4,1,58,15,59,15,57,15,11,15,0,0,15,40
+	.byte	0,3,8,28,13,0,0,16,19,1,3,8,58,15,59,15,57,15,11,15,0,0,17,1,1,11,15,73,19,0,0,18,33,0,47,15,0,0,19,13
+	.byte	0,3,8,11,15,73,19,13,15,12,15,56,9,0,0,20,23,1,58,15,59,15,57,15,11,15,0,0,21,23,1,3,8,58,15,59,15,57
+	.byte	15,11,15,0,0,22,13,0,11,15,73,19,13,15,12,15,56,9,0,0,23,21,1,54,15,39,12,0,0,24,21,0,54,15,39,12,0,0
+	.byte	25,21,1,73,19,54,15,39,12,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L5:
+	.word	.L7-.L6
+.L6:
+	.half	3
+	.word	.L9-.L8
+.L8:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'D:\\Zonal\\demo011\\tasking\\component\\_Common\\Implementation',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\appl\\GenData',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\component\\Os\\Implementation',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\component\\Can\\Implementation',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\component\\CanIf\\Implementation',0,0
+	.byte	'..\\component\\PduR\\Implementation\\PduR_Sm.c',0,0,0,0
+	.byte	'Platform_Types.h',0,1,0,0
+	.byte	'Std_Types.h',0,1,0,0
+	.byte	'ComStack_Cfg.h',0,2,0,0
+	.byte	'ComStack_Types.h',0,1,0,0
+	.byte	'Det_Cfg.h',0,2,0,0
+	.byte	'Os_Types_Lcfg.h',0,2,0,0
+	.byte	'Os_Hal_Os_Types.h',0,3,0,0
+	.byte	'Os_Hal_OsInt.h',0,3,0,0
+	.byte	'Os_Types.h',0,3,0,0
+	.byte	'Can_DrvGeneralTypes.h',0,2,0,0
+	.byte	'Can_Cfg.h',0,2,0,0
+	.byte	'Can.h',0,4,0,0
+	.byte	'CanIf_Cfg.h',0,2,0,0
+	.byte	'CanIf_Types.h',0,5,0,0
+	.byte	'PduR_Lcfg.h',0,2,0,0,0
+.L9:
+.L7:
+
+; ..\component\PduR\Implementation\PduR_Sm.c	     1  /**********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_Sm.c	     2   *  COPYRIGHT
+; ..\component\PduR\Implementation\PduR_Sm.c	     3   *  -------------------------------------------------------------------------------------------------------------------
+; ..\component\PduR\Implementation\PduR_Sm.c	     4   *  \verbatim
+; ..\component\PduR\Implementation\PduR_Sm.c	     5   *  Copyright (c) 2020 by Vector Informatik GmbH.                                                  All rights reserved.
+; ..\component\PduR\Implementation\PduR_Sm.c	     6   *
+; ..\component\PduR\Implementation\PduR_Sm.c	     7   *                This software is copyright protected and proprietary to Vector Informatik GmbH.
+; ..\component\PduR\Implementation\PduR_Sm.c	     8   *                Vector Informatik GmbH grants to you only those rights as set out in the license conditions.
+; ..\component\PduR\Implementation\PduR_Sm.c	     9   *                All other rights remain with Vector Informatik GmbH.
+; ..\component\PduR\Implementation\PduR_Sm.c	    10   *  \endverbatim
+; ..\component\PduR\Implementation\PduR_Sm.c	    11   *  -------------------------------------------------------------------------------------------------------------------
+; ..\component\PduR\Implementation\PduR_Sm.c	    12   *  FILE DESCRIPTION
+; ..\component\PduR\Implementation\PduR_Sm.c	    13   *  -------------------------------------------------------------------------------------------------------------------
+; ..\component\PduR\Implementation\PduR_Sm.c	    14   *         File:  PduR_Sm.c
+; ..\component\PduR\Implementation\PduR_Sm.c	    15   *      Project:  Gw_AsrPduRCfg5
+; ..\component\PduR\Implementation\PduR_Sm.c	    16   *       Module:  MICROSAR PDU Router
+; ..\component\PduR\Implementation\PduR_Sm.c	    17   *    Generator:  Configurator 5
+; ..\component\PduR\Implementation\PduR_Sm.c	    18   *
+; ..\component\PduR\Implementation\PduR_Sm.c	    19   *  Description:  Vector implementation of AUTOSAR PDU Router
+; ..\component\PduR\Implementation\PduR_Sm.c	    20   *
+; ..\component\PduR\Implementation\PduR_Sm.c	    21   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_Sm.c	    22  
+; ..\component\PduR\Implementation\PduR_Sm.c	    23  /**********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_Sm.c	    24   *  REVISION HISTORY
+; ..\component\PduR\Implementation\PduR_Sm.c	    25   *  -------------------------------------------------------------------------------------------------------------------
+; ..\component\PduR\Implementation\PduR_Sm.c	    26   *  Refer to the module's header file.
+; ..\component\PduR\Implementation\PduR_Sm.c	    27   *
+; ..\component\PduR\Implementation\PduR_Sm.c	    28   *  FILE VERSION
+; ..\component\PduR\Implementation\PduR_Sm.c	    29   *  -------------------------------------------------------------------------------------------------------------------
+; ..\component\PduR\Implementation\PduR_Sm.c	    30   *  Refer to the module's header file.
+; ..\component\PduR\Implementation\PduR_Sm.c	    31   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_Sm.c	    32  
+; ..\component\PduR\Implementation\PduR_Sm.c	    33  /**********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_Sm.c	    34   * LOCAL MISRA / PCLINT JUSTIFICATION
+; ..\component\PduR\Implementation\PduR_Sm.c	    35   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_Sm.c	    36  /* PRQA  S 3679 EOF */ /* MD_MSR_Rule8.13 */
+; ..\component\PduR\Implementation\PduR_Sm.c	    37  
+; ..\component\PduR\Implementation\PduR_Sm.c	    38  #define PDUR_SM_SOURCE
+; ..\component\PduR\Implementation\PduR_Sm.c	    39  /**********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_Sm.c	    40   * INCLUDES
+; ..\component\PduR\Implementation\PduR_Sm.c	    41   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_Sm.c	    42  #include "PduR.h"
+; ..\component\PduR\Implementation\PduR_Sm.c	    43  #include "PduR_Sm.h"
+; ..\component\PduR\Implementation\PduR_Sm.c	    44  #include "SchM_PduR.h"
+; ..\component\PduR\Implementation\PduR_Sm.c	    45  #if (PDUR_DEV_ERROR_REPORT == STD_ON)
+; ..\component\PduR\Implementation\PduR_Sm.c	    46  # include "Det.h"
+; ..\component\PduR\Implementation\PduR_Sm.c	    47  #endif
+; ..\component\PduR\Implementation\PduR_Sm.c	    48  
+; ..\component\PduR\Implementation\PduR_Sm.c	    49  /**********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_Sm.c	    50   *  LOCAL CONSTANT MACROS
+; ..\component\PduR\Implementation\PduR_Sm.c	    51   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_Sm.c	    52  
+; ..\component\PduR\Implementation\PduR_Sm.c	    53  /**********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_Sm.c	    54   *  LOCAL FUNCTION MACROS
+; ..\component\PduR\Implementation\PduR_Sm.c	    55   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_Sm.c	    56  
+; ..\component\PduR\Implementation\PduR_Sm.c	    57  /**********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_Sm.c	    58   *  LOCAL DATA TYPES AND STRUCTURES
+; ..\component\PduR\Implementation\PduR_Sm.c	    59   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_Sm.c	    60  
+; ..\component\PduR\Implementation\PduR_Sm.c	    61  /**********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_Sm.c	    62   *  LOCAL DATA PROTOTYPES
+; ..\component\PduR\Implementation\PduR_Sm.c	    63   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_Sm.c	    64  
+; ..\component\PduR\Implementation\PduR_Sm.c	    65  /**********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_Sm.c	    66   *  GLOBAL DATA
+; ..\component\PduR\Implementation\PduR_Sm.c	    67   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_Sm.c	    68  
+; ..\component\PduR\Implementation\PduR_Sm.c	    69  /**********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_Sm.c	    70   *  LOCAL FUNCTION PROTOTYPES
+; ..\component\PduR\Implementation\PduR_Sm.c	    71   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_Sm.c	    72  #define PDUR_START_SEC_CODE
+; ..\component\PduR\Implementation\PduR_Sm.c	    73  #include "PduR_MemMap.h" /* PRQA S 5087 */   /* MD_MSR_MemMap */
+; ..\component\PduR\Implementation\PduR_Sm.c	    74  
+; ..\component\PduR\Implementation\PduR_Sm.c	    75  /**********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_Sm.c	    76   * PduR_Sm_SaTaFromMetaDataCalculationStrategy_GetSa
+; ..\component\PduR\Implementation\PduR_Sm.c	    77   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_Sm.c	    78  /*! \brief       This function extract the source address from the meta data.
+; ..\component\PduR\Implementation\PduR_Sm.c	    79   *  \details     -
+; ..\component\PduR\Implementation\PduR_Sm.c	    80   *  \param[in]   smSaTaFromMetaDataCalculationStrategyRomIdx Source Target address Rom Idx
+; ..\component\PduR\Implementation\PduR_Sm.c	    81   *  \param[in]   metaData  Meta data contains Source Target address
+; ..\component\PduR\Implementation\PduR_Sm.c	    82   *  \param[in]   memIdx    memory section index
+; ..\component\PduR\Implementation\PduR_Sm.c	    83   *  \return      PduR_SmSaType   metaData + offset & mask;
+; ..\component\PduR\Implementation\PduR_Sm.c	    84   *  \pre         -
+; ..\component\PduR\Implementation\PduR_Sm.c	    85   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_Sm.c	    86  #if(PDUR_SMSATAFROMMETADATACALCULATIONSTRATEGYROM == STD_ON)
+; ..\component\PduR\Implementation\PduR_Sm.c	    87  LOCAL_INLINE FUNC(PduR_SmSaType, PDUR_CODE) PduR_Sm_SaTaFromMetaDataCalculationStrategy_GetSa(PduR_SmSaTaFromMetaDataCalculationStrategyRomIterType smSaTaFromMetaDataCalculationStrategyRomIdx,
+; ..\component\PduR\Implementation\PduR_Sm.c	    88                                                                                                uint32 metaData,
+; ..\component\PduR\Implementation\PduR_Sm.c	    89                                                                                                PduR_MemIdxType memIdx);
+; ..\component\PduR\Implementation\PduR_Sm.c	    90  #endif
+; ..\component\PduR\Implementation\PduR_Sm.c	    91  /**********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_Sm.c	    92   * PduR_Sm_SaTaFromMetaDataCalculationStrategy_GetTa
+; ..\component\PduR\Implementation\PduR_Sm.c	    93   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_Sm.c	    94  /*! \brief       This function extract the target address from the meta data.
+; ..\component\PduR\Implementation\PduR_Sm.c	    95   *  \details     -
+; ..\component\PduR\Implementation\PduR_Sm.c	    96   *  \param[in]   smSaTaFromMetaDataCalculationStrategyRomIdx Source Target address Rom Idx.
+; ..\component\PduR\Implementation\PduR_Sm.c	    97   *  \param[in]   metaData  Meta data contains Source Target address.
+; ..\component\PduR\Implementation\PduR_Sm.c	    98   *  \param[in]   memIdx    memory section index
+; ..\component\PduR\Implementation\PduR_Sm.c	    99   *  \return      PduR_SmSaType   metaData + offset & mask.
+; ..\component\PduR\Implementation\PduR_Sm.c	   100   *  \pre         -
+; ..\component\PduR\Implementation\PduR_Sm.c	   101   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_Sm.c	   102  #if(PDUR_SMSATAFROMMETADATACALCULATIONSTRATEGYROM == STD_ON)
+; ..\component\PduR\Implementation\PduR_Sm.c	   103  LOCAL_INLINE FUNC(PduR_SmTaType, PDUR_CODE) PduR_Sm_SaTaFromMetaDataCalculationStrategy_GetTa(PduR_SmSaTaFromMetaDataCalculationStrategyRomIterType smSaTaFromMetaDataCalculationStrategyRomIdx,
+; ..\component\PduR\Implementation\PduR_Sm.c	   104                                                                                                uint32 metaData,
+; ..\component\PduR\Implementation\PduR_Sm.c	   105                                                                                                PduR_MemIdxType memIdx);
+; ..\component\PduR\Implementation\PduR_Sm.c	   106  #endif
+; ..\component\PduR\Implementation\PduR_Sm.c	   107  /**********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_Sm.c	   108   * PduR_Sm_GetMetaData
+; ..\component\PduR\Implementation\PduR_Sm.c	   109   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_Sm.c	   110  /*! \brief       This function extract meta data.
+; ..\component\PduR\Implementation\PduR_Sm.c	   111   *  \details     -
+; ..\component\PduR\Implementation\PduR_Sm.c	   112   *  \param[in]   info contains metadata.
+; ..\component\PduR\Implementation\PduR_Sm.c	   113   *  \param[in]   metaDataLength meta data length.
+; ..\component\PduR\Implementation\PduR_Sm.c	   114   *  \return      meta data.
+; ..\component\PduR\Implementation\PduR_Sm.c	   115   *  \pre         -
+; ..\component\PduR\Implementation\PduR_Sm.c	   116   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_Sm.c	   117  #if(PDUR_SMDATAPLANEROM == STD_ON)
+; ..\component\PduR\Implementation\PduR_Sm.c	   118  LOCAL_INLINE FUNC(uint32, PDUR_CODE) PduR_Sm_GetMetaData(P2CONST(PduInfoType, AUTOMATIC, PDUR_APPL_DATA) info, uint8 metaDataLength);
+; ..\component\PduR\Implementation\PduR_Sm.c	   119  #endif
+; ..\component\PduR\Implementation\PduR_Sm.c	   120   /*********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_Sm.c	   121   * PduR_Sm_GetMetaData
+; ..\component\PduR\Implementation\PduR_Sm.c	   122   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_Sm.c	   123  /*! \brief       This function updates the Fib table while a routing was learned.
+; ..\component\PduR\Implementation\PduR_Sm.c	   124   *  \details     -
+; ..\component\PduR\Implementation\PduR_Sm.c	   125   *  \param[in]   sourceAdress    source adress
+; ..\component\PduR\Implementation\PduR_Sm.c	   126   *  \param[in]   smDataPlaneIdx  Data plan Idx
+; ..\component\PduR\Implementation\PduR_Sm.c	   127   *  \param[in]   learnedConnectionId  learned connection Id.
+; ..\component\PduR\Implementation\PduR_Sm.c	   128   *  \param[in]   memIdx               memory section index
+; ..\component\PduR\Implementation\PduR_Sm.c	   129   *  \pre         -
+; ..\component\PduR\Implementation\PduR_Sm.c	   130   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_Sm.c	   131  #if(PDUR_SMDATAPLANEROM == STD_ON)
+; ..\component\PduR\Implementation\PduR_Sm.c	   132  LOCAL_INLINE FUNC(void, PDUR_CODE) PduR_Sm_UpdateFib(PduR_SmDataPlaneRomIterType smDataPlaneIdx, PduR_SmSaType sourceAdress, PduR_ConnectionIdOfSmSrcRomType learnedConnectionId, PduR_MemIdxType memIdx);
+; ..\component\PduR\Implementation\PduR_Sm.c	   133  #endif
+; ..\component\PduR\Implementation\PduR_Sm.c	   134  /**********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_Sm.c	   135   * PduR_Sm_CheckLearned
+; ..\component\PduR\Implementation\PduR_Sm.c	   136   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_Sm.c	   137  /*! \brief       This function checks if a routing is learned.
+; ..\component\PduR\Implementation\PduR_Sm.c	   138   *  \details     -
+; ..\component\PduR\Implementation\PduR_Sm.c	   139   *  \param[in]   smDataPlaneIdx   Data plane Idx.
+; ..\component\PduR\Implementation\PduR_Sm.c	   140   *  \param[in]   targetAdress     target adress.
+; ..\component\PduR\Implementation\PduR_Sm.c	   141   *  \param[in]   destConnection   destination connection Id.
+; ..\component\PduR\Implementation\PduR_Sm.c	   142   *  \param[in]   memIdx           memory section index
+; ..\component\PduR\Implementation\PduR_Sm.c	   143   *  \return      PduR_FilterReturnType
+; ..\component\PduR\Implementation\PduR_Sm.c	   144   *                - PDUR_FILTER_PASS  Let the routing pass.
+; ..\component\PduR\Implementation\PduR_Sm.c	   145   *                - PDUR_FILTER_BLOCK Block the routing, it is not the learned destination connection
+; ..\component\PduR\Implementation\PduR_Sm.c	   146   *  \pre         -
+; ..\component\PduR\Implementation\PduR_Sm.c	   147   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_Sm.c	   148  #if(PDUR_SMDATAPLANEROM == STD_ON)
+; ..\component\PduR\Implementation\PduR_Sm.c	   149  LOCAL_INLINE FUNC(PduR_FilterReturnType, PDUR_CODE) PduR_Sm_CheckLearned(PduR_SmDataPlaneRomIterType smDataPlaneIdx, PduR_SmTaType targetAdress, PduR_ConnectionIdOfSmGDestRomType destConnection, PduR_MemIdxType memIdx);
+; ..\component\PduR\Implementation\PduR_Sm.c	   150  #endif
+; ..\component\PduR\Implementation\PduR_Sm.c	   151  
+; ..\component\PduR\Implementation\PduR_Sm.c	   152  /**********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_Sm.c	   153   *  LOCAL FUNCTIONS
+; ..\component\PduR\Implementation\PduR_Sm.c	   154   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_Sm.c	   155  #if (PDUR_SMDATAPLANEROM == STD_ON)
+; ..\component\PduR\Implementation\PduR_Sm.c	   156  /**********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_Sm.c	   157   * PduR_Sm_Init
+; ..\component\PduR\Implementation\PduR_Sm.c	   158   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_Sm.c	   159  /*!
+; ..\component\PduR\Implementation\PduR_Sm.c	   160   * Internal comment removed.
+; ..\component\PduR\Implementation\PduR_Sm.c	   161   *
+; ..\component\PduR\Implementation\PduR_Sm.c	   162   *
+; ..\component\PduR\Implementation\PduR_Sm.c	   163   *
+; ..\component\PduR\Implementation\PduR_Sm.c	   164   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_Sm.c	   165  FUNC(void, PDUR_CODE) PduR_Sm_Init(PduR_MemIdxType memIdx)
+; ..\component\PduR\Implementation\PduR_Sm.c	   166  {
+; ..\component\PduR\Implementation\PduR_Sm.c	   167    PduR_SmFibRamIterType smFibRamIdx;
+; ..\component\PduR\Implementation\PduR_Sm.c	   168    for(smFibRamIdx = 0; smFibRamIdx < PduR_GetSizeOfSmFibRam(memIdx); smFibRamIdx++)
+; ..\component\PduR\Implementation\PduR_Sm.c	   169    {
+; ..\component\PduR\Implementation\PduR_Sm.c	   170      PduR_SetLearnedConnectionIdOfSmFibRam(smFibRamIdx, PDUR_SM_UNLEARNED_CONNECTION, memIdx);   /* SBSW_PDUR_CSL01 */
+; ..\component\PduR\Implementation\PduR_Sm.c	   171    }
+; ..\component\PduR\Implementation\PduR_Sm.c	   172  }
+; ..\component\PduR\Implementation\PduR_Sm.c	   173  #endif
+; ..\component\PduR\Implementation\PduR_Sm.c	   174  
+; ..\component\PduR\Implementation\PduR_Sm.c	   175  #if (PDUR_SMLINEARTATOSACALCULATIONSTRATEGYROM == STD_ON)
+; ..\component\PduR\Implementation\PduR_Sm.c	   176  /**********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_Sm.c	   177   * PduR_Sm_LinearTaToSaCalculationStrategy_GetSa_AddOffset
+; ..\component\PduR\Implementation\PduR_Sm.c	   178   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_Sm.c	   179  /*!
+; ..\component\PduR\Implementation\PduR_Sm.c	   180   * Internal comment removed.
+; ..\component\PduR\Implementation\PduR_Sm.c	   181   *
+; ..\component\PduR\Implementation\PduR_Sm.c	   182   *
+; ..\component\PduR\Implementation\PduR_Sm.c	   183   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_Sm.c	   184  FUNC(PduR_SmSaType, PDUR_CODE) PduR_Sm_LinearTaToSaCalculationStrategy_GetSa_AddOffset(PduR_SmLinearTaToSaCalculationStrategyRomIterType smLinearTaToSaCalculationStrategyIdx, uint32 metaData, PduR_MemIdxType memIdx)
+; ..\component\PduR\Implementation\PduR_Sm.c	   185  {
+; ..\component\PduR\Implementation\PduR_Sm.c	   186    PduR_MaskOfSmLinearTaToSaCalculationStrategyRomType mask = PduR_GetMaskOfSmLinearTaToSaCalculationStrategyRom(smLinearTaToSaCalculationStrategyIdx, memIdx);
+; ..\component\PduR\Implementation\PduR_Sm.c	   187    PduR_OffsetOfSmLinearTaToSaCalculationStrategyRomType offset = PduR_GetOffsetOfSmLinearTaToSaCalculationStrategyRom(smLinearTaToSaCalculationStrategyIdx, memIdx);
+; ..\component\PduR\Implementation\PduR_Sm.c	   188    PduR_SmSaType sourceAdress = (metaData + offset) & mask;
+; ..\component\PduR\Implementation\PduR_Sm.c	   189  
+; ..\component\PduR\Implementation\PduR_Sm.c	   190    PDUR_DUMMY_STATEMENT(memIdx);       /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\component\PduR\Implementation\PduR_Sm.c	   191    return sourceAdress;
+; ..\component\PduR\Implementation\PduR_Sm.c	   192  }
+; ..\component\PduR\Implementation\PduR_Sm.c	   193  #endif
+; ..\component\PduR\Implementation\PduR_Sm.c	   194  
+; ..\component\PduR\Implementation\PduR_Sm.c	   195  #if (PDUR_SMLINEARTATOSACALCULATIONSTRATEGYROM == STD_ON)
+; ..\component\PduR\Implementation\PduR_Sm.c	   196  /**********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_Sm.c	   197   * PduR_Sm_LinearTaToSaCalculationStrategy_GetSa_SubtractOffset
+; ..\component\PduR\Implementation\PduR_Sm.c	   198   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_Sm.c	   199  /*!
+; ..\component\PduR\Implementation\PduR_Sm.c	   200   * Internal comment removed.
+; ..\component\PduR\Implementation\PduR_Sm.c	   201   *
+; ..\component\PduR\Implementation\PduR_Sm.c	   202   *
+; ..\component\PduR\Implementation\PduR_Sm.c	   203   *
+; ..\component\PduR\Implementation\PduR_Sm.c	   204   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_Sm.c	   205  FUNC(PduR_SmSaType, PDUR_CODE) PduR_Sm_LinearTaToSaCalculationStrategy_GetSa_SubtractOffset(PduR_SmLinearTaToSaCalculationStrategyRomIterType smLinearTaToSaCalculationStrategyIdx, uint32 metaData, PduR_MemIdxType memIdx)
+; ..\component\PduR\Implementation\PduR_Sm.c	   206  {
+; ..\component\PduR\Implementation\PduR_Sm.c	   207    PduR_MaskOfSmLinearTaToSaCalculationStrategyRomType mask = PduR_GetMaskOfSmLinearTaToSaCalculationStrategyRom(smLinearTaToSaCalculationStrategyIdx, memIdx);
+; ..\component\PduR\Implementation\PduR_Sm.c	   208    PduR_OffsetOfSmLinearTaToSaCalculationStrategyRomType offset = PduR_GetOffsetOfSmLinearTaToSaCalculationStrategyRom(smLinearTaToSaCalculationStrategyIdx, memIdx);
+; ..\component\PduR\Implementation\PduR_Sm.c	   209    PduR_SmSaType sourceAdress = (metaData - offset) & mask;
+; ..\component\PduR\Implementation\PduR_Sm.c	   210  
+; ..\component\PduR\Implementation\PduR_Sm.c	   211    PDUR_DUMMY_STATEMENT(memIdx);       /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\component\PduR\Implementation\PduR_Sm.c	   212    return sourceAdress;
+; ..\component\PduR\Implementation\PduR_Sm.c	   213  }
+; ..\component\PduR\Implementation\PduR_Sm.c	   214  #endif
+; ..\component\PduR\Implementation\PduR_Sm.c	   215  
+; ..\component\PduR\Implementation\PduR_Sm.c	   216  #if (PDUR_SMSATAFROMMETADATACALCULATIONSTRATEGYROM == STD_ON)
+; ..\component\PduR\Implementation\PduR_Sm.c	   217  /**********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_Sm.c	   218   * PduR_Sm_SaTaFromMetaDataCalculationStrategy_GetSa
+; ..\component\PduR\Implementation\PduR_Sm.c	   219   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_Sm.c	   220  /*!
+; ..\component\PduR\Implementation\PduR_Sm.c	   221   * Internal comment removed.
+; ..\component\PduR\Implementation\PduR_Sm.c	   222   *
+; ..\component\PduR\Implementation\PduR_Sm.c	   223   *
+; ..\component\PduR\Implementation\PduR_Sm.c	   224   *
+; ..\component\PduR\Implementation\PduR_Sm.c	   225   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_Sm.c	   226  LOCAL_INLINE FUNC(PduR_SmSaType, PDUR_CODE) PduR_Sm_SaTaFromMetaDataCalculationStrategy_GetSa(PduR_SmSaTaFromMetaDataCalculationStrategyRomIterType smSaTaFromMetaDataCalculationStrategyRomIdx,
+; ..\component\PduR\Implementation\PduR_Sm.c	   227                                                                                                uint32 metaData,
+; ..\component\PduR\Implementation\PduR_Sm.c	   228                                                                                                PduR_MemIdxType memIdx)
+; ..\component\PduR\Implementation\PduR_Sm.c	   229  {
+; ..\component\PduR\Implementation\PduR_Sm.c	   230    /* Get adress startbit / mask */
+; ..\component\PduR\Implementation\PduR_Sm.c	   231    PduR_SaStartBitOfSmSaTaFromMetaDataCalculationStrategyRomType saStartBitPos = PduR_GetSaStartBitOfSmSaTaFromMetaDataCalculationStrategyRom(smSaTaFromMetaDataCalculationStrategyRomIdx, memIdx);
+; ..\component\PduR\Implementation\PduR_Sm.c	   232    PduR_SaMaskOfSmSaTaFromMetaDataCalculationStrategyRomType saMask = PduR_GetSaMaskOfSmSaTaFromMetaDataCalculationStrategyRom(smSaTaFromMetaDataCalculationStrategyRomIdx, memIdx);
+; ..\component\PduR\Implementation\PduR_Sm.c	   233  
+; ..\component\PduR\Implementation\PduR_Sm.c	   234    /* Extract SA and TA from meta data */
+; ..\component\PduR\Implementation\PduR_Sm.c	   235    PduR_SmSaType sourceAdress = (metaData >> saStartBitPos) & saMask;
+; ..\component\PduR\Implementation\PduR_Sm.c	   236    return sourceAdress;
+; ..\component\PduR\Implementation\PduR_Sm.c	   237  }
+; ..\component\PduR\Implementation\PduR_Sm.c	   238  #endif
+; ..\component\PduR\Implementation\PduR_Sm.c	   239  
+; ..\component\PduR\Implementation\PduR_Sm.c	   240  #if (PDUR_SMSATAFROMMETADATACALCULATIONSTRATEGYROM == STD_ON)
+; ..\component\PduR\Implementation\PduR_Sm.c	   241  /**********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_Sm.c	   242   * PduR_Sm_SaTaFromMetaDataCalculationStrategy_GetTa
+; ..\component\PduR\Implementation\PduR_Sm.c	   243   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_Sm.c	   244  /*!
+; ..\component\PduR\Implementation\PduR_Sm.c	   245   * Internal comment removed.
+; ..\component\PduR\Implementation\PduR_Sm.c	   246   *
+; ..\component\PduR\Implementation\PduR_Sm.c	   247   *
+; ..\component\PduR\Implementation\PduR_Sm.c	   248   *
+; ..\component\PduR\Implementation\PduR_Sm.c	   249   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_Sm.c	   250  LOCAL_INLINE FUNC(PduR_SmTaType, PDUR_CODE) PduR_Sm_SaTaFromMetaDataCalculationStrategy_GetTa(PduR_SmSaTaFromMetaDataCalculationStrategyRomIterType smSaTaFromMetaDataCalculationStrategyRomIdx,
+; ..\component\PduR\Implementation\PduR_Sm.c	   251                                                                                                uint32 metaData,
+; ..\component\PduR\Implementation\PduR_Sm.c	   252                                                                                                PduR_MemIdxType memIdx)
+; ..\component\PduR\Implementation\PduR_Sm.c	   253  {
+; ..\component\PduR\Implementation\PduR_Sm.c	   254    /* Get adress startbit / mask */
+; ..\component\PduR\Implementation\PduR_Sm.c	   255    PduR_TaStartBitOfSmSaTaFromMetaDataCalculationStrategyRomType taStartBitPos = PduR_GetTaStartBitOfSmSaTaFromMetaDataCalculationStrategyRom(smSaTaFromMetaDataCalculationStrategyRomIdx, memIdx);
+; ..\component\PduR\Implementation\PduR_Sm.c	   256    PduR_TaMaskOfSmSaTaFromMetaDataCalculationStrategyRomType taMask = PduR_GetTaMaskOfSmSaTaFromMetaDataCalculationStrategyRom(smSaTaFromMetaDataCalculationStrategyRomIdx, memIdx);
+; ..\component\PduR\Implementation\PduR_Sm.c	   257  
+; ..\component\PduR\Implementation\PduR_Sm.c	   258    /* Extract SA and TA from meta data */
+; ..\component\PduR\Implementation\PduR_Sm.c	   259    PduR_SmTaType targetAdress = (metaData >> taStartBitPos) & taMask;
+; ..\component\PduR\Implementation\PduR_Sm.c	   260    return targetAdress;
+; ..\component\PduR\Implementation\PduR_Sm.c	   261  }
+; ..\component\PduR\Implementation\PduR_Sm.c	   262  #endif
+; ..\component\PduR\Implementation\PduR_Sm.c	   263  
+; ..\component\PduR\Implementation\PduR_Sm.c	   264  #if (PDUR_SMDATAPLANEROM == STD_ON)
+; ..\component\PduR\Implementation\PduR_Sm.c	   265  /**********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_Sm.c	   266   * PduR_Sm_GetMetaData
+; ..\component\PduR\Implementation\PduR_Sm.c	   267   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_Sm.c	   268  /*!
+; ..\component\PduR\Implementation\PduR_Sm.c	   269   * Internal comment removed.
+; ..\component\PduR\Implementation\PduR_Sm.c	   270   *
+; ..\component\PduR\Implementation\PduR_Sm.c	   271   *
+; ..\component\PduR\Implementation\PduR_Sm.c	   272   *
+; ..\component\PduR\Implementation\PduR_Sm.c	   273   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_Sm.c	   274  LOCAL_INLINE FUNC(uint32, PDUR_CODE) PduR_Sm_GetMetaData(P2CONST(PduInfoType, AUTOMATIC, PDUR_APPL_DATA) info, uint8 metaDataLength)
+; ..\component\PduR\Implementation\PduR_Sm.c	   275  {
+; ..\component\PduR\Implementation\PduR_Sm.c	   276    uint32 metaData = 0u;         /* PRQA S 2981 */ /* MD_MSR_RetVal */
+; ..\component\PduR\Implementation\PduR_Sm.c	   277    SduDataPtrType metaDataPtr = &info->SduDataPtr[info->SduLength - metaDataLength];
+; ..\component\PduR\Implementation\PduR_Sm.c	   278    uint8 itMetaData;
+; ..\component\PduR\Implementation\PduR_Sm.c	   279    for(itMetaData = metaDataLength; itMetaData > 0u; itMetaData--)
+; ..\component\PduR\Implementation\PduR_Sm.c	   280    {
+; ..\component\PduR\Implementation\PduR_Sm.c	   281      metaData = (((uint32) (metaData << 8u)) | metaDataPtr[itMetaData - 1u]);
+; ..\component\PduR\Implementation\PduR_Sm.c	   282    }
+; ..\component\PduR\Implementation\PduR_Sm.c	   283    return metaData;
+; ..\component\PduR\Implementation\PduR_Sm.c	   284  }
+; ..\component\PduR\Implementation\PduR_Sm.c	   285  #endif
+; ..\component\PduR\Implementation\PduR_Sm.c	   286  
+; ..\component\PduR\Implementation\PduR_Sm.c	   287  #if (PDUR_SMDATAPLANEROM == STD_ON)
+; ..\component\PduR\Implementation\PduR_Sm.c	   288  /**********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_Sm.c	   289   * PduR_Sm_UpdateFib
+; ..\component\PduR\Implementation\PduR_Sm.c	   290   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_Sm.c	   291  /*!
+; ..\component\PduR\Implementation\PduR_Sm.c	   292   * Internal comment removed.
+; ..\component\PduR\Implementation\PduR_Sm.c	   293   *
+; ..\component\PduR\Implementation\PduR_Sm.c	   294   *
+; ..\component\PduR\Implementation\PduR_Sm.c	   295   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_Sm.c	   296  LOCAL_INLINE FUNC(void, PDUR_CODE) PduR_Sm_UpdateFib(PduR_SmDataPlaneRomIterType smDataPlaneIdx, PduR_SmSaType sourceAdress, PduR_ConnectionIdOfSmSrcRomType learnedConnectionId, PduR_MemIdxType memIdx)
+; ..\component\PduR\Implementation\PduR_Sm.c	   297  {
+; ..\component\PduR\Implementation\PduR_Sm.c	   298    PduR_SmFibRamIterType smFibRamIdx = ((PduR_SmFibRamIterType) PduR_GetSmFibRamStartIdxOfSmDataPlaneRom(smDataPlaneIdx, memIdx)) + sourceAdress;
+; ..\component\PduR\Implementation\PduR_Sm.c	   299    SchM_Enter_PduR_PDUR_EXCLUSIVE_AREA_0();
+; ..\component\PduR\Implementation\PduR_Sm.c	   300    PduR_SetLearnedConnectionIdOfSmFibRam(smFibRamIdx, (PduR_LearnedConnectionIdOfSmFibRamType) learnedConnectionId, memIdx);     /* SBSW_PDUR_CSL01 */
+; ..\component\PduR\Implementation\PduR_Sm.c	   301    SchM_Exit_PduR_PDUR_EXCLUSIVE_AREA_0();
+; ..\component\PduR\Implementation\PduR_Sm.c	   302  }
+; ..\component\PduR\Implementation\PduR_Sm.c	   303  #endif
+; ..\component\PduR\Implementation\PduR_Sm.c	   304  
+; ..\component\PduR\Implementation\PduR_Sm.c	   305  #if (PDUR_SMDATAPLANEROM == STD_ON)
+; ..\component\PduR\Implementation\PduR_Sm.c	   306  /**********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_Sm.c	   307   * PduR_Sm_CheckLearned
+; ..\component\PduR\Implementation\PduR_Sm.c	   308   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_Sm.c	   309  /*!
+; ..\component\PduR\Implementation\PduR_Sm.c	   310   * Internal comment removed.
+; ..\component\PduR\Implementation\PduR_Sm.c	   311   *
+; ..\component\PduR\Implementation\PduR_Sm.c	   312   *
+; ..\component\PduR\Implementation\PduR_Sm.c	   313   *
+; ..\component\PduR\Implementation\PduR_Sm.c	   314   *
+; ..\component\PduR\Implementation\PduR_Sm.c	   315   *
+; ..\component\PduR\Implementation\PduR_Sm.c	   316   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_Sm.c	   317  LOCAL_INLINE FUNC(PduR_FilterReturnType, PDUR_CODE) PduR_Sm_CheckLearned(PduR_SmDataPlaneRomIterType smDataPlaneIdx, PduR_SmTaType targetAdress, PduR_ConnectionIdOfSmGDestRomType destConnection, PduR_MemIdxType memIdx)
+; ..\component\PduR\Implementation\PduR_Sm.c	   318  {
+; ..\component\PduR\Implementation\PduR_Sm.c	   319    PduR_FilterReturnType filterResult;
+; ..\component\PduR\Implementation\PduR_Sm.c	   320    PduR_SmFibRamIterType smFibRamIdx = ((PduR_SmFibRamIterType) PduR_GetSmFibRamStartIdxOfSmDataPlaneRom(smDataPlaneIdx, memIdx)) + targetAdress;
+; ..\component\PduR\Implementation\PduR_Sm.c	   321    PduR_LearnedConnectionIdOfSmFibRamType learnedConnectionId;
+; ..\component\PduR\Implementation\PduR_Sm.c	   322  
+; ..\component\PduR\Implementation\PduR_Sm.c	   323    SchM_Enter_PduR_PDUR_EXCLUSIVE_AREA_0();
+; ..\component\PduR\Implementation\PduR_Sm.c	   324    learnedConnectionId = PduR_GetLearnedConnectionIdOfSmFibRam(smFibRamIdx, memIdx);
+; ..\component\PduR\Implementation\PduR_Sm.c	   325    SchM_Exit_PduR_PDUR_EXCLUSIVE_AREA_0();
+; ..\component\PduR\Implementation\PduR_Sm.c	   326  
+; ..\component\PduR\Implementation\PduR_Sm.c	   327    if((learnedConnectionId == PDUR_SM_UNLEARNED_CONNECTION) ||   /* Related connection is no learned yet. */
+; ..\component\PduR\Implementation\PduR_Sm.c	   328       (learnedConnectionId == destConnection))   /* Routing destination connection is the learned connection. */
+; ..\component\PduR\Implementation\PduR_Sm.c	   329    {
+; ..\component\PduR\Implementation\PduR_Sm.c	   330      filterResult = PDUR_FILTER_PASS;    /* Let the routing pass */
+; ..\component\PduR\Implementation\PduR_Sm.c	   331    }
+; ..\component\PduR\Implementation\PduR_Sm.c	   332    else
+; ..\component\PduR\Implementation\PduR_Sm.c	   333    {
+; ..\component\PduR\Implementation\PduR_Sm.c	   334      filterResult = PDUR_FILTER_BLOCK;   /* Block the routing, it is not the learned destination connection */
+; ..\component\PduR\Implementation\PduR_Sm.c	   335    }
+; ..\component\PduR\Implementation\PduR_Sm.c	   336    return filterResult;
+; ..\component\PduR\Implementation\PduR_Sm.c	   337  }
+; ..\component\PduR\Implementation\PduR_Sm.c	   338  #endif
+; ..\component\PduR\Implementation\PduR_Sm.c	   339  
+; ..\component\PduR\Implementation\PduR_Sm.c	   340  #if(PDUR_SMDATAPLANEROM == STD_ON)
+; ..\component\PduR\Implementation\PduR_Sm.c	   341  /**********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_Sm.c	   342   * PduR_Sm_SrcFilter_LinearTaToSaCalculationStrategy
+; ..\component\PduR\Implementation\PduR_Sm.c	   343   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_Sm.c	   344  /*!
+; ..\component\PduR\Implementation\PduR_Sm.c	   345   * Internal comment removed.
+; ..\component\PduR\Implementation\PduR_Sm.c	   346   *
+; ..\component\PduR\Implementation\PduR_Sm.c	   347   *
+; ..\component\PduR\Implementation\PduR_Sm.c	   348   *
+; ..\component\PduR\Implementation\PduR_Sm.c	   349   *
+; ..\component\PduR\Implementation\PduR_Sm.c	   350   *
+; ..\component\PduR\Implementation\PduR_Sm.c	   351   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_Sm.c	   352  FUNC(void, PDUR_CODE) PduR_Sm_SrcFilter_LinearTaToSaCalculationStrategy(PduR_SmSrcRomIdxOfRmSrcRomType smSrcRomIdx, P2CONST(PduInfoType, AUTOMATIC, PDUR_APPL_DATA) info, PduR_MemIdxType memIdx)
+; ..\component\PduR\Implementation\PduR_Sm.c	   353  {
+; ..\component\PduR\Implementation\PduR_Sm.c	   354    PduR_SmDataPlaneRomIterType smDataPlaneIdx = PduR_GetSmDataPlaneRomIdxOfSmSrcRom(smSrcRomIdx, memIdx);
+; ..\component\PduR\Implementation\PduR_Sm.c	   355    PduR_SmLinearTaToSaCalculationStrategyRomIterType smLinearTaToSaCalculationStrategyIdx = PduR_GetSmLinearTaToSaCalculationStrategyRomIdxOfSmDataPlaneRom(smDataPlaneIdx, memIdx);
+; ..\component\PduR\Implementation\PduR_Sm.c	   356  
+; ..\component\PduR\Implementation\PduR_Sm.c	   357    /* Get adress info from Pdu */
+; ..\component\PduR\Implementation\PduR_Sm.c	   358    uint32 metaData = PduR_Sm_GetMetaData(info, PduR_GetMetaDataLengthOfSmSrcRom(smSrcRomIdx, memIdx));   /* SBSW_PDUR_VALID_PTR_ENSURED_BY_CALLING_FUNCTION */
+; ..\component\PduR\Implementation\PduR_Sm.c	   359    PduR_Sm_LinearTaToSaCalculationStrategy_GetSaFctPtrType getSaFctPtr =
+; ..\component\PduR\Implementation\PduR_Sm.c	   360      PduR_GetSmLinearTaToSaCalculationStrategyGetSaFctPtr(PduR_GetSmLinearTaToSaCalculationStrategyGetSaFctPtrIdxOfSmSrcRom(smSrcRomIdx, memIdx), memIdx);
+; ..\component\PduR\Implementation\PduR_Sm.c	   361    PduR_SmSaType sourceAdress = getSaFctPtr(smLinearTaToSaCalculationStrategyIdx, metaData, memIdx);     /* SBSW_PDUR_CSL03 */
+; ..\component\PduR\Implementation\PduR_Sm.c	   362  
+; ..\component\PduR\Implementation\PduR_Sm.c	   363    /* Update FIB */
+; ..\component\PduR\Implementation\PduR_Sm.c	   364    PduR_Sm_UpdateFib(smDataPlaneIdx, sourceAdress, PduR_GetConnectionIdOfSmSrcRom(smSrcRomIdx, memIdx), memIdx);
+; ..\component\PduR\Implementation\PduR_Sm.c	   365  }
+; ..\component\PduR\Implementation\PduR_Sm.c	   366  #endif
+; ..\component\PduR\Implementation\PduR_Sm.c	   367  
+; ..\component\PduR\Implementation\PduR_Sm.c	   368  #if(PDUR_SMLINEARTATOSACALCULATIONSTRATEGYROM == STD_ON)
+; ..\component\PduR\Implementation\PduR_Sm.c	   369  /**********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_Sm.c	   370   * PduR_Sm_DestFilter_LinearTaToSaCalculationStrategy
+; ..\component\PduR\Implementation\PduR_Sm.c	   371   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_Sm.c	   372  /*!
+; ..\component\PduR\Implementation\PduR_Sm.c	   373   * Internal comment removed.
+; ..\component\PduR\Implementation\PduR_Sm.c	   374   *
+; ..\component\PduR\Implementation\PduR_Sm.c	   375   *
+; ..\component\PduR\Implementation\PduR_Sm.c	   376   *
+; ..\component\PduR\Implementation\PduR_Sm.c	   377   *
+; ..\component\PduR\Implementation\PduR_Sm.c	   378   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_Sm.c	   379  FUNC(PduR_FilterReturnType, PDUR_CODE) PduR_Sm_DestFilter_LinearTaToSaCalculationStrategy(PduR_SmGDestRomIdxOfRmGDestRomType smGDestRomIdx, P2CONST(PduInfoType, AUTOMATIC, PDUR_APPL_DATA) info, PduR_MemIdxType memIdx)
+; ..\component\PduR\Implementation\PduR_Sm.c	   380  {
+; ..\component\PduR\Implementation\PduR_Sm.c	   381    PduR_SmDataPlaneRomIterType smDataPlaneIdx = PduR_GetSmDataPlaneRomIdxOfSmGDestRom(smGDestRomIdx, memIdx);
+; ..\component\PduR\Implementation\PduR_Sm.c	   382    PduR_SmLinearTaToSaCalculationStrategyRomIterType smLinearTaToSaCalculationStrategyIdx = PduR_GetSmLinearTaToSaCalculationStrategyRomIdxOfSmDataPlaneRom(smDataPlaneIdx, memIdx);
+; ..\component\PduR\Implementation\PduR_Sm.c	   383  
+; ..\component\PduR\Implementation\PduR_Sm.c	   384    /* Get target adress from meta data */
+; ..\component\PduR\Implementation\PduR_Sm.c	   385    uint32 metaData = PduR_Sm_GetMetaData(info, PduR_GetMetaDataLengthOfSmGDestRom(smGDestRomIdx, memIdx));       /* SBSW_PDUR_VALID_PTR_ENSURED_BY_CALLING_FUNCTION */
+; ..\component\PduR\Implementation\PduR_Sm.c	   386    PduR_MaskOfSmLinearTaToSaCalculationStrategyRomType mask = PduR_GetMaskOfSmLinearTaToSaCalculationStrategyRom(smLinearTaToSaCalculationStrategyIdx, memIdx);
+; ..\component\PduR\Implementation\PduR_Sm.c	   387    PduR_SmTaType targetAdress = metaData & mask;
+; ..\component\PduR\Implementation\PduR_Sm.c	   388  
+; ..\component\PduR\Implementation\PduR_Sm.c	   389    /* Check if destination is already known */
+; ..\component\PduR\Implementation\PduR_Sm.c	   390    return PduR_Sm_CheckLearned(smDataPlaneIdx, targetAdress, PduR_GetConnectionIdOfSmGDestRom(smGDestRomIdx, memIdx), memIdx);
+; ..\component\PduR\Implementation\PduR_Sm.c	   391  }
+; ..\component\PduR\Implementation\PduR_Sm.c	   392  #endif
+; ..\component\PduR\Implementation\PduR_Sm.c	   393  
+; ..\component\PduR\Implementation\PduR_Sm.c	   394  #if (PDUR_SMSATAFROMMETADATACALCULATIONSTRATEGYROM == STD_ON)
+; ..\component\PduR\Implementation\PduR_Sm.c	   395  /**********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_Sm.c	   396   * PduR_Sm_SrcFilter_SaTaFromMetaDataCalculationStrategy
+; ..\component\PduR\Implementation\PduR_Sm.c	   397   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_Sm.c	   398  /*!
+; ..\component\PduR\Implementation\PduR_Sm.c	   399   * Internal comment removed.
+; ..\component\PduR\Implementation\PduR_Sm.c	   400   *
+; ..\component\PduR\Implementation\PduR_Sm.c	   401   *
+; ..\component\PduR\Implementation\PduR_Sm.c	   402   *
+; ..\component\PduR\Implementation\PduR_Sm.c	   403   *
+; ..\component\PduR\Implementation\PduR_Sm.c	   404   *
+; ..\component\PduR\Implementation\PduR_Sm.c	   405   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_Sm.c	   406  FUNC(void, PDUR_CODE) PduR_Sm_SrcFilter_SaTaFromMetaDataCalculationStrategy(PduR_SmSrcRomIdxOfRmSrcRomType smSrcRomIdx, P2CONST(PduInfoType, AUTOMATIC, PDUR_APPL_DATA) info, PduR_MemIdxType memIdx)
+; ..\component\PduR\Implementation\PduR_Sm.c	   407  {
+; ..\component\PduR\Implementation\PduR_Sm.c	   408    PduR_SmDataPlaneRomIterType smDataPlaneRomIdx = PduR_GetSmDataPlaneRomIdxOfSmSrcRom(smSrcRomIdx, memIdx);
+; ..\component\PduR\Implementation\PduR_Sm.c	   409  
+; ..\component\PduR\Implementation\PduR_Sm.c	   410    /* Get adress info from Pdu */
+; ..\component\PduR\Implementation\PduR_Sm.c	   411    uint32 metaData = PduR_Sm_GetMetaData(info, PduR_GetMetaDataLengthOfSmSrcRom(smSrcRomIdx, memIdx));   /* SBSW_PDUR_VALID_PTR_ENSURED_BY_CALLING_FUNCTION */
+; ..\component\PduR\Implementation\PduR_Sm.c	   412    PduR_SmSaType sa = PduR_Sm_SaTaFromMetaDataCalculationStrategy_GetSa(PduR_GetSmSaTaFromMetaDataCalculationStrategyRomIdxOfSmDataPlaneRom(smDataPlaneRomIdx, memIdx), metaData, memIdx);
+; ..\component\PduR\Implementation\PduR_Sm.c	   413  
+; ..\component\PduR\Implementation\PduR_Sm.c	   414    /* Update FIB */
+; ..\component\PduR\Implementation\PduR_Sm.c	   415    PduR_Sm_UpdateFib(smDataPlaneRomIdx, sa, PduR_GetConnectionIdOfSmSrcRom(smSrcRomIdx, memIdx), memIdx);
+; ..\component\PduR\Implementation\PduR_Sm.c	   416  }
+; ..\component\PduR\Implementation\PduR_Sm.c	   417  #endif
+; ..\component\PduR\Implementation\PduR_Sm.c	   418  
+; ..\component\PduR\Implementation\PduR_Sm.c	   419  #if (PDUR_SMSATAFROMMETADATACALCULATIONSTRATEGYROM == STD_ON)
+; ..\component\PduR\Implementation\PduR_Sm.c	   420  /**********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_Sm.c	   421   * PduR_Sm_DestFilter_SaTaFromMetaDataCalculationStrategy
+; ..\component\PduR\Implementation\PduR_Sm.c	   422   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_Sm.c	   423  /*!
+; ..\component\PduR\Implementation\PduR_Sm.c	   424   * Internal comment removed.
+; ..\component\PduR\Implementation\PduR_Sm.c	   425   *
+; ..\component\PduR\Implementation\PduR_Sm.c	   426   *
+; ..\component\PduR\Implementation\PduR_Sm.c	   427   *
+; ..\component\PduR\Implementation\PduR_Sm.c	   428   *
+; ..\component\PduR\Implementation\PduR_Sm.c	   429   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_Sm.c	   430  FUNC(PduR_FilterReturnType, PDUR_CODE) PduR_Sm_DestFilter_SaTaFromMetaDataCalculationStrategy(PduR_SmGDestRomIdxOfRmGDestRomType smGDestRomIdx, P2CONST(PduInfoType, AUTOMATIC, PDUR_APPL_DATA) info, PduR_MemIdxType memIdx)
+; ..\component\PduR\Implementation\PduR_Sm.c	   431  {
+; ..\component\PduR\Implementation\PduR_Sm.c	   432    PduR_SmDataPlaneRomIterType smDataPlaneRomIdx = PduR_GetSmDataPlaneRomIdxOfSmGDestRom(smGDestRomIdx, memIdx);
+; ..\component\PduR\Implementation\PduR_Sm.c	   433  
+; ..\component\PduR\Implementation\PduR_Sm.c	   434    /* Get adress info from Pdu */
+; ..\component\PduR\Implementation\PduR_Sm.c	   435    uint32 metaData = PduR_Sm_GetMetaData(info, PduR_GetMetaDataLengthOfSmGDestRom(smGDestRomIdx, memIdx));       /* SBSW_PDUR_VALID_PTR_ENSURED_BY_CALLING_FUNCTION */
+; ..\component\PduR\Implementation\PduR_Sm.c	   436    PduR_SmSaType ta = PduR_Sm_SaTaFromMetaDataCalculationStrategy_GetTa(PduR_GetSmSaTaFromMetaDataCalculationStrategyRomIdxOfSmDataPlaneRom(smDataPlaneRomIdx, memIdx), metaData, memIdx);
+; ..\component\PduR\Implementation\PduR_Sm.c	   437  
+; ..\component\PduR\Implementation\PduR_Sm.c	   438    /* Check if destination is already known */
+; ..\component\PduR\Implementation\PduR_Sm.c	   439    return PduR_Sm_CheckLearned(smDataPlaneRomIdx, ta, PduR_GetConnectionIdOfSmGDestRom(smGDestRomIdx, memIdx), memIdx);
+; ..\component\PduR\Implementation\PduR_Sm.c	   440  }
+; ..\component\PduR\Implementation\PduR_Sm.c	   441  #endif
+; ..\component\PduR\Implementation\PduR_Sm.c	   442  
+; ..\component\PduR\Implementation\PduR_Sm.c	   443  #define PDUR_STOP_SEC_CODE
+; ..\component\PduR\Implementation\PduR_Sm.c	   444  #include "PduR_MemMap.h" /* PRQA S 5087 */   /* MD_MSR_MemMap */
+; ..\component\PduR\Implementation\PduR_Sm.c	   445  
+; ..\component\PduR\Implementation\PduR_Sm.c	   446  /**********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_Sm.c	   447   *  END OF FILE: PduR_Sm.c
+; ..\component\PduR\Implementation\PduR_Sm.c	   448   *********************************************************************************************************************/
+
+	; Module end

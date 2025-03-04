@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Lcfg.h
- *   Generation Time: 2025-04-01 10:51:24
+ *   Generation Time: 2025-03-03 10:08:10
  *           Project: tc399demo - Version 1.0
  *          Delivery: CBD2100010_D00
  *      Tool Version: DaVinci Configurator (beta) 5.22.45 SP3
@@ -145,6 +145,18 @@ extern FUNC(void, OS_SWC_INIT_CODE) Os_Task_swc_init(void);
 extern FUNC(void, OS_SWC_TASK_CODE) Os_Task_swc_task(void);
 
 # define OS_STOP_SEC_swc_task_CODE
+# include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
+# define OS_START_SEC_CanIsr_0_CODE
+# include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+/**********************************************************************************************************************
+ *  CanIsr_0()
+ *********************************************************************************************************************/
+extern FUNC(void, OS_CANISR_0_CODE) Os_Isr_CanIsr_0(void);
+
+# define OS_STOP_SEC_CanIsr_0_CODE
 # include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 

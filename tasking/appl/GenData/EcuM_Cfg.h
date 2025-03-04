@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: EcuM_Cfg.h
- *   Generation Time: 2025-03-01 11:38:37
+ *   Generation Time: 2025-03-03 12:49:02
  *           Project: tc399demo - Version 1.0
  *          Delivery: CBD2100010_D00
  *      Tool Version: DaVinci Configurator (beta) 5.22.45 SP3
@@ -50,10 +50,10 @@
  *********************************************************************************************************************/
 /* pre-compile switches for EcuM configuration and services */
 #ifndef ECUM_DEV_ERROR_DETECT
-#define ECUM_DEV_ERROR_DETECT STD_OFF
+#define ECUM_DEV_ERROR_DETECT STD_ON
 #endif
 #ifndef ECUM_DEV_ERROR_REPORT
-#define ECUM_DEV_ERROR_REPORT STD_OFF
+#define ECUM_DEV_ERROR_REPORT STD_ON
 #endif
 
 # define ECUM_DEFERRED_BSWM_NOTIFICATION                              (STD_OFF)
@@ -220,14 +220,15 @@
 #define ECUM_ECUMPARTITIONOFPARTITIONDATA                             STD_OFF  /**< Deactivateable: 'EcuM_PartitionData.EcuMPartition' Reason: 'the array is deactivated because the size is 0 and the piece of data is in the configuration class: PRE_COMPILE' */
 #define ECUM_RESOURCEOFPARTITIONDATA                                  STD_OFF  /**< Deactivateable: 'EcuM_PartitionData.Resource' Reason: 'the array is deactivated because the size is 0 and the piece of data is in the configuration class: PRE_COMPILE' */
 #define ECUM_SIZEOFDRIVERINITONE                                      STD_ON
+#define ECUM_SIZEOFWAKEUPSOURCELIST                                   STD_ON
 #define ECUM_SLEEPMODELIST                                            STD_OFF  /**< Deactivateable: 'EcuM_SleepModeList' Reason: 'the struct is deactivated because all elements are deactivated.' */
 #define ECUM_MCUMODEOFSLEEPMODELIST                                   STD_OFF  /**< Deactivateable: 'EcuM_SleepModeList.McuMode' Reason: 'the array is deactivated because the size is 0 and the piece of data is in the configuration class: PRE_COMPILE' */
 #define ECUM_POLLINGOFSLEEPMODELIST                                   STD_OFF  /**< Deactivateable: 'EcuM_SleepModeList.Polling' Reason: 'the array is deactivated because the size is 0 and the piece of data is in the configuration class: PRE_COMPILE' */
 #define ECUM_VALIDOFSLEEPMODELIST                                     STD_OFF  /**< Deactivateable: 'EcuM_SleepModeList.Valid' Reason: 'the array is deactivated because the size is 0 and the piece of data is in the configuration class: PRE_COMPILE' */
 #define ECUM_WAKEUPSOURCEOFSLEEPMODELIST                              STD_OFF  /**< Deactivateable: 'EcuM_SleepModeList.WakeupSource' Reason: 'the array is deactivated because the size is 0 and the piece of data is in the configuration class: PRE_COMPILE' */
 #define ECUM_VALIDATIONTIMEOUTTABLE                                   STD_OFF  /**< Deactivateable: 'EcuM_ValidationTimeoutTable' Reason: 'No validation timeouts configured.' */
-#define ECUM_WAKEUPSOURCELIST                                         STD_OFF  /**< Deactivateable: 'EcuM_WakeupSourceList' Reason: 'the struct is deactivated because all elements are deactivated.' */
-#define ECUM_CHANNELOFWAKEUPSOURCELIST                                STD_OFF  /**< Deactivateable: 'EcuM_WakeupSourceList.Channel' Reason: 'No ComM Channel Reference configured.' */
+#define ECUM_WAKEUPSOURCELIST                                         STD_ON
+#define ECUM_CHANNELOFWAKEUPSOURCELIST                                STD_ON
 #define ECUM_CHECKWAKEUPTIMEOFWAKEUPSOURCELIST                        STD_OFF  /**< Deactivateable: 'EcuM_WakeupSourceList.CheckWakeupTime' Reason: 'the value of EcuM_CheckWakeupTimeOfWakeupSourceList is always '0' due to this, the array is deactivated.' */
 #define ECUM_COMMPNCSENDIDXOFWAKEUPSOURCELIST                         STD_OFF  /**< Deactivateable: 'EcuM_WakeupSourceList.ComMPNCsEndIdx' Reason: 'the optional indirection is deactivated because ComMPNCsUsedOfWakeupSourceList is always 'FALSE' and the target of the indirection is of the Configuration Class 'PRE_COMPILE'.' */
 #define ECUM_COMMPNCSSTARTIDXOFWAKEUPSOURCELIST                       STD_OFF  /**< Deactivateable: 'EcuM_WakeupSourceList.ComMPNCsStartIdx' Reason: 'the optional indirection is deactivated because ComMPNCsUsedOfWakeupSourceList is always 'FALSE' and the target of the indirection is of the Configuration Class 'PRE_COMPILE'.' */
@@ -250,6 +251,8 @@
 #define ECUM_MODULESTATEOFPCCONFIG                                    STD_ON
 #define ECUM_NORMALMCUMODEOFPCCONFIG                                  STD_ON
 #define ECUM_SIZEOFDRIVERINITONEOFPCCONFIG                            STD_ON
+#define ECUM_SIZEOFWAKEUPSOURCELISTOFPCCONFIG                         STD_ON
+#define ECUM_WAKEUPSOURCELISTOFPCCONFIG                               STD_ON
 /** 
   \}
 */ 
@@ -260,8 +263,10 @@
   \{
 */ 
 #define ECUM_ISDEF_FUNCTIONOFDRIVERINITONE                            STD_OFF
+#define ECUM_ISDEF_CHANNELOFWAKEUPSOURCELIST                          STD_OFF
 #define ECUM_ISDEF_DRIVERINITONEOFPCCONFIG                            STD_ON
 #define ECUM_ISDEF_MODULESTATEOFPCCONFIG                              STD_ON
+#define ECUM_ISDEF_WAKEUPSOURCELISTOFPCCONFIG                         STD_ON
 /** 
   \}
 */ 
@@ -272,8 +277,10 @@
   \{
 */ 
 #define ECUM_EQ2_FUNCTIONOFDRIVERINITONE                              
+#define ECUM_EQ2_CHANNELOFWAKEUPSOURCELIST                            
 #define ECUM_EQ2_DRIVERINITONEOFPCCONFIG                              EcuM_DriverInitOne
 #define ECUM_EQ2_MODULESTATEOFPCCONFIG                                (&(EcuM_ModuleState))
+#define ECUM_EQ2_WAKEUPSOURCELISTOFPCCONFIG                           EcuM_WakeupSourceList
 /** 
   \}
 */ 
@@ -342,6 +349,9 @@ typedef P2FUNC ( void, ECUM_CODE, EcuM_DriverFuncType)( void );
 /**   \brief  type used to iterate EcuM_DriverInitOne */
 typedef uint8_least EcuM_DriverInitOneIterType;
 
+/**   \brief  type used to iterate EcuM_WakeupSourceList */
+typedef uint8_least EcuM_WakeupSourceListIterType;
+
 /** 
   \}
 */ 
@@ -375,6 +385,12 @@ typedef uint32 EcuM_NormalMcuModeType;
 /**   \brief  value based type definition for EcuM_SizeOfDriverInitOne */
 typedef uint8 EcuM_SizeOfDriverInitOneType;
 
+/**   \brief  value based type definition for EcuM_SizeOfWakeupSourceList */
+typedef uint8 EcuM_SizeOfWakeupSourceListType;
+
+/**   \brief  value based type definition for EcuM_ChannelOfWakeupSourceList */
+typedef uint8 EcuM_ChannelOfWakeupSourceListType;
+
 /** 
   \}
 */ 
@@ -394,6 +410,12 @@ typedef struct sEcuM_DriverInitOneType
   EcuM_DriverFuncType FunctionOfDriverInitOne;
 } EcuM_DriverInitOneType;
 
+/**   \brief  type used in EcuM_WakeupSourceList */
+typedef struct sEcuM_WakeupSourceListType
+{
+  EcuM_ChannelOfWakeupSourceListType ChannelOfWakeupSourceList;  /**< Mapped ComM channel number - 255 if no ComM channel is assigned. */
+} EcuM_WakeupSourceListType;
+
 /** 
   \}
 */ 
@@ -408,6 +430,9 @@ typedef P2CONST(EcuM_DriverInitOneType, TYPEDEF, ECUM_CONST) EcuM_DriverInitOneP
 
 /**   \brief  type used to point to EcuM_ModuleState */
 typedef P2VAR(EcuM_StateType, TYPEDEF, ECUM_VAR_NOINIT) EcuM_ModuleStatePtrType;
+
+/**   \brief  type used to point to EcuM_WakeupSourceList */
+typedef P2CONST(EcuM_WakeupSourceListType, TYPEDEF, ECUM_CONST) EcuM_WakeupSourceListPtrType;
 
 /**   \brief  type used to point to EcuM_DefaultAppModeOfPCConfig */
 typedef P2CONST(EcuM_DefaultAppModeType, TYPEDEF, ECUM_CONST) EcuM_DefaultAppModeOfPCConfigPtrType;

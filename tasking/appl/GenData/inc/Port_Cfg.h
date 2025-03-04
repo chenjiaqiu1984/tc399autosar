@@ -14,7 +14,7 @@
 **                                                                            **
 **  VERSION   : 11.0.0                                                         **
 **                                                                            **
-**  DATE, TIME: 2025-03-01, 16:46:02              !!!IGNORE-LINE!!!           **
+**  DATE, TIME: 2025-03-04, 13:03:51              !!!IGNORE-LINE!!!           **
 **                                                                            **
 **  GENERATOR : Build b191017-0938                !!!IGNORE-LINE!!!           ** 
 **                                                                            **
@@ -61,7 +61,7 @@ Configuration: PORT_DEV_ERROR_DETECT
 - if STD_ON, DET is Enabled 
 - if STD_OFF, DET is Disabled 
 */
-#define PORT_DEV_ERROR_DETECT       (STD_OFF)
+#define PORT_DEV_ERROR_DETECT       (STD_ON)
 /*
 Configuration: PORT_VERSION_INFO_API 
 - if STD_ON,  Function Port_GetVersionInfo is available  

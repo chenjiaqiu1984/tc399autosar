@@ -17,7 +17,7 @@
 **                                                                            **
 **  VERSION   : 19.0.0                                                        **
 **                                                                            **
-**  DATE, TIME: 2025-03-01, 16:46:02             !!!IGNORE-LINE!!!            **
+**  DATE, TIME: 2025-03-04, 13:03:48             !!!IGNORE-LINE!!!            **
 **                                                                            **
 **  GENERATOR : Build b191017-0938              !!!IGNORE-LINE!!!             **
 **                                                                            **
@@ -64,6 +64,15 @@
                 </BSW-MODULE-ENTRY-REF-CONDITIONAL>
               </PROVIDED-ENTRYS>
               <BSW-MODULE-DEPENDENCYS>
+                <BSW-MODULE-DEPENDENCY>
+                  <SHORT-NAME>DetDependency</SHORT-NAME>
+                  <TARGET-MODULE-ID>15</TARGET-MODULE-ID>
+                  <REQUIRED-ENTRYS>
+                    <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                      <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_Det/BswModuleEntrys/Det_ReportError</BSW-MODULE-ENTRY-REF>
+                    </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                  </REQUIRED-ENTRYS>
+                </BSW-MODULE-DEPENDENCY>
                 <BSW-MODULE-DEPENDENCY>
                   <SHORT-NAME>McalLibDependency</SHORT-NAME>
                   <TARGET-MODULE-ID>255</TARGET-MODULE-ID>
@@ -224,6 +233,11 @@
               <RESOURCE-CONSUMPTION>
                 <SHORT-NAME>ResourceConsumption</SHORT-NAME>
                 <MEMORY-SECTIONS>
+                  <MEMORY-SECTION>
+                    <SHORT-NAME>VAR_CLEARED_ASIL_B_GLOBAL_8</SHORT-NAME>
+                    <ALIGNMENT>8</ALIGNMENT>
+                    <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/AUTOSAR_MemMap/SwAddrMethods/VAR_CLEARED</SW-ADDRMETHOD-REF>
+                  </MEMORY-SECTION>
                   <MEMORY-SECTION>
                     <SHORT-NAME>VAR_CLEARED_ASIL_B_GLOBAL_32</SHORT-NAME>
                     <ALIGNMENT>32</ALIGNMENT>

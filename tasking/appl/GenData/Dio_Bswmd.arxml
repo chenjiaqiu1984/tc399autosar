@@ -17,7 +17,7 @@
 **                                                                            **
 **  VERSION   : 25.0.0                                                        **
 **                                                                            **
-**  DATE, TIME: 2025-03-01, 16:46:01          !!!IGNORE-LINE!!!               **
+**  DATE, TIME: 2025-03-04, 13:03:48          !!!IGNORE-LINE!!!               **
 **                                                                            **
 **  GENERATOR : Build b191017-0938            !!!IGNORE-LINE!!!               **
 **                                                                            **
@@ -77,6 +77,16 @@
                 </BSW-MODULE-ENTRY-REF-CONDITIONAL>
                                                               </PROVIDED-ENTRYS>
               <BSW-MODULE-DEPENDENCYS>
+                                <BSW-MODULE-DEPENDENCY>
+                  <SHORT-NAME>DetDependency</SHORT-NAME>
+                  <CATEGORY>BSW_MODULE</CATEGORY>
+                  <TARGET-MODULE-ID>15</TARGET-MODULE-ID>
+                  <REQUIRED-ENTRYS>
+                    <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                      <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_Det/BswModuleEntrys/Det_ReportError</BSW-MODULE-ENTRY-REF>
+                    </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                  </REQUIRED-ENTRYS>
+                </BSW-MODULE-DEPENDENCY>
                                 <BSW-MODULE-DEPENDENCY>
                   <SHORT-NAME>McalLibDependency</SHORT-NAME>
                   <TARGET-MODULE-ID>255</TARGET-MODULE-ID>

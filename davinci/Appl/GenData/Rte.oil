@@ -34,13 +34,26 @@
       SCHEDULE = FULL:"@RO@";
 // TIMING_PROTECTION = FALSE|TRUE; (AUTOSAR OS only)
       AUTOSTART = FALSE:"@RO@";
+      EVENT = Rte_Ev_Cyclic2_bsw_task_0_10ms:"@RO@";
+      EVENT = Rte_Ev_Cyclic2_bsw_task_0_20ms:"@RO@";
    }:"@RO@@NR@";
 
    ALARM Rte_Al_TE2_bsw_task_0_10ms {
       COUNTER = SystemTimer;
-      ACTION = ACTIVATETASK
+      ACTION = SETEVENT
       {
          TASK = bsw_task;
+         EVENT = Rte_Ev_Cyclic2_bsw_task_0_10ms;
+      }:"@ROC@";
+      AUTOSTART = FALSE:"@RO@";
+   }:"@RO@@NR@";
+
+   ALARM Rte_Al_TE2_bsw_task_0_20ms {
+      COUNTER = SystemTimer;
+      ACTION = SETEVENT
+      {
+         TASK = bsw_task;
+         EVENT = Rte_Ev_Cyclic2_bsw_task_0_20ms;
       }:"@ROC@";
       AUTOSTART = FALSE:"@RO@";
    }:"@RO@@NR@";
@@ -82,6 +95,14 @@
       }:"@ROC@";
       AUTOSTART = FALSE:"@RO@";
    }:"@RO@@NR@";
+
+   EVENT Rte_Ev_Cyclic2_bsw_task_0_10ms {
+      MASK = AUTO;
+   }:"@ROC@@NR@";
+
+   EVENT Rte_Ev_Cyclic2_bsw_task_0_20ms {
+      MASK = AUTO;
+   }:"@ROC@@NR@";
 
    EVENT Rte_Ev_Run_swc_test_swc_test_10ms {
       MASK = AUTO;

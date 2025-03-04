@@ -13,7 +13,7 @@
  *             File:  Rte_swc_test_Type.h
  *           Config:  D:/Zonal/demo011/davinci/tc399demo.dpa
  *        SW-C Type:  swc_test
- *  Generation Time:  2025-03-01 14:18:49
+ *  Generation Time:  2025-03-03 12:49:59
  *
  *        Generator:  MICROSAR RTE Generator Version 4.23.0
  *                    RTE Core Version 1.23.0
@@ -43,6 +43,18 @@ extern "C"
 
 # ifndef REQUESTED
 #  define REQUESTED (1U)
+# endif
+
+# ifndef COMM_NO_COMMUNICATION
+#  define COMM_NO_COMMUNICATION (0U)
+# endif
+
+# ifndef COMM_SILENT_COMMUNICATION
+#  define COMM_SILENT_COMMUNICATION (1U)
+# endif
+
+# ifndef COMM_FULL_COMMUNICATION
+#  define COMM_FULL_COMMUNICATION (2U)
 # endif
 
 

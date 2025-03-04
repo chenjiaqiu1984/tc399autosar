@@ -14,7 +14,7 @@
 **                                                                            **
 **  VERSION   : 21.0.0                                                         **
 **                                                                            **
-**  DATE, TIME: 2025-03-01, 16:46:04         !!!IGNORE-LINE!!!                **
+**  DATE, TIME: 2025-03-03, 12:48:58         !!!IGNORE-LINE!!!                **
 **                                                                            **
 **  GENERATOR : Build b191017-0938             !!!IGNORE-LINE!!!              **
 **                                                                            **
@@ -75,7 +75,7 @@
   ON  : DET is Enabled
   OFF : DET is Disabled
 */
-#define  MCU_DEV_ERROR_DETECT (STD_OFF)
+#define  MCU_DEV_ERROR_DETECT (STD_ON)
 
 /*
   Configuration: MCU_MULTICORE_ERROR_DETECT
@@ -84,7 +84,7 @@
   ON  : Multicore error detection and reporting is Enabled
   OFF : Multicore error detection and reporting is Disabled
 */
-#define  MCU_MULTICORE_ERROR_DETECT (STD_OFF)
+#define  MCU_MULTICORE_ERROR_DETECT (STD_ON)
 
 /*
   Configuration: MCU_VERSION_INFO_API

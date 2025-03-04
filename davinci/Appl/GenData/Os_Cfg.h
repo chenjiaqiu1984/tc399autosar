@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Cfg.h
- *   Generation Time: 2025-03-01 11:36:41
+ *   Generation Time: 2025-03-03 09:41:04
  *           Project: tc399demo - Version 1.0
  *          Delivery: CBD2100010_D00
  *      Tool Version: DaVinci Configurator (beta) 5.22.45 SP3
@@ -120,10 +120,39 @@
 # define OS_CFG_EVENT                            (STD_ON)
 
 /* Event masks */
+# define Rte_Ev_Cyclic2_bsw_task_0_10ms     ((EventMaskType)1uLL)
+# define Rte_Ev_Cyclic2_bsw_task_0_20ms     ((EventMaskType)2uLL)
 # define Rte_Ev_Run_swc_test_swc_test_10ms     ((EventMaskType)1uLL)
 # define Rte_Ev_Run_swc_test_swc_test_500ms     ((EventMaskType)2uLL)
 
 /* Software counter timing macros */
+/* Counter timing macros and constants: OsCounterCAN0 */
+# define OSMAXALLOWEDVALUE_OsCounterCAN0     (1073741823uL) /* 0x3FFFFFFFuL */
+# define OSMINCYCLE_OsCounterCAN0            (1uL)
+# define OSTICKSPERBASE_OsCounterCAN0        (1uL)
+# define OSTICKDURATION_OsCounterCAN0        (1000000uL)
+
+/*! Macro OS_NS2TICKS_OsCounterCAN0 was approximated with a deviation of 0.0ppm. */
+# define OS_NS2TICKS_OsCounterCAN0(x)     ( (TickType) (((((uint32)(x)) * 1) + 500000) / 1000000) ) /* PRQA S 3453 */ /* MD_MSR_FctLikeMacro */
+/*! Macro OS_TICKS2NS_OsCounterCAN0 was approximated with a deviation of 0.0ppm. */
+# define OS_TICKS2NS_OsCounterCAN0(x)     ( (PhysicalTimeType) (((((uint32)(x)) * 1000000) + 0) / 1) ) /* PRQA S 3453 */ /* MD_MSR_FctLikeMacro */
+
+/*! Macro OS_US2TICKS_OsCounterCAN0 was approximated with a deviation of 0.0ppm. */
+# define OS_US2TICKS_OsCounterCAN0(x)     ( (TickType) (((((uint32)(x)) * 1) + 500) / 1000) ) /* PRQA S 3453 */ /* MD_MSR_FctLikeMacro */
+/*! Macro OS_TICKS2US_OsCounterCAN0 was approximated with a deviation of 1.1102230246251565E-10ppm. */
+# define OS_TICKS2US_OsCounterCAN0(x)     ( (PhysicalTimeType) (((((uint32)(x)) * 1000) + 0) / 1) ) /* PRQA S 3453 */ /* MD_MSR_FctLikeMacro */
+
+/*! Macro OS_MS2TICKS_OsCounterCAN0 was approximated with a deviation of 0.0ppm. */
+# define OS_MS2TICKS_OsCounterCAN0(x)     ( (TickType) (((((uint32)(x)) * 1) + 0) / 1) ) /* PRQA S 3453 */ /* MD_MSR_FctLikeMacro */
+/*! Macro OS_TICKS2MS_OsCounterCAN0 was approximated with a deviation of 0.0ppm. */
+# define OS_TICKS2MS_OsCounterCAN0(x)     ( (PhysicalTimeType) (((((uint32)(x)) * 1) + 0) / 1) ) /* PRQA S 3453 */ /* MD_MSR_FctLikeMacro */
+
+/*! Macro OS_SEC2TICKS_OsCounterCAN0 was approximated with a deviation of 0.0ppm. */
+# define OS_SEC2TICKS_OsCounterCAN0(x)     ( (TickType) (((((uint32)(x)) * 1000) + 0) / 1) ) /* PRQA S 3453 */ /* MD_MSR_FctLikeMacro */
+/*! Macro OS_TICKS2SEC_OsCounterCAN0 was approximated with a deviation of 0.0ppm. */
+# define OS_TICKS2SEC_OsCounterCAN0(x)     ( (PhysicalTimeType) (((((uint32)(x)) * 1) + 500) / 1000) ) /* PRQA S 3453 */ /* MD_MSR_FctLikeMacro */
+
+
 
 /**********************************************************************************************************************
  *  GLOBAL FUNCTION MACROS

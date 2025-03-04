@@ -1,6 +1,6 @@
 	; Module start
 	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 21092262 SN 73118428"
-	.compiler_invocation	"ctc --dep-file=appl\\Source\\.BrsHwStartup.o.d --fp-model=c,f,l,n,r,S,T,z -D__CPU__=tc39xb -D__CPU_TC39XB__ --core=tc1.6.2 --iso=99 -DBRS_COMP_TASKING -ID:\\Zonal\\demo011\\tasking -ID:\\Zonal\\testdemo\\taskingdemo\\demo001 -ID:\\Zonal\\demo011\\tasking -ID:\\Zonal\\demo011\\tasking\\appl -ID:\\Zonal\\demo011\\tasking\\appl\\GenData -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\Components -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\ContractPhase -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\inc -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\src -ID:\\Zonal\\demo011\\tasking\\appl\\Include -ID:\\Zonal\\demo011\\tasking\\appl\\Source -ID:\\Zonal\\demo011\\tasking\\appl\\Source\\swc_test -ID:\\Zonal\\demo011\\tasking\\component -ID:\\Zonal\\demo011\\tasking\\component\\_Common -ID:\\Zonal\\demo011\\tasking\\component\\_Common\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\BswM -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\EcuM -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\Os -ID:\\Zonal\\demo011\\tasking\\component\\Os\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\Os\\BSWMD\\Os -ID:\\Zonal\\demo011\\tasking\\component\\Os\\BSWMD\\Os\\TC39xQ -ID:\\Zonal\\demo011\\tasking\\component\\Os\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\Os\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\Os\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug -ID:\\Zonal\\demo011\\tasking\\Debug\\appl -ID:\\Zonal\\demo011\\tasking\\Debug\\appl\\GenData -ID:\\Zonal\\demo011\\tasking\\Debug\\appl\\GenData\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\appl\\Source -ID:\\Zonal\\demo011\\tasking\\Debug\\component -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\BswM -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\BswM\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\EcuM -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\EcuM\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\Os -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\Os\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\VStdLib -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\VStdLib\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Dio -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Dio\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Dio\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\McalLib -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\McalLib\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\McalLib\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Mcu -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Mcu\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Mcu\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Port -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Port\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Port\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Platform -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Platform\\AS440 -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Sfr -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Sfr\\TC39xB -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Sfr\\TC39xB\\_Reg -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc\\inc\\AS440 -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal\\Port -ID:\\Zonal\\demo011\\tasking\\mcal\\Port\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\Port\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\Port\\ssc\\src -g2 --make-target=appl\\Source\\BrsHwStartup.o -t2 --language=-gcc,-volatile,+strings,-kanji --default-near-size=0 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o appl\\Source\\BrsHwStartup.src ..\\appl\\Source\\BrsHwStartup.c"
+	.compiler_invocation	"ctc --dep-file=appl\\Source\\.BrsHwStartup.o.d --fp-model=c,f,l,n,r,S,T,z -D__CPU__=tc39xb -D__CPU_TC39XB__ --core=tc1.6.2 --iso=99 -DBRS_COMP_TASKING -ID:\\Zonal\\demo011\\tasking -ID:\\Zonal\\testdemo\\taskingdemo\\demo001 -ID:\\Zonal\\demo011\\tasking\\component\\PduR -ID:\\Zonal\\demo011\\tasking\\component\\PduR\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\PduR\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\PduR\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\PduR\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\Can -ID:\\Zonal\\demo011\\tasking\\component\\SomeIpXf -ID:\\Zonal\\demo011\\tasking\\component\\SomeIpXf\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\SomeIpXf\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\SomeIpXf\\Generator -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\Can\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\Can\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\Can\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\Can\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\CanIf -ID:\\Zonal\\demo011\\tasking\\component\\CanIf\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\CanIf\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\CanIf\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\CanIf\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\CanSM -ID:\\Zonal\\demo011\\tasking\\component\\CanSM\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\CanSM\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\CanSM\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\CanSM\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\Com -ID:\\Zonal\\demo011\\tasking\\component\\Com\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\Com\\DaVinciCfg_VASE -ID:\\Zonal\\demo011\\tasking\\component\\Com\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\Com\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\Com\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\ComM -ID:\\Zonal\\demo011\\tasking\\component\\ComM\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\ComM\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\ComM\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\ComM\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\Det -ID:\\Zonal\\demo011\\tasking\\component\\Det\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\Det\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\Det\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\Det\\Implementation -ID:\\Zonal\\demo011\\tasking -ID:\\Zonal\\demo011\\tasking\\appl -ID:\\Zonal\\demo011\\tasking\\appl\\GenData -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\Components -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\ContractPhase -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\inc -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\src -ID:\\Zonal\\demo011\\tasking\\appl\\Include -ID:\\Zonal\\demo011\\tasking\\appl\\Source -ID:\\Zonal\\demo011\\tasking\\appl\\Source\\swc_test -ID:\\Zonal\\demo011\\tasking\\component -ID:\\Zonal\\demo011\\tasking\\component\\_Common -ID:\\Zonal\\demo011\\tasking\\component\\_Common\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\BswM -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\EcuM -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\Os -ID:\\Zonal\\demo011\\tasking\\component\\Os\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\Os\\BSWMD\\Os -ID:\\Zonal\\demo011\\tasking\\component\\Os\\BSWMD\\Os\\TC39xQ -ID:\\Zonal\\demo011\\tasking\\component\\Os\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\Os\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\Os\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug -ID:\\Zonal\\demo011\\tasking\\Debug\\appl -ID:\\Zonal\\demo011\\tasking\\Debug\\appl\\GenData -ID:\\Zonal\\demo011\\tasking\\Debug\\appl\\GenData\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\appl\\Source -ID:\\Zonal\\demo011\\tasking\\Debug\\component -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\BswM -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\BswM\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\EcuM -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\EcuM\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\Os -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\Os\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\VStdLib -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\VStdLib\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Dio -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Dio\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Dio\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\McalLib -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\McalLib\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\McalLib\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Mcu -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Mcu\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Mcu\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Port -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Port\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Port\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Platform -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Platform\\AS440 -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Sfr -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Sfr\\TC39xB -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Sfr\\TC39xB\\_Reg -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc\\inc\\AS440 -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal\\Port -ID:\\Zonal\\demo011\\tasking\\mcal\\Port\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\Port\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\Port\\ssc\\src -g2 --make-target=appl\\Source\\BrsHwStartup.o -t2 --language=-gcc,-volatile,+strings,-kanji --default-near-size=0 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o appl\\Source\\BrsHwStartup.src ..\\appl\\Source\\BrsHwStartup.c"
 	.compiler_name		"ctc"
 	;source	'..\\appl\\Source\\BrsHwStartup.c'
 
@@ -1574,7 +1574,7 @@ __brsStartupEntry_internal_function_end:
 	.sdecl	'.debug_info',debug
 	.sect	'.debug_info'
 .L27:
-	.word	9200
+	.word	9583
 	.half	3
 	.word	.L28
 	.byte	4
@@ -1730,14 +1730,17 @@ __brsStartupEntry_internal_function_end:
 	.byte	23
 	.byte	'StatusType',0,6,127,23
 	.word	676
+	.byte	23
+	.byte	'Std_ReturnType',0,6,132,1,15
+	.word	676
 	.byte	21,32
 	.word	123
 	.byte	22,7,0,9
-	.word	889
+	.word	913
 	.byte	25
 	.byte	'kBrsWdtCon0Addresses',0,1,251,1,21
-	.word	898
-	.byte	1,1,26,7,145,1,9,1,27
+	.word	922
+	.byte	1,1,26,7,148,1,9,1,27
 	.byte	'Default_Init_Task',0,0,27
 	.byte	'Default_Init_Task_Trusted',0,1,27
 	.byte	'IdleTask_OsCore0',0,2,27
@@ -1746,8 +1749,8 @@ __brsStartupEntry_internal_function_end:
 	.byte	'swc_task',0,5,27
 	.byte	'INVALID_TASK',0,6,27
 	.byte	'OS_TASKID_COUNT',0,6,0,23
-	.byte	'TaskType',0,7,155,1,3
-	.word	935
+	.byte	'TaskType',0,7,158,1,3
+	.word	959
 	.byte	23
 	.byte	'Os_Hal_AddressType',0,8,61,16
 	.word	123
@@ -1784,7 +1787,7 @@ __brsStartupEntry_internal_function_end:
 	.word	123
 	.byte	4,3,35,156,1,0,23
 	.byte	'Os_ExceptionContextType',0,8,66,44
-	.word	1120
+	.word	1144
 	.byte	23
 	.byte	'Os_InterruptSourceIdType',0,10,238,1,16
 	.word	123
@@ -1797,7 +1800,7 @@ __brsStartupEntry_internal_function_end:
 	.byte	'WAITING',0,2,27
 	.byte	'SUSPENDED',0,3,0,23
 	.byte	'TaskStateType',0,10,175,2,3
-	.word	1468
+	.word	1492
 	.byte	23
 	.byte	'EventMaskType',0,10,182,2,16
 	.word	829
@@ -1818,13 +1821,13 @@ __brsStartupEntry_internal_function_end:
 	.word	123
 	.byte	4,2,35,8,0,23
 	.byte	'AlarmBaseType',0,10,228,2,2
-	.word	1600
+	.word	1624
 	.byte	26,10,128,3,9,1,27
 	.byte	'APPLICATION_TERMINATED',0,0,27
 	.byte	'APPLICATION_RESTARTING',0,1,27
 	.byte	'APPLICATION_ACCESSIBLE',0,2,0,23
 	.byte	'ApplicationStateType',0,10,133,3,3
-	.word	1695
+	.word	1719
 	.byte	26,10,177,3,9,1,27
 	.byte	'OSServiceId_GetApplicationID',0,0,27
 	.byte	'OSServiceId_GetISRID',0,1,27
@@ -1926,7 +1929,7 @@ __brsStartupEntry_internal_function_end:
 	.byte	'OSServiceId_ReleaseResource',0,233,1,27
 	.byte	'OSSERVICEID_COUNT',0,255,1,0,23
 	.byte	'OSServiceIdType',0,10,156,4,3
-	.word	1807
+	.word	1831
 	.byte	26,10,172,4,9,2,27
 	.byte	'OS_STATUS_OK',0,0,27
 	.byte	'OS_STATUS_CALLEVEL',0,2,27
@@ -2016,19 +2019,19 @@ __brsStartupEntry_internal_function_end:
 	.byte	'OS_STATUS_VALUE_IS_TOO_LOW_3',0,136,20,27
 	.byte	'OS_STATUS_VALUE_IS_NOT_BOOLEAN',0,136,22,0,23
 	.byte	'Os_StatusType',0,10,232,5,3
-	.word	4977
+	.word	5001
 	.byte	30,10,133,6,9,4,29
 	.byte	'Service',0
-	.word	1807
+	.word	1831
 	.byte	1,2,35,0,29
 	.byte	'Error',0
 	.word	676
 	.byte	1,2,35,1,29
 	.byte	'DetailedError',0
-	.word	4977
+	.word	5001
 	.byte	2,2,35,2,0,23
 	.byte	'Os_ErrorInformationType',0,10,143,6,3
-	.word	7507
+	.word	7531
 	.byte	26,10,175,6,9,1,27
 	.byte	'SCHEDULETABLE_STOPPED',0,0,27
 	.byte	'SCHEDULETABLE_NEXT',0,1,27
@@ -2036,7 +2039,7 @@ __brsStartupEntry_internal_function_end:
 	.byte	'SCHEDULETABLE_RUNNING',0,3,27
 	.byte	'SCHEDULETABLE_RUNNING_AND_SYNCHRONOUS',0,4,0,23
 	.byte	'ScheduleTableStatusType',0,10,192,6,3
-	.word	7602
+	.word	7626
 	.byte	23
 	.byte	'Os_AccessCheckAddress',0,10,199,6,29
 	.word	123
@@ -2062,41 +2065,72 @@ __brsStartupEntry_internal_function_end:
 	.byte	'OS_MEM_ACCESS_TYPE_WXS',0,14,27
 	.byte	'OS_MEM_ACCESS_TYPE_RWXS',0,15,0,23
 	.byte	'Os_MemAccessType',0,10,233,6,3
-	.word	7806
+	.word	7830
 	.byte	23
-	.byte	'EcuM_ModeType',0,11,55,15
+	.byte	'PduLengthType',0,11,65,15
+	.word	676
+	.byte	3
 	.word	676
 	.byte	23
-	.byte	'EcuM_StateType',0,11,61,15
+	.byte	'SduDataPtrType',0,12,196,1,54
+	.word	8381
+	.byte	26,12,219,1,9,1,27
+	.byte	'TP_DATACONF',0,0,27
+	.byte	'TP_DATARETRY',0,1,27
+	.byte	'TP_CONFPENDING',0,2,0,23
+	.byte	'TpDataStateType',0,12,226,1,3
+	.word	8410
+	.byte	28
+	.byte	'sDet_PCConfigType',0,13,238,1,16,1,29
+	.byte	'Det_PCConfigNeverUsed',0
+	.word	676
+	.byte	1,2,35,0,0,23
+	.byte	'Det_PCConfigType',0,13,241,1,3
+	.word	8488
+	.byte	23
+	.byte	'EcuM_ModeType',0,14,64,15
+	.word	676
+	.byte	23
+	.byte	'EcuM_StateType',0,14,70,15
 	.word	676
 	.byte	31,1,1,3
-	.word	8380
+	.word	8615
 	.byte	23
-	.byte	'EcuM_DriverFuncType',0,12,194,2,9
-	.word	8383
+	.byte	'EcuM_DriverFuncType',0,15,201,2,9
+	.word	8618
 	.byte	23
-	.byte	'EcuM_DefaultAppModeType',0,12,227,2,16
+	.byte	'EcuM_DefaultAppModeType',0,15,237,2,16
 	.word	123
 	.byte	23
-	.byte	'EcuM_NormalMcuModeType',0,12,245,2,16
+	.byte	'EcuM_NormalMcuModeType',0,15,255,2,16
 	.word	123
+	.byte	23
+	.byte	'EcuM_ChannelOfWakeupSourceListType',0,15,136,3,15
+	.word	676
 	.byte	28
-	.byte	'sEcuM_DriverInitOneType',0,12,136,3,16,4,29
+	.byte	'sEcuM_DriverInitOneType',0,15,152,3,16,4,29
 	.byte	'FunctionOfDriverInitOne',0
-	.word	8388
+	.word	8623
 	.byte	4,2,35,0,0,23
-	.byte	'EcuM_DriverInitOneType',0,12,139,3,3
-	.word	8482
+	.byte	'EcuM_DriverInitOneType',0,15,155,3,3
+	.word	8761
 	.byte	3
-	.word	8380
+	.word	8615
 	.byte	28
-	.byte	'sEcuM_PCConfigType',0,12,175,3,16,1,29
+	.byte	'sEcuM_WakeupSourceListType',0,15,158,3,16,1,29
+	.byte	'ChannelOfWakeupSourceList',0
+	.word	676
+	.byte	1,2,35,0,0,23
+	.byte	'EcuM_WakeupSourceListType',0,15,161,3,3
+	.word	8862
+	.byte	28
+	.byte	'sEcuM_PCConfigType',0,15,200,3,16,1,29
 	.byte	'EcuM_PCConfigNeverUsed',0
 	.word	676
 	.byte	1,2,35,0,0,23
-	.byte	'EcuM_PCConfigType',0,12,178,3,3
-	.word	8583
-	.byte	30,13,77,9,16,29
+	.byte	'EcuM_PCConfigType',0,15,203,3,3
+	.word	8966
+	.byte	30,16,77,9,16,29
 	.byte	'Start',0
 	.word	123
 	.byte	4,2,35,0,29
@@ -2109,22 +2143,22 @@ __brsStartupEntry_internal_function_end:
 	.byte	'Alignment',0
 	.word	123
 	.byte	4,2,35,12,0,23
-	.byte	'vLinkGen_MemArea',0,13,87,3
-	.word	8668
+	.byte	'vLinkGen_MemArea',0,16,87,3
+	.word	9051
 	.byte	9
-	.word	8668
+	.word	9051
 	.byte	3
-	.word	8760
-	.byte	30,13,90,9,8,29
+	.word	9143
+	.byte	30,16,90,9,8,29
 	.byte	'Num',0
 	.word	123
 	.byte	4,2,35,0,29
 	.byte	'Areas',0
-	.word	8765
+	.word	9148
 	.byte	4,2,35,4,0,23
-	.byte	'vLinkGen_MemAreaSet',0,13,96,3
-	.word	8770
-	.byte	30,13,99,9,24,29
+	.byte	'vLinkGen_MemAreaSet',0,16,96,3
+	.word	9153
+	.byte	30,16,99,9,24,29
 	.byte	'Start',0
 	.word	123
 	.byte	4,2,35,0,29
@@ -2143,35 +2177,35 @@ __brsStartupEntry_internal_function_end:
 	.byte	'Alignment',0
 	.word	123
 	.byte	4,2,35,20,0,23
-	.byte	'vLinkGen_RamMemArea',0,13,113,3
-	.word	8832
+	.byte	'vLinkGen_RamMemArea',0,16,113,3
+	.word	9215
 	.byte	9
-	.word	8770
+	.word	9153
 	.byte	25
-	.byte	'vLinkGen_ZeroInit_Early_GroupsSet',0,13,228,1,34
-	.word	8961
+	.byte	'vLinkGen_ZeroInit_Early_GroupsSet',0,16,228,1,34
+	.word	9344
 	.byte	1,1,21,64
 	.word	306
 	.byte	22,15,0,32
-	.word	9011
+	.word	9394
 	.byte	33,0,25
 	.byte	'__CSA_BEGIN_CPU0_',0,4,96,14
-	.word	9020
+	.word	9403
 	.byte	1,1,25
 	.byte	'__CSA_END_CPU0_',0,4,97,14
-	.word	9020
+	.word	9403
 	.byte	1,1,34
 	.byte	'void',0,32
-	.word	9081
+	.word	9464
 	.byte	33,0,25
 	.byte	'__STARTUPSTACK_CORE0',0,4,125,21
-	.word	9087
+	.word	9470
 	.byte	1,1,25
 	.byte	'_OS_EXCVEC_CORE0_CODE_START',0,4,146,1,21
-	.word	9087
+	.word	9470
 	.byte	1,1,25
 	.byte	'_OS_INTVEC_CORE0_CODE_START',0,4,163,1,21
-	.word	9087
+	.word	9470
 	.byte	1,1,0
 	.sdecl	'.debug_abbrev',debug
 	.sect	'.debug_abbrev'
@@ -2209,6 +2243,9 @@ __brsStartupEntry_internal_function_end:
 	.byte	'Os_Hal_Os_Types.h',0,4,0,0
 	.byte	'Os_Hal_OsInt.h',0,4,0,0
 	.byte	'Os_Types.h',0,4,0,0
+	.byte	'ComStack_Cfg.h',0,3,0,0
+	.byte	'ComStack_Types.h',0,2,0,0
+	.byte	'Det_Cfg.h',0,3,0,0
 	.byte	'Rte_Type.h',0,3,0,0
 	.byte	'EcuM_Cfg.h',0,3,0,0
 	.byte	'vLinkGen_Lcfg.h',0,3,0,0,0
