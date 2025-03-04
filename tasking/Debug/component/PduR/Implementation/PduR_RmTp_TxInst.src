@@ -1,0 +1,3058 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 21092262 SN 73118428"
+	.compiler_invocation	"ctc --dep-file=component\\PduR\\Implementation\\.PduR_RmTp_TxInst.o.d --fp-model=c,f,l,n,r,S,T,z -D__CPU__=tc39xb -D__CPU_TC39XB__ --core=tc1.6.2 --iso=99 -DBRS_COMP_TASKING -ID:\\Zonal\\demo011\\tasking -ID:\\Zonal\\testdemo\\taskingdemo\\demo001 -ID:\\Zonal\\demo011\\tasking\\component\\PduR -ID:\\Zonal\\demo011\\tasking\\component\\PduR\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\PduR\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\PduR\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\PduR\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\Can -ID:\\Zonal\\demo011\\tasking\\component\\SomeIpXf -ID:\\Zonal\\demo011\\tasking\\component\\SomeIpXf\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\SomeIpXf\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\SomeIpXf\\Generator -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\Can\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\Can\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\Can\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\Can\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\CanIf -ID:\\Zonal\\demo011\\tasking\\component\\CanIf\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\CanIf\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\CanIf\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\CanIf\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\CanSM -ID:\\Zonal\\demo011\\tasking\\component\\CanSM\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\CanSM\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\CanSM\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\CanSM\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\Com -ID:\\Zonal\\demo011\\tasking\\component\\Com\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\Com\\DaVinciCfg_VASE -ID:\\Zonal\\demo011\\tasking\\component\\Com\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\Com\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\Com\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\ComM -ID:\\Zonal\\demo011\\tasking\\component\\ComM\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\ComM\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\ComM\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\ComM\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\Det -ID:\\Zonal\\demo011\\tasking\\component\\Det\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\Det\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\Det\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\Det\\Implementation -ID:\\Zonal\\demo011\\tasking -ID:\\Zonal\\demo011\\tasking\\appl -ID:\\Zonal\\demo011\\tasking\\appl\\GenData -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\Components -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\ContractPhase -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\inc -ID:\\Zonal\\demo011\\tasking\\appl\\GenData\\src -ID:\\Zonal\\demo011\\tasking\\appl\\Include -ID:\\Zonal\\demo011\\tasking\\appl\\Source -ID:\\Zonal\\demo011\\tasking\\appl\\Source\\swc_test -ID:\\Zonal\\demo011\\tasking\\component -ID:\\Zonal\\demo011\\tasking\\component\\_Common -ID:\\Zonal\\demo011\\tasking\\component\\_Common\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\BswM -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\BswM\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\EcuM -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\EcuM\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\Mcal_Tc3xx\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\Os -ID:\\Zonal\\demo011\\tasking\\component\\Os\\BSWMD -ID:\\Zonal\\demo011\\tasking\\component\\Os\\BSWMD\\Os -ID:\\Zonal\\demo011\\tasking\\component\\Os\\BSWMD\\Os\\TC39xQ -ID:\\Zonal\\demo011\\tasking\\component\\Os\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\Os\\GeneratorMsr -ID:\\Zonal\\demo011\\tasking\\component\\Os\\Implementation -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib\\Documentation -ID:\\Zonal\\demo011\\tasking\\component\\VStdLib\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug -ID:\\Zonal\\demo011\\tasking\\Debug\\appl -ID:\\Zonal\\demo011\\tasking\\Debug\\appl\\GenData -ID:\\Zonal\\demo011\\tasking\\Debug\\appl\\GenData\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\appl\\Source -ID:\\Zonal\\demo011\\tasking\\Debug\\component -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\BswM -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\BswM\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\EcuM -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\EcuM\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\Os -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\Os\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\VStdLib -ID:\\Zonal\\demo011\\tasking\\Debug\\component\\VStdLib\\Implementation -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Dio -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Dio\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Dio\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\McalLib -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\McalLib\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\McalLib\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Mcu -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Mcu\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Mcu\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Port -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Port\\ssc -ID:\\Zonal\\demo011\\tasking\\Debug\\mcal\\Port\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\Dio\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Platform -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Platform\\AS440 -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Sfr -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Sfr\\TC39xB -ID:\\Zonal\\demo011\\tasking\\mcal\\Infra_Prod\\Sfr\\TC39xB\\_Reg -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc\\inc\\AS440 -ID:\\Zonal\\demo011\\tasking\\mcal\\McalLib\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\Mcu\\ssc\\src -ID:\\Zonal\\demo011\\tasking\\mcal\\Port -ID:\\Zonal\\demo011\\tasking\\mcal\\Port\\ssc -ID:\\Zonal\\demo011\\tasking\\mcal\\Port\\ssc\\inc -ID:\\Zonal\\demo011\\tasking\\mcal\\Port\\ssc\\src -g2 --make-target=component\\PduR\\Implementation\\PduR_RmTp_TxInst.o -t2 --language=-gcc,-volatile,+strings,-kanji --default-near-size=0 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o component\\PduR\\Implementation\\PduR_RmTp_TxInst.src ..\\component\\PduR\\Implementation\\PduR_RmTp_TxInst.c"
+	.compiler_name		"ctc"
+	;source	'..\\component\\PduR\\Implementation\\PduR_RmTp_TxInst.c'
+
+	
+$TC162
+	
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L3:
+	.word	28232
+	.half	3
+	.word	.L4
+	.byte	4
+.L2:
+	.byte	1
+	.byte	'..\\component\\PduR\\Implementation\\PduR_RmTp_TxInst.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\Debug\\',0,12,1
+	.word	.L5
+	.byte	2
+	.byte	'int',0,4,5,3
+	.word	145
+	.byte	4
+	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,5
+	.word	152
+	.byte	0,2
+	.byte	'unsigned int',0,4,7,6
+	.word	194
+	.byte	7
+	.word	194
+	.byte	8
+	.byte	'__cmpswapw',0
+	.word	210
+	.byte	1,1,1,1,9
+	.byte	'p',0
+	.word	215
+	.byte	9
+	.byte	'value',0
+	.word	194
+	.byte	9
+	.byte	'compare',0
+	.word	194
+	.byte	0,10,1,7
+	.word	272
+	.byte	11
+	.byte	'__codeptr',0,1,1,1
+	.word	274
+	.byte	2
+	.byte	'unsigned char',0,1,8,11
+	.byte	'boolean',0,2,101,31
+	.word	297
+	.byte	11
+	.byte	'uint8',0,2,104,31
+	.word	297
+	.byte	2
+	.byte	'short int',0,2,5,11
+	.byte	'sint16',0,2,105,31
+	.word	344
+	.byte	2
+	.byte	'unsigned short int',0,2,7,11
+	.byte	'uint16',0,2,106,31
+	.word	372
+	.byte	2
+	.byte	'long int',0,4,5,11
+	.byte	'sint32',0,2,107,31
+	.word	409
+	.byte	2
+	.byte	'unsigned long int',0,4,7,11
+	.byte	'uint32',0,2,108,31
+	.word	436
+	.byte	11
+	.byte	'uint8_least',0,2,111,31
+	.word	297
+	.byte	11
+	.byte	'uint32_least',0,2,115,31
+	.word	436
+	.byte	2
+	.byte	'unsigned long long int',0,8,7,11
+	.byte	'uint64',0,2,121,30
+	.word	513
+	.byte	11
+	.byte	'StatusType',0,3,127,23
+	.word	297
+	.byte	11
+	.byte	'Std_ReturnType',0,3,132,1,15
+	.word	297
+	.byte	12,3,134,1,9,8,13
+	.byte	'vendorID',0
+	.word	372
+	.byte	2,2,35,0,13
+	.byte	'moduleID',0
+	.word	372
+	.byte	2,2,35,2,13
+	.byte	'sw_major_version',0
+	.word	297
+	.byte	1,2,35,4,13
+	.byte	'sw_minor_version',0
+	.word	297
+	.byte	1,2,35,5,13
+	.byte	'sw_patch_version',0
+	.word	297
+	.byte	1,2,35,6,0,11
+	.byte	'Std_VersionInfoType',0,3,141,1,3
+	.word	597
+	.byte	11
+	.byte	'PduIdType',0,4,63,15
+	.word	297
+	.byte	11
+	.byte	'PduLengthType',0,4,65,15
+	.word	297
+	.byte	7
+	.word	297
+	.byte	11
+	.byte	'SduDataPtrType',0,5,196,1,54
+	.word	787
+	.byte	12,5,197,1,9,8,13
+	.byte	'SduDataPtr',0
+	.word	792
+	.byte	4,2,35,0,13
+	.byte	'SduLength',0
+	.word	297
+	.byte	1,2,35,4,0,11
+	.byte	'PduInfoType',0,5,201,1,3
+	.word	816
+	.byte	7
+	.word	297
+	.byte	14,5,203,1,9,1,15
+	.byte	'BUFREQ_OK',0,0,15
+	.byte	'BUFREQ_E_NOT_OK',0,1,15
+	.byte	'BUFREQ_E_BUSY',0,2,15
+	.byte	'BUFREQ_E_OVFL',0,3,0,11
+	.byte	'BufReq_ReturnType',0,5,209,1,3
+	.word	888
+	.byte	14,5,219,1,9,1,15
+	.byte	'TP_DATACONF',0,0,15
+	.byte	'TP_DATARETRY',0,1,15
+	.byte	'TP_CONFPENDING',0,2,0,11
+	.byte	'TpDataStateType',0,5,226,1,3
+	.word	984
+	.byte	16
+	.byte	'sDet_PCConfigType',0,6,238,1,16,1,13
+	.byte	'Det_PCConfigNeverUsed',0
+	.word	297
+	.byte	1,2,35,0,0,11
+	.byte	'Det_PCConfigType',0,6,241,1,3
+	.word	1062
+	.byte	14,7,147,1,9,1,15
+	.byte	'Default_Init_Task',0,0,15
+	.byte	'Default_Init_Task_Trusted',0,1,15
+	.byte	'IdleTask_OsCore0',0,2,15
+	.byte	'bsw_task',0,3,15
+	.byte	'swc_init',0,4,15
+	.byte	'swc_task',0,5,15
+	.byte	'INVALID_TASK',0,6,15
+	.byte	'OS_TASKID_COUNT',0,6,0,11
+	.byte	'TaskType',0,7,157,1,3
+	.word	1144
+	.byte	11
+	.byte	'Os_Hal_AddressType',0,8,61,16
+	.word	436
+	.byte	17,64
+	.word	436
+	.byte	18,15,0,16
+	.byte	'Os_ExceptionContextType_Tag',0,9,71,8,160,1,13
+	.byte	'AddressRegisters',0
+	.word	1329
+	.byte	64,2,35,0,13
+	.byte	'DataRegisters',0
+	.word	1329
+	.byte	64,2,35,64,13
+	.byte	'Ra',0
+	.word	436
+	.byte	4,3,35,128,1,13
+	.byte	'Psw',0
+	.word	436
+	.byte	4,3,35,132,1,13
+	.byte	'ExceptionSource',0
+	.word	436
+	.byte	4,3,35,136,1,13
+	.byte	'Pcpn',0
+	.word	436
+	.byte	4,3,35,140,1,13
+	.byte	'Pie',0
+	.word	436
+	.byte	4,3,35,144,1,13
+	.byte	'MpuRegionForStackLow',0
+	.word	436
+	.byte	4,3,35,148,1,13
+	.byte	'MpuRegionForStackUpper',0
+	.word	436
+	.byte	4,3,35,152,1,13
+	.byte	'RawPCXI',0
+	.word	436
+	.byte	4,3,35,156,1,0,11
+	.byte	'Os_ExceptionContextType',0,8,66,44
+	.word	1338
+	.byte	11
+	.byte	'Os_InterruptSourceIdType',0,10,238,1,16
+	.word	436
+	.byte	11
+	.byte	'Os_ExceptionSourceIdType',0,10,246,1,16
+	.word	436
+	.byte	14,10,161,2,9,1,15
+	.byte	'RUNNING',0,0,15
+	.byte	'READY',0,1,15
+	.byte	'WAITING',0,2,15
+	.byte	'SUSPENDED',0,3,0,11
+	.byte	'TaskStateType',0,10,175,2,3
+	.word	1686
+	.byte	11
+	.byte	'EventMaskType',0,10,182,2,16
+	.word	513
+	.byte	11
+	.byte	'Os_TickType',0,10,200,2,19
+	.word	436
+	.byte	11
+	.byte	'TickType',0,10,206,2,21
+	.word	436
+	.byte	12,10,220,2,9,12,13
+	.byte	'maxallowedvalue',0
+	.word	436
+	.byte	4,2,35,0,13
+	.byte	'ticksperbase',0
+	.word	436
+	.byte	4,2,35,4,13
+	.byte	'mincycle',0
+	.word	436
+	.byte	4,2,35,8,0,11
+	.byte	'AlarmBaseType',0,10,228,2,2
+	.word	1818
+	.byte	14,10,128,3,9,1,15
+	.byte	'APPLICATION_TERMINATED',0,0,15
+	.byte	'APPLICATION_RESTARTING',0,1,15
+	.byte	'APPLICATION_ACCESSIBLE',0,2,0,11
+	.byte	'ApplicationStateType',0,10,133,3,3
+	.word	1913
+	.byte	14,10,177,3,9,1,15
+	.byte	'OSServiceId_GetApplicationID',0,0,15
+	.byte	'OSServiceId_GetISRID',0,1,15
+	.byte	'OSServiceId_CallTrustedFunction',0,2,15
+	.byte	'OSServiceId_CheckISRMemoryAccess',0,3,15
+	.byte	'OSServiceId_CheckTaskMemoryAccess',0,4,15
+	.byte	'OSServiceId_CheckObjectAccess',0,5,15
+	.byte	'OSServiceId_CheckObjectOwnership',0,6,15
+	.byte	'OSServiceId_StartScheduleTableRel',0,7,15
+	.byte	'OSServiceId_StartScheduleTableAbs',0,8,15
+	.byte	'OSServiceId_StopScheduleTable',0,9,15
+	.byte	'OSServiceId_NextScheduleTable',0,10,15
+	.byte	'OSServiceId_StartScheduleTableSynchron',0,11,15
+	.byte	'OSServiceId_SyncScheduleTable',0,12,15
+	.byte	'OSServiceId_SetScheduleTableAsync',0,13,15
+	.byte	'OSServiceId_GetScheduleTableStatus',0,14,15
+	.byte	'OSServiceId_IncrementCounter',0,15,15
+	.byte	'OSServiceId_GetCounterValue',0,16,15
+	.byte	'OSServiceId_GetElapsedValue',0,17,15
+	.byte	'OSServiceId_TerminateApplication',0,18,15
+	.byte	'OSServiceId_AllowAccess',0,19,15
+	.byte	'OSServiceId_GetApplicationState',0,20,15
+	.byte	'OSServiceId_GetNumberOfActivatedCores',0,21,15
+	.byte	'OSServiceId_GetCoreID',0,22,15
+	.byte	'OSServiceId_StartCore',0,23,15
+	.byte	'OSServiceId_StartNonAutosarCore',0,24,15
+	.byte	'OSServiceId_GetSpinlock',0,25,15
+	.byte	'OSServiceId_ReleaseSpinlock',0,26,15
+	.byte	'OSServiceId_TryToGetSpinlock',0,27,15
+	.byte	'OSServiceId_ShutdownAllCores',0,28,15
+	.byte	'OSServiceId_ControlIdle',0,29,15
+	.byte	'OSServiceId_IocSend',0,30,15
+	.byte	'OSServiceId_IocWrite',0,31,15
+	.byte	'OSServiceId_IocSendGroup',0,32,15
+	.byte	'OSServiceId_IocWriteGroup',0,33,15
+	.byte	'OSServiceId_IocReceive',0,34,15
+	.byte	'OSServiceId_IocRead',0,35,15
+	.byte	'OSServiceId_IocReceiveGroup',0,36,15
+	.byte	'OSServiceId_IocReadGroup',0,37,15
+	.byte	'OSServiceId_IocEmptyQueue',0,38,15
+	.byte	'OSServiceId_GetCurrentApplicationID',0,39,15
+	.byte	'OSServiceId_GetExceptionContext',0,160,1,15
+	.byte	'OSServiceId_SetExceptionContext',0,161,1,15
+	.byte	'OSServiceId_CallNonTrustedFunction',0,162,1,15
+	.byte	'OSServiceId_AppKill',0,163,1,15
+	.byte	'OSServiceId_AlarmActionSetEvent',0,164,1,15
+	.byte	'OSServiceId_AlarmActionActivateTask',0,165,1,15
+	.byte	'OSServiceId_AlarmActionIncrementCounter',0,166,1,15
+	.byte	'OSServiceId_AlarmActionCallback',0,167,1,15
+	.byte	'OSServiceId_TimerIsr',0,168,1,15
+	.byte	'OSServiceId_IsrWrapper',0,169,1,15
+	.byte	'OSServiceId_GetTaskStackUsage',0,170,1,15
+	.byte	'OSServiceId_GetISRStackUsage',0,171,1,15
+	.byte	'OSServiceId_GetKernelStackUsage',0,172,1,15
+	.byte	'OSServiceId_GetStartupHookStackUsage',0,173,1,15
+	.byte	'OSServiceId_GetErrorHookStackUsage',0,174,1,15
+	.byte	'OSServiceId_GetShutdownHookStackUsage',0,175,1,15
+	.byte	'OSServiceId_GetProtectionHookStackUsage',0,176,1,15
+	.byte	'OSServiceId_GetSemaphore',0,177,1,15
+	.byte	'OSServiceId_ReleaseSemaphore',0,178,1,15
+	.byte	'OSServiceId_ScheduleTableActivateTask',0,179,1,15
+	.byte	'OSServiceId_ScheduleTableSetEvent',0,180,1,15
+	.byte	'OSServiceId_DisableInterruptSource',0,181,1,15
+	.byte	'OSServiceId_EnableInterruptSource',0,182,1,15
+	.byte	'OSServiceId_ClearPendingInterrupt',0,183,1,15
+	.byte	'OSServiceId_GetUnhandledIrq',0,184,1,15
+	.byte	'OSServiceId_GetUnhandledExc',0,185,1,15
+	.byte	'OSServiceId_HookCallCallback',0,186,1,15
+	.byte	'OSServiceId_IsInterruptSourceEnabled',0,187,1,15
+	.byte	'OSServiceId_IsInterruptPending',0,188,1,15
+	.byte	'OSServiceId_CallFastTrustedFunction',0,189,1,15
+	.byte	'OSServiceId_BarrierSynchronize',0,190,1,15
+	.byte	'OSServiceId_InitialEnableInterruptSources',0,191,1,15
+	.byte	'OSServiceId_GetCoreStartState',0,192,1,15
+	.byte	'OSServiceId_StartOS',0,208,1,15
+	.byte	'OSServiceId_GetActiveApplicationMode',0,210,1,15
+	.byte	'OSServiceId_DisableAllInterrupts',0,211,1,15
+	.byte	'OSServiceId_EnableAllInterrupts',0,212,1,15
+	.byte	'OSServiceId_SuspendAllInterrupts',0,213,1,15
+	.byte	'OSServiceId_ResumeAllInterrupts',0,214,1,15
+	.byte	'OSServiceId_SuspendOSInterrupts',0,215,1,15
+	.byte	'OSServiceId_ResumeOSInterrupts',0,216,1,15
+	.byte	'OSServiceId_ActivateTask',0,217,1,15
+	.byte	'OSServiceId_TerminateTask',0,218,1,15
+	.byte	'OSServiceId_ChainTask',0,219,1,15
+	.byte	'OSServiceId_GetTaskID',0,220,1,15
+	.byte	'OSServiceId_GetTaskState',0,221,1,15
+	.byte	'OSServiceId_Schedule',0,222,1,15
+	.byte	'OSServiceId_SetEvent',0,223,1,15
+	.byte	'OSServiceId_ClearEvent',0,224,1,15
+	.byte	'OSServiceId_GetEvent',0,225,1,15
+	.byte	'OSServiceId_WaitEvent',0,226,1,15
+	.byte	'OSServiceId_GetAlarmBase',0,227,1,15
+	.byte	'OSServiceId_GetAlarm',0,228,1,15
+	.byte	'OSServiceId_SetRelAlarm',0,229,1,15
+	.byte	'OSServiceId_SetAbsAlarm',0,230,1,15
+	.byte	'OSServiceId_CancelAlarm',0,231,1,15
+	.byte	'OSServiceId_GetResource',0,232,1,15
+	.byte	'OSServiceId_ReleaseResource',0,233,1,15
+	.byte	'OSSERVICEID_COUNT',0,255,1,0,11
+	.byte	'OSServiceIdType',0,10,156,4,3
+	.word	2025
+	.byte	14,10,172,4,9,2,15
+	.byte	'OS_STATUS_OK',0,0,15
+	.byte	'OS_STATUS_CALLEVEL',0,2,15
+	.byte	'OS_STATUS_LIMIT',0,4,15
+	.byte	'OS_STATUS_RESOURCE',0,6,15
+	.byte	'OS_STATUS_SERVICEID',0,9,15
+	.byte	'OS_STATUS_ILLEGAL_ADDRESS',0,10,15
+	.byte	'OS_STATUS_MISSINGEND',0,11,15
+	.byte	'OS_STATUS_DISABLEDINT',0,12,15
+	.byte	'OS_STATUS_STACKFAULT',0,13,15
+	.byte	'OS_STATUS_PROTECTION_MEMORY',0,14,15
+	.byte	'OS_STATUS_PROTECTION_TIME',0,15,15
+	.byte	'OS_STATUS_PROTECTION_ARRIVAL',0,16,15
+	.byte	'OS_STATUS_PROTECTION_LOCKED',0,17,15
+	.byte	'OS_STATUS_PROTECTION_EXCEPTION',0,18,15
+	.byte	'OS_STATUS_INTERFERENCE_DEADLOCK',0,19,15
+	.byte	'OS_STATUS_NESTING_DEADLOCK',0,20,15
+	.byte	'OS_STATUS_SPINLOCK',0,21,15
+	.byte	'OS_STATUS_CORE',0,22,15
+	.byte	'OS_STATUS_OVERFLOW',0,245,1,15
+	.byte	'OS_STATUS_KILL_KERNEL_OBJ',0,246,1,15
+	.byte	'OS_STATUS_NO_RESTARTTASK',0,247,1,15
+	.byte	'OS_STATUS_CALL_NOT_ALLOWED',0,248,1,15
+	.byte	'OS_STATUS_FUNCTION_UNAVAILABLE',0,249,1,15
+	.byte	'OS_STATUS_PROTECTION_SYSCALL',0,250,1,15
+	.byte	'OS_STATUS_PROTECTION_IRQ',0,251,1,15
+	.byte	'OS_STATUS_API_ERROR',0,252,1,15
+	.byte	'OS_STATUS_ASSERTION',0,253,1,15
+	.byte	'OS_STATUS_OVERLOAD',0,254,1,15
+	.byte	'OS_STATUS_ACCESSRIGHTS_1',0,129,2,15
+	.byte	'OS_STATUS_CALLEVEL_SHARED_STACK',0,130,2,15
+	.byte	'OS_STATUS_ID_1',0,131,2,15
+	.byte	'OS_STATUS_UNLOCKED',0,133,2,15
+	.byte	'OS_STATUS_STATE_1',0,135,2,15
+	.byte	'OS_STATUS_VALUE_IS_ZERO_1',0,136,2,15
+	.byte	'OS_STATUS_CORE_CROSS_DATA',0,150,2,15
+	.byte	'OS_STATUS_PARAM_POINTER_1',0,151,2,15
+	.byte	'OS_STATUS_STACKUSAGE_DISABLED_BY_CONFIG',0,241,3,15
+	.byte	'OS_STATUS_NO_BARRIER_PARTICIPANT',0,242,3,15
+	.byte	'OS_STATUS_UNIMPLEMENTED_CLEARPENDING',0,243,3,15
+	.byte	'OS_STATUS_NO_NTFSTACK_POOL_EMPTY',0,244,3,15
+	.byte	'OS_STATUS_ACCESSRIGHTS_2',0,129,4,15
+	.byte	'OS_STATUS_CALLEVEL_CROSS_CORE_SYNC',0,130,4,15
+	.byte	'OS_STATUS_ID_2',0,131,4,15
+	.byte	'OS_STATUS_NOFUNC_1',0,133,4,15
+	.byte	'OS_STATUS_STATE_2',0,135,4,15
+	.byte	'OS_STATUS_VALUE_IS_ZERO_2',0,136,4,15
+	.byte	'OS_STATUS_PARAM_POINTER_2',0,151,4,15
+	.byte	'OS_STATUS_EVENT_DISABLED_BY_CONFIG',0,241,5,15
+	.byte	'OS_STATUS_UNIMPLEMENTED_EXCEPTIONCONTEXT',0,243,5,15
+	.byte	'OS_STATUS_NO_NTFSTACK_APPLIMIT_EXCEEDED',0,244,5,15
+	.byte	'OS_STATUS_NOTACCESSIBLE_1',0,129,6,15
+	.byte	'OS_STATUS_ID_TYPE_1',0,131,6,15
+	.byte	'OS_STATUS_NOFUNC_2',0,133,6,15
+	.byte	'OS_STATUS_STATE_STOPPED',0,135,6,15
+	.byte	'OS_STATUS_VALUE_IS_TOO_HIGH_1',0,136,6,15
+	.byte	'OS_STATUS_PARAM_POINTER_3',0,151,6,15
+	.byte	'OS_STATUS_NOTACCESSIBLE_2',0,129,8,15
+	.byte	'OS_STATUS_ID_DIFFERENT_COUNTER',0,131,8,15
+	.byte	'OS_STATUS_SPINLOCK_ORDER',0,133,8,15
+	.byte	'OS_STATUS_STATE_RUNNING',0,135,8,15
+	.byte	'OS_STATUS_VALUE_IS_TOO_HIGH_2',0,136,8,15
+	.byte	'OS_STATUS_NOEXTENDEDTASK_1',0,129,10,15
+	.byte	'OS_STATUS_ID_DIFFERENT_SYNC',0,131,10,15
+	.byte	'OS_STATUS_STOPPED_1',0,133,10,15
+	.byte	'OS_STATUS_STATE_NEXTED',0,135,10,15
+	.byte	'OS_STATUS_VALUE_IS_TOO_HIGH_3',0,136,10,15
+	.byte	'OS_STATUS_NOEXTENDEDTASK_2',0,129,12,15
+	.byte	'OS_STATUS_HOOK_NOT_AVAILABLE',0,131,12,15
+	.byte	'OS_STATUS_NOT_STOPPED_2',0,133,12,15
+	.byte	'OS_STATUS_STATE_WAITING',0,135,12,15
+	.byte	'OS_STATUS_VALUE_IS_OUT_OF_BOUNDS_1',0,136,12,15
+	.byte	'OS_STATUS_NOEXTENDEDTASK_CALLER',0,129,14,15
+	.byte	'OS_STATUS_NEXTED_1',0,133,14,15
+	.byte	'OS_STATUS_STATE_NO_RESTART',0,135,14,15
+	.byte	'OS_STATUS_VALUE_IS_OUT_OF_BOUNDS_2',0,136,14,15
+	.byte	'OS_STATUS_LOCKED',0,129,16,15
+	.byte	'OS_STATUS_KILLING_IS_DISABLED',0,133,16,15
+	.byte	'OS_STATUS_STATE_ALREADY_TERMINATED',0,135,16,15
+	.byte	'OS_STATUS_VALUE_IS_TOO_LOW_1',0,136,16,15
+	.byte	'OS_STATUS_PRIORITY',0,129,18,15
+	.byte	'OS_STATUS_ORDER',0,133,18,15
+	.byte	'OS_STATUS_STATE_RESTARTING_NO_MEMBER',0,135,18,15
+	.byte	'OS_STATUS_VALUE_IS_TOO_LOW_2',0,136,18,15
+	.byte	'OS_STATUS_NOT_THE_OWNER_1',0,129,20,15
+	.byte	'OS_STATUS_STATE_ALREADY_RESTARTING',0,135,20,15
+	.byte	'OS_STATUS_VALUE_IS_TOO_LOW_3',0,136,20,15
+	.byte	'OS_STATUS_VALUE_IS_NOT_BOOLEAN',0,136,22,0,11
+	.byte	'Os_StatusType',0,10,232,5,3
+	.word	5195
+	.byte	12,10,133,6,9,4,13
+	.byte	'Service',0
+	.word	2025
+	.byte	1,2,35,0,13
+	.byte	'Error',0
+	.word	297
+	.byte	1,2,35,1,13
+	.byte	'DetailedError',0
+	.word	5195
+	.byte	2,2,35,2,0,11
+	.byte	'Os_ErrorInformationType',0,10,143,6,3
+	.word	7725
+	.byte	14,10,175,6,9,1,15
+	.byte	'SCHEDULETABLE_STOPPED',0,0,15
+	.byte	'SCHEDULETABLE_NEXT',0,1,15
+	.byte	'SCHEDULETABLE_WAITING',0,2,15
+	.byte	'SCHEDULETABLE_RUNNING',0,3,15
+	.byte	'SCHEDULETABLE_RUNNING_AND_SYNCHRONOUS',0,4,0,11
+	.byte	'ScheduleTableStatusType',0,10,192,6,3
+	.word	7820
+	.byte	11
+	.byte	'Os_AccessCheckAddress',0,10,199,6,29
+	.word	436
+	.byte	14,10,211,6,9,1,15
+	.byte	'OS_MEM_ACCESS_TYPE_NON',0,0,15
+	.byte	'OS_MEM_ACCESS_TYPE_R',0,1,15
+	.byte	'OS_MEM_ACCESS_TYPE_READ',0,1,15
+	.byte	'OS_MEM_ACCESS_TYPE_W',0,2,15
+	.byte	'OS_MEM_ACCESS_TYPE_WRITE',0,2,15
+	.byte	'OS_MEM_ACCESS_TYPE_RW',0,3,15
+	.byte	'OS_MEM_ACCESS_TYPE_EXECUTE',0,4,15
+	.byte	'OS_MEM_ACCESS_TYPE_X',0,4,15
+	.byte	'OS_MEM_ACCESS_TYPE_RX',0,5,15
+	.byte	'OS_MEM_ACCESS_TYPE_WX',0,6,15
+	.byte	'OS_MEM_ACCESS_TYPE_RWX',0,7,15
+	.byte	'OS_MEM_ACCESS_TYPE_S',0,8,15
+	.byte	'OS_MEM_ACCESS_TYPE_STACK',0,8,15
+	.byte	'OS_MEM_ACCESS_TYPE_RS',0,9,15
+	.byte	'OS_MEM_ACCESS_TYPE_WS',0,10,15
+	.byte	'OS_MEM_ACCESS_TYPE_RWS',0,11,15
+	.byte	'OS_MEM_ACCESS_TYPE_XS',0,12,15
+	.byte	'OS_MEM_ACCESS_TYPE_RXS',0,13,15
+	.byte	'OS_MEM_ACCESS_TYPE_WXS',0,14,15
+	.byte	'OS_MEM_ACCESS_TYPE_RWXS',0,15,0,11
+	.byte	'Os_MemAccessType',0,10,233,6,3
+	.word	8024
+	.byte	11
+	.byte	'Can_IdType',0,11,52,30
+	.word	372
+	.byte	11
+	.byte	'Can_HwHandleType',0,11,55,29
+	.word	297
+	.byte	11
+	.byte	'Can_SduPtrType',0,11,58,45
+	.word	787
+	.byte	16
+	.byte	'Can_PduTypeTag',0,11,61,16,12,13
+	.byte	'id',0
+	.word	372
+	.byte	2,2,35,0,13
+	.byte	'length',0
+	.word	297
+	.byte	1,2,35,2,13
+	.byte	'sdu',0
+	.word	8597
+	.byte	4,2,35,4,13
+	.byte	'swPduHandle',0
+	.word	297
+	.byte	1,2,35,8,0,11
+	.byte	'Can_PduType',0,11,67,3
+	.word	8620
+	.byte	7
+	.word	297
+	.byte	14,11,77,9,1,15
+	.byte	'CAN_CS_UNINIT',0,0,15
+	.byte	'CAN_CS_STARTED',0,1,15
+	.byte	'CAN_CS_STOPPED',0,2,15
+	.byte	'CAN_CS_SLEEP',0,3,0,11
+	.byte	'Can_ControllerStateType',0,11,82,3
+	.word	8728
+	.byte	14,11,84,9,1,15
+	.byte	'CAN_ERRORSTATE_ACTIVE',0,0,15
+	.byte	'CAN_ERRORSTATE_PASSIVE',0,1,15
+	.byte	'CAN_ERRORSTATE_BUSOFF',0,2,0,11
+	.byte	'Can_ErrorStateType',0,11,88,3
+	.word	8831
+	.byte	11
+	.byte	'tCanLLCanIntOld',0,12,161,3,37
+	.word	436
+	.byte	11
+	.byte	'Can_OsIsrType',0,12,167,3,15
+	.word	297
+	.byte	11
+	.byte	'Can_ExternalTickType',0,12,180,3,16
+	.word	436
+	.byte	17,32
+	.word	436
+	.byte	18,7,0,11
+	.byte	'Can_LoopTimeout_dim_type',0,12,183,3,44
+	.word	9015
+	.byte	11
+	.byte	'Can_ControllerConfigIterType',0,12,192,13,21
+	.word	297
+	.byte	11
+	.byte	'Can_PduOfActiveSendObjectType',0,12,148,14,19
+	.word	297
+	.byte	11
+	.byte	'Can_StateOfActiveSendObjectType',0,12,151,14,16
+	.word	372
+	.byte	11
+	.byte	'Can_BTPType',0,12,154,14,16
+	.word	436
+	.byte	11
+	.byte	'Can_RXBCOfBufferConfigType',0,12,160,14,15
+	.word	297
+	.byte	11
+	.byte	'Can_RXF0COfBufferConfigType',0,12,163,14,16
+	.word	436
+	.byte	11
+	.byte	'Can_RXF1COfBufferConfigType',0,12,166,14,15
+	.word	297
+	.byte	11
+	.byte	'Can_TXBCOfBufferConfigType',0,12,169,14,16
+	.word	436
+	.byte	11
+	.byte	'Can_TXEFCOfBufferConfigType',0,12,172,14,15
+	.word	297
+	.byte	11
+	.byte	'Can_CanIfChannelIdType',0,12,190,14,15
+	.word	297
+	.byte	11
+	.byte	'Can_CanSubSystemBaseAdrType',0,12,193,14,16
+	.word	436
+	.byte	11
+	.byte	'Can_BasisAdrOfControllerConfigType',0,12,196,14,16
+	.word	436
+	.byte	11
+	.byte	'Can_CanControllerDefaultBaudrateIdxOfControllerConfigType',0,12,199,14,15
+	.word	297
+	.byte	11
+	.byte	'Can_CanControllerDefaultBaudrateOfControllerConfigType',0,12,202,14,16
+	.word	372
+	.byte	11
+	.byte	'Can_IsTTCanOfControllerConfigType',0,12,205,14,17
+	.word	297
+	.byte	11
+	.byte	'Can_MailboxRxBasicEndIdxOfControllerConfigType',0,12,208,14,15
+	.word	297
+	.byte	11
+	.byte	'Can_MailboxRxBasicLengthOfControllerConfigType',0,12,211,14,15
+	.word	297
+	.byte	11
+	.byte	'Can_MailboxRxBasicStartIdxOfControllerConfigType',0,12,214,14,15
+	.word	297
+	.byte	11
+	.byte	'Can_MailboxTxBasicEndIdxOfControllerConfigType',0,12,220,14,15
+	.word	297
+	.byte	11
+	.byte	'Can_MailboxTxBasicLengthOfControllerConfigType',0,12,223,14,15
+	.word	297
+	.byte	11
+	.byte	'Can_MailboxTxBasicStartIdxOfControllerConfigType',0,12,226,14,15
+	.word	297
+	.byte	11
+	.byte	'Can_RxBasicHwStartOfControllerConfigType',0,12,232,14,15
+	.word	297
+	.byte	11
+	.byte	'Can_RxBasicHwStopOfControllerConfigType',0,12,235,14,15
+	.word	297
+	.byte	11
+	.byte	'Can_RxFullHwStartOfControllerConfigType',0,12,238,14,15
+	.word	297
+	.byte	11
+	.byte	'Can_RxFullHwStopOfControllerConfigType',0,12,241,14,15
+	.word	297
+	.byte	11
+	.byte	'Can_RxSelectionOfControllerConfigType',0,12,244,14,15
+	.word	297
+	.byte	11
+	.byte	'Can_TxBasicHwStartOfControllerConfigType',0,12,247,14,15
+	.word	297
+	.byte	11
+	.byte	'Can_TxBasicHwStopOfControllerConfigType',0,12,250,14,15
+	.word	297
+	.byte	11
+	.byte	'Can_TxFullHwStartOfControllerConfigType',0,12,253,14,15
+	.word	297
+	.byte	11
+	.byte	'Can_TxFullHwStopOfControllerConfigType',0,12,128,15,15
+	.word	297
+	.byte	11
+	.byte	'Can_UnusedHwStartOfControllerConfigType',0,12,131,15,15
+	.word	297
+	.byte	11
+	.byte	'Can_UnusedHwStopOfControllerConfigType',0,12,134,15,15
+	.word	297
+	.byte	11
+	.byte	'Can_BusOffNotificationOfControllerDataType',0,12,137,15,15
+	.word	297
+	.byte	11
+	.byte	'Can_BusOffTransitionRequestOfControllerDataType',0,12,140,15,15
+	.word	297
+	.byte	11
+	.byte	'Can_CanInterruptCounterOfControllerDataType',0,12,143,15,15
+	.word	297
+	.byte	11
+	.byte	'Can_IntEnableOfControllerDataType',0,12,146,15,16
+	.word	436
+	.byte	11
+	.byte	'Can_IsBusOffOfControllerDataType',0,12,149,15,17
+	.word	297
+	.byte	11
+	.byte	'Can_LastInitObjectOfControllerDataType',0,12,152,15,15
+	.word	297
+	.byte	11
+	.byte	'Can_LastStateOfControllerDataType',0,12,155,15,15
+	.word	297
+	.byte	11
+	.byte	'Can_LogStatusOfControllerDataType',0,12,158,15,15
+	.word	297
+	.byte	11
+	.byte	'Can_ModeTransitionRequestOfControllerDataType',0,12,161,15,15
+	.word	297
+	.byte	11
+	.byte	'Can_NonFdObjectsPendingFlagOfControllerDataType',0,12,164,15,16
+	.word	436
+	.byte	11
+	.byte	'Can_PrevModeOfControllerDataType',0,12,167,15,15
+	.word	297
+	.byte	11
+	.byte	'Can_RamCheckTransitionRequestOfControllerDataType',0,12,170,15,15
+	.word	297
+	.byte	11
+	.byte	'Can_TXBCROfControllerDataType',0,12,173,15,16
+	.word	436
+	.byte	11
+	.byte	'Can_TXBRPOfControllerDataType',0,12,176,15,16
+	.word	436
+	.byte	11
+	.byte	'Can_FBTPType',0,12,179,15,16
+	.word	436
+	.byte	11
+	.byte	'Can_GFCType',0,12,182,15,15
+	.word	297
+	.byte	11
+	.byte	'Can_INT_PriorityType',0,12,185,15,15
+	.word	297
+	.byte	11
+	.byte	'Can_INT_RoutingGroupType',0,12,188,15,15
+	.word	297
+	.byte	11
+	.byte	'Can_InitObjectBaudrateType',0,12,191,15,16
+	.word	372
+	.byte	11
+	.byte	'Can_InitObjectFdBrsConfigType',0,12,194,15,15
+	.word	297
+	.byte	11
+	.byte	'Can_InitObjectStartIndexType',0,12,197,15,15
+	.word	297
+	.byte	11
+	.byte	'Can_ActiveSendObjectOfMailboxType',0,12,200,15,15
+	.word	297
+	.byte	11
+	.byte	'Can_ControllerConfigIdxOfMailboxType',0,12,203,15,15
+	.word	297
+	.byte	11
+	.byte	'Can_FdPaddingOfMailboxType',0,12,206,15,15
+	.word	297
+	.byte	11
+	.byte	'Can_HwHandleOfMailboxType',0,12,209,15,15
+	.word	297
+	.byte	11
+	.byte	'Can_IDValueOfMailboxType',0,12,212,15,15
+	.word	297
+	.byte	11
+	.byte	'Can_MailboxSizeOfMailboxType',0,12,215,15,15
+	.word	297
+	.byte	11
+	.byte	'Can_MailboxTypeOfMailboxType',0,12,218,15,15
+	.word	297
+	.byte	11
+	.byte	'Can_MaxDataLenOfMailboxType',0,12,221,15,15
+	.word	297
+	.byte	11
+	.byte	'Can_MemorySectionsIndexOfMailboxType',0,12,224,15,15
+	.word	297
+	.byte	11
+	.byte	'Can_MemorySectionStartOfMemorySectionInfoType',0,12,227,15,15
+	.word	297
+	.byte	11
+	.byte	'Can_HwHandleOfMemorySectionObjectsType',0,12,230,15,15
+	.word	297
+	.byte	11
+	.byte	'Can_MailboxElementOfMemorySectionObjectsType',0,12,233,15,15
+	.word	297
+	.byte	11
+	.byte	'Can_MailboxHandleOfMemorySectionObjectsType',0,12,236,15,15
+	.word	297
+	.byte	11
+	.byte	'Can_FLSSAOfSIDFCType',0,12,242,15,15
+	.word	297
+	.byte	11
+	.byte	'Can_LSSOfSIDFCType',0,12,245,15,15
+	.word	297
+	.byte	11
+	.byte	'Can_SIDFEEndIdxOfSIDFCType',0,12,248,15,15
+	.word	297
+	.byte	11
+	.byte	'Can_SIDFEStartIdxOfSIDFCType',0,12,251,15,15
+	.word	297
+	.byte	11
+	.byte	'Can_SIDFEType',0,12,129,16,16
+	.word	436
+	.byte	11
+	.byte	'Can_SRN_AddressType',0,12,132,16,16
+	.word	436
+	.byte	11
+	.byte	'Can_RXBAOfShmAdrType',0,12,135,16,16
+	.word	436
+	.byte	11
+	.byte	'Can_RXF0AOfShmAdrType',0,12,138,16,16
+	.word	436
+	.byte	11
+	.byte	'Can_RXF1AOfShmAdrType',0,12,141,16,16
+	.word	436
+	.byte	11
+	.byte	'Can_SIDFAOfShmAdrType',0,12,144,16,16
+	.word	436
+	.byte	11
+	.byte	'Can_StartAdrOfShmAdrType',0,12,147,16,16
+	.word	436
+	.byte	11
+	.byte	'Can_StopAdrOfShmAdrType',0,12,150,16,16
+	.word	436
+	.byte	11
+	.byte	'Can_TXBAOfShmAdrType',0,12,153,16,16
+	.word	436
+	.byte	11
+	.byte	'Can_TXEFAOfShmAdrType',0,12,156,16,16
+	.word	436
+	.byte	11
+	.byte	'Can_XIDFAOfShmAdrType',0,12,159,16,16
+	.word	436
+	.byte	11
+	.byte	'Can_F0DSOfShmElementSizeType',0,12,162,16,15
+	.word	297
+	.byte	11
+	.byte	'Can_F1DSOfShmElementSizeType',0,12,165,16,15
+	.word	297
+	.byte	11
+	.byte	'Can_RBDSOfShmElementSizeType',0,12,168,16,15
+	.word	297
+	.byte	11
+	.byte	'Can_TBDSOfShmElementSizeType',0,12,171,16,15
+	.word	297
+	.byte	11
+	.byte	'Can_TEFBDSOfShmElementSizeType',0,12,174,16,15
+	.word	297
+	.byte	11
+	.byte	'Can_TDCRType',0,12,130,17,15
+	.word	297
+	.byte	11
+	.byte	'Can_XIDAMType',0,12,133,17,16
+	.word	436
+	.byte	11
+	.byte	'Can_FLESAOfXIDFCType',0,12,136,17,15
+	.word	297
+	.byte	11
+	.byte	'Can_LSEOfXIDFCType',0,12,139,17,15
+	.word	297
+	.byte	11
+	.byte	'Can_EIDFE_0OfXIDFEType',0,12,142,17,15
+	.word	297
+	.byte	11
+	.byte	'Can_EIDFE_1OfXIDFEType',0,12,145,17,15
+	.word	297
+	.byte	16
+	.byte	'sCan_ActiveSendObjectType',0,12,161,17,16,4,13
+	.byte	'StateOfActiveSendObject',0
+	.word	372
+	.byte	2,2,35,0,13
+	.byte	'PduOfActiveSendObject',0
+	.word	297
+	.byte	1,2,35,2,0,11
+	.byte	'Can_ActiveSendObjectType',0,12,165,17,3
+	.word	12823
+	.byte	16
+	.byte	'sCan_BufferConfigType',0,12,168,17,16,12,13
+	.byte	'RXF0COfBufferConfig',0
+	.word	436
+	.byte	4,2,35,0,13
+	.byte	'TXBCOfBufferConfig',0
+	.word	436
+	.byte	4,2,35,4,13
+	.byte	'RXBCOfBufferConfig',0
+	.word	297
+	.byte	1,2,35,8,13
+	.byte	'RXF1COfBufferConfig',0
+	.word	297
+	.byte	1,2,35,9,13
+	.byte	'TXEFCOfBufferConfig',0
+	.word	297
+	.byte	1,2,35,10,0,11
+	.byte	'Can_BufferConfigType',0,12,175,17,3
+	.word	12954
+	.byte	16
+	.byte	'sCan_ControllerConfigType',0,12,178,17,16,28,13
+	.byte	'BasisAdrOfControllerConfig',0
+	.word	436
+	.byte	4,2,35,0,13
+	.byte	'CanControllerDefaultBaudrateOfControllerConfig',0
+	.word	372
+	.byte	2,2,35,4,13
+	.byte	'IsTTCanOfControllerConfig',0
+	.word	297
+	.byte	1,2,35,6,13
+	.byte	'CanControllerDefaultBaudrateIdxOfControllerConfig',0
+	.word	297
+	.byte	1,2,35,7,13
+	.byte	'MailboxRxBasicEndIdxOfControllerConfig',0
+	.word	297
+	.byte	1,2,35,8,13
+	.byte	'MailboxRxBasicLengthOfControllerConfig',0
+	.word	297
+	.byte	1,2,35,9,13
+	.byte	'MailboxRxBasicStartIdxOfControllerConfig',0
+	.word	297
+	.byte	1,2,35,10,13
+	.byte	'MailboxTxBasicEndIdxOfControllerConfig',0
+	.word	297
+	.byte	1,2,35,11,13
+	.byte	'MailboxTxBasicLengthOfControllerConfig',0
+	.word	297
+	.byte	1,2,35,12,13
+	.byte	'MailboxTxBasicStartIdxOfControllerConfig',0
+	.word	297
+	.byte	1,2,35,13,13
+	.byte	'RxBasicHwStartOfControllerConfig',0
+	.word	297
+	.byte	1,2,35,14,13
+	.byte	'RxBasicHwStopOfControllerConfig',0
+	.word	297
+	.byte	1,2,35,15,13
+	.byte	'RxFullHwStartOfControllerConfig',0
+	.word	297
+	.byte	1,2,35,16,13
+	.byte	'RxFullHwStopOfControllerConfig',0
+	.word	297
+	.byte	1,2,35,17,13
+	.byte	'RxSelectionOfControllerConfig',0
+	.word	297
+	.byte	1,2,35,18,13
+	.byte	'TxBasicHwStartOfControllerConfig',0
+	.word	297
+	.byte	1,2,35,19,13
+	.byte	'TxBasicHwStopOfControllerConfig',0
+	.word	297
+	.byte	1,2,35,20,13
+	.byte	'TxFullHwStartOfControllerConfig',0
+	.word	297
+	.byte	1,2,35,21,13
+	.byte	'TxFullHwStopOfControllerConfig',0
+	.word	297
+	.byte	1,2,35,22,13
+	.byte	'UnusedHwStartOfControllerConfig',0
+	.word	297
+	.byte	1,2,35,23,13
+	.byte	'UnusedHwStopOfControllerConfig',0
+	.word	297
+	.byte	1,2,35,24,0,11
+	.byte	'Can_ControllerConfigType',0,12,201,17,3
+	.word	13156
+	.byte	16
+	.byte	'sCan_ControllerDataType',0,12,204,17,16,64,13
+	.byte	'IntEnableOfControllerData',0
+	.word	436
+	.byte	4,2,35,0,13
+	.byte	'NonFdObjectsPendingFlagOfControllerData',0
+	.word	436
+	.byte	4,2,35,4,13
+	.byte	'TXBCROfControllerData',0
+	.word	436
+	.byte	4,2,35,8,13
+	.byte	'TXBRPOfControllerData',0
+	.word	436
+	.byte	4,2,35,12,13
+	.byte	'BusOffNotificationOfControllerData',0
+	.word	297
+	.byte	1,2,35,16,13
+	.byte	'BusOffTransitionRequestOfControllerData',0
+	.word	297
+	.byte	1,2,35,17,13
+	.byte	'CanInterruptCounterOfControllerData',0
+	.word	297
+	.byte	1,2,35,18,13
+	.byte	'IsBusOffOfControllerData',0
+	.word	297
+	.byte	1,2,35,19,13
+	.byte	'LastInitObjectOfControllerData',0
+	.word	297
+	.byte	1,2,35,20,13
+	.byte	'LastStateOfControllerData',0
+	.word	297
+	.byte	1,2,35,21,13
+	.byte	'LogStatusOfControllerData',0
+	.word	297
+	.byte	1,2,35,22,13
+	.byte	'ModeTransitionRequestOfControllerData',0
+	.word	297
+	.byte	1,2,35,23,13
+	.byte	'PrevModeOfControllerData',0
+	.word	297
+	.byte	1,2,35,24,13
+	.byte	'RamCheckTransitionRequestOfControllerData',0
+	.word	297
+	.byte	1,2,35,25,13
+	.byte	'CanInterruptOldStatusOfControllerData',0
+	.word	436
+	.byte	4,2,35,26,13
+	.byte	'LoopTimeoutOfControllerData',0
+	.word	9024
+	.byte	32,2,35,30,0,11
+	.byte	'Can_ControllerDataType',0,12,222,17,3
+	.word	14149
+	.byte	17,32
+	.word	436
+	.byte	18,7,0,16
+	.byte	'sCan_MailboxType',0,12,225,17,16,12,13
+	.byte	'ActiveSendObjectOfMailbox',0
+	.word	297
+	.byte	1,2,35,0,13
+	.byte	'ControllerConfigIdxOfMailbox',0
+	.word	297
+	.byte	1,2,35,1,13
+	.byte	'FdPaddingOfMailbox',0
+	.word	297
+	.byte	1,2,35,2,13
+	.byte	'HwHandleOfMailbox',0
+	.word	297
+	.byte	1,2,35,3,13
+	.byte	'IDValueOfMailbox',0
+	.word	297
+	.byte	1,2,35,4,13
+	.byte	'MailboxSizeOfMailbox',0
+	.word	297
+	.byte	1,2,35,5,13
+	.byte	'MailboxTypeOfMailbox',0
+	.word	297
+	.byte	1,2,35,6,13
+	.byte	'MaxDataLenOfMailbox',0
+	.word	297
+	.byte	1,2,35,7,13
+	.byte	'MemorySectionsIndexOfMailbox',0
+	.word	297
+	.byte	1,2,35,8,0,11
+	.byte	'Can_MailboxType',0,12,236,17,3
+	.word	14865
+	.byte	16
+	.byte	'sCan_MemorySectionInfoType',0,12,239,17,16,1,13
+	.byte	'MemorySectionStartOfMemorySectionInfo',0
+	.word	297
+	.byte	1,2,35,0,0,11
+	.byte	'Can_MemorySectionInfoType',0,12,242,17,3
+	.word	15195
+	.byte	16
+	.byte	'sCan_MemorySectionObjectsType',0,12,245,17,16,4,13
+	.byte	'HwHandleOfMemorySectionObjects',0
+	.word	297
+	.byte	1,2,35,0,13
+	.byte	'MailboxElementOfMemorySectionObjects',0
+	.word	297
+	.byte	1,2,35,1,13
+	.byte	'MailboxHandleOfMemorySectionObjects',0
+	.word	297
+	.byte	1,2,35,2,0,11
+	.byte	'Can_MemorySectionObjectsType',0,12,250,17,3
+	.word	15311
+	.byte	16
+	.byte	'sCan_SIDFCType',0,12,253,17,16,4,13
+	.byte	'FLSSAOfSIDFC',0
+	.word	297
+	.byte	1,2,35,0,13
+	.byte	'LSSOfSIDFC',0
+	.word	297
+	.byte	1,2,35,1,13
+	.byte	'SIDFEEndIdxOfSIDFC',0
+	.word	297
+	.byte	1,2,35,2,13
+	.byte	'SIDFEStartIdxOfSIDFC',0
+	.word	297
+	.byte	1,2,35,3,0,11
+	.byte	'Can_SIDFCType',0,12,131,18,3
+	.word	15517
+	.byte	16
+	.byte	'sCan_ShmAdrType',0,12,134,18,16,36,13
+	.byte	'RXBAOfShmAdr',0
+	.word	436
+	.byte	4,2,35,0,13
+	.byte	'RXF0AOfShmAdr',0
+	.word	436
+	.byte	4,2,35,4,13
+	.byte	'RXF1AOfShmAdr',0
+	.word	436
+	.byte	4,2,35,8,13
+	.byte	'SIDFAOfShmAdr',0
+	.word	436
+	.byte	4,2,35,12,13
+	.byte	'StartAdrOfShmAdr',0
+	.word	436
+	.byte	4,2,35,16,13
+	.byte	'StopAdrOfShmAdr',0
+	.word	436
+	.byte	4,2,35,20,13
+	.byte	'TXBAOfShmAdr',0
+	.word	436
+	.byte	4,2,35,24,13
+	.byte	'TXEFAOfShmAdr',0
+	.word	436
+	.byte	4,2,35,28,13
+	.byte	'XIDFAOfShmAdr',0
+	.word	436
+	.byte	4,2,35,32,0,11
+	.byte	'Can_ShmAdrType',0,12,145,18,3
+	.word	15662
+	.byte	16
+	.byte	'sCan_ShmElementSizeType',0,12,148,18,16,6,13
+	.byte	'F0DSOfShmElementSize',0
+	.word	297
+	.byte	1,2,35,0,13
+	.byte	'F1DSOfShmElementSize',0
+	.word	297
+	.byte	1,2,35,1,13
+	.byte	'RBDSOfShmElementSize',0
+	.word	297
+	.byte	1,2,35,2,13
+	.byte	'TBDSOfShmElementSize',0
+	.word	297
+	.byte	1,2,35,3,13
+	.byte	'TEFBDSOfShmElementSize',0
+	.word	297
+	.byte	1,2,35,4,0,11
+	.byte	'Can_ShmElementSizeType',0,12,155,18,3
+	.word	15919
+	.byte	16
+	.byte	'sCan_XIDFCType',0,12,158,18,16,2,13
+	.byte	'FLESAOfXIDFC',0
+	.word	297
+	.byte	1,2,35,0,13
+	.byte	'LSEOfXIDFC',0
+	.word	297
+	.byte	1,2,35,1,0,11
+	.byte	'Can_XIDFCType',0,12,162,18,3
+	.word	16134
+	.byte	16
+	.byte	'sCan_XIDFEType',0,12,165,18,16,2,13
+	.byte	'EIDFE_0OfXIDFE',0
+	.word	297
+	.byte	1,2,35,0,13
+	.byte	'EIDFE_1OfXIDFE',0
+	.word	297
+	.byte	1,2,35,1,0,11
+	.byte	'Can_XIDFEType',0,12,169,18,3
+	.word	16221
+	.byte	16
+	.byte	'sCan_PCConfigType',0,12,143,19,16,1,13
+	.byte	'Can_PCConfigNeverUsed',0
+	.word	297
+	.byte	1,2,35,0,0,11
+	.byte	'Can_PCConfigType',0,12,146,19,3
+	.word	16314
+	.byte	11
+	.byte	'Can_ConfigType',0,12,148,19,26
+	.word	16314
+	.byte	6
+	.word	436
+	.byte	6
+	.word	436
+	.byte	6
+	.word	1329
+	.byte	16
+	.byte	'tElmTypeTag',0,13,145,9,25,72,13
+	.byte	'E0',0
+	.word	16420
+	.byte	4,2,35,0,13
+	.byte	'E1',0
+	.word	16425
+	.byte	4,2,35,4,13
+	.byte	'data',0
+	.word	16430
+	.byte	64,2,35,8,0,6
+	.word	16435
+	.byte	11
+	.byte	'tElmType',0,13,162,9,3
+	.word	16492
+	.byte	6
+	.word	436
+	.byte	6
+	.word	297
+	.byte	6
+	.word	297
+	.byte	6
+	.word	297
+	.byte	12,13,224,9,5,4,19
+	.byte	'ID',0,4
+	.word	16515
+	.byte	29,3,2,35,0,19
+	.byte	'RTR',0,1
+	.word	16520
+	.byte	1,2,2,35,3,19
+	.byte	'XTD',0,1
+	.word	16525
+	.byte	1,1,2,35,3,19
+	.byte	'ESI',0,1
+	.word	16530
+	.byte	1,0,2,35,3,0,6
+	.word	436
+	.byte	20,13,222,9,3,4,13
+	.byte	'b0',0
+	.word	16535
+	.byte	4,2,35,0,13
+	.byte	'B0',0
+	.word	16601
+	.byte	4,2,35,0,0,6
+	.word	372
+	.byte	6
+	.word	297
+	.byte	6
+	.word	297
+	.byte	6
+	.word	297
+	.byte	6
+	.word	297
+	.byte	6
+	.word	297
+	.byte	6
+	.word	297
+	.byte	12,13,235,9,5,4,19
+	.byte	'RXTS',0,2
+	.word	16637
+	.byte	16,0,2,35,0,19
+	.byte	'DLC',0,1
+	.word	16642
+	.byte	4,4,2,35,2,19
+	.byte	'BRS',0,1
+	.word	16647
+	.byte	1,3,2,35,2,19
+	.byte	'FDF',0,1
+	.word	16652
+	.byte	1,2,2,35,2,19
+	.byte	'r0',0,1
+	.word	16657
+	.byte	2,0,2,35,2,19
+	.byte	'FIDX',0,1
+	.word	16662
+	.byte	7,1,2,35,3,19
+	.byte	'ANMF',0,1
+	.word	16667
+	.byte	1,0,2,35,3,0,6
+	.word	372
+	.byte	6
+	.word	297
+	.byte	6
+	.word	297
+	.byte	6
+	.word	297
+	.byte	6
+	.word	297
+	.byte	6
+	.word	297
+	.byte	6
+	.word	297
+	.byte	12,13,245,9,5,4,19
+	.byte	'r1',0,2
+	.word	16786
+	.byte	16,0,2,35,0,19
+	.byte	'DLC',0,1
+	.word	16791
+	.byte	4,4,2,35,2,19
+	.byte	'BRS',0,1
+	.word	16796
+	.byte	1,3,2,35,2,19
+	.byte	'FDF',0,1
+	.word	16801
+	.byte	1,2,2,35,2,19
+	.byte	'r0',0,1
+	.word	16806
+	.byte	1,1,2,35,2,19
+	.byte	'EFC',0,1
+	.word	16811
+	.byte	1,0,2,35,2,19
+	.byte	'MM',0,1
+	.word	16816
+	.byte	8,0,2,35,3,0,20,13,233,9,3,4,13
+	.byte	'rb1',0
+	.word	16672
+	.byte	4,2,35,0,13
+	.byte	'tb1',0
+	.word	16821
+	.byte	4,2,35,0,13
+	.byte	'B1',0
+	.word	436
+	.byte	4,2,35,0,0,6
+	.word	1329
+	.byte	16
+	.byte	'tCanChipMsgPtrTag',0,13,220,9,25,72,13
+	.byte	'uB0',0
+	.word	16606
+	.byte	4,2,35,0,13
+	.byte	'uB1',0
+	.word	16930
+	.byte	4,2,35,4,13
+	.byte	'data',0
+	.word	16975
+	.byte	64,2,35,8,0,6
+	.word	16980
+	.byte	11
+	.byte	'tCanChipMsgPtr',0,13,134,10,3
+	.word	17045
+	.byte	12,13,141,10,3,4,19
+	.byte	'FnFL',0,1
+	.word	297
+	.byte	7,1,2,35,0,19
+	.byte	'r2',0,1
+	.word	297
+	.byte	1,0,2,35,0,19
+	.byte	'FnGI',0,1
+	.word	297
+	.byte	6,2,2,35,1,19
+	.byte	'r1',0,4
+	.word	436
+	.byte	10,8,2,35,0,19
+	.byte	'FnF',0,1
+	.word	297
+	.byte	1,7,2,35,3,19
+	.byte	'RFnL',0,1
+	.word	297
+	.byte	1,6,2,35,3,19
+	.byte	'r0',0,1
+	.word	297
+	.byte	6,0,2,35,3,0,21
+	.byte	'tRXFnSTag',0,13,138,10,15,4,13
+	.byte	'R',0
+	.word	436
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	17074
+	.byte	4,2,35,0,0,11
+	.byte	'tRXFnS',0,13,151,10,3
+	.word	17186
+	.byte	12,13,156,10,3,4,22,1
+	.word	297
+	.byte	2,6,2,35,0,19
+	.byte	'FOSA',0,2
+	.word	372
+	.byte	14,0,2,35,0,19
+	.byte	'F0S',0,1
+	.word	297
+	.byte	7,1,2,35,2,22,1
+	.word	297
+	.byte	1,0,2,35,2,19
+	.byte	'F0WM',0,1
+	.word	297
+	.byte	7,1,2,35,3,22,1
+	.word	297
+	.byte	1,0,2,35,3,0,21
+	.byte	'tRXFnCTag',0,13,153,10,15,4,13
+	.byte	'R',0
+	.word	436
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	17241
+	.byte	4,2,35,0,0,11
+	.byte	'tRXFnC',0,13,165,10,3
+	.word	17328
+	.byte	12,13,171,10,3,4,19
+	.byte	'F0DS',0,1
+	.word	297
+	.byte	3,5,2,35,0,22,1
+	.word	297
+	.byte	1,4,2,35,0,19
+	.byte	'F1DS',0,1
+	.word	297
+	.byte	3,1,2,35,0,22,1
+	.word	297
+	.byte	1,0,2,35,0,19
+	.byte	'RBDS',0,1
+	.word	297
+	.byte	3,5,2,35,1,22,4
+	.word	436
+	.byte	21,0,2,35,0,0,21
+	.byte	'tRXESCTag',0,13,168,10,15,4,13
+	.byte	'R',0
+	.word	436
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	17383
+	.byte	4,2,35,0,0,11
+	.byte	'tRXESC',0,13,180,10,3
+	.word	17471
+	.byte	12,13,185,10,3,4,19
+	.byte	'TFFL',0,1
+	.word	297
+	.byte	6,2,2,35,0,22,1
+	.word	297
+	.byte	2,0,2,35,0,19
+	.byte	'TFGI',0,1
+	.word	297
+	.byte	5,3,2,35,1,22,1
+	.word	297
+	.byte	3,0,2,35,1,19
+	.byte	'TFQPI',0,1
+	.word	297
+	.byte	5,3,2,35,2,19
+	.byte	'TFQF',0,1
+	.word	297
+	.byte	1,2,2,35,2,22,2
+	.word	372
+	.byte	10,0,2,35,2,0,21
+	.byte	'tTXFQSTag',0,13,182,10,15,4,13
+	.byte	'R',0
+	.word	436
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	17526
+	.byte	4,2,35,0,0,11
+	.byte	'tTXFQS',0,13,195,10,3
+	.word	17631
+	.byte	12,13,200,10,3,4,19
+	.byte	'EFFL',0,1
+	.word	297
+	.byte	6,2,2,35,0,19
+	.byte	'r1',0,1
+	.word	297
+	.byte	2,0,2,35,0,19
+	.byte	'EFGI',0,1
+	.word	297
+	.byte	5,3,2,35,1,22,4
+	.word	436
+	.byte	11,8,2,35,0,19
+	.byte	'EFF',0,1
+	.word	297
+	.byte	1,7,2,35,3,19
+	.byte	'TEFL',0,1
+	.word	297
+	.byte	1,6,2,35,3,19
+	.byte	'r0',0,1
+	.word	297
+	.byte	6,0,2,35,3,0,21
+	.byte	'tTXEFSTag',0,13,197,10,15,4,13
+	.byte	'R',0
+	.word	436
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	17686
+	.byte	4,2,35,0,0,11
+	.byte	'tTXEFS',0,13,210,10,3
+	.word	17795
+	.byte	11
+	.byte	'CanIf_TxBufferSizeType',0,14,184,1,15
+	.word	297
+	.byte	14,15,189,2,9,1,15
+	.byte	'CANIF_CS_UNINIT',0,0,15
+	.byte	'CANIF_CS_STOPPED',0,1,15
+	.byte	'CANIF_CS_STARTED',0,2,15
+	.byte	'CANIF_CS_SLEEP',0,3,0,11
+	.byte	'CanIf_ControllerModeType',0,15,195,2,3
+	.word	17882
+	.byte	14,15,215,2,9,1,15
+	.byte	'CANIF_GET_OFFLINE',0,0,15
+	.byte	'CANIF_GET_RX_ONLINE',0,1,15
+	.byte	'CANIF_GET_TX_ONLINE',0,2,15
+	.byte	'CANIF_GET_ONLINE',0,3,15
+	.byte	'CANIF_GET_OFFLINE_ACTIVE',0,4,15
+	.byte	'CANIF_GET_OFFLINE_ACTIVE_RX_ONLINE',0,5,15
+	.byte	'CANIF_NO_MODE_PDU_GET_MODE_TYPE_END',0,6,0,11
+	.byte	'CanIf_PduGetModeType',0,15,228,2,3
+	.word	17996
+	.byte	14,15,231,2,9,1,15
+	.byte	'CANIF_RxBasicCANMailbox',0,0,15
+	.byte	'CANIF_RxFullCANMailbox',0,1,15
+	.byte	'CANIF_TxBasicCANMailbox',0,2,15
+	.byte	'CANIF_TxFullCANMailbox',0,3,15
+	.byte	'CANIF_UnusedCANMailbox',0,4,0,11
+	.byte	'CanIf_MailBoxTypeType',0,15,238,2,3
+	.word	18218
+	.byte	14,15,241,2,9,1,15
+	.byte	'CanIf_SimpleRxIndicationLayout',0,0,15
+	.byte	'CanIf_AdvancedRxIndicationLayout',0,1,15
+	.byte	'CanIf_NmOsekRxIndicationLayout',0,2,15
+	.byte	'CanIf_CddRxIndicationLayout',0,3,0,11
+	.byte	'CanIf_RxIndicationLayoutType',0,15,247,2,3
+	.word	18383
+	.byte	23,1,1,5
+	.word	297
+	.byte	0,7
+	.word	18559
+	.byte	11
+	.byte	'CanIf_TxConfirmationFctType',0,15,175,3,9
+	.word	18568
+	.byte	3
+	.word	297
+	.byte	7
+	.word	18610
+	.byte	23,1,1,5
+	.word	297
+	.byte	5
+	.word	18615
+	.byte	0,7
+	.word	18620
+	.byte	11
+	.byte	'CanIf_SimpleRxIndicationFctType',0,15,181,3,9
+	.word	18634
+	.byte	3
+	.word	816
+	.byte	7
+	.word	18680
+	.byte	23,1,1,5
+	.word	297
+	.byte	5
+	.word	18685
+	.byte	0,7
+	.word	18690
+	.byte	11
+	.byte	'CanIf_AdvancedRxIndicationFctType',0,15,186,3,9
+	.word	18704
+	.byte	23,1,1,5
+	.word	297
+	.byte	5
+	.word	18615
+	.byte	5
+	.word	372
+	.byte	0,7
+	.word	18752
+	.byte	11
+	.byte	'CanIf_NmOsekRxIndicationFctType',0,15,190,3,9
+	.word	18771
+	.byte	23,1,1,5
+	.word	297
+	.byte	5
+	.word	18685
+	.byte	5
+	.word	372
+	.byte	0,7
+	.word	18817
+	.byte	11
+	.byte	'CanIf_CddRxIndicationFctType',0,15,194,3,9
+	.word	18836
+	.byte	23,1,1,5
+	.word	297
+	.byte	5
+	.word	17882
+	.byte	0,7
+	.word	18879
+	.byte	11
+	.byte	'CanIf_CtrlModeIndicationFctType',0,15,198,3,9
+	.word	18893
+	.byte	11
+	.byte	'CanIf_BusOffNotificationFctType',0,15,202,3,9
+	.word	18568
+	.byte	20,15,203,4,9,4,13
+	.byte	'eSimpleRxIndicationType',0
+	.word	18639
+	.byte	4,2,35,0,13
+	.byte	'eAdvancedRxIndicationType',0
+	.word	18709
+	.byte	4,2,35,0,13
+	.byte	'eNmOsekRxIndicationType',0
+	.word	18776
+	.byte	4,2,35,0,13
+	.byte	'eCddRxIndicationType',0
+	.word	18841
+	.byte	4,2,35,0,0,11
+	.byte	'CanIf_RxIndicationFctType',0,15,209,4,3
+	.word	18980
+	.byte	7
+	.word	18620
+	.byte	7
+	.word	18690
+	.byte	7
+	.word	18752
+	.byte	7
+	.word	18817
+	.byte	16
+	.byte	'sCanIf_TxQueueBaseType',0,15,222,4,16,1,13
+	.byte	'eSduLength',0
+	.word	297
+	.byte	1,2,35,0,0,11
+	.byte	'CanIf_TxQueueBaseType',0,15,228,4,3
+	.word	19173
+	.byte	16
+	.byte	'sCanIf_TxQueueBaseWithDataType',0,15,231,4,16,1,13
+	.byte	'eBaseParams',0
+	.word	19173
+	.byte	1,2,35,0,0,11
+	.byte	'CanIf_TxQueueBaseWithDataType',0,15,237,4,3
+	.word	19254
+	.byte	16
+	.byte	'sCanIf_TxPrioByCanIdByteQueueType',0,15,242,4,16,2,13
+	.byte	'eQueueParams',0
+	.word	19254
+	.byte	1,2,35,0,13
+	.byte	'eQueued',0
+	.word	297
+	.byte	1,2,35,1,0,11
+	.byte	'CanIf_TxPrioByCanIdByteQueueType',0,15,246,4,3
+	.word	19352
+	.byte	16
+	.byte	'sCanIf_TxBufferPrioByCanIdBaseType',0,15,128,5,16,1,13
+	.byte	'eQueueCounter',0
+	.word	297
+	.byte	1,2,35,0,0,11
+	.byte	'CanIf_TxBufferPrioByCanIdBaseType',0,15,131,5,3
+	.word	19474
+	.byte	11
+	.byte	'CanIf_MappedTxBuffersConfigEndIdxOfCanIfCtrlId2MappedTxBuffersConfigType',0,14,138,9,15
+	.word	297
+	.byte	11
+	.byte	'CanIf_MappedTxBuffersConfigStartIdxOfCanIfCtrlId2MappedTxBuffersConfigType',0,14,141,9,15
+	.word	297
+	.byte	11
+	.byte	'CanIf_CtrlStatesIdxOfMailBoxConfigType',0,14,150,9,15
+	.word	297
+	.byte	11
+	.byte	'CanIf_PduIdFirstOfMailBoxConfigType',0,14,153,9,15
+	.word	297
+	.byte	11
+	.byte	'CanIf_PduIdLastOfMailBoxConfigType',0,14,156,9,15
+	.word	297
+	.byte	11
+	.byte	'CanIf_TxBufferCfgIdxOfMailBoxConfigType',0,14,159,9,15
+	.word	297
+	.byte	11
+	.byte	'CanIf_TxBufferHandlingTypeOfMailBoxConfigType',0,14,165,9,15
+	.word	297
+	.byte	11
+	.byte	'CanIf_MailBoxConfigIdxOfMappedTxBuffersConfigType',0,14,168,9,15
+	.word	297
+	.byte	11
+	.byte	'CanIf_RxIndicationFctListIdxOfRxPduConfigType',0,14,171,9,15
+	.word	297
+	.byte	11
+	.byte	'CanIf_RxPduCanIdOfRxPduConfigType',0,14,174,9,15
+	.word	297
+	.byte	11
+	.byte	'CanIf_RxPduDlcOfRxPduConfigType',0,14,177,9,15
+	.word	297
+	.byte	11
+	.byte	'CanIf_RxPduMaskOfRxPduConfigType',0,14,180,9,16
+	.word	372
+	.byte	11
+	.byte	'CanIf_UpperPduIdOfRxPduConfigType',0,14,183,9,19
+	.word	297
+	.byte	11
+	.byte	'CanIf_TxBufferPrioByCanIdBaseIdxOfTxBufferPrioByCanIdByteQueueConfigType',0,14,231,9,15
+	.word	297
+	.byte	11
+	.byte	'CanIf_TxBufferPrioByCanIdByteQueueMappedTxPdusEndIdxOfTxBufferPrioByCanIdByteQueueConfigType',0,14,234
+	.byte	9,15
+	.word	297
+	.byte	11
+	.byte	'CanIf_TxBufferPrioByCanIdByteQueueMappedTxPdusLengthOfTxBufferPrioByCanIdByteQueueConfigType',0,14,237
+	.byte	9,15
+	.word	297
+	.byte	11
+	.byte	'CanIf_TxBufferPrioByCanIdByteQueueMappedTxPdusStartIdxOfTxBufferPrioByCanIdByteQueueConfigType',0,14
+	.byte	240,9,15
+	.word	297
+	.byte	11
+	.byte	'CanIf_TxPduConfigIdxOfTxBufferPrioByCanIdByteQueueMappedTxPdusType',0,14,243,9,15
+	.word	297
+	.byte	11
+	.byte	'CanIf_CanIdOfTxPduConfigType',0,14,246,9,16
+	.word	372
+	.byte	11
+	.byte	'CanIf_CtrlStatesIdxOfTxPduConfigType',0,14,249,9,15
+	.word	297
+	.byte	11
+	.byte	'CanIf_IsTxPduTruncationOfTxPduConfigType',0,14,252,9,17
+	.word	297
+	.byte	11
+	.byte	'CanIf_MailBoxConfigIdxOfTxPduConfigType',0,14,255,9,15
+	.word	297
+	.byte	11
+	.byte	'CanIf_TxConfirmationFctListIdxOfTxPduConfigType',0,14,130,10,15
+	.word	297
+	.byte	11
+	.byte	'CanIf_TxPduLengthOfTxPduConfigType',0,14,133,10,15
+	.word	297
+	.byte	11
+	.byte	'CanIf_UpperLayerTxPduIdOfTxPduConfigType',0,14,136,10,19
+	.word	297
+	.byte	11
+	.byte	'CanIf_TxQueueIdxOfTxPduQueueIndexType',0,14,139,10,15
+	.word	297
+	.byte	11
+	.byte	'CanIf_TxQueueIndex2DataStartStopIdxOfTxPduQueueIndexType',0,14,142,10,15
+	.word	297
+	.byte	11
+	.byte	'CanIf_TxQueueDataType',0,14,151,10,15
+	.word	297
+	.byte	11
+	.byte	'CanIf_TxQueueDataEndIdxOfTxQueueIndex2DataStartStopType',0,14,154,10,15
+	.word	297
+	.byte	11
+	.byte	'CanIf_TxQueueDataLengthOfTxQueueIndex2DataStartStopType',0,14,157,10,15
+	.word	297
+	.byte	11
+	.byte	'CanIf_TxQueueDataStartIdxOfTxQueueIndex2DataStartStopType',0,14,160,10,15
+	.word	297
+	.byte	16
+	.byte	'sCanIf_CanIfCtrlId2MappedTxBuffersConfigType',0,14,183,10,16,2,13
+	.byte	'MappedTxBuffersConfigEndIdxOfCanIfCtrlId2MappedTxBuffersConfig',0
+	.word	297
+	.byte	1,2,35,0,13
+	.byte	'MappedTxBuffersConfigStartIdxOfCanIfCtrlId2MappedTxBuffersConfig',0
+	.word	297
+	.byte	1,2,35,1,0,11
+	.byte	'CanIf_CanIfCtrlId2MappedTxBuffersConfigType',0,14,187,10,3
+	.word	21413
+	.byte	16
+	.byte	'sCanIf_CtrlStatesType',0,14,190,10,16,2,13
+	.byte	'CtrlModeOfCtrlStates',0
+	.word	17882
+	.byte	1,2,35,0,13
+	.byte	'PduModeOfCtrlStates',0
+	.word	17996
+	.byte	1,2,35,1,0,11
+	.byte	'CanIf_CtrlStatesType',0,14,194,10,3
+	.word	21664
+	.byte	16
+	.byte	'sCanIf_MailBoxConfigType',0,14,200,10,16,6,13
+	.byte	'CtrlStatesIdxOfMailBoxConfig',0
+	.word	297
+	.byte	1,2,35,0,13
+	.byte	'PduIdFirstOfMailBoxConfig',0
+	.word	297
+	.byte	1,2,35,1,13
+	.byte	'PduIdLastOfMailBoxConfig',0
+	.word	297
+	.byte	1,2,35,2,13
+	.byte	'TxBufferCfgIdxOfMailBoxConfig',0
+	.word	297
+	.byte	1,2,35,3,13
+	.byte	'TxBufferHandlingTypeOfMailBoxConfig',0
+	.word	297
+	.byte	1,2,35,4,13
+	.byte	'MailBoxTypeOfMailBoxConfig',0
+	.word	18218
+	.byte	1,2,35,5,0,11
+	.byte	'CanIf_MailBoxConfigType',0,14,208,10,3
+	.word	21782
+	.byte	16
+	.byte	'sCanIf_MappedTxBuffersConfigType',0,14,214,10,16,1,13
+	.byte	'MailBoxConfigIdxOfMappedTxBuffersConfig',0
+	.word	297
+	.byte	1,2,35,0,0,11
+	.byte	'CanIf_MappedTxBuffersConfigType',0,14,217,10,3
+	.word	22074
+	.byte	16
+	.byte	'sCanIf_RxIndicationFctListType',0,14,220,10,16,8,13
+	.byte	'RxIndicationFctOfRxIndicationFctList',0
+	.word	18980
+	.byte	4,2,35,0,13
+	.byte	'RxIndicationLayoutOfRxIndicationFctList',0
+	.word	18383
+	.byte	1,2,35,4,0,11
+	.byte	'CanIf_RxIndicationFctListType',0,14,224,10,3
+	.word	22204
+	.byte	16
+	.byte	'sCanIf_RxPduConfigType',0,14,230,10,16,6,13
+	.byte	'RxPduMaskOfRxPduConfig',0
+	.word	372
+	.byte	2,2,35,0,13
+	.byte	'UpperPduIdOfRxPduConfig',0
+	.word	297
+	.byte	1,2,35,2,13
+	.byte	'RxIndicationFctListIdxOfRxPduConfig',0
+	.word	297
+	.byte	1,2,35,3,13
+	.byte	'RxPduCanIdOfRxPduConfig',0
+	.word	297
+	.byte	1,2,35,4,13
+	.byte	'RxPduDlcOfRxPduConfig',0
+	.word	297
+	.byte	1,2,35,5,0,11
+	.byte	'CanIf_RxPduConfigType',0,14,237,10,3
+	.word	22376
+	.byte	16
+	.byte	'sCanIf_TxBufferPrioByCanIdByteQueueConfigType',0,14,245,10,16,4,13
+	.byte	'TxBufferPrioByCanIdBaseIdxOfTxBufferPrioByCanIdByteQueueConfig',0
+	.word	297
+	.byte	1,2,35,0,13
+	.byte	'TxBufferPrioByCanIdByteQueueMappedTxPdusEndIdxOfTxBufferPrioByCanIdByteQueueConfig',0
+	.word	297
+	.byte	1,2,35,1,13
+	.byte	'TxBufferPrioByCanIdByteQueueMappedTxPdusLengthOfTxBufferPrioByCanIdByteQueueConfig',0
+	.word	297
+	.byte	1,2,35,2,13
+	.byte	'TxBufferPrioByCanIdByteQueueMappedTxPdusStartIdxOfTxBufferPrioByCanIdByteQueueConfig',0
+	.word	297
+	.byte	1,2,35,3,0,11
+	.byte	'CanIf_TxBufferPrioByCanIdByteQueueConfigType',0,14,251,10,3
+	.word	22611
+	.byte	16
+	.byte	'sCanIf_TxBufferPrioByCanIdByteQueueMappedTxPdusType',0,14,129,11,16,1,13
+	.byte	'TxPduConfigIdxOfTxBufferPrioByCanIdByteQueueMappedTxPdus',0
+	.word	297
+	.byte	1,2,35,0,0,11
+	.byte	'CanIf_TxBufferPrioByCanIdByteQueueMappedTxPdusType',0,14,132,11,3
+	.word	23068
+	.byte	16
+	.byte	'sCanIf_TxPduConfigType',0,14,140,11,16,8,13
+	.byte	'CanIdOfTxPduConfig',0
+	.word	372
+	.byte	2,2,35,0,13
+	.byte	'UpperLayerTxPduIdOfTxPduConfig',0
+	.word	297
+	.byte	1,2,35,2,13
+	.byte	'IsTxPduTruncationOfTxPduConfig',0
+	.word	297
+	.byte	1,2,35,3,13
+	.byte	'CtrlStatesIdxOfTxPduConfig',0
+	.word	297
+	.byte	1,2,35,4,13
+	.byte	'MailBoxConfigIdxOfTxPduConfig',0
+	.word	297
+	.byte	1,2,35,5,13
+	.byte	'TxConfirmationFctListIdxOfTxPduConfig',0
+	.word	297
+	.byte	1,2,35,6,13
+	.byte	'TxPduLengthOfTxPduConfig',0
+	.word	297
+	.byte	1,2,35,7,0,11
+	.byte	'CanIf_TxPduConfigType',0,14,149,11,3
+	.word	23253
+	.byte	16
+	.byte	'sCanIf_TxPduQueueIndexType',0,14,155,11,16,2,13
+	.byte	'TxQueueIdxOfTxPduQueueIndex',0
+	.word	297
+	.byte	1,2,35,0,13
+	.byte	'TxQueueIndex2DataStartStopIdxOfTxPduQueueIndex',0
+	.word	297
+	.byte	1,2,35,1,0,11
+	.byte	'CanIf_TxPduQueueIndexType',0,14,159,11,3
+	.word	23578
+	.byte	16
+	.byte	'sCanIf_TxQueueIndex2DataStartStopType',0,14,166,11,16,4,13
+	.byte	'TxQueueDataEndIdxOfTxQueueIndex2DataStartStop',0
+	.word	297
+	.byte	1,2,35,0,13
+	.byte	'TxQueueDataLengthOfTxQueueIndex2DataStartStop',0
+	.word	297
+	.byte	1,2,35,1,13
+	.byte	'TxQueueDataStartIdxOfTxQueueIndex2DataStartStop',0
+	.word	297
+	.byte	1,2,35,2,0,11
+	.byte	'CanIf_TxQueueIndex2DataStartStopType',0,14,171,11,3
+	.word	23740
+	.byte	16
+	.byte	'CanIf_CtrlStatesStructSTag',0,14,183,11,16,2,13
+	.byte	'CT_testCANFDdbc_2c920817',0
+	.word	21664
+	.byte	2,2,35,0,0,11
+	.byte	'CanIf_CtrlStatesStructSType',0,14,186,11,3
+	.word	23998
+	.byte	16
+	.byte	'CanIf_TxBufferPrioByCanIdBaseStructSTag',0,14,189,11,16,1,13
+	.byte	'CHNL_7a25eeb6',0
+	.word	19474
+	.byte	1,2,35,0,0,11
+	.byte	'CanIf_TxBufferPrioByCanIdBaseStructSType',0,14,192,11,3
+	.word	24103
+	.byte	16
+	.byte	'CanIf_TxQueueStructSTag',0,14,195,11,16,6,13
+	.byte	'TxMessage3_otestCANFDdbc_547b0ac5_Tx',0
+	.word	19352
+	.byte	2,2,35,0,13
+	.byte	'TxMessage22_otestCANFDdbc_f66bbf36_Tx',0
+	.word	19352
+	.byte	2,2,35,2,13
+	.byte	'TxMessage1_otestCANFDdbc_815f4c47_Tx',0
+	.word	19352
+	.byte	2,2,35,4,0,11
+	.byte	'CanIf_TxQueueStructSType',0,14,200,11,3
+	.word	24223
+	.byte	17,32
+	.word	297
+	.byte	18,31,0,17,8
+	.word	297
+	.byte	18,7,0,17,64
+	.word	297
+	.byte	18,63,0,16
+	.byte	'CanIf_TxQueueDataStructSTag',0,14,203,11,16,104,13
+	.byte	'TxMessage3_otestCANFDdbc_547b0ac5_Tx',0
+	.word	24427
+	.byte	32,2,35,0,13
+	.byte	'TxMessage22_otestCANFDdbc_f66bbf36_Tx',0
+	.word	24436
+	.byte	8,2,35,32,13
+	.byte	'TxMessage1_otestCANFDdbc_815f4c47_Tx',0
+	.word	24445
+	.byte	64,2,35,40,0,11
+	.byte	'CanIf_TxQueueDataStructSType',0,14,208,11,3
+	.word	24454
+	.byte	16
+	.byte	'sCanIf_PCConfigType',0,14,189,12,16,1,13
+	.byte	'CanIf_PCConfigNeverUsed',0
+	.word	297
+	.byte	1,2,35,0,0,11
+	.byte	'CanIf_PCConfigType',0,14,192,12,3
+	.word	24666
+	.byte	24,1,1,7
+	.word	24754
+	.byte	11
+	.byte	'PduR_LockFunctionType',0,16,218,8,9
+	.word	24757
+	.byte	25
+	.word	297
+	.byte	1,1,5
+	.word	297
+	.byte	5
+	.word	18685
+	.byte	0,7
+	.word	24793
+	.byte	11
+	.byte	'PduR_TransmitFctPtrType',0,16,222,8,9
+	.word	24811
+	.byte	11
+	.byte	'PduR_IfRxIndicationType',0,16,224,8,9
+	.word	18704
+	.byte	11
+	.byte	'PduR_IfTxConfirmationFctPtrType',0,16,225,8,9
+	.word	18568
+	.byte	11
+	.byte	'PduR_hasIfRoutingOfGeneralPropertiesRomType',0,16,207,9,17
+	.word	297
+	.byte	11
+	.byte	'PduR_InitializedType',0,16,210,9,17
+	.word	297
+	.byte	11
+	.byte	'PduR_DestApplicationManagerRomIdxOfMmRomType',0,16,219,9,15
+	.word	297
+	.byte	11
+	.byte	'PduR_MaskedBitsOfMmRomType',0,16,225,9,15
+	.word	297
+	.byte	11
+	.byte	'PduR_RmGDestRomStartIdxOfMmRomType',0,16,231,9,15
+	.word	297
+	.byte	11
+	.byte	'PduR_MmRomIndType',0,16,240,9,15
+	.word	297
+	.byte	11
+	.byte	'PduR_PartitionSNVOfPartitionIdentifiersType',0,16,246,9,16
+	.word	436
+	.byte	11
+	.byte	'PduR_PduLengthHandlingStrategyOfRmDestRomType',0,16,252,9,15
+	.word	297
+	.byte	11
+	.byte	'PduR_RmGDestRomIdxOfRmDestRomType',0,16,255,9,15
+	.word	297
+	.byte	11
+	.byte	'PduR_RmSrcRomIdxOfRmDestRomType',0,16,130,10,15
+	.word	297
+	.byte	11
+	.byte	'PduR_RoutingTypeOfRmDestRomType',0,16,133,10,15
+	.word	297
+	.byte	11
+	.byte	'PduR_DestHndOfRmGDestRomType',0,16,136,10,15
+	.word	297
+	.byte	11
+	.byte	'PduR_DirectionOfRmGDestRomType',0,16,139,10,15
+	.word	297
+	.byte	11
+	.byte	'PduR_MaxPduLengthOfRmGDestRomType',0,16,145,10,15
+	.word	297
+	.byte	11
+	.byte	'PduR_MmRomIdxOfRmGDestRomType',0,16,148,10,15
+	.word	297
+	.byte	11
+	.byte	'PduR_PartitionIndexOfCslOfRmGDestRomType',0,16,151,10,15
+	.word	297
+	.byte	11
+	.byte	'PduR_RmDestRomIdxOfRmGDestRomType',0,16,157,10,15
+	.word	297
+	.byte	11
+	.byte	'PduR_MmRomIdxOfRmSrcRomType',0,16,166,10,15
+	.word	297
+	.byte	11
+	.byte	'PduR_PartitionIndexOfCslOfRmSrcRomType',0,16,169,10,15
+	.word	297
+	.byte	11
+	.byte	'PduR_RmDestRomStartIdxOfRmSrcRomType',0,16,178,10,15
+	.word	297
+	.byte	11
+	.byte	'PduR_SrcHndOfRmSrcRomType',0,16,181,10,15
+	.word	297
+	.byte	11
+	.byte	'PduR_RmTransmitFctPtrIdxOfTx2LoType',0,16,250,10,15
+	.word	297
+	.byte	11
+	.byte	'PduR_PartitionIndexOfCslOfTxIf2UpType',0,16,253,10,15
+	.word	297
+	.byte	11
+	.byte	'PduR_RmGDestRomIdxOfTxIf2UpType',0,16,128,11,15
+	.word	297
+	.byte	11
+	.byte	'PduR_TxConfirmationUsedOfTxIf2UpType',0,16,131,11,17
+	.word	297
+	.byte	11
+	.byte	'PduR_RmTransmitFctPtrType',0,16,144,11,9
+	.word	24811
+	.byte	16
+	.byte	'sPduR_DestApplicationManagerRomType',0,16,182,11,16,1,13
+	.byte	'PduR_DestApplicationManagerRomNeverUsed',0
+	.word	297
+	.byte	1,2,35,0,0,11
+	.byte	'PduR_DestApplicationManagerRomType',0,16,185,11,3
+	.word	26033
+	.byte	16
+	.byte	'sPduR_ExclusiveAreaRomType',0,16,188,11,16,8,13
+	.byte	'LockOfExclusiveAreaRom',0
+	.word	24762
+	.byte	4,2,35,0,13
+	.byte	'UnlockOfExclusiveAreaRom',0
+	.word	24762
+	.byte	4,2,35,4,0,11
+	.byte	'PduR_ExclusiveAreaRomType',0,16,192,11,3
+	.word	26169
+	.byte	7
+	.word	24754
+	.byte	16
+	.byte	'sPduR_GeneralPropertiesRomType',0,16,195,11,16,1,13
+	.byte	'hasIfRoutingOfGeneralPropertiesRom',0
+	.word	297
+	.byte	1,2,35,0,0,11
+	.byte	'PduR_GeneralPropertiesRomType',0,16,198,11,3
+	.word	26309
+	.byte	16
+	.byte	'sPduR_LockRomType',0,16,201,11,16,1,13
+	.byte	'PduR_LockRomNeverUsed',0
+	.word	297
+	.byte	1,2,35,0,0,11
+	.byte	'PduR_LockRomType',0,16,204,11,3
+	.word	26430
+	.byte	16
+	.byte	'sPduR_MmRomType',0,16,207,11,16,16,13
+	.byte	'DestApplicationManagerRomIdxOfMmRom',0
+	.word	297
+	.byte	1,2,35,0,13
+	.byte	'MaskedBitsOfMmRom',0
+	.word	297
+	.byte	1,2,35,1,13
+	.byte	'RmGDestRomStartIdxOfMmRom',0
+	.word	297
+	.byte	1,2,35,2,13
+	.byte	'UpIfRxIndicationFctPtrOfMmRom',0
+	.word	24849
+	.byte	4,2,35,4,13
+	.byte	'UpIfTxConfirmationFctPtrOfMmRom',0
+	.word	24882
+	.byte	4,2,35,8,13
+	.byte	'LoIfTransmitFctPtrOfMmRom',0
+	.word	24816
+	.byte	4,2,35,12,0,11
+	.byte	'PduR_MmRomType',0,16,215,11,3
+	.word	26512
+	.byte	7
+	.word	18690
+	.byte	7
+	.word	18559
+	.byte	7
+	.word	24793
+	.byte	16
+	.byte	'sPduR_PartitionIdentifiersType',0,16,218,11,16,4,13
+	.byte	'PartitionSNVOfPartitionIdentifiers',0
+	.word	436
+	.byte	4,2,35,0,0,11
+	.byte	'PduR_PartitionIdentifiersType',0,16,221,11,3
+	.word	26796
+	.byte	16
+	.byte	'sPduR_RmDestRomType',0,16,224,11,16,4,13
+	.byte	'PduLengthHandlingStrategyOfRmDestRom',0
+	.word	297
+	.byte	1,2,35,0,13
+	.byte	'RmGDestRomIdxOfRmDestRom',0
+	.word	297
+	.byte	1,2,35,1,13
+	.byte	'RmSrcRomIdxOfRmDestRom',0
+	.word	297
+	.byte	1,2,35,2,13
+	.byte	'RoutingTypeOfRmDestRom',0
+	.word	297
+	.byte	1,2,35,3,0,11
+	.byte	'PduR_RmDestRomType',0,16,230,11,3
+	.word	26917
+	.byte	16
+	.byte	'sPduR_RmGDestRomType',0,16,233,11,16,6,13
+	.byte	'DestHndOfRmGDestRom',0
+	.word	297
+	.byte	1,2,35,0,13
+	.byte	'DirectionOfRmGDestRom',0
+	.word	297
+	.byte	1,2,35,1,13
+	.byte	'MaxPduLengthOfRmGDestRom',0
+	.word	297
+	.byte	1,2,35,2,13
+	.byte	'MmRomIdxOfRmGDestRom',0
+	.word	297
+	.byte	1,2,35,3,13
+	.byte	'PartitionIndexOfCslOfRmGDestRom',0
+	.word	297
+	.byte	1,2,35,4,13
+	.byte	'RmDestRomIdxOfRmGDestRom',0
+	.word	297
+	.byte	1,2,35,5,0,11
+	.byte	'PduR_RmGDestRomType',0,16,241,11,3
+	.word	27116
+	.byte	16
+	.byte	'sPduR_RmSrcRomType',0,16,244,11,16,4,13
+	.byte	'MmRomIdxOfRmSrcRom',0
+	.word	297
+	.byte	1,2,35,0,13
+	.byte	'PartitionIndexOfCslOfRmSrcRom',0
+	.word	297
+	.byte	1,2,35,1,13
+	.byte	'RmDestRomStartIdxOfRmSrcRom',0
+	.word	297
+	.byte	1,2,35,2,13
+	.byte	'SrcHndOfRmSrcRom',0
+	.word	297
+	.byte	1,2,35,3,0,11
+	.byte	'PduR_RmSrcRomType',0,16,250,11,3
+	.word	27372
+	.byte	16
+	.byte	'sPduR_RxIf2DestType',0,16,253,11,16,1,13
+	.byte	'PduR_RxIf2DestNeverUsed',0
+	.word	297
+	.byte	1,2,35,0,0,11
+	.byte	'PduR_RxIf2DestType',0,16,128,12,3
+	.word	27555
+	.byte	16
+	.byte	'sPduR_SrcApplicationRomType',0,16,131,12,16,1,13
+	.byte	'PduR_SrcApplicationRomNeverUsed',0
+	.word	297
+	.byte	1,2,35,0,0,11
+	.byte	'PduR_SrcApplicationRomType',0,16,134,12,3
+	.word	27643
+	.byte	16
+	.byte	'sPduR_Tx2LoType',0,16,137,12,16,1,13
+	.byte	'RmTransmitFctPtrIdxOfTx2Lo',0
+	.word	297
+	.byte	1,2,35,0,0,11
+	.byte	'PduR_Tx2LoType',0,16,140,12,3
+	.word	27755
+	.byte	16
+	.byte	'sPduR_TxIf2UpType',0,16,143,12,16,4,13
+	.byte	'TxConfirmationUsedOfTxIf2Up',0
+	.word	297
+	.byte	1,2,35,0,13
+	.byte	'PartitionIndexOfCslOfTxIf2Up',0
+	.word	297
+	.byte	1,2,35,1,13
+	.byte	'RmGDestRomIdxOfTxIf2Up',0
+	.word	297
+	.byte	1,2,35,2,0,11
+	.byte	'PduR_TxIf2UpType',0,16,148,12,3
+	.word	27838
+	.byte	7
+	.word	297
+	.byte	11
+	.byte	'PduR_InitializedPtrType',0,16,169,12,66
+	.word	27996
+	.byte	16
+	.byte	'sPduR_PCPartitionConfigType',0,16,217,12,16,4,13
+	.byte	'InitializedOfPCPartitionConfig',0
+	.word	28001
+	.byte	4,2,35,0,0,11
+	.byte	'PduR_PCPartitionConfigType',0,16,220,12,3
+	.word	28034
+	.byte	7
+	.word	297
+	.byte	16
+	.byte	'sPduR_PCConfigType',0,16,235,12,16,1,13
+	.byte	'PduR_PCConfigNeverUsed',0
+	.word	297
+	.byte	1,2,35,0,0,11
+	.byte	'PduR_PCConfigType',0,16,238,12,3
+	.word	28150
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L4:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,38,0,73,19,0,0,4,46,1,3,8,54
+	.byte	15,39,12,63,12,60,12,0,0,5,5,0,73,19,0,0,6,53,0,73,19,0,0,7,15,0,73,19,0,0,8,46,1,3,8,73,19,54,15,39,12
+	.byte	63,12,60,12,0,0,9,5,0,3,8,73,19,0,0,10,21,0,54,15,0,0,11,22,0,3,8,58,15,59,15,57,15,73,19,0,0,12,19,1
+	.byte	58,15,59,15,57,15,11,15,0,0,13,13,0,3,8,73,19,11,15,56,9,0,0,14,4,1,58,15,59,15,57,15,11,15,0,0,15,40
+	.byte	0,3,8,28,13,0,0,16,19,1,3,8,58,15,59,15,57,15,11,15,0,0,17,1,1,11,15,73,19,0,0,18,33,0,47,15,0,0,19,13
+	.byte	0,3,8,11,15,73,19,13,15,12,15,56,9,0,0,20,23,1,58,15,59,15,57,15,11,15,0,0,21,23,1,3,8,58,15,59,15,57
+	.byte	15,11,15,0,0,22,13,0,11,15,73,19,13,15,12,15,56,9,0,0,23,21,1,54,15,39,12,0,0,24,21,0,54,15,39,12,0,0
+	.byte	25,21,1,73,19,54,15,39,12,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L5:
+	.word	.L7-.L6
+.L6:
+	.half	3
+	.word	.L9-.L8
+.L8:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'D:\\Zonal\\demo011\\tasking\\component\\_Common\\Implementation',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\appl\\GenData',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\component\\Os\\Implementation',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\component\\Can\\Implementation',0
+	.byte	'D:\\Zonal\\demo011\\tasking\\component\\CanIf\\Implementation',0,0
+	.byte	'..\\component\\PduR\\Implementation\\PduR_RmTp_TxInst.c',0,0,0,0
+	.byte	'Platform_Types.h',0,1,0,0
+	.byte	'Std_Types.h',0,1,0,0
+	.byte	'ComStack_Cfg.h',0,2,0,0
+	.byte	'ComStack_Types.h',0,1,0,0
+	.byte	'Det_Cfg.h',0,2,0,0
+	.byte	'Os_Types_Lcfg.h',0,2,0,0
+	.byte	'Os_Hal_Os_Types.h',0,3,0,0
+	.byte	'Os_Hal_OsInt.h',0,3,0,0
+	.byte	'Os_Types.h',0,3,0,0
+	.byte	'Can_DrvGeneralTypes.h',0,2,0,0
+	.byte	'Can_Cfg.h',0,2,0,0
+	.byte	'Can.h',0,4,0,0
+	.byte	'CanIf_Cfg.h',0,2,0,0
+	.byte	'CanIf_Types.h',0,5,0,0
+	.byte	'PduR_Lcfg.h',0,2,0,0,0
+.L9:
+.L7:
+
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	     1  /**********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	     2   *  COPYRIGHT
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	     3   *  -------------------------------------------------------------------------------------------------------------------
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	     4   *  \verbatim
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	     5   *  Copyright (c) 2020 by Vector Informatik GmbH.                                                  All rights reserved.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	     6   *
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	     7   *                This software is copyright protected and proprietary to Vector Informatik GmbH.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	     8   *                Vector Informatik GmbH grants to you only those rights as set out in the license conditions.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	     9   *                All other rights remain with Vector Informatik GmbH.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    10   *  \endverbatim
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    11   *  -------------------------------------------------------------------------------------------------------------------
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    12   *  FILE DESCRIPTION
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    13   *  -------------------------------------------------------------------------------------------------------------------
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    14   *         File:  PduR_RmTp_TxInst.c
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    15   *      Project:  Gw_AsrPduRCfg5
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    16   *       Module:  MICROSAR PDU Router
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    17   *    Generator:  Configurator 5
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    18   *
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    19   *  Description:  Vector implementation of AUTOSAR PDU Router
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    20   *
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    21   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    22  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    23  /**********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    24   *  REVISION HISTORY
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    25   *  -------------------------------------------------------------------------------------------------------------------
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    26   *  Refer to the module's header file.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    27   *
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    28   *  FILE VERSION
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    29   *  -------------------------------------------------------------------------------------------------------------------
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    30   *  Refer to the module's header file.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    31   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    32  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    33  /**********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    34   * LOCAL MISRA / PCLINT JUSTIFICATION
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    35   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    36  /* PRQA  S 3673 EOF */ /* MD_MSR_Rule8.13 */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    37  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    38  #define PDUR_RMTP_TXINST_SOURCE
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    39  /**********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    40   * INCLUDES
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    41   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    42  #include "PduR.h"
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    43  #include "PduR_Bm.h"
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    44  #include "PduR_Fm.h"
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    45  #include "PduR_RmTp.h"
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    46  #include "PduR_RmTp_TxInst.h"
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    47  #include "PduR_Lock.h"
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    48  #if (PDUR_DEV_ERROR_REPORT == STD_ON)
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    49  # include "Det.h"
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    50  #endif
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    51  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    52  /**********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    53   *  LOCAL CONSTANT MACROS
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    54   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    55  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    56  /**********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    57   *  LOCAL FUNCTION MACROS
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    58   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    59  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    60  /**********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    61   *  LOCAL DATA TYPES AND STRUCTURES
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    62   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    63  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    64  /**********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    65   *  LOCAL DATA PROTOTYPES
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    66   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    67  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    68  /**********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    69   *  GLOBAL DATA
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    70   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    71  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    72  /**********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    73   *  LOCAL FUNCTION PROTOTYPES
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    74   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    75  #define PDUR_START_SEC_CODE
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    76  #include "PduR_MemMap.h" /* PRQA S 5087 */   /* MD_MSR_MemMap */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    77  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    78  #if (PDUR_EXISTS_TP_BUFFERED_ROUTINGTYPEOFRMDESTROM == STD_ON)
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    79  /**********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    80   * PduR_RmTp_TxInst_LoAndUpTransmit
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    81   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    82  /*! \brief      This function triggers the transmission on the destination bus(es). In case of a
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    83   *              1:N routing including a upper layer module StartOfReception/ CopyRxData/
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    84   *              and the Indication API of the upper layer is called.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    85   *  \details    -
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    86   *  \param[in]  rmGDestRomIdx    Routing Manager GDest Idx.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    87   *  \return     E_OK             successful transmission.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    88   *              E_NOT_OK         transmission failing
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    89   *  \pre        -
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    90   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    91  LOCAL_INLINE FUNC(Std_ReturnType, PDUR_CODE) PduR_RmTp_TxInst_LoAndUpTransmit(PduR_RmGDestRomIterType rmGDestRomIdx);
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    92  #endif
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    93  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    94  #if ((PDUR_UPTPOFMMROM == STD_ON) && (PDUR_EXISTS_TP_BUFFERED_ROUTINGTYPEOFRMDESTROM == STD_ON))
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    95  /**********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    96   * PduR_RmTp_TxInst_UpTransmit
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    97   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    98  /*! \brief      This function triggers the reception in an upper layer module in case of an
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	    99   *              1:N routing including an upper layer module StartOfReception/ CopyRxData/
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   100   *              an the Indication API of the upper layer is called.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   101   *  \details    -
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   102   *  \param[in]  rmGDestRomIdx           Routing Manager GDest Idx.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   103   *  \trace      SPEC-2020176
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   104   *  \return     BUFREQ_OK               Buffer request was successful.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   105   *              BUFREQ_E_NOT_OK         Currently no buffer available.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   106   *  \pre        -
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   107   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   108  LOCAL_INLINE FUNC(Std_ReturnType, PDUR_CODE) PduR_RmTp_TxInst_UpTransmit(PduR_RmGDestRomIterType rmGDestRomIdx);
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   109  #endif
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   110  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   111  #if (PDUR_EXISTS_TP_BUFFERED_ROUTINGTYPEOFRMDESTROM == STD_ON)
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   112  /**********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   113   * PduR_RmTp_TxInst_LoTransmit
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   114   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   115  /*! \brief      This function triggers the transmission in an lower layer module.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   116   *  \details    -
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   117   *  \param[in]  rmGDestRomIdx Routing Manager GDest Idx.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   118   *  \return     E_OK          Transmission successful.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   119   *              E_NOT_OK      Transmission not successful.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   120   *  \pre        -
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   121   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   122  LOCAL_INLINE FUNC(Std_ReturnType, PDUR_CODE) PduR_RmTp_TxInst_LoTransmit(PduR_RmGDestRomIterType rmGDestRomIdx);
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   123  #endif
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   124  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   125  # if ((PDUR_EXISTS_TP_BUFFERED_ROUTINGTYPEOFRMDESTROM == STD_ON) && (PDUR_EXISTS_IMMEDIATE_PDURDESTPDUPROCESSINGOFRMGDESTROM == STD_ON))
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   126  /**********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   127   * PduR_RmTp_TxInst_TriggerTransmit_Immediate
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   128   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   129  /*! \brief       The function is called to start the transmission and perform TxSm state handling
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   130   *  \details     TxSm is in the state "Idle"
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   131   *  \param[in]   rmDestRomIdx   Id of destination PDU reference.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   132   *  \param[in]   rmGDestRomIdx  Id of global PDU reference.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   133   *  \pre         -
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   134   *  \context     TASK|ISR1|ISR2
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   135   *  \reentrant   TRUE
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   136   *  \synchronous TRUE
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   137   ***********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   138  LOCAL_INLINE FUNC(Std_ReturnType, PDUR_CODE) PduR_RmTp_TxInst_TriggerTransmit_Immediate(PduR_RmDestRomIterType rmDestRomIdx, PduR_RmGDestRomIterType rmGDestRomIdx);
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   139  # endif
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   140  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   141  # if ((PDUR_EXISTS_TP_BUFFERED_ROUTINGTYPEOFRMDESTROM == STD_ON) && (PDUR_EXISTS_DEFERRED_PDURDESTPDUPROCESSINGOFRMGDESTROM == STD_ON))
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   142  /**********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   143   * PduR_RmTp_TxInst_TriggerTransmit_Deferred
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   144   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   145  /*! \brief       This function moves the tigger transmit call to the main task
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   146   *  \details     TxSm is in the state "Idle"
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   147   *  \param[in]   rmDestRomIdx   Id of destination PDU reference.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   148   *  \param[in]   rmGDestRomIdx  Id of global PDU reference.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   149   *  \pre         -
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   150   *  \context     TASK|ISR1|ISR2
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   151   *  \reentrant   TRUE
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   152   *  \synchronous TRUE
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   153   ***********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   154  LOCAL_INLINE FUNC(Std_ReturnType, PDUR_CODE) PduR_RmTp_TxInst_TriggerTransmit_Deferred(PduR_RmDestRomIterType rmDestRomIdx, PduR_RmGDestRomIterType rmGDestRomIdx);
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   155  # endif
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   156  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   157  # if (PDUR_EXISTS_TP_BUFFERED_ROUTINGTYPEOFRMDESTROM == STD_ON)
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   158  /**********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   159   * PduR_RmTp_TxInst_TriggerTransmit_FatalError
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   160   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   161  /*! \brief       If this function is called something went totally wrong
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   162   *  \details     -
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   163   *  \param[in]   rmDestRomIdx   Id of destination PDU reference.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   164   *  \param[in]   rmGDestRomIdx  Id of global PDU reference.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   165   *  \pre         -
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   166   *  \context     TASK|ISR1|ISR2
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   167   *  \reentrant   TRUE
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   168   *  \synchronous TRUE
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   169   ***********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   170  LOCAL_INLINE FUNC(Std_ReturnType, PDUR_CODE) PduR_RmTp_TxInst_TriggerTransmit_FatalError(PduR_RmDestRomIterType rmDestRomIdx, PduR_RmGDestRomIterType rmGDestRomIdx);
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   171  # endif
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   172  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   173  # if (PDUR_EXISTS_TP_BUFFERED_ROUTINGTYPEOFRMDESTROM == STD_ON)
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   174  /**********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   175   * PduR_RmTp_TxInst_CopyTxData_RmTxInstActive
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   176   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   177  /*! \brief       This function is called by the PduR GwTp to query the transmit data of an I-PDU segment.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   178   *  \details     TxSm is in the state "Active"
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   179   *  \param[in]   rmGDestRomIdx     Routing Manager GDest Idx.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   180   *  \param[in]   pduLength         length to copy.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   181   *  \param[out]  sduDataPtr        data pointer.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   182   *                                 A copy size of 0 can be used to get the available data size.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   183   *  \param[in]   retry             not supported
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   184   *  \param[out]  availableDataPtr  Indicates the remaining number of bytes that are available in the PduR Tx buffer.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   185   *                                 AvailableTxDataCntPtr can be used by TP modules that support dynamic payload lengths
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   186   *                                 (e.g. Iso FrTp) to determine the size of the following CFs.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   187   *  \return      BufReq_ReturnType
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   188   *               BUFREQ_OK         The data has been copied successfully.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   189   *               BUFREQ_E_NOT_OK   Get data fails.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   190   *  \pre         -
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   191   *  \context     TASK|ISR1|ISR2
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   192   *  \reentrant   TRUE
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   193   *  \synchronous TRUE
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   194   ***********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   195  LOCAL_INLINE FUNC(BufReq_ReturnType, PDUR_CODE) PduR_RmTp_TxInst_CopyTxData_RmTxInstActive(PduR_RmGDestRomIterType rmGDestRomIdx, PduLengthType pduLength,
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   196                                                                                SduDataPtrType sduDataPtr,
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   197                                                                                P2CONST(RetryInfoType, AUTOMATIC, PDUR_APPL_DATA) retry, P2VAR(PduLengthType, AUTOMATIC,
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   198                                                                                                                                               PDUR_APPL_DATA) availableDataPtr);
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   199  # endif
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   200  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   201  # if (PDUR_EXISTS_TP_BUFFERED_ROUTINGTYPEOFRMDESTROM == STD_ON)
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   202  /**********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   203   * PduR_RmTp_TxInst_CopyTxData_UnexpectedCall
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   204   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   205  /*! \brief       This function is called by the PduR GwTp to query the transmit data of an I-PDU segment. But the
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   206   *               routing is already aborted.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   207   *  \details     TxSm is in the state "Aborted"
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   208   *  \param[in]   rmGDestRomIdx    Routing Manager GDest Idx.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   209   *  \param[in]   pduLength         length to copy.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   210   *  \param[out]  sduDataPtr        data pointer.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   211   *                                 A copy size of 0 can be used to get the available data size.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   212   *  \param[in]   retry             not supported
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   213   *  \param[out]  availableDataPtr  Indicates the remaining number of bytes that are available in the PduR Tx buffer.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   214   *                                 AvailableTxDataCntPtr can be used by TP modules that support dynamic payload lengths
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   215   *                                 (e.g. Iso FrTp) to determine the size of the following CFs.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   216   *  \return      BufReq_ReturnType
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   217   *               BUFREQ_OK         The data has been copied successfully.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   218   *               BUFREQ_E_NOT_OK   Get data fails.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   219   *  \pre         -
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   220   *  \context     TASK|ISR1|ISR2
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   221   *  \reentrant   TRUE
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   222   *  \synchronous TRUE
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   223   ***********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   224  LOCAL_INLINE FUNC(BufReq_ReturnType, PDUR_CODE) PduR_RmTp_TxInst_CopyTxData_UnexpectedCall(PduR_RmGDestRomIterType rmGDestRomIdx, PduLengthType pduLength,
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   225                                                                                SduDataPtrType sduDataPtr,
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   226                                                                                P2CONST(RetryInfoType, AUTOMATIC, PDUR_APPL_DATA) retry, P2VAR(PduLengthType, AUTOMATIC,
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   227                                                                                                                                               PDUR_APPL_DATA) availableDataPtr);
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   228  # endif
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   229  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   230  # if (PDUR_EXISTS_TP_BUFFERED_ROUTINGTYPEOFRMDESTROM == STD_ON)
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   231  /**********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   232   * PduR_RmTp_TxInst_CopyTxData_RmTxInstAborted
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   233   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   234  /*! \brief       This function is called by the PduR GwTp to query the transmit data of an I-PDU segment. But the
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   235   *               routing is already aborted.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   236   *  \details     TxSm is in the state "Aborted"
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   237   *  \param[in]   rmGDestRomIdx     Routing Manager GDest Idx.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   238   *  \param[in]   pduLength         length to copy.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   239   *  \param[out]  sduDataPtr        data pointer.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   240   *                                 A copy size of 0 can be used to get the available data size.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   241   *  \param[in]   retry             not supported
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   242   *  \param[out]  availableDataPtr  Indicates the remaining number of bytes that are available in the PduR Tx buffer.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   243   *                                 AvailableTxDataCntPtr can be used by TP modules that support dynamic payload lengths
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   244   *                                 (e.g. Iso FrTp) to determine the size of the following CFs.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   245   *  \return      BufReq_ReturnType
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   246   *               BUFREQ_E_NOT_OK   Routing is aborted
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   247   *  \pre         -
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   248   *  \context     TASK|ISR1|ISR2
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   249   *  \reentrant   TRUE
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   250   *  \synchronous TRUE
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   251   ***********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   252  LOCAL_INLINE FUNC(BufReq_ReturnType, PDUR_CODE) PduR_RmTp_TxInst_CopyTxData_RmTxInstAborted(PduR_RmGDestRomIterType rmGDestRomIdx, PduLengthType pduLength,
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   253                                                                                 SduDataPtrType sduDataPtr,
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   254                                                                                 P2CONST(RetryInfoType, AUTOMATIC, PDUR_APPL_DATA) retry, P2VAR(PduLengthType, AUTOMATIC,
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   255                                                                                                                                                PDUR_APPL_DATA) availableDataPtr);
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   256  # endif
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   257  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   258  # if (PDUR_EXISTS_TP_BUFFERED_ROUTINGTYPEOFRMDESTROM == STD_ON)
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   259  /**********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   260   * PduR_RmTp_TxInst_TxConfirmation_RmTxInstActiveOrRmTxInstAborted
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   261   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   262  /*! \brief       The function confirms a successful transmission of a GwTp TX SDU or to report an error that
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   263   *               occurred during transmission.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   264   *  \details     TxSm is in the state Active Or Aborted. In case of 1:N result E_NOT_OK is acceptable, decrement Confirmation count.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   265   *  \param[in]   rmGDestRomIdx Routing Manager GDest Idx.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   266   *  \param[out]  result     result of the transmission.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   267   *               E_OK       The TP transmission has been completed successfully.\n
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   268   *               E_NOT_OK   The transmission fails.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   269   *  \pre         -
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   270   *  \context     TASK|ISR1|ISR2
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   271   *  \reentrant   TRUE
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   272   *  \synchronous TRUE
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   273  ***********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   274  LOCAL_INLINE FUNC(void, PDUR_CODE) PduR_RmTp_TxInst_TxConfirmation_RmTxInstActiveOrRmTxInstAborted(PduR_RmGDestRomIterType rmGDestRomIdx, Std_ReturnType result);
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   275  # endif
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   276  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   277  # if (PDUR_EXISTS_TP_BUFFERED_ROUTINGTYPEOFRMDESTROM == STD_ON)
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   278  /**********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   279   * PduR_RmTp_TxInst_TxConfirmation_UnexpectedCall
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   280   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   281  /*! \brief       The function is called unexpectedly because the TxSm is in state "Idle"
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   282   *  \details     -
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   283   *  \param[in]   rmGDestRomIdx Routing Manager GDest Idx.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   284   *  \param[out]  result     result of the transmission.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   285   *               E_OK       The TP transmission has been completed successfully.\n
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   286   *               E_NOT_OK   The transmission fails.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   287   *  \pre         -
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   288   *  \context     TASK|ISR1|ISR2
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   289   *  \reentrant   TRUE
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   290   *  \synchronous TRUE
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   291  ***********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   292  LOCAL_INLINE FUNC(void, PDUR_CODE) PduR_RmTp_TxInst_TxConfirmation_UnexpectedCall(PduR_RmGDestRomIterType rmGDestRomIdx, Std_ReturnType result);
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   293  # endif
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   294  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   295  /**********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   296   *  LOCAL FUNCTIONS
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   297   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   298  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   299  #if ((PDUR_UPTPOFMMROM == STD_ON) && (PDUR_EXISTS_TP_BUFFERED_ROUTINGTYPEOFRMDESTROM == STD_ON))
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   300  /**********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   301   * PduR_RmTp_TxInst_UpTransmit
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   302   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   303  /*!
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   304   * Internal comment removed.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   305   *
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   306   *
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   307   *
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   308   *
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   309   *
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   310   *
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   311   *
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   312   *
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   313   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   314  LOCAL_INLINE FUNC(Std_ReturnType, PDUR_CODE) PduR_RmTp_TxInst_UpTransmit(PduR_RmGDestRomIterType rmGDestRomIdx)
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   315  {
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   316    Std_ReturnType retVal = E_NOT_OK;     /* PRQA S 2981 */ /* MD_MSR_RetVal */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   317    BufReq_ReturnType retValBufReq;
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   318    PduLengthType bufferSizePtr = 0u;
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   319    PduR_BmTxBufferInstanceRomIterType bmTxBufferInstanceRomIdx;
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   320  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   321    if(PduR_Fm_GetCurrentlyUsedBmTxBufferInstanceIdxByRmGDestIdx(rmGDestRomIdx, &bmTxBufferInstanceRomIdx) == E_OK) /* SBSW_PDUR_STACK_VARIABLE */ /* COV_PDUR_ROBUSTNESS */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   322    {
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   323      PduR_MemIdxType memIdx = PduR_GetPartitionIndexOfCslOfRmGDestRom(rmGDestRomIdx);
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   324      PduLengthType actualPduLengthToBeRouted = PduR_Bm_GetActualPduLengthToBeRouted(bmTxBufferInstanceRomIdx, memIdx);
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   325  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   326      /* If MetaData are available the pUpperLayerInfo points to MetaData */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   327      {
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   328  # if (PDUR_METADATA_SUPPORT == STD_ON)
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   329        PduR_RmSrcRomIterType rmSrcIdx = PduR_GetRmSrcRomIdxOfRmDestRom(PduR_GetRmDestRomIdxOfFmFifoElementRam(PduR_Fm_GetFmFifoElementRamReadIdxOfFmFifoRamSafe(PduR_GetFmFifoRomIdxOfFmFifoInstanceRom(PduR_GetFmFifoInstanceRomIdxOfRmGDestRom(rmGDestRomIdx), memIdx), memIdx), memIdx));
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   330  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   331        if(PduR_IsRmBufferedTpPropertiesRomUsedOfRmSrcRom(rmSrcIdx) && PduR_IsMetaDataLengthUsedOfRmBufferedTpPropertiesRom(PduR_GetRmBufferedTpPropertiesRomIdxOfRmSrcRom(rmSrcIdx), memIdx)) /* COV_PDUR_ROBUSTNESS */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   332        {
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   333          PduInfoType metaInfo;
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   334          PduR_Bm_CopyDataAsPtr(bmTxBufferInstanceRomIdx, &metaInfo, PduR_GetMetaDataLengthOfRmBufferedTpPropertiesRom(PduR_GetRmBufferedTpPropertiesRomIdxOfRmSrcRom(rmSrcIdx), memIdx), memIdx); /* SBSW_PDUR_STACK_VARIABLE */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   335          (void) PduR_Bm_GetData(bmTxBufferInstanceRomIdx, metaInfo.SduLength, metaInfo.SduDataPtr, memIdx); /* SBSW_PDUR_STACK_VARIABLE */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   336  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   337          retValBufReq = PduR_GetUpTpStartOfReceptionFctPtrOfMmRom(PduR_GetMmRomIdxOfRmGDestRom(rmGDestRomIdx)) (PduR_GetDestHndOfRmGDestRom(rmGDestRomIdx), &metaInfo, actualPduLengthToBeRouted, &bufferSizePtr);    /* SBSW_PDUR_API_CALL_FORWARDING_ID_AND_PTR */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   338        }
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   339        else
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   340  # endif
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   341        {
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   342          retValBufReq = PduR_GetUpTpStartOfReceptionFctPtrOfMmRom(PduR_GetMmRomIdxOfRmGDestRom(rmGDestRomIdx)) (PduR_GetDestHndOfRmGDestRom(rmGDestRomIdx), (P2VAR(PduInfoType, AUTOMATIC, PDUR_APPL_DATA)) NULL_PTR, actualPduLengthToBeRouted, &bufferSizePtr);     /* SBSW_PDUR_API_CALL_FORWARDING_ID_AND_PTR */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   343        }
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   344      }
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   345      if(retValBufReq == BUFREQ_OK)
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   346      {
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   347        /* RfC 52242 - Transport Protocol Gateway Reception to upper layer modules is not functional */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   348        /* \trace SPEC-2020098 */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   349        if(bufferSizePtr < actualPduLengthToBeRouted)
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   350        {
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   351          PduR_GetUpTpTpRxIndicationFctPtrOfMmRom(PduR_GetMmRomIdxOfRmGDestRom(rmGDestRomIdx)) (PduR_GetDestHndOfRmGDestRom(rmGDestRomIdx), E_NOT_OK);      /* SBSW_PDUR_API_CALL_FORWARDING_ID_ONLY */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   352        }
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   353        else
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   354        {
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   355          PduInfoType info;
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   356          PduR_Bm_CopyDataAsPtr(bmTxBufferInstanceRomIdx, &info, PduR_Bm_GetLinearDataSizeInstance(bmTxBufferInstanceRomIdx, memIdx), memIdx); /* SBSW_PDUR_STACK_VARIABLE */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   357          (void) PduR_Bm_GetData(bmTxBufferInstanceRomIdx, info.SduLength, info.SduDataPtr, memIdx); /* SBSW_PDUR_STACK_VARIABLE */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   358  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   359          if(BUFREQ_OK == PduR_GetUpTpCopyRxDataFctPtrOfMmRom(PduR_GetMmRomIdxOfRmGDestRom(rmGDestRomIdx)) (PduR_GetDestHndOfRmGDestRom(rmGDestRomIdx), &info, &bufferSizePtr))     /* SBSW_PDUR_API_CALL_FORWARDING_ID_AND_PTR */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   360          {
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   361            PduR_GetUpTpTpRxIndicationFctPtrOfMmRom(PduR_GetMmRomIdxOfRmGDestRom(rmGDestRomIdx)) (PduR_GetDestHndOfRmGDestRom(rmGDestRomIdx), E_OK);        /* SBSW_PDUR_API_CALL_FORWARDING_ID_ONLY */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   362            retVal = E_OK;
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   363          }
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   364          else      /* \trace SPEC-2020102 */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   365          {
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   366            PduR_GetUpTpTpRxIndicationFctPtrOfMmRom(PduR_GetMmRomIdxOfRmGDestRom(rmGDestRomIdx)) (PduR_GetDestHndOfRmGDestRom(rmGDestRomIdx), E_NOT_OK);    /* SBSW_PDUR_API_CALL_FORWARDING_ID_ONLY */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   367          }
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   368        }
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   369      }
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   370      if(E_OK == retVal)
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   371      {
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   372        PduR_RmTp_TxInst_TxConfirmation(rmGDestRomIdx, E_OK);
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   373      }
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   374      else
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   375      {
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   376        PduR_RmTp_TxInst_TxConfirmation(rmGDestRomIdx, E_NOT_OK);
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   377      }
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   378    }
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   379    return retVal;
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   380  }
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   381  #endif
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   382  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   383  #if (PDUR_EXISTS_TP_BUFFERED_ROUTINGTYPEOFRMDESTROM == STD_ON)
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   384  /**********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   385    PduR_RmTp_TxInst_LoTransmit
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   386  **********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   387  /*!
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   388   * Internal comment removed.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   389   *
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   390   *
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   391   *
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   392   *
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   393   *
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   394   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   395  LOCAL_INLINE FUNC(Std_ReturnType, PDUR_CODE) PduR_RmTp_TxInst_LoTransmit(PduR_RmGDestRomIterType rmGDestRomIdx)
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   396  {
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   397    Std_ReturnType retVal = E_NOT_OK;     /* PRQA S 2981 */ /* MD_MSR_RetVal */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   398  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   399    PduInfoType info;
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   400    PduR_BmTxBufferInstanceRomIterType bmTxBufferInstanceRomIdx;
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   401  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   402    if(PduR_Fm_GetCurrentlyUsedBmTxBufferInstanceIdxByRmGDestIdx(rmGDestRomIdx, &bmTxBufferInstanceRomIdx) == E_OK) /* SBSW_PDUR_STACK_VARIABLE */ /* COV_PDUR_ROBUSTNESS */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   403    {
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   404      PduR_MemIdxType memIdx = PduR_GetPartitionIndexOfCslOfRmGDestRom(rmGDestRomIdx);
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   405      PduLengthType actualPduLengthToBeRouted = PduR_Bm_GetActualPduLengthToBeRouted(bmTxBufferInstanceRomIdx, memIdx);
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   406  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   407      /* Get Data Pointer for Transmit */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   408      PduR_Bm_CopyDataAsPtr(bmTxBufferInstanceRomIdx, &info, actualPduLengthToBeRouted, memIdx);       /* SBSW_PDUR_API_CALL_FORWARDING_ID_AND_PTR */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   409  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   410  # if (PDUR_METADATA_SUPPORT == STD_ON)
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   411      {
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   412        PduR_RmSrcRomIterType rmSrcIdx = PduR_GetRmSrcRomIdxOfRmDestRom(PduR_GetRmDestRomIdxOfFmFifoElementRam(PduR_Fm_GetFmFifoElementRamReadIdxOfFmFifoRamSafe(PduR_GetFmFifoRomIdxOfFmFifoInstanceRom(PduR_GetFmFifoInstanceRomIdxOfRmGDestRom(rmGDestRomIdx), memIdx), memIdx), memIdx));
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   413  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   414        if(PduR_IsRmBufferedTpPropertiesRomUsedOfRmSrcRom(rmSrcIdx) && PduR_IsMetaDataLengthUsedOfRmBufferedTpPropertiesRom(PduR_GetRmBufferedTpPropertiesRomIdxOfRmSrcRom(rmSrcIdx), memIdx)) /* COV_PDUR_ROBUSTNESS */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   415        {
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   416          /* Get Meta Data Pointer for Transmit */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   417          PduR_Bm_CopyDataAsPtr(bmTxBufferInstanceRomIdx, &info, (PduR_BmTxBufferArrayRamIterType) PduR_GetMetaDataLengthOfRmBufferedTpPropertiesRom(PduR_GetRmBufferedTpPropertiesRomIdxOfRmSrcRom(rmSrcIdx), memIdx), memIdx); /* SBSW_PDUR_STACK_VARIABLE */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   418          (void) PduR_Bm_GetData(bmTxBufferInstanceRomIdx, info.SduLength, info.SduDataPtr, memIdx); /* SBSW_PDUR_STACK_VARIABLE */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   419        }
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   420      }
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   421  # endif
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   422  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   423      /* Correction of the length according to AUTOSAR */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   424      info.SduLength = actualPduLengthToBeRouted;
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   425  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   426      if(E_OK == PduR_GetLoTpTransmitFctPtrOfMmRom(PduR_GetMmRomIdxOfRmGDestRom(rmGDestRomIdx)) (PduR_GetDestHndOfRmGDestRom(rmGDestRomIdx), &info))        /* SBSW_PDUR_API_CALL_FORWARDING_ID_AND_PTR */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   427      {
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   428        retVal &= E_OK;
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   429      }
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   430      else
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   431      {
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   432        PduR_RmTp_TxInst_TxConfirmation(rmGDestRomIdx, E_NOT_OK);
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   433      }
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   434    }
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   435  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   436    return retVal;
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   437  }
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   438  #endif
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   439  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   440  #if (PDUR_EXISTS_TP_BUFFERED_ROUTINGTYPEOFRMDESTROM == STD_ON)
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   441  /**********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   442    PduR_RmTp_TxInst_LoAndUpTransmit
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   443  **********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   444  /*!
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   445   * Internal comment removed.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   446   *
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   447   *
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   448   *
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   449   *
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   450   *
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   451   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   452  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   453  LOCAL_INLINE FUNC(Std_ReturnType, PDUR_CODE) PduR_RmTp_TxInst_LoAndUpTransmit(PduR_RmGDestRomIterType rmGDestRomIdx)
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   454  {
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   455    Std_ReturnType retVal = E_NOT_OK;     /* PRQA S 2981 */ /* MD_MSR_RetVal */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   456    /* Confirmations are decremented in the Context of LoAndUpTransmit and CopyTxData */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   457    {
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   458      /* Iterate over all routing destinations (1:N) */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   459      if(PduR_GetDirectionOfRmGDestRom(rmGDestRomIdx) == PDUR_TX_DIRECTIONOFRMGDESTROM)   /* COV_PDUR_FEATURE_ALWAYS_TRUE */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   460      {
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   461        retVal = PduR_RmTp_TxInst_LoTransmit(rmGDestRomIdx);
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   462      }
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   463  # if (PDUR_UPTPOFMMROM == STD_ON)
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   464      else
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   465      {
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   466        retVal = PduR_RmTp_TxInst_UpTransmit(rmGDestRomIdx);
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   467      }
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   468  # endif
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   469    }
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   470    return retVal;
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   471  }
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   472  #endif
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   473  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   474  /**********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   475   *  GLOBAL FUNCTIONS
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   476   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   477  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   478  #if (PDUR_EXISTS_TP_BUFFERED_ROUTINGTYPEOFRMDESTROM == STD_ON)
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   479  /**********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   480   * PduR_RmTp_TxInst_TriggerTransmit
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   481   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   482  /*!
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   483   * Internal comment removed.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   484   *
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   485   *
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   486   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   487  FUNC(Std_ReturnType, PDUR_CODE) PduR_RmTp_TxInst_TriggerTransmit(PduR_RmDestRomIterType rmDestRomIdx, PduR_RmGDestRomIterType rmGDestRomIdx)
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   488  {
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   489    Std_ReturnType retVal = E_NOT_OK;
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   490    PduR_MemIdxType memIdx = PduR_GetPartitionIndexOfCslOfRmGDestRom(rmGDestRomIdx);
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   491  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   492    switch (PduR_GetTpTxInstSmStateOfRmGDestTpTxStateRam(PduR_GetRmGDestTpTxStateRamIdxOfRmGDestRom(rmGDestRomIdx), memIdx))
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   493    {
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   494      case PDUR_RM_TXINST_IDLE_TPTXINSTSMSTATEOFRMGDESTTPTXSTATERAM:
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   495        switch (PduR_GetPduRDestPduProcessingOfRmGDestRom(rmGDestRomIdx))
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   496        {
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   497  # if (PDUR_EXISTS_IMMEDIATE_PDURDESTPDUPROCESSINGOFRMGDESTROM == STD_ON)
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   498          case PDUR_IMMEDIATE_PDURDESTPDUPROCESSINGOFRMGDESTROM:
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   499            retVal = PduR_RmTp_TxInst_TriggerTransmit_Immediate(rmDestRomIdx, rmGDestRomIdx);
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   500            break;
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   501  # endif
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   502  # if (PDUR_EXISTS_DEFERRED_PDURDESTPDUPROCESSINGOFRMGDESTROM == STD_ON)
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   503          case PDUR_DEFERRED_PDURDESTPDUPROCESSINGOFRMGDESTROM:
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   504            retVal = PduR_RmTp_TxInst_TriggerTransmit_Deferred(rmDestRomIdx, rmGDestRomIdx);
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   505            break;
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   506  # endif
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   507          default:     /* COV_PDUR_MISRA */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   508            /* Nothing to do: This should never be reached */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   509            break;
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   510        }
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   511        break;
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   512  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   513      case PDUR_RM_TXINST_ACTIVE_TPTXINSTSMSTATEOFRMGDESTTPTXSTATERAM: /* COV_PDUR_FATAL_ERROR */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   514  # if (PDUR_EXISTS_DEFERRED_PDURDESTPDUPROCESSINGOFRMGDESTROM == STD_ON)
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   515      case PDUR_RM_TXINST_WAITING_TPTXINSTSMSTATEOFRMGDESTTPTXSTATERAM: /* COV_PDUR_FATAL_ERROR */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   516  # endif
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   517      case PDUR_RM_TXINST_ABORTED_TPTXINSTSMSTATEOFRMGDESTTPTXSTATERAM: /* COV_PDUR_FATAL_ERROR */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   518        retVal = PduR_RmTp_TxInst_TriggerTransmit_FatalError(rmDestRomIdx, rmGDestRomIdx);
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   519        break;
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   520  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   521      default: /* COV_PDUR_MISRA */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   522        /* If state is out-of-bounds: do nothing and return negative result. */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   523        retVal = E_NOT_OK;
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   524        break;
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   525    }
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   526  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   527  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   528    return retVal;
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   529  }
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   530  #endif
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   531  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   532  #if ((PDUR_EXISTS_TP_BUFFERED_ROUTINGTYPEOFRMDESTROM == STD_ON) && (PDUR_EXISTS_IMMEDIATE_PDURDESTPDUPROCESSINGOFRMGDESTROM == STD_ON))
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   533  /**********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   534   * PduR_RmTp_TxInst_TriggerTransmit_Immediate
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   535   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   536  /*!
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   537   * Internal comment removed.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   538   *
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   539   *
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   540   *
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   541   *
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   542   *
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   543   *
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   544   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   545  LOCAL_INLINE FUNC(Std_ReturnType, PDUR_CODE) PduR_RmTp_TxInst_TriggerTransmit_Immediate(PduR_RmDestRomIterType rmDestRomIdx, PduR_RmGDestRomIterType rmGDestRomIdx)       /* COV_PDUR_CROSSCORE_ROUTINGS_ONLY */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   546  {
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   547    PduR_MemIdxType memIdx = PduR_GetPartitionIndexOfCslOfRmGDestRom(rmGDestRomIdx);
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   548  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   549    PduR_SetTpTxInstSmStateOfRmGDestTpTxStateRam(PduR_GetRmGDestTpTxStateRamIdxOfRmGDestRom(rmGDestRomIdx), PDUR_RM_TXINST_ACTIVE_TPTXINSTSMSTATEOFRMGDESTTPTXSTATERAM, memIdx);  /* SBSW_PDUR_CSL03 */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   550    PDUR_DUMMY_STATEMENT(rmDestRomIdx);   /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   551    return PduR_RmTp_TxInst_LoAndUpTransmit(rmGDestRomIdx);
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   552  }
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   553  #endif
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   554  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   555  #if ((PDUR_EXISTS_TP_BUFFERED_ROUTINGTYPEOFRMDESTROM == STD_ON) && (PDUR_EXISTS_DEFERRED_PDURDESTPDUPROCESSINGOFRMGDESTROM == STD_ON))
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   556  /**********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   557   * PduR_RmTp_TxInst_TriggerTransmit_Deferred
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   558   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   559  /*!
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   560   * Internal comment removed.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   561   *
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   562   *
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   563   *
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   564   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   565  LOCAL_INLINE FUNC(Std_ReturnType, PDUR_CODE) PduR_RmTp_TxInst_TriggerTransmit_Deferred(PduR_RmDestRomIterType rmDestRomIdx, PduR_RmGDestRomIterType rmGDestRomIdx)    /* COV_PDUR_NO_DEFERRED_TP_ROUTING */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   566  {
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   567    Std_ReturnType retVal = E_OK; /* PRQA S 2981 */ /* MD_MSR_RetVal */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   568    PduR_MemIdxType memIdx = PduR_GetPartitionIndexOfCslOfRmGDestRom(rmGDestRomIdx);
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   569  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   570    PduR_SetTpTxInstSmStateOfRmGDestTpTxStateRam(PduR_GetRmGDestTpTxStateRamIdxOfRmGDestRom(rmGDestRomIdx), PDUR_RM_TXINST_WAITING_TPTXINSTSMSTATEOFRMGDESTTPTXSTATERAM, memIdx); /* SBSW_PDUR_CSL03 */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   571  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   572  # if (PDUR_DEFERREDEVENTCACHEROM == STD_ON)
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   573    PduR_EvC_WriteDeferredEventCache(rmDestRomIdx, (PduR_RmGDestRomIdxOfRmDestRomType) rmGDestRomIdx);
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   574  # endif
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   575    PDUR_DUMMY_STATEMENT(rmDestRomIdx);   /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   576  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   577    return retVal;
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   578  }
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   579  #endif
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   580  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   581  #if (PDUR_EXISTS_TP_BUFFERED_ROUTINGTYPEOFRMDESTROM == STD_ON)
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   582  /**********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   583   * PduR_RmTp_TxInst_TriggerTransmit_FatalError
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   584   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   585  /*!
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   586   * Internal comment removed.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   587   *
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   588   *
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   589   *
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   590   *
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   591   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   592  LOCAL_INLINE FUNC(Std_ReturnType, PDUR_CODE) PduR_RmTp_TxInst_TriggerTransmit_FatalError(PduR_RmDestRomIterType rmDestRomIdx, PduR_RmGDestRomIterType rmGDestRomIdx) /* COV_PDUR_FATAL_ERROR */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   593  {
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   594    PduR_Det_ReportError(PDUR_RM_TPTRIGGERTRANSMIT_FATALERROR, PDUR_E_FATAL);
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   595    PDUR_DUMMY_STATEMENT(rmDestRomIdx);   /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   596    PDUR_DUMMY_STATEMENT(rmGDestRomIdx);  /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   597    return E_NOT_OK;
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   598  }
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   599  #endif
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   600  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   601  #if (PDUR_EXISTS_TP_BUFFERED_ROUTINGTYPEOFRMDESTROM == STD_ON)
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   602  /**********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   603   * PduR_RmTp_TxInst_CopyTxData
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   604   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   605  /*!
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   606   * Internal comment removed.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   607   *
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   608   *
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   609   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   610  FUNC(BufReq_ReturnType, PDUR_CODE) PduR_RmTp_TxInst_CopyTxData(PduR_RmGDestRomIterType rmGDestRomIdx, P2VAR(PduInfoType, AUTOMATIC, PDUR_APPL_DATA) info, P2VAR(RetryInfoType, AUTOMATIC, PDUR_APPL_DATA) retry, P2VAR(PduLengthType, AUTOMATIC, PDUR_APPL_DATA) availableDataPtr)      /* PRQA S 3673 */ /* MD_MSR_Rule8.13 */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   611  {
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   612    BufReq_ReturnType retVal;
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   613    PduR_MemIdxType memIdx = PduR_GetPartitionIndexOfCslOfRmGDestRom(rmGDestRomIdx);
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   614  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   615    switch (PduR_GetTpTxInstSmStateOfRmGDestTpTxStateRam(PduR_GetRmGDestTpTxStateRamIdxOfRmGDestRom(rmGDestRomIdx), memIdx))
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   616    {
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   617      case PDUR_RM_TXINST_IDLE_TPTXINSTSMSTATEOFRMGDESTTPTXSTATERAM:
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   618        retVal = PduR_RmTp_TxInst_CopyTxData_UnexpectedCall(rmGDestRomIdx, info->SduLength, info->SduDataPtr, retry, availableDataPtr);  /* SBSW_PDUR_VALID_PTR_ENSURED_BY_CALLING_FUNCTION */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   619        break;
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   620  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   621      case PDUR_RM_TXINST_ACTIVE_TPTXINSTSMSTATEOFRMGDESTTPTXSTATERAM:
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   622        retVal = PduR_RmTp_TxInst_CopyTxData_RmTxInstActive(rmGDestRomIdx, info->SduLength, info->SduDataPtr, retry, availableDataPtr);  /* SBSW_PDUR_VALID_PTR_ENSURED_BY_CALLING_FUNCTION */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   623        break;
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   624  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   625  # if (PDUR_EXISTS_DEFERRED_PDURDESTPDUPROCESSINGOFRMGDESTROM == STD_ON)
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   626      case PDUR_RM_TXINST_WAITING_TPTXINSTSMSTATEOFRMGDESTTPTXSTATERAM:
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   627        retVal = PduR_RmTp_TxInst_CopyTxData_UnexpectedCall(rmGDestRomIdx, info->SduLength, info->SduDataPtr, retry, availableDataPtr);  /* SBSW_PDUR_VALID_PTR_ENSURED_BY_CALLING_FUNCTION */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   628        break;
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   629  # endif
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   630  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   631      case PDUR_RM_TXINST_ABORTED_TPTXINSTSMSTATEOFRMGDESTTPTXSTATERAM:
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   632        retVal = PduR_RmTp_TxInst_CopyTxData_RmTxInstAborted(rmGDestRomIdx, info->SduLength, info->SduDataPtr, retry, availableDataPtr);  /* SBSW_PDUR_VALID_PTR_ENSURED_BY_CALLING_FUNCTION */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   633        break;
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   634  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   635      default: /* COV_PDUR_MISRA */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   636        /* If state is out-of-bounds: do nothing and return negative result. */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   637        retVal = BUFREQ_E_NOT_OK;
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   638        break;
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   639    }
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   640  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   641    return retVal;
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   642  }
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   643  #endif
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   644  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   645  #if (PDUR_EXISTS_TP_BUFFERED_ROUTINGTYPEOFRMDESTROM == STD_ON)
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   646  /**********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   647   * PduR_RmTp_TxInst_CopyTxData_RmTxInstActive
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   648   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   649  /*!
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   650   * Internal comment removed.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   651   *
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   652   *
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   653   *
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   654   *
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   655   *
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   656   *
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   657   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   658  LOCAL_INLINE FUNC(BufReq_ReturnType, PDUR_CODE) PduR_RmTp_TxInst_CopyTxData_RmTxInstActive(PduR_RmGDestRomIterType rmGDestRomIdx,
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   659                                                                                PduLengthType pduLength,
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   660                                                                                SduDataPtrType sduDataPtr,
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   661                                                                                P2CONST(RetryInfoType, AUTOMATIC, PDUR_APPL_DATA) retry, P2VAR(PduLengthType, AUTOMATIC, PDUR_APPL_DATA) availableDataPtr)
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   662  {
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   663    BufReq_ReturnType retVal = BUFREQ_E_NOT_OK;     /* PRQA S 2981 */ /* MD_MSR_RetVal */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   664    PduR_MemIdxType memIdx = PduR_GetPartitionIndexOfCslOfRmGDestRom(rmGDestRomIdx);
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   665    PduR_BmTxBufferInstanceRomIterType bmTxBufferInstanceRomIdx;
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   666  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   667    if(PduR_Fm_GetCurrentlyUsedBmTxBufferInstanceIdxByRmGDestIdx(rmGDestRomIdx, &bmTxBufferInstanceRomIdx) == E_OK) /* SBSW_PDUR_STACK_VARIABLE */ /* COV_PDUR_ROBUSTNESS */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   668    {
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   669      retVal = PduR_Bm_GetData(bmTxBufferInstanceRomIdx, pduLength, sduDataPtr, memIdx);  /* SBSW_PDUR_VALID_PTR_ENSURED_BY_CALLING_FUNCTION */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   670      *availableDataPtr = (PduLengthType) PduR_Bm_GetTotalDataSizeInstance(bmTxBufferInstanceRomIdx, memIdx);       /* SBSW_PDUR_VALID_PTR_ENSURED_BY_CALLING_FUNCTION */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   671    }
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   672  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   673    PDUR_DUMMY_STATEMENT(retry);  /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   674    return retVal;
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   675  }
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   676  #endif
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   677  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   678  #if (PDUR_EXISTS_TP_BUFFERED_ROUTINGTYPEOFRMDESTROM == STD_ON)
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   679   /**********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   680   * PduR_RmTp_TxInst_CopyTxData_RmTxInstAborted
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   681   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   682  /*!
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   683   * Internal comment removed.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   684   *
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   685   *
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   686   *
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   687   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   688  LOCAL_INLINE FUNC(BufReq_ReturnType, PDUR_CODE) PduR_RmTp_TxInst_CopyTxData_RmTxInstAborted(PduR_RmGDestRomIterType rmGDestRomIdx, PduLengthType pduLength,
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   689                                                                                 SduDataPtrType sduDataPtr,
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   690                                                                                 P2CONST(RetryInfoType, AUTOMATIC, PDUR_APPL_DATA) retry, P2VAR(PduLengthType, AUTOMATIC,
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   691                                                                                                                                                PDUR_APPL_DATA) availableDataPtr)
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   692  {
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   693    PDUR_DUMMY_STATEMENT(rmGDestRomIdx);  /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   694    PDUR_DUMMY_STATEMENT(pduLength);      /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   695    PDUR_DUMMY_STATEMENT(sduDataPtr);     /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   696    PDUR_DUMMY_STATEMENT(retry);  /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   697    PDUR_DUMMY_STATEMENT(availableDataPtr);       /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   698    return BUFREQ_E_NOT_OK;
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   699  }
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   700  #endif
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   701  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   702  #if (PDUR_EXISTS_TP_BUFFERED_ROUTINGTYPEOFRMDESTROM == STD_ON)
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   703  /**********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   704   * PduR_RmTp_TxInst_CopyTxData_UnexpectedCall
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   705   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   706  /*!
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   707   * Internal comment removed.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   708   *
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   709   *
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   710   *
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   711   *
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   712   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   713  LOCAL_INLINE FUNC(BufReq_ReturnType, PDUR_CODE) PduR_RmTp_TxInst_CopyTxData_UnexpectedCall(PduR_RmGDestRomIterType rmGDestRomIdx, PduLengthType pduLength,
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   714                                                                                SduDataPtrType sduDataPtr,
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   715                                                                                P2CONST(RetryInfoType, AUTOMATIC, PDUR_APPL_DATA) retry, P2VAR(PduLengthType, AUTOMATIC, PDUR_APPL_DATA) availableDataPtr)
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   716  {
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   717    PduR_Det_ReportError(PDUR_RMTP_TXINSTSM_COPYTXDATA_UNEXPECTEDCALL, PDUR_E_UNEXPECTED_CALL);
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   718    PDUR_DUMMY_STATEMENT(rmGDestRomIdx);  /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   719    PDUR_DUMMY_STATEMENT(pduLength);      /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   720    PDUR_DUMMY_STATEMENT(sduDataPtr);     /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   721    PDUR_DUMMY_STATEMENT(retry);  /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   722    PDUR_DUMMY_STATEMENT(availableDataPtr);       /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   723    return BUFREQ_E_NOT_OK;
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   724  }
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   725  #endif
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   726  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   727  #if (PDUR_EXISTS_TP_BUFFERED_ROUTINGTYPEOFRMDESTROM == STD_ON)
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   728  /**********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   729   * PduR_RmTp_TxInst_TxConfirmation
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   730   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   731  /*!
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   732   * Internal comment removed.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   733   *
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   734   *
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   735   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   736  FUNC(void, PDUR_CODE) PduR_RmTp_TxInst_TxConfirmation(PduR_RmGDestRomIterType rmGDestRomIdx, Std_ReturnType result)
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   737  {
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   738    PduR_MemIdxType memIdx = PduR_GetPartitionIndexOfCslOfRmGDestRom(rmGDestRomIdx);
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   739  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   740    switch (PduR_GetTpTxInstSmStateOfRmGDestTpTxStateRam(PduR_GetRmGDestTpTxStateRamIdxOfRmGDestRom(rmGDestRomIdx), memIdx))
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   741    {
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   742      case PDUR_RM_TXINST_IDLE_TPTXINSTSMSTATEOFRMGDESTTPTXSTATERAM:
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   743        PduR_RmTp_TxInst_TxConfirmation_UnexpectedCall(rmGDestRomIdx, result);
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   744        break;
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   745  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   746      case PDUR_RM_TXINST_ACTIVE_TPTXINSTSMSTATEOFRMGDESTTPTXSTATERAM:
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   747        PduR_RmTp_TxInst_TxConfirmation_RmTxInstActiveOrRmTxInstAborted(rmGDestRomIdx, result);
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   748        break;
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   749  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   750  # if (PDUR_EXISTS_DEFERRED_PDURDESTPDUPROCESSINGOFRMGDESTROM == STD_ON)
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   751      case PDUR_RM_TXINST_WAITING_TPTXINSTSMSTATEOFRMGDESTTPTXSTATERAM:
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   752        PduR_RmTp_TxInst_TxConfirmation_UnexpectedCall(rmGDestRomIdx, result);
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   753        break;
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   754  # endif
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   755  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   756      case PDUR_RM_TXINST_ABORTED_TPTXINSTSMSTATEOFRMGDESTTPTXSTATERAM:
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   757        PduR_RmTp_TxInst_TxConfirmation_RmTxInstActiveOrRmTxInstAborted(rmGDestRomIdx, result);
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   758        break;
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   759  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   760      default: /* COV_PDUR_MISRA */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   761        /* If state is out-of-bounds: do nothing. */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   762        break;
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   763    }
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   764  }
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   765  #endif
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   766  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   767  #if (PDUR_EXISTS_TP_BUFFERED_ROUTINGTYPEOFRMDESTROM == STD_ON)
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   768  /**********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   769   * PduR_RmTp_TxInst_TxConfirmation_RmTxInstActiveOrRmTxInstAborted
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   770   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   771  /*!
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   772   * Internal comment removed.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   773   *
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   774   *
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   775   *
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   776   *
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   777   *
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   778   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   779  LOCAL_INLINE FUNC(void, PDUR_CODE) PduR_RmTp_TxInst_TxConfirmation_RmTxInstActiveOrRmTxInstAborted(PduR_RmGDestRomIterType rmGDestRomIdx, Std_ReturnType result)
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   780  {
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   781    PduR_MemIdxType memIdx = PduR_GetPartitionIndexOfCslOfRmGDestRom(rmGDestRomIdx);
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   782    PduR_BmTxBufferInstanceRomIterType bmTxBufferInstanceRomIdx;
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   783  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   784    PduR_SetTpTxInstSmStateOfRmGDestTpTxStateRam(PduR_GetRmGDestTpTxStateRamIdxOfRmGDestRom(rmGDestRomIdx), PDUR_RM_TXINST_IDLE_TPTXINSTSMSTATEOFRMGDESTTPTXSTATERAM, memIdx);        /* SBSW_PDUR_CSL03 */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   785  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   786    if(PduR_Fm_GetCurrentlyUsedBmTxBufferInstanceIdxByRmGDestIdx(rmGDestRomIdx, &bmTxBufferInstanceRomIdx) == E_OK) /* SBSW_PDUR_STACK_VARIABLE */ /* COV_PDUR_ROBUSTNESS */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   787    {
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   788      PduR_Bm_ResetTxBufferInstance(bmTxBufferInstanceRomIdx, memIdx);
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   789    }
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   790    PduR_RmTp_FinishTransmission_TpTxSmStateHandler(PduR_GetFmFifoRomIdxOfFmFifoInstanceRom(PduR_GetFmFifoInstanceRomIdxOfRmGDestRom(rmGDestRomIdx), memIdx), result, memIdx);
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   791    PDUR_DUMMY_STATEMENT(result); /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   792  }
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   793  #endif
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   794  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   795  #if (PDUR_EXISTS_TP_BUFFERED_ROUTINGTYPEOFRMDESTROM == STD_ON)
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   796  /**********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   797   * PduR_RmTp_TxInst_TxConfirmation_UnexpectedCall
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   798   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   799  /*!
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   800   * Internal comment removed.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   801   *
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   802   *
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   803   *
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   804   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   805  LOCAL_INLINE FUNC(void, PDUR_CODE) PduR_RmTp_TxInst_TxConfirmation_UnexpectedCall(PduR_RmGDestRomIterType rmGDestRomIdx, Std_ReturnType result)
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   806  {
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   807    PduR_Det_ReportError(PDUR_RMTP_TXINSTSM_TPTXCONFIRMATION_UNEXPECTEDCALL, PDUR_E_UNEXPECTED_CALL);
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   808    PDUR_DUMMY_STATEMENT(rmGDestRomIdx);  /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   809    PDUR_DUMMY_STATEMENT(result); /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   810  }
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   811  #endif
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   812  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   813  #if (PDUR_EXISTS_TP_BUFFERED_ROUTINGTYPEOFRMDESTROM == STD_ON)
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   814  /**********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   815   * PduR_RmTp_TxInst_CancelTransmit
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   816   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   817  /*!
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   818   * Internal comment removed.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   819   *
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   820   *
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   821   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   822  FUNC(void, PDUR_CODE) PduR_RmTp_TxInst_CancelTransmit(PduR_RmDestRomIterType rmGDestRomIdx)
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   823  {
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   824    PduR_MemIdxType memIdx = PduR_GetPartitionIndexOfCslOfRmGDestRom(rmGDestRomIdx);
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   825    PduR_RmGDestTpTxStateRamIdxOfRmGDestRomType rmGDestTpTxStateRamIdx = PduR_GetRmGDestTpTxStateRamIdxOfRmGDestRom(rmGDestRomIdx);
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   826  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   827    switch (PduR_GetTpTxInstSmStateOfRmGDestTpTxStateRam(rmGDestTpTxStateRamIdx, memIdx))
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   828    {
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   829      case PDUR_RM_TXINST_IDLE_TPTXINSTSMSTATEOFRMGDESTTPTXSTATERAM:
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   830        /* Nothing to abort. */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   831        break;
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   832  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   833      case PDUR_RM_TXINST_ACTIVE_TPTXINSTSMSTATEOFRMGDESTTPTXSTATERAM:
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   834        PduR_SetTpTxInstSmStateOfRmGDestTpTxStateRam(rmGDestTpTxStateRamIdx, PDUR_RM_TXINST_ABORTED_TPTXINSTSMSTATEOFRMGDESTTPTXSTATERAM, memIdx); /* SBSW_PDUR_CSL01 */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   835        break;
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   836  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   837  # if (PDUR_EXISTS_DEFERRED_PDURDESTPDUPROCESSINGOFRMGDESTROM == STD_ON)
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   838      case PDUR_RM_TXINST_WAITING_TPTXINSTSMSTATEOFRMGDESTTPTXSTATERAM:
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   839      {
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   840        PduR_BmTxBufferInstanceRomIterType bmTxBufferInstanceRomIdx;
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   841  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   842        PduR_SetTpTxInstSmStateOfRmGDestTpTxStateRam(rmGDestTpTxStateRamIdx, PDUR_RM_TXINST_IDLE_TPTXINSTSMSTATEOFRMGDESTTPTXSTATERAM, memIdx);        /* SBSW_PDUR_CSL03 */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   843  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   844        if(PduR_Fm_GetCurrentlyUsedBmTxBufferInstanceIdxByRmGDestIdx(rmGDestRomIdx, &bmTxBufferInstanceRomIdx) == E_OK) /* SBSW_PDUR_STACK_VARIABLE */ /* COV_PDUR_ROBUSTNESS */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   845        {
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   846          PduR_Bm_ResetTxBufferInstance(bmTxBufferInstanceRomIdx, memIdx);
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   847        }
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   848        PduR_RmTp_FinishTransmission_TpTxSmStateHandler(PduR_GetFmFifoRomIdxOfFmFifoInstanceRom(PduR_GetFmFifoInstanceRomIdxOfRmGDestRom(rmGDestRomIdx), memIdx), E_NOT_OK, memIdx);
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   849      }
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   850        break;
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   851  # endif
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   852  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   853      case PDUR_RM_TXINST_ABORTED_TPTXINSTSMSTATEOFRMGDESTTPTXSTATERAM: /* COV_PDUR_CANCELTRANSMIT_WITHOUT_RPG */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   854        /* Already aborted. Nothing to do. */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   855        break;
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   856  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   857      default: /* COV_PDUR_MISRA */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   858        /* If state is out-of-bounds: do nothing. */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   859        break;
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   860    }
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   861  }
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   862  #endif
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   863  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   864  #if((PDUR_MAIN_FUNCTION == STD_ON) && (PDUR_EXISTS_TP_BUFFERED_ROUTINGTYPEOFRMDESTROM == STD_ON))
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   865  /**********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   866   * PduR_RmTp_TxInst_MainFunction
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   867   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   868  /*!
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   869   * Internal comment removed.
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   870   *
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   871   *
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   872   *********************************************************************************************************************/
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   873  FUNC(void, PDUR_CODE) PduR_RmTp_TxInst_MainFunction(PduR_RmGDestRomIterType rmGDestRomIdx, PduR_MemIdxType memIdx)
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   874  {
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   875    if((PduR_GetPduRDestPduProcessingOfRmGDestRom(rmGDestRomIdx) == PDUR_DEFERRED_PDURDESTPDUPROCESSINGOFRMGDESTROM) && (PDUR_RM_TXINST_WAITING_TPTXINSTSMSTATEOFRMGDESTTPTXSTATERAM == PduR_GetTpTxInstSmStateOfRmGDestTpTxStateRam(PduR_GetRmGDestTpTxStateRamIdxOfRmGDestRom(rmGDestRomIdx), memIdx))) /* COV_PDUR_CROSSCORE_ROUTINGS_ONLY */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   876    {
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   877      PduR_Lock_LockRoutingPathByGDestPdu(rmGDestRomIdx);
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   878      {
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   879        PduR_SetTpTxInstSmStateOfRmGDestTpTxStateRam(PduR_GetRmGDestTpTxStateRamIdxOfRmGDestRom(rmGDestRomIdx), PDUR_RM_TXINST_ACTIVE_TPTXINSTSMSTATEOFRMGDESTTPTXSTATERAM, memIdx);      /* SBSW_PDUR_CSL03 */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   880        (void) PduR_RmTp_TxInst_LoAndUpTransmit(rmGDestRomIdx);
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   881      }
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   882      PduR_Lock_UnlockRoutingPathByGDestPdu(rmGDestRomIdx);
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   883    }
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   884  }       /* PRQA S 6080 */ /* MD_MSR_STMIF */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   885  #endif
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   886  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   887  #define PDUR_STOP_SEC_CODE
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   888  #include "PduR_MemMap.h" /* PRQA S 5087 */   /* MD_MSR_MemMap */
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   889  
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   890  /**********************************************************************************************************************
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   891   *  END OF FILE: PduR_RmTp_TxInst.c
+; ..\component\PduR\Implementation\PduR_RmTp_TxInst.c	   892   *********************************************************************************************************************/
+
+	; Module end
