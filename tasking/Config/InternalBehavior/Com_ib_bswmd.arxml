@@ -30,6 +30,9 @@
                     <BSW-MODULE-ENTRY-REF-CONDITIONAL>
                       <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/MICROSAR/Com_ib_bswmd/BswModuleDescriptions/Com_MainFunctionRx</BSW-MODULE-ENTRY-REF>
                     </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                    <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                      <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/MICROSAR/Com_ib_bswmd/BswModuleDescriptions/Com_MainFunctionRouteSignals</BSW-MODULE-ENTRY-REF>
+                    </BSW-MODULE-ENTRY-REF-CONDITIONAL>
                   </PROVIDED-ENTRYS>
                   <INTERNAL-BEHAVIORS>
                     <BSW-INTERNAL-BEHAVIOR UUID="ca155b7b-2954-44ec-b77c-bbb4e259a7c7">
@@ -86,6 +89,11 @@
                 </BSW-MODULE-ENTRY>
                 <BSW-MODULE-ENTRY UUID="991acafd-b683-4282-a7e1-31681c813624">
                   <SHORT-NAME>Com_MainFunctionRx</SHORT-NAME>
+                  <CALL-TYPE>SCHEDULED</CALL-TYPE>
+                  <EXECUTION-CONTEXT>TASK</EXECUTION-CONTEXT>
+                </BSW-MODULE-ENTRY>
+                <BSW-MODULE-ENTRY UUID="748d557d-7be9-459d-93c6-278709860da4">
+                  <SHORT-NAME>Com_MainFunctionRouteSignals</SHORT-NAME>
                   <CALL-TYPE>SCHEDULED</CALL-TYPE>
                   <EXECUTION-CONTEXT>TASK</EXECUTION-CONTEXT>
                 </BSW-MODULE-ENTRY>

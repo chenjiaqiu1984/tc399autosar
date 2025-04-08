@@ -36,7 +36,7 @@ $TC162
 ; ..\appl\GenData\ComM_Lcfg.c	    21   *  FILE DESCRIPTION
 ; ..\appl\GenData\ComM_Lcfg.c	    22   *  -------------------------------------------------------------------------------------------------------------------
 ; ..\appl\GenData\ComM_Lcfg.c	    23   *              File: ComM_Lcfg.c
-; ..\appl\GenData\ComM_Lcfg.c	    24   *   Generation Time: 2025-03-03 12:49:02
+; ..\appl\GenData\ComM_Lcfg.c	    24   *   Generation Time: 2025-03-04 15:11:49
 ; ..\appl\GenData\ComM_Lcfg.c	    25   *           Project: tc399demo - Version 1.0
 ; ..\appl\GenData\ComM_Lcfg.c	    26   *          Delivery: CBD2100010_D00
 ; ..\appl\GenData\ComM_Lcfg.c	    27   *      Tool Version: DaVinci Configurator (beta) 5.22.45 SP3
@@ -162,7 +162,7 @@ $TC162
 ; ..\appl\GenData\ComM_Lcfg.c	   147   /* PRQA S 5087 1 */ /* MD_MSR_MemMap */ 
 ; ..\appl\GenData\ComM_Lcfg.c	   148  #include "MemMap.h"
 ; ..\appl\GenData\ComM_Lcfg.c	   149  
-; ..\appl\GenData\ComM_Lcfg.c	   150  CONST(ComM_InhibitionStatusType, COMM_CONST) ComM_ECUGroupClassInit = 0x0; /* PRQA S 1533 */ /* MD_ComM_1533 */
+; ..\appl\GenData\ComM_Lcfg.c	   150  CONST(ComM_InhibitionStatusType, COMM_CONST) ComM_ECUGroupClassInit = 0x03; /* PRQA S 1533 */ /* MD_ComM_1533 */
 ; ..\appl\GenData\ComM_Lcfg.c	   151  
 ; ..\appl\GenData\ComM_Lcfg.c	   152  
 ; ..\appl\GenData\ComM_Lcfg.c	   153  #define COMM_STOP_SEC_CONST_UNSPECIFIED
@@ -351,7 +351,7 @@ ComM_UserReqFullCom:	.type	object
 	.global	ComM_ECUGroupClassInit
 ComM_ECUGroupClassInit:	.type	object
 	.size	ComM_ECUGroupClassInit,1
-	.space	1
+	.byte	3
 	.calls	'ComM_MainFunction_0','ComM_MainFunction'
 	.calls	'ComM_RequestBusSMMode','CanSM_RequestComMode'
 	.calls	'ComM_RequestBusSMMode','Det_ReportError'

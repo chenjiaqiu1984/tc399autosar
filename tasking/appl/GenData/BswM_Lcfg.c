@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: BswM_Lcfg.c
- *   Generation Time: 2025-03-04 13:03:53
+ *   Generation Time: 2025-03-04 17:17:51
  *           Project: tc399demo - Version 1.0
  *          Delivery: CBD2100010_D00
  *      Tool Version: DaVinci Configurator (beta) 5.22.45 SP3
@@ -1164,6 +1164,8 @@ BSWM_LOCAL FUNC(Std_ReturnType, BSWM_CODE) BswM_ActionList_INIT_AL_Initialize(Bs
   /*lint -save -e534 *//* PRQA S 3109, 3200 1 */ /* MD_MSR_14.3, MD_BSWM_3200 */
   CanSM_Init(CanSM_Config_Ptr);
   /*lint -restore */
+  BswM_INIT_NvMReadAll();
+  BswM_AL_SetProgrammableInterrupts();
   /*lint -save -e534 *//* PRQA S 3109, 3200 1 */ /* MD_MSR_14.3, MD_BSWM_3200 */
   ComM_Init();
   /*lint -restore */

@@ -21,7 +21,7 @@
  #  FILE DESCRIPTION
  #  -------------------------------------------------------------------------------------------------------------------
  #              File: PduR_rules_generated.mak
- #   Generation Time: 2025-03-04 13:25:22
+ #   Generation Time: 2025-03-04 17:17:51
  #           Project: tc399demo - Version 1.0
  #          Delivery: CBD2100010_D00
  #      Tool Version: DaVinci Configurator (beta) 5.22.45 SP3

@@ -5122,50 +5122,6 @@ appl\Source\EcuM_Callout_Stubs.o :	"D:\Zonal\demo011\tasking\appl\GenData\Os_Mem
 "D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_OsSectionsInt.h" :
 appl\Source\EcuM_Callout_Stubs.o :	"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_StacksInt.h"
 "D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_StacksInt.h" :
-appl\Source\EcuM_Callout_Stubs.o :	"D:\Zonal\demo011\tasking\appl\Include\MemMap.h"
-"D:\Zonal\demo011\tasking\appl\Include\MemMap.h" :
-appl\Source\EcuM_Callout_Stubs.o :	"D:\Zonal\demo011\tasking\appl\GenData\Rte_MemMap.h"
-"D:\Zonal\demo011\tasking\appl\GenData\Rte_MemMap.h" :
-appl\Source\EcuM_Callout_Stubs.o :	"D:\Zonal\demo011\tasking\appl\GenData\SomeIpXf_MemMap.h"
-"D:\Zonal\demo011\tasking\appl\GenData\SomeIpXf_MemMap.h" :
-appl\Source\EcuM_Callout_Stubs.o :	"D:\Zonal\demo011\tasking\appl\Include\Dem_MemMap.h"
-"D:\Zonal\demo011\tasking\appl\Include\Dem_MemMap.h" :
-appl\Source\EcuM_Callout_Stubs.o :	"D:\Zonal\demo011\tasking\appl\Include\FiM_MemMap.h"
-"D:\Zonal\demo011\tasking\appl\Include\FiM_MemMap.h" :
-appl\Source\EcuM_Callout_Stubs.o :	"D:\Zonal\demo011\tasking\appl\GenData\WdgM_OsMemMap.h"
-"D:\Zonal\demo011\tasking\appl\GenData\WdgM_OsMemMap.h" :
-appl\Source\EcuM_Callout_Stubs.o :	"D:\Zonal\demo011\tasking\appl\Include\MemMap_Common.h"
-"D:\Zonal\demo011\tasking\appl\Include\MemMap_Common.h" :
-appl\Source\EcuM_Callout_Stubs.o :	"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap.h"
-"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap.h" :
-appl\Source\EcuM_Callout_Stubs.o :	"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_OsCodeInt.h"
-"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_OsCodeInt.h" :
-appl\Source\EcuM_Callout_Stubs.o :	"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_OsSectionsInt.h"
-"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_OsSectionsInt.h" :
-appl\Source\EcuM_Callout_Stubs.o :	"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_StacksInt.h"
-"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_StacksInt.h" :
-appl\Source\EcuM_Callout_Stubs.o :	"D:\Zonal\demo011\tasking\appl\Include\MemMap.h"
-"D:\Zonal\demo011\tasking\appl\Include\MemMap.h" :
-appl\Source\EcuM_Callout_Stubs.o :	"D:\Zonal\demo011\tasking\appl\GenData\Rte_MemMap.h"
-"D:\Zonal\demo011\tasking\appl\GenData\Rte_MemMap.h" :
-appl\Source\EcuM_Callout_Stubs.o :	"D:\Zonal\demo011\tasking\appl\GenData\SomeIpXf_MemMap.h"
-"D:\Zonal\demo011\tasking\appl\GenData\SomeIpXf_MemMap.h" :
-appl\Source\EcuM_Callout_Stubs.o :	"D:\Zonal\demo011\tasking\appl\Include\Dem_MemMap.h"
-"D:\Zonal\demo011\tasking\appl\Include\Dem_MemMap.h" :
-appl\Source\EcuM_Callout_Stubs.o :	"D:\Zonal\demo011\tasking\appl\Include\FiM_MemMap.h"
-"D:\Zonal\demo011\tasking\appl\Include\FiM_MemMap.h" :
-appl\Source\EcuM_Callout_Stubs.o :	"D:\Zonal\demo011\tasking\appl\GenData\WdgM_OsMemMap.h"
-"D:\Zonal\demo011\tasking\appl\GenData\WdgM_OsMemMap.h" :
-appl\Source\EcuM_Callout_Stubs.o :	"D:\Zonal\demo011\tasking\appl\Include\MemMap_Common.h"
-"D:\Zonal\demo011\tasking\appl\Include\MemMap_Common.h" :
-appl\Source\EcuM_Callout_Stubs.o :	"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap.h"
-"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap.h" :
-appl\Source\EcuM_Callout_Stubs.o :	"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_OsCodeInt.h"
-"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_OsCodeInt.h" :
-appl\Source\EcuM_Callout_Stubs.o :	"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_OsSectionsInt.h"
-"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_OsSectionsInt.h" :
-appl\Source\EcuM_Callout_Stubs.o :	"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_StacksInt.h"
-"D:\Zonal\demo011\tasking\appl\GenData\Os_MemMap_StacksInt.h" :
 appl\Source\EcuM_Callout_Stubs.o :	"D:\Zonal\demo011\tasking\component\Det\Implementation\Det.h"
 "D:\Zonal\demo011\tasking\component\Det\Implementation\Det.h" :
 appl\Source\EcuM_Callout_Stubs.o :	"D:\Zonal\demo011\tasking\component\VStdLib\Implementation\vstdlib.h"

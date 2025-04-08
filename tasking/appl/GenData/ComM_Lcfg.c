@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: ComM_Lcfg.c
- *   Generation Time: 2025-03-03 12:49:02
+ *   Generation Time: 2025-03-04 15:11:49
  *           Project: tc399demo - Version 1.0
  *          Delivery: CBD2100010_D00
  *      Tool Version: DaVinci Configurator (beta) 5.22.45 SP3
@@ -147,7 +147,7 @@ VAR(ComM_UserReqFullComType, COMM_VAR_NOINIT) ComM_UserReqFullCom[1];  /* PRQA S
  /* PRQA S 5087 1 */ /* MD_MSR_MemMap */ 
 #include "MemMap.h"
 
-CONST(ComM_InhibitionStatusType, COMM_CONST) ComM_ECUGroupClassInit = 0x0; /* PRQA S 1533 */ /* MD_ComM_1533 */
+CONST(ComM_InhibitionStatusType, COMM_CONST) ComM_ECUGroupClassInit = 0x03; /* PRQA S 1533 */ /* MD_ComM_1533 */
 
 
 #define COMM_STOP_SEC_CONST_UNSPECIFIED

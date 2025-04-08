@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: BswM_Cfg.h
- *   Generation Time: 2025-03-04 13:03:53
+ *   Generation Time: 2025-03-04 17:17:50
  *           Project: tc399demo - Version 1.0
  *          Delivery: CBD2100010_D00
  *      Tool Version: DaVinci Configurator (beta) 5.22.45 SP3
@@ -1421,12 +1421,14 @@ extern VAR(boolean, BSWM_VAR_NOINIT) BswM_PreInitialized;
 &&&~ USER CALLOUT DECLARATIONS
 ----------------------------------------------------------------------------- */
 /* PRQA S 0777 CALLOUTDECLARATIONS */ /* MD_MSR_Rule5.2_0779 */
+extern FUNC(void, BSWM_CODE) BswM_AL_SetProgrammableInterrupts(void);
 extern FUNC(void, BSWM_CODE) BswM_ESH_OnEnterPostRun(void);
 extern FUNC(void, BSWM_CODE) BswM_ESH_OnEnterPrepShutdown(void);
 extern FUNC(void, BSWM_CODE) BswM_ESH_OnEnterRun(void);
 extern FUNC(void, BSWM_CODE) BswM_ESH_OnEnterShutdown(void);
 extern FUNC(void, BSWM_CODE) BswM_ESH_OnEnterWaitForNvm(void);
 extern FUNC(void, BSWM_CODE) BswM_ESH_OnEnterWakeup(void);
+extern FUNC(void, BSWM_CODE) BswM_INIT_NvMReadAll(void);
 extern FUNC(void, BSWM_CODE) ESH_ComM_CheckPendingRequests(void);
 /* PRQA L:CALLOUTDECLARATIONS */
 

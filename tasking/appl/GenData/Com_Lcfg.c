@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Com_Lcfg.c
- *   Generation Time: 2025-03-03 12:35:55
+ *   Generation Time: 2025-03-04 15:11:50
  *           Project: tc399demo - Version 1.0
  *          Delivery: CBD2100010_D00
  *      Tool Version: DaVinci Configurator (beta) 5.22.45 SP3
@@ -157,6 +157,7 @@ CONST(Com_PduGrpVectorType, COM_CONST) Com_PduGrpVector[2] = {  /* PRQA S 1514, 
   InitValueUsed    TRUE, if the 0:1 relation has minimum 1 relation pointing to Com_ConstValueUInt8,Com_ConstValueUInt16,Com_ConstValueUInt32,Com_ConstValueUInt64,Com_ConstValueSInt8,Com_ConstValueSInt16,Com_ConstValueSInt32,Com_ConstValueSInt64,Com_ConstValueFloat32,Com_ConstValueFloat64
   BitPosition      Little endian bit position of the signal or group signal within the I-PDU.
   BusAcc           BUS access algorithm for signal or group signal packing / un-packing.
+  ByteLength       Byte length of the signal or group signal.
   RxPduInfoIdx     the index of the 1:1 relation pointing to Com_RxPduInfo
 */ 
 #define COM_START_SEC_CONST_UNSPECIFIED
@@ -164,9 +165,9 @@ CONST(Com_PduGrpVectorType, COM_CONST) Com_PduGrpVector[2] = {  /* PRQA S 1514, 
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
 /*lint -restore */
 CONST(Com_RxAccessInfoType, COM_CONST) Com_RxAccessInfo[2] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
-    /* Index    InitValueUsed  BitPosition  BusAcc                         RxPduInfoIdx        Referable Keys */
-  { /*     0 */          TRUE,          0u, COM_BYTE_BUSACCOFRXACCESSINFO,           0u },  /* [/ActiveEcuC/Com/ComConfig/Txsignal5_oRxMessage1_otestCANFDdbc_5491c7bb_Rx, /ActiveEcuC/Com/ComConfig/RxMessage1_otestCANFDdbc_d2b210c8_Rx] */
-  { /*     1 */          TRUE,          8u, COM_BYTE_BUSACCOFRXACCESSINFO,           0u }   /* [/ActiveEcuC/Com/ComConfig/Txsignal6_oRxMessage1_otestCANFDdbc_e705ea78_Rx, /ActiveEcuC/Com/ComConfig/RxMessage1_otestCANFDdbc_d2b210c8_Rx] */
+    /* Index    InitValueUsed  BitPosition  BusAcc                                 ByteLength  RxPduInfoIdx        Referable Keys */
+  { /*     0 */          TRUE,          9u, COM_NBITNBYTE_SW_BUSACCOFRXACCESSINFO,         1u,           0u },  /* [/ActiveEcuC/Com/ComConfig/Txsignal5_oRxMessage1_otestCANFDdbc_5491c7bb_Rx, /ActiveEcuC/Com/ComConfig/RxMessage1_otestCANFDdbc_d2b210c8_Rx] */
+  { /*     1 */          TRUE,         17u, COM_NBITNBYTE_SW_BUSACCOFRXACCESSINFO,         1u,           0u }   /* [/ActiveEcuC/Com/ComConfig/Txsignal6_oRxMessage1_otestCANFDdbc_e705ea78_Rx, /ActiveEcuC/Com/ComConfig/RxMessage1_otestCANFDdbc_d2b210c8_Rx] */
 };
 #define COM_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
@@ -480,7 +481,9 @@ CONST(Com_TxPduInitValueType, COM_CONST) Com_TxPduInitValue[104] = {  /* PRQA S 
   Element                   Description
   BitPosition               Little endian bit position of the signal or group signal within the I-PDU.
   BusAcc                    BUS access algorithm for signal or group signal packing / un-packing.
+  ByteLength                Byte length of the signal or group signal.
   StartByteInPduPosition    Start Byte position of the signal or group signal within the I-PDU.
+  TxBufferLength            the number of relations pointing to Com_TxBuffer
   TxBufferStartIdx          the start index of the 0:n relation pointing to Com_TxBuffer
   TxPduInfoIdx              the index of the 1:1 relation pointing to Com_TxPduInfo
 */ 
@@ -489,11 +492,11 @@ CONST(Com_TxPduInitValueType, COM_CONST) Com_TxPduInitValue[104] = {  /* PRQA S 
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
 /*lint -restore */
 CONST(Com_TxSigInfoType, COM_CONST) Com_TxSigInfo[4] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
-    /* Index    BitPosition  BusAcc                      StartByteInPduPosition  TxBufferStartIdx  TxPduInfoIdx        Referable Keys */
-  { /*     0 */          0u, COM_BYTE_BUSACCOFTXSIGINFO,                     0u,              64u,           1u },  /* [/ActiveEcuC/Com/ComConfig/Txsignal1_oTxMessage3_otestCANFDdbc_2d6b4f3f_Tx, /ActiveEcuC/Com/ComConfig/TxMessage3_otestCANFDdbc_ca09f309_Tx] */
-  { /*     1 */          0u, COM_BYTE_BUSACCOFTXSIGINFO,                     0u,              96u,           2u },  /* [/ActiveEcuC/Com/ComConfig/Txsignal2_oTxMessage22_otestCANFDdbc_bc4438a4_Tx, /ActiveEcuC/Com/ComConfig/TxMessage22_otestCANFDdbc_71c7c8a6_Tx] */
-  { /*     2 */          0u, COM_BYTE_BUSACCOFTXSIGINFO,                     0u,               0u,           0u },  /* [/ActiveEcuC/Com/ComConfig/Txsignal3_oTxMessage1_otestCANFDdbc_58f5c82c_Tx, /ActiveEcuC/Com/ComConfig/TxMessage1_otestCANFDdbc_628f4298_Tx] */
-  { /*     3 */          8u, COM_BYTE_BUSACCOFTXSIGINFO,                     1u,               1u,           0u }   /* [/ActiveEcuC/Com/ComConfig/Txsignal4_oTxMessage1_otestCANFDdbc_8a208eaa_Tx, /ActiveEcuC/Com/ComConfig/TxMessage1_otestCANFDdbc_628f4298_Tx] */
+    /* Index    BitPosition  BusAcc                              ByteLength  StartByteInPduPosition  TxBufferLength  TxBufferStartIdx  TxPduInfoIdx        Referable Keys */
+  { /*     0 */          9u, COM_NBITNBYTE_SW_BUSACCOFTXSIGINFO,         1u,                     0u,             2u,              64u,           1u },  /* [/ActiveEcuC/Com/ComConfig/Txsignal1_oTxMessage3_otestCANFDdbc_2d6b4f3f_Tx, /ActiveEcuC/Com/ComConfig/TxMessage3_otestCANFDdbc_ca09f309_Tx] */
+  { /*     1 */          9u, COM_NBITNBYTE_SW_BUSACCOFTXSIGINFO,         1u,                     0u,             2u,              96u,           2u },  /* [/ActiveEcuC/Com/ComConfig/Txsignal2_oTxMessage22_otestCANFDdbc_bc4438a4_Tx, /ActiveEcuC/Com/ComConfig/TxMessage22_otestCANFDdbc_71c7c8a6_Tx] */
+  { /*     2 */          9u, COM_NBITNBYTE_SW_BUSACCOFTXSIGINFO,         1u,                     0u,             2u,               0u,           0u },  /* [/ActiveEcuC/Com/ComConfig/Txsignal3_oTxMessage1_otestCANFDdbc_58f5c82c_Tx, /ActiveEcuC/Com/ComConfig/TxMessage1_otestCANFDdbc_628f4298_Tx] */
+  { /*     3 */         17u, COM_NBITNBYTE_SW_BUSACCOFTXSIGINFO,         1u,                     1u,             2u,               1u,           0u }   /* [/ActiveEcuC/Com/ComConfig/Txsignal4_oTxMessage1_otestCANFDdbc_8a208eaa_Tx, /ActiveEcuC/Com/ComConfig/TxMessage1_otestCANFDdbc_628f4298_Tx] */
 };
 #define COM_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
@@ -728,33 +731,23 @@ VAR(Com_TransmitRequestType, COM_VAR_NOINIT) Com_TransmitRequest[3];  /* PRQA S 
 VAR(Com_TxBufferType, COM_VAR_NOINIT) Com_TxBuffer[104];  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
   /* Index        Referable Keys */
   /*     0 */  /* [/ActiveEcuC/Com/ComConfig/TxMessage1_otestCANFDdbc_628f4298_Tx, /ActiveEcuC/Com/ComConfig/Txsignal3_oTxMessage1_otestCANFDdbc_58f5c82c_Tx] */
-  /*     1 */  /* [/ActiveEcuC/Com/ComConfig/TxMessage1_otestCANFDdbc_628f4298_Tx, /ActiveEcuC/Com/ComConfig/Txsignal4_oTxMessage1_otestCANFDdbc_8a208eaa_Tx] */
-  /*     2 */  /* [/ActiveEcuC/Com/ComConfig/TxMessage1_otestCANFDdbc_628f4298_Tx] */
+  /*     1 */  /* [/ActiveEcuC/Com/ComConfig/TxMessage1_otestCANFDdbc_628f4298_Tx, /ActiveEcuC/Com/ComConfig/Txsignal3_oTxMessage1_otestCANFDdbc_58f5c82c_Tx, /ActiveEcuC/Com/ComConfig/Txsignal4_oTxMessage1_otestCANFDdbc_8a208eaa_Tx] */
+  /*     2 */  /* [/ActiveEcuC/Com/ComConfig/TxMessage1_otestCANFDdbc_628f4298_Tx, /ActiveEcuC/Com/ComConfig/Txsignal4_oTxMessage1_otestCANFDdbc_8a208eaa_Tx] */
+  /*     3 */  /* [/ActiveEcuC/Com/ComConfig/TxMessage1_otestCANFDdbc_628f4298_Tx] */
   /*   ... */  /* [/ActiveEcuC/Com/ComConfig/TxMessage1_otestCANFDdbc_628f4298_Tx] */
   /*    63 */  /* [/ActiveEcuC/Com/ComConfig/TxMessage1_otestCANFDdbc_628f4298_Tx] */
   /*    64 */  /* [/ActiveEcuC/Com/ComConfig/TxMessage3_otestCANFDdbc_ca09f309_Tx, /ActiveEcuC/Com/ComConfig/Txsignal1_oTxMessage3_otestCANFDdbc_2d6b4f3f_Tx] */
-  /*    65 */  /* [/ActiveEcuC/Com/ComConfig/TxMessage3_otestCANFDdbc_ca09f309_Tx] */
+  /*    65 */  /* [/ActiveEcuC/Com/ComConfig/TxMessage3_otestCANFDdbc_ca09f309_Tx, /ActiveEcuC/Com/ComConfig/Txsignal1_oTxMessage3_otestCANFDdbc_2d6b4f3f_Tx] */
+  /*    66 */  /* [/ActiveEcuC/Com/ComConfig/TxMessage3_otestCANFDdbc_ca09f309_Tx] */
   /*   ... */  /* [/ActiveEcuC/Com/ComConfig/TxMessage3_otestCANFDdbc_ca09f309_Tx] */
   /*    95 */  /* [/ActiveEcuC/Com/ComConfig/TxMessage3_otestCANFDdbc_ca09f309_Tx] */
   /*    96 */  /* [/ActiveEcuC/Com/ComConfig/TxMessage22_otestCANFDdbc_71c7c8a6_Tx, /ActiveEcuC/Com/ComConfig/Txsignal2_oTxMessage22_otestCANFDdbc_bc4438a4_Tx] */
-  /*    97 */  /* [/ActiveEcuC/Com/ComConfig/TxMessage22_otestCANFDdbc_71c7c8a6_Tx] */
+  /*    97 */  /* [/ActiveEcuC/Com/ComConfig/TxMessage22_otestCANFDdbc_71c7c8a6_Tx, /ActiveEcuC/Com/ComConfig/Txsignal2_oTxMessage22_otestCANFDdbc_bc4438a4_Tx] */
+  /*    98 */  /* [/ActiveEcuC/Com/ComConfig/TxMessage22_otestCANFDdbc_71c7c8a6_Tx] */
   /*   ... */  /* [/ActiveEcuC/Com/ComConfig/TxMessage22_otestCANFDdbc_71c7c8a6_Tx] */
   /*   103 */  /* [/ActiveEcuC/Com/ComConfig/TxMessage22_otestCANFDdbc_71c7c8a6_Tx] */
 
 #define COM_STOP_SEC_VAR_NOINIT_8BIT
-/*lint -save -esym(961, 19.1) */
-#include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
-/*lint -restore */
-
-/**********************************************************************************************************************
-  Com_TxCycleCounterDivisorCounter
-**********************************************************************************************************************/
-#define COM_START_SEC_VAR_NOINIT_16BIT
-/*lint -save -esym(961, 19.1) */
-#include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
-/*lint -restore */
-VAR(Com_TxCycleCounterDivisorCounterType, COM_VAR_NOINIT) Com_TxCycleCounterDivisorCounter;  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
-#define COM_STOP_SEC_VAR_NOINIT_16BIT
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
 /*lint -restore */
